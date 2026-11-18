@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/js/shadowbox/shadowbox.css",
+  "alt": "",
+  "kind": "link",
+  "id": "6971d2ab662a4195df42",
+  "status": "ok",
+  "parents": [
+    "a82f2cc399110384cf05",
+    "d5ed316633e2591bbafb",
+    "afdfbdf0c16eb91ef876"
+  ],
+  "bytes": 2588,
+  "sha256": "ee07d66dc544fd714c94f55c34225858caa77e5701b7ba31cb24aec080c14adc",
+  "fetchedAt": "2026-11-18T08:27:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201201/SpringFestival/js/shadowbox/shadowbox.css",
+  "path": "assets/6971d2ab662a4195df42.css"
+}

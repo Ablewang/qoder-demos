@@ -1,0 +1,19 @@
+{
+  "url": "http://www.wanmei.com/wa.js",
+  "label": "",
+  "kind": "script-reference",
+  "id": "89c199e20422ecdb7891",
+  "status": "ok",
+  "parents": [
+    "d3b90535c0e67ed20dc8",
+    "0df52d529995100be4de"
+  ],
+  "bytes": 16778,
+  "sha256": "f394219660fe05cb17d99571037baded8004cbbc7f5050ecad0e59bb020084ba",
+  "fetchedAt": "2026-11-18T08:18:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://www.wanmei.com/wa.js",
+  "path": "assets/89c199e20422ecdb7891.js"
+}

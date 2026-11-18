@@ -1,0 +1,303 @@
+{
+  "id": "78cd277893465d3b5c99",
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_3.htm",
+  "title": "丛林遗迹大冒险 - 《完美国际》官网网站",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 1,
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79",
+    "69753a1e89037ce89a9e",
+    "661ea43ec21004c38c81",
+    "e9e69bb61aec017b44a8",
+    "8716ef0ffd9713a2e50d",
+    "bb8d8f83beaa947e8748",
+    "78cd277893465d3b5c99"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "374719bf22da5f6c7793f97b10bd914f126793d107e7e94bd61329b833a677d6",
+  "bytes": 10137,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/78cd277893465d3b5c99.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "说明\n丛林遗迹内埋藏着最终遗宝——丛林之眼，它拥有着强大的属性和洞察万物的奇异力量。\n每次丛林遗迹开启时，都会随机产生一把正确的密匙，只有持有这把密匙的人才能在遗迹轮回台上获得最终遗宝。而得到密匙的关键就是玩家选择的遗玉和遗环是否正确。\n在前往遗迹终点的过程中，玩家将遇到两个发放环玉的NPC：遗宝灵官琢环和漱玉。其中：\n遗宝灵官•琢环\n丛林遗环·飞仙+丛林遗珠\n丛林遗环·遁魔+丛林遗珠\n遗宝灵官•漱玉\n遗宝灵官•漱玉处玩家可以在以下八种道具中选择一种领取：\n丛林遗玉·蓝缘\n丛林遗玉·赤火\n丛林遗玉·黑烬\n丛林遗玉·碧灵\n丛林遗玉·白翼\n丛林遗玉·紫幻\n丛林遗玉·黄楚\n丛林遗玉·橙露\n持有3个道具的玩家到达终点后可向NPC赐福者•阿贵领取奖励。如果玩家选择的遗环和遗玉均正确，并且在30分钟内最先到达终点，则可以获得最终的一等遗宝。（限1人）\n如果一等遗宝在30分钟内无人领取，则会有神秘人物将其抢走！\n如果玩家只选择对了遗玉而未选择对遗环，则只能领取二等遗宝。（限前5人）\n如果玩家只选择对了遗环而未选择对遗玉，则只能领取三等遗宝。（限前10人）\n幸运遗宝任务的奖励如下:\n奖励\n奖励名称\n名额\n道具\n数量\n1等遗宝\n1\n丛林之眼或丛林之睛\n1\n2等遗宝\n5\n仙魔印记\n99\n3等遗宝\n10\n幻仙+天工\n100+100\n任务详细：\n领奖前提任务1——选择仙魔遗环\nNPC：遗宝灵官•琢环\n任务流程：在丛林遗迹两个入口处找到NPC遗宝灵官•琢环，与其对话并手动选择丛林遗环•飞仙、丛林遗环•遁魔的其中一个，同时得到丛林遗珠一枚，得到道具的同时任务完成。\n备注：包裹的普通道具栏至少应有2个空位；得到道具的时限均为2小时。\n领奖前提任务2——选择八彩遗玉\nNPC：遗宝灵官•漱玉\n任务流程：在丛林遗迹的万法阶梯房间的正中央台子上找到NPC遗宝灵官•漱玉，与其对话并手动从丛林遗玉•蓝缘、丛林遗玉•赤火、丛林遗玉•黑烬、丛林遗玉•碧灵、丛林遗玉•白翼、丛林遗玉•紫幻、丛林遗玉•黄楚、丛林遗玉•橙露选择其中一个，得到道具的同时任务完成。\n备注：包裹的普通道具栏至少应有1个空位；得到道具的时限为2小时。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "丛林遗环·飞仙+丛林遗珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗环·遁魔+丛林遗珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "丛林遗玉·蓝缘",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·赤火",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·黑烬",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·碧灵",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·白翼",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·紫幻",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·黄楚",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丛林遗玉·橙露",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奖励",
+            "rowspan": "1",
+            "colspan": "3"
+          }
+        ],
+        [
+          {
+            "text": "奖励名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名额",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "道具",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "数量",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1等遗宝",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "丛林之眼或丛林之睛",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2等遗宝",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "仙魔印记",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3等遗宝",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "幻仙+天工",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100+100",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_1.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_2.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_3.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_4.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_5.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_6.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/viewthread.php?tid=1598145",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/xy_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/xy_02.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/title5.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/xy_01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/xy_02s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/cen_bot2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n   <div>\r\n       <div>\r\n             <div>\r\n                    \r\n\t\t\t\t\t<div>\r\n                         <p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201007/maoxian/header.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201007/maoxian/header.htm</a></p>\r\n                     </div>\r\n                     <div>\r\n                         <div>\r\n                            <div>\r\n                              <div>\r\n                                  <div>\r\n                                     <p>\r\n                                        <a href=\"#page=69753a1e89037ce89a9e\"></a>\r\n                                        <a href=\"#page=8716ef0ffd9713a2e50d\"></a>\r\n                                        <a href=\"#page=78cd277893465d3b5c99\"></a>\r\n                                        <a href=\"#page=bb8d8f83beaa947e8748\"></a>\r\n                                        <a href=\"#page=e9e69bb61aec017b44a8\"></a>\r\n                                        <a href=\"#page=661ea43ec21004c38c81\"></a>\r\n                                        <a href=\"http://bbs.w2i.wanmei.com/viewthread.php?tid=1598145\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                                        <a href=\"#page=05cdabe45948659d0214\"></a>\r\n                                     </p>\r\n                                  </div>\r\n                                 <div>\r\n                                     <div><img src=\"assets/4e5379d850a47c8396fb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n                                     <div>\r\n                                         <div>\r\n                                           <h2>说明</h2>\r\n                                            <p>　　丛林遗迹内埋藏着最终遗宝——丛林之眼，它拥有着强大的属性和洞察万物的奇异力量。<br>\r\n\t\t\t\t\t\t\t\t\t\t\t　　每次丛林遗迹开启时，都会随机产生一把正确的密匙，只有持有这把密匙的人才能在遗迹轮回台上获得最终遗宝。而得到密匙的关键就是玩家选择的遗玉和遗环是否正确。<br>\r\n\t\t\t\t\t\t\t\t\t\t\t　　在前往遗迹终点的过程中，玩家将遇到两个发放环玉的NPC：遗宝灵官琢环和漱玉。其中：</p>\r\n\t\t\t\t\t\t\t\t\t\t\t<p>\r\n                                              <a href=\"https://event51.wanmei.com/w2i/201007/maoxian/images/xy_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/367ec1375616e5e3efb3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><br>\r\n                                              遗宝灵官•琢环\r\n                                           </p><br>\r\n\t\t\t\t\t\t\t\t\t\t   <table>\r\n  <tr>\r\n    <td><p>丛林遗环·飞仙+丛林遗珠</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗环·遁魔+丛林遗珠</p></td>\r\n  </tr>\r\n</table><br>\r\n                                            <p>\r\n                                              <a href=\"https://event51.wanmei.com/w2i/201007/maoxian/images/xy_02.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/46b8480ec92246ca7124.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><br>\r\n                                              遗宝灵官•漱玉\r\n                                           </p>\r\n                                            <p>　　遗宝灵官•漱玉处玩家可以在以下八种道具中选择一种领取：\r\n                                            </p>\r\n\t\t\t\t\t\t\t\t\t\t\t<table>\r\n  <tr>\r\n    <td><p>丛林遗玉·蓝缘</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·赤火</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·黑烬</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·碧灵</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·白翼</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·紫幻</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·黄楚</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>丛林遗玉·橙露</p></td>\r\n  </tr>\r\n</table>\r\n                                         <p>\r\n\t\t\t\t\t\t\t\t\t\t 　　持有3个道具的玩家到达终点后可向NPC赐福者•阿贵领取奖励。如果玩家选择的遗环和遗玉均正确，并且在30分钟内最先到达终点，则可以获得最终的一等遗宝。（限1人）<br>\r\n\t\t\t\t\t\t\t\t\t\t 　　如果一等遗宝在30分钟内无人领取，则会有神秘人物将其抢走！<br>\r\n\t\t\t\t\t\t\t\t\t\t 　　如果玩家只选择对了遗玉而未选择对遗环，则只能领取二等遗宝。（限前5人）<br>\r\n\t\t\t\t\t\t\t\t\t\t 　　如果玩家只选择对了遗环而未选择对遗玉，则只能领取三等遗宝。（限前10人）<br>\r\n\t\t\t\t\t\t\t\t\t\t 　　幸运遗宝任务的奖励如下:\r\n\t\t\t\t\t\t\t\t\t\t </p>\r\n\t\t\t\t\t\t\t\t\t\t <table>\r\n  <tr>\r\n    <td><p>　 </p></td>\r\n    <td colspan=\"3\"><p>奖励</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>奖励名称</p></td>\r\n    <td><p>名额</p></td>\r\n    <td><p>道具</p></td>\r\n    <td><p>数量</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"2\"><p>1等遗宝</p></td>\r\n    <td rowspan=\"2\"><p>1</p></td>\r\n    <td rowspan=\"2\"><p>丛林之眼或丛林之睛</p></td>\r\n    <td rowspan=\"2\"><p>1</p></td>\r\n  </tr>\r\n  <tr> </tr>\r\n  <tr>\r\n    <td rowspan=\"2\"><p>2等遗宝</p></td>\r\n    <td rowspan=\"2\"><p>5</p></td>\r\n    <td rowspan=\"2\"><p>仙魔印记</p></td>\r\n    <td rowspan=\"2\"><p>99</p></td>\r\n  </tr>\r\n  <tr> </tr>\r\n  <tr>\r\n    <td rowspan=\"2\"><p>3等遗宝</p></td>\r\n    <td rowspan=\"2\"><p>10</p></td>\r\n    <td rowspan=\"2\"><p>幻仙+天工</p></td>\r\n    <td rowspan=\"2\"><p>100+100</p></td>\r\n  </tr>\r\n  <tr> </tr>\r\n</table>\r\n                                         \r\n                                         <h2>任务详细：</h2>\r\n\t\t\t\t\t\t\t\t\t\t <p>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　领奖前提任务1——选择仙魔遗环</strong><br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　NPC：</strong>遗宝灵官•琢环<br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　任务流程：</strong>在丛林遗迹两个入口处找到NPC遗宝灵官•琢环，与其对话并手动选择丛林遗环•飞仙、丛林遗环•遁魔的其中一个，同时得到丛林遗珠一枚，得到道具的同时任务完成。<br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　备注：</strong>包裹的普通道具栏至少应有2个空位；得到道具的时限均为2小时。<br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　领奖前提任务2——选择八彩遗玉</strong><br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　NPC：</strong>遗宝灵官•漱玉<br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　任务流程：</strong>在丛林遗迹的万法阶梯房间的正中央台子上找到NPC遗宝灵官•漱玉，与其对话并手动从丛林遗玉•蓝缘、丛林遗玉•赤火、丛林遗玉•黑烬、丛林遗玉•碧灵、丛林遗玉•白翼、丛林遗玉•紫幻、丛林遗玉•黄楚、丛林遗玉•橙露选择其中一个，得到道具的同时任务完成。<br>\r\n\t\t\t\t\t\t\t\t\t\t <strong>　　备注：</strong>包裹的普通道具栏至少应有1个空位；得到道具的时限为2小时。\r\n\t\t\t\t\t\t\t\t\t\t </p>\r\n                                         </div>\r\n                                     </div>\r\n                            <div><img src=\"assets/d8c3bed0cff21554557f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n                                  </div>\r\n                              </div>\r\n                            </div>\r\n                         </div>\r\n                     </div>\r\n         </div>\r\n         </div>\r\n    </div>\r\n</div>\r\n\r\n<div>\r\n   \r\n  \r\n</div>\r\n",
+  "dataPath": "pages/78cd277893465d3b5c99.json",
+  "imageCount": 4,
+  "tableCount": 3,
+  "downloadPath": "downloads/78cd277893465d3b5c99.js"
+}

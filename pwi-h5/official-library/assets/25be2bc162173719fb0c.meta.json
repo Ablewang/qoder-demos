@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/news/news_images/200811/1105/b3.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "25be2bc162173719fb0c",
+  "status": "ok",
+  "parents": [
+    "b275007180b977ac1419"
+  ],
+  "bytes": 123727,
+  "sha256": "72e18b3282c49a056ec8634c45735b564b0c83bc5a3306271aa36c83939370e3",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/25be2bc162173719fb0c.jpg"
+}

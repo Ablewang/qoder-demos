@@ -1,0 +1,35 @@
+{
+  "id": "d0b9cd7e876811f1f9d1",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29979.shtml",
+  "title": "装备打孔",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "9b4c6ecc8f0911d7496753e3af9d46cba5c56d7e26fdb312e89f3ac2806f9bd9",
+  "bytes": 65727,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d0b9cd7e876811f1f9d1.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "玩家可以使用天工符文在各城的“完美商城专员”处进行装备打孔，武器最多可打2孔，防具最多4孔。\n注：天工符文可在乾坤袋中购得，将要进行打孔的装备放上且背包内有足够数量的天工符文时即可完成装备打孔。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zbdk_01.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　玩家可以使用天工符文在各城的“完美商城专员”处进行装备打孔，武器最多可打2孔，防具最多4孔。</p>\r\n<p>　　注：天工符文可在乾坤袋中购得，将要进行打孔的装备放上且背包内有足够数量的天工符文时即可完成装备打孔。</p>\r\n<p> <img src=\"assets/73b239f5056496193c90.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/d0b9cd7e876811f1f9d1.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/d0b9cd7e876811f1f9d1.js"
+}

@@ -1,0 +1,44 @@
+﻿@import url(http://www.wanmei.com/public/style/wm.css);
+body{ margin:0px; padding:0px; color:#9b0000;font:12px Verdana,SimSun,Geneva,sans-serif;background:#2A2F44}
+div,form,ul,ol,li,img,dl,dt,dd,p{margin:0px; padding:0px; border:0;}
+div{width:auto}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+em{font-style:normal;}
+
+.bodybg{width:100%;min-width:1002px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");background:#001c21 url(../images/indexbg.jpg) no-repeat center top;}
+
+#insidebg{background:#fff url(../images/insidebg.jpg) no-repeat center top;}
+
+#wrap{width:1002px;min-width:1002px;margin:0 auto;overflow:hidden;position:relative;}
+.h img{display:block;}
+table {border: 1px solid #b50100;  padding:0; margin:0 auto; border-collapse: collapse;}  
+td {border: 1px solid #b50100; background: #ffe5e5;font-size:12px;padding: 5px 3px 5px 8px; color: #4f6b72;}  
+
+/*---------------*/
+
+.tab{width:660px;height:360px;position:absolute;left:104px;top:455px;}
+.tab .tabt{height:70px;}
+.tab .tabt a{display:block;height:62px;float:left;text-indent:-9999px;overflow:hidden;position:relative;background:url(../images/none.gif)}
+.tab .tabt a:hover,.tab .tabt a.on{background-image:url(../images/tabt_hover.jpg);background-repeat:no-repeat;}
+.tab .tabt a#tab1{width:222px;background-position:0 0}
+.tab .tabt a#tab2{width:142px;background-position:-222px 0}
+.tab .tabt a#tab3{width:146px;background-position:-364px 0}
+.tab .tabt a#tab4{width:150px;background-position:-510px 0}
+
+.tabc{padding-top:2px;}
+.tabc dl{padding:5px 0 0 20px;}
+.tabc dl dt{font-family:Microsoft YaHei;font-size:14px;color:#7c8f9d;width:75px;float:left;line-height:18px;}
+.tabc dl dd{width:490px;float:left;color:#7c8f9d;line-height:18px;*padding-top:1px;padding-top:1px\9;}
+
+/*-------滚动--------*/
+.switchable-triggers li{display:inline;} 
+.switchable-triggers li.current{color:#F90}
+#scrollable-1 img{width:110px;height:100px;display:block}
+#scrollable-1 {position:relative;width:600px;height:130px;overflow:hidden;}
+#scrollable-1 li {float:left;margin-right:10px;}
+#scrollable-1 li em {width:110px;display:block;text-align:center; line-height:28px;}
+
+
+.lunbo{position:relative;width:600px;left:35px;top:0;}
+.switchable-triggers{position:absolute;left:0;top:130px;width:600px;text-align:center;}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/group/images/tit_08.png",
+  "alt": "",
+  "kind": "img",
+  "id": "ff50a748f53dd5837093",
+  "status": "ok",
+  "parents": [
+    "9695a000672ff0aa9760"
+  ],
+  "bytes": 64950,
+  "sha256": "3177fb41675c7bdce2eea02b3e7ddd4624c5231512d5accaca19a6f94ff570b3",
+  "fetchedAt": "2026-11-18T08:28:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/group/images/tit_08.png",
+  "path": "assets/ff50a748f53dd5837093.png"
+}

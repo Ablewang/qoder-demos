@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/fbmaster_04s.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "a1709e00d85bec7722a4",
+  "status": "ok",
+  "parents": [
+    "dee2d7f337909663241b"
+  ],
+  "bytes": 3952,
+  "sha256": "ef0890a8e0c2a1f1b4109ccdbb21dc47d7e29d17acb46f051f96fe6cf5a89d3f",
+  "fetchedAt": "2026-11-18T08:22:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/fbmaster_04s.jpg",
+  "path": "assets/a1709e00d85bec7722a4.jpg"
+}

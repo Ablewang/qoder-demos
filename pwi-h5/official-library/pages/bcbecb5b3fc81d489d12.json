@@ -1,0 +1,114 @@
+{
+  "id": "bcbecb5b3fc81d489d12",
+  "url": "https://event51.wanmei.com/w2i/201111/new/content.htm",
+  "title": "《完美国际》新手指南 - 《完美国际》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 1,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "bcbecb5b3fc81d489d12"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "6c0901283a78878882ed0cb7b1a8eac4c4a79598cb2b4c83dee3b535c013aef0",
+  "bytes": 6061,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/bcbecb5b3fc81d489d12.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "功能介绍\n我要查任务\n生产物品\n装备掉落\n怪物属性\n第一步\n第二步\n第一步\n第二步\n第一步\n第二步\n第一步\n第二步\n第一步\n第二步",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/content.htm",
+      "label": "怪物属性",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/c01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/c02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/gn1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/gn2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/rw1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/rw2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/sc1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/sc2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/zb1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/zb2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/gw1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/gw2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/images/t01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/js/jquery.tools.min.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n    <div>\r\n        \r\n        <img src=\"assets/3e25dc6ce2df7f9aee12.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/e7435e597e5ee08833ca.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <div>\r\n            <ul>\r\n                <li><a href=\"#page=bcbecb5b3fc81d489d12\">功能介绍</a></li>\r\n                <li><a href=\"#page=bcbecb5b3fc81d489d12\">我要查任务</a></li>\r\n                <li><a href=\"#page=bcbecb5b3fc81d489d12\">生产物品</a></li>\r\n                <li><a href=\"#page=bcbecb5b3fc81d489d12\">装备掉落</a></li>\r\n                <li><a href=\"#page=bcbecb5b3fc81d489d12\">怪物属性</a></li>\r\n            </ul>\r\n            <div>\r\n                <div>\r\n                    \r\n                    <div>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/59792ba21a7c1fa0c767.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第一步</strong></p>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/e058feef0a2c9b2d38b2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第二步</strong></p>\r\n                    </div>\r\n                    \r\n                    <div>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/17e8be9a2403402eb3a1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第一步</strong></p>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/de436af1e668bb59fcf4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第二步</strong></p>\r\n                    </div>\r\n                    \r\n                    <div>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/0f6eb454eb7fb1934bf1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第一步</strong></p>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/c023af56f7077a4a6482.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第二步</strong></p>\r\n                    </div>\r\n                    \r\n                    <div>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/3f224c4cb5d2473fcbbe.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第一步</strong></p>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/e6df27c00b3839e7ae0d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第二步</strong></p>\r\n                    </div>\r\n                    \r\n                    <div>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/378a942c82b988b97e1b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第一步</strong></p>\r\n                        <br>\r\n                        <p>\r\n                            <img src=\"assets/bcc0ba89f494a1da9d0b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                        </p>\r\n                        <p>\r\n                            <strong>第二步</strong></p>\r\n                    </div>\r\n                </div>\r\n                <div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div>\r\n        \r\n        <img src=\"assets/208d263ebbe6f2e76752.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    </div>\r\n    \r\n    \r\n",
+  "dataPath": "pages/bcbecb5b3fc81d489d12.json",
+  "imageCount": 13,
+  "tableCount": 0,
+  "downloadPath": "downloads/bcbecb5b3fc81d489d12.js"
+}

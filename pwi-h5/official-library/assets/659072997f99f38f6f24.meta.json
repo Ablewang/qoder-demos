@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/qixin_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "659072997f99f38f6f24",
+  "status": "ok",
+  "parents": [
+    "97c02adaf1513ceebbb0"
+  ],
+  "bytes": 3999,
+  "sha256": "7909687a60ce75fe0650aa9a265ab42b3e39d7344f97d2c6f3cea32532aad229",
+  "fetchedAt": "2026-11-18T08:22:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/qixin_button.jpg",
+  "path": "assets/659072997f99f38f6f24.jpg"
+}

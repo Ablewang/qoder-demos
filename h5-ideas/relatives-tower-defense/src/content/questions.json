@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "income-01",
+    "category": "收入",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "gufu"],
+    "text": "一个月挣多少钱？",
+    "answers": {
+      "taiji": "工资先放一边，这鱼可不能凉了。",
+      "counter": "年夜饭能不附带财务报表吗？",
+      "crazy": "税前是梦想，税后是梦，到手是念想。",
+      "sincere": "收入就不报了，我会按自己的预算生活。"
+    }
+  },
+  {
+    "id": "income-02",
+    "category": "收入",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "dayi"],
+    "text": "年终奖发了多少？",
+    "answers": {
+      "taiji": "奖金还在路上，先给这盘菜颁个奖。",
+      "counter": "这桌能只评厨艺，不评奖金吗？",
+      "crazy": "发了个盼头，已经存进精神账户。",
+      "sincere": "有没有奖金、多少奖金，我都不公开聊。"
+    }
+  },
+  {
+    "id": "income-03",
+    "category": "收入",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "ershen"],
+    "text": "今年涨工资了吗？",
+    "answers": {
+      "taiji": "先不聊涨没涨，您尝尝这锅新汤。",
+      "counter": "没涨也能安心吃顿年夜饭吧？",
+      "crazy": "涨了，工资条的字号从小四涨到三号。",
+      "sincere": "工资变动是我的私事，今天不展开。"
+    }
+  },
+  {
+    "id": "income-04",
+    "category": "收入",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "wangayi"],
+    "text": "存了多少钱了？",
+    "answers": {
+      "taiji": "存款先封存，咱聊聊今年去哪儿玩。",
+      "counter": "存款能和手机密码一样保密吗？",
+      "crazy": "我的存款走极简风，一眼就看完。",
+      "sincere": "存款数额不分享，我会自己做好规划。"
+    }
+  },
+  {
+    "id": "income-05",
+    "category": "收入",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "gufu"],
+    "text": "一个月能挣一万吗？",
+    "answers": {
+      "taiji": "先不凑那个整数，咱凑一桌好菜。",
+      "counter": "一顿团圆饭需要设收入门槛吗？",
+      "crazy": "能，我在计算器里按个等号就到账。",
+      "sincere": "具体收入不说，也不拿整数衡量自己。"
+    }
+  },
+  {
+    "id": "income-06",
+    "category": "收入",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["sangu", "ershen"],
+    "text": "钱够花吗？",
+    "answers": {
+      "taiji": "账本回去再算，今晚先算饺子够不够。",
+      "counter": "关心我就好，不必查我的收支吧？",
+      "crazy": "我和钱包达成共识，路过商场假装不熟。",
+      "sincere": "我会量入为出，需要帮助时会主动说。"
+    }
+  },
+  {
+    "id": "income-07",
+    "category": "收入",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["biaojie", "wangayi"],
+    "text": "没做点副业吗？",
+    "answers": {
+      "taiji": "今晚先兼职吃饭，这道菜值得加班。",
+      "counter": "休息也可以是正经安排吧？",
+      "crazy": "我给月亮做夜班客服，工资按月光结。",
+      "sincere": "是否做副业由我决定，暂时不加新安排。"
+    }
+  },
+  {
+    "id": "income-08",
+    "category": "收入",
+    "kind": "tough",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "ershen"],
+    "text": "比去年赚得多吗？",
+    "answers": {
+      "taiji": "去年账本先合上，今年这菜更香了。",
+      "counter": "过年一定要公布同比增长率吗？",
+      "crazy": "我的收入学会了隐身，增长全靠想象。",
+      "sincere": "我不在饭桌上比较收入，生活有自己的节奏。"
+    }
+  },
+  {
+    "id": "housing-01",
+    "category": "住房",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["sangu", "gufu"],
+    "text": "买房了吗？",
+    "answers": {
+      "taiji": "房子慢慢看，先看看这盘饺子。",
+      "counter": "没房本也不影响我有个好年吧？",
+      "crazy": "买了，在收藏夹里三室两厅。",
+      "sincere": "买房会按我的能力安排，不在饭桌上定。"
+    }
+  },
+  {
+    "id": "housing-02",
+    "category": "住房",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "wangayi"],
+    "text": "打算在哪儿买房？",
+    "answers": {
+      "taiji": "地图改天再看，先聊聊附近哪家菜好吃。",
+      "counter": "地方还没选好，可以先不宣布吗？",
+      "crazy": "选在云端，除了登机不方便，风景都好。",
+      "sincere": "住哪里我会自己考虑，没决定就先不聊。"
+    }
+  },
+  {
+    "id": "housing-03",
+    "category": "住房",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "gufu"],
+    "text": "首付攒够了吗？",
+    "answers": {
+      "taiji": "首付先不盘，咱盘盘这道菜怎么做。",
+      "counter": "买房预算可以留在我自己的账本里吧？",
+      "crazy": "攒够了首付两个字，金额还在加载。",
+      "sincere": "购房资金不公开，我不会超出能力做决定。"
+    }
+  },
+  {
+    "id": "housing-04",
+    "category": "住房",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["ershen", "sangu"],
+    "text": "怎么还在租房？",
+    "answers": {
+      "taiji": "住的事慢慢聊，这桌布置得真有年味。",
+      "counter": "住得合适，不也算安居吗？",
+      "crazy": "我家钥匙很讲礼貌，先租后熟。",
+      "sincere": "租房也可以过好日子，我按实际需要选择。"
+    }
+  },
+  {
+    "id": "housing-05",
+    "category": "住房",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "biaojie"],
+    "text": "房子有多大？",
+    "answers": {
+      "taiji": "面积先不量，咱看看合照怎么站。",
+      "counter": "家的舒适度一定要用平方米算吗？",
+      "crazy": "打开扫地机器人地图，已经算一方领主。",
+      "sincere": "住房细节不展开，住得合适对我更重要。"
+    }
+  },
+  {
+    "id": "housing-06",
+    "category": "住房",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "erjiu"],
+    "text": "房贷一个月多少？",
+    "answers": {
+      "taiji": "月供先暂停，年味得按顿续费。",
+      "counter": "团圆饭能跳过负债明细这一页吗？",
+      "crazy": "我跟房贷先网恋，至今没正式见面。",
+      "sincere": "有没有房贷、还多少，都属于我的财务隐私。"
+    }
+  },
+  {
+    "id": "housing-07",
+    "category": "住房",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["wangayi", "ershen"],
+    "text": "要不要换个大房子？",
+    "answers": {
+      "taiji": "房子先不升级，今晚先升级一下菜单。",
+      "counter": "够住就好，不必每年扩容吧？",
+      "crazy": "换好了，手机壁纸现在是全景豪宅。",
+      "sincere": "是否换房看实际需求，我不为面子增加开支。"
+    }
+  },
+  {
+    "id": "housing-08",
+    "category": "住房",
+    "kind": "tough",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "gufu"],
+    "text": "什么时候有自己的房？",
+    "answers": {
+      "taiji": "交房日期先不定，开饭时间可不能拖。",
+      "counter": "安定的生活，能不只看房本吗？",
+      "crazy": "等我的乐高小屋通过阳台验收。",
+      "sincere": "买不买、何时买都由我决定，不承诺日期。"
+    }
+  },
+  {
+    "id": "compare-01",
+    "category": "比较",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "dayi"],
+    "text": "同龄人都升职了，你呢？",
+    "answers": {
+      "taiji": "职级先别排，年菜倒可以排个前三。",
+      "counter": "不同的路，为什么要用同一张进度表？",
+      "crazy": "我升了，刚从沙发左护法升成右护法。",
+      "sincere": "我按自己的阶段走，不用同龄人的职级衡量。"
+    }
+  },
+  {
+    "id": "compare-02",
+    "category": "比较",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "wangayi"],
+    "text": "别人都买车了，你呢？",
+    "answers": {
+      "taiji": "车先停在话题外，聊聊回家沿途的风景。",
+      "counter": "出行方便，不比车标更重要吗？",
+      "crazy": "我有购物车，动力是满减，刹车是余额。",
+      "sincere": "买不买车看我的需要，不跟别人比配置。"
+    }
+  },
+  {
+    "id": "compare-03",
+    "category": "比较",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["sangu", "ershen"],
+    "text": "同学都买房了，你呢？",
+    "answers": {
+      "taiji": "房本先别排队，咱给饺子排个队。",
+      "counter": "祝福别人和不催我，可以同时做到吧？",
+      "crazy": "我先买了门垫，正在等房子主动配套。",
+      "sincere": "我祝福同学，也按自己的条件安排住房。"
+    }
+  },
+  {
+    "id": "compare-04",
+    "category": "比较",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "erjiu"],
+    "text": "别人进度那么快，你不急？",
+    "answers": {
+      "taiji": "先把进度条收起来，咱慢慢吃这顿饭。",
+      "counter": "人生不是统一发车的高铁吧？",
+      "crazy": "我开了步行导航，人生禁止自动超车。",
+      "sincere": "我也会有压力，但不会照搬别人的时间表。"
+    }
+  },
+  {
+    "id": "compare-05",
+    "category": "比较",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "ershen"],
+    "text": "怎么没别人会挣钱？",
+    "answers": {
+      "taiji": "挣钱榜先关了，咱聊个不用计算器的。",
+      "counter": "能聊我的生活，而不是别人的排名吗？",
+      "crazy": "我把发财技能点错了，点成了发呆。",
+      "sincere": "收入不是全部，请不要用挣钱多少给我排名。"
+    }
+  },
+  {
+    "id": "compare-06",
+    "category": "比较",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["sangu", "wangayi"],
+    "text": "你怎么不学学别人？",
+    "answers": {
+      "taiji": "先学个现成的，这道菜的做法教教我。",
+      "counter": "学优点可以，整个人照着复制合适吗？",
+      "crazy": "人生禁止复制粘贴，我还在手动输入。",
+      "sincere": "有用的经验我会参考，但不复制别人的生活。"
+    }
+  },
+  {
+    "id": "compare-07",
+    "category": "比较",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "biaojie"],
+    "text": "你怎么不如以前努力？",
+    "answers": {
+      "taiji": "旧版本先不复盘，咱看看今年的新照片。",
+      "counter": "努力也有安静的样子，不一定都看得见吧？",
+      "crazy": "我转成后台运行了，桌面只剩吃饭图标。",
+      "sincere": "我在调整节奏，请不要只凭表面判断努力。"
+    }
+  },
+  {
+    "id": "compare-08",
+    "category": "比较",
+    "kind": "tough",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "erjiu"],
+    "text": "什么时候让大家刮目相看？",
+    "answers": {
+      "taiji": "大事先不预告，今晚看我把餐桌收漂亮。",
+      "counter": "不惊艳全场，也可以过好自己的日子吧？",
+      "crazy": "等我考下筷子飞行执照，夹菜自带航线。",
+      "sincere": "我不以惊艳大家为目标，会认真过自己的生活。"
+    }
+  },
+  {
+    "id": "work-01",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "wangayi"],
+    "text": "现在做什么工作？",
+    "answers": {
+      "taiji": "工作的事稍后讲，先说说这桌谁掌勺。",
+      "counter": "我可以简单介绍，不必现场做答辩吧？",
+      "crazy": "任职生活有限公司，兼任闹钟谈判代表。",
+      "sincere": "我可以聊目前状态，单位和具体细节就不说了。"
+    }
+  },
+  {
+    "id": "work-02",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "ershen"],
+    "text": "工作稳定吗？",
+    "answers": {
+      "taiji": "稳定的先说一个，这顿饭我肯定不缺席。",
+      "counter": "稳定之外，适不适合我也值得考虑吧？",
+      "crazy": "稳定，我和待办清单已经长期合作了。",
+      "sincere": "我会评估自己的选择，稳定不是唯一标准。"
+    }
+  },
+  {
+    "id": "work-03",
+    "category": "工作",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "erjiu"],
+    "text": "怎么不去考个编？",
+    "answers": {
+      "taiji": "报考指南改天翻，今晚先翻翻老相册。",
+      "counter": "职业选择可以不只有一条路吗？",
+      "crazy": "我先考个饭桌编制，岗位是年年到岗。",
+      "sincere": "考不考编由我结合兴趣和条件决定，不催着选。"
+    }
+  },
+  {
+    "id": "work-04",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["sangu", "biaojie"],
+    "text": "怎么还不换工作？",
+    "answers": {
+      "taiji": "换工作的事先放放，咱换首过年的歌。",
+      "counter": "换与不换，都该先看适不适合我吧？",
+      "crazy": "我的简历还在选出场音乐，暂未登台。",
+      "sincere": "是否换工作我会认真判断，不为回应催促而换。"
+    }
+  },
+  {
+    "id": "work-05",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "ershen"],
+    "text": "天天都这么忙吗？",
+    "answers": {
+      "taiji": "今晚已切成吃饭模式，先聊点轻松的。",
+      "counter": "忙不忙能不能不等于有没有出息？",
+      "crazy": "我的日程表像俄罗斯方块，空一格就来一块。",
+      "sincere": "我会调整工作和休息，今天不细聊日程。"
+    }
+  },
+  {
+    "id": "work-06",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["gufu", "wangayi"],
+    "text": "这工作有前途吗？",
+    "answers": {
+      "taiji": "远处的路慢慢看，眼前这锅汤先照顾好。",
+      "counter": "前途能不能也包括做得有意思？",
+      "crazy": "前途正在导航，暂时还没下载离线地图。",
+      "sincere": "发展我会持续评估，不在今天给它下定论。"
+    }
+  },
+  {
+    "id": "work-07",
+    "category": "工作",
+    "kind": "fast",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "sangu"],
+    "text": "以后有什么打算？",
+    "answers": {
+      "taiji": "远期先保密，近期打算尝遍这一桌。",
+      "counter": "计划还在想，可以不交年夜饭版方案吗？",
+      "crazy": "先把人生草稿保存，防止明天忘带脑内硬盘。",
+      "sincere": "我在考虑下一步，没确定的计划先不公开。"
+    }
+  },
+  {
+    "id": "work-08",
+    "category": "工作",
+    "kind": "tough",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "gufu"],
+    "text": "能找个轻松的工作吗？",
+    "answers": {
+      "taiji": "轻松的先从今晚开始，咱不聊工作了。",
+      "counter": "工作怎么选，能让我自己权衡吗？",
+      "crazy": "想应聘抱枕试睡员，可惜我的抱枕不招人。",
+      "sincere": "我会照顾自己的状态，也会自己决定职业方向。"
+    }
+  },
+  {
+    "id": "single-01",
+    "category": "婚恋",
+    "kind": "normal",
+    "identities": ["single"],
+    "askers": ["sangu", "dayi", "wangayi"],
+    "text": "有对象了吗？",
+    "answers": {
+      "taiji": "感情先卖个关子，您尝尝这道新菜。",
+      "counter": "对象不是年货，不用每年检查库存吧？",
+      "crazy": "有，我和被窝关系稳定，闹钟一直反对。",
+      "sincere": "感情状态我暂时不分享，有想说的会主动说。"
+    }
+  },
+  {
+    "id": "single-02",
+    "category": "婚恋",
+    "kind": "normal",
+    "identities": ["single"],
+    "askers": ["ershen", "sangu"],
+    "text": "怎么还没谈恋爱？",
+    "answers": {
+      "taiji": "缘分慢慢等，热菜可不等人。",
+      "counter": "一个人过得好，也算好消息吧？",
+      "crazy": "我的缘分坐了慢车，站站停还爱看风景。",
+      "sincere": "我有自己的节奏，不会为了赶进度谈恋爱。"
+    }
+  },
+  {
+    "id": "single-03",
+    "category": "婚恋",
+    "kind": "normal",
+    "identities": ["single"],
+    "askers": ["dayi", "erjiu"],
+    "text": "什么时候结婚？",
+    "answers": {
+      "taiji": "婚期先不排，今晚的合照可以先排上。",
+      "counter": "结婚不是快递，能不催预计送达吗？",
+      "crazy": "等月老把我的订单从预售改成现货。",
+      "sincere": "结婚没有承诺日期，我只会在愿意且合适时决定。"
+    }
+  },
+  {
+    "id": "single-04",
+    "category": "婚恋",
+    "kind": "normal",
+    "identities": ["single"],
+    "askers": ["wangayi", "sangu"],
+    "text": "给你介绍一个好吗？",
+    "answers": {
+      "taiji": "介绍的事改天聊，先给我介绍这道拿手菜。",
+      "counter": "先问我愿不愿意，再给联系方式好吗？",
+      "crazy": "我的恋爱预约系统还在维护，先别取号。",
+      "sincere": "谢谢好意，我暂时不接受介绍，也请别替我约人。"
+    }
+  },
+  {
+    "id": "single-05",
+    "category": "婚恋",
+    "kind": "tough",
+    "identities": ["single"],
+    "askers": ["dayi", "ershen"],
+    "text": "是不是眼光太高了？",
+    "answers": {
+      "taiji": "择偶标准先收好，咱聊聊这盘菜的配方。",
+      "counter": "想要合适的关系，也算合理要求吧？",
+      "crazy": "我的择偶雷达很节能，目前只接收到饭香。",
+      "sincere": "我重视相处是否合适，不接受用挑剔概括我。"
+    }
+  },
+  {
+    "id": "single-06",
+    "category": "婚恋",
+    "kind": "fast",
+    "identities": ["single"],
+    "askers": ["sangu", "wangayi", "biaojie"],
+    "text": "要不先加个微信？",
+    "answers": {
+      "taiji": "手机先歇会儿，咱把这顿饭吃热乎。",
+      "counter": "加好友之前，先征得我同意可以吗？",
+      "crazy": "我的桃花验证码过期了，暂时登录不了。",
+      "sincere": "我现在不想加，请不要代我发送联系方式。"
+    }
+  },
+  {
+    "id": "single-07",
+    "category": "婚恋",
+    "kind": "tough",
+    "identities": ["single"],
+    "askers": ["dayi", "ershen"],
+    "text": "相亲怎么又没下文了？",
+    "answers": {
+      "taiji": "感情故事先不续，咱续一壶热茶。",
+      "counter": "没有继续，也可能是认真选择的结果吧？",
+      "crazy": "我这部恋爱连续剧经费有限，片头播了三年。",
+      "sincere": "相处经过是私事，没有继续也不需要饭桌复盘。"
+    }
+  },
+  {
+    "id": "married-01",
+    "category": "生育",
+    "kind": "normal",
+    "identities": ["married"],
+    "askers": ["sangu", "dayi"],
+    "text": "什么时候要孩子？",
+    "answers": {
+      "taiji": "未来慢慢聊，今晚先把团圆过好。",
+      "counter": "生育不是年终任务，可以不设期限吧？",
+      "crazy": "我们家的未来日历还在等宇宙发更新包。",
+      "sincere": "生育我们自己安排，今天不承诺时间。"
+    }
+  },
+  {
+    "id": "married-02",
+    "category": "生育",
+    "kind": "normal",
+    "identities": ["married"],
+    "askers": ["ershen", "wangayi"],
+    "text": "打算生几个？",
+    "answers": {
+      "taiji": "这个数先不算，咱数数年菜有几道。",
+      "counter": "家庭计划可以不在饭桌上投票吗？",
+      "crazy": "我连家里几盆绿萝都没盘明白，先暂停算术。",
+      "sincere": "是否生育、生几个由我们决定，不公开讨论。"
+    }
+  },
+  {
+    "id": "married-03",
+    "category": "生育",
+    "kind": "normal",
+    "identities": ["married"],
+    "askers": ["dayi", "sangu"],
+    "text": "怎么还不备孕？",
+    "answers": {
+      "taiji": "家里的安排先留着，咱先聊聊过年去哪玩。",
+      "counter": "关心可以有，但能不催我们的生育安排吗？",
+      "crazy": "我家的计划表是慢炖锅，不支持一键催熟。",
+      "sincere": "备孕是我们的私事，请不要追问或催促。"
+    }
+  },
+  {
+    "id": "married-04",
+    "category": "生育",
+    "kind": "normal",
+    "identities": ["married"],
+    "askers": ["ershen", "erjiu"],
+    "text": "为什么不早点生？",
+    "answers": {
+      "taiji": "家庭计划先不加单，咱给茶壶续点水。",
+      "counter": "这不是凑满减，能让我们自己决定吗？",
+      "crazy": "我的生活服务器先维护，不自动新增账号。",
+      "sincere": "是否生育由我们商量，请不要替我们安排。"
+    }
+  },
+  {
+    "id": "married-05",
+    "category": "生育",
+    "kind": "tough",
+    "identities": ["married"],
+    "askers": ["gufu", "dayi"],
+    "text": "生孩子的事谁做主？",
+    "answers": {
+      "taiji": "这项议题先休会，来尝尝这锅刚煮好的。",
+      "counter": "两个人共同决定，不用选个总指挥吧？",
+      "crazy": "我们家的家庭会议不设主席，只有零食席。",
+      "sincere": "这由我们两个人共同决定，不接受饭桌上的指派。"
+    }
+  },
+  {
+    "id": "married-06",
+    "category": "婚恋",
+    "kind": "fast",
+    "identities": ["married"],
+    "askers": ["sangu", "ershen"],
+    "text": "结婚后谁管钱？",
+    "answers": {
+      "taiji": "财务分工先保密，今晚我负责给茶添水。",
+      "counter": "过得有商有量，不比谁管钱更重要吗？",
+      "crazy": "钱归预算表管，我俩都是申请报销的。",
+      "sincere": "我们的财务分工会自己协商，具体不对外聊。"
+    }
+  },
+  {
+    "id": "married-07",
+    "category": "婚恋",
+    "kind": "tough",
+    "identities": ["married"],
+    "askers": ["dayi", "wangayi"],
+    "text": "两个人总不吵架吧？",
+    "answers": {
+      "taiji": "家常细节先收着，咱聊聊今年看过的喜剧。",
+      "counter": "关系里的小事，可以留给我们自己聊吗？",
+      "crazy": "我俩争遥控器靠石头剪刀布，目前打成联赛。",
+      "sincere": "相处细节我们自己沟通，不在饭桌上复盘。"
+    }
+  },
+  {
+    "id": "graduate-01",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["graduate"],
+    "askers": ["erjiu", "dayi"],
+    "text": "毕业找到工作了吗？",
+    "answers": {
+      "taiji": "求职进度稍后说，先聊聊毕业照拍得怎样。",
+      "counter": "毕业后的第一步，可以不按秒计时吧？",
+      "crazy": "我和录用通知正在捉迷藏，它藏得很专业。",
+      "sincere": "我在安排毕业后的生活，进展会选择合适时机说。"
+    }
+  },
+  {
+    "id": "graduate-02",
+    "category": "收入",
+    "kind": "normal",
+    "identities": ["graduate"],
+    "askers": ["gufu", "ershen"],
+    "text": "第一份工资多少？",
+    "answers": {
+      "taiji": "第一份工资先不报，先夸夸第一盘出锅的菜。",
+      "counter": "第一份工作的价值，不只是一行金额吧？",
+      "crazy": "工资像体验装，够我认识一下成年生活。",
+      "sincere": "工资数额是我的隐私，我不在这里公开。"
+    }
+  },
+  {
+    "id": "graduate-03",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["graduate"],
+    "askers": ["sangu", "wangayi"],
+    "text": "怎么不回家找工作？",
+    "answers": {
+      "taiji": "工作地点先不定，先定下饭后一起散步。",
+      "counter": "在哪里发展，能先看机会和我自己的意愿吗？",
+      "crazy": "我的人生导航还在选路线，没勾选强制返航。",
+      "sincere": "工作地点我会自己选择，离家远近不是唯一标准。"
+    }
+  },
+  {
+    "id": "graduate-04",
+    "category": "工作",
+    "kind": "normal",
+    "identities": ["graduate"],
+    "askers": ["biaojie", "erjiu"],
+    "text": "投了多少份简历？",
+    "answers": {
+      "taiji": "投递统计先下班，来聊聊最近看了什么电影。",
+      "counter": "找合适的机会，可以不靠数量打分吧？",
+      "crazy": "简历投出去像纸飞机，回信得等顺风。",
+      "sincere": "投递细节我自己跟进，今天不汇报数量。"
+    }
+  },
+  {
+    "id": "graduate-05",
+    "category": "考学",
+    "kind": "tough",
+    "identities": ["graduate"],
+    "askers": ["dayi", "gufu"],
+    "text": "大学毕业就不读了？",
+    "answers": {
+      "taiji": "下一本书慢慢选，先翻翻毕业相册。",
+      "counter": "继续学习，也不只有继续读学位这一种吧？",
+      "crazy": "我刚从学校毕业，又被生活录取为终身学生。",
+      "sincere": "是否继续读书我会自己判断，不为学历比较做选择。"
+    }
+  },
+  {
+    "id": "graduate-06",
+    "category": "工作",
+    "kind": "fast",
+    "identities": ["graduate"],
+    "askers": ["wangayi", "ershen"],
+    "text": "学的专业能干什么？",
+    "answers": {
+      "taiji": "专业改天慢慢讲，今天先研究这道菜的火候。",
+      "counter": "专业是起点，不一定是终点吧？",
+      "crazy": "先干一件大事，把毕业证从纸袋升级到相框。",
+      "sincere": "我会探索专业相关的机会，也保留转向的选择。"
+    }
+  },
+  {
+    "id": "graduate-07",
+    "category": "工作",
+    "kind": "tough",
+    "identities": ["graduate"],
+    "askers": ["erjiu", "gufu"],
+    "text": "实习能转正吗？",
+    "answers": {
+      "taiji": "转正消息先等等，今晚先正式开饭。",
+      "counter": "还没确定的结果，能不让我提前保证吗？",
+      "crazy": "我的工牌还在练习去掉实习两个字。",
+      "sincere": "结果没确定前我不承诺，也会准备其他选择。"
+    }
+  },
+  {
+    "id": "exam-01",
+    "category": "考学",
+    "kind": "normal",
+    "identities": ["exam"],
+    "askers": ["dayi", "erjiu"],
+    "text": "考得怎么样？",
+    "answers": {
+      "taiji": "考试先放个假，咱聊聊今年最开心的事。",
+      "counter": "今天可以先过年，不现场对答案吗？",
+      "crazy": "我和标准答案有时差，正在努力倒时差。",
+      "sincere": "考试情况我暂时不聊，想分享时会主动说。"
+    }
+  },
+  {
+    "id": "exam-02",
+    "category": "考学",
+    "kind": "normal",
+    "identities": ["exam"],
+    "askers": ["gufu", "wangayi"],
+    "text": "有把握考上吗？",
+    "answers": {
+      "taiji": "结果先留点悬念，这盘饺子我倒很有把握。",
+      "counter": "认真准备就好，不必提前保证结果吧？",
+      "crazy": "知识点还在集合，我负责举旗，答案负责迟到。",
+      "sincere": "我会认真准备，但不对无法保证的结果许诺。"
+    }
+  },
+  {
+    "id": "exam-03",
+    "category": "考学",
+    "kind": "normal",
+    "identities": ["exam"],
+    "askers": ["sangu", "ershen"],
+    "text": "每天学几个小时？",
+    "answers": {
+      "taiji": "计时器今晚放假，咱好好吃顿不赶时间的饭。",
+      "counter": "学得有效，比只看钟表更重要吧？",
+      "crazy": "我和书桌绑定套餐，离座还得提交出差申请。",
+      "sincere": "学习安排我自己管理，不在饭桌上报工时。"
+    }
+  },
+  {
+    "id": "exam-04",
+    "category": "考学",
+    "kind": "normal",
+    "identities": ["exam"],
+    "askers": ["dayi", "erjiu"],
+    "text": "今年一定能上岸吧？",
+    "answers": {
+      "taiji": "上岸日期先不写，今晚团圆已经按时抵达。",
+      "counter": "祝我顺利就好，可以不加一个一定吗？",
+      "crazy": "我的知识小船正在补帆，暂不提供到岸时刻表。",
+      "sincere": "我会尽力，但请不要把期待变成必须兑现的承诺。"
+    }
+  },
+  {
+    "id": "exam-05",
+    "category": "考学",
+    "kind": "tough",
+    "identities": ["exam"],
+    "askers": ["gufu", "ershen"],
+    "text": "没考上打算怎么办？",
+    "answers": {
+      "taiji": "备选方案明天再翻，今晚先翻个饺子。",
+      "counter": "先做好眼前的事，不提前给自己判结果好吗？",
+      "crazy": "人生不是单选题，我的橡皮还支持改路线。",
+      "sincere": "我会准备其他路径，具体方案不在这里展开。"
+    }
+  },
+  {
+    "id": "exam-06",
+    "category": "考学",
+    "kind": "fast",
+    "identities": ["exam"],
+    "askers": ["wangayi", "sangu"],
+    "text": "怎么还在准备考试？",
+    "answers": {
+      "taiji": "进度先按暂停，咱聊聊小时候怎么过年。",
+      "counter": "认真走自己的路，不需要和谁同天到站吧？",
+      "crazy": "我和知识点签了长租合同，退租得逐条验收。",
+      "sincere": "我在评估自己的投入和方向，不按催促决定去留。"
+    }
+  },
+  {
+    "id": "exam-07",
+    "category": "考学",
+    "kind": "tough",
+    "identities": ["exam"],
+    "askers": ["dayi", "biaojie"],
+    "text": "要不要换个考试试试？",
+    "answers": {
+      "taiji": "考试清单先合上，今晚先换个轻松的话题。",
+      "counter": "换方向之前，能让我先把自己的目标想清楚吗？",
+      "crazy": "我的考试地图还在加载，不支持随机传送。",
+      "sincere": "建议我会参考，是否换方向最终由我自己决定。"
+    }
+  },
+  {
+    "id": "warm-01",
+    "category": "暖心",
+    "kind": "warm",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["nainai"],
+    "text": "最近过得开心吗？",
+    "answers": {
+      "taiji": "先吃口饺子，再慢慢跟您说。",
+      "counter": "开心能不能也算今年的成绩？",
+      "crazy": "我的快乐电池正在饭桌充电，闻着菜香已满格。",
+      "sincere": "有开心也有烦恼，今晚想陪您慢慢聊聊。"
+    }
+  },
+  {
+    "id": "warm-02",
+    "category": "暖心",
+    "kind": "warm",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["nainai"],
+    "text": "累了就回家吃饭好吗？",
+    "answers": {
+      "taiji": "那先给这顿饭多留一点聊天时间。",
+      "counter": "回家可以只当家人，不交成绩单吧？",
+      "crazy": "收到，我把家设成默认充电站，导航永不删除。",
+      "sincere": "好，我也想多陪陪您，饭后一起坐一会儿。"
+    }
+  },
+  {
+    "id": "warm-03",
+    "category": "暖心",
+    "kind": "warm",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["nainai"],
+    "text": "还记得小时候爱吃什么吗？",
+    "answers": {
+      "taiji": "咱边吃边猜，看谁先认出当年的味道。",
+      "counter": "这道拿手菜，能不能顺便教会我？",
+      "crazy": "记得，我的味觉硬盘把这份菜单设成了只读。",
+      "sincere": "记得您做的味道，今天想陪您一起再尝尝。"
+    }
+  },
+  {
+    "id": "warm-04",
+    "category": "暖心",
+    "kind": "warm",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["nainai"],
+    "text": "明年还一起吃年夜饭吗？",
+    "answers": {
+      "taiji": "明年的菜单慢慢想，今晚先拍张合照。",
+      "counter": "除了过年，平时也能约一顿团圆饭吧？",
+      "crazy": "我给团圆饭办了年卡，附赠全年想念套餐。",
+      "sincere": "我想继续陪您过年，平时也多找时间一起吃饭。"
+    }
+  },
+  {
+    "id": "boss-single",
+    "category": "婚恋",
+    "kind": "boss",
+    "identities": ["single"],
+    "askers": ["table"],
+    "text": "对象、婚期，今天都说说？",
+    "answers": {
+      "taiji": "这题先小火慢炖，饺子得趁热。",
+      "counter": "团圆饭可以不打包催婚套餐吗？",
+      "crazy": "我的月老客服还在排队，桌上再问也插不了号。",
+      "sincere": "感情隐私不公开，婚期不承诺，请别轮流催问。"
+    }
+  },
+  {
+    "id": "boss-married",
+    "category": "生育",
+    "kind": "boss",
+    "identities": ["married"],
+    "askers": ["table"],
+    "text": "孩子、房子，何时安排好？",
+    "answers": {
+      "taiji": "家庭大事先不排期，年菜上桌倒要趁热。",
+      "counter": "我们的生活计划，可以不由整桌人审批吧？",
+      "crazy": "我家的项目经理是日历，今天它只批开饭。",
+      "sincere": "生育和住房由我们自己安排，不接受集体催办。"
+    }
+  },
+  {
+    "id": "boss-graduate",
+    "category": "工作",
+    "kind": "boss",
+    "identities": ["graduate"],
+    "askers": ["table"],
+    "text": "工作、收入，能一次说清吗？",
+    "answers": {
+      "taiji": "毕业汇报先延期，今晚先汇总哪道菜最好吃。",
+      "counter": "这是团圆饭，能不变成毕业答辩加财务审计吗？",
+      "crazy": "人生报告还在排版，目前目录只有先吃饭。",
+      "sincere": "求职进度会择时分享，收入不报，请别连续追问。"
+    }
+  },
+  {
+    "id": "boss-exam",
+    "category": "考学",
+    "kind": "boss",
+    "identities": ["exam"],
+    "askers": ["table"],
+    "text": "成绩、上岸，今年给个准话？",
+    "answers": {
+      "taiji": "考试议程先休息，今晚的主题是团圆。",
+      "counter": "认真准备的人，可以不在饭桌上签结果保证书吗？",
+      "crazy": "我的知识舰队正在造船，暂不承接全桌登岸预订。",
+      "sincere": "成绩我选择何时分享，结果不能保证，请停止催问。"
+    }
+  },
+  {
+    "id": "followup-01",
+    "category": "收入",
+    "kind": "followup",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "gufu"],
+    "text": "到底多少，给个数嘛？",
+    "answers": {
+      "taiji": "给个别的数吧，这盘饺子我数了三十个。",
+      "counter": "我已经说不公开了，能尊重这个答案吗？",
+      "crazy": "我的余额是薛定谔的零钱，不打开就当它很多。",
+      "sincere": "收入数字不会说，继续问也不会改变我的决定。"
+    }
+  },
+  {
+    "id": "followup-02",
+    "category": "住房",
+    "kind": "followup",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["sangu", "ershen"],
+    "text": "别绕了，买还是不买？",
+    "answers": {
+      "taiji": "这题先不二选一，今晚先选红烧还是清蒸。",
+      "counter": "还没决定也是答案，不必逼我当场二选一吧？",
+      "crazy": "我先买个暂停键，给人生遥控器配齐功能。",
+      "sincere": "我现在不作承诺，住房决定会按自己的情况来。"
+    }
+  },
+  {
+    "id": "followup-03",
+    "category": "比较",
+    "kind": "followup",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["dayi", "wangayi"],
+    "text": "大家都为你好，还不能问？",
+    "answers": {
+      "taiji": "心意我收到了，接下来咱收集点开心话题。",
+      "counter": "关心我，也可以包括尊重我不回答吧？",
+      "crazy": "我的人生客服今天休假，自动回复只有新年快乐。",
+      "sincere": "我理解关心，也有权不回答，请不要继续比较。"
+    }
+  },
+  {
+    "id": "followup-04",
+    "category": "工作",
+    "kind": "followup",
+    "identities": ["single", "married", "graduate", "exam"],
+    "askers": ["erjiu", "dayi"],
+    "text": "先别夹菜，打算说清楚？",
+    "answers": {
+      "taiji": "菜先夹上，工作计划明天再开文档。",
+      "counter": "我说了今天不聊，可以让这个话题结束吗？",
+      "crazy": "我的人生幻灯片卡在第一页，上面写着开饭。",
+      "sincere": "计划没确定前不会汇报，今天就聊到这里。"
+    }
+  }
+]

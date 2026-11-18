@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/qita/kuangchan/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "65166d7d661e21e1e493",
+  "status": "ok",
+  "parents": [
+    "f4d935870815c55a68d6"
+  ],
+  "bytes": 6059,
+  "sha256": "1d4f9b2f153678797a23211ddb312fb2733ae79278b36741e761cfc7fbe9a9b7",
+  "fetchedAt": "2026-11-18T08:20:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/qita/kuangchan/1.jpg",
+  "path": "assets/65166d7d661e21e1e493.jpg"
+}

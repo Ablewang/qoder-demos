@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_384.jpg",
+  "id": "2772c698d43b15dd2fdf",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·断岩斩<em>（升仙）</em>",
+  "bytes": 1675,
+  "sha256": "8e68b69ea3a76cf6f1caaadfb3fa5554f00e6c678c790b0637196b2182c7ceb5",
+  "fetchedAt": "2026-11-18T08:34:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_384.jpg",
+  "path": "assets/2772c698d43b15dd2fdf.jpg"
+}

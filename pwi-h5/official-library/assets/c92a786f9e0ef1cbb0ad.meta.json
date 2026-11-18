@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/yaoshou.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c92a786f9e0ef1cbb0ad",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "bytes": 57700,
+  "sha256": "fb3db37681807b7377dbb42922f82de08e2b196d73bdfcd8b5fca1e564b37ca9",
+  "fetchedAt": "2026-11-18T08:18:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/yaoshou.jpg",
+  "path": "assets/c92a786f9e0ef1cbb0ad.jpg"
+}

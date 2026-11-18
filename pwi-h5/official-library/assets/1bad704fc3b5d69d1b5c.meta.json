@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/first/js/lrAuto.js",
+  "alt": "",
+  "kind": "script",
+  "id": "1bad704fc3b5d69d1b5c",
+  "status": "ok",
+  "parents": [
+    "b1df3b2a90e9f89b6a4f"
+  ],
+  "bytes": 1821,
+  "sha256": "fc9fb517bcf1799d51771401b9bebc00ae3ea02ee0e937b2dd20fc98d809678c",
+  "fetchedAt": "2026-11-18T08:24:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/first/js/lrAuto.js",
+  "path": "assets/1bad704fc3b5d69d1b5c.js"
+}

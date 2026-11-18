@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1382.jpg",
+  "id": "a4868a703b22a7a4ab6e",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "alt": "云生雾长",
+  "bytes": 4279,
+  "sha256": "0f4b90f6308027d5fc86f41de206185d2d57852d5adb911acfd54e5d18f52093",
+  "fetchedAt": "2026-11-18T08:36:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1382.jpg",
+  "path": "assets/a4868a703b22a7a4ab6e.jpg"
+}

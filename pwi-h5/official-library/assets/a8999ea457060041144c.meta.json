@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_104.jpg",
+  "id": "a8999ea457060041144c",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "千斤锤",
+  "bytes": 1469,
+  "sha256": "682c096c1bec5828c141c32578695b6768a0658f2f5ab344b1d21becd9d01931",
+  "fetchedAt": "2026-11-18T08:35:24+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_104.jpg",
+  "path": "assets/a8999ea457060041144c.jpg"
+}

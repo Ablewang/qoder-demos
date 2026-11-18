@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/vancl/images/lunbo02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "bc058da84ba6982a6efa",
+  "status": "ok",
+  "parents": [
+    "564258e6117f453e2dc1"
+  ],
+  "bytes": 43801,
+  "sha256": "859b1c10e003e46b4d1aaa8c5d3950c8cf6a074958df63cbe312490ae2e51cec",
+  "fetchedAt": "2026-11-18T08:27:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/vancl/images/lunbo02.jpg",
+  "path": "assets/bc058da84ba6982a6efa.jpg"
+}

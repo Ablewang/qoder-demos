@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_764.jpg",
+  "id": "98c0f8dd627458f987fa",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·飞花遁影<em>（入魔）</em>",
+  "bytes": 1420,
+  "sha256": "06f846f4b11593ccb19449af54cf341ff8bf3c624bb38be09b050875e08ca5ca",
+  "fetchedAt": "2026-11-18T08:35:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_764.jpg",
+  "path": "assets/98c0f8dd627458f987fa.jpg"
+}

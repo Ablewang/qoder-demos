@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/nav3b.jpg",
+  "id": "2df067fa55a74484beb6",
+  "status": "ok",
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79",
+    "3136cd49a436d43035e6",
+    "69753a1e89037ce89a9e",
+    "661ea43ec21004c38c81",
+    "e9e69bb61aec017b44a8",
+    "8716ef0ffd9713a2e50d",
+    "bb8d8f83beaa947e8748",
+    "78cd277893465d3b5c99"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201007/maoxian/style/master.css",
+  "bytes": 10632,
+  "sha256": "3505b9582eae7f3b06d12195e853cbb65ce85673a013e6f12233bbb06a705932",
+  "fetchedAt": "2026-11-18T08:37:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/maoxian/images/nav3b.jpg",
+  "path": "assets/2df067fa55a74484beb6.jpg"
+}

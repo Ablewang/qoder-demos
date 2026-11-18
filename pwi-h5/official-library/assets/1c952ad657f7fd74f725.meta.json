@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/js/imgzoom.js",
+  "alt": "",
+  "kind": "script",
+  "id": "1c952ad657f7fd74f725",
+  "status": "ok",
+  "parents": [
+    "eab551e03b8fd10609a9",
+    "ce036e5012d6285a44f3",
+    "8aa1da03402225531ee3"
+  ],
+  "bytes": 3161,
+  "sha256": "c64687c2191c8409eb871bf71d762ace0681a8503302ce49e07b33cec7ea5de9",
+  "fetchedAt": "2026-11-18T08:17:54+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201104/xiuld/js/imgzoom.js",
+  "path": "assets/1c952ad657f7fd74f725.js"
+}

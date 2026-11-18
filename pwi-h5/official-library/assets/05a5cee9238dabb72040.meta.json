@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_555.jpg",
+  "id": "05a5cee9238dabb72040",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·海纳百川<em>（入魔）</em>",
+  "bytes": 1552,
+  "sha256": "9be1caaa5cb017990cfee932cfa2304bb7ccd6ba55d59fa7616c32125176e5f6",
+  "fetchedAt": "2026-11-18T08:35:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_555.jpg",
+  "path": "assets/05a5cee9238dabb72040.jpg"
+}

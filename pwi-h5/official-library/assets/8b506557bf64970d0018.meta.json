@@ -1,0 +1,30 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "8b506557bf64970d0018",
+  "status": "ok",
+  "parents": [
+    "3e844d7982ff7ea45bd4",
+    "64afb5b5f8d4e795b812",
+    "8015afdd3e67ec5d604d",
+    "9d452222090849e9f957",
+    "5cb139e84a2958af390a",
+    "a93b688ecdd34ebb3e45",
+    "aaa383067502c794c1ce",
+    "e3708d65cda48d6dca71",
+    "c7af4e8a8e3e7178c636",
+    "56efe8135221e06210bd",
+    "70dffced80c07759aa48",
+    "da31792f8d7ba28f361d",
+    "6c28db258c91cc29014d",
+    "dc35782b075005c68fbc",
+    "b7d74aaf0682f417291c",
+    "4b26ae1193398abd6a1e"
+  ],
+  "bytes": 1542,
+  "sha256": "7c3ed9c7b25ce5e4f8c5e60a0a8c336901c5b36e825cb785823266a842884a7d",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/8b506557bf64970d0018.jpg"
+}

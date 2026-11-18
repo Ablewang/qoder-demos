@@ -1,0 +1,69 @@
+﻿body,td,th {
+	font-size: 14px;
+	line-height: 23px;
+}
+a {
+	text-decoration:none
+}
+.font1 {
+	font-size: 18px;
+	color: #FF7200;
+}
+.hei14 {
+	font-size: 14px;
+}
+
+
+body {
+	margin: 0px;
+}
+
+#main{
+	width: 1004px;
+	margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#top{
+	background-image: url(top.jpg);
+	height: 215px;
+	width: 1004px;
+}
+
+#banner{
+	height: 53px;
+	width: 100%;
+	clear:both;
+}
+
+#left{
+	background-image: url(left.gif);
+	float: left;
+	height: 459px;
+	width: 53px;
+}
+
+#center{
+	float: left;
+	width: 898px;
+	background-image: url(bg01.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+#right{
+	background-image: url(right.gif);
+	float: right;
+	height: 459px;
+	width: 53px;
+}
+
+#foot{
+	background-image: url(footbg.gif);
+	height: 102px;
+	width: 1004px;
+	clear: both;
+	text-align: center;
+	padding-top: 30px;
+}

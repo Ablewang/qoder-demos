@@ -1,0 +1,15 @@
+{
+  "url": "https://shenmo.games.wanmei.com/images/zoom_btn.gif",
+  "id": "254a6ffc8cf482fb383b",
+  "status": "failed",
+  "parents": [
+    "5e513a9f8dae2123c7e1",
+    "387c1b2fe64d4bf064f9",
+    "46dfb81c8122719c4f2f",
+    "703a592c5beb38fdb2dd"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "http://shenmo.wanmei.com/style/jqUI.css",
+  "httpStatus": 404,
+  "error": "HTTP Error 404: Not Found"
+}

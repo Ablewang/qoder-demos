@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_418.jpg",
+  "id": "9c17d0113b90413fd61e",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·剑气纵横<em>（升仙）</em>",
+  "bytes": 1626,
+  "sha256": "07da3950bea3370975fe3a2d2df0018fd4412cfe4581441988fdea32200f51f5",
+  "fetchedAt": "2026-11-18T08:34:22+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_418.jpg",
+  "path": "assets/9c17d0113b90413fd61e.jpg"
+}

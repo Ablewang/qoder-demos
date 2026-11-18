@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1724.jpg",
+  "id": "5a7e4082fd2052e75df9",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "alt": "自然障壁",
+  "bytes": 4582,
+  "sha256": "3e6cb89388ed205991c85c894c4d86579a0ec1ef8d79e15323622f27f0d9e4d1",
+  "fetchedAt": "2026-11-18T08:36:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1724.jpg",
+  "path": "assets/5a7e4082fd2052e75df9.jpg"
+}

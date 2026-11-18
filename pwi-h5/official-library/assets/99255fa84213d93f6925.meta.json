@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/qita/xianhua/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "99255fa84213d93f6925",
+  "status": "ok",
+  "parents": [
+    "bd6d511ac98818d351ca"
+  ],
+  "bytes": 6058,
+  "sha256": "f329bce31ea497a07b48a1623db6207f7d252d6b4840d21b1155492f4d83e267",
+  "fetchedAt": "2026-11-18T08:20:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/qita/xianhua/1.jpg",
+  "path": "assets/99255fa84213d93f6925.jpg"
+}

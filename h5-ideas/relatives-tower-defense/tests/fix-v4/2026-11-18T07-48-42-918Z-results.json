@@ -1,0 +1,809 @@
+{
+  "run": "2026-11-18T07-48-42-918Z",
+  "environment": "Local Chrome via Playwright, real keyboard events, real RAF clock and DOM clicks",
+  "checks": [
+    "320: rules + pause dialogs trap focus (Tab/Shift+Tab ×9), background inert+aria-hidden, Esc/close return focus to trigger, pause freezes time",
+    "390: rules + pause dialogs trap focus (Tab/Shift+Tab ×9), background inert+aria-hidden, Esc/close return focus to trigger, pause freezes time",
+    "1280: rules + pause dialogs trap focus (Tab/Shift+Tab ×9), background inert+aria-hidden, Esc/close return focus to trigger, pause freezes time",
+    "320 (320x740): 「四张牌怎么用」 shows 展开/收起 paper tag + hand-drawn arrow that flips; keyboard Enter toggles; expanded rules scroll inside dialog (scrolled to end, title sticky); 回桌继续/重开/离席 stay inside dialog, in viewport, clickable, ≥44px",
+    "390 (390x844): 「四张牌怎么用」 shows 展开/收起 paper tag + hand-drawn arrow that flips; keyboard Enter toggles; expanded rules scroll inside dialog; 回桌继续/重开/离席 stay inside dialog, in viewport, clickable, ≥44px",
+    "1280 (1280x900): 「四张牌怎么用」 shows 展开/收起 paper tag + hand-drawn arrow that flips; keyboard Enter toggles; expanded rules scroll inside dialog; 回桌继续/重开/离席 stay inside dialog, in viewport, clickable, ≥44px",
+    "320x568 (320x568): 「四张牌怎么用」 shows 展开/收起 paper tag + hand-drawn arrow that flips; keyboard Enter toggles; expanded rules scroll inside dialog (scrolled to end, title sticky); 回桌继续/重开/离席 stay inside dialog, in viewport, clickable, ≥44px",
+    "320-text130 (320x740): 「四张牌怎么用」 shows 展开/收起 paper tag + hand-drawn arrow that flips; keyboard Enter toggles; expanded rules scroll inside dialog (scrolled to end, title sticky); 回桌继续/重开/离席 stay inside dialog, in viewport, clickable, ≥44px"
+  ],
+  "focus": [
+    {
+      "size": "320",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    },
+    {
+      "size": "390",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    },
+    {
+      "size": "1280",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    }
+  ],
+  "pauseFold": [
+    {
+      "size": "320",
+      "viewport": "320x740",
+      "collapsed": {
+        "open": false,
+        "word": "展开",
+        "arrow": "none",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 44,
+          "clientHeight": 44,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "收起",
+        "arrow": "matrix(-1, 0, 0, -1, 0, 0)",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 489,
+          "clientHeight": 335,
+          "scrollable": true
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrolledToEnd": {
+        "lastParagraphVisible": true,
+        "summaryStuck": true
+      },
+      "cycle": {
+        "forward": [
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume"
+        ],
+        "backward": [
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY"
+        ]
+      }
+    },
+    {
+      "size": "390",
+      "viewport": "390x844",
+      "collapsed": {
+        "open": false,
+        "word": "展开",
+        "arrow": "none",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 44,
+          "clientHeight": 44,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "收起",
+        "arrow": "matrix(-1, 0, 0, -1, 0, 0)",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 423,
+          "clientHeight": 423,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrolledToEnd": null,
+      "cycle": {
+        "forward": [
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume"
+        ],
+        "backward": [
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY"
+        ]
+      }
+    },
+    {
+      "size": "1280",
+      "viewport": "1280x900",
+      "collapsed": {
+        "open": false,
+        "word": "展开",
+        "arrow": "none",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 44,
+          "clientHeight": 44,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "收起",
+        "arrow": "matrix(-1, 0, 0, -1, 0, 0)",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 423,
+          "clientHeight": 423,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrolledToEnd": null,
+      "cycle": {
+        "forward": [
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume"
+        ],
+        "backward": [
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY"
+        ]
+      }
+    },
+    {
+      "size": "320x568",
+      "viewport": "320x568",
+      "collapsed": {
+        "open": false,
+        "word": "展开",
+        "arrow": "none",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 44,
+          "clientHeight": 44,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "收起",
+        "arrow": "matrix(-1, 0, 0, -1, 0, 0)",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 489,
+          "clientHeight": 163,
+          "scrollable": true
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrolledToEnd": {
+        "lastParagraphVisible": true,
+        "summaryStuck": true
+      },
+      "cycle": {
+        "forward": [
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume"
+        ],
+        "backward": [
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY"
+        ]
+      }
+    },
+    {
+      "size": "320-text130",
+      "viewport": "320x740",
+      "collapsed": {
+        "open": false,
+        "word": "展开",
+        "arrow": "none",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 44,
+          "clientHeight": 44,
+          "scrollable": false
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "收起",
+        "arrow": "matrix(-1, 0, 0, -1, 0, 0)",
+        "tagVisible": true,
+        "summaryHeight": 44,
+        "listStyle": "none",
+        "boxScrolls": false,
+        "detailsScroll": {
+          "scrollHeight": 709,
+          "clientHeight": 275,
+          "scrollable": true
+        },
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "insideBox": true,
+            "inViewport": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrolledToEnd": {
+        "lastParagraphVisible": true,
+        "summaryStuck": true
+      },
+      "cycle": {
+        "forward": [
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume"
+        ],
+        "backward": [
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY"
+        ]
+      }
+    }
+  ],
+  "posterFlow": [],
+  "wrapAudit": {
+    "320": {
+      "states": [
+        "home",
+        "rules",
+        "game-said-cooldown",
+        "pause-collapsed",
+        "pause-expanded"
+      ],
+      "issues": [
+        {
+          "state": "home",
+          "kind": "orphan",
+          "cls": "SMALL",
+          "lines": [
+            "对象这题，年年必",
+            "考"
+          ]
+        },
+        {
+          "state": "home",
+          "kind": "orphan",
+          "cls": "SMALL",
+          "lines": [
+            "人生刚开席，慢慢",
+            "来"
+          ]
+        },
+        {
+          "state": "home",
+          "kind": "orphan",
+          "cls": "SMALL",
+          "lines": [
+            "等成绩，也要吃热",
+            "饭"
+          ]
+        }
+      ]
+    },
+    "390": {
+      "states": [
+        "home",
+        "rules",
+        "game-said-cooldown",
+        "pause-collapsed",
+        "pause-expanded"
+      ],
+      "issues": []
+    },
+    "1280": {
+      "states": [
+        "home",
+        "rules",
+        "game-said-cooldown",
+        "pause-collapsed",
+        "pause-expanded"
+      ],
+      "issues": []
+    },
+    "320x568": {
+      "states": [
+        "game-said-cooldown",
+        "pause-collapsed",
+        "pause-expanded"
+      ],
+      "issues": []
+    },
+    "320-text130": {
+      "states": [
+        "game-said-cooldown",
+        "pause-collapsed",
+        "pause-expanded"
+      ],
+      "issues": []
+    },
+    "320x568-text130": {
+      "states": [
+        "game-said-cooldown",
+        "pause-collapsed"
+      ],
+      "issues": []
+    }
+  },
+  "zeroCards": null,
+  "screenshots": [
+    "2026-11-18T07-48-42-918Z-320-game-said.png",
+    "2026-11-18T07-48-42-918Z-320-pause-collapsed.png",
+    "2026-11-18T07-48-42-918Z-320-pause-expanded.png",
+    "2026-11-18T07-48-42-918Z-320-pause-expanded-scrolled.png",
+    "2026-11-18T07-48-42-918Z-390-game-said.png",
+    "2026-11-18T07-48-42-918Z-390-pause-collapsed.png",
+    "2026-11-18T07-48-42-918Z-390-pause-expanded.png",
+    "2026-11-18T07-48-42-918Z-1280-game-said.png",
+    "2026-11-18T07-48-42-918Z-1280-pause-collapsed.png",
+    "2026-11-18T07-48-42-918Z-1280-pause-expanded.png",
+    "2026-11-18T07-48-42-918Z-320x568-pause-collapsed.png",
+    "2026-11-18T07-48-42-918Z-320x568-pause-expanded.png",
+    "2026-11-18T07-48-42-918Z-320x568-pause-expanded-scrolled.png",
+    "2026-11-18T07-48-42-918Z-320-text130-game-said.png",
+    "2026-11-18T07-48-42-918Z-320-text130-pause-collapsed.png",
+    "2026-11-18T07-48-42-918Z-320-text130-pause-expanded.png",
+    "2026-11-18T07-48-42-918Z-320-text130-pause-expanded-scrolled.png",
+    "2026-11-18T07-48-42-918Z-320x568-text130-pause-collapsed.png"
+  ],
+  "errors": [],
+  "limits": [
+    "Poster failure is induced by stubbing HTMLCanvasElement.toDataURL in the page, simulating a browser canvas failure",
+    "Large text is emulated by scaling every rendered element font size 1.3x (similar to Android WebView text zoom), not OS/WeChat font settings",
+    "Wrap sweep reaches later waves by calling Game.tick() faster than real time; cards and rewards are still clicked through the DOM. Natural-clock evidence is the zero-card run only",
+    "No physical phone, WeChat, screen reader or listening test"
+  ],
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: 320x568-text130: whole dialog scrolls instead of the rules area\n    at pauseFold (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/fix-v4/check.mjs:195:3)\n    at async file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/fix-v4/check.mjs:365:3"
+}

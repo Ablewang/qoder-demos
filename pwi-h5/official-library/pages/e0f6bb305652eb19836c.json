@@ -1,0 +1,1295 @@
+{
+  "id": "e0f6bb305652eb19836c",
+  "url": "https://w2i.wanmei.com/djzb/zb/20091015/29896.shtml",
+  "title": "武器 - 拳套",
+  "category": "装备道具",
+  "section": "普通武器",
+  "depth": 1,
+  "parents": [
+    "e1fe6614443052284ef7",
+    "b107c028737ae8ee7b6d",
+    "59138861d3ccb56e4cf5",
+    "e0f6bb305652eb19836c",
+    "d15600c7e7503aa1f7ab",
+    "9c1ef01ee36759a5edb2",
+    "b61c999a769de8c62384",
+    "4f54f00fa04dd492f6e8",
+    "1c482d5c6674e7246a7b",
+    "8baeb5e5dddea159404b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "297715ce3b0e6648a6b875904a96e5d11ee7122f08fd4880b09a9175187a6a36",
+  "bytes": 74489,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/e0f6bb305652eb19836c.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "刀剑 | 长兵 | 斧锤 | 拳套 | 弓弩 | 法器 | 传说 | 创世 | 弹药 | 任务奖励 |\n名称\n图标\n类型\n需求人物等级\n需求职业\n需求力量点数\n需求敏捷点数\n需求体质点数\n需求灵力点数\n手虎刃\n利刃\n3\n－\n6\n7\n－\n－\n钢爪刃\n利刃\n10\n－\n13\n16\n－\n－\n袖里刃\n利刃\n18\n－\n25\n32\n－\n－\n银钩刃\n利刃\n28\n－\n45\n59\n－\n－\n暗影刃\n利刃\n38\n－\n60\n79\n－\n－\n封喉刃\n利刃\n48\n－\n75\n99\n－\n－\n夺魄刃\n利刃\n58\n－\n90\n119\n－\n－\n追魂刃\n利刃\n68\n－\n105\n139\n－\n－\n瞬杀刃\n利刃\n78\n－\n120\n159\n－\n－\n暴击刃\n利刃\n88\n－\n135\n179\n－\n－\n断肠\n利刃\n98\n－\n150\n199\n－\n－\n兽皮拳套\n铁拳\n1\n－\n5\n5\n－\n－\n粗铜拳套\n铁拳\n7\n－\n11\n12\n－\n－\n精铁拳套\n铁拳\n14\n－\n21\n24\n－\n－\n玄钢拳套\n铁拳\n23\n－\n40\n46\n－\n－\n灼热拳套\n铁拳\n33\n－\n56\n65\n－\n－\n裂岩拳套\n铁拳\n43\n－\n72\n84\n－\n－\n激流拳套\n铁拳\n53\n－\n88\n103\n－\n－\n炽烈拳套\n铁拳\n63\n－\n104\n122\n－\n－\n瞬击拳套\n铁拳\n73\n－\n120\n141\n－\n－\n贯征拳套\n铁拳\n83\n－\n136\n160\n－\n－\n魅影\n铁拳\n93\n－\n152\n179\n－\n－",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图标",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求人物等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求职业",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求力量点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求敏捷点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求体质点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求灵力点数",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "手虎刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钢爪刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "袖里刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "银钩刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "28",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗影刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "38",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "79",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "封喉刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "48",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "夺魄刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "58",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "90",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "119",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "追魂刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "105",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "139",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "瞬杀刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "78",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "120",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "159",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暴击刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "88",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "135",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "179",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "断肠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "98",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "199",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兽皮拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "粗铜拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "精铁拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄钢拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "46",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灼热拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "33",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "56",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裂岩拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "43",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "72",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "84",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "激流拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "53",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "88",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "103",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "炽烈拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "63",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "104",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "122",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "瞬击拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "73",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "120",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "141",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "贯征拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "83",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "136",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "160",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "魅影",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "93",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "152",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "179",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29859.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29873.shtml",
+      "label": "长兵",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29877.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29896.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29900.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29901.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29985.shtml",
+      "label": "传说",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29986.shtml",
+      "label": "创世",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29987.shtml",
+      "label": "弹药",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29990.shtml",
+      "label": "任务奖励",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image288.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image290.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image292.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image294.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image296.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image298.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image300.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image302.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image304.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image306.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image308.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image314.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image316.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image318.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image320.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image322.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image324.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image326.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image328.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image330.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image332.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_qt/image334.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=e1fe6614443052284ef7\">刀剑</a> | <a href=\"#page=b107c028737ae8ee7b6d\">长兵</a> | <a href=\"#page=59138861d3ccb56e4cf5\">斧锤</a> | <a href=\"#page=e0f6bb305652eb19836c\">拳套</a> | <a href=\"#page=d15600c7e7503aa1f7ab\">弓弩</a> | <a href=\"#page=9c1ef01ee36759a5edb2\">法器</a> | <a href=\"#page=b61c999a769de8c62384\">传说</a> | <a href=\"#page=4f54f00fa04dd492f6e8\">创世</a> | <a href=\"#page=1c482d5c6674e7246a7b\">弹药</a> | <a href=\"#page=8baeb5e5dddea159404b\">任务奖励</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>名称</strong></td>\r\n            <td><strong>图标</strong></td>\r\n            <td><strong>类型</strong></td>\r\n            <td><strong>需求人物等级</strong></td>\r\n            <td><strong>需求职业</strong></td>\r\n            <td><strong>需求力量点数</strong></td>\r\n            <td><strong>需求敏捷点数</strong></td>\r\n            <td><strong>需求体质点数</strong></td>\r\n            <td><strong>需求灵力点数</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>手虎刃</td>\r\n            <td><img src=\"assets/47e0be2fc713543130ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>3</td>\r\n            <td>－</td>\r\n            <td>6</td>\r\n            <td>7</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钢爪刃</td>\r\n            <td><img src=\"assets/046f12121d266f724ed7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>10</td>\r\n            <td>－</td>\r\n            <td>13</td>\r\n            <td>16</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>袖里刃</td>\r\n            <td><img src=\"assets/7883c5f634265680b10c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>18</td>\r\n            <td>－</td>\r\n            <td>25</td>\r\n            <td>32</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>银钩刃</td>\r\n            <td><img src=\"assets/adde3dc37f988d36f5a2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>28</td>\r\n            <td>－</td>\r\n            <td>45</td>\r\n            <td>59</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>暗影刃</td>\r\n            <td><img src=\"assets/c59b56c8171c0b5069b1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>38</td>\r\n            <td>－</td>\r\n            <td>60</td>\r\n            <td>79</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>封喉刃</td>\r\n            <td><img src=\"assets/43d9ec74b875ee4a4119.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>48</td>\r\n            <td>－</td>\r\n            <td>75</td>\r\n            <td>99</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>夺魄刃</td>\r\n            <td><img src=\"assets/00848da5d561754a1a1d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>58</td>\r\n            <td>－</td>\r\n            <td>90</td>\r\n            <td>119</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>追魂刃</td>\r\n            <td><img src=\"assets/69f7431c2914a6821841.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>68</td>\r\n            <td>－</td>\r\n            <td>105</td>\r\n            <td>139</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>瞬杀刃</td>\r\n            <td><img src=\"assets/a0eba7b0487626bbdc8d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>78</td>\r\n            <td>－</td>\r\n            <td>120</td>\r\n            <td>159</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>暴击刃</td>\r\n            <td><img src=\"assets/3fc4fde34fcabb03873a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>88</td>\r\n            <td>－</td>\r\n            <td>135</td>\r\n            <td>179</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>断肠</td>\r\n            <td><img src=\"assets/e9cf1a2d29645ec89ba0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>利刃</td>\r\n            <td>98</td>\r\n            <td>－</td>\r\n            <td>150</td>\r\n            <td>199</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>兽皮拳套</td>\r\n            <td><img src=\"assets/dc7848f55d9c828e701d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>1</td>\r\n            <td>－</td>\r\n            <td>5</td>\r\n            <td>5</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>粗铜拳套</td>\r\n            <td><img src=\"assets/10e12bebd1226e2e3ff6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>7</td>\r\n            <td>－</td>\r\n            <td>11</td>\r\n            <td>12</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>精铁拳套</td>\r\n            <td><img src=\"assets/16fce6406123e0c2f074.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>14</td>\r\n            <td>－</td>\r\n            <td>21</td>\r\n            <td>24</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>玄钢拳套</td>\r\n            <td><img src=\"assets/31db0f7316153e55d604.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>23</td>\r\n            <td>－</td>\r\n            <td>40</td>\r\n            <td>46</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>灼热拳套</td>\r\n            <td><img src=\"assets/6fb3d9e8e7d7f4da2cea.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>33</td>\r\n            <td>－</td>\r\n            <td>56</td>\r\n            <td>65</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裂岩拳套</td>\r\n            <td><img src=\"assets/0b27cd4d93e5a57b17ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>43</td>\r\n            <td>－</td>\r\n            <td>72</td>\r\n            <td>84</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>激流拳套</td>\r\n            <td><img src=\"assets/18032c0bbe6ea79c75b6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>53</td>\r\n            <td>－</td>\r\n            <td>88</td>\r\n            <td>103</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>炽烈拳套</td>\r\n            <td><img src=\"assets/5135eae4782b51b4bcb7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>63</td>\r\n            <td>－</td>\r\n            <td>104</td>\r\n            <td>122</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>瞬击拳套</td>\r\n            <td><img src=\"assets/a9faabaed3fdcfde67c3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>73</td>\r\n            <td>－</td>\r\n            <td>120</td>\r\n            <td>141</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>贯征拳套</td>\r\n            <td><img src=\"assets/23020c5110e29fdf7844.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>83</td>\r\n            <td>－</td>\r\n            <td>136</td>\r\n            <td>160</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>魅影</td>\r\n            <td><img src=\"assets/2b003ff7f353b0887afc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>铁拳</td>\r\n            <td>93</td>\r\n            <td>－</td>\r\n            <td>152</td>\r\n            <td>179</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/e0f6bb305652eb19836c.json",
+  "imageCount": 22,
+  "tableCount": 1,
+  "downloadPath": "downloads/e0f6bb305652eb19836c.js"
+}

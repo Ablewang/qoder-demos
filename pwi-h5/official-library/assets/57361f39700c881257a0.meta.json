@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_477.jpg",
+  "id": "57361f39700c881257a0",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·沙陷<em>（入魔）</em>",
+  "bytes": 1759,
+  "sha256": "1be6b5528e3a931e9082e3069a5867d6d2231742d77a65ba2a2d4753ce6c1768",
+  "fetchedAt": "2026-11-18T08:34:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_477.jpg",
+  "path": "assets/57361f39700c881257a0.jpg"
+}

@@ -1,0 +1,21 @@
+{
+  "url": "http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif",
+  "alt": "完美国际",
+  "kind": "img",
+  "id": "f0f8c20f2fe397b371f0",
+  "status": "failed",
+  "parents": [
+    "6dd68d90bfd81550bcac",
+    "1cb38395c2265ebc6d10",
+    "5202593b0629bc05bd75",
+    "c35df135ef3de7786271",
+    "79d3c47f3bfd01d2b597",
+    "d38176ddfc90610e4eba",
+    "47ec369fda69c04d5b2a",
+    "e83bb97385dd93465398",
+    "2a1bc820fce749204907",
+    "9dfac1e953f4ffe1a56e",
+    "c9bb0f8f3839e3c28e8c"
+  ],
+  "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+}

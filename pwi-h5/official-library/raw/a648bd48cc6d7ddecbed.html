@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords"
+        content="完美国际2,神启,十周年,十年,竞技场,精英赛,怀旧副本,五帝之都,五帝名都,四帝之都,白帝城,白帝之城,日不落之城,不落城,白帝,席尔瓦,亚历山大,古德希尔,岱卡法沙,西陆,中陆,南陆,北陆,东陆,玫瑰骑士团,符纹,诡异小镇,千年之战,紫玉山庄,曙光殿,载具,奥罗拉格斗场,玄铁武士,精钢斗士,青铜勇士,辉银英雄,白金战神,极光币,游仙玲珑局,庆生会,夫妻任务,大梦想,大世界,相逢若有十,玄幻网游,国产原创" />
+    <meta name="description" content="《完美国际2》年度版本“天工绘骨”来袭！捏脸升级、模型优化、帮派玩法换新，更有“怪物攻城”等诸多精彩玩法乘着夏日热浪火热袭来！" />
+    <link rel="Shortcut Icon" href="https://w2i.games.wanmei.com/favicon.ico" />
+    <link rel="bookmark" href="https://w2i.games.wanmei.com/favicon.ico" />
+    <title>《完美国际》官方网站</title>
+    <link rel="stylesheet" type="text/css" href="style/master.css" />
+</head>
+
+<body>
+    <div id="content">
+        <div class="section section1">
+            <div class="publicMain">
+                <h1 class="wm-public" logo="{name:'w2i',skin:2,top:10,left:510}">《完美国际》官方网站</h1>
+                <!-- <div class="time">2022年7月18日-2022年8月16日</div> -->
+                <div class="btnBox">
+                    <a target="_blank" href="https://w2i.wanmei.com/main.htm" class="btn-website">进入官网</a>
+                    <span>|</span>
+                    <a target="_blank" href="https://bbs.wanmei.com/forum.php?mod=forumdisplay&fid=113"
+                        class="btn-bbs">官方论坛</a>
+                </div>
+                <div class="loginBox">
+                    <div class="login">
+                        <div class="btn_inp"><a class="pub_btn inputMyinfo inp">填写信息</a></div>
+                        <div class="btn_show" style="display:none;"><a class="pub_btn inputMyinfo show">查看信息</a></div>
+                    </div>
+                    <div class="logout" style="display:none;">亲爱的<span class="userName"></span>，欢迎您，<a
+                            class="logoutUrl">[退出]</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="publicMain">
+                <div class="ruleBox">
+                    <p>1、5月22日-5月24日 12：00期间通过琳琅阁-千机匣获得“月·瑶台镜”时装，即可额外获得限量“羽芒”手办赠品一个。</p>
+                    <p>2、仅限通过琳琅阁-千机匣获得“月·瑶台镜”时装为有效获取，通过交易等其他方式获得的时装不计入获奖名单。</p>
+                    <p>3、每个账号至多获得一个手办赠品，如同一账号下获得多个“月·瑶台镜”时装，不会累计统计。</p>
+                    <p>4、获得赠品的玩家请在5月24日14：00-5月27日 23：59期间填写收件信息，过期未填写收件信息将视为自动放弃赠品。</p>
+                    <p>5、本手办为活动赠品，不支持退/换。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popFiex" id="subShow">
+        <div class="popCont pop2">
+            <a class="closeBtn publicClosePop"></a>
+            <div class="subMain">
+                <div class="sublist"><span class="subTitle tit1"></span><select name="" id="serverlist"></select></div>
+                <div class="sublist"><span class="subTitle tit3"></span><input type="text" placeholder="请输入..." name="" id="truename">
+                </div>
+                <div class="sublist"><span class="subTitle tit4"></span><input type="text" placeholder="请输入..." name="" id="phone">
+                </div>
+                <div class="sublist sublist2">
+                    <span class="subTitle tit5"></span><textarea maxlength="58" id="address" placeholder="请输入..."></textarea>
+                </div>
+                <div class="subCheck"><span></span>同意主办方收集以上信息用于邮寄奖品</div>
+                <div class="submit"><a class="pub_btn" id="uploadUserinfo">提交</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="popFiex" id="myShow">
+        <div class="popCont pop3">
+            <a class="closeBtn publicClosePop"></a>
+            <div class="subMain">
+                <div class="sublist"><span class="subTitle tit3"></span><strong class="truename2"></strong></div>
+                <div class="sublist"><span class="subTitle tit4"></span><strong class="phone2"></strong></div>
+                <div class="sublist sublist2"><span class="subTitle tit5"></span><strong class="address2"></strong>
+                </div>
+            </div>
+            <div class="buttonBox">
+                <a class="btn_enter publicClosePop"></a>
+            </div>
+        </div>
+    </div>
+    <div class="popFiex" id="msgShow">
+        <div class="popCont pop1">
+            <a class="closeBtn publicClosePop"></a>
+            <div class="msg" id="msg"></div>
+            <div class="buttonBox">
+                <a class="btn_enter publicClosePop"></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://static.games.wanmei.com/public/js/jq_183.js"></script>
+    <script type="text/javascript" src="https://static.games.wanmei.com/public/js/wm.js"></script>
+    <script type="text/javascript" src="https://static.games.wanmei.com/public/js/client_login.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

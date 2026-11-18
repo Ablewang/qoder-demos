@@ -1,0 +1,48 @@
+{
+  "id": "1cd7dd395eec0ccbe3aa",
+  "url": "https://w2i.wanmei.com/store/storelist/m35.htm",
+  "title": "《完美国际2012》官方网站——全新3D灾难巨制，12月创世启程！",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8088d2e8726a28b259e1e944fcdb284cb44513533d824c2df108f47f97b1fc73",
+  "bytes": 2502,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1cd7dd395eec0ccbe3aa.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "loading...\n狂风靴\n可在宠物管理员处将初始速度为9.0米/秒骑宠的速度升至10.0米/秒。\n30黄金\n疾风靴\n可在宠物管理员处将初始速度为8.0米/秒骑宠的速度升至9.0米/秒。\n30黄金",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/shop1102/qichong/shengji/1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/shop1102/qichong/shengji/2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/shop1102.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n\t\tloading...\r\n\t</div>\r\n\t<div>\r\n\t\t\r\n<div>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/7895db2e88ee66257a85.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>狂风靴</h4>\r\n\t\t\t<p>可在宠物管理员处将初始速度为9.0米/秒骑宠的速度升至10.0米/秒。</p>\r\n\t\t\t<p><b>30黄金</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/ecf1c8218800502dfe32.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>疾风靴</h4>\r\n\t\t\t<p>可在宠物管理员处将初始速度为8.0米/秒骑宠的速度升至9.0米/秒。</p>\r\n\t\t\t<p><b>30黄金</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n</div>\r\n\t</div>\r\n\t<div>\r\n\t\t<div></div>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/1cd7dd395eec0ccbe3aa.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/1cd7dd395eec0ccbe3aa.js"
+}

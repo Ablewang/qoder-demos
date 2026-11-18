@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/shouqi_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "3437ca5a1aedf41e3dfd",
+  "status": "ok",
+  "parents": [
+    "15a5a893b82b7841c9cf"
+  ],
+  "bytes": 3958,
+  "sha256": "0ec9a728b5faa7613f8b0eb38f4465aee603f265681e7d4714021954a6b979a2",
+  "fetchedAt": "2026-11-18T08:22:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/shouqi_button.jpg",
+  "path": "assets/3437ca5a1aedf41e3dfd.jpg"
+}

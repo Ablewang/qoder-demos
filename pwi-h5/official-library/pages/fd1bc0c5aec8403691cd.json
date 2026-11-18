@@ -1,0 +1,43 @@
+{
+  "id": "fd1bc0c5aec8403691cd",
+  "url": "https://w2i.wanmei.com/store/storelist/m46.htm",
+  "title": "《完美国际2012》官方网站——全新3D灾难巨制，12月创世启程！",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "673b7a4045a5454542c80df6d01db6c8b7c810a36ba57ae6d11c14e83ad2f5bb",
+  "bytes": 2265,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/fd1bc0c5aec8403691cd.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "loading...\n普通易容卷轴\n可以到各城易容师处更换已经设定好的容貌。成功更换容貌才消耗卷轴。\n5黄金",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/shop1102/qita/yirong/1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/shop1102.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n\t\tloading...\r\n\t</div>\r\n\t<div>\r\n\t\t\r\n<div>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/a78b3996c282053c94a1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>普通易容卷轴</h4>\r\n\t\t\t<p>可以到各城易容师处更换已经设定好的容貌。成功更换容貌才消耗卷轴。</p>\r\n\t\t\t<p><b>5黄金</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n</div>\r\n\r\n\t</div>\r\n\t<div>\r\n\t\t<div></div>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/fd1bc0c5aec8403691cd.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/fd1bc0c5aec8403691cd.js"
+}

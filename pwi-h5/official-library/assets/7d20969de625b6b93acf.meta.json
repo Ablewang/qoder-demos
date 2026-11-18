@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/jl_donwon_bg.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "7d20969de625b6b93acf",
+  "status": "ok",
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "bytes": 8144,
+  "sha256": "94cdb01ee2a59f0f67a8be9f8bb9534aac1fabdf0f98c332cca234bedea5443e",
+  "fetchedAt": "2026-11-18T08:18:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/jl_donwon_bg.jpg",
+  "path": "assets/7d20969de625b6b93acf.jpg"
+}

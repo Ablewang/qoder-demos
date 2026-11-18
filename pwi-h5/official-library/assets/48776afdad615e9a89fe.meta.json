@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130426/10021366942986758.jpg",
+  "alt": "图片: 图1：活动宣传图.jpg",
+  "kind": "img",
+  "id": "48776afdad615e9a89fe",
+  "status": "ok",
+  "parents": [
+    "348ffaf55e9f3ec408f5"
+  ],
+  "bytes": 53365,
+  "sha256": "0d0b98ab42d0941c90dd00dfe7e4a168bcd5a36028522ce167f95920839eee11",
+  "fetchedAt": "2026-11-18T08:26:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130426/10021366942986758.jpg",
+  "path": "assets/48776afdad615e9a89fe.jpg"
+}

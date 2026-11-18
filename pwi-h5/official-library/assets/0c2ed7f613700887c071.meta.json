@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_412.jpg",
+  "id": "0c2ed7f613700887c071",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·天火狂龙<em>（升仙）</em>",
+  "bytes": 1718,
+  "sha256": "5cc4759488ee92bbb4f5e83207d373c580fed9507d3c254e5a273424b001e243",
+  "fetchedAt": "2026-11-18T08:34:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_412.jpg",
+  "path": "assets/0c2ed7f613700887c071.jpg"
+}

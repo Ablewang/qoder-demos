@@ -1,0 +1,1433 @@
+{
+  "id": "1653f72c7a01bd381b97",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+  "title": "剑灵技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "c7af4e8a8e3e7178c636",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "19bd392d237c9d1ad83223db50e82789e0a4d97f45918b3cf1d02b1a3ffd2611",
+  "bytes": 94993,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1653f72c7a01bd381b97.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n剑灵技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n玄武剑诀\n刀剑系\n无\n灵虚\n祝福\n10\n13\n13,18,23,28,33,38,43,48,53,58\n该剑诀状态下，每次伤害都有几率对敌人造成“玄武剑眼”。【破风剑气】的攻击会激活该剑眼，造成伤害、定身和（破防）（破防效果还未确定）。\n三才剑咒\n刀剑系\n玄武剑诀\n和合\n祝福\n10\n19\n19,24,29,34,39,44,49,54,59,64\n剑咒附于武器之上，可以暂时提高该武器的属性。\n饮血剑诀\n刀剑系\n三才剑咒\n元婴\n祝福\n10\n29\n29,34,39,44,49,54,59,64,69,74\n该剑诀状态下，每次伤害都有几率对敌人造成“饮血剑眼”。【破风剑劲】的攻击会激活该剑眼，对目标造成伤害和昏迷。\n六合剑咒\n刀剑系\n饮血剑诀\n空冥\n祝福\n3\n39\n39,59,75\n剑咒附于武器之上，暂时提高自己及15米内队友的攻击等级。\n磐龙剑诀\n刀剑系\n六合剑咒\n履霜\n祝福\n10\n49\n49,53,57,61,65,69,73,77,81,85\n该剑诀状态下，每次伤害都有几率对敌人造成“磐龙剑眼”。【万象剑劲】的攻击会激活该剑眼，造成金系伤害。\n九宫剑咒\n刀剑系\n磐龙剑诀\n渡劫\n祝福\n3\n59\n59,74,86\n剑咒附于武器之上，暂时提高自己及15米内队友的防御等级。\n金刚剑印\n刀剑系\n无\n和合\n诅咒\n10\n24\n24,29,34,39,44,49,54,59,64,69\n使用金系或物理系技能攻击有此剑印的目标时，伤害效果加深。\n寒潮剑印\n刀剑系\n金刚剑印\n空冥\n诅咒\n10\n39\n39,43,47,51,55,59,63,67,71,75\n使用木系或水系技能攻击有此剑印的目标时，伤害效果加深。\n焚心剑印\n刀剑系\n寒潮剑印\n渡劫\n诅咒\n10\n59\n59,62,65,68,71,74,77,80,83,86\n使用火系或土系技能攻击有此剑印的目标时，伤害效果加深。\n碎石剑气\n刀剑系\n无\n筑基\n主动攻击\n10\n0\n0,5,10,15,20,25,30,35,40,45\n势大力沉的剑斩，对敌人造成大量物理伤害。\n破风剑气\n刀剑系\n碎石剑气\n灵虚\n主动攻击\n10\n9\n9,14,19,24,29,34,39,44,49,54\n势如破竹的剑气，对敌人造成大量的物理伤害。激活“玄武剑眼”时可以对敌人造成额外伤害及隐藏效果。\n流光剑气\n刀剑系\n破风剑气\n和合\n主动攻击\n10\n19\n19,24,29,34,39,44,49,54,59,64\n流光璀璨的剑气，对敌人造成大量物理伤害同时附加一定的金系伤害。\n玄铁剑意\n刀剑系\n流光剑气\n元婴\n主动攻击\n10\n29\n29,34,39,44,49,54,59,64,69,74\n融合了金铁之气的剑意，对目标周围造成大量物理伤害和金系伤害，同时降低目标的金系防御。\n虚空剑劲\n刀剑系\n流光剑气\n元婴\n主动攻击\n10\n29\n29,34,39,44,49,54,59,64,69,74\n撕裂虚空的剑气漩涡，对自身周围敌人造成大量的物理伤害。激活“饮血剑眼”时可以对敌人造成额外伤害及隐藏效果。\n熔心剑意\n刀剑系\n玄铁剑意\n空冥\n主动攻击\n10\n39\n39,43,47,51,55,59,63,67,71,75\n震慑心魂的剑意，对目标周围造成大量物理伤害和金系伤害，有几率对敌人造成定身效果。\n天罡剑劲\n刀剑系\n虚空剑劲\n空冥\n主动攻击\n10\n39\n39,43,47,51,55,59,63,67,71,75\n引发天罡之怒的剑劲，对自身周围的敌人造成巨大物理伤害。\n万象剑劲\n刀剑系\n天罡剑劲\n履霜\n主动攻击\n10\n49\n49,53,57,61,65,69,73,77,81,85\n剑光之下，天地皆为我残像，对自身周围的敌人造成大量物理伤害。激活“磐龙剑眼”时可以对敌人造成额外伤害及隐藏效果。\n八方剑影\n刀剑系\n熔心剑意\n渡劫\n祝福\n10\n59\n59,62,65,68,71,74,77,80,83,86\n剑影舞八方！在短时间内对周围目标造成巨大伤害！\n剑神无敌\n刀剑系\n万象剑劲\n渡劫\n-\n10\n59\n59,62,65,68,71,74,77,80,83,86\n每3秒消耗一定真气对周围目标造成大量物理伤害，直至真气耗尽。\n逍遥诀\n刀剑系\n无\n灵虚\n祝福\n10\n9\n9,14,19,24,29,34,39,44,49,54\n与“疾云步”齐名的身法，提高自身移动速度。\n剑心通明\n刀剑系\n逍遥诀\n和合\n祝福\n10\n19\n19,24,29,34,39,44,49,54,59,64\n人剑合一的大成境界，提高自身暴击伤害上限。（这个技能要改）\n琉璃金身\n刀剑系\n剑心通明\n元婴\n祝福\n10\n29\n29,34,39,44,49,54,59,64,69,74\n获得琉璃之光庇护，提高自身防御等级。\n御心剑\n刀剑系\n琉璃金身\n空冥\n瞬移\n10\n39\n39,43,47,51,55,59,63,67,71,75\n凝息化劲，动如飞剑。瞬间移动到目标所在位置，并将目标撞晕。\n身外化身\n刀剑系\n御心剑\n渡劫\n诅咒\n10\n59\n59,62,65,68,71,74,77,80,83,86\n灵魂的一次穿越，将自身负面状态转移给目标。\n刀剑精通\n刀剑系\n元婴\n被动\n10\n29\n29,34,39,44,49,54,59,64,69,74\n提升使用刀剑时的攻击力。\n真元爆发\n刀剑系\n无\n元婴\n祝福\n1\n29\n29\n短时间内提高从装备上获取的攻击力\n高级真元爆发\n刀剑系\n无\n渡劫\n祝福\n1\n59\n59\n短时间内极大提高从装备上获取的攻击力",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "剑灵技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄武剑诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13,18,23,28,33,38,43,48,53,58",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "该剑诀状态下，每次伤害都有几率对敌人造成“玄武剑眼”。【破风剑气】的攻击会激活该剑眼，造成伤害、定身和（破防）（破防效果还未确定）。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "三才剑咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "玄武剑诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19,24,29,34,39,44,49,54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑咒附于武器之上，可以暂时提高该武器的属性。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "饮血剑诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "三才剑咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "该剑诀状态下，每次伤害都有几率对敌人造成“饮血剑眼”。【破风剑劲】的攻击会激活该剑眼，对目标造成伤害和昏迷。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "六合剑咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "饮血剑诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,59,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑咒附于武器之上，暂时提高自己及15米内队友的攻击等级。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "磐龙剑诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "六合剑咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49,53,57,61,65,69,73,77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "该剑诀状态下，每次伤害都有几率对敌人造成“磐龙剑眼”。【万象剑劲】的攻击会激活该剑眼，造成金系伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "九宫剑咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "磐龙剑诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,74,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑咒附于武器之上，暂时提高自己及15米内队友的防御等级。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "金刚剑印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "诅咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,39,44,49,54,59,64,69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用金系或物理系技能攻击有此剑印的目标时，伤害效果加深。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "寒潮剑印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金刚剑印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "诅咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用木系或水系技能攻击有此剑印的目标时，伤害效果加深。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "焚心剑印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "寒潮剑印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "诅咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,62,65,68,71,74,77,80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用火系或土系技能攻击有此剑印的目标时，伤害效果加深。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碎石剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0,5,10,15,20,25,30,35,40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "势大力沉的剑斩，对敌人造成大量物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "破风剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎石剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9,14,19,24,29,34,39,44,49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "势如破竹的剑气，对敌人造成大量的物理伤害。激活“玄武剑眼”时可以对敌人造成额外伤害及隐藏效果。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "流光剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "破风剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19,24,29,34,39,44,49,54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "流光璀璨的剑气，对敌人造成大量物理伤害同时附加一定的金系伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄铁剑意",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "流光剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "融合了金铁之气的剑意，对目标周围造成大量物理伤害和金系伤害，同时降低目标的金系防御。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "虚空剑劲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "流光剑气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "撕裂虚空的剑气漩涡，对自身周围敌人造成大量的物理伤害。激活“饮血剑眼”时可以对敌人造成额外伤害及隐藏效果。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "熔心剑意",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "玄铁剑意",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "震慑心魂的剑意，对目标周围造成大量物理伤害和金系伤害，有几率对敌人造成定身效果。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天罡剑劲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "虚空剑劲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "引发天罡之怒的剑劲，对自身周围的敌人造成巨大物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "万象剑劲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天罡剑劲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49,53,57,61,65,69,73,77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑光之下，天地皆为我残像，对自身周围的敌人造成大量物理伤害。激活“磐龙剑眼”时可以对敌人造成额外伤害及隐藏效果。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "八方剑影",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "熔心剑意",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,62,65,68,71,74,77,80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑影舞八方！在短时间内对周围目标造成巨大伤害！",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "剑神无敌",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "万象剑劲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,62,65,68,71,74,77,80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "每3秒消耗一定真气对周围目标造成大量物理伤害，直至真气耗尽。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "逍遥诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9,14,19,24,29,34,39,44,49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "与“疾云步”齐名的身法，提高自身移动速度。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "剑心通明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "逍遥诀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19,24,29,34,39,44,49,54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "人剑合一的大成境界，提高自身暴击伤害上限。（这个技能要改）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "琉璃金身",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑心通明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "获得琉璃之光庇护，提高自身防御等级。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "御心剑",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "琉璃金身",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬移",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "凝息化劲，动如飞剑。瞬间移动到目标所在位置，并将目标撞晕。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "身外化身",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "御心剑",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "诅咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,62,65,68,71,74,77,80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵魂的一次穿越，将自身负面状态转移给目标。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "刀剑精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升使用刀剑时的攻击力。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "真元爆发",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "短时间内提高从装备上获取的攻击力",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级真元爆发",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑系",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "短时间内极大提高从装备上获取的攻击力",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>剑灵技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>玄武剑诀</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>13</div>\r\n            </td>\r\n            <td>\r\n            <div>13,18,23,28,33,38,43,48,53,58</div>\r\n            </td>\r\n            <td>\r\n            <div>该剑诀状态下，每次伤害都有几率对敌人造成“玄武剑眼”。【破风剑气】的攻击会激活该剑眼，造成伤害、定身和（破防）（破防效果还未确定）。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>三才剑咒</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>玄武剑诀</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>19,24,29,34,39,44,49,54,59,64</div>\r\n            </td>\r\n            <td>\r\n            <div>剑咒附于武器之上，可以暂时提高该武器的属性。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>饮血剑诀</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>三才剑咒</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>该剑诀状态下，每次伤害都有几率对敌人造成“饮血剑眼”。【破风剑劲】的攻击会激活该剑眼，对目标造成伤害和昏迷。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>六合剑咒</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>饮血剑诀</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,59,75</div>\r\n            </td>\r\n            <td>\r\n            <div>剑咒附于武器之上，暂时提高自己及15米内队友的攻击等级。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>磐龙剑诀</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>六合剑咒</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>49,53,57,61,65,69,73,77,81,85</div>\r\n            </td>\r\n            <td>\r\n            <div>该剑诀状态下，每次伤害都有几率对敌人造成“磐龙剑眼”。【万象剑劲】的攻击会激活该剑眼，造成金系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>九宫剑咒</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>磐龙剑诀</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,74,86</div>\r\n            </td>\r\n            <td>\r\n            <div>剑咒附于武器之上，暂时提高自己及15米内队友的防御等级。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>金刚剑印</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>诅咒</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>24</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,39,44,49,54,59,64,69</div>\r\n            </td>\r\n            <td>\r\n            <div>使用金系或物理系技能攻击有此剑印的目标时，伤害效果加深。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>寒潮剑印</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>金刚剑印</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>诅咒</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>使用木系或水系技能攻击有此剑印的目标时，伤害效果加深。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>焚心剑印</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>寒潮剑印</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>诅咒</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,62,65,68,71,74,77,80,83,86</div>\r\n            </td>\r\n            <td>\r\n            <div>使用火系或土系技能攻击有此剑印的目标时，伤害效果加深。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>碎石剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>0</div>\r\n            </td>\r\n            <td>\r\n            <div>0,5,10,15,20,25,30,35,40,45</div>\r\n            </td>\r\n            <td>\r\n            <div>势大力沉的剑斩，对敌人造成大量物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>破风剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>碎石剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>9,14,19,24,29,34,39,44,49,54</div>\r\n            </td>\r\n            <td>\r\n            <div>势如破竹的剑气，对敌人造成大量的物理伤害。激活“玄武剑眼”时可以对敌人造成额外伤害及隐藏效果。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>流光剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>破风剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>19,24,29,34,39,44,49,54,59,64</div>\r\n            </td>\r\n            <td>\r\n            <div>流光璀璨的剑气，对敌人造成大量物理伤害同时附加一定的金系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>玄铁剑意</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>流光剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>融合了金铁之气的剑意，对目标周围造成大量物理伤害和金系伤害，同时降低目标的金系防御。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>虚空剑劲</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>流光剑气</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>撕裂虚空的剑气漩涡，对自身周围敌人造成大量的物理伤害。激活“饮血剑眼”时可以对敌人造成额外伤害及隐藏效果。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>熔心剑意</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>玄铁剑意</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>震慑心魂的剑意，对目标周围造成大量物理伤害和金系伤害，有几率对敌人造成定身效果。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>天罡剑劲</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>虚空剑劲</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>引发天罡之怒的剑劲，对自身周围的敌人造成巨大物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>万象剑劲</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>天罡剑劲</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>49,53,57,61,65,69,73,77,81,85</div>\r\n            </td>\r\n            <td>\r\n            <div>剑光之下，天地皆为我残像，对自身周围的敌人造成大量物理伤害。激活“磐龙剑眼”时可以对敌人造成额外伤害及隐藏效果。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>八方剑影</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>熔心剑意</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,62,65,68,71,74,77,80,83,86</div>\r\n            </td>\r\n            <td>\r\n            <div>剑影舞八方！在短时间内对周围目标造成巨大伤害！</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>剑神无敌</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>万象剑劲</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>-</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,62,65,68,71,74,77,80,83,86</div>\r\n            </td>\r\n            <td>\r\n            <div>每3秒消耗一定真气对周围目标造成大量物理伤害，直至真气耗尽。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>逍遥诀</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>9,14,19,24,29,34,39,44,49,54</div>\r\n            </td>\r\n            <td>\r\n            <div>与“疾云步”齐名的身法，提高自身移动速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>剑心通明</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>逍遥诀</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>19,24,29,34,39,44,49,54,59,64</div>\r\n            </td>\r\n            <td>\r\n            <div>人剑合一的大成境界，提高自身暴击伤害上限。（这个技能要改）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>琉璃金身</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>剑心通明</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>获得琉璃之光庇护，提高自身防御等级。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>御心剑</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>琉璃金身</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>瞬移</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>凝息化劲，动如飞剑。瞬间移动到目标所在位置，并将目标撞晕。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>身外化身</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>御心剑</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>诅咒</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,62,65,68,71,74,77,80,83,86</div>\r\n            </td>\r\n            <td>\r\n            <div>灵魂的一次穿越，将自身负面状态转移给目标。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>刀剑精通</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>　\r\n            <div> </div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>提升使用刀剑时的攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>真元爆发</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>短时间内提高从装备上获取的攻击力</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>高级真元爆发</div>\r\n            </td>\r\n            <td>\r\n            <div>刀剑系</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>短时间内极大提高从装备上获取的攻击力</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/1653f72c7a01bd381b97.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/1653f72c7a01bd381b97.js"
+}

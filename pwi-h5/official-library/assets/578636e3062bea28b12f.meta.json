@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27626.jpg",
+  "id": "578636e3062bea28b12f",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 狂狼印<em>（入魔）</em> ",
+  "bytes": 1160,
+  "sha256": "73b0c926c2812c57e6587f1a07a874a301d992f9a643e954edab396895e9ba38",
+  "fetchedAt": "2026-11-18T08:36:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27626.jpg",
+  "path": "assets/578636e3062bea28b12f.jpg"
+}

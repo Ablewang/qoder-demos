@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1108.jpg",
+  "id": "4aa002e6c0ef677f18dd",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "黑巫咒",
+  "bytes": 4643,
+  "sha256": "b3668b4e93323fb10b994359f6dd6bc11b85c0b1eab9046caeb3e841842709c6",
+  "fetchedAt": "2026-11-18T08:36:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1108.jpg",
+  "path": "assets/4aa002e6c0ef677f18dd.jpg"
+}

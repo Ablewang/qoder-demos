@@ -1,0 +1,3564 @@
+{
+  "kind": "STATIC NUMERAL FIXTURES: explicitly replace probe state/log; not natural games or unit-test counts",
+  "fontSimulation": "CSS --text-scale; not actual OS settings",
+  "cases": [
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "table"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1.3,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1.3,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1.3,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "scale": 1.3,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1.3,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1.3,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1.3,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 1.3,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1.3,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1.3,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1.3,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1.3,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1.3,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1.3,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1.3,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "scale": 1.3,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1.3,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1.3,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1.3,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 1.3,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 2,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 2,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 2,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "scale": 2,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 2,
+      "identity": "single",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 2,
+      "identity": "married",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 2,
+      "identity": "graduate",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    },
+    {
+      "width": 740,
+      "height": 320,
+      "scale": 2,
+      "identity": "exam",
+      "delta": 0,
+      "issues": [],
+      "observations": [
+        {
+          "mood": 0,
+          "resolved": 0,
+          "seconds": 0,
+          "hp": 1,
+          "charges": 0
+        },
+        {
+          "mood": 1,
+          "resolved": 1,
+          "seconds": 1,
+          "hp": 2,
+          "charges": 1
+        },
+        {
+          "mood": 8,
+          "resolved": 8,
+          "seconds": 8,
+          "hp": 3,
+          "charges": 2
+        },
+        {
+          "mood": 9,
+          "resolved": 9,
+          "seconds": 9,
+          "hp": 4,
+          "charges": 3
+        },
+        {
+          "mood": 10,
+          "resolved": 10,
+          "seconds": 10,
+          "hp": 5,
+          "charges": 4
+        },
+        {
+          "mood": 18,
+          "resolved": 18,
+          "seconds": 18,
+          "hp": 1,
+          "charges": 5
+        },
+        {
+          "mood": 30,
+          "resolved": 30,
+          "seconds": 30,
+          "hp": 2,
+          "charges": 0
+        },
+        {
+          "mood": 99,
+          "resolved": 99,
+          "seconds": 30,
+          "hp": 3,
+          "charges": 1
+        },
+        {
+          "mood": 100,
+          "resolved": 100,
+          "seconds": 30,
+          "hp": 4,
+          "charges": 2
+        }
+      ],
+      "mode": "reader"
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "sourceHashes": {
+    "src/main.ts": "e7431d4bbc78a554f1ba5805b9b6e277c18dad521f654d1f7cf5d61181af29c4",
+    "src/style.css": "3282e86d78a177a7f5c6010515ed3ab75c6db489d3d2966f0c44b431b2af253b"
+  }
+}

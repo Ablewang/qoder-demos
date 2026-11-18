@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>    
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Design:Hao.Rui; Web Layout:Zhang.Qiang" />
+<meta name="keywords" content="完美世界,完美世界国际版,王朝崛起,最美网游，跨服阵营国战,万人战场,16品,九军，白帝之都,黑帝之都,赤帝之都,青帝之都,五帝名都，城战，攻城
+" /> 
+<meta name="description" content="《完美国际》是完美世界倾力打造的最美3D原创网游。新版本“修真2.0”延续原有修真题材的同时，将带给玩家颠覆性的修真体验。不练级更爽，体命双修更强，万人斗法更炫，修真无界更酷！不一样的修真尽在修真2.0！" />
+<title>进击的传承服  -《完美国际》官方网站</title>
+<link rel="stylesheet" type="text/css" href="style/master.css" />
+</head>
+<body>
+<div id="sharediv"><div id="share_line"></div></div>
+<div id="content">
+	<div id="wrap1"><div id="wrap2">
+        <div id="header">
+            <h1 class="wm-public" logo="{name:'w2i',skin:2,top:10,left:120}" analytics="{single:'w2i201309Advancing2823'}">《完美国际》官方网站</h1>
+            <div class="btnspop">
+            	<span class="a1" tip="0"></span>
+                <span class="a2" tip="1"></span>
+                <span class="a3" tip="2"></span>
+            </div>
+            <div class="btnslink">
+            	<a href="http://w2i.wanmei.com/download/down_client.htm" target="_blank" class="down"></a>
+                <a href="http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp" target="_blank" class="libao"></a>
+            </div>
+            <img src="images/header_01.jpg" alt="" width="1002" height="132">
+            <img src="images/header_02.jpg" alt="" width="1002" height="131">
+            <img src="images/header_03.jpg" alt="" width="1002" height="132">
+            <img src="images/header_04.jpg" alt="" width="1002" height="131">
+            <img src="images/header_05.jpg" alt="" width="1002" height="132">
+            <img src="images/header_06.jpg" alt="" width="1002" height="131">
+            <img src="images/header_07.jpg" alt="" width="1002" height="132">
+        </div>
+	</div></div>
+</div>
+<div class="popbox" id="showdiv">
+	<span class="closebtn"></span>
+    <iframe src="link0.htm" allowtransparency="true" scrolling="no" frameborder="0" width="500" height="500" id="iflinks"></iframe>
+</div>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wm.js" bottom="{skin:2}"></script>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/jq_171.js"></script>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wmshare.js" share="{type:'lineNav', game:'w2i'}"></script>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/modules/boxy/jquery.boxy.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".btnspop span").click(function(){
+		var mmu = $(this).attr("tip");
+		$.simpleDialog({
+		   skin:false,
+		   content: '#showdiv',
+		   id : 'showdiv'
+		});
+		$("#iflinks").attr("src","link"+mmu+".htm")
+	});
+	$(".closebtn").click(function(){
+		$.simpleDialog.close('showdiv');
+	});
+});
+</script>
+</body>
+</html>

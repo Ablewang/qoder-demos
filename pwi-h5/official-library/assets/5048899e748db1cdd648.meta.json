@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/yanhua/meihao/2.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "5048899e748db1cdd648",
+  "status": "ok",
+  "parents": [
+    "c9a6f0ad2510fff801aa"
+  ],
+  "bytes": 3932,
+  "sha256": "ed50a7759d57297a7770a4579d7a8300e6f137b2578f3130422bb62501f545ad",
+  "fetchedAt": "2026-11-18T08:19:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/yanhua/meihao/2.jpg",
+  "path": "assets/5048899e748db1cdd648.jpg"
+}

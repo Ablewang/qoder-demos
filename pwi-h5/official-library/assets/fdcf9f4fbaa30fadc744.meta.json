@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27584.jpg",
+  "id": "fdcf9f4fbaa30fadc744",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 分水刺击<em>（升仙）</em>",
+  "bytes": 1173,
+  "sha256": "3a760b7f75bf8ed4e5516d97c0c97c6d05e706bc57e9f11655d7954b75b92a5c",
+  "fetchedAt": "2026-11-18T08:36:04+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27584.jpg",
+  "path": "assets/fdcf9f4fbaa30fadc744.jpg"
+}

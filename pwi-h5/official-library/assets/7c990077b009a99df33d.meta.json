@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "7c990077b009a99df33d",
+  "status": "ok",
+  "parents": [
+    "e63b639f9250bddb7f1c",
+    "125889a9e55210906b09",
+    "9331b7d5cd87224a3247",
+    "d5853afa509a7d061e6b"
+  ],
+  "bytes": 18819,
+  "sha256": "f7fb0e924ffc1856ea593cc16214f266b04044a8f6fe7dba73bacf9222962258",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/7c990077b009a99df33d.jpg"
+}

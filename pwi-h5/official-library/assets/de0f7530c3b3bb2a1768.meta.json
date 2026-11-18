@@ -1,0 +1,18 @@
+{
+  "url": "http://www.wanmei.com/placenews/images/ico.png",
+  "id": "de0f7530c3b3bb2a1768",
+  "status": "ok",
+  "parents": [
+    "564258e6117f453e2dc1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201112/vancl/style/master.css",
+  "bytes": 3142,
+  "sha256": "c17ad77e011067fb0adb0a2bfb23cbb04c5b4588c15bd73d9e87b015040fda51",
+  "fetchedAt": "2026-11-18T08:39:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://www.wanmei.com/placenews/images/ico.png",
+  "path": "assets/de0f7530c3b3bb2a1768.png"
+}

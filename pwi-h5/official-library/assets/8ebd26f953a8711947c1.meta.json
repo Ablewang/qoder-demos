@@ -1,0 +1,29 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/in_bg.jpg",
+  "label": "1）什么是魔方\n《完美世界国际版》中最新推出的一个副本任务，玩家在副本中闯关，最后到达终点领取丰厚的经验、元神奖励，还有额外的神秘筹码。\n2）魔方流程\nI．使用“骰子兑换卷”和“命运魔方“换取骰子；\nII．根据骰子点数，将玩家传送到相对应点数的房间进行闯关；\nIII．玩家得到的骰子点数越大，闯关的速度也就越快；\nIV．魔方中含有23种玩法，它们随机出现在魔方的50个房间内；\nV．玩家到达第50个房间（命运终点）后，就可以领取丰厚的经验、元神奖励。\nVI．在魔方的15、22、31、42号“神秘使者”房间中，可以通过任务获得神秘筹码，用来换取黄金铸具和黄昏材料。",
+  "kind": "inline-reference",
+  "id": "8ebd26f953a8711947c1",
+  "status": "ok",
+  "parents": [
+    "db4164927f8b96f824a9",
+    "f43f7393ca74d7767d5c",
+    "9e806ff55dbec0376dad",
+    "c8ffe36ad63705a57ede",
+    "7efee68b25cc6c382609",
+    "e4404251756bcba27a43",
+    "4ab8c0b6b98864563d56",
+    "30c6df55459bbfdd4d7d",
+    "f74f6ffc52245c0f3b91",
+    "dec38a07f8181a3d8a2f",
+    "749999c59f0ddb58c060",
+    "57b5610a881483f9aa27"
+  ],
+  "bytes": 12471,
+  "sha256": "75d5bd02bd1b247cf0af43597bd60693e9fdd297d05760b3e17e0302fd415961",
+  "fetchedAt": "2026-11-18T08:18:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/in_bg.jpg",
+  "path": "assets/8ebd26f953a8711947c1.jpg"
+}

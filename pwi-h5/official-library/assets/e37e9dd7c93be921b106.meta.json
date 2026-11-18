@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/guozhan/images/top_05.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "e37e9dd7c93be921b106",
+  "status": "ok",
+  "parents": [
+    "6516467c2667cfb4fdd1"
+  ],
+  "bytes": 26177,
+  "sha256": "6f4ad54b24a1ce1016ff06e441c1211ca84d682b5f7e032686adac2fa453fa6c",
+  "fetchedAt": "2026-11-18T08:26:50+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/guozhan/images/top_05.jpg",
+  "path": "assets/e37e9dd7c93be921b106.jpg"
+}

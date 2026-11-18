@@ -1,0 +1,66 @@
+{
+  "id": "fe512b4e745862d10a82",
+  "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30167.shtml",
+  "title": "练级指引 - 战斗积累",
+  "category": "系统介绍",
+  "section": "练级指引",
+  "depth": 0,
+  "parents": [
+    "fe512b4e745862d10a82",
+    "0807bd95b307c65884a0",
+    "1c7278bd39b9ac761867",
+    "a08c5a6f495dfd7c3c98"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a7c7f16f5bb295437bcbd044a5f210f22112275ea66caf3f8eb423964e27463a",
+  "bytes": 66370,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/fe512b4e745862d10a82.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-20",
+  "text": "战斗积累 | 每日必修 | 特别推荐 |\n功夫高低不光取决于招式或者内功，战斗经验也是很重要的一部分。所以多与完美大陆上的各种怪物NPC进行战斗也是提高武功修为很重要的一种途径。\n不过对于初入完美的各位侠客们，能掌握完美国际中各种怪物的分布情况对选择和谁进行战斗也是有很大帮助的。\n点击下载地图",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30167.shtml",
+      "label": "战斗积累",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30168.shtml",
+      "label": "每日必修",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30169.shtml",
+      "label": "特别推荐",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lianji/1m.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lianji/1m.rar",
+      "label": "点击下载地图",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lianji/1.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fe512b4e745862d10a82\">战斗积累</a> |  \t\t\t\t\t<a href=\"#page=0807bd95b307c65884a0\">每日必修</a> |  \t\t\t\t\t<a href=\"#page=1c7278bd39b9ac761867\">特别推荐</a> |</li>\r\n</ul>\r\n<p>　　功夫高低不光取决于招式或者内功，战斗经验也是很重要的一部分。所以多与完美大陆上的各种怪物NPC进行战斗也是提高武功修为很重要的一种途径。</p>\r\n<p>　　不过对于初入完美的各位侠客们，能掌握完美国际中各种怪物的分布情况对选择和谁进行战斗也是有很大帮助的。</p>\r\n<p><a href=\"https://w2i.wanmei.com/pic/news_img/lianji/1m.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/6f89716a9e8e6aca44ec.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p>　　<a href=\"https://w2i.wanmei.com/pic/news_img/lianji/1m.rar\" rel=\"noreferrer\" target=\"_blank\">点击下载地图</a></p>\r\n                        </div>",
+  "dataPath": "pages/fe512b4e745862d10a82.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/fe512b4e745862d10a82.js"
+}

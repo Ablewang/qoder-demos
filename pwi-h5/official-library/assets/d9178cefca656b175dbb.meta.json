@@ -1,0 +1,32 @@
+{
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/bgloop.jpg",
+  "id": "d9178cefca656b175dbb",
+  "status": "ok",
+  "parents": [
+    "ddb9fc3f70957c28e9b5",
+    "4c3f7e0f9450a727c196",
+    "83a0bdfa704d7bf492e9",
+    "f3fba696107bbedaf3ea",
+    "de6ded2fb4eb68ce525c",
+    "9a0413ce0568e20f31a3",
+    "02e5d3da43fb43417c6a",
+    "6dfa9feea78ce5fc8134",
+    "a0d736b1f895c8a9ac74",
+    "7423dd05d3a0993cf2d1",
+    "79d7a9f0b0425180fdfd",
+    "8dc6c6b7c0e7ba9af483",
+    "a70f75ea8408096665b5",
+    "6ef60683af49b980d73c",
+    "a617111463f23ad7d400"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/css.css",
+  "bytes": 4178,
+  "sha256": "cf858fd46f0d8c86bb5764b91fe94222463aaa5f929488077ee534cb941de883",
+  "fetchedAt": "2026-11-18T08:37:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/bgloop.jpg",
+  "path": "assets/d9178cefca656b175dbb.jpg"
+}

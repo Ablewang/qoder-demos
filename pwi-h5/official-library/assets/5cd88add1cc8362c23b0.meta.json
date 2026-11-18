@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/qdj_tt01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "5cd88add1cc8362c23b0",
+  "status": "ok",
+  "parents": [
+    "4b8c4e009623b50c834e"
+  ],
+  "bytes": 13910,
+  "sha256": "d5d4d2c254d6f2aeeb1c343becf1dad2233631515e9615e805115aa29c8e6310",
+  "fetchedAt": "2026-11-18T08:22:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/qdj_tt01.jpg",
+  "path": "assets/5cd88add1cc8362c23b0.jpg"
+}

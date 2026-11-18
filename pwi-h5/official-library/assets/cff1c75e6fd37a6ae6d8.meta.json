@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_632.jpg",
+  "id": "cff1c75e6fd37a6ae6d8",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·弓弩精通<em>（升仙）</em>",
+  "bytes": 1712,
+  "sha256": "a33714eef9cb3d2cd0ae830f3c0837eca6a2ca63b4c323b07256639f9ecfaca6",
+  "fetchedAt": "2026-11-18T08:35:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_632.jpg",
+  "path": "assets/cff1c75e6fd37a6ae6d8.jpg"
+}

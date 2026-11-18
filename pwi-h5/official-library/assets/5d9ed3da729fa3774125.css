@@ -1,0 +1,111 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+
+/* 共用部分 */
+* {margin:0;padding:0px;}
+body {background:url('../images/body_bg.jpg') repeat center top;font-size:14px;font-family:宋体, Arial, Helvetica, sans-serif;color:#000;margin:0;padding:0px;}
+.flt{float:left}
+.frt{float:right}
+img{border:0px;}
+.clr{clear:both}
+.center{text-align:center}
+a{text-decoration:none;color:#000}
+a:hover{text-decoration:underline;color:#000}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area {blr:expression(this.onFocus=this.blur());outline:none;}
+ul,li{margin:0;padding:0;list-style-type: none;}
+.img_border{border:1px #000 solid}
+.none{display:none}
+.red ,.red a{color:red;text-decoration:none;}
+.red a:hover{color:red;text-decoration:underline}
+
+/* LOGO的定位 */
+#w2i_logo{top:10px;left:35px;}
+#transparent_logo{top:10px;left:35px;}
+
+.wrap{background:url('../images/bg.jpg') no-repeat center top;width:100%;height:954px;clear:both}
+.wrap2{background:url('../images/bg2.jpg') no-repeat center top;width:100%;clear:both}
+#header,#main,#nav,.layer{width:1002px;margin:0px auto;clear:both;}
+#header img ,#nav img ,#layer01 img ,#layer02 img ,.layer img{float:left}
+#header{position:relative}
+#main{background:url('../images/main_bg.jpg') no-repeat center top;clear:both}
+
+
+#layer01{width:367px;float:left}
+#layer01_list{background:url('../images/main_01_02.jpg') no-repeat top;width:297px;height:232px;padding:6px 26px 0px 44px;color:#330000;float:left}
+#layer01_img{background:url('../images/main_01_04.jpg') no-repeat top;width:303px;height:88px;padding:0px 20px 0px 44px;float:left}
+#layer01_list table{width:100%}
+#layer01_list td{border-bottom:1px #330000 dotted;padding:8px 0px 2px 0px}
+#layer01_list a:hover{text-decoration:none}
+
+#layer02{width:381px;float:left}
+#layer02_btn{background:url('../images/main_02_02.jpg') no-repeat top;width:346px;height:318px;padding:0px 15px 0px 20px;float:left}
+#layer02_btn img{margin-bottom:17px;display:inline}
+#layer03{background:url('../images/main_03.jpg') no-repeat top;width:216px;height:364px;color:#000;line-height:26px;padding:55px 0px 0px 38px;float:left}
+#layer03 a{color:#9D0606;text-decoration:none}
+
+#pic{background:url('../images/pic_02.jpg') no-repeat top;width:951px;height:133px;padding:11px 0px 0px 51px;float:left}
+#pic ul{display:inline}
+#pic li{float:left;background:url('../images/img_bg2.jpg') no-repeat top;width:157px;height:110px;padding:6px;margin-right:14px;display:inline}
+#pic li img{width:157px;height:110px}
+
+.img_adv{background:url('../images/img_bg.jpg') no-repeat top;width:142px;height:58px;padding:2px;float:left;margin-right:4px;display:inline}
+.img_adv img{width:142px;height:58px}
+
+#left{width:274px;float:left}
+#left_btn{width:239px;height:235px;float:left;background:url('../images/left_01.jpg') no-repeat top;padding-left:35px}
+#list{background:url('../images/left_02.jpg') no-repeat top;width:217px;height:367px;float:left;color:#000;line-height:26px;padding:60px 0px 0px 57px;}
+#list a{color:#9D0606;text-decoration:none}
+
+#pic02{background:url('../images/left_03.jpg') no-repeat top;width:237px;height:171px;padding:63px 0px 0px 37px;float:left}
+#pic02 ul{
+	display:inline
+}
+
+#pic02 li{
+	background:url('../images/img_bg3.jpg') no-repeat top;width:86px;height:60px;float:left;padding:6px;margin-right:1px;display:inline
+}
+
+#content{
+	width:728px;float:left;
+}
+#text{
+	background:url('../images/con_bg.jpg') repeat-y top left;width:728px;min-height:740px;_height:740px;float:left
+}
+#side01{
+	width:15px;float:left
+}
+#side02{
+	width:45px;float:right
+}
+
+#con{
+	width:648px;padding:0px 10px;float:left;color:#D71400;line-height:26px
+}
+#con table{
+	margin:0px auto;border-collapse:collapse;text-align:center;border:1px #493310 solid;
+}
+
+
+
+/* 鼠标点击提示信息 */
+.info{text-decoration:none;text-align:center;}/*设置链接的属性,一定要设置为relative才能使提示层跟着链接走*/
+.info:hover{background:#eee;color:#333;position:relative}
+.info span{display: none;}/*设置正常下的span为隐藏状态*/
+.info:hover span {display:block;position:absolute;top:25px;left:40px;padding:5px}/*设置hover下的span属性为呈现状态,并设置提示层的位置*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

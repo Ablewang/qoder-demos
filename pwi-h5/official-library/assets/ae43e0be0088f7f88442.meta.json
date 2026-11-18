@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnshon.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ae43e0be0088f7f88442",
+  "status": "ok",
+  "parents": [
+    "0251776a5870f30fec7b"
+  ],
+  "bytes": 3612,
+  "sha256": "ea1bf1f27eb4c6ec2d045290f6af828a6334570e42e4e16c79e5fc367a1eb59f",
+  "fetchedAt": "2026-11-18T08:24:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnshon.jpg",
+  "path": "assets/ae43e0be0088f7f88442.jpg"
+}

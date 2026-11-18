@@ -1,0 +1,14 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic6.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "d8bcc37b83897d7b5253",
+  "status": "failed",
+  "parents": [
+    "ecd8cac8cda80c901799"
+  ],
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:26:44+00:00"
+}

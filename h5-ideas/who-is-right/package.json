@@ -1,0 +1,23 @@
+{
+  "name": "laohua-chayicha",
+  "private": true,
+  "version": "0.1.0",
+  "description": "老话查一查：本地内测版，非正式医疗建议服务，不发布",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5216",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:browser": "playwright test",
+    "check:content": "vitest run tests/content.test.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5217"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}

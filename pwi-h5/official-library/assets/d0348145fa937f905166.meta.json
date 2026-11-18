@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/font09.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "d0348145fa937f905166",
+  "status": "ok",
+  "parents": [
+    "8f1966f9655eda183326"
+  ],
+  "bytes": 4181,
+  "sha256": "90f1c60f0b44e6b8ca908b5ce9b0c38324bf1b6230df75cb1249aee682fd567e",
+  "fetchedAt": "2026-11-18T08:19:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/font09.gif",
+  "path": "assets/d0348145fa937f905166.gif"
+}

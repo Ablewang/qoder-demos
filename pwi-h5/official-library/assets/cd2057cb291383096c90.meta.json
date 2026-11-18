@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_646.jpg",
+  "id": "cd2057cb291383096c90",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·万蛊食天<em>（升仙）</em>",
+  "bytes": 1784,
+  "sha256": "1a7b9599c2efaa45d17972541bcdf38dc1f5fe8cb6e4024987bceaa906427bd1",
+  "fetchedAt": "2026-11-18T08:35:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_646.jpg",
+  "path": "assets/cd2057cb291383096c90.jpg"
+}

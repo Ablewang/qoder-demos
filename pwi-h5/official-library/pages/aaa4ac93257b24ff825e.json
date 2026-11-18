@@ -1,0 +1,60 @@
+{
+  "id": "aaa4ac93257b24ff825e",
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/top.htm",
+  "title": "完美战备采购 -《完美国际2012》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 2,
+  "parents": [
+    "be915459ba7523f2f56d",
+    "af9743181eeb7bf3ff76",
+    "44636c791e32b874469e"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "2dd53910f43f68eacfe23fd52178636467745851fe92db0e1fcc06052a17d87e",
+  "bytes": 1640,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/aaa4ac93257b24ff825e.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/index.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/top_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/top_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/top_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n  \r\n    <img src=\"assets/6f2ea30fbb69831055e7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/06d7602d38c862705a64.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/eee6efd2c6bec9f5a82f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    \r\n      \r\n    \r\n</div>\r\n",
+  "dataPath": "pages/aaa4ac93257b24ff825e.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/aaa4ac93257b24ff825e.js"
+}

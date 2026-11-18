@@ -1,0 +1,47 @@
+{
+  "id": "0df52d529995100be4de",
+  "url": "https://w2i.wanmei.com/pic/gameshot/index_flash.htm",
+  "title": "《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 2,
+  "parents": [
+    "a3206e96933ebb3a1648",
+    "cde23b2634eea8bb4b52",
+    "03091fe92256285c414b",
+    "4aec96cd45f020cede4e",
+    "a30584665576a2f6b306"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "17026b3e42edafe32184488f4364c01bafbc849f0df11f7bd12f2067cc3342d8",
+  "bytes": 1350,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0df52d529995100be4de.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/pic/gameshot/gameshot.shtml",
+      "label": "",
+      "kind": "script-reference"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "http://www.wanmei.com/wa.js",
+      "label": "",
+      "kind": "script-reference"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\r\n</div>\r\n",
+  "dataPath": "pages/0df52d529995100be4de.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/0df52d529995100be4de.js"
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://w2i.wanmei.com/event/200811/anniversary/style/font.css",
+  "alt": "",
+  "kind": "link",
+  "id": "db6d1a881802ce8cc06d",
+  "status": "ok",
+  "parents": [
+    "a899f6f8dc4e23a35959",
+    "6f04c1c29de1e26657e0",
+    "e21939f1362abea70f5a",
+    "9c69355fa82bc264091c",
+    "44689cc7c278488dc3ad",
+    "f6200bfbe47d15bdfdb9",
+    "e56bc44c111f67f9e0f7",
+    "2d6d528f7e84bc55995e",
+    "e55a0b3c264a67093187"
+  ],
+  "bytes": 115,
+  "sha256": "afb6b079f80d3d564bc2d5d007870927c156fff6ca55eff7b26b3a5a6d40f1ed",
+  "fetchedAt": "2026-11-18T08:18:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://w2i.wanmei.com/event/200811/anniversary/style/font.css",
+  "path": "assets/db6d1a881802ce8cc06d.css"
+}

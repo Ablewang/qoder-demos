@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_576.jpg",
+  "id": "28610ab28e77fe964d5f",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·羽刃<em>（升仙）</em>",
+  "bytes": 1617,
+  "sha256": "94090b70101cc6f8b2e586d3ace83e7a39d8cc1d65a8f08f44d42a4b367ba42c",
+  "fetchedAt": "2026-11-18T08:35:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_576.jpg",
+  "path": "assets/28610ab28e77fe964d5f.jpg"
+}

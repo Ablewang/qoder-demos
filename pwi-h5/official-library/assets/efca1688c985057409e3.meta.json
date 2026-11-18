@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/rwiframetop.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "efca1688c985057409e3",
+  "status": "ok",
+  "parents": [
+    "1d8b80714dec246ba5aa"
+  ],
+  "bytes": 4458,
+  "sha256": "0699934c0fa24a95eeabd8b724801f38088e58f887563fbdc974caa948a4bc64",
+  "fetchedAt": "2026-11-18T08:25:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/rwiframetop.jpg",
+  "path": "assets/efca1688c985057409e3.jpg"
+}

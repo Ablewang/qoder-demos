@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200811/everyday/images/pic14.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "cb27f9816ea67aa77b51",
+  "status": "ok",
+  "parents": [
+    "debb168d22f8b3fb5cda"
+  ],
+  "bytes": 10988,
+  "sha256": "54f0f652929c90438bacc906a63a85b2a9746cccdc61c1c9aedfdc1a589e4895",
+  "fetchedAt": "2026-11-18T08:24:08+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200811/everyday/images/pic14.jpg",
+  "path": "assets/cb27f9816ea67aa77b51.jpg"
+}

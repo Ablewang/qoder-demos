@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/group/images/gg_side_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ff3b8f9470126761f35d",
+  "status": "ok",
+  "parents": [
+    "782d6e4068ec737e77ac",
+    "633c5d2f329b24f8c2de",
+    "5a12e42458057bed1cfc",
+    "f3219307caf100f9392b",
+    "0e7591603c5d3aaeeb3c",
+    "15e68af62c0729593d5a",
+    "9695a000672ff0aa9760"
+  ],
+  "bytes": 7171,
+  "sha256": "ff935f825ecef3adba815620e43b50969f6ae84ebe025eaad8034bcd23f50fc3",
+  "fetchedAt": "2026-11-18T08:27:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/group/images/gg_side_02.jpg",
+  "path": "assets/ff3b8f9470126761f35d.jpg"
+}

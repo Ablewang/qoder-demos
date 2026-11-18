@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*******author:Zhongwei.Zhang**************/
+body{ margin:0; padding:0; font-size:12px; font-family:"宋体",Arial, Helvetica, sans-serif; background-color:#2a2f44; overflow-x:hidden;}
+html{ _overflow-x:hidden;}
+div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,textarea{ margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+area{outline:none;}
+img{ border:0;}
+ol,ul{list-style:none;}
+a{font-family:"宋体",Arial, Helvetica, sans-serif; text-decoration:none;outline:none;}
+a:hover{ text-decoration:underline;}
+.clearfix:after {content:"";display:block;height:0;clear:both;} 
+.clearfix {zoom:1;}
+.wrap_bg{ background-color:#010508;}
+.wrap{width:1650px; height:763px; background-color:#010508; overflow:hidden;}
+/* left */
+.left_bar{ position:relative; float:left; width:300px; height:763px; background-image:url(../images/left_bg.jpg);}
+.a_jiemi,.a_video{ position:absolute; width:300px; height:45px; left:0; text-indent:-9999px;}
+.a_jiemi{ top:427px; background:url(../images/a_jiemi.png);}
+.a_video{ top:477px; background:url(../images/a_video.png);}
+.a_jiemi:hover,.a_video:hover{ background-position:0 -45px;}
+/* cont */
+#cont{ position:relative; float:left; width:1350px; overflow:hidden;}
+#cont ul{ overflow:hidden;}
+#cont ul li{ float:left; width:450px; height:763px;}
+#cont ul li img{ display:block;}
+
+#btn_left,#btn_right{  position:absolute; width:48px; height:58px; top:370px; text-indent:-9999px; cursor:pointer;}
+#btn_left{ left:310px; background-image:url(../images/btn_left.png)}
+#btn_right{ right:10px; background-image:url(../images/btn_right.png)}

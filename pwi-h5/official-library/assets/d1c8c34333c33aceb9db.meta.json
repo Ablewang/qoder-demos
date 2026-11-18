@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201203/pucha/images/bgimg_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "d1c8c34333c33aceb9db",
+  "status": "ok",
+  "parents": [
+    "b28c2534f0786c2ae298"
+  ],
+  "bytes": 35592,
+  "sha256": "0c59ec4a5284e8357e2378bf789c0d7fb72e7569c6850794c86b3f173e93b58a",
+  "fetchedAt": "2026-11-18T08:27:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201203/pucha/images/bgimg_02.jpg",
+  "path": "assets/d1c8c34333c33aceb9db.jpg"
+}

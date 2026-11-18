@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/elf/js/AC_RunActiveContent.js",
+  "alt": "",
+  "kind": "script",
+  "id": "9fcf7a72a61ee0743126",
+  "status": "ok",
+  "parents": [
+    "4a15b380937880177c54",
+    "1af5daeec3f0979a6555"
+  ],
+  "bytes": 8321,
+  "sha256": "7c70801a45befd1577f0467d26e1c922a96211003be5393a5b100fcd7617f674",
+  "fetchedAt": "2026-11-18T08:18:39+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/elf/js/AC_RunActiveContent.js",
+  "path": "assets/9fcf7a72a61ee0743126.js"
+}

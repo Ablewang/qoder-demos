@@ -1,0 +1,21 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/in_left_bg.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "49eeb45666248e8e24f3",
+  "status": "ok",
+  "parents": [
+    "db4164927f8b96f824a9",
+    "f43f7393ca74d7767d5c",
+    "9e806ff55dbec0376dad",
+    "7efee68b25cc6c382609"
+  ],
+  "bytes": 3105,
+  "sha256": "c17149aeb844fdd19aab85f1405f903398b98f467c7b24c0a1cb61a1c724ae6b",
+  "fetchedAt": "2026-11-18T08:18:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/in_left_bg.jpg",
+  "path": "assets/49eeb45666248e8e24f3.jpg"
+}

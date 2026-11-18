@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/cardboss/image/dadilaoren.jpg",
+  "label": "",
+  "kind": "image-map",
+  "id": "91190db24655a92b9cf2",
+  "status": "ok",
+  "parents": [
+    "46854e8de5b70a560f88"
+  ],
+  "bytes": 42344,
+  "sha256": "be5b9f66f14eb62674c5a6c4a366db570d10ad0e760498e211f11ad3716df851",
+  "fetchedAt": "2026-11-18T08:17:51+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/cardboss/image/dadilaoren.jpg",
+  "path": "assets/91190db24655a92b9cf2.jpg"
+}

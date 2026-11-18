@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/js/jquery.mousewheel.js",
+  "alt": "",
+  "kind": "script",
+  "id": "2253ddc5fa763c5b23ed",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "bytes": 2401,
+  "sha256": "db304bdc4ca554cb1618e281739ae11e3911c05b461ea521eaeb102d7c2f93a6",
+  "fetchedAt": "2026-11-18T08:26:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/js/jquery.mousewheel.js",
+  "path": "assets/2253ddc5fa763c5b23ed.js"
+}

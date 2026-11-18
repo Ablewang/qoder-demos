@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073946962.jpg",
+  "alt": "图片: 图7：浅海沙名流男装.jpg",
+  "kind": "img",
+  "id": "073aeab6da30566932f8",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 62610,
+  "sha256": "e26bb540a1fadedaa3f71a19b26fc36c0ae405a6fa2631999277b56765af56b8",
+  "fetchedAt": "2026-11-18T08:23:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073946962.jpg",
+  "path": "assets/073aeab6da30566932f8.jpg"
+}

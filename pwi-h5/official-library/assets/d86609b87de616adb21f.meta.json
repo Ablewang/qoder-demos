@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130123/10021358903881783.jpg",
+  "alt": "图片: 图3：巫师时装武器.jpg",
+  "kind": "img",
+  "id": "d86609b87de616adb21f",
+  "status": "ok",
+  "parents": [
+    "9066c33eeeda8283dd07"
+  ],
+  "bytes": 66960,
+  "sha256": "6379de5ae7c0560e1ee98b6ec0da2546b2a572f433dabcd58e0d96210e2b51d5",
+  "fetchedAt": "2026-11-18T08:23:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130123/10021358903881783.jpg",
+  "path": "assets/d86609b87de616adb21f.jpg"
+}

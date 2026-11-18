@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/pic/h2.jpg",
+  "alt": "点击图片关闭",
+  "kind": "img",
+  "id": "fd8121da8a19e81fc383",
+  "status": "ok",
+  "parents": [
+    "be915459ba7523f2f56d"
+  ],
+  "bytes": 71337,
+  "sha256": "7cd25e82ef1d3522d7a81217c2aedf5846201b53ece79580f88e6042068de348",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/fd8121da8a19e81fc383.jpg"
+}

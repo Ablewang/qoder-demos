@@ -1,0 +1,340 @@
+{
+  "id": "0df8164e3f7875c34126",
+  "url": "https://w2i.wanmei.com/event/200809/contend/hengji.htm",
+  "title": "冥城争霸-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 1,
+  "parents": [
+    "417f96b539b3f3400e72",
+    "207431ece519cc56a67b",
+    "a968cd1d1b6197af3eb9"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "171d73603ef1517e459b44602485b6294a412c94fd503889613705ca4243199e",
+  "bytes": 4513,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0df8164e3f7875c34126.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "恒寂之印\n当玩家收集到600个“九星魂丹”时即可在冥城使者处兑换一枚“恒寂之印”\n恒寂之印\n物品简介\n佛经云：恒寂天地，觉知一心。心外无法，生死永弃。\n于修行之人，参透恒寂之义，便是洞悉不生不灭之法。\n基础属性\n品阶\n12\n等级要求\n80\n耐久上限\n205\n物攻\n+100\n法攻\n+100\n附加属性\n致命一击率\n敏捷\n体质\n+3%\n+7~8\n+7~8\n五行防御\n精练1级\n精练2级\n精练3级\n精练4级\n精练5级\n精练6级\n+27\n+54\n+82\n+116\n+155\n+203\n精练7级\n精练8级\n精练9级\n精练10级\n精练11级\n精练12级\n+268\n+351\n+460\n+602\n+783\n+1012\n返回首页",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "恒寂之印",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "物品简介",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "佛经云：恒寂天地，觉知一心。心外无法，生死永弃。\n于修行之人，参透恒寂之义，便是洞悉不生不灭之法。",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "基础属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "耐久上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "205",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物攻",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法攻",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "致命一击率",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "敏捷",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "体质",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "+3%",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "+7~8",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "+7~8",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "五行防御",
+            "rowspan": "4",
+            "colspan": "1"
+          },
+          {
+            "text": "精练1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练6级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "+27",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+82",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+116",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+155",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+203",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "精练7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练11级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练12级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "+268",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+351",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+460",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+602",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+783",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+1012",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/iframe/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/index.htm",
+      "label": "返回首页",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/pic.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_foot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n<div><p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200809/contend/iframe/header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200809/contend/iframe/header.htm</a></p></div>\r\n<div>\r\n    <img src=\"assets/25a4000e3aa3fee1332b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <div>\r\n        <h1>恒寂之印</h1>\r\n        <p>当玩家收集到600个“九星魂丹”时即可在冥城使者处兑换一枚“恒寂之印”</p>\r\n<br>\r\n        <div>\r\n            <table>\r\n              <tr>\r\n                <td><img src=\"assets/68b0b60164f535403180.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                <td colspan=\"6\">恒寂之印</td>\r\n              </tr>\r\n              <tr>\r\n                <td>物品简介</td>\r\n                <th colspan=\"6\">佛经云：恒寂天地，觉知一心。心外无法，生死永弃。<br>\r\n            于修行之人，参透恒寂之义，便是洞悉不生不灭之法。</th>\r\n              </tr>\r\n              <tr>\r\n                <td rowspan=\"2\">基础属性</td>\r\n                <td>品阶</td>\r\n                <td>12</td>\r\n                <td>等级要求</td>\r\n                <td>80</td>\r\n                <td>耐久上限</td>\r\n                <td>205</td>\r\n              </tr>\r\n              <tr>\r\n                <th>物攻</th>\r\n                <th>+100</th>\r\n                <th>法攻</th>\r\n                <th>+100</th>\r\n                <th> </th>\r\n                <th> </th>\r\n              </tr>\r\n              <tr>\r\n                <td rowspan=\"2\">附加属性</td>\r\n                <td colspan=\"2\">致命一击率</td>\r\n                <td colspan=\"2\">敏捷</td>\r\n                <td colspan=\"2\">体质</td>\r\n              </tr>\r\n              <tr>\r\n                <th colspan=\"2\">+3%</th>\r\n                <th colspan=\"2\">+7~8</th>\r\n                <th colspan=\"2\">+7~8</th>\r\n              </tr>\r\n              <tr>\r\n                <td rowspan=\"4\">五行防御</td>\r\n                <td>精练1级</td>\r\n                <td>精练2级</td>\r\n                <td>精练3级</td>\r\n                <td>精练4级</td>\r\n                <td>精练5级</td>\r\n                <td>精练6级</td>\r\n              </tr>\r\n                <tr>\r\n                <th>+27</th>\r\n                <th>+54</th>\r\n                <th>+82</th>\r\n                <th>+116</th>\r\n                <th>+155</th>\r\n                <th>+203</th>\r\n              </tr>\r\n              <tr>\r\n                <td>精练7级</td>\r\n                <td>精练8级</td>\r\n                <td>精练9级</td>\r\n                <td>精练10级</td>\r\n                <td>精练11级</td>\r\n                <td>精练12级</td>\r\n              </tr>\r\n                <tr>\r\n                <th>+268</th>\r\n                <th>+351</th>\r\n                <th>+460</th>\r\n                <th>+602</th>\r\n                <th>+783</th>\r\n                <th>+1012</th>\r\n              </tr>\r\n            </table>\r\n        </div>\r\n        <br>\r\n        <p><a href=\"#page=417f96b539b3f3400e72\">返回首页</a></p>\r\n  </div>\r\n    <img src=\"assets/8081960f3456f2d55fd3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/f3b56ab9fb0e69929928.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n</div>\r\n\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n",
+  "dataPath": "pages/0df8164e3f7875c34126.json",
+  "imageCount": 4,
+  "tableCount": 1,
+  "downloadPath": "downloads/0df8164e3f7875c34126.js"
+}

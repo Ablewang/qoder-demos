@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_28033.jpg",
+  "id": "a532ec4db99899482af3",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "结晶之光",
+  "bytes": 3916,
+  "sha256": "26a5aec955cdfc9a72dec5dc0d4a769c70f540bccca6fb577421b030619a0a5e",
+  "fetchedAt": "2026-11-18T08:36:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_28033.jpg",
+  "path": "assets/a532ec4db99899482af3.jpg"
+}

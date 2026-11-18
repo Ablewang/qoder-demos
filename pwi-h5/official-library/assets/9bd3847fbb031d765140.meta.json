@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_190.jpg",
+  "id": "9bd3847fbb031d765140",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "飞行精通",
+  "bytes": 1575,
+  "sha256": "2e6277c421d0fe66de2d4df64bcc6d7dc3da74573940ca8b19cfbde72120e7f2",
+  "fetchedAt": "2026-11-18T08:35:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_190.jpg",
+  "path": "assets/9bd3847fbb031d765140.jpg"
+}

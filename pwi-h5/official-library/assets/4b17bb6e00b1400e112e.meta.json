@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/images/ui-icons_cd0a0a_256x240.png",
+  "id": "4b17bb6e00b1400e112e",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201303/spread/style/master.css",
+  "bytes": 4369,
+  "sha256": "53f9f6be37d5c395c125a53dbf39c697fc3e5fd44a5f09f0d99710910f840dd6",
+  "fetchedAt": "2026-11-18T08:38:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/images/ui-icons_cd0a0a_256x240.png",
+  "path": "assets/4b17bb6e00b1400e112e.png"
+}

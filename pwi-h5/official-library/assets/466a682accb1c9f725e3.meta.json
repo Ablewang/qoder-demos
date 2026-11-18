@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_596.jpg",
+  "id": "466a682accb1c9f725e3",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·困缚矢<em>（升仙）</em>",
+  "bytes": 1701,
+  "sha256": "21624cce199557248bfc6f9c5e60d53036c7c54989e5f7fb8144cbbaf7104ab9",
+  "fetchedAt": "2026-11-18T08:34:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_596.jpg",
+  "path": "assets/466a682accb1c9f725e3.jpg"
+}

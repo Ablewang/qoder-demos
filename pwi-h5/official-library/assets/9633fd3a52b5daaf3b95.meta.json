@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/bai.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9633fd3a52b5daaf3b95",
+  "status": "ok",
+  "parents": [
+    "25e929c3b88e2a4ab4f8"
+  ],
+  "bytes": 71769,
+  "sha256": "de741a55aaad17a8c398fef2ccb58d8f8edf785a40ab45d16d1018a449f92141",
+  "fetchedAt": "2026-11-18T08:22:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/bai.jpg",
+  "path": "assets/9633fd3a52b5daaf3b95.jpg"
+}

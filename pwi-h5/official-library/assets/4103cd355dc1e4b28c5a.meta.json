@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/enter/images/ltaba.png",
+  "id": "4103cd355dc1e4b28c5a",
+  "status": "ok",
+  "parents": [
+    "2ed37cf6dbb67bef702a"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201408/enter/style/master.css",
+  "bytes": 1896,
+  "sha256": "d8f881280341ec5c9feefc983d6b67e15ae49132638719890ef2b17721c63713",
+  "fetchedAt": "2026-11-18T08:38:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/enter/images/ltaba.png",
+  "path": "assets/4103cd355dc1e4b28c5a.png"
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/zulong/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "f27750324d758ed4223e",
+  "status": "ok",
+  "parents": [
+    "f720e10b47e4cc85414e",
+    "34a1700655ccbd1a0a98",
+    "c219348c0ec196539253",
+    "7b93593860e8f53b8e11",
+    "2ea6fce46f98c7b0439e",
+    "afd731d2d0e0a68bba07",
+    "44fd4262da3c284d27d7",
+    "a104792f2857ee35b34b",
+    "b5c8d5cfc1179a10c6e1"
+  ],
+  "bytes": 6242,
+  "sha256": "3e0b66bd1a670edefa6ef0cab665cd8095337720580a7335e2da2f9c550317ea",
+  "fetchedAt": "2026-11-18T08:24:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/zulong/style/master.css",
+  "path": "assets/f27750324d758ed4223e.css"
+}

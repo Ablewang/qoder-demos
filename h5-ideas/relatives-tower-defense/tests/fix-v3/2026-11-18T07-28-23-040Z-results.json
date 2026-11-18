@@ -1,0 +1,408 @@
+{
+  "run": "2026-11-18T07-28-23-040Z",
+  "environment": "Local Chrome via Playwright, real keyboard events, real RAF clock and DOM clicks",
+  "checks": [
+    "320: rules dialog takes focus, background inert+aria-hidden, Tab/Shift+Tab stay inside, Esc and close button return focus to 看玩法",
+    "320: pause dialog takes focus, freezes time, blocks background, Tab cycles inside, Esc/回桌继续 resume and return focus to pause; focus survives later re-renders",
+    "390: rules dialog takes focus, background inert+aria-hidden, Tab/Shift+Tab stay inside, Esc and close button return focus to 看玩法",
+    "390: pause dialog takes focus, freezes time, blocks background, Tab cycles inside, Esc/回桌继续 resume and return focus to pause; focus survives later re-renders",
+    "1280: rules dialog takes focus, background inert+aria-hidden, Tab/Shift+Tab stay inside, Esc and close button return focus to 看玩法",
+    "1280: pause dialog takes focus, freezes time, blocks background, Tab cycles inside, Esc/回桌继续 resume and return focus to pause; focus survives later re-renders",
+    "320: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG",
+    "390: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG",
+    "1280: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG"
+  ],
+  "focus": [
+    {
+      "size": "320",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    },
+    {
+      "size": "390",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    },
+    {
+      "size": "1280",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    }
+  ],
+  "posterFlow": [
+    {
+      "size": "320",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 515.0625,
+            "bottom": 559.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 44
+          },
+          "text": {
+            "top": 442,
+            "bottom": 507.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 65.0625
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 515.0625,
+            "bottom": 559.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 44
+          },
+          "text": {
+            "top": 442,
+            "bottom": 507.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 65.0625
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    },
+    {
+      "size": "390",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 619.171875,
+            "bottom": 663.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 44
+          },
+          "text": {
+            "top": 567.796875,
+            "bottom": 611.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 390,
+          "width": 390
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 619.171875,
+            "bottom": 663.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 44
+          },
+          "text": {
+            "top": 567.796875,
+            "bottom": 611.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 390,
+          "width": 390
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    },
+    {
+      "size": "1280",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 675.171875,
+            "bottom": 719.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 44
+          },
+          "text": {
+            "top": 623.796875,
+            "bottom": 667.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 1280,
+          "width": 1280
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 675.171875,
+            "bottom": 719.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 44
+          },
+          "text": {
+            "top": 623.796875,
+            "bottom": 667.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 1280,
+          "width": 1280
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    }
+  ],
+  "zeroCards": null,
+  "screenshots": [
+    "2026-11-18T07-28-23-040Z-320-rules-focus.png",
+    "2026-11-18T07-28-23-040Z-320-pause-focus.png",
+    "2026-11-18T07-28-23-040Z-390-rules-focus.png",
+    "2026-11-18T07-28-23-040Z-390-pause-focus.png",
+    "2026-11-18T07-28-23-040Z-1280-rules-focus.png",
+    "2026-11-18T07-28-23-040Z-1280-pause-focus.png",
+    "2026-11-18T07-28-23-040Z-320-poster-fail.png",
+    "2026-11-18T07-28-23-040Z-320-poster-success.png",
+    "2026-11-18T07-28-23-040Z-390-poster-fail.png",
+    "2026-11-18T07-28-23-040Z-390-poster-success.png",
+    "2026-11-18T07-28-23-040Z-1280-poster-fail.png",
+    "2026-11-18T07-28-23-040Z-1280-poster-success.png"
+  ],
+  "errors": [],
+  "limits": [
+    "Poster failure is induced by stubbing HTMLCanvasElement.toDataURL in the page, simulating a browser canvas failure",
+    "Large text is emulated with 150% page zoom at 320px, not OS/WeChat font settings",
+    "No physical phone, WeChat, screen reader or listening test"
+  ],
+  "passed": false,
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-action=\"start\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"start\" data-action=\"start\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"place-heading\">…</div> from <section aria-label=\"你的座位\" class=\"place-card\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <section aria-label=\"你的座位\" class=\"place-card\">…</section> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"place-heading\">…</div> from <section aria-label=\"你的座位\" class=\"place-card\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    14 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"place-heading\">…</div> from <section aria-label=\"你的座位\" class=\"place-card\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <section aria-label=\"你的座位\" class=\"place-card\">…</section> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"place-heading\">…</div> from <section aria-label=\"你的座位\" class=\"place-card\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m       - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"place-heading\">…</div> from <section aria-label=\"你的座位\" class=\"place-card\">…</section> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at posterChecks (/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/fix-v3/check.mjs:101:47)\n    at async file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/fix-v3/check.mjs:186:3"
+}

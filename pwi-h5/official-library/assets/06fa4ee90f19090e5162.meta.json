@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_566.jpg",
+  "id": "06fa4ee90f19090e5162",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·聚神符<em>（升仙）</em>",
+  "bytes": 1619,
+  "sha256": "89c1557309d428125491feb2a32a4e8a182843217b37b7520595bb19ea1e6588",
+  "fetchedAt": "2026-11-18T08:35:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_566.jpg",
+  "path": "assets/06fa4ee90f19090e5162.jpg"
+}

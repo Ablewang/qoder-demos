@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_603.jpg",
+  "id": "6a0607f765754ad414a4",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·箭阵<em>（入魔）</em>",
+  "bytes": 1723,
+  "sha256": "7be0b3d8d51e66638008bdf4144cdef463dc0eaf907fe00fdb296ee48ef782f8",
+  "fetchedAt": "2026-11-18T08:34:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_603.jpg",
+  "path": "assets/6a0607f765754ad414a4.jpg"
+}

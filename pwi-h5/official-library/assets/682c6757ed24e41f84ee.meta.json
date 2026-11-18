@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/show/xml/options.xml",
+  "label": "",
+  "kind": "script-reference",
+  "id": "682c6757ed24e41f84ee",
+  "status": "ok",
+  "parents": [
+    "e1deb89df9443fb784cb"
+  ],
+  "bytes": 32804,
+  "sha256": "79b1b8b16474aef51e01351dc07474fa4f7e4375a5845333191cea055f2aa4ca",
+  "fetchedAt": "2026-11-18T08:24:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/xml",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/show/xml/options.xml",
+  "path": "assets/682c6757ed24e41f84ee.xml"
+}

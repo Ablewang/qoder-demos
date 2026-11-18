@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/style/style111122.css",
+  "alt": "",
+  "kind": "link",
+  "id": "9bd1dd129c8020e74c7f",
+  "status": "ok",
+  "parents": [
+    "090c3b6f4d7072cf2ec0"
+  ],
+  "bytes": 8898,
+  "sha256": "53708dba386dcb2a43aaed3c2b4a4d74daea275bf90059f71473aafa649932c0",
+  "fetchedAt": "2026-11-18T08:20:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://w2i.wanmei.com/style/style111122.css",
+  "path": "assets/9bd1dd129c8020e74c7f.css"
+}

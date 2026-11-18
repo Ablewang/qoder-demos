@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_512.jpg",
+  "id": "7d7e870a14cf827b8c4d",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "真·兽王鼓舞",
+  "bytes": 1670,
+  "sha256": "6f0773d8532bb8c81441a1143e255bed87082ffd5c0593c55fd574ec51302ddd",
+  "fetchedAt": "2026-11-18T08:35:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_512.jpg",
+  "path": "assets/7d7e870a14cf827b8c4d.jpg"
+}

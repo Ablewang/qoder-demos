@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130408/10021365412533558.jpg",
+  "alt": "昊天镜（女）",
+  "kind": "img",
+  "id": "bdc8dd6c3463be4a1f7a",
+  "status": "ok",
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "bytes": 2385,
+  "sha256": "0c37e8a7f57009032dfb5cc096335d1516f9bb964e26298e0b3f8ec08366ce1a",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/bdc8dd6c3463be4a1f7a.jpg"
+}

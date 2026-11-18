@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_675.jpg",
+  "id": "6aa7ad2feccd712d798f",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·弱魂咒<em>（入魔）</em>",
+  "bytes": 1576,
+  "sha256": "5fa85fb7942177411e0418240ea3d20a9b003c8defc5bb59daa82c61f21421c8",
+  "fetchedAt": "2026-11-18T08:35:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_675.jpg",
+  "path": "assets/6aa7ad2feccd712d798f.jpg"
+}

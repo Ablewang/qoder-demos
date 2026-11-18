@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27623.jpg",
+  "id": "97791db53bf314fb2574",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 如来天心咒<em>（入魔）</em> ",
+  "bytes": 3805,
+  "sha256": "99e2dbaef9bc0bcbe3201e9d3a32934f17b82b0125a6c0956b674d59ff1516f3",
+  "fetchedAt": "2026-11-18T08:36:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27623.jpg",
+  "path": "assets/97791db53bf314fb2574.jpg"
+}

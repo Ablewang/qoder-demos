@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/banner_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "d27ada51376b341c5187",
+  "status": "ok",
+  "parents": [
+    "b4581dca3e970417240a"
+  ],
+  "bytes": 42022,
+  "sha256": "72a3b1fce03c43bacf372bcb71a9d0665c92018ee02d79f66ad3f06217164737",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/d27ada51376b341c5187.jpg"
+}

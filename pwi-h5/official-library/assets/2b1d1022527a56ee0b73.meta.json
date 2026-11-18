@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_468.jpg",
+  "id": "2b1d1022527a56ee0b73",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·凌杀<em>（升仙）</em>",
+  "bytes": 1751,
+  "sha256": "32ae3641152af2d1ee55e3613040948d76790d5c6125b7f855a84f87be6cf68c",
+  "fetchedAt": "2026-11-18T08:34:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_468.jpg",
+  "path": "assets/2b1d1022527a56ee0b73.jpg"
+}

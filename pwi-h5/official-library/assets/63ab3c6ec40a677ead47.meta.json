@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_616.jpg",
+  "id": "63ab3c6ec40a677ead47",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·蛇蝎之矢<em>（升仙）</em>",
+  "bytes": 1673,
+  "sha256": "10f7316774c9516fb0188b8ab66f0f6410791326b5cdb9773025f59d7f89b941",
+  "fetchedAt": "2026-11-18T08:34:59+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_616.jpg",
+  "path": "assets/63ab3c6ec40a677ead47.jpg"
+}

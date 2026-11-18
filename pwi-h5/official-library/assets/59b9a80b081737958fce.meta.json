@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1731.jpg",
+  "id": "59b9a80b081737958fce",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "回光诀",
+  "bytes": 4928,
+  "sha256": "6171c4d46207fa73ff456d61a87c7cc439dadfc8f298cea40738a096884262b9",
+  "fetchedAt": "2026-11-18T08:36:35+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1731.jpg",
+  "path": "assets/59b9a80b081737958fce.jpg"
+}

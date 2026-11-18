@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/newline/images/banner_01_02.png",
+  "alt": "",
+  "kind": "img",
+  "id": "9e6c9f0d4bb5339f6bc3",
+  "status": "ok",
+  "parents": [
+    "5186b0b0b3c3773b5d31",
+    "1fe80fc9d9958da87b08",
+    "992deb2b04eb83864a12",
+    "058e746aaf0da73a1ed5",
+    "8620a35de1f02343fc2b"
+  ],
+  "bytes": 29002,
+  "sha256": "4a10c4198e865e1332c8696116d086465f1283d597e9cca7f9c600bf6f37fd57",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/9e6c9f0d4bb5339f6bc3.png"
+}

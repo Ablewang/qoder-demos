@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_577.jpg",
+  "id": "4e9d47ca45ddddea22d9",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·羽刃<em>（入魔）</em>",
+  "bytes": 1616,
+  "sha256": "0eb252f17c99559f488e0b857f7c31be3e567fd901fdacaa4b525e60ab1ce6d5",
+  "fetchedAt": "2026-11-18T08:35:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_577.jpg",
+  "path": "assets/4e9d47ca45ddddea22d9.jpg"
+}

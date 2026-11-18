@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/js/jq_ui_171.js",
+  "alt": "",
+  "kind": "script",
+  "id": "854ec45aab020168aa83",
+  "status": "ok",
+  "parents": [
+    "eab551e03b8fd10609a9",
+    "ce036e5012d6285a44f3",
+    "8aa1da03402225531ee3"
+  ],
+  "bytes": 18475,
+  "sha256": "6f049f5849d9badad162a5e7fbac9ee56a7a0c8b21215cb6eedf11b92177417b",
+  "fetchedAt": "2026-11-18T08:17:54+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201104/xiuld/js/jq_ui_171.js",
+  "path": "assets/854ec45aab020168aa83.js"
+}

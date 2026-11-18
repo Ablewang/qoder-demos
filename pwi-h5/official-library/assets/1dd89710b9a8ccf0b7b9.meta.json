@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_wbx_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "1dd89710b9a8ccf0b7b9",
+  "status": "ok",
+  "parents": [
+    "0121967a7fc61b00ed02"
+  ],
+  "bytes": 3828,
+  "sha256": "a81572001c6e3ad99e05d03f68e7ae1b2c6a7a21860576a8d19b80b0d42a6ddf",
+  "fetchedAt": "2026-11-18T08:22:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_wbx_button.jpg",
+  "path": "assets/1dd89710b9a8ccf0b7b9.jpg"
+}

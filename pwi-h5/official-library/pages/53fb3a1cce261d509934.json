@@ -1,0 +1,1957 @@
+{
+  "id": "53fb3a1cce261d509934",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+  "title": "妖精技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "5cb139e84a2958af390a",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8b5c345f6803d876ec867aa70f4a97ae613c9d83702afda1f19849dd945b5250",
+  "bytes": 106981,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/53fb3a1cce261d509934.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n妖精技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n剧毒蛊\n空手、法器\n无\n筑基\n主动攻击\n10\n天生\n5,10,15,\n扔出一个剧毒的虫蛊，对目标造成木系伤害。\n20,25,30,\n35,40,45\n铁岩蛊\n空手、法器\n剧毒蛊\n灵虚\n主动攻击\n10\n9\n14,19,24,\n扔出一个坚硬的虫蛊，对目标造成木系伤害的同时降低其物防。\n29,34,39,\n44,49,54\n炎蛊\n空手、法器\n铁岩蛊\n和合\n主动攻击\n10\n19\n24,29,34,\n向敌人扔出一个炎热的虫蛊，可以造成火系持续伤害。\n39,44,49,\n54,59,64\n凌霜蛊\n空手、法器\n炎蛊\n元婴\n主动攻击\n10\n29\n34,39,44,\n向敌人扔出一个冰冷的虫蛊，可能使其冻伤。\n49,54,59,\n64,69,74\n千蚁蛊\n空手、法器\n凌霜蛊\n空冥\n主动攻击\n10\n39\n43,47,51,\n大量毒蚁聚集而成的毒蛊，可对目标及周围造成强大的持续木系伤害。\n55,59,63,\n67,71,75\n巨石蛊\n空手、法器\n千蚁蛊\n履霜\n主动攻击\n10\n49\n53,57,61,\n结满毒蛊的巨石，可以击晕目标。\n65,69,73,\n77,81,85\n万蛊食天\n空手、法器\n巨石蛊\n渡劫\n主动攻击\n10\n59\n62,65,68,\n唤出一个强大的毒蛊阵，对目标周围敌人造成强大的木系伤害，并使其陷入封印状态。\n71,74,77,\n80,83,86\n荆棘术\n空手、法器\n无\n灵虚\n主动祝福\n10\n16\n21,26,31,\n为自身加上一个荆棘环，反弹一定的近身物理伤害。\n36,41,46,\n51,56,59\n强体术\n空手、法器\n荆棘术\n和合\n主动祝福\n10\n26\n31,36,41,\n为自已恢复一定比例的生命值。\n46,51,56,\n61,66,71\n神辅术\n空手、法器\n强体术\n元婴\n主动祝福\n10\n36\n40,44,48,\n为自已恢复一定比例的真气值。\n52,56,60,\n64,68,72\n移元术\n空手、法器\n神辅术\n空冥\n主动祝福\n1\n46\n将自身的元气转化为目标的元气。\n荆棘阵\n空手、法器\n荆棘术10级\n渡劫\n主动祝福\n1\n59\n为自身加上一个荆棘阵，反弹大量的近身物理伤害，并减少自已受到的伤害。\n乾坤互移\n空手、法器\n无\n元婴\n主动祝福\n1\n29\n瞬间将自己的生命和真气值互换。\n妖狐变\n空手、法器\n无\n灵虚\n主动祝福\n3\n9\n29,59\n化身妖狐，物理防御和命中率大幅提升，真气值降低。\n驯服宠物\n空手、法器\n无\n筑基\n主动祝福\n10\n7\n7,17,27,\n可以尝试驯服一些未被怨灵力量浸染的怪物。\n37,47,57\n,67,77,87,97\n治疗宠物\n空手、法器\n无\n灵虚\n主动祝福\n10\n3\n3,13,23,\n治疗你的宠物。\n33,43,53,\n63,73,83,93\n复活宠物\n空手、法器\n无\n筑基\n主动祝福\n10\n3\n3,13,23,\n复活死掉的宠物。\n33,43,53,\n63,73,83,94\n妖狐击\n空手、法器\n妖狐附体\n灵虚\n主动攻击\n10\n9\n14,19,24,\n一次近身的强力攻击，减慢对方的技能速度。\n29,34,39,\n44,49,54\n妖雾击\n空手、法器\n妖狐击\n和合\n主动攻击\n10\n19\n24,29,34,\n攻击敌人并用妖雾迷惑对方，使其命中降低。\n39,44,49,\n54,59,64\n妖缠击\n空手、法器\n妖雾击\n元婴\n主动攻击\n10\n29\n34,39,44,\n攻击时可借妖狐之力使对手定身一段时间。\n49,54,59,\n64,69,74\n妖魂击\n空手、法器\n妖缠击\n空冥\n主动攻击\n10\n39\n43,47,51,\n击中敌人可以吸取一定生命。\n55,59,63,\n67,71,75\n妖灵击\n空手、法器\n妖魂击\n履霜\n主动攻击\n10\n49\n53,57,61,\n击中敌人可以吸取一定真气，自已会损失一些生命值。\n65,69,73,\n77,81,85\n妖煞击\n空手、法器\n妖灵击\n渡劫\n主动攻击\n10\n59\n62,65,68,\n借妖煞之力攻击对方，对其造成很大的物理伤害并持续减少其真气值。\n71,74,77,\n80,83,86\n驱逐咒\n空手、法器\n妖狐附体\n灵虚\n主动诅咒\n10\n13\n18,23,28,\n去掉敌人身上的所有正面状态。\n33,38,43,\n48,53,58\n残体咒\n空手、法器\n驱逐咒\n和合\n主动诅咒\n10\n23\n28,33,38,\n使敌人受到的所有伤害提升。\n43,48,53,\n58,63,68\n弱魂咒\n空手、法器\n残体咒\n元婴\n主动诅咒\n10\n33\n37,41,45,\n降低敌人生命、真气恢复速度。\n49,53,57,\n61,65,69\n碎灵咒\n空手、法器\n弱魂咒\n空冥\n主动诅咒\n1\n43\n敌人每受到一次攻击，将损失一定的元气。\n水性精通\n空手、法器\n无\n灵虚\n被动\n1\n9\n水中游泳速度提升。\n肉搏精通\n空手、法器\n无\n和合\n被动\n10\n19\n24,29,34,\n变身后增加所有物理攻击的攻击力。\n39,44,49,\n54,59,64\n木精通\n空手、法器\n无\n元婴\n被动\n10\n29\n34,39,44,\n增加所有木系法术的攻击力。\n49,54,59,\n64,69,74\n飞花遁影\n空手、法器\n无\n元婴\n主动祝福\n3\n29\n59,89\n遁形于飞花之间，移动速度提升。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "妖精技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "剧毒蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "5,10,15,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "扔出一个剧毒的虫蛊，对目标造成木系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "20,25,30,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "35,40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁岩蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "剧毒蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "扔出一个坚硬的虫蛊，对目标造成木系伤害的同时降低其物防。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "炎蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "铁岩蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "向敌人扔出一个炎热的虫蛊，可以造成火系持续伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凌霜蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "炎蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "向敌人扔出一个冰冷的虫蛊，可能使其冻伤。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "千蚁蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "凌霜蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "大量毒蚁聚集而成的毒蛊，可对目标及周围造成强大的持续木系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55,59,63,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巨石蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "千蚁蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "结满毒蛊的巨石，可以击晕目标。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65,69,73,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "万蛊食天",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "巨石蛊",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "唤出一个强大的毒蛊阵，对目标周围敌人造成强大的木系伤害，并使其陷入封印状态。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,74,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "荆棘术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "21,26,31,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为自身加上一个荆棘环，反弹一定的近身物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "36,41,46,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "51,56,59",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "强体术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "荆棘术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "26",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "31,36,41,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为自已恢复一定比例的生命值。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "46,51,56,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "61,66,71",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神辅术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "强体术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "36",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "40,44,48,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为自已恢复一定比例的真气值。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "52,56,60,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "64,68,72",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "移元术",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "神辅术",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "46",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将自身的元气转化为目标的元气。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "荆棘阵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "荆棘术10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为自身加上一个荆棘阵，反弹大量的近身物理伤害，并减少自已受到的伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "乾坤互移",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬间将自己的生命和真气值互换。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖狐变",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "化身妖狐，物理防御和命中率大幅提升，真气值降低。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "驯服宠物",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "7,17,27,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可以尝试驯服一些未被怨灵力量浸染的怪物。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "37,47,57",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": ",67,77,87,97",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "治疗宠物",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "3,13,23,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "治疗你的宠物。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "33,43,53,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "63,73,83,93",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "复活宠物",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "3,13,23,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "复活死掉的宠物。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "33,43,53,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "63,73,83,94",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖狐击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖狐附体",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一次近身的强力攻击，减慢对方的技能速度。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖雾击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖狐击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击敌人并用妖雾迷惑对方，使其命中降低。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖缠击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖雾击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击时可借妖狐之力使对手定身一段时间。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖魂击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖缠击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "击中敌人可以吸取一定生命。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55,59,63,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖灵击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖魂击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "击中敌人可以吸取一定真气，自已会损失一些生命值。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65,69,73,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "妖煞击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖灵击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "借妖煞之力攻击对方，对其造成很大的物理伤害并持续减少其真气值。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,74,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "驱逐咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "妖狐附体",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "18,23,28,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "去掉敌人身上的所有正面状态。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "33,38,43,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "48,53,58",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "残体咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "驱逐咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "28,33,38,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使敌人受到的所有伤害提升。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "43,48,53,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "58,63,68",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "弱魂咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "残体咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "33",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "37,41,45,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "降低敌人生命、真气恢复速度。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,53,57,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "61,65,69",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碎灵咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弱魂咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "43",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敌人每受到一次攻击，将损失一定的元气。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水性精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "水中游泳速度提升。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "肉搏精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "变身后增加所有物理攻击的攻击力。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "木精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "增加所有木系法术的攻击力。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "飞花遁影",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空手、法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,89",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "遁形于飞花之间，移动速度提升。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>妖精技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>剧毒蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>5,10,15,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>扔出一个剧毒的虫蛊，对目标造成木系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>20,25,30,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>35,40,45</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>铁岩蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>剧毒蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>扔出一个坚硬的虫蛊，对目标造成木系伤害的同时降低其物防。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>炎蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>铁岩蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>向敌人扔出一个炎热的虫蛊，可以造成火系持续伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>凌霜蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>炎蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>向敌人扔出一个冰冷的虫蛊，可能使其冻伤。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>64,69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>千蚁蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>凌霜蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>大量毒蚁聚集而成的毒蛊，可对目标及周围造成强大的持续木系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>55,59,63,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>67,71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>巨石蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>千蚁蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>结满毒蛊的巨石，可以击晕目标。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>65,69,73,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>77,81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>万蛊食天</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>巨石蛊</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>唤出一个强大的毒蛊阵，对目标周围敌人造成强大的木系伤害，并使其陷入封印状态。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,74,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>80,83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>荆棘术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>16</div>\r\n            </td>\r\n            <td>\r\n            <div>21,26,31,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>为自身加上一个荆棘环，反弹一定的近身物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>36,41,46,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>51,56,59</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>强体术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>荆棘术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>26</div>\r\n            </td>\r\n            <td>\r\n            <div>31,36,41,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>为自已恢复一定比例的生命值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>46,51,56,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>61,66,71</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>神辅术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>强体术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>36</div>\r\n            </td>\r\n            <td>\r\n            <div>40,44,48,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>为自已恢复一定比例的真气值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>52,56,60,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>64,68,72</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>移元术</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>神辅术</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>46</div>\r\n            </td>\r\n            <td>　\r\n            <div> </div>\r\n            </td>\r\n            <td>\r\n            <div>将自身的元气转化为目标的元气。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>荆棘阵</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>荆棘术10级</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>　\r\n            <div> </div>\r\n            </td>\r\n            <td>\r\n            <div>为自身加上一个荆棘阵，反弹大量的近身物理伤害，并减少自已受到的伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>乾坤互移</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>　\r\n            <div> </div>\r\n            </td>\r\n            <td>\r\n            <div>瞬间将自己的生命和真气值互换。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>妖狐变</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>29,59</div>\r\n            </td>\r\n            <td>\r\n            <div>化身妖狐，物理防御和命中率大幅提升，真气值降低。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>驯服宠物</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>7</div>\r\n            </td>\r\n            <td>\r\n            <div>7,17,27,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>可以尝试驯服一些未被怨灵力量浸染的怪物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>37,47,57</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>,67,77,87,97</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>治疗宠物</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>3,13,23,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>治疗你的宠物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>33,43,53,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>63,73,83,93</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>复活宠物</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>3,13,23,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>复活死掉的宠物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>33,43,53,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>63,73,83,94</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>妖狐击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖狐附体</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>一次近身的强力攻击，减慢对方的技能速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>妖雾击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖狐击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>攻击敌人并用妖雾迷惑对方，使其命中降低。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>妖缠击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖雾击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>攻击时可借妖狐之力使对手定身一段时间。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>64,69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>妖魂击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖缠击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>击中敌人可以吸取一定生命。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>55,59,63,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>67,71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>妖灵击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖魂击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>击中敌人可以吸取一定真气，自已会损失一些生命值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>65,69,73,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>77,81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>妖煞击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖灵击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>借妖煞之力攻击对方，对其造成很大的物理伤害并持续减少其真气值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,74,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>80,83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>驱逐咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>妖狐附体</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>13</div>\r\n            </td>\r\n            <td>\r\n            <div>18,23,28,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>去掉敌人身上的所有正面状态。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>33,38,43,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>48,53,58</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>残体咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>驱逐咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>23</div>\r\n            </td>\r\n            <td>\r\n            <div>28,33,38,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>使敌人受到的所有伤害提升。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>43,48,53,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>58,63,68</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>弱魂咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>残体咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>33</div>\r\n            </td>\r\n            <td>\r\n            <div>37,41,45,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>降低敌人生命、真气恢复速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,53,57,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>61,65,69</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>碎灵咒</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>弱魂咒</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>43</div>\r\n            </td>\r\n            <td>　\r\n            <div> </div>\r\n            </td>\r\n            <td>\r\n            <div>敌人每受到一次攻击，将损失一定的元气。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>水性精通</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>　\r\n            <div> </div>\r\n            </td>\r\n            <td>\r\n            <div>水中游泳速度提升。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>肉搏精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>变身后增加所有物理攻击的攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>木精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>增加所有木系法术的攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>64,69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>飞花遁影</div>\r\n            </td>\r\n            <td>\r\n            <div>空手、法器</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>59,89</div>\r\n            </td>\r\n            <td>\r\n            <div>遁形于飞花之间，移动速度提升。</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/53fb3a1cce261d509934.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/53fb3a1cce261d509934.js"
+}

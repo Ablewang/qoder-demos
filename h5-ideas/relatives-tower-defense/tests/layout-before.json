@@ -1,0 +1,164 @@
+[
+  {
+    "name": "before-first-320-viewport",
+    "viewport": [
+      320,
+      740
+    ],
+    "scrollY": 0,
+    "scrollWidth": 320,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 518,
+        "bottom": 644,
+        "width": 145,
+        "height": 126,
+        "font": "13px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 518,
+        "bottom": 644,
+        "width": 145,
+        "height": 126,
+        "font": "13px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 654,
+        "bottom": 790.28125,
+        "width": 145,
+        "height": 136.28125,
+        "font": "13px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 654,
+        "bottom": 790.28125,
+        "width": 145,
+        "height": 136.28125,
+        "font": "13px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 11.5,
+        "bottom": 43.5,
+        "width": 62,
+        "height": 32
+      },
+      {
+        "action": "pause",
+        "top": 11.5,
+        "bottom": 43.5,
+        "width": 40,
+        "height": 32
+      },
+      {
+        "action": "read",
+        "top": 487,
+        "bottom": 517,
+        "width": 43.34375,
+        "height": 30
+      }
+    ],
+    "questions": [
+      {
+        "top": 147,
+        "bottom": 259,
+        "width": 140,
+        "height": 112,
+        "font": "12px"
+      }
+    ],
+    "feedback": "防的是盘问，不是亲情。\n\n先读问题，再选一句适合自己的回答。",
+    "animation": 0
+  },
+  {
+    "name": "before-two-320-viewport",
+    "viewport": [
+      320,
+      740
+    ],
+    "scrollY": 0,
+    "scrollWidth": 320,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 518,
+        "bottom": 644,
+        "width": 145,
+        "height": 126,
+        "font": "13px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 518,
+        "bottom": 644,
+        "width": 145,
+        "height": 126,
+        "font": "13px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 654,
+        "bottom": 790.28125,
+        "width": 145,
+        "height": 136.28125,
+        "font": "13px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 654,
+        "bottom": 790.28125,
+        "width": 145,
+        "height": 136.28125,
+        "font": "13px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 11.5,
+        "bottom": 43.5,
+        "width": 62,
+        "height": 32
+      },
+      {
+        "action": "pause",
+        "top": 11.5,
+        "bottom": 43.5,
+        "width": 40,
+        "height": 32
+      }
+    ],
+    "questions": [
+      {
+        "top": 147,
+        "bottom": 270.375,
+        "width": 140,
+        "height": 123.375,
+        "font": "12px"
+      },
+      {
+        "top": 147,
+        "bottom": 259,
+        "width": 140,
+        "height": 112,
+        "font": "12px"
+      }
+    ],
+    "feedback": "话题轻轻接住，饭照样好好吃。\n\n账本回去再算，今晚先算饺子够不够。",
+    "animation": 0
+  }
+]

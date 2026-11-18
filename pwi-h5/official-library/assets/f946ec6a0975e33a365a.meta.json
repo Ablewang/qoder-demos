@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_443.jpg",
+  "id": "f946ec6a0975e33a365a",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·烈焰护甲<em>（入魔）</em>",
+  "bytes": 1633,
+  "sha256": "48aa8333caa74a1d5886f87b9bcb12f07b9f9cb1a0bb8dce0c5b4b20658d68eb",
+  "fetchedAt": "2026-11-18T08:34:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_443.jpg",
+  "path": "assets/f946ec6a0975e33a365a.jpg"
+}

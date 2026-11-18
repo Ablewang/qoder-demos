@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130123/10021358903882961.jpg",
+  "alt": "图片: 图4：大红灯笼高高挂.jpg",
+  "kind": "img",
+  "id": "f2580905ea393dd6e775",
+  "status": "ok",
+  "parents": [
+    "9066c33eeeda8283dd07"
+  ],
+  "bytes": 73344,
+  "sha256": "40b171e006abea6b2ca0dc5f78e0b6077d58a8d22f683087780aea86c4e62f01",
+  "fetchedAt": "2026-11-18T08:23:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130123/10021358903882961.jpg",
+  "path": "assets/f2580905ea393dd6e775.jpg"
+}

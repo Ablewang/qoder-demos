@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_18.jpg",
+  "id": "66dadafd403e72ca7e84",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "还魂咒",
+  "bytes": 1377,
+  "sha256": "638054545c03409ec9a36e149044ac427223d83fab010f3eb5971163fb9a9735",
+  "fetchedAt": "2026-11-18T08:35:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_18.jpg",
+  "path": "assets/66dadafd403e72ca7e84.jpg"
+}

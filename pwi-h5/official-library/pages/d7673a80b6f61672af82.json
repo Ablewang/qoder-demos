@@ -1,0 +1,414 @@
+{
+  "id": "d7673a80b6f61672af82",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+  "title": "NPC查找 - 冰风谷周边",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ceb1bdd6d12abaa2c463240729c916589d23208dd0b1cde0dc1717d63e5ead0c",
+  "bytes": 69308,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d7673a80b6f61672af82.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n刘索\n327.975\n药师严胜慈\n326.976\n货郎余长庆\n325.976\n铁匠凌铁骑\n322.975\n巧匠吴娇阳\n322.974\n梦瑶\n324.973\n钱庄掌柜康多令\n325.972\n传送师詹涵虚\n325.972\n孟汤\n326.966\n白穹\n327.973\n雪崩峡谷方古道\n363.978\n雪霏村村长\n149.960\n裁缝骆明珠\n152.963\n合成大师丘远山\n150.967\n春申\n154.962\n货郎柯施\n150.960\n药师简去病\n151.959\n冰如雁\n150.958\n邮筒\n148.958\n钱庄掌柜韩筹\n148.958\n碎冰村钱庄掌柜田源广\n249.973\n药师温文\n250.973\n货郎尤通达\n251.973\n传送师翁正清\n251.973",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "刘索",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "327.975",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师严胜慈",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "326.976",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎余长庆",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "325.976",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠凌铁骑",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "322.975",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巧匠吴娇阳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "322.974",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "梦瑶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "324.973",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜康多令",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "325.972",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师詹涵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "325.972",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "孟汤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "326.966",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "白穹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "327.973",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雪崩峡谷方古道",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "363.978",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雪霏村村长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "149.960",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝骆明珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "152.963",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "合成大师丘远山",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150.967",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "春申",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "154.962",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎柯施",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150.960",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师简去病",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "151.959",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冰如雁",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150.958",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "邮筒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "148.958",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜韩筹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "148.958",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碎冰村钱庄掌柜田源广",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "249.973",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师温文",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250.973",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎尤通达",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "251.973",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师翁正清",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "251.973",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>刘索</td>\r\n            <td>327.975</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师严胜慈</td>\r\n            <td>326.976</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎余长庆</td>\r\n            <td>325.976</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠凌铁骑</td>\r\n            <td>322.975</td>\r\n        </tr>\r\n        <tr>\r\n            <td>巧匠吴娇阳</td>\r\n            <td>322.974</td>\r\n        </tr>\r\n        <tr>\r\n            <td>梦瑶</td>\r\n            <td>324.973</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜康多令</td>\r\n            <td>325.972</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师詹涵虚</td>\r\n            <td>325.972</td>\r\n        </tr>\r\n        <tr>\r\n            <td>孟汤</td>\r\n            <td>326.966</td>\r\n        </tr>\r\n        <tr>\r\n            <td>白穹</td>\r\n            <td>327.973</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雪崩峡谷方古道</td>\r\n            <td>363.978</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雪霏村村长</td>\r\n            <td>149.960</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝骆明珠</td>\r\n            <td>152.963</td>\r\n        </tr>\r\n        <tr>\r\n            <td>合成大师丘远山</td>\r\n            <td>150.967</td>\r\n        </tr>\r\n        <tr>\r\n            <td>春申</td>\r\n            <td>154.962</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎柯施</td>\r\n            <td>150.960</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师简去病</td>\r\n            <td>151.959</td>\r\n        </tr>\r\n        <tr>\r\n            <td>冰如雁</td>\r\n            <td>150.958</td>\r\n        </tr>\r\n        <tr>\r\n            <td>邮筒</td>\r\n            <td>148.958</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜韩筹</td>\r\n            <td>148.958</td>\r\n        </tr>\r\n        <tr>\r\n            <td>碎冰村钱庄掌柜田源广</td>\r\n            <td>249.973</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师温文</td>\r\n            <td>250.973</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎尤通达</td>\r\n            <td>251.973</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师翁正清</td>\r\n            <td>251.973</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/d7673a80b6f61672af82.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/d7673a80b6f61672af82.js"
+}

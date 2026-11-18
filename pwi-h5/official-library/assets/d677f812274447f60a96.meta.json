@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_466.jpg",
+  "id": "d677f812274447f60a96",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·霜刃<em>（升仙）</em>",
+  "bytes": 1696,
+  "sha256": "949e9f987f1f53db8acae7964f12575b235ef1f7ea250bc9c3e60aec4d5a6309",
+  "fetchedAt": "2026-11-18T08:34:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_466.jpg",
+  "path": "assets/d677f812274447f60a96.jpg"
+}

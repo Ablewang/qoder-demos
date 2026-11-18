@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1376.jpg",
+  "id": "f2d1c6a7b37dad30b119",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "alt": "摄魂咒",
+  "bytes": 4633,
+  "sha256": "34404fcdcc66a4b42a59e26ad3f035b1f5ea85b347833026f1266f97bc6d1467",
+  "fetchedAt": "2026-11-18T08:36:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1376.jpg",
+  "path": "assets/f2d1c6a7b37dad30b119.jpg"
+}

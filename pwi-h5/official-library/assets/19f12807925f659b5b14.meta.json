@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/rongyao_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "19f12807925f659b5b14",
+  "status": "ok",
+  "parents": [
+    "750e70bcae7fb4afcdb5"
+  ],
+  "bytes": 4815,
+  "sha256": "f669811d520a89b14f9cbd4c7ef4d9d8c61921a0acfda94211cf9d07781fde43",
+  "fetchedAt": "2026-11-18T08:21:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/cz/images/rongyao_01.jpg",
+  "path": "assets/19f12807925f659b5b14.jpg"
+}

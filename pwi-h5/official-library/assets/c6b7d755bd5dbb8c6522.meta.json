@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/images/jt18s.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c6b7d755bd5dbb8c6522",
+  "status": "ok",
+  "parents": [
+    "5952bf5ada0b0b38792f"
+  ],
+  "bytes": 18457,
+  "sha256": "5910d41163b7fe40feb1b5bb20503ef87eee294ae2779adf2f59ea05c61ac76e",
+  "fetchedAt": "2026-11-18T08:18:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200903/jl/images/jt18s.jpg",
+  "path": "assets/c6b7d755bd5dbb8c6522.jpg"
+}

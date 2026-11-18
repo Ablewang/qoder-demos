@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_679.jpg",
+  "id": "0e0f19ceee0195cf58a4",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·肉搏精通<em>（入魔）</em>",
+  "bytes": 1776,
+  "sha256": "6fe368f612061168d2762a6ed55afda2ab08961bd58fb8dcc5580330fbeee0c9",
+  "fetchedAt": "2026-11-18T08:35:54+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_679.jpg",
+  "path": "assets/0e0f19ceee0195cf58a4.jpg"
+}

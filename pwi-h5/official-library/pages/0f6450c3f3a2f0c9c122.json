@@ -1,0 +1,84 @@
+{
+  "id": "0f6450c3f3a2f0c9c122",
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t7.htm",
+  "title": "修真专题 《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 4,
+  "parents": [
+    "830dd26c6bed835caa41"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t7.htm",
+  "fetchedAt": "2026-11-18T08:16:56+00:00",
+  "sha256": "caae67dd259c57184b9c4fe52591548a993a29f2a97ea6bd1f11450e18cc8c0a",
+  "bytes": 2533,
+  "rawPath": "raw/0f6450c3f3a2f0c9c122.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "1、与欢乐谷的灵魂锁链对话后即可触发该任务；\n2、击杀神无谷天尊的第一形态；\n3、击杀神无谷天尊的第二形态；\n4、击杀后任务完成，并触发后续任务；\n天尊的第一形态\n天尊的第二形态",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_title_15.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_23.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_22.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_side.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</div>\n\n\n<div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm</a></p>\n    </div>\t\n</div>\n\n<div>\n\t<div>\n\t\t<div><img src=\"assets/a2518d892dae5f7941cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t</div>\n\t\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm</a></p>\n        \n        <div>\n\t\t     <p>\n\t\t\t\t　　1、与欢乐谷的灵魂锁链对话后即可触发该任务；<br>\n\t\t\t\t　　2、击杀神无谷天尊的第一形态；<br>\n\t\t\t\t　　3、击杀神无谷天尊的第二形态；<br>\n\t\t\t\t　　4、击杀后任务完成，并触发后续任务；\n\t\t     </p>\n\t\t\t\n\t\t     <div><img src=\"assets/7d107aefb5d1de349ee1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t     <p>天尊的第一形态</p>\n\t\t\t\n\t\t     <div><img src=\"assets/740486f383c8ab680829.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t     <p>天尊的第二形态</p>\n\t   </div>\n  \t</div>\n  \t\n\t<div><img src=\"assets/a390b066ffc65598eb81.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t<img src=\"assets/397760d8e3a09cd48cf3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n</div>\n\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n",
+  "dataPath": "pages/0f6450c3f3a2f0c9c122.json",
+  "imageCount": 5,
+  "tableCount": 0,
+  "downloadPath": "downloads/0f6450c3f3a2f0c9c122.js"
+}

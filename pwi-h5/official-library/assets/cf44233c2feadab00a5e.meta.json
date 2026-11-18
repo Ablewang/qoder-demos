@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/tzc_tt01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "cf44233c2feadab00a5e",
+  "status": "ok",
+  "parents": [
+    "b7a12f0d008d21197d24"
+  ],
+  "bytes": 11843,
+  "sha256": "f8a8eb07c705a55236cfe3b1627b384609818a99e0aa845cbc5bc3ece6b3962f",
+  "fetchedAt": "2026-11-18T08:22:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/tzc_tt01.jpg",
+  "path": "assets/cf44233c2feadab00a5e.jpg"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "8f54481efa1c7377fc6a",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorxgdl.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "1751f53360fb91b12ba9",
+    "1c3a396b387469a917ed"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ebccbc83af16f04a815b35837742aa9f9ce91545ab553d032014e2bea136841f",
+  "bytes": 1928,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/8f54481efa1c7377fc6a.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorlcgl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorbossdl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorxg.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbossoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnxgon.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<div>\n    <div><a href=\"#page=1751f53360fb91b12ba9\"><img src=\"assets/9facda887e78ece85fc0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    <div><a href=\"#page=1c3a396b387469a917ed\"><img src=\"assets/c26daee0bd4ecc504d49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n\t<div><img src=\"assets/a43cfaf5afe0760491d3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n    </div>\n    <div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorxg.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorxg.htm</a></p>\n        </div>\n    </div>\n</div>\n",
+  "dataPath": "pages/8f54481efa1c7377fc6a.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/8f54481efa1c7377fc6a.js"
+}

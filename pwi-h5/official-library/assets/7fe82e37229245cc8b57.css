@@ -1,0 +1,50 @@
+@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+
+/* LOGO的定位 */
+#w2i_logo{
+	top:15px;
+	left:40px;
+}
+#transparent_logo{
+	top:15px;
+	left:40px;
+}
+
+	 
+/*页面公用信息*/
+html {min-width:1002px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,embed,object {margin:0;padding:0;}   
+fieldset,img,abbr {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight:normal;font-style:normal;}
+ul,ol {list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());}
+
+body {background:#ede59b url(../images/bg_index_1028.jpg) no-repeat center 47px;}
+
+/*页面公用信息*/
+
+
+#wrap { width:1002px; margin:0 auto; position:relative; }
+.img img{float:left;}
+.float{float:left; width:1002px;}
+.lent_menu{width:204px; float:left;}
+.right_menu{width:206px; float:left;}
+
+.con{ width:1002px; float:left;}
+.con_01{ width:592px; float:left;}
+.con_01 span{ display:inline; width:508px; height:219px; float:left; background:url(../images/index_con.jpg) no-repeat; padding:60px 42px 0 42px; font-size:14px; line-height:28px;text-indent: 28px;}
+.con_pic{background:url(../images/index_bar_01-24.jpg) no-repeat; width:926px; height:120px; float:left; padding:68px 76px; padding-right:0px;}
+.con_pic span{background:url(../images/pic_01.jpg) no-repeat; width:142px; height:106px; float:left;margin-right:7px; padding:15px 12px; display:inline; }
+#jcsj {
+	position:absolute;
+	left:432px;
+	top:717px;
+	width:143px;
+	height:36px;
+	z-index:1;
+}

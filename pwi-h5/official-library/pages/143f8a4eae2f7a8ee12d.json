@@ -1,0 +1,200 @@
+{
+  "id": "143f8a4eae2f7a8ee12d",
+  "url": "https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm",
+  "title": "《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 2,
+  "parents": [
+    "80edafe60dacf56dcf38",
+    "d64598a8bd955a3ecb4b",
+    "8289907dbd43889c806b",
+    "51fb60728e86f72f8092",
+    "3d845ccb1c01d8984092",
+    "2633d93296e978348763",
+    "2e86cb83bfe74eba65a5",
+    "dfadb7fc9462143347e4",
+    "c004593e5ff6465ea9a2",
+    "4149d77e9ee2c7aa0ff4",
+    "30690994df9354a999eb",
+    "602d6969e9760c856bc2",
+    "96526c824b8dd54dfe11",
+    "55c8a276f7ef38278ad2",
+    "5952bf5ada0b0b38792f",
+    "c305a228a954fdc3679b",
+    "25e929c3b88e2a4ab4f8",
+    "bb34252fdb5423f87035"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8ba56749b861b3b7f932a7390919f64c21a4c8751d24be25fb5465a9b29af544",
+  "bytes": 4247,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/143f8a4eae2f7a8ee12d.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/client/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/index.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_02_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_03_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_04_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_05_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/btn05_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/btn06_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/btn07_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/btn08_open.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_index_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div>\n\t\t\n\t\t<div></div>\n\t\t<div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57b9674c5c01d917be6e.gif\" alt=\"完美国际\" loading=\"lazy\"></a></div>\n\t\t\n\t\t<img src=\"assets/503d240dc7a9f3665f50.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<a href=\"https://w2i.wanmei.com/main.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/f47bba46ce0eb9742b4b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t  \n        <a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/e6a49f4c8b0ad65b602a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t  \n        <a href=\"https://w2i.wanmei.com/download/client/index.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/b087969b430741ab8a19.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t  \n        <a href=\"http://bbs.w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/780c0a94bd6aca32adba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t  \n        <img src=\"assets/9d1727c408d4e53a948f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n        <img src=\"assets/23411f84749d043d44a6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/e1d2b777ce65a6618353.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/f95af50ab23f74be9af0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/e08d0f66f3dabc67485c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/29fe3b418861f5d6a532.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\n\t\t<img src=\"assets/f3a4825657972b30031e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/56f2ba57373b2b7faa08.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/6d006a2df4607dd36626.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n\n",
+  "dataPath": "pages/143f8a4eae2f7a8ee12d.json",
+  "imageCount": 23,
+  "tableCount": 0,
+  "downloadPath": "downloads/143f8a4eae2f7a8ee12d.js"
+}

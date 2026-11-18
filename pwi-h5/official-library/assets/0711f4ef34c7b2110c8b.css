@@ -1,0 +1,4 @@
+/* wanmei.com iframe style By Silence */
+.wm_top {height:66px;}
+.wm_foot {height:66px;}
+.wm_top,.wm_foot {min-width:1002px;width:100%;width:expression((documentElement.clientWidth < 1002) ? "1002px" : "100%" );}

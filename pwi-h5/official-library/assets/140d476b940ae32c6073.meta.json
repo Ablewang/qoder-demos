@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/images/aniu2.jpg",
+  "id": "140d476b940ae32c6073",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201409/new/style/master.css",
+  "bytes": 1542,
+  "sha256": "773d5e9eaed79ca082f73430530cbded7f6fd3c8d881436e076891e3348dd797",
+  "fetchedAt": "2026-11-18T08:37:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/images/aniu2.jpg",
+  "path": "assets/140d476b940ae32c6073.jpg"
+}

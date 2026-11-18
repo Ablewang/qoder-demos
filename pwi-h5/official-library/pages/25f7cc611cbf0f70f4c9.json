@@ -1,0 +1,164 @@
+{
+  "id": "25f7cc611cbf0f70f4c9",
+  "url": "https://event51.wanmei.com/w2i/201007/cz/dengji.htm",
+  "title": "战火与荣耀的勋章 - 《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 2,
+  "parents": [
+    "ab71a96e617ef1b9703b",
+    "750e70bcae7fb4afcdb5",
+    "94404bbd53277dae1d43",
+    "25f7cc611cbf0f70f4c9",
+    "3f3cf869f397c4803c78",
+    "8857a710b4ffbdb026f0"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/cz/dengji.htm",
+  "fetchedAt": "2026-11-18T08:15:53+00:00",
+  "sha256": "86ef44083cab2ffd70c9ecc2e12a43c615c25f528e3eb4b54864b73739fd8590",
+  "bytes": 6464,
+  "rawPath": "raw/25f7cc611cbf0f70f4c9.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "领土等级划分：\n一、 根据游戏里现有的区域划分，一块或几块区域合起来为一块领土。整个游戏世界被划分成n块领土。玩家可以在查看大地图时打开“完美大陆势力分布图”。\n二、 任何时刻所有玩家都可以在“完美大陆势力分布图”查看层查看每一块领土当前的状态；附：图中的点为此领土包含的传送点。\n三、 领土分为三个等级，等级越高，数量越少。领土的分布根据城市分布。如图：\n1、1级领土2块，祖龙城、万流城。\n2、2级领土5块，分别是4个新手城市、寻梦港。\n3、3级领土40块。\n四、 领土战奖励分为两种，领土常规奖励和领土特殊奖励。领土常规奖励按照领土等级发放，等级越高，数量越大：\n1级领土，300个幻仙石。\n2级领土，200个幻仙石。\n3级领土，150个幻仙石。\n五、 领土特殊奖励：在发放领土常规奖励之前，系统会在47块领土之中随机抽取1块发放每周领土战的终极大奖——荣耀勋章。\n相关NPC：\n●城战管理员：7个城市各有一个。用于宣战和进入战场。\n●传送师：一共51个传送师，可以通过他们进入战场。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://pay.wanmei.com/e/epage/setup_2_wanmei2.html",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/rongyao.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/zhanzheng.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/dengji.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/xuanzhan.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/chengzhan.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/liangdian.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/dengji_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/dengji_02.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_21.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_22.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_23.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_31.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_32.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_26.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_27.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/dengji_01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/dengji_02s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_29.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/cz/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n    \r\n\t<div>\r\n\t  <div>\r\n\t\t\t\r\n       \t  <div>\r\n       \t    <img src=\"assets/c1343bc5a3ce8dee6d79.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t\t\r\n                \t\r\n                    \r\n                    \r\n                    \r\n                    \r\n              <img src=\"assets/4862de4cb6d323280208.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n              <img src=\"assets/720eb017975c93b3abbb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n              <div>\r\n              \t<img src=\"assets/27afd9953c318a4cccdd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\r\n              \t<img src=\"assets/3cba0fa3f6903b977f3b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\r\n                <img src=\"assets/6ba003163494f28b58b7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\r\n              \t<img src=\"assets/0ee45ff46985cfe5236d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\r\n            </div>\r\n              <div>\r\n              \t<div>\r\n                \t<p><strong>　　领土等级划分：</strong></p>\r\n                    <p>　　一、\t根据游戏里现有的区域划分，一块或几块区域合起来为一块领土。整个游戏世界被划分成n块领土。玩家可以在查看大地图时打开“完美大陆势力分布图”。</p>\r\n\t\t\t\t\t<p><a href=\"https://event51.wanmei.com/w2i/201007/cz/images/dengji_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/a22231886e0cf7d08620.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n                    <p>　　二、\t任何时刻所有玩家都可以在“完美大陆势力分布图”查看层查看每一块领土当前的状态；附：图中的点为此领土包含的传送点。</p>\r\n\t\t\t\t\t<p><a href=\"https://event51.wanmei.com/w2i/201007/cz/images/dengji_02.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/17f0e7468f0b091219f7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n                    <p>　　三、\t领土分为三个等级，等级越高，数量越少。领土的分布根据城市分布。如图：<br>\r\n\t\t\t\t\t　　1、1级领土2块，祖龙城、万流城。<br>\r\n\t\t\t\t\t　　2、2级领土5块，分别是4个新手城市、寻梦港。<br>\r\n\t\t\t\t\t　　3、3级领土40块。</p>\r\n                    <p>　　四、\t领土战奖励分为两种，领土常规奖励和领土特殊奖励。领土常规奖励按照领土等级发放，等级越高，数量越大：<br>\r\n\t\t\t\t\t　　1级领土，300个幻仙石。<br>\r\n\t\t\t\t\t　　2级领土，200个幻仙石。<br>\r\n\t\t\t\t\t　　3级领土，150个幻仙石。</p>\r\n                    <p>　　五、\t领土特殊奖励：在发放领土常规奖励之前，系统会在47块领土之中随机抽取1块发放每周领土战的终极大奖——荣耀勋章。</p>\r\n\t\t\t\t\t<p><strong>　　相关NPC：</strong></p>\r\n\t\t\t\t\t<p>　　●城战管理员：7个城市各有一个。用于宣战和进入战场。<br>\r\n\t\t\t\t\t　　●传送师：一共51个传送师，可以通过他们进入战场。</p>\r\n                </div>\r\n              </div>\r\n              <img src=\"assets/70a4e69aa88150937c65.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div>\r\n\t\r\n    \r\n    </div>\r\n",
+  "dataPath": "pages/25f7cc611cbf0f70f4c9.json",
+  "imageCount": 10,
+  "tableCount": 0,
+  "downloadPath": "downloads/25f7cc611cbf0f70f4c9.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_439.jpg",
+  "id": "19b8a9191eb82fe69701",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·斧锤精通<em>（入魔）</em>",
+  "bytes": 1541,
+  "sha256": "eabaa95e019d578b052756cb17f884465620fd0112d45be5eb13bda1e5325d33",
+  "fetchedAt": "2026-11-18T08:34:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_439.jpg",
+  "path": "assets/19b8a9191eb82fe69701.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_rightline.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "a695950899e410117d7b",
+  "status": "ok",
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "bytes": 1792,
+  "sha256": "6c8772d063428f8811c17a4f4df96cd1aa0981c20ca03e52dc731fe78b61797d",
+  "fetchedAt": "2026-11-18T08:18:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_rightline.jpg",
+  "path": "assets/a695950899e410117d7b.jpg"
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/jingpai/r1.jpg",
+  "alt": "纯白染色卡",
+  "kind": "img",
+  "id": "d8e9a3d594477720d748",
+  "status": "ok",
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "bytes": 5869,
+  "sha256": "56353c30312dbae5ef0b7fd8f9d40adb0d4e00f2941ddd2f4c29d634e8e6e754",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/d8e9a3d594477720d748.jpg"
+}

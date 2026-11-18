@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_73.jpg",
+  "id": "3cdb3d3dc31d6316aece",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "追魂诀",
+  "bytes": 1295,
+  "sha256": "02c464dfd8c83fbc2da79e435117a0f25b43185a77f9cf2ab31989847f979b61",
+  "fetchedAt": "2026-11-18T08:34:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_73.jpg",
+  "path": "assets/3cdb3d3dc31d6316aece.jpg"
+}

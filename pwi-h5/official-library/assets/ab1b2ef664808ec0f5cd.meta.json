@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201203/pucha/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "ab1b2ef664808ec0f5cd",
+  "status": "ok",
+  "parents": [
+    "b28c2534f0786c2ae298"
+  ],
+  "bytes": 2128,
+  "sha256": "0a7e46699c22c7cd45000e95532ce8017270a6b9d6a621aa3f290397585e5a33",
+  "fetchedAt": "2026-11-18T08:27:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201203/pucha/style/master.css",
+  "path": "assets/ab1b2ef664808ec0f5cd.css"
+}

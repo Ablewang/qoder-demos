@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_473.jpg",
+  "id": "c6bed022afd0dd4eb1cb",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·落石术<em>（入魔）</em>",
+  "bytes": 1673,
+  "sha256": "afa3f72bb0899a02fd4d5e2dd862fe65f4a883241226697b454f1c9ab4dbb0eb",
+  "fetchedAt": "2026-11-18T08:34:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_473.jpg",
+  "path": "assets/c6bed022afd0dd4eb1cb.jpg"
+}

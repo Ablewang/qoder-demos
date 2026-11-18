@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/js/showbox.js",
+  "alt": "",
+  "kind": "script",
+  "id": "af26b5e25cc5aadb52dc",
+  "status": "ok",
+  "parents": [
+    "be915459ba7523f2f56d"
+  ],
+  "bytes": 1152,
+  "sha256": "b512d889912b0faccacf1a8dcadd68c0d586d459b8c620b0be90ac9e728388d9",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/af26b5e25cc5aadb52dc.js"
+}

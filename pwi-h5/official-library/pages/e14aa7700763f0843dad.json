@@ -1,0 +1,522 @@
+{
+  "id": "e14aa7700763f0843dad",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+  "title": "NPC查找 - 其他NPC",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "463b141779227edf818a4c971188166629cb854107f91d7333cc7c18d3259c46",
+  "bytes": 70031,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/e14aa7700763f0843dad.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n战士亡灵\n144.539\n犄山太子\n429.676\n符文石坛\n454.686\n小来子\n464.675\n药仙\n555.912\n药婆\n572.951\n无名尸体\n564.930\n玄冥封印\n568.928\n幽魂封印\n531.967\n隐士莫休\n479.949\n村长之墓\n416.765\n男子遗骨\n565.767\n古城遗址\n291.539\n雷妖\n376.388\n烈风\n623.768\n渔夫\n639.802\n现妖石\n519.582\n封印之塔\n566.744\n莫雅的魂魄\n280.476\n徐霞客之妻\n558.912\n安魂台\n115.516\n神秘幽灵\n135.618\n乱石堆\n250.766\n疾风隐者\n357.787\n孟汤\n326.966\n祖先遗碑\n661.928\n余飞鹞\n283.568\n守墓人\n481.388\n食宝兽\n328.554\n赵鹰\n285.566\n张林道\n657.357\n剑伯乐\n658.358\n鬼仙璎珞\n337.904",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "战士亡灵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "144.539",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "犄山太子",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "429.676",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "符文石坛",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "454.686",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "小来子",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "464.675",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药仙",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "555.912",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药婆",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "572.951",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无名尸体",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "564.930",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄冥封印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "568.928",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幽魂封印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "531.967",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "隐士莫休",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "479.949",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "村长之墓",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "416.765",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "男子遗骨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "565.767",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "古城遗址",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "291.539",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雷妖",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "376.388",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烈风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "623.768",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "渔夫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "639.802",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "现妖石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "519.582",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "封印之塔",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "566.744",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "莫雅的魂魄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "280.476",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "徐霞客之妻",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "558.912",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "安魂台",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "115.516",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神秘幽灵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "135.618",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "乱石堆",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250.766",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "疾风隐者",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "357.787",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "孟汤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "326.966",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "祖先遗碑",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "661.928",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "余飞鹞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "283.568",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "守墓人",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "481.388",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "食宝兽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "328.554",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "赵鹰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "285.566",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "张林道",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "657.357",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "剑伯乐",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "658.358",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "鬼仙璎珞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "337.904",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>战士亡灵</td>\r\n            <td>144.539</td>\r\n        </tr>\r\n        <tr>\r\n            <td>犄山太子</td>\r\n            <td>429.676</td>\r\n        </tr>\r\n        <tr>\r\n            <td>符文石坛</td>\r\n            <td>454.686</td>\r\n        </tr>\r\n        <tr>\r\n            <td>小来子</td>\r\n            <td>464.675</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药仙</td>\r\n            <td>555.912</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药婆</td>\r\n            <td>572.951</td>\r\n        </tr>\r\n        <tr>\r\n            <td>无名尸体</td>\r\n            <td>564.930</td>\r\n        </tr>\r\n        <tr>\r\n            <td>玄冥封印</td>\r\n            <td>568.928</td>\r\n        </tr>\r\n        <tr>\r\n            <td>幽魂封印</td>\r\n            <td>531.967</td>\r\n        </tr>\r\n        <tr>\r\n            <td>隐士莫休</td>\r\n            <td>479.949</td>\r\n        </tr>\r\n        <tr>\r\n            <td>村长之墓</td>\r\n            <td>416.765</td>\r\n        </tr>\r\n        <tr>\r\n            <td>男子遗骨</td>\r\n            <td>565.767</td>\r\n        </tr>\r\n        <tr>\r\n            <td>古城遗址</td>\r\n            <td>291.539</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雷妖</td>\r\n            <td>376.388</td>\r\n        </tr>\r\n        <tr>\r\n            <td>烈风</td>\r\n            <td>623.768</td>\r\n        </tr>\r\n        <tr>\r\n            <td>渔夫</td>\r\n            <td>639.802</td>\r\n        </tr>\r\n        <tr>\r\n            <td>现妖石</td>\r\n            <td>519.582</td>\r\n        </tr>\r\n        <tr>\r\n            <td>封印之塔</td>\r\n            <td>566.744</td>\r\n        </tr>\r\n        <tr>\r\n            <td>莫雅的魂魄</td>\r\n            <td>280.476</td>\r\n        </tr>\r\n        <tr>\r\n            <td>徐霞客之妻</td>\r\n            <td>558.912</td>\r\n        </tr>\r\n        <tr>\r\n            <td>安魂台</td>\r\n            <td>115.516</td>\r\n        </tr>\r\n        <tr>\r\n            <td>神秘幽灵</td>\r\n            <td>135.618</td>\r\n        </tr>\r\n        <tr>\r\n            <td>乱石堆</td>\r\n            <td>250.766</td>\r\n        </tr>\r\n        <tr>\r\n            <td>疾风隐者</td>\r\n            <td>357.787</td>\r\n        </tr>\r\n        <tr>\r\n            <td>孟汤</td>\r\n            <td>326.966</td>\r\n        </tr>\r\n        <tr>\r\n            <td>祖先遗碑</td>\r\n            <td>661.928</td>\r\n        </tr>\r\n        <tr>\r\n            <td>余飞鹞</td>\r\n            <td>283.568</td>\r\n        </tr>\r\n        <tr>\r\n            <td>守墓人</td>\r\n            <td>481.388</td>\r\n        </tr>\r\n        <tr>\r\n            <td>食宝兽</td>\r\n            <td>328.554</td>\r\n        </tr>\r\n        <tr>\r\n            <td>赵鹰</td>\r\n            <td>285.566</td>\r\n        </tr>\r\n        <tr>\r\n            <td>张林道</td>\r\n            <td>657.357</td>\r\n        </tr>\r\n        <tr>\r\n            <td>剑伯乐</td>\r\n            <td>658.358</td>\r\n        </tr>\r\n        <tr>\r\n            <td>鬼仙璎珞</td>\r\n            <td>337.904</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/e14aa7700763f0843dad.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/e14aa7700763f0843dad.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_180.jpg",
+  "id": "8909f9732d729b07df5f",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "寒冰护甲",
+  "bytes": 1579,
+  "sha256": "f29fe54a661cd7e20a4b3cf7753822e15f3b2a1b5a10f015e75ec1b3e0f2d769",
+  "fetchedAt": "2026-11-18T08:34:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_180.jpg",
+  "path": "assets/8909f9732d729b07df5f.jpg"
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/jr_01.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "08a94cb255568acf0410",
+  "status": "ok",
+  "parents": [
+    "69753a1e89037ce89a9e"
+  ],
+  "bytes": 161290,
+  "sha256": "1e8e71679a2fdd1a3b39ae8ab604002cd3eaa0d9984f06ac1e8a397583df1c0f",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/08a94cb255568acf0410.jpg"
+}

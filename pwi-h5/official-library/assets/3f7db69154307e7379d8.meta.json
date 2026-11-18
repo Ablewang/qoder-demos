@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_654.jpg",
+  "id": "3f7db69154307e7379d8",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·移元术<em>（升仙）</em>",
+  "bytes": 1568,
+  "sha256": "8fe0126587d4a3cc91e531269572e49f9b1dac9f96321d46316af5baf978fb11",
+  "fetchedAt": "2026-11-18T08:35:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_654.jpg",
+  "path": "assets/3f7db69154307e7379d8.jpg"
+}

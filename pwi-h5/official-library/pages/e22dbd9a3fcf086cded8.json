@@ -1,0 +1,146 @@
+{
+  "id": "e22dbd9a3fcf086cded8",
+  "url": "https://event51.wanmei.com/w2i/201409/new/index.htm",
+  "title": "初识完美_新手专题-《完美国际2》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 1,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/index.htm",
+  "fetchedAt": "2026-11-18T08:15:29+00:00",
+  "sha256": "5bdc39458f050e1a01e9ba6ba21f26b843ca1e1589679c37061001da1a269228",
+  "bytes": 7187,
+  "rawPath": "raw/e22dbd9a3fcf086cded8.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "进入官网下载游戏\n领取三大荣耀礼包\n初识完美\n《完美国际2》是由完美世界自主研发制作的3D东方玄幻类网游。由6大种族12大职业英雄构建阵营对战格局。多重特色玩法带来新鲜体验。\n01 背景故事\n故老相传，天地混沌亿万年，孕化出造物神“盘古”。他执利斧劈开天地，独居其中，无生无死，\n不破不灭，终于难耐永生的孤寂，自解全身，化作神灵万物，日月星辰。\n+ 查看详细\n02 特色玩法\n《完美国际2》由6大种族12大职业英雄构建多元化的阵营对战格局，全新种族“胧族”降临，开启“无停顿”跑动战斗新玩法。百变副本，怪物、BOSS每次挑战，都有完全不同的变化！\n+ 查看详细\n03 全景展示\n独创Element3D引擎，3D电影模式画面\n——无拘束自定义外观、纳米贴图技术、真人模拟捕捉技术打造顶级游戏画面\n+ 查看详细\n04 视听·美图\n全新主城-赢霄城神秘降临\n五大种族全新出生地，风格巨变！\n+ 查看详细",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "进入官网",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/down_client.htm",
+      "label": "下载游戏",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info1.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info2.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info3.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info4.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info5.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info6.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/begin/20091027/36462.shtml",
+      "label": "+ 查看详细",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/index.htm",
+      "label": "+ 查看详细",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201408/2014show/page1.htm",
+      "label": "+ 查看详细",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn1.jpg",
+      "alt": "初识完美",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn2.jpg",
+      "alt": "进入完美",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn3.jpg",
+      "alt": "入门指南",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn4.jpg",
+      "alt": "游戏说明",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn5.jpg",
+      "alt": "成长指南",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn6.jpg",
+      "alt": "新手活动",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn7.jpg",
+      "alt": "结伴游戏",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/js/main.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n        <div>\r\n        \t<div>\r\n            \t\r\n                <div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\">进入官网</a><a href=\"https://w2i.wanmei.com/download/down_client.htm\" rel=\"noreferrer\" target=\"_blank\">下载游戏</a></div>\r\n                <div>\r\n                \t<a href=\"#page=e22dbd9a3fcf086cded8\"><img src=\"assets/4c8b3a136b1121419bc2.jpg\" alt=\"初识完美\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=250753924235fd6ee8a3\"><img src=\"assets/8eb8a7394e20a92a1de3.jpg\" alt=\"进入完美\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=09fddc70dcd77ec60f4c\"><img src=\"assets/9432b16b13d491662f36.jpg\" alt=\"入门指南\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=6086431c2237fdf64b6a\"><img src=\"assets/2569bf85f4855d95d753.jpg\" alt=\"游戏说明\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=a08c5a6f495dfd7c3c98\"><img src=\"assets/76c0f341749e1403402b.jpg\" alt=\"成长指南\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=f3ca84404defdd08fce4\"><img src=\"assets/e1416ca6af4a1813ca02.jpg\" alt=\"新手活动\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=c51fddb20c83a69287b1\"><img src=\"assets/7b9c717b10ca13ac654d.jpg\" alt=\"结伴游戏\" loading=\"lazy\"></a>\r\n                </div>\r\n        \t\t领取三大荣耀礼包\r\n            </div>\r\n            <div>\r\n                <h2>初识完美</h2>\r\n                <div>\r\n                \t<p>《完美国际2》是由完美世界自主研发制作的3D东方玄幻类网游。由6大种族12大职业英雄构建阵营对战格局。多重特色玩法带来新鲜体验。</p>\r\n                </div>\r\n                <div>\r\n                    <h2>01 背景故事</h2>\r\n                    <p>故老相传，天地混沌亿万年，孕化出造物神“盘古”。他执利斧劈开天地，独居其中，无生无死，<br>不破不灭，终于难耐永生的孤寂，自解全身，化作神灵万物，日月星辰。</p>\r\n                    <h5><a href=\"#page=62b6c5509967d24a5e7f\">+ 查看详细</a></h5>                    \r\n                </div>\r\n                <div>\r\n                    <h2>02 特色玩法</h2>                    \r\n                    <p>《完美国际2》由6大种族12大职业英雄构建多元化的阵营对战格局，全新种族“胧族”降临，开启“无停顿”跑动战斗新玩法。百变副本，怪物、BOSS每次挑战，都有完全不同的变化！</p>\r\n                    <h5><a href=\"#page=e63b639f9250bddb7f1c\">+ 查看详细</a></h5>\r\n                </div>\r\n                <div>\r\n                    <h2>03 全景展示</h2>\r\n                    <p>独创Element3D引擎，3D电影模式画面<br>——无拘束自定义外观、纳米贴图技术、真人模拟捕捉技术打造顶级游戏画面</p>\r\n                    <h5><a href=\"#page=e63b639f9250bddb7f1c\">+ 查看详细</a></h5>\r\n                </div>\r\n                <div>\r\n                    <h2>04 视听·美图</h2>\r\n                    <p>全新主城-赢霄城神秘降临<br>五大种族全新出生地，风格巨变！</p>\r\n                    <h5><a href=\"#page=1662f4a22f348e722570\">+ 查看详细</a></h5>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n<div>\r\n\t\r\n\t<div></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n \r\n\r\n",
+  "dataPath": "pages/e22dbd9a3fcf086cded8.json",
+  "imageCount": 7,
+  "tableCount": 0,
+  "downloadPath": "downloads/e22dbd9a3fcf086cded8.js"
+}

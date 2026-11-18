@@ -1,0 +1,873 @@
+{
+  "id": "1c482d5c6674e7246a7b",
+  "url": "https://w2i.wanmei.com/djzb/zb/20091015/29987.shtml",
+  "title": "武器 - 弹药",
+  "category": "装备道具",
+  "section": "普通武器",
+  "depth": 1,
+  "parents": [
+    "e1fe6614443052284ef7",
+    "b107c028737ae8ee7b6d",
+    "59138861d3ccb56e4cf5",
+    "e0f6bb305652eb19836c",
+    "d15600c7e7503aa1f7ab",
+    "9c1ef01ee36759a5edb2",
+    "b61c999a769de8c62384",
+    "4f54f00fa04dd492f6e8",
+    "1c482d5c6674e7246a7b",
+    "8baeb5e5dddea159404b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "65ff314ce26f8586e65362527fa5619f6e4b2188cc81baf4d15a4bd3f3144fb6",
+  "bytes": 73024,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1c482d5c6674e7246a7b.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "刀剑 | 长兵 | 斧锤 | 拳套 | 弓弩 | 法器 | 传说 | 创世 | 弹药 | 任务奖励 |\n名称\n图标\n种类\n附加攻击力\n附加属性\n新手之箭\n弓箭\n1\n－\n狼牙箭\n弓箭\n3\n－\n狼牙箭特品\n弓箭\n10\n致率一击率 +1%\n雕翎箭\n弓箭\n20\n－\n雕翎箭特品\n弓箭\n40\n致率一击率 +1%\n凤尾箭\n弓箭\n45\n－\n凤尾箭特品\n弓箭\n70\n致率一击率 +1%\n龙须箭\n弓箭\n75\n－\n龙须箭特品\n弓箭\n100\n致率一击率 +1%\n骨矢\n弩矢\n3\n－\n骨矢特品\n弩矢\n10\n准确度 +10%\n铁矢\n弩矢\n20\n－\n铁矢特品\n弩矢\n40\n准确度 +10%\n三刃矢\n弩矢\n45\n－\n三刃矢特品\n弩矢\n70\n准确度 +10%\n精钢矢\n弩矢\n75\n－\n精钢矢特品\n弩矢\n100\n准确度 +10%\n铁砂弹\n弹丸\n3\n－\n铁砂弹特品\n弹丸\n10\n吟唱时间 -5%\n铅霰弹\n弹丸\n20\n－\n铅霰弹特品\n弹丸\n40\n吟唱时间 -5%\n爆裂弹\n弹丸\n45\n－\n爆裂弹特品\n弹丸\n70\n吟唱时间 -5%\n震地弹\n弹丸\n75\n－\n震地弹特品\n弹丸\n100\n吟唱时间 -5%",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图标",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "种类",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加攻击力",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加属性",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新手之箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狼牙箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狼牙箭特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致率一击率 +1%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雕翎箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雕翎箭特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致率一击率 +1%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凤尾箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凤尾箭特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致率一击率 +1%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "龙须箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "龙须箭特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致率一击率 +1%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "5"
+          }
+        ],
+        [
+          {
+            "text": "骨矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "骨矢特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +10%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁矢特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +10%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "三刃矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "三刃矢特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +10%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "精钢矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "精钢矢特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弩矢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +10%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "5"
+          }
+        ],
+        [
+          {
+            "text": "铁砂弹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁砂弹特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "吟唱时间 -5%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铅霰弹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铅霰弹特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "吟唱时间 -5%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "爆裂弹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "爆裂弹特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "吟唱时间 -5%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "震地弹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "震地弹特品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弹丸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "吟唱时间 -5%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29859.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29873.shtml",
+      "label": "长兵",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29877.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29896.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29900.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29901.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29985.shtml",
+      "label": "传说",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29986.shtml",
+      "label": "创世",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29987.shtml",
+      "label": "弹药",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29990.shtml",
+      "label": "任务奖励",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1551.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1553.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1555.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1557.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1561.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1563.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1565.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1567.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1571.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1573.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1575.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_dy/image1577.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=e1fe6614443052284ef7\">刀剑</a> | <a href=\"#page=b107c028737ae8ee7b6d\">长兵</a> | <a href=\"#page=59138861d3ccb56e4cf5\">斧锤</a> | <a href=\"#page=e0f6bb305652eb19836c\">拳套</a> | <a href=\"#page=d15600c7e7503aa1f7ab\">弓弩</a> | <a href=\"#page=9c1ef01ee36759a5edb2\">法器</a> | <a href=\"#page=b61c999a769de8c62384\">传说</a> | <a href=\"#page=4f54f00fa04dd492f6e8\">创世</a> | <a href=\"#page=1c482d5c6674e7246a7b\">弹药</a> | <a href=\"#page=8baeb5e5dddea159404b\">任务奖励</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>名称</strong></td>\r\n            <td><strong>图标</strong></td>\r\n            <td><strong>种类</strong></td>\r\n            <td><strong>附加攻击力</strong></td>\r\n            <td><strong>附加属性</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>新手之箭</td>\r\n            <td><img src=\"assets/cd8767947217e15b2338.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>1</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>狼牙箭</td>\r\n            <td><img src=\"assets/cd8767947217e15b2338.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>3</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>狼牙箭特品</td>\r\n            <td><img src=\"assets/cd8767947217e15b2338.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>10</td>\r\n            <td>致率一击率 +1%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雕翎箭</td>\r\n            <td><img src=\"assets/670f51274b2aa02d3ecb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>20</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雕翎箭特品</td>\r\n            <td><img src=\"assets/670f51274b2aa02d3ecb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>40</td>\r\n            <td>致率一击率 +1%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>凤尾箭</td>\r\n            <td><img src=\"assets/f2b733b2426828607c68.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>45</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>凤尾箭特品</td>\r\n            <td><img src=\"assets/f2b733b2426828607c68.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>70</td>\r\n            <td>致率一击率 +1%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>龙须箭</td>\r\n            <td><img src=\"assets/004e96efd5e810ab0a8c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>75</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>龙须箭特品</td>\r\n            <td><img src=\"assets/004e96efd5e810ab0a8c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓箭</td>\r\n            <td>100</td>\r\n            <td>致率一击率 +1%</td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"5\"> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>骨矢</td>\r\n            <td><img src=\"assets/f5ef5d587e9883c2c146.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>3</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>骨矢特品</td>\r\n            <td><img src=\"assets/f5ef5d587e9883c2c146.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>10</td>\r\n            <td>准确度 +10%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁矢</td>\r\n            <td><img src=\"assets/325b71c602db7b1228b3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>20</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁矢特品</td>\r\n            <td><img src=\"assets/325b71c602db7b1228b3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>40</td>\r\n            <td>准确度 +10%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>三刃矢</td>\r\n            <td><img src=\"assets/f836c4b060d8d5db8322.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>45</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>三刃矢特品</td>\r\n            <td><img src=\"assets/f836c4b060d8d5db8322.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>70</td>\r\n            <td>准确度 +10%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>精钢矢</td>\r\n            <td><img src=\"assets/131f6d0e28001d4137cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>75</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>精钢矢特品</td>\r\n            <td><img src=\"assets/131f6d0e28001d4137cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弩矢</td>\r\n            <td>100</td>\r\n            <td>准确度 +10%</td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"5\"> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁砂弹</td>\r\n            <td><img src=\"assets/a6a464972b35ddcc93b4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>3</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁砂弹特品</td>\r\n            <td><img src=\"assets/a6a464972b35ddcc93b4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>10</td>\r\n            <td>吟唱时间 -5%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铅霰弹</td>\r\n            <td><img src=\"assets/0404a96aa1507c460345.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>20</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铅霰弹特品</td>\r\n            <td><img src=\"assets/0404a96aa1507c460345.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>40</td>\r\n            <td>吟唱时间 -5%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>爆裂弹</td>\r\n            <td><img src=\"assets/70e179767b6ab14c3380.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>45</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>爆裂弹特品</td>\r\n            <td><img src=\"assets/70e179767b6ab14c3380.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>70</td>\r\n            <td>吟唱时间 -5%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>震地弹</td>\r\n            <td><img src=\"assets/6fb3983e27b4bf374798.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>75</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>震地弹特品</td>\r\n            <td><img src=\"assets/6fb3983e27b4bf374798.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弹丸</td>\r\n            <td>100</td>\r\n            <td>吟唱时间 -5%</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/1c482d5c6674e7246a7b.json",
+  "imageCount": 12,
+  "tableCount": 1,
+  "downloadPath": "downloads/1c482d5c6674e7246a7b.js"
+}

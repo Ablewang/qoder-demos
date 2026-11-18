@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_256.jpg",
+  "id": "007497d72a80af193d04",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "弓弩精通",
+  "bytes": 1504,
+  "sha256": "4bd1e5509a37af98283cbbb4429a46595d365fce618c9691a131409fc7fb6043",
+  "fetchedAt": "2026-11-18T08:34:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_256.jpg",
+  "path": "assets/007497d72a80af193d04.jpg"
+}

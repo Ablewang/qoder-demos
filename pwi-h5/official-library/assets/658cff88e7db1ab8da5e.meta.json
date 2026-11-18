@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_415.jpg",
+  "id": "658cff88e7db1ab8da5e",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·忘情式<em>（入魔）</em>",
+  "bytes": 1751,
+  "sha256": "47f1def6b40866b2e9da6aa5e10c8e2dade7920927f94c589f9e80a870123369",
+  "fetchedAt": "2026-11-18T08:34:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_415.jpg",
+  "path": "assets/658cff88e7db1ab8da5e.jpg"
+}

@@ -1,0 +1,203 @@
+{
+  "id": "a09ff0fa34b978a1cd22",
+  "url": "https://w2i.wanmei.com/event/200809/contend/activity.htm",
+  "title": "冥城争霸-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 1,
+  "parents": [
+    "417f96b539b3f3400e72",
+    "e68d49891920115a4a9c",
+    "207431ece519cc56a67b",
+    "a968cd1d1b6197af3eb9"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "238b42f28d222e470833cf0dea5f572eef76c4bd2b51451d8311b6751cb1742d",
+  "bytes": 4651,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/a09ff0fa34b978a1cd22.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "活动介绍\n活动报名\n每周三晚20:50~21:00玩家可以在祖龙地产官员处报名参加“冥城争霸”活动，玩家报名时需缴纳10w完美币作为门票，21:00，活动准时开始。\n活动细则\n1、成功报名的玩家将会被系统分配到冥兽城·蜃、冥兽城·幻、冥兽城·玄、冥兽城·镜4个阵营中的一个；\n2、活动时间一小时，玩家在活动期间杀死怪物后，即可获得兑换奖励时所需的物品“九星魂丹”，同时为所在阵营获得一定的积分；\n3、活动结束后，根据各阵营的积分情况，积分最高的阵营在兑换奖励时可获得优厚的待遇，其他阵营则按原比例兑换。\n天道补缺锦囊\n根据下表的等级划分，玩家将在进场时获得相应的“天道补缺锦囊”，缩小每组阵营的综合实力差距\n锦囊等阶\n生命上限\n攻击等级\n防御等级\n50-54级天道补缺锦囊\n+90%\n+90\n+9\n60-64级天道补缺锦囊\n+80%\n+70\n+7\n70-74级天道补缺锦囊\n+65%\n+50\n+5\n80-84级天道补缺锦囊\n+45%\n+30\n+3\n90-94级天道补缺锦囊\n+15%\n+10\n+1\n注意事项\n1、玩家在祖龙地产官员处报名参加“冥城争霸”活动后，会等待10秒钟左右才可进场；\n2、当活动人员已满时，将不能在进入活动场景，已报名但没有进去的玩家，系统会自动退还报名费用；\n3、“九星魂丹”拾取后不可丢弃，不可交易，离开场景后消失；\n4、“天道补缺锦囊”死亡不掉落，不可交易，不可丢弃，不可卖店，离开场景后消失；\n5、当玩家手中的“九星魂丹” 数量不足无法兑换物品时，可以点击冥城使者的任务相关，有天道酬勤任务，可利用剩下的“九星魂丹”兑换经验和元神。\n返回首页",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "锦囊等阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防御等级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "50-54级天道补缺锦囊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+90%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+90",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+9",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "60-64级天道补缺锦囊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+80%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+7",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "70-74级天道补缺锦囊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+65%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "80-84级天道补缺锦囊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+45%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+30",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "90-94级天道补缺锦囊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+15%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/iframe/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/index.htm",
+      "label": "返回首页",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_foot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n<div><p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200809/contend/iframe/header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200809/contend/iframe/header.htm</a></p></div>\r\n<div>\r\n    <img src=\"assets/25a4000e3aa3fee1332b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <div>\r\n            <h1>活动介绍</h1>\r\n            <p>活动报名</p>\r\n            <br>\r\n            <p>每周三晚20:50~21:00玩家可以在祖龙地产官员处报名参加“冥城争霸”活动，玩家报名时需缴纳10w完美币作为门票，21:00，活动准时开始。</p>\r\n        <br>\r\n            <br>\r\n            <p>活动细则</p>\r\n            <br>\r\n            <p>1、成功报名的玩家将会被系统分配到冥兽城·蜃、冥兽城·幻、冥兽城·玄、冥兽城·镜4个阵营中的一个；</p>\r\n            <p>2、活动时间一小时，玩家在活动期间杀死怪物后，即可获得兑换奖励时所需的物品“九星魂丹”，同时为所在阵营获得一定的积分；</p>\r\n            <p>3、活动结束后，根据各阵营的积分情况，积分最高的阵营在兑换奖励时可获得优厚的待遇，其他阵营则按原比例兑换。</p>\r\n            <br>\r\n            <br>\r\n            <p>天道补缺锦囊</p>\r\n            <br>\r\n            <p>根据下表的等级划分，玩家将在进场时获得相应的“天道补缺锦囊”，缩小每组阵营的综合实力差距</p>\r\n            <br>\r\n            <div>\r\n            <table>\r\n            <tr>\r\n            <td>锦囊等阶</td>\r\n            <td>生命上限</td>\r\n            <td>攻击等级</td>\r\n            <td>防御等级</td>\r\n            </tr>\r\n            <tr>\r\n            <th>50-54级天道补缺锦囊</th>\r\n            <th>+90%</th>\r\n            <th>+90</th>\r\n            <th>+9</th>\r\n            </tr>\r\n            <tr>\r\n            <td>60-64级天道补缺锦囊</td>\r\n            <td>+80%</td>\r\n            <td>+70</td>\r\n            <td>+7</td>\r\n            </tr>\r\n            <tr>\r\n            <th>70-74级天道补缺锦囊</th>\r\n            <th>+65%</th>\r\n            <th>+50</th>\r\n            <th>+5</th>\r\n            </tr>\r\n            <tr>\r\n            <td>80-84级天道补缺锦囊</td>\r\n            <td>+45%</td>\r\n            <td>+30</td>\r\n            <td>+3</td>\r\n            </tr>\r\n            <tr>\r\n            <th>90-94级天道补缺锦囊</th>\r\n            <th>+15%</th>\r\n            <th>+10</th>\r\n            <th>+1</th>\r\n            </tr>\r\n            </table>\r\n            </div>\r\n            <br>\r\n            <br>\r\n            <p>注意事项</p>\r\n            <br>\r\n            <p>1、玩家在祖龙地产官员处报名参加“冥城争霸”活动后，会等待10秒钟左右才可进场；</p>\r\n            <p>2、当活动人员已满时，将不能在进入活动场景，已报名但没有进去的玩家，系统会自动退还报名费用；</p>\r\n            <p>3、“九星魂丹”拾取后不可丢弃，不可交易，离开场景后消失；</p>\r\n            <p>4、“天道补缺锦囊”死亡不掉落，不可交易，不可丢弃，不可卖店，离开场景后消失；</p>\r\n            <p>5、当玩家手中的“九星魂丹” 数量不足无法兑换物品时，可以点击冥城使者的任务相关，有天道酬勤任务，可利用剩下的“九星魂丹”兑换经验和元神。</p>\r\n            <br>\r\n            <p><a href=\"#page=417f96b539b3f3400e72\">返回首页</a></p>\r\n        </div>\r\n    <img src=\"assets/8081960f3456f2d55fd3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/f3b56ab9fb0e69929928.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n</div>\r\n\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n",
+  "dataPath": "pages/a09ff0fa34b978a1cd22.json",
+  "imageCount": 3,
+  "tableCount": 1,
+  "downloadPath": "downloads/a09ff0fa34b978a1cd22.js"
+}

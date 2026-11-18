@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/newskill/images/main_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "45e0cadb8fe9901f8197",
+  "status": "ok",
+  "parents": [
+    "1cb38395c2265ebc6d10"
+  ],
+  "bytes": 16420,
+  "sha256": "c16024e0680a928ffdfaa9dd0567264698ea1301ad348ca3bc8953785590d4f7",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/45e0cadb8fe9901f8197.jpg"
+}

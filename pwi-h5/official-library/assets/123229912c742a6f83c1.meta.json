@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/xuanzhan_04.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "123229912c742a6f83c1",
+  "status": "ok",
+  "parents": [
+    "ab71a96e617ef1b9703b"
+  ],
+  "bytes": 105152,
+  "sha256": "a2f2fdd671066aa35cd5c2d411d444610323c8de35e388f568ae092156375792",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/123229912c742a6f83c1.jpg"
+}

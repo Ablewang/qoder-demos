@@ -1,0 +1,10 @@
+{
+  "name": "一周一格",
+  "short_name": "一周一格",
+  "description": "一生大约 4000 周，一周一格，把它填满。",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F7F3EC",
+  "theme_color": "#F7F3EC",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

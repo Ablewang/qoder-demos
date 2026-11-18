@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_454.jpg",
+  "id": "1b0a58150418d3c57ebb",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·火海刀山<em>（升仙）</em>",
+  "bytes": 1863,
+  "sha256": "15ad40e829dd9e7db36b202b43686086c69457b8d08cf3c48201d954bdb86e83",
+  "fetchedAt": "2026-11-18T08:34:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_454.jpg",
+  "path": "assets/1b0a58150418d3c57ebb.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_02.jpg",
+  "id": "32204e9187a33f7807e7",
+  "status": "ok",
+  "parents": [
+    "1cb38395c2265ebc6d10",
+    "b514c44c96bdad0fbd85",
+    "0b9771ced7db831e22b4",
+    "864d74293fbad3a6ece8",
+    "1dce7eccf6dda57ba4ed",
+    "44521279923f28343ae9",
+    "e12c314259a13007bd73",
+    "2a1bc820fce749204907"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/event/200805/newskill/style/master.css",
+  "bytes": 44310,
+  "sha256": "295ffd0cc2832743c09fd0ca20cf288d9aa5143eb8cc7d03d8cca54aeb3d992d",
+  "fetchedAt": "2026-11-18T08:37:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/newskill/images/content_02.jpg",
+  "path": "assets/32204e9187a33f7807e7.jpg"
+}

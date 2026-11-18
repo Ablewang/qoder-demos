@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_450.jpg",
+  "id": "7ffd78277b29f12f6757",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·烈火炽翼<em>（升仙）</em>",
+  "bytes": 1590,
+  "sha256": "8cccfa1a8df2881b1ea7e47daa8251795d5551d6b4c1d84d06396d286371feef",
+  "fetchedAt": "2026-11-18T08:34:35+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_450.jpg",
+  "path": "assets/7ffd78277b29f12f6757.jpg"
+}

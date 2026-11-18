@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_yuling.png",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "7d598094c3cb593eb1a5",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "bytes": 3307,
+  "sha256": "ed7a32f4e735594c68581def35ecb8aac11312fafbb7a7335c305eb8e4ab4f16",
+  "fetchedAt": "2026-11-18T08:18:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_yuling.png",
+  "path": "assets/7d598094c3cb593eb1a5.png"
+}

@@ -1,0 +1,48 @@
+/************************************************
+  冥城争霸-《完美国际》官方网站 
+  北京完美时空网络技术有限公司  版权所有
+  网站部 - 宗倩     2008-09-22
+******************************************/
+
+/* ========== logo外调 ========== */
+@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+#w2i_logo,#transparent_logo {top:39px;left:70px;}
+
+
+/* ========== Basic ========== */
+
+body {
+	 margin:0;
+	 padding:0;		 
+	 background:url(../images/bg.jpg) no-repeat center 41px;
+	}
+	
+img{
+	border:none;
+	}
+	
+a{blr:expression(this.onFocus=this.blur());}			
+
+area{
+   blr:expression(this.onFocus=this.blur());
+   }
+
+	
+/* ========== 主要内容 ========== */
+
+
+.main{
+  margin:0 auto;
+  width:1002px;
+  overflow:hidden;
+  position:relative;
+  }
+
+.main img{
+  float:left;
+  }
+
+
+
+

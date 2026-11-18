@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27649.jpg",
+  "id": "c7bfb2cf3beaed81b028",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·灵爆咒<em>（升仙）</em>",
+  "bytes": 4579,
+  "sha256": "639ffd140e4bba14e7f95e8743eae3694b22a811648930a26cc21a2b6c4ab47a",
+  "fetchedAt": "2026-11-18T08:36:22+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27649.jpg",
+  "path": "assets/c7bfb2cf3beaed81b028.jpg"
+}

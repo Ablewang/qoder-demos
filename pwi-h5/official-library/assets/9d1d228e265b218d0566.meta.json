@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/zulong/images/bg06.jpg",
+  "label": "返回专题\n返回官网",
+  "kind": "inline-reference",
+  "id": "9d1d228e265b218d0566",
+  "status": "ok",
+  "parents": [
+    "a104792f2857ee35b34b"
+  ],
+  "bytes": 416039,
+  "sha256": "f01fea39e8b36e49fa6e605b41c69d019e1ff253bd1884e3acab08e818b84ad4",
+  "fetchedAt": "2026-11-18T08:26:04+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/zulong/images/bg06.jpg",
+  "path": "assets/9d1d228e265b218d0566.jpg"
+}

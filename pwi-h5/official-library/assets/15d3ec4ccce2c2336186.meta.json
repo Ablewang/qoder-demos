@@ -1,0 +1,21 @@
+{
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_donwon_bg.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "15d3ec4ccce2c2336186",
+  "status": "ok",
+  "parents": [
+    "f415d2fafc0e72df0612",
+    "72e2b695b87707858a89",
+    "99d339b7076fa83b762f",
+    "ff44626d4c80beceefa4"
+  ],
+  "bytes": 2566,
+  "sha256": "0f90a3207aa0ca180a4c5cc66eadf60e4347c66fdf0e3b42d8cafcca9abb2a50",
+  "fetchedAt": "2026-11-18T08:21:27+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/images/info_donwon_bg.jpg",
+  "path": "assets/15d3ec4ccce2c2336186.jpg"
+}

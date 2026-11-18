@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/group/images/tit_shijian.jpg",
+  "id": "3d1026c5b5598a202ae9",
+  "status": "ok",
+  "parents": [
+    "782d6e4068ec737e77ac",
+    "633c5d2f329b24f8c2de",
+    "5a12e42458057bed1cfc",
+    "f3219307caf100f9392b",
+    "0e7591603c5d3aaeeb3c",
+    "15e68af62c0729593d5a",
+    "9695a000672ff0aa9760"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201111/group/style/master.css",
+  "bytes": 2043,
+  "sha256": "d0722327c101d21575fe13af8a32d0bd570211c19804d5a894f73b6544037e91",
+  "fetchedAt": "2026-11-18T08:39:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/group/images/tit_shijian.jpg",
+  "path": "assets/3d1026c5b5598a202ae9.jpg"
+}

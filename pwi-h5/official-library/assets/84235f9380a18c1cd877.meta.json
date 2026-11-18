@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1138.jpg",
+  "id": "84235f9380a18c1cd877",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "人鱼变",
+  "bytes": 1040,
+  "sha256": "7505837448e3d26c736b81ca41f5defa98fcb2561651763933326bef167ebd2c",
+  "fetchedAt": "2026-11-18T08:36:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1138.jpg",
+  "path": "assets/84235f9380a18c1cd877.jpg"
+}

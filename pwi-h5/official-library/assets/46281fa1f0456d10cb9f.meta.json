@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/first/haoyou_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "46281fa1f0456d10cb9f",
+  "status": "ok",
+  "parents": [
+    "b01d438a263d5990ed20",
+    "804adfd356dc1f9c211a"
+  ],
+  "bytes": 83314,
+  "sha256": "3ab1ce4c18e798bacba6afd776253e8bb180cf907f6395d70b0b3acbd52bbf9d",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/46281fa1f0456d10cb9f.jpg"
+}

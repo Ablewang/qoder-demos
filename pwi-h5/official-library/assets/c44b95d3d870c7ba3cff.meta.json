@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/xuan.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c44b95d3d870c7ba3cff",
+  "status": "ok",
+  "parents": [
+    "bb34252fdb5423f87035"
+  ],
+  "bytes": 79598,
+  "sha256": "0017d6ede00cfed34288a3fdf703711a9eea1281ee1c373ce4d83d134d03bd69",
+  "fetchedAt": "2026-11-18T08:22:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/xuan.jpg",
+  "path": "assets/c44b95d3d870c7ba3cff.jpg"
+}

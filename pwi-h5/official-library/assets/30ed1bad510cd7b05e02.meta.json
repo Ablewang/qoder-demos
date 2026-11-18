@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201005/xmj/images/pic_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "30ed1bad510cd7b05e02",
+  "status": "ok",
+  "parents": [
+    "542ae75d552920993a0b"
+  ],
+  "bytes": 40125,
+  "sha256": "baabfb132df2a0262101dfffb33141e71e9b2f97e6150f9c7d2479d8c5d714d0",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/30ed1bad510cd7b05e02.jpg"
+}

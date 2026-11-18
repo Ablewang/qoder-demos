@@ -1,0 +1,7905 @@
+{
+  "source": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "encoding": "gb18030",
+  "fetchedAt": "2026-11-18T08:17:46+00:00",
+  "class": "法师",
+  "note": "安全解析JavaScript字面量，不执行上游脚本或技能公式。技能字段、逐级数组与公式字符串保持原文；稀疏数组空项以{\"$arrayHole\":true}标记，不冒充数值或null。2011路径是历史版本线索，不代替页面未标明的发布日期。",
+  "arrays": {
+    "frist": [
+      "烈火符",
+      1
+    ],
+    "race": [
+      {
+        "id": 10,
+        "place": [
+          4,
+          4
+        ],
+        "name": "沙陷",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 181,
+        "foolting": [
+          476,
+          477
+        ],
+        "intm": "和合",
+        "img": "img_10.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          19,
+          24,
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64
+        ],
+        "yuanshen": [
+          4600,
+          7700,
+          11800,
+          17300,
+          24600,
+          34200,
+          47000,
+          64000,
+          87000,
+          118000
+        ],
+        "jinqian": [
+          5600,
+          9500,
+          15000,
+          22000,
+          32000,
+          45000,
+          62000,
+          85000,
+          120000,
+          160000
+        ],
+        "zhenqi": "50.4+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "操纵土之神力在敌人脚底唤出一道神秘的沙旋，对其造成基础法术攻击力的土系伤害，并在15秒内造成$10*level*level+209.3*level+507.8$额外土系伤害且持续减速15%，并有$5+level$%机率定身3秒。"
+      },
+      {
+        "id": 100,
+        "place": [
+          5,
+          5
+        ],
+        "name": "缩地术",
+        "clas": "瞬移",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          478,
+          479
+        ],
+        "intm": "元婴",
+        "img": "img_100.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 20,
+        "dengji": [
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69,
+          74
+        ],
+        "yuanshen": [
+          8260,
+          12110,
+          17220,
+          23940,
+          32900,
+          44800,
+          60900,
+          82600,
+          112000,
+          167300
+        ],
+        "jinqian": [
+          10500,
+          15400,
+          22400,
+          31500,
+          43400,
+          59500,
+          84000,
+          112000,
+          147000,
+          224000
+        ],
+        "zhenqi": "50",
+        "juli": "15+level",
+        "shijian": "1000",
+        "jiange": "20000-1000*level",
+        "zhunbei": "",
+        "miaoshu": "借土之神力向前方挪移，移至前方$15+level$米处。施放需要20元气"
+      },
+      {
+        "id": 101,
+        "place": [
+          9,
+          4
+        ],
+        "name": "土精通",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 0,
+        "foolting": [
+          490,
+          491
+        ],
+        "intm": "元婴",
+        "img": "img_101.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69,
+          74
+        ],
+        "yuanshen": [
+          11800,
+          17300,
+          24600,
+          34200,
+          47000,
+          64000,
+          87000,
+          118000,
+          160000,
+          217000
+        ],
+        "jinqian": [
+          15000,
+          22000,
+          32000,
+          45000,
+          62000,
+          85000,
+          120000,
+          160000,
+          210000,
+          290000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有土系法术伤害$2*level$%。"
+      },
+      {
+        "id": 180,
+        "place": [
+          2,
+          2
+        ],
+        "name": "寒冰护甲",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 88,
+        "foolting": [
+          458,
+          459
+        ],
+        "intm": "灵虚",
+        "img": "img_180.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          9,
+          14,
+          19,
+          24,
+          29,
+          34,
+          39,
+          44,
+          49,
+          54
+        ],
+        "yuanshen": [
+          800,
+          1920,
+          3680,
+          6160,
+          9440,
+          13840,
+          19680,
+          27360,
+          37600,
+          51200
+        ],
+        "jinqian": [
+          800,
+          2240,
+          4480,
+          7600,
+          12000,
+          17600,
+          25600,
+          36000,
+          49600,
+          68000
+        ],
+        "zhenqi": "-6+15*level",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成冰冷的护甲，从装备上获得$10*level$%额外水系防御，且提升真气恢复速度$level$点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气"
+      },
+      {
+        "id": 181,
+        "place": [
+          2,
+          4
+        ],
+        "name": "磐石护甲",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 97,
+        "foolting": [
+          474,
+          475
+        ],
+        "intm": "灵虚",
+        "img": "img_181.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          9,
+          14,
+          19,
+          24,
+          29,
+          34,
+          39,
+          44,
+          49,
+          54
+        ],
+        "yuanshen": [
+          800,
+          1920,
+          3680,
+          6160,
+          9440,
+          13840,
+          19680,
+          27360,
+          37600,
+          51200
+        ],
+        "jinqian": [
+          800,
+          2240,
+          4480,
+          7600,
+          12000,
+          17600,
+          25600,
+          36000,
+          49600,
+          68000
+        ],
+        "zhenqi": "12+15*level",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成坚硬的护甲，从装备上获得$10*level$%额外土系防御，以及$10*level$%额外物理防御，持续15分钟。三种护盾只能同时激活一种施放需要30元气"
+      },
+      {
+        "id": 182,
+        "place": [
+          3,
+          3
+        ],
+        "name": "冰雹",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          460,
+          461
+        ],
+        "intm": "灵虚",
+        "img": "img_182.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          16,
+          21,
+          26,
+          31,
+          36,
+          41,
+          46,
+          51,
+          56,
+          61
+        ],
+        "yuanshen": [
+          3200,
+          5800,
+          9200,
+          13900,
+          20000,
+          28100,
+          38900,
+          53200,
+          72400,
+          98300
+        ],
+        "jinqian": [
+          3800,
+          7000,
+          12000,
+          18000,
+          26000,
+          37000,
+          51000,
+          70000,
+          96000,
+          130000
+        ],
+        "zhenqi": "39.6+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1200",
+        "jiange": "12000",
+        "zhunbei": "1800",
+        "miaoshu": "召唤出一阵冰雹砸向目标，对其及周围的敌人造成基础法术攻击附加$5.3*level*level+105.8*level+206.9$的水系伤害，并有33%机率使敌人定身$2+0.2*level$秒，等级越高范围越大。"
+      },
+      {
+        "id": 183,
+        "place": [
+          8,
+          3
+        ],
+        "name": "般若心经",
+        "clas": "主动祝福",
+        "restrict": "法器；空手。",
+        "frelating": 89,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "渡劫",
+        "img": "img_183.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 200,
+        "dengji": [
+          59
+        ],
+        "yuanshen": [
+          69600
+        ],
+        "jinqian": [
+          96000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "60000",
+        "zhunbei": "",
+        "miaoshu": "积聚体内所有元气回复自已10%最大真气，且在6秒内所有法术不用吟唱。施放需要两点真元"
+      },
+      {
+        "id": 184,
+        "place": [
+          7,
+          4
+        ],
+        "name": "石破天惊",
+        "clas": "主动诅咒",
+        "restrict": "法器；空手。",
+        "frelating": 98,
+        "foolting": [
+          482,
+          483
+        ],
+        "intm": "履霜",
+        "img": "img_184.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          49,
+          53,
+          57,
+          61,
+          65,
+          69,
+          73,
+          77,
+          81,
+          85
+        ],
+        "yuanshen": [
+          47000,
+          60200,
+          76900,
+          98300,
+          125000,
+          160000,
+          215000,
+          327000,
+          484000,
+          705000
+        ],
+        "jinqian": [
+          62000,
+          80000,
+          100000,
+          130000,
+          170000,
+          210000,
+          290000,
+          440000,
+          650000,
+          950000
+        ],
+        "zhenqi": "135+12*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "2000",
+        "jiange": "31000-1000*level",
+        "zhunbei": "500",
+        "miaoshu": "运用神力在目标处产生无形的爆炸，打断对方当前技能并使其在$2+0.3*level$秒内无法使用任何普攻和技能。"
+      },
+      {
+        "id": 440,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·烈火符<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 81,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_440.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "30",
+        "shijian": "800",
+        "jiange": "3000",
+        "zhunbei": "1500",
+        "miaoshu": "以烈火之力附于符上扔出，对目标造成基础法术攻击附上100%装备攻击力加3620的火系伤害。击中对手时有20%机率获取30点元气。"
+      },
+      {
+        "id": 441,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·烈火符<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 81,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_441.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "30",
+        "shijian": "800",
+        "jiange": "3000",
+        "zhunbei": "1200",
+        "miaoshu": "以烈火之力附于符上扔出，对目标造成基础法术攻击附上100%装备攻击力加3620的火系伤害。吟唱时间缩短到1.2秒。"
+      },
+      {
+        "id": 442,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·烈焰护甲<em>（升仙）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 96,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_442.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成炽热的护甲，从装备上获得120%额外火系防御，且提升生命恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加火防上升到150%。"
+      },
+      {
+        "id": 443,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·烈焰护甲<em>（入魔）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 96,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_443.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成炽热的护甲，从装备上获得120%额外火系防御，且提升生命恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气生命回复速度上升到15点每秒。"
+      },
+      {
+        "id": 444,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·火煞天灯<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 7,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_444.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "召唤熊熊烈火于对方头顶持续燃烧，对其造成基础法术攻击力的火系伤害，并在15秒内受到5693的额外火系伤害。每次火系伤害增加15%%。"
+      },
+      {
+        "id": 445,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·火煞天灯<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 7,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_445.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "召唤熊熊烈火于对方头顶持续燃烧，对其造成基础法术攻击力的火系伤害，并在15秒内受到5693的额外火系伤害。伤害持续时间减少3秒。"
+      },
+      {
+        "id": 446,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·神火符<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 85,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_446.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "450",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "3000",
+        "miaoshu": "将神火之力附于符上向敌人扔出，可对其造成基础攻击附上300%装备法术攻击力加4903的火系伤害。使敌人的火系防御在15秒内减少20%。"
+      },
+      {
+        "id": 447,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·神火符<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 85,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_447.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "450",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "2500",
+        "miaoshu": "将神火之力附于符上向敌人扔出，可对其造成基础攻击附上300%装备法术攻击力加4903的火系伤害。吟唱时间缩短到2.5秒。"
+      },
+      {
+        "id": 448,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·炙炎阵<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 86,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_448.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "350",
+        "juli": "6",
+        "shijian": "-1",
+        "jiange": "15000",
+        "zhunbei": "1000",
+        "miaoshu": "操纵火之神力，在自已的身体周围12米内结下灼热的火环阵，每3秒耗350点真气值并对范围内敌人造成基础法术攻击力附加4800的火系伤害，直至真气耗光或手动点击取消或按ESC。施放需要一点真元每次灼烧有20%机率使敌人昏迷3秒。"
+      },
+      {
+        "id": 449,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·炙炎阵<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 86,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_449.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "350",
+        "juli": "6",
+        "shijian": "-1",
+        "jiange": "15000",
+        "zhunbei": "1000",
+        "miaoshu": "操纵火之神力，在自已的身体周围12米内结下灼热的火环阵，每3秒耗350点真气值并对范围内敌人造成基础法术攻击力附加4800的火系伤害，直至真气耗光或手动点击取消或按ESC。施放需要一点真元每次灼烧有25%机率回复自已500点生命。"
+      },
+      {
+        "id": 450,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·烈火炽翼<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 84,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_450.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "445",
+        "juli": "10",
+        "shijian": "1000",
+        "jiange": "7000",
+        "zhunbei": "1000",
+        "miaoshu": "将真气化为一只灼热的火鸟飞出，将前方18米直线上的敌人击退18米且造成基础法术攻击附上100%装备攻击力加5395的火系伤害。施法间隔减少1秒。"
+      },
+      {
+        "id": 451,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·烈火炽翼<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 84,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_451.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "445",
+        "juli": "10",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "将真气化为一只灼热的火鸟飞出，将前方18米直线上的敌人击退18米且造成基础法术攻击附上100%装备攻击力加5395f的火系伤害。攻击影响的范围增加50%。"
+      },
+      {
+        "id": 452,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·血祭炎爆<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 8,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_452.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "295",
+        "juli": "6",
+        "shijian": "1000",
+        "jiange": "15000",
+        "zhunbei": "3200",
+        "miaoshu": "蓄力最多3.2秒并牺牲自己当前生命中的最多60%用血祭爆炸攻击周围12米内的人，造成5000攻击力的火系伤害，每点牺牲的生命值可转化为4点额外攻击力。减少25%的生命值损失。"
+      },
+      {
+        "id": 453,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·血祭炎爆<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 8,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_453.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "295",
+        "juli": "6",
+        "shijian": "1000",
+        "jiange": "15000",
+        "zhunbei": "3200",
+        "miaoshu": "蓄力最多3.2秒并牺牲自己当前生命中的最多60%用血祭爆炸攻击周围12米内的人，造成5000攻击力的火系伤害，每点牺牲的生命值可转化为4点额外攻击力。有50%机率使敌人昏迷3秒。"
+      },
+      {
+        "id": 454,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·火海刀山<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 87,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "真仙",
+        "img": "img_454.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 200,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2000000
+        ],
+        "jinqian": [
+          2000000
+        ],
+        "zhenqi": "655",
+        "juli": "30",
+        "shijian": "1800",
+        "jiange": "30000",
+        "zhunbei": "4000",
+        "miaoshu": "积蓄全身元气产生不计其数的火焰和刀刃向敌人飞去，对目标及周围12米内的所有敌人造成基础法术攻击附上200%装备攻击力加6200的火系伤害和物理伤害。施放需要两点真元有50%机率少消耗一点真元。"
+      },
+      {
+        "id": 455,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·火海刀山<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 87,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "魔圣",
+        "img": "img_455.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 200,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2000000
+        ],
+        "jinqian": [
+          2000000
+        ],
+        "zhenqi": "655",
+        "juli": "30",
+        "shijian": "1800",
+        "jiange": "30000",
+        "zhunbei": "4000",
+        "miaoshu": "积蓄全身元气产生不计其数的火焰和刀刃向敌人飞去，对目标及周围12米内的所有敌人造成基础法术攻击附上200%装备攻击力加6200的火系伤害和物理伤害。施放需要两点真元有50%机率打断敌人技能或施法。"
+      },
+      {
+        "id": 456,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·涌泉<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 88,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_456.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "唤出一道强烈水柱从地面处喷涌而出，对敌人造成基础法术攻击附上100%装备攻击力加3390的水系伤害，并有95%机率使敌人减速40%，持续8秒。减速比例升至45%，持续时间增加1秒。"
+      },
+      {
+        "id": 457,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·涌泉<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 88,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_457.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "唤出一道强烈水柱从地面处喷涌而出，对敌人造成基础法术攻击附上100%装备攻击力加3390的水系伤害，并有95%机率使敌人减速40%，持续8秒。附加攻击力提升600。"
+      },
+      {
+        "id": 458,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·寒冰护甲<em>（升仙）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 180,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_458.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成冰冷的护甲，从装备上获得120%额外水系防御，且提升真气恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加水防上升到150%。"
+      },
+      {
+        "id": 459,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·寒冰护甲<em>（入魔）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 180,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_459.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成冰冷的护甲，从装备上获得120%额外水系防御，且提升真气恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气真气回复速度上升到15点每秒。"
+      },
+      {
+        "id": 460,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·冰雹<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 182,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_460.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "320",
+        "juli": "30",
+        "shijian": "1200",
+        "jiange": "12000",
+        "zhunbei": "1800",
+        "miaoshu": "召唤出一阵冰雹砸向目标，对其及周围的敌人造成基础法术攻击附加3160的水系伤害，并有33%机率使敌人定身4秒。敌人如果被定身，则将在3秒后受到额外3160点攻击力的水系伤害。"
+      },
+      {
+        "id": 461,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·冰雹<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 182,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_461.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "320",
+        "juli": "30",
+        "shijian": "1200",
+        "jiange": "12000",
+        "zhunbei": "1800",
+        "miaoshu": "召唤出一阵冰雹砸向目标，对其及周围的敌人造成基础法术攻击附加3160的水系伤害，并有33%机率使敌人定身4秒。定身机率上升到50%。"
+      },
+      {
+        "id": 462,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·寒露<em>（升仙）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 90,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "真仙",
+        "img": "img_462.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "595",
+        "juli": "30",
+        "shijian": "1200",
+        "jiange": "1000",
+        "zhunbei": "4500",
+        "miaoshu": "运用水性温婉之力，为单人恢复1350点附加基本法术攻击力40%的生命值。有10%机率恢复所有生命值。"
+      },
+      {
+        "id": 463,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·寒露<em>（入魔）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 90,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "魔圣",
+        "img": "img_463.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "595",
+        "juli": "30",
+        "shijian": "1200",
+        "jiange": "1000",
+        "zhunbei": "4500",
+        "miaoshu": "运用水性温婉之力，为单人恢复1350点附加基本法术攻击力40%的生命值。每3秒恢复200点额外生命值，持续3次。"
+      },
+      {
+        "id": 464,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·润泽<em>（升仙）</em>",
+        "clas": "主动祝福",
+        "restrict": "法器；空手。",
+        "frelating": 89,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_464.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "300",
+        "juli": "",
+        "shijian": "",
+        "jiange": "3000",
+        "zhunbei": "",
+        "miaoshu": "以水性温婉之力提升自己的真气值上限，30分钟内真气上限提升60%。施放需要一点真元15秒内法术攻击上升100%法器攻击力。"
+      },
+      {
+        "id": 465,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·润泽<em>（入魔）</em>",
+        "clas": "主动祝福",
+        "restrict": "法器；空手。",
+        "frelating": 89,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_465.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "300",
+        "juli": "",
+        "shijian": "",
+        "jiange": "3000",
+        "zhunbei": "",
+        "miaoshu": "以水性温婉之力提升自己的真气值上限，30分钟内真气上限提升60%。施放需要一点真元15秒内所有吟唱加速20%。"
+      },
+      {
+        "id": 466,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·霜刃<em>（升仙）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 91,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_466.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "600",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "800",
+        "miaoshu": "附冰之气息于队友武器上，使其普通攻击附加40%装备攻击力的冰冻伤害，持续15分钟。持续30分钟。"
+      },
+      {
+        "id": 467,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·霜刃<em>（入魔）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 91,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_467.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "600",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "800",
+        "miaoshu": "附冰之气息于队友武器上，使其普通攻击附加40%装备攻击力的冰冻伤害，持续15分钟。冰伤害上升到50%。"
+      },
+      {
+        "id": 468,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·凌杀<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 92,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "真仙",
+        "img": "img_468.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "445",
+        "juli": "30",
+        "shijian": "1800",
+        "jiange": "15000",
+        "zhunbei": "2500",
+        "miaoshu": "向敌人召出数条冰箭并祭出一道冰凌，对其产生基础法术攻击附上300%装备攻击力加6171的水系伤害，并有95%机率使敌人减速80%，持续6秒。使敌人的水系防御在15秒内减少20%。"
+      },
+      {
+        "id": 469,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·凌杀<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 92,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "魔圣",
+        "img": "img_469.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "445",
+        "juli": "30",
+        "shijian": "1800",
+        "jiange": "15000",
+        "zhunbei": "2100",
+        "miaoshu": "向敌人召出数条冰箭并祭出一道冰凌，对其产生基础法术攻击附上300%装备攻击力加6171的水系伤害，并有95%机率使敌人减速80%，持续6秒。吟唱时间缩短到2.1秒。"
+      },
+      {
+        "id": 470,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·玄冰水龙<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 93,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "真仙",
+        "img": "img_470.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 200,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2000000
+        ],
+        "jinqian": [
+          2000000
+        ],
+        "zhenqi": "655",
+        "juli": "30",
+        "shijian": "1600",
+        "jiange": "30000",
+        "zhunbei": "4000",
+        "miaoshu": "集元气召唤一条水龙直冲云霄并化作数条砸向目标及其周围12米内的敌人，造成基础法术攻击附上500%装备攻击力加13955水系伤害，并且有95%机率使敌减速60%，持续8秒。施放需要两点真元有50%机率使下10秒法术暴击率上升30%。"
+      },
+      {
+        "id": 471,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·玄冰水龙<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 93,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "魔圣",
+        "img": "img_471.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 200,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2000000
+        ],
+        "jinqian": [
+          2000000
+        ],
+        "zhenqi": "655",
+        "juli": "30",
+        "shijian": "1600",
+        "jiange": "30000",
+        "zhunbei": "4000",
+        "miaoshu": "集元气召唤一条水龙直冲云霄并化作数条砸向目标及其周围12米内的敌人，造成基础法术攻击附上500%装备攻击力加13955水系伤害，并且有95%机率使敌减速60%，持续8秒。施放需要两点真元有20%机率不耗真元。"
+      },
+      {
+        "id": 472,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·落石术<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 97,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_472.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "375",
+        "juli": "30",
+        "shijian": "1400",
+        "jiange": "6000",
+        "zhunbei": "1600",
+        "miaoshu": "召唤巨石自空中砸向目标，造成基础法术攻击附上200%装备攻击力加4804的土系伤害。吟唱时间缩短到1.6秒。"
+      },
+      {
+        "id": 473,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·落石术<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 97,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_473.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "375",
+        "juli": "30",
+        "shijian": "1400",
+        "jiange": "6000",
+        "zhunbei": "2000",
+        "miaoshu": "召唤巨石自空中砸向目标，造成基础法术攻击附上200%装备攻击力加4804的土系伤害。有20%机率将对手击晕5秒。"
+      },
+      {
+        "id": 474,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·磐石护甲<em>（升仙）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 181,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_474.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成坚硬的护甲，从装备上获得120%额外土系防御，以及120%额外物理防御，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加土防上升到150%。"
+      },
+      {
+        "id": 475,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·磐石护甲<em>（入魔）</em>",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 181,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_475.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "265",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成坚硬的护甲，从装备上获得120%额外土系防御，以及120%额外物理防御，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加物防上升到150%。"
+      },
+      {
+        "id": 476,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·沙陷<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 10,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_476.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "320",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "操纵土之神力在敌人脚底唤出一道神秘的沙旋，对其造成基础法术攻击力的土系伤害，并在15秒内造成5891额外土系伤害且持续减速15%，并有15$%机率定身3秒。减速比例上升到20%。"
+      },
+      {
+        "id": 477,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·沙陷<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 10,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_477.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          89
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          1000000
+        ],
+        "zhenqi": "320",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "操纵土之神力在敌人脚底唤出一道神秘的沙旋，对其造成基础法术攻击力的土系伤害，并在15秒内造成5891额外土系伤害且持续减速15%，并有15%机率定身3秒。定身机率上升到33%。"
+      },
+      {
+        "id": 478,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·缩地术<em>（升仙）</em>",
+        "clas": "瞬移",
+        "restrict": "空手；法器。",
+        "frelating": 100,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_478.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 10,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "60",
+        "juli": "25",
+        "shijian": "1000",
+        "jiange": "10000",
+        "zhunbei": "",
+        "miaoshu": "借土之神力向前方挪移，移至前方25米处。施放需要20元气元气消耗减少10。"
+      },
+      {
+        "id": 479,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·缩地术<em>（入魔）</em>",
+        "clas": "瞬移",
+        "restrict": "空手；法器。",
+        "frelating": 100,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_479.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 20,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "60",
+        "juli": "30",
+        "shijian": "1000",
+        "jiange": "10000",
+        "zhunbei": "",
+        "miaoshu": "借土之神力向前方挪移，移至前方25米处。施放需要20元气瞬移距离增加到30米。"
+      },
+      {
+        "id": 480,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·飞沙术<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 98,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_480.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "445",
+        "juli": "30",
+        "shijian": "1500",
+        "jiange": "5000",
+        "zhunbei": "2500",
+        "miaoshu": "运用法力激射出一道强劲的流沙，对目标造成基础法术攻击附上300%装备攻击力加6560的土系伤害，并使其10秒内命中度下降50%。命中率下降时间增加50%。"
+      },
+      {
+        "id": 481,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·飞沙术<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 98,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_481.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "445",
+        "juli": "30",
+        "shijian": "1500",
+        "jiange": "5000",
+        "zhunbei": "2500",
+        "miaoshu": "运用法力激射出一道强劲的流沙，对目标造成基础法术攻击附上300%装备攻击力加6560的土系伤害，并使其10秒内命中度下降50%。附加伤害增加1200。"
+      },
+      {
+        "id": 482,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·石破天惊<em>（升仙）</em>",
+        "clas": "主动诅咒",
+        "restrict": "法器；空手。",
+        "frelating": 184,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "真仙",
+        "img": "img_482.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "295",
+        "juli": "30",
+        "shijian": "2000",
+        "jiange": "20000",
+        "zhunbei": "500",
+        "miaoshu": "运用神力在目标处产生无形的爆炸，打断对方当前技能并使其在5秒内无法使用任何普攻和技能。技能将影响到目标周围3米的敌人。"
+      },
+      {
+        "id": 483,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·石破天惊<em>（入魔）</em>",
+        "clas": "主动诅咒",
+        "restrict": "法器；空手。",
+        "frelating": 184,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "魔圣",
+        "img": "img_483.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "295",
+        "juli": "30",
+        "shijian": "2000",
+        "jiange": "18000",
+        "zhunbei": "500",
+        "miaoshu": "运用神力在目标处产生无形的爆炸，打断对方当前技能并使其在5秒内无法使用任何普攻和技能。技能施放间隔减少2秒。"
+      },
+      {
+        "id": 484,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·泰山压顶<em>（升仙）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 99,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "真仙",
+        "img": "img_484.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 200,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2000000
+        ],
+        "jinqian": [
+          2000000
+        ],
+        "zhenqi": "655",
+        "juli": "30",
+        "shijian": "1400",
+        "jiange": "30000",
+        "zhunbei": "5000",
+        "miaoshu": "用全身元气移来巨山砸向目标，对其及周围12米内的所有敌人造成基础攻击附上500%装备法术攻击力加12149的土系伤害，并有95%机率使其昏迷6秒。施放需要两点真元有50%机率少消耗一点真元。"
+      },
+      {
+        "id": 485,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·泰山压顶<em>（入魔）</em>",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 99,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "魔圣",
+        "img": "img_485.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 200,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2000000
+        ],
+        "jinqian": [
+          2000000
+        ],
+        "zhenqi": "655",
+        "juli": "35",
+        "shijian": "1400",
+        "jiange": "30000",
+        "zhunbei": "5000",
+        "miaoshu": "用全身元气移来巨山砸向目标，对其及周围12米内的所有敌人造成基础攻击附上500%装备法术攻击力加12149的土系伤害，并有95%机率使其昏迷6秒。施放需要两点真元吟唱距离增加5米。"
+      },
+      {
+        "id": 486,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·火精通<em>（升仙）</em>",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 53,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_486.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有火系法术伤害20%。火系伤害提升25%。"
+      },
+      {
+        "id": 487,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·火精通<em>（入魔）</em>",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 53,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_487.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有火系法术伤害20%。攻击时法术致命一击率提升1%。"
+      },
+      {
+        "id": 488,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·水精通<em>（升仙）</em>",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 9,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_488.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有水系法术伤害20%。水系伤害提升25%。"
+      },
+      {
+        "id": 489,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·水精通<em>（入魔）</em>",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 9,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_489.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有水系法术伤害20%。攻击时法术致命一击率提升1%。"
+      },
+      {
+        "id": 490,
+        "place": [
+          0,
+          0
+        ],
+        "name": "真·土精通<em>（升仙）</em>",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 101,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "上仙",
+        "img": "img_490.jpg",
+        "explain": "",
+        "xianmo": "1",
+        "nanber": 1,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有土系法术伤害20%。土系伤害提升25%。"
+      },
+      {
+        "id": 491,
+        "place": [
+          0,
+          0
+        ],
+        "name": "狂·土精通<em>（入魔）</em>",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 101,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "狂魔",
+        "img": "img_491.jpg",
+        "explain": "",
+        "xianmo": "2",
+        "nanber": 1,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          92
+        ],
+        "yuanshen": [
+          1500000
+        ],
+        "jinqian": [
+          1500000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有土系法术伤害20%。攻击时法术致命一击率提升1%。"
+      },
+      {
+        "id": 53,
+        "place": [
+          9,
+          1
+        ],
+        "name": "火精通",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 0,
+        "foolting": [
+          486,
+          487
+        ],
+        "intm": "元婴",
+        "img": "img_53.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69,
+          74
+        ],
+        "yuanshen": [
+          11800,
+          17300,
+          24600,
+          34200,
+          47000,
+          64000,
+          87000,
+          118000,
+          160000,
+          217000
+        ],
+        "jinqian": [
+          15000,
+          22000,
+          32000,
+          45000,
+          62000,
+          85000,
+          120000,
+          160000,
+          210000,
+          290000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有火系法术伤害$2*level$%。"
+      },
+      {
+        "id": 7,
+        "place": [
+          3,
+          1
+        ],
+        "name": "火煞天灯",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 96,
+        "foolting": [
+          444,
+          445
+        ],
+        "intm": "灵虚",
+        "img": "img_7.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          13,
+          18,
+          23,
+          28,
+          33,
+          38,
+          43,
+          48,
+          53,
+          58
+        ],
+        "yuanshen": [
+          2100,
+          4100,
+          7000,
+          10900,
+          16100,
+          23000,
+          32000,
+          44100,
+          60200,
+          81800
+        ],
+        "jinqian": [
+          2400,
+          4900,
+          8600,
+          14000,
+          21000,
+          30000,
+          42000,
+          58000,
+          80000,
+          110000
+        ],
+        "zhenqi": "24+15*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "召唤熊熊烈火于对方头顶持续燃烧，对其造成基础法术攻击力的火系伤害，并在15秒内受到$9.6*level*level+179.1*level+261.9$的额外火系伤害。"
+      },
+      {
+        "id": 8,
+        "place": [
+          7,
+          1
+        ],
+        "name": "血祭炎爆",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 84,
+        "foolting": [
+          452,
+          453
+        ],
+        "intm": "履霜",
+        "img": "img_8.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          49,
+          53,
+          57,
+          61,
+          65,
+          69,
+          73,
+          77,
+          81,
+          85
+        ],
+        "yuanshen": [
+          47000,
+          60200,
+          76900,
+          98300,
+          125000,
+          160000,
+          215000,
+          327000,
+          484000,
+          705000
+        ],
+        "jinqian": [
+          62000,
+          80000,
+          100000,
+          130000,
+          170000,
+          210000,
+          290000,
+          440000,
+          650000,
+          950000
+        ],
+        "zhenqi": "135+12*level",
+        "juli": "6",
+        "shijian": "1000",
+        "jiange": "15000",
+        "zhunbei": "5200-200*level",
+        "miaoshu": "蓄力最多$5.2-0.2*level$秒并牺牲自己当前生命中的最多60%用血祭爆炸攻击周围12米内的人，造成$2000+200*level$攻击力的火系伤害，每点牺牲的生命值可转化为$2+0.2*level$点额外攻击力。"
+      },
+      {
+        "id": 81,
+        "place": [
+          1,
+          1
+        ],
+        "name": "烈火符",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          440,
+          441
+        ],
+        "intm": "筑基",
+        "img": "img_81.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45
+        ],
+        "yuanshen": [
+          0,
+          300,
+          1200,
+          2800,
+          5200,
+          8400,
+          12800,
+          18600,
+          26300,
+          36500
+        ],
+        "jinqian": [
+          0,
+          290,
+          1300,
+          3300,
+          6300,
+          10000,
+          16000,
+          24000,
+          34000,
+          48000
+        ],
+        "zhenqi": "-9+15*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "800",
+        "jiange": "3000",
+        "zhunbei": "1500",
+        "miaoshu": "以烈火之力附于符上扔出，对目标造成基础法术攻击附上$50+5*level$%装备攻击力加$6.1*level*level+82*level-50.4$的火系伤害。"
+      },
+      {
+        "id": 84,
+        "place": [
+          6,
+          1
+        ],
+        "name": "烈火炽翼",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 86,
+        "foolting": [
+          450,
+          451
+        ],
+        "intm": "空冥",
+        "img": "img_84.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          67,
+          71,
+          75
+        ],
+        "yuanshen": [
+          24600,
+          32000,
+          41400,
+          53200,
+          68100,
+          87000,
+          111000,
+          142000,
+          181000,
+          266000
+        ],
+        "jinqian": [
+          32000,
+          42000,
+          54000,
+          70000,
+          90000,
+          120000,
+          150000,
+          190000,
+          240000,
+          360000
+        ],
+        "zhenqi": "157.5+18*level",
+        "juli": "10",
+        "shijian": "1000",
+        "jiange": "8000",
+        "zhunbei": "1000",
+        "miaoshu": "将真气化为一只灼热的火鸟飞出，将前方$13+0.5*level$米直线上的敌人击退$12+0.6*level$米且造成基础法术攻击附上$50+5*level$%装备攻击力加$5*level*level+182.1*level+1213.5$的火系伤害。"
+      },
+      {
+        "id": 85,
+        "place": [
+          4,
+          1
+        ],
+        "name": "神火符",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 7,
+        "foolting": [
+          446,
+          447
+        ],
+        "intm": "和合",
+        "img": "img_85.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          19,
+          24,
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64
+        ],
+        "yuanshen": [
+          4600,
+          7700,
+          11800,
+          17300,
+          24600,
+          34200,
+          47000,
+          64000,
+          87000,
+          118000
+        ],
+        "jinqian": [
+          5600,
+          9500,
+          15000,
+          22000,
+          32000,
+          45000,
+          62000,
+          85000,
+          120000,
+          160000
+        ],
+        "zhenqi": "50.4+25*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "3000",
+        "miaoshu": "将神火之力附于符上向敌人扔出，可对其造成基础攻击附上$150+15*level$%装备法术攻击力加$8.3*level*level+174.2*level+422.7$的火系伤害。"
+      },
+      {
+        "id": 86,
+        "place": [
+          5,
+          1
+        ],
+        "name": "炙炎阵",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 85,
+        "foolting": [
+          448,
+          449
+        ],
+        "intm": "元婴",
+        "img": "img_86.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69,
+          74
+        ],
+        "yuanshen": [
+          11800,
+          17300,
+          24600,
+          34200,
+          47000,
+          64000,
+          87000,
+          118000,
+          160000,
+          239000
+        ],
+        "jinqian": [
+          15000,
+          22000,
+          32000,
+          45000,
+          62000,
+          85000,
+          120000,
+          160000,
+          210000,
+          320000
+        ],
+        "zhenqi": "100+20*level",
+        "juli": "6",
+        "shijian": "-1",
+        "jiange": "15000",
+        "zhunbei": "1000",
+        "miaoshu": "操纵火之神力，在自已的身体周围12米内结下灼热的火环阵，每3秒耗$100+20*level$点真气值并对范围内敌人造成基础法术攻击力附加$10*level*level+249.2*level+966.2$的火系伤害，直至真气耗光或手动点击取消或按ESC。施放需要一点真元"
+      },
+      {
+        "id": 87,
+        "place": [
+          8,
+          1
+        ],
+        "name": "火海刀山",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 8,
+        "foolting": [
+          454,
+          455
+        ],
+        "intm": "渡劫",
+        "img": "img_87.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 200,
+        "dengji": [
+          59,
+          62,
+          65,
+          68,
+          71,
+          74,
+          77,
+          80,
+          83,
+          86
+        ],
+        "yuanshen": [
+          87000,
+          104000,
+          125000,
+          151000,
+          181000,
+          239000,
+          327000,
+          440000,
+          586000,
+          773000
+        ],
+        "jinqian": [
+          120000,
+          140000,
+          170000,
+          200000,
+          240000,
+          320000,
+          440000,
+          590000,
+          790000,
+          1050000
+        ],
+        "zhenqi": "336+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1800",
+        "jiange": "30000",
+        "zhunbei": "4000",
+        "miaoshu": "积蓄全身元气产生不计其数的火焰和刀刃向敌人飞去，对目标及周围$8+0.4*level$米内的所有敌人造成基础法术攻击附上$100+10*level$%装备攻击力加$2.5*level*level+156*level+2050.4$的火系伤害和同样的物理伤害。施放需要两点真元"
+      },
+      {
+        "id": 88,
+        "place": [
+          1,
+          2
+        ],
+        "name": "涌泉",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          456,
+          457
+        ],
+        "intm": "筑基",
+        "img": "img_88.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          3,
+          8,
+          13,
+          18,
+          23,
+          28,
+          33,
+          38,
+          43,
+          48
+        ],
+        "yuanshen": [
+          100,
+          800,
+          2100,
+          4100,
+          7000,
+          10900,
+          16100,
+          23000,
+          32000,
+          44100
+        ],
+        "jinqian": [
+          80,
+          800,
+          2400,
+          4900,
+          8600,
+          14000,
+          21000,
+          30000,
+          42000,
+          58000
+        ],
+        "zhenqi": "-6+15*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "唤出一道强烈水柱从地面处喷涌而出，对敌人造成基础法术攻击附上$50+5*level$%装备攻击力加$5.7*level*level+83.7*level-34.4$的水系伤害，并有$62+3*level$%机率使敌人减速40%，持续$5+0.3*level$秒。"
+      },
+      {
+        "id": 89,
+        "place": [
+          5,
+          3
+        ],
+        "name": "润泽",
+        "clas": "主动祝福",
+        "restrict": "法器；空手。",
+        "frelating": 0,
+        "foolting": [
+          464,
+          465
+        ],
+        "intm": "元婴",
+        "img": "img_89.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69,
+          74
+        ],
+        "yuanshen": [
+          9440,
+          13840,
+          19680,
+          27360,
+          37600,
+          51200,
+          69600,
+          94400,
+          128000,
+          191200
+        ],
+        "jinqian": [
+          12000,
+          17600,
+          25600,
+          36000,
+          49600,
+          68000,
+          96000,
+          128000,
+          168000,
+          256000
+        ],
+        "zhenqi": "100",
+        "juli": "",
+        "shijian": "",
+        "jiange": "3000",
+        "zhunbei": "",
+        "miaoshu": "以水性温婉之力提升自己的真气值上限，$10+2*level$分钟内真气上限提升$10+5*level$%。施放需要一点真元"
+      },
+      {
+        "id": 9,
+        "place": [
+          9,
+          2
+        ],
+        "name": "水精通",
+        "clas": "被动",
+        "restrict": "",
+        "frelating": 0,
+        "foolting": [
+          488,
+          489
+        ],
+        "intm": "元婴",
+        "img": "img_9.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "",
+        "zhenyuan": 0,
+        "dengji": [
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69,
+          74
+        ],
+        "yuanshen": [
+          11800,
+          17300,
+          24600,
+          34200,
+          47000,
+          64000,
+          87000,
+          118000,
+          160000,
+          217000
+        ],
+        "jinqian": [
+          15000,
+          22000,
+          32000,
+          45000,
+          62000,
+          85000,
+          120000,
+          160000,
+          210000,
+          290000
+        ],
+        "zhenqi": "",
+        "juli": "",
+        "shijian": "",
+        "jiange": "",
+        "zhunbei": "",
+        "miaoshu": "提升所有水系法术伤害$2*level$%。"
+      },
+      {
+        "id": 90,
+        "place": [
+          4,
+          2
+        ],
+        "name": "寒露",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 180,
+        "foolting": [
+          462,
+          463
+        ],
+        "intm": "和合",
+        "img": "img_90.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          24,
+          29,
+          34,
+          39,
+          44,
+          49,
+          54,
+          59,
+          64,
+          69
+        ],
+        "yuanshen": [
+          6160,
+          9440,
+          13840,
+          19680,
+          27360,
+          37600,
+          51200,
+          69600,
+          94400,
+          128000
+        ],
+        "jinqian": [
+          7600,
+          12000,
+          17600,
+          25600,
+          36000,
+          49600,
+          68000,
+          96000,
+          128000,
+          168000
+        ],
+        "zhenqi": "142.5+37.5*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1200",
+        "jiange": "1000",
+        "zhunbei": "4500",
+        "miaoshu": "运用水性温婉之力，为单人恢复$300+70*level$点附加基本法术攻击力$5+3*level$%的生命值。"
+      },
+      {
+        "id": 901,
+        "place": [
+          9,
+          3
+        ],
+        "name": "气贯长虹",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "天仙",
+        "img": "img_901.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 100,
+        "dengji": [
+          100
+        ],
+        "yuanshen": [
+          4000000
+        ],
+        "jinqian": [
+          3000000
+        ],
+        "zhenqi": "1000",
+        "juli": "",
+        "shijian": "1000",
+        "jiange": "300000",
+        "zhunbei": "800",
+        "miaoshu": "法师们在越来越激烈的战斗中，学会了短时间内提升战斗力的新方法。她们把自身的真气压缩然后为自己加持。然后在短时间里法术攻击会大量增加，增加的效果和真气上限挂钩。附灵之力量于自己武器上，使法术攻击增加(自身MP上限/100)百分比，持续30秒。施放需要一点真元"
+      },
+      {
+        "id": 902,
+        "place": [
+          6,
+          5
+        ],
+        "name": "土灵击",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "大乘",
+        "img": "img_902.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          79
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          0
+        ],
+        "zhenqi": "600",
+        "juli": "27",
+        "shijian": "1000",
+        "jiange": "1000",
+        "zhunbei": "1000",
+        "miaoshu": "大法师田彩在和羽族长时间的共同战斗中，提出了人族应该从羽族的战斗方式中学习的观点。并且成功的创造了两个全新的技能，大大增加了法师的战斗力。土灵击就是其一。融合了羽灵五行符的土灵击能有效的在攻击的同时降低目标的法术防御。带来攻击的提升，但是因为对元素的理解专一。所以结果只是对水，火，土有效果并且超过了作为原始技能的五行。对目标造成极少的土系伤害，并在12秒内造成目标土水火三系防御降低60%。"
+      },
+      {
+        "id": 903,
+        "place": [
+          4,
+          5
+        ],
+        "name": "摄魂之力",
+        "clas": "主动诅咒",
+        "restrict": "法器；空手。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "大乘",
+        "img": "img_903.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 20,
+        "dengji": [
+          79
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          0
+        ],
+        "zhenqi": "600",
+        "juli": "20",
+        "shijian": "",
+        "jiange": "120000",
+        "zhunbei": "",
+        "miaoshu": "大法师田彩的另一个创造技能.经过人类使用出来的羽族5色符。能够瞬间让目标昏睡4秒。施放需要消耗20元气。"
+      },
+      {
+        "id": 904,
+        "place": [
+          2,
+          5
+        ],
+        "name": "真元护体",
+        "clas": "主动祝福",
+        "restrict": "法器；空手。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "大乘",
+        "img": "img_904.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 0,
+        "dengji": [
+          79
+        ],
+        "yuanshen": [
+          1000000
+        ],
+        "jinqian": [
+          0
+        ],
+        "zhenqi": "200",
+        "juli": "30",
+        "shijian": "",
+        "jiange": "30000",
+        "zhunbei": "",
+        "miaoshu": "人们在对抗怨灵的时候。很多时候都是因为妖兽无法支撑法术攻击而倒下，然后一败涂地。所幸法师们找到了解决办法，他们强行施加五行之力在目标队友身上，在极短的时间内提升目标的部分五行防御。4秒内金，水，火，土系法术防御增加1000%。同时自身有10%几率可能驱除自身不利状态。"
+      },
+      {
+        "id": 905,
+        "place": [
+          7,
+          5
+        ],
+        "name": "灵气震爆",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "天仙",
+        "img": "img_905.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          100
+        ],
+        "yuanshen": [
+          4000000
+        ],
+        "jinqian": [
+          3000000
+        ],
+        "zhenqi": "1000",
+        "juli": "24",
+        "shijian": "1800",
+        "jiange": "600000",
+        "zhunbei": "3000",
+        "miaoshu": "使用水火土的力量对目标进行最直接的打击。水消磨对方的精神，持续减少目标MP，持续30秒，减少量为法术伤害值的50%。火灼烧目标的灵魂，30秒内目标每次受到攻击减少20点元气。土打击目标的身体，对目标造成自身MP上限60%的土伤害。真气燃烧和真元消除对怪物无效。即使被打断也会消耗真气。施放需要一点真元"
+      },
+      {
+        "id": 91,
+        "place": [
+          6,
+          2
+        ],
+        "name": "霜刃",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 90,
+        "foolting": [
+          466,
+          467
+        ],
+        "intm": "空冥",
+        "img": "img_91.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          67,
+          71,
+          75
+        ],
+        "yuanshen": [
+          6150,
+          8000,
+          10350,
+          13300,
+          17025,
+          21750,
+          27750,
+          35500,
+          45250,
+          66500
+        ],
+        "jinqian": [
+          8000,
+          10500,
+          13500,
+          17500,
+          22500,
+          30000,
+          37500,
+          47500,
+          60000,
+          90000
+        ],
+        "zhenqi": "200+25*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1000",
+        "jiange": "3000",
+        "zhunbei": "800",
+        "miaoshu": "附冰之气息于队友武器上，使其普通攻击附加$10+2*level$%装备攻击力的冰冻伤害，持续15分钟。"
+      },
+      {
+        "id": 92,
+        "place": [
+          7,
+          2
+        ],
+        "name": "凌杀",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 91,
+        "foolting": [
+          468,
+          469
+        ],
+        "intm": "履霜",
+        "img": "img_92.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          49,
+          53,
+          57,
+          61,
+          65,
+          69,
+          73,
+          77,
+          81,
+          85
+        ],
+        "yuanshen": [
+          47000,
+          60200,
+          76900,
+          98300,
+          125000,
+          160000,
+          215000,
+          327000,
+          484000,
+          705000
+        ],
+        "jinqian": [
+          62000,
+          80000,
+          100000,
+          130000,
+          170000,
+          210000,
+          290000,
+          440000,
+          650000,
+          950000
+        ],
+        "zhenqi": "202.5+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1800",
+        "jiange": "15000",
+        "zhunbei": "2500",
+        "miaoshu": "向敌人召出数条冰箭并祭出一道冰凌，对其产生基础法术攻击附上$150+15*level$%装备攻击力加$5.7*level*level+236.6*level+1944.1$的水系伤害，并有$62+3*level$%机率使敌人减速80%，持续$4+0.2*level$秒。"
+      },
+      {
+        "id": 925,
+        "place": [
+          9,
+          3
+        ],
+        "name": "气贯长虹",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "天仙、魔尊",
+        "img": "img_925.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 100,
+        "dengji": [
+          95
+        ],
+        "yuanshen": [
+          2400000
+        ],
+        "jinqian": [
+          3000000
+        ],
+        "zhenqi": "1000",
+        "juli": "",
+        "shijian": "1000",
+        "jiange": "300000",
+        "zhunbei": "800",
+        "miaoshu": "法师们在越来越激烈的战斗中，学会了短时间内提升战斗力的新方法。她们把自身的真气压缩然后为自己加持。然后在短时间里法术攻击会大量增加，增加的效果和真气上限挂钩。附灵之力量于自己武器上，使法术攻击增加(自身MP上限/100)百分比，持续30秒。施放需要一点真元"
+      },
+      {
+        "id": 926,
+        "place": [
+          7,
+          5
+        ],
+        "name": "灵气震爆",
+        "clas": "主动攻击",
+        "restrict": "法器；空手。",
+        "frelating": 0,
+        "foolting": [
+          {
+            "$arrayHole": true
+          }
+        ],
+        "intm": "天仙、魔尊",
+        "img": "img_926.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 1,
+        "wuqi": "法器；空手。",
+        "zhenyuan": 100,
+        "dengji": [
+          100
+        ],
+        "yuanshen": [
+          4000000
+        ],
+        "jinqian": [
+          3000000
+        ],
+        "zhenqi": "1000",
+        "juli": "24",
+        "shijian": "1800",
+        "jiange": "600000",
+        "zhunbei": "3000",
+        "miaoshu": "使用水火土的力量对目标进行最直接的打击。水消磨对方的精神，持续减少目标MP，持续30秒，减少量为法术伤害值的50%。火灼烧目标的灵魂，30秒内目标每次受到攻击减少20点元气。土打击目标的身体，对目标造成自身MP上限60%的土伤害。真气燃烧和真元消除对怪物无效。即使被打断也会消耗真气。施放需要一点真元"
+      },
+      {
+        "id": 93,
+        "place": [
+          8,
+          2
+        ],
+        "name": "玄冰水龙",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 92,
+        "foolting": [
+          470,
+          471
+        ],
+        "intm": "渡劫",
+        "img": "img_93.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 200,
+        "dengji": [
+          59,
+          62,
+          65,
+          68,
+          71,
+          74,
+          77,
+          80,
+          83,
+          86
+        ],
+        "yuanshen": [
+          87000,
+          104000,
+          125000,
+          151000,
+          181000,
+          239000,
+          327000,
+          440000,
+          586000,
+          773000
+        ],
+        "jinqian": [
+          120000,
+          140000,
+          170000,
+          200000,
+          240000,
+          320000,
+          440000,
+          590000,
+          790000,
+          1050000
+        ],
+        "zhenqi": "336+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1600",
+        "jiange": "30000",
+        "zhunbei": "4000",
+        "miaoshu": "集元气召唤一条水龙直冲云霄砸向目标及其周围$8+0.4*level$米内的敌人，造成基础法术攻击附上$250+25*level$%装备攻击力加$6.2*level*level+390.3*level+5125.9$水系伤害，并且有$85+level$%机率使敌减速60%，持续$6+0.2*level$秒。施放需要两点真元"
+      },
+      {
+        "id": 96,
+        "place": [
+          2,
+          1
+        ],
+        "name": "烈焰护甲",
+        "clas": "主动祝福",
+        "restrict": "空手；法器。",
+        "frelating": 81,
+        "foolting": [
+          442,
+          443
+        ],
+        "intm": "灵虚",
+        "img": "img_96.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 30,
+        "dengji": [
+          9,
+          14,
+          19,
+          24,
+          29,
+          34,
+          39,
+          44,
+          49,
+          54
+        ],
+        "yuanshen": [
+          800,
+          1920,
+          3680,
+          6160,
+          9440,
+          13840,
+          19680,
+          27360,
+          37600,
+          51200
+        ],
+        "jinqian": [
+          800,
+          2240,
+          4480,
+          7600,
+          12000,
+          17600,
+          25600,
+          36000,
+          49600,
+          68000
+        ],
+        "zhenqi": "12+15*level",
+        "juli": "",
+        "shijian": "1200",
+        "jiange": "3000",
+        "zhunbei": "1000",
+        "miaoshu": "将元气附在自身周围形成炽热的护甲，从装备上获得$10*level$%额外火系防御，且提升生命恢复速度$level$点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气"
+      },
+      {
+        "id": 97,
+        "place": [
+          1,
+          4
+        ],
+        "name": "落石术",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 0,
+        "foolting": [
+          472,
+          473
+        ],
+        "intm": "筑基",
+        "img": "img_97.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          6,
+          11,
+          16,
+          21,
+          26,
+          31,
+          36,
+          41,
+          46,
+          51
+        ],
+        "yuanshen": [
+          400,
+          1500,
+          3200,
+          5800,
+          9200,
+          13900,
+          20000,
+          28100,
+          38900,
+          53200
+        ],
+        "jinqian": [
+          440,
+          1600,
+          3800,
+          7000,
+          12000,
+          18000,
+          26000,
+          37000,
+          51000,
+          70000
+        ],
+        "zhenqi": "4.2+21*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1400",
+        "jiange": "6000",
+        "zhunbei": "2000",
+        "miaoshu": "召唤巨石自空中砸向目标，造成基础法术攻击附上$100+10*level$%装备攻击力加$8.1*level*level+128.4*level+25.4$的土系伤害。"
+      },
+      {
+        "id": 98,
+        "place": [
+          6,
+          4
+        ],
+        "name": "飞沙术",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 10,
+        "foolting": [
+          480,
+          481
+        ],
+        "intm": "空冥",
+        "img": "img_98.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 0,
+        "dengji": [
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          67,
+          71,
+          75
+        ],
+        "yuanshen": [
+          24600,
+          32000,
+          41400,
+          53200,
+          68100,
+          87000,
+          111000,
+          142000,
+          181000,
+          266000
+        ],
+        "jinqian": [
+          32000,
+          42000,
+          54000,
+          70000,
+          90000,
+          120000,
+          150000,
+          190000,
+          240000,
+          360000
+        ],
+        "zhenqi": "157.5+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1500",
+        "jiange": "5000",
+        "zhunbei": "2500",
+        "miaoshu": "运用法力激射出一道强劲的流沙，对目标造成基础法术攻击附上$150+15*level$%装备攻击力加$6*level*level+221.3*level+1475.4$的土系伤害，并使其10秒内命中度下降$20+3*level$%。"
+      },
+      {
+        "id": 99,
+        "place": [
+          8,
+          4
+        ],
+        "name": "泰山压顶",
+        "clas": "主动攻击",
+        "restrict": "空手；法器。",
+        "frelating": 184,
+        "foolting": [
+          484,
+          485
+        ],
+        "intm": "渡劫",
+        "img": "img_99.jpg",
+        "explain": "",
+        "xianmo": "3",
+        "nanber": 10,
+        "wuqi": "空手；法器。",
+        "zhenyuan": 200,
+        "dengji": [
+          59,
+          62,
+          65,
+          68,
+          71,
+          74,
+          77,
+          80,
+          83,
+          86
+        ],
+        "yuanshen": [
+          87000,
+          104000,
+          125000,
+          151000,
+          181000,
+          239000,
+          327000,
+          440000,
+          586000,
+          773000
+        ],
+        "jinqian": [
+          120000,
+          140000,
+          170000,
+          200000,
+          240000,
+          320000,
+          440000,
+          590000,
+          790000,
+          1050000
+        ],
+        "zhenqi": "336+18*level",
+        "juli": "19.5+0.9*level",
+        "shijian": "1400",
+        "jiange": "30000",
+        "zhunbei": "5000",
+        "miaoshu": "用全身元气移来巨山砸向目标，对其及周围$8+0.4*level$米内的所有敌人造成基础攻击附上$250+25*level$%装备法术攻击力加$5.4*level*level+339.8*level+4462.4$的土系伤害，并有$85+level$%机率使其昏迷$3+0.3*level$秒。^a6caf0施放需要两点真元"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": 10,
+      "place": [
+        4,
+        4
+      ],
+      "name": "沙陷",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 181,
+      "foolting": [
+        476,
+        477
+      ],
+      "intm": "和合",
+      "img": "img_10.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        19,
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64
+      ],
+      "yuanshen": [
+        4600,
+        7700,
+        11800,
+        17300,
+        24600,
+        34200,
+        47000,
+        64000,
+        87000,
+        118000
+      ],
+      "jinqian": [
+        5600,
+        9500,
+        15000,
+        22000,
+        32000,
+        45000,
+        62000,
+        85000,
+        120000,
+        160000
+      ],
+      "zhenqi": "50.4+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "操纵土之神力在敌人脚底唤出一道神秘的沙旋，对其造成基础法术攻击力的土系伤害，并在15秒内造成$10*level*level+209.3*level+507.8$额外土系伤害且持续减速15%，并有$5+level$%机率定身3秒。"
+    },
+    {
+      "id": 100,
+      "place": [
+        5,
+        5
+      ],
+      "name": "缩地术",
+      "clas": "瞬移",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        478,
+        479
+      ],
+      "intm": "元婴",
+      "img": "img_100.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 20,
+      "dengji": [
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69,
+        74
+      ],
+      "yuanshen": [
+        8260,
+        12110,
+        17220,
+        23940,
+        32900,
+        44800,
+        60900,
+        82600,
+        112000,
+        167300
+      ],
+      "jinqian": [
+        10500,
+        15400,
+        22400,
+        31500,
+        43400,
+        59500,
+        84000,
+        112000,
+        147000,
+        224000
+      ],
+      "zhenqi": "50",
+      "juli": "15+level",
+      "shijian": "1000",
+      "jiange": "20000-1000*level",
+      "zhunbei": "",
+      "miaoshu": "借土之神力向前方挪移，移至前方$15+level$米处。施放需要20元气"
+    },
+    {
+      "id": 101,
+      "place": [
+        9,
+        4
+      ],
+      "name": "土精通",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 0,
+      "foolting": [
+        490,
+        491
+      ],
+      "intm": "元婴",
+      "img": "img_101.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69,
+        74
+      ],
+      "yuanshen": [
+        11800,
+        17300,
+        24600,
+        34200,
+        47000,
+        64000,
+        87000,
+        118000,
+        160000,
+        217000
+      ],
+      "jinqian": [
+        15000,
+        22000,
+        32000,
+        45000,
+        62000,
+        85000,
+        120000,
+        160000,
+        210000,
+        290000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有土系法术伤害$2*level$%。"
+    },
+    {
+      "id": 180,
+      "place": [
+        2,
+        2
+      ],
+      "name": "寒冰护甲",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 88,
+      "foolting": [
+        458,
+        459
+      ],
+      "intm": "灵虚",
+      "img": "img_180.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        9,
+        14,
+        19,
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54
+      ],
+      "yuanshen": [
+        800,
+        1920,
+        3680,
+        6160,
+        9440,
+        13840,
+        19680,
+        27360,
+        37600,
+        51200
+      ],
+      "jinqian": [
+        800,
+        2240,
+        4480,
+        7600,
+        12000,
+        17600,
+        25600,
+        36000,
+        49600,
+        68000
+      ],
+      "zhenqi": "-6+15*level",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成冰冷的护甲，从装备上获得$10*level$%额外水系防御，且提升真气恢复速度$level$点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气"
+    },
+    {
+      "id": 181,
+      "place": [
+        2,
+        4
+      ],
+      "name": "磐石护甲",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 97,
+      "foolting": [
+        474,
+        475
+      ],
+      "intm": "灵虚",
+      "img": "img_181.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        9,
+        14,
+        19,
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54
+      ],
+      "yuanshen": [
+        800,
+        1920,
+        3680,
+        6160,
+        9440,
+        13840,
+        19680,
+        27360,
+        37600,
+        51200
+      ],
+      "jinqian": [
+        800,
+        2240,
+        4480,
+        7600,
+        12000,
+        17600,
+        25600,
+        36000,
+        49600,
+        68000
+      ],
+      "zhenqi": "12+15*level",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成坚硬的护甲，从装备上获得$10*level$%额外土系防御，以及$10*level$%额外物理防御，持续15分钟。三种护盾只能同时激活一种施放需要30元气"
+    },
+    {
+      "id": 182,
+      "place": [
+        3,
+        3
+      ],
+      "name": "冰雹",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        460,
+        461
+      ],
+      "intm": "灵虚",
+      "img": "img_182.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        16,
+        21,
+        26,
+        31,
+        36,
+        41,
+        46,
+        51,
+        56,
+        61
+      ],
+      "yuanshen": [
+        3200,
+        5800,
+        9200,
+        13900,
+        20000,
+        28100,
+        38900,
+        53200,
+        72400,
+        98300
+      ],
+      "jinqian": [
+        3800,
+        7000,
+        12000,
+        18000,
+        26000,
+        37000,
+        51000,
+        70000,
+        96000,
+        130000
+      ],
+      "zhenqi": "39.6+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1200",
+      "jiange": "12000",
+      "zhunbei": "1800",
+      "miaoshu": "召唤出一阵冰雹砸向目标，对其及周围的敌人造成基础法术攻击附加$5.3*level*level+105.8*level+206.9$的水系伤害，并有33%机率使敌人定身$2+0.2*level$秒，等级越高范围越大。"
+    },
+    {
+      "id": 183,
+      "place": [
+        8,
+        3
+      ],
+      "name": "般若心经",
+      "clas": "主动祝福",
+      "restrict": "法器；空手。",
+      "frelating": 89,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "渡劫",
+      "img": "img_183.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 200,
+      "dengji": [
+        59
+      ],
+      "yuanshen": [
+        69600
+      ],
+      "jinqian": [
+        96000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "60000",
+      "zhunbei": "",
+      "miaoshu": "积聚体内所有元气回复自已10%最大真气，且在6秒内所有法术不用吟唱。施放需要两点真元"
+    },
+    {
+      "id": 184,
+      "place": [
+        7,
+        4
+      ],
+      "name": "石破天惊",
+      "clas": "主动诅咒",
+      "restrict": "法器；空手。",
+      "frelating": 98,
+      "foolting": [
+        482,
+        483
+      ],
+      "intm": "履霜",
+      "img": "img_184.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85
+      ],
+      "yuanshen": [
+        47000,
+        60200,
+        76900,
+        98300,
+        125000,
+        160000,
+        215000,
+        327000,
+        484000,
+        705000
+      ],
+      "jinqian": [
+        62000,
+        80000,
+        100000,
+        130000,
+        170000,
+        210000,
+        290000,
+        440000,
+        650000,
+        950000
+      ],
+      "zhenqi": "135+12*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "2000",
+      "jiange": "31000-1000*level",
+      "zhunbei": "500",
+      "miaoshu": "运用神力在目标处产生无形的爆炸，打断对方当前技能并使其在$2+0.3*level$秒内无法使用任何普攻和技能。"
+    },
+    {
+      "id": 440,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·烈火符<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 81,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_440.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "30",
+      "shijian": "800",
+      "jiange": "3000",
+      "zhunbei": "1500",
+      "miaoshu": "以烈火之力附于符上扔出，对目标造成基础法术攻击附上100%装备攻击力加3620的火系伤害。击中对手时有20%机率获取30点元气。"
+    },
+    {
+      "id": 441,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·烈火符<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 81,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_441.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "30",
+      "shijian": "800",
+      "jiange": "3000",
+      "zhunbei": "1200",
+      "miaoshu": "以烈火之力附于符上扔出，对目标造成基础法术攻击附上100%装备攻击力加3620的火系伤害。吟唱时间缩短到1.2秒。"
+    },
+    {
+      "id": 442,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·烈焰护甲<em>（升仙）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 96,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_442.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成炽热的护甲，从装备上获得120%额外火系防御，且提升生命恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加火防上升到150%。"
+    },
+    {
+      "id": 443,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·烈焰护甲<em>（入魔）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 96,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_443.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成炽热的护甲，从装备上获得120%额外火系防御，且提升生命恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气生命回复速度上升到15点每秒。"
+    },
+    {
+      "id": 444,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·火煞天灯<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 7,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_444.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "召唤熊熊烈火于对方头顶持续燃烧，对其造成基础法术攻击力的火系伤害，并在15秒内受到5693的额外火系伤害。每次火系伤害增加15%%。"
+    },
+    {
+      "id": 445,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·火煞天灯<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 7,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_445.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "召唤熊熊烈火于对方头顶持续燃烧，对其造成基础法术攻击力的火系伤害，并在15秒内受到5693的额外火系伤害。伤害持续时间减少3秒。"
+    },
+    {
+      "id": 446,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·神火符<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 85,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_446.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "450",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "3000",
+      "miaoshu": "将神火之力附于符上向敌人扔出，可对其造成基础攻击附上300%装备法术攻击力加4903的火系伤害。使敌人的火系防御在15秒内减少20%。"
+    },
+    {
+      "id": 447,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·神火符<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 85,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_447.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "450",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "2500",
+      "miaoshu": "将神火之力附于符上向敌人扔出，可对其造成基础攻击附上300%装备法术攻击力加4903的火系伤害。吟唱时间缩短到2.5秒。"
+    },
+    {
+      "id": 448,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·炙炎阵<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 86,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_448.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "350",
+      "juli": "6",
+      "shijian": "-1",
+      "jiange": "15000",
+      "zhunbei": "1000",
+      "miaoshu": "操纵火之神力，在自已的身体周围12米内结下灼热的火环阵，每3秒耗350点真气值并对范围内敌人造成基础法术攻击力附加4800的火系伤害，直至真气耗光或手动点击取消或按ESC。施放需要一点真元每次灼烧有20%机率使敌人昏迷3秒。"
+    },
+    {
+      "id": 449,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·炙炎阵<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 86,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_449.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "350",
+      "juli": "6",
+      "shijian": "-1",
+      "jiange": "15000",
+      "zhunbei": "1000",
+      "miaoshu": "操纵火之神力，在自已的身体周围12米内结下灼热的火环阵，每3秒耗350点真气值并对范围内敌人造成基础法术攻击力附加4800的火系伤害，直至真气耗光或手动点击取消或按ESC。施放需要一点真元每次灼烧有25%机率回复自已500点生命。"
+    },
+    {
+      "id": 450,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·烈火炽翼<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 84,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_450.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "445",
+      "juli": "10",
+      "shijian": "1000",
+      "jiange": "7000",
+      "zhunbei": "1000",
+      "miaoshu": "将真气化为一只灼热的火鸟飞出，将前方18米直线上的敌人击退18米且造成基础法术攻击附上100%装备攻击力加5395的火系伤害。施法间隔减少1秒。"
+    },
+    {
+      "id": 451,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·烈火炽翼<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 84,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_451.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "445",
+      "juli": "10",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "将真气化为一只灼热的火鸟飞出，将前方18米直线上的敌人击退18米且造成基础法术攻击附上100%装备攻击力加5395f的火系伤害。攻击影响的范围增加50%。"
+    },
+    {
+      "id": 452,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·血祭炎爆<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 8,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_452.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "295",
+      "juli": "6",
+      "shijian": "1000",
+      "jiange": "15000",
+      "zhunbei": "3200",
+      "miaoshu": "蓄力最多3.2秒并牺牲自己当前生命中的最多60%用血祭爆炸攻击周围12米内的人，造成5000攻击力的火系伤害，每点牺牲的生命值可转化为4点额外攻击力。减少25%的生命值损失。"
+    },
+    {
+      "id": 453,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·血祭炎爆<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 8,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_453.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "295",
+      "juli": "6",
+      "shijian": "1000",
+      "jiange": "15000",
+      "zhunbei": "3200",
+      "miaoshu": "蓄力最多3.2秒并牺牲自己当前生命中的最多60%用血祭爆炸攻击周围12米内的人，造成5000攻击力的火系伤害，每点牺牲的生命值可转化为4点额外攻击力。有50%机率使敌人昏迷3秒。"
+    },
+    {
+      "id": 454,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·火海刀山<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 87,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "真仙",
+      "img": "img_454.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 200,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2000000
+      ],
+      "jinqian": [
+        2000000
+      ],
+      "zhenqi": "655",
+      "juli": "30",
+      "shijian": "1800",
+      "jiange": "30000",
+      "zhunbei": "4000",
+      "miaoshu": "积蓄全身元气产生不计其数的火焰和刀刃向敌人飞去，对目标及周围12米内的所有敌人造成基础法术攻击附上200%装备攻击力加6200的火系伤害和物理伤害。施放需要两点真元有50%机率少消耗一点真元。"
+    },
+    {
+      "id": 455,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·火海刀山<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 87,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "魔圣",
+      "img": "img_455.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 200,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2000000
+      ],
+      "jinqian": [
+        2000000
+      ],
+      "zhenqi": "655",
+      "juli": "30",
+      "shijian": "1800",
+      "jiange": "30000",
+      "zhunbei": "4000",
+      "miaoshu": "积蓄全身元气产生不计其数的火焰和刀刃向敌人飞去，对目标及周围12米内的所有敌人造成基础法术攻击附上200%装备攻击力加6200的火系伤害和物理伤害。施放需要两点真元有50%机率打断敌人技能或施法。"
+    },
+    {
+      "id": 456,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·涌泉<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 88,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_456.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "唤出一道强烈水柱从地面处喷涌而出，对敌人造成基础法术攻击附上100%装备攻击力加3390的水系伤害，并有95%机率使敌人减速40%，持续8秒。减速比例升至45%，持续时间增加1秒。"
+    },
+    {
+      "id": 457,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·涌泉<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 88,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_457.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "唤出一道强烈水柱从地面处喷涌而出，对敌人造成基础法术攻击附上100%装备攻击力加3390的水系伤害，并有95%机率使敌人减速40%，持续8秒。附加攻击力提升600。"
+    },
+    {
+      "id": 458,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·寒冰护甲<em>（升仙）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 180,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_458.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成冰冷的护甲，从装备上获得120%额外水系防御，且提升真气恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加水防上升到150%。"
+    },
+    {
+      "id": 459,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·寒冰护甲<em>（入魔）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 180,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_459.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成冰冷的护甲，从装备上获得120%额外水系防御，且提升真气恢复速度12点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气真气回复速度上升到15点每秒。"
+    },
+    {
+      "id": 460,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·冰雹<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 182,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_460.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "320",
+      "juli": "30",
+      "shijian": "1200",
+      "jiange": "12000",
+      "zhunbei": "1800",
+      "miaoshu": "召唤出一阵冰雹砸向目标，对其及周围的敌人造成基础法术攻击附加3160的水系伤害，并有33%机率使敌人定身4秒。敌人如果被定身，则将在3秒后受到额外3160点攻击力的水系伤害。"
+    },
+    {
+      "id": 461,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·冰雹<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 182,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_461.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "320",
+      "juli": "30",
+      "shijian": "1200",
+      "jiange": "12000",
+      "zhunbei": "1800",
+      "miaoshu": "召唤出一阵冰雹砸向目标，对其及周围的敌人造成基础法术攻击附加3160的水系伤害，并有33%机率使敌人定身4秒。定身机率上升到50%。"
+    },
+    {
+      "id": 462,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·寒露<em>（升仙）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 90,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "真仙",
+      "img": "img_462.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "595",
+      "juli": "30",
+      "shijian": "1200",
+      "jiange": "1000",
+      "zhunbei": "4500",
+      "miaoshu": "运用水性温婉之力，为单人恢复1350点附加基本法术攻击力40%的生命值。有10%机率恢复所有生命值。"
+    },
+    {
+      "id": 463,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·寒露<em>（入魔）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 90,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "魔圣",
+      "img": "img_463.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "595",
+      "juli": "30",
+      "shijian": "1200",
+      "jiange": "1000",
+      "zhunbei": "4500",
+      "miaoshu": "运用水性温婉之力，为单人恢复1350点附加基本法术攻击力40%的生命值。每3秒恢复200点额外生命值，持续3次。"
+    },
+    {
+      "id": 464,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·润泽<em>（升仙）</em>",
+      "clas": "主动祝福",
+      "restrict": "法器；空手。",
+      "frelating": 89,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_464.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "300",
+      "juli": "",
+      "shijian": "",
+      "jiange": "3000",
+      "zhunbei": "",
+      "miaoshu": "以水性温婉之力提升自己的真气值上限，30分钟内真气上限提升60%。施放需要一点真元15秒内法术攻击上升100%法器攻击力。"
+    },
+    {
+      "id": 465,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·润泽<em>（入魔）</em>",
+      "clas": "主动祝福",
+      "restrict": "法器；空手。",
+      "frelating": 89,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_465.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "300",
+      "juli": "",
+      "shijian": "",
+      "jiange": "3000",
+      "zhunbei": "",
+      "miaoshu": "以水性温婉之力提升自己的真气值上限，30分钟内真气上限提升60%。施放需要一点真元15秒内所有吟唱加速20%。"
+    },
+    {
+      "id": 466,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·霜刃<em>（升仙）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 91,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_466.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "600",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "800",
+      "miaoshu": "附冰之气息于队友武器上，使其普通攻击附加40%装备攻击力的冰冻伤害，持续15分钟。持续30分钟。"
+    },
+    {
+      "id": 467,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·霜刃<em>（入魔）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 91,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_467.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "600",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "800",
+      "miaoshu": "附冰之气息于队友武器上，使其普通攻击附加40%装备攻击力的冰冻伤害，持续15分钟。冰伤害上升到50%。"
+    },
+    {
+      "id": 468,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·凌杀<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 92,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "真仙",
+      "img": "img_468.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "445",
+      "juli": "30",
+      "shijian": "1800",
+      "jiange": "15000",
+      "zhunbei": "2500",
+      "miaoshu": "向敌人召出数条冰箭并祭出一道冰凌，对其产生基础法术攻击附上300%装备攻击力加6171的水系伤害，并有95%机率使敌人减速80%，持续6秒。使敌人的水系防御在15秒内减少20%。"
+    },
+    {
+      "id": 469,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·凌杀<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 92,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "魔圣",
+      "img": "img_469.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "445",
+      "juli": "30",
+      "shijian": "1800",
+      "jiange": "15000",
+      "zhunbei": "2100",
+      "miaoshu": "向敌人召出数条冰箭并祭出一道冰凌，对其产生基础法术攻击附上300%装备攻击力加6171的水系伤害，并有95%机率使敌人减速80%，持续6秒。吟唱时间缩短到2.1秒。"
+    },
+    {
+      "id": 470,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·玄冰水龙<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 93,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "真仙",
+      "img": "img_470.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 200,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2000000
+      ],
+      "jinqian": [
+        2000000
+      ],
+      "zhenqi": "655",
+      "juli": "30",
+      "shijian": "1600",
+      "jiange": "30000",
+      "zhunbei": "4000",
+      "miaoshu": "集元气召唤一条水龙直冲云霄并化作数条砸向目标及其周围12米内的敌人，造成基础法术攻击附上500%装备攻击力加13955水系伤害，并且有95%机率使敌减速60%，持续8秒。施放需要两点真元有50%机率使下10秒法术暴击率上升30%。"
+    },
+    {
+      "id": 471,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·玄冰水龙<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 93,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "魔圣",
+      "img": "img_471.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 200,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2000000
+      ],
+      "jinqian": [
+        2000000
+      ],
+      "zhenqi": "655",
+      "juli": "30",
+      "shijian": "1600",
+      "jiange": "30000",
+      "zhunbei": "4000",
+      "miaoshu": "集元气召唤一条水龙直冲云霄并化作数条砸向目标及其周围12米内的敌人，造成基础法术攻击附上500%装备攻击力加13955水系伤害，并且有95%机率使敌减速60%，持续8秒。施放需要两点真元有20%机率不耗真元。"
+    },
+    {
+      "id": 472,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·落石术<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 97,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_472.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "375",
+      "juli": "30",
+      "shijian": "1400",
+      "jiange": "6000",
+      "zhunbei": "1600",
+      "miaoshu": "召唤巨石自空中砸向目标，造成基础法术攻击附上200%装备攻击力加4804的土系伤害。吟唱时间缩短到1.6秒。"
+    },
+    {
+      "id": 473,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·落石术<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 97,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_473.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "375",
+      "juli": "30",
+      "shijian": "1400",
+      "jiange": "6000",
+      "zhunbei": "2000",
+      "miaoshu": "召唤巨石自空中砸向目标，造成基础法术攻击附上200%装备攻击力加4804的土系伤害。有20%机率将对手击晕5秒。"
+    },
+    {
+      "id": 474,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·磐石护甲<em>（升仙）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 181,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_474.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成坚硬的护甲，从装备上获得120%额外土系防御，以及120%额外物理防御，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加土防上升到150%。"
+    },
+    {
+      "id": 475,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·磐石护甲<em>（入魔）</em>",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 181,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_475.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "265",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成坚硬的护甲，从装备上获得120%额外土系防御，以及120%额外物理防御，持续15分钟。三种护盾只能同时激活一种施放需要30元气附加物防上升到150%。"
+    },
+    {
+      "id": 476,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·沙陷<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 10,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_476.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "320",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "操纵土之神力在敌人脚底唤出一道神秘的沙旋，对其造成基础法术攻击力的土系伤害，并在15秒内造成5891额外土系伤害且持续减速15%，并有15$%机率定身3秒。减速比例上升到20%。"
+    },
+    {
+      "id": 477,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·沙陷<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 10,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_477.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        89
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        1000000
+      ],
+      "zhenqi": "320",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "操纵土之神力在敌人脚底唤出一道神秘的沙旋，对其造成基础法术攻击力的土系伤害，并在15秒内造成5891额外土系伤害且持续减速15%，并有15%机率定身3秒。定身机率上升到33%。"
+    },
+    {
+      "id": 478,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·缩地术<em>（升仙）</em>",
+      "clas": "瞬移",
+      "restrict": "空手；法器。",
+      "frelating": 100,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_478.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 10,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "60",
+      "juli": "25",
+      "shijian": "1000",
+      "jiange": "10000",
+      "zhunbei": "",
+      "miaoshu": "借土之神力向前方挪移，移至前方25米处。施放需要20元气元气消耗减少10。"
+    },
+    {
+      "id": 479,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·缩地术<em>（入魔）</em>",
+      "clas": "瞬移",
+      "restrict": "空手；法器。",
+      "frelating": 100,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_479.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 20,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "60",
+      "juli": "30",
+      "shijian": "1000",
+      "jiange": "10000",
+      "zhunbei": "",
+      "miaoshu": "借土之神力向前方挪移，移至前方25米处。施放需要20元气瞬移距离增加到30米。"
+    },
+    {
+      "id": 480,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·飞沙术<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 98,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_480.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "445",
+      "juli": "30",
+      "shijian": "1500",
+      "jiange": "5000",
+      "zhunbei": "2500",
+      "miaoshu": "运用法力激射出一道强劲的流沙，对目标造成基础法术攻击附上300%装备攻击力加6560的土系伤害，并使其10秒内命中度下降50%。命中率下降时间增加50%。"
+    },
+    {
+      "id": 481,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·飞沙术<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 98,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_481.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "445",
+      "juli": "30",
+      "shijian": "1500",
+      "jiange": "5000",
+      "zhunbei": "2500",
+      "miaoshu": "运用法力激射出一道强劲的流沙，对目标造成基础法术攻击附上300%装备攻击力加6560的土系伤害，并使其10秒内命中度下降50%。附加伤害增加1200。"
+    },
+    {
+      "id": 482,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·石破天惊<em>（升仙）</em>",
+      "clas": "主动诅咒",
+      "restrict": "法器；空手。",
+      "frelating": 184,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "真仙",
+      "img": "img_482.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "295",
+      "juli": "30",
+      "shijian": "2000",
+      "jiange": "20000",
+      "zhunbei": "500",
+      "miaoshu": "运用神力在目标处产生无形的爆炸，打断对方当前技能并使其在5秒内无法使用任何普攻和技能。技能将影响到目标周围3米的敌人。"
+    },
+    {
+      "id": 483,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·石破天惊<em>（入魔）</em>",
+      "clas": "主动诅咒",
+      "restrict": "法器；空手。",
+      "frelating": 184,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "魔圣",
+      "img": "img_483.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "295",
+      "juli": "30",
+      "shijian": "2000",
+      "jiange": "18000",
+      "zhunbei": "500",
+      "miaoshu": "运用神力在目标处产生无形的爆炸，打断对方当前技能并使其在5秒内无法使用任何普攻和技能。技能施放间隔减少2秒。"
+    },
+    {
+      "id": 484,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·泰山压顶<em>（升仙）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 99,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "真仙",
+      "img": "img_484.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 200,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2000000
+      ],
+      "jinqian": [
+        2000000
+      ],
+      "zhenqi": "655",
+      "juli": "30",
+      "shijian": "1400",
+      "jiange": "30000",
+      "zhunbei": "5000",
+      "miaoshu": "用全身元气移来巨山砸向目标，对其及周围12米内的所有敌人造成基础攻击附上500%装备法术攻击力加12149的土系伤害，并有95%机率使其昏迷6秒。施放需要两点真元有50%机率少消耗一点真元。"
+    },
+    {
+      "id": 485,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·泰山压顶<em>（入魔）</em>",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 99,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "魔圣",
+      "img": "img_485.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 200,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2000000
+      ],
+      "jinqian": [
+        2000000
+      ],
+      "zhenqi": "655",
+      "juli": "35",
+      "shijian": "1400",
+      "jiange": "30000",
+      "zhunbei": "5000",
+      "miaoshu": "用全身元气移来巨山砸向目标，对其及周围12米内的所有敌人造成基础攻击附上500%装备法术攻击力加12149的土系伤害，并有95%机率使其昏迷6秒。施放需要两点真元吟唱距离增加5米。"
+    },
+    {
+      "id": 486,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·火精通<em>（升仙）</em>",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 53,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_486.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有火系法术伤害20%。火系伤害提升25%。"
+    },
+    {
+      "id": 487,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·火精通<em>（入魔）</em>",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 53,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_487.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有火系法术伤害20%。攻击时法术致命一击率提升1%。"
+    },
+    {
+      "id": 488,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·水精通<em>（升仙）</em>",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 9,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_488.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有水系法术伤害20%。水系伤害提升25%。"
+    },
+    {
+      "id": 489,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·水精通<em>（入魔）</em>",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 9,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_489.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有水系法术伤害20%。攻击时法术致命一击率提升1%。"
+    },
+    {
+      "id": 490,
+      "place": [
+        0,
+        0
+      ],
+      "name": "真·土精通<em>（升仙）</em>",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 101,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "上仙",
+      "img": "img_490.jpg",
+      "explain": "",
+      "xianmo": "1",
+      "nanber": 1,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有土系法术伤害20%。土系伤害提升25%。"
+    },
+    {
+      "id": 491,
+      "place": [
+        0,
+        0
+      ],
+      "name": "狂·土精通<em>（入魔）</em>",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 101,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "狂魔",
+      "img": "img_491.jpg",
+      "explain": "",
+      "xianmo": "2",
+      "nanber": 1,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        92
+      ],
+      "yuanshen": [
+        1500000
+      ],
+      "jinqian": [
+        1500000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有土系法术伤害20%。攻击时法术致命一击率提升1%。"
+    },
+    {
+      "id": 53,
+      "place": [
+        9,
+        1
+      ],
+      "name": "火精通",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 0,
+      "foolting": [
+        486,
+        487
+      ],
+      "intm": "元婴",
+      "img": "img_53.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69,
+        74
+      ],
+      "yuanshen": [
+        11800,
+        17300,
+        24600,
+        34200,
+        47000,
+        64000,
+        87000,
+        118000,
+        160000,
+        217000
+      ],
+      "jinqian": [
+        15000,
+        22000,
+        32000,
+        45000,
+        62000,
+        85000,
+        120000,
+        160000,
+        210000,
+        290000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有火系法术伤害$2*level$%。"
+    },
+    {
+      "id": 7,
+      "place": [
+        3,
+        1
+      ],
+      "name": "火煞天灯",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 96,
+      "foolting": [
+        444,
+        445
+      ],
+      "intm": "灵虚",
+      "img": "img_7.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        13,
+        18,
+        23,
+        28,
+        33,
+        38,
+        43,
+        48,
+        53,
+        58
+      ],
+      "yuanshen": [
+        2100,
+        4100,
+        7000,
+        10900,
+        16100,
+        23000,
+        32000,
+        44100,
+        60200,
+        81800
+      ],
+      "jinqian": [
+        2400,
+        4900,
+        8600,
+        14000,
+        21000,
+        30000,
+        42000,
+        58000,
+        80000,
+        110000
+      ],
+      "zhenqi": "24+15*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "召唤熊熊烈火于对方头顶持续燃烧，对其造成基础法术攻击力的火系伤害，并在15秒内受到$9.6*level*level+179.1*level+261.9$的额外火系伤害。"
+    },
+    {
+      "id": 8,
+      "place": [
+        7,
+        1
+      ],
+      "name": "血祭炎爆",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 84,
+      "foolting": [
+        452,
+        453
+      ],
+      "intm": "履霜",
+      "img": "img_8.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85
+      ],
+      "yuanshen": [
+        47000,
+        60200,
+        76900,
+        98300,
+        125000,
+        160000,
+        215000,
+        327000,
+        484000,
+        705000
+      ],
+      "jinqian": [
+        62000,
+        80000,
+        100000,
+        130000,
+        170000,
+        210000,
+        290000,
+        440000,
+        650000,
+        950000
+      ],
+      "zhenqi": "135+12*level",
+      "juli": "6",
+      "shijian": "1000",
+      "jiange": "15000",
+      "zhunbei": "5200-200*level",
+      "miaoshu": "蓄力最多$5.2-0.2*level$秒并牺牲自己当前生命中的最多60%用血祭爆炸攻击周围12米内的人，造成$2000+200*level$攻击力的火系伤害，每点牺牲的生命值可转化为$2+0.2*level$点额外攻击力。"
+    },
+    {
+      "id": 81,
+      "place": [
+        1,
+        1
+      ],
+      "name": "烈火符",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        440,
+        441
+      ],
+      "intm": "筑基",
+      "img": "img_81.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45
+      ],
+      "yuanshen": [
+        0,
+        300,
+        1200,
+        2800,
+        5200,
+        8400,
+        12800,
+        18600,
+        26300,
+        36500
+      ],
+      "jinqian": [
+        0,
+        290,
+        1300,
+        3300,
+        6300,
+        10000,
+        16000,
+        24000,
+        34000,
+        48000
+      ],
+      "zhenqi": "-9+15*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "800",
+      "jiange": "3000",
+      "zhunbei": "1500",
+      "miaoshu": "以烈火之力附于符上扔出，对目标造成基础法术攻击附上$50+5*level$%装备攻击力加$6.1*level*level+82*level-50.4$的火系伤害。"
+    },
+    {
+      "id": 84,
+      "place": [
+        6,
+        1
+      ],
+      "name": "烈火炽翼",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 86,
+      "foolting": [
+        450,
+        451
+      ],
+      "intm": "空冥",
+      "img": "img_84.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        39,
+        43,
+        47,
+        51,
+        55,
+        59,
+        63,
+        67,
+        71,
+        75
+      ],
+      "yuanshen": [
+        24600,
+        32000,
+        41400,
+        53200,
+        68100,
+        87000,
+        111000,
+        142000,
+        181000,
+        266000
+      ],
+      "jinqian": [
+        32000,
+        42000,
+        54000,
+        70000,
+        90000,
+        120000,
+        150000,
+        190000,
+        240000,
+        360000
+      ],
+      "zhenqi": "157.5+18*level",
+      "juli": "10",
+      "shijian": "1000",
+      "jiange": "8000",
+      "zhunbei": "1000",
+      "miaoshu": "将真气化为一只灼热的火鸟飞出，将前方$13+0.5*level$米直线上的敌人击退$12+0.6*level$米且造成基础法术攻击附上$50+5*level$%装备攻击力加$5*level*level+182.1*level+1213.5$的火系伤害。"
+    },
+    {
+      "id": 85,
+      "place": [
+        4,
+        1
+      ],
+      "name": "神火符",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 7,
+      "foolting": [
+        446,
+        447
+      ],
+      "intm": "和合",
+      "img": "img_85.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        19,
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64
+      ],
+      "yuanshen": [
+        4600,
+        7700,
+        11800,
+        17300,
+        24600,
+        34200,
+        47000,
+        64000,
+        87000,
+        118000
+      ],
+      "jinqian": [
+        5600,
+        9500,
+        15000,
+        22000,
+        32000,
+        45000,
+        62000,
+        85000,
+        120000,
+        160000
+      ],
+      "zhenqi": "50.4+25*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "3000",
+      "miaoshu": "将神火之力附于符上向敌人扔出，可对其造成基础攻击附上$150+15*level$%装备法术攻击力加$8.3*level*level+174.2*level+422.7$的火系伤害。"
+    },
+    {
+      "id": 86,
+      "place": [
+        5,
+        1
+      ],
+      "name": "炙炎阵",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 85,
+      "foolting": [
+        448,
+        449
+      ],
+      "intm": "元婴",
+      "img": "img_86.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69,
+        74
+      ],
+      "yuanshen": [
+        11800,
+        17300,
+        24600,
+        34200,
+        47000,
+        64000,
+        87000,
+        118000,
+        160000,
+        239000
+      ],
+      "jinqian": [
+        15000,
+        22000,
+        32000,
+        45000,
+        62000,
+        85000,
+        120000,
+        160000,
+        210000,
+        320000
+      ],
+      "zhenqi": "100+20*level",
+      "juli": "6",
+      "shijian": "-1",
+      "jiange": "15000",
+      "zhunbei": "1000",
+      "miaoshu": "操纵火之神力，在自已的身体周围12米内结下灼热的火环阵，每3秒耗$100+20*level$点真气值并对范围内敌人造成基础法术攻击力附加$10*level*level+249.2*level+966.2$的火系伤害，直至真气耗光或手动点击取消或按ESC。施放需要一点真元"
+    },
+    {
+      "id": 87,
+      "place": [
+        8,
+        1
+      ],
+      "name": "火海刀山",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 8,
+      "foolting": [
+        454,
+        455
+      ],
+      "intm": "渡劫",
+      "img": "img_87.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 200,
+      "dengji": [
+        59,
+        62,
+        65,
+        68,
+        71,
+        74,
+        77,
+        80,
+        83,
+        86
+      ],
+      "yuanshen": [
+        87000,
+        104000,
+        125000,
+        151000,
+        181000,
+        239000,
+        327000,
+        440000,
+        586000,
+        773000
+      ],
+      "jinqian": [
+        120000,
+        140000,
+        170000,
+        200000,
+        240000,
+        320000,
+        440000,
+        590000,
+        790000,
+        1050000
+      ],
+      "zhenqi": "336+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1800",
+      "jiange": "30000",
+      "zhunbei": "4000",
+      "miaoshu": "积蓄全身元气产生不计其数的火焰和刀刃向敌人飞去，对目标及周围$8+0.4*level$米内的所有敌人造成基础法术攻击附上$100+10*level$%装备攻击力加$2.5*level*level+156*level+2050.4$的火系伤害和同样的物理伤害。施放需要两点真元"
+    },
+    {
+      "id": 88,
+      "place": [
+        1,
+        2
+      ],
+      "name": "涌泉",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        456,
+        457
+      ],
+      "intm": "筑基",
+      "img": "img_88.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        3,
+        8,
+        13,
+        18,
+        23,
+        28,
+        33,
+        38,
+        43,
+        48
+      ],
+      "yuanshen": [
+        100,
+        800,
+        2100,
+        4100,
+        7000,
+        10900,
+        16100,
+        23000,
+        32000,
+        44100
+      ],
+      "jinqian": [
+        80,
+        800,
+        2400,
+        4900,
+        8600,
+        14000,
+        21000,
+        30000,
+        42000,
+        58000
+      ],
+      "zhenqi": "-6+15*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "唤出一道强烈水柱从地面处喷涌而出，对敌人造成基础法术攻击附上$50+5*level$%装备攻击力加$5.7*level*level+83.7*level-34.4$的水系伤害，并有$62+3*level$%机率使敌人减速40%，持续$5+0.3*level$秒。"
+    },
+    {
+      "id": 89,
+      "place": [
+        5,
+        3
+      ],
+      "name": "润泽",
+      "clas": "主动祝福",
+      "restrict": "法器；空手。",
+      "frelating": 0,
+      "foolting": [
+        464,
+        465
+      ],
+      "intm": "元婴",
+      "img": "img_89.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69,
+        74
+      ],
+      "yuanshen": [
+        9440,
+        13840,
+        19680,
+        27360,
+        37600,
+        51200,
+        69600,
+        94400,
+        128000,
+        191200
+      ],
+      "jinqian": [
+        12000,
+        17600,
+        25600,
+        36000,
+        49600,
+        68000,
+        96000,
+        128000,
+        168000,
+        256000
+      ],
+      "zhenqi": "100",
+      "juli": "",
+      "shijian": "",
+      "jiange": "3000",
+      "zhunbei": "",
+      "miaoshu": "以水性温婉之力提升自己的真气值上限，$10+2*level$分钟内真气上限提升$10+5*level$%。施放需要一点真元"
+    },
+    {
+      "id": 9,
+      "place": [
+        9,
+        2
+      ],
+      "name": "水精通",
+      "clas": "被动",
+      "restrict": "",
+      "frelating": 0,
+      "foolting": [
+        488,
+        489
+      ],
+      "intm": "元婴",
+      "img": "img_9.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "",
+      "zhenyuan": 0,
+      "dengji": [
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69,
+        74
+      ],
+      "yuanshen": [
+        11800,
+        17300,
+        24600,
+        34200,
+        47000,
+        64000,
+        87000,
+        118000,
+        160000,
+        217000
+      ],
+      "jinqian": [
+        15000,
+        22000,
+        32000,
+        45000,
+        62000,
+        85000,
+        120000,
+        160000,
+        210000,
+        290000
+      ],
+      "zhenqi": "",
+      "juli": "",
+      "shijian": "",
+      "jiange": "",
+      "zhunbei": "",
+      "miaoshu": "提升所有水系法术伤害$2*level$%。"
+    },
+    {
+      "id": 90,
+      "place": [
+        4,
+        2
+      ],
+      "name": "寒露",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 180,
+      "foolting": [
+        462,
+        463
+      ],
+      "intm": "和合",
+      "img": "img_90.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59,
+        64,
+        69
+      ],
+      "yuanshen": [
+        6160,
+        9440,
+        13840,
+        19680,
+        27360,
+        37600,
+        51200,
+        69600,
+        94400,
+        128000
+      ],
+      "jinqian": [
+        7600,
+        12000,
+        17600,
+        25600,
+        36000,
+        49600,
+        68000,
+        96000,
+        128000,
+        168000
+      ],
+      "zhenqi": "142.5+37.5*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1200",
+      "jiange": "1000",
+      "zhunbei": "4500",
+      "miaoshu": "运用水性温婉之力，为单人恢复$300+70*level$点附加基本法术攻击力$5+3*level$%的生命值。"
+    },
+    {
+      "id": 901,
+      "place": [
+        9,
+        3
+      ],
+      "name": "气贯长虹",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "天仙",
+      "img": "img_901.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 100,
+      "dengji": [
+        100
+      ],
+      "yuanshen": [
+        4000000
+      ],
+      "jinqian": [
+        3000000
+      ],
+      "zhenqi": "1000",
+      "juli": "",
+      "shijian": "1000",
+      "jiange": "300000",
+      "zhunbei": "800",
+      "miaoshu": "法师们在越来越激烈的战斗中，学会了短时间内提升战斗力的新方法。她们把自身的真气压缩然后为自己加持。然后在短时间里法术攻击会大量增加，增加的效果和真气上限挂钩。附灵之力量于自己武器上，使法术攻击增加(自身MP上限/100)百分比，持续30秒。施放需要一点真元"
+    },
+    {
+      "id": 902,
+      "place": [
+        6,
+        5
+      ],
+      "name": "土灵击",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "大乘",
+      "img": "img_902.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        79
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        0
+      ],
+      "zhenqi": "600",
+      "juli": "27",
+      "shijian": "1000",
+      "jiange": "1000",
+      "zhunbei": "1000",
+      "miaoshu": "大法师田彩在和羽族长时间的共同战斗中，提出了人族应该从羽族的战斗方式中学习的观点。并且成功的创造了两个全新的技能，大大增加了法师的战斗力。土灵击就是其一。融合了羽灵五行符的土灵击能有效的在攻击的同时降低目标的法术防御。带来攻击的提升，但是因为对元素的理解专一。所以结果只是对水，火，土有效果并且超过了作为原始技能的五行。对目标造成极少的土系伤害，并在12秒内造成目标土水火三系防御降低60%。"
+    },
+    {
+      "id": 903,
+      "place": [
+        4,
+        5
+      ],
+      "name": "摄魂之力",
+      "clas": "主动诅咒",
+      "restrict": "法器；空手。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "大乘",
+      "img": "img_903.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 20,
+      "dengji": [
+        79
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        0
+      ],
+      "zhenqi": "600",
+      "juli": "20",
+      "shijian": "",
+      "jiange": "120000",
+      "zhunbei": "",
+      "miaoshu": "大法师田彩的另一个创造技能.经过人类使用出来的羽族5色符。能够瞬间让目标昏睡4秒。施放需要消耗20元气。"
+    },
+    {
+      "id": 904,
+      "place": [
+        2,
+        5
+      ],
+      "name": "真元护体",
+      "clas": "主动祝福",
+      "restrict": "法器；空手。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "大乘",
+      "img": "img_904.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 0,
+      "dengji": [
+        79
+      ],
+      "yuanshen": [
+        1000000
+      ],
+      "jinqian": [
+        0
+      ],
+      "zhenqi": "200",
+      "juli": "30",
+      "shijian": "",
+      "jiange": "30000",
+      "zhunbei": "",
+      "miaoshu": "人们在对抗怨灵的时候。很多时候都是因为妖兽无法支撑法术攻击而倒下，然后一败涂地。所幸法师们找到了解决办法，他们强行施加五行之力在目标队友身上，在极短的时间内提升目标的部分五行防御。4秒内金，水，火，土系法术防御增加1000%。同时自身有10%几率可能驱除自身不利状态。"
+    },
+    {
+      "id": 905,
+      "place": [
+        7,
+        5
+      ],
+      "name": "灵气震爆",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "天仙",
+      "img": "img_905.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        100
+      ],
+      "yuanshen": [
+        4000000
+      ],
+      "jinqian": [
+        3000000
+      ],
+      "zhenqi": "1000",
+      "juli": "24",
+      "shijian": "1800",
+      "jiange": "600000",
+      "zhunbei": "3000",
+      "miaoshu": "使用水火土的力量对目标进行最直接的打击。水消磨对方的精神，持续减少目标MP，持续30秒，减少量为法术伤害值的50%。火灼烧目标的灵魂，30秒内目标每次受到攻击减少20点元气。土打击目标的身体，对目标造成自身MP上限60%的土伤害。真气燃烧和真元消除对怪物无效。即使被打断也会消耗真气。施放需要一点真元"
+    },
+    {
+      "id": 91,
+      "place": [
+        6,
+        2
+      ],
+      "name": "霜刃",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 90,
+      "foolting": [
+        466,
+        467
+      ],
+      "intm": "空冥",
+      "img": "img_91.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        39,
+        43,
+        47,
+        51,
+        55,
+        59,
+        63,
+        67,
+        71,
+        75
+      ],
+      "yuanshen": [
+        6150,
+        8000,
+        10350,
+        13300,
+        17025,
+        21750,
+        27750,
+        35500,
+        45250,
+        66500
+      ],
+      "jinqian": [
+        8000,
+        10500,
+        13500,
+        17500,
+        22500,
+        30000,
+        37500,
+        47500,
+        60000,
+        90000
+      ],
+      "zhenqi": "200+25*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1000",
+      "jiange": "3000",
+      "zhunbei": "800",
+      "miaoshu": "附冰之气息于队友武器上，使其普通攻击附加$10+2*level$%装备攻击力的冰冻伤害，持续15分钟。"
+    },
+    {
+      "id": 92,
+      "place": [
+        7,
+        2
+      ],
+      "name": "凌杀",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 91,
+      "foolting": [
+        468,
+        469
+      ],
+      "intm": "履霜",
+      "img": "img_92.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        49,
+        53,
+        57,
+        61,
+        65,
+        69,
+        73,
+        77,
+        81,
+        85
+      ],
+      "yuanshen": [
+        47000,
+        60200,
+        76900,
+        98300,
+        125000,
+        160000,
+        215000,
+        327000,
+        484000,
+        705000
+      ],
+      "jinqian": [
+        62000,
+        80000,
+        100000,
+        130000,
+        170000,
+        210000,
+        290000,
+        440000,
+        650000,
+        950000
+      ],
+      "zhenqi": "202.5+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1800",
+      "jiange": "15000",
+      "zhunbei": "2500",
+      "miaoshu": "向敌人召出数条冰箭并祭出一道冰凌，对其产生基础法术攻击附上$150+15*level$%装备攻击力加$5.7*level*level+236.6*level+1944.1$的水系伤害，并有$62+3*level$%机率使敌人减速80%，持续$4+0.2*level$秒。"
+    },
+    {
+      "id": 925,
+      "place": [
+        9,
+        3
+      ],
+      "name": "气贯长虹",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "天仙、魔尊",
+      "img": "img_925.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 100,
+      "dengji": [
+        95
+      ],
+      "yuanshen": [
+        2400000
+      ],
+      "jinqian": [
+        3000000
+      ],
+      "zhenqi": "1000",
+      "juli": "",
+      "shijian": "1000",
+      "jiange": "300000",
+      "zhunbei": "800",
+      "miaoshu": "法师们在越来越激烈的战斗中，学会了短时间内提升战斗力的新方法。她们把自身的真气压缩然后为自己加持。然后在短时间里法术攻击会大量增加，增加的效果和真气上限挂钩。附灵之力量于自己武器上，使法术攻击增加(自身MP上限/100)百分比，持续30秒。施放需要一点真元"
+    },
+    {
+      "id": 926,
+      "place": [
+        7,
+        5
+      ],
+      "name": "灵气震爆",
+      "clas": "主动攻击",
+      "restrict": "法器；空手。",
+      "frelating": 0,
+      "foolting": [
+        {
+          "$arrayHole": true
+        }
+      ],
+      "intm": "天仙、魔尊",
+      "img": "img_926.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 1,
+      "wuqi": "法器；空手。",
+      "zhenyuan": 100,
+      "dengji": [
+        100
+      ],
+      "yuanshen": [
+        4000000
+      ],
+      "jinqian": [
+        3000000
+      ],
+      "zhenqi": "1000",
+      "juli": "24",
+      "shijian": "1800",
+      "jiange": "600000",
+      "zhunbei": "3000",
+      "miaoshu": "使用水火土的力量对目标进行最直接的打击。水消磨对方的精神，持续减少目标MP，持续30秒，减少量为法术伤害值的50%。火灼烧目标的灵魂，30秒内目标每次受到攻击减少20点元气。土打击目标的身体，对目标造成自身MP上限60%的土伤害。真气燃烧和真元消除对怪物无效。即使被打断也会消耗真气。施放需要一点真元"
+    },
+    {
+      "id": 93,
+      "place": [
+        8,
+        2
+      ],
+      "name": "玄冰水龙",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 92,
+      "foolting": [
+        470,
+        471
+      ],
+      "intm": "渡劫",
+      "img": "img_93.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 200,
+      "dengji": [
+        59,
+        62,
+        65,
+        68,
+        71,
+        74,
+        77,
+        80,
+        83,
+        86
+      ],
+      "yuanshen": [
+        87000,
+        104000,
+        125000,
+        151000,
+        181000,
+        239000,
+        327000,
+        440000,
+        586000,
+        773000
+      ],
+      "jinqian": [
+        120000,
+        140000,
+        170000,
+        200000,
+        240000,
+        320000,
+        440000,
+        590000,
+        790000,
+        1050000
+      ],
+      "zhenqi": "336+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1600",
+      "jiange": "30000",
+      "zhunbei": "4000",
+      "miaoshu": "集元气召唤一条水龙直冲云霄砸向目标及其周围$8+0.4*level$米内的敌人，造成基础法术攻击附上$250+25*level$%装备攻击力加$6.2*level*level+390.3*level+5125.9$水系伤害，并且有$85+level$%机率使敌减速60%，持续$6+0.2*level$秒。施放需要两点真元"
+    },
+    {
+      "id": 96,
+      "place": [
+        2,
+        1
+      ],
+      "name": "烈焰护甲",
+      "clas": "主动祝福",
+      "restrict": "空手；法器。",
+      "frelating": 81,
+      "foolting": [
+        442,
+        443
+      ],
+      "intm": "灵虚",
+      "img": "img_96.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 30,
+      "dengji": [
+        9,
+        14,
+        19,
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54
+      ],
+      "yuanshen": [
+        800,
+        1920,
+        3680,
+        6160,
+        9440,
+        13840,
+        19680,
+        27360,
+        37600,
+        51200
+      ],
+      "jinqian": [
+        800,
+        2240,
+        4480,
+        7600,
+        12000,
+        17600,
+        25600,
+        36000,
+        49600,
+        68000
+      ],
+      "zhenqi": "12+15*level",
+      "juli": "",
+      "shijian": "1200",
+      "jiange": "3000",
+      "zhunbei": "1000",
+      "miaoshu": "将元气附在自身周围形成炽热的护甲，从装备上获得$10*level$%额外火系防御，且提升生命恢复速度$level$点每秒，持续15分钟。三种护盾只能同时激活一种施放需要30元气"
+    },
+    {
+      "id": 97,
+      "place": [
+        1,
+        4
+      ],
+      "name": "落石术",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 0,
+      "foolting": [
+        472,
+        473
+      ],
+      "intm": "筑基",
+      "img": "img_97.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        6,
+        11,
+        16,
+        21,
+        26,
+        31,
+        36,
+        41,
+        46,
+        51
+      ],
+      "yuanshen": [
+        400,
+        1500,
+        3200,
+        5800,
+        9200,
+        13900,
+        20000,
+        28100,
+        38900,
+        53200
+      ],
+      "jinqian": [
+        440,
+        1600,
+        3800,
+        7000,
+        12000,
+        18000,
+        26000,
+        37000,
+        51000,
+        70000
+      ],
+      "zhenqi": "4.2+21*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1400",
+      "jiange": "6000",
+      "zhunbei": "2000",
+      "miaoshu": "召唤巨石自空中砸向目标，造成基础法术攻击附上$100+10*level$%装备攻击力加$8.1*level*level+128.4*level+25.4$的土系伤害。"
+    },
+    {
+      "id": 98,
+      "place": [
+        6,
+        4
+      ],
+      "name": "飞沙术",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 10,
+      "foolting": [
+        480,
+        481
+      ],
+      "intm": "空冥",
+      "img": "img_98.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 0,
+      "dengji": [
+        39,
+        43,
+        47,
+        51,
+        55,
+        59,
+        63,
+        67,
+        71,
+        75
+      ],
+      "yuanshen": [
+        24600,
+        32000,
+        41400,
+        53200,
+        68100,
+        87000,
+        111000,
+        142000,
+        181000,
+        266000
+      ],
+      "jinqian": [
+        32000,
+        42000,
+        54000,
+        70000,
+        90000,
+        120000,
+        150000,
+        190000,
+        240000,
+        360000
+      ],
+      "zhenqi": "157.5+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1500",
+      "jiange": "5000",
+      "zhunbei": "2500",
+      "miaoshu": "运用法力激射出一道强劲的流沙，对目标造成基础法术攻击附上$150+15*level$%装备攻击力加$6*level*level+221.3*level+1475.4$的土系伤害，并使其10秒内命中度下降$20+3*level$%。"
+    },
+    {
+      "id": 99,
+      "place": [
+        8,
+        4
+      ],
+      "name": "泰山压顶",
+      "clas": "主动攻击",
+      "restrict": "空手；法器。",
+      "frelating": 184,
+      "foolting": [
+        484,
+        485
+      ],
+      "intm": "渡劫",
+      "img": "img_99.jpg",
+      "explain": "",
+      "xianmo": "3",
+      "nanber": 10,
+      "wuqi": "空手；法器。",
+      "zhenyuan": 200,
+      "dengji": [
+        59,
+        62,
+        65,
+        68,
+        71,
+        74,
+        77,
+        80,
+        83,
+        86
+      ],
+      "yuanshen": [
+        87000,
+        104000,
+        125000,
+        151000,
+        181000,
+        239000,
+        327000,
+        440000,
+        586000,
+        773000
+      ],
+      "jinqian": [
+        120000,
+        140000,
+        170000,
+        200000,
+        240000,
+        320000,
+        440000,
+        590000,
+        790000,
+        1050000
+      ],
+      "zhenqi": "336+18*level",
+      "juli": "19.5+0.9*level",
+      "shijian": "1400",
+      "jiange": "30000",
+      "zhunbei": "5000",
+      "miaoshu": "用全身元气移来巨山砸向目标，对其及周围$8+0.4*level$米内的所有敌人造成基础攻击附上$250+25*level$%装备法术攻击力加$5.4*level*level+339.8*level+4462.4$的土系伤害，并有$85+level$%机率使其昏迷$3+0.3*level$秒。^a6caf0施放需要两点真元"
+    }
+  ]
+}

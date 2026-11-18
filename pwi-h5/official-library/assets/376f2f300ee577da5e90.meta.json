@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_549.jpg",
+  "id": "376f2f300ee577da5e90",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·还魂咒<em>（入魔）</em>",
+  "bytes": 1628,
+  "sha256": "6992dc8678663c84b2d748169d0893b15ba28fca0ed1d30bad1e86dada5d25d2",
+  "fetchedAt": "2026-11-18T08:35:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_549.jpg",
+  "path": "assets/376f2f300ee577da5e90.jpg"
+}

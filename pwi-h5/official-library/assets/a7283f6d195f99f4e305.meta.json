@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/images/loading.gif",
+  "id": "a7283f6d195f99f4e305",
+  "status": "failed",
+  "parents": [
+    "eab551e03b8fd10609a9",
+    "ce036e5012d6285a44f3",
+    "8aa1da03402225531ee3"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201104/xiuld/style/jq_ui_pwiw.css",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:36:55+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_597.jpg",
+  "id": "454ee874ab3f641b327a",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·困缚矢<em>（入魔）</em>",
+  "bytes": 1722,
+  "sha256": "35a7b646e0c08029dbf786419bb388494453b3b553a366ce0a2aefda2e4223bd",
+  "fetchedAt": "2026-11-18T08:34:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_597.jpg",
+  "path": "assets/454ee874ab3f641b327a.jpg"
+}

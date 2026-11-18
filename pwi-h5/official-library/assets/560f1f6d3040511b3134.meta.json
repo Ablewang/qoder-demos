@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq06_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "560f1f6d3040511b3134",
+  "status": "ok",
+  "parents": [
+    "79d7a9f0b0425180fdfd"
+  ],
+  "bytes": 40485,
+  "sha256": "4b8f829f1ccd9c09ac8c78dc2d544cba5b397910954e847f7cf43b4ce2d66e47",
+  "fetchedAt": "2026-11-18T08:21:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq06_02.jpg",
+  "path": "assets/560f1f6d3040511b3134.jpg"
+}

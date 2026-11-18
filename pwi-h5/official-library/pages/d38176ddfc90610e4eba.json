@@ -1,0 +1,184 @@
+{
+  "id": "d38176ddfc90610e4eba",
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/",
+  "title": "修真专题 《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 1,
+  "parents": [
+    "1cb38395c2265ebc6d10",
+    "de47feb33ca455460610",
+    "4eff95687e5b49fdfaee",
+    "47ec369fda69c04d5b2a",
+    "e83bb97385dd93465398",
+    "2a1bc820fce749204907",
+    "504d42dc262142e90349"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "5fc8071b90bd60ee1f3af336b3526c607d81fa2551bf1ef853ae5e793c6e7669",
+  "bytes": 5859,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d38176ddfc90610e4eba.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "官方网站 | 客户端下载 | 注册账号 | 官网论坛",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "官方网站",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/client/index.htm",
+      "label": "客户端下载",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "注册账号",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "官网论坛",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t1.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_m1.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_03_mouse.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_04_mouse.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/nav_02_mouse.jpg",
+      "label": "官方网站 | 客户端下载 | 注册账号 | 官网论坛",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/nav_07_mouse.jpg",
+      "label": "官方网站 | 客户端下载 | 注册账号 | 官网论坛",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/nav_10_mouse.jpg",
+      "label": "官方网站 | 客户端下载 | 注册账号 | 官网论坛",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/nav_15_mouse.jpg",
+      "label": "官方网站 | 客户端下载 | 注册账号 | 官网论坛",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/header_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/header_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/header_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/main_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/js/mouse.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</div>\n\n<div>\n\t<div>\t\n\t\t\n\t\t<div></div>\n\t\t<div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif]</span></a></div>\n\t\t\n\n\t\t<div>\n\t\t\t<span><a href=\"https://w2i.wanmei.com/main.htm\" rel=\"noreferrer\" target=\"_blank\">官方网站</a> | <a href=\"https://w2i.wanmei.com/download/client/index.htm\" rel=\"noreferrer\" target=\"_blank\">客户端下载</a> | <a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\">注册账号</a> | <a href=\"http://bbs.w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\">官网论坛</a></span>\n\t\t</div>\n\t\t<img src=\"assets/0870466b7513db8fc407.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/317f7898f49642286284.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/8799b94242a0f5ad1ff4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n</div>\n\n<div>\n\t<div>\n\t\t<img src=\"assets/96ca52132b1ebf607cd4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/186de4f72e279a88b76e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n        \t<a href=\"#page=6f78c1d871eaa77c6e4a\"><img src=\"assets/34f2011a9bd8022b06b0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n        \t<a href=\"#page=1e4c85a17064bcbdc4a1\"><img src=\"assets/88e5c7129dcd585311b7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t<img src=\"assets/4c9b52880d3588229d1a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/bf4fa4c7f4fab3c7ac66.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/7a735e81221da1b495f4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/c05627569bca2bca75d2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n</div>\n\n<div>\n\t\n</div>\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n<div>\n \n\n</div>\n\n",
+  "dataPath": "pages/d38176ddfc90610e4eba.json",
+  "imageCount": 18,
+  "tableCount": 0,
+  "downloadPath": "downloads/d38176ddfc90610e4eba.js"
+}

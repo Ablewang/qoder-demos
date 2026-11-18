@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_673.jpg",
+  "id": "b018a5ec850d21c3509d",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·残体咒<em>（入魔）</em>",
+  "bytes": 1694,
+  "sha256": "5f4bad4afc37d2145ff8fdb7cd14c751450cd5e1bedbeee34f37d6fba49b2fc5",
+  "fetchedAt": "2026-11-18T08:35:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_673.jpg",
+  "path": "assets/b018a5ec850d21c3509d.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_452.jpg",
+  "id": "d3db678a01b5d4487678",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·血祭炎爆<em>（升仙）</em>",
+  "bytes": 1776,
+  "sha256": "0a13896aa1bdb83c419de4add2d4cd87932e81353afdc61e24722bff94422183",
+  "fetchedAt": "2026-11-18T08:34:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_452.jpg",
+  "path": "assets/d3db678a01b5d4487678.jpg"
+}

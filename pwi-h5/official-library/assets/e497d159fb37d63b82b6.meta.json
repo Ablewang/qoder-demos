@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/dianjichakan.jpg",
+  "label": "",
+  "kind": "script-reference",
+  "id": "e497d159fb37d63b82b6",
+  "status": "ok",
+  "parents": [
+    "b4581dca3e970417240a"
+  ],
+  "bytes": 1367,
+  "sha256": "9c954a39396e8489b89020176ff07aeedf8305b581d368a2aa63258108fbdf8d",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/e497d159fb37d63b82b6.jpg"
+}

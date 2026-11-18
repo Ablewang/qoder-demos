@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/pic/jds1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "7fd7018f58fa9629ad08",
+  "status": "ok",
+  "parents": [
+    "aa1f5c8b062c173e0b7d"
+  ],
+  "bytes": 21739,
+  "sha256": "9c6cc90d1168855b63ea0757124faea9900e1acc1dc247911cd33421c17a6c57",
+  "fetchedAt": "2026-11-18T08:28:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/pic/jds1.jpg",
+  "path": "assets/7fd7018f58fa9629ad08.jpg"
+}

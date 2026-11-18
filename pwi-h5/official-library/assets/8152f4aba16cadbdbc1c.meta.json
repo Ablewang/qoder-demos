@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_584.jpg",
+  "id": "8152f4aba16cadbdbc1c",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·雷链<em>（升仙）</em>",
+  "bytes": 1588,
+  "sha256": "358b018213c1dde6caa38fba561f43939a91247bc1b323fc162b5b9ca5d4610c",
+  "fetchedAt": "2026-11-18T08:35:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_584.jpg",
+  "path": "assets/8152f4aba16cadbdbc1c.jpg"
+}

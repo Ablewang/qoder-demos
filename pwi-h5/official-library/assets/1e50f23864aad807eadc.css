@@ -1,0 +1,35 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+/* 共用部分 */
+* {margin:0;padding:0px;}
+body {background:#000;font-size:14px;font-family:宋体, Arial, Helvetica, sans-serif;margin:0;padding:0px;color:#4E2601}
+.flt{float:left}
+.frt{float:right}
+img{border:0px;}
+.clr{clear:both}
+.center{text-align:center;}
+a{text-decoration:none;color:#000}
+a:hover{text-decoration:underline;color:#000}
+li,ul{margin:0;padding:0;list-style-type: none;}
+
+
+/* LOGO的定位 */
+#w2i_logo{top:20px;left:85px;}
+#transparent_logo{top:20px;left:85px;}
+
+
+#content,#bottom,#main,#banner,#nav,#top{width:1003px;margin:0px auto;clear:both;}
+.con_right img,.con_mid img,.con_left img,#title img,.text img,#left img,#banner img,#main img,#nav img,#top img{float:left}
+#top{position:relative}
+
+#left{width:305px;float:left}
+#right{width:698px;float:left}
+#title{width:154px;float:left}
+.text{width:608px;float:left}
+.context{width:473px;background:url('../images/box_mid.jpg') repeat-y center;padding:15px 70px 10px 65px;clear:both}
+.context td{line-height:23px;padding-top:5px;}
+.con_left{width:175px;float:left}
+.con_mid{width:656px;float:left;padding-bottom:20px}
+.con_mid p{line-height:23px;padding:0px 20px 0px 20px;width:616px}
+.con_right{width:172px;float:left}
+
+#list{line-height:23px;border-collapse: collapse;text-align:center;margin:0px auto}

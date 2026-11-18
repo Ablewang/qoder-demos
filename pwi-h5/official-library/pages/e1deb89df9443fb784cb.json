@@ -1,0 +1,41 @@
+{
+  "id": "e1deb89df9443fb784cb",
+  "url": "https://event51.wanmei.com/w2i/201208/show/index.htm",
+  "title": "《完美国际》“王朝崛起”官方网站——全新玩法，体验最劲爆的作战体验！",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 4,
+  "parents": [
+    "fe4487ae624051d870aa",
+    "a245c2e97a44a02cb495",
+    "2cb07116a2adc8020ca9",
+    "ff0a5b259dfdf67e49c9"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/show/index.htm",
+  "fetchedAt": "2026-11-18T08:16:15+00:00",
+  "sha256": "9ddb76d0e0237ffa2a6d63c8b86897c0434774206f299075890373a2cd2e2856",
+  "bytes": 2709,
+  "rawPath": "raw/e1deb89df9443fb784cb.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/show/xml/options.xml",
+      "label": "",
+      "kind": "script-reference"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n<div></div>\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/e1deb89df9443fb784cb.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/e1deb89df9443fb784cb.js"
+}

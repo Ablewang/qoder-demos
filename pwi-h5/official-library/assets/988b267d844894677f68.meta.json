@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27678.jpg",
+  "id": "988b267d844894677f68",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·狂沙穿空咒<em>（入魔）</em>",
+  "bytes": 4336,
+  "sha256": "b87852605e31a0bf03d80472ae498ae168115c9d73d80fae477f74b855a82fac",
+  "fetchedAt": "2026-11-18T08:36:27+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27678.jpg",
+  "path": "assets/988b267d844894677f68.jpg"
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201004/dress/images/pic/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6ce2c8230c53134e800d",
+  "status": "ok",
+  "parents": [
+    "907abf4c2ec5ee7cda19"
+  ],
+  "bytes": 7403,
+  "sha256": "9a40dc5a70b8b5d073b5c71d04d2813b9050efd2ba805f78c933890076beff2b",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/6ce2c8230c53134e800d.jpg"
+}

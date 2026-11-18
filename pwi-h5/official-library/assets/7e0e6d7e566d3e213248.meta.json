@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/111202/10021322792875315.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "7e0e6d7e566d3e213248",
+  "status": "ok",
+  "parents": [
+    "f3219307caf100f9392b"
+  ],
+  "bytes": 177312,
+  "sha256": "2a5a4783171ef32c9b078f4aec5eebd32b8dc9202dcf8c11db997585ed97c473",
+  "fetchedAt": "2026-11-18T08:27:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/111202/10021322792875315.jpg",
+  "path": "assets/7e0e6d7e566d3e213248.jpg"
+}

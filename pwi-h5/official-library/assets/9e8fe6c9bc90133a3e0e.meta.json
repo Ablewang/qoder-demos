@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yitiaoxin_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9e8fe6c9bc90133a3e0e",
+  "status": "ok",
+  "parents": [
+    "d3f7aa4210ed0a73d8e3"
+  ],
+  "bytes": 3877,
+  "sha256": "86c7cf741b9e8191ea5c316e8de4476871fea7cae55e3d93157e41827cffa642",
+  "fetchedAt": "2026-11-18T08:22:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/yitiaoxin_button.jpg",
+  "path": "assets/9e8fe6c9bc90133a3e0e.jpg"
+}

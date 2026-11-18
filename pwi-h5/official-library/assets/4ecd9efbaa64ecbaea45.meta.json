@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_183.jpg",
+  "id": "4ecd9efbaa64ecbaea45",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "般若心经",
+  "bytes": 1565,
+  "sha256": "85a5a269e6d2ba228572bb450b169ef99e7bdcd4dd4042f31ea02a62b8fd6f68",
+  "fetchedAt": "2026-11-18T08:34:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_183.jpg",
+  "path": "assets/4ecd9efbaa64ecbaea45.jpg"
+}

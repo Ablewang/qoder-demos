@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/zulong/js/script.js",
+  "alt": "",
+  "kind": "script",
+  "id": "10b3acf7f1ffc56230b2",
+  "status": "ok",
+  "parents": [
+    "a104792f2857ee35b34b"
+  ],
+  "bytes": 3937,
+  "sha256": "c20cdf6c8da99279299656e214cbf5fd0068f09608a3a24b3e83cda8814a9281",
+  "fetchedAt": "2026-11-18T08:26:04+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/zulong/js/script.js",
+  "path": "assets/10b3acf7f1ffc56230b2.js"
+}

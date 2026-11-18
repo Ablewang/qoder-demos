@@ -1,0 +1,214 @@
+{
+  "id": "47ec369fda69c04d5b2a",
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm",
+  "title": "天怒神罚16阶顶级橙武-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "bd6a4da0ea55ad2a5bf5",
+    "672c01826f17ba45d88e",
+    "1a1eeb3807c03a6c384f",
+    "fa8281882a4afd8639f6",
+    "f8201daf068db101d971",
+    "0b1f87f0fe690cf3e2e6",
+    "eeffeb940810621bba0d",
+    "35b55c8e43f5504c4aea",
+    "451ea9ce2e80c7b283d1",
+    "c9492cce7c30423bbf1e",
+    "dabe9356761d74b92e85",
+    "416858c28ceb7c3b1562"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "65b02ed254a9aff48c27dd8072cad7e0a1e79cee6d07eb1c78ee7d55e6a04042",
+  "bytes": 3914,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/47ec369fda69c04d5b2a.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "官网首页",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/client/index.htm",
+      "label": "客户端下载",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "注册账号",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "官方论坛",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_05_05.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_06_06.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_07_07.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_08_08.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_09_09.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_10_10.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_11.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_12.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_13.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/header_14.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/js/mouse.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\n\t\n\t<div></div>\n   \t<div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif]</span></a></div>\n\t\n\n\t<img src=\"assets/82f8d8a08f8882264f20.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/c117d46bfbeae094dad3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t<img src=\"assets/d9c4933cf7e0b561a171.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/08ca78c82deb0d5ae331.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\n    <a href=\"#page=bd6a4da0ea55ad2a5bf5\"><img src=\"assets/342f2c119946cc31bef7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n    <a href=\"#page=de47feb33ca455460610\"><img src=\"assets/c0f3a86dc588fd8790d7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n    <a href=\"#page=1cb38395c2265ebc6d10\"><img src=\"assets/d5227d32e4462bc2cfed.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n    <a href=\"#page=5186b0b0b3c3773b5d31\"><img src=\"assets/9776194acf91ab371066.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n    <a href=\"#page=46854e8de5b70a560f88\"><img src=\"assets/e1bdc924c808f69286e6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n    \n    <a href=\"#page=d38176ddfc90610e4eba\"><img src=\"assets/fbcdbd5136723e920782.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>  <img src=\"assets/8bd4ece1b87089748327.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/ee1bfde1e5da9cf2632e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/2922416b4d4dadc2027f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/bd9a772184057b7125e6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\n",
+  "dataPath": "pages/47ec369fda69c04d5b2a.json",
+  "imageCount": 21,
+  "tableCount": 0,
+  "downloadPath": "downloads/47ec369fda69c04d5b2a.js"
+}

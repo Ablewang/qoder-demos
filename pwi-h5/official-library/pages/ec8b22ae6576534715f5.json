@@ -1,0 +1,81 @@
+{
+  "id": "ec8b22ae6576534715f5",
+  "url": "https://w2i.wanmei.com/djzb/zb/20091021/30202.shtml",
+  "title": "天怒神罚新增装备 - 制造",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "870f103f1fd35f4afd3b",
+    "83c6dc68ffa6daf22b72",
+    "03b794337c9c554e8b63",
+    "ec8b22ae6576534715f5"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8a6f87b0c6d76c62c0af6f93f5b20b5f897db5b016e29ae34dc1a313e219f3fd",
+  "bytes": 66958,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/ec8b22ae6576534715f5.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-21",
+  "text": "装备介绍 | 声望任务装备 | 材料产出 | 制造 |\n制造\n制造说明：\n玩家须将资料片主线进度进行到时空天泪之城，在时空天泪城上有4个熔炉，其中有一个是制作资料片新技能用，另外三个为制作资料片新装备用。玩家集齐制造物品所需要材料即可在对应处制造新装备。\n1）饰品制造：\n2）防具制造：\n3）武器制造：\n4）炼化制造：",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30198.shtml",
+      "label": "装备介绍",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30200.shtml",
+      "label": "声望任务装备",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30201.shtml",
+      "label": "材料产出",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30202.shtml",
+      "label": "制造",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zhuangbei/make_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zhuangbei/make_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zhuangbei/make_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zhuangbei/make_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zhuangbei/make_05.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=870f103f1fd35f4afd3b\">装备介绍</a> | <a href=\"#page=83c6dc68ffa6daf22b72\">声望任务装备</a> | <a href=\"#page=03b794337c9c554e8b63\">材料产出</a> | <a href=\"#page=ec8b22ae6576534715f5\">制造</a> |</li>\r\n</ul>\r\n<p>　　<strong>制造</strong></p>\r\n<p>　　<strong>制造说明：</strong></p>\r\n<p>　　玩家须将资料片主线进度进行到时空天泪之城，在时空天泪城上有4个熔炉，其中有一个是制作资料片新技能用，另外三个为制作资料片新装备用。玩家集齐制造物品所需要材料即可在对应处制造新装备。</p>\r\n<p><img src=\"assets/0643474f0d0e4b8903ae.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>1）饰品制造：</strong></p>\r\n<p><img src=\"assets/4968bf428c27652c6abc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>2）防具制造：</strong></p>\r\n<p><img src=\"assets/653f31dda531145983c7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>3）武器制造：</strong></p>\r\n<p><img src=\"assets/cc798018c66d6dadf1e8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>4）炼化制造：</strong></p>\r\n<p><img src=\"assets/ca4cad4b0b0e08619aa1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/ec8b22ae6576534715f5.json",
+  "imageCount": 5,
+  "tableCount": 0,
+  "downloadPath": "downloads/ec8b22ae6576534715f5.js"
+}

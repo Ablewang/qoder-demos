@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27601.jpg",
+  "id": "3c68dba6c30315e29824",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 背水一战<em>（升仙）</em>  ",
+  "bytes": 1111,
+  "sha256": "b28ddd6355f2109c89e6d5cc19ba9a7a9ce61b0a9d2fd2dd0982823fbb72ac27",
+  "fetchedAt": "2026-11-18T08:36:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27601.jpg",
+  "path": "assets/3c68dba6c30315e29824.jpg"
+}

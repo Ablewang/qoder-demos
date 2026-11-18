@@ -1,0 +1,109 @@
+{
+  "id": "8289907dbd43889c806b",
+  "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/detail_03.htm",
+  "title": "精灵战歌战斗的革命-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 1,
+  "parents": [
+    "261a842e117a8e468d05",
+    "fdabf0da880505a6bb70"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8c2d5e974657a509fbf4a19cb284008e967e43786a67d73d033af25393d1a4c8",
+  "bytes": 3730,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/8289907dbd43889c806b.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "如何给元素精灵注入经验\n元素精灵升级需要经验值，其来源是玩家的剩余经验值、剩余元神的注入和元素精灵专用聚元石的注入，经验一旦注入无法再取出。\n元素精灵和人物一样等级上限为105，每一级升级所需经验和人物升级经验成比例关系。\n人物元神注入方法介绍\n人物经验注入方法介绍\n聚元神石注入方法介绍\n元素精灵经验注入规则\n1、玩家无法给高于自己等级的元素精灵注入经验。（不论是注入人物经验还是使用经验道具）\n2、玩家通过注入经验给元素精灵，最多使元素精灵的等级与自己的等级相等，并且元素精灵的剩余经验只差1点就可以升级到下一级。\n3、玩家在用转移角色经验的方式给同等级元素精灵注入经验的时候，是100%注入的。\n4、玩家用转移角色经验的方式给低于自己等级的元素精灵输入经验的时候有损耗。\n5、用经验丸注入经验的时候，也根据经验道具的等级决定实际注入经验的比例。经验丸可以一次只使用经验丸中的一部分经验，用完之后的剩余可以下次使用，直到没经验的时候经验丸消失。经验道具的堆叠量为1。\n6、元素精灵等级大于等于100级的时候，注入的经验不再受衰减。\n7、元素精灵在可交易状态下无法注入经验和元神。",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/iframe/left.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/btn_back.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/title02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/side01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_03_1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_03_2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_03_3.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/detail_03_4.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/side02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p></div>\n\n<div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm</a></p>\n\t</div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200903/jl/iframe/left.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200903/jl/iframe/left.htm</a></p>\t\t\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div><a href=\"#page=261a842e117a8e468d05\"><img src=\"assets/b0404348d056df492827.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n\t\t\t</div>\n\t\t\t<img src=\"assets/4425097046f4413d891a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\t<div>\n\t\t\t\t<div><img src=\"assets/7461645b6ce10593d3a6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t\t\t<div>\n                <p><strong>如何给元素精灵注入经验</strong></p>\n                <p>　　元素精灵升级需要经验值，其来源是玩家的剩余经验值、剩余元神的注入和元素精灵专用聚元石的注入，经验一旦注入无法再取出。</p>\n<p>　　元素精灵和人物一样等级上限为105，每一级升级所需经验和人物升级经验成比例关系。</p>\n\t\t\t\t\n<img src=\"assets/7439a135dd1a349222d1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n<p> </p>\n                <p>　　人物元神注入方法介绍</p>\n                \n<img src=\"assets/19ed0c6924c2bd1f9f9a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n<p> </p>\n                <p>　　人物经验注入方法介绍</p>\t\t\t\t\n<img src=\"assets/3c9cc88f855437f16625.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n<p> </p>\n\t\t\t\t<p>　　聚元神石注入方法介绍</p>\n<img src=\"assets/19ca2f370c2825ca914e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n<p> </p>\n                <p><strong>元素精灵经验注入规则</strong></p>\n                <p>　　1、玩家无法给高于自己等级的元素精灵注入经验。（不论是注入人物经验还是使用经验道具）</p>\n<p>　　2、玩家通过注入经验给元素精灵，最多使元素精灵的等级与自己的等级相等，并且元素精灵的剩余经验只差1点就可以升级到下一级。</p>\n<p>　　3、玩家在用转移角色经验的方式给同等级元素精灵注入经验的时候，是100%注入的。</p>\n<p>　　4、玩家用转移角色经验的方式给低于自己等级的元素精灵输入经验的时候有损耗。</p>\n<p>　　5、用经验丸注入经验的时候，也根据经验道具的等级决定实际注入经验的比例。经验丸可以一次只使用经验丸中的一部分经验，用完之后的剩余可以下次使用，直到没经验的时候经验丸消失。经验道具的堆叠量为1。</p>\n<p>　　6、元素精灵等级大于等于100级的时候，注入的经验不再受衰减。</p>\n<p>　　7、元素精灵在可交易状态下无法注入经验和元神。</p>\n\t\t\t\t\n\t\t\t  </div>\n\t\t\t  <div><img src=\"assets/cde6f4d3e8bb0e15596b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t\t</div>\n\t\t\t<img src=\"assets/68cb742bb426a8f38c40.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t</div>\n\t\t<div></div>\n\t</div>\n\t<div></div>\n</div>\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n<div>\n \n\n</div>\n\n",
+  "dataPath": "pages/8289907dbd43889c806b.json",
+  "imageCount": 9,
+  "tableCount": 0,
+  "downloadPath": "downloads/8289907dbd43889c806b.js"
+}

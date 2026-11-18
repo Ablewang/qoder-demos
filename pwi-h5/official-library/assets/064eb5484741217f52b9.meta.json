@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/zhanchangzhige.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "064eb5484741217f52b9",
+  "status": "ok",
+  "parents": [
+    "bdcae170cf4cfccd4e7a"
+  ],
+  "bytes": 118296,
+  "sha256": "e552c8af6144de23eb3089f3f4f587f8d1bbf29ba17bbcb37d1b2897a6e6d04b",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/064eb5484741217f52b9.jpg"
+}

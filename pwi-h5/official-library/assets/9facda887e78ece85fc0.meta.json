@@ -1,0 +1,25 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcoff.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9facda887e78ece85fc0",
+  "status": "ok",
+  "parents": [
+    "101319dd2f65319f00b7",
+    "56505232365332ed4dfe",
+    "15d3ed593ed1c21ffe17",
+    "3564f7bdc83662605bdb",
+    "0aea0f93685732021dd0",
+    "1c3a396b387469a917ed",
+    "8f54481efa1c7377fc6a",
+    "52f807777be176be16eb"
+  ],
+  "bytes": 4143,
+  "sha256": "659f0af658a5424feb0be445be7fb356f91b06ce6e726e3c7c6a52eeeebfceae",
+  "fetchedAt": "2026-11-18T08:24:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcoff.jpg",
+  "path": "assets/9facda887e78ece85fc0.jpg"
+}

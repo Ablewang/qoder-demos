@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/images/dan_1s.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c1ede48c0b2a70a225a0",
+  "status": "ok",
+  "parents": [
+    "fdabf0da880505a6bb70"
+  ],
+  "bytes": 2602,
+  "sha256": "9ed2cb2ee5fcf8b88f586a96f7de405191cc31c566ed70f14a94c82a02f8aba8",
+  "fetchedAt": "2026-11-18T08:22:32+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200903/jl/images/dan_1s.jpg",
+  "path": "assets/c1ede48c0b2a70a225a0.jpg"
+}

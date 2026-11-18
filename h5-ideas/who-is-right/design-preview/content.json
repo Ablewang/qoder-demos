@@ -1,0 +1,517 @@
+{
+  "version": "0.1.0-local",
+  "updatedAt": "2026-11-17",
+  "sayings": [
+    {
+      "id": "screen-time-kids",
+      "category": "parenting",
+      "tags": ["屏幕", "手机", "玩", "久坐"],
+      "title": "少让孩子看手机，多出去玩",
+      "aliases": ["别老让孩子看电视", "孩子多出去玩", "小孩少玩手机"],
+      "verdict": "right",
+      "elderRight": "让小娃少盯屏幕、多动多玩，和世界卫生组织对 5 岁以下儿童的建议方向一致。",
+      "nowAdvice": "1 岁以内不建议看屏幕；1 岁也不建议久坐看屏幕；2～4 岁每天久坐看屏幕不超过 1 小时，越少越好。多让孩子动起来、玩起来。",
+      "scopeNote": "这条来源针对 5 岁以下儿童；大一些的孩子不在这条来源的范围内。",
+      "sources": [
+        {
+          "org": "世界卫生组织（WHO）",
+          "title": "To grow up healthy, children need to sit less and play more",
+          "year": 2019,
+          "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+          "quote": "Screen time is not recommended.",
+          "scope": "1 岁以内婴儿（Infants, less than 1 year）",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "世界卫生组织（WHO）",
+          "title": "To grow up healthy, children need to sit less and play more",
+          "year": 2019,
+          "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+          "quote": "For 1-year-olds, sedentary screen time (such as watching TV or videos, playing computer games) is not recommended. For those aged 2 years, sedentary screen time should be no more than 1 hour; less is better.",
+          "scope": "1～2 岁儿童",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "世界卫生组织（WHO）",
+          "title": "To grow up healthy, children need to sit less and play more",
+          "year": 2019,
+          "url": "https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more",
+          "quote": "Sedentary screen time should be no more than 1 hour; less is better.",
+          "scope": "3～4 岁儿童",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}说得对", "五岁前少看屏幕", "多动多玩", "世卫组织这么建议"],
+        "sourceLine": "世界卫生组织 2019"
+      }
+    },
+    {
+      "id": "toddler-self-feeding",
+      "category": "parenting",
+      "tags": ["吃饭", "喂饭", "习惯"],
+      "title": "孩子不好好吃，就追着喂",
+      "aliases": ["追着喂饭", "边看电视边喂饭", "孩子不吃饭追着喂"],
+      "verdict": "outdated",
+      "intent": "怕孩子吃不饱、饿着，是心疼孩子。",
+      "nowAdvice": "引导孩子自己吃，每餐尽量 30 分钟以内吃完；定时、固定位置吃饭，吃饭时别看电视、手机。",
+      "whyChanged": "现在更看重让孩子自己吃、专心吃，慢慢养成好的吃饭习惯。",
+      "scopeNote": "来源这一段说的是 24～36 月龄（2～3 岁）的幼儿；更小的宝宝喂养方式不同。",
+      "sources": [
+        {
+          "org": "国家卫生健康委办公厅",
+          "title": "婴幼儿营养喂养评估服务指南（试行）（福建省卫健委转载）",
+          "year": 2024,
+          "url": "https://wjw.fujian.gov.cn/xxgk/fgwj/gjwj/202502/t20250211_6713572.htm",
+          "quote": "每日三餐引导幼儿独立自主进食，进餐时间控制在30分钟以内，帮助幼儿形成良好的饮食行为。",
+          "scope": "24～36 月龄幼儿",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "国家卫生健康委办公厅",
+          "title": "婴幼儿营养喂养评估服务指南（试行）（福建省卫健委转载）",
+          "year": 2024,
+          "url": "https://wjw.fujian.gov.cn/xxgk/fgwj/gjwj/202502/t20250211_6713572.htm",
+          "quote": "针对幼儿饮食行为不良的情形，告知养育人幼儿专注进食和自主进食的重要性，引导幼儿定时定位就餐，避免进餐时观看电视、电脑、手机等电子产品，逐步养成良好的饮食行为。",
+          "scope": "24～36 月龄幼儿",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}辛苦了", "两三岁的娃", "引导娃自己吃饭", "半小时内吃完", "吃饭不看手机"],
+        "sourceLine": "国家卫健委婴幼儿营养喂养评估服务指南"
+      }
+    },
+    {
+      "id": "toddler-less-salt",
+      "category": "parenting",
+      "tags": ["盐", "口味", "饭菜"],
+      "title": "孩子饭菜咸一点才有劲",
+      "aliases": ["不吃盐没力气", "小孩吃咸点有力气"],
+      "verdict": "outdated",
+      "intent": "盼着孩子吃得香、长得壮。",
+      "nowAdvice": "2 岁以后的孩子跟家里一起吃饭，饭菜也要口味清淡，少盐少糖。",
+      "whyChanged": "现在的指南提醒，从小口味清淡、少盐少糖，对孩子长远的健康更好。",
+      "scopeNote": "来源这一段说的是 24 月龄以后的幼儿；1 岁以内宝宝的辅食见另一条待核验条目。",
+      "sources": [
+        {
+          "org": "国家卫生健康委办公厅",
+          "title": "婴幼儿营养喂养评估服务指南（试行）（福建省卫健委转载）",
+          "year": 2024,
+          "url": "https://wjw.fujian.gov.cn/xxgk/fgwj/gjwj/202502/t20250211_6713572.htm",
+          "quote": "24月龄后的幼儿，食用的家庭膳食应口味清淡，降低偏食挑食的风险；应少盐少糖，控制糖、盐摄入量，降低儿童期及成人期发生肥胖、糖尿病、高血压、心脑血管疾病的风险。",
+          "scope": "24 月龄以后的幼儿",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}辛苦了", "两岁后娃的饭菜", "清淡少盐更好", "指南这么建议"],
+        "sourceLine": "国家卫健委婴幼儿营养喂养评估服务指南"
+      }
+    },
+    {
+      "id": "salt-less",
+      "category": "health",
+      "tags": ["盐", "口味", "做菜"],
+      "title": "口味淡点，少吃盐",
+      "aliases": ["菜别做太咸", "少放盐", "吃咸了不好"],
+      "verdict": "right",
+      "elderRight": "劝家里人口味淡一点、少放盐，和现行膳食指南、世界卫生组织的建议方向一致。",
+      "nowAdvice": "培养清淡口味，少吃高盐和油炸食品。膳食指南给成年人的量是每天食盐不超过 5 克。",
+      "scopeNote": "5 克是成年人的量；孩子的量更低，不能照搬。有慢性病的家人，按医生给的饮食要求来。",
+      "sources": [
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "培养清淡饮食习惯，少吃高盐和油炸食品。成年人每天摄入食盐不超过5g，烹调油25~30g。",
+          "scope": "成年人",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "世界卫生组织（WHO）",
+          "title": "Sodium reduction（Fact sheet）",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction",
+          "quote": "For adults, WHO recommends less than 2000 mg/day of sodium (equivalent to less than 5 g/day salt), or just under a teaspoon.",
+          "scope": "成年人；2～15 岁儿童按能量需要相应下调",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}说得对", "口味淡一点", "少吃盐真没错", "成人每天不超5克", "指南也这么建议"],
+        "sourceLine": "中国居民膳食指南（2022）"
+      }
+    },
+    {
+      "id": "egg-yolk",
+      "category": "health",
+      "tags": ["鸡蛋", "蛋黄"],
+      "title": "吃鸡蛋别把蛋黄扔了",
+      "aliases": ["蛋黄有营养", "蛋黄不能吃", "只吃蛋白"],
+      "verdict": "right",
+      "elderRight": "蛋黄别扔——膳食指南里就写着“吃鸡蛋不弃蛋黄”。",
+      "nowAdvice": "鸡蛋整个吃，不用专门扔掉蛋黄。指南建议蛋类每周大约 300～350 克。",
+      "scopeNote": "这是给一般人群的建议；医生对个人饮食有特别要求的，按医生说的来。",
+      "sources": [
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "鸡蛋营养丰富，吃鸡蛋不弃蛋黄。",
+          "scope": "一般人群",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "每周最好吃鱼2次或300~500g，蛋类300~350g，畜禽肉300~500g。",
+          "scope": "一般人群",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}说得对", "吃鸡蛋", "蛋黄别扔掉", "指南也这么建议"],
+        "sourceLine": "中国居民膳食指南（2022）"
+      }
+    },
+    {
+      "id": "sit-less",
+      "category": "health",
+      "tags": ["运动", "久坐", "走路"],
+      "title": "别老坐着，起来动一动",
+      "aliases": ["老坐着对身体不好", "多走走", "饭后走一走"],
+      "verdict": "right",
+      "elderRight": "提醒家人别一坐一整天，和膳食指南“减少久坐时间，每小时起来动一动”一致。",
+      "nowAdvice": "每周至少 5 天中等强度身体活动，累计 150 分钟以上；主动身体活动最好每天 6000 步；每小时起来动一动。",
+      "scopeNote": "这是一般人群的建议；有慢性病、行动不便的家人，活动量按自身情况和医生建议来。",
+      "sources": [
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "减少久坐时间，每小时起来动一动。",
+          "scope": "一般人群",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "坚持日常身体活动，每周至少进行5天中等强度身体活动，累计150分钟以上；主动身体活动最好每天6 000步。",
+          "scope": "一般人群",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}说得对", "别老坐着", "每小时动一动", "指南也这么建议"],
+        "sourceLine": "中国居民膳食指南（2022）"
+      }
+    },
+    {
+      "id": "leftovers",
+      "category": "health",
+      "tags": ["剩菜", "冰箱", "热透"],
+      "title": "隔夜菜不能吃，吃了会致癌",
+      "aliases": ["剩菜不能吃", "隔夜菜致癌", "剩饭剩菜"],
+      "verdict": "half",
+      "elderRight": "提醒剩菜别久放、绿叶菜别剩，这一点有道理：卫健部门的科普也建议绿叶菜最好一顿吃完。",
+      "nowAdvice": "趁热分装、尽快冷藏、吃前热透；即使妥善储存，也要在 1～2 天内吃完。绿叶菜、海鲜水产、豆制品尽量别剩。",
+      "whyChanged": "“一吃就致癌”这个说法，本条引用的来源里没有出现；来源关心的是怎么存、存多久、吃前有没有热透。",
+      "scopeNote": "不同的菜能放多久不一样，来源按菜的种类分别给了大致时间，见下方原文。",
+      "sources": [
+        {
+          "org": "湖北省卫生健康委员会（转引江苏疾控）",
+          "title": "【国民营养计划】一般营养健康知识：过年期间，家里剩饭菜怎么办？",
+          "year": 2022,
+          "url": "https://wjw.hubei.gov.cn/bmdt/jkhb/spyy/202201/t20220127_3983439.shtml",
+          "quote": "为了减少微生物污染，更好地保存营养和口感，保存剩饭菜的总原则是“趁热分装、尽快冷藏、吃前热透”。",
+          "scope": "家庭剩饭菜保存",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "湖北省卫生健康委员会（转引江苏疾控）",
+          "title": "【国民营养计划】一般营养健康知识：过年期间，家里剩饭菜怎么办？",
+          "year": 2022,
+          "url": "https://wjw.hubei.gov.cn/bmdt/jkhb/spyy/202201/t20220127_3983439.shtml",
+          "quote": "总的来说，绿叶菜、海鲜水产品、豆制品不要剩，菌菇类、薯类、肉类、米饭可以放1-2天，面粉制品可以放2天以上。",
+          "scope": "家庭剩饭菜保存（按菜的种类）",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "湖北省卫生健康委员会（转引江苏疾控）",
+          "title": "【国民营养计划】一般营养健康知识：过年期间，家里剩饭菜怎么办？",
+          "year": 2022,
+          "url": "https://wjw.hubei.gov.cn/bmdt/jkhb/spyy/202201/t20220127_3983439.shtml",
+          "quote": "即使妥善储存，也要在1-2天吃完。",
+          "scope": "冷藏保存的剩饭菜",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "食物制备生熟分开，熟食二次加热要热透。",
+          "scope": "一般人群",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}提醒得对", "剩菜别久放", "吃前要热透", "一两天内吃完"],
+        "sourceLine": "湖北省卫健委·国民营养计划"
+      }
+    },
+    {
+      "id": "breakfast",
+      "category": "health",
+      "tags": ["早饭", "三餐"],
+      "title": "早饭一定要吃",
+      "aliases": ["别不吃早饭", "早上要吃饭", "不吃早餐"],
+      "verdict": "right",
+      "elderRight": "催家里人吃早饭，膳食指南里写的就是“每天吃早餐”。",
+      "nowAdvice": "一日三餐定时定量，不漏餐，每天吃早餐。",
+      "scopeNote": "这是一般人群的建议。",
+      "sources": [
+        {
+          "org": "中国营养学会《中国居民膳食指南（2022）》（南充市疾控中心转载）",
+          "title": "中国居民膳食指南（2022）平衡膳食八准则",
+          "year": 2022,
+          "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+          "quote": "合理安排一日三餐，定时定量，不漏餐，每天吃早餐。",
+          "scope": "一般人群",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "source-checked",
+      "risk": "low",
+      "bigCard": {
+        "lines": ["{称呼}说得对", "早饭要吃", "三餐定时定量", "指南也这么建议"],
+        "sourceLine": "中国居民膳食指南（2022）"
+      }
+    },
+    {
+      "id": "fever-cover-sweat",
+      "category": "parenting",
+      "tags": ["发烧", "捂", "出汗"],
+      "title": "孩子发烧，捂出汗就好了",
+      "aliases": ["发烧要捂汗", "捂一捂出身汗", "发烧盖厚被子"],
+      "verdict": "outdated",
+      "intent": "怕孩子着凉，盼着病快点好。",
+      "nowAdvice": "一般不建议给发烧的孩子裹厚被子捂汗；怎么处理以医生意见为准。",
+      "redFlags": "孩子发烧时精神很差，或有任何让你不放心的情况，请及时就医，别等。",
+      "sources": [
+        {
+          "org": "国家卫生健康委员会 / 儿科专业学会",
+          "title": "儿童发热家庭护理相关指南或科普（具体文件待查原文）"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "医疗类说法。具体来源原文尚未找到并核对，需儿科专业人员审核后才能作为正式内容。"
+    },
+    {
+      "id": "baby-walker",
+      "category": "parenting",
+      "tags": ["学步车", "走路"],
+      "title": "用学步车，孩子走得早",
+      "aliases": ["学步车学走路快", "学步车"],
+      "verdict": "outdated",
+      "intent": "盼孩子早点会走，大人也能腾出手干活。",
+      "nowAdvice": "不建议依赖学步车学走路，让孩子在安全的地方自己爬、扶站、学走。",
+      "sources": [
+        {
+          "org": "儿科专业机构",
+          "title": "学步车使用相关建议（具体来源待查原文）"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "涉及婴幼儿安全与发育。来源原文尚未核对，需专业人员审核。"
+    },
+    {
+      "id": "infant-water",
+      "category": "parenting",
+      "tags": ["喂水", "母乳", "婴儿"],
+      "title": "小婴儿也得喂点水",
+      "aliases": ["宝宝要喝水", "吃奶的孩子要喂水", "婴儿喂水"],
+      "verdict": "outdated",
+      "intent": "怕孩子渴着、上火。",
+      "nowAdvice": "0～6 个月纯母乳喂养的宝宝，一般不需要额外喂水。",
+      "sources": [
+        {
+          "org": "国家卫生健康委办公厅",
+          "title": "婴幼儿营养喂养评估服务指南（试行）（福建省卫健委转载）",
+          "year": 2024,
+          "url": "https://wjw.fujian.gov.cn/xxgk/fgwj/gjwj/202502/t20250211_6713572.htm",
+          "quote": "母乳含有丰富的营养素、免疫活性物质和水分，能够满足0～6个月婴儿生长发育所需全部营养，不需要添加水和其他食物。",
+          "scope": "0～6 月龄、纯母乳喂养的婴儿",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "世界卫生组织（WHO）",
+          "title": "Infant and young child feeding（Fact sheet）",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+          "quote": "avoiding giving babies additional food or drink, even water, unless medically necessary;",
+          "scope": "母婴保健服务中的母乳喂养支持",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "来源原文已找到，但属于婴儿喂养（医疗相关），内测版不作对外断言；需儿科或营养专业人员审核适用范围（如混合喂养、人工喂养、早产等情况）。"
+    },
+    {
+      "id": "breastfeeding-best",
+      "category": "parenting",
+      "tags": ["母乳", "喂养"],
+      "title": "母乳是给孩子最好的",
+      "aliases": ["还是母乳好", "喂母乳好", "母乳喂养"],
+      "verdict": "right",
+      "elderRight": "看重母乳喂养，和国家卫健委文件、世界卫生组织的建议方向一致。",
+      "nowAdvice": "0～6 月龄提倡纯母乳喂养；6 个月起在继续母乳喂养的基础上添加辅食。",
+      "scopeNote": "喂不了母乳有很多现实原因，不应因此指责妈妈；具体喂养方式请咨询医生。",
+      "sources": [
+        {
+          "org": "国家卫生健康委办公厅",
+          "title": "婴幼儿营养喂养评估服务指南（试行）（福建省卫健委转载）",
+          "year": 2024,
+          "url": "https://wjw.fujian.gov.cn/xxgk/fgwj/gjwj/202502/t20250211_6713572.htm",
+          "quote": "母乳是婴儿最理想的天然食物，0～6月龄婴儿提倡纯母乳喂养。",
+          "scope": "0～6 月龄婴儿",
+          "checkedAt": "2026-11-17"
+        },
+        {
+          "org": "世界卫生组织（WHO）",
+          "title": "Infant and young child feeding（Fact sheet）",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+          "quote": "WHO and UNICEF recommend all infants initiate breastfeeding within 1 hour of birth, breastfeed exclusively (are fed only breast milk) for the first 6 months of life and then continue breastfeeding up to 2 years of age or beyond while nutritionally adequate, safe complementary (solid) foods are introduced from six months.",
+          "scope": "婴幼儿（0～2 岁及以上）",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "来源原文已找到，但属于婴儿喂养（医疗相关），且容易让没法母乳喂养的妈妈受指责；需专业人员审核措辞和适用范围。"
+    },
+    {
+      "id": "egg-yolk-iron",
+      "category": "parenting",
+      "tags": ["蛋黄", "补铁", "辅食"],
+      "title": "宝宝吃蛋黄补铁",
+      "aliases": ["蛋黄补铁", "辅食先加蛋黄"],
+      "verdict": "half",
+      "elderRight": "蛋黄里确实有铁，想着给宝宝补铁也是对的。",
+      "nowAdvice": "只靠蛋黄补铁不够；6 个月后每天的辅食里要有富含铁的肉类等动物性食物。",
+      "sources": [
+        {
+          "org": "国家卫生健康委办公厅",
+          "title": "婴幼儿营养喂养评估服务指南（试行）（福建省卫健委转载）",
+          "year": 2024,
+          "url": "https://wjw.fujian.gov.cn/xxgk/fgwj/gjwj/202502/t20250211_6713572.htm",
+          "quote": "对于以添加蛋黄给婴幼儿补充铁的情形，要告知养育人蛋黄的铁含量相对肉类来说较低，仅添加蛋黄而不添加肉类，对铁的补充量不足。",
+          "scope": "6～24 月龄婴幼儿",
+          "checkedAt": "2026-11-17"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "来源原文已找到，但属于婴幼儿辅食与补铁（医疗相关），需儿科或营养专业人员审核后才能作为正式内容。"
+    },
+    {
+      "id": "sunlight-calcium",
+      "category": "parenting",
+      "tags": ["晒太阳", "补钙", "维生素D"],
+      "title": "多晒太阳能补钙",
+      "aliases": ["晒太阳补钙", "宝宝要多晒太阳"],
+      "verdict": "half",
+      "elderRight": "晒太阳和身体合成维生素 D 有关，维生素 D 又和钙的吸收有关，所以这个说法有一定来由。",
+      "nowAdvice": "婴幼儿要不要额外补维生素 D、补多少，请按儿保医生的建议；不要靠暴晒。",
+      "sources": [
+        {
+          "org": "国家卫生健康委员会",
+          "title": "婴幼儿维生素 D 补充相关指南（具体文件待查原文）"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "医疗类说法。来源原文尚未核对，需儿科专业人员审核。"
+    },
+    {
+      "id": "baby-food-salt",
+      "category": "parenting",
+      "tags": ["辅食", "盐", "婴儿"],
+      "title": "宝宝辅食要放盐，不然没力气",
+      "aliases": ["辅食加盐", "宝宝吃盐才有劲"],
+      "verdict": "outdated",
+      "intent": "怕宝宝吃得没味、没劲。",
+      "nowAdvice": "1 岁以内宝宝的辅食怎么调味，请以儿保医生和婴幼儿喂养指南的建议为准。",
+      "sources": [
+        {
+          "org": "中国营养学会",
+          "title": "中国婴幼儿喂养指南相关内容（具体条文待查原文）"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "涉及 1 岁以内婴儿喂养。具体条文尚未找到并核对，需专业人员审核。"
+    },
+    {
+      "id": "bone-soup-calcium",
+      "category": "health",
+      "tags": ["骨头汤", "补钙", "喝汤"],
+      "title": "喝骨头汤补钙",
+      "aliases": ["骨头汤补钙", "多喝骨头汤"],
+      "verdict": "outdated",
+      "intent": "想给家人补身体，熬汤费时又费心。",
+      "nowAdvice": "补钙别只指望骨头汤；奶和奶制品是更常见的钙来源，具体参考膳食指南。",
+      "sources": [
+        {
+          "org": "中国营养学会",
+          "title": "骨头汤与补钙相关科普（具体来源待查原文）"
+        }
+      ],
+      "status": "pending",
+      "risk": "low",
+      "pendingNote": "来源原文尚未找到并核对。核对前只作演示，不生成对外大字卡。"
+    },
+    {
+      "id": "acid-alkaline-body",
+      "category": "health",
+      "tags": ["酸碱", "体质", "碱性食物"],
+      "title": "酸性体质容易生病，要多吃碱性食物",
+      "aliases": ["酸碱体质", "碱性食物", "酸性体质"],
+      "verdict": "outdated",
+      "intent": "希望家人少生病、吃得健康。",
+      "nowAdvice": "吃饭讲究食物多样、多吃蔬菜水果就好，不必按“酸性”“碱性”来挑。",
+      "sources": [
+        {
+          "org": "中国营养学会 / 卫生健康部门",
+          "title": "关于“酸碱体质”说法的公开科普（具体来源待查原文）"
+        }
+      ],
+      "status": "pending",
+      "risk": "medical",
+      "pendingNote": "涉及疾病相关说法。来源原文尚未找到并核对，需专业人员审核。"
+    }
+  ]
+}

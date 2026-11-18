@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131225/10021387939245751.jpg",
+  "alt": "图片: 图4：圣诞节男装.jpg",
+  "kind": "img",
+  "id": "3068ddc6f8e72e6f2149",
+  "status": "ok",
+  "parents": [
+    "5f762616aae8e52dd524"
+  ],
+  "bytes": 53835,
+  "sha256": "b5fdbadaaa1a7d16bd08fed6097c0b0b64e3bb56a45b731c41ea81a63c939959",
+  "fetchedAt": "2026-11-18T08:23:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131225/10021387939245751.jpg",
+  "path": "assets/3068ddc6f8e72e6f2149.jpg"
+}

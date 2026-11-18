@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/js/jquery-1.7.2.min.js",
+  "alt": "",
+  "kind": "script",
+  "id": "c96fd51d80c17c314517",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "bytes": 94840,
+  "sha256": "47b68dce8cb6805ad5b3ea4d27af92a241f4e29a5c12a274c852e4346a0500b4",
+  "fetchedAt": "2026-11-18T08:27:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/js/jquery-1.7.2.min.js",
+  "path": "assets/c96fd51d80c17c314517.js"
+}

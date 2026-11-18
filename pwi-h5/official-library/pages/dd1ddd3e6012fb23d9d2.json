@@ -1,0 +1,1689 @@
+{
+  "id": "dd1ddd3e6012fb23d9d2",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+  "title": "巫师技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "64afb5b5f8d4e795b812",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "322b6043faf15f3aa3859e371a601f5419609e05c7d26c8d3a9dafb81719013b",
+  "bytes": 102802,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/dd1ddd3e6012fb23d9d2.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n巫师技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n冲击术\n法宝\n无\n筑基\n主动攻击\n10\n天生\n5,10,15,20,\n凝聚周身法力并瞬间施放，对目标造成水系伤害，并有机率使起减速。\n25,30,35,\n40,45\n黑巫咒\n法宝\n冲击术\n灵虚\n主动祝福\n10\n9\n14,19,24,\n提升自身攻击等级，同时降低自身防御等级。\n29,34,39,\n44,49，54\n激流术\n法宝\n黑巫咒\n和合\n主动攻击\n10\n19\n24,34,39,\n凝聚水气激射而出，使其受到持续水系伤害。\n44,49,54,\n59,64\n生命气泡\n法宝\n激流术\n和合\n主动祝福\n10\n24\n29,34,39,\n使一定范围内的队友持续恢复生命力。\n44,49,54,\n59,64，69\n气爆术\n法宝\n生命气泡\n元婴\n主动攻击\n10\n29\n34,39,44,49,\n以法力制造出强劲的水流冲击敌人，对目标造成水系伤害，并有机率使其减速。\n54,59,64,\n69,74\n冷凝术\n法宝\n气爆术\n空冥\n主动攻击\n10\n39\n43,47,51,55,\n激射出一道寒冰碎屑，对周围一定范围内的所有敌人造成水系伤害，并有机率使其定身。\n59,63,67,\n71,75\n生命绽放\n法宝\n冷凝术\n空冥\n主动祝福\n10\n44\n48,52,56,60,\n提高目标的生命活力，使其由技能获得的生命回复效果增加；由药品获得的生命回复效果增加；并缩短护身符冷却时间。\n64,68,72,\n76,80\n摄魂术\n法宝\n生命绽放\n履霜\n主动诅咒\n10\n49\n53,57,61,65,\n扰乱目标的精神，使其技能吟唱时间延长。\n69,73,77,\n81,85\n潮汐精灵\n法宝\n摄魂术\n渡劫\n主动祝福\n10\n59\n62,65,68,71,\n水灵护体，令自身的法术攻击力提高，且所有技能吟唱速度加快。此法术攻击力提升效果与精灵技能“彩虹祝福”效果冲突。\n74,77,80,\n83,86\n水瀑泓泱\n法宝\n潮汐精灵\n渡劫\n主动攻击\n10\n59\n62,65,68,71,\n引江海汪洋之水淹没敌人，对目标及周围一定范围内的敌人造成水系伤害，并有一定机率造成割裂伤害。\n74,77,80,\n83,86\n灵爆咒\n法宝\n无\n筑基\n主动攻击\n10\n天生\n5,10,15,20,\n将五行之土的力量附着在武器上，对敌人造成土系伤害\n25,30,35,\n40,45\n白巫咒\n法宝\n灵爆咒\n灵虚\n主动祝福\n10\n9\n14,19,24,\n提升自身防御等级，同时降低自身攻击等级。\n29,34,39,\n44,49，54\n土崩咒\n法宝\n白巫咒\n和合\n主动攻击\n10\n19\n24,34,39,\n引爆蕴藏土地中的能量，对目标造成土系伤害。打断目标施法并击退。击退效果对玩家无效。\n44,49,54,\n59,64\n洪沙术\n法宝\n土崩咒\n元婴\n主动攻击\n10\n29\n34,39,44,49,\n以法力制造出强劲的土气冲击敌人，对其产生持续土系伤害。\n54,59,64,\n69,74\n生命禁锢\n法宝\n洪沙术\n元婴\n主动诅咒\n10\n34\n39,44,49,54,\n降低目标的生命活力，使其由技能获得的生命回复效果减少；由药品获得的生命回复效果减少；并延长护身符冷却时间。\n59,64,69,\n74,79\n狂沙穿空咒\n法宝\n生命禁锢\n空冥\n主动攻击\n10\n39\n43,47,51,55,\n以法力制造一场小型沙尘暴，对目标及周围一定范围内的所有敌人造成土系伤害，并有机率使其命中率降低。\n59,63,67,\n71,75\n复仇之魂--反噬\n法宝\n狂沙穿空咒\n履霜\n主动诅咒\n10\n49\n53,57,61,65,\n扰乱目标的法力能量，使其普攻或使用技能时自身会受到相当于施法者魂力的物理伤害。\n69,73,77,\n81,85\n大地灵引咒\n法宝\n复仇之魂--反噬\n渡劫\n主动攻击\n10\n59\n62,65,68,71,\n召唤大地之灵攻击敌人，对目标及其周围一定范围内的敌人造成土系伤害，并有机率使其昏迷。\n74,77,80,\n83,86\n巫师意志\n法宝\n复仇之魂--反噬\n渡劫\n主动祝福\n10\n59\n62,65,68,71,\n驱除目标身上的不利状态，并在一定时间内免疫物理伤害。\n74,77,80,\n83,86\n复仇之魂--惩戒\n法宝\n无\n和合\n主动祝福\n10\n9\n14,19,24,\n守护魂的一种，可以加持给队友或自己。使其在被攻击的时候，向攻击者反弹相当于施法者魂力百分之八的物理伤害。\n29,34,39,\n44,49，54\n复仇之魂--震荡\n法宝\n复仇之魂--惩戒\n元婴\n主动祝福\n10\n29\n34,39,44,49,\n守护魂的一种，只能给自己加持。使自己在被攻击的时候，将攻击者击晕。施法者魂力越高，击晕时间越长。\n54,59,64,\n69,74\n复仇之魂--封印\n法宝\n复仇之魂--震荡\n空冥\n主动祝福\n10\n39\n43,47,51,55,\n守护魂的一种，可以加持给队友或自己。使其在被攻击的时候，有一定机率将攻击者封印。施法者魂力值越高，封印几率越高。\n59,63,67,\n71,75\n复仇之魂--镜像\n法宝\n复仇之魂--封印\n渡劫\n主动祝福\n10\n59\n62,65,68,71,\n守护魂的一种，只能给自己加持。使自己在被攻击的时候，将攻击者施放的技能全部反弹回去。施法者魂力值越高，反弹成功率越高。\n74,77,80,\n83,86\n水精通\n法宝\n无\n元婴\n被动技能\n10\n29\n34,39,44,49,\n提升所有水系法术伤害。\n54,59,64,\n69,74\n土精通\n法宝\n无\n元婴\n被动技能\n10\n29\n34,39,44,49,\n提升所有土系法术伤害。\n54,59,64,\n69,74",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "巫师技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冲击术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "5,10,15,20,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "凝聚周身法力并瞬间施放，对目标造成水系伤害，并有机率使起减速。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "25,30,35,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黑巫咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "冲击术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升自身攻击等级，同时降低自身防御等级。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49，54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "激流术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "黑巫咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "凝聚水气激射而出，使其受到持续水系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "生命气泡",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "激流术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使一定范围内的队友持续恢复生命力。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64，69",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "气爆术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "生命气泡",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以法力制造出强劲的水流冲击敌人，对目标造成水系伤害，并有机率使其减速。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冷凝术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "气爆术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,55,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "激射出一道寒冰碎屑，对周围一定范围内的所有敌人造成水系伤害，并有机率使其定身。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "生命绽放",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "冷凝术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "48,52,56,60,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提高目标的生命活力，使其由技能获得的生命回复效果增加；由药品获得的生命回复效果增加；并缩短护身符冷却时间。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "64,68,72,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "76,80",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "摄魂术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "生命绽放",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,65,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "扰乱目标的精神，使其技能吟唱时间延长。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,73,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "潮汐精灵",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "摄魂术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,71,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "水灵护体，令自身的法术攻击力提高，且所有技能吟唱速度加快。此法术攻击力提升效果与精灵技能“彩虹祝福”效果冲突。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水瀑泓泱",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "潮汐精灵",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,71,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "引江海汪洋之水淹没敌人，对目标及周围一定范围内的敌人造成水系伤害，并有一定机率造成割裂伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵爆咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "5,10,15,20,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将五行之土的力量附着在武器上，对敌人造成土系伤害",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "25,30,35,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "白巫咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵爆咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升自身防御等级，同时降低自身攻击等级。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49，54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "土崩咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "白巫咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "引爆蕴藏土地中的能量，对目标造成土系伤害。打断目标施法并击退。击退效果对玩家无效。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "洪沙术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "土崩咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以法力制造出强劲的土气冲击敌人，对其产生持续土系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "生命禁锢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "洪沙术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39,44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "降低目标的生命活力，使其由技能获得的生命回复效果减少；由药品获得的生命回复效果减少；并延长护身符冷却时间。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64,69,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,79",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂沙穿空咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "生命禁锢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,55,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以法力制造一场小型沙尘暴，对目标及周围一定范围内的所有敌人造成土系伤害，并有机率使其命中率降低。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "复仇之魂--反噬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "狂沙穿空咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,65,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "扰乱目标的法力能量，使其普攻或使用技能时自身会受到相当于施法者魂力的物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,73,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "大地灵引咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "复仇之魂--反噬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,71,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤大地之灵攻击敌人，对目标及其周围一定范围内的敌人造成土系伤害，并有机率使其昏迷。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巫师意志",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "复仇之魂--反噬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,71,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "驱除目标身上的不利状态，并在一定时间内免疫物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "复仇之魂--惩戒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "守护魂的一种，可以加持给队友或自己。使其在被攻击的时候，向攻击者反弹相当于施法者魂力百分之八的物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "44,49，54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "复仇之魂--震荡",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "复仇之魂--惩戒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "守护魂的一种，只能给自己加持。使自己在被攻击的时候，将攻击者击晕。施法者魂力越高，击晕时间越长。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "复仇之魂--封印",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "复仇之魂--震荡",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,55,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "守护魂的一种，可以加持给队友或自己。使其在被攻击的时候，有一定机率将攻击者封印。施法者魂力值越高，封印几率越高。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "复仇之魂--镜像",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "复仇之魂--封印",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,71,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "守护魂的一种，只能给自己加持。使自己在被攻击的时候，将攻击者施放的技能全部反弹回去。施法者魂力值越高，反弹成功率越高。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动技能",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升所有水系法术伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "土精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "法宝",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动技能",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升所有土系法术伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>巫师技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>冲击术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>5,10,15,20,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>凝聚周身法力并瞬间施放，对目标造成水系伤害，并有机率使起减速。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>25,30,35,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>40,45</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>黑巫咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>冲击术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升自身攻击等级，同时降低自身防御等级。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49，54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>激流术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>黑巫咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,34,39,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>凝聚水气激射而出，使其受到持续水系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>生命气泡</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>激流术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>24</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>使一定范围内的队友持续恢复生命力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64，69</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>气爆术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>生命气泡</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以法力制造出强劲的水流冲击敌人，对目标造成水系伤害，并有机率使其减速。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>冷凝术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>气爆术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,55,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>激射出一道寒冰碎屑，对周围一定范围内的所有敌人造成水系伤害，并有机率使其定身。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>生命绽放</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>冷凝术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>44</div>\r\n            </td>\r\n            <td>\r\n            <div>48,52,56,60,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提高目标的生命活力，使其由技能获得的生命回复效果增加；由药品获得的生命回复效果增加；并缩短护身符冷却时间。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>64,68,72,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>76,80</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>摄魂术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>生命绽放</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,65,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>扰乱目标的精神，使其技能吟唱时间延长。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,73,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>潮汐精灵</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>摄魂术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,71,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>水灵护体，令自身的法术攻击力提高，且所有技能吟唱速度加快。此法术攻击力提升效果与精灵技能“彩虹祝福”效果冲突。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>水瀑泓泱</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>潮汐精灵</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,71,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>引江海汪洋之水淹没敌人，对目标及周围一定范围内的敌人造成水系伤害，并有一定机率造成割裂伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>灵爆咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>5,10,15,20,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>将五行之土的力量附着在武器上，对敌人造成土系伤害</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>25,30,35,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>40,45</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>白巫咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵爆咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升自身防御等级，同时降低自身攻击等级。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49，54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>土崩咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>白巫咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,34,39,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>引爆蕴藏土地中的能量，对目标造成土系伤害。打断目标施法并击退。击退效果对玩家无效。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>洪沙术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>土崩咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以法力制造出强劲的土气冲击敌人，对其产生持续土系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>生命禁锢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>洪沙术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>34</div>\r\n            </td>\r\n            <td>\r\n            <div>39,44,49,54,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>降低目标的生命活力，使其由技能获得的生命回复效果减少；由药品获得的生命回复效果减少；并延长护身符冷却时间。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64,69,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,79</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>狂沙穿空咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>生命禁锢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,55,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以法力制造一场小型沙尘暴，对目标及周围一定范围内的所有敌人造成土系伤害，并有机率使其命中率降低。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--反噬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>狂沙穿空咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,65,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>扰乱目标的法力能量，使其普攻或使用技能时自身会受到相当于施法者魂力的物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,73,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>大地灵引咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--反噬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,71,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>召唤大地之灵攻击敌人，对目标及其周围一定范围内的敌人造成土系伤害，并有机率使其昏迷。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>巫师意志</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--反噬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,71,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>驱除目标身上的不利状态，并在一定时间内免疫物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--惩戒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>守护魂的一种，可以加持给队友或自己。使其在被攻击的时候，向攻击者反弹相当于施法者魂力百分之八的物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>44,49，54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--震荡</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--惩戒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>守护魂的一种，只能给自己加持。使自己在被攻击的时候，将攻击者击晕。施法者魂力越高，击晕时间越长。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--封印</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--震荡</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,55,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>守护魂的一种，可以加持给队友或自己。使其在被攻击的时候，有一定机率将攻击者封印。施法者魂力值越高，封印几率越高。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--镜像</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>复仇之魂--封印</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,71,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>守护魂的一种，只能给自己加持。使自己在被攻击的时候，将攻击者施放的技能全部反弹回去。施法者魂力值越高，反弹成功率越高。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>水精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动技能</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升所有水系法术伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>土精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>法宝</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动技能</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升所有土系法术伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/dd1ddd3e6012fb23d9d2.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/dd1ddd3e6012fb23d9d2.js"
+}

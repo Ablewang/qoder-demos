@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/images/btn5.jpg",
+  "alt": "成长指南",
+  "kind": "img",
+  "id": "76c0f341749e1403402b",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "bytes": 5668,
+  "sha256": "448a4d6ba8d7e0ea9a128db229b22a9d7c63b97eeb2483b03c6bcef750d75135",
+  "fetchedAt": "2026-11-18T08:18:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/images/btn5.jpg",
+  "path": "assets/76c0f341749e1403402b.jpg"
+}

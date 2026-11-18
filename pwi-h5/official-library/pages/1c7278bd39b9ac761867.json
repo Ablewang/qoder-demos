@@ -1,0 +1,55 @@
+{
+  "id": "1c7278bd39b9ac761867",
+  "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30169.shtml",
+  "title": "练级指引 - 特别推荐",
+  "category": "系统介绍",
+  "section": "练级指引",
+  "depth": 1,
+  "parents": [
+    "fe512b4e745862d10a82",
+    "0807bd95b307c65884a0",
+    "1c7278bd39b9ac761867"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "2673543c0fe2f934df212548fe9a1b88a70b6a7788d0c7dfc58dfb7cc40d7d2e",
+  "bytes": 66465,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1c7278bd39b9ac761867.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-20",
+  "text": "战斗积累 | 每日必修 | 特别推荐 |\n天地不仁，以万物为刍狗。圣人不仁，以百姓为刍狗。\n众所周知，超低难度超高回报的“疯狂的石头”任务每人一天只能完成一次，这是完美大陆神灵一种众生平等的体现。打破平衡必然要付出代价，如果玩家想要夺天地之造化，每日多完成一次“疯狂的石头”的话，只有通过古老传说中的方法“冲喜”，利用喜庆的气氛完成逆转，代价就是结婚必备的物品喜帖。\n获得途径：“结婚红包”中随机开出，或在月老处用“喜酒”兑换。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30167.shtml",
+      "label": "战斗积累",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30168.shtml",
+      "label": "每日必修",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/ljzy/20091020/30169.shtml",
+      "label": "特别推荐",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lianji/5.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fe512b4e745862d10a82\">战斗积累</a> |  \t\t\t\t\t<a href=\"#page=0807bd95b307c65884a0\">每日必修</a> |  \t\t\t\t\t<a href=\"#page=1c7278bd39b9ac761867\">特别推荐</a> |</li>\r\n</ul>\r\n<p>　　天地不仁，以万物为刍狗。圣人不仁，以百姓为刍狗。</p>\r\n<p>　　众所周知，超低难度超高回报的“疯狂的石头”任务每人一天只能完成一次，这是完美大陆神灵一种众生平等的体现。打破平衡必然要付出代价，如果玩家想要夺天地之造化，每日多完成一次“疯狂的石头”的话，只有通过古老传说中的方法“冲喜”，利用喜庆的气氛完成逆转，代价就是结婚必备的物品喜帖。</p>\r\n<p>　　<strong>获得途径：</strong>“结婚红包”中随机开出，或在月老处用“喜酒”兑换。</p>\r\n<p><img src=\"assets/39a96f963e5e8e151e9e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/1c7278bd39b9ac761867.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/1c7278bd39b9ac761867.js"
+}

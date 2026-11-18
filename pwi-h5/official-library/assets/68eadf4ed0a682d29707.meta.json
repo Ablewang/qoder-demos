@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/main20121024/malazulong_title.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "68eadf4ed0a682d29707",
+  "status": "ok",
+  "parents": [
+    "34ab97c48fb73a7da041",
+    "5ae9e48800b5d2e1295f",
+    "c3d8526313577ddbb2c9",
+    "fb0436091ff5709164ca"
+  ],
+  "bytes": 3097,
+  "sha256": "0a4de830235604ffce315fdfdf2d008699bd5b72eeac074edaafaf4f0128d8a4",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/68eadf4ed0a682d29707.jpg"
+}

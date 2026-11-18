@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_478.jpg",
+  "id": "93d0107d5c03ef8c12bc",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·缩地术<em>（升仙）</em>",
+  "bytes": 1628,
+  "sha256": "173139f99cc6c6356bba56896c2c4b43ee1af997e03c3a9a5458431231498111",
+  "fetchedAt": "2026-11-18T08:34:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_478.jpg",
+  "path": "assets/93d0107d5c03ef8c12bc.jpg"
+}

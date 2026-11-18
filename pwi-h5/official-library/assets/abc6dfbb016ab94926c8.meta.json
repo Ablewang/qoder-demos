@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/top_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "abc6dfbb016ab94926c8",
+  "status": "ok",
+  "parents": [
+    "53babb9851e328acaa8e",
+    "d95843f0584579a4b144",
+    "7adf4f0cebcef9e0bf78",
+    "43220ab3a84f652ee138",
+    "f7a93bc66a9e256ede45",
+    "24a731a7b37a909930b1",
+    "969164d25dd1fd071c98",
+    "553135a9e897f6609cac",
+    "a1972473967010540e2b",
+    "080409e79f0f4ff83c29"
+  ],
+  "bytes": 23192,
+  "sha256": "b51afa53b7f88a3a6bd938469bbc3f77a55a068944294da25503ede80aeb1d83",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/abc6dfbb016ab94926c8.jpg"
+}

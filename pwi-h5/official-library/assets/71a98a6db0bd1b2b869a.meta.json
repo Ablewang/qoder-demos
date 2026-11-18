@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_528.jpg",
+  "id": "71a98a6db0bd1b2b869a",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "真·天崩地裂",
+  "bytes": 1698,
+  "sha256": "9ff6c15660805e85598bf298b33f352efab96acb6e13e5c324ffff48601c616c",
+  "fetchedAt": "2026-11-18T08:35:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_528.jpg",
+  "path": "assets/71a98a6db0bd1b2b869a.jpg"
+}

@@ -1,0 +1,163 @@
+{
+  "id": "3a43e50ca16a22bc7963",
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/make.html",
+  "title": "制造",
+  "category": "装备道具",
+  "section": "天怒神罚装备专题",
+  "depth": 2,
+  "parents": [
+    "f415d2fafc0e72df0612"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/make.html",
+  "fetchedAt": "2026-11-18T08:16:04+00:00",
+  "sha256": "af94ebfe15a60e60fa958b4915b2ae48e4b1ed3421ceb11eea4c63e22658b84d",
+  "bytes": 2346,
+  "rawPath": "raw/3a43e50ca16a22bc7963.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "制 造\n制造说明：\n玩家须完将资料片主线进度进行到时空天泪之城，在时空天泪城上有4个熔炉，其中有一个是制作资料片新技能用，另外三个为制作资料片新装备用。玩家集齐制造物品所需要材料即可在对应处制造新装备。\n1）饰品制造：\n2）防具制造：\n3）武器制造：\n4）炼化制造：",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "制 造\n制造说明：\n玩家须完将资料片主线进度进行到时空天泪之城，在时空天泪城上有4个熔炉，其中有一个是制作资料片新技能用，另外三个为制作资料片新装备用。玩家集齐制造物品所需要材料即可在对应处制造新装备。\n1）饰品制造：\n2）防具制造：\n3）武器制造：\n4）炼化制造：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "制 造",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "制造说明：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩家须完将资料片主线进度进行到时空天泪之城，在时空天泪城上有4个熔炉，其中有一个是制作资料片新技能用，另外三个为制作资料片新装备用。玩家集齐制造物品所需要材料即可在对应处制造新装备。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1）饰品制造：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2）防具制造：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3）武器制造：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "4）炼化制造：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/make_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/make_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/make_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/make_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/make_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  \n  <tr>\n    <td><table>\n      <tr>\n        <td><span>制 造 </span></td>\n      </tr>\n      <tr>\n        <td><div><span>制造说明： </span></div></td>\n      </tr>\n      <tr>\n        <td><div>\n          <p>玩家须完将资料片主线进度进行到时空天泪之城，在时空天泪城上有4个熔炉，其中有一个是制作资料片新技能用，另外三个为制作资料片新装备用。玩家集齐制造物品所需要材料即可在对应处制造新装备。<strong> </strong></p>\n        </div></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/ccedb5480a30581bb94b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n      <tr>\n        <td><p>1）<strong>饰品制造</strong>：</p></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/1bc6dc52995f2af7a8f2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n      <tr>\n        <td><div>2）<strong>防具</strong>制造： </div></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/512b76aebf6bd45cd168.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n      <tr>\n        <td><div>3）<strong>武器制造</strong>：</div></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/39362fa370ada48aaada.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n      <tr>\n        <td><p>4）<strong>炼化制造</strong>： </p></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/b2cbfb86248698753606.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/3a43e50ca16a22bc7963.json",
+  "imageCount": 5,
+  "tableCount": 2,
+  "downloadPath": "downloads/3a43e50ca16a22bc7963.js"
+}

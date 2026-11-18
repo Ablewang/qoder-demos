@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_457.jpg",
+  "id": "1ff4a3e3d2bf8cde0996",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·涌泉<em>（入魔）</em>",
+  "bytes": 1753,
+  "sha256": "abbd349c2cccbc8fe4d1db5df001df5a2e33e4aa3fb4132eb862b6bdc4669a34",
+  "fetchedAt": "2026-11-18T08:34:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_457.jpg",
+  "path": "assets/1ff4a3e3d2bf8cde0996.jpg"
+}

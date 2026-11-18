@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_554.jpg",
+  "id": "d41e018833e365ddc511",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·海纳百川<em>（升仙）</em>",
+  "bytes": 1588,
+  "sha256": "a00bc5457e552641474a4b2cced36e9d576cc1fb4497ea1fc175700b0830706d",
+  "fetchedAt": "2026-11-18T08:35:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_554.jpg",
+  "path": "assets/d41e018833e365ddc511.jpg"
+}

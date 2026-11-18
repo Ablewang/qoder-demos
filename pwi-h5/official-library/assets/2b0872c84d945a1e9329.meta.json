@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_28031.jpg",
+  "id": "2b0872c84d945a1e9329",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "嗜血狂乱",
+  "bytes": 3692,
+  "sha256": "6dd50b26f6cc23e1024ec76925a1c854994ed8f1c7dd7ba7aea1a3304ab0de8b",
+  "fetchedAt": "2026-11-18T08:36:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_28031.jpg",
+  "path": "assets/2b0872c84d945a1e9329.jpg"
+}

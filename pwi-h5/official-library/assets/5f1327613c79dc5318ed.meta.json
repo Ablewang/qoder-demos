@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/js/jquery.bxSlider.min.js",
+  "alt": "",
+  "kind": "script",
+  "id": "5f1327613c79dc5318ed",
+  "status": "ok",
+  "parents": [
+    "ecd8cac8cda80c901799",
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "bytes": 14363,
+  "sha256": "737baff021e54cdf99d33f030e2f65eefee8612b47fc10414dbac9f5b4b4beed",
+  "fetchedAt": "2026-11-18T08:26:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/js/jquery.bxSlider.min.js",
+  "path": "assets/5f1327613c79dc5318ed.js"
+}

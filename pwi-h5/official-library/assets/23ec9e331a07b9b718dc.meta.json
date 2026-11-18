@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27617.jpg",
+  "id": "23ec9e331a07b9b718dc",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 强冲刺杀<em>（入魔）</em> ",
+  "bytes": 983,
+  "sha256": "87caaaa94b7d37b2fd85f6a39d951c1d28e81ac5a928cf1cd5640a9408be2d8e",
+  "fetchedAt": "2026-11-18T08:36:10+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27617.jpg",
+  "path": "assets/23ec9e331a07b9b718dc.jpg"
+}

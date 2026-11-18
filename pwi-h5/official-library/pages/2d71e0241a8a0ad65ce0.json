@@ -1,0 +1,122 @@
+{
+  "id": "2d71e0241a8a0ad65ce0",
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/yaoshou.htm",
+  "title": "技能模拟器 -《完美国际》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 1,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "53babb9851e328acaa8e",
+    "d95843f0584579a4b144",
+    "7adf4f0cebcef9e0bf78",
+    "43220ab3a84f652ee138",
+    "f7a93bc66a9e256ede45",
+    "24a731a7b37a909930b1",
+    "969164d25dd1fd071c98",
+    "553135a9e897f6609cac",
+    "a1972473967010540e2b",
+    "080409e79f0f4ff83c29"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "d9a920dc6ae8eda4eb0b620067556e0932b167507f90d12d3107a7dc057ac4e6",
+  "bytes": 2621,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/2d71e0241a8a0ad65ce0.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "所需元神点数：\n所花费金钱：\n当前加点所需等级：",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "所需元神点数：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所花费金钱：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "当前加点所需等级：",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "3"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/iframe/top.htm?=m5",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_yaoshou.png",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/yaoshou.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/btn_print.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/btn_reset.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/style/main.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/js/jq131.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/js/main.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/js/pub.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\t<div>\r\n\t\t<div><p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201102/imitator/iframe/top.htm?=m5\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201102/imitator/iframe/top.htm?=m5</a></p></div>\r\n\t\t<div>\r\n\t\t\t<div>\r\n\t\t\t\t<div></div>\r\n\t\t\t</div>\r\n\t\t\t<div><img src=\"assets/c92a786f9e0ef1cbb0ad.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n\t\t\t<div>\r\n\t\t\t\t<div>\r\n\t\t\t\t<div><span></span></div>\r\n\t\t\t\t<table>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t<td>所需元神点数：<span></span></td>\r\n\t\t\t\t\t<td>所花费金钱：<span></span></td>\r\n\t\t\t\t\t<td>当前加点所需等级：<span></span></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t\t<td colspan=\"3\"><img src=\"assets/be74403fab5e9e5acf2e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/54de2d455c4757b52017.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t \r\n\t\r\n\t</div>\r\n\t\r\n",
+  "dataPath": "pages/2d71e0241a8a0ad65ce0.json",
+  "imageCount": 4,
+  "tableCount": 1,
+  "downloadPath": "downloads/2d71e0241a8a0ad65ce0.js"
+}

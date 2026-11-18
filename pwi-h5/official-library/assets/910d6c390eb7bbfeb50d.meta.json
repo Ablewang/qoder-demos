@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_435.jpg",
+  "id": "910d6c390eb7bbfeb50d",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·长兵精通<em>（入魔）</em>",
+  "bytes": 1642,
+  "sha256": "12fa38f8fa93f385df59ce73ec6ad67286fa221590f722b78e443cdfaf0318dc",
+  "fetchedAt": "2026-11-18T08:34:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_435.jpg",
+  "path": "assets/910d6c390eb7bbfeb50d.jpg"
+}

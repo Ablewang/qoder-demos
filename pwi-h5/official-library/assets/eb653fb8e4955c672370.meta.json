@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_626.jpg",
+  "id": "eb653fb8e4955c672370",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·翼展<em>（升仙）</em>",
+  "bytes": 1613,
+  "sha256": "c56eaa11291519e6f974828809737b113e1be9378e558f26ba881af4c91f09c5",
+  "fetchedAt": "2026-11-18T08:35:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_626.jpg",
+  "path": "assets/eb653fb8e4955c672370.jpg"
+}

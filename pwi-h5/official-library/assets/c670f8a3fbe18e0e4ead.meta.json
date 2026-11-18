@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073939406.jpg",
+  "alt": "图片: 图4：名媛女装.jpg",
+  "kind": "img",
+  "id": "c670f8a3fbe18e0e4ead",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 53096,
+  "sha256": "9ceb3935c72d2f9a047f0836c65e2b9d7f7aac0f7abf1ddac16c184562fe4ce7",
+  "fetchedAt": "2026-11-18T08:23:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073939406.jpg",
+  "path": "assets/c670f8a3fbe18e0e4ead.jpg"
+}

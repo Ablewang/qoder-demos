@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "id": "a7755ebb6e8a68d18902",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 54186,
+  "sha256": "ee89d665a6f6497d4c0ab6460763481d9babb101388cc9703753beb7a8daa10b",
+  "fetchedAt": "2026-11-18T08:17:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "path": "assets/a7755ebb6e8a68d18902.js"
+}

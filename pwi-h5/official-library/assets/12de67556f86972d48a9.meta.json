@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/top_03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "12de67556f86972d48a9",
+  "status": "ok",
+  "parents": [
+    "561c3ba8071d80eba14a"
+  ],
+  "bytes": 36085,
+  "sha256": "a6f3408605446001c483eb32165caea6f472c81e4ec133692b89733d29c7ca9b",
+  "fetchedAt": "2026-11-18T08:28:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/top_03.jpg",
+  "path": "assets/12de67556f86972d48a9.jpg"
+}

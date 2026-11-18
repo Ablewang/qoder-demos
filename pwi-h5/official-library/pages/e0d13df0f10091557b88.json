@@ -1,0 +1,130 @@
+{
+  "id": "e0d13df0f10091557b88",
+  "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+  "title": "第一次升级",
+  "category": "新手指引",
+  "section": "初入完美",
+  "depth": 0,
+  "parents": [
+    "52bb242ab2be6a273274",
+    "795e2fc25f6366b4a743",
+    "e0d13df0f10091557b88",
+    "ec2daf258dc40cc656cc",
+    "80b64af2df0ec04bc9f5",
+    "b01d438a263d5990ed20",
+    "e1af6d0e32387f82d096",
+    "0ec3e5f2d64060878db6",
+    "d953218d5c4ee41c8389",
+    "7eedb1771e5ba2058b12",
+    "50ef20375a9c3fe211e7",
+    "bf2cf85d433eb7fcebcc",
+    "c975ac74bf780de1674b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "3cbda4fecb94673f786e275aa297cdcceb5723f79dc254e1e3d1fddccf8adb64",
+  "bytes": 69106,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/e0d13df0f10091557b88.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-28",
+  "text": "第一次做任务 | 第一次战斗 | 第一次组队 | 第一次加好友 | 第一次自动寻路 | 第一次买东西 | 第一次使用表情\n第一次摆摊交易 | 第一次使用包裹 | 第一次传送 | 第一次升级 | 第一次创建聊天室 | 第一次聊天 |\n人物等级是网络游戏中的衡量玩家实力的重要标准之一。完美世界国际版中玩家通过提升级别来使自身的基本属性得到增长，同时也可以使用更多更强的物品道具。 随着级别的不断增长，还将接触到更多丰富的内容，许多任务副本也对级别有着严格的要求。\n等级机制\n游戏一开始的人物只有一级，随着经验值的不断积累，当到达一定量的时候，人物的级别将会上升，同时获得5点属性点供玩家自由分配。\n升级的方法\n人物升级是通过累积经验值来完成的。在完美世界国际版中，最常见的增加经验值的方法有两种，一种是通过不断战斗来累积经验值，另一种则是通过完成任务来获得经验值。\n通过战斗获取经验值\n打死怪物，就可以取得一定量的经验值。角色信息窗口会显示目前的经验值，它位于画面上方左边的HP/MP条的下面。如果打倒等级越高的怪物，经验值就取得越高，但相对的危险负担会加大。\n通过任务获取经验值\n完成任务时，也可以取得一定量的经验值。在任务信息栏中可以查看到完成任务可获得的奖励，不同任务奖励的经验值也不相同。\n属性点的分配\n经验值棒若填满时，人物就会往上升一级同时还将获得5点属性点。玩家在人物信息框中点击上下箭头即可将这些属性点分配到体质、灵力、力量、敏捷这四项基本属性上。想要培养出自己心爱的游戏人物，可要好好考虑一下这些属性点应该怎样分配哦！",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+      "label": "第一次做任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30061.shtml",
+      "label": "第一次战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30063.shtml",
+      "label": "第一次组队",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30064.shtml",
+      "label": "第一次加好友",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29926.shtml",
+      "label": "第一次自动寻路",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+      "label": "第一次买东西",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30065.shtml",
+      "label": "第一次使用表情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30066.shtml",
+      "label": "第一次摆摊交易",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+      "label": "第一次使用包裹",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+      "label": "第一次传送",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+      "label": "第一次升级",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29924.shtml",
+      "label": "第一次创建聊天室",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+      "label": "第一次聊天",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_sj_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_sj_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_sj_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_sj_04.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=52bb242ab2be6a273274\">第一次做任务</a> |  \t\t\t\t\t<a href=\"#page=795e2fc25f6366b4a743\">第一次战斗 </a> |  \t\t\t\t\t<a href=\"#page=80b64af2df0ec04bc9f5\">第一次组队 </a> |  \t\t\t\t\t<a href=\"#page=b01d438a263d5990ed20\">第一次加好友 </a> |  \t\t\t\t\t<a href=\"#page=c975ac74bf780de1674b\">第一次自动寻路 </a> |  \t\t\t\t\t<a href=\"#page=ec2daf258dc40cc656cc\">第一次买东西 </a> |  \t\t\t\t\t<a href=\"#page=e1af6d0e32387f82d096\">第一次使用表情 </a><br>\r\n    <a href=\"#page=d953218d5c4ee41c8389\">第一次摆摊交易 </a> |  \t\t\t\t\t<a href=\"#page=7eedb1771e5ba2058b12\">第一次使用包裹 </a> |  \t\t\t\t\t<a href=\"#page=50ef20375a9c3fe211e7\">第一次传送 </a> |  \t\t\t\t\t<a href=\"#page=e0d13df0f10091557b88\">第一次升级 </a> |  \t\t\t\t\t<a href=\"#page=bf2cf85d433eb7fcebcc\">第一次创建聊天室</a> | \t\t\t\t\t  \t\t\t\t\t<a href=\"#page=0ec3e5f2d64060878db6\">第一次聊天 </a> |</li>\r\n</ul>\r\n<p>　　人物等级是网络游戏中的衡量玩家实力的重要标准之一。完美世界国际版中玩家通过提升级别来使自身的基本属性得到增长，同时也可以使用更多更强的物品道具。 随着级别的不断增长，还将接触到更多丰富的内容，许多任务副本也对级别有着严格的要求。</p>\r\n<p>　　<strong>等级机制</strong></p>\r\n<p>　　游戏一开始的人物只有一级，随着经验值的不断积累，当到达一定量的时候，人物的级别将会上升，同时获得5点属性点供玩家自由分配。</p>\r\n<p>　　<strong>升级的方法</strong></p>\r\n<p>　　人物升级是通过累积经验值来完成的。在完美世界国际版中，最常见的增加经验值的方法有两种，一种是通过不断战斗来累积经验值，另一种则是通过完成任务来获得经验值。</p>\r\n<p>　　<strong>通过战斗获取经验值</strong></p>\r\n<p>　　打死怪物，就可以取得一定量的经验值。角色信息窗口会显示目前的经验值，它位于画面上方左边的HP/MP条的下面。如果打倒等级越高的怪物，经验值就取得越高，但相对的危险负担会加大。</p>\r\n<p><img src=\"assets/e60974a47a50845541cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>通过任务获取经验值</strong></p>\r\n<p>　　完成任务时，也可以取得一定量的经验值。在任务信息栏中可以查看到完成任务可获得的奖励，不同任务奖励的经验值也不相同。</p>\r\n<p><img src=\"assets/8041c43443afa04734a6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>属性点的分配</strong></p>\r\n<p>　　经验值棒若填满时，人物就会往上升一级同时还将获得5点属性点。玩家在人物信息框中点击上下箭头即可将这些属性点分配到体质、灵力、力量、敏捷这四项基本属性上。想要培养出自己心爱的游戏人物，可要好好考虑一下这些属性点应该怎样分配哦！</p>\r\n<p><img src=\"assets/1a5a73e87a3c75727ee1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/31be122f7bba0a8e1f10.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/e0d13df0f10091557b88.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/e0d13df0f10091557b88.js"
+}

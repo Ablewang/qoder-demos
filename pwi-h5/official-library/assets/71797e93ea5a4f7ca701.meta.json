@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_619.jpg",
+  "id": "71797e93ea5a4f7ca701",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·尖牙之矢<em>（入魔）</em>",
+  "bytes": 1657,
+  "sha256": "38fc88d752e1f19b3cfad8176b8fb6a46ede0d09c4b6c04f5c07bb68369f46a1",
+  "fetchedAt": "2026-11-18T08:34:59+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_619.jpg",
+  "path": "assets/71797e93ea5a4f7ca701.jpg"
+}

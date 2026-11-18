@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130123/10021358903880553.jpg",
+  "alt": "图片: 图2：羽芒时装武器.jpg",
+  "kind": "img",
+  "id": "e1c1dba06184bf12e78f",
+  "status": "ok",
+  "parents": [
+    "9066c33eeeda8283dd07"
+  ],
+  "bytes": 63891,
+  "sha256": "eab6efb22a304f3f29c735ee6e386b84ab9443726ffcb7034edbe5798519414f",
+  "fetchedAt": "2026-11-18T08:23:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130123/10021358903880553.jpg",
+  "path": "assets/e1c1dba06184bf12e78f.jpg"
+}

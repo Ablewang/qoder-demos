@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/title_02_jia.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "b3c3c10d1e42e93deaf2",
+  "status": "ok",
+  "parents": [
+    "2a57cf7d233caadf9b33",
+    "a1250a87e9c9964d7971",
+    "8d3e83b72711ebe48ed4"
+  ],
+  "bytes": 4367,
+  "sha256": "4a609393ca4bbab16b5ad4171593a45e85f0e0fc893afd24be8300240e3bf8c1",
+  "fetchedAt": "2026-11-18T08:20:10+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201103/bp/images/title_02_jia.jpg",
+  "path": "assets/b3c3c10d1e42e93deaf2.jpg"
+}

@@ -1,0 +1,379 @@
+{
+  "id": "a910fec6e628b15f8c31",
+  "url": "https://w2i.wanmei.com/event/200809/contend/award.htm",
+  "title": "冥城争霸-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 1,
+  "parents": [
+    "417f96b539b3f3400e72",
+    "207431ece519cc56a67b",
+    "a968cd1d1b6197af3eb9"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "651d64b9248404b645b67e037ae484807dc77672c124cc05fd5da383972a2199",
+  "bytes": 6352,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/a910fec6e628b15f8c31.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "奖品兑换\n玩家收集的“九星魂丹”可在冥城使者处换取相应的奖品，奖品兑换如下：\n冠军兑换比例\n普通兑换比例\n兑换物品\n所需九星魂丹\n兑换物品\n所需九星魂丹\n武魂牌1个\n3个\n武魂牌1个\n6个\n神秘筹码1个\n10个\n神秘筹码1个\n10个\n力量的徽章1个\n50个\n力量的徽章1个\n150个\n勇气的徽章1个\n50个\n勇气的徽章1个\n150个\n无畏的徽章1个\n400个\n无畏的徽章1个\n600个\n恒寂之印1个\n400个\n恒寂之印1个\n600个\n玩家收集的“九星魂丹”可完成冥城使者的天道酬勤任务，任务奖励如下：\n比例\n所需九星魂丹\n天道酬勤任务奖励\n冠军兑换比例\n1个\n9000经验，3000元神\n普通兑换比例\n1个\n3000经验，1000元神\n奖品用途如下：\n奖品\n用途\n武魂牌\n可在比武大会外场NPC处换取8~9级的魂石。\n神秘筹码\n可在神秘商人处兑换多种材料，用途较广。\n力量的徽章\n在七贤使者处可换元神，集齐10个可换1个力量证明。\n勇气的徽章\n在七贤使者处可换元神，集齐10个可换1个勇气证明。\n无畏的徽章\n在七贤使者处可换元神，集齐10个可换1个无畏证明。\n恒寂之印\n物理攻击与法术攻击各加100，致命一击率加3%，敏捷、体质各加7-8，精炼还将提高法防的12品阶戒指。\n返回首页",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "冠军兑换比例",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "普通兑换比例",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "兑换物品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需九星魂丹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "兑换物品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需九星魂丹",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "武魂牌1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武魂牌1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神秘筹码1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "神秘筹码1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "力量的徽章1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量的徽章1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "勇气的徽章1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "勇气的徽章1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无畏的徽章1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "400个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无畏的徽章1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "恒寂之印1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "400个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "恒寂之印1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "比例",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需九星魂丹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天道酬勤任务奖励",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冠军兑换比例",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9000经验，3000元神",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "普通兑换比例",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1个",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000经验，1000元神",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "奖品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "用途",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "武魂牌",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可在比武大会外场NPC处换取8~9级的魂石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神秘筹码",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可在神秘商人处兑换多种材料，用途较广。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "力量的徽章",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "在七贤使者处可换元神，集齐10个可换1个力量证明。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "勇气的徽章",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "在七贤使者处可换元神，集齐10个可换1个勇气证明。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无畏的徽章",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "在七贤使者处可换元神，集齐10个可换1个无畏证明。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "恒寂之印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击与法术攻击各加100，致命一击率加3%，敏捷、体质各加7-8，精炼还将提高法防的12品阶戒指。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/iframe/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/index.htm",
+      "label": "返回首页",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/images/main_foot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n<div><p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200809/contend/iframe/header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200809/contend/iframe/header.htm</a></p></div>\r\n<div>\r\n    <img src=\"assets/25a4000e3aa3fee1332b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <div>\r\n            <h1>奖品兑换</h1>\r\n            <p>玩家收集的“九星魂丹”可在冥城使者处换取相应的奖品，奖品兑换如下：</p>\r\n            <br>\r\n            <div>\r\n                <table>\r\n                  <tr>\r\n                    <td colspan=\"2\"><strong>冠军兑换比例</strong></td>\r\n                    <td colspan=\"2\"><strong>普通兑换比例</strong></td>\r\n                    </tr>\r\n                  <tr>\r\n                    <td>兑换物品</td>\r\n                    <td>所需九星魂丹</td>\r\n                    <td>兑换物品</td>\r\n                    <td>所需九星魂丹</td>\r\n                  </tr>\r\n                  <tr>\r\n                    <th>武魂牌1个</th>\r\n                    <th>3个</th>\r\n                    <th>武魂牌1个</th>\r\n                    <th>6个</th>\r\n                  </tr>\r\n                  <tr>\r\n                    <td>神秘筹码1个</td>\r\n                    <td>10个</td>\r\n                    <td>神秘筹码1个</td>\r\n                    <td>10个</td>\r\n                  </tr>\r\n                  <tr>\r\n                    <th>力量的徽章1个</th>\r\n                    <th>50个</th>\r\n                    <th>力量的徽章1个</th>\r\n                    <th>150个</th>\r\n                  </tr>\r\n                  <tr>\r\n                    <td>勇气的徽章1个</td>\r\n                    <td>50个</td>\r\n                    <td>勇气的徽章1个</td>\r\n                    <td>150个</td>\r\n                  </tr>\r\n                  <tr>\r\n                    <th>无畏的徽章1个</th>\r\n                    <th>400个</th>\r\n                    <th>无畏的徽章1个</th>\r\n                    <th>600个</th>\r\n                  </tr>\r\n                  <tr>\r\n                    <td>恒寂之印1个</td>\r\n                    <td>400个</td>\r\n                    <td>恒寂之印1个</td>\r\n                    <td>600个</td>\r\n                  </tr>\r\n                </table>\r\n            </div>\r\n            <br>\r\n            <br>\r\n            <p>玩家收集的“九星魂丹”可完成冥城使者的天道酬勤任务，任务奖励如下：</p>\r\n            <br>\r\n            <div>\r\n                <table>\r\n                  <tr>\r\n                    <td>比例</td>\r\n                    <td>所需九星魂丹</td>\r\n                    <td>天道酬勤任务奖励</td>\r\n                    </tr>\r\n                  <tr>\r\n                    <th>冠军兑换比例</th>\r\n                    <th>1个</th>\r\n                    <th>9000经验，3000元神</th>\r\n                    </tr>\r\n                  <tr>\r\n                    <td>普通兑换比例</td>\r\n                    <td>1个</td>\r\n                    <td>3000经验，1000元神</td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n            <br>\r\n            <br>\r\n            <p>奖品用途如下：</p>\r\n            <br>\r\n            <div>\r\n                <table>\r\n                  <tr>\r\n                    <td>奖品</td>\r\n                    <td>用途</td>\r\n                    </tr>\r\n                  <tr>\r\n                    <th>武魂牌</th>\r\n                    <th>可在比武大会外场NPC处换取8~9级的魂石。</th>\r\n                    </tr>\r\n                  <tr>\r\n                    <td>神秘筹码</td>\r\n                    <td>可在神秘商人处兑换多种材料，用途较广。</td>\r\n                    </tr>\r\n                  <tr>\r\n                    <th>力量的徽章</th>\r\n                    <th>在七贤使者处可换元神，集齐10个可换1个力量证明。</th>\r\n                    </tr>\r\n                  <tr>\r\n                    <td>勇气的徽章</td>\r\n                    <td>在七贤使者处可换元神，集齐10个可换1个勇气证明。</td>\r\n                    </tr>\r\n                  <tr>\r\n                    <th>无畏的徽章</th>\r\n                    <th>在七贤使者处可换元神，集齐10个可换1个无畏证明。</th>\r\n                    </tr>\r\n                  <tr>\r\n                    <td>恒寂之印</td>\r\n                    <td>物理攻击与法术攻击各加100，致命一击率加3%，敏捷、体质各加7-8，精炼还将提高法防的12品阶戒指。</td>\r\n                    </tr>\r\n                </table>\r\n        </div>\r\n        <br>\r\n        <p><a href=\"#page=417f96b539b3f3400e72\">返回首页</a></p>\r\n        </div>\r\n    <img src=\"assets/8081960f3456f2d55fd3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/f3b56ab9fb0e69929928.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n</div>\r\n\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n",
+  "dataPath": "pages/a910fec6e628b15f8c31.json",
+  "imageCount": 3,
+  "tableCount": 3,
+  "downloadPath": "downloads/a910fec6e628b15f8c31.js"
+}

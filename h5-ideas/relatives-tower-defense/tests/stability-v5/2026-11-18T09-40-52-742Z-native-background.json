@@ -1,0 +1,45 @@
+{
+  "kind": "Owned headful Chrome window only; no synthetic visibility events, no engine writes; local launch arguments omit Playwright background-suppression defaults",
+  "verified": false,
+  "initial": {
+    "windowId": 632083681,
+    "bounds": {
+      "left": 214,
+      "top": 61,
+      "width": 1282,
+      "height": 800,
+      "windowState": "normal"
+    }
+  },
+  "minimized": {
+    "windowId": 632083681,
+    "bounds": {
+      "left": 214,
+      "top": 61,
+      "width": 1282,
+      "height": 800,
+      "windowState": "normal"
+    }
+  },
+  "before": {
+    "hidden": false,
+    "state": "visible",
+    "paused": false,
+    "elapsed": 1.6675000000000015,
+    "events": []
+  },
+  "later": {
+    "hidden": false,
+    "state": "visible",
+    "paused": false,
+    "elapsed": 1.6675000000000015,
+    "events": []
+  },
+  "restored": {
+    "hidden": false,
+    "state": "visible",
+    "paused": false,
+    "elapsed": 1.6750000000000016,
+    "events": []
+  }
+}

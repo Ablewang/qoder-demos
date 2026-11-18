@@ -1,0 +1,17 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/nav_004.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "a01f78ec3311f11606a9",
+  "status": "ok",
+  "parents": [
+    "770785227ab0182dd256",
+    "f5504f2cd19438bf7a68",
+    "c2c8339195f44648ab5c"
+  ],
+  "bytes": 5357,
+  "sha256": "db489cc06ef51f0ca2d30617c5cca9b3a7b1ede0133cae440a90f9a036214c5d",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/a01f78ec3311f11606a9.jpg"
+}

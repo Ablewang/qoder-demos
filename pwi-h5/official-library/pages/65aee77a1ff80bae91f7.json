@@ -1,0 +1,361 @@
+{
+  "id": "65aee77a1ff80bae91f7",
+  "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37697.shtml",
+  "title": "新武器-匕首",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "eee3aab04ec5daeb2789",
+    "4604ff508f140a109632",
+    "6c14103ab26360a90a04",
+    "0abe6ceccad74c753902",
+    "6d95bf47eb5231d97b4f",
+    "8f0f7e0b74c57d60c065",
+    "d1cfab30817245c1085c",
+    "65aee77a1ff80bae91f7",
+    "d350eeffc4baea62aff5"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "d406981c006bce9adbbe4c0e76394c0272cbf9ae071017750b25efcf0265674a",
+  "bytes": 71054,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/65aee77a1ff80bae91f7.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-12-05",
+  "text": "拳套 | 枪戟 | 利刃 | 弓弩 | 斧锤 | 法器 | 刀剑 | 匕首 | 法宝 |\n一次轮回\n二次轮回\n名称：★★对影两不知·轮回\n名称：★★黄泉应笑我\n类型：匕首\n类型：匕首\n品阶：13\n品阶：15\n物理攻击力：603~904\n物理攻击力：685~1028\n攻击距离：2.5\n攻击距离：2.5\n升级效果：物理攻击+21\n升级效果：物理攻击+21\n附加属性：嗜血 致命一击+1% 生命+245\n必然会出现的附加属性：狂战士、狂战神、致命一击+3%或致命一击+4%其中之一\n升级需要的武器：★对影两不知\n可能出现附加属性：致命一击+1% 攻击距离+1 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3\n失侣度山觅，投林舍北啼。今将独夜意，对影两不知。\n新附加属性解释：狂战神，被祝福过的狂战士之力，更大几率打出加倍伤害，但会损失5%的最大生命值。\n升级需要的武器：★★对影两不知·轮回\n畏途方万里，生涯近百年。不知将白首，何处入黄泉。\n一次轮回\n二次轮回\n名称：★★海狱刺·轮回\n名称：★★青冥海狱刺\n类型：匕首\n类型：匕首\n品阶：13\n品阶：15\n物理攻击力：603~904\n物理攻击力：685~1028\n攻击距离：2.5\n攻击距离：2.5\n升级效果：本体物攻21\n升级效果：本体物攻21\n可能出现的附加属性：攻击间隔 -0.1 致命一击+1% 生命+245\n必然出现的附加属性：狂战士、狂战神、致命一击+3%或致命一击+4%其中之一\n升级需要的武器：★海狱刺·裂胆\n可能出现的附加属性：致命一击+1% 攻击距离+1 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3\n新附加属性解释：狂战神，被祝福过的狂战士之力，更大几率打出加倍伤害，但会损失5%的最大生命值。\n升级需要的武器：★★海狱刺·轮回",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "一次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "二次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "名称：★★对影两不知·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称：★★黄泉应笑我",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "类型：匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型：匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "品阶：13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶：15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物理攻击力：603~904",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击力：685~1028",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级效果：物理攻击+21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级效果：物理攻击+21",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性：嗜血 致命一击+1% 生命+245",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "必然会出现的附加属性：狂战士、狂战神、致命一击+3%或致命一击+4%其中之一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★对影两不知",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可能出现附加属性：致命一击+1% 攻击距离+1 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "失侣度山觅，投林舍北啼。今将独夜意，对影两不知。",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "新附加属性解释：狂战神，被祝福过的狂战士之力，更大几率打出加倍伤害，但会损失5%的最大生命值。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★★对影两不知·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "畏途方万里，生涯近百年。不知将白首，何处入黄泉。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "一次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "二次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "名称：★★海狱刺·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称：★★青冥海狱刺",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "类型：匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型：匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "品阶：13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶：15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物理攻击力：603~904",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击力：685~1028",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级效果：本体物攻21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级效果：本体物攻21",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "可能出现的附加属性：攻击间隔 -0.1 致命一击+1% 生命+245",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "必然出现的附加属性：狂战士、狂战神、致命一击+3%或致命一击+4%其中之一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★海狱刺·裂胆",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "可能出现的附加属性：致命一击+1% 攻击距离+1 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新附加属性解释：狂战神，被祝福过的狂战士之力，更大几率打出加倍伤害，但会损失5%的最大生命值。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★★海狱刺·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36688.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36687.shtml",
+      "label": "枪戟",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36686.shtml",
+      "label": "利刃",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36685.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36684.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36683.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36682.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37697.shtml",
+      "label": "匕首",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37698.shtml",
+      "label": "法宝",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/091207/10021260175799196.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/091207/10021260175798181.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=eee3aab04ec5daeb2789\">拳套</a> | <a href=\"#page=4604ff508f140a109632\">枪戟</a> | <a href=\"#page=6c14103ab26360a90a04\">利刃</a> | <a href=\"#page=0abe6ceccad74c753902\">弓弩</a> | <a href=\"#page=6d95bf47eb5231d97b4f\">斧锤</a> | <a href=\"#page=8f0f7e0b74c57d60c065\">法器</a> | <a href=\"#page=d1cfab30817245c1085c\">刀剑</a> | <a href=\"#page=65aee77a1ff80bae91f7\">匕首</a> | <a href=\"#page=d350eeffc4baea62aff5\">法宝</a> |</li>\r\n</ul>\r\n<p><img src=\"assets/e4e5ff7cba9cc2e6f842.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>一次轮回</strong></td>\r\n            <td><strong>二次轮回</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>名称：★★对影两不知·轮回</td>\r\n            <td>\r\n            <p>名称：★★黄泉应笑我</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>类型：匕首</td>\r\n            <td>类型：匕首</td>\r\n        </tr>\r\n        <tr>\r\n            <td>品阶：13</td>\r\n            <td>品阶：15</td>\r\n        </tr>\r\n        <tr>\r\n            <td>物理攻击力：603~904</td>\r\n            <td>物理攻击力：685~1028</td>\r\n        </tr>\r\n        <tr>\r\n            <td>攻击距离：2.5</td>\r\n            <td>攻击距离：2.5</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级效果：物理攻击+21</td>\r\n            <td>升级效果：物理攻击+21</td>\r\n        </tr>\r\n        <tr>\r\n            <td>附加属性：嗜血 致命一击+1% 生命+245</td>\r\n            <td>必然会出现的附加属性：狂战士、狂战神、致命一击+3%或致命一击+4%其中之一</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★对影两不知</td>\r\n            <td>可能出现附加属性：致命一击+1% 攻击距离+1 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">失侣度山觅，投林舍北啼。今将独夜意，对影两不知。</td>\r\n            <td>新附加属性解释：狂战神，被祝福过的狂战士之力，更大几率打出加倍伤害，但会损失5%的最大生命值。</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★★对影两不知·轮回</td>\r\n        </tr>\r\n        <tr>\r\n            <td>畏途方万里，生涯近百年。不知将白首，何处入黄泉。</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p><img src=\"assets/673f3114657395acdf64.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>一次轮回</strong></td>\r\n            <td><strong>二次轮回</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>名称：★★海狱刺·轮回</td>\r\n            <td>\r\n            <p>名称：★★青冥海狱刺</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>类型：匕首</td>\r\n            <td>类型：匕首</td>\r\n        </tr>\r\n        <tr>\r\n            <td>品阶：13</td>\r\n            <td>品阶：15</td>\r\n        </tr>\r\n        <tr>\r\n            <td>物理攻击力：603~904</td>\r\n            <td>物理攻击力：685~1028</td>\r\n        </tr>\r\n        <tr>\r\n            <td>攻击距离：2.5</td>\r\n            <td>攻击距离：2.5</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级效果：本体物攻21</td>\r\n            <td>升级效果：本体物攻21</td>\r\n        </tr>\r\n        <tr>\r\n            <td>可能出现的附加属性：攻击间隔 -0.1 致命一击+1% 生命+245</td>\r\n            <td>必然出现的附加属性：狂战士、狂战神、致命一击+3%或致命一击+4%其中之一</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">升级需要的武器：★海狱刺·裂胆</td>\r\n            <td>可能出现的附加属性：致命一击+1% 攻击距离+1 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3</td>\r\n        </tr>\r\n        <tr>\r\n            <td>新附加属性解释：狂战神，被祝福过的狂战士之力，更大几率打出加倍伤害，但会损失5%的最大生命值。</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★★海狱刺·轮回</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/65aee77a1ff80bae91f7.json",
+  "imageCount": 2,
+  "tableCount": 2,
+  "downloadPath": "downloads/65aee77a1ff80bae91f7.js"
+}

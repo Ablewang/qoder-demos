@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_571.jpg",
+  "id": "26fba13bfa4336549670",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·灵助符<em>（入魔）</em>",
+  "bytes": 1531,
+  "sha256": "604ca4cfa1b7d1d6acb3d4187cb5711e4b769d8bf2dce363b9f9ce935152b6c4",
+  "fetchedAt": "2026-11-18T08:35:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_571.jpg",
+  "path": "assets/26fba13bfa4336549670.jpg"
+}

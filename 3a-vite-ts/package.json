@@ -1,0 +1,30 @@
+{
+  "name": "saltline-3a-ts",
+  "private": true,
+  "packageManager": "pnpm@12.4.2",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/index.ts",
+    "dev:server": "node --watch server/index.ts",
+    "lan": "pnpm build && pnpm server",
+    "build": "pnpm typecheck && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.node.json && tsc -p server"
+  },
+  "dependencies": {
+    "three": "0.180.0",
+    "ws": "8.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/three": "0.180.0",
+    "@types/ws": "8.18.2",
+    "typescript": "~5.9.0",
+    "vite": "^7.1.0"
+  }
+}

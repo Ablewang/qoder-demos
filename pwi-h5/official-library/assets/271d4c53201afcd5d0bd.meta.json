@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27590.jpg",
+  "id": "271d4c53201afcd5d0bd",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 强行遁隐<em>（升仙）</em>",
+  "bytes": 1220,
+  "sha256": "462d9b72bc29eab1323228fb1904e2fd2dc2464ad9d483c154eb9fee37710459",
+  "fetchedAt": "2026-11-18T08:36:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27590.jpg",
+  "path": "assets/271d4c53201afcd5d0bd.jpg"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "40f3bad86b46aa2b1b19",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/condrlc.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "3a60265176d060953606"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "49fc3d8ec9011f9bd92612ce60ca2f2894b237c16b3de3a7c18f4c431301879b",
+  "bytes": 2299,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/40f3bad86b46aa2b1b19.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "开启模式要求：\n等级要求：85级以上\n前提任务：无\n模式NPC：神月守门人\n道具要求：收取一个自然精髓\n任务流程：1.在神月守门人处选择开启单人模式；\n2.神月守门人消失，神月天师•水月天出现；\n3.进行单人模式的挑战。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/drmsiframetop.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/1d16d71591a46f4db135.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n            \t</div>\n              <div>\n               <p></p>\n               <p>开启模式要求：</p>\n\t\t<p>等级要求：85级以上</p>\n               <p>前提任务：无</p>\n               <p>模式NPC：神月守门人</p>\n                <p>道具要求：收取一个自然精髓</p>\n                <p></p>\n                <p>任务流程：1.在神月守门人处选择开启单人模式；</p>\n                <p>          2.神月守门人消失，神月天师•水月天出现；</p>\n                <p>          3.进行单人模式的挑战。</p>\n              </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/40f3bad86b46aa2b1b19.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/40f3bad86b46aa2b1b19.js"
+}

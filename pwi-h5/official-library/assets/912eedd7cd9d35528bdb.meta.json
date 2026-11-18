@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/yanhua/linglei/8.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "912eedd7cd9d35528bdb",
+  "status": "ok",
+  "parents": [
+    "3559de13d7460a78afbe"
+  ],
+  "bytes": 5704,
+  "sha256": "87d0ea8e602029c4405760b1d5ed373d09046fe500f1cffdfc8caa388cd17860",
+  "fetchedAt": "2026-11-18T08:19:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/yanhua/linglei/8.jpg",
+  "path": "assets/912eedd7cd9d35528bdb.jpg"
+}

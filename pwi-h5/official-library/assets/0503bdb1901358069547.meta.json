@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1390.jpg",
+  "id": "0503bdb1901358069547",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "alt": "禁咒藤",
+  "bytes": 4738,
+  "sha256": "b1c13f123d2c77c768d1369227d3dd581525ad5cc68c8521f14036d86038d3ef",
+  "fetchedAt": "2026-11-18T08:36:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1390.jpg",
+  "path": "assets/0503bdb1901358069547.jpg"
+}

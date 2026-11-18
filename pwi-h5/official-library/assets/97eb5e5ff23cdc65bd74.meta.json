@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_470.jpg",
+  "id": "97eb5e5ff23cdc65bd74",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·玄冰水龙<em>（升仙）</em>",
+  "bytes": 1692,
+  "sha256": "160e066412bc597a0fa7a0ebec0625a5e4d49b70e819461090d09c4de93ae496",
+  "fetchedAt": "2026-11-18T08:34:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_470.jpg",
+  "path": "assets/97eb5e5ff23cdc65bd74.jpg"
+}

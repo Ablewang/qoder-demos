@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_645.jpg",
+  "id": "5639fa19226ae5172575",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·巨石蛊<em>（入魔）</em>",
+  "bytes": 1641,
+  "sha256": "1681d77f2ab7523c734d62cceb0a35708c927f5c268739799387dba44175068f",
+  "fetchedAt": "2026-11-18T08:35:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_645.jpg",
+  "path": "assets/5639fa19226ae5172575.jpg"
+}

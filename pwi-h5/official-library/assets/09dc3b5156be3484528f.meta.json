@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_903.jpg",
+  "id": "09dc3b5156be3484528f",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "摄魂之力",
+  "bytes": 1590,
+  "sha256": "293413c4af4cb04292dfbea190c6f23ecc3b554b18582f7a6a80e3b6cd8222b0",
+  "fetchedAt": "2026-11-18T08:34:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_903.jpg",
+  "path": "assets/09dc3b5156be3484528f.jpg"
+}

@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="all" />
+<meta charset="utf-8" />
+<meta name="author" content="Design:LiTeng;Web Layout:Gu.LiQiang" />
+<meta name="keywords" content="完美世界,完美世界国际版,2012,最美网游,网络游戏,3D网游,永久免费,剑灵,魅灵,羽灵,羽芒,妖兽,妖精,法师,武侠,刺客,巫师,家园,MMO,RPG,热门,流行,攻城,黄金装备,PK,城战" /> 
+<meta name="description" content="《完美国际》是完美世界倾力打造的最美3D原创网游。新资料片“王朝崛起”延续了“五帝名都”的玄幻故 事背景，首次在3D网游中开辟万人同场作战的跨服战场，推出天敌系统等全新玩法，海量活动奉上最劲爆的 作战体验！" />
+<title>修真2.0  一战成名，畅爽无尽！ -《完美国际》官方网站</title>
+<link type="text/css" href="style/master.css" rel="stylesheet" />
+<link type="text/css" href="style/jquery.jscrollpane.css" rel="stylesheet" />
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wm.js" bottom="false" top="false"></script>
+<script src="http://www.wanmei.com/public/js/swfobject.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/jq_171.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript">
+addVideoPlayer('video1',400,280,{playlist:'http://media101.wanmei.com/media/w2i/130328/tvc.flv',autoPlay:false});
+	
+$(function(){
+
+	function oTab (){
+		$(this).addClass("on").siblings().removeClass("on");
+		//$("."+$(this).attr("id")).show().siblings().hide();
+		var offset = -$(this).index() *880;
+		$('.screen').animate({ top: offset }, {duration: 400, queue: false });
+		return false;
+	}
+	
+	function ieHover(){
+		$(this).addClass("hover").siblings().removeClass("hover");
+	}
+	
+    function autoW(){
+       var mainW = $(window).width()-272;
+	   if(mainW < 730){
+		mainW = 730
+	   }
+	   //console.log(mainW);
+	   //alert(mainW)
+       $(".main").css("width",mainW)
+    }
+	
+	autoW();
+    $(window).scroll(autoW);
+    $(window).resize(autoW);
+	
+	$(".menu em,.nav strong").hover(function(){
+		$(this).addClass("hover").siblings().removeClass("hover");
+	},function(){
+		$(this).removeClass("hover");
+	});
+	
+	//$(".nvw").hover(function(){
+	//	$("#vtit5").show();
+	//},function(){
+	//	$("#vtit5").hide();
+	//});
+	
+	$(".menu em:not('#m5')").click(oTab);
+	
+	$("#navtab strong,.xw_btn em").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		$("."+$(this).attr("id")).stop().fadeIn().siblings().stop().hide();
+		return false;
+	});
+	
+	$("#navscroll strong").click(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		$("."+$(this).attr("id")).show().siblings().hide();
+		$('#jscroll').jScrollPane({showArrows:true,scrollbarWidth:10,horizontalGutter: 10,reinitialiseOnImageLoad:true});
+		return false;
+	});
+	
+	$(".video").hover(function(){
+		$(".v_tit").show();
+	},function(){
+		$(".v_tit").hide();
+	});
+	
+	$("#rightBar").hover(function(){
+		$("#rightBar").animate({ right: 0 }, {duration: 400, queue: false });
+	},function(){
+		$("#rightBar").animate({ right: -20 }, {duration: 400, queue: false });
+	});
+	
+	$('#jscroll').jScrollPane({showArrows:true,scrollbarWidth:10,horizontalGutter: 10,reinitialiseOnImageLoad:true});
+
+});
+</script>
+</head>
+<body>
+<div class="bodybg" id="index_top">
+    <div class="side">
+		<h1 class="wm-public" logo="{name:'w2i',skin:2,top:30,left:30}"><span style="display:none">《完美国际》官方网站</span></h1>
+		<div class="menu">
+			<em id="m0" class="on"><img src="images/none.gif" width="272" height="77" alt="" /></em>
+			<em id="m1"><img src="images/none.gif" width="272" height="77" alt="" /></em>
+			<em id="m2"><img src="images/none.gif" width="272" height="77" alt="" /></em>
+			<em id="m3"><img src="images/none.gif" width="272" height="77" alt="" /><img class="hot" src="images/hot.gif" width="34" height="17" alt="" /></em>
+			<em id="m4"><img src="images/none.gif" width="272" height="77" alt="" /></em>
+			<em id="m5"><a href="http://event21.wanmei.com/w2i/201208/w2idreammassage/index.jsp" target="_blank"><img src="images/none.gif" width="272" height="77" alt="" /></a></em>
+		</div>
+		<div class="btns">
+			<a id="btn1" href="http://w2i.wanmei.com/main.htm" target="_blank"><img src="images/none.gif" width="110" height="70" alt="" /></a>
+			<a id="btn2" href="http://w2i.wanmei.com/download/down_client.htm" target="_blank"><img src="images/none.gif" width="110" height="70" alt="" /></a>
+		</div>
+	</div>
+    <div class="main">
+		<div class="screen">
+			<div class="item" id="item1">
+				<div class="con">
+					<div class="text" id="text1">
+						修真2.0是动态的修真世界，在这里你将不再被等级束缚。世界由你主导，武器、战宠、甚至世界版图，都将因你而变。
+					</div>
+					<div class="video">
+						<div id="video1">
+							
+						</div>
+					</div>
+					<img class="v_tit" src="images/none.gif" width="178" height="44" alt="" />
+				</div>
+			</div>
+			<div class="item" id="item2">
+				<div class="con">
+					<div class="nav" id="navtab">
+						<strong id="nav3" class="on">灵脉系统</strong>
+						<strong id="nav4">神兵幻化</strong>
+						<strong id="nav5">灵兽养成</strong>
+					</div>
+					<!-- <img id="vtit4" src="images/none.gif" width="33" height="34" alt="" /> -->
+					<div class="navc2">
+						
+						<div class="nav3">
+							<div class="text" id="text2">结合传统文化穴位理论，打造全新“灵脉系统”玩法，不断突破身体四重境界，获得属性全面增强，提升自身整体实力，让你体验现代冲穴玩法的乐趣。</div>
+							<img src="images/tab1.jpg" alt="" />
+							<div class="xuewei">
+								<div class="xw1"><img src="images/xw01.jpg" alt="" /></div>
+								<div class="xw2"><img src="images/xw02.jpg" alt="" /></div>
+								<div class="xw3"><img src="images/xw03.jpg" alt="" /></div>
+								<div class="xw4"><img src="images/xw04.jpg" alt="" /></div>
+								<div class="xw5"><img src="images/xw05.jpg" alt="" /></div>
+							</div>
+							<div class="xw_btn">
+								<em id="xw1" class="on">炼精化气</em>
+								<em id="xw2">炼气化神</em>
+								<em id="xw3">炼神还虚</em>
+								<em id="xw4">炼虚合道</em>
+								<em id="xw5">道法自然</em>
+							</div>
+						</div>
+						<div class="nav4">
+							<div class="text" id="text03">全新时装武器华丽登场，神兵利器外观幻化，融入现代时尚元素，张扬个性战斗。</div>
+							<img src="images/tab3.jpg" alt="" />
+						</div>
+						<div class="nav5">
+							<div class="text" id="text04">战宠由妖精自由养成，继承属性数值，数百种性格、技能任意搭配，造就独一无二的存在。 “悟空”、“鲲鹏”两大全新战宠加盟，如虎添翼，一代大神终于归来。</div>
+							<img src="images/tab2.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item" id="item3">
+				<div class="con">
+					<div class="text" id="text3">      跨区争霸，狭路相逢，万人同场比拼，你将在不断的挑战中得到修行。同时国战系统增加两大全新战场，融入刺激的推塔玩法和资源抢夺玩法，国战系统更加丰富多元，团队考验将再度升级。</div>
+					<div class="nav" id="navscroll">
+						<strong id="nav1" class="on">九霄仙道</strong>
+						<strong id="nav2">燃烧峡谷</strong>
+					</div>
+					<div class="navc">
+						<div class="jscroll" id="jscroll">
+							<div class="nav1">
+								<h2><img src="images/tit1.png" alt="" /></h2>
+								<a class="imgbg"><img src="images/pic.jpg" alt="" /></a>
+								<p class="clear">
+									<br />
+									1）红圈和蓝圈，分别代表攻守方三个防御塔的刷新点。<br />
+									2）每个点，同一时间只有一个塔存在。当前防御塔被摧毁，刷新下一个。<br />
+									3）每个点可刷新2次。（每点3个塔，共九个）。<br />
+									4）每击毁敌方一座塔，本方得一分。率先击毁对方9座塔的队伍获得胜利。<br />
+									5）战斗最多持续25分钟。比分领先者获得胜利。同分守方胜。<br /><br />
+								</p>
+							</div>
+							<div class="nav2">
+								<h2><img src="images/tit2.png" alt="" /></h2>
+								<a class="imgbg"><img src="images/pic2.jpg" alt="" /></a>
+								<p class="clear">
+									<br />
+									如图所示：<br />
+									1）红点为攻方出生点。<br />
+									2）蓝点为守方出生点。<br />
+									3）绿点为争夺的点。
+								</p>
+								<h3 class="clear"><br /><img src="images/tit01.png" alt="" /></h3>
+								<p class="clear">
+									水晶初始为中立状态<br />
+									1）水晶有5种状态 <br />
+									Ø 完全中立：无人开启的话就一直处于中立。无积分获得。<br />
+									Ø 攻方占有：此状态下每隔10秒攻方获得1的比分增加。<br />
+									Ø 守方占有：此状态下每隔10秒守方获得1的比分增加。<br />
+									Ø 中立偏守方：此状态下，无人开启。30秒后旗帜状态变为：守方拥有。<br />
+									Ø 中立偏攻方：此状态下，无人开启。30秒后旗帜状态变为：攻方拥有。<br />
+									每占领一座水晶，每过10秒可获得1点比分。<br />
+								</p>
+								<h3 class="clear"><br /><img src="images/tit02.png" alt="" /></h3>
+								<p class="clear">
+									1）25分钟内，率先获得99分的阵营获胜。<br />
+									2）25分钟时，比分领先的队伍获胜。<br />
+									加速获取分数<br />
+									当5个水晶都被同一阵营完全占有时，每隔10秒单个旗帜获得的战场比分增多：3分（正常位1分）。<br />
+								</p>
+								<h3 class="clear"><br /><img src="images/tit03.png" alt="" /></h3>
+								<p class="clear">
+									1）周边四块资源点处于占有时，所有者阵营在资源点附近一定区域内死亡，可在资源点所属的复活点复活。中心资源点无复活点，中心区域死亡直接回出生点复活。<br />
+									2）只要未能在资源点附近复活，则在出生点复活。<br />
+									3）复活点和资源点不是一个点。（复活点位于，交战旗帜显示的位置。）<br /><br />
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item" id="item4">
+				<div class="con">
+					<div class="text" id="text4">					全新“灵元传承”玩法，只修真不练级！只要在现有游戏大区中，等级不低于四十级，完成“和合”修真，就会享有灵元传承的能力，并且在全新【传承】服务器开放之后，可以得到一个高等级游戏账号直接入驻，免去练级的漫漫长路。</div>
+					<div class="pics">
+						<a id="pic1"><img src="images/none.gif" width="203" height="241" alt="" /></a>
+						<a id="pic2"><img src="images/none.gif" width="203" height="241" alt="" /></a>
+						<a id="pic3"><img src="images/none.gif" width="203" height="241" alt="" /></a>
+					</div>
+					<img id="vtit2" src="images/vtit2.png" alt="" />
+				</div>
+			</div>
+			<div class="item" id="item5">
+				<div class="con">
+					<div class="text" id="text5">世界版图、城市建筑和NPC人物，都会因你的不同选择而发生变动。青帝使节造访仅仅是个开始，继青帝龙船降临完美世界后，大陆还将发生更大的变化，一切都由你来造就。</div>
+					<img class="text6" src="images/text.png" alt="" />
+					<a class="more" href="http://event51.wanmei.com/w2i/201303/through/index.htm" target="_blank"><img src="images/more.png" alt="" /></a>
+					<img class="nvw" src="images/none.gif" alt="" />
+					<img id="vtit5" src="images/none.gif" alt="" />
+				</div>
+			</div>
+		</div>
+    </div>
+    <!--<div id="rightBar"></div>-->
+</div>
+<div style="display:none" class="wm-public" analytics="{single:'w2i201303through1670'}"></div>
+<script type="text/javascript">
+//<![CDATA[
+var hf = window.location.href;
+	var indexOn = hf.substring(hf.lastIndexOf('=')+1,hf.length); //参数
+	function showTab(indexOn){
+		$("#"+indexOn).addClass("on").siblings().removeClass("on");
+		var index = indexOn.substring(indexOn.length-1,indexOn.length); //索引值
+		//alert(index)
+		if(index == "m"){index = 0}
+		//alert(index)
+		var offset = -parseInt(index) *880;
+		//alert(index)
+		$('.screen').animate({ top: offset }, {duration: 400, queue: false });
+		return false;
+	}
+(function(){
+	window.load = showTab(indexOn);
+})()
+//]]
+</script>
+</body>
+</html>

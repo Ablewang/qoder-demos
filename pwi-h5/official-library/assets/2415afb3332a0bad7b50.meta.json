@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27687.jpg",
+  "id": "2415afb3332a0bad7b50",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 断喉斩<em>（入魔）</em> ",
+  "bytes": 1338,
+  "sha256": "2dae44b3e28775750755df953585b53b810e7ae2ed8972ef21ddd0dcf1addccb",
+  "fetchedAt": "2026-11-18T08:36:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27687.jpg",
+  "path": "assets/2415afb3332a0bad7b50.jpg"
+}

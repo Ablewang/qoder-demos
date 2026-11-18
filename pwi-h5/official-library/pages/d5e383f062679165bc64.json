@@ -1,0 +1,411 @@
+{
+  "id": "d5e383f062679165bc64",
+  "url": "https://w2i.wanmei.com/event/200809/xld/detail_02.htm",
+  "title": "修罗道-《完美国际》官方网站",
+  "category": "系统介绍",
+  "section": "系统活动",
+  "depth": 1,
+  "parents": [
+    "808eef118f1364f8f88f",
+    "09196aa36fa6c0bb2721"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "85d69eaeff4ad5ee22fb7fec4956fbe6b90247968e803066127ed685c19689e1",
+  "bytes": 5335,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d5e383f062679165bc64.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "“阿修罗”这种神道非常特别，男的极丑陋，而女的极美丽。阿修罗王常常率部和帝释战斗，因为阿修罗有美女而无美好食物，帝释有美食而无美女，互相妒忌抢夺，每有恶战，总是打得天翻地覆。“修罗场”，就是由此而来。\n修罗毕生以战斗为目标，修罗场便是他们之间的战场。\n每晚8点，落日高原上的绯色祭坛会打开通往“绯色试炼场”（修罗场）的大门，但是入口只维持10分钟，只有每晚的8点-8点10分，玩家才能进入这块神奇的领域。此大门开启的时间之内，玩家可以在绯色祭坛的“绯色使徒”处选择单人或组队进入。\n玩家进入后便会得到，这是一件橙色神器，等级越低的玩家，得到的“天道补缺锦囊”属性越好，用以弥补等级的差距，一定要记得将这件天赐的神器装备起来。不过由于此装备只属于“绯色试炼场”，所以玩家在离开“绯色试炼场”或者下线后，装备会自动消失。\n各等级阶段的天道补缺锦囊\n等级\nHP提升\n攻击等级提升\n防御等级提升\n50-54\n90%\n90\n9\n55-59\n85%\n80\n8\n60-64\n80%\n70\n7\n65-69\n75%\n60\n6\n70-74\n65%\n50\n5\n75-79\n55%\n40\n4\n80-84\n45%\n30\n3\n85-89\n30%\n20\n2\n90-94\n15%\n10\n1\n场内有一些蕴含神秘力量的光球在快速飘动，吃到光球的玩家会短时间获得强大的力量。同时，场地内会随机出现一些凝血结晶，从中可以获得“冥晶”，使用后，随机获得一些强力辅助法术加持。这些神秘的宝物都将会对你的战斗过程产生影响。\n光球随机效果\n冥晶随机效果\n15米,行动免疫,10秒\n物攻500%,40秒\n物攻法攻+500%,20秒\n法攻500%,40秒\n血上限+100%,15秒\n15米,行动免疫,20秒\n30%暴击,30%减唱,10秒\n100%生命上限,30秒\n元气全满\n30%暴击,20秒\n30%减唱,20秒\n元气全满",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "各等级阶段的天道补缺锦囊",
+            "rowspan": "1",
+            "colspan": "4"
+          }
+        ],
+        [
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "HP提升",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级提升",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防御等级提升",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "50-54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "90%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "90",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55-59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "85%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "60-64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65-69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "70-74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "75-79",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "55%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "80-84",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "85-89",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "90-94",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "光球随机效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冥晶随机效果",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "15米,行动免疫,10秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物攻500%,40秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物攻法攻+500%,20秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法攻500%,40秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "血上限+100%,15秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15米,行动免疫,20秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "30%暴击,30%减唱,10秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100%生命上限,30秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "元气全满",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30%暴击,20秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30%减唱,20秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元气全满",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/iframe_header.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/detail_left.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/pic_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/title_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/title_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/title_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/detail_right.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/detail_con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n\r\n<div>\r\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200809/xld/iframe_header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200809/xld/iframe_header.htm</a></p>\r\n</div>\r\n\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<div><img src=\"assets/2e13bf107703efb2f6b9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n\t\t\r\n\t\t\r\n\t\t<div>\r\n\t\t\t<p>　　“阿修罗”这种神道非常特别，男的极丑陋，而女的极美丽。阿修罗王常常率部和帝释战斗，因为阿修罗有美女而无美好食物，帝释有美食而无美女，互相妒忌抢夺，每有恶战，总是打得天翻地覆。“修罗场”，就是由此而来。</p>\r\n\t\t\t<br>\r\n\t\t\t<p><img src=\"assets/82f1ac0cd142c002ad10.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><br><span>修罗毕生以战斗为目标，修罗场便是他们之间的战场。</span></p>\r\n\t\t\t<br>\r\n\t\t\t<span><img src=\"assets/e917c7543104cdea27d9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></span>\r\n\t\t\t<br>\r\n\t\t\t<p>　　每晚8点，落日高原上的绯色祭坛会打开通往“绯色试炼场”（修罗场）的大门，但是入口只维持10分钟，只有每晚的8点-8点10分，玩家才能进入这块神奇的领域。此大门开启的时间之内，玩家可以在绯色祭坛的“绯色使徒”处选择单人或组队进入。</p>\r\n\t\t\t<br>\r\n\t\t\t<span><img src=\"assets/7218ac1440cfa612761f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></span>\r\n\t\t\t<br>\r\n\t\t\t<p>　　玩家进入后便会得到，这是一件橙色神器，等级越低的玩家，得到的“天道补缺锦囊”属性越好，用以弥补等级的差距，一定要记得将这件天赐的神器装备起来。不过由于此装备只属于“绯色试炼场”，所以玩家在离开“绯色试炼场”或者下线后，装备会自动消失。\t\t\t</p><br>\r\n\t\t\t<table>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td colspan=\"4\"><b>各等级阶段的天道补缺锦囊</b></td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>等级</td>\r\n\t\t\t\t    <td>HP提升</td>\r\n\t\t\t\t    <td>攻击等级提升</td>\r\n\t\t\t\t    <td>防御等级提升</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>50-54</td>\r\n\t\t\t\t    <td>90%</td>\r\n\t\t\t\t    <td>90</td>\r\n\t\t\t\t    <td>9</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>55-59</td>\r\n\t\t\t\t    <td>85%</td>\r\n\t\t\t\t    <td>80</td>\r\n\t\t\t\t    <td>8</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>60-64</td>\r\n\t\t\t\t    <td>80%</td>\r\n\t\t\t\t    <td>70</td>\r\n\t\t\t\t    <td>7</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>65-69</td>\r\n\t\t\t\t    <td>75%</td>\r\n\t\t\t\t    <td>60</td>\r\n\t\t\t\t    <td>6</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>70-74</td>\r\n\t\t\t\t    <td>65%</td>\r\n\t\t\t\t    <td>50</td>\r\n\t\t\t\t    <td>5</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>75-79</td>\r\n\t\t\t\t    <td>55%</td>\r\n\t\t\t\t    <td>40</td>\r\n\t\t\t\t    <td>4</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>80-84</td>\r\n\t\t\t\t    <td>45%</td>\r\n\t\t\t\t    <td>30</td>\r\n\t\t\t\t    <td>3</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>85-89</td>\r\n\t\t\t\t    <td>30%</td>\r\n\t\t\t\t    <td>20</td>\r\n\t\t\t\t    <td>2</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>90-94</td>\r\n\t\t\t\t    <td>15%</td>\r\n\t\t\t\t    <td>10</td>\r\n\t\t\t\t    <td>1</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t</table>\r\n\t\t\t<br>\r\n\t\t\t<span><img src=\"assets/eb9b7a86eae843fb98ab.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></span>\r\n\t\t\t<br>\r\n\t\t\t<p>　　场内有一些蕴含神秘力量的光球在快速飘动，吃到光球的玩家会短时间获得强大的力量。同时，场地内会随机出现一些凝血结晶，从中可以获得“冥晶”，使用后，随机获得一些强力辅助法术加持。这些神秘的宝物都将会对你的战斗过程产生影响。</p>\t\t\r\n\t\t\t<br>\r\n\t\t\t<table>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>光球随机效果</td>\r\n\t\t\t\t    <td>冥晶随机效果</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>15米,行动免疫,10秒</td>\r\n\t\t\t\t    <td>物攻500%,40秒</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>物攻法攻+500%,20秒</td>\r\n\t\t\t\t    <td>法攻500%,40秒</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>血上限+100%,15秒</td>\r\n\t\t\t\t    <td>15米,行动免疫,20秒</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>30%暴击,30%减唱,10秒</td>\r\n\t\t\t\t    <td>100%生命上限,30秒</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>元气全满</td>\r\n\t\t\t\t    <td>30%暴击,20秒</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td> </td>\r\n\t\t\t\t    <td>30%减唱,20秒</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td> </td>\r\n\t\t\t\t    <td>元气全满</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\t\t\r\n\t\t\r\n\t\t<div><img src=\"assets/969c168de0ce473a12b3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n\t</div>\r\n\t<div><img src=\"assets/22464cc9f47ed4e7a20d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n</div>\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n\r\n",
+  "dataPath": "pages/d5e383f062679165bc64.json",
+  "imageCount": 7,
+  "tableCount": 2,
+  "downloadPath": "downloads/d5e383f062679165bc64.js"
+}

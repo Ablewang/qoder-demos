@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131127/10021385516693603.jpg",
+  "alt": "图片: 图3：天竺风情女士套装（柠檬黄色）.jpg",
+  "kind": "img",
+  "id": "71e8548738af3ef1b9d1",
+  "status": "ok",
+  "parents": [
+    "9b4d46b3150ffdf0da0a"
+  ],
+  "bytes": 44327,
+  "sha256": "a3bacca65922fa3c3ca5e55a2a5b51eab6be5a236932639b07c3adcac2c5f396",
+  "fetchedAt": "2026-11-18T08:23:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131127/10021385516693603.jpg",
+  "path": "assets/71e8548738af3ef1b9d1.jpg"
+}

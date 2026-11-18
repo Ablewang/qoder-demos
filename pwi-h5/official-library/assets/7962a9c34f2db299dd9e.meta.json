@@ -1,0 +1,17 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/images/1.jpg",
+  "id": "7962a9c34f2db299dd9e",
+  "status": "failed",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:38:54+00:00"
+}

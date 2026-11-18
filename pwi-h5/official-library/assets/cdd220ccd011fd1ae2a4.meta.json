@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131127/10021385516696287.jpg",
+  "alt": "图片: 图5：天竺风情男士套装（白色）.jpg",
+  "kind": "img",
+  "id": "cdd220ccd011fd1ae2a4",
+  "status": "ok",
+  "parents": [
+    "9b4d46b3150ffdf0da0a"
+  ],
+  "bytes": 47673,
+  "sha256": "abd4310f3c499a73005531c5003b6632f3b452df2fd2fdc9cb1ac6cbca58860e",
+  "fetchedAt": "2026-11-18T08:23:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131127/10021385516696287.jpg",
+  "path": "assets/cdd220ccd011fd1ae2a4.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_402.jpg",
+  "id": "c76821869f07c7f8c894",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·流星赶月<em>（升仙）</em>",
+  "bytes": 1732,
+  "sha256": "2731951a8cd5ce97c3ee840b11773c506b96bc1032ae554f5a01f673eabfbf99",
+  "fetchedAt": "2026-11-18T08:34:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_402.jpg",
+  "path": "assets/c76821869f07c7f8c894.jpg"
+}

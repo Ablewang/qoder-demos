@@ -1,0 +1,712 @@
+{
+  "id": "72e2d173036a121c42f5",
+  "url": "https://w2i.wanmei.com/intro/guide/20091015/29999.shtml",
+  "title": "卷轴任务",
+  "category": "进阶资料",
+  "section": "任务指南",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "275ae77c18cb320bd089f18f8619905f8b942078cba3b154146d7eb5a2d9e271",
+  "bytes": 70635,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/72e2d173036a121c42f5.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "在完美国际大陆上有很多奇遇和珍宝能给修行之人带来功力上的提升，我们把这些奇珍异宝的资料提供给玩家，希望玩家不要错过这些奇缘。\n物品名称\n等级要求\nNPC相关\n任务奖励\n发任务地点/NPC\n收任务地点/NPC\n金钱\n经验\nSP\n卷轴之一\n20\n使用物品激活任务\n祖龙城/清凉寨主\n900\n1500\n330\n卷轴之二\n25\n使用物品激活任务\n祖龙城/船夫\n1100\n1800\n410\n卷轴之三\n30\n使用物品激活任务\n幽兰村/徐霞客\n1300\n2200\n500\n卷轴之四\n35\n使用物品激活任务\n渔村/多宝胡僧\n1500\n2600\n580\n卷轴之五\n40\n使用物品激活任务\n疾风部落/疾风部落长老\n1800\n3000\n660\n卷轴之六\n45\n使用物品激活任务\n落日镇/铁匠杨铁心\n2000\n3300\n750\n卷轴之七\n50\n使用物品激活任务\n禹王鼎/盗贼阿星\n2200\n3700\n830\n卷轴之八\n55\n使用物品激活任务\n獠牙镇/獠牙镇祭司\n2400\n4100\n910\n卷轴之九\n60\n使用物品激活任务\n云梦村/万里独行\n2700\n4500\n1000\n卷轴之十\n65\n使用物品激活任务\n砥石寨/霍桑\n2900\n4800\n1000\n卷轴之十一\n70\n使用物品激活任务\n桃源镇/秋凝霜\n3100\n5200\n1100\n卷轴之十二\n75\n使用物品激活任务\n无为村/天海\n3300\n5600\n1200\n卷轴之十三\n80\n使用物品激活任务\n胡姬村/向野\n3600\n6000\n1300\n卷轴之十四\n85\n使用物品激活任务\n东屏镇/茗羚\n3800\n6300\n1400\n卷轴之十五\n90\n使用物品激活任务\n魔界贪狼村/荆无命\n4000\n6700\n1500\n卷轴之十六\n95\n使用物品激活任务\n仙界听月回廊/费空行\n4200\n7100\n1500\n卷轴之十七\n100\n使用物品激活任务\n魔界圣魔宫/无双匠\n4500\n7500\n1600",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC相关",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "任务奖励",
+            "rowspan": "1",
+            "colspan": "3"
+          }
+        ],
+        [
+          {
+            "text": "发任务地点/NPC",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "收任务地点/NPC",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金钱",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "经验",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "SP",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之一",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祖龙城/清凉寨主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "900",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "330",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之二",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祖龙城/船夫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "410",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之三",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幽兰村/徐霞客",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1300",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "500",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之四",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "35",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渔村/多宝胡僧",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "580",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之五",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "疾风部落/疾风部落长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "660",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之六",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "落日镇/铁匠杨铁心",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3300",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "750",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之七",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "禹王鼎/盗贼阿星",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3700",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "830",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之八",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "55",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "獠牙镇/獠牙镇祭司",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2400",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "910",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之九",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "云梦村/万里独行",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2700",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "砥石寨/霍桑",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2900",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十一",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "桃源镇/秋凝霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1100",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十二",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无为村/天海",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3300",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1200",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十三",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "胡姬村/向野",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1300",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十四",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "东屏镇/茗羚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6300",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1400",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十五",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "90",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔界贪狼村/荆无命",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6700",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十六",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "仙界听月回廊/费空行",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卷轴之十七",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用物品激活任务",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔界圣魔宫/无双匠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1600",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　在完美国际大陆上有很多奇遇和珍宝能给修行之人带来功力上的提升，我们把这些奇珍异宝的资料提供给玩家，希望玩家不要错过这些奇缘。</p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td rowspan=\"2\"><strong>物品名称</strong></td>\r\n            <td rowspan=\"2\"><strong>等级要求</strong></td>\r\n            <td colspan=\"2\"><strong>NPC相关</strong></td>\r\n            <td colspan=\"3\"><strong>任务奖励</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>发任务地点/NPC</strong></td>\r\n            <td><strong>收任务地点/NPC</strong></td>\r\n            <td><strong>金钱</strong></td>\r\n            <td><strong>经验</strong></td>\r\n            <td><strong>SP</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之一</td>\r\n            <td>20</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>祖龙城/清凉寨主</td>\r\n            <td>900</td>\r\n            <td>1500</td>\r\n            <td>330</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之二</td>\r\n            <td>25</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>祖龙城/船夫</td>\r\n            <td>1100</td>\r\n            <td>1800</td>\r\n            <td>410</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之三</td>\r\n            <td>30</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>幽兰村/徐霞客</td>\r\n            <td>1300</td>\r\n            <td>2200</td>\r\n            <td>500</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之四</td>\r\n            <td>35</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>渔村/多宝胡僧</td>\r\n            <td>1500</td>\r\n            <td>2600</td>\r\n            <td>580</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之五</td>\r\n            <td>40</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>疾风部落/疾风部落长老</td>\r\n            <td>1800</td>\r\n            <td>3000</td>\r\n            <td>660</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之六</td>\r\n            <td>45</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>落日镇/铁匠杨铁心</td>\r\n            <td>2000</td>\r\n            <td>3300</td>\r\n            <td>750</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之七</td>\r\n            <td>50</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>禹王鼎/盗贼阿星</td>\r\n            <td>2200</td>\r\n            <td>3700</td>\r\n            <td>830</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之八</td>\r\n            <td>55</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>獠牙镇/獠牙镇祭司</td>\r\n            <td>2400</td>\r\n            <td>4100</td>\r\n            <td>910</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之九</td>\r\n            <td>60</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>云梦村/万里独行</td>\r\n            <td>2700</td>\r\n            <td>4500</td>\r\n            <td>1000</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十</td>\r\n            <td>65</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>砥石寨/霍桑</td>\r\n            <td>2900</td>\r\n            <td>4800</td>\r\n            <td>1000</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十一</td>\r\n            <td>70</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>桃源镇/秋凝霜</td>\r\n            <td>3100</td>\r\n            <td>5200</td>\r\n            <td>1100</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十二</td>\r\n            <td>75</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>无为村/天海</td>\r\n            <td>3300</td>\r\n            <td>5600</td>\r\n            <td>1200</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十三</td>\r\n            <td>80</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>胡姬村/向野</td>\r\n            <td>3600</td>\r\n            <td>6000</td>\r\n            <td>1300</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十四</td>\r\n            <td>85</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>东屏镇/茗羚</td>\r\n            <td>3800</td>\r\n            <td>6300</td>\r\n            <td>1400</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十五</td>\r\n            <td>90</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>魔界贪狼村/荆无命</td>\r\n            <td>4000</td>\r\n            <td>6700</td>\r\n            <td>1500</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十六</td>\r\n            <td>95</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>仙界听月回廊/费空行</td>\r\n            <td>4200</td>\r\n            <td>7100</td>\r\n            <td>1500</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卷轴之十七</td>\r\n            <td>100</td>\r\n            <td>使用物品激活任务</td>\r\n            <td>魔界圣魔宫/无双匠</td>\r\n            <td>4500</td>\r\n            <td>7500</td>\r\n            <td>1600</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/72e2d173036a121c42f5.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/72e2d173036a121c42f5.js"
+}

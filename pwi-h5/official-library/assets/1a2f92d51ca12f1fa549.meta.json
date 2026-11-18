@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_408.jpg",
+  "id": "1a2f92d51ca12f1fa549",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·断岳扫<em>（升仙）</em>",
+  "bytes": 1638,
+  "sha256": "7c59fe1eba18ee2eb245f7ffb361e703f6874d4a28bb8be2d4b3b7baeccd69e3",
+  "fetchedAt": "2026-11-18T08:34:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_408.jpg",
+  "path": "assets/1a2f92d51ca12f1fa549.jpg"
+}

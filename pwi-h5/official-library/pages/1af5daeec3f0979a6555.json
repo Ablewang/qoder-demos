@@ -1,0 +1,89 @@
+{
+  "id": "1af5daeec3f0979a6555",
+  "url": "https://event51.wanmei.com/w2i/200905/elf/index2.htm",
+  "title": "元素精灵天赋模拟器 -《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 2,
+  "parents": [
+    "4a15b380937880177c54"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/elf/index2.htm",
+  "fetchedAt": "2026-11-18T08:15:53+00:00",
+  "sha256": "1fa4602da192154109b6177e42a8af5fe2237da3e43d3e4bc69fa7f99452c4c5",
+  "bytes": 9209,
+  "rawPath": "raw/1af5daeec3f0979a6555.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "当前天赋模拟器配点与技能需求元素点一致\n技能名称：血仇\n需求元素点：\n木5土4\n施放距离：20米\n施放时间：瞬发\n施放间隔：1秒\n职业限制：无\n使用范围：无\n技能加点：敏捷：每增加20点敏捷，施法速度降低的效果增加1%。敏捷：每增加20点，效果持续时间增加1秒。\n技能描述：每一个精灵都会的基础技能，利用五行的原力为自己止血，有53%的几率解除自身当前的流血状态。\n技能等级：1\n精灵学习等级：40 学习时消耗元神：\nXXXXX\n施放时消耗能量：\nXXXXX\n施放时消耗体力：\nXXXXX\n技能名称：平衡\n需求元素点：金4+火5\n点击图标可在左侧查看技能详细信息。\n技能名称：血仇\n需求元素点：木5 土4\n点击图标可在左侧查看技能详细信息。\n技能名称：法师之星\n需求元素点：水3 火3 土3\n点击图标可在左侧查看技能详细信息。\n技能名称：倍返\n需求元素点：木5 水3 火1\n点击图标可在左侧查看技能详细信息。\n技能名称：水火符\n需求元素点：水5 火5\n点击图标可在左侧查看技能详细信息。\n技能名称：潜能激发\n需求元素点：火5 土5\n点击图标可在左侧查看技能详细信息。\n技能名称：虚弱咒\n需求元素点：金5 水5\n点击图标可在左侧查看技能详细信息。\n技能名称：放逐\n需求元素点：金5 水6\n点击图标可在左侧查看技能详细信息。\n技能名称：寒冰领域\n需求元素点：水6 土5\n点击图标可在左侧查看技能详细信息。\n技能名称：破魔咒\n需求元素点：木6 火5\n点击图标可在左侧查看技能详细信息。\n技能名称：凤舞\n需求元素点：木4 水4 火4\n点击图标可在左侧查看技能详细信息。\n技能名称：绝对领域\n需求元素点：金4 土4 水4\n点击图标可在左侧查看技能详细信息。\n技能名称：灵气爆发\n需求元素点：金7 土7\n点击图标可在左侧查看技能详细信息。\n技能名称：荆棘之怒\n需求元素点：金6 土7\n点击图标可在左侧查看技能详细信息。\n技能名称：升龙气\n需求元素点：水6 火7\n点击图标可在左侧查看技能详细信息。\n技能名称：炎闪\n需求元素点：火6 土7\n点击图标可在左侧查看技能详细信息。\n技能名称：元气盗窃\n需求元素点：水7 土7\n点击图标可在左侧查看技能详细信息。\n技能名称：信念\n需求元素点：木7 火7\n点击图标可在左侧查看技能详细信息。\n技能名称：冰暴\n需求元素点：木7 火7\n点击图标可在左侧查看技能详细信息。\n技能名称：乱魂咒\n需求元素点：金7 木7\n点击图标可在左侧查看技能详细信息。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/iframe/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/index.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/flash/flash.swf",
+      "alt": "",
+      "kind": "embed"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/images/skill1_1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/images/btn1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/images/btn2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/images/main_top2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/style/css.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/js/AC_RunActiveContent.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/js/ysjl.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/elf/js/talent.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n<div>\r\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200905/elf/iframe/header.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200905/elf/iframe/header.htm</a></p>\r\n</div>\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<div>\r\n\t\t\t\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t<div>\r\n\t\t\t<h1>当前天赋模拟器配点与技能需求元素点一致</h1>\r\n\t\t\t<h2><img src=\"assets/4d3089d3df40d618486b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></h2>\r\n\t\t\t<p>\r\n\t\t\t\r\n\t\t\t<strong>技能名称：</strong>血仇<br>\r\n\t\t\t<strong>需求元素点：</strong><br>\r\n\t\t\t木5土4<br>\r\n\t\t\t<strong>施放距离：</strong>20米<br>\r\n\t\t\t<strong>施放时间：</strong>瞬发<br>\r\n\t\t\t<strong>施放间隔：</strong>1秒<br>\r\n\t\t\t<strong>职业限制：</strong>无<br>\r\n\t\t\t<strong>使用范围：</strong>无<br>\r\n\t\t\t<strong>技能加点：</strong>敏捷：每增加20点敏捷，施法速度降低的效果增加1%。敏捷：每增加20点，效果持续时间增加1秒。 <br>\r\n\t\t\t<strong>技能描述：</strong>每一个精灵都会的基础技能，利用五行的原力为自己止血，有53%的几率解除自身当前的流血状态。\r\n\t\t\t</p>\r\n\t\t\t<div>\r\n\t\t\t\t<div><img src=\"assets/a6d9f4bf37d0799bab76.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><img src=\"assets/45b06c52d58c80353c09.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t技能等级：1<br>\r\n\t\t\t\t\t精灵学习等级：40 学习时消耗元神：<br>\r\n\t\t\t\t\tXXXXX<br>\r\n\t\t\t\t\t施放时消耗能量：<br>\r\n\t\t\t\t\tXXXXX<br>\r\n\t\t\t\t\t施放时消耗体力：<br>\r\n\t\t\t\t\tXXXXX\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<div>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<img src=\"assets/12d23db1666d15e67fc0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<div>\r\n\t\t\t<ol>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li></li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li></li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li></li>\r\n\t\t\t\t<li>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</li>\r\n\t\t\t</ol>\r\n\t\t\t<p><strong>技能名称：</strong>平衡<br><strong>需求元素点：</strong>金4+火5<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>血仇<br><strong>需求元素点：</strong>木5 土4<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>法师之星<br><strong>需求元素点：</strong>水3 火3 土3<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>倍返<br><strong>需求元素点：</strong>木5 水3 火1<br>点击图标可在左侧查看技能详细信息。</p>\r\n\r\n\t\t\t<p><strong>技能名称：</strong>水火符<br><strong>需求元素点：</strong>水5 火5<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>潜能激发<br><strong>需求元素点：</strong>火5 土5<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>虚弱咒<br><strong>需求元素点：</strong>金5 水5<br>点击图标可在左侧查看技能详细信息。</p>\r\n\r\n\t\t\t<p><strong>技能名称：</strong>放逐<br><strong>需求元素点：</strong>金5 水6<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>寒冰领域<br><strong>需求元素点：</strong>水6 土5<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>破魔咒<br><strong>需求元素点：</strong>木6 火5<br>点击图标可在左侧查看技能详细信息。</p>\r\n\r\n\t\t\t<p><strong>技能名称：</strong>凤舞<br><strong>需求元素点：</strong>木4 水4 火4<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>绝对领域<br><strong>需求元素点：</strong>金4 土4 水4<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>灵气爆发<br><strong>需求元素点：</strong>金7 土7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\r\n\t\t\t<p><strong>技能名称：</strong>荆棘之怒<br><strong>需求元素点：</strong>金6 土7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>升龙气<br><strong>需求元素点：</strong>水6 火7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>炎闪<br><strong>需求元素点：</strong>火6 土7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\r\n\t\t\t<p><strong>技能名称：</strong>元气盗窃<br><strong>需求元素点：</strong>水7 土7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>信念<br><strong>需求元素点：</strong>木7 火7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>冰暴<br><strong>需求元素点：</strong>木7 火7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t\t<p><strong>技能名称：</strong>乱魂咒<br><strong>需求元素点：</strong>金7 木7<br>点击图标可在左侧查看技能详细信息。</p>\r\n\t\t</div>\r\n\t</div>\r\n\t<div></div>\r\n</div>\r\n\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n",
+  "dataPath": "pages/1af5daeec3f0979a6555.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/1af5daeec3f0979a6555.js"
+}

@@ -1,0 +1,978 @@
+{
+  "id": "fd2b30facce6ba69fa94",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+  "title": "NPC查找 - 羽族新手村周边",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "4aa07f19e4d0c7704f2a8b54b7ac7cae9cd782d386bdffb50d4a9e4ea41e9c7e",
+  "bytes": 73897,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/fd2b30facce6ba69fa94.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n落缨村守卫羽露\n370.458\n守卫羽珠\n366.459\n接引者残翼\n369.461\n焦急的村民\n372.427\n守卫翼飞天\n348.413\n织女刘羽佳\n372.352\n裁缝孟如君\n372.352\n彩翼\n373.352\n货郎王旋\n372.351\n钱庄掌柜钱灵锡\n370.351\n羽灵大师羽千刃\n372.349\n羽芒大师翔万里\n373.348\n药师莫言儒\n370.348\n秋月\n369.349\n钱庄掌柜钱延通\n212.307\n南柯寨镇长\n210.309\n翔芸\n206.311\n铁匠王大漭\n207.318\n传送师柯一飞\n204.323\n货郎王薄\n205.325\n店主\n201.328\n药师王一帖\n211.326\n钱庄掌柜曾广为\n215.417\n药师姚士贤\n223.408\n守卫骆翎秋\n348.412\n积羽湖船厂老板\n341.372\n倚竹村村长\n370.352\n合成大师常鹰\n368.352\n仙石收集商吕之安\n368.351\n巧匠王云翔\n370.352\n铁匠陈啸空\n368.349\n白岭羽族隐者\n320.331\n南屏山关口守卫凌翼\n304.344\n老羽人\n295.333\n无名墓\n295.333\n城南巧匠翼巡\n344.413\n药师风纪廉\n344.414\n仙石收集商翼缘奇\n338.414\n钱庄掌柜张百利\n338.414\n黑市商人杜远谋\n337.415\n易容师易羽\n335.416\n裁缝翼鸾赏\n334.408\n织女羽纤\n337.408\n铁匠羽毅\n339.406\n货郎李仁\n343.407\n完美奖品使者\n327.415\n传送师洛羽\n325.415\n守卫冰锋\n322.419\n守卫暮云泽\n321.420\n卫兵灵珂\n322.420\n茫茫大士\n323.423\n祭司\n326.425\n宠物管理员\n330.425\n选美管理员\n330.426\n长老\n328.428\n羽灵大师鸣琅\n328.426\n羽芒大师鸣鞘\n326.427\n家园管理员\n324.428\n城北药师翼燕云\n313.425\n巧匠羽灵夕\n319.426\n铁匠翼问天\n320.429\n钱庄掌柜金无忧\n314.432\n仙石收集商人莫逍\n314.432\n裁缝翩羽\n321.433\n织女羽织秋\n323.435\n货郎骆羽康\n327.436\n丽兰\n326.431\n卫兵凋风\n331.447\n卫兵弦音\n331.446\n合成大师常鸣\n334.437\n卫兵冰刃\n335.438",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "落缨村守卫羽露",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.458",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "守卫羽珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "366.459",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "接引者残翼",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "369.461",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "焦急的村民",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "372.427",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "守卫翼飞天",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "348.413",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "织女刘羽佳",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "372.352",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝孟如君",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "372.352",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "彩翼",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "373.352",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎王旋",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "372.351",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜钱灵锡",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.351",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "羽灵大师羽千刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "372.349",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "羽芒大师翔万里",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "373.348",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师莫言儒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.348",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "秋月",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "369.349",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜钱延通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "212.307",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "南柯寨镇长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "210.309",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "翔芸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "206.311",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠王大漭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "207.318",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师柯一飞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "204.323",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎王薄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "205.325",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "店主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "201.328",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师王一帖",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "211.326",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜曾广为",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "215.417",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师姚士贤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "223.408",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "守卫骆翎秋",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "348.412",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "积羽湖船厂老板",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "341.372",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "倚竹村村长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.352",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "合成大师常鹰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "368.352",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "仙石收集商吕之安",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "368.351",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巧匠王云翔",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.352",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠陈啸空",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "368.349",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "白岭羽族隐者",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "320.331",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "南屏山关口守卫凌翼",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "304.344",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "老羽人",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "295.333",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无名墓",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "295.333",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "城南巧匠翼巡",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "344.413",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师风纪廉",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "344.414",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "仙石收集商翼缘奇",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "338.414",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜张百利",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "338.414",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黑市商人杜远谋",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "337.415",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "易容师易羽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "335.416",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝翼鸾赏",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "334.408",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "织女羽纤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "337.408",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠羽毅",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "339.406",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎李仁",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "343.407",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "完美奖品使者",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "327.415",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师洛羽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "325.415",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "守卫冰锋",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "322.419",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "守卫暮云泽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "321.420",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卫兵灵珂",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "322.420",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "茫茫大士",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "323.423",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "祭司",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "326.425",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "宠物管理员",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "330.425",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "选美管理员",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "330.426",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "328.428",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "羽灵大师鸣琅",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "328.426",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "羽芒大师鸣鞘",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "326.427",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "家园管理员",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "324.428",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "城北药师翼燕云",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "313.425",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巧匠羽灵夕",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "319.426",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠翼问天",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "320.429",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜金无忧",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "314.432",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "仙石收集商人莫逍",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "314.432",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝翩羽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "321.433",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "织女羽织秋",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "323.435",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎骆羽康",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "327.436",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "丽兰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "326.431",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卫兵凋风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "331.447",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卫兵弦音",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "331.446",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "合成大师常鸣",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "334.437",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卫兵冰刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "335.438",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>落缨村守卫羽露</td>\r\n            <td>370.458</td>\r\n        </tr>\r\n        <tr>\r\n            <td>守卫羽珠</td>\r\n            <td>366.459</td>\r\n        </tr>\r\n        <tr>\r\n            <td>接引者残翼</td>\r\n            <td>369.461</td>\r\n        </tr>\r\n        <tr>\r\n            <td>焦急的村民</td>\r\n            <td>372.427</td>\r\n        </tr>\r\n        <tr>\r\n            <td>守卫翼飞天</td>\r\n            <td>348.413</td>\r\n        </tr>\r\n        <tr>\r\n            <td>织女刘羽佳</td>\r\n            <td>372.352</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝孟如君</td>\r\n            <td>372.352</td>\r\n        </tr>\r\n        <tr>\r\n            <td>彩翼</td>\r\n            <td>373.352</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎王旋</td>\r\n            <td>372.351</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜钱灵锡</td>\r\n            <td>370.351</td>\r\n        </tr>\r\n        <tr>\r\n            <td>羽灵大师羽千刃</td>\r\n            <td>372.349</td>\r\n        </tr>\r\n        <tr>\r\n            <td>羽芒大师翔万里</td>\r\n            <td>373.348</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师莫言儒</td>\r\n            <td>370.348</td>\r\n        </tr>\r\n        <tr>\r\n            <td>秋月</td>\r\n            <td>369.349</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜钱延通</td>\r\n            <td>212.307</td>\r\n        </tr>\r\n        <tr>\r\n            <td>南柯寨镇长</td>\r\n            <td>210.309</td>\r\n        </tr>\r\n        <tr>\r\n            <td>翔芸</td>\r\n            <td>206.311</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠王大漭</td>\r\n            <td>207.318</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师柯一飞</td>\r\n            <td>204.323</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎王薄</td>\r\n            <td>205.325</td>\r\n        </tr>\r\n        <tr>\r\n            <td>店主</td>\r\n            <td>201.328</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师王一帖</td>\r\n            <td>211.326</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜曾广为</td>\r\n            <td>215.417</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师姚士贤</td>\r\n            <td>223.408</td>\r\n        </tr>\r\n        <tr>\r\n            <td>守卫骆翎秋</td>\r\n            <td>348.412</td>\r\n        </tr>\r\n        <tr>\r\n            <td>积羽湖船厂老板</td>\r\n            <td>341.372</td>\r\n        </tr>\r\n        <tr>\r\n            <td>倚竹村村长</td>\r\n            <td>370.352</td>\r\n        </tr>\r\n        <tr>\r\n            <td>合成大师常鹰</td>\r\n            <td>368.352</td>\r\n        </tr>\r\n        <tr>\r\n            <td>仙石收集商吕之安</td>\r\n            <td>368.351</td>\r\n        </tr>\r\n        <tr>\r\n            <td>巧匠王云翔</td>\r\n            <td>370.352</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠陈啸空</td>\r\n            <td>368.349</td>\r\n        </tr>\r\n        <tr>\r\n            <td>白岭羽族隐者</td>\r\n            <td>320.331</td>\r\n        </tr>\r\n        <tr>\r\n            <td>南屏山关口守卫凌翼</td>\r\n            <td>304.344</td>\r\n        </tr>\r\n        <tr>\r\n            <td>老羽人</td>\r\n            <td>295.333</td>\r\n        </tr>\r\n        <tr>\r\n            <td>无名墓</td>\r\n            <td>295.333</td>\r\n        </tr>\r\n        <tr>\r\n            <td>城南巧匠翼巡</td>\r\n            <td>344.413</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师风纪廉</td>\r\n            <td>344.414</td>\r\n        </tr>\r\n        <tr>\r\n            <td>仙石收集商翼缘奇</td>\r\n            <td>338.414</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜张百利</td>\r\n            <td>338.414</td>\r\n        </tr>\r\n        <tr>\r\n            <td>黑市商人杜远谋</td>\r\n            <td>337.415</td>\r\n        </tr>\r\n        <tr>\r\n            <td>易容师易羽</td>\r\n            <td>335.416</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝翼鸾赏</td>\r\n            <td>334.408</td>\r\n        </tr>\r\n        <tr>\r\n            <td>织女羽纤</td>\r\n            <td>337.408</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠羽毅</td>\r\n            <td>339.406</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎李仁</td>\r\n            <td>343.407</td>\r\n        </tr>\r\n        <tr>\r\n            <td>完美奖品使者</td>\r\n            <td>327.415</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师洛羽</td>\r\n            <td>325.415</td>\r\n        </tr>\r\n        <tr>\r\n            <td>守卫冰锋</td>\r\n            <td>322.419</td>\r\n        </tr>\r\n        <tr>\r\n            <td>守卫暮云泽</td>\r\n            <td>321.420</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卫兵灵珂</td>\r\n            <td>322.420</td>\r\n        </tr>\r\n        <tr>\r\n            <td>茫茫大士</td>\r\n            <td>323.423</td>\r\n        </tr>\r\n        <tr>\r\n            <td>祭司</td>\r\n            <td>326.425</td>\r\n        </tr>\r\n        <tr>\r\n            <td>宠物管理员</td>\r\n            <td>330.425</td>\r\n        </tr>\r\n        <tr>\r\n            <td>选美管理员</td>\r\n            <td>330.426</td>\r\n        </tr>\r\n        <tr>\r\n            <td>长老</td>\r\n            <td>328.428</td>\r\n        </tr>\r\n        <tr>\r\n            <td>羽灵大师鸣琅</td>\r\n            <td>328.426</td>\r\n        </tr>\r\n        <tr>\r\n            <td>羽芒大师鸣鞘</td>\r\n            <td>326.427</td>\r\n        </tr>\r\n        <tr>\r\n            <td>家园管理员</td>\r\n            <td>324.428</td>\r\n        </tr>\r\n        <tr>\r\n            <td>城北药师翼燕云</td>\r\n            <td>313.425</td>\r\n        </tr>\r\n        <tr>\r\n            <td>巧匠羽灵夕</td>\r\n            <td>319.426</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠翼问天</td>\r\n            <td>320.429</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜金无忧</td>\r\n            <td>314.432</td>\r\n        </tr>\r\n        <tr>\r\n            <td>仙石收集商人莫逍</td>\r\n            <td>314.432</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝翩羽</td>\r\n            <td>321.433</td>\r\n        </tr>\r\n        <tr>\r\n            <td>织女羽织秋</td>\r\n            <td>323.435</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎骆羽康</td>\r\n            <td>327.436</td>\r\n        </tr>\r\n        <tr>\r\n            <td>丽兰</td>\r\n            <td>326.431</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卫兵凋风</td>\r\n            <td>331.447</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卫兵弦音</td>\r\n            <td>331.446</td>\r\n        </tr>\r\n        <tr>\r\n            <td>合成大师常鸣</td>\r\n            <td>334.437</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卫兵冰刃</td>\r\n            <td>335.438</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/fd2b30facce6ba69fa94.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/fd2b30facce6ba69fa94.js"
+}

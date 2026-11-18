@@ -1,0 +1,135 @@
+{
+  "id": "ec2daf258dc40cc656cc",
+  "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+  "title": "第一次买东西",
+  "category": "新手指引",
+  "section": "初入完美",
+  "depth": 0,
+  "parents": [
+    "52bb242ab2be6a273274",
+    "795e2fc25f6366b4a743",
+    "e0d13df0f10091557b88",
+    "ec2daf258dc40cc656cc",
+    "80b64af2df0ec04bc9f5",
+    "b01d438a263d5990ed20",
+    "e1af6d0e32387f82d096",
+    "0ec3e5f2d64060878db6",
+    "d953218d5c4ee41c8389",
+    "7eedb1771e5ba2058b12",
+    "50ef20375a9c3fe211e7",
+    "bf2cf85d433eb7fcebcc",
+    "c975ac74bf780de1674b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "d879ccb62660463ca288c111958444f0f38b7711a53bdab5a5105db021ad191c",
+  "bytes": 70080,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/ec2daf258dc40cc656cc.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "第一次做任务 | 第一次战斗 | 第一次组队 | 第一次加好友 | 第一次自动寻路 | 第一次买东西 | 第一次使用表情\n第一次摆摊交易 | 第一次使用包裹 | 第一次传送 | 第一次升级 | 第一次创建聊天室 | 第一次聊天 |\n交易\n网络游戏最大的特点就是交流.而交易就是交流的一种表现。要找到那些你想要又无缘找到的物品，交易是一个很棒的方法。有一些物品你自己要找到恐怕不容易。你可以试着不去奢望那些物品，不过为何不叫其他玩家来帮你找呢？很多人的一个目标就是给自己角色找到最好的物品。玩游戏的时候很多方法可以帮你来实现这个目标，交易通常比较容易，快捷……如果你有钱的话。\n同其他玩家交易，先选择一个角色，然后点击他们的肖像/名字。同样的你也可以用于你队伍中玩家角色的肖像。按alt+鼠标右键就会出现交易选项。点击交易后会自动弹出一个交易窗口。把你的物品放在窗口的上半部分。当你满意对方的出价后，点击同意来完成交易，也可通过在表情动作（按E键打开表情动作选项）中选择交易快捷键来提出申请交易。\n如果要交易金钱，在交易窗口的钱币处点击，输入交易数量就可以了。\n具体操作步骤：\n1.他人向你提出交易申请会弹出提示信息，点击提示确认交易对象进入交易界面，如果你向他人提出交易申请，他人同意直接进入交易界面。\n2.进入交易界面后，玩家可以将交易的物品直接拖拽到交易窗口内。\n可叠加的物品直接将包囊的该物品全部放入到交易窗口内，如要进行数量性交易，需按住ATL＋鼠标左键进行拖拽。\n将物品拖拽到交易窗口内后，物品在包囊内显示为暗灰色，即不能对交易窗口内的物品进行其他操作，如要取回交易物品，在交易窗口内双击该物品，该物品就会回到包囊内，呈现彩色。\n可以点击自己方的金币图样进行金钱交易，输入数值后确认即可。\n注意：任务物品不能进行交易。\n3.确认交易物品后点击锁定，即将交易物品和金钱进入锁定状态，如果交易双方都进入锁定状态，将无法再往交易窗口放入物品或拿取物品，除非点击放弃交易。\n4.双方点击锁定后，系统自动识别进入最终交易确认，这样保证了交易的安全性，这时还可以有反悔的机会，只要点击放弃交易，这次交易就失败了。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+      "label": "第一次做任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30061.shtml",
+      "label": "第一次战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30063.shtml",
+      "label": "第一次组队",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30064.shtml",
+      "label": "第一次加好友",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29926.shtml",
+      "label": "第一次自动寻路",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+      "label": "第一次买东西",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30065.shtml",
+      "label": "第一次使用表情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30066.shtml",
+      "label": "第一次摆摊交易",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+      "label": "第一次使用包裹",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+      "label": "第一次传送",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+      "label": "第一次升级",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29924.shtml",
+      "label": "第一次创建聊天室",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+      "label": "第一次聊天",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/jiaoyi013001.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/jiaoyi013002.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/jiaoyi013003.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/jiaoyi013004.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/jiaoyi013006.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=52bb242ab2be6a273274\">第一次做任务</a> |  \t\t\t\t\t<a href=\"#page=795e2fc25f6366b4a743\">第一次战斗 </a> |  \t\t\t\t\t<a href=\"#page=80b64af2df0ec04bc9f5\">第一次组队 </a> |  \t\t\t\t\t<a href=\"#page=b01d438a263d5990ed20\">第一次加好友 </a> |  \t\t\t\t\t<a href=\"#page=c975ac74bf780de1674b\">第一次自动寻路 </a> |  \t\t\t\t\t<a href=\"#page=ec2daf258dc40cc656cc\">第一次买东西 </a> |  \t\t\t\t\t<a href=\"#page=e1af6d0e32387f82d096\">第一次使用表情 </a><br>\r\n    <a href=\"#page=d953218d5c4ee41c8389\">第一次摆摊交易 </a> |  \t\t\t\t\t<a href=\"#page=7eedb1771e5ba2058b12\">第一次使用包裹 </a> |  \t\t\t\t\t<a href=\"#page=50ef20375a9c3fe211e7\">第一次传送 </a> |  \t\t\t\t\t<a href=\"#page=e0d13df0f10091557b88\">第一次升级 </a> |  \t\t\t\t\t<a href=\"#page=bf2cf85d433eb7fcebcc\">第一次创建聊天室</a> | \t\t\t\t\t  \t\t\t\t\t<a href=\"#page=0ec3e5f2d64060878db6\">第一次聊天 </a> |</li>\r\n</ul>\r\n<p>　　<strong>交易</strong></p>\r\n<p>　　网络游戏最大的特点就是交流.而交易就是交流的一种表现。要找到那些你想要又无缘找到的物品，交易是一个很棒的方法。有一些物品你自己要找到恐怕不容易。你可以试着不去奢望那些物品，不过为何不叫其他玩家来帮你找呢？很多人的一个目标就是给自己角色找到最好的物品。玩游戏的时候很多方法可以帮你来实现这个目标，交易通常比较容易，快捷……如果你有钱的话。</p>\r\n<p>　　同其他玩家交易，先选择一个角色，然后点击他们的肖像/名字。同样的你也可以用于你队伍中玩家角色的肖像。按alt+鼠标右键就会出现交易选项。点击交易后会自动弹出一个交易窗口。把你的物品放在窗口的上半部分。当你满意对方的出价后，点击同意来完成交易，也可通过在表情动作（按E键打开表情动作选项）中选择交易快捷键来提出申请交易。</p>\r\n<p>　　如果要交易金钱，在交易窗口的钱币处点击，输入交易数量就可以了。</p>\r\n<p>　　<strong>具体操作步骤：</strong></p>\r\n<p>　　1.他人向你提出交易申请会弹出提示信息，点击提示确认交易对象进入交易界面，如果你向他人提出交易申请，他人同意直接进入交易界面。</p>\r\n<p><img src=\"assets/57560ff1dad041c0d00c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/96a4005888263bceea7e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　2.进入交易界面后，玩家可以将交易的物品直接拖拽到交易窗口内。</p>\r\n<p>　　可叠加的物品直接将包囊的该物品全部放入到交易窗口内，如要进行数量性交易，需按住ATL＋鼠标左键进行拖拽。</p>\r\n<p>　　将物品拖拽到交易窗口内后，物品在包囊内显示为暗灰色，即不能对交易窗口内的物品进行其他操作，如要取回交易物品，在交易窗口内双击该物品，该物品就会回到包囊内，呈现彩色。</p>\r\n<p>　　可以点击自己方的金币图样进行金钱交易，输入数值后确认即可。</p>\r\n<p>　　注意：任务物品不能进行交易。</p>\r\n<p><img src=\"assets/4fe0b6dec1b1bb74937e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　3.确认交易物品后点击锁定，即将交易物品和金钱进入锁定状态，如果交易双方都进入锁定状态，将无法再往交易窗口放入物品或拿取物品，除非点击放弃交易。</p>\r\n<p><img src=\"assets/55e4411c3f98e3e48bad.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　4.双方点击锁定后，系统自动识别进入最终交易确认，这样保证了交易的安全性，这时还可以有反悔的机会，只要点击放弃交易，这次交易就失败了。</p>\r\n<p><img src=\"assets/253e6d24c47b2047152c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/ec2daf258dc40cc656cc.json",
+  "imageCount": 5,
+  "tableCount": 0,
+  "downloadPath": "downloads/ec2daf258dc40cc656cc.js"
+}

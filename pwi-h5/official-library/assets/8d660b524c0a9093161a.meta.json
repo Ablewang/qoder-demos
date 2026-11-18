@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/fbbelt_03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "8d660b524c0a9093161a",
+  "status": "ok",
+  "parents": [
+    "f5504f2cd19438bf7a68"
+  ],
+  "bytes": 26948,
+  "sha256": "36a0923e50d4c12e045a1ff47b977feeb008d358dcb73b7f60032103af0f8b67",
+  "fetchedAt": "2026-11-18T08:22:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/fbbelt_03.jpg",
+  "path": "assets/8d660b524c0a9093161a.jpg"
+}

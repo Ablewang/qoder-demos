@@ -1,0 +1,145 @@
+{
+  "id": "97c02adaf1513ceebbb0",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/qixin.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/qixin.htm",
+  "fetchedAt": "2026-11-18T08:15:58+00:00",
+  "sha256": "c830c7b92a8320836423f3f820af42ba59535c00fcb42745ac82eaa11409a70c",
+  "bytes": 2244,
+  "rawPath": "raw/97c02adaf1513ceebbb0.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "图1\n图2\n玩法：玩家杀死房间内4只BOSS怪中任意一只后可得到该房间骰子。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "图1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩法：玩家杀死房间内4只BOSS怪中任意一只后可得到该房间骰子。",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：玩家杀死房间内4只BOSS怪中任意一只后可得到该房间骰子。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：玩家杀死房间内4只BOSS怪中任意一只后可得到该房间骰子。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_bg.jpg",
+      "label": "玩法：玩家杀死房间内4只BOSS怪中任意一只后可得到该房间骰子。",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/qixin_button.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/qx_tt01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/qx_tt02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td colspan=\"2\"><img src=\"assets/659072997f99f38f6f24.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td><div><img src=\"assets/1e1b748581b6a7b01f42.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n      </tr>\n    </table>\n    <div></div></td>\n    <td><div>\n      <table>\n        <tr>\n          <td><div><img src=\"assets/d419054351ee7d98a5d3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n        </tr>\n      </table>\n    </div></td>\n  </tr>\n  <tr>\n    <td><div>图1</div></td>\n    <td><div>图2</div></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\"><table>\n      <tr>\n        <td><table>\n          <tr>\n            <td><p>玩法：玩家杀死房间内4只BOSS怪中任意一只后可得到该房间骰子。</p>\n              </td>\n          </tr>\n        </table>          \n          <p> </p></td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/97c02adaf1513ceebbb0.json",
+  "imageCount": 4,
+  "tableCount": 5,
+  "downloadPath": "downloads/97c02adaf1513ceebbb0.js"
+}

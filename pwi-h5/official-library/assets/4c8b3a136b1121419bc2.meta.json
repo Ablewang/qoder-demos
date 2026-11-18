@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/images/btn1.jpg",
+  "alt": "初识完美",
+  "kind": "img",
+  "id": "4c8b3a136b1121419bc2",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "bytes": 5369,
+  "sha256": "8f54d8973242027dc202165103778e4553bdf0cb4b39cdd1ea29cdd032413b06",
+  "fetchedAt": "2026-11-18T08:18:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/images/btn1.jpg",
+  "path": "assets/4c8b3a136b1121419bc2.jpg"
+}

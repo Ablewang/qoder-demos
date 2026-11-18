@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27580.jpg",
+  "id": "5ea8b913cce440295dd1",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 深刺<em>（升仙）</em>",
+  "bytes": 1202,
+  "sha256": "ec218ec6d6948420ea6f1bb8b0db8304c71385e843ef50972b674e9674bd99a3",
+  "fetchedAt": "2026-11-18T08:36:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27580.jpg",
+  "path": "assets/5ea8b913cce440295dd1.jpg"
+}

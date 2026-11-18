@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_446.jpg",
+  "id": "e250e621a7bb88ae81d2",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·神火符<em>（升仙）</em>",
+  "bytes": 1667,
+  "sha256": "16b040c77b526c0f90216033579b35451efcde089a7d4177ad05b1c57560edb6",
+  "fetchedAt": "2026-11-18T08:34:35+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_446.jpg",
+  "path": "assets/e250e621a7bb88ae81d2.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1343.jpg",
+  "id": "861e9e0c0f540c17f5da",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "九宫剑咒",
+  "bytes": 4752,
+  "sha256": "610b8dfbe3f5e743e050a699b8f6506e1dc35459cf01ffa8ff2e384d6c5df163",
+  "fetchedAt": "2026-11-18T08:36:32+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1343.jpg",
+  "path": "assets/861e9e0c0f540c17f5da.jpg"
+}

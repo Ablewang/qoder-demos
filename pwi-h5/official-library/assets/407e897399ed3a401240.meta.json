@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27667.jpg",
+  "id": "407e897399ed3a401240",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·冷凝术<em>（入魔）</em>",
+  "bytes": 4826,
+  "sha256": "23bb95819a16631b4db69d1cda6e6b7369169e907454055f105b86beb95b7f2e",
+  "fetchedAt": "2026-11-18T08:36:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27667.jpg",
+  "path": "assets/407e897399ed3a401240.jpg"
+}

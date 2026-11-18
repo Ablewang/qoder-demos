@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/pic/image242.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "5e43ce2fa2721775301c",
+  "status": "ok",
+  "parents": [
+    "92c5af8c0b0c9818dd36"
+  ],
+  "bytes": 6644,
+  "sha256": "827e4a1bf4a7bc59d34f5dec17680c46baa3257e4074f28d5beeae2fea8f3449",
+  "fetchedAt": "2026-11-18T08:24:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/pic/image242.gif",
+  "path": "assets/5e43ce2fa2721775301c.gif"
+}

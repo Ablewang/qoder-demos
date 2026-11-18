@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/feixing/xizu/2.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "06a9823acdea69e5d3d0",
+  "status": "ok",
+  "parents": [
+    "a93e0dfe33cf2c00320c"
+  ],
+  "bytes": 5001,
+  "sha256": "8653868a3fddb1014ed0e3f1d7d903ff4ede75756841e7e22a024d32b79132ca",
+  "fetchedAt": "2026-11-18T08:19:51+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/feixing/xizu/2.jpg",
+  "path": "assets/06a9823acdea69e5d3d0.jpg"
+}

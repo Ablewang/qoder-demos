@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201204/51huodong/images/jp_03.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "58f2e5de699b7048ee7f",
+  "status": "ok",
+  "parents": [
+    "3a0ebde4f643dc0f6249"
+  ],
+  "bytes": 880272,
+  "sha256": "4be36d4304e382a2b8edaa8726e3acdfc4f40ae6c59981f1a370da95f2a81481",
+  "fetchedAt": "2026-11-18T08:27:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201204/51huodong/images/jp_03.jpg",
+  "path": "assets/58f2e5de699b7048ee7f.jpg"
+}

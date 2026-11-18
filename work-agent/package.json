@@ -1,0 +1,20 @@
+{
+  "name": "work-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "serve": "node --disable-warning=ExperimentalWarning src/cli.ts serve",
+    "run-report": "node --disable-warning=ExperimentalWarning src/cli.ts run",
+    "probe:feishu-im": "node --disable-warning=ExperimentalWarning src/cli.ts probe-feishu-im",
+    "test": "TZ=Asia/Shanghai node --disable-warning=ExperimentalWarning --test test/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}

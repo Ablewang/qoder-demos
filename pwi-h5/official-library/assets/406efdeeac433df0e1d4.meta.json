@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/duorboss_06.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "406efdeeac433df0e1d4",
+  "status": "ok",
+  "parents": [
+    "ae968ce71de6d8249634"
+  ],
+  "bytes": 181638,
+  "sha256": "8ee40d9ad1c40bd07ccd970b3634b4135896a7027cebfe170ebeba37dbb7d054",
+  "fetchedAt": "2026-11-18T08:25:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/duorboss_06.jpg",
+  "path": "assets/406efdeeac433df0e1d4.jpg"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "4b7a0cb640ac2b4b0171",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/zhadan.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/zhadan.htm",
+  "fetchedAt": "2026-11-18T08:15:56+00:00",
+  "sha256": "88b338923d2e4049f4701188315607a2b4bc56e1f159f7e9306ce0d1a9a9c72e",
+  "bytes": 2380,
+  "rawPath": "raw/4b7a0cb640ac2b4b0171.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "图1\n图2\n玩法：该房间\"魔方传送使\"会给玩家一个任务，任务会在10分钟后传送玩家回起点，需要去相应房间解锁。炸弹解除失败后任务栏将生成一个无法删除任务,使得玩家进行命运魔方其他任务，需要与起始点NPC对话方可解除。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "图1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩法：该房间\"魔方传送使\"会给玩家一个任务，任务会在10分钟后传送玩家回起点，需要去相应房间解锁。炸弹解除失败后任务栏将生成一个无法删除任务,使得玩家进行命运魔方其他任务，需要与起始点NPC对话方可解除。",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：该房间\"魔方传送使\"会给玩家一个任务，任务会在10分钟后传送玩家回起点，需要去相应房间解锁。炸弹解除失败后任务栏将生成一个无法删除任务,使得玩家进行命运魔方其他任务，需要与起始点NPC对话方可解除。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：该房间\"魔方传送使\"会给玩家一个任务，任务会在10分钟后传送玩家回起点，需要去相应房间解锁。炸弹解除失败后任务栏将生成一个无法删除任务,使得玩家进行命运魔方其他任务，需要与起始点NPC对话方可解除。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_bg.jpg",
+      "label": "玩法：该房间\"魔方传送使\"会给玩家一个任务，任务会在10分钟后传送玩家回起点，需要去相应房间解锁。炸弹解除失败后任务栏将生成一个无法删除任务,使得玩家进行命运魔方其他任务，需要与起始点NPC对话方可解除。",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zhadan_button.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zd_tt01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zd_tt02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td colspan=\"2\"><img src=\"assets/efdfd2ce3baae558c13c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td><div><img src=\"assets/a312659b88bfb48aa0f2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n      </tr>\n    </table>\n    <div></div></td>\n    <td><div>\n      <table>\n        <tr>\n          <td><div><img src=\"assets/26a5adbf2d3e0bc25807.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n        </tr>\n      </table>\n    </div></td>\n  </tr>\n  <tr>\n    <td><div>图1</div></td>\n    <td><div>图2</div></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\"><table>\n      <tr>\n        <td><table>\n          <tr>\n            <td><p>玩法：该房间&quot;魔方传送使&quot;会给玩家一个任务，任务会在10分钟后传送玩家回起点，需要去相应房间解锁。炸弹解除失败后任务栏将生成一个无法删除任务,使得玩家进行命运魔方其他任务，需要与起始点NPC对话方可解除。</p>\n              </td>\n          </tr>\n        </table>          \n          <p> </p></td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/4b7a0cb640ac2b4b0171.json",
+  "imageCount": 4,
+  "tableCount": 5,
+  "downloadPath": "downloads/4b7a0cb640ac2b4b0171.js"
+}

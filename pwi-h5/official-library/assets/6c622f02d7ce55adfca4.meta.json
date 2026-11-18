@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/feixing/lingzu/6.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6c622f02d7ce55adfca4",
+  "status": "ok",
+  "parents": [
+    "e1150f3be1f1f53be6f9"
+  ],
+  "bytes": 5003,
+  "sha256": "ca1874237ab41e86f742bd47450a8e1a51d86d4d0d0d1f9ca52618286ef24221",
+  "fetchedAt": "2026-11-18T08:19:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/feixing/lingzu/6.jpg",
+  "path": "assets/6c622f02d7ce55adfca4.jpg"
+}

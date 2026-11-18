@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/shupingguo_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "4e85ad07ba79bf6b3592",
+  "status": "ok",
+  "parents": [
+    "7a5b2672e5456699ef74"
+  ],
+  "bytes": 3848,
+  "sha256": "5c04d4733a98c766a9ba5555e1b8689da6eb7e68c55a3b1939ea7415427ed989",
+  "fetchedAt": "2026-11-18T08:22:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/shupingguo_button.jpg",
+  "path": "assets/4e85ad07ba79bf6b3592.jpg"
+}

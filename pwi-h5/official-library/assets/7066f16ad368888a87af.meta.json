@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_681.jpg",
+  "id": "7066f16ad368888a87af",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·木精通<em>（入魔）</em>",
+  "bytes": 1735,
+  "sha256": "5fd4c1cf999d46bb22ac91a698b2a88729519d81ba083f28762eaadbecd4f2b6",
+  "fetchedAt": "2026-11-18T08:35:54+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_681.jpg",
+  "path": "assets/7066f16ad368888a87af.jpg"
+}

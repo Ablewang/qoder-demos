@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml version="1.0.8">
+
+	<move_char k="-0.02" u="0.2"/>
+	
+	<kaitou src="http://media101.wanmei.com/media/w2i/flv/kaitou0817.flv" width="1920" height="854" skip="false">
+		<skip text="跳过动画" color="#FFFFFF" size="18" autoSize="center"/>
+	</kaitou>
+	
+	<logo src="image/logo.png" href="http://w2i.wanmei.com/" target="_blank"/>
+	<bottom src="image/bottom.jpg"/>
+	
+	<nav src="swf/diwangqiyuan.swf" selected="true">
+		<label text="帝王起源" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="Story" color="#C1C1C1" size="11" autoSize="left"/>
+		<nav bg="swf/diwangqiyuan/bg1.swf" char="swf/diwangqiyuan/char1.swf" arrow_color="#FFFFFF">
+			<name text="青帝 冷月" color="#020101" size="16" x="615" y="101" bgColor="#E1D19F"/>
+			<content x="1080" y="350">
+				<name text="青帝之都" color="#4F6263" size="51" autoSize="left"/>
+				<content color="#020101" size="30" autoSize="left" html="true">神秘的东方海域，巨龙之船！<br/>
+俊美冷艳的海盗，踏上掠夺之路！</content>
+			</content>
+			<info size="36" color="#000000" autoSize="left" html="true"><font size="30">　</font><font size="60">王朝崛起</font><br/>
+九月六日 君临天下</info>
+		</nav>
+		<nav bg="swf/diwangqiyuan/bg4.swf" char="swf/diwangqiyuan/char4.swf" arrow_color="#FFFFFF">
+			<name text="赤帝 晓纯" color="#EDDFDB" size="16" x="1003" y="130" bgColor="#020101"/>
+			<content x="520" y="350">
+				<name text="赤帝之都" color="#E7DBD8" size="51" autoSize="left"/>
+				<content color="#AC0101" size="30" autoSize="left" html="true">炙热的南陆火山，岩浆凃壁！<br/>
+真龙后裔无所畏惧，听我怒吼！</content>
+			</content>
+		</nav>
+		<nav bg="swf/diwangqiyuan/bg3.swf" char="swf/diwangqiyuan/char3.swf" arrow_color="#FFFFFF">
+			<name text="白帝 席尔瓦" color="#FFFFFF" size="16" x="1075" y="101" bgColor="#020101"/>
+			<content x="1060" y="380">
+				<name text="白帝之都" color="#4F6263" size="51" autoSize="left"/>
+				<content color="#642117" size="30" autoSize="left" html="true">西部的上古战场，不落之城！<br/>
+冷峻的银盔骑士，利剑捍卫荣耀！</content>
+			</content>
+		</nav>
+		<nav bg="swf/diwangqiyuan/bg2.swf" char="swf/diwangqiyuan/char2.swf" arrow_color="#FFFFFF">
+			<name text="黑帝 伊蒂丝" color="#FFFFFF" size="16" x="940" y="144" bgColor="#020101"/>
+			<content x="520" y="350">
+				<name text="黑帝之都" color="#98B2B2" size="51" autoSize="left"/>
+				<content color="#90EEF2" size="30" autoSize="left" html="true">北疆要塞，凌寒而立！<br/>
+不屈的蛮王首领，力量主宰一切！</content>
+			</content>
+		</nav>
+	</nav>
+	<nav src="swf/guozhanwushuang.swf" bg="image/guozhanwushuang/bg.jpg">
+		<label text="国战无双" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="States war" color="#C1C1C1" size="11" autoSize="left"/>
+		<video src="http://media101.wanmei.com/media/w2i/flv/show120907.flv" width="1550" height="854"/>
+		<popUp>
+			<title text="四国战争" color="#FFFFFF" size="32" autoSize="left"/>
+			<title text="全新万人战场" color="#F88000" size="21" autoSize="left"/>
+			<content>
+				<title text="交  战  者" color="#1E232A" size="12" autoSize="center"/>
+				<content color="#FFFFFF" size="12" autoSize="left" html="true">四国势力，不低于95级。</content>
+			</content>
+			<content>
+				<title text="参战方式" color="#1E232A" size="12" autoSize="center"/>
+				<content color="#FFFFFF" size="12" autoSize="left" html="true">支持单人报名也支持组队报名。报名后玩家会随机加入一个国家。</content>
+			</content>
+			<content>
+				<title text="战斗方式" color="#1E232A" size="12" autoSize="center"/>
+				<content color="#FFFFFF" size="12" autoSize="left" html="true">抢夺领土，获得积分。</content>
+			</content>
+			<content>
+				<title text="积分说明" color="#1E232A" size="12" autoSize="center"/>
+				<content color="#FFFFFF" size="12" autoSize="left" html="true"><font color="#F88000" face="Microsoft YaHei Bold">【国家积分】</font>国家所占有的每一块领土每隔一段时间会产生一次积<br/>
+分。积分越高的国家将在服务器奖励中占据越高的份额。</content>
+				<content color="#FFFFFF" size="12" autoSize="left" html="true"><font color="#F88000" face="Microsoft YaHei Bold">【个人积分】</font>每场战斗，都会根据您在战场中的表现获得积分。您<br/>
+的个人积分越高，您在本国奖励中所占的份额将越高。</content>
+			</content>
+			<imgs>
+				<img src="image/guozhanwushuang/1.jpg" href="image/guozhanwushuang/1b.jpg" target="_blank">
+					<btn text="战场版图" color="#000000" size="16" autoSize="center"/>
+				</img>
+				<img src="image/guozhanwushuang/2.jpg" href="image/guozhanwushuang/2b.jpg" target="_blank">
+					<btn text="战场战略图" color="#000000" size="16" autoSize="center"/>
+				</img>
+			</imgs>
+		</popUp>
+	</nav>
+	<nav src="swf/zhiyezhongzu.swf" bg="image/zhiyezhongzu/bg.jpg">
+		<label text="职业飞升" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="Occupational" color="#C1C1C1" size="11" autoSize="left"/>
+		<nav>
+			<name text="灵族" color="#FFFFFF" size="18" autoSize="center"/>
+			<zhiye char="swf/zhiyezhongzu/char9.swf">
+				<name text="剑灵" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="剑灵" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="灵族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16"><font color="#ff0000">一改以往PVP方面的低迷，稳固了自身的生存能力，同时增加了技能的施放距离。<br/>
+配以强力的攻击技能。</font>剑灵也将拥有不俗的爆发能力。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>威武<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>困难<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>拉风的外貌，磅礴大气的技能，剑灵不管从哪方面看起来都是如此与众不同。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+			<zhiye char="swf/zhiyezhongzu/char10.swf">
+				<name text="魅灵" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="魅灵" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="灵族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">魅灵向来是以全能手的身份存在于团队，<font color="#ff0000">在提升了伤害并调整了冷却时间后，<br/>
+魅灵的团队作战能力将更加突出。</font></font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>召唤<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>困难<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>丰富的玩法，多变的角色造就了魅灵的无限吸引力。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+		</nav>
+		<nav>
+			<name text="人族" color="#FFFFFF" size="18" autoSize="center"/>
+			<zhiye char="swf/zhiyezhongzu/char1.swf">
+				<name text="武侠" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="武侠" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="人族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">新版本中，<font color="#ff0000">武侠强化了控制能力，同时提高了伤害承受能力。</font>使武侠在PVP中，更加强势。<br/>
+</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>威武<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>困难<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>强悍的控制技能加之群体伤害技能的灵活运用，面对单挑或者群体PK情况都是<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font>不可多得的强者。<br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+			<zhiye char="swf/zhiyezhongzu/char2.swf">
+				<name text="法师" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="法师" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="人族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">法师高爆发、高输出的特点将继续延续，<font color="#ff0000">常用技能大幅强化和冷却时间的调整，</font><br/>
+令法师能够在高强度的战斗中游刃有余。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>输出<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>困难<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>超高而稳定的输出和灵活的移动技能让法师们称为战斗中的移动炮台。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ☆ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+		</nav>
+		<nav>
+			<name text="妖族" color="#FFFFFF" size="18" autoSize="center"/>
+			<zhiye char="swf/zhiyezhongzu/char5.swf">
+				<name text="妖兽" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="妖兽" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="妖族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">作为副本抗怪的代表人物，<font color="#ff0000">妖兽在仇恨获取方面得到了强有力的提升，一些技能在<br/>
+命中率上做了调整。</font>将更好的发挥妖兽坦克的定位。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>坦克<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>适中<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>超多的血量和物理防御，犹如一辆坚实的装甲坦克，妖兽绝对是队伍中<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font>不可缺少的一员。<br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+			<zhiye char="swf/zhiyezhongzu/char6.swf">
+				<name text="妖精" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="妖精" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="妖族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">让人又爱又恨的妖精，<font color="#ff0000">降低了宠物复活的吟唱时间，众多持续伤害性技能的加强，</font><br/>
+更好的巩固了妖精在对抗中的地位。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>战宠<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>简单<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>众多的辅助技能和输出技能也有让人不可小视的宠物，妖精也颇受大家欢迎。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+		</nav>
+		<nav>
+			<name text="羽族" color="#FFFFFF" size="18" autoSize="center"/>
+			<zhiye char="swf/zhiyezhongzu/char4.swf">
+				<name text="羽灵" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="羽灵" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="羽族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16"><font color="#ff0000">各种增益效果及治疗技能的调整，配合攻击性技能的强化，无疑能够为大家提供更多的帮助。</font><br/>
+使羽灵成为了团队中不可获缺的援助攻击手。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>医生<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>困难<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>羽灵是团队中的灵魂人物，他的存在使人们更有安全感，救死扶伤受人尊敬。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+			<zhiye char="swf/zhiyezhongzu/char3.swf">
+				<name text="羽芒" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="羽芒" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="羽族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16"><font color="#ff0000">作为唯一的物理系远程职业，本次版本中再一次提升了其短时间的爆发能力。</font><br/>
+使对手无法活着走出自己的射程之内。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>狙击手<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>适中<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>羽芒如狙击手一般，拥有快速的远程高爆击伤害输出，让敌人胆怯。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+		</nav>
+		<nav>
+			<name text="汐族" color="#FFFFFF" size="18" autoSize="center"/>
+			<zhiye char="swf/zhiyezhongzu/char8.swf">
+				<name text="刺客" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="刺客" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="汐族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">作为刺客，在高手如林的激烈对抗中不仅能够一击给予对方重创。<font color="#ff0000">此次更新更是提升了<br/>
+刺客在短时间内的爆发能力。</font>无人可以忽略刺客的存在。</font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>隐身<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>适中<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>刺客就是完美世界中冷酷的杀手，强无声息的给予敌人打击，令敌人望风而逃。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+			<zhiye char="swf/zhiyezhongzu/char7.swf">
+				<name text="巫师" color="#FFFFFF" size="18" autoSize="center"/>
+				<content>
+					<name text="巫师" color="#583921" size="49" autoSize="left"/>
+					<zhongzu text="汐族" color="#9E9085" size="27" autoSize="left"/>
+					<content><font color="#625952" size="16">巫师的防守型技能一直无人能敌，<font color="#ff0000">本次更新再次强化了其短时间的爆发力，使其在<br/>
+攻守两面都能拥有不俗的表现。</font></font></content>
+					<details>
+						<title text="职业能力" color="#583921" size="21" autoSize="left"/>
+						<content><font color="#625952" size="16"><font face="Microsoft YaHei Bold">关键词：　</font>压制<br/>
+<font face="Microsoft YaHei Bold">上手难度：</font>困难<br/>
+<font face="Microsoft YaHei Bold">职业评价：</font>出色的压制和反压制能力让巫师在众多职业中显得高深莫测。<br/>
+<font face="Microsoft YaHei Bold">　　　　　</font><br/>
+<font face="Microsoft YaHei Bold">单挑切磋：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">团队作战：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">升级练级：</font><font color="#F45805">★ ★ ★ ★ ☆</font><br/>
+<font face="Microsoft YaHei Bold">密境需求：</font><font color="#F45805">★ ★ ★ ★ ★</font><br/>
+<font face="Microsoft YaHei Bold">操作难度：</font><font color="#F45805">★ ★ ★ ☆ ☆</font><br/>
+						</font></content>
+					</details>
+				</content>
+			</zhiye>
+		</nav>
+	</nav>
+	<nav src="swf/shijueshengyan.swf" bg="image/shijueshengyan/bg.jpg" char="swf/shijueshengyan/char.swf">
+		<label text="视觉盛宴" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="Visual feast" color="#C1C1C1" size="11" autoSize="left"/>
+		<nav>
+			<name text="原画" color="#FFFFFF" size="18" autoSize="center"/>
+			<img icon="image/shijueshengyan/yuanhua/1s.jpg" href="image/shijueshengyan/yuanhua/1.jpg" target="_blank">
+				<name text="青帝—冷月" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/2s.jpg" href="image/shijueshengyan/yuanhua/2.jpg" target="_blank">
+				<name text="黑帝—伊蒂丝" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/3s.jpg" href="image/shijueshengyan/yuanhua/3.jpg" target="_blank">
+				<name text="白帝—席尔瓦" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/4s.jpg" href="image/shijueshengyan/yuanhua/4.jpg" target="_blank">
+				<name text="赤帝—晓纯" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/5s.jpg" href="image/shijueshengyan/yuanhua/5.jpg" target="_blank">
+				<name text="黑帝之都—黑冰堡" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/6s.jpg" href="image/shijueshengyan/yuanhua/6.jpg" target="_blank">
+				<name text="白帝之都—白石城" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/7s.jpg" href="image/shijueshengyan/yuanhua/7.jpg" target="_blank">
+				<name text="青帝之都—龙王号" color="#000000" size="14" autoSize="center"/>
+			</img>
+			<img icon="image/shijueshengyan/yuanhua/8s.jpg" href="image/shijueshengyan/yuanhua/8.jpg" target="_blank">
+				<name text="赤帝之都—火龙渊" color="#000000" size="14" autoSize="center"/>
+			</img>
+		</nav>
+		<nav>
+			<name text="壁纸" color="#FFFFFF" size="18" autoSize="center"/>
+			<img icon="image/shijueshengyan/bizhi/1/s.jpg">
+				<img href="image/shijueshengyan/bizhi/1/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/1/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/1/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/1/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/2/s.jpg">
+				<img href="image/shijueshengyan/bizhi/2/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/2/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/2/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/2/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/3/s.jpg">
+				<img href="image/shijueshengyan/bizhi/3/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/3/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/3/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/3/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/4/s.jpg">
+				<img href="image/shijueshengyan/bizhi/4/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/4/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/4/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/4/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/5/s.jpg">
+				<img href="image/shijueshengyan/bizhi/5/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/5/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/5/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/5/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/6/s.jpg">
+				<img href="image/shijueshengyan/bizhi/6/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/6/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/6/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/6/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/7/s.jpg">
+				<img href="image/shijueshengyan/bizhi/7/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/7/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/7/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/7/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/8/s.jpg">
+				<img href="image/shijueshengyan/bizhi/8/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/8/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/8/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/8/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+			<img icon="image/shijueshengyan/bizhi/9/s.jpg">
+				<img href="image/shijueshengyan/bizhi/9/1280x960.jpg" target="_blank">
+					<txt text="1280x960" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/9/1280x1024.jpg" target="_blank">
+					<txt text="1280x1024" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/9/1600x1200.jpg" target="_blank">
+					<txt text="1600x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+				<img href="image/shijueshengyan/bizhi/9/1920x1200.jpg" target="_blank">
+					<txt text="1920x1200" color="#000000" size="14" autoSize="center"/>
+				</img>
+			</img>
+		</nav>
+	</nav>
+	<nav src="swf/huodongqianzhan.swf" bg="swf/huodongqianzhan/bg.swf" char="swf/huodongqianzhan/char.swf">
+		<label text="活动前瞻" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="Activity" color="#C1C1C1" size="11" autoSize="left"/>
+		<title text="活动前瞻" color="#000000" size="40" autoSize="left"/>
+		<item href="http://event51.wanmei.com/w2i/201209/guozhan/" target="_blank">
+			<icon src="image/huodongqianzhan/11.jpg"/>
+			<title text="国战激情 视频直播" color="#000000" size="21" autoSize="left"/>
+			<content text="活动时间：2012年9月21日至2012年12月30日" color="#000000" size="16" autoSize="left"/>
+			<btn src="image/huodongqianzhan/btn.jpg"/>
+		</item>
+		<item href="http://event20.wanmei.com/w2i/201107/w2imediacard/change.jsp" target="_blank">
+			<icon src="image/huodongqianzhan/22.jpg"/>
+			<title text="兑换特权礼包 尽享海量荣耀" color="#000000" size="21" autoSize="left"/>
+			<content text="活动时间：2012年9月6日至2012年12月30日" color="#000000" size="16" autoSize="left"/>
+			<btn src="image/huodongqianzhan/btn.jpg"/>
+		</item>
+		<item href="http://wmgj.dl.wanmei.com/w2i/patch/MLZL_V04.exe" target="_blank">
+			<icon src="image/huodongqianzhan/33.jpg"/>
+			<title text="麻辣祖龙 独家爆料" color="#000000" size="21" autoSize="left"/>
+			<content text="　 资料片特刊" color="#000000" size="21" autoSize="left"/>
+			<btn src="image/huodongqianzhan/btn3.jpg"/>
+		</item>
+	</nav>
+	<nav js="URLrefresh()">
+		<label text="返回首页" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="Home" color="#C1C1C1" size="11" autoSize="left"/>
+	</nav>
+	<nav href="http://w2i.wanmei.com" target="_blank">
+		<label text="进入官网" color="#C1C1C1" size="17" autoSize="left"/>
+		<enLabel text="Enter" color="#C1C1C1" size="11" autoSize="left"/>
+	</nav>
+</xml>

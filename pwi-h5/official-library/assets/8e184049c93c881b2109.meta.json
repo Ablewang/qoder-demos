@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1352.jpg",
+  "id": "8e184049c93c881b2109",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "流光剑气",
+  "bytes": 4463,
+  "sha256": "2aad14eb9d197ed2fe584c88f5e8433e511b9d26209452763335e6d58d07ac4c",
+  "fetchedAt": "2026-11-18T08:36:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1352.jpg",
+  "path": "assets/8e184049c93c881b2109.jpg"
+}

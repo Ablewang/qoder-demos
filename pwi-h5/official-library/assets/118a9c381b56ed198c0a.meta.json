@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/top_menu0203.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "118a9c381b56ed198c0a",
+  "status": "ok",
+  "parents": [
+    "33cb0d9652b4b915ca2a",
+    "4dd65a60c7a2c6a80e3c",
+    "99187cea065b9a3bc13f",
+    "e27e5d58ee71ef14e0c1",
+    "6d2b5b18c1c6f6f3a0e8"
+  ],
+  "bytes": 5475,
+  "sha256": "b65bda82afe9dab044ac37b5f0a267e9fb632a6e30b0eafea87f65eb27d16af7",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/118a9c381b56ed198c0a.jpg"
+}

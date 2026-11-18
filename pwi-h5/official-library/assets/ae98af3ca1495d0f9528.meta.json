@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/cardboss/image/boss06.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ae98af3ca1495d0f9528",
+  "status": "ok",
+  "parents": [
+    "49c54547bb7f0d48a0e9"
+  ],
+  "bytes": 149942,
+  "sha256": "befb5fc6206cc451e057a64448311b9b374027aba1b261316ee2d7ab272b2a5e",
+  "fetchedAt": "2026-11-18T08:23:59+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/cardboss/image/boss06.jpg",
+  "path": "assets/ae98af3ca1495d0f9528.jpg"
+}

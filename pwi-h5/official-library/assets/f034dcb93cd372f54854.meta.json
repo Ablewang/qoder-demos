@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1099.jpg",
+  "id": "f034dcb93cd372f54854",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "三世明王咒",
+  "bytes": 1096,
+  "sha256": "7be0e0e2c0bf83e7f975bb21abd09a86912a90341b904694e07e685239849316",
+  "fetchedAt": "2026-11-18T08:35:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1099.jpg",
+  "path": "assets/f034dcb93cd372f54854.jpg"
+}

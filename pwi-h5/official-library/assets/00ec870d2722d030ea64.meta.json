@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/duormsiframetop.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "00ec870d2722d030ea64",
+  "status": "ok",
+  "parents": [
+    "e907295b127dcc8f7c8b"
+  ],
+  "bytes": 4176,
+  "sha256": "47a9b6b45d25ee6387b56061890054014010ba9e38621bf9381fd5ccc5a7d5b5",
+  "fetchedAt": "2026-11-18T08:24:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/duormsiframetop.jpg",
+  "path": "assets/00ec870d2722d030ea64.jpg"
+}

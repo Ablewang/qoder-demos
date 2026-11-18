@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/daoju/jingling/2.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ca2373cb5f221f21f5b0",
+  "status": "ok",
+  "parents": [
+    "96b566f9a8359094aeb4"
+  ],
+  "bytes": 7507,
+  "sha256": "29861d7b46e267a690f3a25340233f543cb014edfddde6fc2175fba5c2064983",
+  "fetchedAt": "2026-11-18T08:20:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/daoju/jingling/2.jpg",
+  "path": "assets/ca2373cb5f221f21f5b0.jpg"
+}

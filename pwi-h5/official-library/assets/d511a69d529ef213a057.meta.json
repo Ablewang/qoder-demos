@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/images/rightBar.png",
+  "id": "d511a69d529ef213a057",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201303/spread/style/master.css",
+  "bytes": 3574,
+  "sha256": "accf063f89a7194b8655444085f5d00bf572b6c31181b852c11da22dc6e8a653",
+  "fetchedAt": "2026-11-18T08:38:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/images/rightBar.png",
+  "path": "assets/d511a69d529ef213a057.png"
+}

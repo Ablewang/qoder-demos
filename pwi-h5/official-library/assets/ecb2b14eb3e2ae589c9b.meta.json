@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_428.jpg",
+  "id": "ecb2b14eb3e2ae589c9b",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·易髓经<em>（升仙）</em>",
+  "bytes": 1661,
+  "sha256": "2969a6af144cf9fe0bd15cede1aa81a52e801c767cb1ec5c058e1d4f81df2dfc",
+  "fetchedAt": "2026-11-18T08:34:23+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_428.jpg",
+  "path": "assets/ecb2b14eb3e2ae589c9b.jpg"
+}

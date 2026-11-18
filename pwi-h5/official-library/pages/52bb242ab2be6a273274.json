@@ -1,0 +1,157 @@
+{
+  "id": "52bb242ab2be6a273274",
+  "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+  "title": "第一次做任务",
+  "category": "新手指引",
+  "section": "初入完美",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "52bb242ab2be6a273274",
+    "795e2fc25f6366b4a743",
+    "e0d13df0f10091557b88",
+    "ec2daf258dc40cc656cc",
+    "80b64af2df0ec04bc9f5",
+    "b01d438a263d5990ed20",
+    "e1af6d0e32387f82d096",
+    "0ec3e5f2d64060878db6",
+    "d953218d5c4ee41c8389",
+    "7eedb1771e5ba2058b12",
+    "50ef20375a9c3fe211e7",
+    "bf2cf85d433eb7fcebcc",
+    "c975ac74bf780de1674b",
+    "a08c5a6f495dfd7c3c98"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ecb0674554ae8cc528e574e95a2091b8b43e4722d9022e5d23bef6d13421cac6",
+  "bytes": 69522,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/52bb242ab2be6a273274.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "第一次做任务 | 第一次战斗 | 第一次组队 | 第一次加好友 | 第一次自动寻路 | 第一次买东西 | 第一次使用表情\n第一次摆摊交易 | 第一次使用包裹 | 第一次传送 | 第一次升级 | 第一次创建聊天室 | 第一次聊天 |\n1.首先您进入游戏后，就可以从指引者处接到第一个任务，在小地图上可以看到大的橙色点就是有任务NPC的位置了。\n2.当走到NPC近处可以看到他/她时，在其头顶带有黄色/橙色盾牌图样表明在他/她处有任务可以接（黄色为普通任务，橙色为主线任务）。\n3.接取任务后在游戏界面左上角显示接到任务和任务名，当任务未完成时接取任务NPC头顶会以灰色的旗帜表明。\n4.接取任务后可以按下任务快捷键Q来查询相关任务信息，包括任务情节，任务提示以及任务奖励。\n5.如任务需要消灭怪物或者获得任务物品的，可以点击追踪按钮对完成情况进行追踪，也可以使用显示/关闭所有可追踪任务，对所有已接任务进行追踪，任务追踪显示在游戏界面的左上角，可以点击拖动到游戏界面的任何位置。\n6.当任务物品攒齐或者达到任务要求的杀怪数量后，任务追踪里的任务追踪会以绿色字体显示，同时如果在小地图范围内可以看到交任务的NPC，其会以紫色的大点显示。\n7.当在游戏画面可以看到交任务的NPC时，其头顶会有黄色/橙色的小旗子显示（黄色为普通任务，橙色为主线任务）。\n8.和NPC对话完成任务后在游戏界面左上角会显示任务完成的提示信息。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+      "label": "第一次做任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30061.shtml",
+      "label": "第一次战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30063.shtml",
+      "label": "第一次组队",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30064.shtml",
+      "label": "第一次加好友",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29926.shtml",
+      "label": "第一次自动寻路",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+      "label": "第一次买东西",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30065.shtml",
+      "label": "第一次使用表情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30066.shtml",
+      "label": "第一次摆摊交易",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+      "label": "第一次使用包裹",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+      "label": "第一次传送",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+      "label": "第一次升级",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29924.shtml",
+      "label": "第一次创建聊天室",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+      "label": "第一次聊天",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r02s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r03s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r04s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r05s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r06s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r07s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r08s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/r09s.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=52bb242ab2be6a273274\">第一次做任务</a> |  \t\t\t\t\t<a href=\"#page=795e2fc25f6366b4a743\">第一次战斗 </a> |  \t\t\t\t\t<a href=\"#page=80b64af2df0ec04bc9f5\">第一次组队 </a> |  \t\t\t\t\t<a href=\"#page=b01d438a263d5990ed20\">第一次加好友 </a> |  \t\t\t\t\t<a href=\"#page=c975ac74bf780de1674b\">第一次自动寻路 </a> |  \t\t\t\t\t<a href=\"#page=ec2daf258dc40cc656cc\">第一次买东西 </a> |  \t\t\t\t\t<a href=\"#page=e1af6d0e32387f82d096\">第一次使用表情 </a><br>\r\n    <a href=\"#page=d953218d5c4ee41c8389\">第一次摆摊交易 </a> |  \t\t\t\t\t<a href=\"#page=7eedb1771e5ba2058b12\">第一次使用包裹 </a> |  \t\t\t\t\t<a href=\"#page=50ef20375a9c3fe211e7\">第一次传送 </a> |  \t\t\t\t\t<a href=\"#page=e0d13df0f10091557b88\">第一次升级 </a> |  \t\t\t\t\t<a href=\"#page=bf2cf85d433eb7fcebcc\">第一次创建聊天室</a> | \t\t\t\t\t  \t\t\t\t\t<a href=\"#page=0ec3e5f2d64060878db6\">第一次聊天 </a> |</li>\r\n</ul>\r\n<p>　　1.首先您进入游戏后，就可以从指引者处接到第一个任务，在小地图上可以看到大的橙色点就是有任务NPC的位置了。</p>\r\n<p><img src=\"assets/c29c6d6ef84af3fac734.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　2.当走到NPC近处可以看到他/她时，在其头顶带有黄色/橙色盾牌图样表明在他/她处有任务可以接（黄色为普通任务，橙色为主线任务）。</p>\r\n<p><img src=\"assets/57ae57fe78384c5462fb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　3.接取任务后在游戏界面左上角显示接到任务和任务名，当任务未完成时接取任务NPC头顶会以灰色的旗帜表明。</p>\r\n<p><img src=\"assets/aa3515a83c6299391e21.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　4.接取任务后可以按下任务快捷键Q来查询相关任务信息，包括任务情节，任务提示以及任务奖励。</p>\r\n<p><img src=\"assets/e94ddc7d43b841c6326c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/baa0470b9cfe505c39c7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　5.如任务需要消灭怪物或者获得任务物品的，可以点击追踪按钮对完成情况进行追踪，也可以使用显示/关闭所有可追踪任务，对所有已接任务进行追踪，任务追踪显示在游戏界面的左上角，可以点击拖动到游戏界面的任何位置。</p>\r\n<p><img src=\"assets/0051da4b036364cc121a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　6.当任务物品攒齐或者达到任务要求的杀怪数量后，任务追踪里的任务追踪会以绿色字体显示，同时如果在小地图范围内可以看到交任务的NPC，其会以紫色的大点显示。</p>\r\n<p><img src=\"assets/913d605e5b28c0964d9e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　7.当在游戏画面可以看到交任务的NPC时，其头顶会有黄色/橙色的小旗子显示（黄色为普通任务，橙色为主线任务）。</p>\r\n<p><img src=\"assets/e6b157dc4b940d76eba4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　8.和NPC对话完成任务后在游戏界面左上角会显示任务完成的提示信息。</p>\r\n<p><img src=\"assets/7d37d635bd19e8eaa672.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/52bb242ab2be6a273274.json",
+  "imageCount": 9,
+  "tableCount": 0,
+  "downloadPath": "downloads/52bb242ab2be6a273274.js"
+}

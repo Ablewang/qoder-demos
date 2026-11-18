@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/qishi_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "a7d542374e796efbe27d",
+  "status": "ok",
+  "parents": [
+    "50882b34fe4b4375e93a"
+  ],
+  "bytes": 4020,
+  "sha256": "05f00ae0e8a34b624a86f051428f5092c3055fa9b75829dace7068aedd1f14cd",
+  "fetchedAt": "2026-11-18T08:22:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/qishi_button.jpg",
+  "path": "assets/a7d542374e796efbe27d.jpg"
+}

@@ -1,0 +1,209 @@
+{
+  "id": "8cad2952b53b0c9029e6",
+  "url": "https://w2i.wanmei.com/intro/ts/20091020/30151.shtml",
+  "title": "婚姻宝典 - 爱的祝福",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 1,
+  "parents": [
+    "a73d94296c108e609f49",
+    "8cad2952b53b0c9029e6",
+    "6bd17c02a78d330c7d2c",
+    "74f129ed64a0ac835332"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "11763dbb1643e80a921fd2b3cef410d9f3db62742e5decf6da9f0bf0e8c03670",
+  "bytes": 69612,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/8cad2952b53b0c9029e6.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-20",
+  "text": "爱的装扮 | 爱的祝福 | 爱的昵称 | 爱的殿堂 |\n结婚红包本是婚礼中馈赠亲友的喜庆之物。点击右键开启后会随机获得喜帖、喜钱、喜酒、喜糖这四种增添婚礼气氛的喜庆物品之一。\n一、喜帖\n如果玩家携带的有喜帖，则能在杜蘅处领取一次额外的“疯狂的石头”任务。此任务名为“疯狂的石头·喜帖——五行之力·喜”，可以和普通的“疯狂的石头”任务并存。其所需要的五行石头和玩家当前能够接到的一般的“疯狂的石头”一样，并且能获得的奖励也相同。唯一不同的是，完成任务的NPC是叶公。为什么说是额外的呢？众所周知，超低难度超高回报的“疯狂的石头”任务一天只能完成一次，但是拥有喜帖的话，能再做一次“疯狂的石头”任务。如此高额的奖励，就是喜帖的魅力所在！\n二、喜钱\n红包中当然会有钱了。将喜钱出售给NPC，能够获得99999的金币。99999这个数字也代表着祝福新人天长地久的美好愿望。\n三、喜糖\n祝福婚礼离不开喜糖。点击右键食用喜糖之后，你会发现其中包含着人们对新人的深深祝福。所获得的高额声望，代表着你经历了一场婚礼之后，对完美大陆更加了解了。\n四、喜酒\n举办婚宴怎么能离得开酒呢？但玩家不是酒剑仙，所以切忌贪杯。这些喜庆的美酒不如上交给月老以兑换美酒佳酿，让祝福新人的美酒在消灭完美大陆的怨灵大军中也立一功。不过要注意，如果喜酒数量不够，月老是不会给你兑换的，因为月老其实也贪杯……\n喜酒兑换美酒佳酿比例：\n1喜酒\n1桂花酒（19）\n1喜酒\n1竹叶青（29）\n2喜酒\n1女儿红（39）\n2喜酒\n1群芳髓（49）\n2喜酒\n1剑南春（59）\n2喜酒\n1古井贡（69）\n2喜酒\n1流霞醉（79）\n1喜酒\n1杜康酿（89）\n1喜酒\n1万古愁（99）",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "1喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1桂花酒（19）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1竹叶青（29）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1女儿红（39）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1群芳髓（49）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1剑南春（59）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1古井贡（69）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1流霞醉（79）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1杜康酿（89）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1喜酒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1万古愁（99）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30150.shtml",
+      "label": "爱的装扮",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30151.shtml",
+      "label": "爱的祝福",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30152.shtml",
+      "label": "爱的昵称",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30153.shtml",
+      "label": "爱的殿堂",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image002.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image004.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image006.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image008.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image010.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image012.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image014.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/zhufu_clip_image016.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=a73d94296c108e609f49\">爱的装扮</a> | <a href=\"#page=8cad2952b53b0c9029e6\">爱的祝福</a> | <a href=\"#page=6bd17c02a78d330c7d2c\">爱的昵称</a> | <a href=\"#page=74f129ed64a0ac835332\">爱的殿堂</a> |</li>\r\n</ul>\r\n<p>　　结婚红包本是婚礼中馈赠亲友的喜庆之物。点击右键开启后会随机获得喜帖、喜钱、喜酒、喜糖这四种增添婚礼气氛的喜庆物品之一。</p>\r\n<p>　　<strong>一、喜帖</strong></p>\r\n<p>　　如果玩家携带的有喜帖，则能在杜蘅处领取一次额外的“疯狂的石头”任务。此任务名为“疯狂的石头·喜帖——五行之力·喜”，可以和普通的“疯狂的石头”任务并存。其所需要的五行石头和玩家当前能够接到的一般的“疯狂的石头”一样，并且能获得的奖励也相同。唯一不同的是，完成任务的NPC是叶公。为什么说是额外的呢？众所周知，超低难度超高回报的“疯狂的石头”任务一天只能完成一次，但是拥有喜帖的话，能再做一次“疯狂的石头”任务。如此高额的奖励，就是喜帖的魅力所在！</p>\r\n<p><img src=\"assets/129a534bd6d7b16ef2df.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><img src=\"assets/5f1d5e32c5ea381f0c80.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>二、喜钱</strong></p>\r\n<p>　　红包中当然会有钱了。将喜钱出售给NPC，能够获得99999的金币。99999这个数字也代表着祝福新人天长地久的美好愿望。</p>\r\n<p><img src=\"assets/a7410aadf28f2e4c334e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><img src=\"assets/ae277ee8cb5b4159c635.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>三、喜糖</strong></p>\r\n<p>　　祝福婚礼离不开喜糖。点击右键食用喜糖之后，你会发现其中包含着人们对新人的深深祝福。所获得的高额声望，代表着你经历了一场婚礼之后，对完美大陆更加了解了。</p>\r\n<p><img src=\"assets/fb852c8434e8d65d6bf9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><img src=\"assets/c0caf88927949e77dba6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>四、喜酒</strong></p>\r\n<p>　　举办婚宴怎么能离得开酒呢？但玩家不是酒剑仙，所以切忌贪杯。这些喜庆的美酒不如上交给月老以兑换美酒佳酿，让祝福新人的美酒在消灭完美大陆的怨灵大军中也立一功。不过要注意，如果喜酒数量不够，月老是不会给你兑换的，因为月老其实也贪杯……</p>\r\n<p><img src=\"assets/d5856cb7d034b2d6002d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><img src=\"assets/8c1518041ae3bca5f5c0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>喜酒兑换美酒佳酿比例：</strong></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>1喜酒</td>\r\n            <td>1桂花酒（19）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>1喜酒</td>\r\n            <td>1竹叶青（29）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>2喜酒</td>\r\n            <td>1女儿红（39）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>2喜酒</td>\r\n            <td>1群芳髓（49）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>2喜酒</td>\r\n            <td>1剑南春（59）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>2喜酒</td>\r\n            <td>1古井贡（69）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>2喜酒</td>\r\n            <td>1流霞醉（79）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>1喜酒</td>\r\n            <td>1杜康酿（89）</td>\r\n        </tr>\r\n        <tr>\r\n            <td>1喜酒</td>\r\n            <td>1万古愁（99）</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/8cad2952b53b0c9029e6.json",
+  "imageCount": 8,
+  "tableCount": 1,
+  "downloadPath": "downloads/8cad2952b53b0c9029e6.js"
+}

@@ -1,0 +1,125 @@
+{
+  "id": "50ef20375a9c3fe211e7",
+  "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+  "title": "第一次传送",
+  "category": "新手指引",
+  "section": "初入完美",
+  "depth": 0,
+  "parents": [
+    "52bb242ab2be6a273274",
+    "795e2fc25f6366b4a743",
+    "e0d13df0f10091557b88",
+    "ec2daf258dc40cc656cc",
+    "80b64af2df0ec04bc9f5",
+    "b01d438a263d5990ed20",
+    "e1af6d0e32387f82d096",
+    "0ec3e5f2d64060878db6",
+    "d953218d5c4ee41c8389",
+    "7eedb1771e5ba2058b12",
+    "50ef20375a9c3fe211e7",
+    "bf2cf85d433eb7fcebcc",
+    "c975ac74bf780de1674b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "bff1f30e980a2aa345c92a9a29da8166dd3b988304dd0d33804e3869ac4e9c32",
+  "bytes": 69318,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/50ef20375a9c3fe211e7.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "第一次做任务 | 第一次战斗 | 第一次组队 | 第一次加好友 | 第一次自动寻路 | 第一次买东西 | 第一次使用表情\n第一次摆摊交易 | 第一次使用包裹 | 第一次传送 | 第一次升级 | 第一次创建聊天室 | 第一次聊天 |\n传送机制\n给玩家提供方便的交通方式，主要是从一个固定的地点到另一个固定地点的个人传送。\n1.功能的开启：\n玩家需要在当地驿站和NPC对话，记录了此处的传送位置后才可以开通对此地的传送功能。（新手城的传送点自动开启，例：建立人物武侠，自动开启剑仙城传送点）。\n目前不限制开启传送点等级。\n传送的路线图只有在玩家在传送点，和NPC对话后才可显示出来所能传达的城市。（如下图）\n2.当玩家有了2个以上传送记录点后，玩家的传送记录点会自动连接。形成传送线路提供给玩家实用。（有的传送点可以去多个位置，有的只能在2个传送点间进行传送）\n传送点之间的传送线路方面是系统之前就提供好，只有玩家在2个传送记录点记录后，才会显示出来2点之间的连接线。（如下面这张图，线路全开图）\n传送的路线是系统设定好的，有些传送点间是不能进行传送的，传送是没有等级限制，而且传送不同的地域需要花费的金钱也不同。（如下图，两个绿色的传送点之间就没有传送路线，显示等级限制和所需金钱）\n3.当鼠标指向其中一个传送记录点的时候会显示那个地点的“地点名字”以及“路程费用”。\n4.当鼠标指向人物当前所在传送点的时候会显示当前地点的“地点名字”。\n5.人物所在传送点为黄色点表示，其他传送点为绿色点表示。\n6.传送点收费根据路程标准：\n按照路程的长短；\n是否跨越了别的地图区域；\n根据经过路程中怪物的级别差；\n在人物选择了传送目标点后，先收取费用后开始传送。\n7.人物在传送期间“断线”“退出”在下次上线的时候，人物会在目标传送点出现。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+      "label": "第一次做任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30061.shtml",
+      "label": "第一次战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30063.shtml",
+      "label": "第一次组队",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30064.shtml",
+      "label": "第一次加好友",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29926.shtml",
+      "label": "第一次自动寻路",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+      "label": "第一次买东西",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30065.shtml",
+      "label": "第一次使用表情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30066.shtml",
+      "label": "第一次摆摊交易",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+      "label": "第一次使用包裹",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+      "label": "第一次传送",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+      "label": "第一次升级",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29924.shtml",
+      "label": "第一次创建聊天室",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+      "label": "第一次聊天",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/1001.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/1002.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/1003.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=52bb242ab2be6a273274\">第一次做任务</a> | <a href=\"#page=795e2fc25f6366b4a743\">第一次战斗 </a>| <a href=\"#page=80b64af2df0ec04bc9f5\">第一次组队 </a>| <a href=\"#page=b01d438a263d5990ed20\">第一次加好友 </a>| <a href=\"#page=c975ac74bf780de1674b\">第一次自动寻路 </a>| <a href=\"#page=ec2daf258dc40cc656cc\">第一次买东西 </a>| <a href=\"#page=e1af6d0e32387f82d096\">第一次使用表情 </a><br>\r\n    <a href=\"#page=d953218d5c4ee41c8389\">第一次摆摊交易 </a>| <a href=\"#page=7eedb1771e5ba2058b12\">第一次使用包裹 </a>| <a href=\"#page=50ef20375a9c3fe211e7\">第一次传送 </a>| <a href=\"#page=e0d13df0f10091557b88\">第一次升级 </a>| <a href=\"#page=bf2cf85d433eb7fcebcc\">第一次创建聊天室</a> | <a href=\"#page=0ec3e5f2d64060878db6\">第一次聊天 </a>|</li>\r\n</ul>\r\n<p>　　<strong>传送机制</strong></p>\r\n<p>　　给玩家提供方便的交通方式，主要是从一个固定的地点到另一个固定地点的个人传送。</p>\r\n<p>　　1.功能的开启：<br>\r\n　　玩家需要在当地驿站和NPC对话，记录了此处的传送位置后才可以开通对此地的传送功能。（新手城的传送点自动开启，例：建立人物武侠，自动开启剑仙城传送点）。<br>\r\n　　目前不限制开启传送点等级。<br>\r\n　　传送的路线图只有在玩家在传送点，和NPC对话后才可显示出来所能传达的城市。（如下图）</p>\r\n<p><img src=\"assets/4488d49fe5124c50af6c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　2.当玩家有了2个以上传送记录点后，玩家的传送记录点会自动连接。形成传送线路提供给玩家实用。（有的传送点可以去多个位置，有的只能在2个传送点间进行传送）<br>\r\n　　传送点之间的传送线路方面是系统之前就提供好，只有玩家在2个传送记录点记录后，才会显示出来2点之间的连接线。（如下面这张图，线路全开图）</p>\r\n<p><img src=\"assets/c0a460ab356bc098b571.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　传送的路线是系统设定好的，有些传送点间是不能进行传送的，传送是没有等级限制，而且传送不同的地域需要花费的金钱也不同。（如下图，两个绿色的传送点之间就没有传送路线，显示等级限制和所需金钱）</p>\r\n<p><img src=\"assets/97086526553a2f747b6f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　3.当鼠标指向其中一个传送记录点的时候会显示那个地点的“地点名字”以及“路程费用”。</p>\r\n<p>　　4.当鼠标指向人物当前所在传送点的时候会显示当前地点的“地点名字”。</p>\r\n<p>　　5.人物所在传送点为黄色点表示，其他传送点为绿色点表示。</p>\r\n<p>　　6.传送点收费根据路程标准： <br>\r\n　　按照路程的长短；<br>\r\n　　是否跨越了别的地图区域；<br>\r\n　　根据经过路程中怪物的级别差；<br>\r\n　　在人物选择了传送目标点后，先收取费用后开始传送。</p>\r\n<p>　　7.人物在传送期间“断线”“退出”在下次上线的时候，人物会在目标传送点出现。</p>\r\n                        </div>",
+  "dataPath": "pages/50ef20375a9c3fe211e7.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/50ef20375a9c3fe211e7.js"
+}

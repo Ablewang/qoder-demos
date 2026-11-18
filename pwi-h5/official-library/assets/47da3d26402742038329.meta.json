@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/banner_21.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "47da3d26402742038329",
+  "status": "ok",
+  "parents": [
+    "2a57cf7d233caadf9b33",
+    "a1250a87e9c9964d7971",
+    "39e541ba79904034117c",
+    "8d3e83b72711ebe48ed4",
+    "fc1bd1184d32977d8ef8",
+    "7d1f04ccb3ecb19618de",
+    "54077598110dd21a8ab3",
+    "041600a6747d0e6956af",
+    "4caddf883e97ec7726fc"
+  ],
+  "bytes": 44362,
+  "sha256": "91db6160b9130ef3097d87195204692b0ac8965835ddc255398b84573645a041",
+  "fetchedAt": "2026-11-18T08:20:10+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201103/bp/images/banner_21.jpg",
+  "path": "assets/47da3d26402742038329.jpg"
+}

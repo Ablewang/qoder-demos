@@ -1,0 +1,365 @@
+{
+  "id": "afdfbdf0c16eb91ef876",
+  "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/detail02.htm",
+  "title": "春节大联欢 -《完美国际2012》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 6,
+  "parents": [
+    "a82f2cc399110384cf05"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201201/SpringFestival/detail02.htm",
+  "fetchedAt": "2026-11-18T08:17:17+00:00",
+  "sha256": "dcc2c7a082723f1851cebedc7c934efbd28758329c7f900fc474ba04ed6cd88c",
+  "bytes": 7907,
+  "rawPath": "raw/afdfbdf0c16eb91ef876.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "活动名称：\n保卫红包大作战\n活动时间：\n2012年1月11日-2月7日每晚20点-24点\n活动奖励：\n黑焰魔羽\n深海魔鳐\n深蓝冰翼\n飞天花兽\n蝶恋花\n参与等级：\n大于等于30级\n活动流程：\n1.玩家前往找NPC“招财神兽”灵犀城（382.232）处领取任务；\n2.随后到NPC“老糖”灵犀城（390.250）处询问，提示玩家“面点师傅”灵犀城（371.237）了解详情；\n3.“面点师傅”告知玩家前往灵犀城外（341.265）击杀饕餮奇香兽或奇香兽获得“肉”以及采集“堆起的食物箱子”获得“麦子”后交付任务；\n4.交付任务后可获得玩家可获得饺子和硬币，使用饺子后可获得1分钟变身状态，在变身状态下再次前往“老糖”处即可用硬币获得糖果；\n5.前往“招财神兽”使用糖果兑换相应红包，当每组服务器红包发放量到达2012时，老糖即会化身为BOSS“妖龙·岁夕”抢夺红包；\n6.成功BOSS击杀后，领奖NPC“进宝神兽”出现，凭借手中红包领奖；\n7.红包在“进宝神兽”处可选择直接换取奖励或抽奖。\n奖励一览：\n直接换取奖励可获得相应的经验、元神奖励以及限时飞行器；抽奖可有几率获得以下物品：\n奖励详表\n红包数\n奖励\n直接兑换\n1个红包\n可获得相应等级段经验元神奖励\n5个红包\n可获得相应等级段经验元神奖励\n50个红包（100级以上玩家可兑换限时1个月飞行器）\n蝶恋花（人族）\n深海魔鳐（灵族）\n飞天花兽（妖族）\n黑焰魔羽（羽族）\n深蓝冰翼（汐族）\n抽奖\n5个红包（100级以上玩家）\n无时限坐骑\n好人卡\n贵人卡\n神秘筹码包\n幻仙石礼包\n普攻防御药品*5\n1个红包（100级以下玩家）\n无时限坐骑\n神秘筹码包\n幻仙石礼包\n修炼秘籍\n梦幻果*1",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黑焰魔羽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "深海魔鳐",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "深蓝冰翼",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "飞天花兽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "蝶恋花",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "奖励详表",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "红包数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奖励",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "直接兑换",
+            "rowspan": "7",
+            "colspan": "1"
+          },
+          {
+            "text": "1个红包",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可获得相应等级段经验元神奖励",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5个红包",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可获得相应等级段经验元神奖励",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "50个红包（100级以上玩家可兑换限时1个月飞行器）",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "蝶恋花（人族）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "深海魔鳐（灵族）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "飞天花兽（妖族）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黑焰魔羽（羽族）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "深蓝冰翼（汐族）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "抽奖",
+            "rowspan": "11",
+            "colspan": "1"
+          },
+          {
+            "text": "5个红包（100级以上玩家）",
+            "rowspan": "6",
+            "colspan": "1"
+          },
+          {
+            "text": "无时限坐骑",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "好人卡",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "贵人卡",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神秘筹码包",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻仙石礼包",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "普攻防御药品*5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1个红包（100级以下玩家）",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "无时限坐骑",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神秘筹码包",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻仙石礼包",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "修炼秘籍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "梦幻果*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img1d.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img2d.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img3d.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img4d.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img5d.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/zl_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/zl_02.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img1s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img2s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img3s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img4s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img5s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/zl_01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/zl_02s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/js/shadowbox/shadowbox.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/js/shadowbox/shadowbox.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n    \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/top.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201201/SpringFestival/top.htm</a></p>\r\n        <div></div>\r\n  \t</div>\r\n    <div>\r\n    \t<div>\r\n        \t<div>\r\n\t\t\t\t<h2>活动名称：</h2>\r\n\t\t\t\t<p>保卫红包大作战</p>\r\n\t\t\t\t<h2>活动时间：</h2>\r\n\t\t\t\t<p>2012年1月11日-2月7日每晚20点-24点</p>\r\n\t\t\t\t<h2>活动奖励：</h2>\r\n\t\t\t\t<p>\r\n                <table>\r\n                  <tr>\r\n                    <td><p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img1d.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/852b79077f0074cca983.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p></td>\r\n                    <td><p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img2d.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/ae72a2bd279d789aa656.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p></td>\r\n                    <td><p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img3d.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/89e69d1c980fd0c0d4f7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p></td>\r\n                    <td><p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img4d.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/1a84d8c8cc64396d5131.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p></td>\r\n                    <td><p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/list_img5d.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/7ed1ceac05b6324f5a75.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p></td>\r\n                  </tr>\r\n                  <tr>\r\n                    <td>黑焰魔羽</td>\r\n                    <td>深海魔鳐</td>\r\n                    <td>深蓝冰翼</td>\r\n                    <td>飞天花兽</td>\r\n                    <td>蝶恋花</td>\r\n                  </tr>\r\n                </table>\r\n                </p>\r\n\t\t\t\t<h2>参与等级：</h2>\r\n\t\t\t\t<p>大于等于30级</p>\r\n                <h2>活动流程：</h2>\r\n\t\t\t\t<p>1.玩家前往找NPC“招财神兽”灵犀城（382.232）处领取任务；</p>\r\n\t\t\t\t<p>2.随后到NPC“老糖”灵犀城（390.250）处询问，提示玩家“面点师傅”灵犀城（371.237）了解详情；</p>\r\n\t\t\t\t<p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/zl_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/af37c81ee0de40da3c87.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n\t\t\t\t<p>3.“面点师傅”告知玩家前往灵犀城外（341.265）击杀饕餮奇香兽或奇香兽获得“肉”以及采集“堆起的食物箱子”获得“麦子”后交付任务；</p>\r\n\t\t\t\t<p><a href=\"https://event51.wanmei.com/w2i/201201/SpringFestival/images/zl_02.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/972a181be67566cb6412.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n\t\t\t\t<p>4.交付任务后可获得玩家可获得饺子和硬币，使用饺子后可获得1分钟变身状态，在变身状态下再次前往“老糖”处即可用硬币获得糖果；</p>\r\n\t\t\t\t<p>5.前往“招财神兽”使用糖果兑换相应红包，当每组服务器红包发放量到达2012时，老糖即会化身为BOSS“妖龙·岁夕”抢夺红包；</p>\r\n\t\t\t\t<p>6.成功BOSS击杀后，领奖NPC“进宝神兽”出现，凭借手中红包领奖；</p>\r\n\t\t\t\t<p>7.红包在“进宝神兽”处可选择直接换取奖励或抽奖。</p>\r\n\t\t\t\t<h2>奖励一览：</h2>\r\n                <p>直接换取奖励可获得相应的经验、元神奖励以及限时飞行器；抽奖可有几率获得以下物品：</p>\r\n                <p><table>\r\n                      \r\n                      \r\n                      \r\n                      <tr>\r\n                        <th>奖励详表</th>\r\n                        <th>红包数</th>\r\n                        <th>奖励</th>\r\n                      </tr>\r\n                      <tr>\r\n                        <td rowspan=\"7\"><strong>直接兑换</strong></td>\r\n                        <td>1个红包</td>\r\n                        <td>可获得相应等级段经验元神奖励</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>5个红包</td>\r\n                        <td>可获得相应等级段经验元神奖励</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td rowspan=\"5\">50个红包（100级以上玩家可兑换限时1个月飞行器）</td>\r\n                        <td>蝶恋花（人族）</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>深海魔鳐（灵族）</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>飞天花兽（妖族）</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>黑焰魔羽（羽族）</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>深蓝冰翼（汐族）</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td rowspan=\"11\"><strong>抽奖</strong></td>\r\n                        <td rowspan=\"6\">5个红包（100级以上玩家）</td>\r\n                        <td>无时限坐骑</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>好人卡</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>贵人卡</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>神秘筹码包</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>幻仙石礼包</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>普攻防御药品*5</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td rowspan=\"5\">1个红包（100级以下玩家）</td>\r\n                        <td>无时限坐骑</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>神秘筹码包</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>幻仙石礼包</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>修炼秘籍</td>\r\n                      </tr>\r\n                      <tr>\r\n                        <td>梦幻果*1</td>\r\n                      </tr>\r\n                    </table></p>\r\n            </div>\r\n      </div>\r\n    <div></div>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/afdfbdf0c16eb91ef876.json",
+  "imageCount": 7,
+  "tableCount": 2,
+  "downloadPath": "downloads/afdfbdf0c16eb91ef876.js"
+}

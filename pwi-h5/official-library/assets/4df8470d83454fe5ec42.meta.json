@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/syimg/image123.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "4df8470d83454fe5ec42",
+  "status": "ok",
+  "parents": [
+    "237410fc23f04fa97071"
+  ],
+  "bytes": 21510,
+  "sha256": "351a5eaf8bdb36cd6f25ec015c7d8aa1781b2a438826497f0cebf2b9ca5c27dc",
+  "fetchedAt": "2026-11-18T08:25:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/wuqi/syimg/image123.gif",
+  "path": "assets/4df8470d83454fe5ec42.gif"
+}

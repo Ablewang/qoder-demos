@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/2014show/js/jquery.SuperSlide.2.1.js",
+  "alt": "",
+  "kind": "script",
+  "id": "5e7cd0c19b164cd87696",
+  "status": "ok",
+  "parents": [
+    "1662f4a22f348e722570",
+    "75f67334bcc741d278d7",
+    "7a2e7e3fffca75f622cd",
+    "b25decc3bd996db50e62"
+  ],
+  "bytes": 16531,
+  "sha256": "68e55c8f9a30193801520d75b6d2c17e70c304963962a5f65e3b5eef3b9437a2",
+  "fetchedAt": "2026-11-18T08:21:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/2014show/js/jquery.SuperSlide.2.1.js",
+  "path": "assets/5e7cd0c19b164cd87696.js"
+}

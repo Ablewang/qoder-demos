@@ -1,0 +1,18 @@
+{
+  "url": "https://static.games.wanmei.com/public/images/error.png",
+  "id": "feb1b063762ca3920ee8",
+  "status": "ok",
+  "parents": [
+    "86fd3da270244a3de5ce"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201304/treasure/js/shadowbox/shadowbox.css",
+  "bytes": 25566,
+  "sha256": "0e70764048c9a3ebd3b2b7409bbf74a8afc31eb1208c9f0855008ded09553873",
+  "fetchedAt": "2026-11-18T08:38:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://static.games.wanmei.com/public/images/error.png",
+  "path": "assets/feb1b063762ca3920ee8.png"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "id": "9c84f46665abe01d4b7b",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 57394,
+  "sha256": "57ce20a7417bc6acef77ae71732d842b2f9267bb6a27b7fe21363960e123400c",
+  "fetchedAt": "2026-11-18T08:17:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "path": "assets/9c84f46665abe01d4b7b.js"
+}

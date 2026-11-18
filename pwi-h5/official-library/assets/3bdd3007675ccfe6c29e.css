@@ -1,0 +1,39 @@
+﻿@import url(http://www.wanmei.com/public/style/wm.css);
+body{ margin:0px; padding:0px; color:#9b0000;font:12px Verdana,SimSun,Geneva,sans-serif;background:#2A2F44}
+div,form,ul,ol,li,img,dl,dt,dd,p{margin:0px; padding:0px; border:0;}
+div{width:auto}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+
+.bodybg{width:100%;min-width:1002px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");background:#001c21 url(../images/bodybg.jpg) no-repeat center top;}
+
+#wrap{width:1002px;min-width:1002px;margin:0 auto;overflow:hidden;position:relative;}
+.h img{display:block;}
+
+/*---------------*/
+.btns{position:absolute;left:0px;top:580px;}
+.btns li{width:235px;height:160px;float:left;padding-left:138px;}
+.btns li p{padding-bottom:10px;}
+.btns li a{display:block;width:186px;margin:0 auto;}
+
+
+.slide{width:590px;height:101px;position:relative;padding-left:30px;clear:both;}
+.slide li{width:150px;height:101px;}
+.slide li img{width:134px;height:101px;}
+.slide a.bx-prev,.slide a.bx-next{display:block;width:21px;height:102px;position:absolute;top:0px;text-indent:-9999px;overflow:hidden;}
+.slide a.bx-prev{background:url(../images/prev.png) no-repeat 0 30px;left:-30px;}
+.slide a.bx-next{background:url(../images/next.png) no-repeat 0 30px;right:-25px;}
+
+
+.open{width:660px;height:180px;background:#450e08;color:#fbe5c3;padding:30px 25px 20px;overflow:hidden;position:absolute;left:151px;top:300px;display:none}
+.oclose{position:absolute;right:10px;top:5px;color:#9a9a9a;cursor:pointer}
+
+.open h2{font-weight:bold;}
+.open p{padding-bottom:10px;}
+#open1{height:400px}
+.rules{padding-bottom:10px;}
+
+.open table{border-collapse:collapse;}
+.open table th{background:#b04135;color:#fefefe;text-align:center;border:1px solid #450e08;padding:3px}
+.open table td{background:#af3535;border:1px solid #450e08;text-align:center;padding:3px}
+.open table td strong{color:#fee300;}

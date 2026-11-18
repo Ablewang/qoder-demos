@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201311/landmark/js/tools.js",
+  "alt": "",
+  "kind": "script",
+  "id": "5a795c90d7292c3242fb",
+  "status": "ok",
+  "parents": [
+    "dcf675f95e132ae5a3d5"
+  ],
+  "bytes": 1806,
+  "sha256": "4781c65d3edb754dcd60c904014266813506a781ff2e71842bbfb66c98ef3713",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/5a795c90d7292c3242fb.js"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/font07.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "0616dc16d58f0a81e5a5",
+  "status": "ok",
+  "parents": [
+    "f057f0f6ec279c516a36"
+  ],
+  "bytes": 4607,
+  "sha256": "85c5f133b35a5e94b5036280ceece2fdd6285333263b0b430e752f07ee63d0c3",
+  "fetchedAt": "2026-11-18T08:19:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/font07.gif",
+  "path": "assets/0616dc16d58f0a81e5a5.gif"
+}

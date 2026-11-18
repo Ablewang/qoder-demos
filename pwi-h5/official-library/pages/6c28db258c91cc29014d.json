@@ -1,0 +1,157 @@
+{
+  "id": "6c28db258c91cc29014d",
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/battle.htm",
+  "title": "游戏特色 战斗 -《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业介绍",
+  "depth": 1,
+  "parents": [
+    "3e844d7982ff7ea45bd4",
+    "64afb5b5f8d4e795b812",
+    "8015afdd3e67ec5d604d",
+    "9d452222090849e9f957",
+    "5cb139e84a2958af390a",
+    "a93b688ecdd34ebb3e45",
+    "aaa383067502c794c1ce",
+    "e3708d65cda48d6dca71",
+    "c7af4e8a8e3e7178c636",
+    "56efe8135221e06210bd",
+    "e63b639f9250bddb7f1c",
+    "70dffced80c07759aa48",
+    "da31792f8d7ba28f361d",
+    "6c28db258c91cc29014d",
+    "dc35782b075005c68fbc",
+    "b7d74aaf0682f417291c",
+    "4b26ae1193398abd6a1e",
+    "125889a9e55210906b09",
+    "9331b7d5cd87224a3247",
+    "d5853afa509a7d061e6b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "0228b892f28668ab10d43822761ee9f4f4a31d4f573af25f0f0929ea420d5776",
+  "bytes": 6936,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/6c28db258c91cc29014d.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "游戏特色\n注册账号\n下载客户端\n新手指南\n视听\n职业\n装备\n修炼\n战斗\n骑乘\n捏脸\n时装\n在跨服国战中，玩家要与其他三组服务器玩家战斗，每场战斗都将进行得非常激烈。跨服国战玩法在战略、配合度上要求较高，团战元素远远重要于个人能力发挥，作战方式非常丰富。战场类型分别有“断桥对峙”、“水晶争夺”和“孤岛夺旗”。\n所有进入到跨服战场的玩家将混在一起，然后随机分为2个阵营，玩家驾驶战车消灭敌对阵营的玩家。战车分为金、火、土三种，技能各有不同，每种战车可以有三段升级，每次升级都需要消耗一定数量的能量，能量可以通过采集来获得。战场死亡无惩罚。\n加入势力的玩家，进入蓬莱后到达所属势力大本营后，接取任务击杀其他势力的成员，让他们对本势心存忌惮！此活动期间，所有进入蓬莱的玩家PK不红名，死亡无掉落。\npart01 跨服国战\npart02 血战落日谷\npart03 蓬莱扬威\n回到顶部\n注册账号\n领取礼包",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/index.htm",
+      "label": "视听",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/down_client.htm",
+      "label": "下载客户端",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/index.htm",
+      "label": "新手指南",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/job.htm",
+      "label": "职业",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/equip.htm",
+      "label": "装备",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/practice.htm",
+      "label": "修炼",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/battle.htm",
+      "label": "战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/ride.htm",
+      "label": "骑乘",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/nipface.htm",
+      "label": "捏脸",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/fashion.htm",
+      "label": "时装",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp",
+      "label": "领取礼包",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/battle_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/js/js0214.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div></div>\r\n<div>\r\n    <div>\r\n\t\t<div>\r\n\t\t\t\r\n\t\t\t<img src=\"assets/8b506557bf64970d0018.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/940f05be69316bb1c663.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/8cdd29b500127c489933.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/59938c0d9b3286525dcc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/35eef641475d683c0188.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/432098799c514f09322c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/5d0dc41573547555b662.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/e1f9d3ab8cbddc13939a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t</div>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">游戏特色</a></li>\r\n            <li>注册账号</li>\r\n            <li><a href=\"https://w2i.wanmei.com/download/down_client.htm\" rel=\"noreferrer\" target=\"_blank\">下载客户端</a></li>\r\n            <li><a href=\"#page=22965a8aa329ca111aad\">新手指南</a></li>\r\n        </ul>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">视听</a></li>\r\n            <li><a href=\"#page=c7af4e8a8e3e7178c636\">职业</a></li>\r\n            <li><a href=\"#page=70dffced80c07759aa48\">装备</a></li>\r\n            <li><a href=\"#page=da31792f8d7ba28f361d\">修炼</a></li>\r\n            <li><a href=\"#page=6c28db258c91cc29014d\">战斗</a></li>\r\n            <li><a href=\"#page=dc35782b075005c68fbc\">骑乘</a></li>\r\n            <li><a href=\"#page=b7d74aaf0682f417291c\">捏脸</a></li>\r\n            <li><a href=\"#page=4b26ae1193398abd6a1e\">时装</a></li>\r\n        </ul>\r\n        <div>\r\n        \t<div>\r\n            \t在跨服国战中，玩家要与其他三组服务器玩家战斗，每场战斗都将进行得非常激烈。跨服国战玩法在战略、配合度上要求较高，团战元素远远重要于个人能力发挥，作战方式非常丰富。战场类型分别有“断桥对峙”、“水晶争夺”和“孤岛夺旗”。\r\n            </div>\r\n            <div>\r\n            \t所有进入到跨服战场的玩家将混在一起，然后随机分为2个阵营，玩家驾驶战车消灭敌对阵营的玩家。战车分为金、火、土三种，技能各有不同，每种战车可以有三段升级，每次升级都需要消耗一定数量的能量，能量可以通过采集来获得。战场死亡无惩罚。\r\n            </div>\r\n            <div>\r\n            \t加入势力的玩家，进入蓬莱后到达所属势力大本营后，接取任务击杀其他势力的成员，让他们对本势心存忌惮！此活动期间，所有进入蓬莱的玩家PK不红名，死亡无掉落。\r\n            </div>\r\n            <div>\r\n            \tpart01 跨服国战\r\n                part02 血战落日谷\r\n                part03 蓬莱扬威\r\n            </div>\r\n        </div>\r\n        \r\n        \r\n        \r\n        \r\n        \r\n\t</div>\r\n</div>\r\n\r\n<div>\r\n    <div>\r\n        回到顶部\r\n        注册账号\r\n        <a href=\"http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp\" rel=\"noreferrer\" target=\"_blank\">领取礼包</a>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/6c28db258c91cc29014d.json",
+  "imageCount": 8,
+  "tableCount": 0,
+  "downloadPath": "downloads/6c28db258c91cc29014d.js"
+}

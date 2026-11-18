@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/2014show/images/steelseries-logo.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "bffc6332265526fc33da",
+  "status": "ok",
+  "parents": [
+    "fb0b376a7b8aa224bb99"
+  ],
+  "bytes": 3775,
+  "sha256": "1fdd0c018073d1cfadccc112f149908b3a93496078a96e2057d87195b65a0431",
+  "fetchedAt": "2026-11-18T08:23:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/2014show/images/steelseries-logo.jpg",
+  "path": "assets/bffc6332265526fc33da.jpg"
+}

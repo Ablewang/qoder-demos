@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_578.jpg",
+  "id": "e6d678f956f74b04126d",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·龙卷风<em>（升仙）</em>",
+  "bytes": 1636,
+  "sha256": "66562a0f9f7bb656010eef12b608f9b7987f8c8fb75b16f19fb659252120386a",
+  "fetchedAt": "2026-11-18T08:35:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_578.jpg",
+  "path": "assets/e6d678f956f74b04126d.jpg"
+}

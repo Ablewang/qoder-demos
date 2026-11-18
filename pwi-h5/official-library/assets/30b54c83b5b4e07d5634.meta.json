@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/images/btn_sy.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "30b54c83b5b4e07d5634",
+  "status": "ok",
+  "parents": [
+    "aa1f5c8b062c173e0b7d"
+  ],
+  "bytes": 3501,
+  "sha256": "c2480dc8371c8043ef17f98ec696104750c260de644b84468b5e1f49297d85cf",
+  "fetchedAt": "2026-11-18T08:28:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/images/btn_sy.jpg",
+  "path": "assets/30b54c83b5b4e07d5634.jpg"
+}

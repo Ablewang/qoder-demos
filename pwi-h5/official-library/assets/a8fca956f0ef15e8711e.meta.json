@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/js/jquery.easing.1.3.js",
+  "alt": "",
+  "kind": "script",
+  "id": "a8fca956f0ef15e8711e",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4"
+  ],
+  "bytes": 4786,
+  "sha256": "4973c5e772fbb86045dab9a665dd42364952ea2c8c88149b95b79d02515b65de",
+  "fetchedAt": "2026-11-18T08:27:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/js/jquery.easing.1.3.js",
+  "path": "assets/a8fca956f0ef15e8711e.js"
+}

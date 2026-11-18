@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/jl_button002.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "3e1c41d3b64d7ffc1c04",
+  "status": "ok",
+  "parents": [
+    "9e806ff55dbec0376dad",
+    "7efee68b25cc6c382609"
+  ],
+  "bytes": 9249,
+  "sha256": "aaf4ba3d41dbc0a48e684fa954333c3ba672cf98775c837d1003f575bdc1c987",
+  "fetchedAt": "2026-11-18T08:18:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/jl_button002.jpg",
+  "path": "assets/3e1c41d3b64d7ffc1c04.jpg"
+}

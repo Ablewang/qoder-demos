@@ -1,0 +1,42 @@
+{
+  "id": "4b40c5d1a7a662593642",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29978.shtml",
+  "title": "装备精练",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "92ed3364488fb9c9b273e163591a307834acc631a10a8142cf0093ec85d0410f",
+  "bytes": 66440,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4b40c5d1a7a662593642.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "1、在哪里可以进行精炼呢？其实如果您细心寻找就不难发现在各城的长老处就可以进行精炼，还有就是您的帮派所占领的区域的郡守处也可进行精炼。\n2、选择对话框中的装备精炼即可进行精炼操作，精炼是需要幻仙石的，这时只要将您所要精炼的装备放置到精炼选框内，在精炼栏的右下方就会显示出精炼此装备所需幻仙石的数量。\n当然精炼也是有成功率的，装备的精炼等级越高，升级成功率越小，装备升级失败时损失幻仙石，精炼等级不变或变为初级，所以请大家在精炼时一定要慎重。\n小提示：如果加入天罡石、地煞石、乾坤石，将会有效的提高精炼装备的成功率或者精炼失败后防止装备损坏，这类物品玩家可在乾坤袋中进行购买。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zbjl_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zbjl_02.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　1、在哪里可以进行精炼呢？其实如果您细心寻找就不难发现在各城的长老处就可以进行精炼，还有就是您的帮派所占领的区域的郡守处也可进行精炼。</p>\r\n<p> <img src=\"assets/a57faec3b207a4a98863.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p> 　　2、选择对话框中的装备精炼即可进行精炼操作，精炼是需要幻仙石的，这时只要将您所要精炼的装备放置到精炼选框内，在精炼栏的右下方就会显示出精炼此装备所需幻仙石的数量。</p>\r\n<p> <img src=\"assets/19f31c7a2ee11d719f43.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p> 　　当然精炼也是有成功率的，装备的精炼等级越高，升级成功率越小，装备升级失败时损失幻仙石，精炼等级不变或变为初级，所以请大家在精炼时一定要慎重。</p>\r\n<p> 　　小提示：如果加入天罡石、地煞石、乾坤石，将会有效的提高精炼装备的成功率或者精炼失败后防止装备损坏，这类物品玩家可在乾坤袋中进行购买。</p>\r\n                        </div>",
+  "dataPath": "pages/4b40c5d1a7a662593642.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/4b40c5d1a7a662593642.js"
+}

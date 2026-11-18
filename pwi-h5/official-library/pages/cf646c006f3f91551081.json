@@ -1,0 +1,90 @@
+{
+  "id": "cf646c006f3f91551081",
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/faqileft1.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "f3aea7c5c5cd69190880",
+    "f9090da04106e2b492f9",
+    "fb7c1ce0318f433d598f"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/wuqi/faqileft1.htm",
+  "fetchedAt": "2026-11-18T08:16:11+00:00",
+  "sha256": "4f7fdf7dcf60fbdd85b72ddb3715b8f3b3f77fe19cc112795f22ce7f0da92f3d",
+  "bytes": 1490,
+  "rawPath": "raw/cf646c006f3f91551081.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "神泣百花杀\n天地非人间\n一叶一菩提",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神泣百花杀",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天地非人间",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "一叶一菩提",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/10.htm",
+      "label": "神泣百花杀",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/102.htm",
+      "label": "天地非人间",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/103.htm",
+      "label": "一叶一菩提",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=f3aea7c5c5cd69190880\">神泣百花杀</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=f9090da04106e2b492f9\">天地非人间</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=fb7c1ce0318f433d598f\">一叶一菩提</a></td>\n  </tr>\n  <tr>\n    <td> </td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/cf646c006f3f91551081.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/cf646c006f3f91551081.js"
+}

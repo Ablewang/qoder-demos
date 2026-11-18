@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_644.jpg",
+  "id": "8c545e8b31b1d2308a0e",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·巨石蛊<em>（升仙）</em>",
+  "bytes": 1638,
+  "sha256": "b32be589267c6be9dd4c9928d7598e172c70c9c609a8151fea93fefbb88b2dd1",
+  "fetchedAt": "2026-11-18T08:35:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_644.jpg",
+  "path": "assets/8c545e8b31b1d2308a0e.jpg"
+}

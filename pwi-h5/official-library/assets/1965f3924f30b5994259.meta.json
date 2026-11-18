@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/jiangjun_01.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "1965f3924f30b5994259",
+  "status": "ok",
+  "parents": [
+    "fb7b79c0ea3a2b129077"
+  ],
+  "bytes": 183089,
+  "sha256": "c3bbfa14fabda284c3be1fd1973c4462eddb7910d009422cf6e38cfd71777250",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/1965f3924f30b5994259.jpg"
+}

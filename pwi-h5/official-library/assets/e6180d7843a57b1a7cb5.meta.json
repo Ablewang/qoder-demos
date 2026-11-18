@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zhonggua_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "e6180d7843a57b1a7cb5",
+  "status": "ok",
+  "parents": [
+    "bfb5797fdd316efb25cc"
+  ],
+  "bytes": 4163,
+  "sha256": "2fde4c82c9ce4acfbb3431efd5d4fe003b131c013f33ce7dc3a3de73c72594d2",
+  "fetchedAt": "2026-11-18T08:22:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/zhonggua_button.jpg",
+  "path": "assets/e6180d7843a57b1a7cb5.jpg"
+}

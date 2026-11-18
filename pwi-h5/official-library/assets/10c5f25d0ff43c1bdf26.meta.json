@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/cardboss/image/zhnpc.jpg",
+  "label": "",
+  "kind": "image-map",
+  "id": "10c5f25d0ff43c1bdf26",
+  "status": "ok",
+  "parents": [
+    "46854e8de5b70a560f88"
+  ],
+  "bytes": 107457,
+  "sha256": "127dbddf02b156b3b772c06b6251e156a558ff6277c236e00709dcabb72ce59a",
+  "fetchedAt": "2026-11-18T08:17:51+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/cardboss/image/zhnpc.jpg",
+  "path": "assets/10c5f25d0ff43c1bdf26.jpg"
+}

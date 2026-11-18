@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/js/main.js",
+  "alt": "",
+  "kind": "script",
+  "id": "0906194c1cd27d503a31",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "bytes": 2809,
+  "sha256": "44b8b09a09d31e0dd795b301fd2030a937ce5c6e0467b374148ca2fd5bfeb47d",
+  "fetchedAt": "2026-11-18T08:18:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/js/main.js",
+  "path": "assets/0906194c1cd27d503a31.js"
+}

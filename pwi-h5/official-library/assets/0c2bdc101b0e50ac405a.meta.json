@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_574.jpg",
+  "id": "0c2bdc101b0e50ac405a",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·羽盾<em>（升仙）</em>",
+  "bytes": 1681,
+  "sha256": "f0f6b383d9f4fa5da417dbbc61b2664d5a7d3b9afbe323a4c5e5ba85aad3fd48",
+  "fetchedAt": "2026-11-18T08:35:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_574.jpg",
+  "path": "assets/0c2bdc101b0e50ac405a.jpg"
+}

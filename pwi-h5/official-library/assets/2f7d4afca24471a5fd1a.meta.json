@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201211/poxiao/js/tip.js",
+  "alt": "",
+  "kind": "script",
+  "id": "2f7d4afca24471a5fd1a",
+  "status": "ok",
+  "parents": [
+    "ce96b1c44e08d11fa278"
+  ],
+  "bytes": 1802,
+  "sha256": "7c0433ef7d59c5fca719b99f266bd39bcf75b859dd6145012a0875820f23953f",
+  "fetchedAt": "2026-11-18T08:26:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201211/poxiao/js/tip.js",
+  "path": "assets/2f7d4afca24471a5fd1a.js"
+}

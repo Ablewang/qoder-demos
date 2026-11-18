@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_483.jpg",
+  "id": "9d2742756b5d920a0dab",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·石破天惊<em>（入魔）</em>",
+  "bytes": 1622,
+  "sha256": "3f72cab282417670ce6266f90c2d138c40b30ddd64ae66f914c77e3129129153",
+  "fetchedAt": "2026-11-18T08:34:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_483.jpg",
+  "path": "assets/9d2742756b5d920a0dab.jpg"
+}

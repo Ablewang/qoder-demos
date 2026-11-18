@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_674.jpg",
+  "id": "d22be3aad26a8a56cbd4",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·弱魂咒<em>（升仙）</em>",
+  "bytes": 1589,
+  "sha256": "01778703544dca6f50f183f5923c0c3f83d21ceb049685993df9171c350cc047",
+  "fetchedAt": "2026-11-18T08:35:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_674.jpg",
+  "path": "assets/d22be3aad26a8a56cbd4.jpg"
+}

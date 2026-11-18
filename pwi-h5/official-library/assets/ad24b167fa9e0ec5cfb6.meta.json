@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_488.jpg",
+  "id": "ad24b167fa9e0ec5cfb6",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·水精通<em>（升仙）</em>",
+  "bytes": 1653,
+  "sha256": "284ffcfc4f776937b90771b7ecaaf5513562e057f11ec2d1bba50ec79e7ced76",
+  "fetchedAt": "2026-11-18T08:34:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_488.jpg",
+  "path": "assets/ad24b167fa9e0ec5cfb6.jpg"
+}

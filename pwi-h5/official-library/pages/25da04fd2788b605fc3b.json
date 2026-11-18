@@ -1,0 +1,340 @@
+{
+  "id": "25da04fd2788b605fc3b",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_3.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_3.htm",
+  "fetchedAt": "2026-11-18T08:15:45+00:00",
+  "sha256": "0c1055392414c6cedc10ccad1402af11dc48b42769711113d4a6a656bae5d43b",
+  "bytes": 2645,
+  "rawPath": "raw/25da04fd2788b605fc3b.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n需求装备品阶\n武器镶嵌效果\n防具镶嵌效果\n来源\n锐利之石1级\n1\n准确度 +10\n闪避度 +5\n怪物掉落、货郎出售\n锐利之石2级\n2\n准确度 +20\n闪避度 +10\n怪物掉落、合成大师合成\n锐利之石3级\n3\n准确度 +30\n闪避度 +15\n怪物掉落、合成大师合成\n锐利之石4级\n4\n准确度 +40\n闪避度 +20\n怪物掉落、合成大师合成\n锐利之石5级\n5\n准确度 +50\n闪避度 +26\n怪物掉落、合成大师合成\n锐利之石6级\n6\n准确度 +65\n闪避度 +33\n怪物掉落、合成大师合成\n锐利之石7级\n7\n准确度 +80\n闪避度 +41\n怪物掉落、合成大师合成\n锐利之石8级\n8\n准确度 +100\n闪避度 +53\n怪物掉落、合成大师合成\n锐利之石9级\n9\n准确度 +125\n闪避度 +66\n怪物掉落、合成大师合成\n锐利之石10级\n10\n准确度 +150\n闪避度 +85\n怪物掉落、合成大师合成",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求装备品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防具镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "来源",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、货郎出售",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +30",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +26",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +33",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +41",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +53",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +125",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "锐利之石10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准确度 +150",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "闪避度 +85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>需求装备品阶</td>\n\t\t<td>武器镶嵌效果</td>\n\t\t<td>防具镶嵌效果</td>\n        <td>来源</td>\n\t</tr>\n\t\t<tr>\n    <td>锐利之石1级</td>\n    <td>1</td>\n    <td>准确度 +10</td>\n    <td>闪避度 +5</td>\n    <td>怪物掉落、货郎出售</td>\n  </tr>\n  <tr>\n    <td>锐利之石2级</td>\n    <td>2</td>\n    <td>准确度 +20</td>\n    <td>闪避度 +10</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石3级</td>\n    <td>3</td>\n    <td>准确度 +30</td>\n    <td>闪避度 +15</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石4级</td>\n    <td>4</td>\n    <td>准确度 +40</td>\n    <td>闪避度 +20</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石5级</td>\n    <td>5</td>\n    <td>准确度 +50</td>\n    <td>闪避度 +26</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石6级</td>\n    <td>6</td>\n    <td>准确度 +65</td>\n    <td>闪避度 +33</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石7级</td>\n    <td>7</td>\n    <td>准确度 +80</td>\n    <td>闪避度 +41</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石8级</td>\n    <td>8</td>\n    <td>准确度 +100</td>\n    <td>闪避度 +53</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石9级</td>\n    <td>9</td>\n    <td>准确度 +125</td>\n    <td>闪避度 +66</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>锐利之石10级</td>\n    <td>10</td>\n    <td>准确度 +150</td>\n    <td>闪避度 +85</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/25da04fd2788b605fc3b.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/25da04fd2788b605fc3b.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_545.jpg",
+  "id": "77952af0276954f3a6ce",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·静心咒<em>（入魔）</em>",
+  "bytes": 1674,
+  "sha256": "18e4954366cc2f7d06bde9792e9797e336b5d2fe7c557e79d54d2b265678150a",
+  "fetchedAt": "2026-11-18T08:35:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_545.jpg",
+  "path": "assets/77952af0276954f3a6ce.jpg"
+}

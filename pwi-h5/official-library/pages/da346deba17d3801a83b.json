@@ -1,0 +1,404 @@
+{
+  "id": "da346deba17d3801a83b",
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/0112.htm",
+  "title": "《完美国际》覆霜神月九月来袭",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "1756e750e6f1015da5e4"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/wuqi/0112.htm",
+  "fetchedAt": "2026-11-18T08:16:10+00:00",
+  "sha256": "6396a17a151bdad4f95b3cf18e744cc19ee23fb8e73a5ef223692df1a6317c75",
+  "bytes": 7754,
+  "rawPath": "raw/da346deba17d3801a83b.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "近战武器\n远程武器\n法器\n重甲\n轻甲披风\n法袍",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "近战武器\n远程武器\n法器\n重甲\n轻甲披风\n法袍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "近战武器\n远程武器\n法器\n重甲\n轻甲披风\n法袍",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "近战武器",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "远程武器",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法器",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "重甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "轻甲披风",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法袍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/01.htm",
+      "label": "近战武器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/02.htm",
+      "label": "远程武器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/03.htm",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/04.htm",
+      "label": "重甲",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/05.htm",
+      "label": "轻甲披风",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/06.htm",
+      "label": "法袍",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/07.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/jinzhanleft.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.w2i.com.cn/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://www.w2i.com.cn/download/client/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://bbs.w2i.com.cn/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/top04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/ban01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/leftup.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/up.gif",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/rightup.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/left.gif",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/wuqi.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/fangju.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/shipin.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/fsimg/image022.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/right.gif",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/leftdown.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/down.gif",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/images/rightdown.gif",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<table>\n<tr>\n<td>\n<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</td>\n</tr>\n</table>\n\n\n<table>\n  <tr>\n    <td><img src=\"assets/c20c710d116757fa6f44.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/c102fdd93dfa8fead74d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td> </td>\n      </tr>\n    </table>\n      <table>\n        <tr>\n          <td><img src=\"assets/faf2946908f2f60d435c.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n          <td></td>\n          <td><img src=\"assets/1fec1909b4a280065f21.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>\n\t\t  <div>\n\t\t  \t<div>\n\t\t  \t  <table>\n                <tr>\n                  <td><a href=\"#page=e91f55664f7ccc9fa6fc\">近战武器</a></td>\n                </tr>\n                <tr>\n                  <td><a href=\"#page=0e7827541dfae784af61\">远程武器</a></td>\n                </tr>\n                <tr>\n                  <td><a href=\"#page=c858379ee2d31cfa6be8\">法器</a></td>\n                </tr>\n              </table>\n\t\t  \t</div>\n\t\t\t<div>\n\t\t  \t  <table>\n                <tr>\n                  <td><a href=\"#page=4b4fc2f8c554cdca6b27\">重甲</a></td>\n                </tr>\n                <tr>\n                  <td><a href=\"#page=684405b0a7049b6fafa6\">轻甲披风</a></td>\n                </tr>\n                <tr>\n                  <td><a href=\"#page=5277bcb11a94ec8af757\">法袍</a></td>\n                </tr>\n              </table>\n\t\t  \t</div>\n\t\t\t</div>\n\t\t  <table>\n            <tr>\n              <td colspan=\"2\"><table>\n                <tr>\n                  <td><img src=\"assets/51568fa0f038e320db05.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n                  <td><img src=\"assets/7b7f82194e2d84348af7.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n                  <td><a href=\"#page=51948c10cc779c2bc3b0\"><img src=\"assets/0ccaa20f12838467e928.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n                </tr>\n              </table></td>\n            </tr>\n            <tr>\n              <td><table>\n                <tr>\n                  <td><p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/hd/fuben/wuqi/jinzhanleft.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/hd/fuben/wuqi/jinzhanleft.htm</a></p></td>\n                </tr>\n              </table></td>\n              <td><img src=\"assets/707db1cdf3421124d3ed.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n            </tr>\n          </table></td>\n          <td> </td>\n        </tr>\n        <tr>\n          <td><img src=\"assets/7393609ff04ffecf0003.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n          <td></td>\n          <td><img src=\"assets/fd4a8d644198c4d6c37f.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n        </tr>\n      </table>\n      <br>\n      <table>\n        <tr>\n          <td> </td>\n        </tr>\n      </table>\n      <br></td>\n  </tr>\n  \n</table>\n\n\n\n\n\n\n\n<table>\n<tr>\n<td><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></td>\n</tr>\n</table>\n\n",
+  "dataPath": "pages/da346deba17d3801a83b.json",
+  "imageCount": 14,
+  "tableCount": 11,
+  "downloadPath": "downloads/da346deba17d3801a83b.js"
+}

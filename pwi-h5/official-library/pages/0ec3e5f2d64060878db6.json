@@ -1,0 +1,150 @@
+{
+  "id": "0ec3e5f2d64060878db6",
+  "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+  "title": "第一次聊天",
+  "category": "新手指引",
+  "section": "初入完美",
+  "depth": 0,
+  "parents": [
+    "52bb242ab2be6a273274",
+    "795e2fc25f6366b4a743",
+    "e0d13df0f10091557b88",
+    "ec2daf258dc40cc656cc",
+    "80b64af2df0ec04bc9f5",
+    "b01d438a263d5990ed20",
+    "e1af6d0e32387f82d096",
+    "0ec3e5f2d64060878db6",
+    "d953218d5c4ee41c8389",
+    "7eedb1771e5ba2058b12",
+    "50ef20375a9c3fe211e7",
+    "bf2cf85d433eb7fcebcc",
+    "c975ac74bf780de1674b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a7ed3b854e280fddbea08222ce59ab047c78d4fdf2892c1978b0a01ed4274095",
+  "bytes": 69779,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0ec3e5f2d64060878db6.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-28",
+  "text": "第一次做任务 | 第一次战斗 | 第一次组队 | 第一次加好友 | 第一次自动寻路 | 第一次买东西 | 第一次使用表情\n第一次摆摊交易 | 第一次使用包裹 | 第一次传送 | 第一次升级 | 第一次创建聊天室 | 第一次聊天 |\n网络游戏中，聊天系统是非常重要的组成部分之一，丰富而强大的聊天系统给玩家们提供了一个分享游戏喜悦的平台。完美世界国际版中的聊天系统包括普通频道、组队频道、帮派频道、密语频道、交易频道、群聊和世界频道。\n完美世界国际版的聊天区如上图所示，聊天区分为信息显示区和功能区两部分，信息显示区显示所选频道的聊天内容，功能区则可进行选择聊天频道、锁定聊天频道、输入聊天内容、选择聊天表情等多项操作。\n普通频道\n在普通频道中，输入的聊天内容只有当前附近的玩家可以看到。普通频道的字体颜色为白色。\n组队频道\n组队频道中，输入的聊天内容只有当前队伍中的玩家可以看到。组队频道的字体颜色为绿色。\n帮派频道\n帮派频道中，输入的聊天内容只有本帮派的玩家可以看到。帮派频道的字体颜色为蓝色。\n密语频道\n密语频道中，输入的聊天内容只有被密语的玩家可以看到。密语频道的字体颜色为蓝色。\n交易频道\n交易频道中，输入的聊天内容只有当前附近的玩家可以看到。世界频道的字体颜色为橙色。\n群聊\n群聊的聊天室中，输入的聊天内容只有加入聊天室的玩家可以看到。聊天室内的公共字体颜色为白色，使用悄悄话时的字体颜色为粉红色。\n世界频道\n世界频道中，输入的聊天内容当前所有在线的玩家都可以看到。世界频道的字体颜色为黄色。\n注：只有角色等级在5级以上并且持有千里传音道具的玩家才能在世界频道中发言。每次发言将消耗掉一个千里传音道具。千里传音可在乾坤袋中买到。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+      "label": "第一次做任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30061.shtml",
+      "label": "第一次战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30063.shtml",
+      "label": "第一次组队",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30064.shtml",
+      "label": "第一次加好友",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29926.shtml",
+      "label": "第一次自动寻路",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+      "label": "第一次买东西",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30065.shtml",
+      "label": "第一次使用表情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30066.shtml",
+      "label": "第一次摆摊交易",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+      "label": "第一次使用包裹",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+      "label": "第一次传送",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+      "label": "第一次升级",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29924.shtml",
+      "label": "第一次创建聊天室",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+      "label": "第一次聊天",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/first_lt_08.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=52bb242ab2be6a273274\">第一次做任务</a> |  \t\t\t\t\t<a href=\"#page=795e2fc25f6366b4a743\">第一次战斗 </a> |  \t\t\t\t\t<a href=\"#page=80b64af2df0ec04bc9f5\">第一次组队 </a> |  \t\t\t\t\t<a href=\"#page=b01d438a263d5990ed20\">第一次加好友 </a> |  \t\t\t\t\t<a href=\"#page=c975ac74bf780de1674b\">第一次自动寻路 </a> |  \t\t\t\t\t<a href=\"#page=ec2daf258dc40cc656cc\">第一次买东西 </a> |  \t\t\t\t\t<a href=\"#page=e1af6d0e32387f82d096\">第一次使用表情 </a><br>\r\n    <a href=\"#page=d953218d5c4ee41c8389\">第一次摆摊交易 </a> |  \t\t\t\t\t<a href=\"#page=7eedb1771e5ba2058b12\">第一次使用包裹 </a> |  \t\t\t\t\t<a href=\"#page=50ef20375a9c3fe211e7\">第一次传送 </a> |  \t\t\t\t\t<a href=\"#page=e0d13df0f10091557b88\">第一次升级 </a> |  \t\t\t\t\t<a href=\"#page=bf2cf85d433eb7fcebcc\">第一次创建聊天室</a> | \t\t\t\t\t  \t\t\t\t\t<a href=\"#page=0ec3e5f2d64060878db6\">第一次聊天 </a> |</li>\r\n</ul>\r\n<p>　　网络游戏中，聊天系统是非常重要的组成部分之一，丰富而强大的聊天系统给玩家们提供了一个分享游戏喜悦的平台。完美世界国际版中的聊天系统包括普通频道、组队频道、帮派频道、密语频道、交易频道、群聊和世界频道。</p>\r\n<p><img src=\"assets/c5e8e2147984276451be.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　完美世界国际版的聊天区如上图所示，聊天区分为信息显示区和功能区两部分，信息显示区显示所选频道的聊天内容，功能区则可进行选择聊天频道、锁定聊天频道、输入聊天内容、选择聊天表情等多项操作。</p>\r\n<p>　　<strong>普通频道</strong></p>\r\n<p><img src=\"assets/ae2a87ca4f765cad7f30.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　在普通频道中，输入的聊天内容只有当前附近的玩家可以看到。普通频道的字体颜色为白色。</p>\r\n<p>　　<strong>组队频道</strong></p>\r\n<p><img src=\"assets/bc17af96e4fc2872286b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　组队频道中，输入的聊天内容只有当前队伍中的玩家可以看到。组队频道的字体颜色为绿色。</p>\r\n<p>　　<strong>帮派频道</strong></p>\r\n<p><img src=\"assets/3499534d469cd3eed6e8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　帮派频道中，输入的聊天内容只有本帮派的玩家可以看到。帮派频道的字体颜色为蓝色。</p>\r\n<p>　　<strong>密语频道</strong></p>\r\n<p><img src=\"assets/2ab8ebc3e7b2acf1284d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　密语频道中，输入的聊天内容只有被密语的玩家可以看到。密语频道的字体颜色为蓝色。</p>\r\n<p>　　<strong>交易频道</strong></p>\r\n<p><img src=\"assets/0d8aaf804f5d4ce5fa0e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　交易频道中，输入的聊天内容只有当前附近的玩家可以看到。世界频道的字体颜色为橙色。</p>\r\n<p>　　<strong>群聊</strong></p>\r\n<p><img src=\"assets/eaba51eeb80b70218fc8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　群聊的聊天室中，输入的聊天内容只有加入聊天室的玩家可以看到。聊天室内的公共字体颜色为白色，使用悄悄话时的字体颜色为粉红色。</p>\r\n<p>　　<strong>世界频道</strong></p>\r\n<p><img src=\"assets/cf8e3deeb8f1302ca8ab.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　世界频道中，输入的聊天内容当前所有在线的玩家都可以看到。世界频道的字体颜色为黄色。<br>\r\n注：只有角色等级在5级以上并且持有千里传音道具的玩家才能在世界频道中发言。每次发言将消耗掉一个千里传音道具。千里传音可在乾坤袋中买到。</p>\r\n                        </div>",
+  "dataPath": "pages/0ec3e5f2d64060878db6.json",
+  "imageCount": 8,
+  "tableCount": 0,
+  "downloadPath": "downloads/0ec3e5f2d64060878db6.js"
+}

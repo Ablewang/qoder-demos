@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/images/btn3.png",
+  "alt": "",
+  "kind": "img",
+  "id": "6e0e09fa4c7f97c1b48b",
+  "status": "ok",
+  "parents": [
+    "2504de9daef1dc4f803a"
+  ],
+  "bytes": 3570,
+  "sha256": "3a15b2206dbcc08256ebfdded10e3944ec34afc8d756246fa44f08d2f78abe3d",
+  "fetchedAt": "2026-11-18T08:26:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/images/btn3.png",
+  "path": "assets/6e0e09fa4c7f97c1b48b.png"
+}

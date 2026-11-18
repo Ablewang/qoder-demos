@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/pic/zt08.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9023145a93ecaa00068d",
+  "status": "ok",
+  "parents": [
+    "9331b7d5cd87224a3247"
+  ],
+  "bytes": 67297,
+  "sha256": "17a752aba0cadc99058c1f5c66705123279e23aea0765e2b95211ab19630c65d",
+  "fetchedAt": "2026-11-18T08:21:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/pic/zt08.jpg",
+  "path": "assets/9023145a93ecaa00068d.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/pic/q1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "dbe1f535efc771f3e652",
+  "status": "ok",
+  "parents": [
+    "aa1f5c8b062c173e0b7d"
+  ],
+  "bytes": 92192,
+  "sha256": "9ff29975e6a08c82d01fd09fbdc7bd24528f70f27b804fb1feffac4edf200708",
+  "fetchedAt": "2026-11-18T08:28:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/pic/q1.jpg",
+  "path": "assets/dbe1f535efc771f3e652.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_395.jpg",
+  "id": "82b497052cdd99c834f2",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·风卷残云<em>（入魔）</em>",
+  "bytes": 1543,
+  "sha256": "746574c93ce4bc8ab68c1b3f8dc36b7711a81493e1042f2f706c0bd9ae2246fd",
+  "fetchedAt": "2026-11-18T08:34:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_395.jpg",
+  "path": "assets/82b497052cdd99c834f2.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/2014show/images/icon_arrow_left.png",
+  "label": "",
+  "kind": "script-reference",
+  "id": "00fc7531f16da8bfa3ac",
+  "status": "ok",
+  "parents": [
+    "75f67334bcc741d278d7"
+  ],
+  "bytes": 1394,
+  "sha256": "6278883eae325711b35869ab5ea8c72297ce8949c9d6ab366785a6b23b2ed09c",
+  "fetchedAt": "2026-11-18T08:23:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/2014show/images/icon_arrow_left.png",
+  "path": "assets/00fc7531f16da8bfa3ac.png"
+}

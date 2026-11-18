@@ -1,0 +1,478 @@
+import './style.css';
+import { cardIcon, emptySeat, openingSign, person, speechOutline, svg, table, toolIcon, type Pose, type Seated } from './art';
+import { cards, cardNames, identities, questions, relatives, stats, waveNames, type Card, type Identity, type Relative } from './content';
+import { Game, type ActiveQuestion, type Report } from './engine';
+import { AudioPlayer } from './audio';
+import { createPoster, secondStat } from './poster';
+
+type Screen = 'home' | 'game' | 'result' | 'poster';
+type Kind = Card | 'flop' | 'critical' | 'ally' | 'missed';
+interface Feedback { uid: number; sequence: number; asker: Relative; label: string; summary: string; answer: string; kind: Kind; card?: Card; warm: boolean; at: number }
+interface Ghost { uid: number; seat: number; asker: Relative; text: string; stamp: string; until: number }
+interface SeatPose extends Pose { lean?: boolean }
+
+const REACT_SECONDS = 2.6;
+const GHOST_SECONDS = 2.2;
+const app = document.querySelector<HTMLDivElement>('#app')!;
+const audio = new AudioPlayer();
+const params = new URLSearchParams(location.search);
+const seedParam = Number(params.get('seed'));
+let selected: Identity = 'single';
+let game: Game | null = null;
+let screen: Screen = 'home';
+let rulesOpen = false;
+let poster: ReturnType<typeof createPoster> | null = null;
+let quoteIndex = 0;
+let signature = '';
+let seenEvents = 0;
+let notice = '';
+let posterError = '';
+let modalReturn = '';
+let pauseRulesOpen = false;
+let feedback: Feedback | null = null;
+let ghost: Ghost | null = null;
+let seats: Seated[] = ['nainai', 'dayi'];
+let renderedSeats = '';
+let animatedSequence = 0;
+let games = 0;
+
+const esc = (s: string) => s.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]!);
+const identityName = (id: Identity) => identities.find(item => item.id === id)!.name;
+const nameOf = (who: Relative) => relatives[who].name;
+const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cardHints: Record<Card, string> = {
+  taiji: '轻轻带过，换个话头。',
+  counter: '有分寸地把问题还回去。',
+  crazy: '接个梗，效果看运气。',
+  sincere: '温和说清自己的想法。',
+};
+const rulesLines: Record<Card, string> = {
+  taiji: '1 点伤害，不限次数；出完冷却 1.8 秒。',
+  counter: '3 点伤害；这位亲戚下一问 +1 血（奶奶和全桌不记仇）。',
+  crazy: '随机：暴击 3 点伤害并让全桌安静 3 秒；或 2 点伤害；或翻车扣 10 心态、引来追问。',
+  sincere: '化解普通问，对方会站你这边；对方在气头上只能缓和；压轴问感化 3 点。',
+};
+
+function rulesList(): string {
+  return `<ul class="rules">${cards.map(card => `<li><span class="card-icon">${svg(cardIcon(card))}</span><span><b>${cardNames[card]}</b>${rulesLines[card]}</span></li>`).join('')}</ul><p>每句新问话先给 8 秒免费读牌，耐心不走。随时可以暂停。耐心耗尽会扣心态，奶奶的暖心问不扣；心态归零就去厨房歇着。</p><p>真心不是讨好，坚定的反问一样能拿上上签。</p>`;
+}
+function soundButton(): string {
+  return `<button class="tool" data-action="sound" aria-pressed="${!audio.muted}" aria-label="${audio.muted ? '音效已关，点按开启' : '音效已开，点按关闭'}">${toolIcon(audio.muted ? 'mute' : 'sound')}</button>`;
+}
+
+function home(): string {
+  return `<main class="page home-page"${rulesOpen ? ' inert aria-hidden="true"' : ''}><section class="home-scene" aria-label="奶奶和大姨坐在饭桌对面，给你留了一个空座"><h1 class="home-title">过年亲戚防御塔</h1><div class="opening-sign" role="img" aria-label="开席">${svg(openingSign())}</div><p class="welcome">来，给你留了个座。</p><div class="home-people"><div class="home-person">${svg(person('nainai', { gesture: 'hold', gaze: 'you', face: 'smile' }))}<small>奶奶</small></div><div class="home-person">${svg(person('dayi', { gesture: 'ask', gaze: 'you', face: 'ask' }), true)}<small>大姨</small></div></div><div class="home-table">${svg(table())}</div><div class="empty-seat">${svg(emptySeat())}</div></section><section class="place-card" aria-label="你的座位"><div class="place-heading"><b>你的座位</b><span>题目跟着身份变</span></div><div class="identity-options" role="radiogroup" aria-label="选择身份">${identities.map(item => `<button role="radio" data-identity="${item.id}" aria-checked="${item.id === selected}"><span>${item.name}</span><small>${item.note}</small></button>`).join('')}</div></section><div class="entry-actions"><button class="start" data-action="start"><span>坐下开席</span><span aria-hidden="true">↗</span></button><p class="entry-note"><span>一桌饭 · 四种回答 · 约 3 分钟</span><button class="link" data-action="rules">看玩法</button></p></div></main>${rulesOpen ? `<div class="modal"><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="rules-title"><p class="kicker">入席前</p><h2 id="rules-title">四种回答，各有用处</h2>${rulesList()}<button class="primary" data-action="close-rules">知道了</button></section></div>` : ''}`;
+}
+
+function freshFeedback(g: Game): Feedback | null {
+  return feedback && g.elapsed - feedback.at < REACT_SECONDS ? feedback : null;
+}
+function seatIndex(who: Relative): number {
+  return who === 'table' ? -1 : seats.indexOf(who);
+}
+function seatPerson(who: Relative): void {
+  const g = game!;
+  if (who === 'table' || seats.includes(who)) return;
+  const busy = new Set(g.active.map(q => q.asker));
+  const weight = (i: number) => (busy.has(seats[i]) ? 100 : 0) + (ghost?.seat === i ? 10 : 0) + (g.allies.some(a => !a.used && a.asker === seats[i]) ? 3 : 0) + (g.angry.has(seats[i]) ? 3 : 0) + (seats[i] === 'nainai' ? 1 : 0);
+  const index = weight(1) <= weight(0) ? 1 : 0;
+  if (weight(index) >= 100) return;
+  if (ghost?.seat === index) ghost = null;
+  seats[index] = who;
+}
+function syncSeats(): void {
+  const g = game!;
+  for (const q of g.active) seatPerson(q.asker);
+  if (ghost && (g.elapsed >= ghost.until || g.phase !== 'playing' || g.active.length >= 2 || g.active.some(q => seatIndex(q.asker) === ghost!.seat))) ghost = null;
+}
+
+function captureFeedback(): void {
+  const g = game!;
+  const events = g.log.slice(seenEvents);
+  seenEvents = g.log.length;
+  const relevant = events.filter(e => e.uid !== undefined && e.outcome !== 'unanswered');
+  const answer = relevant.filter(e => e.type === 'answer').slice(-1)[0];
+  const resolved = relevant.filter(e => e.type === 'resolved').slice(-1)[0];
+  const effect = relevant.find(e => e.type === 'flop' || e.type === 'critical');
+  const event = resolved?.outcome === 'ally' ? resolved : effect ?? resolved ?? answer;
+  if (!event?.qid || event.uid === undefined || !event.asker) return;
+  const question = questions.find(q => q.id === event.qid)!;
+  const who = event.asker;
+  const name = nameOf(who);
+  const card = answer?.uid === event.uid ? answer.card : event.card;
+  const outcome = resolved?.uid === event.uid ? resolved.outcome : undefined;
+  const remaining = g.active.find(q => q.uid === event.uid)?.hp;
+  const warm = question.kind === 'warm';
+  const boss = question.kind === 'boss';
+  const kind: Kind = event.type === 'flop' || event.type === 'critical' ? event.type : outcome === 'ally' ? 'ally' : outcome === 'missed' || outcome === 'warm-missed' ? 'missed' : card ?? 'taiji';
+  const angry = g.angry.has(who);
+  let label: string;
+  let summary: string;
+  if (kind === 'flop') { label = '发疯翻车'; summary = '心态 -10 · 引来追问，正在排队'; }
+  else if (kind === 'critical') { label = '发疯暴击'; summary = outcome ? '挡下了 · 全桌安静 3 秒' : `全桌安静 3 秒 · 还剩 ${remaining} 血`; }
+  else if (kind === 'ally') { label = `${name}帮腔`; summary = '替你挡下这一问'; }
+  else if (kind === 'missed') { label = warm ? '关心先收下' : '这句没接住'; summary = warm ? '暖心问不扣心态' : `心态 -${stats[question.kind].hit}`; }
+  else {
+    const verb = { taiji: '太极', counter: '反问', crazy: '发疯', sincere: '真心' }[kind];
+    if (outcome === 'calmed') { label = '气氛缓和'; summary = '化解 · 怒气消了'; }
+    else if (outcome === 'sincere') {
+      label = boss ? '真心感化' : '真心接住';
+      summary = boss ? '全桌感化 · 碰个杯' : warm ? '心态 +20 · 真心牌返还 1 张' : g.allies.some(a => !a.used && a.asker === who) ? `化解 · ${name}站你这边了` : '化解 · 真心不等于让步';
+    } else if (outcome === 'blocked') {
+      label = `${verb}挡下`;
+      summary = kind === 'counter' && angry ? `挡下 · ${name}下一问 +1 血` : '挡下 · 边界说清了';
+    } else {
+      label = kind === 'crazy' ? '发疯逗笑' : kind === 'sincere' ? '真心感化' : `${verb}接住`;
+      summary = kind === 'sincere' && boss ? `感化 3 点 · 心态 +8 · 还剩 ${remaining} 血` : kind === 'counter' && angry ? `还剩 ${remaining} 血 · ${name}记着呢` : `还剩 ${remaining} 血`;
+    }
+  }
+  if (kind !== 'ally') label = `${label} · ${name}`;
+  feedback = { uid: event.uid, sequence: g.log.indexOf(event) + 1, asker: who, label, summary, answer: kind === 'ally' ? event.text : answer?.text ?? '', kind, card, warm, at: g.elapsed };
+  if (kind === 'ally') { seatPerson(who); audio.play('sincere'); }
+  const seat = seatIndex(who);
+  if (outcome && kind !== 'ally' && seat >= 0) {
+    const stamp = outcome === 'calmed' ? '缓和' : outcome === 'sincere' ? '化解' : outcome === 'blocked' ? '挡下' : '过去了';
+    ghost = { uid: event.uid, seat, asker: who, text: kind === 'missed' ? (warm ? '（这份关心，下回慢慢聊）' : '（这句没接上，先夹口菜）') : feedback.answer, stamp, until: g.elapsed + GHOST_SECONDS };
+  }
+}
+
+function poseFor(who: Seated, g: Game): SeatPose {
+  const target = g.target;
+  const fresh = freshFeedback(g);
+  if (g.freeze > 0) return { gesture: 'hold', gaze: 'you', face: 'flat' };
+  if (fresh && fresh.asker === who) {
+    if (fresh.kind === 'ally') return { gesture: 'cheer', gaze: 'you', face: 'happy' };
+    if (fresh.kind === 'flop' || (fresh.kind === 'counter' && g.angry.has(who))) return { gesture: 'cross', gaze: 'you', face: 'huff' };
+    if (fresh.kind === 'missed') return { gesture: 'hold', gaze: 'down', face: 'flat' };
+    if (fresh.kind === 'crazy') return { gesture: 'reply', gaze: 'you', face: 'happy' };
+    if (fresh.kind === 'sincere') return { gesture: 'reply', gaze: 'you', face: 'smile' };
+    return { gesture: 'reply', gaze: 'you', face: 'flat' };
+  }
+  if (target?.asker === who) return { gesture: 'ask', gaze: 'you', face: who === 'nainai' ? 'smile' : target.maxHp > stats[target.question.kind].hp ? 'huff' : 'ask', lean: true };
+  if (g.active.some(q => q.asker === who)) return { gesture: 'hold', gaze: 'in', face: 'flat' };
+  if (g.angry.has(who)) return { gesture: 'cross', gaze: 'you', face: 'huff' };
+  if (g.allies.some(a => !a.used && a.asker === who)) return { gesture: 'hold', gaze: 'you', face: 'smile' };
+  if (target) return { gesture: 'hold', gaze: 'in', face: 'flat' };
+  return { gesture: 'hold', gaze: 'down', face: 'smile' };
+}
+function noteFor(who: Seated, g: Game): string {
+  const fresh = freshFeedback(g);
+  if (g.freeze > 0) return '愣住了';
+  if (fresh && fresh.asker === who) {
+    const notes: Record<Kind, string> = { ally: '替你挡了一问', flop: '要追问', critical: '愣住了', missed: fresh.warm ? '先吃热乎的' : '先吃饭', crazy: '笑出了声', sincere: '点点头', taiji: '没再追', counter: g.angry.has(who) ? '记着这句' : '没再追' };
+    return notes[fresh.kind];
+  }
+  if (g.target?.asker === who) return '正在问你';
+  if (g.active.some(q => q.asker === who)) return '等你回话';
+  if (g.angry.has(who)) return '憋着下一问';
+  if (g.allies.some(a => !a.used && a.asker === who)) return '站你这边';
+  return g.target ? `看着${nameOf(g.target.asker)}` : '在夹菜';
+}
+
+function cast(g: Game, trio: boolean): string {
+  if (trio) {
+    const third = (['sangu', 'erjiu', 'gufu', 'ershen'] as Seated[]).find(who => !seats.includes(who))!;
+    const crew = [seats[0], third, seats[1]];
+    return `<div class="cast trio">${crew.map((who, i) => `<div class="seat" data-person="${who}"><div class="person lean">${svg(person(who, { gesture: 'ask', gaze: 'you', face: g.freeze > 0 ? 'flat' : who === 'nainai' ? 'smile' : 'ask' }), i === 2)}</div></div>`).join('')}<small class="seat-note trio-note">全桌 · ${g.freeze > 0 ? '愣住了' : '一起看着你'}</small></div>`;
+  }
+  return `<div class="cast">${seats.map((who, i) => {
+    const pose = poseFor(who, g);
+    return `<div class="seat" data-seat="${i}" data-person="${who}" data-gesture="${pose.gesture}" data-gaze="${pose.gaze}"><div class="person${pose.lean ? ' lean' : ''}">${svg(person(who, pose), i === 1)}</div><small class="seat-note">${nameOf(who)} · ${noteFor(who, g)}</small></div>`;
+  }).join('')}</div>`;
+}
+
+function kindTag(q: ActiveQuestion): string {
+  if (q.maxHp > stats[q.question.kind].hp) return '+1 血';
+  return { normal: '', fast: '急问', tough: '棘手', warm: '暖心', boss: '压轴', followup: '追问' }[q.question.kind];
+}
+function bubble(q: ActiveQuestion, tail: number, current: boolean): string {
+  const name = nameOf(q.asker);
+  const tag = kindTag(q);
+  return `<button class="question ${q.question.kind}" data-target="${q.uid}" aria-pressed="${current}" aria-label="${name}问：${esc(q.question.text)}，${q.hp}/${q.maxHp} 血${current ? '，当前回答对象' : '，点选改答这一句'}">${speechOutline(tail)}<span class="question-name"><span class="asker-name"><span class="asker-label">${name}</span>${tag ? `<em>${tag}</em>` : ''}</span><span class="target-mark">${current ? '当前' : '点选'}</span></span><strong class="question-text">${esc(q.question.text)}</strong><span class="question-meta"><span class="pips" aria-hidden="true">${'<i class="on"></i>'.repeat(q.hp)}${'<i></i>'.repeat(q.maxHp - q.hp)}</span><span data-seconds="${q.uid}">耐心 ${Math.ceil(q.remaining)} 秒</span></span><span class="patience" aria-hidden="true"><i data-timer="${q.uid}" style="width:${q.remaining / q.total * 100}%"></i></span></button>`;
+}
+function ghostMarkup(item: Ghost): string {
+  return `<div class="reply-ghost" aria-hidden="true">${speechOutline(item.seat === 0 ? 118 : 32, true)}<span class="question-name"><span>你接${nameOf(item.asker)}</span><b class="stamp">${item.stamp}</b></span><span class="ghost-text">${esc(item.text)}</span></div>`;
+}
+function talks(g: Game, trio: boolean): string {
+  const current = g.targetUid;
+  if (g.active.length === 2 && g.active[0].asker === g.active[1].asker) {
+    const asker = g.active[0].asker;
+    const seat = seatIndex(asker);
+    return `<div class="talks same-asker">${speechOutline(seat === 1 ? 104 : 46)}<span class="shared-asker">${nameOf(asker)}连着问了两句 · 点选一句回答</span>${g.active.map(q => bubble(q, 75, q.uid === current)).join('')}</div>`;
+  }
+  if (trio) return `<div class="talks center">${g.active.map(q => bubble(q, 75, q.uid === current)).join('')}</div>`;
+  const shownGhost = ghost && g.elapsed < ghost.until ? ghost : null;
+  if (!shownGhost && g.active.length === 1) {
+    const q = g.active[0];
+    const seat = Math.max(0, seatIndex(q.asker));
+    return `<div class="talks single seat-${seat}">${bubble(q, seat === 1 ? 104 : 46, q.uid === current)}</div>`;
+  }
+  const columns: string[] = ['', ''];
+  if (shownGhost) columns[shownGhost.seat] = ghostMarkup(shownGhost);
+  for (const q of [...g.active].sort((a, b) => a.uid - b.uid)) {
+    const seat = seatIndex(q.asker);
+    const column = seat >= 0 && !columns[seat] ? seat : columns[0] ? 1 : 0;
+    const tail = seat === column || seat < 0 ? 75 : column === 0 ? 128 : 22;
+    columns[column] = bubble(q, tail, q.uid === current);
+  }
+  return `<div class="talks">${columns.map(content => `<div class="talk-column">${content}</div>`).join('')}</div>`;
+}
+function rewardTicket(g: Game): string {
+  const full = (card: Card) => g.charges[card] >= 5;
+  return `<div class="reward-ticket" role="group" aria-label="上菜间隙补给"><p><b>${waveNames[g.wave]} · 过了</b><span>下一道「${waveNames[g.wave + 1]}」，不计时</span></p><div class="reward-options"><button data-reward="soup"><b>热汤一碗</b><small>${g.mood >= 100 ? '心态已满' : '心态 +20'}</small></button><button data-reward="sincere"><b>真心一句</b><small>${full('sincere') ? '已满 5 张' : '真心 +1'}</small></button><button data-reward="crazy"><b>灵感一闪</b><small>${full('crazy') ? '已满 5 张' : '发疯 +1'}</small></button></div></div>`;
+}
+function statusText(g: Game): string {
+  const t = g.target;
+  const fresh = freshFeedback(g);
+  if (g.phase === 'reward') return '选一份补给，再上下一道菜';
+  if (g.reading > 0) return fresh && t ? `接${nameOf(t.asker)}这句 · 免费读 ${Math.ceil(g.reading)} 秒` : `免费读牌 ${Math.ceil(g.reading)} 秒 · 倒计时暂停`;
+  if (g.freeze > 0) return `全桌安静 ${Math.ceil(g.freeze)} 秒 · 倒计时暂停`;
+  if (fresh) return fresh.summary;
+  if (!t) return '趁空夹口菜';
+  if (g.cooldown > 0) return `太极冷却 ${g.cooldown.toFixed(1)} 秒 · 其他牌可出`;
+  return '读完就出一张牌';
+}
+function tableEdge(g: Game): string {
+  const t = g.target;
+  const fresh = freshFeedback(g);
+  const caption = g.phase === 'reward' ? '上菜间隙' : fresh ? fresh.label : t ? `接${nameOf(t.asker)}这句` : '下一句在路上';
+  return `<div class="read-row" data-fresh="${fresh ? fresh.kind : ''}" data-feedback-uid="${fresh?.uid ?? ''}" data-feedback-relation="${fresh ? (fresh.uid === g.targetUid ? 'current' : 'previous') : 'none'}"><div class="reading-copy" aria-live="polite"><span class="reply-to">${esc(caption)}</span><span data-live="status">${esc(statusText(g))}</span></div>${g.reading > 0 && g.phase === 'playing' ? '<button data-action="read">读好了 ↗</button>' : ''}</div>`;
+}
+function effectLine(card: Card, g: Game): string {
+  const t = g.target;
+  if (card !== 'taiji' && g.charges[card] <= 0) return card === 'counter' ? '已用完' : '已用完 · 补给可加';
+  if (card === 'taiji') return '1 点伤害 · 不限次';
+  if (card === 'counter') return t && (t.asker === 'nainai' || t.asker === 'table') ? '3 点伤害 · 不记仇' : '3 点伤害 · 下一问 +1 血';
+  if (card === 'crazy') return '随机 · 可能翻车';
+  if (!t) return '化解 · 可以结盟';
+  if (t.question.kind === 'boss') return '感化 3 点 · 心态 +8';
+  if (t.question.kind === 'warm') return '暖心 · 返还 1 张';
+  if (g.angry.has(t.asker) || t.maxHp > stats[t.question.kind].hp) return '缓和 · 不结盟';
+  return '化解 · 可以结盟';
+}
+function hand(g: Game): string {
+  const t = g.target;
+  const fresh = freshFeedback(g);
+  return cards.map(card => {
+    const state = !t || g.phase !== 'playing' || g.paused ? 'wait' : card !== 'taiji' && g.charges[card] <= 0 ? 'empty' : card === 'taiji' && g.cooldown > 0 ? 'cooldown' : 'ready';
+    const charge = card === 'taiji' ? (state === 'cooldown' ? `冷却 <b data-live="cooldown">${g.cooldown.toFixed(1)}</b>` : '<b>∞</b>') : `余 <b>${g.charges[card]}</b>`;
+    const text = t ? t.question.answers[card] : cardHints[card];
+    const said = !!fresh && fresh.card === card && !!t && fresh.uid === t.uid;
+    const effect = effectLine(card, g);
+    const parts = effect.split(' · ');
+    const effectMarkup = parts.map((part, i) => `<span>${part}${i < parts.length - 1 ? ' ·' : ''}</span>`).join(' ');
+    return `<button class="answer-card" data-card="${card}" data-state="${state}"${said ? ' data-said="true"' : ''}${g.canPlay(card) ? '' : ' disabled'} aria-label="${cardNames[card]}牌${said ? '，刚说完' : ''}：${esc(text)}。${effect}">${said ? '<b class="said-stamp" aria-hidden="true">刚说完</b>' : ''}<span class="card-top"><span class="card-icon">${svg(cardIcon(card))}</span><b class="card-name">${cardNames[card]}</b><span class="charges">${charge}</span></span><span class="answer-text">${esc(text)}</span><small class="card-effect">${effectMarkup}</small></button>`;
+  }).join('');
+}
+function footnote(g: Game): string {
+  const allies = g.allies.filter(a => !a.used).map(a => nameOf(a.asker));
+  const angry = [...g.angry].map(nameOf);
+  const parts: string[] = [];
+  if (allies.length) parts.push(`${allies.join('、')}站你这边，会替你挡一问`);
+  if (angry.length) parts.push(`${angry.join('、')}记着反问，下一问 +1 血`);
+  return parts.length ? parts.join('；') : '真心能结盟，坚定拒绝也算答好。';
+}
+function pauseDialog(): string {
+  return `<div class="modal"><section class="modal-box pause-box" role="dialog" aria-modal="true" aria-labelledby="pause-title"><p class="kicker">饭桌已暂停</p><h2 id="pause-title">筷子先放一放</h2><p>问话耐心、读牌倒计时和太极冷却都停住了。慢慢看手牌，想好再回桌。</p><details${pauseRulesOpen ? ' open' : ''}><summary><span>四张牌怎么用</span><span class="fold-tag" aria-hidden="true"><span class="fold-word"></span><svg viewBox="0 0 16 16"><path d="M3 5.6c1.8 1.2 3.4 3.6 5.2 5.4 1.4-2.2 3-4 4.9-5.8"/></svg></span></summary>${rulesList()}</details><button class="primary" data-action="resume">回桌继续</button><div class="modal-row"><button class="secondary" data-action="restart">同身份重开</button><button class="secondary" data-action="finish">离席结算</button></div></section></div>`;
+}
+function playing(): string {
+  const g = game!;
+  const trio = g.active.some(q => q.asker === 'table');
+  const paused = g.paused && g.phase === 'playing';
+  return `<main class="page battle-page" data-phase="${g.phase}"${paused ? ' inert aria-hidden="true"' : ''}><header class="battle-top"><div class="dish-title"><span>0${g.wave + 1} / 04</span>${waveNames[g.wave]}<small>已过 ${g.resolved} 问</small></div><div class="tools">${soundButton()}<button class="tool" data-action="pause" aria-label="暂停"${g.phase === 'playing' ? '' : ' disabled'}>${toolIcon('pause')}</button></div></header><section class="battle-scene${trio ? ' trio' : ''}" aria-label="年夜饭桌：对面是发问的亲戚，近处是你的席位"><div class="wall-line"></div><div class="battle-table">${svg(table())}</div>${cast(g, trio)}${g.phase === 'reward' ? rewardTicket(g) : talks(g, trio)}<div class="player-rail"><span class="player-label">你的席位<br>${esc(identityName(g.identity))}</span><span class="mood${g.mood <= 30 ? ' low' : ''}">心态<b>${g.mood}</b></span></div></section>${tableEdge(g)}<section class="hand" aria-label="四张回答牌">${hand(g)}</section><p class="battle-footnote">${footnote(g)}</p></main>${paused ? pauseDialog() : ''}`;
+}
+
+function topAskers(): Seated[] {
+  const counts = new Map<Seated, number>();
+  for (const e of game!.log) if (e.type === 'resolved' && e.asker && e.asker !== 'table' && e.outcome !== 'unanswered') counts.set(e.asker, (counts.get(e.asker) ?? 0) + 1);
+  const ranked = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(entry => entry[0]);
+  const pair = [...ranked, ...seats, 'nainai' as Seated, 'dayi' as Seated].filter((who, i, all) => all.indexOf(who) === i).slice(0, 2);
+  return pair.includes('nainai') && pair[0] !== 'nainai' ? [pair[1], pair[0]] : pair;
+}
+function favoriteCard(): Card {
+  const counts: Record<Card, number> = { taiji: 0, counter: 0, crazy: 0, sincere: 0 };
+  for (const e of game!.log) if (e.type === 'answer' && e.card) counts[e.card]++;
+  return cards.reduce((best, card) => counts[card] > counts[best] ? card : best, 'taiji' as Card);
+}
+function result(report: Report): string {
+  const g = game!;
+  const [left, right] = topAskers();
+  const quote = report.quotes[quoteIndex % report.quotes.length];
+  const stat = secondStat(report);
+  const quoteLabel = g.log.some(event => event.type === 'answer') ? '这局我这样说' : '离席时想说';
+  return `<main class="page result-page"><header class="result-head"><span>${esc(identityName(g.identity))} · 本局战报</span><span>2027 年夜饭</span></header><p class="result-reason">${esc(report.won ? '好好吃完这顿饭' : report.reason)}</p><h1 class="result-title">${esc(report.title)}</h1><section class="result-scene" aria-label="饭后：${nameOf(left)}和${nameOf(right)}坐在对面，${quoteLabel}"><div class="result-people"><div class="result-person">${svg(person(left, { gesture: 'hold', gaze: 'you', face: 'smile' }))}</div><div class="result-person">${svg(person(right, report.won ? { gesture: 'cheer', gaze: 'you', face: 'happy' } : { gesture: 'reply', gaze: 'you', face: 'smile' }), true)}</div></div><div class="result-table">${svg(table(true))}</div><figure class="result-speech">${speechOutline(52, true)}<small>${quoteLabel}</small><blockquote>${esc(quote)}</blockquote></figure><span class="result-tag one">挡下<b>${report.blocked}</b>问</span><span class="result-tag two">${stat.label}<b>${stat.value}</b>${stat.unit}</span><span class="player-label result-seat">你的席位</span></section><section class="result-numbers"><div class="days"><b>${report.days}</b>天<small>今年过年能撑</small></div><div class="score">${report.score} 分<small>心态剩余 ${report.mood}</small></div><div class="grade">${report.grade}</div></section><ul class="result-lines">${report.lines.map(line => `<li>${esc(line)}</li>`).join('')}<li>${report.won ? '饭吃完了，自己的边界也留住了。' : '离席不是失败；分数只记游戏，不评价家人。'}</li></ul><div class="result-actions">${report.quotes.length > 1 ? `<button class="link quote-switch" data-action="quote">换一句放进战报 ↻ <small>${quoteIndex % report.quotes.length + 1}/${report.quotes.length}</small></button>` : ''}${posterError ? `<div class="poster-error" role="alert"><p>${esc(posterError)}</p><button class="secondary retry" data-action="poster" data-retry="true">重试生成</button></div>` : ''}<button class="start" data-action="poster"><span>存成战报图</span><span aria-hidden="true">↓</span></button><div class="modal-row"><button class="secondary" data-action="restart">同身份再吃一桌</button><button class="secondary" data-action="home">换个身份</button></div><p class="entry-note"><span>没有排行榜，也没有标准答案。</span></p></div></main>`;
+}
+function posterPage(): string {
+  const report = game!.report!;
+  return `<main class="page poster-page"><header class="result-head"><span>战报图已生成</span><span>PNG · 1080×1440</span></header><img class="poster-image" src="${poster!.dataUrl}" alt="年夜饭战报：${esc(report.title)}，${report.score} 分，${report.grade}" width="1080" height="1440"><p class="poster-note">手机上长按图片保存；电脑点下方下载。本地试玩版，图里没有二维码。</p><a class="start" href="${poster!.dataUrl}" download="${poster!.fileName}"><span>下载 PNG 战报</span><span aria-hidden="true">↓</span></a><button class="secondary wide" data-action="back">回到战报</button></main>`;
+}
+
+function gameSignature(): string {
+  const g = game!;
+  return JSON.stringify([g.phase, g.wave, g.paused, g.reading > 0, g.freeze > 0, g.cooldown > 0, g.lock <= 0, g.targetUid, g.mood, g.active.map(q => [q.uid, q.hp]), g.charges, g.allies, [...g.angry], g.log.length, seats, ghost?.uid ?? 0, freshFeedback(g)?.sequence ?? 0, audio.muted]);
+}
+function focusKey(el: Element | null): string {
+  if (!(el instanceof HTMLElement) || !app.contains(el)) return '';
+  for (const key of ['retry', 'action', 'card', 'target', 'identity', 'reward']) {
+    const value = el.dataset[key];
+    if (value) return `[data-${key}="${value}"]`;
+  }
+  return el.tagName === 'SUMMARY' ? 'summary' : '';
+}
+function modalItems(box: HTMLElement): HTMLElement[] {
+  return [...box.querySelectorAll<HTMLElement>('button:not([disabled]), summary, a[href]')].filter(el => el.getClientRects().length > 0);
+}
+function render(): void {
+  const hadModal = !!app.querySelector('.modal');
+  const focused = focusKey(document.activeElement);
+  app.innerHTML = screen === 'home' ? home() : screen === 'game' ? playing() : screen === 'result' ? result(game!.report!) : posterPage();
+  if (notice) {
+    const status = document.createElement('p'); status.className = 'notice'; status.role = 'status'; status.textContent = notice; app.append(status);
+  }
+  updateTimers();
+  const box = app.querySelector<HTMLElement>('.modal-box');
+  if (box && !hadModal) box.querySelector<HTMLElement>('[data-action]')?.focus({ preventScroll: true });
+  else if (!box && hadModal && modalReturn) app.querySelector<HTMLElement>(modalReturn)?.focus({ preventScroll: true });
+  else if (focused) app.querySelector<HTMLElement>(box ? `.modal-box ${focused}` : focused)?.focus({ preventScroll: true });
+  if (!box) modalReturn = '';
+  if (screen !== 'game') return;
+  signature = gameSignature();
+  const seatKey = `${games}:${seats.join()}`;
+  if (renderedSeats && renderedSeats.split(':')[0] === String(games) && seatKey !== renderedSeats && !reduced()) {
+    const before = renderedSeats.split(':')[1].split(',');
+    seats.forEach((who, i) => { if (before[i] !== who) app.querySelector(`[data-seat="${i}"] .person`)?.animate([{ transform: 'translateY(24px)', opacity: 0 }, { transform: 'translateY(0)', opacity: 1 }], { duration: 260, easing: 'ease-out' }); });
+  }
+  renderedSeats = seatKey;
+  if (feedback && feedback.sequence !== animatedSequence) {
+    animatedSequence = feedback.sequence;
+    if (!reduced()) {
+      app.querySelector('.read-row')?.animate([{ backgroundColor: '#f6d9b6' }, { backgroundColor: '#f1e4cc' }], { duration: 420, easing: 'ease-out' });
+      const seat = seatIndex(feedback.asker);
+      if (seat >= 0) app.querySelector(`[data-seat="${seat}"] .person`)?.animate([{ transform: 'translateY(-5px)' }, { transform: 'translateY(0)' }], { duration: 220, easing: 'ease-out' });
+    }
+  }
+}
+function updateTimers(): void {
+  if (screen !== 'game' || !game) return;
+  const g = game;
+  const status = app.querySelector('[data-live="status"]'); if (status) status.textContent = statusText(g);
+  const cooldown = app.querySelector('[data-live="cooldown"]'); if (cooldown) cooldown.textContent = g.cooldown.toFixed(1);
+  for (const q of g.active) {
+    const bar = app.querySelector<HTMLElement>(`[data-timer="${q.uid}"]`); if (bar) bar.style.width = `${q.remaining / q.total * 100}%`;
+    const seconds = app.querySelector(`[data-seconds="${q.uid}"]`); if (seconds) seconds.textContent = `耐心 ${Math.ceil(q.remaining)} 秒`;
+  }
+}
+function start(): void {
+  game = new Game(selected, Number.isFinite(seedParam) && seedParam > 0 ? seedParam + games : Date.now());
+  games++;
+  if ((import.meta as ImportMeta & { env: { DEV: boolean } }).env.DEV && params.has('probe')) (window as unknown as { __rtdGame: Game }).__rtdGame = game;
+  screen = 'game'; signature = ''; seenEvents = 0; feedback = null; ghost = null; animatedSequence = 0; quoteIndex = 0; poster = null; notice = ''; posterError = ''; rulesOpen = false;
+  seats = ['nainai', 'dayi'];
+  renderedSeats = '';
+  syncSeats(); render(); window.scrollTo(0, 0); void audio.resume().catch(soundError);
+}
+function soundError(): void { notice = '浏览器暂未允许音效，仍可静音游玩。'; render(); }
+function toResult(): void {
+  screen = 'result'; quoteIndex = 0; notice = ''; posterError = ''; audio.play('end'); render(); window.scrollTo(0, 0);
+}
+function pauseGame(): void {
+  if (!game || game.paused || game.phase !== 'playing') return;
+  if (!modalReturn) modalReturn = '[data-action="pause"]';
+  pauseRulesOpen = false;
+  game.togglePause(); audio.suspend(); render();
+}
+function resumeGame(): void {
+  if (game?.paused) game.togglePause();
+  void audio.resume().catch(soundError); render();
+}
+function closeRules(): void { rulesOpen = false; render(); }
+function savePoster(): void {
+  posterError = ''; notice = '';
+  const report = game!.report!;
+  try {
+    poster = createPoster(report, report.quotes[quoteIndex % report.quotes.length], { cast: topAskers(), card: favoriteCard(), identity: identityName(game!.identity), spoken: game!.log.some(event => event.type === 'answer') });
+  } catch {
+    poster = null;
+    posterError = '战报图这次没生成出来，可能是浏览器内存或权限限制。成绩还在，点“重试生成”再画一次。';
+    render();
+    app.querySelector<HTMLElement>('[data-retry]')?.focus({ preventScroll: true });
+    app.querySelector('.poster-error')?.scrollIntoView({ block: 'nearest' });
+    return;
+  }
+  screen = 'poster'; render(); window.scrollTo(0, 0);
+}
+app.addEventListener('click', event => {
+  const button = (event.target as Element).closest<HTMLElement>('button, a');
+  if (!button || button.hasAttribute('disabled')) return;
+  const identity = button.dataset.identity;
+  if (identity) { selected = identity as Identity; render(); return; }
+  if (button.dataset.target) { game?.select(Number(button.dataset.target)); signature = ''; render(); return; }
+  if (button.dataset.card) {
+    if (game?.play(button.dataset.card as Card)) {
+      const effect = game.lastEffect;
+      audio.play(effect === 'critical' ? 'critical' : effect === 'flop' ? 'flop' : button.dataset.card === 'sincere' ? 'sincere' : 'card');
+      captureFeedback(); syncSeats();
+      if (game.phase === 'finished') toResult(); else render();
+    }
+    return;
+  }
+  if (button.dataset.reward) { game?.reward(button.dataset.reward as 'soup' | 'sincere' | 'crazy'); audio.play('reward'); syncSeats(); signature = ''; render(); return; }
+  switch (button.dataset.action) {
+    case 'start': case 'restart': start(); break;
+    case 'sound': void audio.toggle().then(() => { notice = ''; render(); }).catch(soundError); break;
+    case 'rules': rulesOpen = true; modalReturn = '[data-action="rules"]'; render(); break;
+    case 'close-rules': closeRules(); break;
+    case 'pause': pauseGame(); break;
+    case 'resume': resumeGame(); break;
+    case 'read': game?.skipReading(); signature = ''; render(); break;
+    case 'finish': game?.finish(); if (game?.phase === 'finished') toResult(); break;
+    case 'home': screen = 'home'; game = null; notice = ''; posterError = ''; render(); window.scrollTo(0, 0); break;
+    case 'quote': quoteIndex++; render(); break;
+    case 'poster': savePoster(); break;
+    case 'back': screen = 'result'; posterError = ''; render(); window.scrollTo(0, 0); break;
+  }
+});
+document.addEventListener('keydown', event => {
+  const box = app.querySelector<HTMLElement>('.modal-box');
+  if (!box) return;
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    if (rulesOpen) closeRules(); else resumeGame();
+    return;
+  }
+  if (event.key !== 'Tab') return;
+  const items = modalItems(box);
+  if (!items.length) return;
+  const first = items[0];
+  const last = items[items.length - 1];
+  const inside = box.contains(document.activeElement);
+  if (!inside || (event.shiftKey && document.activeElement === first)) { event.preventDefault(); (inside ? last : first).focus(); }
+  else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+});
+document.addEventListener('focusin', event => {
+  const box = app.querySelector<HTMLElement>('.modal-box');
+  if (box && !box.contains(event.target as Node)) modalItems(box)[0]?.focus({ preventScroll: true });
+});
+app.addEventListener('toggle', event => {
+  if (event.target instanceof HTMLDetailsElement) pauseRulesOpen = event.target.open;
+}, true);
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    if (screen === 'game') pauseGame();
+    audio.suspend();
+  }
+});
+let previous = performance.now();
+function frame(now: number): void {
+  const dt = (now - previous) / 1000; previous = now;
+  if (screen === 'game' && game) {
+    game.tick(dt); captureFeedback(); syncSeats();
+    if (game.phase === 'finished') toResult();
+    else {
+      const next = gameSignature();
+      if (next !== signature) render(); else updateTimers();
+    }
+  }
+  requestAnimationFrame(frame);
+}
+render(); requestAnimationFrame(frame);

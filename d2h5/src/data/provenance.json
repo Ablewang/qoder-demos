@@ -1,0 +1,233 @@
+{
+  "skills": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/skills.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "97c838d8a8e4a472862d42f83af1f3fb840c2b4dcd81fea135300a19ebaeb435",
+    "rows": 357,
+    "storedSha256": "7e5c21dd37163c61e9bde981a414dc39035e6a5310a2076c5df379ac61aaa393"
+  },
+  "skilldesc": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/skilldesc.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "c547e7c5ac0250f81a7469d30d152d2a2d42b80d126db2d59523888f7d54606d",
+    "rows": 221,
+    "storedSha256": "5c492c0b081b823122c42036090bc48d92a0d77fff1af47456f8892fb7f26627"
+  },
+  "charstats": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/charstats.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "ca8d7dc33d1ed5d7a2d4bb0f2cb8650a3f8403c601dc2d14911b95e1712dcc68",
+    "rows": 7,
+    "storedSha256": "e0dfbc5e1fab8dc27e3701a8499dbf18814164bb72d5dd3a0906f8da48bf333d"
+  },
+  "experience": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/experience.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "437f00232228482c39c5e4744e2e50e0df89ef42381c23339e2d24839a7c1aed",
+    "rows": 101,
+    "storedSha256": "733e9607f44fa6ef46a2b08306a007b935d71d1838d3a08209d40390999aa7ab"
+  },
+  "weapons": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/weapons.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "557618528e1eb30b3df667cfb7861582027414e73219ac402a52cbb35e5f9cc1",
+    "rows": 306,
+    "storedSha256": "5ecb40c7edd35130c53ebeae4027f3f2a3f22db6ad3a004746fe35242323dd4a"
+  },
+  "armor": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/armor.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "dc34f6cdf38d6291bb91153b153b0cc53cf35a34d0ea4186157815426f1478b9",
+    "rows": 202,
+    "storedSha256": "265c124329b05d5676214f4dc5476ac296b4df3f0cc167208c62859f834623f2"
+  },
+  "misc": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/misc.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "eb1af8f586a65e727363644a925c94ab7d007cb73595eeb49ab4fcd193696fd5",
+    "rows": 151,
+    "storedSha256": "b7aa5345f304e3013e06235c961044160c8b143837ae37664f5f7dcfaccec953"
+  },
+  "MagicPrefix": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/MagicPrefix.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "d7093d594c3c6128f7cf9c5c57076c6b8ce2dc8914ae9dda98dcfd3288272858",
+    "rows": 637,
+    "storedSha256": "c6cb40627136c9320b7783c3df3d5bbb02f74d499a4aef023341cbff122fc2e5"
+  },
+  "MagicSuffix": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/MagicSuffix.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "8a7c989a0717e2d1075de9c9987553e0220b7b9f89e0cb2f24734f17d020c3b3",
+    "rows": 742,
+    "storedSha256": "6a4b33bea2fa706529e78ad0aa5bc2a092b0955873cb08da55f48428810852f9"
+  },
+  "gems": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/gems.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "ca815f5b86d7a96d29117ea6d524a6bc5c815d4f83f1f617a13020bc7fad3fb4",
+    "rows": 68,
+    "storedSha256": "63ed2f1bf1f550d0864fd27e15b25c7e13c598be514cd6cba9eec429078eac3c"
+  },
+  "Runes": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/Runes.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "8eff4f253b20ad45e2bbfda2879e55ac8369b5aee202db32025c858ff64e5377",
+    "rows": 169,
+    "storedSha256": "0f148714d83a0e49f23a38d2da0845f14abe75ec9e22fc6e9654cca4318179cb"
+  },
+  "UniqueItems": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/UniqueItems.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "ceaee77da0cd9533148df639af098fe4a31b0141ba9cdea9a5f36242fb03d7c4",
+    "rows": 401,
+    "storedSha256": "2c08531f7e3b24397d4c3abb25ef6531752ba6c901d564b13e4189675354609e"
+  },
+  "SetItems": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/SetItems.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "0114d192943af4546d23129081785dc095be54d33b5ef15d2ceeb52a340008a1",
+    "rows": 127,
+    "storedSha256": "82a2a89917200c21e8439c498dbb0b54b8139cae391aafdef3a4f0944f895542"
+  },
+  "Sets": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/Sets.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "bcb9d3be5506fa863eefba3f82ff2ed43c0f9e9c21b4f68c476549053768fb49",
+    "rows": 32,
+    "storedSha256": "2f8047544a9f6c294594a89105b727c246467b8730e33247ac755ce3eb9a5f60"
+  },
+  "Levels": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/Levels.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "79a20b49fdb65efb8432c56a054b2d142c5231ec076353c11cf15b01abe15a9a",
+    "rows": 137,
+    "storedSha256": "8c6d72f521d1ac72e3005009de0324e97422d2ca30fba321da6b04ce5cd04464"
+  },
+  "monstats": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/monstats.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "d83ccaf854ab671295a3fff9a820b5cbd3cc5545c2dfc7ba6958c1e0492b2b0d",
+    "rows": 734,
+    "storedSha256": "af90997b64bc239280980ef82a36bc7979d8cc6728a09b8ec6bfc0dcefe97c18"
+  },
+  "MonLvl": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/MonLvl.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "87146a916f5f3f9e37357758fcf6c3df5714ca9f80d0147fbf294c977e6dfe3a",
+    "rows": 111,
+    "storedSha256": "2492d4a1a33d79657ec746c614b8d16f3aa0469130c0939b822aa360d6030e28"
+  },
+  "SuperUniques": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/SuperUniques.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "10cdea3f9b421321678a123e65c0bdf1e5e67933c2474f19ba8430499b3c857c",
+    "rows": 66,
+    "storedSha256": "4490dc64e419532ac49f658624e8f864f877ba4be0f52f047ca99a9f512a3a26"
+  },
+  "TreasureClassEx": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/TreasureClassEx.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "866803a52223a83a3ae36212d85cabff23f5ebfd0220f59493244c331b6c91a5",
+    "rows": 852,
+    "storedSha256": "0b3ee8002975f37bb2a07def1c47e3956497c61371a553df505b497df85a8d13"
+  },
+  "itemratio": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/itemratio.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "d2b1fc6af74e4bd8a239a7b091ab09cc2aa66f82c2ebe68f8812f155260cdc72",
+    "rows": 6,
+    "storedSha256": "6ede5eed807f6b09bd2ed9b850a9552d8b4796758532d093069759f19922ccf4"
+  },
+  "ItemTypes": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/ItemTypes.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "25de2b03d4bad0d886588e26517af92c1f8120234568270e70c7415cb858513d",
+    "rows": 98,
+    "storedSha256": "d7647939e773788a8c6e834a55ba6a95b429c3c99790e1e10a37abaf8ae67af1"
+  },
+  "difficultylevels": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/difficultylevels.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "5ac56d6c12cc206e4574e0dc56435214dc72e9605763a48037b9998512868edd",
+    "rows": 3,
+    "storedSha256": "2279525b967de7bb3ac2fda449d4b4869d8bf70d5809d032b0940f11322480a3"
+  },
+  "hireling": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/hireling.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "7d353a22af3881b98b500595ad9ee0f2e08f39d9b7070e90633397765ccb5a1b",
+    "rows": 120,
+    "storedSha256": "d3035bab9f140342732dce1a3a6667315257c6138de5b93ff361b25aa5cd8e30"
+  },
+  "cubemain": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/cubemain.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "12fc784a1734a8152958eede3699c9d12914f38e9bd7018d4331b4348f6e50e5",
+    "rows": 151,
+    "storedSha256": "464667153cc4fcae8dadf1b76a254bd7ee48790cb087b7e1204133000e744410"
+  },
+  "Properties": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/Properties.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "7247f5b5a3b98a38b49ff558bbd34ba6707591da021f6a7b25eee9270e518fd7",
+    "rows": 268,
+    "storedSha256": "448f1f394724e4ef5923f39e646772854ef7f071f6b8fdf9303138757282c033"
+  },
+  "ItemStatCost": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/ItemStatCost.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "435d94dfa66cc56920256081e48bf6db2dfb58b402ab6e05875a618b568fb688",
+    "rows": 359,
+    "storedSha256": "bd00f96e1994d3db41399971b6aae78a2610c94da6d710a23d567f88896fcca7"
+  },
+  "LvlMaze": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/LvlMaze.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "4301cd16fd7a5e0792063964fa6c97294b18cca51590332b8abf74327f4fc58c",
+    "rows": 81,
+    "storedSha256": "587e26530acb1425b2057c0f36dfd8c26d61c37ae85a276723095648bbeb0a77"
+  },
+  "shrines": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/shrines.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "523bbc73f2bd7d69c221a990a120bb150f6dd15d67a9714ad90114cece48c829",
+    "rows": 23,
+    "storedSha256": "c4e3d56f60917e02d9e13c515188daea48a5b6df8ced85bf311e9cc517c5548f"
+  },
+  "objects": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/objects.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "e579f061c677254c3e21af5ac7855fd89e19f975de9c5f2cc2b68f5489bb624f",
+    "rows": 573,
+    "storedSha256": "69d1080b355ad08a71b22ed32546a09177796ee681fa945b6cd7de953b1b7f29"
+  },
+  "belts": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/belts.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "3596d8a76c773bd17ca8e4e5b24165795373cd26036da51747a61b2ed0ee8343",
+    "rows": 14,
+    "storedSha256": "0ce75b00d9754a91a5da71c54b3cddec02b1efcd322017f00d991b3b15916e9c"
+  },
+  "automagic": {
+    "url": "https://raw.githubusercontent.com/blizzhackers/d2data/0edfaf6d006f2eb82857c066e07ce03614285981/json/automagic.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "e4bc68a63c667971eccee492e10243d43e7de3b654b2bc7323b594cb89f90680",
+    "rows": 36,
+    "storedSha256": "638537d045d266c71ce9b68e317e849eca3cce9e43b8a257676b930dbaf445b4"
+  },
+  "Missiles": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/Missiles.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "17310828bbabe6bbf75c1c45b97e03e3df3675ad99cbe8c40df4bde3ae56b0ad",
+    "rows": 684,
+    "storedSha256": "702844c2d899d0e2780de6fe106238f90fe533c187c33e57132d629917ea215c"
+  },
+  "gamble": {
+    "url": "https://cdn.jsdelivr.net/gh/blizzhackers/d2data@0edfaf6d006f2eb82857c066e07ce03614285981/json/gamble.json",
+    "commit": "0edfaf6d006f2eb82857c066e07ce03614285981",
+    "sha256": "0443d52a847f649921ef4befedc16f02431f29a0db52241f736b54179fe16e78",
+    "rows": 125,
+    "storedSha256": "ccb24aceca1d952570feebff278628489cbb3d50dd4983ad5de7aba970efa260"
+  }
+}

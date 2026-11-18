@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/images/con_bot.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "a5261a6f705fd48ad216",
+  "status": "ok",
+  "parents": [
+    "5952bf5ada0b0b38792f"
+  ],
+  "bytes": 5140,
+  "sha256": "69cc2303469da55d749305b797077737eaf811447a35608eb65403ab6234d57d",
+  "fetchedAt": "2026-11-18T08:18:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200903/jl/images/con_bot.jpg",
+  "path": "assets/a5261a6f705fd48ad216.jpg"
+}

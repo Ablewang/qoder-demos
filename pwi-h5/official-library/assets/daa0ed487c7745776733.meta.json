@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/map.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "daa0ed487c7745776733",
+  "status": "ok",
+  "parents": [
+    "f458bcafb746c36b1e32"
+  ],
+  "bytes": 102395,
+  "sha256": "0842e22ab1d42e9fd3d5a31759dc367b28db603da37669270ae79c81342df85b",
+  "fetchedAt": "2026-11-18T08:19:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/map.jpg",
+  "path": "assets/daa0ed487c7745776733.jpg"
+}

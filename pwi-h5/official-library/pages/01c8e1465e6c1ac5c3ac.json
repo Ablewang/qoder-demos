@@ -1,0 +1,593 @@
+{
+  "id": "01c8e1465e6c1ac5c3ac",
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/iframe/list01_4.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 3,
+  "parents": [
+    "c2c8339195f44648ab5c"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/ectype/iframe/list01_4.htm",
+  "fetchedAt": "2026-11-18T08:16:06+00:00",
+  "sha256": "4885895f23e796096800ecf7ba6f27fa09dd986a394a20bc88cb194590d1909f",
+  "bytes": 4044,
+  "rawPath": "raw/01c8e1465e6c1ac5c3ac.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n精灵所需等级\n物品属性\n生产材料\n末日宝珠·1级\n1\n力量+1\n战歌徽记 x1\n末日宝珠·2级\n11\n力量+2\n末日宝珠·1级 x2\n末日宝珠·3级\n21\n力量+3\n末日宝珠·2级 x3\n末日宝珠·4级\n31\n力量+4\n末日宝珠·3级 x3\n末日宝珠·5级\n41\n力量+5\n末日宝珠·4级 x4\n末日宝珠·6级\n51\n力量+6\n末日宝珠·5级 x4\n悲悯宝珠·1级\n2\n敏捷+1\n战歌徽记 x1\n悲悯宝珠·2级\n12\n敏捷+2\n悲悯宝珠·1级 x2\n悲悯宝珠·3级\n22\n敏捷+3\n悲悯宝珠·2级 x3\n悲悯宝珠·4级\n32\n敏捷+4\n悲悯宝珠·3级 x3\n悲悯宝珠·5级\n42\n敏捷+5\n悲悯宝珠·4级 x4\n悲悯宝珠·6级\n52\n敏捷+6\n悲悯宝珠·5级 x4\n绝世宝珠·1级\n3\n体质+1\n战歌徽记 x1\n绝世宝珠·2级\n13\n体质+2\n绝世宝珠·1级 x2\n绝世宝珠·3级\n23\n体质+3\n绝世宝珠·2级 x3\n绝世宝珠·4级\n33\n体质+4\n绝世宝珠·3级 x3\n绝世宝珠·5级\n43\n体质+5\n绝世宝珠·4级 x4\n绝世宝珠·6级\n53\n体质+6\n绝世宝珠·5级 x4\n离空宝珠·1级\n4\n灵力+1\n战歌徽记 x1\n离空宝珠·2级\n14\n灵力+2\n离空宝珠·1级 x2\n离空宝珠·3级\n24\n灵力+3\n离空宝珠·2级 x3\n离空宝珠·4级\n34\n灵力+4\n离空宝珠·3级 x3\n离空宝珠·5级\n44\n灵力+5\n离空宝珠·4级 x4\n离空宝珠·6级\n54\n灵力+6\n离空宝珠·5级 x4",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精灵所需等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物品属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生产材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "末日宝珠·1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽记 x1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "末日宝珠·2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "末日宝珠·1级 x2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "末日宝珠·3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "末日宝珠·2级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "末日宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "31",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "末日宝珠·3级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "末日宝珠·5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "41",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "末日宝珠·4级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "末日宝珠·6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "51",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "末日宝珠·5级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "悲悯宝珠·1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽记 x1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "悲悯宝珠·2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "悲悯宝珠·1级 x2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "悲悯宝珠·3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "22",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "悲悯宝珠·2级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "悲悯宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "悲悯宝珠·3级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "悲悯宝珠·5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "42",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "悲悯宝珠·4级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "悲悯宝珠·6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "悲悯宝珠·5级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绝世宝珠·1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽记 x1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绝世宝珠·2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "绝世宝珠·1级 x2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绝世宝珠·3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "绝世宝珠·2级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绝世宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "33",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "绝世宝珠·3级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绝世宝珠·5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "43",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "绝世宝珠·4级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绝世宝珠·6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "53",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "绝世宝珠·5级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "离空宝珠·1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽记 x1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "离空宝珠·2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "离空宝珠·1级 x2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "离空宝珠·3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "离空宝珠·2级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "离空宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "离空宝珠·3级 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "离空宝珠·5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "离空宝珠·4级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "离空宝珠·6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "离空宝珠·5级 x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>精灵所需等级</td>\n\t\t<td>物品属性</td>\n\t\t<td>生产材料</td>\n\t</tr>\n\t<tr>\n    <td>末日宝珠·1级</td>\n    <td>1</td>\n    <td>力量+1</td>\n    <td>战歌徽记 x1</td>\n  </tr>\n  <tr>\n    <td>末日宝珠·2级</td>\n    <td>11</td>\n    <td>力量+2</td>\n    <td>末日宝珠·1级 x2</td>\n  </tr>\n  <tr>\n    <td>末日宝珠·3级</td>\n    <td>21</td>\n    <td>力量+3</td>\n    <td>末日宝珠·2级 x3</td>\n  </tr>\n  <tr>\n    <td>末日宝珠·4级</td>\n    <td>31</td>\n    <td>力量+4</td>\n    <td>末日宝珠·3级 x3</td>\n  </tr>\n  <tr>\n    <td>末日宝珠·5级</td>\n    <td>41</td>\n    <td>力量+5</td>\n    <td>末日宝珠·4级 x4</td>\n  </tr>\n  <tr>\n    <td>末日宝珠·6级</td>\n    <td>51</td>\n    <td>力量+6</td>\n    <td>末日宝珠·5级 x4</td>\n  </tr>\n  <tr>\n    <td>悲悯宝珠·1级</td>\n    <td>2</td>\n    <td>敏捷+1</td>\n    <td>战歌徽记 x1</td>\n  </tr>\n  <tr>\n    <td>悲悯宝珠·2级</td>\n    <td>12</td>\n    <td>敏捷+2</td>\n    <td>悲悯宝珠·1级 x2</td>\n  </tr>\n  <tr>\n    <td>悲悯宝珠·3级</td>\n    <td>22</td>\n    <td>敏捷+3</td>\n    <td>悲悯宝珠·2级 x3</td>\n  </tr>\n  <tr>\n    <td>悲悯宝珠·4级</td>\n    <td>32</td>\n    <td>敏捷+4</td>\n    <td>悲悯宝珠·3级 x3</td>\n  </tr>\n  <tr>\n    <td>悲悯宝珠·5级</td>\n    <td>42</td>\n    <td>敏捷+5</td>\n    <td>悲悯宝珠·4级 x4</td>\n  </tr>\n  <tr>\n    <td>悲悯宝珠·6级</td>\n    <td>52</td>\n    <td>敏捷+6</td>\n    <td>悲悯宝珠·5级 x4</td>\n  </tr>\n  <tr>\n    <td>绝世宝珠·1级</td>\n    <td>3</td>\n    <td>体质+1</td>\n    <td>战歌徽记 x1</td>\n  </tr>\n  <tr>\n    <td>绝世宝珠·2级</td>\n    <td>13</td>\n    <td>体质+2</td>\n    <td>绝世宝珠·1级 x2</td>\n  </tr>\n  <tr>\n    <td>绝世宝珠·3级</td>\n    <td>23</td>\n    <td>体质+3</td>\n    <td>绝世宝珠·2级 x3</td>\n  </tr>\n  <tr>\n    <td>绝世宝珠·4级</td>\n    <td>33</td>\n    <td>体质+4</td>\n    <td>绝世宝珠·3级 x3</td>\n  </tr>\n  <tr>\n    <td>绝世宝珠·5级</td>\n    <td>43</td>\n    <td>体质+5</td>\n    <td>绝世宝珠·4级 x4</td>\n  </tr>\n  <tr>\n    <td>绝世宝珠·6级</td>\n    <td>53</td>\n    <td>体质+6</td>\n    <td>绝世宝珠·5级 x4</td>\n  </tr>\n  <tr>\n    <td>离空宝珠·1级</td>\n    <td>4</td>\n    <td>灵力+1</td>\n    <td>战歌徽记 x1</td>\n  </tr>\n  <tr>\n    <td>离空宝珠·2级</td>\n    <td>14</td>\n    <td>灵力+2</td>\n    <td>离空宝珠·1级 x2</td>\n  </tr>\n  <tr>\n    <td>离空宝珠·3级</td>\n    <td>24</td>\n    <td>灵力+3</td>\n    <td>离空宝珠·2级 x3</td>\n  </tr>\n  <tr>\n    <td>离空宝珠·4级</td>\n    <td>34</td>\n    <td>灵力+4</td>\n    <td>离空宝珠·3级 x3</td>\n  </tr>\n  <tr>\n    <td>离空宝珠·5级</td>\n    <td>44</td>\n    <td>灵力+5</td>\n    <td>离空宝珠·4级 x4</td>\n  </tr>\n  <tr>\n    <td>离空宝珠·6级</td>\n    <td>54</td>\n    <td>灵力+6</td>\n    <td>离空宝珠·5级 x4</td>\n  </tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/01c8e1465e6c1ac5c3ac.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/01c8e1465e6c1ac5c3ac.js"
+}

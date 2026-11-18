@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_490.jpg",
+  "id": "2d9814da024118b5ad7c",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·土精通<em>（升仙）</em>",
+  "bytes": 1551,
+  "sha256": "c3dd3d91db60845dea9d502537e74211ecb6f94825167fd56ede4cd64f40eb03",
+  "fetchedAt": "2026-11-18T08:34:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_490.jpg",
+  "path": "assets/2d9814da024118b5ad7c.jpg"
+}

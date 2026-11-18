@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/elf/images/skill1_6g.jpg",
+  "id": "7d1cbf9be9dd65dc705d",
+  "status": "ok",
+  "parents": [
+    "4a15b380937880177c54",
+    "283437da4cf4e17cb21e",
+    "1af5daeec3f0979a6555"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/200905/elf/style/css.css",
+  "bytes": 839,
+  "sha256": "b821b894a7d4ba39c67d1d2564ee5eb591df7761fda5189231cd471d7dee05c4",
+  "fetchedAt": "2026-11-18T08:37:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/elf/images/skill1_6g.jpg",
+  "path": "assets/7d1cbf9be9dd65dc705d.jpg"
+}

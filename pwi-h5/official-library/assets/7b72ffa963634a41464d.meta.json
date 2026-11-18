@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201206/activity/swf/yxjq.swf",
+  "label": "",
+  "kind": "script-reference",
+  "id": "7b72ffa963634a41464d",
+  "status": "ok",
+  "parents": [
+    "f1f2ef7acba500abb1ff"
+  ],
+  "bytes": 668823,
+  "sha256": "4fa9e3be6c7d64d34e76c65b4b36c88c8511fff4bb0f5eb83bd6f9e8482e17a3",
+  "fetchedAt": "2026-11-18T08:27:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/x-shockwave-flash",
+  "finalUrl": "https://event51.wanmei.com/w2i/201206/activity/swf/yxjq.swf",
+  "path": "assets/7b72ffa963634a41464d.swf"
+}

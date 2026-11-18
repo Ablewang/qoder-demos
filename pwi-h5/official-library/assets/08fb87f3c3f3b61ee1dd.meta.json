@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27644.jpg",
+  "id": "08fb87f3c3f3b61ee1dd",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·生命绽放<em>（升仙）</em>",
+  "bytes": 4684,
+  "sha256": "400f01d450d99b594f23c18161906f733a32b81ebef20aa6016824701c0ed55f",
+  "fetchedAt": "2026-11-18T08:36:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27644.jpg",
+  "path": "assets/08fb87f3c3f3b61ee1dd.jpg"
+}

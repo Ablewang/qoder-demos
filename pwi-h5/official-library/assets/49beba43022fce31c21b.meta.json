@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_575.jpg",
+  "id": "49beba43022fce31c21b",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·羽盾<em>（入魔）</em>",
+  "bytes": 1714,
+  "sha256": "4882bed70ce71b6970c05332ead9948da1dc7ced2e06f65a58613f346efed613",
+  "fetchedAt": "2026-11-18T08:35:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_575.jpg",
+  "path": "assets/49beba43022fce31c21b.jpg"
+}

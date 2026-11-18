@@ -1,0 +1,22 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/newline/script/png.js",
+  "alt": "",
+  "kind": "script",
+  "id": "f45f45d116bf16afdd9c",
+  "status": "ok",
+  "parents": [
+    "5186b0b0b3c3773b5d31",
+    "1fe80fc9d9958da87b08",
+    "992deb2b04eb83864a12",
+    "058e746aaf0da73a1ed5",
+    "8620a35de1f02343fc2b"
+  ],
+  "bytes": 1538,
+  "sha256": "107f79c208d12fb912b965d1815928c2d95efadf7fb27621958d64f47ecac7e5",
+  "fetchedAt": "2026-11-18T08:17:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/newline/script/png.js",
+  "path": "assets/f45f45d116bf16afdd9c.js"
+}

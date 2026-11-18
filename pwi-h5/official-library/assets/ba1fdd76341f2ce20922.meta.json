@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_04.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ba1fdd76341f2ce20922",
+  "status": "ok",
+  "parents": [
+    "de47feb33ca455460610"
+  ],
+  "bytes": 8310,
+  "sha256": "c2c3cdf808f136f83e510d88fa7235563c7c4af13a945c221297e2ff06724f14",
+  "fetchedAt": "2026-11-18T08:18:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/images/top_04.jpg",
+  "path": "assets/ba1fdd76341f2ce20922.jpg"
+}

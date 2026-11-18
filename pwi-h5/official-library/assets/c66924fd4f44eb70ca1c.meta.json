@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/first/images/a_jiemi.png",
+  "id": "c66924fd4f44eb70ca1c",
+  "status": "ok",
+  "parents": [
+    "b1df3b2a90e9f89b6a4f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201303/first/style/index.css",
+  "bytes": 19001,
+  "sha256": "18b919dbbffc8c1ab9ea875670448954dbc3d00888e60fc4e4f09d07c06d7ea4",
+  "fetchedAt": "2026-11-18T08:38:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/first/images/a_jiemi.png",
+  "path": "assets/c66924fd4f44eb70ca1c.png"
+}

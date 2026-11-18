@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/qichong/shengji/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "7895db2e88ee66257a85",
+  "status": "ok",
+  "parents": [
+    "1cd7dd395eec0ccbe3aa"
+  ],
+  "bytes": 5243,
+  "sha256": "10556f5ce8a6b3c8a74e5a2e5b53b15f2817d499cff3faa8939a4ace4f39448a",
+  "fetchedAt": "2026-11-18T08:20:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/qichong/shengji/1.jpg",
+  "path": "assets/7895db2e88ee66257a85.jpg"
+}

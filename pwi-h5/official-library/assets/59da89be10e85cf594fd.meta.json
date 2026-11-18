@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/elf/images/bg2.jpg",
+  "id": "59da89be10e85cf594fd",
+  "status": "failed",
+  "parents": [
+    "4a15b380937880177c54",
+    "283437da4cf4e17cb21e",
+    "1af5daeec3f0979a6555"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/200905/elf/style/css.css",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:37:32+00:00"
+}

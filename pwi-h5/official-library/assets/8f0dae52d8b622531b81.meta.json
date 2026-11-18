@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27639.jpg",
+  "id": "8f0dae52d8b622531b81",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·黑巫咒<em>（升仙）</em>",
+  "bytes": 4643,
+  "sha256": "b3668b4e93323fb10b994359f6dd6bc11b85c0b1eab9046caeb3e841842709c6",
+  "fetchedAt": "2026-11-18T08:36:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27639.jpg",
+  "path": "assets/8f0dae52d8b622531b81.jpg"
+}

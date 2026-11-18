@@ -1,0 +1,81 @@
+{
+  "id": "1e4c85a17064bcbdc4a1",
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_m1.htm",
+  "title": "修真专题 《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 2,
+  "parents": [
+    "d38176ddfc90610e4eba",
+    "9dfac1e953f4ffe1a56e",
+    "04d5eae5b31b05f8cab0",
+    "c9bb0f8f3839e3c28e8c"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ef2d23b548c9ec0aa21cb53204175f90ed363cfd33b70fe76ecc78c659b50ea7",
+  "bytes": 2479,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1e4c85a17064bcbdc4a1.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "任务触发条件\n职业：不限\n等级：LV100\n修真：魔圣\n1、与祖龙城的力量贤者（537，673）对话后触发任务；\n2、与魔界的鬼狱尊者（333，464）对话后即可完成任务；\n力量贤者",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav1.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_title_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_side.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</div>\n\n\n<div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm</a></p>\n    </div>\t\n</div>\n\n<div>\n\t<div>\n\t\t<div><img src=\"assets/7f3baf47d7151fb660b8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t</div>\n\t\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav1.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav1.htm</a></p>\n        \n        <div>\n        \t<p>　　任务触发条件</p>\n        \t<p>　　职业：不限</p>\n        \t<p>　　等级：LV100</p>\n        \t<p>　　修真：魔圣</p>\n        \t<br>\n    \t\t<p>\n    \t\t\t　　1、与祖龙城的力量贤者（537，673）对话后触发任务；<br>\n\t\t\t\t　　2、与魔界的鬼狱尊者（333，464）对话后即可完成任务；\n\t\t\t</p>\n\t\t\t\n\t\t\t<div><img src=\"assets/7e6efab83997bb664759.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t\t<p>力量贤者</p>\n        </div>\n  \t</div>\n  \t\n\t<div><img src=\"assets/a390b066ffc65598eb81.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t<img src=\"assets/397760d8e3a09cd48cf3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n</div>\n\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n",
+  "dataPath": "pages/1e4c85a17064bcbdc4a1.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/1e4c85a17064bcbdc4a1.js"
+}

@@ -1,0 +1,190 @@
+{
+  "id": "8158e223bd04c120c4bc",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29994.shtml",
+  "title": "高级魂石",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a68a10f9f9f496642450c0c58cff5b4435984e1574c64cb0cb372d7215d4c478",
+  "bytes": 68104,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/8158e223bd04c120c4bc.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "高级魂石可在祖龙城“合成大师”处使用低级魂石合成而来，与NPC对话后选中合成即可进入魂石合成，在背包内将合成材料备齐后即可进行魂石的生产。\n注：1级魂石可在“杂货商”处购得，5级魂石可在“合成大师”处购得\n魂石合成表\n魂石等级\n合成所需材料\n1级魂石\n无\n2级魂石\n同种类1级魂石x3\n3级魂石\n同种类2级魂石x3\n4级魂石\n同种类3级魂石x3\n5级魂石\n同种类4级魂石x4\n6级魂石\n同种类5级魂石x4\n7级魂石\n同种类6级魂石x4\n8级魂石\n同种类7级魂石x5\n9级魂石\n同种类8级魂石x5\n10级魂石\n同种类9级魂石x5\n11级魂石\n同种类10级魂石x6\n12级魂石\n同种类11级魂石x6",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "魂石等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "合成所需材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类1级魂石x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类2级魂石x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "4级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类3级魂石x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类4级魂石x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "6级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类5级魂石x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "7级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类6级魂石x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "8级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类7级魂石x5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "9级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类8级魂石x5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "10级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类9级魂石x5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "11级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类10级魂石x6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "12级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类11级魂石x6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　高级魂石可在祖龙城“合成大师”处使用低级魂石合成而来，与NPC对话后选中合成即可进入魂石合成，在背包内将合成材料备齐后即可进行魂石的生产。</p>\r\n<p>　　注：1级魂石可在“杂货商”处购得，5级魂石可在“合成大师”处购得</p>\r\n<p>　　<strong>魂石合成表</strong></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n            <p><strong>魂石等级</strong></p>\r\n            </td>\r\n            <td>\r\n            <p><strong>合成所需材料</strong></p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>1级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>无</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>2级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类1级魂石x3</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>3级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类2级魂石x3</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>4级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类3级魂石x3</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>5级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类4级魂石x4</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>6级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类5级魂石x4</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>7级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类6级魂石x4</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>8级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类7级魂石x5</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>9级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类8级魂石x5</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>10级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类9级魂石x5</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>11级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类10级魂石x6</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>12级魂石</p>\r\n            </td>\r\n            <td>\r\n            <p>同种类11级魂石x6</p>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/8158e223bd04c120c4bc.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/8158e223bd04c120c4bc.js"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/newskill/images/top_08.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "14d380aaac4d6e5a869b",
+  "status": "ok",
+  "parents": [
+    "2a1bc820fce749204907"
+  ],
+  "bytes": 14188,
+  "sha256": "d3e2f3a31e9fbce95964168c3accbc384d63d0f985ab7187ade963e231b35dda",
+  "fetchedAt": "2026-11-18T08:21:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/newskill/images/top_08.jpg",
+  "path": "assets/14d380aaac4d6e5a869b.jpg"
+}

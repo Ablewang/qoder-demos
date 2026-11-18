@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/mingyun_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "f1c5535a8db99d6558d2",
+  "status": "ok",
+  "parents": [
+    "f9598f16f99ef6cd8828"
+  ],
+  "bytes": 3924,
+  "sha256": "3b7d8bace241697df0062a6be2ea32139bbfb425a23af510dbe09bdd822c35fa",
+  "fetchedAt": "2026-11-18T08:22:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/mingyun_button.jpg",
+  "path": "assets/f1c5535a8db99d6558d2.jpg"
+}

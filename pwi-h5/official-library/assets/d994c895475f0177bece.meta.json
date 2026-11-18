@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_629.jpg",
+  "id": "d994c895475f0177bece",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·羽之守护<em>（入魔）</em>",
+  "bytes": 1671,
+  "sha256": "d3c82edbc420b99a8f696b8239f052d26e8677451cf7e40a4b0a0a77cbf28029",
+  "fetchedAt": "2026-11-18T08:35:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_629.jpg",
+  "path": "assets/d994c895475f0177bece.jpg"
+}

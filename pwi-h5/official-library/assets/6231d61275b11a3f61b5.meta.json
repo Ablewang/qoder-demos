@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/yin.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6231d61275b11a3f61b5",
+  "status": "ok",
+  "parents": [
+    "c305a228a954fdc3679b"
+  ],
+  "bytes": 72620,
+  "sha256": "96e0559408cc79f640b52146ad630555ee00f22dae414490dde4d79ebc3150da",
+  "fetchedAt": "2026-11-18T08:22:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/yin.jpg",
+  "path": "assets/6231d61275b11a3f61b5.jpg"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "83a0bdfa704d7bf492e9",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/compare02.htm",
+  "title": "精练宝典 -《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "装备对比数据库",
+  "depth": 0,
+  "parents": [
+    "a617111463f23ad7d400"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "bc0f61f944c111e7c755b8c7b3c3467542ded997366c7ad1cb4606eb87d6c126",
+  "bytes": 1973,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/83a0bdfa704d7bf492e9.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "精炼效果：请选择一个装备",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/noimg.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/css.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/js/myjs.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div>\n        \t<div>\n            <div></div>\n            <div></div>\n            <div></div>\n\t\t\t</div>\t\n  <div></div>\n            <div>\n            \t<img src=\"assets/7f03b0801108b75f2eb1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n            </div>\n            <div></div>\n            <div>\n            \t<div><div></div></div>\n                <div></div>\n                <div>\n                \t<span>精炼效果：</span><span>请选择一个装备 </span><span></span> \n                </div>\n            </div>\n            <div></div>\n        </div>\n",
+  "dataPath": "pages/83a0bdfa704d7bf492e9.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/83a0bdfa704d7bf492e9.js"
+}

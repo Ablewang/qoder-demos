@@ -1,0 +1,95 @@
+{
+  "id": "3136cd49a436d43035e6",
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/header.htm",
+  "title": "丛林遗迹大冒险 -《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 1,
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79",
+    "69753a1e89037ce89a9e",
+    "661ea43ec21004c38c81",
+    "e9e69bb61aec017b44a8",
+    "8716ef0ffd9713a2e50d",
+    "bb8d8f83beaa947e8748",
+    "78cd277893465d3b5c99"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "5600876afb54f63fbf32a6fc53059883160fbc8d83d4c5188049664feca74372",
+  "bytes": 2673,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/3136cd49a436d43035e6.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/download_rycs_ty.shtml",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/banner_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/banner_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/banner_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/banner_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/banner_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/banner_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n             <div>\r\n\t\t\t\t\t\r\n                     <div>\r\n                         <img src=\"assets/6c3488499f602016cb6b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                         \r\n                           \r\n                           \r\n                           \r\n                           \r\n                         \r\n                         <img src=\"assets/ed6ec19a40a3f1985202.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                         <img src=\"assets/8378327c9a6964db58fb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                         <img src=\"assets/cbcc00e71b9715efcc68.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                         <img src=\"assets/090af527635da091effb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                         <img src=\"assets/5dd0e863f02081f002a4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n               </div>   \r\n         </div>\r\n",
+  "dataPath": "pages/3136cd49a436d43035e6.json",
+  "imageCount": 6,
+  "tableCount": 0,
+  "downloadPath": "downloads/3136cd49a436d43035e6.js"
+}

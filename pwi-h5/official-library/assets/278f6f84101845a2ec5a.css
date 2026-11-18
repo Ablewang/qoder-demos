@@ -1,0 +1,14 @@
+@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+*{ margin:0px; padding:0px;}
+body{ font-size:12px; font-family:"ËÎÌו";}
+img{ border:0px;}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area {blr:expression(this.onFocus=this.blur());outline:none;}
+ul li{ list-style-type:none;}
+.clear{ clear:both;}
+#header img , .left , .zuo img , .right img{ float:left;}
+#warp_bg_top{ background:url(../images/bg1.jpg) no-repeat center top;}
+#warp{ width:1002px; margin:0px auto; position:relative;}
+/* logo */
+#w2i_logo,#transparent_logo {top:25px;left:50px;}

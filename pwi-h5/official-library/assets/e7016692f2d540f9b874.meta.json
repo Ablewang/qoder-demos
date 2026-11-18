@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/enter/images/l_chakan.jpg",
+  "id": "e7016692f2d540f9b874",
+  "status": "ok",
+  "parents": [
+    "2ed37cf6dbb67bef702a"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201408/enter/style/master.css",
+  "bytes": 3253,
+  "sha256": "24bf3f25614abfde74a122e248bfa06b443a3fc88c679b721b287aab5b0eccb4",
+  "fetchedAt": "2026-11-18T08:38:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/enter/images/l_chakan.jpg",
+  "path": "assets/e7016692f2d540f9b874.jpg"
+}

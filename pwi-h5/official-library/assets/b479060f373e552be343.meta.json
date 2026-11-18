@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/ziliao_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "b479060f373e552be343",
+  "status": "ok",
+  "parents": [
+    "39e541ba79904034117c"
+  ],
+  "bytes": 37725,
+  "sha256": "157447473ede6832f9474e4dd72b32d9fea88296f7a9c85f2175b2d5d9a1731c",
+  "fetchedAt": "2026-11-18T08:20:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201103/bp/images/ziliao_01.jpg",
+  "path": "assets/b479060f373e552be343.jpg"
+}

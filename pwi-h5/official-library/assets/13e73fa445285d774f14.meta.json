@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27606.jpg",
+  "id": "13e73fa445285d774f14",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 百步神行诀<em>（升仙）</em>  ",
+  "bytes": 1078,
+  "sha256": "51dcb2964540658f4ab24fe548b195b39b7a04a96fdee3c3e8f91520b5d9896c",
+  "fetchedAt": "2026-11-18T08:36:08+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27606.jpg",
+  "path": "assets/13e73fa445285d774f14.jpg"
+}

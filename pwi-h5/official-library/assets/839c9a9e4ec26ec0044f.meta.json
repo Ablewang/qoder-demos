@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27641.jpg",
+  "id": "839c9a9e4ec26ec0044f",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·生命气泡<em>（升仙）</em>",
+  "bytes": 5016,
+  "sha256": "28466b8b329396e4a8011c6c934ef9a9cd334a316f0b94bb21867df38a9dcc92",
+  "fetchedAt": "2026-11-18T08:36:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27641.jpg",
+  "path": "assets/839c9a9e4ec26ec0044f.jpg"
+}

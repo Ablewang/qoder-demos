@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27631.jpg",
+  "id": "b1746b44721690a7551d",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 背水一战<em>（入魔）</em> ",
+  "bytes": 1111,
+  "sha256": "b28ddd6355f2109c89e6d5cc19ba9a7a9ce61b0a9d2fd2dd0982823fbb72ac27",
+  "fetchedAt": "2026-11-18T08:36:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27631.jpg",
+  "path": "assets/b1746b44721690a7551d.jpg"
+}

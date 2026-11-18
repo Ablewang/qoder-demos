@@ -1,0 +1,156 @@
+{
+  "id": "5186b0b0b3c3773b5d31",
+  "url": "https://w2i.wanmei.com/event/200805/newline/index.htm",
+  "title": "《完美世界国际版》新主线任务揭密",
+  "category": "任务介绍",
+  "section": "任务系统",
+  "depth": 0,
+  "parents": [
+    "1cb38395c2265ebc6d10",
+    "5186b0b0b3c3773b5d31",
+    "de47feb33ca455460610",
+    "4eff95687e5b49fdfaee",
+    "47ec369fda69c04d5b2a",
+    "e83bb97385dd93465398",
+    "1fe80fc9d9958da87b08",
+    "992deb2b04eb83864a12",
+    "058e746aaf0da73a1ed5",
+    "8620a35de1f02343fc2b",
+    "2a1bc820fce749204907",
+    "a08c5a6f495dfd7c3c98",
+    "504d42dc262142e90349",
+    "9dfac1e953f4ffe1a56e"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "bc2470f1ca0e502edbe957857d393e445e6aebef1da3dbeb1ecbb12bc32866f5",
+  "bytes": 5627,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/5186b0b0b3c3773b5d31.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "第一步“怨灵阴谋”\n接收NPC：祖龙城，夏风将军。\n接收前提：任务等级高于70。\n完成方式：\n70-80级：\n侦查雀画滩地形（至雀画滩中部房屋附近，会有提示完成。）；\n杀死食尸妖蛛（破阵平原，坐标369.867附近）得到军情残片；\n杀死狂灵首领（boss，在疾风部落东，石林附近）得到军情残片。\n与祖龙城副官对话。\n80-90级：\n侦查禹王鼎地形（至天劫谷入口处附近，会有提示完成。）；\n杀死妖牛屠杀者（云梦村附近）得到军情残片；\n杀死妖灵首领（boss，在禹王鼎北部一处枯树林中）得到军情残片。\n与祖龙城副官对话。\n90-150侦查疾风草原地形（至疾风草原中部哨塔处，疾风部落酋长身旁，会有提示完成）；\n杀死屠魂枯骨（抱残村东南，远征营地西北部）得到军情残片；\n杀死怒灵首领（boss，胡姬村南部偏东的山坡上）得到军情残片。(237, 758)与祖龙城副官对话。\n顺藤摸瓜\n接收前提：跑路与各个NPC对话。\n完成方式：\n1、羽族老兵：祖龙北城台子上。\n2、卫兵：祖龙城北门。\n3、铁匠：祖龙城西。\n4、卫兵：祖龙城北门。\n5、船夫：祖龙城东港口木架上。\n追击叛逆\n接收前提：完成上一任务自动获得。\n完成方式：（叛徒严绪）已逃出城去，在城外幽兰村西部靠近河岸的地方找到并杀死他，得到破坏祖龙城详细计划书。\n回报副官\n接收前提：得到详细计划书。\n完成方式：与副官对话。\n灵光贤者\n接收前提：完成上一任务自动获得。\n完成方式：与灵光贤者履冰对话。（祖龙城中四个天文台，东北部的天文台上。）“怨灵阴谋”完成。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/iframe_header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index_02.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index_03.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index_04.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index_05.htm",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/left_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/left_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/main_01_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/pic/tu1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/pic/tu2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/pic/tu3.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/right_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/right_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/banner_01_01.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/banner_01_02.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/banner_01_03.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/banner_01_04.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/banner_01_05.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/bottom.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/script/png.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n<div>\r\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200805/newline/iframe_header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200805/newline/iframe_header.htm</a></p>\t\r\n</div>\r\n\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<img src=\"assets/3d7f1885e212a5f0ba39.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/058571b760a986278183.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\t\t\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t\t<img src=\"assets/cfbaab9b22f8e9e6d42b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<div>\r\n\t\t\t<br><br>\r\n\t\t\t<p><span>第一步</span><strong>“怨灵阴谋”</strong></p>\r\n\t\t\t<p><img src=\"assets/3986af2bcb7dfb89a73a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p><br>\r\n\t\t\t<div></div>\r\n\t\t\t\r\n\t\t\t<p><strong>接收NPC：</strong><span>祖龙城，夏风将军。</span></p>\r\n\t\t\t<p><strong>接收前提：</strong><span>任务等级高于70。</span></p>\r\n\t\t\t<p><strong>完成方式：</strong></p>\r\n\t\t\t<p>70-80级：<br>\r\n\t\t\t\t\t\t  侦查雀画滩地形（至雀画滩中部房屋附近，会有提示完成。）；<br>\r\n\t\t\t\t\t\t  杀死食尸妖蛛（破阵平原，坐标369.867附近）得到军情残片；<br>\r\n\t\t\t\t\t\t  杀死狂灵首领（boss，在疾风部落东，石林附近）得到军情残片。<br>\r\n\t\t\t\t\t\t  与祖龙城副官对话。\r\n\t\t\t</p><br>\r\n\t\t\t<p>80-90级：<br>\r\n\t\t\t\t\t\t  侦查禹王鼎地形（至天劫谷入口处附近，会有提示完成。）；<br>\r\n\t\t\t\t\t\t  杀死妖牛屠杀者（云梦村附近）得到军情残片；<br>\r\n\t\t\t\t\t\t  杀死妖灵首领（boss，在禹王鼎北部一处枯树林中）得到军情残片。<br>\r\n\t\t\t\t\t\t  与祖龙城副官对话。\r\n\t\t\t</p><br>\r\n\t\t\t<p>90-150侦查疾风草原地形（至疾风草原中部哨塔处，疾风部落酋长身旁，会有提示完成）；<br>\r\n\t\t\t\t\t\t  杀死屠魂枯骨（抱残村东南，远征营地西北部）得到军情残片；\r\n\t\t\t</p>\r\n\t\t\t<p><img src=\"assets/45c24caf0635661ed331.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p><br>\r\n\t\t\t<div></div>\r\n\t\t\t\r\n\t\t\t<p>杀死怒灵首领（boss，胡姬村南部偏东的山坡上）得到军情残片。(237, 758)与祖龙城副官对话。</p>\r\n\t\t\t\r\n\t\t\t<p><img src=\"assets/820d5b4a80ceec74d1c9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p><br>\r\n\t\t\t<div></div>\r\n\t\t\t\r\n\r\n\t\t\t<p>顺藤摸瓜<br></p>\r\n\t\t\t<p><strong>接收前提：</strong><span>跑路与各个NPC对话。</span></p>\r\n\t\t\t<p><strong>完成方式：</strong></p>\r\n\t\t\t<p>1、羽族老兵：祖龙北城台子上。<br>\r\n\t\t\t\t\t\t  2、卫兵：祖龙城北门。<br>\r\n\t\t\t\t\t\t  3、铁匠：祖龙城西。<br>\r\n\t\t\t\t\t\t  4、卫兵：祖龙城北门。<br>\r\n\t\t\t\t\t\t  5、船夫：祖龙城东港口木架上。\r\n\t\t\t</p><br>\r\n\t\t\t\r\n\t\t\t<p>追击叛逆<br></p>\r\n\t\t\t<p><strong>接收前提：</strong><span>完成上一任务自动获得。</span></p>\r\n\t\t\t<p><strong>完成方式：</strong>（叛徒严绪）已逃出城去，在城外幽兰村西部靠近河岸的地方找到并杀死他，得到破坏祖龙城详细计划书。</p>\r\n\t\t\t<br>\r\n\t\t\t\r\n\t\t\t<p>回报副官<br></p>\r\n\t\t\t<p><strong>接收前提：</strong><span>得到详细计划书。</span></p>\r\n\t\t\t<p><strong>完成方式：</strong>与副官对话。</p>\r\n\t\t\t<br>\r\n\t\t\t\r\n\t\t\t<p>灵光贤者<br></p>\r\n\t\t\t<p><strong>接收前提：</strong><span>完成上一任务自动获得。</span></p>\r\n\t\t\t<p><strong>完成方式：</strong>与灵光贤者履冰对话。（祖龙城中四个天文台，东北部的天文台上。）“怨灵阴谋”完成。</p>\r\n\t\t</div>\r\n\t</div>\r\n\t<div>\r\n\t\t<img src=\"assets/ac77c2e4ded6f2a43bdb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\t\t\r\n\t\t<img src=\"assets/7296124fd271dfe6734c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t</div>\r\n\t<div>\r\n\t\t<a href=\"#page=5186b0b0b3c3773b5d31\"><img src=\"assets/67a9d36bcb405f198770.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\r\n\t\t<a href=\"#page=1fe80fc9d9958da87b08\"><img src=\"assets/9e6c9f0d4bb5339f6bc3.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\r\n\t\t<a href=\"#page=992deb2b04eb83864a12\"><img src=\"assets/203b2fb5a8cc81d7346e.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\r\n\t\t<a href=\"#page=058e746aaf0da73a1ed5\"><img src=\"assets/ef58246dfdb47e4bda97.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\r\n\t\t<a href=\"#page=8620a35de1f02343fc2b\"><img src=\"assets/7133bc3493647fa951fb.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t\t\t\t\t\t\t\t\r\n\t</div>\r\n  <div></div>\r\n</div>\r\n\r\n<div>\r\n\t<img src=\"assets/471f64a3dc77228673a0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n</div>\r\n\r\n\r\n\t\r\n\t\r\n<div></div>\r\n\r\n<div>\r\n \r\n\r\n</div>\t\r\n",
+  "dataPath": "pages/5186b0b0b3c3773b5d31.json",
+  "imageCount": 14,
+  "tableCount": 0,
+  "downloadPath": "downloads/5186b0b0b3c3773b5d31.js"
+}

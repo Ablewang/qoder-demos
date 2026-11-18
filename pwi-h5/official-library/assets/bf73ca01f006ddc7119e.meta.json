@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/group/images/tit_jpjieshao.jpg",
+  "id": "bf73ca01f006ddc7119e",
+  "status": "ok",
+  "parents": [
+    "782d6e4068ec737e77ac",
+    "633c5d2f329b24f8c2de",
+    "5a12e42458057bed1cfc",
+    "f3219307caf100f9392b",
+    "0e7591603c5d3aaeeb3c",
+    "15e68af62c0729593d5a",
+    "9695a000672ff0aa9760"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201111/group/style/master.css",
+  "bytes": 2190,
+  "sha256": "72cc4c8445481fc57fb34ba992a48cc6bd64f778cd686218ece3e8602e0d31ec",
+  "fetchedAt": "2026-11-18T08:39:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/group/images/tit_jpjieshao.jpg",
+  "path": "assets/bf73ca01f006ddc7119e.jpg"
+}

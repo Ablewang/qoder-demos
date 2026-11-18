@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_661.jpg",
+  "id": "24ffdfbef75a3f6835bf",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·妖雾击<em>（入魔）</em>",
+  "bytes": 1530,
+  "sha256": "6e1d42b5c8529655bd3aa012fefc3507365e3de2228157e74543eb3488049970",
+  "fetchedAt": "2026-11-18T08:35:50+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_661.jpg",
+  "path": "assets/24ffdfbef75a3f6835bf.jpg"
+}

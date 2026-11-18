@@ -1,0 +1,402 @@
+{
+  "id": "8a35af2dd91a586a6f7b",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+  "title": "NPC查找 - 风沙谷周边",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "0b3f8be4297cccf91e1df0ccbc6b43b2363d8db772ee693527e58abc06dbb0e5",
+  "bytes": 69211,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/8a35af2dd91a586a6f7b.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n鸣沙村巧匠沈绿腰\n169.470\n铁匠屈寒\n117.464\n合成大师秋长烟\n182.469\n传送师李子木\n179.469\n陆安邦\n177.471\n鸣沙村村长\n178.472\n庭兰\n180.471\n药师计无穷\n184.473\n钱庄掌柜贾兴\n111.314\n传送师郭淮\n114.314\n乌卓\n114.311\n合成大师常川\n115.310\n铁匠赵鑫\n120.309\n巧匠袁欢\n120.308\n裁缝程彩衣\n119.307\n钱庄掌柜顾青眼\n181.476\n货朗周识曲\n179.477\n桑丘\n175.479\n裁缝伍红裙\n175.478\n严子良\n175.475\n夜郎村村长\n112.307\n货郎费贾\n109.310\n药师华忠\n109.311",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "鸣沙村巧匠沈绿腰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "169.470",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠屈寒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "117.464",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "合成大师秋长烟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "182.469",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师李子木",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "179.469",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "陆安邦",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "177.471",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "鸣沙村村长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "178.472",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "庭兰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "180.471",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师计无穷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "184.473",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜贾兴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "111.314",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师郭淮",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "114.314",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "乌卓",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "114.311",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "合成大师常川",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "115.310",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠赵鑫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "120.309",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巧匠袁欢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "120.308",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝程彩衣",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "119.307",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜顾青眼",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "181.476",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货朗周识曲",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "179.477",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "桑丘",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "175.479",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝伍红裙",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "175.478",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "严子良",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "175.475",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "夜郎村村长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "112.307",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎费贾",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "109.310",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师华忠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "109.311",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>鸣沙村巧匠沈绿腰</td>\r\n            <td>169.470</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠屈寒</td>\r\n            <td>117.464</td>\r\n        </tr>\r\n        <tr>\r\n            <td>合成大师秋长烟</td>\r\n            <td>182.469</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师李子木</td>\r\n            <td>179.469</td>\r\n        </tr>\r\n        <tr>\r\n            <td>陆安邦</td>\r\n            <td>177.471</td>\r\n        </tr>\r\n        <tr>\r\n            <td>鸣沙村村长</td>\r\n            <td>178.472</td>\r\n        </tr>\r\n        <tr>\r\n            <td>庭兰</td>\r\n            <td>180.471</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师计无穷</td>\r\n            <td>184.473</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜贾兴</td>\r\n            <td>111.314</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师郭淮</td>\r\n            <td>114.314</td>\r\n        </tr>\r\n        <tr>\r\n            <td>乌卓</td>\r\n            <td>114.311</td>\r\n        </tr>\r\n        <tr>\r\n            <td>合成大师常川</td>\r\n            <td>115.310</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠赵鑫</td>\r\n            <td>120.309</td>\r\n        </tr>\r\n        <tr>\r\n            <td>巧匠袁欢</td>\r\n            <td>120.308</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝程彩衣</td>\r\n            <td>119.307</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜顾青眼</td>\r\n            <td>181.476</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货朗周识曲</td>\r\n            <td>179.477</td>\r\n        </tr>\r\n        <tr>\r\n            <td>桑丘</td>\r\n            <td>175.479</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝伍红裙</td>\r\n            <td>175.478</td>\r\n        </tr>\r\n        <tr>\r\n            <td>严子良</td>\r\n            <td>175.475</td>\r\n        </tr>\r\n        <tr>\r\n            <td>夜郎村村长</td>\r\n            <td>112.307</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎费贾</td>\r\n            <td>109.310</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师华忠</td>\r\n            <td>109.311</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/8a35af2dd91a586a6f7b.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/8a35af2dd91a586a6f7b.js"
+}

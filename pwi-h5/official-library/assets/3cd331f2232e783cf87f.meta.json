@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/zulong/images/pic5-2.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "3cd331f2232e783cf87f",
+  "status": "ok",
+  "parents": [
+    "afd731d2d0e0a68bba07"
+  ],
+  "bytes": 60990,
+  "sha256": "5f6b4e60990738f951c0601be819f9c13bfc1a9a456e3e818b25695944f1c544",
+  "fetchedAt": "2026-11-18T08:25:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/zulong/images/pic5-2.jpg",
+  "path": "assets/3cd331f2232e783cf87f.jpg"
+}

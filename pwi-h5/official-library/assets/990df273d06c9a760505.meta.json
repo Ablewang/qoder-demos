@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/_jia.jpg",
+  "label": "",
+  "kind": "script-reference",
+  "id": "990df273d06c9a760505",
+  "status": "failed",
+  "parents": [
+    "39e541ba79904034117c",
+    "fc1bd1184d32977d8ef8",
+    "7d1f04ccb3ecb19618de",
+    "54077598110dd21a8ab3",
+    "041600a6747d0e6956af",
+    "4caddf883e97ec7726fc"
+  ],
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:20:15+00:00"
+}

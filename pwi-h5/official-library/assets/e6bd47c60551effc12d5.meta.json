@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130426/10021366942988644.jpg",
+  "alt": "图片: 图4：迎接玩家挑战的蓝神.jpg",
+  "kind": "img",
+  "id": "e6bd47c60551effc12d5",
+  "status": "ok",
+  "parents": [
+    "348ffaf55e9f3ec408f5"
+  ],
+  "bytes": 67831,
+  "sha256": "490aca2da3e4b20310faeca5a9c0938aa22a2989787c58df9acb4137d5e351c6",
+  "fetchedAt": "2026-11-18T08:26:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130426/10021366942988644.jpg",
+  "path": "assets/e6bd47c60551effc12d5.jpg"
+}

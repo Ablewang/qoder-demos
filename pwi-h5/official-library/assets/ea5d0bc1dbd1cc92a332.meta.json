@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/100401/10021270101447925.jpg",
+  "label": "1920x1200",
+  "kind": "anchor",
+  "id": "ea5d0bc1dbd1cc92a332",
+  "status": "ok",
+  "parents": [
+    "be7168f53c67fb6d345a"
+  ],
+  "bytes": 1445048,
+  "sha256": "f1d7f4b5bbeb28e41e48c5608a60df05d53be74779271b6ad6a454ee6754ee5e",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/ea5d0bc1dbd1cc92a332.jpg"
+}

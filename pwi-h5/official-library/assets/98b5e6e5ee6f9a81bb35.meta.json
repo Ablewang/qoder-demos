@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/xml=xml/picplayer_main.xml",
+  "label": "",
+  "kind": "script-reference",
+  "id": "98b5e6e5ee6f9a81bb35",
+  "status": "ok",
+  "parents": [
+    "2812fafdb26bc19f29f1"
+  ],
+  "bytes": 1844,
+  "sha256": "177ad5fa4ff79d488ea53986c5320bab8503b7ae4c73de1eb980f373c046212f",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/98b5e6e5ee6f9a81bb35.xml"
+}

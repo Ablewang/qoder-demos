@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/images/dan_4.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "2df8725d8000352c72cb",
+  "status": "ok",
+  "parents": [
+    "261a842e117a8e468d05"
+  ],
+  "bytes": 155124,
+  "sha256": "fc7653377b7c92af65d561d82d613f1058d1389787299d4ff31016418b8209e4",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/2df8725d8000352c72cb.jpg"
+}

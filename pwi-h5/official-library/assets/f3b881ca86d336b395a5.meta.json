@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/js/jquery.jscrollpane.min.js",
+  "alt": "",
+  "kind": "script",
+  "id": "f3b881ca86d336b395a5",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "bytes": 15136,
+  "sha256": "5af7cd207c1015b7ef6ef95611d1e230813bbfbd88bb5816164aac9b2139f8c8",
+  "fetchedAt": "2026-11-18T08:26:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/js/jquery.jscrollpane.min.js",
+  "path": "assets/f3b881ca86d336b395a5.js"
+}

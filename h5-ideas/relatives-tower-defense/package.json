@@ -1,0 +1,21 @@
+{
+  "name": "relatives-tower-defense",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@12.4.2",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5211",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:browser": "node tests/browser.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5211"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.2",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/hdnav_04.jpg",
+  "alt": "新手指南",
+  "kind": "img",
+  "id": "7a0b0da12630d75c32f4",
+  "status": "ok",
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "bytes": 4743,
+  "sha256": "b01cd052063adac0e96e2747add3f27d12d11ff38a185471326f53321343e592",
+  "fetchedAt": "2026-11-18T08:21:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/temp120824/hdnav_04.jpg",
+  "path": "assets/7a0b0da12630d75c32f4.jpg"
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/images/opa_bg.png",
+  "id": "25a1fcc9d9c08199ff00",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+  "bytes": 1054,
+  "sha256": "0775d0aa00171fec2102e0ac2cae2e9178b0a962770d34461cca830ab2b9caa9",
+  "fetchedAt": "2026-11-18T08:38:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/images/opa_bg.png",
+  "path": "assets/25a1fcc9d9c08199ff00.png"
+}

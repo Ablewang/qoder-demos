@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27577.jpg",
+  "id": "8d4dea3f4e3608525248",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 连击<em>（升仙）</em>",
+  "bytes": 1233,
+  "sha256": "f52b7fa6b652d34a63ab2dbdb6c84e3f17b60799e8b13743f2254b664eae8c91",
+  "fetchedAt": "2026-11-18T08:36:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27577.jpg",
+  "path": "assets/8d4dea3f4e3608525248.jpg"
+}

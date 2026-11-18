@@ -1,0 +1,519 @@
+{
+  "id": "464bf204b6294ec64b79",
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/",
+  "title": "丛林遗迹大冒险 -《完美国际》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 1,
+  "parents": [
+    "22965a8aa329ca111aad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "64deda2da3dbd73fdb6a4f7e26df303db352183f7870936306df8c4fcc85092f",
+  "bytes": 13294,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/464bf204b6294ec64b79.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "丛林之眼·破（宝坠）\n品阶\n16\n等级要求\n80\n耐久上限\n280/280\n基础属性\n物防\n—\n金防\n308\n木防\n308\n水防\n308\n火防\n308\n土防\n308\n附加属性\n攻击等级\n生命值\n致命一击率\n3\n180\n2%\n装备技能\n丛林之眼：可洞察万物变化\n丛林之睛·破（玉佩）\n品阶\n16\n等级要求\n80\n耐久上限\n280/280\n基础属性\n物防\n308\n金防\n—\n木防\n—\n水防\n—\n火防\n—\n土防\n—\n附加属性\n攻击等级\n生命值\n致命一击率\n3\n180\n2%\n装备技能\n丛林之眼：可洞察万物变化\n丛林遗迹内埋藏着最终遗宝——丛林之眼。\n1、每周二20:30以后，在祖龙城“遗迹寻宝人”处领取进入丛林遗迹的任务；\n2、在遗宝灵官琢环和漱玉处领取幸运任务，以第一名的成绩完成幸运任务后获得传奇腰佩——丛林之眼•虚或丛林之睛•虚；\n3、也可收集丛林之石，在“遗迹寻宝人”或“遗迹指引者”处生产传奇腰佩丛林之眼•虚或丛林之睛•虚；\n4、传奇腰佩丛林之眼•虚或丛林之睛•虚可升级为丛林之眼•空或丛林之睛•空，以及终极传奇腰佩丛林之眼•破或丛林之睛•破。\n将传奇腰佩丛林之眼•虚或丛林之睛•虚升级为空或破时，将会继承腰佩在前一阶段的精炼等级以及天人合一状态。如原丛林之眼•虚的精炼等级为+5且天人合一时，生产出的丛林之眼•空也为精炼+5且天人合一，若此时将腰佩精炼升级为+6，则此时生产出的丛林之眼•破即为精炼+6且天人合一。\n特别说明：当进行继承生产时，若原物品精炼等级大于1，则需要根据原物品的精炼等级额外消耗掉一定数量的乾坤石。 乾坤石消耗数量查询>>",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "丛林之眼·破（宝坠）",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "耐久上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "280/280",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "基础属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "物防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "308",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "木防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "308",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "308",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "火防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "308",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "308",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "4",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "致命一击率",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "180",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "2%",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "装备技能",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "丛林之眼：可洞察万物变化",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "丛林之睛·破（玉佩）",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "耐久上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "280/280",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "基础属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "物防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "308",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "木防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "火防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "4",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "致命一击率",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "180",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "2%",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "装备技能",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "丛林之眼：可洞察万物变化",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_1.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_6.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/viewthread.php?tid=1598145",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_5.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_2.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_4.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/info_3.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/guide_fb/20091103/36730.shtml",
+      "label": "乾坤石消耗数量查询>>",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/title3.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men1a.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men1b.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/map2.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/map1.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men6b.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men6a.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men2b.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men2a.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men3b.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men3a.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men4b.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men4a.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men5b.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men5a.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/titl1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/pic01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/pic02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/cen_bottom.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n   <div>\r\n       <div>\r\n             <div>\r\n                     <div>\r\n                         <p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201007/maoxian/header.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201007/maoxian/header.htm</a></p>\r\n                     </div>\r\n                     <div>\r\n                         <div>\r\n                            <div>\r\n                              <div>\r\n                                  <div>\r\n                                      <h2><img src=\"assets/9a9d369d02c10bf04426.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></h2>\r\n                                      <div>\r\n                                         <ul>\r\n                                            <li><a href=\"#page=69753a1e89037ce89a9e\"><img src=\"assets/0c3ced49ffe19a9e0812.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                            <li><a href=\"#page=661ea43ec21004c38c81\"><img src=\"assets/6595b2f56319731b8656.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                            <li><a href=\"http://bbs.w2i.wanmei.com/viewthread.php?tid=1598145\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/eabcc8af9d25c06b028f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                         </ul>\r\n                                         <ul>\r\n                                             <li><a href=\"#page=e9e69bb61aec017b44a8\"><img src=\"assets/089305813336758cc725.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                             <li><a href=\"#page=8716ef0ffd9713a2e50d\"><img src=\"assets/da66009ed2594a9801d2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                             <li><a href=\"#page=bb8d8f83beaa947e8748\"><img src=\"assets/3268fcb27fe592213953.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                             <li><a href=\"#page=78cd277893465d3b5c99\"><img src=\"assets/3493c6a68686b8245042.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n                                         </ul>\r\n                                      </div>\r\n                                  </div>\r\n                                  <div>\r\n                                     <div><img src=\"assets/7c300776dc4aafccff36.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n                                     <div>\r\n                                       <div></div> \r\n                                        <div></div> \r\n<div>\r\n                                           <table>\r\n                                           <tr>\r\n    <td rowspan=\"2\"><p><img src=\"assets/e6e7ca9770bb84694800.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p></td>\r\n    <td colspan=\"6\"><p><strong>丛林之眼·破（宝坠）</strong></p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>品阶</p></td>\r\n    <td><p>16</p></td>\r\n    <td><p>等级要求</p></td>\r\n    <td><p>80</p></td>\r\n    <td><p>耐久上限</p></td>\r\n    <td><p>280/280</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"2\"><p>基础属性</p></td>\r\n    <td><p>物防</p></td>\r\n    <td><p>— </p></td>\r\n    <td><p>金防</p></td>\r\n    <td><p>308</p></td>\r\n    <td><p>木防</p></td>\r\n    <td><p>308</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>水防</p></td>\r\n    <td><p>308</p></td>\r\n    <td><p>火防</p></td>\r\n    <td><p>308</p></td>\r\n    <td><p>土防</p></td>\r\n    <td><p>308</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"4\"><p>附加属性</p></td>\r\n    <td colspan=\"2\"><p>攻击等级</p></td>\r\n    <td colspan=\"2\"><p>生命值</p></td>\r\n    <td colspan=\"2\"><p>致命一击率</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"2\"><p>3</p></td>\r\n    <td colspan=\"2\"><p>180</p></td>\r\n    <td colspan=\"2\"><p>2%</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"6\"><p>装备技能</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"6\"><p>丛林之眼：可洞察万物变化</p></td>\r\n  </tr>\r\n                      </table>\r\n\t\t\t\t\t\t\t\t\t\t <br><br>\r\n\t\t\t\t\t\t\t\t\t\t <table>\r\n                                            <tr>\r\n    <td rowspan=\"2\"><p><img src=\"assets/51dbe25cd09b00c5b15e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p></td>\r\n    <td colspan=\"6\"><p><strong>丛林之睛·破（玉佩）</strong></p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>品阶</p></td>\r\n    <td><p>16</p></td>\r\n    <td><p>等级要求</p></td>\r\n    <td><p>80</p></td>\r\n    <td><p>耐久上限</p></td>\r\n    <td><p>280/280</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"2\"><p>基础属性</p></td>\r\n    <td><p>物防</p></td>\r\n    <td><p>308</p></td>\r\n    <td><p>金防</p></td>\r\n    <td><p>— </p></td>\r\n    <td><p>木防</p></td>\r\n    <td><p>— </p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>水防</p></td>\r\n    <td><p>— </p></td>\r\n    <td><p>火防</p></td>\r\n    <td><p>— </p></td>\r\n    <td><p>土防</p></td>\r\n    <td><p>— </p></td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"4\"><p>附加属性</p></td>\r\n    <td colspan=\"2\"><p>攻击等级</p></td>\r\n    <td colspan=\"2\"><p>生命值</p></td>\r\n    <td colspan=\"2\"><p>致命一击率</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"2\"><p>3</p></td>\r\n    <td colspan=\"2\"><p>180</p></td>\r\n    <td colspan=\"2\"><p>2%</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"6\"><p>装备技能</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td colspan=\"6\"><p>丛林之眼：可洞察万物变化</p></td>\r\n  </tr>\r\n                      </table>\r\n                                       </div>\r\n                                        <div></div>\r\n                                        <div></div>\r\n                                      <div><p>　　　　丛林遗迹内埋藏着最终遗宝——丛林之眼。<br>\r\n\t\t\t\t\t\t\t\t　　　　1、每周二20:30以后，在祖龙城“遗迹寻宝人”处领取进入丛林遗迹的任务；<br> \r\n\t\t\t\t\t\t\t\t　　　　2、在遗宝灵官琢环和漱玉处领取幸运任务，以第一名的成绩完成幸运任务后获得传奇腰佩——丛林之眼•虚或丛林之睛•虚；<br>\r\n\t\t\t\t\t\t\t\t　　　　3、也可收集丛林之石，在“遗迹寻宝人”或“遗迹指引者”处生产传奇腰佩丛林之眼•虚或丛林之睛•虚；<br>\r\n\t\t\t\t\t\t\t\t　　　　4、传奇腰佩丛林之眼•虚或丛林之睛•虚可升级为丛林之眼•空或丛林之睛•空，以及终极传奇腰佩丛林之眼•破或丛林之睛•破。</p>\r\n                                      </div>\r\n                                        <div></div>\r\n                                        <div></div>\r\n                                        <div>\r\n                                         　　<p>　　将传奇腰佩丛林之眼•虚或丛林之睛•虚升级为空或破时，将会继承腰佩在前一阶段的精炼等级以及天人合一状态。如原丛林之眼•虚的精炼等级为+5且天人合一时，生产出的丛林之眼•空也为精炼+5且天人合一，若此时将腰佩精炼升级为+6，则此时生产出的丛林之眼•破即为精炼+6且天人合一。<br>\r\n　　<span>特别说明：当进行继承生产时，若原物品精炼等级大于1，则需要根据原物品的精炼等级额外消耗掉一定数量的乾坤石。</span> <a href=\"#page=2a1389b9b42f54042f9d\">乾坤石消耗数量查询&gt;&gt;</a></p>\r\n                                        </div>\r\n                             </div>\r\n                                     <div><img src=\"assets/78ca6708109cf2505efd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n                                  </div>\r\n                              </div>\r\n                            </div>\r\n                         </div>\r\n                     </div>\r\n         </div>\r\n         </div>\r\n    </div>\r\n</div>\r\n<div>\r\n   \r\n  \r\n</div>\r\n",
+  "dataPath": "pages/464bf204b6294ec64b79.json",
+  "imageCount": 19,
+  "tableCount": 2,
+  "downloadPath": "downloads/464bf204b6294ec64b79.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_391.jpg",
+  "id": "39ee9f710816018cde46",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·劈空掌<em>（入魔）</em>",
+  "bytes": 1572,
+  "sha256": "942b68e69a131e629b586b07e81fcd1d4f4c192d8f1cd1605eaaa29713101b53",
+  "fetchedAt": "2026-11-18T08:34:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_391.jpg",
+  "path": "assets/39ee9f710816018cde46.jpg"
+}

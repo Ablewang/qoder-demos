@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_630.jpg",
+  "id": "ac91b54b16f44ba50949",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·百步穿杨<em>（升仙）</em>",
+  "bytes": 1712,
+  "sha256": "2e31ed13ed4c6fd44a327c08c869717e55e5cb4e689c18c212e27d9cc41f4cd0",
+  "fetchedAt": "2026-11-18T08:35:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_630.jpg",
+  "path": "assets/ac91b54b16f44ba50949.jpg"
+}

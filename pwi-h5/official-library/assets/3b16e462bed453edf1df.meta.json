@@ -1,0 +1,12 @@
+{
+  "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_04.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "3b16e462bed453edf1df",
+  "status": "failed",
+  "parents": [
+    "67215fa210ec728b7612"
+  ],
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "fetchedAt": null
+}

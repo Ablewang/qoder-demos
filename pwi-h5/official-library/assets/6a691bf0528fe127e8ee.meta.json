@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/hd_11.jpg",
+  "alt": "今天您还可以参与以下活动：",
+  "kind": "img",
+  "id": "6a691bf0528fe127e8ee",
+  "status": "ok",
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "bytes": 6620,
+  "sha256": "0e101befc562f6ca7c30908ba4223e326f7e1b20974ec639c8a48effdd4e1e26",
+  "fetchedAt": "2026-11-18T08:21:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/temp120824/hd_11.jpg",
+  "path": "assets/6a691bf0528fe127e8ee.jpg"
+}

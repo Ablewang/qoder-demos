@@ -1,0 +1,48 @@
+{
+  "id": "593c144f26156dd361ea",
+  "url": "https://w2i.wanmei.com/store/storelist/m41.htm",
+  "title": "《完美国际2012》官方网站——全新3D灾难巨制，12月创世启程！",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8932d9b011b0007f85d638a7e0eea2e79bc9c2d6b6eda39c804647ae5d788d5e",
+  "bytes": 2575,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/593c144f26156dd361ea.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "loading...\n牛气冲天\n装备此凭证的摆摊栏位可以获得更多的商品栏位及更长摊位名。\n3黄金 时限一周\n玉兔呈祥\n装备此凭证的摆摊栏位可以获得更多的商品栏位及更长摊位名。\n3黄金 时限一周",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/shop1102/daoju/shoumai/1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110223/10021298450286359.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/shop1102.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n\t\tloading...\r\n\t</div>\r\n\t<div>\r\n\t\t\r\n<div>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/6dd58667828d8a0ce6cc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>牛气冲天</h4>\r\n\t\t\t<p>装备此凭证的摆摊栏位可以获得更多的商品栏位及更长摊位名。</p>\r\n\t\t\t<p><b>3黄金</b>　　<b>时限一周</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/dacc0eaaa3e5f57f019d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>玉兔呈祥</h4>\r\n\t\t\t<p>装备此凭证的摆摊栏位可以获得更多的商品栏位及更长摊位名。</p>\r\n\t\t\t<p><b>3黄金</b>　　<b>时限一周</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n</div>\r\n\t</div>\r\n\t<div>\r\n\t\t<div></div>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/593c144f26156dd361ea.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/593c144f26156dd361ea.js"
+}

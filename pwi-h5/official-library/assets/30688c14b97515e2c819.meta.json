@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/hhsd/images/top02.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "30688c14b97515e2c819",
+  "status": "ok",
+  "parents": [
+    "d70aa131569b632d7365"
+  ],
+  "bytes": 44465,
+  "sha256": "dad404b7de32c8c02b9b03b8b42cb60c37a45495fe92ee6f40e940aa5eb8dd0b",
+  "fetchedAt": "2026-11-18T08:22:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/hhsd/images/top02.gif",
+  "path": "assets/30688c14b97515e2c819.gif"
+}

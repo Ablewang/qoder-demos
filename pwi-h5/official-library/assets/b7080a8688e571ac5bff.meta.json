@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_394.jpg",
+  "id": "b7080a8688e571ac5bff",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·风卷残云<em>（升仙）</em>",
+  "bytes": 1548,
+  "sha256": "9ca2652748f6432194149d03c0855feb87a23c60c7c4e5612c7db3fdd9b410c0",
+  "fetchedAt": "2026-11-18T08:34:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_394.jpg",
+  "path": "assets/b7080a8688e571ac5bff.jpg"
+}

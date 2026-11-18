@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073937394.jpg",
+  "alt": "图片: 图3：绿色夏威夷女装.jpg",
+  "kind": "img",
+  "id": "27455582f7df91548a91",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 43730,
+  "sha256": "0b3b46a6d9c054736f93992597250175032f559f09ca0388cc44e5110b9b6ab1",
+  "fetchedAt": "2026-11-18T08:23:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073937394.jpg",
+  "path": "assets/27455582f7df91548a91.jpg"
+}

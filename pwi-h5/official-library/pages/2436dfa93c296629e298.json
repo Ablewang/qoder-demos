@@ -1,0 +1,40 @@
+{
+  "id": "2436dfa93c296629e298",
+  "url": "https://w2i.wanmei.com/intro/ts/20091015/29975.shtml",
+  "title": "封神模式",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "0c8a28684bdec1010be1e442d37ef3e0ed1479c424467f376eb1f0ece9df7a43",
+  "bytes": 67114,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/2436dfa93c296629e298.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "模式描述：\n1、封神模式目的是使玩家不用通过层层关卡就可以直接面对BOSS，大量节省了玩家平时清理普通怪物进入的时间。\n2、通过该模式进入后的BOSS攻击和血量全部进行了大幅削弱，同时还大大提高了BOSS的爆率，让玩家在轻松“降魔”的同时又能满载而归。\n3、目前该模式只支持覆霜、神月两大副本。\n开启流程：\n1、进入副本后与NPC邹厚门对话（成员数量不少于2个的队长），选择其中一个BOSS，会收取一定的封神道具（封神书卷、神之呼吸）。\n2、邹厚门旁边会刷出一个新的传送NPC，每个人与NPC对话后会无条件直接传送至BOSS附近。\n3、成功杀死BOSS后，附近会刷出一个返回NPC，对话则传送回副本门口。\n备注：选择过一个BOSS任务后，需要等3分钟，该任务才会重新出现，防止误操作。\n覆霜BOSS任务开启需求：\n神月BOSS任务开启需求：\n道具说明：\n封神书卷——封神模式开启必须品，另外还可以兑换部分生产材料和任务物品，目前可以兑换的材料有千机材、天工补、自然精髓，可以兑换的任务物品有神之呼吸。乾坤袋礼包内有售。\n神之呼吸——封神模式开启高级BOSS任务必须品。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/fsms_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/fsms_02.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　<strong>模式描述：</strong></p>\r\n<p>　　1、封神模式目的是使玩家不用通过层层关卡就可以直接面对BOSS，大量节省了玩家平时清理普通怪物进入的时间。</p>\r\n<p>　　2、通过该模式进入后的BOSS攻击和血量全部进行了大幅削弱，同时还大大提高了BOSS的爆率，让玩家在轻松“降魔”的同时又能满载而归。</p>\r\n<p>　　3、目前该模式只支持覆霜、神月两大副本。</p>\r\n<p>　　<strong>开启流程：</strong></p>\r\n<p>　　1、进入副本后与NPC邹厚门对话（成员数量不少于2个的队长），选择其中一个BOSS，会收取一定的封神道具（封神书卷、神之呼吸）。</p>\r\n<p>　　2、邹厚门旁边会刷出一个新的传送NPC，每个人与NPC对话后会无条件直接传送至BOSS附近。</p>\r\n<p>　　3、成功杀死BOSS后，附近会刷出一个返回NPC，对话则传送回副本门口。</p>\r\n<p>　　备注：选择过一个BOSS任务后，需要等3分钟，该任务才会重新出现，防止误操作。</p>\r\n<p>　　<strong>覆霜BOSS任务开启需求：</strong></p>\r\n<p><img src=\"assets/4388e9d0f561cec665f0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>神月BOSS任务开启需求：</strong></p>\r\n<p><img src=\"assets/34abd0aa6e3bb4d884db.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>道具说明：</strong></p>\r\n<p>　　封神书卷——封神模式开启必须品，另外还可以兑换部分生产材料和任务物品，目前可以兑换的材料有千机材、天工补、自然精髓，可以兑换的任务物品有神之呼吸。乾坤袋礼包内有售。</p>\r\n<p>　　神之呼吸——封神模式开启高级BOSS任务必须品。</p>\r\n                        </div>",
+  "dataPath": "pages/2436dfa93c296629e298.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/2436dfa93c296629e298.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27679.jpg",
+  "id": "0427bfd4ac033b6af006",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·复仇之魂—反噬<em>（入魔）</em>",
+  "bytes": 4681,
+  "sha256": "8015d623ce1f16452dab21d015f0e989c4d74489f8640c427d5cc03fdf1cc838",
+  "fetchedAt": "2026-11-18T08:36:28+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27679.jpg",
+  "path": "assets/0427bfd4ac033b6af006.jpg"
+}

@@ -1,0 +1,801 @@
+{
+  "id": "fc5134711629a30067db",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlqsy.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "8f3bb45a5ac4efe6b9c0",
+    "fc5134711629a30067db"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlqsy.htm",
+  "fetchedAt": "2026-11-18T08:16:51+00:00",
+  "sha256": "ace3bcdedb49b79a933add3cfb4b2806ef5076c34d7de36eb9991e0bbddd6328",
+  "bytes": 7888,
+  "rawPath": "raw/fc5134711629a30067db.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "双斧|双刀|长锤|单剑|铁拳|利刃|长刀|弓|弹弓|幡仗|短杖|法剑\n装备名称\n类型\n品阶\n物理攻击\n等级\n力量\n敏捷\n装备属性\n制作材料\n★追风砍月\n单剑\n13\n616-924\n100\n193\n146\n属性随机\n剑魂·十年灯\n天书碎片2\n★千军无人挡\n双刀\n13\n720-1200\n100\n197\n141\n属性随机\n剑魂·楚狂人\n天书碎片2\n★齐眉破风\n长刀\n13\n562-1166\n100\n240\n99\n属性随机\n剑魂·舞乾坤\n天书碎片2\n★疯魔乱舞\n双斧\n13\n635-1480\n100\n287\n52\n属性随机\n剑魂·金鳞斩\n天书碎片2\n★雷动九天\n长锤\n13\n672-1248\n100\n287\n52\n属性随机\n剑魂·快哉风\n天书碎片2\n★蛟龙雾绕\n铁拳\n13\n546-604\n100\n150\n188\n属性随机\n剑魂·醉卧美人\n天书碎片2\n★心随雁飞灭\n利刃\n13\n489-661\n100\n146\n193\n属性随机\n剑魂·十步杀一人\n天书碎片2\n★含沙射影\n弓\n13\n808-1499\n100\n52\n287\n属性随机\n剑魂·斗阎罗\n天书碎片2\n★拨云逝雾\n弹弓\n13\n871-1306\n100\n47\n291\n属性随机\n剑魂·万古愁\n天书碎片2\n装备名称\n类型\n品阶\n法术攻击\n等级\n力量\n灵力\n装备属性\n制作材料\n★回风拂柳\n短杖\n13\n897-915\n100\n47\n289\n属性随机\n剑魂·非人间\n天书碎片2\n★共醉重阳\n法剑\n13\n819-997\n100\n52\n285\n属性随机\n剑魂·一花一世界\n天书碎片2\n★渡鸟之力\n幡杖\n13\n635-1178\n100\n56\n280\n属性随机\n剑魂·百花杀\n天书碎片2",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★追风砍月",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "单剑",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "616-924",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "193",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·十年灯",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★千军无人挡",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "双刀",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "720-1200",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "197",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "141",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·楚狂人",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★齐眉破风",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "562-1166",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "240",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·舞乾坤",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★疯魔乱舞",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "双斧",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "635-1480",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "287",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·金鳞斩",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★雷动九天",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "长锤",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "672-1248",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "287",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·快哉风",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★蛟龙雾绕",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "铁拳",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "546-604",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "150",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "188",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·醉卧美人",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★心随雁飞灭",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "489-661",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "193",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·十步杀一人",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★含沙射影",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "弓",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "808-1499",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "287",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·斗阎罗",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★拨云逝雾",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "弹弓",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "871-1306",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "47",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "291",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·万古愁",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★回风拂柳",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "短杖",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "897-915",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "47",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "289",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·非人间",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★共醉重阳",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "法剑",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "819-997",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "285",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·一花一世界",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★渡鸟之力",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "幡杖",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "635-1178",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "56",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "280",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "剑魂·百花杀",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlqsy.htm",
+      "label": "法剑",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/sycsiframetop2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/b6075712bd22ea0b1487.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                    <div><a href=\"#page=fc5134711629a30067db\">双斧</a><span>|</span><a href=\"#page=fc5134711629a30067db\">双刀</a><span>|</span><a href=\"#page=fc5134711629a30067db\">长锤</a><span>|</span><a href=\"#page=fc5134711629a30067db\">单剑</a><span>|</span><a href=\"#page=fc5134711629a30067db\">铁拳</a><span>|</span><a href=\"#page=fc5134711629a30067db\">利刃</a><span>|</span><a href=\"#page=fc5134711629a30067db\">长刀</a><span>|</span><a href=\"#page=fc5134711629a30067db\">弓</a><span>|</span><a href=\"#page=fc5134711629a30067db\">弹弓</a><span>|</span><a href=\"#page=fc5134711629a30067db\">幡仗</a><span>|</span><a href=\"#page=fc5134711629a30067db\">短杖</a><span>|</span><a href=\"#page=fc5134711629a30067db\">法剑</a></div>\n       \t    </div>\n                <div>\n<table>\n\t\t\t\t\t<tr>\n                    \t<th>装备名称</th>\n                        <th>类型</th>\n                        <th>品阶</th>\n                        <th>物理攻击</th>\n                        <th>等级</th>\n                        <th>力量</th>\n                        <th>敏捷</th>\n                        <th>装备属性</th>\n                        <th>制作材料</th>\n                    </tr>\n  <tr>\n    <td rowspan=\"2\">★追风砍月</td>\n    <td rowspan=\"2\">单剑</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">616-924</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">193</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·十年灯</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★千军无人挡</td>\n    <td rowspan=\"2\">双刀</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">720-1200</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">197</td>\n    <td rowspan=\"2\">141</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·楚狂人</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★齐眉破风</td>\n    <td rowspan=\"2\">长刀</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">562-1166</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">240</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·舞乾坤</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★疯魔乱舞</td>\n    <td rowspan=\"2\">双斧</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">635-1480</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">287</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·金鳞斩</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★雷动九天</td>\n    <td rowspan=\"2\">长锤</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">672-1248</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">287</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·快哉风</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★蛟龙雾绕</td>\n    <td rowspan=\"2\">铁拳</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">546-604</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">150</td>\n    <td rowspan=\"2\">188</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·醉卧美人</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★心随雁飞灭</td>\n    <td rowspan=\"2\">利刃</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">489-661</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">193</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·十步杀一人</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★含沙射影</td>\n    <td rowspan=\"2\">弓</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">808-1499</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">287</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·斗阎罗</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★拨云逝雾</td>\n    <td rowspan=\"2\">弹弓</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">871-1306</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">47</td>\n    <td rowspan=\"2\">291</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·万古愁</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n</table>\n<table>\n\t\t\t\t\t<tr>\n                    \t<th>装备名称</th>\n                        <th>类型</th>\n                        <th>品阶</th>\n                        <th>法术攻击</th>\n                        <th>等级</th>\n                        <th>力量</th>\n                        <th>灵力</th>\n                        <th>装备属性</th>\n                        <th>制作材料</th>\n                    </tr>\n  <tr>\n    <td rowspan=\"2\">★回风拂柳</td>\n    <td rowspan=\"2\">短杖</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">897-915</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">47</td>\n    <td rowspan=\"2\">289</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·非人间</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★共醉重阳</td>\n    <td rowspan=\"2\">法剑</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">819-997</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">285</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·一花一世界</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">★渡鸟之力</td>\n    <td rowspan=\"2\">幡杖</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">635-1178</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">56</td>\n    <td rowspan=\"2\">280</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>剑魂·百花杀</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n</table>\n                </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/fc5134711629a30067db.json",
+  "imageCount": 1,
+  "tableCount": 2,
+  "downloadPath": "downloads/fc5134711629a30067db.js"
+}

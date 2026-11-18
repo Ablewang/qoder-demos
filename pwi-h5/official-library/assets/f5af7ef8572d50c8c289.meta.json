@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27595.jpg",
+  "id": "f5af7ef8572d50c8c289",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 狂狼印<em>（升仙）</em>  ",
+  "bytes": 1160,
+  "sha256": "73b0c926c2812c57e6587f1a07a874a301d992f9a643e954edab396895e9ba38",
+  "fetchedAt": "2026-11-18T08:36:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27595.jpg",
+  "path": "assets/f5af7ef8572d50c8c289.jpg"
+}

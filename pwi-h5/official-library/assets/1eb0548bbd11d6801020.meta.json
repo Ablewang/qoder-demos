@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/shengji_03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "1eb0548bbd11d6801020",
+  "status": "ok",
+  "parents": [
+    "8d3e83b72711ebe48ed4"
+  ],
+  "bytes": 38806,
+  "sha256": "9d9fa8bb47b3331f1932047a5cf84599605279e8473eaf40b458ce9fd634fdaa",
+  "fetchedAt": "2026-11-18T08:20:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201103/bp/images/shengji_03.jpg",
+  "path": "assets/1eb0548bbd11d6801020.jpg"
+}

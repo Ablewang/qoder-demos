@@ -1,0 +1,362 @@
+{
+  "id": "eee3aab04ec5daeb2789",
+  "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36688.shtml",
+  "title": "新武器-拳套",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 0,
+  "parents": [
+    "eee3aab04ec5daeb2789",
+    "4604ff508f140a109632",
+    "6c14103ab26360a90a04",
+    "0abe6ceccad74c753902",
+    "6d95bf47eb5231d97b4f",
+    "8f0f7e0b74c57d60c065",
+    "d1cfab30817245c1085c",
+    "65aee77a1ff80bae91f7",
+    "d350eeffc4baea62aff5",
+    "6086431c2237fdf64b6a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "cc7b5273090e7a89c68999395d04fb44de083977a05cb4b0ce5e0dc5e72dcac9",
+  "bytes": 71167,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/eee3aab04ec5daeb2789.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-11-02",
+  "text": "拳套 | 枪戟 | 利刃 | 弓弩 | 斧锤 | 法器 | 刀剑 | 匕首 | 法宝 |\n一次轮回\n二次轮回\n名称：★★四神召来•轮回\n名称：★★四神幻舞•真如\n类型：拳套\n类型：拳套\n品阶：13\n品阶：15\n物理攻击力：643~710\n物理攻击力：798~882\n攻击距离：2.5\n攻击距离：2.5\n升级效果：物理攻击+21\n升级效果：物理攻击+21\n附加属性： 致命一击+3% 物理攻击+84 体质+16~17\n必然会出现的附加属性：狂暴、狂神之怒、致命一击+3%或致命一击+4%其中之一\n升级需要的武器：★四神召来•狂\n可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3\n新附加属性解释：狂神之怒，被祝福过的狂暴之力，更大机率使自已进入狂暴状态，物攻加倍，攻速提升，但会受加深伤害。\n升级需要的武器：★★四神召来•轮回\n一次轮回\n二次轮回\n名称：★★醒掌天下•轮回\n名称：★★醉卧云巅\n类型：拳套\n类型：拳套\n品阶：13\n品阶：15\n物理攻击力：643~710\n物理攻击力：798~882\n攻击距离：2.5\n攻击距离：2.5\n升级效果：物理攻击+21\n升级效果：物理攻击+21\n附加属性： 敏捷+16~17\n必然会出现的附加属性：狂暴、狂神之怒、致命一击+3%或致命一击+4%其中之一\n升级需要的武器：★十步杀一神或★醒掌天下\n可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3\n三方并帝古未有，两贤向厄我所闻。何来洒落樽前语：天下英雄惟使君。\n新附加属性解释：狂神之怒：被祝福过的狂暴之力，更大机率使自已进入狂暴状态，物攻加倍，攻速提升，但会受加深伤害。\n升级需要的武器：★★醒掌天下•轮回\n烟霞洞里无鸡犬，风雨林间有鬼神。醉卧云巅闲入梦，不知何物是吾身。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "一次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "二次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "名称：★★四神召来•轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称：★★四神幻舞•真如",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "类型：拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型：拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "品阶：13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶：15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物理攻击力：643~710",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击力：798~882",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级效果：物理攻击+21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级效果：物理攻击+21",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性： 致命一击+3% 物理攻击+84 体质+16~17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "必然会出现的附加属性：狂暴、狂神之怒、致命一击+3%或致命一击+4%其中之一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★四神召来•狂",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新附加属性解释：狂神之怒，被祝福过的狂暴之力，更大机率使自已进入狂暴状态，物攻加倍，攻速提升，但会受加深伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★★四神召来•轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "一次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "二次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "名称：★★醒掌天下•轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称：★★醉卧云巅",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "类型：拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型：拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "品阶：13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶：15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物理攻击力：643~710",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击力：798~882",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级效果：物理攻击+21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级效果：物理攻击+21",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性： 敏捷+16~17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "必然会出现的附加属性：狂暴、狂神之怒、致命一击+3%或致命一击+4%其中之一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★十步杀一神或★醒掌天下",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "三方并帝古未有，两贤向厄我所闻。何来洒落樽前语：天下英雄惟使君。",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "新附加属性解释：狂神之怒：被祝福过的狂暴之力，更大机率使自已进入狂暴状态，物攻加倍，攻速提升，但会受加深伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★★醒掌天下•轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烟霞洞里无鸡犬，风雨林间有鬼神。醉卧云巅闲入梦，不知何物是吾身。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36688.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36687.shtml",
+      "label": "枪戟",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36686.shtml",
+      "label": "利刃",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36685.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36684.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36683.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36682.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37697.shtml",
+      "label": "匕首",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37698.shtml",
+      "label": "法宝",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091102/1102091.jpg",
+      "alt": "新武器-拳套",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091102/1102092.jpg",
+      "alt": "新武器-拳套",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=eee3aab04ec5daeb2789\">拳套</a> | <a href=\"#page=4604ff508f140a109632\">枪戟</a> | <a href=\"#page=6c14103ab26360a90a04\">利刃</a> | <a href=\"#page=0abe6ceccad74c753902\">弓弩</a> | <a href=\"#page=6d95bf47eb5231d97b4f\">斧锤</a> | <a href=\"#page=8f0f7e0b74c57d60c065\">法器</a> | <a href=\"#page=d1cfab30817245c1085c\">刀剑</a> | <a href=\"#page=65aee77a1ff80bae91f7\">匕首</a> | <a href=\"#page=d350eeffc4baea62aff5\">法宝</a> |</li>\r\n</ul>\r\n<p><img src=\"assets/e639c3eac67583bc3d1e.jpg\" alt=\"新武器-拳套\" loading=\"lazy\"></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>一次轮回</strong></td>\r\n            <td><strong>二次轮回</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>名称：★★四神召来•轮回</td>\r\n            <td>\r\n            <p>名称：★★四神幻舞•真如</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>类型：拳套</td>\r\n            <td>类型：拳套</td>\r\n        </tr>\r\n        <tr>\r\n            <td>品阶：13</td>\r\n            <td>品阶：15</td>\r\n        </tr>\r\n        <tr>\r\n            <td>物理攻击力：643~710</td>\r\n            <td>物理攻击力：798~882</td>\r\n        </tr>\r\n        <tr>\r\n            <td>攻击距离：2.5</td>\r\n            <td>攻击距离：2.5</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级效果：物理攻击+21</td>\r\n            <td>升级效果：物理攻击+21</td>\r\n        </tr>\r\n        <tr>\r\n            <td>附加属性： 致命一击+3% 物理攻击+84 体质+16~17</td>\r\n            <td>必然会出现的附加属性：狂暴、狂神之怒、致命一击+3%或致命一击+4%其中之一</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">升级需要的武器：★四神召来•狂</td>\r\n            <td>可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3</td>\r\n        </tr>\r\n        <tr>\r\n            <td>新附加属性解释：狂神之怒，被祝福过的狂暴之力，更大机率使自已进入狂暴状态，物攻加倍，攻速提升，但会受加深伤害。</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★★四神召来•轮回</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p><img src=\"assets/27fcb4f4974e510f17c9.jpg\" alt=\"新武器-拳套\" loading=\"lazy\"></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>一次轮回</strong></td>\r\n            <td><strong>二次轮回</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>名称：★★醒掌天下•轮回</td>\r\n            <td>\r\n            <p>名称：★★醉卧云巅</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>类型：拳套</td>\r\n            <td>类型：拳套</td>\r\n        </tr>\r\n        <tr>\r\n            <td>品阶：13</td>\r\n            <td>品阶：15</td>\r\n        </tr>\r\n        <tr>\r\n            <td>物理攻击力：643~710</td>\r\n            <td>物理攻击力：798~882</td>\r\n        </tr>\r\n        <tr>\r\n            <td>攻击距离：2.5</td>\r\n            <td>攻击距离：2.5</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级效果：物理攻击+21</td>\r\n            <td>升级效果：物理攻击+21</td>\r\n        </tr>\r\n        <tr>\r\n            <td>附加属性： 敏捷+16~17</td>\r\n            <td>必然会出现的附加属性：狂暴、狂神之怒、致命一击+3%或致命一击+4%其中之一</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★十步杀一神或★醒掌天下</td>\r\n            <td>可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 攻击间隔 -0.05 命中+30% 物理攻击上限+106 物理攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 攻击等级+3</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">三方并帝古未有，两贤向厄我所闻。何来洒落樽前语：天下英雄惟使君。</td>\r\n            <td>新附加属性解释：狂神之怒：被祝福过的狂暴之力，更大机率使自已进入狂暴状态，物攻加倍，攻速提升，但会受加深伤害。</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★★醒掌天下•轮回</td>\r\n        </tr>\r\n        <tr>\r\n            <td>烟霞洞里无鸡犬，风雨林间有鬼神。醉卧云巅闲入梦，不知何物是吾身。</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/eee3aab04ec5daeb2789.json",
+  "imageCount": 2,
+  "tableCount": 2,
+  "downloadPath": "downloads/eee3aab04ec5daeb2789.js"
+}

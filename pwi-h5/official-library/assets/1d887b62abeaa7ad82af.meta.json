@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/xml/show_options1309.xml",
+  "label": "",
+  "kind": "script-reference",
+  "id": "1d887b62abeaa7ad82af",
+  "status": "ok",
+  "parents": [
+    "2637615f8e25eead3d52"
+  ],
+  "bytes": 20425,
+  "sha256": "ec088654d91f129e57cb9cf40f40a1f3b749b3b3aec593eceefd7670efcd14c3",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/1d887b62abeaa7ad82af.xml"
+}

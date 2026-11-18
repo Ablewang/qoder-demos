@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/xuanzhan_03s.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "b9fd173bd7704272b25b",
+  "status": "ok",
+  "parents": [
+    "3f3cf869f397c4803c78"
+  ],
+  "bytes": 53708,
+  "sha256": "9da996195fe15e1a09e740d33edc93ad1928db23db7dc4f9b6d6a47d01d90181",
+  "fetchedAt": "2026-11-18T08:21:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/cz/images/xuanzhan_03s.jpg",
+  "path": "assets/b9fd173bd7704272b25b.jpg"
+}

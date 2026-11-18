@@ -1,0 +1,145 @@
+{
+  "id": "ca878282777f163102a7",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/dingzhu.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/dingzhu.htm",
+  "fetchedAt": "2026-11-18T08:15:56+00:00",
+  "sha256": "39f00d390e5891ab0776fad637267e19ccf45177e6f3ee06e1bbe34422b4aea0",
+  "bytes": 2280,
+  "rawPath": "raw/ca878282777f163102a7.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "图1\n图2\n玩法：接房间任务后被传送到另一个有怪的房间，玩家需在怪物围攻中坚持100秒自动传送离开房间，得到该房间骰子。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "图1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩法：接房间任务后被传送到另一个有怪的房间，玩家需在怪物围攻中坚持100秒自动传送离开房间，得到该房间骰子。",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：接房间任务后被传送到另一个有怪的房间，玩家需在怪物围攻中坚持100秒自动传送离开房间，得到该房间骰子。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：接房间任务后被传送到另一个有怪的房间，玩家需在怪物围攻中坚持100秒自动传送离开房间，得到该房间骰子。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_bg.jpg",
+      "label": "玩法：接房间任务后被传送到另一个有怪的房间，玩家需在怪物围攻中坚持100秒自动传送离开房间，得到该房间骰子。",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/dingzhu_button.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/dz_tt01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/dz_tt02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td colspan=\"2\"><img src=\"assets/4eef6404da80881bd23d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td><div><img src=\"assets/909867e1913e5c4e0db0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n      </tr>\n    </table>\n    <div></div></td>\n    <td><div>\n      <table>\n        <tr>\n          <td><div><img src=\"assets/ebdb9e488cd1f8206c61.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n        </tr>\n      </table>\n    </div></td>\n  </tr>\n  <tr>\n    <td><div>图1</div></td>\n    <td><div>图2</div></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\"><table>\n      <tr>\n        <td><table>\n          <tr>\n            <td><p>玩法：接房间任务后被传送到另一个有怪的房间，玩家需在怪物围攻中坚持100秒自动传送离开房间，得到该房间骰子。</p>\n              </td>\n          </tr>\n        </table>          \n          <p> </p></td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/ca878282777f163102a7.json",
+  "imageCount": 4,
+  "tableCount": 5,
+  "downloadPath": "downloads/ca878282777f163102a7.js"
+}

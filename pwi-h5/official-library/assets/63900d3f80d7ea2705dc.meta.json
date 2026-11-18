@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/none.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "63900d3f80d7ea2705dc",
+  "status": "ok",
+  "parents": [
+    "53babb9851e328acaa8e",
+    "d95843f0584579a4b144",
+    "7adf4f0cebcef9e0bf78",
+    "43220ab3a84f652ee138",
+    "f7a93bc66a9e256ede45",
+    "24a731a7b37a909930b1",
+    "969164d25dd1fd071c98",
+    "553135a9e897f6609cac",
+    "a1972473967010540e2b",
+    "080409e79f0f4ff83c29"
+  ],
+  "bytes": 43,
+  "sha256": "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/63900d3f80d7ea2705dc.gif"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_607.jpg",
+  "id": "ce87158a1005aa4b36bb",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·惊雷<em>（入魔）</em>",
+  "bytes": 1616,
+  "sha256": "19820650a014a578d24a7a535a0424ef68801d404fb8e2cbc5e7872362a2751a",
+  "fetchedAt": "2026-11-18T08:34:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_607.jpg",
+  "path": "assets/ce87158a1005aa4b36bb.jpg"
+}

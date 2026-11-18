@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201206/activity/images/anniu.jpg",
+  "id": "ac66c49df0ebdbf6ac57",
+  "status": "ok",
+  "parents": [
+    "f1f2ef7acba500abb1ff"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201206/activity/style/master.css",
+  "bytes": 4726,
+  "sha256": "13ed7e3a5426dd50f8da87d8b33d403de3f21630c6a58c792044b7c71b288a9a",
+  "fetchedAt": "2026-11-18T08:39:04+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201206/activity/images/anniu.jpg",
+  "path": "assets/ac66c49df0ebdbf6ac57.jpg"
+}

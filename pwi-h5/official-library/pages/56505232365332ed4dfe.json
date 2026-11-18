@@ -1,0 +1,80 @@
+{
+  "id": "56505232365332ed4dfe",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/cjxgdl.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "59cb948c7b10c9712ba9",
+    "101319dd2f65319f00b7",
+    "15d3ed593ed1c21ffe17"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a4ebfed1ddc078b0776a0386a557315ed5c9ef5c7ad22be9192e7b401f4626c3",
+  "bytes": 2040,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/56505232365332ed4dfe.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/cjlcgl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/cjbossdl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/cjmsjl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/concjxg.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbossoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnxgon.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnmsjloff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<div>\n    <div><a href=\"#page=59cb948c7b10c9712ba9\"><img src=\"assets/9facda887e78ece85fc0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    <div><a href=\"#page=101319dd2f65319f00b7\"><img src=\"assets/c26daee0bd4ecc504d49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n\t<div><img src=\"assets/a43cfaf5afe0760491d3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n    <div><a href=\"#page=15d3ed593ed1c21ffe17\"><img src=\"assets/b86281e6bb4a17efb873.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    </div>\n    <div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/concjxg.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/concjxg.htm</a></p>\n        </div>\n    </div>\n</div>\n",
+  "dataPath": "pages/56505232365332ed4dfe.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/56505232365332ed4dfe.js"
+}

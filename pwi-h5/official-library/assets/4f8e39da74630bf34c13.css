@@ -1,0 +1,55 @@
+@import url(http://w2i.wanmei.com/style/w2i_logo_213x97.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+#w2i_logo,#transparent_logo{left:65px;}
+html {min-width:1002px;}
+body{ margin:0; padding:0;font-size:14px; color:#1A695D;font-family:"ËÎÌו",Arial, Helvetica, sans-serif;background:#220600 url(../images/body_bg.jpg) center 41px no-repeat;}
+div,img,ul,ol,li ,p,h1,h2,h3,h4{margin:0;padding:0;border:0;list-style:none;}
+.clear{content:"";display:block;clear:both;}
+a{blr:expression(this.onFocus=this.blur()); outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+a {color:#fff;text-decoration:none;}
+a:link {color:#000000; text-decoration:none;}
+a:visited {color:#000000;text-decoration:none;}
+a:hover {color:#000000; text-decoration:underline;} 
+#wrapper{width:100%;min-width:1002px;margin:0 auto;}
+#cont,.banner_box{width:1002px;margin:0 auto; position:relative;}
+.banner_box img{ float:left;}
+/*.banner_box{ overflow:hidden;}*/
+
+.data_rep{ width:1002px; background:url(../images/data_rep.jpg) repeat-y 0 0;}
+.data_bot{ background:url(../images/data_bot.jpg) no-repeat left bottom; padding-bottom:50px;}
+.data_top{ background:url(../images/data_top.jpg) no-repeat left top; padding-top:15px; height:auto!important; min-height:600px; height:600px;}
+.seach{ width:800px; margin-left:105px;}
+.seach p{ color:#000; font-size:12px; line-height:22px;}
+.seach p strong{ color:red;}
+.seach p span{color:red; font-size:14px;}
+.seach p b{ padding-left:50px; font-weight:100;}
+.seach p i{ width:98px;line-height:18px; border:1px solid #d2d1c2; font-style:normal; font-size:14px; color:red; font-weight:bold; background:#fff; padding:2px; *display:inline-block}
+.seach p select{ width:150px; border:1px solid #d2d1c2;}
+.marl{ padding:0 0 15px 25px; font-family:"ËÎÌו"}
+.padd{ padding-left:212px; }
+.padd1{ padding-left:243px;*padding-left:249px;}
+.san{ padding-left:30px;}
+.data_info{ width:835px; margin-left:85px;}
+.data_info h2{ padding:15px 0;}
+.tab_class{ width:800px; margin:0 auto;}
+.tab_class tr td{ background:#d1cbbd; border-bottom:1px solid #56554f; border-right:1px solid #56554f;  line-height:25px; text-align:center; color:#000;}
+.tab_class tr th{ background:#c7aeae; border-top:1px solid #56554f; border-right:1px solid #56554f; border-bottom:1px solid #56554f; line-height:25px;  text-align:center; color:#000;}
+.left_bor{ border-left:1px solid #56554f;}
+.tab1_class{ border:1px solid #56554f; width:200px; margin-left:25px;}
+.tab1_class tr td{ border-bottom:1px solid #56554f; border-right:1px solid #56554f; line-height:25px; text-align:center; }
+.noborder{ border:none;}
+
+#explan_box {width:790px;padding:0 0 0 15px;}
+.btn {width:789px;height:25px;line-height:26px;margin-top:5px;margin-bottom:5px;color:#000;text-indent:10px;display:block;font-weight:bold;cursor:pointer}
+.con_list_bg {width:750px;padding:5px 20px 10px 20px;line-height:24px;}
+.fcolor{color:#000;}
+#btn{background:url('../images/tit_h.jpg') no-repeat}
+#btn0{background:url('../images/tit_h.jpg') no-repeat}
+#btn1{background:url('../images/tit_h.jpg') no-repeat}
+#btn2{background:url('../images/tit_h.jpg') no-repeat}
+#btna{background:url('../images/tit_z.jpg') no-repeat}
+#btna0{background:url('../images/tit_z.jpg') no-repeat}
+#btna1{background:url('../images/tit_z.jpg') no-repeat}
+#btna2{background:url('../images/tit_z.jpg') no-repeat}
+.hide{display:none}

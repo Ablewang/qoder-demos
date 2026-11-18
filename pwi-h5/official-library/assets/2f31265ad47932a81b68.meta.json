@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/images/right_lc.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "2f31265ad47932a81b68",
+  "status": "ok",
+  "parents": [
+    "ca91a22b822e69131723",
+    "ba01dee565ef6edbf9c1"
+  ],
+  "bytes": 21902,
+  "sha256": "0e257a1106b735a9f2b87c1a0035e13290f78bd5a8b7de6aaf5a84246df5c0d8",
+  "fetchedAt": "2026-11-18T08:28:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/images/right_lc.jpg",
+  "path": "assets/2f31265ad47932a81b68.jpg"
+}

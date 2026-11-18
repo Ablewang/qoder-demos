@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27664.jpg",
+  "id": "1236f8574df8eb51c241",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·激流术<em>（入魔）</em>",
+  "bytes": 4652,
+  "sha256": "38c98e12dfa698be9c1512d3ceaa1fc377d55ef394302faa41bedda0d241fede",
+  "fetchedAt": "2026-11-18T08:36:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27664.jpg",
+  "path": "assets/1236f8574df8eb51c241.jpg"
+}

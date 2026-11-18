@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/images/libao_011.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "93feb57162569e0c5a76",
+  "status": "ok",
+  "parents": [
+    "44636c791e32b874469e"
+  ],
+  "bytes": 16149,
+  "sha256": "0756e65401d20680e40906a57b311742c680840ba2b859458dc9d4dc75a3c698",
+  "fetchedAt": "2026-11-18T08:21:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/sccg/images/libao_011.jpg",
+  "path": "assets/93feb57162569e0c5a76.jpg"
+}

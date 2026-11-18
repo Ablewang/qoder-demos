@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_329.jpg",
+  "id": "780a0c4637bcc56028fe",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "复活宠物",
+  "bytes": 1368,
+  "sha256": "39905ddc2cb54856fd6734f694d13f649d3b84336da29aa2dbea545e592ecce9",
+  "fetchedAt": "2026-11-18T08:35:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_329.jpg",
+  "path": "assets/780a0c4637bcc56028fe.jpg"
+}

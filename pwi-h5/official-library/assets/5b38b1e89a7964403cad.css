@@ -1,0 +1,44 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+
+/* 共用部分 */
+* {margin:0;padding:0;border:0;list-style:none;font-family:宋体, Arial, Helvetica, sans-serif;}
+body {background:#000;font-size:12px;margin:0px;padding:0px}
+a * {text-decoration:none;color:#000;}
+a {text-decoration:none;color:#000;}
+a:hover {color:#aaa;}
+.flt{float:left}
+img{border:0px;}
+.clr{clear:both}
+
+#w2i_logo{
+	top:25px;
+	left:70px;
+}
+#transparent_logo{
+	top:25px;
+	left:70px;
+}
+
+.wide {width:100%;clear:both;height:880px}
+.wide img{float:left}
+#wide {width:100%;clear:both;}
+
+#header{position:relative}
+#header,#main,#nav,#bottom,#content{width:1003px;margin:0px auto;}
+#header,#nav,#content,#bottom{clear:both;}
+#header img,#nav img,#content img,#bottom img{float:left}
+
+#nav a{cursor: pointer;}
+#context-bg{background-image:url('../images/content_02.jpg');height:485px;width:1003px;float:left}
+
+.title{text-align:center;background-color:#918F8F;}
+.border{border-right:1px black solid;}
+.text{text-align:center;line-height:18px}
+.context{width:700px;margin:0px auto;border:1px black solid} 
+.context td{ border-bottom:1px black solid}
+.none{display:none}
+
+
+#bottom{height:65px;}
+
+

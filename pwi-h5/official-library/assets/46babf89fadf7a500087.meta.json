@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/tese/07.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "46babf89fadf7a500087",
+  "status": "ok",
+  "parents": [
+    "a73d94296c108e609f49"
+  ],
+  "bytes": 301218,
+  "sha256": "c9410eb09fb88b42c87b2c6856894fa1273a6002524aef7904a3893b842e6175",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/46babf89fadf7a500087.jpg"
+}

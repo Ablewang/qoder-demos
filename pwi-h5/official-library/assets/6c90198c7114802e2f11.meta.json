@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_487.jpg",
+  "id": "6c90198c7114802e2f11",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·火精通<em>（入魔）</em>",
+  "bytes": 1711,
+  "sha256": "9b1305b144ede40589657830fd8ec47c70103fd483486e26e5a08982e70ade2a",
+  "fetchedAt": "2026-11-18T08:34:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_487.jpg",
+  "path": "assets/6c90198c7114802e2f11.jpg"
+}

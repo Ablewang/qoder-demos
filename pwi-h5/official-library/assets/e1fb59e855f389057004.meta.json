@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_wushi.png",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "e1fb59e855f389057004",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "bytes": 3587,
+  "sha256": "8878b2083f18511e549f93da01cf71646da9104fec1229bd14182be289557364",
+  "fetchedAt": "2026-11-18T08:18:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_wushi.png",
+  "path": "assets/e1fb59e855f389057004.png"
+}

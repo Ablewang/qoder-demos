@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/dengji_01.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "c0cf137f2467b1180be0",
+  "status": "ok",
+  "parents": [
+    "25f7cc611cbf0f70f4c9"
+  ],
+  "bytes": 186026,
+  "sha256": "c5a3bc2979073dd969e913f2ddda2b2c48f8c5791fb74d96be7e88f4f07683e7",
+  "fetchedAt": "2026-11-18T08:21:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/cz/images/dengji_01.jpg",
+  "path": "assets/c0cf137f2467b1180be0.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "http://www.wanmei.com/top/css/iframe.css",
+  "id": "0711f4ef34c7b2110c8b",
+  "status": "ok",
+  "parents": [
+    "907abf4c2ec5ee7cda19"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201004/dress/style/css.css",
+  "bytes": 216,
+  "sha256": "924687e34dd2a052aaa231e46b2380ee6c076ecc441befac518dcf2716cb7b4d",
+  "fetchedAt": "2026-11-18T08:28:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://www.wanmei.com/top/css/iframe.css",
+  "path": "assets/0711f4ef34c7b2110c8b.css"
+}

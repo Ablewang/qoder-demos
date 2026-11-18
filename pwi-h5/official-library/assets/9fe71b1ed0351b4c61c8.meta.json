@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_624.jpg",
+  "id": "9fe71b1ed0351b4c61c8",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·翼击<em>（升仙）</em>",
+  "bytes": 1561,
+  "sha256": "ea1a6106e018b327a50edddabe46854878746547abf5cdf5fc9d4543272e0675",
+  "fetchedAt": "2026-11-18T08:35:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_624.jpg",
+  "path": "assets/9fe71b1ed0351b4c61c8.jpg"
+}

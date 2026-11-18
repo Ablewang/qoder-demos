@@ -1,0 +1,558 @@
+{
+  "id": "d0aabc61d6b30e1dbe90",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+  "title": "NPC查找 - 万劫城以及渔村周边",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a04348248ee2c909b7c8ee8a1e339bbd4571cc25e0ce80f347e824c5ddba2514",
+  "bytes": 70424,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d0aabc61d6b30e1dbe90.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n宝玉\n646.977\n秀秀\n649.975\n阎铮\n661.966\n传送师 周云霞\n663.968\n钱庄掌柜 金满堂\n664.968\n万劫城主\n665.968\n药师 华清明\n667.967\n木兰\n670.964\n海生\n702.946\n流月\n694.912\n流云\n694.911\n阿逊爷\n706.907\n风破天\n637.831\n货郎 李跃\n637.832\n传送师 杨羽\n637.833\n多宝胡僧\n638.831\n柳生雾隐\n655.856\n烈风\n623.768\n崔风\n706.907\n前哨 华展风\n603.854\n前哨 贺翔\n600.819\n前哨 陆萧雨\n599.819\n钱庄掌柜 刘福\n640.832\n雷华\n623.722\n弦高\n621.723\n传送师 王路源\n620.724\n卫兵 陆安云\n619.723\n合成大师 常建\n618.722\n逃难的村民\n618.721\n药师 李长信\n614.719\n铁匠 雷昭武\n614.717\n裁缝 霍织心\n614.716\n林寒\n611.715\n钱庄掌柜 吕铭\n610.715\n药师 段方良\n639.830\n铁匠 罗四海\n638.830",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "宝玉",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "646.977",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "秀秀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "649.975",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "阎铮",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "661.966",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师 周云霞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "663.968",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜 金满堂",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "664.968",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "万劫城主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "665.968",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师 华清明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "667.967",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "木兰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "670.964",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "海生",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "702.946",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "流月",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "694.912",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "流云",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "694.911",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "阿逊爷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "706.907",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "风破天",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "637.831",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎 李跃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "637.832",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师 杨羽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "637.833",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "多宝胡僧",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "638.831",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "柳生雾隐",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "655.856",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烈风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "623.768",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "崔风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "706.907",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "前哨 华展风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "603.854",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "前哨 贺翔",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600.819",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "前哨 陆萧雨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "599.819",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜 刘福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "640.832",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雷华",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "623.722",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "弦高",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "621.723",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师 王路源",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "620.724",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卫兵 陆安云",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "619.723",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "合成大师 常建",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "618.722",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "逃难的村民",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "618.721",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师 李长信",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "614.719",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠 雷昭武",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "614.717",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝 霍织心",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "614.716",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "林寒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "611.715",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜 吕铭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "610.715",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师 段方良",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "639.830",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠 罗四海",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "638.830",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>宝玉</td>\r\n            <td>646.977</td>\r\n        </tr>\r\n        <tr>\r\n            <td>秀秀</td>\r\n            <td>649.975</td>\r\n        </tr>\r\n        <tr>\r\n            <td>阎铮</td>\r\n            <td>661.966</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师 周云霞</td>\r\n            <td>663.968</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜 金满堂</td>\r\n            <td>664.968</td>\r\n        </tr>\r\n        <tr>\r\n            <td>万劫城主</td>\r\n            <td>665.968</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师 华清明</td>\r\n            <td>667.967</td>\r\n        </tr>\r\n        <tr>\r\n            <td>木兰</td>\r\n            <td>670.964</td>\r\n        </tr>\r\n        <tr>\r\n            <td>海生</td>\r\n            <td>702.946</td>\r\n        </tr>\r\n        <tr>\r\n            <td>流月</td>\r\n            <td>694.912</td>\r\n        </tr>\r\n        <tr>\r\n            <td>流云</td>\r\n            <td>694.911</td>\r\n        </tr>\r\n        <tr>\r\n            <td>阿逊爷</td>\r\n            <td>706.907</td>\r\n        </tr>\r\n        <tr>\r\n            <td>风破天</td>\r\n            <td>637.831</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎 李跃</td>\r\n            <td>637.832</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师 杨羽</td>\r\n            <td>637.833</td>\r\n        </tr>\r\n        <tr>\r\n            <td>多宝胡僧</td>\r\n            <td>638.831</td>\r\n        </tr>\r\n        <tr>\r\n            <td>柳生雾隐</td>\r\n            <td>655.856</td>\r\n        </tr>\r\n        <tr>\r\n            <td>烈风</td>\r\n            <td>623.768</td>\r\n        </tr>\r\n        <tr>\r\n            <td>崔风</td>\r\n            <td>706.907</td>\r\n        </tr>\r\n        <tr>\r\n            <td>前哨 华展风</td>\r\n            <td>603.854</td>\r\n        </tr>\r\n        <tr>\r\n            <td>前哨 贺翔</td>\r\n            <td>600.819</td>\r\n        </tr>\r\n        <tr>\r\n            <td>前哨 陆萧雨</td>\r\n            <td>599.819</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜 刘福</td>\r\n            <td>640.832</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雷华</td>\r\n            <td>623.722</td>\r\n        </tr>\r\n        <tr>\r\n            <td>弦高</td>\r\n            <td>621.723</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师 王路源</td>\r\n            <td>620.724</td>\r\n        </tr>\r\n        <tr>\r\n            <td>卫兵 陆安云</td>\r\n            <td>619.723</td>\r\n        </tr>\r\n        <tr>\r\n            <td>合成大师 常建</td>\r\n            <td>618.722</td>\r\n        </tr>\r\n        <tr>\r\n            <td>逃难的村民</td>\r\n            <td>618.721</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师 李长信</td>\r\n            <td>614.719</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠 雷昭武</td>\r\n            <td>614.717</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝 霍织心</td>\r\n            <td>614.716</td>\r\n        </tr>\r\n        <tr>\r\n            <td>林寒</td>\r\n            <td>611.715</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜 吕铭</td>\r\n            <td>610.715</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师 段方良</td>\r\n            <td>639.830</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠 罗四海</td>\r\n            <td>638.830</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/d0aabc61d6b30e1dbe90.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/d0aabc61d6b30e1dbe90.js"
+}

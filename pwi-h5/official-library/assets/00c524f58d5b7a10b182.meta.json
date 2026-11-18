@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/0214menu.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "00c524f58d5b7a10b182",
+  "status": "ok",
+  "parents": [
+    "f88838fc587062bb830a",
+    "8589aab4311a3f333c1f"
+  ],
+  "bytes": 65385,
+  "sha256": "348c2939cbc840c1a9014a2c6954bbf70ff091cd8460eaecc34179dc05645cb6",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/00c524f58d5b7a10b182.jpg"
+}

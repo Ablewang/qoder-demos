@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_243.jpg",
+  "id": "a597cb5bdc1cfdd87c0b",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "炸雷",
+  "bytes": 1484,
+  "sha256": "9b5154c9e62812c8aa2b0f9c92bda6097d6a14cb96d212122bd69e21d2cf1618",
+  "fetchedAt": "2026-11-18T08:34:50+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_243.jpg",
+  "path": "assets/a597cb5bdc1cfdd87c0b.jpg"
+}

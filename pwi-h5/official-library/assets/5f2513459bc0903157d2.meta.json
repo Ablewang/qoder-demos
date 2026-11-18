@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnshoff.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "5f2513459bc0903157d2",
+  "status": "ok",
+  "parents": [
+    "a0c36536f43a6d64b99e"
+  ],
+  "bytes": 3484,
+  "sha256": "ca4fecb0318d20d387c29a9d9ec102864e64616ad0bad8f8ad5f199659288101",
+  "fetchedAt": "2026-11-18T08:23:02+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnshoff.jpg",
+  "path": "assets/5f2513459bc0903157d2.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/drboss_04.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "82778e422b75e9c6717c",
+  "status": "ok",
+  "parents": [
+    "b8667655c383c810659f"
+  ],
+  "bytes": 302178,
+  "sha256": "55b7235efcf77b1ed525ed2c9badb66baad5005da69d502e37b757d81bfbd8e7",
+  "fetchedAt": "2026-11-18T08:25:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/drboss_04.jpg",
+  "path": "assets/82778e422b75e9c6717c.jpg"
+}

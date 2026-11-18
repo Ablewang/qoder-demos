@@ -1,0 +1,70 @@
+{
+  "id": "1751f53360fb91b12ba9",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorlcgl.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "89bd3c4f91681ba5d80e",
+    "1c3a396b387469a917ed",
+    "8f54481efa1c7377fc6a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "87201771e51b0f970de76681ffab0c7ad00be40c78f159421fb8eb39d8916919",
+  "bytes": 1931,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1751f53360fb91b12ba9.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorbossdl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorxgdl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorlc.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcon.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbossoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnxgoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<div>\n    <div><img src=\"assets/0747e4cd8fb67785a969.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n    <div><a href=\"#page=1c3a396b387469a917ed\"><img src=\"assets/c26daee0bd4ecc504d49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    <div><a href=\"#page=8f54481efa1c7377fc6a\"><img src=\"assets/f253a41f63314d41cead.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    </div>\n    <div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorlc.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorlc.htm</a></p>\n        </div>\n    </div>\n</div>\n",
+  "dataPath": "pages/1751f53360fb91b12ba9.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/1751f53360fb91b12ba9.js"
+}

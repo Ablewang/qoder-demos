@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201206/activity/images/biaoti.jpg",
+  "id": "e9e6d7019803815c100a",
+  "status": "ok",
+  "parents": [
+    "f1f2ef7acba500abb1ff"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201206/activity/style/master.css",
+  "bytes": 5900,
+  "sha256": "d97e2df8705c09d59ba1b10e6f4120778279f50363b7e483e178b131a9d15869",
+  "fetchedAt": "2026-11-18T08:39:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201206/activity/images/biaoti.jpg",
+  "path": "assets/e9e6d7019803815c100a.jpg"
+}

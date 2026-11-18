@@ -1,0 +1,17 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201005/xmj/images/bg_bottom.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "2714f697cca1ca4fb278",
+  "status": "ok",
+  "parents": [
+    "928b7891be2bd01492b8",
+    "1013d2d3887513272a6c",
+    "542ae75d552920993a0b"
+  ],
+  "bytes": 14430,
+  "sha256": "82363ae287b2f0664051d1944fcb0180ac912a5d108066dc71fce6aedd0c0cfc",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/2714f697cca1ca4fb278.jpg"
+}

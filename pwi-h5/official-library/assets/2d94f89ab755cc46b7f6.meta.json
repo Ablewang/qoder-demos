@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1363.jpg",
+  "id": "2d94f89ab755cc46b7f6",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "身外化身",
+  "bytes": 4651,
+  "sha256": "6bf4339c5ae8c6e979e4e12f0a786688743cb0cdb60ab6a48f03927e61ee32da",
+  "fetchedAt": "2026-11-18T08:36:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1363.jpg",
+  "path": "assets/2d94f89ab755cc46b7f6.jpg"
+}

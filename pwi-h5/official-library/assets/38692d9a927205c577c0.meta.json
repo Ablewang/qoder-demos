@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/images/steptab2.jpg",
+  "id": "38692d9a927205c577c0",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+  "bytes": 14142,
+  "sha256": "7644019773af19f1bb41c9d9b87e120cae5fc0a2b3d212b33f9e6af1ee1717a4",
+  "fetchedAt": "2026-11-18T08:39:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/images/steptab2.jpg",
+  "path": "assets/38692d9a927205c577c0.jpg"
+}

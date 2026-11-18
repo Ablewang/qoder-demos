@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200903/jl/images/header_06.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9d1727c408d4e53a948f",
+  "status": "ok",
+  "parents": [
+    "261a842e117a8e468d05",
+    "143f8a4eae2f7a8ee12d"
+  ],
+  "bytes": 1752,
+  "sha256": "4e9e65e2b03f503a7dd6e5b65bc98aa4db12fddb8fa35586645076c36a2735ac",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/9d1727c408d4e53a948f.jpg"
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/pic_02.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "9dde8eab63c46f8410b5",
+  "status": "ok",
+  "parents": [
+    "d50d75e2c8b632fd5879"
+  ],
+  "bytes": 105289,
+  "sha256": "228a27c0218700b87ae0515394f01c6abadcf49b5d4158e140f743bd7e962a60",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/9dde8eab63c46f8410b5.jpg"
+}

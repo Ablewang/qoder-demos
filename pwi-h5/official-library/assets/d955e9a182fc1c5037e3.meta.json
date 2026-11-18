@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_618.jpg",
+  "id": "d955e9a182fc1c5037e3",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·尖牙之矢<em>（升仙）</em>",
+  "bytes": 1654,
+  "sha256": "95ec9da688609a3662ee71446935773e554d34d8db42feb1e85ceb150e22efb2",
+  "fetchedAt": "2026-11-18T08:34:59+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_618.jpg",
+  "path": "assets/d955e9a182fc1c5037e3.jpg"
+}

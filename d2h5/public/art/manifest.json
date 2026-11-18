@@ -1,0 +1,247 @@
+{
+  "ama": {
+    "file": "ama.webp",
+    "width": 285,
+    "height": 473
+  },
+  "sor": {
+    "file": "sor.webp",
+    "width": 255,
+    "height": 473
+  },
+  "nec": {
+    "file": "nec.webp",
+    "width": 298,
+    "height": 475
+  },
+  "pal": {
+    "file": "pal.webp",
+    "width": 264,
+    "height": 480
+  },
+  "bar": {
+    "file": "bar.webp",
+    "width": 318,
+    "height": 492
+  },
+  "dru": {
+    "file": "dru.webp",
+    "width": 297,
+    "height": 510
+  },
+  "ass": {
+    "file": "ass.webp",
+    "width": 246,
+    "height": 468
+  },
+  "traveler": {
+    "file": "traveler.webp",
+    "width": 248,
+    "height": 448
+  },
+  "fallen": {
+    "file": "fallen.webp",
+    "width": 346,
+    "height": 421
+  },
+  "skeleton": {
+    "file": "skeleton.webp",
+    "width": 334,
+    "height": 467
+  },
+  "zombie": {
+    "file": "zombie.webp",
+    "width": 337,
+    "height": 467
+  },
+  "quill": {
+    "file": "quill.webp",
+    "width": 351,
+    "height": 338
+  },
+  "tree": {
+    "file": "tree.webp",
+    "width": 343,
+    "height": 473
+  },
+  "ruin": {
+    "file": "ruin.webp",
+    "width": 374,
+    "height": 438
+  },
+  "cottage": {
+    "file": "cottage.webp",
+    "width": 384,
+    "height": 391
+  },
+  "chest": {
+    "file": "chest.webp",
+    "width": 318,
+    "height": 278
+  },
+  "sword": {
+    "file": "sword.webp",
+    "width": 211,
+    "height": 234
+  },
+  "axe": {
+    "file": "axe.webp",
+    "width": 172,
+    "height": 234
+  },
+  "mace": {
+    "file": "mace.webp",
+    "width": 213,
+    "height": 229
+  },
+  "bow": {
+    "file": "bow.webp",
+    "width": 213,
+    "height": 248
+  },
+  "staff": {
+    "file": "staff.webp",
+    "width": 172,
+    "height": 245
+  },
+  "spear": {
+    "file": "spear.webp",
+    "width": 220,
+    "height": 231
+  },
+  "helm": {
+    "file": "helm.webp",
+    "width": 177,
+    "height": 243
+  },
+  "armor": {
+    "file": "armor.webp",
+    "width": 187,
+    "height": 234
+  },
+  "shield": {
+    "file": "shield.webp",
+    "width": 235,
+    "height": 239
+  },
+  "gloves": {
+    "file": "gloves.webp",
+    "width": 200,
+    "height": 212
+  },
+  "boots": {
+    "file": "boots.webp",
+    "width": 218,
+    "height": 226
+  },
+  "belt": {
+    "file": "belt.webp",
+    "width": 237,
+    "height": 143
+  },
+  "ring": {
+    "file": "ring.webp",
+    "width": 189,
+    "height": 183
+  },
+  "amulet": {
+    "file": "amulet.webp",
+    "width": 158,
+    "height": 235
+  },
+  "health": {
+    "file": "health.webp",
+    "width": 166,
+    "height": 224
+  },
+  "mana": {
+    "file": "mana.webp",
+    "width": 166,
+    "height": 224
+  },
+  "rejuvenation": {
+    "file": "rejuvenation.webp",
+    "width": 165,
+    "height": 225
+  },
+  "scroll": {
+    "file": "scroll.webp",
+    "width": 240,
+    "height": 220
+  },
+  "book": {
+    "file": "book.webp",
+    "width": 217,
+    "height": 243
+  },
+  "rune": {
+    "file": "rune.webp",
+    "width": 169,
+    "height": 234
+  },
+  "gem": {
+    "file": "gem.webp",
+    "width": 186,
+    "height": 185
+  },
+  "cube": {
+    "file": "cube.webp",
+    "width": 205,
+    "height": 233
+  },
+  "gold": {
+    "file": "gold.webp",
+    "width": 245,
+    "height": 223
+  },
+  "arrows": {
+    "file": "arrows.webp",
+    "width": 232,
+    "height": 233
+  },
+  "earth": {
+    "file": "earth.webp",
+    "width": 768,
+    "height": 768
+  },
+  "flagstone": {
+    "file": "flagstone.webp",
+    "width": 768,
+    "height": 768
+  },
+  "basalt": {
+    "file": "basalt.webp",
+    "width": 768,
+    "height": 768
+  },
+  "sand": {
+    "file": "sand.webp",
+    "width": 768,
+    "height": 768
+  },
+  "volcanic": {
+    "file": "volcanic.webp",
+    "width": 768,
+    "height": 768
+  },
+  "snow": {
+    "file": "snow.webp",
+    "width": 768,
+    "height": 768
+  },
+  "leather": {
+    "file": "leather.webp",
+    "width": 384,
+    "height": 384
+  },
+  "carved-stone": {
+    "file": "carved-stone.webp",
+    "width": 384,
+    "height": 384
+  },
+  "gate": {
+    "file": "gate.webp",
+    "width": 1792,
+    "height": 1024
+  }
+}

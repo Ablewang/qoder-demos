@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073948899.jpg",
+  "alt": "图片: 图8：纯黑名流男装.jpg",
+  "kind": "img",
+  "id": "c1c52e435d11e7b2bcc1",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 40081,
+  "sha256": "808a50b662ed4f0353327d88bca7bcf9b5987f4745a89b53a2ded6422f0833c7",
+  "fetchedAt": "2026-11-18T08:23:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073948899.jpg",
+  "path": "assets/c1c52e435d11e7b2bcc1.jpg"
+}

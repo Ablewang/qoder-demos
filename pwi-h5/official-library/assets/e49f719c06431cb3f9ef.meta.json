@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/js/shadowbox/play.png",
+  "id": "e49f719c06431cb3f9ef",
+  "status": "ok",
+  "parents": [
+    "ecd8cac8cda80c901799",
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201212/christmas/js/shadowbox/shadowbox.css",
+  "bytes": 211,
+  "sha256": "b793b59c5ea01c4a015f68c628f1809ad36e9fe3acb308cf69957d0d967e57a3",
+  "fetchedAt": "2026-11-18T08:38:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/js/shadowbox/play.png",
+  "path": "assets/e49f719c06431cb3f9ef.png"
+}

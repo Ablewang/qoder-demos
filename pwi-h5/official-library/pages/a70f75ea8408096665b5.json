@@ -1,0 +1,375 @@
+{
+  "id": "a70f75ea8408096665b5",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq08.htm",
+  "title": "精练宝典 -《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5",
+    "f3fba696107bbedaf3ea",
+    "de6ded2fb4eb68ce525c",
+    "9a0413ce0568e20f31a3",
+    "02e5d3da43fb43417c6a",
+    "6dfa9feea78ce5fc8134",
+    "a0d736b1f895c8a9ac74",
+    "7423dd05d3a0993cf2d1",
+    "79d7a9f0b0425180fdfd",
+    "8dc6c6b7c0e7ba9af483",
+    "a70f75ea8408096665b5",
+    "6ef60683af49b980d73c"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "17f60363570b265a779e186092e725f9339058b816f0ed3e0ac43d9e3fdd6b98",
+  "bytes": 7198,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/a70f75ea8408096665b5.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "如何进行装备精练？\n精练辅助道具都有什么？\n怎样获得高级龙珠？\n如何给装备进行打孔？\n怎么用天人合一符绑定装备？\n如何进行装备精练转移？\n如何给装备镶嵌魂石？\n怎么获得高级魂石？\n怎样获得高级魂石？\n高级魂石可在祖龙城“合成大师”处使用低级魂石合成而来，与NPC对话后选中合成即可进入魂石合成，在背包内将合成材料备齐后即可进行魂石的生产。\n注：1级魂石可在“杂货商”处购得，5级魂石可在“合成大师”处购得\n魂石合成表\n魂石等级\n合成所需材料\n1级魂石\n无\n2级魂石\n同种类1级魂石x3\n3级魂石\n同种类2级魂石x3\n4级魂石\n同种类3级魂石x3\n5级魂石\n同种类4级魂石x4\n6级魂石\n同种类5级魂石x4\n7级魂石\n同种类6级魂石x4\n8级魂石\n同种类7级魂石x5\n9级魂石\n同种类8级魂石x5\n10级魂石\n同种类9级魂石x5\n11级魂石\n同种类10级魂石x6\n12级魂石\n同种类11级魂石x6",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "魂石等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "合成所需材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类1级魂石x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类2级魂石x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "4级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类3级魂石x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类4级魂石x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "6级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类5级魂石x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "7级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类6级魂石x4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "8级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类7级魂石x5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "9级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类8级魂石x5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "10级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类9级魂石x5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "11级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类10级魂石x6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "12级魂石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "同种类11级魂石x6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/client/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://pay.wanmei.com/e/epage/setup_2_wanmei2.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq.htm",
+      "label": "如何进行装备精练？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq02.htm",
+      "label": "精练辅助道具都有什么？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq03.htm",
+      "label": "怎样获得高级龙珠？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq04.htm",
+      "label": "如何给装备进行打孔？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq05.htm",
+      "label": "怎么用天人合一符绑定装备？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq06.htm",
+      "label": "如何进行装备精练转移？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq07.htm",
+      "label": "如何给装备镶嵌魂石？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq08.htm",
+      "label": "怎么获得高级魂石？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/strenthen.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/soulstone.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/compare.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/nav.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/none.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/sel_new.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p></div>\n<div>\n<div>\n<div>\n    <div>\n                <div></div>\n                <div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57b9674c5c01d917be6e.gif\" alt=\"完美国际\" loading=\"lazy\"></a></div>\n    </div>\n    \n    <div>\n    \t<img src=\"assets/0bce2fe6a932385c58fb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n        \t<a href=\"https://w2i.wanmei.com/main.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"https://w2i.wanmei.com/download/client/index.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://pay.wanmei.com/e/epage/setup_2_wanmei2.html\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://bbs.w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t\n\n    </div>\n    <div>\n    \t<img src=\"assets/2a25d6aef057604b7df5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n     \t<img src=\"assets/7eca6700ab4096d269a4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    \t<img src=\"assets/a9fe6690a68ffe0b0845.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    \t<img src=\"assets/f909a3dc6e734dfbdc54.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    </div>\n    \n    <div>\n    \t<img src=\"assets/68c77d38d4a1284b4ac1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    </div>\n    \n    <div>\n    \t<div>\n            <div>\n            <div>\n            <div>\n                <div>\n                    <img src=\"assets/fc492e321e2197e54d91.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                </div>\n                <div>\n                      <ul>\n                        <li><a href=\"#page=9a0413ce0568e20f31a3\">如何进行装备精练？</a></li>\n                    \t<li><a href=\"#page=02e5d3da43fb43417c6a\">精练辅助道具都有什么？</a></li>\n                    \t<li><a href=\"#page=6dfa9feea78ce5fc8134\">怎样获得高级龙珠？</a></li>\n                    \t<li><a href=\"#page=a0d736b1f895c8a9ac74\">如何给装备进行打孔？</a></li>\n                    \t<li><a href=\"#page=7423dd05d3a0993cf2d1\">怎么用天人合一符绑定装备？</a></li>\n                    \t<li><a href=\"#page=79d7a9f0b0425180fdfd\">如何进行装备精练转移？</a></li>\n                    \t<li><a href=\"#page=8dc6c6b7c0e7ba9af483\">如何给装备镶嵌魂石？</a></li>\n                    \t<li><a href=\"#page=a70f75ea8408096665b5\">怎么获得高级魂石？</a></li>\n                    \t\n\n                    </ul>\n                    <div></div>\n                    <dl>\n                    <dt><a href=\"#page=6ef60683af49b980d73c\"><img src=\"assets/8232fb87f7bf54fafce3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=ddb9fc3f70957c28e9b5\"><img src=\"assets/7970e7d6beb0e016b666.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=a617111463f23ad7d400\"><img src=\"assets/7d9390847630567c4122.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=98f433995184914eec55\"><img src=\"assets/94315e8fa52c660fa97b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    </dl>\n                </div>\n             </div>\n            </div>\n            </div>\n        </div>\n        <div>\n        \t\n            <div>\n            <div>\n            <div>\n<p><span>怎样获得高级魂石？</span></p>\n<p> </p>\n<p>　　高级魂石可在祖龙城“合成大师”处使用低级魂石合成而来，与NPC对话后选中合成即可进入魂石合成，在背包内将合成材料备齐后即可进行魂石的生产。</p>\n<p> </p>\n<p>　　<span>注：1级魂石可在“杂货商”处购得，5级魂石可在“合成大师”处购得</span></p>\n<p> </p>\n<p>魂石合成表</p>\n<p> </p>\n  <table>\n    <tr>\n      <td><p>魂石等级</p></td>\n      <td><p>合成所需材料</p></td>\n    </tr>\n    <tr>\n      <td><p>1级魂石</p></td>\n      <td><p>无</p></td>\n    </tr>\n    <tr>\n      <td><p>2级魂石</p></td>\n      <td><p>同种类1级魂石x3</p></td>\n    </tr>\n    <tr>\n      <td><p>3级魂石</p></td>\n      <td><p>同种类2级魂石x3</p></td>\n    </tr>\n    <tr>\n      <td><p>4级魂石</p></td>\n      <td><p>同种类3级魂石x3</p></td>\n    </tr>\n    <tr>\n      <td><p>5级魂石</p></td>\n      <td><p>同种类4级魂石x4</p></td>\n    </tr>\n    <tr>\n      <td><p>6级魂石</p></td>\n      <td><p>同种类5级魂石x4</p></td>\n    </tr>\n    <tr>\n      <td><p>7级魂石</p></td>\n      <td><p>同种类6级魂石x4</p></td>\n    </tr>\n    <tr>\n      <td><p>8级魂石</p></td>\n      <td><p>同种类7级魂石x5</p></td>\n    </tr>\n    <tr>\n      <td><p>9级魂石</p></td>\n      <td><p>同种类8级魂石x5</p></td>\n    </tr>\n    <tr>\n      <td><p>10级魂石</p></td>\n      <td><p>同种类9级魂石x5</p></td>\n    </tr>\n    <tr>\n      <td><p>11级魂石</p></td>\n      <td><p>同种类10级魂石x6</p></td>\n    </tr>\n    <tr>\n      <td><p>12级魂石</p></td>\n      <td><p>同种类11级魂石x6</p></td>\n    </tr>\n  </table>\n<p> </p>\n            </div>\n            </div>\n            </div>\n            \n        </div>\n    </div>\n\n</div>\n</div>\n</div>\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n<div>\n \n\n</div>\n",
+  "dataPath": "pages/a70f75ea8408096665b5.json",
+  "imageCount": 13,
+  "tableCount": 1,
+  "downloadPath": "downloads/a70f75ea8408096665b5.js"
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/elf/images/skill3_4g.jpg",
+  "id": "bddb07bcede105cdd123",
+  "status": "ok",
+  "parents": [
+    "4a15b380937880177c54",
+    "283437da4cf4e17cb21e",
+    "1af5daeec3f0979a6555"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/200905/elf/style/css.css",
+  "bytes": 934,
+  "sha256": "4d5e1cb07bd59e160bc2e2aa5a188a1bbb2b5fabc9c2f1ee635eba6448ffea52",
+  "fetchedAt": "2026-11-18T08:37:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/elf/images/skill3_4g.jpg",
+  "path": "assets/bddb07bcede105cdd123.jpg"
+}

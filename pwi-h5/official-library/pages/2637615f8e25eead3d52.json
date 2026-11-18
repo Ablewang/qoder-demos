@@ -1,0 +1,65 @@
+{
+  "id": "2637615f8e25eead3d52",
+  "url": "https://w2i.wanmei.com/show/index.htm",
+  "title": "七载荣耀 怒放新生 -《完美国际2》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 0,
+  "parents": [
+    "fe4487ae624051d870aa",
+    "a245c2e97a44a02cb495",
+    "2cb07116a2adc8020ca9",
+    "ff0a5b259dfdf67e49c9"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "4f9a2a45907cfa1e34182ebd5a0f53ba1fe8634d9913d898aa6b2f7be088aa61",
+  "bytes": 4328,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/2637615f8e25eead3d52.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/show1309/image/icon_close.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/show1309/zhanshi.swf",
+      "label": "",
+      "kind": "script-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xml/show_options1309.xml",
+      "label": "",
+      "kind": "script-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/show/zhanshi.swf",
+      "label": "",
+      "kind": "script-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/show/xml/options.xml",
+      "label": "",
+      "kind": "script-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/show1309.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div>\n\t<div></div>\n</div>\n<div>\n\t<div>\n\t\t<div></div>\n\t</div>\n\t<img src=\"assets/33165f28797601d45d9f.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n</div>\n\n\n\n\n",
+  "dataPath": "pages/2637615f8e25eead3d52.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/2637615f8e25eead3d52.js"
+}

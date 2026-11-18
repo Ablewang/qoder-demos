@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_376.jpg",
+  "id": "137a90e6a14d591d778f",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·寸力<em>（升仙）</em>",
+  "bytes": 1638,
+  "sha256": "3d90870d7a22428932449e24ae7c516b3ea86be8b84c8dd54bb970786b27246f",
+  "fetchedAt": "2026-11-18T08:34:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_376.jpg",
+  "path": "assets/137a90e6a14d591d778f.jpg"
+}

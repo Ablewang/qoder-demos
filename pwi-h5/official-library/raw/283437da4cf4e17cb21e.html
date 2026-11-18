@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="author" content="Design:Zhang.Wanrui; Web Layout:Song.Ji" />
+<meta name="keywords" content="完美世界,完美世界国际版,中国最美网游,网络游戏,3D创世奇幻网游,永久免费网游,羽灵,羽芒,妖兽,妖精,法师,武侠,公会,种族,游戏,MMOG,RPG,热门,流行,攻城,黄金装备,极品装备,戒指,聊天,PK,升仙入魔,城战"/>
+<meta name="description" content="完美世界,完美世界国际版,中国最美网游,网络游戏,3D创世奇幻网游,永久免费网游,羽灵,羽芒,妖兽,妖精,法师,武侠,公会,种族,游戏,MMOG,RPG,热门,流行,攻城,黄金装备,极品装备,戒指,聊天,PK,升仙入魔,城战"/>
+<link href="../style/css.css" rel="stylesheet" type="text/css" /> 
+<title>元素精灵天赋模拟器 -《完美国际》官方网站</title>
+<base target="_blank"/>
+<script type="text/javascript">
+<!--
+function FP_swapImgRestore() {//v1.0
+ var doc=document,i; if(doc.$imgSwaps) { for(i=0;i<doc.$imgSwaps.length;i++) {
+  var elm=doc.$imgSwaps[i]; if(elm) { elm.src=elm.$src; elm.$src=null; } } 
+  doc.$imgSwaps=null; }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+<body onload="FP_preloadImgs(/*url*/'../images/header_01a.jpg',/*url*/'../images/header_01b.jpg')">
+<!-- 首页 -->
+<div id="header">
+	<div id="w2i_logo"></div>
+   	<div id="transparent_logo"><a href="http://w2i.wanmei.com/" target="_blank"><img src="http://w2i.wanmei.com/images/logo/transparent.gif" alt="完美国际" title="完美国际"/></a></div>
+   	<map name="FPMap0" id="FPMap0">
+	<area href="http://w2i.wanmei.com/main.htm" shape="rect" coords="533, 19, 619, 47" />
+	<area href="http://passport.wanmei.com/jsp/member/register.jsp" shape="rect" coords="626, 22, 702, 48" />
+	<area href="http://w2i.wanmei.com/download/client/index.htm" shape="rect" coords="713, 25, 787, 46" />
+	<area href="http://pay.wanmei.com/e/epage/setup_2_wanmei2.html" shape="rect" coords="798, 23, 873, 52" />
+	<area href="http://bbs.w2i.wanmei.com/" shape="rect" coords="884, 25, 963, 46" />
+	</map>
+   	<img src="../images/top_nav.jpg" usemap="#FPMap0"/>
+	<map name="FPMap1" id="FPMap1">
+	<area href="http://event51.wanmei.com/w2i/200903/jl/index.htm" shape="rect" coords="8, 98, 267, 131" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'../images/header_01a.jpg')" />
+	<area href="http://event51.wanmei.com/w2i/200905/ectype/" shape="rect" coords="9, 137, 267, 168" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'../images/header_01b.jpg')" />
+	</map>
+   	<img src="../images/header_01.jpg" id="img1" usemap="#FPMap1"/>
+   	<img src="../images/header_02.jpg"/>
+   	<img src="../images/header_03.jpg"/>
+</div>
+</body>
+</html>

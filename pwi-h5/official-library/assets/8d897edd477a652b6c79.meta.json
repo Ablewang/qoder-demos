@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_564.jpg",
+  "id": "8d897edd477a652b6c79",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·坚甲符<em>（升仙）</em>",
+  "bytes": 1634,
+  "sha256": "db5ac1cc46801c8fa0ae37428a744c4583530e08c44552f6c3cfd97a706e00f0",
+  "fetchedAt": "2026-11-18T08:35:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_564.jpg",
+  "path": "assets/8d897edd477a652b6c79.jpg"
+}

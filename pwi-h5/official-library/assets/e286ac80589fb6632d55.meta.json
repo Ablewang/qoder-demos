@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/js/f.js",
+  "alt": "",
+  "kind": "script",
+  "id": "e286ac80589fb6632d55",
+  "status": "ok",
+  "parents": [
+    "2812fafdb26bc19f29f1"
+  ],
+  "bytes": 9925,
+  "sha256": "58d523687a8aae1d481a5c3205537cc71bf61129931d476c3be5dbe9f37d88df",
+  "fetchedAt": "2026-11-18T08:17:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/js/f.js",
+  "path": "assets/e286ac80589fb6632d55.js"
+}

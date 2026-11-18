@@ -1,0 +1,28 @@
+{
+  "url": "https://w2i.wanmei.com/event/200811/anniversary/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "4d0fba46843dee33f101",
+  "status": "ok",
+  "parents": [
+    "a899f6f8dc4e23a35959",
+    "253dfd94d971bfc9a892",
+    "6f04c1c29de1e26657e0",
+    "e21939f1362abea70f5a",
+    "9c69355fa82bc264091c",
+    "5bd1a8bfdb1b51ef4743",
+    "44689cc7c278488dc3ad",
+    "f6200bfbe47d15bdfdb9",
+    "e56bc44c111f67f9e0f7",
+    "2d6d528f7e84bc55995e",
+    "e55a0b3c264a67093187"
+  ],
+  "bytes": 2506,
+  "sha256": "2ab6097d0cf53919c2a88a082cab9677fbb7c40fb3853fa847dfee7b2b8fb3e7",
+  "fetchedAt": "2026-11-18T08:18:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://w2i.wanmei.com/event/200811/anniversary/style/master.css",
+  "path": "assets/4d0fba46843dee33f101.css"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_427.jpg",
+  "id": "0a1250ef5e1ee9636d62",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·易筋经<em>（入魔）</em>",
+  "bytes": 1653,
+  "sha256": "239feb2d441d02020ad23551f945bc44bba07bd074290af8f965b8be1cec5fd9",
+  "fetchedAt": "2026-11-18T08:34:23+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_427.jpg",
+  "path": "assets/0a1250ef5e1ee9636d62.jpg"
+}

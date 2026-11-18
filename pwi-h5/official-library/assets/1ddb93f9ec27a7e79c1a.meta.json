@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_114.jpg",
+  "id": "1ddb93f9ec27a7e79c1a",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "静心咒",
+  "bytes": 1540,
+  "sha256": "50dbb2f13d6892a16594ebb5ddf6b300d1c8df3dbf8ec1d66aeee05121e5fa49",
+  "fetchedAt": "2026-11-18T08:35:08+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_114.jpg",
+  "path": "assets/1ddb93f9ec27a7e79c1a.jpg"
+}

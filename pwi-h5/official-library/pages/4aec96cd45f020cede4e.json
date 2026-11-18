@@ -1,0 +1,239 @@
+{
+  "id": "4aec96cd45f020cede4e",
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/0613.htm",
+  "title": "《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "4549d8eb4d95b95d7027"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:16:33+00:00",
+  "sha256": "e8a27689eedf05649ef16fa52825c2bfc1728329851fb2a28d96e6a2523cc4a7",
+  "bytes": 8122,
+  "rawPath": "raw/4aec96cd45f020cede4e.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": ">游戏商城\n>活动专区\n>官方新闻\n>游戏公告\n>活动新闻\n>游戏安装\n>登录游戏\n>界面说明\n>基本操作\n>个性时装\n>技能模拟器\n>时装模拟器\n>精炼模拟器\n>重铸模拟器\n>游戏下载\n>最新补丁\n>游戏原画\n>游戏截图\n>桌面壁纸\n>账号注册\n>游戏充值\n>客服通道\n>账号安全\n>完美神盾\n新 闻：游戏新闻|论坛精华|玩家交流\n账号管理：注册通行证|注册通行证|账号充值|账号安全中心\n客服中心：客服中心\n下载专区：客户端下载|壁纸下载|原画下载",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/store/",
+      "label": "游戏商城",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/eventhot/active.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/news/gamenews/index.shtml",
+      "label": "游戏新闻",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/news/bulletin/listnote.htm",
+      "label": "游戏公告",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/news/hd/listevent.htm",
+      "label": "活动新闻",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201111/new/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091015/29902.shtml",
+      "label": "游戏安装",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091015/29907.shtml",
+      "label": "登录游戏",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30046.shtml",
+      "label": "界面说明",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30058.shtml",
+      "label": "基本操作",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/info.shtml",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/dress/index.htm",
+      "label": "时装模拟器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/jianling.htm",
+      "label": "技能模拟器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/index.htm",
+      "label": "精炼模拟器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/stone/index.htm",
+      "label": "重铸模拟器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/download_rycs_ty.shtml",
+      "label": "游戏下载",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/down_patch.htm",
+      "label": "最新补丁",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/gameart/gameart.shtml",
+      "label": "原画下载",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/gameshot/index_flash.htm",
+      "label": "游戏截图",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/gamewall/gamewall.shtml",
+      "label": "壁纸下载",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://cs.wanmei.com/index.shtml",
+      "label": "客服通道",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/phone_reg_02.jsp",
+      "label": "账号注册",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://pay.wanmei.com/e/epage/setup_2_wanmei2.html",
+      "label": "账号充值",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/zhanghao/",
+      "label": "账号安全中心",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/zhanghao/key_intor.html",
+      "label": "完美神盾",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/bbs/elite/list.shtml",
+      "label": "论坛精华",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/bbs/exp/list.shtml",
+      "label": "玩家交流",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "注册通行证",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://cs.wanmei.com/",
+      "label": "客服中心",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/index.htm",
+      "label": "客户端下载",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/gomain.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/errhead_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/errhead_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/errhead_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/errhead_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/errhead_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/errhead_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/temp120824.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n        <div>\r\n            \r\n            <dl>\r\n            \t<dt>\r\n                    <a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                    <ul>\r\n                        <li><em>&gt;</em><a href=\"#page=215a8767dd67caa3e31b\">游戏商城</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=795e92504f6461d2f316\">活动专区</a></li>\r\n                    </ul>\r\n                </dt>\r\n                <dt>\r\n                \t<a href=\"https://w2i.wanmei.com/news/gamenews/index.shtml\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                \t<ul>\r\n                        <li><em>&gt;</em><a href=\"https://w2i.wanmei.com/news/gamenews/index.shtml\" rel=\"noreferrer\" target=\"_blank\">官方新闻</a></li>\r\n                        <li><em>&gt;</em><a href=\"https://w2i.wanmei.com/news/bulletin/listnote.htm\" rel=\"noreferrer\" target=\"_blank\">游戏公告</a></li>\r\n                        <li><em>&gt;</em><a href=\"https://w2i.wanmei.com/news/hd/listevent.htm\" rel=\"noreferrer\" target=\"_blank\">活动新闻</a></li>\r\n                    </ul>    \r\n                </dt>\r\n                <dt>\r\n                \t<a href=\"#page=d3b90535c0e67ed20dc8\"></a>\r\n                    <ul>\r\n                        <li><em>&gt;</em><a href=\"#page=813c8c3594fd082e44f7\">游戏安装</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=c707c6e4ff8ee1a32230\">登录游戏</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=cf4aece98ce7c6539a7e\">界面说明</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=8ea89c1b446f3bc5984d\">基本操作</a></li>\r\n                    </ul>  \r\n                </dt>\r\n                <dt><a href=\"#page=795e92504f6461d2f316\"></a></dt>\r\n                <dt>\r\n                \t<a href=\"https://w2i.wanmei.com/info.shtml\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                    <ul>\r\n                        <li><em>&gt;</em><a href=\"#page=907abf4c2ec5ee7cda19\">个性时装</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=5b908110a16d3bc6fa0c\">技能模拟器</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=907abf4c2ec5ee7cda19\">时装模拟器</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=98f433995184914eec55\">精炼模拟器</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=c687bcd0b8a005c64dd8\">重铸模拟器</a></li>\r\n                    </ul> \r\n                </dt>\r\n                <dt>\r\n                \t<a href=\"https://w2i.wanmei.com/download/download_rycs_ty.shtml\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                    <ul>\r\n                        <li><em>&gt;</em><a href=\"https://w2i.wanmei.com/download/download_rycs_ty.shtml\" rel=\"noreferrer\" target=\"_blank\">游戏下载</a></li>\r\n                        <li><em>&gt;</em><a href=\"https://w2i.wanmei.com/download/down_patch.htm\" rel=\"noreferrer\" target=\"_blank\">最新补丁</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=703a592c5beb38fdb2dd\">游戏原画</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=0df52d529995100be4de\">游戏截图</a></li>\r\n                        <li><em>&gt;</em><a href=\"#page=9756cf41ec3266a9715d\">桌面壁纸</a></li>\r\n                    </ul> \r\n                </dt>\r\n                <dt>\r\n                \t<a href=\"http://cs.wanmei.com/index.shtml\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                    <ul>\r\n                        <li><em>&gt;</em><a href=\"http://passport.wanmei.com/jsp/member/phone_reg_02.jsp\" rel=\"noreferrer\" target=\"_blank\">账号注册</a></li>\r\n                        <li><em>&gt;</em><a href=\"http://pay.wanmei.com/e/epage/setup_2_wanmei2.html\" rel=\"noreferrer\" target=\"_blank\">游戏充值</a></li>\r\n                        <li><em>&gt;</em><a href=\"http://cs.wanmei.com/index.shtml\" rel=\"noreferrer\" target=\"_blank\">客服通道</a></li>\r\n                        <li><em>&gt;</em><a href=\"http://www.wanmei.com/zhanghao/\" rel=\"noreferrer\" target=\"_blank\">账号安全</a></li>\r\n                        <li><em>&gt;</em><a href=\"http://www.wanmei.com/zhanghao/key_intor.html\" rel=\"noreferrer\" target=\"_blank\">完美神盾</a></li>\r\n                    </ul> \r\n                </dt>\r\n                <dt><a href=\"http://bbs.w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"></a></dt>\r\n            </dl>\r\n        </div>\r\n    </div>\r\n    <div><div>\r\n        <div>\r\n        \t<div>\r\n            \t<div>\r\n                \t<p><strong>新　　闻：</strong><a href=\"https://w2i.wanmei.com/news/gamenews/index.shtml\" rel=\"noreferrer\" target=\"_blank\">游戏新闻</a><span>|</span><a href=\"#page=7940b1e624b8d7cff2f2\">论坛精华</a><span>|</span><a href=\"#page=f0076190e1ea41a2ed07\">玩家交流</a></p>\r\n                    <p><strong>账号管理：</strong><a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\">注册通行证</a><span>|</span><a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\">注册通行证</a><span>|</span><a href=\"http://pay.wanmei.com/e/epage/setup_2_wanmei2.html\" rel=\"noreferrer\" target=\"_blank\">账号充值</a><span>|</span><a href=\"http://www.wanmei.com/zhanghao/\" rel=\"noreferrer\" target=\"_blank\">账号安全中心</a></p>\r\n                    <p><strong>客服中心：</strong><a href=\"http://cs.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\">客服中心</a></p>\r\n                    <p><strong>下载专区：</strong><a href=\"https://w2i.wanmei.com/download/index.htm\" rel=\"noreferrer\" target=\"_blank\">客户端下载</a><span>|</span><a href=\"#page=9756cf41ec3266a9715d\">壁纸下载</a><span>|</span><a href=\"#page=703a592c5beb38fdb2dd\">原画下载</a></p>\r\n                    <h3><a href=\"https://w2i.wanmei.com/main.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/012b0fff6a1fd4bc515f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></h3>\r\n                </div>\r\n            \t<img src=\"assets/825ac27518d1403ae17e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                <img src=\"assets/ed3a2c095b0be26612fd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                <img src=\"assets/3ec579bf318cc8bd7bb3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                <img src=\"assets/af726b0088f52484ddaf.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                <img src=\"assets/63d311ff7c76301ec945.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n                <img src=\"assets/b2ba9fa5b6021dd81e4c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            </div>\r\n        </div>\r\n    </div></div>\r\n</div>\r\n\r\n",
+  "dataPath": "pages/4aec96cd45f020cede4e.json",
+  "imageCount": 7,
+  "tableCount": 0,
+  "downloadPath": "downloads/4aec96cd45f020cede4e.js"
+}

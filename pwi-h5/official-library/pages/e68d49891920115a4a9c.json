@@ -1,0 +1,76 @@
+{
+  "id": "e68d49891920115a4a9c",
+  "url": "https://w2i.wanmei.com/intro/guide_hd/20110323/59368.shtml",
+  "title": "秘传赏金任务",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "88bcf0a1cfc383f7614bb01ad704410b82c8f975d762c2d8472a6ac13550adc7",
+  "bytes": 69216,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/e68d49891920115a4a9c.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2011-03-23",
+  "text": "秘传赏金任务将围绕三个任务开展，分别为：冥兽城、仙魔劫、丛林遗迹。秘传赏金任务只有在参加以上三大活动时才可以完成。玩家们只有在活动开放的当天才可以领取到相应的任务，任务的时限为24小时，超过时限任务将失败。\n秘传赏金任务之仙魔劫\n接取任务NPC：赏金发放官\n接取时间：每周一20:00 - 21:15\n任务描述：每周一玩家在仙魔劫开启前往赏金发放官处接取秘传赏金任务之仙魔劫，完成任务后可获得奖励。\n任务奖励：高额经验、元神、苍华壁（包含修炼秘籍、梦幻果、结丹石、完美石等物品）\n任务流程：\n1.玩家在仙魔劫活动开始前或开始后一段时间内前往赏金发放官处接取秘传赏金任务之仙魔劫。\n2.只要玩家参与完成仙魔劫活动，即可成功完成获得【禁绝之角】道具。\n3.凭借【禁绝之角】道具玩家可到赏金发放官处交付任务获得奖励。\n查看仙魔劫：http://event51.wanmei.com/w2i/201005/xmj/index.htm\n秘传赏金任务之丛林遗迹\n接取任务NPC：赏金发放官\n接取时间：每周二20:00 - 21:00\n任务描述：每周一玩家在丛林遗迹开启前往赏金发放官处接取秘传赏金任务之丛林遗迹，完成任务后可获得高额奖励。\n任务奖励：经验、元神、苍华壁（包含修炼秘籍、梦幻果、结丹石、完美石等物品）\n任务流程：\n1.玩家在丛林遗迹活动开始前或开始后一段时间内前往赏金发放官处接取秘传赏金任务之丛林遗迹。\n2.玩家需要深入到丛林遗迹之中，寻找NPC徽章守护者•土严并与之交谈，再与赏金发放官对话即可完成任务。\n查看丛林遗迹：http://event51.wanmei.com/w2i/201007/maoxian/index.htm\n秘传赏金任务之冥兽城\n接取任务NPC：赏金发放官\n接取时间：每周三20:00 - 21:00\n任务描述：每周三玩家在冥兽城活动开启前往赏金发放官处接取秘传赏金任务之冥兽城，完成任务可后获得高额奖励。\n任务奖励：经验、元神、苍华壁（包含修炼秘籍、梦幻果、结丹石、完美石等物品）\n任务流程：\n1.玩家在冥兽城活动开始前或开始后一段时间内前往赏金发放官处接取秘传赏金任务之冥兽城。\n2.玩家进入冥兽城后，在任意四个区域玩家打败怪物都会获得九星魂丹，只要玩家拾取到一颗九星魂丹后，即会完成任务，同时九星魂丹消失.。\n查看冥兽城：http://w2i.wanmei.com/event/200809/contend/activity.htm",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/index.htm",
+      "label": "http://event51.wanmei.com/w2i/201005/xmj/index.htm",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110323/10021300869383108.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201007/maoxian/index.htm",
+      "label": "http://event51.wanmei.com/w2i/201007/maoxian/index.htm",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110323/10021300869383965.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/contend/activity.htm",
+      "label": "http://w2i.wanmei.com/event/200809/contend/activity.htm",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110323/10021300869383798.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110323/10021300869384988.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110323/10021300869385183.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/110323/10021300869382948.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　秘传赏金任务将围绕三个任务开展，分别为：冥兽城、仙魔劫、丛林遗迹。秘传赏金任务只有在参加以上三大活动时才可以完成。玩家们只有在活动开放的当天才可以领取到相应的任务，任务的时限为24小时，超过时限任务将失败。</p>\r\n<p>　　<strong>秘传赏金任务之仙魔劫</strong></p>\r\n<p>　　接取任务NPC：赏金发放官<br>\r\n　　接取时间：每周一20:00 - 21:15<br>\r\n　　任务描述：每周一玩家在仙魔劫开启前往赏金发放官处接取秘传赏金任务之仙魔劫，完成任务后可获得奖励。<br>\r\n　　任务奖励：高额经验、元神、苍华壁（包含修炼秘籍、梦幻果、结丹石、完美石等物品）<br>\r\n　　任务流程：<br>\r\n　　1.玩家在仙魔劫活动开始前或开始后一段时间内前往赏金发放官处接取秘传赏金任务之仙魔劫。<br>\r\n　　2.只要玩家参与完成仙魔劫活动，即可成功完成获得【禁绝之角】道具。<br>\r\n　　3.凭借【禁绝之角】道具玩家可到赏金发放官处交付任务获得奖励。</p>\r\n<p>　　<strong>查看仙魔劫：</strong><a href=\"#page=928b7891be2bd01492b8\">http://event51.wanmei.com/w2i/201005/xmj/index.htm</a></p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/110323/10021300869383108.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/1d4bcec1be66b44445f9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p>　　<strong>秘传赏金任务之丛林遗迹</strong></p>\r\n<p>　　接取任务NPC：赏金发放官<br>\r\n　　接取时间：每周二20:00 - 21:00<br>\r\n　　任务描述：每周一玩家在丛林遗迹开启前往赏金发放官处接取秘传赏金任务之丛林遗迹，完成任务后可获得高额奖励。<br>\r\n　　任务奖励：经验、元神、苍华壁（包含修炼秘籍、梦幻果、结丹石、完美石等物品）<br>\r\n　　任务流程：<br>\r\n　　1.玩家在丛林遗迹活动开始前或开始后一段时间内前往赏金发放官处接取秘传赏金任务之丛林遗迹。<br>\r\n　　2.玩家需要深入到丛林遗迹之中，寻找NPC徽章守护者•土严并与之交谈，再与赏金发放官对话即可完成任务。</p>\r\n<p>　　<strong>查看丛林遗迹：</strong><a href=\"#page=05cdabe45948659d0214\">http://event51.wanmei.com/w2i/201007/maoxian/index.htm</a></p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/110323/10021300869383965.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/1c9a88f745391a25de51.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p>　　<strong>秘传赏金任务之冥兽城</strong></p>\r\n<p>　　接取任务NPC：赏金发放官<br>\r\n　　接取时间：每周三20:00 - 21:00<br>\r\n　　任务描述：每周三玩家在冥兽城活动开启前往赏金发放官处接取秘传赏金任务之冥兽城，完成任务可后获得高额奖励。<br>\r\n　　任务奖励：经验、元神、苍华壁（包含修炼秘籍、梦幻果、结丹石、完美石等物品）<br>\r\n　　任务流程：<br>\r\n　　1.玩家在冥兽城活动开始前或开始后一段时间内前往赏金发放官处接取秘传赏金任务之冥兽城。<br>\r\n　　2.玩家进入冥兽城后，在任意四个区域玩家打败怪物都会获得九星魂丹，只要玩家拾取到一颗九星魂丹后，即会完成任务，同时九星魂丹消失.。</p>\r\n<p>　　<strong>查看冥兽城：</strong><a href=\"#page=a09ff0fa34b978a1cd22\">http://w2i.wanmei.com/event/200809/contend/activity.htm</a></p>\r\n<p><img src=\"assets/79f5d2e7db2cf25b6ae9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"><img src=\"assets/38d5680d4eafa76e75ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/e68d49891920115a4a9c.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/e68d49891920115a4a9c.js"
+}

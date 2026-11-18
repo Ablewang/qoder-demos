@@ -1,0 +1,157 @@
+{
+  "id": "c66e7f0ce8d74a18d4c0",
+  "url": "https://w2i.wanmei.com/iframe/event_list_1208242.htm",
+  "title": "新闻列表 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 4,
+  "parents": [
+    "7caeaab051c613bd746c",
+    "1380aebe03847684e6f6",
+    "f04129c1334d42ad9e68",
+    "0125cae6ff3cae3ee512",
+    "e41a25dc3a337af88abb",
+    "eb8c4038b3ccd2480ba6",
+    "dc3bc2bce35dfb9242c6"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/iframe/event_list_1208242.htm",
+  "fetchedAt": "2026-11-18T08:16:17+00:00",
+  "sha256": "bff95517e7f24e163c2383a3044a1ef41b51251c6fca50e445e902b662ddd4ae",
+  "bytes": 6006,
+  "rawPath": "raw/c66e7f0ce8d74a18d4c0.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "祖龙家书\n《完美国际·王朝崛起》白帝携“祖龙家书”送来祝福，呼唤新老朋友！活动分为两大板块，包括“邀请老朋友回归”和“邀请新朋友加入”，不同的邀请方式，帮你联络感情，同时还可以获得奖励。\n活动时间：2012年8月29日-2012年10月7日\n英雄为女王而战\n集女王卡片，赢百万元宝大奖、Cherry键盘、十二星赤焰龙珠等奖励，三亿鸿利大放送，传祖龙家书可得内置IE抽奖活动更多抽奖机会，公测狂欢月，欢乐不停奖不停！\n活动时间：2012年09月06日-2012年10月14日\n新服飞升计划\n不甘心做新服菜鸟？立即加入新服飞升计划吧！1-30级期间，每五级都能获得超值奖励，初生即得勇者福旨，不必打怪就能飞速升级，更有黄金武器套装、个性时装与飞行器彰显您的贵族风范！海量特权，荣耀尽享！\n活动时间：2012年06月27日-长期\n无定宙大冒险\n据说无定宙中暗藏着无尽的珍宝及数不清的金币。勇士们，只要挑战成功到达无定宙终点，即可获得开启“无定宙宝藏”的机会！\n活动时间：2012年06月27日-2012年07月29日\n我是搭配王\n你是否还在为穿着华丽的时装去无奈的孤芳自赏而失落吗？Don‘t worry！“我是搭配王”活动让你秀出真我，展现个性！秀出你独特的时装搭配，让众人一同来分享你的搭配心得。还能赢取精美周边及点卡奖励哦！\n活动时间：2012年06月25日-2012年07月25日\n3/8页;每页5条; 共36条记录.‹\n1\n2\n3\n4\n5\n6\n7\n8\n›",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "3/8页;每页5条; 共36条记录.‹\n1\n2\n3\n4\n5\n6\n7\n8\n›",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://event21.wanmei.com/w2i/201208/recruitnew/index.jsp",
+      "label": "祖龙家书",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/index.html",
+      "label": "英雄为女王而战",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event20.wanmei.com/w2i/201206/servicecard/index.jsp",
+      "label": "新服飞升计划",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201206/spaceadventure/index.jsp",
+      "label": "无定宙大冒险",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201206/collocation/index.jsp",
+      "label": "我是搭配王",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_120824.htm",
+      "label": "1",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_1208241.htm",
+      "label": "2",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_1208243.htm",
+      "label": "4",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_1208244.htm",
+      "label": "5",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_1208245.htm",
+      "label": "6",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_1208246.htm",
+      "label": "7",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/iframe/event_list_1208247.htm",
+      "label": "›",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/temp120824/hd_10.jpg",
+      "alt": "最新热点活动推荐",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/120901/10021346482358333.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/active120216/active_over.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/120824/10021345798536558.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/120702/10021341221174935.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/active120216/active_doing.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/120702/10021341221175129.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/120702/10021341221175322.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/temp120824.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<h2><img src=\"assets/4ca3ba6c36302b24052d.jpg\" alt=\"最新热点活动推荐\" loading=\"lazy\"></h2>\r\n    <div>\r\n    \t    \t<dl>\r\n        \t<dt><a href=\"http://event21.wanmei.com/w2i/201208/recruitnew/index.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/1e0e7611bbeb43be8381.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\r\n            <dd>\r\n            \t<h3><a href=\"http://event21.wanmei.com/w2i/201208/recruitnew/index.jsp\" rel=\"noreferrer\" target=\"_blank\">祖龙家书</a></h3>\r\n                <p>《完美国际·王朝崛起》白帝携“祖龙家书”送来祝福，呼唤新老朋友！活动分为两大板块，包括“邀请老朋友回归”和“邀请新朋友加入”，不同的邀请方式，帮你联络感情，同时还可以获得奖励。</p>\r\n            \t<h4><img src=\"assets/b2cfaa87b1879e2a0e77.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">活动时间：2012年8月29日-2012年10月7日</h4>\r\n            </dd>\r\n        </dl>\r\n    \t<dl>\r\n        \t<dt><a href=\"#page=0577e948efdc755515e4\"><img src=\"assets/926d10e4b0e121f80f40.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\r\n            <dd>\r\n            \t<h3><a href=\"#page=0577e948efdc755515e4\">英雄为女王而战</a></h3>\r\n                <p>集女王卡片，赢百万元宝大奖、Cherry键盘、十二星赤焰龙珠等奖励，三亿鸿利大放送，传祖龙家书可得内置IE抽奖活动更多抽奖机会，公测狂欢月，欢乐不停奖不停！</p>\r\n            \t<h4><img src=\"assets/b2cfaa87b1879e2a0e77.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">活动时间：2012年09月06日-2012年10月14日</h4>\r\n            </dd>\r\n        </dl>\r\n    \t<dl>\r\n        \t<dt><a href=\"http://event20.wanmei.com/w2i/201206/servicecard/index.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/5ff0fb7362e177963e27.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\r\n            <dd>\r\n            \t<h3><a href=\"http://event20.wanmei.com/w2i/201206/servicecard/index.jsp\" rel=\"noreferrer\" target=\"_blank\">新服飞升计划</a></h3>\r\n                <p>不甘心做新服菜鸟？立即加入新服飞升计划吧！1-30级期间，每五级都能获得超值奖励，初生即得勇者福旨，不必打怪就能飞速升级，更有黄金武器套装、个性时装与飞行器彰显您的贵族风范！海量特权，荣耀尽享！</p>\r\n            \t<h4><img src=\"assets/9d3396ccae7eba3b81ca.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">活动时间：2012年06月27日-长期</h4>\r\n            </dd>\r\n        </dl>\r\n    \t<dl>\r\n        \t<dt><a href=\"http://event21.wanmei.com/w2i/201206/spaceadventure/index.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/89a6d740897d7544a9c3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\r\n            <dd>\r\n            \t<h3><a href=\"http://event21.wanmei.com/w2i/201206/spaceadventure/index.jsp\" rel=\"noreferrer\" target=\"_blank\">无定宙大冒险</a></h3>\r\n                <p>据说无定宙中暗藏着无尽的珍宝及数不清的金币。勇士们，只要挑战成功到达无定宙终点，即可获得开启“无定宙宝藏”的机会！</p>\r\n            \t<h4><img src=\"assets/b2cfaa87b1879e2a0e77.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">活动时间：2012年06月27日-2012年07月29日</h4>\r\n            </dd>\r\n        </dl>\r\n    \t<dl>\r\n        \t<dt><a href=\"http://event21.wanmei.com/w2i/201206/collocation/index.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/ac802deaf7da7a3ef235.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\r\n            <dd>\r\n            \t<h3><a href=\"http://event21.wanmei.com/w2i/201206/collocation/index.jsp\" rel=\"noreferrer\" target=\"_blank\">我是搭配王</a></h3>\r\n                <p>你是否还在为穿着华丽的时装去无奈的孤芳自赏而失落吗？Don‘t  worry！“我是搭配王”活动让你秀出真我，展现个性！秀出你独特的时装搭配，让众人一同来分享你的搭配心得。还能赢取精美周边及点卡奖励哦！</p>\r\n            \t<h4><img src=\"assets/b2cfaa87b1879e2a0e77.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">活动时间：2012年06月25日-2012年07月25日</h4>\r\n            </dd>\r\n        </dl>\r\n    </div>\r\n    <div><span>\r\n    <table>\r\n        <tr>\r\n            <td> <strong>3</strong>/<strong>8</strong>页;每页<strong>5</strong>条; 共<strong>36</strong>条记录.<a href=\"#page=7caeaab051c613bd746c\">‹</a>\r\n\r\n\r\n                            <a href=\"#page=7caeaab051c613bd746c\">1</a>\r\n                            <a href=\"#page=1380aebe03847684e6f6\">2</a>\r\n                            3\r\n                            <a href=\"#page=f04129c1334d42ad9e68\">4</a>\r\n                            <a href=\"#page=0125cae6ff3cae3ee512\">5</a>\r\n                            <a href=\"#page=e41a25dc3a337af88abb\">6</a>\r\n                            <a href=\"#page=eb8c4038b3ccd2480ba6\">7</a>\r\n                            <a href=\"#page=dc3bc2bce35dfb9242c6\">8</a>\r\n                <a href=\"#page=dc3bc2bce35dfb9242c6\">›</a>\r\n</td>\r\n          </tr>\r\n    </table>\r\n</span>\r\n</div>\r\n</div>\r\n",
+  "dataPath": "pages/c66e7f0ce8d74a18d4c0.json",
+  "imageCount": 8,
+  "tableCount": 1,
+  "downloadPath": "downloads/c66e7f0ce8d74a18d4c0.js"
+}

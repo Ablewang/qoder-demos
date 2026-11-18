@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_542.jpg",
+  "id": "fd21d835e2b0902765eb",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·清心咒<em>（升仙）</em>",
+  "bytes": 1759,
+  "sha256": "7c27e0840956a91399fa320453f991ea1a432fe7a6b23194b7287b9b352ebb96",
+  "fetchedAt": "2026-11-18T08:35:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_542.jpg",
+  "path": "assets/fd21d835e2b0902765eb.jpg"
+}

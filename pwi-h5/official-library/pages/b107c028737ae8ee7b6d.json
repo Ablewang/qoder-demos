@@ -1,0 +1,1874 @@
+{
+  "id": "b107c028737ae8ee7b6d",
+  "url": "https://w2i.wanmei.com/djzb/zb/20091015/29873.shtml",
+  "title": "武器 - 长兵",
+  "category": "装备道具",
+  "section": "普通武器",
+  "depth": 1,
+  "parents": [
+    "e1fe6614443052284ef7",
+    "b107c028737ae8ee7b6d",
+    "59138861d3ccb56e4cf5",
+    "e0f6bb305652eb19836c",
+    "d15600c7e7503aa1f7ab",
+    "9c1ef01ee36759a5edb2",
+    "b61c999a769de8c62384",
+    "4f54f00fa04dd492f6e8",
+    "1c482d5c6674e7246a7b",
+    "8baeb5e5dddea159404b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "e2ac200a7f865f7e497003429c3dd0c8978b1151919ed4b60ec2705ce410b154",
+  "bytes": 78240,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/b107c028737ae8ee7b6d.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "刀剑 | 长兵 | 斧锤 | 拳套 | 弓弩 | 法器 | 传说 | 创世 | 弹药 | 任务奖励 |\n名称\n图标\n类型\n需求人物等级\n需求职业\n需求力量点数\n需求敏捷点数\n需求体质点数\n需求灵力点数\n点钢枪\n枪戟\n3\n－\n7\n6\n－\n－\n浑铁枪\n枪戟\n8\n－\n15\n10\n－\n－\n烂银枪\n枪戟\n16\n－\n33\n18\n－\n－\n蛇形枪\n枪戟\n25\n－\n62\n31\n－\n－\n沥泉枪\n枪戟\n35\n－\n86\n42\n－\n－\n提炉枪\n枪戟\n45\n－\n110\n53\n－\n－\n梨花枪\n枪戟\n55\n－\n134\n64\n－\n－\n雁翎枪\n枪戟\n65\n－\n158\n75\n－\n－\n透甲枪\n枪戟\n75\n－\n182\n86\n－\n－\n腾蛟枪\n枪戟\n85\n－\n206\n97\n－\n－\n闪空\n枪戟\n95\n－\n230\n108\n－\n－\n长朴刀\n长刀\n1\n－\n5\n5\n－\n－\n扫叶刀\n长刀\n6\n－\n13\n8\n－\n－\n劈挂刀\n长刀\n13\n－\n29\n14\n－\n－\n斩马刀\n长刀\n22\n－\n57\n26\n－\n－\n偃月刀\n长刀\n32\n－\n82\n36\n－\n－\n凤嘴刀\n长刀\n42\n－\n107\n46\n－\n－\n眉间刀\n长刀\n52\n－\n132\n56\n－\n－\n银鲤刀\n长刀\n62\n－\n157\n66\n－\n－\n象鼻刀\n长刀\n72\n－\n182\n76\n－\n－\n春秋刀\n长刀\n82\n－\n207\n86\n－\n－\n烽火\n长刀\n92\n－\n232\n96\n－\n－\n棘木棒\n镗\n4\n－\n8\n6\n－\n－\n狼牙棒\n镗\n10\n－\n19\n10\n－\n－\n铜头棒\n镗\n19\n－\n41\n19\n－\n－\n雁尾镗\n镗\n28\n－\n72\n32\n－\n－\n碎灵镗\n镗\n38\n－\n97\n42\n－\n－\n贪狼镗\n镗\n48\n－\n122\n52\n－\n－\n嘶风镗\n镗\n58\n－\n147\n62\n－\n－\n雷公镗\n镗\n68\n－\n172\n72\n－\n－\n凤翅镗\n镗\n78\n－\n197\n82\n－\n－\n九曲镗\n镗\n88\n－\n222\n92\n－\n－\n吞云\n镗\n98\n－\n247\n102\n－\n－",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图标",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求人物等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求职业",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求力量点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求敏捷点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求体质点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求灵力点数",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "点钢枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "浑铁枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烂银枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "33",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "蛇形枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "31",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "沥泉枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "35",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "42",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "提炉枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "110",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "53",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "梨花枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "55",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "134",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雁翎枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "158",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "透甲枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "182",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "腾蛟枪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "206",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "97",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "闪空",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "枪戟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "230",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "108",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "长朴刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "扫叶刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "劈挂刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "斩马刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "22",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "57",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "26",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "偃月刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "82",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "36",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凤嘴刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "42",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "107",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "46",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "眉间刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "132",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "56",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "银鲤刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "157",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "象鼻刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "72",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "182",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "76",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "春秋刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "82",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "207",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烽火",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "92",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "232",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "96",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "棘木棒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狼牙棒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铜头棒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "41",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雁尾镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "28",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "72",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碎灵镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "38",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "97",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "42",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "贪狼镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "48",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "122",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "嘶风镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "58",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "147",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雷公镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "172",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "72",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凤翅镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "78",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "197",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "82",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "九曲镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "88",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "222",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "92",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "吞云",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "镗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "98",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "247",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "102",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29859.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29873.shtml",
+      "label": "长兵",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29877.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29896.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29900.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29901.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29985.shtml",
+      "label": "传说",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29986.shtml",
+      "label": "创世",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29987.shtml",
+      "label": "弹药",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29990.shtml",
+      "label": "任务奖励",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image106.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image108.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image110.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image112.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image114.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image116.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image118.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image120.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image122.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image124.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image126.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image132.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image134.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image136.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image138.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image140.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image142.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image144.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image146.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image148.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image150.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image152.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image158.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image160.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image162.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image164.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image166.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image168.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image170.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image172.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image174.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image176.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cb/image178.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=e1fe6614443052284ef7\">刀剑</a> | <a href=\"#page=b107c028737ae8ee7b6d\">长兵</a> | <a href=\"#page=59138861d3ccb56e4cf5\">斧锤</a> | <a href=\"#page=e0f6bb305652eb19836c\">拳套</a> | <a href=\"#page=d15600c7e7503aa1f7ab\">弓弩</a> | <a href=\"#page=9c1ef01ee36759a5edb2\">法器</a> | <a href=\"#page=b61c999a769de8c62384\">传说</a> | <a href=\"#page=4f54f00fa04dd492f6e8\">创世</a> | <a href=\"#page=1c482d5c6674e7246a7b\">弹药</a> | <a href=\"#page=8baeb5e5dddea159404b\">任务奖励</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>名称</strong></td>\r\n            <td><strong>图标</strong></td>\r\n            <td><strong>类型</strong></td>\r\n            <td><strong>需求人物等级</strong></td>\r\n            <td><strong>需求职业</strong></td>\r\n            <td><strong>需求力量点数</strong></td>\r\n            <td><strong>需求敏捷点数</strong></td>\r\n            <td><strong>需求体质点数</strong></td>\r\n            <td><strong>需求灵力点数</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>点钢枪</td>\r\n            <td><img src=\"assets/376944fc60edaf9b80f4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>3</td>\r\n            <td>－</td>\r\n            <td>7</td>\r\n            <td>6</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>浑铁枪</td>\r\n            <td><img src=\"assets/957eadbc13cf6007c302.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>8</td>\r\n            <td>－</td>\r\n            <td>15</td>\r\n            <td>10</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>烂银枪</td>\r\n            <td><img src=\"assets/46557f58d3906501a770.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>16</td>\r\n            <td>－</td>\r\n            <td>33</td>\r\n            <td>18</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>蛇形枪</td>\r\n            <td><img src=\"assets/1ba957eb17c7fd265608.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>25</td>\r\n            <td>－</td>\r\n            <td>62</td>\r\n            <td>31</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>沥泉枪</td>\r\n            <td><img src=\"assets/03948b7c413ad6e68421.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>35</td>\r\n            <td>－</td>\r\n            <td>86</td>\r\n            <td>42</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>提炉枪</td>\r\n            <td><img src=\"assets/c18de7703dc256c335cd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>45</td>\r\n            <td>－</td>\r\n            <td>110</td>\r\n            <td>53</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>梨花枪</td>\r\n            <td><img src=\"assets/c94a34e8fa84243f344f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>55</td>\r\n            <td>－</td>\r\n            <td>134</td>\r\n            <td>64</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雁翎枪</td>\r\n            <td><img src=\"assets/f927d1f4cb493f310048.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>65</td>\r\n            <td>－</td>\r\n            <td>158</td>\r\n            <td>75</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>透甲枪</td>\r\n            <td><img src=\"assets/75b949e71f80e98f349f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>75</td>\r\n            <td>－</td>\r\n            <td>182</td>\r\n            <td>86</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>腾蛟枪</td>\r\n            <td><img src=\"assets/8e75baea33b893809c09.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>85</td>\r\n            <td>－</td>\r\n            <td>206</td>\r\n            <td>97</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>闪空</td>\r\n            <td><img src=\"assets/e162ff2a61780ba0e500.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>枪戟</td>\r\n            <td>95</td>\r\n            <td>－</td>\r\n            <td>230</td>\r\n            <td>108</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>长朴刀</td>\r\n            <td><img src=\"assets/e099f0b1060d222b64e2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>1</td>\r\n            <td>－</td>\r\n            <td>5</td>\r\n            <td>5</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>扫叶刀</td>\r\n            <td><img src=\"assets/252f6f542293856b47c6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>6</td>\r\n            <td>－</td>\r\n            <td>13</td>\r\n            <td>8</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>劈挂刀</td>\r\n            <td><img src=\"assets/fdecc18baf7e1f4d894f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>13</td>\r\n            <td>－</td>\r\n            <td>29</td>\r\n            <td>14</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>斩马刀</td>\r\n            <td><img src=\"assets/25f404815b9565ecc421.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>22</td>\r\n            <td>－</td>\r\n            <td>57</td>\r\n            <td>26</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>偃月刀</td>\r\n            <td><img src=\"assets/97da7b38801e41964b4d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>32</td>\r\n            <td>－</td>\r\n            <td>82</td>\r\n            <td>36</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>凤嘴刀</td>\r\n            <td><img src=\"assets/9da9e152bc42d8f8c19c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>42</td>\r\n            <td>－</td>\r\n            <td>107</td>\r\n            <td>46</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>眉间刀</td>\r\n            <td><img src=\"assets/758199afc25dcf9cf07c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>52</td>\r\n            <td>－</td>\r\n            <td>132</td>\r\n            <td>56</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>银鲤刀</td>\r\n            <td><img src=\"assets/e4b4f071ea27e4e9b42d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>62</td>\r\n            <td>－</td>\r\n            <td>157</td>\r\n            <td>66</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>象鼻刀</td>\r\n            <td><img src=\"assets/f04a6f2bdcf8d9bac143.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>72</td>\r\n            <td>－</td>\r\n            <td>182</td>\r\n            <td>76</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>春秋刀</td>\r\n            <td><img src=\"assets/e60d634bec3014800b67.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>82</td>\r\n            <td>－</td>\r\n            <td>207</td>\r\n            <td>86</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>烽火</td>\r\n            <td><img src=\"assets/4e5f8d16c704c9a0de61.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长刀</td>\r\n            <td>92</td>\r\n            <td>－</td>\r\n            <td>232</td>\r\n            <td>96</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>棘木棒</td>\r\n            <td><img src=\"assets/af03b9caf44eb7911066.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>4</td>\r\n            <td>－</td>\r\n            <td>8</td>\r\n            <td>6</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>狼牙棒</td>\r\n            <td><img src=\"assets/548a33c13be04490dd55.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>10</td>\r\n            <td>－</td>\r\n            <td>19</td>\r\n            <td>10</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铜头棒</td>\r\n            <td><img src=\"assets/5ae06a374654adfa50e2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>19</td>\r\n            <td>－</td>\r\n            <td>41</td>\r\n            <td>19</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雁尾镗</td>\r\n            <td><img src=\"assets/15f18ab486d7f41375f4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>28</td>\r\n            <td>－</td>\r\n            <td>72</td>\r\n            <td>32</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>碎灵镗</td>\r\n            <td><img src=\"assets/0f20190a3fd08fbc29e4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>38</td>\r\n            <td>－</td>\r\n            <td>97</td>\r\n            <td>42</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>贪狼镗</td>\r\n            <td><img src=\"assets/35249b68f25e924b5251.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>48</td>\r\n            <td>－</td>\r\n            <td>122</td>\r\n            <td>52</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>嘶风镗</td>\r\n            <td><img src=\"assets/65b2903e67ac45eb40a7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>58</td>\r\n            <td>－</td>\r\n            <td>147</td>\r\n            <td>62</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>雷公镗</td>\r\n            <td><img src=\"assets/fd0273332ca7389c4109.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>68</td>\r\n            <td>－</td>\r\n            <td>172</td>\r\n            <td>72</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>凤翅镗</td>\r\n            <td><img src=\"assets/f5a78fe32baf59dfabf3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>78</td>\r\n            <td>－</td>\r\n            <td>197</td>\r\n            <td>82</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>九曲镗</td>\r\n            <td><img src=\"assets/3b4690061173cc1da0e6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>88</td>\r\n            <td>－</td>\r\n            <td>222</td>\r\n            <td>92</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>吞云</td>\r\n            <td><img src=\"assets/6092aad44b600335db5d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>镗</td>\r\n            <td>98</td>\r\n            <td>－</td>\r\n            <td>247</td>\r\n            <td>102</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/b107c028737ae8ee7b6d.json",
+  "imageCount": 33,
+  "tableCount": 1,
+  "downloadPath": "downloads/b107c028737ae8ee7b6d.js"
+}

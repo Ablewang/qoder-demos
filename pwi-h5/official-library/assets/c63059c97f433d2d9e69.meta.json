@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_586.jpg",
+  "id": "c63059c97f433d2d9e69",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·雷链<em>（入魔）</em>",
+  "bytes": 1578,
+  "sha256": "4c611e9d0911903e95427e5d7775cd11058050db8b4c140809a1a4cd1e261e0f",
+  "fetchedAt": "2026-11-18T08:35:22+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_586.jpg",
+  "path": "assets/c63059c97f433d2d9e69.jpg"
+}

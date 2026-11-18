@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_552.jpg",
+  "id": "bfb33c59d622c00305dc",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·五气朝元<em>（升仙）</em>",
+  "bytes": 1645,
+  "sha256": "b3d8bfd1583a584cd653ced9fd30252e9d2906990fed8ed8757837169a9e5a1c",
+  "fetchedAt": "2026-11-18T08:35:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_552.jpg",
+  "path": "assets/bfb33c59d622c00305dc.jpg"
+}

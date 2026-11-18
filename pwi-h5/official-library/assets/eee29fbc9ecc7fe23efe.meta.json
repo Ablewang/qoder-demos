@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_476.jpg",
+  "id": "eee29fbc9ecc7fe23efe",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·沙陷<em>（升仙）</em>",
+  "bytes": 1668,
+  "sha256": "35b41f9ab3d818e94ca1b64c115ab2b7d068675c1e2b266ab2bc8912562e7940",
+  "fetchedAt": "2026-11-18T08:34:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_476.jpg",
+  "path": "assets/eee29fbc9ecc7fe23efe.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130123/10021358903886443.jpg",
+  "alt": "图片: 图6：毛笔书法.jpg",
+  "kind": "img",
+  "id": "748d84dab59e91bd0217",
+  "status": "ok",
+  "parents": [
+    "9066c33eeeda8283dd07"
+  ],
+  "bytes": 63261,
+  "sha256": "c1fe9362b99ad2e3bc013c231a9a15807576168bdfc61abc1c9ece681c900924",
+  "fetchedAt": "2026-11-18T08:23:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130123/10021358903886443.jpg",
+  "path": "assets/748d84dab59e91bd0217.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_453.jpg",
+  "id": "bb2825d7907e417a8618",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·血祭炎爆<em>（入魔）</em>",
+  "bytes": 1744,
+  "sha256": "8768058857f3ef334cd2ec83baa43c9dd11d8ad8c2e454e524c2ec53f4c19458",
+  "fetchedAt": "2026-11-18T08:34:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_453.jpg",
+  "path": "assets/bb2825d7907e417a8618.jpg"
+}

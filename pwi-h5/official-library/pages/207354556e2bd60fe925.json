@@ -1,0 +1,88 @@
+{
+  "id": "207354556e2bd60fe925",
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/yuanchenleft.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "0e7827541dfae784af61",
+    "86b32d6d7356afcc01fe",
+    "b41d5d0cf630ea3738a7"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/wuqi/yuanchenleft.htm",
+  "fetchedAt": "2026-11-18T08:16:26+00:00",
+  "sha256": "4ed1ee8fa90223f6f0ed8f536258cee61fb924015cb3021a57a3cf27527aafa8",
+  "bytes": 1392,
+  "rawPath": "raw/207354556e2bd60fe925.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "月影暗香来\n暗香来\n楚天阔",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "月影暗香来",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗香来",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "楚天阔",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/02.htm",
+      "label": "月影暗香来",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/022.htm",
+      "label": "暗香来",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/012.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/023.htm",
+      "label": "楚天阔",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=0e7827541dfae784af61\">月影暗香来</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=86b32d6d7356afcc01fe\">暗香来</a><a href=\"#page=b290837af805724e4087\"></a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=b41d5d0cf630ea3738a7\">楚天阔</a></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/207354556e2bd60fe925.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/207354556e2bd60fe925.js"
+}

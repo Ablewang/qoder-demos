@@ -1,0 +1,79 @@
+{
+  "id": "76ddce7f753c934353d7",
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t2.htm",
+  "title": "修真专题 《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 4,
+  "parents": [
+    "830dd26c6bed835caa41"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t2.htm",
+  "fetchedAt": "2026-11-18T08:16:54+00:00",
+  "sha256": "82082b3d80e6b610e95d450ba9d84fe637a3902b2c756ac961f53e0c1a3d3542",
+  "bytes": 2473,
+  "rawPath": "raw/76ddce7f753c934353d7.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "1、与祖龙城力量贤者（537，673）对话触发任务；\n2、接受任务后玩家将会被传送到“混沌虚空”房间接受生存考验任务；\n3、存活10分钟即可完成任务；（房间内无巡逻怪）；\n4、任务完成后系统自动将玩家传送到祖龙城力量贤者处；\n力量贤者",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_title_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_27.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_side.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</div>\n\n\n<div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm</a></p>\n    </div>\t\n</div>\n\n<div>\n\t<div>\n\t\t<div><img src=\"assets/a6e46c5f895ec40dafb4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t</div>\n\t\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm</a></p>\n        \n        <div>\n\t\t     <p>\n\t\t\t\t　　1、与祖龙城力量贤者（537，673）对话触发任务；<br>\n\t\t\t\t　　2、接受任务后玩家将会被传送到“混沌虚空”房间接受生存考验任务；<br>\n\t\t\t\t　　3、存活10分钟即可完成任务；（房间内无巡逻怪）；<br>\n\t\t\t\t　　4、任务完成后系统自动将玩家传送到祖龙城力量贤者处；\n\t\t     </p>\n\t\t\t\n\t\t  <div><img src=\"assets/f28179b0c48c8c6d2411.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t  <p>力量贤者</p>\n\t   </div>\n  \t</div>\n  \t\n\t<div><img src=\"assets/a390b066ffc65598eb81.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t<img src=\"assets/397760d8e3a09cd48cf3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n</div>\n\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n",
+  "dataPath": "pages/76ddce7f753c934353d7.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/76ddce7f753c934353d7.js"
+}

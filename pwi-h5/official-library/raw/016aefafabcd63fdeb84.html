@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Design:YanFeng.Shan;Web Layout:LiQiang.Gu;" />
+<meta name="keywords" content="完美世界,完美世界国际版,2012,最美网游,网络游戏,3D网游,永久免费,完美时空,剑灵,魅灵,羽灵,羽芒,妖兽,妖精,法师,武侠,刺客,巫师,家园,MMO,RPG,热门,流行,攻城,黄金装备,PK,城战" />
+<meta name="description" content="完美时空旗下3D领航大作《完美国际2012》，3D实景带你穿越2012，重现完美新世界！第五种族末日重现，海陆空地四维激战，动态副本开启时空穿梭，资源掠夺战一触即发！" />
+<title>《完美国际2012》官方网站——全新3D灾难巨制，12月创世启程！</title>
+<link href="/style/shop1102.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.wanmei.com/public/js/jq_132.js"></script>
+<script type="text/javascript" src="/js/jquery.pagination.js"></script>
+<script type="text/javascript">
+function pageselectCallback(page_index, jq){
+	var new_content = jQuery('#hiddenresult div.result:eq('+page_index+')').clone();
+	$('#Searchresult').empty().append(new_content);
+	return false;
+}
+function initPagination() {
+	var num_entries = jQuery('#hiddenresult div.result').length;
+	$("#Pagination").pagination(num_entries, {
+		callback: pageselectCallback,
+		items_per_page:1
+	});
+ }
+$(document).ready(function(){      
+	initPagination();
+});
+</script>
+</head>
+<body style="background:none">
+<div class="list">
+	<div id="Searchresult">
+		loading...
+	</div>
+	<div id="hiddenresult" style="display:none;">
+		<!-- 第一页 -->
+<div class="result">
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/1.jpg" alt="" /></dt>
+		<dd>
+			<h4>黄金护身符</h4>
+			<p>生命值低于50%时补满，冷却时间10.0秒，回复生命上限600,000。</p>
+			<p><b>10黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/2.jpg" alt="" /></dt>
+		<dd>
+			<h4>黄金守神符</h4>
+			<p>真气值低于75%时补满，冷却时间5.0秒，回复真气上限900,000。</p>
+			<p><b>5黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/3.jpg" alt="" /></dt>
+		<dd>
+			<h4>白银护身符</h4>
+			<p>生命值低于50%时补满，冷却时间10.0秒，回复生命上限350,000。</p>
+			<p><b>6黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/4.jpg" alt="" /></dt>
+		<dd>
+			<h4>白银守神符</h4>
+			<p>真气值低于75%时补满，冷却时间5.0秒，回复真气上限525,000。</p>
+			<p><b>3黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/5.jpg" alt="" /></dt>
+		<dd>
+			<h4>青铜护身符</h4>
+			<p>生命值低于50%时补满，冷却时间10.0秒，回复生命上限10,000。</p>
+			<p><b>2黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/6.jpg" alt="" /></dt>
+		<dd>
+			<h4>青铜守神符</h4>
+			<p>真气值低于75%时补满，冷却时间5.0秒，回复真气上限15,000。</p>
+			<p><b>1黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/7.jpg" alt="" /></dt>
+		<dd>
+			<h4>保命符（1个）</h4>
+			<p>使您的角色下次阵亡时不损失任何经验和物品。</p>
+			<p><b>1黄金</b></p>
+		</dd>
+	</dl>
+	<dl>
+		<dt><img src="/images/shop1102/daoju/fuzhu/8.jpg" alt="" /></dt>
+		<dd>
+			<h4>保命符（10个）</h4>
+			<p>使您的角色下次阵亡时不损失任何经验和物品。</p>
+			<p><b>9黄金</b></p>
+		</dd>
+	</dl>
+</div>
+	</div>
+	<div class="pages">
+		<div id="Pagination"></div>
+	</div>
+</div>
+</body>
+</html>

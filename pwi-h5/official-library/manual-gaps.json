@@ -1,0 +1,27 @@
+[
+  {
+    "kind":"source-conflict",
+    "url":"https://w2i.wanmei.com/hd/wi_itemsdemo/soulstone02.htm",
+    "error":"大地之石镶嵌防具生命值：魂石专题为+160；2009物品页 https://w2i.wanmei.com/djzb/yxwp/20091015/29947.shtml 为+150。保留两份原文，不自行认定现行值。"
+  },
+  {
+    "kind":"missing-fields",
+    "url":"https://w2i.wanmei.com/djzb/yxwp/20091015/29947.shtml",
+    "error":"蚩尤之石、后羿之石、神农之石有武器/防具效果，但此页缺装备品阶要求、来源和配方，不能套用其他特殊魂石的12品要求。"
+  },
+  {
+    "kind":"version-boundary",
+    "url":"https://w2i.games.wanmei.com/info.shtml",
+    "error":"目录汇集多个年代的历史资料，不等于2026全装备和全系统数据库；最新高品装备与改版数值还需相应版本官方来源核验。"
+  },
+  {
+    "kind":"mechanics-unverified",
+    "url":"https://w2i.wanmei.com/hd/wi_itemsdemo/faq07.htm",
+    "error":"已核对镶嵌位置和孔数；未找到此资料明确说明拆石返还/销毁规则、全部价格、所有特殊合成配方与失败概率。"
+  },
+  {
+    "kind":"unit-boundary",
+    "url":"https://w2i.wanmei.com/hd/wi_itemsdemo/soulstone.htm",
+    "error":"官方准确度、闪避度、五行防御及附加元素伤害与当前H5部分百分比属性不同；资料保持原单位，不擅自换算或接入游戏数值。"
+  }
+]

@@ -1,0 +1,253 @@
+{
+  "id": "0f5df725a3909b10712d",
+  "url": "https://w2i.wanmei.com/intro/ts/20100409/45867.shtml",
+  "title": "完美军备箱",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "795e92504f6461d2f316",
+    "fe4487ae624051d870aa",
+    "f1a22718bf7ba5a42e0e",
+    "a245c2e97a44a02cb495",
+    "2cb07116a2adc8020ca9",
+    "ff0a5b259dfdf67e49c9",
+    "66e9b32e9d063beff2cc"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "fa30416ec73515b8f89649ede6040f81ead132d29c837838c27cc3e026455828",
+  "bytes": 71611,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0f5df725a3909b10712d.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-04-09",
+  "text": "领取等级\n奖励物品\n领取等级\n奖励物品\n5\n利刃之魂（一）—凭此令牌去邮筒处领取相应军备物资。\n攻击之灵（一）—请选取适合您的攻击优化符。\n45\n翡翠守神符\n攻击之灵（三）\n10\n梦幻果（1）—使用后可增加5000点经验1000点元神。\n回城香（10）—使用后回到邻近的城市。\n50\n利刃之魂（三）\n特效军用续命散（100）\n特效军用凝神露（100）\n15\n完美初等军徽—金属戒指\n神羽（飞行器）—凭此物品去邮筒处领取相应军备物资\n55\n翡翠护身符\n结丹石（5）\n20\n利刃之魂（二）—凭此令牌去邮筒处领取相应军备物资。\n军用止血膏（100）—10秒内恢复320点生命\n军用益神散（100）—10秒内恢复380点真气\n60\n魔方万能卡（5）\n军用归元丹（100）\n军用聚神丹（100）\n25\n神石之魂—凭此物品去邮筒处领取相应军备物资\n复活卷轴（2）—放在物品栏中以便在死亡时原地复活\n65\n神石之灵（7级）\n完美号角（1）\n30\n攻击之灵（二）—凭此令牌去邮筒处领取相应军备物资\n特效军用止血膏（100）\n特效军用益神散（100）\n70\n神灵之石（1）\n35\n神谕一（2）\n神谕二（2）\n75\n翡翠守神符\n翡翠护身符\n神秘筹码（20）\n40\n飞天神羽（飞行器）—凭此物品去邮筒处领取相应军备物资。\n完美石（500）\n军用续命散（100）—10秒内恢复640点生命\n军用凝神露（100）—10秒内恢复800点真气\n80\n幻仙（30）\n圣诞祈愿书",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "领取等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奖励物品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "领取等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奖励物品",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃之魂（一）—凭此令牌去邮筒处领取相应军备物资。\n攻击之灵（一）—请选取适合您的攻击优化符。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "翡翠守神符\n攻击之灵（三）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "梦幻果（1）—使用后可增加5000点经验1000点元神。\n回城香（10）—使用后回到邻近的城市。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃之魂（三）\n特效军用续命散（100）\n特效军用凝神露（100）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "完美初等军徽—金属戒指\n神羽（飞行器）—凭此物品去邮筒处领取相应军备物资",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "55",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "翡翠护身符\n结丹石（5）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "利刃之魂（二）—凭此令牌去邮筒处领取相应军备物资。\n军用止血膏（100）—10秒内恢复320点生命\n军用益神散（100）—10秒内恢复380点真气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方万能卡（5）\n军用归元丹（100）\n军用聚神丹（100）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "神石之魂—凭此物品去邮筒处领取相应军备物资\n复活卷轴（2）—放在物品栏中以便在死亡时原地复活",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "神石之灵（7级）\n完美号角（1）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "30",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击之灵（二）—凭此令牌去邮筒处领取相应军备物资\n特效军用止血膏（100）\n特效军用益神散（100）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "神灵之石（1）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "35",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "神谕一（2）\n神谕二（2）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "翡翠守神符\n翡翠护身符\n神秘筹码（20）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "飞天神羽（飞行器）—凭此物品去邮筒处领取相应军备物资。\n完美石（500）\n军用续命散（100）—10秒内恢复640点生命\n军用凝神露（100）—10秒内恢复800点真气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻仙（30）\n圣诞祈愿书",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/101124/10021290597354837.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/101124/10021290597354837.jpg",
+      "alt": "图片: 军备箱领取NPC.jpg",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p><a href=\"https://w2i.wanmei.com/resources/jpg/101124/10021290597354837.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/3bf14577ce9169a139b6.jpg\" alt=\"图片: 军备箱领取NPC.jpg\" loading=\"lazy\"></a></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>领取等级</td>\r\n            <td>奖励物品<br>\r\n             </td>\r\n            <td>领取等级</td>\r\n            <td>奖励物品<br>\r\n             </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>5</div>\r\n            </td>\r\n            <td>\r\n            <div>利刃之魂（一）—凭此令牌去邮筒处领取相应军备物资。    <br>\r\n            攻击之灵（一）—请选取适合您的攻击优化符。</div>\r\n            </td>\r\n            <td>\r\n            <div>45</div>\r\n            </td>\r\n            <td>\r\n            <div>翡翠守神符</div>\r\n            <div>攻击之灵（三）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>梦幻果（1）—使用后可增加5000点经验1000点元神。</div>\r\n            <div>回城香（10）—使用后回到邻近的城市。</div>\r\n            </td>\r\n            <td>\r\n            <div>50</div>\r\n            </td>\r\n            <td>\r\n            <div>利刃之魂（三）<br>\r\n            特效军用续命散（100）<br>\r\n            特效军用凝神露（100）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>15</div>\r\n            </td>\r\n            <td>\r\n            <div>完美初等军徽—金属戒指<br>\r\n            神羽（飞行器）—凭此物品去邮筒处领取相应军备物资</div>\r\n            </td>\r\n            <td>\r\n            <div>55</div>\r\n            </td>\r\n            <td>\r\n            <div>翡翠护身符<br>\r\n            结丹石（5）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>20</div>\r\n            </td>\r\n            <td>\r\n            <div>利刃之魂（二）—凭此令牌去邮筒处领取相应军备物资。</div>\r\n            <div>军用止血膏（100）—10秒内恢复320点生命<br>\r\n            军用益神散（100）—10秒内恢复380点真气</div>\r\n            </td>\r\n            <td>\r\n            <div>60</div>\r\n            </td>\r\n            <td>\r\n            <div>魔方万能卡（5）<br>\r\n            军用归元丹（100）</div>\r\n            <div>军用聚神丹（100）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>25</div>\r\n            </td>\r\n            <td>\r\n            <div>神石之魂—凭此物品去邮筒处领取相应军备物资<br>\r\n            复活卷轴（2）—放在物品栏中以便在死亡时原地复活</div>\r\n            </td>\r\n            <td>\r\n            <div>65</div>\r\n            </td>\r\n            <td>\r\n            <div>神石之灵（7级）<br>\r\n            完美号角（1）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>30</div>\r\n            </td>\r\n            <td>\r\n            <div>攻击之灵（二）—凭此令牌去邮筒处领取相应军备物资</div>\r\n            <div>特效军用止血膏（100）<br>\r\n            特效军用益神散（100）</div>\r\n            </td>\r\n            <td>\r\n            <div>70</div>\r\n            </td>\r\n            <td>\r\n            <div>神灵之石（1）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>35</div>\r\n            </td>\r\n            <td>\r\n            <div>神谕一（2）<br>\r\n            神谕二（2）</div>\r\n            </td>\r\n            <td>\r\n            <div>75</div>\r\n            </td>\r\n            <td>\r\n            <div>翡翠守神符</div>\r\n            <div>翡翠护身符</div>\r\n            <div>神秘筹码（20）</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>40</div>\r\n            </td>\r\n            <td>\r\n            <div>飞天神羽（飞行器）—凭此物品去邮筒处领取相应军备物资。<br>\r\n            完美石（500）<br>\r\n            军用续命散（100）—10秒内恢复640点生命<br>\r\n            军用凝神露（100）—10秒内恢复800点真气  </div>\r\n            </td>\r\n            <td>\r\n            <div>80</div>\r\n            </td>\r\n            <td>\r\n            <div>幻仙（30）<br>\r\n            圣诞祈愿书</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/0f5df725a3909b10712d.json",
+  "imageCount": 1,
+  "tableCount": 1,
+  "downloadPath": "downloads/0f5df725a3909b10712d.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_530.jpg",
+  "id": "b6a107931f2b899f3e8b",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "真·兽王之怒",
+  "bytes": 1651,
+  "sha256": "c7ec81bd84293ad4381d9273333ad5b5f19bc601163d676521bfdd633ba96c60",
+  "fetchedAt": "2026-11-18T08:35:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_530.jpg",
+  "path": "assets/b6a107931f2b899f3e8b.jpg"
+}

@@ -1,0 +1,181 @@
+/************************************************
+  冥城争霸-《完美国际》官方网站 
+  北京完美时空网络技术有限公司  版权所有
+  网站部 - 宗倩     2008-09-22
+******************************************/
+
+/* ========== logo外调 ========== */
+@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+#w2i_logo,#transparent_logo {top:39px;left:70px;}
+
+
+/* ========== Basic ========== */
+
+body {
+	 margin:0;
+	 padding:0;		 
+	 text-align:center;
+	 font-size:14px;
+	 line-height:23px;
+	 color:#c8a377;
+	 font-family:Arial, Helvetica, sans-serif;
+	 background:#000 url(../images/bg_01.jpg) no-repeat center 66px;
+	}
+	
+img{
+	border:none;
+	}
+	
+a{blr:expression(this.onFocus=this.blur());}			
+
+area{
+   blr:expression(this.onFocus=this.blur());
+   }
+
+
+a:link{
+  text-decoration:none;
+  color:#c8a377;
+  }
+
+a:visited{
+  text-decoration:none;
+  color:#c8a377;
+  }
+
+a:hover{
+  text-decoration:none;
+  color:#FF6600;
+  }
+
+a:active{
+  text-decoration:none;
+  color:#c8a377;
+  }
+
+.indexbg{
+  background:url(../images/bg.jpg) no-repeat center 66px ;
+  }
+
+.iframbodybg{
+  background:transparent;
+  }
+	
+/* ========== 主要内容 ========== */
+
+
+.main{
+  margin:0 auto;
+  width:1002px;
+  overflow:hidden;
+  }
+
+.main img{
+  float:left;
+  }
+
+
+#hiden{
+  display:none;
+  }
+  
+.content{
+  background:url(../images/main_bg.jpg) repeat-y;
+  width:887px;
+  float:left;
+  height:auto;
+  overflow:hidden;
+  }
+
+.content h1{
+  font-size:24px;
+  color:#fff;
+  margin:20px auto 30px auto;
+  }
+
+.content p{
+  text-align:left;
+  width:780px;
+  margin:0 auto;
+  padding:0;
+  line-height:23px;
+  text-indent:28px;
+  font-size:14px;
+  }
+
+.content p.lb{
+  text-align:left;
+  width:752px;
+  margin:0 auto;
+  padding-left:28px;
+  text-indent:0px;
+  }
+
+.content p.esc{
+  text-align:center;
+  line-height:70px;
+  font-weight:bold;
+  text-indent:0px;
+  padding-left:3px;
+  }
+  
+.tablebg{
+  width:710px;
+  margin:0 auto;
+  padding:6px;
+  border:1px #545454 solid;
+  background:#111111;
+  color:#fff;
+  }
+
+.tablebg table{
+  border-collapse:collapse;
+  }
+  
+.tablebg table td,.tablebg table th{
+  border:1px #595959 solid;
+  line-height:35px;
+  text-align:center;
+  font-weight:normal;
+ }
+ 
+.tablebg table td{
+ background:#161616;
+ }
+
+
+.tablebg table th{
+ background:#2b2b2b;
+ }
+
+.tablebg table td.title{
+ background:#444444;
+ color:#ffae00;
+ }
+
+.tablebg table th.font,.tablebg table td.font{
+  line-height:28px;
+  text-indent:25px;
+  text-align:left;
+  padding:0 5px;
+  }
+ 
+.tablebg td img{
+  float:right;
+  margin:10px 50px 10px 0;
+  }
+  
+.zhuyi{
+  color:#FF0000;
+  }
+
+
+.tablebg table td.fonta{
+  line-height:28px;
+  text-align:left;
+  padding:0 5px;
+  padding-left:30px;
+  text-align:left;
+  text-indent:0px;
+  }

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201204/51huodong/images/btn.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "cefab4e1722cd5925063",
+  "status": "ok",
+  "parents": [
+    "3a0ebde4f643dc0f6249"
+  ],
+  "bytes": 14028,
+  "sha256": "44dd69cc859166bcd256e115bbd55054220f013d75b565e661408df835741a9b",
+  "fetchedAt": "2026-11-18T08:27:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201204/51huodong/images/btn.jpg",
+  "path": "assets/cefab4e1722cd5925063.jpg"
+}

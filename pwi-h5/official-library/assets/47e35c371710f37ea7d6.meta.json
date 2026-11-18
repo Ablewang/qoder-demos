@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1125.jpg",
+  "id": "47e35c371710f37ea7d6",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "灵爆咒",
+  "bytes": 4579,
+  "sha256": "639ffd140e4bba14e7f95e8743eae3694b22a811648930a26cc21a2b6c4ab47a",
+  "fetchedAt": "2026-11-18T08:36:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1125.jpg",
+  "path": "assets/47e35c371710f37ea7d6.jpg"
+}

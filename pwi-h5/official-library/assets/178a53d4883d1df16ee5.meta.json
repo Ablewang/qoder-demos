@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_386.jpg",
+  "id": "178a53d4883d1df16ee5",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·狂龙斩<em>（升仙）</em>",
+  "bytes": 1681,
+  "sha256": "fc887acb21ba6f52bc8821626672402477a09efa9c5a6ec47c5953270a802248",
+  "fetchedAt": "2026-11-18T08:34:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_386.jpg",
+  "path": "assets/178a53d4883d1df16ee5.jpg"
+}

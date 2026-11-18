@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_590.jpg",
+  "id": "442d1dbe8f9a8124cd7f",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·引而不发<em>（升仙）</em>",
+  "bytes": 1756,
+  "sha256": "f3e0fe76997f728e952eb3d517cfef36d9620ee3c5d7741e4ac4973e3496b32c",
+  "fetchedAt": "2026-11-18T08:34:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_590.jpg",
+  "path": "assets/442d1dbe8f9a8124cd7f.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/zengjia_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "75863b2ffe286e5836b3",
+  "status": "ok",
+  "parents": [
+    "2a57cf7d233caadf9b33"
+  ],
+  "bytes": 7808,
+  "sha256": "5b3dc00b1629f3f652dfcc27284939254c88f0002b09d5edd71748a523a6b8c3",
+  "fetchedAt": "2026-11-18T08:20:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201103/bp/images/zengjia_02.jpg",
+  "path": "assets/75863b2ffe286e5836b3.jpg"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "opening-line",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.4.2",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5213",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "test": "vitest run src",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.2",
+    "vitest": "^3.2.4"
+  }
+}

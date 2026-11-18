@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/images/jiao.png",
+  "id": "cb38932e92457bc01bff",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201409/new/style/master.css",
+  "bytes": 988,
+  "sha256": "9752a1e6d21e4f8026dba5b7863594a29247a9090b7c011dc24b9d14c884e7c4",
+  "fetchedAt": "2026-11-18T08:37:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/images/jiao.png",
+  "path": "assets/cb38932e92457bc01bff.png"
+}

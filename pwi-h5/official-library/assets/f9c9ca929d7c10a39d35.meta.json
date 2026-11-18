@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/images/prize_img1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "f9c9ca929d7c10a39d35",
+  "status": "ok",
+  "parents": [
+    "af9743181eeb7bf3ff76"
+  ],
+  "bytes": 6607,
+  "sha256": "5b6460cd05963efa3487739ad0aa358146d7f78fe0a92d9160bafd1c7bc5d25e",
+  "fetchedAt": "2026-11-18T08:21:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/sccg/images/prize_img1.jpg",
+  "path": "assets/f9c9ca929d7c10a39d35.jpg"
+}

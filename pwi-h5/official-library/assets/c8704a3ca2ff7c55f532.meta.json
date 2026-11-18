@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_614.jpg",
+  "id": "c8704a3ca2ff7c55f532",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·寒冰之矢<em>（升仙）</em>",
+  "bytes": 1716,
+  "sha256": "156b0dc1c07ae264c44a6185781db5fabfc27296d664c84fd689d2c4057c9a41",
+  "fetchedAt": "2026-11-18T08:34:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_614.jpg",
+  "path": "assets/c8704a3ca2ff7c55f532.jpg"
+}

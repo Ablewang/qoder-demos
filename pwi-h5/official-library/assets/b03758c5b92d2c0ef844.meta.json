@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_8.jpg",
+  "id": "b03758c5b92d2c0ef844",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "血祭炎爆",
+  "bytes": 1574,
+  "sha256": "deadbddf54919b4a49f09e25f01c03f9f814dc980201223dcc5dd7dc0405f0d9",
+  "fetchedAt": "2026-11-18T08:34:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_8.jpg",
+  "path": "assets/b03758c5b92d2c0ef844.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/daoju/huicheng/3.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "4ac6ff2cc47ee5cb6e86",
+  "status": "ok",
+  "parents": [
+    "255e0b2e101781ab8339"
+  ],
+  "bytes": 5010,
+  "sha256": "257ad7b44e6bebe34dbfb93900a80c881714fe4c7b97ff176468905139a7c415",
+  "fetchedAt": "2026-11-18T08:20:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/daoju/huicheng/3.jpg",
+  "path": "assets/4ac6ff2cc47ee5cb6e86.jpg"
+}

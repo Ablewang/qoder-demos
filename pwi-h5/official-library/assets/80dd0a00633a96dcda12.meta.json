@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_28028.jpg",
+  "id": "80dd0a00633a96dcda12",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "龟息咒",
+  "bytes": 3965,
+  "sha256": "41cf1f3c85d9567d3a69aa2d09ff4d79623b38aaa15984a607701faaa417a054",
+  "fetchedAt": "2026-11-18T08:36:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_28028.jpg",
+  "path": "assets/80dd0a00633a96dcda12.jpg"
+}

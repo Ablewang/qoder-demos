@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130426/10021366942989258.jpg",
+  "alt": "图片: 图5：辛苦任务的玩家.jpg",
+  "kind": "img",
+  "id": "dde4488465880e01c244",
+  "status": "ok",
+  "parents": [
+    "348ffaf55e9f3ec408f5"
+  ],
+  "bytes": 57306,
+  "sha256": "64a3702fd6e1bdda6aedf3b05bec67dc08d9515dd8bbb2f14f8a96758be5f67c",
+  "fetchedAt": "2026-11-18T08:26:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130426/10021366942989258.jpg",
+  "path": "assets/dde4488465880e01c244.jpg"
+}

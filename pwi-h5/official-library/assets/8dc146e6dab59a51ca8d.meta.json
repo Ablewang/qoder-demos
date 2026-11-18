@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/legend_01.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "8dc146e6dab59a51ca8d",
+  "status": "ok",
+  "parents": [
+    "3dc419533af3adf506da"
+  ],
+  "bytes": 149360,
+  "sha256": "17d5990a47a4943584c5c35ab4c114916db01dcbe4947b6f5ba2e61823e8db0d",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/8dc146e6dab59a51ca8d.jpg"
+}

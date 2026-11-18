@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073932421.jpg",
+  "alt": "图片: 图1：白色夏威夷女装.jpg",
+  "kind": "img",
+  "id": "8d81cbc1aa9fd6241ff3",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 37206,
+  "sha256": "c7bfd136aa4aa95a78ef6892a03f5089cffdebde2eaafd622b48156a984eb8cc",
+  "fetchedAt": "2026-11-18T08:23:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073932421.jpg",
+  "path": "assets/8d81cbc1aa9fd6241ff3.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201204/51huodong/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "3fa89eef80e4f1ee0724",
+  "status": "ok",
+  "parents": [
+    "3a0ebde4f643dc0f6249"
+  ],
+  "bytes": 2934,
+  "sha256": "3d4524d0a9bf022c30d40ca03dff41a59c5ff694a6d5ce5498abbff08bbef124",
+  "fetchedAt": "2026-11-18T08:27:10+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201204/51huodong/style/master.css",
+  "path": "assets/3fa89eef80e4f1ee0724.css"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/images/title_010_10.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "96e15f090f3826e1cbbf",
+  "status": "ok",
+  "parents": [
+    "ba2b70e5682e415ca7d4"
+  ],
+  "bytes": 3704,
+  "sha256": "015a9a1d24b5b3c49c16853c612adcc9cc97c86ab59797c93bc6dba81da64f1f",
+  "fetchedAt": "2026-11-18T08:23:24+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200807/highweapon/images/title_010_10.jpg",
+  "path": "assets/96e15f090f3826e1cbbf.jpg"
+}

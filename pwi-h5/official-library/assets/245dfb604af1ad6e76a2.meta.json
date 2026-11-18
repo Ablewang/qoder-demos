@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_463.jpg",
+  "id": "245dfb604af1ad6e76a2",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·寒露<em>（入魔）</em>",
+  "bytes": 1617,
+  "sha256": "0c93069fef188a591de0ed3cf779c28d54a0ef2a9d7c8953e9e928a92f16a86d",
+  "fetchedAt": "2026-11-18T08:34:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_463.jpg",
+  "path": "assets/245dfb604af1ad6e76a2.jpg"
+}

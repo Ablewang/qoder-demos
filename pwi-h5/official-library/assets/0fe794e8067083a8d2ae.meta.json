@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_409.jpg",
+  "id": "0fe794e8067083a8d2ae",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·断岳扫<em>（入魔）</em>",
+  "bytes": 1645,
+  "sha256": "a71bbbf7777743663b3991df0f87a9480feca7fe1c042ad5896603f493d84231",
+  "fetchedAt": "2026-11-18T08:34:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_409.jpg",
+  "path": "assets/0fe794e8067083a8d2ae.jpg"
+}

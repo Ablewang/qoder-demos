@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/group/images/tit_jiangpin.jpg",
+  "id": "628fa412b320cb6e42d5",
+  "status": "ok",
+  "parents": [
+    "782d6e4068ec737e77ac",
+    "633c5d2f329b24f8c2de",
+    "5a12e42458057bed1cfc",
+    "f3219307caf100f9392b",
+    "0e7591603c5d3aaeeb3c",
+    "15e68af62c0729593d5a",
+    "9695a000672ff0aa9760"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201111/group/style/master.css",
+  "bytes": 2061,
+  "sha256": "2e6134c262578b5f2d48302b1487e830809f9b471ee59cb05eb973ad6e7e93dc",
+  "fetchedAt": "2026-11-18T08:39:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/group/images/tit_jiangpin.jpg",
+  "path": "assets/628fa412b320cb6e42d5.jpg"
+}

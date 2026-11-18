@@ -1,0 +1,388 @@
+{
+  "id": "79d7a9f0b0425180fdfd",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq06.htm",
+  "title": "精练宝典 -《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5",
+    "f3fba696107bbedaf3ea",
+    "de6ded2fb4eb68ce525c",
+    "9a0413ce0568e20f31a3",
+    "02e5d3da43fb43417c6a",
+    "6dfa9feea78ce5fc8134",
+    "a0d736b1f895c8a9ac74",
+    "7423dd05d3a0993cf2d1",
+    "79d7a9f0b0425180fdfd",
+    "8dc6c6b7c0e7ba9af483",
+    "a70f75ea8408096665b5",
+    "6ef60683af49b980d73c"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "f6c4e05b14545f88c1e33b8d73dfe9eda26a303e6f9666995770ba464e3931c7",
+  "bytes": 7809,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/79d7a9f0b0425180fdfd.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "如何进行装备精练？\n精练辅助道具都有什么？\n怎样获得高级龙珠？\n如何给装备进行打孔？\n怎么用天人合一符绑定装备？\n如何进行装备精练转移？\n如何给装备镶嵌魂石？\n怎么获得高级魂石？\n如何进行装备精练转移？\n带上需要转移的两套装备前往各主城“完美商城专员”处选择“扭转乾坤”，即可开启装备精练转移界面。\n将需要精炼转移的两件装备放到界面上，同时身上有足够的乾坤石，即可完成装备精练转移。\n转移规则：\n1、原有装备的精炼等级必须高过新装备，不然不能转移，主要是防止玩家将两件装备的位置放错了，而错误进行精炼转移，出现不必要的损失。\n2、如果原有装备是天人合一状态的，那么它的精炼等级只能转移给一件天人合一的装备。\n3、如果原有装备没有天人合一状态，那么它的精炼系统可以任意转移给其他装备，前提是满足第一个要求。\n另外玩家要特别注意，精炼转移并不会对精炼等级进行叠加，也就是说如果新装备已经有精炼等级，那么可行的精炼转移都会在成功操作后，覆盖这个精炼等级。\n附：“扭转乾坤”各等级转移所需要的乾坤石个数。\n进行转移的精炼等级\n所需乾坤石个数\n进行转移的精炼等级\n所需乾坤石个数\n1\n1\n7\n100\n2\n5\n8\n150\n3\n12\n9\n250\n4\n28\n10\n400\n5\n60\n11\n650\n6\n80\n12\n1000",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "进行转移的精炼等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需乾坤石个数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "进行转移的精炼等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需乾坤石个数",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "150",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "28",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "400",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "650",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/client/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://pay.wanmei.com/e/epage/setup_2_wanmei2.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq.htm",
+      "label": "如何进行装备精练？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq02.htm",
+      "label": "精练辅助道具都有什么？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq03.htm",
+      "label": "怎样获得高级龙珠？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq04.htm",
+      "label": "如何给装备进行打孔？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq05.htm",
+      "label": "怎么用天人合一符绑定装备？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq06.htm",
+      "label": "如何进行装备精练转移？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq07.htm",
+      "label": "如何给装备镶嵌魂石？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq08.htm",
+      "label": "怎么获得高级魂石？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/strenthen.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/soulstone.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/compare.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq06_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/nav.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/none.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/sel_new.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq06_01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq06_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p></div>\n<div>\n<div>\n<div>\n    <div>\n                <div></div>\n                <div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57b9674c5c01d917be6e.gif\" alt=\"完美国际\" loading=\"lazy\"></a></div>\n    </div>\n    \n    <div>\n    \t<img src=\"assets/0bce2fe6a932385c58fb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n        \t<a href=\"https://w2i.wanmei.com/main.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"https://w2i.wanmei.com/download/client/index.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://pay.wanmei.com/e/epage/setup_2_wanmei2.html\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://bbs.w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t\n\n    </div>\n    <div>\n    \t<img src=\"assets/2a25d6aef057604b7df5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n     \t<img src=\"assets/7eca6700ab4096d269a4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    \t<img src=\"assets/a9fe6690a68ffe0b0845.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    \t<img src=\"assets/f909a3dc6e734dfbdc54.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    </div>\n    \n    <div>\n    \t<img src=\"assets/68c77d38d4a1284b4ac1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    </div>\n    \n    <div>\n    \t<div>\n            <div>\n            <div>\n            <div>\n                <div>\n                    <img src=\"assets/fc492e321e2197e54d91.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                </div>\n                <div>\n                      <ul>\n                        <li><a href=\"#page=9a0413ce0568e20f31a3\">如何进行装备精练？</a></li>\n                    \t<li><a href=\"#page=02e5d3da43fb43417c6a\">精练辅助道具都有什么？</a></li>\n                    \t<li><a href=\"#page=6dfa9feea78ce5fc8134\">怎样获得高级龙珠？</a></li>\n                    \t<li><a href=\"#page=a0d736b1f895c8a9ac74\">如何给装备进行打孔？</a></li>\n                    \t<li><a href=\"#page=7423dd05d3a0993cf2d1\">怎么用天人合一符绑定装备？</a></li>\n                    \t<li><a href=\"#page=79d7a9f0b0425180fdfd\">如何进行装备精练转移？</a></li>\n                    \t<li><a href=\"#page=8dc6c6b7c0e7ba9af483\">如何给装备镶嵌魂石？</a></li>\n                    \t<li><a href=\"#page=a70f75ea8408096665b5\">怎么获得高级魂石？</a></li>\n                    \t\n\n                    </ul>\n                    <div></div>\n                    <dl>\n                    <dt><a href=\"#page=6ef60683af49b980d73c\"><img src=\"assets/8232fb87f7bf54fafce3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=ddb9fc3f70957c28e9b5\"><img src=\"assets/7970e7d6beb0e016b666.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=a617111463f23ad7d400\"><img src=\"assets/7d9390847630567c4122.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=98f433995184914eec55\"><img src=\"assets/94315e8fa52c660fa97b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    </dl>\n                </div>\n             </div>\n            </div>\n            </div>\n        </div>\n        <div>\n        \t\n            <div>\n            <div>\n            <div>\n<p><span>如何进行装备精练转移？</span></p>\n<p> </p>\n<p>　　带上需要转移的两套装备前往各主城“完美商城专员”处选择“扭转乾坤”，即可开启装备精练转移界面。</p>\n<p> </p>\n<p><a href=\"https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq06_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/dd30a3eeafb1e2a6d4ad.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\n<p> </p>\n<p>　　将需要精炼转移的两件装备放到界面上，同时身上有足够的乾坤石，即可完成装备精练转移。</p>\n<p> </p>\n<p><img src=\"assets/560f1f6d3040511b3134.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\n<p> </p>\n<p>　　转移规则：</p>\n<p> </p>\n<p>　　1、原有装备的精炼等级必须高过新装备，不然不能转移，主要是防止玩家将两件装备的位置放错了，而错误进行精炼转移，出现不必要的损失。</p>\n<p> </p>\n<p>　　2、如果原有装备是天人合一状态的，那么它的精炼等级只能转移给一件天人合一的装备。</p>\n<p> </p>\n<p>　　3、如果原有装备没有天人合一状态，那么它的精炼系统可以任意转移给其他装备，前提是满足第一个要求。</p>\n<p> </p>\n<p>　　另外玩家要特别注意，精炼转移并不会对精炼等级进行叠加，也就是说如果新装备已经有精炼等级，那么可行的精炼转移都会在成功操作后，覆盖这个精炼等级。</p>\n<p> </p>\n<p>　　附：“扭转乾坤”各等级转移所需要的乾坤石个数。</p>\n<p> </p>\n<table>\n  <tr>\n    <td><p>进行转移的精炼等级</p></td>\n    <td><p>所需乾坤石个数</p></td>\n    <td><p>进行转移的精炼等级</p></td>\n    <td><p>所需乾坤石个数</p></td>\n  </tr>\n  <tr>\n    <td><p>1</p></td>\n    <td><p>1</p></td>\n    <td><p>7</p></td>\n    <td><p>100</p></td>\n  </tr>\n  <tr>\n    <td><p>2</p></td>\n    <td><p>5</p></td>\n    <td><p>8</p></td>\n    <td><p>150</p></td>\n  </tr>\n  <tr>\n    <td><p>3</p></td>\n    <td><p>12</p></td>\n    <td><p>9</p></td>\n    <td><p>250</p></td>\n  </tr>\n  <tr>\n    <td><p>4</p></td>\n    <td><p>28</p></td>\n    <td><p>10</p></td>\n    <td><p>400</p></td>\n  </tr>\n  <tr>\n    <td><p>5</p></td>\n    <td><p>60</p></td>\n    <td><p>11</p></td>\n    <td><p>650</p></td>\n  </tr>\n  <tr>\n    <td><p>6</p></td>\n    <td><p>80</p></td>\n    <td><p>12</p></td>\n    <td><p>1000</p></td>\n  </tr>\n</table>\n<p> </p>\n            </div>\n            </div>\n            </div>\n            \n        </div>\n    </div>\n\n</div>\n</div>\n</div>\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n<div>\n \n\n</div>\n",
+  "dataPath": "pages/79d7a9f0b0425180fdfd.json",
+  "imageCount": 15,
+  "tableCount": 1,
+  "downloadPath": "downloads/79d7a9f0b0425180fdfd.js"
+}

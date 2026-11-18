@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_27675.jpg",
+  "id": "01c384cfd08cce1a575f",
+  "status": "failed",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "狂·土崩咒<em>（入魔）</em>",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:36:40+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/rexiao/jinglian/8.jpg",
+  "alt": "五星龙珠",
+  "kind": "img",
+  "id": "4a548a70237e2a85375a",
+  "status": "ok",
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "bytes": 5405,
+  "sha256": "afe869a4ab8d049ce6301a30bd9c24029105c2c3d2cb0b900ad65a25234d422e",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/4a548a70237e2a85375a.jpg"
+}

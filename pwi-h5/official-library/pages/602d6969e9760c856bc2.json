@@ -1,0 +1,349 @@
+{
+  "id": "602d6969e9760c856bc2",
+  "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/detail_12.htm",
+  "title": "精灵战歌战斗的革命-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 1,
+  "parents": [
+    "261a842e117a8e468d05",
+    "fdabf0da880505a6bb70"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "55ef9eb34121c802bb3aec688ba6c89777ea9e6ba735020bede9b6f784b2245b",
+  "bytes": 6940,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/602d6969e9760c856bc2.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "元素精灵的装备都有什么？\n玩家可在各大主城的新NPC“五行地巡使”处购得元素精灵装备。\n元素精灵的装备分为灵玉、灵镜、灵珠、灵符，每种各对应一个专属装备栏，元素精灵的装备一旦装上就无法拿下来，只能选择销毁或替换新的装备。\n销毁或替换装备时需在各大主城的新NPC“五行地巡使”处进行。\n类型\n名称\n等级限制\n属性\n价格\n灵玉\n无亥玉\n元素精灵29\n灵力+1\n1000000\n引雷石\n元素精灵69\n力量+1 灵力+1\n3000000\n灵符\n血纹符\n元素精灵9\n力量+1\n1000000\n仙影符\n元素精灵49\n力量+1 敏捷+1\n3000000\n灵镜\n阴阳镜\n元素精灵19\n敏捷+1\n1000000\n冰盘镜\n元素精灵59\n灵力+1 体质+1\n3000000\n灵珠\n九洗珠\n元素精灵39\n体质+1\n1000000\n澈影珠\n元素精灵79\n力量+1 体质+1\n3000000\n玩家打开元素精灵的操作界面后即可看到装备栏\n与新NPC“五行地巡使”对话，选择元素精灵拆卸装备，即可进入装备拆卸界面。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "价格",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵玉",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "无亥玉",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "引雷石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+1 灵力+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵符",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "血纹符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "仙影符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+1 敏捷+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵镜",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "阴阳镜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冰盘镜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+1 体质+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵珠",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "九洗珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "澈影珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元素精灵79",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+1 体质+1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/iframe/left.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/images/btn_back.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/title02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/side01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/12_1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/12_2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/side02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/images/con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200903/jl/xiaochangshi/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p></div>\n\n<div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200903/jl/iframe/header.htm</a></p>\n\t</div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200903/jl/iframe/left.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200903/jl/iframe/left.htm</a></p>\t\t\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div><a href=\"#page=261a842e117a8e468d05\"><img src=\"assets/b0404348d056df492827.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n\t\t\t</div>\n\t\t\t<img src=\"assets/4425097046f4413d891a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\t<div>\n\t\t\t\t<div><img src=\"assets/7461645b6ce10593d3a6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t\t\t<div>\n                <p><strong>元素精灵的装备都有什么？</strong></p>\n                <p>　　玩家可在各大主城的新NPC“五行地巡使”处购得元素精灵装备。</p>\n                <p>　　元素精灵的装备分为灵玉、灵镜、灵珠、灵符，每种各对应一个专属装备栏，元素精灵的装备一旦装上就无法拿下来，只能选择销毁或替换新的装备。</p>\n                <p>　　销毁或替换装备时需在各大主城的新NPC“五行地巡使”处进行。</p>\n                <p>　　</p>\n                <table>\n                  <tr>\n                    <td><p>类型 </p></td>\n                    <td><p>名称 </p></td>\n                    <td><p>等级限制 </p></td>\n                    <td><p>属性 </p></td>\n                    <td><p>价格 </p></td>\n                  </tr>\n                  <tr>\n                    <td rowspan=\"2\"><p>灵玉 </p></td>\n                    <td><p>无亥玉 </p></td>\n                    <td><p>元素精灵29 </p></td>\n                    <td><p>灵力+1 </p></td>\n                    <td><p>1000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td><p>引雷石 </p></td>\n                    <td><p>元素精灵69 </p></td>\n                    <td><p>力量+1 灵力+1 </p></td>\n                    <td><p>3000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td rowspan=\"2\"><p>灵符 </p></td>\n                    <td><p>血纹符 </p></td>\n                    <td><p>元素精灵9 </p></td>\n                    <td><p>力量+1 </p></td>\n                    <td><p>1000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td><p>仙影符 </p></td>\n                    <td><p>元素精灵49 </p></td>\n                    <td><p>力量+1 敏捷+1 </p></td>\n                    <td><p>3000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td rowspan=\"2\"><p>灵镜 </p></td>\n                    <td><p>阴阳镜 </p></td>\n                    <td><p>元素精灵19 </p></td>\n                    <td><p>敏捷+1 </p></td>\n                    <td><p>1000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td><p>冰盘镜 </p></td>\n                    <td><p>元素精灵59 </p></td>\n                    <td><p>灵力+1 体质+1 </p></td>\n                    <td><p>3000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td rowspan=\"2\"><p>灵珠 </p></td>\n                    <td><p>九洗珠 </p></td>\n                    <td><p>元素精灵39 </p></td>\n                    <td><p>体质+1 </p></td>\n                    <td><p>1000000 </p></td>\n                  </tr>\n                  <tr>\n                    <td><p>澈影珠 </p></td>\n                    <td><p>元素精灵79 </p></td>\n                    <td><p>力量+1 体质+1 </p></td>\n                    <td><p>3000000 </p></td>\n                  </tr>\n                </table>\n                <p>　　</p>\n                <p>　　玩家打开元素精灵的操作界面后即可看到装备栏</p>\n<table>\n  <tr>\n    <td><img src=\"assets/ab73de155412c69702fc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n                <p>　　</p>\n                <p>　　与新NPC“五行地巡使”对话，选择元素精灵拆卸装备，即可进入装备拆卸界面。</p>\n<table>\n  <tr>\n    <td><img src=\"assets/68ffdee19fa05425aa48.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table> \n                \n\t\t\t\t</div>\n\t\t\t  <div><img src=\"assets/cde6f4d3e8bb0e15596b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t\t</div>\n\t\t\t<img src=\"assets/68cb742bb426a8f38c40.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t</div>\n\t\t<div></div>\n\t</div>\n\t<div></div>\n</div>\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n<div>\n \n\n</div>\n",
+  "dataPath": "pages/602d6969e9760c856bc2.json",
+  "imageCount": 7,
+  "tableCount": 3,
+  "downloadPath": "downloads/602d6969e9760c856bc2.js"
+}

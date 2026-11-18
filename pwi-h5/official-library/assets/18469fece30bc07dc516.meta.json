@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/chengzhan_01s.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "18469fece30bc07dc516",
+  "status": "ok",
+  "parents": [
+    "8857a710b4ffbdb026f0"
+  ],
+  "bytes": 53797,
+  "sha256": "4fa9fa215acaded51f68b0a2a77ceafde029314ed019c19f0eb9ef6f473711dc",
+  "fetchedAt": "2026-11-18T08:21:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/cz/images/chengzhan_01s.jpg",
+  "path": "assets/18469fece30bc07dc516.jpg"
+}

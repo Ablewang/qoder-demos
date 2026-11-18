@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnsysyoff.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "d52f658135c57a177b5b",
+  "status": "ok",
+  "parents": [
+    "021c1096783a48a8af57",
+    "2227de54653f448544fb",
+    "2cd9ed5340f45ffa9774",
+    "52cc38545b796715aef9"
+  ],
+  "bytes": 3451,
+  "sha256": "ae7ee54c33ca276de3e615eacfb543db0cb657c249825a3ac0ef911b96ad4de3",
+  "fetchedAt": "2026-11-18T08:23:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnsysyoff.jpg",
+  "path": "assets/d52f658135c57a177b5b.jpg"
+}

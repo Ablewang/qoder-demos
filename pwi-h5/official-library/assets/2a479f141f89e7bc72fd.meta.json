@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/kuaile_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "2a479f141f89e7bc72fd",
+  "status": "ok",
+  "parents": [
+    "98ab902fa67668dcc0e7"
+  ],
+  "bytes": 3913,
+  "sha256": "8d72212e710c9f6f425b2f6fd0fd210c3084a1092b5e7ec5b3bc2dae4ecabc60",
+  "fetchedAt": "2026-11-18T08:22:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/kuaile_button.jpg",
+  "path": "assets/2a479f141f89e7bc72fd.jpg"
+}

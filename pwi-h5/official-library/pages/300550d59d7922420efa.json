@@ -1,0 +1,99 @@
+{
+  "id": "300550d59d7922420efa",
+  "url": "https://event51.wanmei.com/w2i/201301/year/sub02.htm",
+  "title": "龙蛇共舞2013 贺岁活动五重奏 -《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 6,
+  "parents": [
+    "f346ebcd02289d6be1e8",
+    "8850afce6df57f68c619",
+    "300550d59d7922420efa",
+    "fa20936b2f13bae0066f",
+    "af7452f32febc01ba799",
+    "bf1c1062ff301d05bd10"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201301/year/sub02.htm",
+  "fetchedAt": "2026-11-18T08:17:13+00:00",
+  "sha256": "6c598013fb1d892572e2e67c65f06721365393476058b17feda5f3ff237b17cb",
+  "bytes": 5825,
+  "rawPath": "raw/300550d59d7922420efa.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "春节红包大作战\n龙蛇起陆贺新年\n五小神兽闹新春\n春节万里连亲情\n精彩线上活动\n活动介绍\n活动时间：1月23日-2月27日\n第一阶段——猜谜\n在企鹅码头（452，215）周围的6个地点出现一定数量的物品。玩家与NPC领取任务后按照提示赶到目标区域，数清谜题所要求物品数量后在NPC处回答问题，若正确则获得奖励。每次猜谜任务限时3分钟。\n每完成猜谜任务会获得1个凭证：【旗语】，用旗语可换取1个【仙风天道】或【魔狱阎浮】（限时2小时），及兑奖凭证【诗歌原稿】。\n任务可重复领取。\n第二阶段——转化【太初之树】\n每获得一个旗语会增加数点元气值，元气值超过2013后，进入第二阶段。\n在企鹅码头北部会出现6棵【太初之树】，分布在固定区域。玩家使用持有的【仙风天道】或【魔狱阎浮】对【太初之树】使用后，可改变大树的形态。\n大树拥有仙/魔两种属性，被【仙风天道】或【魔狱阎浮】击中后，对应的属性会发生变化。\n被【仙风天道】击中后会增加仙魔属性，相反被【魔狱阎浮】击中后会减少仙魔属性。当属性为正数时代表其为仙，为负数时代表其为魔。转化大树所需仙/魔属性值为60/-60。\n大树每被击中一定数量的【仙风天道】或【魔狱阎浮】，会出现相应属性的光效。\n仙光效：仙魔属性为正数时出现，依属性提高光效会更华丽。\n魔光效：仙魔属性为负数时出现，依属性提高光效会更华丽。\n玩家将太初之树转换为仙/魔的数量达到要求后，会召出boss【妖蛇•摩罗】。\n第三阶段：击杀boss【妖蛇•摩罗】\n将Boss击杀后，Boss会有掉落奖励，同时也会出现最终的领奖npc，凭借手中的【诗歌原稿】获得奖励。领奖npc持续时间为10分钟。\n若仙、魔树的比例达到要求，则可在npc处领取额外奖励，若未达到要求，或10分钟已到太初之树仍未转换成功，则npc处不会出现额外奖励。\n活动奖励：\n每交纳一张【诗歌原稿】即可在【恢复容貌的谢孙之】处随机获得以下物品：\n若在活动第二阶段完美达成了太初之树的仙魔比例，则可在npc处额外获得按等级分配的经验与元神奖励。\n（以上资料图片仅供参考，请以游戏内实际内容为准！）",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newservicer/20130105/68942.shtml",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newservicer/20130114/69013.shtml",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/sub01.htm",
+      "label": "春节红包大作战",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/sub02.htm",
+      "label": "龙蛇起陆贺新年",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/sub03.htm",
+      "label": "五小神兽闹新春",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/sub04.htm",
+      "label": "春节万里连亲情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/sub05.htm",
+      "label": "精彩线上活动",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/images/img01_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/images/img01_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/images/img01_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/130115/10021358239122566.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201301/year/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div></div>\r\n<div>\r\n\t<div>\r\n\t\t\r\n\t\t<img src=\"assets/ea24e96f3afcf7992662.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/e497743c960cce1acdd3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/9a8c9b741a6bb8016b7e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        \r\n          \r\n          \r\n        \r\n\t\t<div>\r\n\t\t\t<div>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><a href=\"#page=8850afce6df57f68c619\">春节红包大作战</a></li>\r\n\t\t\t\t\t<li><a href=\"#page=300550d59d7922420efa\">龙蛇起陆贺新年</a></li>\r\n\t\t\t\t\t<li><a href=\"#page=fa20936b2f13bae0066f\">五小神兽闹新春</a></li>\r\n\t\t\t\t\t<li><a href=\"#page=af7452f32febc01ba799\">春节万里连亲情</a></li>\r\n\t\t\t\t\t<li><a href=\"#page=bf1c1062ff301d05bd10\">精彩线上活动</a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t\t<div>\r\n\t\t\t\t<h2>活动介绍</h2>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<p>活动时间：1月23日-2月27日</p>\r\n\t\t\t\t\t<p>第一阶段——猜谜</p>\r\n                    <p>在企鹅码头（452，215）周围的6个地点出现一定数量的物品。玩家与NPC领取任务后按照提示赶到目标区域，数清谜题所要求物品数量后在NPC处回答问题，若正确则获得奖励。每次猜谜任务限时3分钟。</p>\r\n                    <p>每完成猜谜任务会获得1个凭证：【旗语】，用旗语可换取1个【仙风天道】或【魔狱阎浮】（限时2小时），及兑奖凭证【诗歌原稿】。</p>\r\n                    <p>任务可重复领取。</p>\r\n                    <p>第二阶段——转化【太初之树】 </p>\r\n                    <p>每获得一个旗语会增加数点元气值，元气值超过2013后，进入第二阶段。</p>\r\n                    <p>在企鹅码头北部会出现6棵【太初之树】，分布在固定区域。玩家使用持有的【仙风天道】或【魔狱阎浮】对【太初之树】使用后，可改变大树的形态。</p>\r\n                    <p>大树拥有仙/魔两种属性，被【仙风天道】或【魔狱阎浮】击中后，对应的属性会发生变化。</p>\r\n                    <p>被【仙风天道】击中后会增加仙魔属性，相反被【魔狱阎浮】击中后会减少仙魔属性。当属性为正数时代表其为仙，为负数时代表其为魔。转化大树所需仙/魔属性值为60/-60。</p>\r\n                    <p>大树每被击中一定数量的【仙风天道】或【魔狱阎浮】，会出现相应属性的光效。</p>\r\n                    <p>仙光效：仙魔属性为正数时出现，依属性提高光效会更华丽。</p>\r\n                    <p>魔光效：仙魔属性为负数时出现，依属性提高光效会更华丽。</p>\r\n                    <p>玩家将太初之树转换为仙/魔的数量达到要求后，会召出boss【妖蛇•摩罗】。</p>\r\n                    <p>第三阶段：击杀boss【妖蛇•摩罗】 </p>\r\n                    <p>将Boss击杀后，Boss会有掉落奖励，同时也会出现最终的领奖npc，凭借手中的【诗歌原稿】获得奖励。领奖npc持续时间为10分钟。</p>\r\n                    <p>若仙、魔树的比例达到要求，则可在npc处领取额外奖励，若未达到要求，或10分钟已到太初之树仍未转换成功，则npc处不会出现额外奖励。</p>\r\n                    <p>活动奖励：</p>\r\n                  <p>每交纳一张【诗歌原稿】即可在【恢复容貌的谢孙之】处随机获得以下物品： </p>\r\n                  <p><img src=\"assets/4da792f64a12d915a90a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                  <p>若在活动第二阶段完美达成了太初之树的仙魔比例，则可在npc处额外获得按等级分配的经验与元神奖励。</p>\r\n                    <p>（以上资料图片仅供参考，请以游戏内实际内容为准！）</p>\r\n\r\n\t\t\t\t\t<div></div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/300550d59d7922420efa.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/300550d59d7922420efa.js"
+}

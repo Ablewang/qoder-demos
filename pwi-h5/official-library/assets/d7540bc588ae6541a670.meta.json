@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_382.jpg",
+  "id": "d7540bc588ae6541a670",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·龙现<em>（升仙）</em>",
+  "bytes": 1720,
+  "sha256": "5fa5f408c4e2c7247f89000a48564d36e6d1f12d582a1477528b5180fe7738a1",
+  "fetchedAt": "2026-11-18T08:34:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_382.jpg",
+  "path": "assets/d7540bc588ae6541a670.jpg"
+}

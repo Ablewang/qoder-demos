@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_479.jpg",
+  "id": "3ae2d5ad579baed0e04d",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·缩地术<em>（入魔）</em>",
+  "bytes": 1679,
+  "sha256": "90437ccfb6bdbf3df5d5f40516c0295015950168e1e85ad5f59166297c5a2a32",
+  "fetchedAt": "2026-11-18T08:34:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_479.jpg",
+  "path": "assets/3ae2d5ad579baed0e04d.jpg"
+}

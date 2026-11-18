@@ -1,0 +1,377 @@
+{
+  "id": "ecd8cac8cda80c901799",
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/index.htm",
+  "title": "双旦贺岁 跨年狂欢 七重活动献礼 享最丰盛饕餮大餐 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 5,
+  "parents": [
+    "1380aebe03847684e6f6",
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/index.htm",
+  "fetchedAt": "2026-11-18T08:17:00+00:00",
+  "sha256": "5cbc77650f14ae9c217e4489aa7ed029907d58b91421f25609e2f23bdeefe919",
+  "bytes": 8901,
+  "rawPath": "raw/ecd8cac8cda80c901799.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "缤纷圣诞夜\n圣诞贴别活动\n元旦特别活动\n精彩线上活动\n电台有声任务\nGT语音\n妖族变身\n关闭\n活动时间\n9月28日-10月10日\n活动介绍\n活动简介：每天16:00-19:00玩家可前往祖龙城南（545.633）、城西（531.649）、城北（559.671）找寻NPC“赛跑活动大使·神行小怪兽”参与活动。（该活动因为小怪兽们太焦急，一般都提前五分钟开启）\n活动竞猜：每轮比赛开启前5分钟押宝NPC“小怪兽保育员”将会出现，玩家可进行押宝，选择您认为本轮赛跑获得第一名的小怪兽，赛跑结束后玩家可凭借背包中的道具领取相应奖励。\n比赛时间：第一轮16:30开启，第二轮17:30开启，第三轮18:30开启。\n活动开始：比赛开始后五名小怪兽将沿赛道进行奔跑，并随机给自己上加速等buff。玩家在此期间“可对”小怪兽使用各种技能进行攻击，但只有减速技能有效。为了让你选中的小神兽先人一步到达终点，玩家可选择性对其他小怪兽进行减速的影响。\n活动奖励\n每轮押宝正确的玩家除了可获得大量经验和元神奖励之外，还将有机会获得完美号角、结丹石、传送石、以及飞行器和时装奖励（限时一周）。\n关闭\n十一长假期间，《完美国际》每天开放10小时双倍经验，3小时双倍掉落，回馈勇士们一路的支持，让你收礼收到手软，一定不要错过！\n双倍课程表\n活动名称\n开启日期\n开启时间\n全服双倍掉落\n9月30日-10月7日\n每天19:00-22:00开启\n全服双倍经验\n9月30日-10月7日\n每天12:00-22:00开启\n关闭\n十一长假期间，《完美国际》将开启最受玩家喜爱的“怪物攻城”、“平妖令”及“灵机一问”活动，轻松齐参与，大奖等你拿！\n活动早知道\n活动名称\n开启日期\n开启时间\n怪物攻城\n9月30日、10月6日、10月7日\n每天16:00-18:00开启\n灵机一问\n9月30日-10月7日\n每天20:00-20:30开启\n平妖令\n9月30日-10月7日\n每天20:30-21:30开启",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "双倍课程表",
+            "rowspan": "1",
+            "colspan": "3"
+          }
+        ],
+        [
+          {
+            "text": "活动名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "开启日期",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "开启时间",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "全服双倍掉落",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月30日-10月7日",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "每天19:00-22:00开启",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "全服双倍经验",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月30日-10月7日",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "每天12:00-22:00开启",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "活动早知道",
+            "rowspan": "1",
+            "colspan": "3"
+          }
+        ],
+        [
+          {
+            "text": "活动名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "开启日期",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "开启时间",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怪物攻城",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月30日、10月6日、10月7日",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "每天16:00-18:00开启",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵机一问",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月30日-10月7日",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "每天20:00-20:30开启",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "平妖令",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月30日-10月7日",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "每天20:30-21:30开启",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://passport.wanmei.com/fastreg/regbonusdefii.jsp?to=w2i&css=www.wanmei.com/public/style/fastreg/skin3.css&c=GJCWNMIDYJFUM5&g=3",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newservicer/20121213/68704.shtml",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/inside.htm?=text1",
+      "label": "缤纷圣诞夜",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/inside.htm?=text2",
+      "label": "圣诞贴别活动",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/inside.htm?=text3",
+      "label": "元旦特别活动",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/inside.htm?=text4",
+      "label": "精彩线上活动",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/inside.htm?=text5",
+      "label": "电台有声任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://gt.17y.com/",
+      "label": "GT语音",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/inside.htm?=text7",
+      "label": "妖族变身",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic2.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic3.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic4.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic5.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic6.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic7.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/cover120809/reg_slideout.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/cover120809/reg_slidein.png",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/index_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic-07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/js/shadowbox/shadowbox.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/js/shadowbox/shadowbox.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/js/jquery.bxSlider.min.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n    <div>\r\n        <div>\r\n            <img src=\"assets/d7ba21bbcf5cf892ec4a.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/d627c17931cefd8275de.png\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        </div>\r\n        <div>\r\n            <p class=\"source-reference\">嵌入资源：<a href=\"http://passport.wanmei.com/fastreg/regbonusdefii.jsp?to=w2i&amp;css=www.wanmei.com/public/style/fastreg/skin3.css&amp;c=GJCWNMIDYJFUM5&amp;g=3\" rel=\"noreferrer\">http://passport.wanmei.com/fastreg/regbonusdefii.jsp?to=w2i&amp;css=www.wanmei.com/public/style/fastreg/skin3.css&amp;c=GJCWNMIDYJFUM5&amp;g=3</a></p>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div></div>\r\n<div>\r\n<div>\r\n\t<div>\r\n    \t<div>\r\n\t\t\t\r\n        \t<img src=\"assets/02bb08ece96bb1c2dda1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/41a5494c8e2ad2a6a0b6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/43f641b31820a835307d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/7780cdc6e400fa0d4e35.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            \r\n              \r\n            \r\n            <img src=\"assets/0e4a7c9918ff5b3b667f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/661da65d1d0c017a743a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/4d48470b2c1073dd2d05.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/89152fa4a3476dfede2f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/837ddf78b20226a8d0c9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/bcf79dbbe3a34f517cc4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<a href=\"#page=a3411beada614b0dff34\">缤纷圣诞夜</a>\r\n\t\t\t<a href=\"#page=5bf38054437c2d3c96c8\">圣诞贴别活动</a>\r\n\t\t\t<a href=\"#page=09ca9e4e6993f099fb3d\">元旦特别活动</a>\r\n\t\t\t<a href=\"#page=d16f0749d19d5c7c7e72\">精彩线上活动</a>\r\n\t\t\t<a href=\"#page=cfd405b724b0669810af\">电台有声任务</a>\r\n\t\t\tGT语音\r\n\t\t\t<a href=\"#page=c6558e3e22eac12b4e94\">妖族变身</a>\r\n\t  </div>\r\n\t\t<div>\r\n\t\t\t<span>关闭</span>\r\n\t\t\t<div>\r\n\t\t\t\t<h2>活动时间</h2>\r\n\t\t\t\t<p>9月28日-10月10日</p>\r\n\t\t\t\t<h2>活动介绍</h2>\r\n\t\t\t\t<p>活动简介：每天16:00-19:00玩家可前往祖龙城南（545.633）、城西（531.649）、城北（559.671）找寻NPC“赛跑活动大使·神行小怪兽”参与活动。（该活动因为小怪兽们太焦急，一般都提前五分钟开启）</p>\r\n\t\t\t\t<p><strong>活动竞猜：</strong>每轮比赛开启前5分钟押宝NPC“小怪兽保育员”将会出现，玩家可进行押宝，选择您认为本轮赛跑获得第一名的小怪兽，赛跑结束后玩家可凭借背包中的道具领取相应奖励。\r\n\t\t\t\t比赛时间：第一轮16:30开启，第二轮17:30开启，第三轮18:30开启。</p>\r\n\t\t\t\t<p><strong>活动开始：</strong>比赛开始后五名小怪兽将沿赛道进行奔跑，并随机给自己上加速等buff。玩家在此期间“可对”小怪兽使用各种技能进行攻击，但只有减速技能有效。为了让你选中的小神兽先人一步到达终点，玩家可选择性对其他小怪兽进行减速的影响。</p>\r\n\t\t\t\t<h2>活动奖励</h2>\r\n\t\t\t\t<p>每轮押宝正确的玩家除了可获得大量经验和元神奖励之外，还将有机会获得完美号角、结丹石、传送石、以及飞行器和时装奖励（限时一周）。</p>\r\n\t\t\t</div>\r\n\t\t\t<div>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-01.jpg]</span></a></li>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic2.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-02.jpg]</span></a></li>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic3.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-03.jpg]</span></a></li>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic4.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-04.jpg]</span></a></li>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic5.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-05.jpg]</span></a></li>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic6.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-06.jpg]</span></a></li>\r\n\t\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic7.jpg\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201212/christmas/images/pic-07.jpg]</span></a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<span>关闭</span>\r\n\t\t\t<p>十一长假期间，《完美国际》每天开放10小时双倍经验，3小时双倍掉落，回馈勇士们一路的支持，让你收礼收到手软，一定不要错过！</p>\r\n\t\t\t<table>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<th colspan=\"3\">双倍课程表\r\n\t\t\t\t</th></tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td><strong>活动名称</strong></td>\r\n\t\t\t\t\t<td><strong>开启日期</strong></td>\r\n\t\t\t\t\t<td><strong>开启时间</strong></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>全服双倍掉落</td>\r\n\t\t\t\t\t<td>9月30日-10月7日</td>\r\n\t\t\t\t\t<td>每天19:00-22:00开启</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>全服双倍经验</td>\r\n\t\t\t\t\t<td>9月30日-10月7日</td>\r\n\t\t\t\t\t<td>每天12:00-22:00开启</td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<span>关闭</span>\r\n\t\t\t<p>十一长假期间，《完美国际》将开启最受玩家喜爱的“怪物攻城”、“平妖令”及“灵机一问”活动，轻松齐参与，大奖等你拿！</p>\r\n\t\t\t<table>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<th colspan=\"3\">活动早知道\r\n\t\t\t\t</th></tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td><strong>活动名称</strong></td>\r\n\t\t\t\t\t<td><strong>开启日期</strong></td>\r\n\t\t\t\t\t<td><strong>开启时间</strong></td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>怪物攻城</td>\r\n\t\t\t\t\t<td>9月30日、10月6日、10月7日</td>\r\n\t\t\t\t\t<td>每天16:00-18:00开启</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>灵机一问</td>\r\n\t\t\t\t\t<td>9月30日-10月7日</td>\r\n\t\t\t\t\t<td>每天20:00-20:30开启</td>\r\n\t\t\t\t</tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t\t<td>平妖令</td>\r\n\t\t\t\t\t<td>9月30日-10月7日</td>\r\n\t\t\t\t\t<td>每天20:30-21:30开启</td>\r\n\t\t\t\t</tr>\r\n\t\t\t</table>\r\n\t\t\t\r\n\t\t</div>\r\n\t\t\r\n    </div>\r\n</div>\r\n</div>\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/ecd8cac8cda80c901799.json",
+  "imageCount": 19,
+  "tableCount": 2,
+  "downloadPath": "downloads/ecd8cac8cda80c901799.js"
+}

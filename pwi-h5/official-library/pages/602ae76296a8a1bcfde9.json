@@ -1,0 +1,340 @@
+{
+  "id": "602ae76296a8a1bcfde9",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_4.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_4.htm",
+  "fetchedAt": "2026-11-18T08:15:45+00:00",
+  "sha256": "7baa771f55eaf9b5839aafe849afe75656aac056b547d0ed6635f2aaab304d19",
+  "bytes": 2645,
+  "rawPath": "raw/602ae76296a8a1bcfde9.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n需求装备品阶\n武器镶嵌效果\n防具镶嵌效果\n来源\n暗青之石1级\n1\n真气值 +8\n真气值 +8\n怪物掉落、货郎出售\n暗青之石2级\n2\n真气值 +16\n真气值 +16\n怪物掉落、合成大师合成\n暗青之石3级\n3\n真气值 +24\n真气值 +24\n怪物掉落、合成大师合成\n暗青之石4级\n4\n真气值 +32\n真气值 +32\n怪物掉落、合成大师合成\n暗青之石5级\n5\n真气值 +40\n真气值 +40\n怪物掉落、合成大师合成\n暗青之石6级\n6\n真气值 +52\n真气值 +52\n怪物掉落、合成大师合成\n暗青之石7级\n7\n真气值 +64\n真气值 +64\n怪物掉落、合成大师合成\n暗青之石8级\n8\n真气值 +80\n真气值 +80\n怪物掉落、合成大师合成\n暗青之石9级\n9\n真气值 +100\n真气值 +100\n怪物掉落、合成大师合成\n暗青之石10级\n10\n真气值 +120\n真气值 +120\n怪物掉落、合成大师合成",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求装备品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防具镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "来源",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、货郎出售",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "暗青之石10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +120",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值 +120",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>需求装备品阶</td>\n\t\t<td>武器镶嵌效果</td>\n\t\t<td>防具镶嵌效果</td>\n        <td>来源</td>\n\t</tr>\n\t\t<tr>\n    <td>暗青之石1级</td>\n    <td>1</td>\n    <td>真气值 +8</td>\n    <td>真气值 +8</td>\n    <td>怪物掉落、货郎出售</td>\n  </tr>\n  <tr>\n    <td>暗青之石2级</td>\n    <td>2</td>\n    <td>真气值 +16</td>\n    <td>真气值 +16</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石3级</td>\n    <td>3</td>\n    <td>真气值 +24</td>\n    <td>真气值 +24</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石4级</td>\n    <td>4</td>\n    <td>真气值 +32</td>\n    <td>真气值 +32</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石5级</td>\n    <td>5</td>\n    <td>真气值 +40</td>\n    <td>真气值 +40</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石6级</td>\n    <td>6</td>\n    <td>真气值 +52</td>\n    <td>真气值 +52</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石7级</td>\n    <td>7</td>\n    <td>真气值 +64</td>\n    <td>真气值 +64</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石8级</td>\n    <td>8</td>\n    <td>真气值 +80</td>\n    <td>真气值 +80</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石9级</td>\n    <td>9</td>\n    <td>真气值 +100</td>\n    <td>真气值 +100</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>暗青之石10级</td>\n    <td>10</td>\n    <td>真气值 +120</td>\n    <td>真气值 +120</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/602ae76296a8a1bcfde9.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/602ae76296a8a1bcfde9.js"
+}

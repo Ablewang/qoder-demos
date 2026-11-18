@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/qita/cailiao/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9e83b7cba9592aca7d48",
+  "status": "ok",
+  "parents": [
+    "3c6729bc38ee92c37c2e"
+  ],
+  "bytes": 6059,
+  "sha256": "1d4f9b2f153678797a23211ddb312fb2733ae79278b36741e761cfc7fbe9a9b7",
+  "fetchedAt": "2026-11-18T08:20:08+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/qita/cailiao/1.jpg",
+  "path": "assets/9e83b7cba9592aca7d48.jpg"
+}

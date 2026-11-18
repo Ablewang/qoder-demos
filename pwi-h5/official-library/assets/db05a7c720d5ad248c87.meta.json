@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/news/news_images/200811/1105/b1s.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "db05a7c720d5ad248c87",
+  "status": "ok",
+  "parents": [
+    "b275007180b977ac1419"
+  ],
+  "bytes": 43012,
+  "sha256": "f73b2dca840b2aadefcf2d7225fa8760b25437c52c3e6cb60988cbabef5947cf",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/db05a7c720d5ad248c87.jpg"
+}

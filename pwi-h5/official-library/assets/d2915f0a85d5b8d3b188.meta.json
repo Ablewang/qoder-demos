@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/cjmsiframetop.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "d2915f0a85d5b8d3b188",
+  "status": "ok",
+  "parents": [
+    "7d2c3e339ca3fb09fcc8"
+  ],
+  "bytes": 4212,
+  "sha256": "adbb76b67bbdbf5ae14e6ca6618a6c1a25be5618227453592d3e18a807b20d4e",
+  "fetchedAt": "2026-11-18T08:24:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/cjmsiframetop.jpg",
+  "path": "assets/d2915f0a85d5b8d3b188.jpg"
+}

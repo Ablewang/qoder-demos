@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "cc76a91afff6f027e218",
+  "status": "ok",
+  "parents": [
+    "eab551e03b8fd10609a9",
+    "e93b00b77035d0e5a3d7",
+    "ce036e5012d6285a44f3",
+    "8aa1da03402225531ee3"
+  ],
+  "bytes": 2773,
+  "sha256": "8eac9a27e566ce61f10fdd364550659d51d36de9e29506b8e138c0e40dcdc9b6",
+  "fetchedAt": "2026-11-18T08:17:54+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201104/xiuld/style/master.css",
+  "path": "assets/cc76a91afff6f027e218.css"
+}

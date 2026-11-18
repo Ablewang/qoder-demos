@@ -1,0 +1,32 @@
+{
+  "id": "bff0867bd0f1b5a41093",
+  "url": "https://event51.wanmei.com/w2i/201206/activity/yzdd_1.htm",
+  "title": "您访问的页面不存在 - 完美世界",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 6,
+  "parents": [
+    "f1f2ef7acba500abb1ff"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:17:16+00:00",
+  "sha256": "177ad5fa4ff79d488ea53986c5320bab8503b7ae4c73de1eb980f373c046212f",
+  "bytes": 1844,
+  "rawPath": "raw/bff0867bd0f1b5a41093.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "无法找到您访问的地址，5秒后跳转至完美世界首页",
+  "tables": [],
+  "links": [],
+  "imageRefs": [],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div>\n    <div>无法找到您访问的地址，<span>5</span>秒后跳转至<span>完美世界</span>首页</div>\n</div>\n\n\n\n",
+  "dataPath": "pages/bff0867bd0f1b5a41093.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/bff0867bd0f1b5a41093.js"
+}

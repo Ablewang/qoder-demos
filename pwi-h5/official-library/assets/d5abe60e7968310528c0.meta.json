@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/daoju/fuzhu/6.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "d5abe60e7968310528c0",
+  "status": "ok",
+  "parents": [
+    "016aefafabcd63fdeb84"
+  ],
+  "bytes": 5736,
+  "sha256": "effde709a78730afea60ea59b99a0746c21db81b024e8b3b0eaa314776ba6298",
+  "fetchedAt": "2026-11-18T08:20:02+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/daoju/fuzhu/6.jpg",
+  "path": "assets/d5abe60e7968310528c0.jpg"
+}

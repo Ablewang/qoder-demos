@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_583.jpg",
+  "id": "7075bb1a9911f3e7cbf9",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·和风拂面<em>（入魔）</em>",
+  "bytes": 1641,
+  "sha256": "574f63975ca3c9120f07b8cf0ff06808115da9a35938bb619e3f9a58fb608cad",
+  "fetchedAt": "2026-11-18T08:35:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_583.jpg",
+  "path": "assets/7075bb1a9911f3e7cbf9.jpg"
+}

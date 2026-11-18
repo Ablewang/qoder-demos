@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnxgoff.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "f253a41f63314d41cead",
+  "status": "ok",
+  "parents": [
+    "59cb948c7b10c9712ba9",
+    "3a60265176d060953606",
+    "1751f53360fb91b12ba9",
+    "101319dd2f65319f00b7",
+    "15d3ed593ed1c21ffe17",
+    "3564f7bdc83662605bdb",
+    "1c3a396b387469a917ed"
+  ],
+  "bytes": 4188,
+  "sha256": "cf53535df0a62b0d57eb903fb342872e406deaf089b6439919b5960a43051e98",
+  "fetchedAt": "2026-11-18T08:23:02+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnxgoff.jpg",
+  "path": "assets/f253a41f63314d41cead.jpg"
+}

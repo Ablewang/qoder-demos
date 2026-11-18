@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_16.jpg",
+  "id": "eed07723b2f84b64bf81",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "极度乾坤",
+  "bytes": 1625,
+  "sha256": "14fdae146b7321cc61e9046b0d1b5fbcd1136e5c78548042b37c0e0f108704e5",
+  "fetchedAt": "2026-11-18T08:35:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_16.jpg",
+  "path": "assets/eed07723b2f84b64bf81.jpg"
+}

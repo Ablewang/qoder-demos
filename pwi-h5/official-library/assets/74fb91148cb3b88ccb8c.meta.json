@@ -1,0 +1,27 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/jq131.js",
+  "alt": "",
+  "kind": "script",
+  "id": "74fb91148cb3b88ccb8c",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c",
+    "54749c1e17c97af0290c",
+    "cb6c35b40dff9140fce0",
+    "2d71e0241a8a0ad65ce0",
+    "931a6dafedf147fb6c1c",
+    "6fca40007eb0cce295dc",
+    "b1309fa8235af23fd447",
+    "c652c8e6bd34847ecdd2",
+    "ade9457f523181b12f33",
+    "90bad051d888ea8430b6"
+  ],
+  "bytes": 55020,
+  "sha256": "3d326e08a704939dbe5b1ff040f440fb87eadd86576e107e2ded3886bf84026c",
+  "fetchedAt": "2026-11-18T08:17:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/jq131.js",
+  "path": "assets/74fb91148cb3b88ccb8c.js"
+}

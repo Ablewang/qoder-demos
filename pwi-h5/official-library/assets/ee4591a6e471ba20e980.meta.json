@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_763.jpg",
+  "id": "ee4591a6e471ba20e980",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·飞花遁影<em>（升仙）</em>",
+  "bytes": 1369,
+  "sha256": "a98f201e98bada6efe836002f51188c5dd32be3e6c8703ae6c52200e6ca6864f",
+  "fetchedAt": "2026-11-18T08:35:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_763.jpg",
+  "path": "assets/ee4591a6e471ba20e980.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnsyrwon.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "abbb7427bf665c00f250",
+  "status": "ok",
+  "parents": [
+    "81575c76ad674636fd28"
+  ],
+  "bytes": 2822,
+  "sha256": "ee62c991de801292bedb915eea8a7b9086d59dfa2b89ba04aace2c59503a6a9a",
+  "fetchedAt": "2026-11-18T08:23:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnsyrwon.jpg",
+  "path": "assets/abbb7427bf665c00f250.jpg"
+}

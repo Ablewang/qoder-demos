@@ -1,0 +1,30 @@
+{
+  "url": "https://wulin2.wanmei.com/images/zoom_btn.gif",
+  "id": "78d4b61127fa921f6248",
+  "status": "ok",
+  "parents": [
+    "1662f4a22f348e722570",
+    "176fd987ce3bf232ea89",
+    "75f67334bcc741d278d7",
+    "7a2e7e3fffca75f622cd",
+    "fb0b376a7b8aa224bb99",
+    "b25decc3bd996db50e62",
+    "782d6e4068ec737e77ac",
+    "633c5d2f329b24f8c2de",
+    "5a12e42458057bed1cfc",
+    "f3219307caf100f9392b",
+    "0e7591603c5d3aaeeb3c",
+    "15e68af62c0729593d5a",
+    "9695a000672ff0aa9760"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "http://wulin2.wanmei.com/style/imgzoom.css",
+  "bytes": 171,
+  "sha256": "0d90ad53ba224e852000d339152028e4ecfb091742fd6636405ddfa606f18bee",
+  "fetchedAt": "2026-11-18T08:38:23+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://wulin2.wanmei.com/images/zoom_btn.gif",
+  "path": "assets/78d4b61127fa921f6248.gif"
+}

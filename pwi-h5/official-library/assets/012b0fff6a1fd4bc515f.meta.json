@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/gomain.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "012b0fff6a1fd4bc515f",
+  "status": "ok",
+  "parents": [
+    "a3206e96933ebb3a1648",
+    "cde23b2634eea8bb4b52",
+    "03091fe92256285c414b",
+    "4aec96cd45f020cede4e",
+    "a30584665576a2f6b306"
+  ],
+  "bytes": 5738,
+  "sha256": "ef29777fb101bd09791e108f1148a88b68a172f4cd0023824f618fa7ad8ff432",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/012b0fff6a1fd4bc515f.jpg"
+}

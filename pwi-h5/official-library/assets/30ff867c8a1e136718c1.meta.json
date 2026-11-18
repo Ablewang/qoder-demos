@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_486.jpg",
+  "id": "30ff867c8a1e136718c1",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·火精通<em>（升仙）</em>",
+  "bytes": 1703,
+  "sha256": "3fe0f4a7aef5187f6c4131b8d4dc1979aca9324447f7078995a3933289eb6388",
+  "fetchedAt": "2026-11-18T08:34:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_486.jpg",
+  "path": "assets/30ff867c8a1e136718c1.jpg"
+}

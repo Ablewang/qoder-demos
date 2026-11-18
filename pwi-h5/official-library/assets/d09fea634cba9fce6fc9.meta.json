@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_445.jpg",
+  "id": "d09fea634cba9fce6fc9",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·火煞天灯<em>（入魔）</em>",
+  "bytes": 1744,
+  "sha256": "ad15148dcb4999e5eec3d0edbf7406a58dc3a33393c3ecb498d490e0e01f0dad",
+  "fetchedAt": "2026-11-18T08:34:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_445.jpg",
+  "path": "assets/d09fea634cba9fce6fc9.jpg"
+}

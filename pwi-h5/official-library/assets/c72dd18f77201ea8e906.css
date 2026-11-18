@@ -1,0 +1,85 @@
+@import url(http://w2i.wanmei.com/style/w2i_logo_184x85.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+/*******author:Yingying.Zhang**************/
+html {min-width:1002px;}
+body{ margin:0; padding:0;font-size:12px;font-family:"ËÎÌו",Arial, Helvetica, sans-serif;}
+div,ul,ol,li ,p,h1,h2,h3,h4{margin:0;padding:0;}
+ul,li,ol{list-style:none;}
+img{border:0 none;}
+.clear{content:"";display:block;clear:both;}
+.float{float:left;}
+a{blr:expression(this.onFocus=this.blur()); outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+a {color:#000;text-decoration:none;}
+a:hover {color:#000000; text-decoration:underline;} 	
+a:link {color:#000000; text-decoration:none;}
+a:visited {color:#000000;text-decoration:none;}
+
+/*---index1---*/
+.mian_bg{background:url(../images/bg_center.jpg) repeat-y top center;margin:0 auto;}
+.mian_bot{background:url(../images/bgbottom.jpg) no-repeat center bottom;}
+.mian_top{background:url(../images/bg_top.jpg) no-repeat center top;}
+
+/*center*/
+.center_bg{background:url(../images/center_y.jpg) repeat-y 33px center;margin:0 auto;width:1002px;}
+.center_bot{background:url(../images/bg_bottom.jpg) no-repeat 26px bottom;padding:0 0 40px 0;}
+.center_top{background:url(../images/center_top.jpg) no-repeat center top;overflow:hidden;zoom:1;}
+
+.cen_head{overflow:hidden;width:868px;margin:20px auto 0;}
+.cen_head p img{float:left;}
+
+.zanshi{margin:0 0 0 85px;overflow:hidden;}
+.zans_center{background:url(../images/cen_2.jpg) repeat-y left center;overflow:hidden;zoom:1;}
+
+#cont,.banner_box{width:1002px;margin:0 auto; position:relative;}
+.box_head{overflow:hidden;}
+.box_head img{display:block;}
+
+.zans_center h2{margin:5px 0 5px 18px;}
+.table{background:#000;margin:0 0 0 58px;}
+.table tr td{background:#fff;}
+.cen_bot{}
+.top{font-size:0;}
+.zans_center2{background:url(../images/cent_y2.jpg) repeat-y left center;overflow:hidden;zoom:1;width:607px;}
+.zans_con{width:530px;margin:0 auto;padding:30px 0 0 0;}
+.imgs{text-align:center;color:#6A0D0D;font-size:14px;line-height:20px;font-weight:bold;}
+.zans_con h2{background:url(../images/line.jpg) no-repeat left bottom;font-size:14px;color:#502A00;padding:0 0 10px 0;}
+.text{color:#502A00;line-height:25px;margin:10px 0;}
+.liks_left{float:left;margin:20px 0 0 80px;display:inline;}
+.zanshi2{float:left;margin:20px 0 0 0;}
+.liks_left p a{display:block;width:192px;height:46px;margin:10px 0;}
+.liks_left p{background:url(../images/lin_bg.jpg) no-repeat;height:645px;width:201px;padding:40px 0 0 12px;}
+.liks_left p a.bts1,.liks_left p a.bts2,.liks_left p a.bts3,.liks_left p a.bts4,.liks_left p a.bts5,.liks_left p a.bts6,.liks_left p a.bts7,.liks_left p a.bts8{background:url(../images/leftliks1.jpg) no-repeat;}
+
+.liks_left p a.hover{background:url(../images/leftliks2.jpg) no-repeat 12px center;}
+
+.liks_left p a.bts1{background-position:0 0px;}
+.liks_left p a.bts2{background-position:0 -63px;}
+.liks_left p a.bts3{background-position:0 -124px;}
+.liks_left p a.bts4{background-position:0 -186px;}
+.liks_left p a.bts5{background-position:0 -247px;}
+.liks_left p a.bts6{background-position:0 -310px;}
+.liks_left p a.bts7{background-position:0 -371px;}
+.liks_left p a.bts8{background-position:0 -432px;}
+
+.btn{width:771px;height:36px;margin:10px 0 0 17px;display:block;cursor:pointer;}
+#btn0{background:url(../images/nav1b.jpg) no-repeat;}
+#btn1{background:url(../images/nav2a.jpg) no-repeat}#btn2 {background:url(../images/nav3a.jpg) no-repeat
+}
+#btna0{background:url(../images/nav1a.jpg) no-repeat;}
+#btna1{background:url(../images/nav2b.jpg) no-repeat}
+#btna2{background:url(../images/nav3b.jpg) no-repeat}
+.hide{display:none}
+.texts{width:730px;color:#502A00;line-height:25px;margin:0 0 0 30px;}
+
+.center_map{background:url(../images/bgg.jpg) no-repeat;width:835px;height:375px;overflow:hidden;}
+.menu{clear:both;}
+.menu li{float:left;display:inline;}
+.menu li.menu1{margin:5px 0 0 72px}
+.menu li.menu2{margin:1px 0 0 44px}
+.menu li.menu3{margin:15px 0 0 52px}
+.menu li.menu4{margin:60px 0 0 52px}
+.menu li.menu5{margin:-20px 0 0 69px}
+.menu li.menu6{margin:5px 0 0 35px}
+.menu li.menu7{margin:6px 0 0 38px}
+.menu li.menu8{margin:-20px 0 0 32px}

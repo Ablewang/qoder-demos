@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "id": "d08cbfe6548e316df858",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 51695,
+  "sha256": "9ab7cb264300a0756246eebd39f6decdb0f392117e582fd3aabb7051d64b95ad",
+  "fetchedAt": "2026-11-18T08:17:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "path": "assets/d08cbfe6548e316df858.js"
+}

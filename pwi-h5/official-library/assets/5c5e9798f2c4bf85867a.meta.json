@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/laba/5.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "5c5e9798f2c4bf85867a",
+  "status": "ok",
+  "parents": [
+    "f6944bd1e4fb6a586a36"
+  ],
+  "bytes": 6102,
+  "sha256": "7149167e0ebafac2443147dca7e9189e1130b1ac2c92740cd1289d7aae431689",
+  "fetchedAt": "2026-11-18T08:20:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/laba/5.jpg",
+  "path": "assets/5c5e9798f2c4bf85867a.jpg"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "1c6c4a1d952d08a92fec",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/sycs.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "85dead70326634a2351a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "270bffeff35514d8b39c8724221d0f3f59fc2fbe88bf365826b414a1953d4577",
+  "bytes": 1547,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1c6c4a1d952d08a92fec.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/consycs.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/consycs.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/consycs.htm</a></p>\n        </div>\n    </div>\n",
+  "dataPath": "pages/1c6c4a1d952d08a92fec.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/1c6c4a1d952d08a92fec.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_608.jpg",
+  "id": "f8bb30f37b1197a4418b",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·炸雷<em>（升仙）</em>",
+  "bytes": 1750,
+  "sha256": "8a661863ff4e4f171d2cc7f7639ad37077521780dac1dea1b77b2da54a9fda66",
+  "fetchedAt": "2026-11-18T08:34:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_608.jpg",
+  "path": "assets/f8bb30f37b1197a4418b.jpg"
+}

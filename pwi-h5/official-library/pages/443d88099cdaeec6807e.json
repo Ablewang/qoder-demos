@@ -1,0 +1,102 @@
+{
+  "id": "443d88099cdaeec6807e",
+  "url": "https://w2i.wanmei.com/newplayer/road/20091016/30052.shtml",
+  "title": "界面说明 - 小地图",
+  "category": "新手指引",
+  "section": "新手上路",
+  "depth": 1,
+  "parents": [
+    "cf4aece98ce7c6539a7e",
+    "58ce4fc6fb2494f45839",
+    "948e0da5fd862be083fc",
+    "eeb1610e23f40d77ffb0",
+    "ff05ff748cbb280381fd",
+    "f968a4054e52b38a4dd3",
+    "443d88099cdaeec6807e",
+    "839ab06e60753df5357a",
+    "e85cd9b84121a9518957",
+    "b98968cdb0b3eec7d740"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "6c153b4ddd9ba664bd3c43c76a6834681088e9d7544be10a3113f94ecd6c52ae",
+  "bytes": 67792,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/443d88099cdaeec6807e.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "主页面 | 功能按钮 | 角色信息 | 快捷栏 | 目标信息 | 鼠标指针 | 小地图 | 信息栏 | 其他玩家 | 聊天区 |\n1、当前地图名称：显示角色当前所在地图的名称\n2、游戏内时间显示：鼠标放在图表上可悬浮显示游戏当前时间\n3、当前坐标：显示角色所在地图当前的坐标位置\n4、地图最小化：点击可把地图最小化\n5、怪物位置：显示怪物当前的位置\n6、角色当前位置：显示角色当前的位置\n7、未读邮件：当该图标出现在小地图上时，显示有未读取的邮件\n8、活动日历：点击打开活动日历，可查阅当天可参与的趣味活动\n9、乾坤袋：点击打开乾坤袋，购买所需要的虚拟道具\n10、查找附近NPC：查找附近的NPC及设置地图标记\n11、大地图按钮：点击打开大地图\n12、雷达模式切换：点击切换雷达锁定模式及雷达解锁模式\n13、缩小地图：点击缩小地图建筑图像，扩大显示地图范围\n14、放大地图：点击放大地图建筑图像，缩小显示地图范围\n15、怪物标记：点击可显示/隐藏小地图上怪物的标记",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30046.shtml",
+      "label": "主页面",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30047.shtml",
+      "label": "功能按钮",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30048.shtml",
+      "label": "角色信息",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30049.shtml",
+      "label": "快捷栏",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30050.shtml",
+      "label": "目标信息",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30051.shtml",
+      "label": "鼠标指针",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30052.shtml",
+      "label": "小地图",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30053.shtml",
+      "label": "信息栏",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30054.shtml",
+      "label": "其他玩家",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20091016/30055.shtml",
+      "label": "聊天区",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140929/10021411980966288.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140929/10021411980966288.jpg",
+      "alt": "图片: 3.jpg",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=cf4aece98ce7c6539a7e\">主页面</a> | <a href=\"#page=58ce4fc6fb2494f45839\">功能按钮</a> | <a href=\"#page=948e0da5fd862be083fc\">角色信息</a> | <a href=\"#page=eeb1610e23f40d77ffb0\">快捷栏</a> | <a href=\"#page=ff05ff748cbb280381fd\">目标信息</a> | <a href=\"#page=f968a4054e52b38a4dd3\">鼠标指针</a> | <a href=\"#page=443d88099cdaeec6807e\">小地图</a> | <a href=\"#page=839ab06e60753df5357a\">信息栏</a> | <a href=\"#page=e85cd9b84121a9518957\">其他玩家</a> | <a href=\"#page=b98968cdb0b3eec7d740\">聊天区</a> | </li>\r\n</ul>\r\n<p> </p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/140929/10021411980966288.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/ef98ace6212deb038e49.jpg\" alt=\"图片: 3.jpg\" loading=\"lazy\"></a> </p>\r\n<p>1、当前地图名称：显示角色当前所在地图的名称</p>\r\n<p>2、游戏内时间显示：鼠标放在图表上可悬浮显示游戏当前时间</p>\r\n<p>3、当前坐标：显示角色所在地图当前的坐标位置</p>\r\n<p>4、地图最小化：点击可把地图最小化</p>\r\n<p>5、怪物位置：显示怪物当前的位置</p>\r\n<p>6、角色当前位置：显示角色当前的位置</p>\r\n<p>7、未读邮件：当该图标出现在小地图上时，显示有未读取的邮件</p>\r\n<p>8、活动日历：点击打开活动日历，可查阅当天可参与的趣味活动</p>\r\n<p>9、乾坤袋：点击打开乾坤袋，购买所需要的虚拟道具</p>\r\n<p>10、查找附近NPC：查找附近的NPC及设置地图标记</p>\r\n<p>11、大地图按钮：点击打开大地图</p>\r\n<p>12、雷达模式切换：点击切换雷达锁定模式及雷达解锁模式</p>\r\n<p>13、缩小地图：点击缩小地图建筑图像，扩大显示地图范围</p>\r\n<p>14、放大地图：点击放大地图建筑图像，缩小显示地图范围</p>\r\n<p>15、怪物标记：点击可显示/隐藏小地图上怪物的标记</p>\r\n                        </div>",
+  "dataPath": "pages/443d88099cdaeec6807e.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/443d88099cdaeec6807e.js"
+}

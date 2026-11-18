@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_405.jpg",
+  "id": "ca3cb4da7373d9aded91",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·寒冰刃域<em>（入魔）</em>",
+  "bytes": 1687,
+  "sha256": "a467dd2ac08f207a166ecf527510004ce231d16c7b878535f4cbc1ff274401d6",
+  "fetchedAt": "2026-11-18T08:34:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_405.jpg",
+  "path": "assets/ca3cb4da7373d9aded91.jpg"
+}

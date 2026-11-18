@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/yanhua/putong/3.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "719fd3da6dbd13985b52",
+  "status": "ok",
+  "parents": [
+    "4161720e69506c9a4750"
+  ],
+  "bytes": 4255,
+  "sha256": "23fcd837b79aa08c51866534671c756e172555ab404e3081e1a9f9610339e1fa",
+  "fetchedAt": "2026-11-18T08:19:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/yanhua/putong/3.jpg",
+  "path": "assets/719fd3da6dbd13985b52.jpg"
+}

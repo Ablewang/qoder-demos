@@ -1,0 +1,177 @@
+{
+  "id": "df98e6459f5dc09ff877",
+  "url": "https://w2i.wanmei.com/xtjs/bpxt/20091015/29929.shtml",
+  "title": "系统简介",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "0293b953e6fed872492295f937edc90306e34a3c6415b96e1476d69356a3caea",
+  "bytes": 70495,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/df98e6459f5dc09ff877.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "帮派的成立\n成立条件\n1、申请人的级别高于20级\n2、申请人不属于任何一个帮派\n3、申请人需缴纳10万金\n帮派建立介绍\n1、只有3级帮派才能上传帮派标志。\n2、对于一个帮派来说，2周内不能重复上传帮派标志。\n3、上传的帮派图标文件必须为16*16 bmp或gif 。\n4、上传的帮派图标不能含有反对宪法所确定的基本原则的、危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的、损害国家荣誉和利益的、煽动民族仇恨、民族歧视，破坏民族团结的、破坏国家宗教政策，宣扬邪教和封建迷信的、散布谣言，扰乱社会秩序，破坏社会稳定的、散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的、侮辱或者诽谤他人，侵害他人合法权益的、含有法律、行政法规禁止的其他内容的信息。\n5、帮派图标上传后，会在第一时间得到人工审核并加入完美世界国际版客户端更新包。\n帮派的职能结构\n帮派中按职能分为帮主、副帮主、堂主、香主、帮众\n职位\n人数上限\n权限\n帮主\n1\n解散帮派\n将帮主的职位传给副帮主\n将帮主以下人员任命为帮主以下职位\n解除帮主以下人员的任命，使之成为帮众\n修改帮派宣言\n修改所有人员的帮派称号\n接收帮众\n开除帮众\n副帮主\n1\n辞职成为帮众\n将副帮主以下人员任命为副帮主以下职位\n解除副帮主以下人员的任命，使之成为帮众\n修改帮派宣言\n修改所有人员的帮派称号\n接收帮众\n开除帮众\n堂主\n4\n辞职成为帮众\n将堂主以下人员任命为堂主以下职位\n解除堂主以下人员的任命，使之成为帮众\n接收帮众\n香主\n12\n辞职成为帮众\n接收帮众\n帮众\n-\n脱离帮派\n帮主不能直接脱离帮派，有职位的角色必须先辞职成为普通帮众才能离开帮派。\n帮派建立流程\n1、首先满足等级20级，身上携带10W现金，如果您没有加入任何帮派那么就到祖龙成帮派管理员处来创建帮派吧。\n2、输入您帮派的大名点击确定即可创建成功。（帮派名称不得超过9个字）\n3、这时您就可以对自己的帮派进行管理了，建立帮派一定要给帮派一个响亮的口号了。（帮派宣言不得超过50个字）\n4、然后就可以邀请他人来加入帮派壮大自己帮派的实力了。（１级帮派加入人数上限50人）\n5、您可以对自己的帮众进行升职、降职、传位（只能传给副帮主）、辞职（帮主无法辞职只能传位，其他职务的帮众可以辞职）、踢出帮派（帮主可以进行此操作）、赐予封号（帮主给定封号），退出帮派。（帮主需要传位后才可以退出）\n升职：\n降职：\n传位：\n赐予封号：\n退出帮派：",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "职位",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "人数上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "权限",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "帮主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "解散帮派\n将帮主的职位传给副帮主\n将帮主以下人员任命为帮主以下职位\n解除帮主以下人员的任命，使之成为帮众\n修改帮派宣言\n修改所有人员的帮派称号\n接收帮众\n开除帮众",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "副帮主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "辞职成为帮众\n将副帮主以下人员任命为副帮主以下职位\n解除副帮主以下人员的任命，使之成为帮众\n修改帮派宣言\n修改所有人员的帮派称号\n接收帮众\n开除帮众",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "堂主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "辞职成为帮众\n将堂主以下人员任命为堂主以下职位\n解除堂主以下人员的任命，使之成为帮众\n接收帮众",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "香主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "辞职成为帮众\n接收帮众",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "帮众",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "脱离帮派",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012912s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012911s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012902s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012905s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012901s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012906s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012910s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/012903s.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　<strong>帮派的成立</strong></p>\r\n<p>　　<strong>成立条件</strong></p>\r\n<p>　　1、申请人的级别高于20级<br>\r\n　　2、申请人不属于任何一个帮派<br>\r\n　　3、申请人需缴纳10万金</p>\r\n<p>　　<strong>帮派建立介绍</strong></p>\r\n<p>　　1、只有3级帮派才能上传帮派标志。<br>\r\n　　2、对于一个帮派来说，2周内不能重复上传帮派标志。<br>\r\n　　3、上传的帮派图标文件必须为16*16 bmp或gif 。<br>\r\n　　4、上传的帮派图标不能含有反对宪法所确定的基本原则的、危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的、损害国家荣誉和利益的、煽动民族仇恨、民族歧视，破坏民族团结的、破坏国家宗教政策，宣扬邪教和封建迷信的、散布谣言，扰乱社会秩序，破坏社会稳定的、散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的、侮辱或者诽谤他人，侵害他人合法权益的、含有法律、行政法规禁止的其他内容的信息。<br>\r\n　　5、帮派图标上传后，会在第一时间得到人工审核并加入完美世界国际版客户端更新包。</p>\r\n<p>　　<strong>帮派的职能结构</strong></p>\r\n<p>　　帮派中按职能分为帮主、副帮主、堂主、香主、帮众</p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>职位</td>\r\n            <td>人数上限</td>\r\n            <td>权限</td>\r\n        </tr>\r\n        <tr>\r\n            <td>帮主</td>\r\n            <td>1</td>\r\n            <td>解散帮派<br>\r\n            将帮主的职位传给副帮主<br>\r\n            将帮主以下人员任命为帮主以下职位<br>\r\n            解除帮主以下人员的任命，使之成为帮众<br>\r\n            修改帮派宣言<br>\r\n            修改所有人员的帮派称号<br>\r\n            接收帮众<br>\r\n            开除帮众</td>\r\n        </tr>\r\n        <tr>\r\n            <td>副帮主</td>\r\n            <td>1</td>\r\n            <td>辞职成为帮众<br>\r\n            将副帮主以下人员任命为副帮主以下职位<br>\r\n            解除副帮主以下人员的任命，使之成为帮众<br>\r\n            修改帮派宣言<br>\r\n            修改所有人员的帮派称号<br>\r\n            接收帮众<br>\r\n            开除帮众</td>\r\n        </tr>\r\n        <tr>\r\n            <td>堂主</td>\r\n            <td>4</td>\r\n            <td>辞职成为帮众<br>\r\n            将堂主以下人员任命为堂主以下职位<br>\r\n            解除堂主以下人员的任命，使之成为帮众<br>\r\n            接收帮众</td>\r\n        </tr>\r\n        <tr>\r\n            <td>香主</td>\r\n            <td>12</td>\r\n            <td>辞职成为帮众<br>\r\n            接收帮众</td>\r\n        </tr>\r\n        <tr>\r\n            <td>帮众</td>\r\n            <td>-</td>\r\n            <td>脱离帮派</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p>　　帮主不能直接脱离帮派，有职位的角色必须先辞职成为普通帮众才能离开帮派。</p>\r\n<p>　　<strong>帮派建立流程</strong></p>\r\n<p>　　1、首先满足等级20级，身上携带10W现金，如果您没有加入任何帮派那么就到祖龙成帮派管理员处来创建帮派吧。</p>\r\n<p><img src=\"assets/afb181d7681c82ce88ed.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　2、输入您帮派的大名点击确定即可创建成功。（帮派名称不得超过9个字）</p>\r\n<p><img src=\"assets/9e1418ff9f05125e0930.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　3、这时您就可以对自己的帮派进行管理了，建立帮派一定要给帮派一个响亮的口号了。（帮派宣言不得超过50个字）</p>\r\n<p><img src=\"assets/7e6d2322756ce916be3d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　4、然后就可以邀请他人来加入帮派壮大自己帮派的实力了。（１级帮派加入人数上限50人）</p>\r\n<p><img src=\"assets/ec253cfb454ea7a05fbb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　5、您可以对自己的帮众进行升职、降职、传位（只能传给副帮主）、辞职（帮主无法辞职只能传位，其他职务的帮众可以辞职）、踢出帮派（帮主可以进行此操作）、赐予封号（帮主给定封号），退出帮派。（帮主需要传位后才可以退出）</p>\r\n<p>　　升职：</p>\r\n<p><img src=\"assets/22b4734ad4abe69530cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　降职：</p>\r\n<p><img src=\"assets/eadae24f69a20774962a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　传位：</p>\r\n<p><img src=\"assets/c5dce8aa1f513395db55.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　赐予封号：</p>\r\n<p><img src=\"assets/ec253cfb454ea7a05fbb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　退出帮派：</p>\r\n<p><img src=\"assets/0f983fb57d5acbc47d5f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/df98e6459f5dc09ff877.json",
+  "imageCount": 8,
+  "tableCount": 1,
+  "downloadPath": "downloads/df98e6459f5dc09ff877.js"
+}

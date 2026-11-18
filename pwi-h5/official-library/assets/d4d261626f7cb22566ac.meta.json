@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27653.jpg",
+  "id": "d4d261626f7cb22566ac",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·生命禁锢<em>（升仙）</em>",
+  "bytes": 4783,
+  "sha256": "cde076ba85ed614fe4063b9230e54721a446b4449ab639390eebcf3f8ac8f404",
+  "fetchedAt": "2026-11-18T08:36:24+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27653.jpg",
+  "path": "assets/d4d261626f7cb22566ac.jpg"
+}

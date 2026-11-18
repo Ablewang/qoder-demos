@@ -1,0 +1,1527 @@
+{
+  "id": "0285ea8a3bce3704b666",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+  "title": "魅灵技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "56efe8135221e06210bd",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "0ecbc844d75f5b2a49a9394e14f3254f94f4001bf946cb9c3c1d3d0c335e64f3",
+  "bytes": 96475,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0285ea8a3bce3704b666.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n魅灵技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n青藤绕\n法器、空手\n无\n筑基\n主动攻击\n10\n0\n0,4,8,12,16,20,24,28,32,36\n新绿脱手而出，对目标造成大量木系伤害，并使其陷入特殊减速状态，此特殊状态下受到【摄魂咒】的攻击将承受双倍伤害。\n青雾绕\n法器、空手\n青藤绕\n筑基\n主动攻击\n10\n3\n3,8,13,18,23,28,33,38,43,48\n雾随影动，不灭不休。对目标造成一定的伤害，当目标血量低于60%时还将触发9秒的持续木系伤害。\n摄魂咒\n法器、空手\n青雾绕\n和合\n主动攻击\n10\n19\n19,24,29,34,39,44,49,54,59,64\n以自然之名，集全身之气，对敌人造成巨大物理伤害。\n乱舞清风\n法器、空手\n摄魂咒\n空冥\n主动攻击\n10\n39\n39,43,47,51,55,59,63,67,71,75\n风驰而草靡，对周围目标造成大量木系伤害，并有可能将其定身，封印。\n花溅雨\n法器、空手\n乱舞清风\n履霜\n主动攻击\n10\n49\n49,53,57,61,65,69,73,77,81,85\n风雨过境，埃尘皆随风而去，对目标造成大量木系伤害，并将其击退12米。\n碧波护体\n法器、空手\n无\n灵虚\n祝福\n10\n9\n9,14,19,24,29,34,39,44,49,54\n虔诚的侍者，得到自然的庇护，提高施法者的木系、水系和物理防御。\n昙花一现\n法器、空手\n无\n和合\n祝福\n10\n19\n19,24,29,34,39,44,49,54,59,64\n引爆最近召唤的攻击类植物，对周围目标造成伤害并根据植物的类型附加特殊状态。\n偷天换日\n法器、空手\n斗转星移\n履霜\n祝福\n10\n49\n49,53,57,61,65,69,73,77,81,85\n牺牲当前召唤物，在短时间内极大的提高自身能力。\n斗转星移\n法器、空手\n召唤物治疗\n灵虚\n祝福\n10\n17\n17,22,27,32,37,42,47,52,57,62\n将自身真气传输给召唤物。\n迅法术\n法器、空手\n无\n履霜\n祝福\n10\n49\n49,53,57,61,65,69,73,77,81,85\n自然灵气在指尖流动，减少20%的吟唱时间，同时提高施法者的攻击力。\n灵光普照\n法器、空手\n无\n筑基\n祝福\n10\n0\n0,5,10,15,20,25,30,35,40,45\n灵光如泉涓涓而下，为目标恢复一定的生命值。\n落英缤纷\n法器、空手\n灵光普照\n灵虚\n祝福\n10\n9\n9,14,19,24,29,34,39,44,49,54\n为目标注入灵气，使其在受到攻击后快速恢复一定的生命值。\n重生术\n法器、空手\n落英缤纷\n和合\n祝福\n10\n19\n19,24,29,34,39,44,49,54,59,64\n封印生者的灵魂，使其在死亡后可以立即复生。\n云生雾长\n法器、空手\n重生术\n空冥\n祝福\n10\n39\n39,43,47,51,55,59,63,67,71,75\n大地之息扑面而来，为施法者及周围的所有友军目标恢复一定的生命。\n治疗召唤物\n法器、空手\n武神现世\n筑基\n祝福\n10\n7\n7,12,17,22,27,32,37,42,47,52\n为召唤物恢复一定的生命值。\n武神现世\n法器、空手\n无\n筑基\n召唤\n10\n7\n7,12,17,22,27,32,37,42,47,52\n召唤魔神蚩尤前来助战，此召唤物以物理攻击见长。\n魔神现世\n法器、空手\n武神现世\n和合\n召唤\n10\n23\n23,28,33,38,43,48,53,58,63,68\n召唤金光电母前来助战，此召唤物以金系攻击见长。\n救星降临\n法器、空手\n魔神现世\n元婴\n召唤\n10\n33\n33,38,43,48,53,58,63,68,73,78\n召唤清净琉前来助战，此召唤物以防守见长。\n灾星降临\n法器、空手\n救星降临\n渡劫\n召唤\n10\n59\n59,62,65,68,71,74,77,80,83,86\n召唤火神前来助战，此召唤物以火系攻击见长，威力无穷。\n惩罚刺\n法器、空手\n无\n灵虚\n召唤\n10\n11\n11,16,21,26,31,36,41,46,51,56\n召唤一株惩罚刺，惩罚刺为单体攻击植物。\n禁咒藤\n法器、空手\n惩罚刺\n灵虚\n召唤\n10\n15\n15,20,25,30,35,40,45,50,55,60\n召唤一株禁咒藤，禁咒藤为群体诅咒植物。\n咒缚丝\n法器、空手\n禁咒藤\n和合\n召唤\n10\n21\n21,26,31,36,41,46,51,56,61,66\n召唤一株咒缚丝，咒缚丝为群体减速植物。\n迷魂阵\n法器、空手\n咒缚丝\n元婴\n召唤\n10\n29\n29,34,39,44,49,54,59,64,69,74\n召唤一株迷魂阵，迷魂阵为群体睡眠植物。\n百草愈\n法器、空手\n迷魂阵\n空冥\n召唤\n10\n39\n39,43,47,51,55,59,63,67,71,75\n召唤一株百草愈，百草愈为群体治疗植物。\n百草击\n法器、空手\n百草愈\n履霜\n召唤\n10\n49\n49,53,57,61,65,69,73,77,81,85\n召唤一株百草击，百草击为群体强力治疗植物。\n满地枝\n法器、空手\n花溅雨\n渡劫\n召唤\n10\n59\n59,62,65,68,71,74,77,80,83,86\n召唤大量的植物攻击目标，对其造成大量伤害并有可能使其定身、封印。\n真元爆发\n法器、空手\n无\n元婴\n祝福\n1\n29\n29\n短时间内提高从装备上获取的攻击力\n高级真元爆发\n法器、空手\n爆元\n渡劫\n祝福\n1\n59\n59\n短时间内极大提高从装备上获取的攻击力\n木精通\n法器、空手\n无\n元婴\n被动\n10\n29\n29,34,39,44,49,54,59,64,69,74\n提高所有木系法术伤害。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "魅灵技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "青藤绕",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0,4,8,12,16,20,24,28,32,36",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "新绿脱手而出，对目标造成大量木系伤害，并使其陷入特殊减速状态，此特殊状态下受到【摄魂咒】的攻击将承受双倍伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "青雾绕",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "青藤绕",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3,8,13,18,23,28,33,38,43,48",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "雾随影动，不灭不休。对目标造成一定的伤害，当目标血量低于60%时还将触发9秒的持续木系伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "摄魂咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "青雾绕",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19,24,29,34,39,44,49,54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以自然之名，集全身之气，对敌人造成巨大物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "乱舞清风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "摄魂咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "风驰而草靡，对周围目标造成大量木系伤害，并有可能将其定身，封印。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "花溅雨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "乱舞清风",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49,53,57,61,65,69,73,77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "风雨过境，埃尘皆随风而去，对目标造成大量木系伤害，并将其击退12米。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碧波护体",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9,14,19,24,29,34,39,44,49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "虔诚的侍者，得到自然的庇护，提高施法者的木系、水系和物理防御。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "昙花一现",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19,24,29,34,39,44,49,54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "引爆最近召唤的攻击类植物，对周围目标造成伤害并根据植物的类型附加特殊状态。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "偷天换日",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "斗转星移",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49,53,57,61,65,69,73,77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "牺牲当前召唤物，在短时间内极大的提高自身能力。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "斗转星移",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤物治疗",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17,22,27,32,37,42,47,52,57,62",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将自身真气传输给召唤物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "迅法术",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49,53,57,61,65,69,73,77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "自然灵气在指尖流动，减少20%的吟唱时间，同时提高施法者的攻击力。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵光普照",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0,5,10,15,20,25,30,35,40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵光如泉涓涓而下，为目标恢复一定的生命值。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "落英缤纷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵光普照",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9,14,19,24,29,34,39,44,49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为目标注入灵气，使其在受到攻击后快速恢复一定的生命值。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "重生术",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "落英缤纷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19,24,29,34,39,44,49,54,59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "封印生者的灵魂，使其在死亡后可以立即复生。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "云生雾长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "重生术",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "大地之息扑面而来，为施法者及周围的所有友军目标恢复一定的生命。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "治疗召唤物",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武神现世",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7,12,17,22,27,32,37,42,47,52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为召唤物恢复一定的生命值。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "武神现世",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7,12,17,22,27,32,37,42,47,52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤魔神蚩尤前来助战，此召唤物以物理攻击见长。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "魔神现世",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武神现世",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "23,28,33,38,43,48,53,58,63,68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤金光电母前来助战，此召唤物以金系攻击见长。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "救星降临",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔神现世",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "33",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "33,38,43,48,53,58,63,68,73,78",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤清净琉前来助战，此召唤物以防守见长。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灾星降临",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "救星降临",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,62,65,68,71,74,77,80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤火神前来助战，此召唤物以火系攻击见长，威力无穷。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "惩罚刺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11,16,21,26,31,36,41,46,51,56",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤一株惩罚刺，惩罚刺为单体攻击植物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "禁咒藤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "惩罚刺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15,20,25,30,35,40,45,50,55,60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤一株禁咒藤，禁咒藤为群体诅咒植物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "咒缚丝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "禁咒藤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "21",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "21,26,31,36,41,46,51,56,61,66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤一株咒缚丝，咒缚丝为群体减速植物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "迷魂阵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "咒缚丝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤一株迷魂阵，迷魂阵为群体睡眠植物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "百草愈",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "迷魂阵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39,43,47,51,55,59,63,67,71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤一株百草愈，百草愈为群体治疗植物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "百草击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "百草愈",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49,53,57,61,65,69,73,77,81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤一株百草击，百草击为群体强力治疗植物。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "满地枝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "花溅雨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59,62,65,68,71,74,77,80,83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "召唤大量的植物攻击目标，对其造成大量伤害并有可能使其定身、封印。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "真元爆发",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "短时间内提高从装备上获取的攻击力",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级真元爆发",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "爆元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "短时间内极大提高从装备上获取的攻击力",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "木精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器、空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,34,39,44,49,54,59,64,69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提高所有木系法术伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>魅灵技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>青藤绕</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>0</div>\r\n            </td>\r\n            <td>\r\n            <div>0,4,8,12,16,20,24,28,32,36</div>\r\n            </td>\r\n            <td>\r\n            <div>新绿脱手而出，对目标造成大量木系伤害，并使其陷入特殊减速状态，此特殊状态下受到【摄魂咒】的攻击将承受双倍伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>青雾绕</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>青藤绕</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>3,8,13,18,23,28,33,38,43,48</div>\r\n            </td>\r\n            <td>\r\n            <div>雾随影动，不灭不休。对目标造成一定的伤害，当目标血量低于60%时还将触发9秒的持续木系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>摄魂咒</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>青雾绕</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>19,24,29,34,39,44,49,54,59,64</div>\r\n            </td>\r\n            <td>\r\n            <div>以自然之名，集全身之气，对敌人造成巨大物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>乱舞清风</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>摄魂咒</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>风驰而草靡，对周围目标造成大量木系伤害，并有可能将其定身，封印。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>花溅雨</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>乱舞清风</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>49,53,57,61,65,69,73,77,81,85</div>\r\n            </td>\r\n            <td>\r\n            <div>风雨过境，埃尘皆随风而去，对目标造成大量木系伤害，并将其击退12米。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>碧波护体</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>9,14,19,24,29,34,39,44,49,54</div>\r\n            </td>\r\n            <td>\r\n            <div>虔诚的侍者，得到自然的庇护，提高施法者的木系、水系和物理防御。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>昙花一现</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>19,24,29,34,39,44,49,54,59,64</div>\r\n            </td>\r\n            <td>\r\n            <div>引爆最近召唤的攻击类植物，对周围目标造成伤害并根据植物的类型附加特殊状态。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>偷天换日</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>斗转星移</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>49,53,57,61,65,69,73,77,81,85</div>\r\n            </td>\r\n            <td>\r\n            <div>牺牲当前召唤物，在短时间内极大的提高自身能力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>斗转星移</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤物治疗</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>17</div>\r\n            </td>\r\n            <td>\r\n            <div>17,22,27,32,37,42,47,52,57,62</div>\r\n            </td>\r\n            <td>\r\n            <div>将自身真气传输给召唤物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>迅法术</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>49,53,57,61,65,69,73,77,81,85</div>\r\n            </td>\r\n            <td>\r\n            <div>自然灵气在指尖流动，减少20%的吟唱时间，同时提高施法者的攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>灵光普照</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>0</div>\r\n            </td>\r\n            <td>\r\n            <div>0,5,10,15,20,25,30,35,40,45</div>\r\n            </td>\r\n            <td>\r\n            <div>灵光如泉涓涓而下，为目标恢复一定的生命值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>落英缤纷</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>灵光普照</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>9,14,19,24,29,34,39,44,49,54</div>\r\n            </td>\r\n            <td>\r\n            <div>为目标注入灵气，使其在受到攻击后快速恢复一定的生命值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>重生术</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>落英缤纷</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>19,24,29,34,39,44,49,54,59,64</div>\r\n            </td>\r\n            <td>\r\n            <div>封印生者的灵魂，使其在死亡后可以立即复生。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>云生雾长</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>重生术</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>大地之息扑面而来，为施法者及周围的所有友军目标恢复一定的生命。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>治疗召唤物</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>武神现世</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>7</div>\r\n            </td>\r\n            <td>\r\n            <div>7,12,17,22,27,32,37,42,47,52</div>\r\n            </td>\r\n            <td>\r\n            <div>为召唤物恢复一定的生命值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>武神现世</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>7</div>\r\n            </td>\r\n            <td>\r\n            <div>7,12,17,22,27,32,37,42,47,52</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤魔神蚩尤前来助战，此召唤物以物理攻击见长。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>魔神现世</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>武神现世</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>23</div>\r\n            </td>\r\n            <td>\r\n            <div>23,28,33,38,43,48,53,58,63,68</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤金光电母前来助战，此召唤物以金系攻击见长。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>救星降临</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>魔神现世</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>33</div>\r\n            </td>\r\n            <td>\r\n            <div>33,38,43,48,53,58,63,68,73,78</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤清净琉前来助战，此召唤物以防守见长。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>灾星降临</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>救星降临</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,62,65,68,71,74,77,80,83,86</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤火神前来助战，此召唤物以火系攻击见长，威力无穷。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>惩罚刺</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>11</div>\r\n            </td>\r\n            <td>\r\n            <div>11,16,21,26,31,36,41,46,51,56</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤一株惩罚刺，惩罚刺为单体攻击植物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>禁咒藤</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>惩罚刺</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>15</div>\r\n            </td>\r\n            <td>\r\n            <div>15,20,25,30,35,40,45,50,55,60</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤一株禁咒藤，禁咒藤为群体诅咒植物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>咒缚丝</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>禁咒藤</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>21</div>\r\n            </td>\r\n            <td>\r\n            <div>21,26,31,36,41,46,51,56,61,66</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤一株咒缚丝，咒缚丝为群体减速植物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>迷魂阵</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>咒缚丝</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤一株迷魂阵，迷魂阵为群体睡眠植物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>百草愈</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>迷魂阵</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>39,43,47,51,55,59,63,67,71,75</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤一株百草愈，百草愈为群体治疗植物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>百草击</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>百草愈</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>49,53,57,61,65,69,73,77,81,85</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤一株百草击，百草击为群体强力治疗植物。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>满地枝</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>花溅雨</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59,62,65,68,71,74,77,80,83,86</div>\r\n            </td>\r\n            <td>\r\n            <div>召唤大量的植物攻击目标，对其造成大量伤害并有可能使其定身、封印。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>真元爆发</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>短时间内提高从装备上获取的攻击力</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>高级真元爆发</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>爆元</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>短时间内极大提高从装备上获取的攻击力</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>木精通</div>\r\n            </td>\r\n            <td>\r\n            <div>法器、空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>29,34,39,44,49,54,59,64,69,74</div>\r\n            </td>\r\n            <td>\r\n            <div>提高所有木系法术伤害。</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/0285ea8a3bce3704b666.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/0285ea8a3bce3704b666.js"
+}

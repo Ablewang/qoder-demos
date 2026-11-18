@@ -1,0 +1,83 @@
+﻿@charset "utf-8";
+/* 
+	CSS RESET  wangkun
+	@from:www.wanmei.com
+	@version:2011.8.22
+*/
+/* RESET */
+html,body,form,ol,ul,li,div,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,th,td{margin:0px;padding:0px;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;font-weight:normal}
+ol,ul{list-style:none;}
+html{_filter:expression(document.execCommand("BackgroundImageCache",false,true));/*解决IE6背景图片重复加载问题*/}
+body{font-size:12px;line-height:1.5;font-family:Verdana,Geneva,sans-serif,\5b8b\4f53;/*首选字体Verdana;"\5b8b\4f53"为宋体，避免编码问题*/}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{}
+img{border:0;-ms-interpolation-mode:bicubic;/*解决图片缩放失真，IE7专用*/}
+a {blr:expression(this.onFocus=this.blur());outline:none; color:#FF3; text-decoration:underline}
+area {blr:expression(this.onFocus=this.blur());outline:none;}
+
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cl{clear:both;font-size:0;height:0;overflow:hidden}
+.fix:after{content:'\20';display:block;height:0;clear:both;}
+.fix{*zoom:1}
+ins{float:right;font-family:\5b8b\4f53;}
+
+.wrap_bot{width:100%;min-width:1002px;background:#000 url('../images/wrap_bot.jpg') no-repeat center bottom;}
+.wrap_top{background:url('../images/wrap_top.jpg') no-repeat center top;}
+.wrap_det{width:100%;min-width:1002px;background:#000 url('../images/wrap_det.jpg') no-repeat center top; padding-bottom:30px;}
+#header,#cont{width:1002px;margin:0px auto;}
+#header img{display:block;}
+#header{position:relative}
+
+.con_box{width:652px; background:#1c1d21; border:1px solid #25272c; margin-left:156px;}
+.con_box1{margin-left:95px; float:left; display:inline}
+
+	.tab_box{width:652px; height:75px; background:url(../images/tab_01.jpg) no-repeat; overflow:hidden}
+	.tab_box li{float:left; width:93px; height:75px; display:block}
+	.tab_box li a{width:93px; height:75px; display:block; text-indent:-999em; overflow:hidden; background:url(../images/tab_01.jpg) no-repeat}
+	.tab_box li a:hover{}
+	.tab_box li a.str-0{background-position:0 0;}
+	.tab_box li a.str-1{background-position:-93px 0;}
+	.tab_box li a.str-2{background-position:-186px 0;}
+	.tab_box li a.str-3{background-position:-279px 0;}
+	.tab_box li a.str-4{background-position:-372px 0;}
+	.tab_box li a.str-5{background-position:-465px 0;}
+	.tab_box li a.str-6{background-position:-558px 0;}
+	
+	.tab_box li a.str-s-0{ background-position:0 -75px;}
+	.tab_box li a.str-s-1{ background-position:-93px -75px;}
+	.tab_box li a.str-s-2{ background-position:-186px -75px;}
+	.tab_box li a.str-s-3{ background-position:-279px -75px;}
+	.tab_box li a.str-s-4{ background-position:-372px -75px;}
+	.tab_box li a.str-s-5{ background-position:-465px -75px;}
+	.tab_box li a.str-s-6{ background-position:-558px -75px;}
+
+.pic_box{width:550px;background:#2a2d37; margin:20px auto; padding:10px 0}
+.pic_box img{margin:10px;}
+.m_info{background:#161921; width:530px; margin:0 auto; padding:10px 0; position:relative}
+.m_info p{font-size:12px; color:#909195; line-height:20px; text-align:center}
+.pop_box{width:530px; padding:5px 10px; background:#22242d; position:absolute; left:-10px; top:0; z-index:10; display:none; clear:both;}
+.pop_box img{margin:0; padding:0; display:block}
+
+.m_bot{width:546px; height:72px; background:url(../images/btn_more_dj.jpg) no-repeat; margin:0 auto 10px}
+.m_bot a{width:196px; height:53px; display:block; margin:8px 0 0 190px; text-indent:-999em;}
+.btn_libao{background:url(../images/btn_libao.jpg) no-repeat; margin:30px auto 10px}
+
+.libao_txt{width:480px; border:1px solid #000; margin:0 auto; overflow:hidden}
+.libao_txt li{width:120px; height:40px; line-height:40px; font-size:14px; color:#e6c03c; background:#17191e; float:left; text-align:center}
+.libao_txt li.li01{ background:#53190e; color:#a98c87;}
+.libao_pic{width:490px; margin:0 auto; overflow:hidden}
+.libao_pic img{float:left; margin:10px 0}
+.libao_pic div{float:right;width:280px;}
+.libao_pic div table{width:280px;margin-top:10px;border-collapse:collapse;border-spacing:0}
+.libao_pic div table tr td,.libao_pic div table tr th{height:0px;line-height:25px;font-size:12px;color:#9c8e74;border:1px solid #3b3d44;background:#2f2128;text-align:center}
+.libao_pic div table tr th{color:#bc8b2b; background:#34161b;}
+.libao_pic div table tr td img{display:inline; float:none}
+.libao_pic div table tr td span,.libao_pic div table tr td em{float:left; padding-left:15px;}
+.libao_pic div table tr td span{padding-top:20px;}
+
+.pic_box h2{font-size:16px; color:#d2d2d2; font-weight:bold; padding:5px 20px; line-height:28px;}
+.pic_box p{font-size:14px; color:#d2d3d5; line-height:20px; padding:0 20px;}
+#right_lc{float:left; width:161px; height:639px; margin-left:15px;}

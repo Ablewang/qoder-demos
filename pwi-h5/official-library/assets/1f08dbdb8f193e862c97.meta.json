@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/images/menu_hover.jpg",
+  "id": "1f08dbdb8f193e862c97",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201303/spread/style/master.css",
+  "bytes": 50004,
+  "sha256": "b056809e79f29ae48e77d3d05ad0f1d02afe1be81d0cadb6af7a5c550c89c5fc",
+  "fetchedAt": "2026-11-18T08:38:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/images/menu_hover.jpg",
+  "path": "assets/1f08dbdb8f193e862c97.jpg"
+}

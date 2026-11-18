@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/hdnav_03.jpg",
+  "alt": "游戏下载",
+  "kind": "img",
+  "id": "0f72e6b014621ec371ad",
+  "status": "ok",
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "bytes": 4878,
+  "sha256": "96a4ed560851cb3fa501182e0c813d82f9018453c8386e92332d779b6b6ca430",
+  "fetchedAt": "2026-11-18T08:21:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/temp120824/hdnav_03.jpg",
+  "path": "assets/0f72e6b014621ec371ad.jpg"
+}

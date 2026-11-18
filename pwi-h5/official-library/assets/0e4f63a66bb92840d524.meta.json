@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/cardboss/image/08.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "0e4f63a66bb92840d524",
+  "status": "ok",
+  "parents": [
+    "46854e8de5b70a560f88",
+    "0484962163fb69a8e84f"
+  ],
+  "bytes": 31030,
+  "sha256": "9ca128d44879daab00c6e6cf371cde1dc2548b580d903827376652813e2d039f",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/0e4f63a66bb92840d524.jpg"
+}

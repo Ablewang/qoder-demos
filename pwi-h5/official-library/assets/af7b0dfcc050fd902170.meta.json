@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1357.jpg",
+  "id": "af7b0dfcc050fd902170",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "真·万象剑劲<em>（升仙）</em>",
+  "bytes": 4709,
+  "sha256": "04e70a9d41483654807d32ae78e63ccc7cdb9a4d6458482ea0e81f1d613656ea",
+  "fetchedAt": "2026-11-18T08:36:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1357.jpg",
+  "path": "assets/af7b0dfcc050fd902170.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/new/images/panes_bg02.jpg",
+  "id": "2936076e445828fbb4e0",
+  "status": "ok",
+  "parents": [
+    "bcbecb5b3fc81d489d12"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201111/new/style/master.css",
+  "bytes": 1683,
+  "sha256": "3c8c564981d7d5afa1ff4b3231a80c7cee27712057d6031b8d9ff551dda26e13",
+  "fetchedAt": "2026-11-18T08:37:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/new/images/panes_bg02.jpg",
+  "path": "assets/2936076e445828fbb4e0.jpg"
+}

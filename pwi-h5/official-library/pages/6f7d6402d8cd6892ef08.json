@@ -1,0 +1,61 @@
+{
+  "id": "6f7d6402d8cd6892ef08",
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/top.htm",
+  "title": "新手升级 高手理财 -《完美国际2012》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 7,
+  "parents": [
+    "ca91a22b822e69131723",
+    "ba01dee565ef6edbf9c1",
+    "aa1f5c8b062c173e0b7d"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/top.htm",
+  "fetchedAt": "2026-11-18T08:17:31+00:00",
+  "sha256": "1b182f5490e6cb5bfb7c570b5c83b17f10206389c80d400843f79c65a47b772b",
+  "bytes": 1651,
+  "rawPath": "raw/6f7d6402d8cd6892ef08.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201112/upgrade/index.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201112/upgrade/images/top_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201112/upgrade/images/top_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201112/upgrade/images/top_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201112/upgrade/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n  \r\n    <img src=\"assets/18f37f154befccf6188b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/e648bf20ebacfe9e407e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    <img src=\"assets/9d659ef2f4cc0c1153de.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    \r\n      \r\n    \r\n</div>\r\n",
+  "dataPath": "pages/6f7d6402d8cd6892ef08.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/6f7d6402d8cd6892ef08.js"
+}

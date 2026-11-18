@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_458.jpg",
+  "id": "03955afb65fa77679173",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·寒冰护甲<em>（升仙）</em>",
+  "bytes": 1727,
+  "sha256": "e3600f90ee9fa7090a5dfa288e45fac643d62b93b7b598e35217de99f922f15f",
+  "fetchedAt": "2026-11-18T08:34:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_458.jpg",
+  "path": "assets/03955afb65fa77679173.jpg"
+}

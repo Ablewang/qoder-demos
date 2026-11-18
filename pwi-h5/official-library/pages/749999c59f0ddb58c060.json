@@ -1,0 +1,220 @@
+{
+  "id": "749999c59f0ddb58c060",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/yincang/jiangli.htm",
+  "title": "命运大转盘 精彩不断来---魔方介绍",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "7efee68b25cc6c382609"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/yincang/jiangli.htm",
+  "fetchedAt": "2026-11-18T08:16:00+00:00",
+  "sha256": "729ebf8e93d7768c27ec64d0eafeac62f976c96e7b724a2635c23b5521c483c3",
+  "bytes": 2599,
+  "rawPath": "raw/749999c59f0ddb58c060.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "3）奖品兑换\n到达第60关乐透领奖处跟NPC对话即可兑换以下物品\n类别\n兑换物品\n所需物品\n符文项链\n★命运魔方徽记\n魔方乐透币40个\n★★命运魔方徽记\n魔方乐透币40个+★命运魔方徽记\n魔方乐透币70个\n多彩项链\n★命运魔方徽记\n魔方乐透币40个\n★★命运魔方徽记\n魔方乐透币40个+★命运魔方徽记\n魔方乐透币70个\n其他\n古旧书籍残页\n借书积分卡10个\n命运之章残页\n借书积分卡10个\n金玉满堂蟹黄饺\n魔方乐透币1个\n初级狂刃符（100）\n魔方乐透币1个\n初级道灵符（100）\n魔方乐透币1个",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "3）奖品兑换",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "到达第60关乐透领奖处跟NPC对话即可兑换以下物品\n类别\n兑换物品\n所需物品\n符文项链\n★命运魔方徽记\n魔方乐透币40个\n★★命运魔方徽记\n魔方乐透币40个+★命运魔方徽记\n魔方乐透币70个\n多彩项链\n★命运魔方徽记\n魔方乐透币40个\n★★命运魔方徽记\n魔方乐透币40个+★命运魔方徽记\n魔方乐透币70个\n其他\n古旧书籍残页\n借书积分卡10个\n命运之章残页\n借书积分卡10个\n金玉满堂蟹黄饺\n魔方乐透币1个\n初级狂刃符（100）\n魔方乐透币1个\n初级道灵符（100）\n魔方乐透币1个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "类别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "兑换物品",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需物品",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "符文项链",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "★命运魔方徽记",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币40个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★★命运魔方徽记",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币40个+★命运魔方徽记",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "魔方乐透币70个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "多彩项链",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "★命运魔方徽记",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币40个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★★命运魔方徽记",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币40个+★命运魔方徽记",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "魔方乐透币70个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "其他",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "古旧书籍残页",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "借书积分卡10个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "命运之章残页",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "借书积分卡10个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "金玉满堂蟹黄饺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币1个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级狂刃符（100）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币1个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级道灵符（100）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "魔方乐透币1个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/in_bg.jpg",
+      "label": "3）奖品兑换",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td><div> 3）奖品兑换</div></td>\n  </tr>\n  <tr>\n    <td>\n<div>到达第60关乐透领奖处跟NPC对话即可兑换以下物品</div>\n    <table>\n      <tr>\n        <td>类别</td>\n        <td>兑换物品</td>\n        <td>所需物品</td>\n      </tr>\n\n      <tr>\n        <td rowspan=\"3\">符文项链</td>\n        <td>★命运魔方徽记</td>\n        <td>魔方乐透币40个</td>\n      </tr>\n      <tr>\n        <td rowspan=\"2\">★★命运魔方徽记</td>\n        <td>魔方乐透币40个+★命运魔方徽记</td>\n      </tr>\n      <tr>\n        <td>魔方乐透币70个</td>\n      </tr>\n      <tr>\n        <td rowspan=\"3\">多彩项链</td>\n        <td>★命运魔方徽记</td>\n        <td>魔方乐透币40个</td>\n      </tr>\n      <tr>\n        <td rowspan=\"2\">★★命运魔方徽记</td>\n        <td>魔方乐透币40个+★命运魔方徽记</td>\n      </tr>\n      <tr>\n        <td>魔方乐透币70个</td>\n      </tr>\n      <tr>\n        <td rowspan=\"5\">其他</td>\n        <td>古旧书籍残页</td>\n        <td>借书积分卡10个</td>\n      </tr>\n      <tr>\n        <td>命运之章残页</td>\n        <td>借书积分卡10个</td>\n      </tr>\n      <tr>\n        <td>金玉满堂蟹黄饺</td>\n        <td>魔方乐透币1个</td>\n      </tr>\n      <tr>\n        <td>初级狂刃符（100）</td>\n        <td>魔方乐透币1个</td>\n      </tr>\n      <tr>\n        <td>初级道灵符（100）</td>\n        <td>魔方乐透币1个</td>\n      </tr>\n    </table>\n    </td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/749999c59f0ddb58c060.json",
+  "imageCount": 1,
+  "tableCount": 2,
+  "downloadPath": "downloads/749999c59f0ddb58c060.js"
+}

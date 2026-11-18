@@ -1,0 +1,1614 @@
+{
+  "id": "4a78e24de6621d6c52cb",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+  "title": "羽芒技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "aaa383067502c794c1ce",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "201b25eb863b6ac2bbc962d0bc38e27f22b60524a980bfe0d50d2bfd5a2ad0a4",
+  "bytes": 99695,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4a78e24de6621d6c52cb.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n羽芒技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n引而不发\n远程武器\n无\n筑基\n主动攻击\n10\n天生\n5,10,15,\n较长时间蓄力的一射击，造成很大物理伤害。\n20,25,30,35,\n40,45\n连射\n远程武器\n无\n筑基\n主动攻击\n10\n天生\n3,8,13,\n快速的一次射击对敌人造成伤害。\n18,23,28,33,\n38,43\n击退矢\n远程武器\n连射\n和合\n主动攻击\n10\n19\n24,29,34,\n一次迅速的攻击，可将对方击退一定距离。\n39,44,49,54,\n59,64\n困缚矢\n远程武器\n击退矢\n元婴\n主动攻击\n10\n29\n34,39,44,\n集蓄元气进行一次攻击，成功后可使对方定身一小段时间。\n49,54,59,64,\n69,74\n击晕矢\n远程武器\n困缚矢\n空冥\n主动攻击\n10\n39\n43,47,51,\n攻击对方并有可能将其击晕一段时间。\n55,59,63,67,\n71,75\n致命矢\n远程武器\n击晕矢\n履霜\n主动攻击\n10\n49\n53,57,61,\n一次强烈的攻击对敌人造成致命的伤害。\n65,69,73,77,\n81,85\n箭阵\n远程武器\n致命矢\n渡劫\n主动攻击\n10\n59\n62,65,68,\n集全身元气，将数箭射向天空，不断对范围敌人造成巨大伤害。\n71,74,77,80,\n83,86\n落雷\n远程武器\n无\n灵虚\n主动攻击\n10\n13\n18,23,28,\n将攻击化作雷电，对敌人造成金系伤害。\n33,38,43,48,\n53,58\n惊雷\n远程武器\n落雷\n元婴\n主动攻击\n10\n29\n34,39,44,\n强烈的攻击，使对方受到金系伤害同时降低金系抗性。\n49,54,59,64,\n69,74\n炸雷\n远程武器\n惊雷\n空冥\n主动攻击\n10\n44\n48,52,56,\n对目标及其周围小范围造成金系伤害。\n60,64,68,72,\n76,80\n狂雷天鹰\n远程武器\n炸雷\n渡劫\n主动攻击\n10\n59\n62,65,68,\n用全身元气召出狂雷天鹰，使对方持续受到长时间的金系伤害并减速。\n71,74,77,80,\n83,86\n烈焰之矢\n远程武器\n无\n筑基\n主动祝福\n10\n6\n11,16,21,\n为自已一定时间内的攻击附上火系伤害。\n26,31,36,41,\n46,51\n寒冰之矢\n远程武器\n烈焰之矢\n灵虚\n主动攻击\n10\n9\n14,19,24,\n攻击对方并使其减速。\n29,34,39,44,\n49,54\n蛇蝎之矢\n远程武器\n冰冻之矢\n和合\n主动攻击\n10\n19\n24,29,34,\n使对方受伤后受到持续木系伤害。\n39,44,49,54,\n59,64\n尖牙之矢\n远程武器\n蛇蝎之矢\n元婴\n主动攻击\n10\n34\n39,44,49,\n使对方受攻击流血受到持续物理伤害。\n54,59,64,69,\n74,79\n利齿之矢\n远程武器\n尖牙之矢\n履霜\n主动攻击\n10\n49\n53,57,61,\n攻击对方并使其短期内生命值上限下降。\n65,69,73,77,\n81,85\n翼盾\n不限\n无\n灵虚\n主动祝福\n10\n9\n14,19,24,\n用元气结上一个翼之盾，一定时间内吸收一定量伤害。\n29,34,39,44,\n49,54\n翼击\n不限\n翼盾\n和合\n主动攻击\n10\n23\n28,33,38,\n以翼之神力攻击近身对手。\n43,48,53,58,\n63,68\n翼展\n不限\n翼击\n空冥\n主动攻击\n10\n39\n43,47,51,\n以翼之神力攻击周围所有敌人，并将其击退。\n55,59,63,67,\n71,75\n神鹰翼扬\n不限\n翼展\n渡劫\n主动祝福\n1\n59\n无\n借神鹰之力使自已自由移动，减少伤害并且不受移动阻止状态影响。\n羽之守护\n不限\n无\n和合\n主动祝福\n10\n23\n28,33,38,\n借羽翼之神力提升周围队友的闪避。\n43,48,53,58,\n63,68\n飞行精通\n远程武器\n无\n灵虚\n被动\n10\n9\n14,19,24,\n提升使用羽族翅膀时的飞行速度。\n29,34,39,44,\n49,54\n百步穿杨\n远程武器\n无\n灵虚\n被动\n10\n9\n14,19,24,\n提升所有远程攻击的攻击距离。\n29,34,39,44,\n49,54\n弓弩精通\n远程武器\n无\n元婴\n被动\n10\n29\n34,39,44,\n提升使用远程武器时的攻击力。\n49,54,59,64,\n69,74",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "羽芒技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "引而不发",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "5,10,15,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "较长时间蓄力的一射击，造成很大物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "20,25,30,35,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "连射",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "3,8,13,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "快速的一次射击对敌人造成伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "18,23,28,33,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "38,43",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "击退矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "连射",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一次迅速的攻击，可将对方击退一定距离。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "困缚矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "击退矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "集蓄元气进行一次攻击，成功后可使对方定身一小段时间。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "击晕矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "困缚矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击对方并有可能将其击晕一段时间。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55,59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "致命矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "击晕矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一次强烈的攻击对敌人造成致命的伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65,69,73,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "箭阵",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "致命矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "集全身元气，将数箭射向天空，不断对范围敌人造成巨大伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "落雷",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "18,23,28,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将攻击化作雷电，对敌人造成金系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "33,38,43,48,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "53,58",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "惊雷",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "落雷",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "强烈的攻击，使对方受到金系伤害同时降低金系抗性。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "炸雷",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "惊雷",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "48,52,56,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对目标及其周围小范围造成金系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "60,64,68,72,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "76,80",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂雷天鹰",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "炸雷",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "用全身元气召出狂雷天鹰，使对方持续受到长时间的金系伤害并减速。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烈焰之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "11,16,21,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "为自已一定时间内的攻击附上火系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "26,31,36,41,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "46,51",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "寒冰之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "烈焰之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击对方并使其减速。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "蛇蝎之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "冰冻之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使对方受伤后受到持续木系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "尖牙之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "蛇蝎之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使对方受攻击流血受到持续物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,69,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,79",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "利齿之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "尖牙之矢",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击对方并使其短期内生命值上限下降。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65,69,73,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "翼盾",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "不限",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "用元气结上一个翼之盾，一定时间内吸收一定量伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "翼击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "不限",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "翼盾",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "28,33,38,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以翼之神力攻击近身对手。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "43,48,53,58,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "63,68",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "翼展",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "不限",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "翼击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以翼之神力攻击周围所有敌人，并将其击退。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55,59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神鹰翼扬",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "不限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "翼展",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "借神鹰之力使自已自由移动，减少伤害并且不受移动阻止状态影响。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "羽之守护",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "不限",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "28,33,38,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "借羽翼之神力提升周围队友的闪避。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "43,48,53,58,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "63,68",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "飞行精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升使用羽族翅膀时的飞行速度。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "百步穿杨",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升所有远程攻击的攻击距离。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "弓弩精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "远程武器",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升使用远程武器时的攻击力。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>羽芒技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>引而不发</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>5,10,15,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>较长时间蓄力的一射击，造成很大物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>20,25,30,35,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>40,45</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>连射</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>3,8,13,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>快速的一次射击对敌人造成伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>18,23,28,33,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>38,43</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>击退矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>连射</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>一次迅速的攻击，可将对方击退一定距离。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>困缚矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>击退矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>集蓄元气进行一次攻击，成功后可使对方定身一小段时间。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>击晕矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>困缚矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>攻击对方并有可能将其击晕一段时间。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>55,59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>致命矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>击晕矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>一次强烈的攻击对敌人造成致命的伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>65,69,73,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>箭阵</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>致命矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>集全身元气，将数箭射向天空，不断对范围敌人造成巨大伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>落雷</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>13</div>\r\n            </td>\r\n            <td>\r\n            <div>18,23,28,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>将攻击化作雷电，对敌人造成金系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>33,38,43,48,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>53,58</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>惊雷</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>落雷</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>强烈的攻击，使对方受到金系伤害同时降低金系抗性。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>炸雷</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>惊雷</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>44</div>\r\n            </td>\r\n            <td>\r\n            <div>48,52,56,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>对目标及其周围小范围造成金系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>60,64,68,72,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>76,80</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>狂雷天鹰</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>炸雷</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>用全身元气召出狂雷天鹰，使对方持续受到长时间的金系伤害并减速。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>烈焰之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>6</div>\r\n            </td>\r\n            <td>\r\n            <div>11,16,21,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>为自已一定时间内的攻击附上火系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>26,31,36,41,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>46,51</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>寒冰之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>烈焰之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>攻击对方并使其减速。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,44,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>蛇蝎之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>冰冻之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>使对方受伤后受到持续木系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>尖牙之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>蛇蝎之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>34</div>\r\n            </td>\r\n            <td>\r\n            <div>39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>使对方受攻击流血受到持续物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,69,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,79</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>利齿之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>尖牙之矢</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>攻击对方并使其短期内生命值上限下降。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>65,69,73,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>翼盾</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>不限</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>用元气结上一个翼之盾，一定时间内吸收一定量伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,44,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>翼击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>不限</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>翼盾</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>23</div>\r\n            </td>\r\n            <td>\r\n            <div>28,33,38,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以翼之神力攻击近身对手。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>43,48,53,58,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>63,68</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>翼展</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>不限</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>翼击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以翼之神力攻击周围所有敌人，并将其击退。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>55,59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>神鹰翼扬</div>\r\n            </td>\r\n            <td>\r\n            <div>不限</div>\r\n            </td>\r\n            <td>\r\n            <div>翼展</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>借神鹰之力使自已自由移动，减少伤害并且不受移动阻止状态影响。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>羽之守护</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>不限</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>23</div>\r\n            </td>\r\n            <td>\r\n            <div>28,33,38,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>借羽翼之神力提升周围队友的闪避。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>43,48,53,58,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>63,68</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>飞行精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升使用羽族翅膀时的飞行速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,44,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>百步穿杨</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升所有远程攻击的攻击距离。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,44,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>弓弩精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>远程武器</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升使用远程武器时的攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/4a78e24de6621d6c52cb.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/4a78e24de6621d6c52cb.js"
+}

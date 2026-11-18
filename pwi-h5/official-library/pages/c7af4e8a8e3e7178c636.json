@@ -1,0 +1,223 @@
+{
+  "id": "c7af4e8a8e3e7178c636",
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/job.htm",
+  "title": "游戏特色 职业 -《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业介绍",
+  "depth": 0,
+  "parents": [
+    "3e844d7982ff7ea45bd4",
+    "64afb5b5f8d4e795b812",
+    "8015afdd3e67ec5d604d",
+    "9d452222090849e9f957",
+    "5cb139e84a2958af390a",
+    "a93b688ecdd34ebb3e45",
+    "aaa383067502c794c1ce",
+    "e3708d65cda48d6dca71",
+    "c7af4e8a8e3e7178c636",
+    "56efe8135221e06210bd",
+    "e63b639f9250bddb7f1c",
+    "70dffced80c07759aa48",
+    "da31792f8d7ba28f361d",
+    "6c28db258c91cc29014d",
+    "dc35782b075005c68fbc",
+    "b7d74aaf0682f417291c",
+    "4b26ae1193398abd6a1e",
+    "125889a9e55210906b09",
+    "9331b7d5cd87224a3247",
+    "d5853afa509a7d061e6b",
+    "09fddc70dcd77ec60f4c"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "de4c2246e9e0959cae6ef4c93b22391c113c888a9d93d0c301c84b43997b1ac6",
+  "bytes": 6490,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/c7af4e8a8e3e7178c636.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "游戏特色\n注册账号\n下载客户端\n新手指南\n视听\n职业\n装备\n修炼\n战斗\n骑乘\n捏脸\n时装\n剑灵\n魅灵\n剑灵讲究剑技与法术双修。剑技上，他们能将金元素的力量附着于剑身近身攻击对手，身形灵活，出招凶狠凌厉，令敌防不胜防。法术上，他们化自然之力自成剑气，以心御剑，释放出惊人剑气，造成致命伤害。\n回到顶部\n注册账号\n领取礼包",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/index.htm",
+      "label": "视听",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/down_client.htm",
+      "label": "下载客户端",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/index.htm",
+      "label": "新手指南",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/job.htm",
+      "label": "剑灵",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/ren.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/yu.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/yao.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/xi.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/equip.htm",
+      "label": "装备",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/practice.htm",
+      "label": "修炼",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/battle.htm",
+      "label": "战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/ride.htm",
+      "label": "骑乘",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/nipface.htm",
+      "label": "捏脸",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/fashion.htm",
+      "label": "时装",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/meiling.htm",
+      "label": "魅灵",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101103/56454.shtml",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201102/imitator/jianling.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp",
+      "label": "领取礼包",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job1_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job_btn01.jpg",
+      "alt": "职业技能",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job_btn02.jpg",
+      "alt": "职业加点",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/job_btn03.jpg",
+      "alt": "技能模拟",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/js/js0214.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div></div>\r\n<div>\r\n    <div>\r\n\t\t<div>\r\n\t\t\t\r\n\t\t\t<img src=\"assets/8b506557bf64970d0018.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/2a717c47446973c13088.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/670fa76acbc5cf94dcb1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/4d8855c6c2437343bf06.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/7438394f75afea442deb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/817219386ef740e9cf5b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/90079b0be937cd6d7632.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/259afde687ade7c804c9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/d9a20250f575b75ce8e8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/602e12e0ee987b9835c1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t</div>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">游戏特色</a></li>\r\n            <li>注册账号</li>\r\n            <li><a href=\"https://w2i.wanmei.com/download/down_client.htm\" rel=\"noreferrer\" target=\"_blank\">下载客户端</a></li>\r\n            <li><a href=\"#page=22965a8aa329ca111aad\">新手指南</a></li>\r\n        </ul>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">视听</a></li>\r\n            <li><a href=\"#page=c7af4e8a8e3e7178c636\">职业</a></li>\r\n            <div>\r\n                <a href=\"#page=c7af4e8a8e3e7178c636\"></a>\r\n                <a href=\"#page=8015afdd3e67ec5d604d\"></a>\r\n                <a href=\"#page=aaa383067502c794c1ce\"></a>\r\n                <a href=\"#page=a93b688ecdd34ebb3e45\"></a>\r\n                <a href=\"#page=64afb5b5f8d4e795b812\"></a>\r\n            </div>\r\n            <li><a href=\"#page=70dffced80c07759aa48\">装备</a></li>\r\n            <li><a href=\"#page=da31792f8d7ba28f361d\">修炼</a></li>\r\n            <li><a href=\"#page=6c28db258c91cc29014d\">战斗</a></li>\r\n            <li><a href=\"#page=dc35782b075005c68fbc\">骑乘</a></li>\r\n            <li><a href=\"#page=b7d74aaf0682f417291c\">捏脸</a></li>\r\n            <li><a href=\"#page=4b26ae1193398abd6a1e\">时装</a></li>\r\n        </ul>\r\n        <div>\r\n        \t<a href=\"#page=c7af4e8a8e3e7178c636\">剑灵</a>\r\n            <a href=\"#page=56efe8135221e06210bd\">魅灵</a>\r\n        </div>\r\n        <div>\r\n            <p><span>剑灵</span>讲究剑技与法术双修。剑技上，他们能将金元素的力量附着于剑身近身攻击对手，身形灵活，出招凶狠凌厉，令敌防不胜防。法术上，他们化自然之力自成剑气，以心御剑，释放出惊人剑气，造成致命伤害。</p>\r\n        </div>\r\n        <div></div>\r\n        <div>\r\n        \t<a href=\"#page=1653f72c7a01bd381b97\"><img src=\"assets/8079d642629bef2c508b.jpg\" alt=\"职业技能\" loading=\"lazy\"></a>\r\n            <a href=\"#page=75f04dc49a0514d036ea\"><img src=\"assets/fb57662d981b8f76f9f8.jpg\" alt=\"职业加点\" loading=\"lazy\"></a>\r\n            <a href=\"#page=5b908110a16d3bc6fa0c\"><img src=\"assets/b184b658268cc81aa808.jpg\" alt=\"技能模拟\" loading=\"lazy\"></a>\r\n        </div>\r\n\t</div>\r\n</div>\r\n\r\n<div>\r\n    <div>\r\n        回到顶部\r\n        注册账号\r\n        <a href=\"http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp\" rel=\"noreferrer\" target=\"_blank\">领取礼包</a>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/c7af4e8a8e3e7178c636.json",
+  "imageCount": 13,
+  "tableCount": 0,
+  "downloadPath": "downloads/c7af4e8a8e3e7178c636.js"
+}

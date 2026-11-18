@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27592.jpg",
+  "id": "edbb64d4a4c850d7368f",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 如来天心咒<em>（升仙）</em> ",
+  "bytes": 3805,
+  "sha256": "99e2dbaef9bc0bcbe3201e9d3a32934f17b82b0125a6c0956b674d59ff1516f3",
+  "fetchedAt": "2026-11-18T08:36:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27592.jpg",
+  "path": "assets/edbb64d4a4c850d7368f.jpg"
+}

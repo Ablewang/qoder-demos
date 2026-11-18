@@ -1,0 +1,82 @@
+{
+  "id": "b1df3b2a90e9f89b6a4f",
+  "url": "https://event51.wanmei.com/w2i/201303/first/index.htm",
+  "title": "畅爽无尽 狂欢不止 -《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 4,
+  "parents": [
+    "7caeaab051c613bd746c",
+    "78c23ca56c840121bbb4",
+    "564938ac546ba5554d1b",
+    "f1a22718bf7ba5a42e0e"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/first/index.htm",
+  "fetchedAt": "2026-11-18T08:16:16+00:00",
+  "sha256": "a90d546af407adbc8f7c1d0425449c3fe84c21cf61145703a40d75099554f7eb",
+  "bytes": 2951,
+  "rawPath": "raw/b1df3b2a90e9f89b6a4f.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "新版揭秘\n左\n右",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/spread/index.htm",
+      "label": "新版揭秘",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/back.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/all.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/newer.htm",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/images/pic1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/images/pic2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/images/pic3.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/js/lrAuto.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201303/first/style/index.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div></div>\r\n<div>\r\n<div>\r\n\t\r\n\t<div>\r\n\t\t\r\n\t\t<a href=\"#page=16e10f9ab511825734e6\">新版揭秘</a>\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t\t<ul>\r\n\t\t\t<li><a href=\"#page=78c23ca56c840121bbb4\"><img src=\"assets/e1326364a0a434f83a31.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n\t\t\t<li><a href=\"#page=564938ac546ba5554d1b\"><img src=\"assets/02b8551159baf0d81afb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n\t\t\t<li><a href=\"#page=f1a22718bf7ba5a42e0e\"><img src=\"assets/46c25ac4eb6922e44e71.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n</div>\r\n<span>左</span>\r\n<span>右</span>\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/b1df3b2a90e9f89b6a4f.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/b1df3b2a90e9f89b6a4f.js"
+}

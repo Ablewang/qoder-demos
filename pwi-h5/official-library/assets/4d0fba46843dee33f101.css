@@ -1,0 +1,66 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+
+/* 共用部分 */
+* {margin:0;padding:0px;}
+body {background:url('../images/main_bg.jpg') repeat center 47px;font-size:14px;font-family:宋体, Arial, Helvetica, sans-serif;color:#000;margin:0;padding:0px;}
+.flt{float:left}
+.frt{float:right}
+.clr{clear:both}
+img{border:0px;}
+a{text-decoration:none;color:black}
+a:hover{text-decoration:underline}
+.none{display:none}
+ul,li{margin:0;padding:0;list-style-type: none;}
+
+/* LOGO的定位 */
+#logo{position:relative}
+#w2i_logo{top:10px;left:30px;}
+#transparent_logo{top:10px;left:30px;}
+
+#header ,#nav ,#main ,#table_con{width:1002px;margin:0px auto;clear:both}
+#header{position:relative}
+#wrap img ,#header img ,.layer img ,#left img ,#right img{float:left}
+#body{background:url('../images/bodybg.jpg') repeat top;}
+
+#wrap{background:url('../images/bg.jpg') no-repeat center top;width:100%;clear:both}
+#wrap2{background:url('../images/bg2.jpg') no-repeat center top;width:100%;height:255px;clear:both}
+#wrap3{background:url('../images/bg3.jpg') no-repeat center top;width:100%;clear:both}
+.layer{width:1002px;margin:0px auto;clear:both}
+.btn{width:115px;float:left}
+#top_nav{width:444px;float:left}
+
+#main{padding-bottom:10px;}
+#left{width:659px;padding-left:8px;margin-right:8px;float:left}
+.title{background:url('../images/detail_title.jpg') no-repeat top;width:419px;height:28px;padding:20px 120px;line-height:28px;font-weight:bold;text-align:center;font-size:16px;float:left}
+#content{background:url('../images/detail_con.jpg') repeat-y top;width:544px;min-height:600px;_height:600px;padding:50px 55px 30px 60px;line-height:23px;float:left}
+#content img{float:none}
+#content table{margin:0px auto;}
+#right{width:321px;float:left}
+#text{background:url('../images/detail_right_mid.jpg') repeat-y top;width:294px;min-height:600px;_height:600px;padding:0px 14px 0px 13px;float:left}
+.box {width:294px;margin-bottom:5px;float:left}
+.box_table{width:281px;background:url('../images/detail_right_mid_con.jpg') repeat-y top;min-height:150px;_height:150px;padding:0px 5px 0px 8px;float:left}
+
+
+.table{border-collapse:collapse;border:1px #EBCD24 solid;margin-top:5px;width:279px;text-align:center;float:left}
+.table td{height:23px;line-height:23px;border:1px #EBCD24 solid;}
+.trbg1{background:#382000;color:white}
+.trbg2{background:#D58607}
+.trbg3{background:#FFF7B6}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

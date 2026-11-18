@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1102.jpg",
+  "id": "0e54d1eb818949eb405a",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "复仇之魂—镜像",
+  "bytes": 4682,
+  "sha256": "7305981dbdb0cdd3947bcbe12fac9b407c17bcd68facc6cdaaa6f40e063cb91c",
+  "fetchedAt": "2026-11-18T08:36:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1102.jpg",
+  "path": "assets/0e54d1eb818949eb405a.jpg"
+}

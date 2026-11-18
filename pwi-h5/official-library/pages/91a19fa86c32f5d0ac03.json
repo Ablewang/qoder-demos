@@ -1,0 +1,429 @@
+{
+  "id": "91a19fa86c32f5d0ac03",
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text1_03.htm",
+  "title": "双旦贺岁 跨年狂欢 七重活动献礼 享最丰盛饕餮大餐 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 7,
+  "parents": [
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text1_03.htm",
+  "fetchedAt": "2026-11-18T08:17:27+00:00",
+  "sha256": "b695db413a2885f541b85acb51ac40746b90167c27133027e2cab318d0127c5f",
+  "bytes": 6867,
+  "rawPath": "raw/91a19fa86c32f5d0ac03.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "活动奖励\n追风豹\n银鬃马\n无双之翼\n朔天\n十星碧海龙珠\n圣诞时装\n人鱼商店兑换券\n冥神\n猛犸象\n落影\n九炼\n极品魂石礼包\n绯梦\n报喜猪\n物品名称\n简介\n十星碧海龙珠\n十星龙珠（只能精练天人合一的装备），绑定。\n无双之翼\n15品极品披风，精炼至12级将附加1575点生命值。\n飞行器兑换券\n可兑换追九炼、冥神、落影、朔天、绯梦其中之一。\n人鱼商店兑换券\n可兑换人鱼摆摊道具，永久。\n极品魂石礼包\n可随机获得龙炎、冰凝、金魄、大地、女娲或轩辕之石一块。\n圣诞时装礼包（永久）\n可以用来装饰自己的高级圣诞时装，永久。\n骑宠兑换券\n可兑换追风豹、银鬃马、报喜猪、猛犸巨象其中之一。\n结丹石（绑定）*5\n短时间内提升获得经验倍数的神奇宝石。\n好人卡\n卖给NPC可获得100w完美币。\n幻仙石*10\n精炼道具。\n天工符文*10\n打孔道具。\n神秘筹码包\n内含15个神秘筹码。可在神秘商人处兑换黄金铸具或高级铸料，神秘筹码包可交易，神秘筹码不可交易。\n千机材兑换券\n可兑换多种黄金铸具及材料。\n玄魔密卷（一）\n可获得200000经验以及45600元神，绑定。\n玄魔密卷（二）\n可获得100000经验以及22800元神，绑定。\n玄魔密卷（三）\n可获得50000经验以及11400元神，绑定。\n修炼秘籍\n杀怪修炼时额外获得50%经验、元神，修炼时间:一小时修炼时间。\n梦幻秘典\n根据玩家等级获得经验：50级以下2W经验、50-79级3.5W经验、80—99级4万经验、100以上4.5W经验。\n圣诞时装礼包（时限3天固定色）\n可以用来装饰自己的高级圣诞时装，限时3天。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "简介",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "十星碧海龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "十星龙珠（只能精练天人合一的装备），绑定。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无双之翼",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15品极品披风，精炼至12级将附加1575点生命值。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "飞行器兑换券",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可兑换追九炼、冥神、落影、朔天、绯梦其中之一。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "人鱼商店兑换券",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可兑换人鱼摆摊道具，永久。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "极品魂石礼包",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可随机获得龙炎、冰凝、金魄、大地、女娲或轩辕之石一块。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "圣诞时装礼包（永久）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可以用来装饰自己的高级圣诞时装，永久。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "骑宠兑换券",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可兑换追风豹、银鬃马、报喜猪、猛犸巨象其中之一。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "结丹石（绑定）*5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "短时间内提升获得经验倍数的神奇宝石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "好人卡",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "卖给NPC可获得100w完美币。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻仙石*10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精炼道具。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天工符文*10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "打孔道具。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神秘筹码包",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "内含15个神秘筹码。可在神秘商人处兑换黄金铸具或高级铸料，神秘筹码包可交易，神秘筹码不可交易。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "千机材兑换券",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可兑换多种黄金铸具及材料。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄魔密卷（一）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可获得200000经验以及45600元神，绑定。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄魔密卷（二）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可获得100000经验以及22800元神，绑定。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄魔密卷（三）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可获得50000经验以及11400元神，绑定。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "修炼秘籍",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "杀怪修炼时额外获得50%经验、元神，修炼时间:一小时修炼时间。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "梦幻秘典",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "根据玩家等级获得经验：50级以下2W经验、50-79级3.5W经验、80—99级4万经验、100以上4.5W经验。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "圣诞时装礼包（时限3天固定色）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可以用来装饰自己的高级圣诞时装，限时3天。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_01b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_02b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_03b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_04b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_05b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_06b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_07b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_08b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_09b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_10b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_11b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_12b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_13b.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_14b.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_11.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_12.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_13.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_14.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<h2>活动奖励</h2>\r\n\t<div>\r\n\t\t<div>\r\n\t\t\t<div>\r\n\t\t\t  <ul>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_01b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/220898126b05994dda77.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>追风豹</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_02b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/900a93f8dbf608bcca8e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>银鬃马</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_03b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/cfff20aeb84c5a19bb4d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>无双之翼</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_04b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/c2a380d36b2fd1e77ead.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>朔天</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_05b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/7da615407a0fd1d57778.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>十星碧海龙珠</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_06b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/0c944afca85ecd7777c0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>圣诞时装</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_07b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/3d2bc373be55318f6815.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>人鱼商店兑换券</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_08b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/323f230a0497daed176b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>冥神</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_09b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/6d2b55738178532761cd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>猛犸象</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_10b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/bbbecba9b27cd956d633.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>落影</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_11b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/cc4288c05165f243db21.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>九炼</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_12b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/89ceb388a2b32c314345.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>极品魂石礼包</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_13b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/31502527d0338bc0fbbf.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>绯梦</em></li>\r\n\t\t\t\t<li><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic1_14b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/acf096d8104167070df7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><em>报喜猪</em></li>\r\n\t\t\t  </ul>\r\n\t\t\t</div>\r\n\t\t</div><br>\r\n<br><br>\r\n\r\n      <p><table>\r\n           <tr>\r\n             <td><strong>物品名称</strong></td>\r\n             <td><strong>简介</strong></td>\r\n           </tr>\r\n           <tr>\r\n             <td>十星碧海龙珠</td>\r\n             <td>十星龙珠（只能精练天人合一的装备），绑定。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>无双之翼</td>\r\n             <td>15品极品披风，精炼至12级将附加1575点生命值。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>飞行器兑换券</td>\r\n             <td>可兑换追九炼、冥神、落影、朔天、绯梦其中之一。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>人鱼商店兑换券</td>\r\n             <td>可兑换人鱼摆摊道具，永久。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>极品魂石礼包</td>\r\n             <td>可随机获得龙炎、冰凝、金魄、大地、女娲或轩辕之石一块。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>圣诞时装礼包（永久）</td>\r\n             <td>可以用来装饰自己的高级圣诞时装，永久。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>骑宠兑换券</td>\r\n             <td>可兑换追风豹、银鬃马、报喜猪、猛犸巨象其中之一。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>结丹石（绑定）*5</td>\r\n             <td>短时间内提升获得经验倍数的神奇宝石。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>好人卡</td>\r\n             <td>卖给NPC可获得100w完美币。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>幻仙石*10</td>\r\n             <td>精炼道具。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>天工符文*10</td>\r\n             <td>打孔道具。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>神秘筹码包</td>\r\n             <td>内含15个神秘筹码。可在神秘商人处兑换黄金铸具或高级铸料，神秘筹码包可交易，神秘筹码不可交易。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>千机材兑换券</td>\r\n             <td>可兑换多种黄金铸具及材料。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>玄魔密卷（一）</td>\r\n             <td>可获得200000经验以及45600元神，绑定。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>玄魔密卷（二）</td>\r\n             <td>可获得100000经验以及22800元神，绑定。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>玄魔密卷（三）</td>\r\n             <td>可获得50000经验以及11400元神，绑定。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>修炼秘籍</td>\r\n             <td>杀怪修炼时额外获得50%经验、元神，修炼时间:一小时修炼时间。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>梦幻秘典</td>\r\n             <td>根据玩家等级获得经验：50级以下2W经验、50-79级3.5W经验、80—99级4万经验、100以上4.5W经验。</td>\r\n           </tr>\r\n           <tr>\r\n             <td>圣诞时装礼包（时限3天固定色）</td>\r\n             <td>可以用来装饰自己的高级圣诞时装，限时3天。</td>\r\n           </tr>\r\n          </table>\r\n         </p>\r\n\t</div>\r\n</div>\r\n\r\n",
+  "dataPath": "pages/91a19fa86c32f5d0ac03.json",
+  "imageCount": 14,
+  "tableCount": 1,
+  "downloadPath": "downloads/91a19fa86c32f5d0ac03.js"
+}

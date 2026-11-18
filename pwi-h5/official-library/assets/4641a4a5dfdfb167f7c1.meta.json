@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_cike.png",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "4641a4a5dfdfb167f7c1",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "bytes": 3341,
+  "sha256": "025b1953f17403a7125287279ab18795431dd0e114c020ca96024035180c12aa",
+  "fetchedAt": "2026-11-18T08:18:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_cike.png",
+  "path": "assets/4641a4a5dfdfb167f7c1.png"
+}

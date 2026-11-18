@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/yanhua/qingdian/3.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "2608489540697a4f9718",
+  "status": "ok",
+  "parents": [
+    "f1a64dbcf1ac8238652a"
+  ],
+  "bytes": 4174,
+  "sha256": "9910e607ea0beb4e4681bac11a0168b2fe1eaaa0e32597c1f50337b195da08fe",
+  "fetchedAt": "2026-11-18T08:19:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/yanhua/qingdian/3.jpg",
+  "path": "assets/2608489540697a4f9718.jpg"
+}

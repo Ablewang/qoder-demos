@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_02.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "44dff26c4908c112ec23",
+  "status": "ok",
+  "parents": [
+    "1d8b80714dec246ba5aa"
+  ],
+  "bytes": 431453,
+  "sha256": "06a2a61766a0af06ad93acd96f11e07bad285a135994dd306ad0608427e1b688",
+  "fetchedAt": "2026-11-18T08:25:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_02.jpg",
+  "path": "assets/44dff26c4908c112ec23.jpg"
+}

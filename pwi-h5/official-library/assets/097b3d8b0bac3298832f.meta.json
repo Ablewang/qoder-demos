@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_617.jpg",
+  "id": "097b3d8b0bac3298832f",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·蛇蝎之矢<em>（入魔）</em>",
+  "bytes": 1724,
+  "sha256": "ed09426b0de3c80d5ba235f656e23ccd214d65ccc406b51cbffa191cb71cb2e6",
+  "fetchedAt": "2026-11-18T08:34:59+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_617.jpg",
+  "path": "assets/097b3d8b0bac3298832f.jpg"
+}

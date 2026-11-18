@@ -1,0 +1,24 @@
+{
+  "url": "http://www.wanmei.com/public/style/wm.css",
+  "alt": "",
+  "kind": "link",
+  "id": "89c8a3c90921d5959c8a",
+  "status": "ok",
+  "parents": [
+    "782d6e4068ec737e77ac",
+    "633c5d2f329b24f8c2de",
+    "5a12e42458057bed1cfc",
+    "f3219307caf100f9392b",
+    "0e7591603c5d3aaeeb3c",
+    "15e68af62c0729593d5a",
+    "9695a000672ff0aa9760"
+  ],
+  "bytes": 1519,
+  "sha256": "4fe9750fec3f3f674e4c403820c4a3e8ea2c8880836cce6de11798a93a21de69",
+  "fetchedAt": "2026-11-18T08:27:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://www.wanmei.com/public/style/wm.css",
+  "path": "assets/89c8a3c90921d5959c8a.css"
+}

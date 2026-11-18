@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_103.jpg",
+  "id": "7bafa83fb539a4a5496b",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "水性精通",
+  "bytes": 1816,
+  "sha256": "06c0af0d01fead8a9cd6afc8893bdf1494f5a888d02db81571633ffb6e428a0d",
+  "fetchedAt": "2026-11-18T08:35:24+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_103.jpg",
+  "path": "assets/7bafa83fb539a4a5496b.jpg"
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/js/myjs.js",
+  "id": "0ede5bba8e02e9c06fd0",
+  "status": "ok",
+  "parents": [
+    "4c3f7e0f9450a727c196",
+    "83a0bdfa704d7bf492e9"
+  ],
+  "kind": "verified-data-resource",
+  "category": "装备道具",
+  "section": "装备对比数据库",
+  "bytes": 5466,
+  "sha256": "12ab0777e5347e186a5d2ba7398bec76abec3b3d6f7cbc55f064e44de4eb17ec",
+  "fetchedAt": "2026-11-18T08:17:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/js/myjs.js",
+  "path": "assets/0ede5bba8e02e9c06fd0.js"
+}

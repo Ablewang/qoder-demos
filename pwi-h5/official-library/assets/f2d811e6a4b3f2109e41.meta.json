@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_652.jpg",
+  "id": "f2d811e6a4b3f2109e41",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·神辅术<em>（升仙）</em>",
+  "bytes": 1703,
+  "sha256": "d4d3cb963d08b616bb0da25ce3df2a5cacd6c0298b4b6bd0424cc02481a2338c",
+  "fetchedAt": "2026-11-18T08:35:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_652.jpg",
+  "path": "assets/f2d811e6a4b3f2109e41.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/images/btn7.jpg",
+  "alt": "结伴游戏",
+  "kind": "img",
+  "id": "7b9c717b10ca13ac654d",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "bytes": 5699,
+  "sha256": "1e80ce0bad0b2346263183ee49312513c30b7d3eb3c21cb4940dd8eff2c5e5bb",
+  "fetchedAt": "2026-11-18T08:18:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/images/btn7.jpg",
+  "path": "assets/7b9c717b10ca13ac654d.jpg"
+}

@@ -1,0 +1,40 @@
+﻿/* public */
+html,body,form,ol,ul,li,div,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,th,td,font,em,ins,span,a{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;font-weight:normal}
+html{_filter:expression(document.execCommand("BackgroundImageCache",false,true));}
+ul,li,div,dl,dt,dd{list-style:none;}
+h1{height:0px; line-height:0px; font-size:0px;}
+a{text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());}
+ins{float:right; text-decoration:none; font-weight:normal;}
+img{border:0; display:block;}
+font,em{font-style:normal;}
+label{vertical-align:middle;font-family:tahoma;}
+textarea{resize:none; line-height:20px; padding:2px;}
+input{padding:0 2px;}
+body{background:#51355d; font-size:12px; font-family:Verdana,Geneva,sans-serif,\5b8b\4f53;}
+
+/* content */
+.wrap{ background:#51355d url(../images/bg.jpg) no-repeat center top;clear:both; }
+.wrap2{ background:#51355d url(../images/bg2.jpg) no-repeat center top;clear:both; }
+.content{width:1002px; margin:0 auto; position:relative;}
+
+.nav_box{width:370px; height:30px; line-height:34px; float:right;}
+.nav_box,.nav_box a{color:#fff;}
+.nav_box a:hover{color:#FF0;}
+.nav_box span{padding:0 8px;}
+
+#top{width:1002px;margin:0 auto; color:#fff; background:#51355d;}
+#share_line{width:260px;height:20px; float:right; line-height:20px; }
+#share_line ul{ margin-top:4px;}
+#share_line ul li{ line-height:20px;}
+
+a.btn{width:198px;height:59px;display:block;position:absolute;background:url(../images/btn2.jpg) no-repeat;left: 468px;top: 338px;}
+.txt{width:726px;height:460px;position:absolute;left: 44px;top: 330px;overflow-x: hidden;overflow-y: scroll;color:#c7a0c4; font-size:14px; line-height:22px;}
+.txt td.timu{ font-weight:bold; padding-top:20px; padding-bottom:5px;}
+.txt td.next{padding-top:20px; padding-bottom:5px;}
+.txt td.xuanxiang input{ margin:0 2px;}
+
+#SubmitSurvey{ width:106px; height:30px; cursor:pointer; background:url(../images/sbmit.jpg) no-repeat; border:none; text-indent:-999999em; overflow:hidden;}
+.input{ cursor:pointer;}

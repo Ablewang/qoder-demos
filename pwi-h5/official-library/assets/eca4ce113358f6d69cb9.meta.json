@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/images/h_05.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "eca4ce113358f6d69cb9",
+  "status": "ok",
+  "parents": [
+    "e93b00b77035d0e5a3d7",
+    "ce036e5012d6285a44f3"
+  ],
+  "bytes": 17330,
+  "sha256": "9d6aa6328866ae3621eee85641f92c4df9b60d1e24d24bb3477801d1e31121e4",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/eca4ce113358f6d69cb9.jpg"
+}

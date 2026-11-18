@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201204/51huodong/js/pop.js",
+  "alt": "",
+  "kind": "script",
+  "id": "7b342c8a8b77b63e2768",
+  "status": "ok",
+  "parents": [
+    "3a0ebde4f643dc0f6249"
+  ],
+  "bytes": 2160,
+  "sha256": "bae026862da0cec3028f0fc8b8c7e8ef92cbb46e0b51e47f88c4c5cef8cc9dba",
+  "fetchedAt": "2026-11-18T08:27:10+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201204/51huodong/js/pop.js",
+  "path": "assets/7b342c8a8b77b63e2768.js"
+}

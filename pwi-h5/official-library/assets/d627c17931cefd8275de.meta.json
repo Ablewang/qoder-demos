@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/cover120809/reg_slidein.png",
+  "alt": "",
+  "kind": "img",
+  "id": "d627c17931cefd8275de",
+  "status": "ok",
+  "parents": [
+    "ecd8cac8cda80c901799"
+  ],
+  "bytes": 15604,
+  "sha256": "ae22caed23d98c22f3adf67215086da4bd6d38762a9f25da5906bf78f377506e",
+  "fetchedAt": "2026-11-18T08:26:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://w2i.wanmei.com/images/cover120809/reg_slidein.png",
+  "path": "assets/d627c17931cefd8275de.png"
+}

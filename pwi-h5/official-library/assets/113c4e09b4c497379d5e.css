@@ -1,0 +1,72 @@
+﻿BODY {
+	FONT-SIZE: 12px; LINE-HEIGHT: 19px
+}
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 19px
+}
+TH {
+	FONT-SIZE: 12px; LINE-HEIGHT: 19px
+}
+BODY {
+	MARGIN: 0px
+}
+.red6 {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+.box {
+	FONT-SIZE: 12px; COLOR: #e5c16b
+}
+.12huang20 {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+.12hui20 {
+	FONT-SIZE: 12px; COLOR: #ffffff
+}
+.12tuhui9 {
+	FONT-SIZE: 12px; COLOR: #00ff00
+}
+.input {
+	BORDER-RIGHT: #b4b3ae 1px solid; BORDER-TOP: #b4b3ae 1px solid; BORDER-LEFT: #b4b3ae 1px solid; BORDER-BOTTOM: #b4b3ae 1px solid; HEIGHT: 20px
+}
+A:link {
+	COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ffcc00; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #00ff00
+}
+.line {
+	BORDER-TOP-STYLE: none; BORDER-BOTTOM: #c77e19 1px solid; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.14bai {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff
+}
+.12bai {
+	FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 20px
+}
+.16bai {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #e5c16b
+}
+.xin5 {
+	COLOR: #ffcc00
+}
+.xin4 {
+	COLOR: #ffcc99
+}
+.xin2 {
+	COLOR: #ffff99
+}
+.xin3 {
+	COLOR: #ffff00
+}
+.FF9900 {
+	COLOR: #ff9900
+}
+.hong12 {
+	COLOR: #ff0000
+}

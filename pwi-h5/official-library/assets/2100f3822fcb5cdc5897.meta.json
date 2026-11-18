@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_591.jpg",
+  "id": "2100f3822fcb5cdc5897",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "狂·引而不发<em>（入魔）</em>",
+  "bytes": 1761,
+  "sha256": "29676de47515f3482d0294599dc6db36ed2f46327167e31b4712a8b6c7464612",
+  "fetchedAt": "2026-11-18T08:34:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_591.jpg",
+  "path": "assets/2100f3822fcb5cdc5897.jpg"
+}

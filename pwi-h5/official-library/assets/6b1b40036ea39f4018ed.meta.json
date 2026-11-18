@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/shizhuang/nvyi/80.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6b1b40036ea39f4018ed",
+  "status": "ok",
+  "parents": [
+    "8c6dbf04199caeafccd0",
+    "090c3b6f4d7072cf2ec0"
+  ],
+  "bytes": 4347,
+  "sha256": "043184d9ec970b878392c61c653bbfb9efdedd43694144f3e81bb3b4bb9bcbc1",
+  "fetchedAt": "2026-11-18T08:19:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/shizhuang/nvyi/80.jpg",
+  "path": "assets/6b1b40036ea39f4018ed.jpg"
+}

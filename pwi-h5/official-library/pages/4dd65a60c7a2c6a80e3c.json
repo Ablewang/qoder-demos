@@ -1,0 +1,213 @@
+{
+  "id": "4dd65a60c7a2c6a80e3c",
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/con_04_01.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 2,
+  "parents": [
+    "33cb0d9652b4b915ca2a",
+    "4dd65a60c7a2c6a80e3c",
+    "99187cea065b9a3bc13f",
+    "e27e5d58ee71ef14e0c1",
+    "6d2b5b18c1c6f6f3a0e8"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "61917a5464521dbc78ce8d6235fa1ac33fd5d1c25e9e7fd0ae5e663827e8ef67",
+  "bytes": 5342,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4dd65a60c7a2c6a80e3c.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "进入第二阶段后有5处地点需要守护，必须分配好各自守护的位置。\n1.开始后金棂子会喊话，尽快通过“运转天君”分别传送到相应的幻界远转之地。共有玄之地、白之地、黄之地、青之地、赤之地这五个幻界远转之地，每处均有1个水昭然的化身需要守护。\n2.一段时间后五路均会有大量的怨灵开始进攻，玩家将会接到守护化身的任务，可以用来显示各路杀死的怪物分数。\n3.每条路的怪物分数满分为180，杀死所有来犯怪物，并且保证所有水昭然的化身不死便能达到最高分。每当有一个化身死掉，则那一路的分数将会清零。\n4.根据该阶段最终的分数，第三阶段的难度将会有变化。二阶段分数越高，三阶段的难度越低，反之则会越难！\n5.第二阶段持续一段时间后将会结束，此时计算杀怪分数，并在原有守护化身的附近出现新的npc炫月，与其对话传回中央无极之地，开始第三阶段。\n第二阶段怪物介绍\n怪物名称\n怪物特点介绍\n六首邪魈\n移动方式慢 物理攻击 血量及防御极高 伤害能力较强\n死亡不计分数 二阶段1只 五条路线均有\n青冥鬼鼠\n金系防御极低 物理防御低 物理攻击 死亡计分怪\n免疫昏迷 二阶段30只 主攻玄之地\n邪·战歌阴灵\n物理防御极低 不免疫昏迷 物理攻击 死亡计分怪\n成组出现，每组三个 二阶段90只 主攻白之地\n邪·雷豹铁卫\n土系防御极低 火系防御极低 水系防御极低 魔法攻击\n免疫昏迷 死亡计分怪 二阶段30只 主攻黄之地\n焚炎凶魄\n金系防御极低 物理防御低 魔法攻击 免疫昏迷\n死亡计分怪 二阶段30只 主攻青之地\n邪·震山将军\n物理防御低 木系防御低 闪避低 物理攻击 伤害能力强\n免疫昏迷 死亡计分怪 二阶段30只 主攻赤之地\n禁法护卫者\n无视伤害 死亡不计分数 特殊守卫怪",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "怪物名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物特点介绍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "六首邪魈",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "移动方式慢 物理攻击 血量及防御极高 伤害能力较强\n死亡不计分数 二阶段1只 五条路线均有",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "青冥鬼鼠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金系防御极低 物理防御低 物理攻击 死亡计分怪\n免疫昏迷 二阶段30只 主攻玄之地",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "邪·战歌阴灵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御极低 不免疫昏迷 物理攻击 死亡计分怪\n成组出现，每组三个 二阶段90只 主攻白之地",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "邪·雷豹铁卫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土系防御极低 火系防御极低 水系防御极低 魔法攻击\n免疫昏迷 死亡计分怪 二阶段30只 主攻黄之地",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "焚炎凶魄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金系防御极低 物理防御低 魔法攻击 免疫昏迷\n死亡计分怪 二阶段30只 主攻青之地",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "邪·震山将军",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御低 木系防御低 闪避低 物理攻击 伤害能力强\n免疫昏迷 死亡计分怪 二阶段30只 主攻赤之地",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "禁法护卫者",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无视伤害 死亡不计分数 特殊守卫怪",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/iframe/top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/iframe/left_menu.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/con_04.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/con_04_01.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/con_04_02.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/con_04_03.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/con_04_04.htm",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/images/top_menu0201.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/images/top_menu0202.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/images/top_menu0203.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/images/top_menu0204.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/images/top_menu0205.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n <div>\r\n\t\t\r\n\t\t<div></div>\r\n\t\t<div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57b9674c5c01d917be6e.gif\" alt=\"完美国际\" loading=\"lazy\"></a></div>\r\n        \r\n\t\t<div><p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200905/ectype/iframe/top.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200905/ectype/iframe/top.htm</a></p></div>\r\n\t<div>\r\n\t\t<div>\r\n\t\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/200905/ectype/iframe/left_menu.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/200905/ectype/iframe/left_menu.htm</a></p>\r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<dl>\r\n\t\t\t<dd>\r\n\t\t\t\t<div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<div>\r\n\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t<li>\r\n\t\t\t\t\t\t\t\t<span><a href=\"#page=33cb0d9652b4b915ca2a\"><img src=\"assets/52369d6719fcba5f9f06.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></span>\r\n\t\t\t\t\t\t\t\t<span><a href=\"#page=4dd65a60c7a2c6a80e3c\"><img src=\"assets/019cc39ea74d293367a4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></span>\r\n\t\t\t\t\t\t\t\t<span><a href=\"#page=99187cea065b9a3bc13f\"><img src=\"assets/118a9c381b56ed198c0a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></span>\r\n\t\t\t\t\t\t\t\t<span><a href=\"#page=e27e5d58ee71ef14e0c1\"><img src=\"assets/d3450ebb69491c0bf930.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></span>\r\n\t\t\t\t\t\t\t\t<span><a href=\"#page=6d2b5b18c1c6f6f3a0e8\"><img src=\"assets/03db8e7dd8416a39988d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></span>\r\n\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<p>　　进入第二阶段后有5处地点需要守护，必须分配好各自守护的位置。</p>\r\n<p> </p>\r\n<p>　　1.开始后金棂子会喊话，尽快通过“运转天君”分别传送到相应的幻界远转之地。共有玄之地、白之地、黄之地、青之地、赤之地这五个幻界远转之地，每处均有1个水昭然的化身需要守护。</p>\r\n<p> </p>\r\n<p>　　2.一段时间后五路均会有大量的怨灵开始进攻，玩家将会接到守护化身的任务，可以用来显示各路杀死的怪物分数。</p>\r\n<p> </p>\r\n<p>　　3.每条路的怪物分数满分为180，杀死所有来犯怪物，并且保证所有水昭然的化身不死便能达到最高分。每当有一个化身死掉，则那一路的分数将会清零。</p>\r\n<p> </p>\r\n<p>　　4.根据该阶段最终的分数，第三阶段的难度将会有变化。二阶段分数越高，三阶段的难度越低，反之则会越难！</p>\r\n<p> </p>\r\n<p>　　5.第二阶段持续一段时间后将会结束，此时计算杀怪分数，并在原有守护化身的附近出现新的npc炫月，与其对话传回中央无极之地，开始第三阶段。</p>\r\n<p> </p>\r\n<p><b>第二阶段怪物介绍</b></p>\r\n<p> </p>\r\n<table>\r\n  <tr>\r\n    <td><p><b>怪物名称</b></p></td>\r\n    <td><p><b>怪物特点介绍</b></p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>六首邪魈</p></td>\r\n    <td><p>移动方式慢 物理攻击    血量及防御极高 伤害能力较强<br>\r\n      死亡不计分数 二阶段1只 五条路线均有</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>青冥鬼鼠</p></td>\r\n    <td><p>金系防御极低 物理防御低    物理攻击 死亡计分怪<br>\r\n      免疫昏迷 二阶段30只 主攻玄之地</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>邪·战歌阴灵</p></td>\r\n    <td><p>物理防御极低 不免疫昏迷    物理攻击 死亡计分怪<br>\r\n      成组出现，每组三个 二阶段90只 主攻白之地</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>邪·雷豹铁卫</p></td>\r\n    <td><p>土系防御极低 火系防御极低    水系防御极低 魔法攻击<br>\r\n      免疫昏迷 死亡计分怪 二阶段30只 主攻黄之地</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>焚炎凶魄</p></td>\r\n    <td><p>金系防御极低 物理防御低    魔法攻击 免疫昏迷<br>\r\n      死亡计分怪 二阶段30只 主攻青之地 </p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>邪·震山将军</p></td>\r\n    <td><p>物理防御低 木系防御低    闪避低 物理攻击 伤害能力强<br>\r\n      免疫昏迷 死亡计分怪 二阶段30只 主攻赤之地</p></td>\r\n  </tr>\r\n  <tr>\r\n    <td><p>禁法护卫者</p></td>\r\n    <td><p>无视伤害 死亡不计分数    特殊守卫怪</p></td>\r\n  </tr>\r\n</table>\r\n\t\t\t\t</div>\r\n\t\t\t</dd>\r\n\t\t\t</dl>\r\n\t\t</div>\r\n\t</div>\r\n\t<div></div>\r\n</div>\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n",
+  "dataPath": "pages/4dd65a60c7a2c6a80e3c.json",
+  "imageCount": 6,
+  "tableCount": 1,
+  "downloadPath": "downloads/4dd65a60c7a2c6a80e3c.js"
+}

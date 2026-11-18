@@ -1,0 +1,930 @@
+{
+  "id": "4fd78042e39c70f215a0",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29988.shtml",
+  "title": "强化道具",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "81754b2ccebac0884953140149ee73e0444750cdcd69e54be3c7e95e4b547694",
+  "bytes": 84391,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4fd78042e39c70f215a0.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "1元宝=1RMB，6星以上龙珠可在祖龙城“合成大师”处使用龙珠进行合成，其余物品均可在游戏内乾坤袋商城中购得。\n幻仙石\n物\n品\n说\n明\n使用幻仙石可在各城长老处对装备进行精练。\n幻仙石礼包-乾坤袋销售价2黄金\n物\n品\n说\n明\n内藏幻仙石的礼包，开出的数量可能是10、20或者50枚\n乾坤石-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时加入有特殊作用。精练失败时不降低精练等级，但精练等级越高的时候，成功率越低。\n天罡石-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时加入有特殊作用。大幅提升精练时的成功概率。\n地煞石-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时加入有特殊作用。提升精炼时的成功概率\n精炼失败时等级只降1。\n天工符文-乾坤袋销售价2黄金\n物\n品\n说\n明\n集齐一定数量后可在完美商城专员处对装备进行打孔（武器最高2孔，装备做高4孔）成功打孔后可镶嵌各类属性宝石。\n天人合一符-乾坤袋销售价2黄金\n物\n品\n说\n明\n可将一件装备、时装、飞行器绑定为天人合一状态（天人合一状态下，天人合一的装备将变为死亡保护状态，且无法交易、丢弃、出售、拆分。可在管理员处将天人合一的装备销毁，销毁72小时内仍可以免费找回）。\n完美金蛋-乾坤袋销售价2黄金\n物\n品\n说\n明\n完美的龙珠礼包，据说藏有龙珠和幻仙石。\n1星龙珠-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1级精练100％成功。\n2星龙珠-乾坤袋销售价4黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-2级精练100％成功。\n3星龙珠-乾坤袋销售价10黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-3级精练100％成功。\n4星龙珠-乾坤袋销售价25黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-4级精练100％成功。\n5星龙珠-乾坤袋销售价60黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-5级精练100％成功。\n6星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-6级精练100％成功。\n7星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-7级精练100％成功。\n8星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-8级精练100％成功。\n9星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-9级精练100％成功。\n碧海龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-10级精练100％成功。\n幻彩龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-11级精练100％成功。\n赤焰龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。1-12级精练100％成功。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "幻仙石\n物\n品\n说\n明\n使用幻仙石可在各城长老处对装备进行精练。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻仙石礼包-乾坤袋销售价2黄金\n物\n品\n说\n明\n内藏幻仙石的礼包，开出的数量可能是10、20或者50枚",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "乾坤石-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时加入有特殊作用。精练失败时不降低精练等级，但精练等级越高的时候，成功率越低。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天罡石-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时加入有特殊作用。大幅提升精练时的成功概率。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "地煞石-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时加入有特殊作用。提升精炼时的成功概率\n精炼失败时等级只降1。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天工符文-乾坤袋销售价2黄金\n物\n品\n说\n明\n集齐一定数量后可在完美商城专员处对装备进行打孔（武器最高2孔，装备做高4孔）成功打孔后可镶嵌各类属性宝石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天人合一符-乾坤袋销售价2黄金\n物\n品\n说\n明\n可将一件装备、时装、飞行器绑定为天人合一状态（天人合一状态下，天人合一的装备将变为死亡保护状态，且无法交易、丢弃、出售、拆分。可在管理员处将天人合一的装备销毁，销毁72小时内仍可以免费找回）。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "完美金蛋-乾坤袋销售价2黄金\n物\n品\n说\n明\n完美的龙珠礼包，据说藏有龙珠和幻仙石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1星龙珠-乾坤袋销售价1黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2星龙珠-乾坤袋销售价4黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-2级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3星龙珠-乾坤袋销售价10黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-3级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4星龙珠-乾坤袋销售价25黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-4级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5星龙珠-乾坤袋销售价60黄金\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-5级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-6级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "7星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-7级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-8级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "9星龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-9级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碧海龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-10级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻彩龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-11级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "赤焰龙珠\n物\n品\n说\n明\n精练时能加入会产生神奇的效果。1-12级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻仙石",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使用幻仙石可在各城长老处对装备进行精练。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻仙石礼包-乾坤袋销售价2黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "内藏幻仙石的礼包，开出的数量可能是10、20或者50枚",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "乾坤石-乾坤袋销售价1黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时加入有特殊作用。精练失败时不降低精练等级，但精练等级越高的时候，成功率越低。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天罡石-乾坤袋销售价1黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时加入有特殊作用。大幅提升精练时的成功概率。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "地煞石-乾坤袋销售价1黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时加入有特殊作用。提升精炼时的成功概率\n精炼失败时等级只降1。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天工符文-乾坤袋销售价2黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "集齐一定数量后可在完美商城专员处对装备进行打孔（武器最高2孔，装备做高4孔）成功打孔后可镶嵌各类属性宝石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天人合一符-乾坤袋销售价2黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可将一件装备、时装、飞行器绑定为天人合一状态（天人合一状态下，天人合一的装备将变为死亡保护状态，且无法交易、丢弃、出售、拆分。可在管理员处将天人合一的装备销毁，销毁72小时内仍可以免费找回）。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "完美金蛋-乾坤袋销售价2黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "完美的龙珠礼包，据说藏有龙珠和幻仙石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1星龙珠-乾坤袋销售价1黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2星龙珠-乾坤袋销售价4黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-2级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3星龙珠-乾坤袋销售价10黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-3级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4星龙珠-乾坤袋销售价25黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-4级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5星龙珠-乾坤袋销售价60黄金",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-5级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-6级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-7级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-8级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-9级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碧海龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-10级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻彩龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-11级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "赤焰龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "物\n品\n说\n明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练时能加入会产生神奇的效果。1-12级精练100％成功。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_11.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_12.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_13.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_14.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_15.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_16.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_17.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_18.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_19.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/qhdj_20.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　1元宝=1RMB，6星以上龙珠可在祖龙城“合成大师”处使用龙珠进行合成，其余物品均可在游戏内乾坤袋商城中购得。</p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/a1ee24ad43e1b3d57ea8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>幻仙石</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>使用幻仙石可在各城长老处对装备进行精练。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/a1ee24ad43e1b3d57ea8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>幻仙石礼包-乾坤袋销售价2黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>内藏幻仙石的礼包，开出的数量可能是10、20或者50枚</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/24acc20370a070258349.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>乾坤石-乾坤袋销售价1黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时加入有特殊作用。精练失败时不降低精练等级，但精练等级越高的时候，成功率越低。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/8e7dbb1fa8be2654670e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>天罡石-乾坤袋销售价1黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时加入有特殊作用。大幅提升精练时的成功概率。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/fc881f2e87d082bd89df.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>地煞石-乾坤袋销售价1黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时加入有特殊作用。提升精炼时的成功概率<br>\r\n                        精炼失败时等级只降1。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/e1e01e487d1fd92192f8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>天工符文-乾坤袋销售价2黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>集齐一定数量后可在完美商城专员处对装备进行打孔（武器最高2孔，装备做高4孔）成功打孔后可镶嵌各类属性宝石。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/4df2275a176ccd7d1093.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>天人合一符-乾坤袋销售价2黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>可将一件装备、时装、飞行器绑定为天人合一状态（天人合一状态下，天人合一的装备将变为死亡保护状态，且无法交易、丢弃、出售、拆分。可在管理员处将天人合一的装备销毁，销毁72小时内仍可以免费找回）。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/636f4a85dbc8b7d9f994.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>完美金蛋-乾坤袋销售价2黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p><br>\r\n                        <br>\r\n                        <br>\r\n                        完美的龙珠礼包，据说藏有龙珠和幻仙石。<br>\r\n                        <br>\r\n                        <br>\r\n                         </p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/3fb690268d66c0340be6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>1星龙珠-乾坤袋销售价1黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/52ebeac72b04ba0ee786.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>2星龙珠-乾坤袋销售价4黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-2级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/a45487aa50075d5da925.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>3星龙珠-乾坤袋销售价10黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-3级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/ce850b664b3a63b6ab4a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>4星龙珠-乾坤袋销售价25黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-4级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/3575f3e05ce3174473c0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>5星龙珠-乾坤袋销售价60黄金</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-5级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/1f21480c96511c334866.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>6星龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-6级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/af2a2cb0d9a5c00551eb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>7星龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-7级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/265f10cb57b57162bfc9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>8星龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-8级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/c1fad5ccd99b47eb46c4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>9星龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-9级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/da61180bb60f012dbb36.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>碧海龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-10级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/31eef5857b1af51b90c4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>幻彩龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。可以在合成大师处合成更高等级的龙珠、1-11级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n            <td>\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td><img src=\"assets/4d3908e4d9774a5a6323.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n                        <td>\r\n                        <p>赤焰龙珠</p>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <td>\r\n                        <p>物<br>\r\n                        品<br>\r\n                        说<br>\r\n                        明</p>\r\n                        </td>\r\n                        <td>\r\n                        <p>精练时能加入会产生神奇的效果。1-12级精练100％成功。</p>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p> </p>\r\n                        </div>",
+  "dataPath": "pages/4fd78042e39c70f215a0.json",
+  "imageCount": 19,
+  "tableCount": 21,
+  "downloadPath": "downloads/4fd78042e39c70f215a0.js"
+}

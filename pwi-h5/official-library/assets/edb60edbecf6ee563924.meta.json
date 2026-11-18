@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/guozhan/js/tip.js",
+  "alt": "",
+  "kind": "script",
+  "id": "edb60edbecf6ee563924",
+  "status": "ok",
+  "parents": [
+    "6516467c2667cfb4fdd1"
+  ],
+  "bytes": 1802,
+  "sha256": "7c0433ef7d59c5fca719b99f266bd39bcf75b859dd6145012a0875820f23953f",
+  "fetchedAt": "2026-11-18T08:26:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/guozhan/js/tip.js",
+  "path": "assets/edb60edbecf6ee563924.js"
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/left_menu.jpg",
+  "id": "6e7af14c4e28c1f57bd6",
+  "status": "failed",
+  "parents": [
+    "72585162eec23c73a31c",
+    "6d12671a8024aa175ad9",
+    "602ae76296a8a1bcfde9",
+    "88ca9fbc33f438491f79",
+    "25da04fd2788b605fc3b",
+    "c02bce11289755f77cb4",
+    "93a9c3950de757006a81",
+    "b91a33a77d53e198b8d2",
+    "ed4882b11937af979ba3",
+    "5968c40158c15690239d"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/content.css",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://w2i.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:38:07+00:00"
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Design:; Web Layout:Tongyan.Guo;" />
+<meta name="keywords" content="完美世界,完美世界国际版,王朝崛起,最美网游，跨服阵营国战,万人战场,16品,九军，白帝之都,黑帝之都,赤帝之都,青帝之都,五帝名都，城战，攻城" /> 
+<meta name="description" content="《完美国际》是完美世界倾力打造的最美3D原创网游。年度鼎航大作“荣耀与新生”10月24日荣耀公测！自由无锁定世界极限拟真，历史推进系统、境界成长玩法、空中战斗副本、海底场景冒险、万人跨服国战等创新游戏玩法带来畅快的游戏体验！" />
+<link href="style/master.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wm.js" top="false"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<title>综合篇_祖龙心血《完美国际2》幕后大揭秘-《完美国际》官方网站</title>
+</head>
+<body>
+<div class="bg">
+    <div class="menu_box">
+    	<div class="wm-public" logo="{name:'w2i',skin:2,left:10,top:10}"></div>
+        <ul class="left_menu clearfix">
+            <li><a hidefocus="true" class="left_menu1_hover" href="index.htm">综合篇</a></li>
+            <li><a hidefocus="true" class="left_menu2" href="info1.htm">Boss李青</a></li>
+            <li><a hidefocus="true" class="left_menu3" href="info2.htm">主策划</a></li>
+            <li><a hidefocus="true" class="left_menu4" href="info3.htm">剧情策划</a></li>
+            <li><a hidefocus="true" class="left_menu5" href="info4.htm">主程序</a></li>
+            <li><a hidefocus="true" class="left_menu6" href="info5.htm">人物原画师</a></li>
+            <li><a hidefocus="true" class="left_menu7" href="info6.htm">动作特效师</a></li>
+            <li><a hidefocus="true" class="left_menu8" href="info8.htm">概念大片</a></li>
+        </ul>
+    </div>    
+
+        <div class="info">
+            <p>8年前，他们因一款网游而成为国内首屈一指的研发团队，为国产网游行业写下辉煌的开篇之作；</p>
+            <p>8年后，他们掸落时间留下的浮尘，携着青春的面孔，以经久不变的自信与坚毅再次出现——《完美国际2》9月24日震撼公测！</p>
+            <p>是怎样的坚持，怎样的态度，让经历终还大家一个永远的完美！</p>
+        </div>
+        <div class="video_tab">
+            <ul class="tab_ul">
+                <li class="on" style="margin-right:1px;">高玩评测</li>
+                <li>CG大片</li>
+            </ul>
+            <div class="video_ss">
+                <div id="videojobs"></div>
+            </div>
+        </div>
+        <div class="sina_box">
+            <a href="http://w2i.wanmei.com/main.htm" target="_blank"><img src="images/go_btn.jpg" alt=""/></a>
+            <div class="weibo_box">
+            	<wb:topic topmid="z8ClGsZa8" column="n" border="n" width="520" height="420" tags="%E5%AE%8C%E7%BE%8E%E4%B8%96%E7%95%8C%20%E5%9B%BD%E9%99%85%E7%89%882" language="zh_cn" version="base" appkey="AwEhO" footbar="y" filter="n" ></wb:topic>
+            </div>
+        </div>  
+
+    
+</div>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/jq_171.js"></script>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/swfobject.js"></script>
+<script type="text/javascript">
+var videoList = [
+	'http://md2.w2i.com.cn/w2i/media/fashion2.flv',
+	'http://md2.w2i.com.cn/w2i/media/wmgj2CG.flv'
+];
+function Video(flv){
+	addVideo('videojobs', 653, 366,
+		{
+			source:flv,
+			autoPlay:true,
+			repeat:true,
+			//scaleMode:'proportionalOutside',
+			//group:null,
+			//skinMode:'hide',
+			wmode:'opaque'
+		}
+	);	
+}
+Video(videoList[0]);
+function tabOn(self,flv){
+	$('.tab_ul li').removeClass('on');
+	self.addClass('on');
+	removeSWF('videojobs');
+	Video(flv);
+}
+$('.tab_ul li').each(function(i){
+	$(this).click(function(){
+		tabOn($(this),videoList[i]);
+	});
+});
+addPreviewVideo('videojobs', 653, 366,
+	{
+		source:'http://md2.w2i.com.cn/w2i/media/fashion1.flv',
+		wmode:'opaque'
+	},
+	{
+		source:'http://md2.w2i.com.cn/w2i/media/fashion2.flv',
+		wmode:'opaque'
+	}
+);
+</script>
+<div class="wm-public" analytics="{single:['w2i201408zulong3937']}"></div>
+</body>
+</html>

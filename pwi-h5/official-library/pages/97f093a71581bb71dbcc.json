@@ -1,0 +1,1284 @@
+{
+  "id": "97f093a71581bb71dbcc",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conjjsy.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "136b786716f71a0a97e0",
+    "97f093a71581bb71dbcc"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conjjsy.htm",
+  "fetchedAt": "2026-11-18T08:16:52+00:00",
+  "sha256": "8c605af16b01230dec0ffd163362dbc0b91a40fbab3dd5a0c1e8280906544bef",
+  "bytes": 11355,
+  "rawPath": "raw/97f093a71581bb71dbcc.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "重甲|轻甲|法袍\n重甲\n装备名称\n类型\n品阶\n物理防御\n法术防御\n躲闪\n生命值\n等级\n力量\n敏捷\n装备属性\n制作材料\n北斗连七星\n重铠\n13\n1658\n710\n—\n—\n100\n240\n52\n属性随机\n甲魄·重光战甲\n天书碎片2\n九重天地\n重腿\n13\n1421\n610\n—\n—\n100\n240\n52\n属性随机\n甲魄·重光腿甲\n天书碎片2\n卧龙跃马\n重靴\n13\n947\n405\n—\n—\n100\n240\n52\n属性随机\n甲魄·重光战靴\n天书碎片2\n云雨巫山\n重腕\n13\n711\n305\n—\n—\n100\n240\n52\n属性随机\n甲魄·重光袖甲\n天书碎片2\n金顶天来雪\n重盔\n13\n—\n—\n—\n300\n100\n146\n—\n属性随机\n甲魄·重光盔甲\n天书碎片2\n轻甲\n装备名称\n类型\n品阶\n物理防御\n法术防御\n躲闪\n生命值\n等级\n力量\n敏捷\n装备属性\n制作材料\n孤云野鹤\n轻甲\n13\n711\n1105\n—\n—\n100\n99\n99\n属性随机\n甲魄·狂客战铠\n天书碎片2\n幻影风行\n轻腿\n13\n609\n945\n—\n—\n100\n99\n99\n属性随机\n甲魄·狂客下铠\n天书碎片2\n海燕双栖\n轻靴\n13\n406\n630\n—\n—\n100\n99\n99\n属性随机\n甲魄·狂客轻鞋\n天书碎片2\n杨柳散和风\n轻腕\n13\n305\n475\n—\n—\n100\n99\n99\n属性随机\n甲魄·狂客护腕\n天书碎片2\n万里佛云\n披风\n13\n—\n—\n238\n—\n100\n—\n—\n属性随机\n甲魄·狂客披风\n天书碎片2\n法袍\n装备名称\n类型\n品阶\n物理防御\n法术防御\n躲闪\n真气值\n等级\n灵力\n敏捷\n装备属性\n制作材料\n金缕丝衣\n法袍\n13\n185\n1660\n—\n—\n100\n52\n146\n属性随机\n甲魄·凤兮法袍\n天书碎片2\n芭蕉避海风\n法裤\n13\n158\n1420\n—\n—\n100\n52\n146\n属性随机\n甲魄·凤兮法裤\n天书碎片2\n黯然销魂\n法鞋\n13\n106\n950\n—\n—\n100\n52\n146\n属性随机\n甲魄·凤兮法履\n天书碎片2\n流萤扑火\n法腕\n13\n79\n710\n—\n100\n52\n146\n属性随机\n甲魄·凤兮法腕\n天书碎片2\n雁声潇湘\n法帽\n13\n—\n—\n—\n355\n100\n52\n—\n属性随机\n甲魄·凤兮法冠\n天书碎片2",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "躲闪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "北斗连七星",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "重铠",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1658",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "710",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "240",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·重光战甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "九重天地",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "重腿",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1421",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "610",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "240",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·重光腿甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "卧龙跃马",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "重靴",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "947",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "405",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "240",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·重光战靴",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "云雨巫山",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "重腕",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "711",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "305",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "240",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·重光袖甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "金顶天来雪",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "重盔",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "300",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·重光盔甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "躲闪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "孤云野鹤",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "轻甲",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "711",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1105",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·狂客战铠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻影风行",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "轻腿",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "609",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "945",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·狂客下铠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "海燕双栖",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "轻靴",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "406",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "630",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·狂客轻鞋",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "杨柳散和风",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "轻腕",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "305",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "475",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·狂客护腕",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "万里佛云",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "披风",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "238",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·狂客披风",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "躲闪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真气值",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "金缕丝衣",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "法袍",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "185",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1660",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·凤兮法袍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "芭蕉避海风",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "法裤",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "158",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1420",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·凤兮法裤",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黯然销魂",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "法鞋",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "106",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "950",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·凤兮法履",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "流萤扑火",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "法腕",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "79",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "710",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "146",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·凤兮法腕",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雁声潇湘",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "法帽",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "355",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "—",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "属性随机",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "甲魄·凤兮法冠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天书碎片2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conjjsy.htm",
+      "label": "法袍",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/sycsiframetop2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/b6075712bd22ea0b1487.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                    <div><a href=\"#page=97f093a71581bb71dbcc\">重甲</a><span>|</span><a href=\"#page=97f093a71581bb71dbcc\">轻甲</a><span>|</span><a href=\"#page=97f093a71581bb71dbcc\">法袍</a></div>\n       \t    </div>\n                <div>\n                <p>重甲</p>\n<table>\n\t\t\t\t\t<tr>\n                    \t<th>装备名称</th>\n                        <th>类型</th>\n                        <th>品阶</th>\n                        <th>物理防御</th>\n                        <th>法术防御</th>\n                        <th>躲闪</th>\n                        <th>生命值</th>\n                        <th>等级</th>\n                        <th>力量</th>\n                        <th>敏捷</th>\n                        <th>装备属性</th>\n                        <th>制作材料</th>\n                    </tr>\n  <tr>\n    <td rowspan=\"2\">北斗连七星</td>\n    <td rowspan=\"2\">重铠</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">1658</td>\n    <td rowspan=\"2\">710</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">240</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·重光战甲</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">九重天地</td>\n    <td rowspan=\"2\">重腿</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">1421</td>\n    <td rowspan=\"2\">610</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">240</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·重光腿甲</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">卧龙跃马</td>\n    <td rowspan=\"2\">重靴</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">947</td>\n    <td rowspan=\"2\">405</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">240</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·重光战靴</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">云雨巫山</td>\n    <td rowspan=\"2\">重腕</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">711</td>\n    <td rowspan=\"2\">305</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">240</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·重光袖甲</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">金顶天来雪</td>\n    <td rowspan=\"2\">重盔</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">300</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·重光盔甲</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n             </table>\n             <p>轻甲</p>\n<table>\n\t\t\t\t\t<tr>\n                    \t<th>装备名称</th>\n                        <th>类型</th>\n                        <th>品阶</th>\n                        <th>物理防御</th>\n                        <th>法术防御</th>\n                        <th>躲闪</th>\n                        <th>生命值</th>\n                        <th>等级</th>\n                        <th>力量</th>\n                        <th>敏捷</th>\n                        <th>装备属性</th>\n                        <th>制作材料</th>\n                    </tr>\n  <tr>\n    <td rowspan=\"2\">孤云野鹤</td>\n    <td rowspan=\"2\">轻甲</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">711</td>\n    <td rowspan=\"2\">1105</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·狂客战铠</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">幻影风行</td>\n    <td rowspan=\"2\">轻腿</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">609</td>\n    <td rowspan=\"2\">945</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·狂客下铠</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">海燕双栖</td>\n    <td rowspan=\"2\">轻靴</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">406</td>\n    <td rowspan=\"2\">630</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·狂客轻鞋</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">杨柳散和风</td>\n    <td rowspan=\"2\">轻腕</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">305</td>\n    <td rowspan=\"2\">475</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">99</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·狂客护腕</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">万里佛云</td>\n    <td rowspan=\"2\">披风</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">238</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·狂客披风</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n                    </table>\n                    <p>法袍</p>\n<table>\n\t\t\t\t\t<tr>\n                    \t<th>装备名称</th>\n                        <th>类型</th>\n                        <th>品阶</th>\n                        <th>物理防御</th>\n                        <th>法术防御</th>\n                        <th>躲闪</th>\n                        <th>真气值</th>\n                        <th>等级</th>\n                        <th>灵力</th>\n                        <th>敏捷</th>\n                        <th>装备属性</th>\n                        <th>制作材料</th>\n                    </tr>\n  <tr>\n    <td rowspan=\"2\">金缕丝衣</td>\n    <td rowspan=\"2\">法袍</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">185</td>\n    <td rowspan=\"2\">1660</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·凤兮法袍</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">芭蕉避海风</td>\n    <td rowspan=\"2\">法裤</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">158</td>\n    <td rowspan=\"2\">1420</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·凤兮法裤</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">黯然销魂</td>\n    <td rowspan=\"2\">法鞋</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">106</td>\n    <td rowspan=\"2\">950</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·凤兮法履</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">流萤扑火</td>\n    <td rowspan=\"2\">法腕</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">79</td>\n    <td rowspan=\"2\">710</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">　</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">146</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·凤兮法腕</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n  <tr>\n    <td rowspan=\"2\">雁声潇湘</td>\n    <td rowspan=\"2\">法帽</td>\n    <td rowspan=\"2\">13</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">355</td>\n    <td rowspan=\"2\">100</td>\n    <td rowspan=\"2\">52</td>\n    <td rowspan=\"2\">—</td>\n    <td rowspan=\"2\">属性随机</td>\n    <td>甲魄·凤兮法冠</td>\n  </tr>\n  <tr>\n    <td>天书碎片2</td>\n  </tr>\n</table>\n                </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/97f093a71581bb71dbcc.json",
+  "imageCount": 1,
+  "tableCount": 3,
+  "downloadPath": "downloads/97f093a71581bb71dbcc.js"
+}

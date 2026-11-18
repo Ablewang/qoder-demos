@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_378.jpg",
+  "id": "8e1697bff1dee03415df",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·流水<em>（升仙）</em>",
+  "bytes": 1629,
+  "sha256": "cfe94f50e2641d80e3a7b6c660c0790f3976ecc5cded97dc92f2372b4d3e814b",
+  "fetchedAt": "2026-11-18T08:34:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_378.jpg",
+  "path": "assets/8e1697bff1dee03415df.jpg"
+}

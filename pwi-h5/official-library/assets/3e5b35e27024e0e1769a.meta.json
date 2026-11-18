@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1345.jpg",
+  "id": "3e5b35e27024e0e1769a",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "alt": "饮血剑诀",
+  "bytes": 4650,
+  "sha256": "e5007ba079ac6573b1a0e26872da9420b563a6bd48034408666be28490753b43",
+  "fetchedAt": "2026-11-18T08:36:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/jianling/img_1345.jpg",
+  "path": "assets/3e5b35e27024e0e1769a.jpg"
+}

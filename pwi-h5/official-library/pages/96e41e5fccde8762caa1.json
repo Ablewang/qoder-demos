@@ -1,0 +1,210 @@
+{
+  "id": "96e41e5fccde8762caa1",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/top_iframe.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "db4164927f8b96f824a9",
+    "f43f7393ca74d7767d5c",
+    "9e806ff55dbec0376dad",
+    "c8ffe36ad63705a57ede",
+    "7efee68b25cc6c382609"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/top_iframe.htm",
+  "fetchedAt": "2026-11-18T08:15:54+00:00",
+  "sha256": "45557f087217cdeeb7c5aede94a6484f5705da19f653b933fc13bad3e71384b7",
+  "bytes": 1740,
+  "rawPath": "raw/96e41e5fccde8762caa1.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_11.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_12.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_13.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_14.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_15.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/top_16.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<table>\r\n  <tr>\r\n    <td><img src=\"assets/6f7e23a44ad0ceefd387.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/816faadcdc92d23c4cd0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/e798572d12e78125f22c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/f66cb96d57d13ae49795.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n  </tr>\r\n  <tr>\r\n    <td><img src=\"assets/f95197e057f6f2561295.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/f86abe05d4ed29e0e7bf.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/94b1b89108fcf0394cc4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/93afda2111b74e5a9c73.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n  </tr>\r\n  <tr>\r\n    <td><img src=\"assets/f4ab2c3ed42009081b2c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/86034390875805ec3541.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/d10633a32a4cf9e7a356.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/cdda26005647c8060231.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n  </tr>\r\n  <tr>\r\n    <td><img src=\"assets/5eedd4208405b193644c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/96ac2259a90896909d72.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/08f078f5a3d922bda98b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n    <td><img src=\"assets/a4b46a4b0b16d5d29137.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n  </tr>\r\n</table>\r\n",
+  "dataPath": "pages/96e41e5fccde8762caa1.json",
+  "imageCount": 16,
+  "tableCount": 1,
+  "downloadPath": "downloads/96e41e5fccde8762caa1.js"
+}

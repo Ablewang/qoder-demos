@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/guozhan/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "aec5055d52cb2a9eb961",
+  "status": "ok",
+  "parents": [
+    "6516467c2667cfb4fdd1"
+  ],
+  "bytes": 2585,
+  "sha256": "fd539b39b832637410ccb873ece8606f5a17eae607fa3f954825fffda8c5dffd",
+  "fetchedAt": "2026-11-18T08:26:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/guozhan/style/master.css",
+  "path": "assets/aec5055d52cb2a9eb961.css"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "6bafb4917810479c5bd4",
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/yuanchenleft1.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "0a6cdcc1e015c21e6ddf",
+    "85634436b5743aac38cf",
+    "b77acc2baac8d460ca6e",
+    "acbfa7f7aab5bf99fbf2"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/wuqi/yuanchenleft1.htm",
+  "fetchedAt": "2026-11-18T08:16:11+00:00",
+  "sha256": "15efabd1e74ad4a5f51788518d591c3696341ced5f071b868908c3e883a57c8b",
+  "bytes": 1650,
+  "rawPath": "raw/6bafb4917810479c5bd4.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "斗阎罗\n万古愁\n诛天帝\n孤问万古愁",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "斗阎罗",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "万古愁",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "诛天帝",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "孤问万古愁",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/09.htm",
+      "label": "斗阎罗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/092.htm",
+      "label": "万古愁",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/093.htm",
+      "label": "诛天帝",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/094.htm",
+      "label": "孤问万古愁",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=0a6cdcc1e015c21e6ddf\">斗阎罗</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=85634436b5743aac38cf\">万古愁</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=b77acc2baac8d460ca6e\">诛天帝</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=acbfa7f7aab5bf99fbf2\">孤问万古愁</a></td>\n  </tr>\n  <tr>\n    <td> </td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/6bafb4917810479c5bd4.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/6bafb4917810479c5bd4.js"
+}

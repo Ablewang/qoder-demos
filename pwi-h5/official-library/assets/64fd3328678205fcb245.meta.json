@@ -1,0 +1,23 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/zulong/images/back_btn.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "64fd3328678205fcb245",
+  "status": "ok",
+  "parents": [
+    "34a1700655ccbd1a0a98",
+    "c219348c0ec196539253",
+    "7b93593860e8f53b8e11",
+    "2ea6fce46f98c7b0439e",
+    "afd731d2d0e0a68bba07",
+    "44fd4262da3c284d27d7"
+  ],
+  "bytes": 2613,
+  "sha256": "ff537c3a0892f6002686a84170daf6d48eb1d231e5a447bb4c434e70c566a946",
+  "fetchedAt": "2026-11-18T08:25:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/zulong/images/back_btn.jpg",
+  "path": "assets/64fd3328678205fcb245.jpg"
+}

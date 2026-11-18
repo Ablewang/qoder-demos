@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/js/AC_RunActiveContent.js",
+  "alt": "",
+  "kind": "script",
+  "id": "3b3cbd71d50934160b82",
+  "status": "ok",
+  "parents": [
+    "562f9e0fce250d9b593c"
+  ],
+  "bytes": 3359,
+  "sha256": "2eb0464eb6c8bdd06125cc5f1de7b6f7ed17d3c06a7634b49e99f3d58811ad10",
+  "fetchedAt": "2026-11-18T08:17:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/js/AC_RunActiveContent.js",
+  "path": "assets/3b3cbd71d50934160b82.js"
+}

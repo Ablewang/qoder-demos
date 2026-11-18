@@ -1,0 +1,21 @@
+{
+  "url": "https://shenmo.games.wanmei.com/images/close_btn.gif",
+  "id": "fed6e6977f180401f893",
+  "status": "ok",
+  "parents": [
+    "5e513a9f8dae2123c7e1",
+    "387c1b2fe64d4bf064f9",
+    "46dfb81c8122719c4f2f",
+    "703a592c5beb38fdb2dd"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "http://shenmo.wanmei.com/style/jqUI.css",
+  "bytes": 166,
+  "sha256": "b2b198f08599a21f3ba68a0c9cf356025407c7539d025d9759ecb364208f5dbd",
+  "fetchedAt": "2026-11-18T08:28:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://shenmo.games.wanmei.com/images/close_btn.gif",
+  "path": "assets/fed6e6977f180401f893.gif"
+}

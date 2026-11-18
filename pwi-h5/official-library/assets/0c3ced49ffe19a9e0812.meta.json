@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/men1a.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "0c3ced49ffe19a9e0812",
+  "status": "ok",
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79"
+  ],
+  "bytes": 9262,
+  "sha256": "5536367d4f39a0672e0037678141b3bea7275ba5f5e7c5775c5355501d6bdcf8",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/0c3ced49ffe19a9e0812.jpg"
+}

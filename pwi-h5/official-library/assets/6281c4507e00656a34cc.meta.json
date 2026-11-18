@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/bugouqiang_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6281c4507e00656a34cc",
+  "status": "ok",
+  "parents": [
+    "a9a8df14660e3c446068"
+  ],
+  "bytes": 3821,
+  "sha256": "81ebd1c7e8ce84e8d2be17c411c0d5df7c4a5866df4f2076e807a310db0c6da3",
+  "fetchedAt": "2026-11-18T08:22:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/bugouqiang_button.jpg",
+  "path": "assets/6281c4507e00656a34cc.jpg"
+}

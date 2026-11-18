@@ -1,0 +1,55 @@
+{
+  "id": "03b794337c9c554e8b63",
+  "url": "https://w2i.wanmei.com/djzb/zb/20091021/30201.shtml",
+  "title": "天怒神罚新增装备 - 材料产出",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "870f103f1fd35f4afd3b",
+    "83c6dc68ffa6daf22b72",
+    "03b794337c9c554e8b63",
+    "ec8b22ae6576534715f5"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a9d3a0e8196db31c5d923d30f9b2205a16ab929688a025b09c2289993250f6a4",
+  "bytes": 67064,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/03b794337c9c554e8b63.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-21",
+  "text": "装备介绍 | 声望任务装备 | 材料产出 | 制造 |\n材料出产说明\n1. 随机生产材料\n随机生产材料分为四类。\n第一类为“黄金雕塑”，产出方式主要分成两种：\n第一种是新场景所有非任务怪的普通怪物掉落；\n第二种是黄昏圣殿神无谷命运魔方杀死BOSS或通关后的奖励。\n第二类为“力量铸材、灵力铸材、敏捷铸材及耐力铸材”，产出方式为：\n杀死某些卡片BOSS获得，力量铸材杀死1-4号卡片BOSS可以获得；\n耐力铸材杀死5-8号卡片BOSS可以获得；灵力铸材杀死9-12号卡片BOSS可以获得；敏捷铸材杀死13-16号卡片BOSS可以获得。\n第三类为“天泪之泉、伤麒森林之叶、伤痕之石及沙之塔雕”，产出方式主要分成两种：\n第一种是完成四张新场景的每日一次任务获取；\n第二种是黄昏圣殿神无谷杀死BOSS后的奖励。\n第四类为“光石”，产出方式主要分成两种：\n第一种是在新场景挖矿获得；\n第二种是黄昏圣殿神无谷命运魔方杀死BOSS或通关后的奖励。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30198.shtml",
+      "label": "装备介绍",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30200.shtml",
+      "label": "声望任务装备",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30201.shtml",
+      "label": "材料产出",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091021/30202.shtml",
+      "label": "制造",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=870f103f1fd35f4afd3b\">装备介绍</a> | <a href=\"#page=83c6dc68ffa6daf22b72\">声望任务装备</a> | <a href=\"#page=03b794337c9c554e8b63\">材料产出</a> | <a href=\"#page=ec8b22ae6576534715f5\">制造</a> |</li>\r\n</ul>\r\n<p>　　<strong>材料出产说明</strong></p>\r\n<p>　　1. 随机生产材料</p>\r\n<p>　　随机生产材料分为四类。</p>\r\n<p>　　第一类为“黄金雕塑”，产出方式主要分成两种：</p>\r\n<p>　　第一种是新场景所有非任务怪的普通怪物掉落；</p>\r\n<p>　　第二种是黄昏圣殿神无谷命运魔方杀死BOSS或通关后的奖励。</p>\r\n<p>　　第二类为“力量铸材、灵力铸材、敏捷铸材及耐力铸材”，产出方式为：</p>\r\n<p>　　杀死某些卡片BOSS获得，力量铸材杀死1-4号卡片BOSS可以获得；</p>\r\n<p>　　耐力铸材杀死5-8号卡片BOSS可以获得；灵力铸材杀死9-12号卡片BOSS可以获得；敏捷铸材杀死13-16号卡片BOSS可以获得。</p>\r\n<p>　　第三类为“天泪之泉、伤麒森林之叶、伤痕之石及沙之塔雕”，产出方式主要分成两种：</p>\r\n<p>　　第一种是完成四张新场景的每日一次任务获取；</p>\r\n<p>　　第二种是黄昏圣殿神无谷杀死BOSS后的奖励。</p>\r\n<p>　　第四类为“光石”，产出方式主要分成两种：</p>\r\n<p>　　第一种是在新场景挖矿获得；</p>\r\n<p>　　第二种是黄昏圣殿神无谷命运魔方杀死BOSS或通关后的奖励。</p>\r\n                        </div>",
+  "dataPath": "pages/03b794337c9c554e8b63.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/03b794337c9c554e8b63.js"
+}

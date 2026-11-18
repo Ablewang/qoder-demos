@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/pic01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "e6e7ca9770bb84694800",
+  "status": "ok",
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79"
+  ],
+  "bytes": 4599,
+  "sha256": "c3b409fa78c1b994cdc72611e855878e4ad2c31de2ade30ddbc0c0f37de88887",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/e6e7ca9770bb84694800.jpg"
+}

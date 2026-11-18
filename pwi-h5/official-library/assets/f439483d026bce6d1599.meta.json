@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1189.jpg",
+  "id": "f439483d026bce6d1599",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "迷踪乱步诀",
+  "bytes": 3731,
+  "sha256": "a2702178247fbfcee25512c7c1775cdd195c17daf9eeaded262e5ca621ed7a82",
+  "fetchedAt": "2026-11-18T08:36:02+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1189.jpg",
+  "path": "assets/f439483d026bce6d1599.jpg"
+}

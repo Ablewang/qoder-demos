@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/sycsiframetop.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "a263e142c7b90904de4f",
+  "status": "ok",
+  "parents": [
+    "fe5027f1318805287d58"
+  ],
+  "bytes": 4174,
+  "sha256": "aeafd2d36e5c77fa8c2fff20983fdc8ef13d7119aad21d9d3009131ebb74fd17",
+  "fetchedAt": "2026-11-18T08:25:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/sycsiframetop.jpg",
+  "path": "assets/a263e142c7b90904de4f.jpg"
+}

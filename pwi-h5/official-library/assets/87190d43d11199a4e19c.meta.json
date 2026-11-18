@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/style/jquery.jscrollpane.css",
+  "alt": "",
+  "kind": "link",
+  "id": "87190d43d11199a4e19c",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "bytes": 255,
+  "sha256": "2f2535649afc406e5f0dcf65487a8fe3466d4652311075bc23de3fd507bf0f29",
+  "fetchedAt": "2026-11-18T08:26:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/style/jquery.jscrollpane.css",
+  "path": "assets/87190d43d11199a4e19c.css"
+}

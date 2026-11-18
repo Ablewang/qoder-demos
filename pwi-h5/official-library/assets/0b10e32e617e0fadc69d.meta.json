@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/enter/images/ltabh.png",
+  "id": "0b10e32e617e0fadc69d",
+  "status": "ok",
+  "parents": [
+    "2ed37cf6dbb67bef702a"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201408/enter/style/master.css",
+  "bytes": 1947,
+  "sha256": "0b9139d98382b4bf38773cf515ed02ce03fd78400dbaf89a6dbf4cd53c03ed57",
+  "fetchedAt": "2026-11-18T08:38:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/enter/images/ltabh.png",
+  "path": "assets/0b10e32e617e0fadc69d.png"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://w2i.wanmei.com/event/200811/anniversary/images/main_bg.jpg",
+  "id": "0b22af9f03e4997deaaa",
+  "status": "failed",
+  "parents": [
+    "a899f6f8dc4e23a35959",
+    "253dfd94d971bfc9a892",
+    "6f04c1c29de1e26657e0",
+    "e21939f1362abea70f5a",
+    "9c69355fa82bc264091c",
+    "5bd1a8bfdb1b51ef4743",
+    "44689cc7c278488dc3ad",
+    "f6200bfbe47d15bdfdb9",
+    "e56bc44c111f67f9e0f7",
+    "2d6d528f7e84bc55995e",
+    "e55a0b3c264a67093187"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/event/200811/anniversary/style/master.css",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://w2i.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:37:27+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201409/new/images/btn4.jpg",
+  "alt": "游戏说明",
+  "kind": "img",
+  "id": "2569bf85f4855d95d753",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "bytes": 5789,
+  "sha256": "37541a400ae331d6127f7ee1fdb11fc7544c68945922b0612ee5b55f3d5eca10",
+  "fetchedAt": "2026-11-18T08:18:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/images/btn4.jpg",
+  "path": "assets/2569bf85f4855d95d753.jpg"
+}

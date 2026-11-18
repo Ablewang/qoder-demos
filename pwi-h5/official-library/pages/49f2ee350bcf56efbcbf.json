@@ -1,0 +1,389 @@
+{
+  "id": "49f2ee350bcf56efbcbf",
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/role.html",
+  "title": "声望装备任务",
+  "category": "装备道具",
+  "section": "天怒神罚装备专题",
+  "depth": 0,
+  "parents": [
+    "f415d2fafc0e72df0612",
+    "72e2b695b87707858a89",
+    "99d339b7076fa83b762f",
+    "ff44626d4c80beceefa4"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/role.html",
+  "fetchedAt": "2026-11-18T08:15:28+00:00",
+  "sha256": "6bccaf73fb622d9176610023dbe8b9d76ae2d1168d6e570d2264938b1fce5fab",
+  "bytes": 8179,
+  "rawPath": "raw/49f2ee350bcf56efbcbf.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "声望装备任务\n玩家在《完美国际》资料篇中除了可以自己制造装备，还可以通过收集新场景中的声望物来兑换新装备，以下是新的兑换声望装备任务介绍\n任务一 伤麒声望任务\n杀怪任务名：清剿钢脊豺，清剿人类联军长官，清剿雷胄精魂，清剿怨女残魂。\n发放\nNPC：四任务分别为狸儿，紫雪，沙尹，哲伯勒。\n完成方式：杀死60只与任务名相对应的怪物。\n奖励：怨魂之魄4个\n伤麒声望物品掉落怪：\n钢脊豺\n人类联军长官\n雷胄飞龙\n怨女残魂\n兑奖任务名：怨魂之魄（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为妖族营地的铁匠铁牙。\n完成方式：交给铁牙任务所需怨魂之魄兑换相应装备。\n奖励分五档，均为头盔，可自选法盔或重盔\n任务1第一选择5级\n任务1第二选择5级\n任务二 伤痕声望任务\n任务名：清剿冰风杀手，清剿冰风弓箭手，清剿冰风刺客，清剿冰风祭司。\n发放NPC：四任务分别为毕焕之、铁断山、徐真、龙伯伦。\n完成方式：杀死100只与任务名相对应的怪物。\n奖励：怨魂之眼4个\n伤痕谷声望物品掉落怪：\n冰风杀手\n冰风弓箭手\n冰风刺客\n冰蛮祭司\n兑奖任务名：怨魂之眼（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为伤痕谷场景联军铁匠杭巧锋（联军营地内）\n完成方式：交给铁牙任务所需怨魂之眼兑换相应装备。\n奖励分五档：均为靴子，可自选法靴或重靴或轻甲靴\n任务2第一选择5级\n任务2第二选择5级\n任务2第三选择5级\n任务三 沙漠声望任务\n任务名：清剿流沙蝎，清剿炽沙蛛，清剿祭血豺，清剿龙牙貂。\n发放NPC：肖道齐\n完成方式：杀死60只与任务名相对应的怪物。\n奖励：怨魂之骨4个\n沙之塔声望物品掉落怪：\n流沙蝎\n炽沙蛛\n祭血豺\n龙牙貂\n兑奖任务名：怨魂之骨（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为沙之塔场景的肖道齐。（传送点西北营地里）\n完成方式：交给铁牙任务所需怨魂之魄兑换相应装备。\n奖励分5档：均为披风，不可选\n任务3没选择5级",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "声望装备任务\n玩家在《完美国际》资料篇中除了可以自己制造装备，还可以通过收集新场景中的声望物来兑换新装备，以下是新的兑换声望装备任务介绍\n任务一 伤麒声望任务\n杀怪任务名：清剿钢脊豺，清剿人类联军长官，清剿雷胄精魂，清剿怨女残魂。\n发放\nNPC：四任务分别为狸儿，紫雪，沙尹，哲伯勒。\n完成方式：杀死60只与任务名相对应的怪物。\n奖励：怨魂之魄4个\n伤麒声望物品掉落怪：\n钢脊豺\n人类联军长官\n雷胄飞龙\n怨女残魂\n兑奖任务名：怨魂之魄（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为妖族营地的铁匠铁牙。\n完成方式：交给铁牙任务所需怨魂之魄兑换相应装备。\n奖励分五档，均为头盔，可自选法盔或重盔\n任务1第一选择5级\n任务1第二选择5级\n任务二 伤痕声望任务\n任务名：清剿冰风杀手，清剿冰风弓箭手，清剿冰风刺客，清剿冰风祭司。\n发放NPC：四任务分别为毕焕之、铁断山、徐真、龙伯伦。\n完成方式：杀死100只与任务名相对应的怪物。\n奖励：怨魂之眼4个\n伤痕谷声望物品掉落怪：\n冰风杀手\n冰风弓箭手\n冰风刺客\n冰蛮祭司\n兑奖任务名：怨魂之眼（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为伤痕谷场景联军铁匠杭巧锋（联军营地内）\n完成方式：交给铁牙任务所需怨魂之眼兑换相应装备。\n奖励分五档：均为靴子，可自选法靴或重靴或轻甲靴\n任务2第一选择5级\n任务2第二选择5级\n任务2第三选择5级\n任务三 沙漠声望任务\n任务名：清剿流沙蝎，清剿炽沙蛛，清剿祭血豺，清剿龙牙貂。\n发放NPC：肖道齐\n完成方式：杀死60只与任务名相对应的怪物。\n奖励：怨魂之骨4个\n沙之塔声望物品掉落怪：\n流沙蝎\n炽沙蛛\n祭血豺\n龙牙貂\n兑奖任务名：怨魂之骨（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为沙之塔场景的肖道齐。（传送点西北营地里）\n完成方式：交给铁牙任务所需怨魂之魄兑换相应装备。\n奖励分5档：均为披风，不可选\n任务3没选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "声望装备任务",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩家在《完美国际》资料篇中除了可以自己制造装备，还可以通过收集新场景中的声望物来兑换新装备，以下是新的兑换声望装备任务介绍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务一 伤麒声望任务",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "杀怪任务名：清剿钢脊豺，清剿人类联军长官，清剿雷胄精魂，清剿怨女残魂。\n发放\nNPC：四任务分别为狸儿，紫雪，沙尹，哲伯勒。\n完成方式：杀死60只与任务名相对应的怪物。\n奖励：怨魂之魄4个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "伤麒声望物品掉落怪：\n钢脊豺\n人类联军长官\n雷胄飞龙\n怨女残魂",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兑奖任务名：怨魂之魄（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为妖族营地的铁匠铁牙。\n完成方式：交给铁牙任务所需怨魂之魄兑换相应装备。\n奖励分五档，均为头盔，可自选法盔或重盔",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务1第一选择5级\n任务1第二选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务二 伤痕声望任务",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务名：清剿冰风杀手，清剿冰风弓箭手，清剿冰风刺客，清剿冰风祭司。\n发放NPC：四任务分别为毕焕之、铁断山、徐真、龙伯伦。\n完成方式：杀死100只与任务名相对应的怪物。\n奖励：怨魂之眼4个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "伤痕谷声望物品掉落怪：\n冰风杀手\n冰风弓箭手\n冰风刺客\n冰蛮祭司",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兑奖任务名：怨魂之眼（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为伤痕谷场景联军铁匠杭巧锋（联军营地内）\n完成方式：交给铁牙任务所需怨魂之眼兑换相应装备。\n奖励分五档：均为靴子，可自选法靴或重靴或轻甲靴",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务2第一选择5级\n任务2第二选择5级\n任务2第三选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务三 沙漠声望任务",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务名：清剿流沙蝎，清剿炽沙蛛，清剿祭血豺，清剿龙牙貂。\n发放NPC：肖道齐\n完成方式：杀死60只与任务名相对应的怪物。\n奖励：怨魂之骨4个",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "沙之塔声望物品掉落怪：\n流沙蝎\n炽沙蛛\n祭血豺\n龙牙貂",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兑奖任务名：怨魂之骨（一）、（二）、（三）、（四）、（五）\n发放NPC：统一为沙之塔场景的肖道齐。（传送点西北营地里）\n完成方式：交给铁牙任务所需怨魂之魄兑换相应装备。\n奖励分5档：均为披风，不可选",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务3没选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "钢脊豺",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "人类联军长官",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雷胄飞龙",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怨女残魂",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务1第一选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "任务1第二选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "冰风杀手",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冰风弓箭手",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冰风刺客",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "冰蛮祭司",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务2第一选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "任务2第二选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "任务2第三选择5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "流沙蝎",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "炽沙蛛",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "祭血豺",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "龙牙貂",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n    <tr>\n    <td><table>\n      <tr>\n        <td><strong>声望装备任务</strong></td>\n      </tr>\n      <tr>\n        <td><p>玩家在《完美国际》资料篇中除了可以自己制造装备，还可以通过收集新场景中的声望物来兑换新装备，以下是新的兑换声望装备任务介绍</p></td>\n      </tr>\n      <tr>\n        <td><span>任务一 伤麒声望任务 </span></td>\n      </tr>\n      <tr>\n        <td><p>杀怪任务名：清剿钢脊豺，清剿人类联军长官，清剿雷胄精魂，清剿怨女残魂。\n          <strong>发放<br>\n          </strong><strong>NPC</strong>：四任务分别为狸儿，紫雪，沙尹，哲伯勒。<br>\n              <strong>完成方式</strong>：杀死60只与任务名相对应的怪物。<br>\n              <strong>奖励</strong>：怨魂之魄4个</p>          </td>\n      </tr>\n      <tr>\n        <td><p>伤麒声望物品掉落怪： </p>\n                    <div>\n                      <table>\n                        <tr>\n                          <td>钢脊豺 </td>\n                </tr>\n                        <tr>\n                          <td><p>人类联军长官 </p></td>\n                </tr>\n                        <tr>\n                          <td><p>雷胄飞龙 </p></td>\n                </tr>\n                        <tr>\n                          <td><p>怨女残魂 </p></td>\n                </tr>\n                              </table>\n                    </div></td>\n      </tr>\n      <tr>\n        <td><p>兑奖任务名：怨魂之魄（一）、（二）、（三）、（四）、（五）<br>\n              <strong>发放NPC</strong>：统一为妖族营地的铁匠铁牙。<br>\n              <strong>完成方式</strong>：交给铁牙任务所需怨魂之魄兑换相应装备。<br>\n              <strong>奖励分五档</strong>，均为头盔，可自选法盔或重盔</p>        </td>\n      </tr>\n      <tr>\n        <td><table>\n          <tr>\n            <td><img src=\"assets/1edbe36f51df012edfd4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n            <td><img src=\"assets/c062eacd9b2ab81fb1ae.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n          </tr>\n          <tr>\n            <td>任务1第一选择5级</td>\n            <td>任务1第二选择5级</td>\n          </tr>\n        </table></td>\n      </tr>\n      <tr>\n        <td><div>\n          <p>任务二 伤痕声望任务 </p>      </div></td>\n      </tr>\n      <tr>\n        <td><p>任务名：清剿冰风杀手，清剿冰风弓箭手，清剿冰风刺客，清剿冰风祭司。<br>\n              <strong>发放NPC</strong>：四任务分别为毕焕之、铁断山、徐真、龙伯伦。<br>\n              <strong>完成方式</strong>：杀死100只与任务名相对应的怪物。<br>\n          <strong>奖励</strong>：怨魂之眼4个</p></td>\n      </tr>\n      <tr>\n        <td><p>伤痕谷声望物品掉落怪： </p>\n            <div>\n              <table>\n                <tr>\n                  <td>冰风杀手 </td>\n                </tr>\n                <tr>\n                  <td><p>冰风弓箭手 </p></td>\n                </tr>\n                <tr>\n                  <td><p>冰风刺客 </p></td>\n                </tr>\n                <tr>\n                  <td><p>冰蛮祭司 </p></td>\n                </tr>\n              </table>\n            </div></td>\n      </tr>\n      <tr>\n        <td><p>兑奖任务名：怨魂之眼（一）、（二）、（三）、（四）、（五）<br>\n              <strong>发放NPC</strong>：统一为伤痕谷场景联军铁匠杭巧锋（联军营地内）<br>\n              <strong>完成方式</strong>：交给铁牙任务所需怨魂之眼兑换相应装备。<br>\n          <strong>奖励分五档：</strong>均为靴子，可自选法靴或重靴或轻甲靴</p></td>\n      </tr>\n      <tr>\n        <td><table>\n          <tr>\n            <td><img src=\"assets/43ed64eb1270cb3cb816.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n            <td><img src=\"assets/02944ae16a845cb68e50.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n          </tr>\n          <tr>\n            <td><div>任务2第一选择5级</div></td>\n            <td><div>任务2第二选择5级</div></td>\n          </tr>\n          <tr>\n            <td><img src=\"assets/1dab1f470f4b5b01beed.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n            <td></td>\n          </tr>\n          <tr>\n            <td><span>任务2第三选择5级</span></td>\n            <td></td>\n          </tr>\n        </table></td>\n      </tr>\n      <tr>\n        <td><p>任务三 沙漠声望任务</p>          </td>\n      </tr>\n      <tr>\n        <td><p>任务名：清剿流沙蝎，清剿炽沙蛛，清剿祭血豺，清剿龙牙貂。<br>\n              <strong>发放NPC</strong>：肖道齐<br>\n              <strong>完成方式</strong>：杀死60只与任务名相对应的怪物。<br>\n              <strong>奖励</strong>：怨魂之骨4个</p></td>\n      </tr>\n      <tr>\n        <td><p>沙之塔声望物品掉落怪： </p>\n           <div>\n             <table>\n               <tr>\n                 <td>流沙蝎 </td>\n                </tr>\n               <tr>\n                 <td><p>炽沙蛛 </p></td>\n                </tr>\n               <tr>\n                 <td><p>祭血豺 </p></td>\n                </tr>\n               <tr>\n                 <td><p>龙牙貂 </p></td>\n                </tr>\n             </table>\n           </div></td>\n      </tr>\n      <tr>\n        <td><p>兑奖任务名：怨魂之骨（一）、（二）、（三）、（四）、（五）<br>\n              <strong>发放NPC</strong>：统一为沙之塔场景的肖道齐。（传送点西北营地里）<br>\n              <strong>完成方式</strong>：交给铁牙任务所需怨魂之魄兑换相应装备。<br>\n              <strong>奖励分5</strong><strong>档：</strong>均为披风，不可选</p></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/0620fbf5086f5261b8db.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n      <tr>\n        <td>任务3没选择5级</td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/49f2ee350bcf56efbcbf.json",
+  "imageCount": 6,
+  "tableCount": 7,
+  "downloadPath": "downloads/49f2ee350bcf56efbcbf.js"
+}

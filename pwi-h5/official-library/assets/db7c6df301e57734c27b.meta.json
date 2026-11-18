@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_472.jpg",
+  "id": "db7c6df301e57734c27b",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·落石术<em>（升仙）</em>",
+  "bytes": 1641,
+  "sha256": "62a937d2f20ab4a2165ffb4a2dc2c2c5be1e828cdbe0b41b76f6d1b39737157a",
+  "fetchedAt": "2026-11-18T08:34:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_472.jpg",
+  "path": "assets/db7c6df301e57734c27b.jpg"
+}

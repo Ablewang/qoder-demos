@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/menu_06.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "2e0dc1ee560fcfffebf2",
+  "status": "ok",
+  "parents": [
+    "d50d75e2c8b632fd5879",
+    "838e39f83961696b893e"
+  ],
+  "bytes": 9483,
+  "sha256": "7c0da2d2359d9cb3f9c896f7b3e8e6ddfe543414b2a896ba5cd9cf1440f9c377",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/2e0dc1ee560fcfffebf2.jpg"
+}

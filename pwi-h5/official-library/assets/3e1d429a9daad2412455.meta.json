@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_628.jpg",
+  "id": "3e1d429a9daad2412455",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "alt": "真·羽之守护<em>（升仙）</em>",
+  "bytes": 1643,
+  "sha256": "06f3607afae176905fdfcdc510dc2b1debab7fe903268064b60a3955cf9dc790",
+  "fetchedAt": "2026-11-18T08:35:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yumang/img_628.jpg",
+  "path": "assets/3e1d429a9daad2412455.jpg"
+}

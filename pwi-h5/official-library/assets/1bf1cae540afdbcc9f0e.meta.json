@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_901.jpg",
+  "id": "1bf1cae540afdbcc9f0e",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "气贯长虹",
+  "bytes": 1528,
+  "sha256": "8a031ecea0b1e94dc2e825be155e6e6f649d52f7c58bd17ba0b25bd8534d2807",
+  "fetchedAt": "2026-11-18T08:34:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_901.jpg",
+  "path": "assets/1bf1cae540afdbcc9f0e.jpg"
+}

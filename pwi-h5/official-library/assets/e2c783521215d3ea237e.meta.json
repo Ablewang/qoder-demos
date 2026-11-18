@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/index_bar_05.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "e2c783521215d3ea237e",
+  "status": "ok",
+  "parents": [
+    "d50d75e2c8b632fd5879",
+    "838e39f83961696b893e"
+  ],
+  "bytes": 6166,
+  "sha256": "e3b2b45704748202b6a24c2e0521c5c2d0e2a1193dc4f906276e50716d6cf5b3",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/e2c783521215d3ea237e.jpg"
+}

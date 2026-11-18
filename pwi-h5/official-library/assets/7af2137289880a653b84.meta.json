@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/nav_07_mouse.jpg",
+  "label": "官方网站 | 客户端下载 | 注册账号 | 官网论坛",
+  "kind": "inline-reference",
+  "id": "7af2137289880a653b84",
+  "status": "ok",
+  "parents": [
+    "d38176ddfc90610e4eba",
+    "c9bb0f8f3839e3c28e8c"
+  ],
+  "bytes": 6357,
+  "sha256": "83a3bce34ea7ff82fa3ddd33af1eb9a5fbd1be941f6bc999dcb27a1341abf2f9",
+  "fetchedAt": "2026-11-18T08:19:23+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200808/xiuzhen/images/nav_07_mouse.jpg",
+  "path": "assets/7af2137289880a653b84.jpg"
+}

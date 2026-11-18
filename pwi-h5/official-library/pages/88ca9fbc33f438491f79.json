@@ -1,0 +1,340 @@
+{
+  "id": "88ca9fbc33f438491f79",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_5.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_5.htm",
+  "fetchedAt": "2026-11-18T08:15:45+00:00",
+  "sha256": "a20fff987ddc92ef211da96e8d22c7af5d36f40279c244c154308dae33900792",
+  "bytes": 2641,
+  "rawPath": "raw/88ca9fbc33f438491f79.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n需求装备品阶\n武器镶嵌效果\n防具镶嵌效果\n来源\n黄沉之石1级\n1\n生命值 +5\n生命值 +5\n怪物掉落、货郎出售\n黄沉之石2级\n2\n生命值 +10\n生命值 +10\n怪物掉落、合成大师合成\n黄沉之石3级\n3\n生命值 +15\n生命值 +15\n怪物掉落、合成大师合成\n黄沉之石4级\n4\n生命值 +20\n生命值 +20\n怪物掉落、合成大师合成\n黄沉之石5级\n5\n生命值 +25\n生命值 +25\n怪物掉落、合成大师合成\n黄沉之石6级\n6\n生命值 +32\n生命值 +32\n怪物掉落、合成大师合成\n黄沉之石7级\n7\n生命值 +40\n生命值 +40\n怪物掉落、合成大师合成\n黄沉之石8级\n8\n生命值 +50\n生命值 +50\n怪物掉落、合成大师合成\n黄沉之石9级\n9\n生命值 +62\n生命值 +62\n怪物掉落、合成大师合成\n黄沉之石10级\n10\n生命值 +75\n生命值 +75\n怪物掉落、合成大师合成",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求装备品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防具镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "来源",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、货郎出售",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +62",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +62",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄沉之石10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值 +75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>需求装备品阶</td>\n\t\t<td>武器镶嵌效果</td>\n\t\t<td>防具镶嵌效果</td>\n        <td>来源</td>\n\t</tr>\n\t\t<tr>\n    <td>黄沉之石1级</td>\n    <td>1</td>\n    <td>生命值 +5</td>\n    <td>生命值 +5</td>\n    <td>怪物掉落、货郎出售</td>\n  </tr>\n  <tr>\n    <td>黄沉之石2级</td>\n    <td>2</td>\n    <td>生命值 +10</td>\n    <td>生命值 +10</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石3级</td>\n    <td>3</td>\n    <td>生命值 +15</td>\n    <td>生命值 +15</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石4级</td>\n    <td>4</td>\n    <td>生命值 +20</td>\n    <td>生命值 +20</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石5级</td>\n    <td>5</td>\n    <td>生命值 +25</td>\n    <td>生命值 +25</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石6级</td>\n    <td>6</td>\n    <td>生命值 +32</td>\n    <td>生命值 +32</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石7级</td>\n    <td>7</td>\n    <td>生命值 +40</td>\n    <td>生命值 +40</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石8级</td>\n    <td>8</td>\n    <td>生命值 +50</td>\n    <td>生命值 +50</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石9级</td>\n    <td>9</td>\n    <td>生命值 +62</td>\n    <td>生命值 +62</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄沉之石10级</td>\n    <td>10</td>\n    <td>生命值 +75</td>\n    <td>生命值 +75</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/88ca9fbc33f438491f79.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/88ca9fbc33f438491f79.js"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_06b.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "6584d430fc88aa770d55",
+  "status": "ok",
+  "parents": [
+    "91a19fa86c32f5d0ac03"
+  ],
+  "bytes": 86745,
+  "sha256": "69507a4efc057428fd33874dbb454424ae4312081d47179b3136e76fcf0b8e20",
+  "fetchedAt": "2026-11-18T08:28:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/images/pic1_06b.jpg",
+  "path": "assets/6584d430fc88aa770d55.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/2014show/images/regbtn.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6f3604825e1c1610eb90",
+  "status": "ok",
+  "parents": [
+    "376e20015b61a017c829"
+  ],
+  "bytes": 5263,
+  "sha256": "60d38cc1310efbdd1f5391672f563eacecfd436225f6d0b1fb909ee804d18466",
+  "fetchedAt": "2026-11-18T08:23:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/2014show/images/regbtn.jpg",
+  "path": "assets/6f3604825e1c1610eb90.jpg"
+}

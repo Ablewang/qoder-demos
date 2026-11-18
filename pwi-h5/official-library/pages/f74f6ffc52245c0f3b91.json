@@ -1,0 +1,92 @@
+{
+  "id": "f74f6ffc52245c0f3b91",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/yincang/jinru.htm",
+  "title": "命运大转盘 精彩不断来---魔方介绍",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "7efee68b25cc6c382609"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/yincang/jinru.htm",
+  "fetchedAt": "2026-11-18T08:16:00+00:00",
+  "sha256": "7fe295521277fe5f137346b3c5ffb4858abde0aaaf1d1558fb350ecfe64739b1",
+  "bytes": 1435,
+  "rawPath": "raw/f74f6ffc52245c0f3b91.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "1）如何进入\n完成命运魔方第50关后将会获得一张“命运乐透邀请函”，与命运起点1号传送官对话后会获得一张兔子卡或乌龟卡，使用后即可进入隐藏关卡。\n注：隐藏关卡每日只可进入一次，任务失败或角色死亡后回到“命运起点”房间。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "1）如何进入",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "完成命运魔方第50关后将会获得一张“命运乐透邀请函”，与命运起点1号传送官对话后会获得一张兔子卡或乌龟卡，使用后即可进入隐藏关卡。\n注：隐藏关卡每日只可进入一次，任务失败或角色死亡后回到“命运起点”房间。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "完成命运魔方第50关后将会获得一张“命运乐透邀请函”，与命运起点1号传送官对话后会获得一张兔子卡或乌龟卡，使用后即可进入隐藏关卡。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "注：隐藏关卡每日只可进入一次，任务失败或角色死亡后回到“命运起点”房间。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/in_bg.jpg",
+      "label": "1）如何进入",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/kaishi.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td><div> 1）如何进入</div></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td><span>完成命运魔方第50关后将会获得一张“命运乐透邀请函”，与命运起点1号传送官对话后会获得一张兔子卡或乌龟卡，使用后即可进入隐藏关卡。</span></td>\n      </tr>\n      <tr>\n        <td><img src=\"assets/bc58a82019c25b42cc10.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n      </tr>\n      <tr>\n        <td>注：隐藏关卡每日只可进入一次，任务失败或角色死亡后回到“命运起点”房间。</td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/f74f6ffc52245c0f3b91.json",
+  "imageCount": 2,
+  "tableCount": 2,
+  "downloadPath": "downloads/f74f6ffc52245c0f3b91.js"
+}

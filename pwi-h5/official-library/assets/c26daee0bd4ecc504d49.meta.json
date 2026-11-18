@@ -1,0 +1,25 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbossoff.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c26daee0bd4ecc504d49",
+  "status": "ok",
+  "parents": [
+    "59cb948c7b10c9712ba9",
+    "3a60265176d060953606",
+    "1751f53360fb91b12ba9",
+    "c51c6aaefda2f64eecac",
+    "56505232365332ed4dfe",
+    "15d3ed593ed1c21ffe17",
+    "0aea0f93685732021dd0",
+    "8f54481efa1c7377fc6a"
+  ],
+  "bytes": 4206,
+  "sha256": "509dfa49d381489f3d8c14ab35a07a1bedb2b27c95e85ba0f0acee49b219fcd4",
+  "fetchedAt": "2026-11-18T08:23:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbossoff.jpg",
+  "path": "assets/c26daee0bd4ecc504d49.jpg"
+}

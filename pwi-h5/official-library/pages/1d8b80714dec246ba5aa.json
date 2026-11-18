@@ -1,0 +1,229 @@
+{
+  "id": "1d8b80714dec246ba5aa",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conrwlc.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "c51c6aaefda2f64eecac"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conrwlc.htm",
+  "fetchedAt": "2026-11-18T08:16:50+00:00",
+  "sha256": "6b442b2aca245a7c33870be5264ac9178b636271ce17e2fe833072763fe1f5bd",
+  "bytes": 5262,
+  "rawPath": "raw/1d8b80714dec246ba5aa.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "神月谷新任务：“神月引”与“神月殇”\n任务介绍：神月谷新增主线系列任务，玩家在完成该2个主要任务后将得到1张“都天唤魔帖”，持有此帖可在神月谷中相应NPC处根据玩家职业不同召唤出6个不同的隐藏boss。(具体见下表）\n该帖在召唤出boss后自动返还，也就是说可以重复召唤隐藏boss。（重复召唤前要重置副本）\nBOSS名\n对应职业\n所在地\n咆哮吞天兽\n妖兽\n恒月谷\n血影玲珑尊\n羽灵\n真月谷\n十方天魔卫\n羽芒\n暗月谷\n月魔·赤胧\n妖精\n灵月谷\n月魔·黑胧\n幽瞳玄冥煞\n法师\n玄月谷\n断浪七哀使\n武侠\n冥月谷\n召唤NPC：\n乌龙（打败所在谷boss后出现）\n召唤所需材料：\n都天唤魔贴\n神月引任务流程：\n1.在诸追风处接得任务“神月引”（神月殇任务以此任务为前提）；\n2.与神月守门人对话完成子任务；\n3.在单人模式下杀死巫·参玄和巫·廖君各4名，巫·般若2名；\n4 回报神月守门人，得到三张灵符（任务物品）；\n5.将3张灵符分别交给：“禹王鼎村长”、“侠隐村村长”、“踏箭山庄庄主”；\n6.回报神月守门人；\n奖励：天涯咫尺咒1张（使用后将传送至冥月谷，并再得到1张传送回来的符咒）；\n7.前往冥月谷的湖水中，在湖心岛东南部的水下，到达区域完成任务；\n8.回报神月守门人。\n奖励：\n白驹过隙符1张（使用后传送至南宫白头翁处，可领取神月殇任务）\n金钱27000\n经验45000\n元神10260\n幻仙石3个\n神月殇任务流程：\n1.在南宫白头翁处接得任务“神月殇”；\n2.随机等待20秒、3分钟或8分钟后完成任务；\n3.与南宫白头翁对话，得到1枚“残破的锁片”；\n4.根据锁片上的文字来到踏箭山庄找到天机上人；\n5.将锁片交给天机上人；\n6.与天机上人对话；\n7.在神月谷多人模式下杀死赤炼风骸和吞佛魔尊，然后回报天机上人；\n8.与天机上人对话。\n奖励：\n金钱21600\n经验36000\n元神8208\n都天唤魔帖1张",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "BOSS名",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对应职业",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所在地",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "咆哮吞天兽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "妖兽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "恒月谷",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "血影玲珑尊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "羽灵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真月谷",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "十方天魔卫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "羽芒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "暗月谷",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "月魔·赤胧",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "妖精",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "灵月谷",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "月魔·黑胧",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幽瞳玄冥煞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法师",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "玄月谷",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "断浪七哀使",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武侠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冥月谷",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "召唤NPC：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "乌龙（打败所在谷boss后出现）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "召唤所需材料：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "都天唤魔贴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_02.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/rwiframetop.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_01_2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_02_2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/efca1688c985057409e3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n            \t</div>\n                <div>\n<p>　　神月谷新任务：“神月引”与“神月殇” </p>\n\n<p>　　任务介绍：神月谷新增主线系列任务，玩家在完成该2个主要任务后将得到1张“都天唤魔帖”，持有此帖可在神月谷中相应NPC处根据玩家职业不同召唤出6个不同的隐藏boss。(具体见下表） \n  该帖在召唤出boss后自动返还，也就是说可以重复召唤隐藏boss。（重复召唤前要重置副本）</p>\n  \n  <table>\n    <tr>\n      <td>BOSS名</td>\n      <td>对应职业</td>\n      <td>所在地</td>\n    </tr>\n    <tr>\n      <td>咆哮吞天兽</td>\n      <td>妖兽</td>\n      <td>恒月谷</td>\n    </tr>\n    <tr>\n      <td>血影玲珑尊</td>\n      <td>羽灵</td>\n      <td>真月谷</td>\n    </tr>\n    <tr>\n      <td>十方天魔卫</td>\n      <td>羽芒</td>\n      <td>暗月谷</td>\n    </tr>\n    <tr>\n      <td>月魔·赤胧</td>\n      <td rowspan=\"2\">妖精</td>\n      <td rowspan=\"2\">灵月谷</td>\n    </tr>\n    <tr>\n      <td>月魔·黑胧</td>\n    </tr>\n    <tr>\n      <td>幽瞳玄冥煞</td>\n      <td>法师</td>\n      <td>玄月谷</td>\n    </tr>\n    <tr>\n      <td>断浪七哀使</td>\n      <td>武侠</td>\n      <td>冥月谷</td>\n    </tr>\n    <tr>\n      <td>召唤NPC：</td>\n      <td>乌龙（打败所在谷boss后出现）</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>召唤所需材料：</td>\n      <td>都天唤魔贴</td>\n      <td></td>\n    </tr>\n  </table>\n<p>神月引任务流程：</p>\n\n<ul>\n<li>1.在诸追风处接得任务“神月引”（神月殇任务以此任务为前提）；</li>\n<li>2.与神月守门人对话完成子任务；</li>\n<li>3.在单人模式下杀死巫·参玄和巫·廖君各4名，巫·般若2名；</li>\n<li>4 回报神月守门人，得到三张灵符（任务物品）；</li>\n<li>5.将3张灵符分别交给：“禹王鼎村长”、“侠隐村村长”、“踏箭山庄庄主”；</li>\n<li>6.回报神月守门人；</li>\n<li>奖励：天涯咫尺咒1张（使用后将传送至冥月谷，并再得到1张传送回来的符咒）；</li>\n<li>7.前往冥月谷的湖水中，在湖心岛东南部的水下，到达区域完成任务；</li>\n<li>8.回报神月守门人。</li>\n<span><li>奖励：</li>\n<li>白驹过隙符1张（使用后传送至南宫白头翁处，可领取神月殇任务） </li>\n<li>金钱27000</li>\n<li>经验45000</li>\n<li>元神10260</li>\n<li>幻仙石3个 </li></span>\n<li>神月殇任务流程：\n</li><li>1.在南宫白头翁处接得任务“神月殇”；</li>\n<li>2.随机等待20秒、3分钟或8分钟后完成任务；</li>\n<li>3.与南宫白头翁对话，得到1枚“残破的锁片”；</li>\n<li>4.根据锁片上的文字来到踏箭山庄找到天机上人；</li>\n<li>5.将锁片交给天机上人；</li>\n<li>6.与天机上人对话；</li>\n<li>7.在神月谷多人模式下杀死赤炼风骸和吞佛魔尊，然后回报天机上人；</li>\n<li>8.与天机上人对话。</li>\n<span><li>奖励：</li>\n<li>金钱21600</li>\n<li>经验36000</li>\n<li>元神8208</li>\n<li>都天唤魔帖1张</li></span>\n</ul>\n<div><a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/ac4eec703fa29c200b9b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n<p><br></p>\n<div><a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/images/zs_02.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/9b8d2946fbb770588c5b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n              </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/1d8b80714dec246ba5aa.json",
+  "imageCount": 3,
+  "tableCount": 1,
+  "downloadPath": "downloads/1d8b80714dec246ba5aa.js"
+}

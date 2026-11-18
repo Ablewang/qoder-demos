@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131127/10021385516689196.jpg",
+  "alt": "图片: 图1：印度舞蹈.jpg",
+  "kind": "img",
+  "id": "7630d90f27eec57c4ed8",
+  "status": "ok",
+  "parents": [
+    "9b4d46b3150ffdf0da0a"
+  ],
+  "bytes": 50173,
+  "sha256": "21c6825847654a7a5dd2c22bd860eb8602c301185d5faa94058d5282418c5208",
+  "fetchedAt": "2026-11-18T08:23:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131127/10021385516689196.jpg",
+  "path": "assets/7630d90f27eec57c4ed8.jpg"
+}

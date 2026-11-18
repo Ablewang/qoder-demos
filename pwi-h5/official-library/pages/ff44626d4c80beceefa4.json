@@ -1,0 +1,135 @@
+{
+  "id": "ff44626d4c80beceefa4",
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/info_role.html",
+  "title": "新装备揭秘--声望人物装备",
+  "category": "装备道具",
+  "section": "天怒神罚装备专题",
+  "depth": 1,
+  "parents": [
+    "de47feb33ca455460610",
+    "504d42dc262142e90349"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/info_role.html",
+  "fetchedAt": "2026-11-18T08:15:51+00:00",
+  "sha256": "79c9cd10e52302a9fce555262b2ff2bb92ce044a4aef91c6a5b6bfd32a2f54b6",
+  "bytes": 2273,
+  "rawPath": "raw/ff44626d4c80beceefa4.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/menu.html",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/role.html",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/material.html",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_left_bg.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_right_bg.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_donwon_bg.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p></td>\n  </tr>\n</table>\n<table>\n  <tr>\n    <td><p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200806/arming/html/menu.html\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200806/arming/html/menu.html</a></p></td>\n  </tr>\n</table>\n<table>\n  <tr>\n    <td><img src=\"assets/2947f944bb7d65c7b770.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200806/arming/html/role.html\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200806/arming/html/role.html</a></p></td>\n    <td><img src=\"assets/fe5b6c40ea5a2d4f227f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n<table>\n  <tr>\n    <td><img src=\"assets/15d3ec4ccce2c2336186.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n\n<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p>\n\n\n\n\n\n\n\n\n",
+  "dataPath": "pages/ff44626d4c80beceefa4.json",
+  "imageCount": 3,
+  "tableCount": 4,
+  "downloadPath": "downloads/ff44626d4c80beceefa4.js"
+}

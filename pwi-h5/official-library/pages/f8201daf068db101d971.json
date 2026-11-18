@@ -1,0 +1,315 @@
+{
+  "id": "f8201daf068db101d971",
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/weapon_08.htm",
+  "title": "天怒神罚16阶顶级橙武-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "bd6a4da0ea55ad2a5bf5",
+    "ba2b70e5682e415ca7d4"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "6f5d4101173e1126e3602a408e26ac268eb04c69cbed6b77fd8cc69daf04b852",
+  "bytes": 4676,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/f8201daf068db101d971.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "血染斜阳红\n武器类型\n宝轮\n品阶\n16\n等级限制\n80\n力量限制\n52\n敏捷限制\n0\n体力限制\n0\n灵力限制\n285\n物理攻击\n674~912\n法术攻击\n1091~1637\n附加属性\n吟唱时间\n-6%\n攻击等级\n+50\n法术攻击\n+63\n法术攻击\n+63\n法术攻击\n+63\n法术攻击\n+63",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "血染斜阳红",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "武器类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "宝轮",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "力量限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体力限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵力限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "285",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "674~912",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1091~1637",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "吟唱时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-6%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+63",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+63",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+63",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+63",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/main_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_l.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/pic_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_r.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<table>\n<tr>\n<td>\n<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</td>\n</tr>\n</table>\n\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm</a></p>\n</div>\n\n\n\n<div>\n\t<img src=\"assets/1d986f02125b103461ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<div>\n\t\t<img src=\"assets/3ed5df25146d4b541d8f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\n\t\t<div>\n\t\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm</a></p>\n\t\t</div>\n\t\t\n\t    <img src=\"assets/0555f936118a830aea57.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n\t\n\t<div>\n\t\t<div>\n\t<img src=\"assets/0c1f37c9e48701f1f9a3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/d8f1d98a8cecc68e17c2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/d590ba0f9ef16af3b2f1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/54c0e053473b038342ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/ce6bb9a354a297803678.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/4f412405a278678d8354.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<div>\n\t\t<table>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"6\">\n\t\t\t\t<span>血染斜阳红</span></td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>武器类型</td>\n\t\t\t\t<td>宝轮</td>\n\t\t\t\t<td>品阶</td>\n\t\t\t\t<td>16</td>\n\t\t\t\t<td>等级限制</td>\n\t\t\t\t<td>80</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>力量限制</td>\n\t\t\t\t<td>52</td>\n\t\t\t\t<td>敏捷限制</td>\n\t\t\t\t<td>0</td>\n\t\t\t\t<td>体力限制</td>\n\t\t\t\t<td>0</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>灵力限制</td>\n\t\t\t\t<td>285</td>\n\t\t\t\t<td>物理攻击</td>\n\t\t\t\t<td>674~912</td>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>1091~1637</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"6\">附加属性</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>吟唱时间</td>\n\t\t\t\t<td>-6%</td>\n\t\t\t\t<td>攻击等级</td>\n\t\t\t\t<td>+50</td>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>+63</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>+63</td>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>+63</td>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>+63</td>\n\t\t\t</tr>\n\t\t</table>\n\t</div>\n\t<img src=\"assets/6323c8de9af39aa4b1f8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> </div>\n\t\t<img src=\"assets/a63ec9b2976ce2031ffc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n</div>\n\n<table>\n<tr>\n<td><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></td>\n</tr>\n</table>\n\n\n",
+  "dataPath": "pages/f8201daf068db101d971.json",
+  "imageCount": 11,
+  "tableCount": 3,
+  "downloadPath": "downloads/f8201daf068db101d971.js"
+}

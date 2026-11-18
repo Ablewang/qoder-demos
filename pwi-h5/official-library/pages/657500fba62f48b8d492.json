@@ -1,0 +1,1762 @@
+{
+  "id": "657500fba62f48b8d492",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+  "title": "妖兽技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "a93b688ecdd34ebb3e45",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "d21cddc267cdccc68b979765cd0d1252b5843ec82de0cca068345ebaa82e4446",
+  "bytes": 103356,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/657500fba62f48b8d492.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n妖兽技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n兽王锤\n斧锤\n无\n筑基\n主动攻击\n10\n天生\n5,10,15,\n奋力一击，对敌人造成物理伤害。\n20,25,30,35,\n40,45\n绞杀\n斧锤\n兽王锤\n筑基\n主动攻击\n10\n3\n8,13,18,\n抡起武器猛劈对手，对其造成物理伤害并使其流血。\n23,28,33,38,\n43,48\n巨浪\n斧锤\n兽王锤\n灵虚\n主动攻击\n10\n13\n18,23,28,\n以横扫千钧的气势形成无形气浪，对扇形范围内的敌人造成物理伤害。\n33,38,43,48,\n53,58\n千斤锤\n斧锤\n绞杀\n灵虚\n主动攻击\n10\n16\n21,26,31,\n抡圆武器对敌单体进行强力攻击，造成物理攻击力并有机率将对手击晕。\n36,41,46,51,\n56,61\n破甲一击\n斧锤\n千斤锤\n和合\n主动攻击\n10\n23\n28,33,38,\n以千钧之力猛击对方，对其造成物理伤害，并降低其护甲。\n43,48,53,58,\n63,68\n风火轮\n斧锤\n巨浪\n元婴\n主动攻击\n10\n29\n34,39,44,\n通过自身旋转连发出灼热的刃光，对前方直线上的敌人造成物理伤害，并使其受到持续火系伤害。\n49,54,59,64,\n69,74\n地裂\n斧锤\n风火轮\n空冥\n主动攻击\n10\n39\n43,47,51,\n一跃而起重砸地面，形成强烈的冲击波，对周围敌人造成物理伤害，并将其击退。\n55,59,63,67,\n71,75\n兽王无敌\n斧锤\n破甲一击\n履霜\n主动攻击\n10\n49\n53,57,61,\n将勇力幻化成的灼热真气团击出，对远处的敌人造成物理伤害，并使其在闪避度下降。\n65,69,73,77,\n81,85\n毁天灭地\n斧锤\n地裂\n渡劫\n主动攻击\n10\n59\n62,65,68,\n耗费全身元气将生命和真气转化为自身周围的大范围攻击。\n71,74,77,80,\n83,86\n野性回复\n斧锤\n无\n筑基\n被动\n10\n6\n11,16,21,\n提升自己的生命恢复速度。\n26,31,36,41,\n46,51\n兽王鼓舞\n斧锤\n野性回复\n和合\n主动祝福\n10\n19\n24,29,34,\n发出一声咆哮，使周围队友和自已的生命值上限提升。\n39,44,49,54,\n59,64\n化血成魔\n斧锤\n兽王鼓舞\n元婴\n主动祝福\n10\n29\n34,39,44,\n把自身血量上限和现有血值均降低，使武器提升命中度提升。\n49,54,59,64,\n69,74\n巨灵神力\n斧锤\n巨灵神力\n履霜\n主动祝福\n10\n49\n53,57,61,\n仰天怒吼，使自己及队友的武器物理攻击力提升。\n65,69,73,77,\n81,85\n白虎变\n斧锤 空手\n无\n灵虚\n主动祝福\n1\n9\n29,59\n化身为白虎，使自已生命值和移动速度提升，但攻击减弱。\n撕咬\n斧锤 空手\n白虎变\n灵虚\n主动攻击\n10\n9\n14,19,24,\n用爪牙撕咬敌人，造成基础物理攻击力的物理伤害并强制对方攻击自已，且使对方流血。\n29,34,39,44,\n49,54\n怒扑\n斧锤 空手\n撕咬\n和合\n主动攻击\n10\n19\n24,29,34,\n向敌人猛扑，打断对方当前技能，并造成物理伤害。\n39,44,49,54,\n59,64\n吞噬\n斧锤 空手\n怒扑\n元婴\n主动攻击\n10\n29\n34,39,44,\n张大虎嘴向对手咬去，对敌人造成物理伤害，并使其物理防御力下降。\n49,54,59,64,\n69,74\n排山倒海\n斧锤 空手\n吞噬\n空冥\n主动攻击\n10\n39\n43,47,51,\n以排山倒海般气势向敌人猛扑，对目标及其周围敌人造成物理伤害，并使其减速。\n55,59,63,67,\n71,75\n天崩地裂\n斧锤 空手\n排山倒海\n渡劫\n主动攻击\n10\n59\n62,65,68,\n以全身元气附于虎尾横扫，使周围敌人受到物理伤害并流血伤害，自已可在中吸取生命值。\n71,74,77,80,\n83,86\n兽王之怒\n斧锤 空手\n无\n和合\n主动祝福\n1\n19\n无\n激活后受到攻击可将怒气转化为自身的元气。\n毒牙\n斧锤 空手\n白虎变\n和合\n主动祝福\n10\n26\n31,36,41,\n使变身后的所有普通攻击附加木系伤害。\n46,51,56,61,\n66,71\n咆哮\n斧锤 空手\n毒牙\n元婴\n主动诅咒\n10\n34\n39,44,49,\n一声咆哮，吸引周围所有敌人攻击自已。\n54,59,64,69,\n74,79\n震慑\n斧锤 空手\n咆哮\n空冥\n主动诅咒\n10\n44\n48,52,56,\n震慑周围敌人心神，使其物理攻击力下降并减速。\n60,64,68,72,\n76,80\n变身强化\n斧锤 空手\n白虎变\n灵虚\n主动祝福\n10\n13\n18,23,28,\n增强变身后的物理防御力。\n33,38,43,48,\n53,58\n玄武附体\n斧锤 空手\n变身强\n渡劫\n主动祝福\n1\n59\n无\n以全身元气召唤玄武之灵附体，受到所有伤害大量减免，减少移动速度。\n化10级\n水性精通\n斧锤\n无\n灵虚\n被动\n1\n9\n无\n水中游泳速度提升，并且氧气槽下降速度减半。\n斧锤精通\n斧锤\n无\n元婴\n被动\n10\n29\n34,39,44,\n增加所有斧锤攻击力。\n49,54,59,64,\n69,74",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "妖兽技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兽王锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "5,10,15,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奋力一击，对敌人造成物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "20,25,30,35,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "40,45",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绞杀",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "兽王锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "8,13,18,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "抡起武器猛劈对手，对其造成物理伤害并使其流血。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "23,28,33,38,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "43,48",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巨浪",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "兽王锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "18,23,28,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以横扫千钧的气势形成无形气浪，对扇形范围内的敌人造成物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "33,38,43,48,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "53,58",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "千斤锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "绞杀",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "21,26,31,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "抡圆武器对敌单体进行强力攻击，造成物理攻击力并有机率将对手击晕。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "36,41,46,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "56,61",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "破甲一击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "千斤锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "23",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "28,33,38,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以千钧之力猛击对方，对其造成物理伤害，并降低其护甲。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "43,48,53,58,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "63,68",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "风火轮",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "巨浪",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "通过自身旋转连发出灼热的刃光，对前方直线上的敌人造成物理伤害，并使其受到持续火系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "地裂",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "风火轮",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一跃而起重砸地面，形成强烈的冲击波，对周围敌人造成物理伤害，并将其击退。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55,59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兽王无敌",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "破甲一击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将勇力幻化成的灼热真气团击出，对远处的敌人造成物理伤害，并使其在闪避度下降。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65,69,73,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "毁天灭地",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "地裂",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "耗费全身元气将生命和真气转化为自身周围的大范围攻击。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "野性回复",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "11,16,21,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提升自己的生命恢复速度。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "26,31,36,41,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "46,51",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兽王鼓舞",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "野性回复",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "发出一声咆哮，使周围队友和自已的生命值上限提升。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "化血成魔",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "兽王鼓舞",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "把自身血量上限和现有血值均降低，使武器提升命中度提升。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巨灵神力",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "巨灵神力",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "53,57,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "仰天怒吼，使自己及队友的武器物理攻击力提升。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "65,69,73,77,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "81,85",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "白虎变",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29,59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "化身为白虎，使自已生命值和移动速度提升，但攻击减弱。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "撕咬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "白虎变",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "14,19,24,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "用爪牙撕咬敌人，造成基础物理攻击力的物理伤害并强制对方攻击自已，且使对方流血。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29,34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怒扑",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "撕咬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "24,29,34,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "向敌人猛扑，打断对方当前技能，并造成物理伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "39,44,49,54,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "59,64",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "吞噬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "怒扑",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "张大虎嘴向对手咬去，对敌人造成物理伤害，并使其物理防御力下降。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "排山倒海",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "吞噬",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "43,47,51,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以排山倒海般气势向敌人猛扑，对目标及其周围敌人造成物理伤害，并使其减速。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "55,59,63,67,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,75",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "天崩地裂",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "排山倒海",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "62,65,68,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "以全身元气附于虎尾横扫，使周围敌人受到物理伤害并流血伤害，自已可在中吸取生命值。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "71,74,77,80,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "83,86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兽王之怒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "激活后受到攻击可将怒气转化为自身的元气。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "毒牙",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "白虎变",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "26",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "31,36,41,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使变身后的所有普通攻击附加木系伤害。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "46,51,56,61,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "66,71",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "咆哮",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "毒牙",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "39,44,49,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一声咆哮，吸引周围所有敌人攻击自已。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "54,59,64,69,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "74,79",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "震慑",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "咆哮",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动诅咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "48,52,56,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "震慑周围敌人心神，使其物理攻击力下降并减速。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "60,64,68,72,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "76,80",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "变身强化",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "白虎变",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "18,23,28,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "增强变身后的物理防御力。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "33,38,43,48,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "53,58",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄武附体",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤 空手",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "变身强",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "以全身元气召唤玄武之灵附体，受到所有伤害大量减免，减少移动速度。",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "化10级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水性精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "水中游泳速度提升，并且氧气槽下降速度减半。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "斧锤精通",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34,39,44,",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "增加所有斧锤攻击力。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "49,54,59,64,",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "69,74",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>妖兽技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>兽王锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>5,10,15,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>奋力一击，对敌人造成物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>20,25,30,35,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>40,45</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>绞杀</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>兽王锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>8,13,18,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>抡起武器猛劈对手，对其造成物理伤害并使其流血。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>23,28,33,38,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>43,48</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>巨浪</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>兽王锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>13</div>\r\n            </td>\r\n            <td>\r\n            <div>18,23,28,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以横扫千钧的气势形成无形气浪，对扇形范围内的敌人造成物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>33,38,43,48,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>53,58</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>千斤锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>绞杀</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>16</div>\r\n            </td>\r\n            <td>\r\n            <div>21,26,31,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>抡圆武器对敌单体进行强力攻击，造成物理攻击力并有机率将对手击晕。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>36,41,46,51,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>56,61</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>破甲一击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>千斤锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>23</div>\r\n            </td>\r\n            <td>\r\n            <div>28,33,38,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以千钧之力猛击对方，对其造成物理伤害，并降低其护甲。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>43,48,53,58,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>63,68</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>风火轮</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>巨浪</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>通过自身旋转连发出灼热的刃光，对前方直线上的敌人造成物理伤害，并使其受到持续火系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>地裂</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>风火轮</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>一跃而起重砸地面，形成强烈的冲击波，对周围敌人造成物理伤害，并将其击退。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>55,59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>兽王无敌</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>破甲一击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>将勇力幻化成的灼热真气团击出，对远处的敌人造成物理伤害，并使其在闪避度下降。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>65,69,73,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>毁天灭地</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>地裂</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>耗费全身元气将生命和真气转化为自身周围的大范围攻击。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>野性回复</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>筑基</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>6</div>\r\n            </td>\r\n            <td>\r\n            <div>11,16,21,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>提升自己的生命恢复速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>26,31,36,41,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>46,51</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>兽王鼓舞</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>野性回复</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>发出一声咆哮，使周围队友和自已的生命值上限提升。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>化血成魔</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>兽王鼓舞</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>把自身血量上限和现有血值均降低，使武器提升命中度提升。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>巨灵神力</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>巨灵神力</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>履霜</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53,57,61,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>仰天怒吼，使自己及队友的武器物理攻击力提升。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>65,69,73,77,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>81,85</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>白虎变</div>\r\n            </td>\r\n            <td>\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>29,59</div>\r\n            </td>\r\n            <td>\r\n            <div>化身为白虎，使自已生命值和移动速度提升，但攻击减弱。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>撕咬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>白虎变</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14,19,24,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>用爪牙撕咬敌人，造成基础物理攻击力的物理伤害并强制对方攻击自已，且使对方流血。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29,34,39,44,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>怒扑</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>撕咬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24,29,34,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>向敌人猛扑，打断对方当前技能，并造成物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>39,44,49,54,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>59,64</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>吞噬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>怒扑</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>张大虎嘴向对手咬去，对敌人造成物理伤害，并使其物理防御力下降。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>排山倒海</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>吞噬</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43,47,51,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以排山倒海般气势向敌人猛扑，对目标及其周围敌人造成物理伤害，并使其减速。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>55,59,63,67,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,75</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>天崩地裂</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>排山倒海</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62,65,68,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>以全身元气附于虎尾横扫，使周围敌人受到物理伤害并流血伤害，自已可在中吸取生命值。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>71,74,77,80,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>83,86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>兽王之怒</div>\r\n            </td>\r\n            <td>\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>激活后受到攻击可将怒气转化为自身的元气。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>毒牙</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>白虎变</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>和合</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>26</div>\r\n            </td>\r\n            <td>\r\n            <div>31,36,41,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>使变身后的所有普通攻击附加木系伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>46,51,56,61,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>66,71</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>咆哮</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>毒牙</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>34</div>\r\n            </td>\r\n            <td>\r\n            <div>39,44,49,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>一声咆哮，吸引周围所有敌人攻击自已。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>54,59,64,69,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>74,79</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>震慑</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>咆哮</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动诅咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>44</div>\r\n            </td>\r\n            <td>\r\n            <div>48,52,56,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>震慑周围敌人心神，使其物理攻击力下降并减速。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>60,64,68,72,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>76,80</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>变身强化</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>白虎变</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>13</div>\r\n            </td>\r\n            <td>\r\n            <div>18,23,28,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>增强变身后的物理防御力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>33,38,43,48,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>53,58</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">\r\n            <div>玄武附体</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>斧锤 空手</div>\r\n            </td>\r\n            <td>\r\n            <div>变身强</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>1</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>59</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>以全身元气召唤玄武之灵附体，受到所有伤害大量减免，减少移动速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>化10级</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>水性精通</div>\r\n            </td>\r\n            <td>\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>1</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>水中游泳速度提升，并且氧气槽下降速度减半。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤精通</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>斧锤</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>被动</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34,39,44,</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>增加所有斧锤攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>49,54,59,64,</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>69,74</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/657500fba62f48b8d492.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/657500fba62f48b8d492.js"
+}

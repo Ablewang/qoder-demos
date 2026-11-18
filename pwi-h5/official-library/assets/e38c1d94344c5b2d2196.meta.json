@@ -1,0 +1,21 @@
+{
+  "url": "https://w2i.wanmei.com/hd/huodong/images/top.jpg",
+  "id": "e38c1d94344c5b2d2196",
+  "status": "ok",
+  "parents": [
+    "56186829a9aad9d27274",
+    "352b70756b0ce4301ac7",
+    "675bdc215ce9ee4f2755",
+    "312212bd876b0d5f7144"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/hd/huodong/images/css.css",
+  "bytes": 73108,
+  "sha256": "e911aa94b83c4e613662e808a0b73193fc6595c999bb4c4798d78caf2039f3c9",
+  "fetchedAt": "2026-11-18T08:28:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/huodong/images/top.jpg",
+  "path": "assets/e38c1d94344c5b2d2196.jpg"
+}

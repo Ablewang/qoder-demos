@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_122.jpg",
+  "id": "51e8673d3b302230be76",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "天师借法",
+  "bytes": 1568,
+  "sha256": "3b847ecd1ac5df65c1ff7d1d937f2862edb428428b71d179f65437ee1b03a2ab",
+  "fetchedAt": "2026-11-18T08:35:08+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_122.jpg",
+  "path": "assets/51e8673d3b302230be76.jpg"
+}

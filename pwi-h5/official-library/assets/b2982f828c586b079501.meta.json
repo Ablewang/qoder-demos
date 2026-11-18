@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "id": "b2982f828c586b079501",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 67654,
+  "sha256": "4657fa2cd0a09faac7e7d9724d09f86953712ec973fbca3ffcb18da5171731e5",
+  "fetchedAt": "2026-11-18T08:17:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "path": "assets/b2982f828c586b079501.js"
+}

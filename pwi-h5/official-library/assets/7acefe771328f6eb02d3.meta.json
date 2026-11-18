@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1093.jpg",
+  "id": "7acefe771328f6eb02d3",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "遁隐术",
+  "bytes": 1176,
+  "sha256": "54475127ba0fa15e2c1c8047ed00fdb117327885cfc279d57416c80320154d89",
+  "fetchedAt": "2026-11-18T08:35:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1093.jpg",
+  "path": "assets/7acefe771328f6eb02d3.jpg"
+}

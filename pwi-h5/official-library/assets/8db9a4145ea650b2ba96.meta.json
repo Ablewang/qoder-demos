@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_178.jpg",
+  "id": "8db9a4145ea650b2ba96",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "易髓经",
+  "bytes": 1395,
+  "sha256": "0523fd1bd2bbdb2eb3370fe369fb72db2ac677c415a0a18c1413b094fbc8dff9",
+  "fetchedAt": "2026-11-18T08:34:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_178.jpg",
+  "path": "assets/8db9a4145ea650b2ba96.jpg"
+}

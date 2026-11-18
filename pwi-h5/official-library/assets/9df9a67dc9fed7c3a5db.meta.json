@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/index_con02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9df9a67dc9fed7c3a5db",
+  "status": "ok",
+  "parents": [
+    "d50d75e2c8b632fd5879",
+    "838e39f83961696b893e"
+  ],
+  "bytes": 19709,
+  "sha256": "e54dec93cb3076edf5516932fa5bbea046f9000618da92a8931615f76abc297b",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/9df9a67dc9fed7c3a5db.jpg"
+}

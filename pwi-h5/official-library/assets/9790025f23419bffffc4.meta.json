@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/js/jquery.bxSlider.min.js",
+  "alt": "",
+  "kind": "script",
+  "id": "9790025f23419bffffc4",
+  "status": "ok",
+  "parents": [
+    "2504de9daef1dc4f803a"
+  ],
+  "bytes": 14363,
+  "sha256": "737baff021e54cdf99d33f030e2f65eefee8612b47fc10414dbac9f5b4b4beed",
+  "fetchedAt": "2026-11-18T08:26:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/js/jquery.bxSlider.min.js",
+  "path": "assets/9790025f23419bffffc4.js"
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/images/pop_bg.gif",
+  "id": "1fa83880d03650c0e86c",
+  "status": "ok",
+  "parents": [
+    "eab551e03b8fd10609a9",
+    "e93b00b77035d0e5a3d7",
+    "ce036e5012d6285a44f3",
+    "8aa1da03402225531ee3"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201104/xiuld/style/master.css",
+  "bytes": 73081,
+  "sha256": "006e0393864742eea453981ad61297b57b9e7d0600958c06eb7aa89d48d18fa0",
+  "fetchedAt": "2026-11-18T08:36:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://event51.wanmei.com/w2i/201104/xiuld/images/pop_bg.gif",
+  "path": "assets/1fa83880d03650c0e86c.gif"
+}

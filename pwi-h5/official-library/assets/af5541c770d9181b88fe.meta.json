@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_912.jpg",
+  "id": "af5541c770d9181b88fe",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "不动咒",
+  "bytes": 1570,
+  "sha256": "94d46eb6d79953d7e8acf34cfdbf3506f3923c5dd3353f799463b53bfaeb9e37",
+  "fetchedAt": "2026-11-18T08:35:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_912.jpg",
+  "path": "assets/af5541c770d9181b88fe.jpg"
+}

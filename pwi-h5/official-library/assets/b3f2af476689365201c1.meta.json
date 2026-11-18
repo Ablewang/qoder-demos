@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/xy_02.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "b3f2af476689365201c1",
+  "status": "ok",
+  "parents": [
+    "78cd277893465d3b5c99"
+  ],
+  "bytes": 327343,
+  "sha256": "757f61d95be7974b430010e65fac29a527c55c31a92d819febd36cdf559dc2bf",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/b3f2af476689365201c1.jpg"
+}

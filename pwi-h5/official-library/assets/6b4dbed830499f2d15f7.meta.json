@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_111.jpg",
+  "id": "6b4dbed830499f2d15f7",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "化血成魔",
+  "bytes": 1535,
+  "sha256": "eb6b6944d0bb95b41a940a2734ba8f6dc79f3cffcccbf32fbd9e6105601cec68",
+  "fetchedAt": "2026-11-18T08:35:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_111.jpg",
+  "path": "assets/6b4dbed830499f2d15f7.jpg"
+}

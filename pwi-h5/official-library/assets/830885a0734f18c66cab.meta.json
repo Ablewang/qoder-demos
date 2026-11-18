@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073940996.jpg",
+  "alt": "图片: 图5：浅海沙夏威夷男装.jpg",
+  "kind": "img",
+  "id": "830885a0734f18c66cab",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 38337,
+  "sha256": "ea878bb003f8d2668a506095f28ae7fc076747c4421a95c4c00754cf76ad0462",
+  "fetchedAt": "2026-11-18T08:23:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073940996.jpg",
+  "path": "assets/830885a0734f18c66cab.jpg"
+}

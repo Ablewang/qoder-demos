@@ -1,0 +1,69 @@
+{
+  "id": "1c3a396b387469a917ed",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorbossdl.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "1751f53360fb91b12ba9",
+    "8f54481efa1c7377fc6a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "944f56edd764d49dffde94a796a8761229e20bcc70d68f8174f315e054025411",
+  "bytes": 1928,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1c3a396b387469a917ed.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorlcgl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/duorxgdl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorboss.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbosson.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnxgoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<div>\n    <div><a href=\"#page=1751f53360fb91b12ba9\"><img src=\"assets/9facda887e78ece85fc0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    <div><img src=\"assets/09d4cfdd315ba622da9b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t<div><a href=\"#page=8f54481efa1c7377fc6a\"><img src=\"assets/f253a41f63314d41cead.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    </div>\n    <div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorboss.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorboss.htm</a></p>\n        </div>\n    </div>\n</div>\n",
+  "dataPath": "pages/1c3a396b387469a917ed.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/1c3a396b387469a917ed.js"
+}

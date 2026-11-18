@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/qichong/changyong/2.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "4892ffa1c358234a6be6",
+  "status": "ok",
+  "parents": [
+    "17c9e94a0da7bfa27197"
+  ],
+  "bytes": 6535,
+  "sha256": "f0c6b056e54130fb35399e31fe4fc57b1e4ac17c648d8d5858143f9ef741eac4",
+  "fetchedAt": "2026-11-18T08:19:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/qichong/changyong/2.jpg",
+  "path": "assets/4892ffa1c358234a6be6.jpg"
+}

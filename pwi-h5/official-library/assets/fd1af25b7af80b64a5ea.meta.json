@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/2014show/images/lv02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "fd1af25b7af80b64a5ea",
+  "status": "ok",
+  "parents": [
+    "fb0b376a7b8aa224bb99"
+  ],
+  "bytes": 66052,
+  "sha256": "7e106125a9820974529ca3201fd3144e82d3f4baba925fbe15a674b77486f8cc",
+  "fetchedAt": "2026-11-18T08:23:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/2014show/images/lv02.jpg",
+  "path": "assets/fd1af25b7af80b64a5ea.jpg"
+}

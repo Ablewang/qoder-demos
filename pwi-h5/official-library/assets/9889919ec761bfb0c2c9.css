@@ -1,0 +1,45 @@
+/************************author:Tao.Zhou***************************/
+/**************************初始化开始******************************/
+body{font-family:'宋体','微软雅黑';margin:0 auto;padding:0;background: #000305;font-size:12px;color:#a5a4a4;}
+body > div{margin-right:auto;margin-left:auto;} 
+div,form,ul,ol,li,span,p,dl,dt,dd{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;outline: none;}
+h1,h2,h3,h4,h5,h6,p,span{margin:0;padding:0;font-size:12px;font-weight:normal;cursor: default;}
+ul,ol,li{list-style:none}
+table,td,input{font-size:12px;padding:0;border-spacing:0;}
+a{outline-style:none;color:#fff;text-decoration:none}
+a:hover {text-decoration: none;}
+.clear {clear:both;}
+.fix { overflow: hidden; height: 0; zoom: 1;}
+html,body{-webkit-text-size-adjust:none;}
+.bg_fix {margin-left: 1px;}
+/**************************初始化结束******************************/
+
+#wrap {background: url(../images/bg_01.jpg) center top no-repeat;}
+.bg {background: url(../images/bg_02.jpg) center 986px no-repeat;}
+.bg2 {background: url(../images/bg_03.jpg) center 1973px no-repeat; position: relative;}
+#main,#header {width: 1002px; margin: 0 auto; position: relative;}
+#main img,#header img {float: left;}
+
+div.sidebar {position: fixed; top: 250px; right: 100px; _position: absolute; z-index: 500;}
+div.sidebar a {display: block; width: 62px; height: 52px; background: url(../images/side_bg.gif) no-repeat;}
+div.sidebar a.target1 {height: 59px; background-position: 0 0;}
+div.sidebar a.target2 {background-position: 0 -59px;}
+div.sidebar a.target3 {background-position: 0 -111px;}
+div.sidebar a.target4 {background-position: 0 -163px;}
+div.sidebar a.target5 {background-position: 0 -215px;}
+div.sidebar a.target6 {background-position: 0 -267px;}
+div.sidebar a.target7 {background-position: 0 -319px;}
+div.sidebar a.targetTop {height: 42;background-position: 0 -371px;}
+div.sidebar a.target1:hover {background-position: -62px 0;}
+div.sidebar a.target2:hover {background-position: -62px -59px;}
+div.sidebar a.target3:hover {background-position: -62px -111px;}
+div.sidebar a.target4:hover {background-position: -62px -163px;}
+div.sidebar a.target5:hover {background-position: -62px -215px;}
+div.sidebar a.target6:hover {background-position: -62px -267px;}
+div.sidebar a.target7:hover {background-position: -62px -319px;}
+div.sidebar a.targetTop:hover {background-position: -62px -371px;}
+
+.stage {position: absolute; top: 325px; left: 110px; overflow: hidden; width: 783px; height: 119px;}
+.backstage {height: 119px;}
+.backstage img {margin-right: 20px;}

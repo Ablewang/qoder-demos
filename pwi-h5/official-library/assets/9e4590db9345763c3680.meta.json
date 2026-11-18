@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_547.jpg",
+  "id": "9e4590db9345763c3680",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·醍醐灌顶<em>（入魔）</em>",
+  "bytes": 1620,
+  "sha256": "498e21eae1d20a44067206447c3496ef9904655803573f1234d8a675ed23b319",
+  "fetchedAt": "2026-11-18T08:35:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_547.jpg",
+  "path": "assets/9e4590db9345763c3680.jpg"
+}

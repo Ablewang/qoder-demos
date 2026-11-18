@@ -1,0 +1,42 @@
+{
+  "id": "e907295b127dcc8f7c8b",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conduorlc.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "1751f53360fb91b12ba9"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "b6cefde042a2929f2ebbba9b375a2231b5b6ba17154cd31bf8e7ada2d73e952b",
+  "bytes": 4408,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/e907295b127dcc8f7c8b.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "开启模式要求：等级要求：85级以上\n成员要求：2-6人\n领取要求：只能队长领取\n金钱要求：队长交付300万金币\n模式NPC： 神月守门人\n满足以上条件的队伍由队长在神月守门人处选择“神月-开启冥月谷多人模式”即可开始这项挑战。\n任务流程：1.与NPC对话领取开启模式任务，其后所有队员将被传送进入冥月谷；\n2.冥月谷中，Boss冥灭洪荒只有在任意石碑死亡后才会出现，并且在Boss死亡后，尚未死亡的石碑将会消失；\n3.路线选择将依据玩家杀死的石碑变化，杀死左路的“碑•孤煞”再消灭Boss冥灭洪荒后，将开启暗月谷的路线；\n4.杀死右路的“碑•乌啼”再消灭Boss冥灭洪荒后，将开启恒月谷的路线；\n5.将两路的石碑均杀死后，消灭Boss冥灭洪荒将开启去往真月谷的路线；\n6.完成冥月谷后，进入其他谷，杀掉每谷的Boss后均会出现进入神月谷的传送NPC；\n7.消灭神月谷Boss后完成挑战。\n注意：每谷的小怪必须消灭半数以上才行，否则Boss将会进入狂暴状态，无人可挡。\n现在最多只需要打完3个谷即可完成多人模式挑战\n多人模式路线选择：1.冥月谷-暗月谷-神月谷\n2.冥月谷-恒月谷-神月谷\n3.冥月谷-真月谷-神月谷",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/duormsiframetop.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/00ec870d2722d030ea64.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n            \t</div>\n                <div>\n                  <p></p>\n                  <p>开启模式要求：等级要求：85级以上</p>\n                <p>              成员要求：2-6人</p>\n                <p>              领取要求：只能队长领取</p>\n                <p>              金钱要求：队长交付300万金币</p>\n                <p>模式NPC：    神月守门人</p>\n                <p></p>\n                <p>满足以上条件的队伍由队长在神月守门人处选择“神月-开启冥月谷多人模式”即可开始这项挑战。</p>\n                <p></p>\n                <p>任务流程：1.与NPC对话领取开启模式任务，其后所有队员将被传送进入冥月谷；</p>\n                <p>          2.冥月谷中，Boss冥灭洪荒只有在任意石碑死亡后才会出现，并且在Boss死亡后，尚未死亡的石碑将会消失；</p>\n                <p>          3.路线选择将依据玩家杀死的石碑变化，杀死左路的“碑•孤煞”再消灭Boss冥灭洪荒后，将开启暗月谷的路线；</p>\n                <p>          4.杀死右路的“碑•乌啼”再消灭Boss冥灭洪荒后，将开启恒月谷的路线；</p>\n                <p>          5.将两路的石碑均杀死后，消灭Boss冥灭洪荒将开启去往真月谷的路线；</p>\n                <p>          6.完成冥月谷后，进入其他谷，杀掉每谷的Boss后均会出现进入神月谷的传送NPC；</p>\n                <p>          7.消灭神月谷Boss后完成挑战。</p>\n                <p>          注意：每谷的小怪必须消灭半数以上才行，否则Boss将会进入狂暴状态，无人可挡。</p>\n                <p></p>\n                <p>现在最多只需要打完3个谷即可完成多人模式挑战</p>\n                <p>多人模式路线选择：1.冥月谷-暗月谷-神月谷</p>\n                <p>                  2.冥月谷-恒月谷-神月谷</p>\n                <p>                  3.冥月谷-真月谷-神月谷</p>\n              </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/e907295b127dcc8f7c8b.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/e907295b127dcc8f7c8b.js"
+}

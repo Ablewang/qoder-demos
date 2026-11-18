@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/hs_g_14.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "cde7ad1e6399053baca0",
+  "status": "ok",
+  "parents": [
+    "f3fba696107bbedaf3ea"
+  ],
+  "bytes": 919,
+  "sha256": "926bd74673176eeb59e6d952048bdceff52f9f1969b85944f7f186baa00e823b",
+  "fetchedAt": "2026-11-18T08:18:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/hs_g_14.jpg",
+  "path": "assets/cde7ad1e6399053baca0.jpg"
+}

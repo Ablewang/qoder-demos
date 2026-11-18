@@ -1,0 +1,21 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/picbg.gif",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "268b6a135407592cc390",
+  "status": "ok",
+  "parents": [
+    "f458bcafb746c36b1e32",
+    "ba40db87e61d7585dc73",
+    "8f1966f9655eda183326",
+    "4bb4f2d9b0112b528281"
+  ],
+  "bytes": 7439,
+  "sha256": "fd33d570256f9da293e6d877c74c006b6798ba0fd5bc87bb6c220b37e91b5eec",
+  "fetchedAt": "2026-11-18T08:19:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/picbg.gif",
+  "path": "assets/268b6a135407592cc390.gif"
+}

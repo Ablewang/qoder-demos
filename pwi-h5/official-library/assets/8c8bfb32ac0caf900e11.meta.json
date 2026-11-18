@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/091103/1103071.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "8c8bfb32ac0caf900e11",
+  "status": "ok",
+  "parents": [
+    "be3bcc967897185e58b2",
+    "e2361b7369f1a511da2d"
+  ],
+  "bytes": 52551,
+  "sha256": "a5d9781278cbc4166971480eb383ad71110a4bb21b4ef93d3d535b5be7bfe5fa",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/8c8bfb32ac0caf900e11.jpg"
+}

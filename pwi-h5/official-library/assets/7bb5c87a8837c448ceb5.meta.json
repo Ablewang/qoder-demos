@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_392.jpg",
+  "id": "7bb5c87a8837c448ceb5",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·无影脚<em>（升仙）</em>",
+  "bytes": 1591,
+  "sha256": "bab7e1d5c1cd91a1d793d8fbe08b7bc29ab7ecc67260ecca14e41aabf0dcd5e0",
+  "fetchedAt": "2026-11-18T08:34:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_392.jpg",
+  "path": "assets/7bb5c87a8837c448ceb5.jpg"
+}

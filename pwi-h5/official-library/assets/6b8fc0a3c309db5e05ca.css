@@ -1,0 +1,54 @@
+﻿/* public */
+html,body,form,ol,ul,li,div,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,th,td,font,em,ins,span,a{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;font-weight:normal}
+html{_filter:expression(document.execCommand("BackgroundImageCache",false,true));}
+ul,li,div,dl,dt,dd{list-style:none;}
+h1.wm-public{height:0px; line-height:0px; font-size:0px;}
+a{text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur());outline:none;}
+a:hover{text-decoration:underline;}
+img{border:0;}
+font,em{font-style:normal; font-family:\5b8b\4f53;}
+label{vertical-align:middle; font-family:tahoma;}
+textarea,input{resize:none; outline:none;}
+textarea{overflow:auto;}
+ins{float:right; text-decoration:none; font-weight:normal;}
+.pub_wsp{word-wrap:break-word; word-break:break-all;}
+.pub_abso{vertical-align:middle;}
+.pub_clr{clear:both;font-size:0;height:0;line-height:0;overflow:hidden;}
+.pub_yh{font-family:"Microsoft YaHei";}
+body{background:none; font-size:12px; font-family:Verdana,Geneva,sans-serif,\5b8b\4f53;}
+#header,#main,#footer{margin:0 auto; width:1002px;}
+#content,#sharediv{min-width:1002px;width:100%;width:expression((documentElement.clientWidth < 1002) ? "1002px" : "100%" );}
+
+/* page background */
+#wrap1{background:#000 url(../images/bg_01.jpg) no-repeat center top;}
+#wrap2{background:url(../images/bg_02.jpg) no-repeat center 461px;}
+
+/* header */
+#header{position:relative;}
+#header img{display:block;}
+
+.btnspop{position:absolute; width:799px; height:161px; right:0; top:344px;}
+.btnspop span{float:left; width:201px; height:161px; cursor:pointer; background:url(about:blank);}
+.btnspop span.a2{width:219px;}
+.btnspop span.a3{width:238px;}
+
+.btnslink{position:absolute; width:724px; height:50px; right:0; top:748px;}
+.btnslink a{float:left; width:241px; height:50px; background:url(about:blank);}
+.btnslink a.libao{width:218px;}
+
+.popbox{position:relative; width:500px; height:500px; background:#222; padding:15px; display:none;}
+.closebtn{background:url(../images/close.png) no-repeat 0 0; width:58px; height:58px; cursor:pointer; position:absolute; right:-59px; top:0;}
+.ifbox{width:500px; height:500px;}
+.fontbox{width:451px;}
+.fontbox h2{font-size:18px; color:#c3312f; padding-bottom:12px; font-weight:bold;}
+.fontbox p{color:#adadad; line-height:20px; padding-bottom:12px;}
+.fontbox h4{padding-bottom:12px;}
+.fontbox h4 img{display:block;}
+
+/* share */
+#sharediv{background:#000; height:32px; padding-top:2px;}
+#share_line{width:1002px; height:25px; margin:0 auto; background:none !important; overflow:hidden;}
+#share_line,#share_line a{color:#FFF !important;}
+#share_line a:hover{color:#FF0 !important; text-decoration:underline;}

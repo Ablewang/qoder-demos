@@ -1,0 +1,156 @@
+{
+  "id": "125889a9e55210906b09",
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/daily.htm",
+  "title": "游戏特色 视听 研发日志 -《完美国际》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 2,
+  "parents": [
+    "e63b639f9250bddb7f1c",
+    "125889a9e55210906b09",
+    "9331b7d5cd87224a3247",
+    "d5853afa509a7d061e6b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "7bc57294936ea74c8d685ae6641a310dd4afa8dce337274c4eb806afe2d262e5",
+  "bytes": 5940,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/125889a9e55210906b09.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "游戏特色\n注册账号\n下载客户端\n新手指南\n视听\n职业\n装备\n修炼\n战斗\n骑乘\n捏脸\n时装\n剧情场景\n研发日志\n游戏截图\n原画欣赏\n祖龙工作室鼎航之作 开辟全新人界场景\n中国游戏先驱者“祖龙工作室”荣耀回归，为游戏注入新的活力，未来他们将继续全身心致力于《完美国际》游戏的开发，游戏品质将大幅提升。本次资料片开启“人界”场景地图，推动了完美编年史发展，转生后的玩家可以前往海底世界、浣熊王国、霸帝君大营等神奇地域，开展奇遇冒险。\n回到顶部\n注册账号\n领取礼包",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/index.htm",
+      "label": "剧情场景",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/down_client.htm",
+      "label": "下载客户端",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/index.htm",
+      "label": "新手指南",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/job.htm",
+      "label": "职业",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/equip.htm",
+      "label": "装备",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/practice.htm",
+      "label": "修炼",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/battle.htm",
+      "label": "战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/ride.htm",
+      "label": "骑乘",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/nipface.htm",
+      "label": "捏脸",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/fashion.htm",
+      "label": "时装",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/daily.htm",
+      "label": "研发日志",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/gameshot.htm",
+      "label": "游戏截图",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/original.htm",
+      "label": "原画欣赏",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp",
+      "label": "领取礼包",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/index_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/tit02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/js/js0214.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div></div>\r\n<div>\r\n    <div>\r\n\t\t<div>\r\n\t\t\t\r\n\t\t\t<img src=\"assets/66694deafa7f61aeb4d8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/a233622deee5d55415f5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/7c990077b009a99df33d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/deb6151b917957d6803f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/4dcabb95b8103379a7cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\t<img src=\"assets/5603c2da7c492f4d7464.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/c7758e86cfd726916953.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t</div>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">游戏特色</a></li>\r\n            <li>注册账号</li>\r\n            <li><a href=\"https://w2i.wanmei.com/download/down_client.htm\" rel=\"noreferrer\" target=\"_blank\">下载客户端</a></li>\r\n            <li><a href=\"#page=22965a8aa329ca111aad\">新手指南</a></li>\r\n        </ul>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">视听</a></li>\r\n            <li><a href=\"#page=c7af4e8a8e3e7178c636\">职业</a></li>\r\n            <li><a href=\"#page=70dffced80c07759aa48\">装备</a></li>\r\n            <li><a href=\"#page=da31792f8d7ba28f361d\">修炼</a></li>\r\n            <li><a href=\"#page=6c28db258c91cc29014d\">战斗</a></li>\r\n            <li><a href=\"#page=dc35782b075005c68fbc\">骑乘</a></li>\r\n            <li><a href=\"#page=b7d74aaf0682f417291c\">捏脸</a></li>\r\n            <li><a href=\"#page=4b26ae1193398abd6a1e\">时装</a></li>\r\n        </ul>\r\n        <ul>\r\n        \t<li><a href=\"#page=e63b639f9250bddb7f1c\">剧情场景</a></li>\r\n            <li><a href=\"#page=125889a9e55210906b09\">研发日志</a></li>\r\n            <li><a href=\"#page=9331b7d5cd87224a3247\">游戏截图</a></li>\r\n            <li><a href=\"#page=d5853afa509a7d061e6b\">原画欣赏</a></li>\r\n        </ul>\r\n        <img src=\"assets/8afd2057ecdd0a24d829.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <div>\r\n        \t<h3>祖龙工作室鼎航之作 开辟全新人界场景</h3>\r\n            <p>中国游戏先驱者“祖龙工作室”荣耀回归，为游戏注入新的活力，未来他们将继续全身心致力于《完美国际》游戏的开发，游戏品质将大幅提升。本次资料片开启“人界”场景地图，推动了完美编年史发展，转生后的玩家可以前往海底世界、浣熊王国、霸帝君大营等神奇地域，开展奇遇冒险。</p>\r\n        </div>\r\n        <div></div>\r\n\t</div>\r\n</div>\r\n\r\n<div>\r\n    <div>\r\n        回到顶部\r\n        注册账号\r\n        <a href=\"http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp\" rel=\"noreferrer\" target=\"_blank\">领取礼包</a>\r\n    </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/125889a9e55210906b09.json",
+  "imageCount": 8,
+  "tableCount": 0,
+  "downloadPath": "downloads/125889a9e55210906b09.js"
+}

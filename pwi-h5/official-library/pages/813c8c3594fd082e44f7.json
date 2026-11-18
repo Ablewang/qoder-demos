@@ -1,0 +1,79 @@
+{
+  "id": "813c8c3594fd082e44f7",
+  "url": "https://w2i.wanmei.com/newplayer/road/20091015/29902.shtml",
+  "title": "游戏安装",
+  "category": "新手指引",
+  "section": "新手上路",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "a3206e96933ebb3a1648",
+    "cde23b2634eea8bb4b52",
+    "03091fe92256285c414b",
+    "250753924235fd6ee8a3",
+    "4aec96cd45f020cede4e",
+    "a30584665576a2f6b306"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "91c97588410f3db5ec5aee97c705a4461915f920b79f1a874188c9658dd624fd",
+  "bytes": 66794,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/813c8c3594fd082e44f7.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "点击install.exe （如：图一） 此时弹出的是游戏的协议，如果您认可，查阅后请点击\"同意\"。\n选择好安装路径后请点击\"下一步\"\n游戏开始安装\n说明：1、安装游戏后桌面会出现《完美世界国际版》的图标，鼠标双击图标，会出现游戏的更新画面，选择更新服务器后，开始进行更新。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887705110.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887705443.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887705674.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887706205.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887705110.jpg",
+      "alt": "图片: clip_image002.jpg",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887705443.jpg",
+      "alt": "图片: clip_image004.jpg",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887705674.jpg",
+      "alt": "图片: clip_image006.jpg",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/140928/10021411887706205.jpg",
+      "alt": "图片: clip_image008.jpg",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>点击install.exe （如：图一） 此时弹出的是游戏的协议，如果您认可，查阅后请点击&quot;同意&quot;。<br>\r\n </p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/140928/10021411887705110.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57f0aea1d487126eeb6a.jpg\" alt=\"图片: clip_image002.jpg\" loading=\"lazy\"></a></p>\r\n<p>选择好安装路径后请点击&quot;下一步&quot;<br>\r\n </p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/140928/10021411887705443.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/5ab8acac7c4378a0e31e.jpg\" alt=\"图片: clip_image004.jpg\" loading=\"lazy\"></a></p>\r\n<p>游戏开始安装<br>\r\n </p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/140928/10021411887705674.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/ec3c41ef3830a925281a.jpg\" alt=\"图片: clip_image006.jpg\" loading=\"lazy\"></a></p>\r\n<p>说明：1、安装游戏后桌面会出现《完美世界国际版》的图标，鼠标双击图标，会出现游戏的更新画面，选择更新服务器后，开始进行更新。<br>\r\n </p>\r\n<p><a href=\"https://w2i.wanmei.com/resources/jpg/140928/10021411887706205.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/aa8263bef6c101fde6b9.jpg\" alt=\"图片: clip_image008.jpg\" loading=\"lazy\"></a></p>\r\n                        </div>",
+  "dataPath": "pages/813c8c3594fd082e44f7.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/813c8c3594fd082e44f7.js"
+}

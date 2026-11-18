@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27615.jpg",
+  "id": "fc2890b79aeeada6d213",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 分水刺击<em>（入魔）</em> ",
+  "bytes": 1173,
+  "sha256": "3a760b7f75bf8ed4e5516d97c0c97c6d05e706bc57e9f11655d7954b75b92a5c",
+  "fetchedAt": "2026-11-18T08:36:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27615.jpg",
+  "path": "assets/fc2890b79aeeada6d213.jpg"
+}

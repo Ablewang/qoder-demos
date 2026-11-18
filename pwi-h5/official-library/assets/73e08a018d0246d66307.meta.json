@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201211/poxiao/images/pic1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "73e08a018d0246d66307",
+  "status": "ok",
+  "parents": [
+    "ce96b1c44e08d11fa278"
+  ],
+  "bytes": 29616,
+  "sha256": "0cb886ae81e9f13ef8a0a14356babf43fd449962f28dd280931fd3f6ac3456a2",
+  "fetchedAt": "2026-11-18T08:26:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201211/poxiao/images/pic1.jpg",
+  "path": "assets/73e08a018d0246d66307.jpg"
+}

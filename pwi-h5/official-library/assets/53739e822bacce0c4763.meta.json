@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_481.jpg",
+  "id": "53739e822bacce0c4763",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·飞沙术<em>（入魔）</em>",
+  "bytes": 1711,
+  "sha256": "5cae74badbc83df5cfd6cdbcef5365a946dabd15427452980c78438d5c650680",
+  "fetchedAt": "2026-11-18T08:34:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_481.jpg",
+  "path": "assets/53739e822bacce0c4763.jpg"
+}

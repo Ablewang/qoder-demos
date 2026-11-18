@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27645.jpg",
+  "id": "3cab8d07baf2c8e10e9a",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·摄魂术<em>（升仙）</em>",
+  "bytes": 4910,
+  "sha256": "c1cd016f3066b4f4dbf62e711a03a73a4baff72cee5106b48d4b83df26482fbc",
+  "fetchedAt": "2026-11-18T08:36:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27645.jpg",
+  "path": "assets/3cab8d07baf2c8e10e9a.jpg"
+}

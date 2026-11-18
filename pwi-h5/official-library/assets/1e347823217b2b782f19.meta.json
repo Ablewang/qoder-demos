@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201205/w21liuyi/images/box_bg.gif",
+  "id": "1e347823217b2b782f19",
+  "status": "ok",
+  "parents": [
+    "013416808c9872cc7438"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201205/w21liuyi/style/master.css",
+  "bytes": 16855,
+  "sha256": "1b16ce3b30c408d52b50b415534c19b1cdbf473be83213f6702a8e236c672aed",
+  "fetchedAt": "2026-11-18T08:39:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://event51.wanmei.com/w2i/201205/w21liuyi/images/box_bg.gif",
+  "path": "assets/1e347823217b2b782f19.gif"
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/first/baitan_04.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "8c9e07445b08151a3849",
+  "status": "ok",
+  "parents": [
+    "d953218d5c4ee41c8389",
+    "26b7d0833b616b47e2bc"
+  ],
+  "bytes": 80394,
+  "sha256": "23acc0669932f954e6d537f9b42eb89d834ec5ff8f619fd051e1d523889dba34",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/8c9e07445b08151a3849.jpg"
+}

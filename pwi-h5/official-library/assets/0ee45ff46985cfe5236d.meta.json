@@ -1,0 +1,22 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_27.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "0ee45ff46985cfe5236d",
+  "status": "ok",
+  "parents": [
+    "750e70bcae7fb4afcdb5",
+    "94404bbd53277dae1d43",
+    "25f7cc611cbf0f70f4c9",
+    "3f3cf869f397c4803c78",
+    "8857a710b4ffbdb026f0"
+  ],
+  "bytes": 29820,
+  "sha256": "f62a45fd1d4294ea2fbdfdce3af8018a00782debcee838713dca2373931930ed",
+  "fetchedAt": "2026-11-18T08:21:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/cz/images/banner_27.jpg",
+  "path": "assets/0ee45ff46985cfe5236d.jpg"
+}

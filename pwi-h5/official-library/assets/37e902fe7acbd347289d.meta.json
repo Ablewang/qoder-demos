@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/cjboss_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "37e902fe7acbd347289d",
+  "status": "ok",
+  "parents": [
+    "1a3e86da19f03ff99e24"
+  ],
+  "bytes": 197839,
+  "sha256": "63ecbdd5ddb02105f7f1789ef7a2316c0afb03b2de682cae7b00dd0d1106f44a",
+  "fetchedAt": "2026-11-18T08:25:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/cjboss_02.jpg",
+  "path": "assets/37e902fe7acbd347289d.jpg"
+}

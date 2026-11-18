@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/images/rule_bg2.png",
+  "id": "a7dc488e51aa84c9d139",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+  "bytes": 1074,
+  "sha256": "f08e90cc31db9c77e80230d081bbc6710d3f719529a7bc903992f2b1b9960cac",
+  "fetchedAt": "2026-11-18T08:38:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/images/rule_bg2.png",
+  "path": "assets/a7dc488e51aa84c9d139.png"
+}

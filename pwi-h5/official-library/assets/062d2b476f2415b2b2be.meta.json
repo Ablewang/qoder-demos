@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/images/nav5.jpg",
+  "id": "062d2b476f2415b2b2be",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+  "bytes": 14988,
+  "sha256": "cdc9f8de20618ff8678958d660dcf2d8f04ccc82b347bbc011cd559958ccc837",
+  "fetchedAt": "2026-11-18T08:38:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/images/nav5.jpg",
+  "path": "assets/062d2b476f2415b2b2be.jpg"
+}

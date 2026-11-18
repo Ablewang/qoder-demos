@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/left_menu07.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "db2193c7dada2513f9e5",
+  "status": "ok",
+  "parents": [
+    "6b508c30db35f3107ec8"
+  ],
+  "bytes": 7323,
+  "sha256": "607c3bf9c530507795dfbfa2470ac38dd60a51b77a6320abce33889276ea0d68",
+  "fetchedAt": "2026-11-18T08:22:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/ectype/images/left_menu07.jpg",
+  "path": "assets/db2193c7dada2513f9e5.jpg"
+}

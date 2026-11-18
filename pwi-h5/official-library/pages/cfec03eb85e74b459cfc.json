@@ -1,0 +1,62 @@
+{
+  "id": "cfec03eb85e74b459cfc",
+  "url": "https://w2i.wanmei.com/intro/guide/20091103/36702.shtml",
+  "title": "武器-黄昏武器",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 0,
+  "parents": [
+    "6086431c2237fdf64b6a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "b3d83d31a2efaa16c03c8f4c915f8f8e2274b476635f36a7d51afccd599f568b",
+  "bytes": 66675,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/cfec03eb85e74b459cfc.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-11-03",
+  "text": "黄昏圣殿副本\n黄昏圣殿副本首次以“动态副本”亮相。副本的规模远超过当时游戏所有副本的总和，内容分为多个区域，适合各等级玩家，六个月的时间都打不完，玩家完全可以把这个副本当成一款“新游戏”来体验。“主动变化”和“被动变化”一明一暗，凸显“动态副本”精髓。\n除此之外，黄昏圣殿副本还推出了属性极强、外观华丽、适合各职业的套装。除了超强属性，更有加灵力和物理伤害减免的隐藏属性。再配上所向披靡的橙色武器，足以让你傲视整个完美大陆，成为完美大陆上万人瞩目的焦点。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103031.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103032.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103033.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103034.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103035.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103036.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　<strong>黄昏圣殿副本</strong></p>\r\n<p>　　黄昏圣殿副本首次以“动态副本”亮相。副本的规模远超过当时游戏所有副本的总和，内容分为多个区域，适合各等级玩家，六个月的时间都打不完，玩家完全可以把这个副本当成一款“新游戏”来体验。“主动变化”和“被动变化”一明一暗，凸显“动态副本”精髓。</p>\r\n<p>　　除此之外，黄昏圣殿副本还推出了属性极强、外观华丽、适合各职业的套装。除了超强属性，更有加灵力和物理伤害减免的隐藏属性。再配上所向披靡的橙色武器，足以让你傲视整个完美大陆，成为完美大陆上万人瞩目的焦点。</p>\r\n<p><img src=\"assets/096b190bd32f10aa7329.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/83eb86f8e6bc4c37ed61.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/f393b986e207a19b78d4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/1aa50ff21473c449bc18.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/a396b38fd8b37fdec8da.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/8569b264145fe1278fa4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/cfec03eb85e74b459cfc.json",
+  "imageCount": 6,
+  "tableCount": 0,
+  "downloadPath": "downloads/cfec03eb85e74b459cfc.js"
+}

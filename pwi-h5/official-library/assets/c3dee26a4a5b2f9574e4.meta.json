@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/duorxg_06.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c3dee26a4a5b2f9574e4",
+  "status": "ok",
+  "parents": [
+    "56c6dda80bd8848f1293"
+  ],
+  "bytes": 290241,
+  "sha256": "407340583a5bde2a06c2f1b1f06bb99972e01b4e5617d73fef0bcdcb27dfc90d",
+  "fetchedAt": "2026-11-18T08:25:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/duorxg_06.jpg",
+  "path": "assets/c3dee26a4a5b2f9574e4.jpg"
+}

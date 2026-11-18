@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/hdnav_02.jpg",
+  "alt": "账号充值",
+  "kind": "img",
+  "id": "bbfe6d8a5db59a181cd4",
+  "status": "ok",
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "bytes": 4618,
+  "sha256": "9a7286e5e066a4210dac11760b493eb94990b5f5142ce0aeed7c12b6be317a60",
+  "fetchedAt": "2026-11-18T08:21:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/temp120824/hdnav_02.jpg",
+  "path": "assets/bbfe6d8a5db59a181cd4.jpg"
+}

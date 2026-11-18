@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/zulong/images/video.jpg",
+  "id": "34bd316879f8a3abf060",
+  "status": "ok",
+  "parents": [
+    "f720e10b47e4cc85414e",
+    "34a1700655ccbd1a0a98",
+    "c219348c0ec196539253",
+    "7b93593860e8f53b8e11",
+    "2ea6fce46f98c7b0439e",
+    "afd731d2d0e0a68bba07",
+    "44fd4262da3c284d27d7",
+    "a104792f2857ee35b34b",
+    "b5c8d5cfc1179a10c6e1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201408/zulong/style/master.css",
+  "bytes": 7490,
+  "sha256": "aafbf78499be37d1cccdf7f0b9a4a11a8465ecc8262e2a0f2b63daf16647dcad",
+  "fetchedAt": "2026-11-18T08:38:27+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/zulong/images/video.jpg",
+  "path": "assets/34bd316879f8a3abf060.jpg"
+}

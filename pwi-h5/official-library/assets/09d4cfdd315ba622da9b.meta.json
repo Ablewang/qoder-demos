@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbosson.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "09d4cfdd315ba622da9b",
+  "status": "ok",
+  "parents": [
+    "101319dd2f65319f00b7",
+    "3564f7bdc83662605bdb",
+    "1c3a396b387469a917ed",
+    "52f807777be176be16eb"
+  ],
+  "bytes": 4380,
+  "sha256": "d234119affc4d11eab8ae6bde8c691b3aa6f5f705ee4e53ac74554e3f75865dd",
+  "fetchedAt": "2026-11-18T08:24:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbosson.jpg",
+  "path": "assets/09d4cfdd315ba622da9b.jpg"
+}

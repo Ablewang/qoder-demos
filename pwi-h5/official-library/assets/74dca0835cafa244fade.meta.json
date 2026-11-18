@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yc_botton_y_01.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "74dca0835cafa244fade",
+  "status": "ok",
+  "parents": [
+    "7efee68b25cc6c382609"
+  ],
+  "bytes": 9015,
+  "sha256": "6d04d0a902440f56904f870fbd4b5eb608c481cdec1342e5fa0ad955113165c5",
+  "fetchedAt": "2026-11-18T08:18:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/yc_botton_y_01.jpg",
+  "path": "assets/74dca0835cafa244fade.jpg"
+}

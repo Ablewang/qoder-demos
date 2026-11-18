@@ -1,0 +1,279 @@
+{
+  "effects": [
+    {
+      "kind": "counter",
+      "reducedMotion": "no-preference",
+      "seed": 13,
+      "feedback": "↶ 反问生效\n本问回应 · 大姨\n\n工作怎么选，能让我自己权衡吗？\n\n本问还剩 1 血",
+      "animations": [
+        "2",
+        "3"
+      ],
+      "cardBottom": 672.765625
+    },
+    {
+      "kind": "flop",
+      "reducedMotion": "no-preference",
+      "seed": 2,
+      "feedback": "✦ 发疯翻车\n本问回应 · 表姐\n\n我的桃花验证码过期了，暂时登录不了。\n\n翻车：心态 -10，追问排队",
+      "animations": [
+        "2"
+      ],
+      "cardBottom": 672.765625
+    },
+    {
+      "kind": "critical",
+      "reducedMotion": "no-preference",
+      "seed": 1,
+      "feedback": "✦ 发疯暴击\n上一问 · 二婶\n\n「是不是眼光太高了？」已挡下，全桌安静3秒",
+      "animations": [
+        "2"
+      ],
+      "cardBottom": 665.1875
+    },
+    {
+      "kind": "counter",
+      "reducedMotion": "reduce",
+      "seed": 13,
+      "feedback": "↶ 反问生效\n本问回应 · 大姨\n\n工作怎么选，能让我自己权衡吗？\n\n本问还剩 1 血",
+      "animations": [],
+      "cardBottom": 672.765625
+    },
+    {
+      "kind": "flop",
+      "reducedMotion": "reduce",
+      "seed": 2,
+      "feedback": "✦ 发疯翻车\n本问回应 · 表姐\n\n我的桃花验证码过期了，暂时登录不了。\n\n翻车：心态 -10，追问排队",
+      "animations": [],
+      "cardBottom": 672.765625
+    },
+    {
+      "kind": "critical",
+      "reducedMotion": "reduce",
+      "seed": 1,
+      "feedback": "✦ 发疯暴击\n上一问 · 二婶\n\n「是不是眼光太高了？」已挡下，全桌安静3秒",
+      "animations": [],
+      "cardBottom": 665.1875
+    }
+  ],
+  "posters": [
+    {
+      "mode": "loss",
+      "title": "厨房避难者",
+      "score": -600,
+      "draw": {
+        "title": "厨房避难者",
+        "x": 360.6119968891144,
+        "y": 422.02799224853516,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 362.84399676322937,
+        "right": 717.1560032367706,
+        "top": 362.1239929199219,
+        "bottom": 429.8760070800781
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 246654,
+      "padding": {
+        "left": 211.84399676322937,
+        "right": 211.84399676322937,
+        "top": 27.123992919921875,
+        "bottom": 27.123992919921875
+      }
+    },
+    {
+      "mode": "peace",
+      "title": "家族和平大使",
+      "score": 3100,
+      "draw": {
+        "title": "家族和平大使",
+        "x": 322.9200053215027,
+        "y": 421.88399505615234,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 327.6720051765442,
+        "right": 752.3279948234558,
+        "top": 362.12399673461914,
+        "bottom": 429.87600326538086
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 255758,
+      "padding": {
+        "left": 176.6720051765442,
+        "right": 176.6720051765442,
+        "top": 27.12399673461914,
+        "bottom": 27.12399673461914
+      }
+    },
+    {
+      "mode": "boundary",
+      "title": "边界守护者",
+      "score": 1900,
+      "draw": {
+        "title": "边界守护者",
+        "x": 360.07199680805206,
+        "y": 421.8119926452637,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 363.3839968442917,
+        "right": 716.6160031557083,
+        "top": 362.05199432373047,
+        "bottom": 429.94800567626953
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 244882,
+      "padding": {
+        "left": 212.3839968442917,
+        "right": 212.3839968442917,
+        "top": 27.05199432373047,
+        "bottom": 27.05199432373047
+      }
+    },
+    {
+      "mode": "crazy",
+      "title": "发疯艺术家",
+      "score": 1950,
+      "draw": {
+        "title": "发疯艺术家",
+        "x": 360.35999059677124,
+        "y": 421.95599365234375,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 362.95199060440063,
+        "right": 717.0480093955994,
+        "top": 362.05199432373047,
+        "bottom": 429.94800567626953
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 253938,
+      "padding": {
+        "left": 211.95199060440063,
+        "right": 211.95199060440063,
+        "top": 27.05199432373047,
+        "bottom": 27.05199432373047
+      }
+    },
+    {
+      "mode": "counter",
+      "title": "反问小能手",
+      "score": 1900,
+      "draw": {
+        "title": "反问小能手",
+        "x": 360.32399678230286,
+        "y": 421.955997467041,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 363.1319968700409,
+        "right": 716.8680031299591,
+        "top": 362.05199813842773,
+        "bottom": 429.94800186157227
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 248302,
+      "padding": {
+        "left": 212.1319968700409,
+        "right": 212.1319968700409,
+        "top": 27.051998138427734,
+        "bottom": 27.051998138427734
+      }
+    },
+    {
+      "mode": "taiji",
+      "title": "太极宗师",
+      "score": 1900,
+      "draw": {
+        "title": "太极宗师",
+        "x": 396.8279941082001,
+        "y": 421.77599716186523,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 398.9159939289093,
+        "right": 681.0840060710907,
+        "top": 362.5919952392578,
+        "bottom": 429.4080047607422
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 248898,
+      "padding": {
+        "left": 247.9159939289093,
+        "right": 247.9159939289093,
+        "top": 27.591995239257812,
+        "bottom": 27.591995239257812
+      }
+    },
+    {
+      "mode": "missed",
+      "title": "埋头干饭王",
+      "score": 1400,
+      "draw": {
+        "title": "埋头干饭王",
+        "x": 360.8639991283417,
+        "y": 421.77599716186523,
+        "font": "800 72px \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "left": 363.52799916267395,
+        "right": 716.472000837326,
+        "top": 362.5199966430664,
+        "bottom": 429.4800033569336
+      },
+      "frame": {
+        "x": 150,
+        "y": 334,
+        "width": 780,
+        "height": 124,
+        "stroke": 2
+      },
+      "width": 1080,
+      "height": 1440,
+      "bytes": 238618,
+      "padding": {
+        "left": 212.52799916267395,
+        "right": 212.52799916267395,
+        "top": 27.519996643066406,
+        "bottom": 27.519996643066406
+      }
+    }
+  ],
+  "errors": []
+}

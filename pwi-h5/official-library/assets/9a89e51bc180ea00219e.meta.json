@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "9a89e51bc180ea00219e",
+  "status": "ok",
+  "parents": [
+    "935a169d33d49afb3db7",
+    "b462f9e4e21107c33894"
+  ],
+  "bytes": 59099,
+  "sha256": "13ace11a17ff094b61f541b3d57e28c933e867611c5706ed9885556a281abb19",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/9a89e51bc180ea00219e.jpg"
+}

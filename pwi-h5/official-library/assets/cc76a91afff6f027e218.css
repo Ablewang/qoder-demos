@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+@import url(http://w2i.wanmei.com/style/w2i_logo_249x113.css);
+/* 
+	CSS RESET  wangkun
+	@from:www.wanmei.com
+	@version:2011.3.2
+*/
+/* RESET */
+html,body,form,ol,ul,li,div,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,th,td{margin:0px;padding:0px;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;font-weight:normal}
+ol,ul{list-style:none;}
+html{_filter:expression(document.execCommand("BackgroundImageCache",false,true));/*解决IE6背景图片重复加载问题*/}
+body{font-size:12px;line-height:1.5;font-family:Verdana,Geneva,sans-serif,\5b8b\4f53;/*首选字体Verdana;"\5b8b\4f53"为宋体，避免编码问题*/}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{}
+img{border:0;-ms-interpolation-mode:bicubic;/*解决图片缩放失真，IE7专用*/}
+a {blr:expression(this.onFocus=this.blur());outline:none; color:#FF3; text-decoration:underline}
+area {blr:expression(this.onFocus=this.blur());outline:none;}
+
+#w2i_logo,#transparent_logo{left:0px; top:20px;}
+.wrap_index_bot{width:100%;min-width:1002px;background:#000 url('../images/wrap_index_bot.jpg') no-repeat center bottom;}
+.wrap_index_top{background:url('../images/wrap_index_top.jpg') no-repeat center top;}
+#header{width:1002px;margin:0px auto;position:relative;}
+#header img{display:block;}
+
+.prizeBox{position:absolute; width:500px; height:90px; left:380px; top:750px; z-index:10; overflow:hidden;}
+.prizeBox ul li{float:left; width:160px; height:90px; margin-left:5px; display:inline;}
+.btn_left,.btn_right{position:absolute; width:27px; height:40px; left:338px; top:787px; z-index:10; background:url(_blank); display:block; text-indent:-999em;}
+.btn_right{left:902px;}
+
+.tab_box{position:absolute; height:440px; width:500px; left:378px; top:385px; z-index:10;  overflow:auto;}
+.tab_box table{width:500px; border-collapse:collapse; border-spacing:0;}
+.tab_box table tr td,.tab_box table tr th{line-height:30px; border:1px solid #202826; background:#383f3e; font-size:12px; color:#a3a19e; padding:0 3px;}
+.tab_box table tr th{background:#203038; font-size:16px; color:#80939a;}
+.tab_box table tr td.td01{ background:#2f3836;}
+
+.tab_box h2{font-size:14px; color:#b57d24; line-height:30px; font-weight:bold;}
+.tab_box p{font-size:12px; color:#746652; line-height:22px; text-indent:2em;}
+.tab_box p center{padding:10px 0;}
+
+.pop_bg{width:496px; height:251px; background:url(../images/pop_bg.gif) no-repeat center; position:absolute; left:350px; top:330px; z-index:10;}
+.pop_bg p{font-size:14px; color:#75726e; line-height:24px; text-indent:2em; padding:58px 20px 10px;}
+.pop_bg span{float:right; height:25px; width:25px; cursor:pointer; display:block; background:url(_blank); margin:40px 12px 0 0; text-indent:-999em;}

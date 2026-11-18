@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/dds_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "e0589f427d17e68e6b3d",
+  "status": "ok",
+  "parents": [
+    "80e9679b75fa533c1650"
+  ],
+  "bytes": 3828,
+  "sha256": "7a79434e9eb1b84348c7e675d11cd52867247a2998b4b0ebe074f558f9465a65",
+  "fetchedAt": "2026-11-18T08:22:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/dds_button.jpg",
+  "path": "assets/e0589f427d17e68e6b3d.jpg"
+}

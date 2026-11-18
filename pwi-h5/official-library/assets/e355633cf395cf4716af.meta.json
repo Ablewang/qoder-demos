@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnmsjlon.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "e355633cf395cf4716af",
+  "status": "ok",
+  "parents": [
+    "15d3ed593ed1c21ffe17"
+  ],
+  "bytes": 4349,
+  "sha256": "b0daf62601c84ced6e01372efcef217d974a4ce37acb14a25e45e9240b1dd94d",
+  "fetchedAt": "2026-11-18T08:24:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnmsjlon.jpg",
+  "path": "assets/e355633cf395cf4716af.jpg"
+}

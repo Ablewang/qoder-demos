@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201104/xiuld/images/close_btn.gif",
+  "id": "e99aa2e8dc30bdd5cbb5",
+  "status": "ok",
+  "parents": [
+    "eab551e03b8fd10609a9",
+    "ce036e5012d6285a44f3",
+    "8aa1da03402225531ee3"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201104/xiuld/style/jq_ui_pwiw.css",
+  "bytes": 166,
+  "sha256": "b2b198f08599a21f3ba68a0c9cf356025407c7539d025d9759ecb364208f5dbd",
+  "fetchedAt": "2026-11-18T08:36:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://event51.wanmei.com/w2i/201104/xiuld/images/close_btn.gif",
+  "path": "assets/e99aa2e8dc30bdd5cbb5.gif"
+}

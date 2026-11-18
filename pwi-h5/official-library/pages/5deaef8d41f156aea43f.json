@@ -1,0 +1,261 @@
+{
+  "id": "5deaef8d41f156aea43f",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29989.shtml",
+  "title": "龙珠合成",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "a6127318b53fe8cfa7b02cfb58194951718675c24bae167072c4bd7cf6da203e",
+  "bytes": 68960,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/5deaef8d41f156aea43f.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "1-5星龙珠可在乾坤袋内购得，5星以上龙珠则需用低级龙珠在祖龙城“合成大师”处通过合成获得。\n龙珠合成表\n物品名称\n合成材料\n元宝价格\n1星龙珠\n1星龙珠x1\n1\n2星龙珠\n1星龙珠x4\n4\n3星龙珠\n2星龙珠x2 1星龙珠x2\n10\n4星龙珠\n3星龙珠x2 2星龙珠x1 1星龙珠x1\n25\n5星龙珠\n4星龙珠x2 3星龙珠x1\n60\n6星龙珠\n5星龙珠x2 3星龙珠x1\n130\n7星龙珠\n6星龙珠x1 5星龙珠x1 4星龙珠x1\n215\n8星龙珠\n7星龙珠x1 6星龙珠x1 5星龙珠x1\n405\n9星龙珠\n8星龙珠x1 7星龙珠x1 6星龙珠x1\n750\n碧海龙珠\n9星龙珠x1 8星龙珠x1 7星龙珠x1\n1370\n幻彩龙珠\n碧海龙珠x1 9星龙珠x1 8星龙珠x1\n2525\n赤焰龙珠\n幻彩龙珠x1 碧海龙珠x1 9星龙珠x1\n4645",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "合成材料",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元宝价格",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1星龙珠x4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2星龙珠x2 1星龙珠x2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "4星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3星龙珠x2 2星龙珠x1 1星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4星龙珠x2 3星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "6星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5星龙珠x2 3星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "130",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "7星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6星龙珠x1 5星龙珠x1 4星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "215",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "8星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7星龙珠x1 6星龙珠x1 5星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "405",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "9星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8星龙珠x1 7星龙珠x1 6星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "750",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碧海龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9星龙珠x1 8星龙珠x1 7星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1370",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻彩龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碧海龙珠x1 9星龙珠x1 8星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2525",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "赤焰龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻彩龙珠x1 碧海龙珠x1 9星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4645",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lzhc_01.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　1-5星龙珠可在乾坤袋内购得，5星以上龙珠则需用低级龙珠在祖龙城“合成大师”处通过合成获得。</p>\r\n<p><img src=\"assets/d664fe832374671383ef.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>龙珠合成表</strong></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n            <p><strong>物品名称</strong></p>\r\n            </td>\r\n            <td>\r\n            <p><strong>合成材料</strong></p>\r\n            </td>\r\n            <td>\r\n            <p><strong>元宝价格</strong></p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>1星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>1星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>1</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>2星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>1星龙珠x4</p>\r\n            </td>\r\n            <td>\r\n            <p>4</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>3星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>2星龙珠x2 1星龙珠x2</p>\r\n            </td>\r\n            <td>\r\n            <p>10</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>4星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>3星龙珠x2 2星龙珠x1 1星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>25</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>5星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>4星龙珠x2 3星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>60</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>6星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>5星龙珠x2 3星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>130</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>7星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>6星龙珠x1 5星龙珠x1 4星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>215</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>8星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>7星龙珠x1 6星龙珠x1 5星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>405</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>9星龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>8星龙珠x1 7星龙珠x1 6星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>750</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>碧海龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>9星龙珠x1 8星龙珠x1 7星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>1370</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>幻彩龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>碧海龙珠x1 9星龙珠x1 8星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>2525</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>赤焰龙珠</p>\r\n            </td>\r\n            <td>\r\n            <p>幻彩龙珠x1 碧海龙珠x1 9星龙珠x1</p>\r\n            </td>\r\n            <td>\r\n            <p>4645</p>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/5deaef8d41f156aea43f.json",
+  "imageCount": 1,
+  "tableCount": 1,
+  "downloadPath": "downloads/5deaef8d41f156aea43f.js"
+}

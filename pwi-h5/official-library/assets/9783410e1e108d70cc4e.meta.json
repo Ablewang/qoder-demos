@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_469.jpg",
+  "id": "9783410e1e108d70cc4e",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·凌杀<em>（入魔）</em>",
+  "bytes": 1742,
+  "sha256": "3db9d18509343b19d48649c78f2ebe50e10fe1adc2f3f3c12dfe157b1bfc208f",
+  "fetchedAt": "2026-11-18T08:34:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_469.jpg",
+  "path": "assets/9783410e1e108d70cc4e.jpg"
+}

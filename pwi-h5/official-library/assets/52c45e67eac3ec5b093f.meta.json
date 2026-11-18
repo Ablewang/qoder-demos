@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_410.jpg",
+  "id": "52c45e67eac3ec5b093f",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·裂岩炎震<em>（升仙）</em>",
+  "bytes": 1712,
+  "sha256": "be44f06cfd971f1c2dc3a4f19e447507c19dc9eefe0741a3ad10db07a49af36f",
+  "fetchedAt": "2026-11-18T08:34:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_410.jpg",
+  "path": "assets/52c45e67eac3ec5b093f.jpg"
+}

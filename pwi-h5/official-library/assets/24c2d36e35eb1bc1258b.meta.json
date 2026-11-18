@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/feixing/yuzu/9.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "24c2d36e35eb1bc1258b",
+  "status": "ok",
+  "parents": [
+    "8acc80a3783c5be8e393"
+  ],
+  "bytes": 4043,
+  "sha256": "e077ce67554f66834c2cd0175f235c96ed436c0c4a29a30f8662923ba19be1a2",
+  "fetchedAt": "2026-11-18T08:19:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/feixing/yuzu/9.jpg",
+  "path": "assets/24c2d36e35eb1bc1258b.jpg"
+}

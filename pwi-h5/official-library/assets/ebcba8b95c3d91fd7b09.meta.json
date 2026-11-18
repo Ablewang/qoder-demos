@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_195.jpg",
+  "id": "ebcba8b95c3d91fd7b09",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "绞杀",
+  "bytes": 1533,
+  "sha256": "e42dc9dbb5c5d8909718202575933ad5226ec4d3b809ef61f90368055a0f8f4b",
+  "fetchedAt": "2026-11-18T08:35:28+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_195.jpg",
+  "path": "assets/ebcba8b95c3d91fd7b09.jpg"
+}

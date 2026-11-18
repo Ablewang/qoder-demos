@@ -1,0 +1,31 @@
+{
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_mid.jpg",
+  "id": "fdb6b8a01c3765e215be",
+  "status": "ok",
+  "parents": [
+    "bd6a4da0ea55ad2a5bf5",
+    "47ec369fda69c04d5b2a",
+    "672c01826f17ba45d88e",
+    "1a1eeb3807c03a6c384f",
+    "fa8281882a4afd8639f6",
+    "f8201daf068db101d971",
+    "0b1f87f0fe690cf3e2e6",
+    "eeffeb940810621bba0d",
+    "35b55c8e43f5504c4aea",
+    "451ea9ce2e80c7b283d1",
+    "c9492cce7c30423bbf1e",
+    "dabe9356761d74b92e85",
+    "416858c28ceb7c3b1562",
+    "ba2b70e5682e415ca7d4"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/event/200807/highweapon/style/master.css",
+  "bytes": 11085,
+  "sha256": "af73b4b4d00f46ea1186a0d521fe9406f5b57b8283c326b010259f5b8f26193f",
+  "fetchedAt": "2026-11-18T08:37:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200807/highweapon/images/box_mid.jpg",
+  "path": "assets/fdb6b8a01c3765e215be.jpg"
+}

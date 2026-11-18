@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/haowuliao_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ec0fdbdf9e980f34e434",
+  "status": "ok",
+  "parents": [
+    "f2d59703f936e2d08144"
+  ],
+  "bytes": 3822,
+  "sha256": "95af3f6d05100a553bf66412ed6bc6e8f3fb824a1f2aaeb194725754f948ee58",
+  "fetchedAt": "2026-11-18T08:22:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/haowuliao_button.jpg",
+  "path": "assets/ec0fdbdf9e980f34e434.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_672.jpg",
+  "id": "5bf9226cdcfe52238c68",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·残体咒<em>（升仙）</em>",
+  "bytes": 1676,
+  "sha256": "0fa776406157cb517018a7d7413d131e0cf633d829b69692ca3acea8fbe02ad9",
+  "fetchedAt": "2026-11-18T08:35:53+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_672.jpg",
+  "path": "assets/5bf9226cdcfe52238c68.jpg"
+}

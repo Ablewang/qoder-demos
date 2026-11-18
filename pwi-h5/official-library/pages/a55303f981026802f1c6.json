@@ -1,0 +1,82 @@
+{
+  "id": "a55303f981026802f1c6",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29993.shtml",
+  "title": "魂石镶嵌",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "4d85a763bf11355807d3897833b29ac6e384b3ae809876665b6654d867b12f9f",
+  "bytes": 66540,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/a55303f981026802f1c6.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "玩家可在完美大陆的铁匠和裁缝处进行装备镶嵌魂石的操作，与NPC对话后选择魂石镶嵌即可进入操作界面，将装备和魂石放入操作界面后，会显示镶嵌所需金币，确定身上金币数量足够时，点击确定即可完成魂石镶嵌。\n注意：\n武器打孔后可找铁匠进行魂石镶嵌，每件武器最多可镶嵌两块魂石。\n防具打孔后可找裁缝进行魂石镶嵌，每件防具最多可镶嵌四块魂石。\n武器魂石镶嵌NPC\n防具魂石镶嵌NPC",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "注意：\n武器打孔后可找铁匠进行魂石镶嵌，每件武器最多可镶嵌两块魂石。\n防具打孔后可找裁缝进行魂石镶嵌，每件防具最多可镶嵌四块魂石。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "武器魂石镶嵌NPC",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防具魂石镶嵌NPC",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/hsxq_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/hsxq_02.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　玩家可在完美大陆的铁匠和裁缝处进行装备镶嵌魂石的操作，与NPC对话后选择魂石镶嵌即可进入操作界面，将装备和魂石放入操作界面后，会显示镶嵌所需金币，确定身上金币数量足够时，点击确定即可完成魂石镶嵌。</p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><img src=\"assets/b184b854c183ec822373.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>\r\n            <p>注意：</p>\r\n            <p>武器打孔后可找铁匠进行魂石镶嵌，每件武器最多可镶嵌两块魂石。 <br>\r\n            防具打孔后可找裁缝进行魂石镶嵌，每件防具最多可镶嵌四块魂石。</p>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"2\">\r\n            <p><img src=\"assets/46ff4e3caf6dd0f5496c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p><strong>武器魂石镶嵌NPC</strong></p>\r\n            </td>\r\n            <td>\r\n            <p><strong>防具魂石镶嵌NPC</strong></p>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/a55303f981026802f1c6.json",
+  "imageCount": 2,
+  "tableCount": 2,
+  "downloadPath": "downloads/a55303f981026802f1c6.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "id": "430b4b28adb3a2846f24",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 77097,
+  "sha256": "2b6a42b4b0bc9343da5bd210cf33692cbebefcc5388456c567306eb3e2ee448a",
+  "fetchedAt": "2026-11-18T08:17:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/jianling.js",
+  "path": "assets/430b4b28adb3a2846f24.js"
+}

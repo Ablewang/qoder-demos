@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_header_nav_03_mouse.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "d2bc8ffd6bc62bcaf823",
+  "status": "ok",
+  "parents": [
+    "9dfac1e953f4ffe1a56e"
+  ],
+  "bytes": 6101,
+  "sha256": "14af43feca6ee64d1f219e51cdb0ae35602eb9984e25ab327426c3c0324a5fbe",
+  "fetchedAt": "2026-11-18T08:24:27+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_header_nav_03_mouse.jpg",
+  "path": "assets/d2bc8ffd6bc62bcaf823.jpg"
+}

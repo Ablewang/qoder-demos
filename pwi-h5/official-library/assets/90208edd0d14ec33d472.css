@@ -1,0 +1,146 @@
+﻿body,td,th {
+	font-size: 12px;
+	color: #000000;
+	line-height: 18px;
+}
+body {
+	background-color: #000000;
+	margin: 0px;
+}
+.table {
+	color: #787878;
+	padding-top: 12px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	border: 1px solid #DA9900;
+	font-size:14px;
+	line-height:23px
+}
+.huang {
+	color: #D89B00;
+}
+.table1 {
+
+	color: #787878;
+	border: 1px solid #DA9900;
+}
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+#menu{
+	padding-top:20px;
+	margin-left:auto; 
+	margin-right:auto;
+	}
+
+/* ============== 下拉菜单所需要的  开始 ============= */		
+#nav {
+    width: 135px;
+	line-height: 26px;
+	list-style-type: none;
+	background:#2E2E2E;
+	} 
+	
+#nav a { 
+    color:#FFB700;
+	display: block;
+	padding-left:20px;	
+	} 
+	
+#nav a:link { 
+    color:#FFB700;
+	text-decoration:none;
+	} 
+	
+#nav a:visited { 
+	color:#FFB700;; /* 控制菜单当前文字的当前颜色 */
+	text-decoration:none; 
+	} 
+	
+#nav a:hover { 
+    color:#FFB700;
+	text-decoration:none;
+	font-weight:bold; 
+	} 
+	
+#nav li { 
+	width: 135px;
+	float:left;
+	} 
+	
+#nav li a:hover{ 
+	background:#1C1C1C;   /* 鼠标放到文字链接以后的背景色 */
+	}
+	 
+/* ============== 下拉菜单所需要的  结束 ============= */	 
+a.bai:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.bai:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.bai:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#Layer1 {
+	position:absolute;
+	z-index:1;
+}
+#Layer2 {
+	position:relative;
+	width:37px;
+	height:108px;
+	z-index:2;
+	right: 37px;
+	float:left;
+}
+#Layer3 {
+	position:relative;	
+	z-index:2;
+	width:37px;
+	height:108px;
+	left: 560px;	
+	float:left;
+}
+
+#Layer4 {
+	position:absolute;
+	width:107px;
+	height:132px;
+	z-index:1;
+	visibility: hidden;
+	top: 42px;
+	left: 65px;
+}
+
+#Layer5 {
+	position:absolute;
+	width:107px;
+	height:132px;
+	z-index:1;
+	visibility: hidden;
+	top: 42px;
+	left: 246px;
+}
+
+#Layer6 {
+	position:absolute;
+	width:107px;
+	height:132px;
+	z-index:1;
+	visibility: hidden;
+	top: 42px;
+	left: 426px;
+}

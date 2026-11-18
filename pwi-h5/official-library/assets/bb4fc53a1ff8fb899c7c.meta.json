@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/font05.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "bb4fc53a1ff8fb899c7c",
+  "status": "ok",
+  "parents": [
+    "ba40db87e61d7585dc73"
+  ],
+  "bytes": 6478,
+  "sha256": "becec8b641f5f174fbbead88349eea50ebbb306f4e43078d826aa6cbca5f5712",
+  "fetchedAt": "2026-11-18T08:19:08+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/font05.gif",
+  "path": "assets/bb4fc53a1ff8fb899c7c.gif"
+}

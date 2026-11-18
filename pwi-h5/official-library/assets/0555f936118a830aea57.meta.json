@@ -1,0 +1,25 @@
+{
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "0555f936118a830aea57",
+  "status": "ok",
+  "parents": [
+    "672c01826f17ba45d88e",
+    "1a1eeb3807c03a6c384f",
+    "fa8281882a4afd8639f6",
+    "f8201daf068db101d971",
+    "0b1f87f0fe690cf3e2e6",
+    "eeffeb940810621bba0d",
+    "35b55c8e43f5504c4aea",
+    "451ea9ce2e80c7b283d1",
+    "c9492cce7c30423bbf1e",
+    "dabe9356761d74b92e85",
+    "416858c28ceb7c3b1562"
+  ],
+  "bytes": 5932,
+  "sha256": "dd9165b81c75c000ad32ba43e679a52d6b63aa66737e02f1f9ae8225499d40cc",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/0555f936118a830aea57.jpg"
+}

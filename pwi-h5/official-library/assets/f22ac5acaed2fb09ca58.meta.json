@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1141.jpg",
+  "id": "f22ac5acaed2fb09ca58",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "巫师意志",
+  "bytes": 4646,
+  "sha256": "16259048e7fba05e17fae66047823ba8decc66b7898b2fa70f6c5646c27ddb7a",
+  "fetchedAt": "2026-11-18T08:36:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1141.jpg",
+  "path": "assets/f22ac5acaed2fb09ca58.jpg"
+}

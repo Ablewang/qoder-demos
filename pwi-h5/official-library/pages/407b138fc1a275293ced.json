@@ -1,0 +1,47 @@
+{
+  "id": "407b138fc1a275293ced",
+  "url": "https://w2i.wanmei.com/intro/guide/20091103/36704.shtml",
+  "title": "武器-覆霜武器",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 0,
+  "parents": [
+    "6086431c2237fdf64b6a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "efc290f100c9ad0e301aeac2f5f19843c853dc96081b54efc64daed30d39917e",
+  "bytes": 66115,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/407b138fc1a275293ced.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-11-03",
+  "text": "覆霜副本介绍\n冷风如刀，以大地为砧板，视众生为鱼肉。\n万里飞雪，将苍穹作洪炉，溶万物为白银。\n“覆霜城”中隐藏了太多的秘密，就如同覆盖在它上面的千年冰雪一样让我们有一种掘之不尽的感觉。虽然艰险，但我们仍要前进，为了获得珍贵的宝藏，为了探索我们所不知道的故事，让我们一起踏入这片被冰封的土地。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103061.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103062.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103063.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　<strong>覆霜副本介绍</strong></p>\r\n<p>　　冷风如刀，以大地为砧板，视众生为鱼肉。</p>\r\n<p>　　万里飞雪，将苍穹作洪炉，溶万物为白银。</p>\r\n<p>　　“覆霜城”中隐藏了太多的秘密，就如同覆盖在它上面的千年冰雪一样让我们有一种掘之不尽的感觉。虽然艰险，但我们仍要前进，为了获得珍贵的宝藏，为了探索我们所不知道的故事，让我们一起踏入这片被冰封的土地。</p>\r\n<p><img src=\"assets/87a17074ae6825921827.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/6cecc408af5eef76a93e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/6e6494054464619b270a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/407b138fc1a275293ced.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/407b138fc1a275293ced.js"
+}

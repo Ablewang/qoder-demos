@@ -1,0 +1,124 @@
+{
+  "id": "1435e629f0341b58d214",
+  "url": "https://w2i.wanmei.com/hd/hhsd/foot.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "cd7169846bfb3137caa6",
+    "c9ec16d6457decbc7138",
+    "c3bb747a29d5c90b0e80",
+    "0c8943c3ba6441ce7b5c",
+    "8474f423a0704705848f",
+    "dc28dfdc1fa8fbd788e8",
+    "1ca31d522cf773ec4412",
+    "68a97a82ec5a2d3fffd9",
+    "1c7a4437a2fd0a34051a",
+    "f674c58a45057796d95f",
+    "a8f992586eee0aa7a1a8",
+    "8efeb6e0bb5c644ddcad",
+    "cf07c0635c1190fc01e9",
+    "e42b9469b76693a23fe6",
+    "45dd47bfa9affff9728c",
+    "acd9c6b1a6fa7a96df14",
+    "449d85c02ef147219c69",
+    "304973e086e3c39512e7",
+    "92c5af8c0b0c9818dd36",
+    "f9c3727ede4dd9d9305d",
+    "2cfdd66ab41c34c21bc6",
+    "ffb75bde709b02e53151",
+    "fa95668c3095800c30d1",
+    "3224e30d804bb1069132",
+    "1f4c96e224099de3106c",
+    "6c0c7d9df380a383c3a0",
+    "1a09d6b1c9e2e00f3cfa",
+    "a4f52e4618ea9cb7beac",
+    "3a2e8914b4d13ceb7d5b",
+    "dfc3a2ead97753bdc5f0",
+    "23ba00b18cc27c65fc1d",
+    "74327b4284a3676aa0a1",
+    "ac02fbbabd9d97c97a61"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "4bd79c5d1e291db695972939fb66252aa04f7e5de41797c1d94a5ba14387acef",
+  "bytes": 1428,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1435e629f0341b58d214.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "公司介绍 | 开发团队 | 招聘信息 | 联系我们 | 法律声明\n© 2004-2007 北京完美时空网络技术有限公司 版权所有\n京ICP证：050016号 《网络文化经营许可证》 编号：文网文[2005]007号",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "公司介绍 | 开发团队 | 招聘信息 | 联系我们 | 法律声明\n© 2004-2007 北京完美时空网络技术有限公司 版权所有\n京ICP证：050016号 《网络文化经营许可证》 编号：文网文[2005]007号",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/",
+      "label": "公司介绍",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/group.htm",
+      "label": "开发团队",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/zhaopin.htm",
+      "label": "招聘信息",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/contact.htm",
+      "label": "联系我们",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.w2i.com.cn/company/shengming.htm",
+      "label": "法律声明",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/images/footbg.gif",
+      "label": "公司介绍 | 开发团队 | 招聘信息 | 联系我们 | 法律声明\n© 2004-2007 北京完美时空网络技术有限公司 版权所有\n京ICP证：050016号 《网络文化经营许可证》 编号：文网文[2005]007号",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/images/z01.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td><img src=\"assets/c12d7c157cd27336b542.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><span><a href=\"http://www.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\">公司介绍</a> | <a href=\"http://www.wanmei.com/group.htm\" rel=\"noreferrer\" target=\"_blank\">开发团队</a> | <a href=\"http://www.wanmei.com/zhaopin.htm\" rel=\"noreferrer\" target=\"_blank\">招聘信息</a> | <a href=\"http://www.wanmei.com/contact.htm\" rel=\"noreferrer\" target=\"_blank\">联系我们</a> | 法律声明<br>\n        © 2004-2007  北京完美时空网络技术有限公司　版权所有<br>\n      京ICP证：050016号　《网络文化经营许可证》 编号：文网文[2005]007号</span></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/1435e629f0341b58d214.json",
+  "imageCount": 2,
+  "tableCount": 1,
+  "downloadPath": "downloads/1435e629f0341b58d214.js"
+}

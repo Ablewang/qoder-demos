@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_374.jpg",
+  "id": "b6793ea6c8ec052ef8bb",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·虎击<em>（升仙）</em>",
+  "bytes": 1723,
+  "sha256": "d050db1e6dfa5d3891ac4362bd94bf4729e0ab870b50bc9482dcaa8bd6df380b",
+  "fetchedAt": "2026-11-18T08:34:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_374.jpg",
+  "path": "assets/b6793ea6c8ec052ef8bb.jpg"
+}

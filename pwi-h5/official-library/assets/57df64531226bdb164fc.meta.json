@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_442.jpg",
+  "id": "57df64531226bdb164fc",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·烈焰护甲<em>（升仙）</em>",
+  "bytes": 1630,
+  "sha256": "fa9935f61c4c15ebc9533d649145cfe0dd895e6d008688249571e7b7d6211f60",
+  "fetchedAt": "2026-11-18T08:34:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_442.jpg",
+  "path": "assets/57df64531226bdb164fc.jpg"
+}

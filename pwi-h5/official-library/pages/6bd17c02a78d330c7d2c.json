@@ -1,0 +1,96 @@
+{
+  "id": "6bd17c02a78d330c7d2c",
+  "url": "https://w2i.wanmei.com/intro/ts/20091020/30152.shtml",
+  "title": "婚姻宝典 - 爱的昵称",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 1,
+  "parents": [
+    "a73d94296c108e609f49",
+    "8cad2952b53b0c9029e6",
+    "6bd17c02a78d330c7d2c",
+    "74f129ed64a0ac835332"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "b5a6b015973636055b4d8611ece3c8b131f5c2c70c4a066810a9ccabb3594633",
+  "bytes": 66685,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/6bd17c02a78d330c7d2c.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-20",
+  "text": "爱的装扮 | 爱的祝福 | 爱的昵称 | 爱的殿堂 |\n当你与心爱的人喜结连理之后，你将会多出一个称号：XXX的老公或者XXX的老婆。此时的你们必定是众人瞩目的焦点，万千祝福的对象。准备好接受四面八方像雪片一样飞来的祝福吧！",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30150.shtml",
+      "label": "爱的装扮",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30151.shtml",
+      "label": "爱的祝福",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30152.shtml",
+      "label": "爱的昵称",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091020/30153.shtml",
+      "label": "爱的殿堂",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/02.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/03.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/04.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/02s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/03s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/04s.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=a73d94296c108e609f49\">爱的装扮</a> | <a href=\"#page=8cad2952b53b0c9029e6\">爱的祝福</a> | <a href=\"#page=6bd17c02a78d330c7d2c\">爱的昵称</a> | <a href=\"#page=74f129ed64a0ac835332\">爱的殿堂</a> |</li>\r\n</ul>\r\n<p>　　当你与心爱的人喜结连理之后，你将会多出一个称号：XXX的老公或者XXX的老婆。此时的你们必定是众人瞩目的焦点，万千祝福的对象。准备好接受四面八方像雪片一样飞来的祝福吧！</p>\r\n<p><a href=\"https://w2i.wanmei.com/pic/news_img/tese/01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/7c075a15b229d9233d22.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p><a href=\"https://w2i.wanmei.com/pic/news_img/tese/02.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/56b7732d6b6de6135332.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p><a href=\"https://w2i.wanmei.com/pic/news_img/tese/03.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/ff940c5c546e6b1191a9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p><a href=\"https://w2i.wanmei.com/pic/news_img/tese/04.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/300709857002effac5c2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n                        </div>",
+  "dataPath": "pages/6bd17c02a78d330c7d2c.json",
+  "imageCount": 4,
+  "tableCount": 0,
+  "downloadPath": "downloads/6bd17c02a78d330c7d2c.js"
+}

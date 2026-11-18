@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201304/treasure/images/side.png",
+  "id": "0c1927c54349f87721f5",
+  "status": "ok",
+  "parents": [
+    "86fd3da270244a3de5ce"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201304/treasure/style/master.css",
+  "bytes": 9177,
+  "sha256": "361aa796ecc2a2ffb86da6f22031b45f5002d719f905ffec69f0cc683f4b10e9",
+  "fetchedAt": "2026-11-18T08:38:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201304/treasure/images/side.png",
+  "path": "assets/0c1927c54349f87721f5.png"
+}

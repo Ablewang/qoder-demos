@@ -1,0 +1,18 @@
+{
+  "url": "http://www.wanmei.com/public/images/logo/zhuxian3/zhuxian34.png",
+  "id": "0f41da72508dd3b33fbd",
+  "status": "failed",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201409/new/style/master.css",
+  "httpStatus": 404,
+  "error": "HTTP Error 404: Not Found"
+}

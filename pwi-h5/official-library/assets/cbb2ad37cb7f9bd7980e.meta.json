@@ -1,0 +1,20 @@
+{
+  "url": "https://w2i.wanmei.com/images/main1310/bg1310_02.jpg",
+  "id": "cbb2ad37cb7f9bd7980e",
+  "status": "ok",
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b",
+    "795e92504f6461d2f316"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://w2i.wanmei.com/style/details1310.css",
+  "bytes": 149094,
+  "sha256": "4342e4cc9d8f686536d20f420d8d6c24b615e2b6a5b1a218579f4be429c421d5",
+  "fetchedAt": "2026-11-18T08:37:14+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/main1310/bg1310_02.jpg",
+  "path": "assets/cbb2ad37cb7f9bd7980e.jpg"
+}

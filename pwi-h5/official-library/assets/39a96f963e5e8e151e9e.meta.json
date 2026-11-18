@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/lianji/5.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "39a96f963e5e8e151e9e",
+  "status": "ok",
+  "parents": [
+    "1c7278bd39b9ac761867"
+  ],
+  "bytes": 50334,
+  "sha256": "40fa4bc6382fe9d14d0f863a5609001b503f939219fa75a17c45aa440fe48586",
+  "fetchedAt": "2026-11-18T08:20:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/pic/news_img/lianji/5.jpg",
+  "path": "assets/39a96f963e5e8e151e9e.jpg"
+}

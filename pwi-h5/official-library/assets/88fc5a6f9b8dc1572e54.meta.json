@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/cz/images/banner_25.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "88fc5a6f9b8dc1572e54",
+  "status": "ok",
+  "parents": [
+    "ab71a96e617ef1b9703b",
+    "750e70bcae7fb4afcdb5"
+  ],
+  "bytes": 28331,
+  "sha256": "f3316a85cc46254f94e0baff3be0761662748d92b270b6f76d02f9c11e003e2b",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/88fc5a6f9b8dc1572e54.jpg"
+}

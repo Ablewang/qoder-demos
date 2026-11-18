@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/new/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "58e4e2babbadbb888c66",
+  "status": "ok",
+  "parents": [
+    "bcbecb5b3fc81d489d12"
+  ],
+  "bytes": 11806,
+  "sha256": "8b11bdccf7e8c9fe0ec5f69bc214d73d2727f0ed49925b0740286d86c74fbc94",
+  "fetchedAt": "2026-11-18T08:18:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201111/new/style/master.css",
+  "path": "assets/58e4e2babbadbb888c66.css"
+}

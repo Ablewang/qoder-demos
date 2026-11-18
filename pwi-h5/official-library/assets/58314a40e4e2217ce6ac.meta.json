@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/guaiwu_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "58314a40e4e2217ce6ac",
+  "status": "ok",
+  "parents": [
+    "6463ed2b88dc7e7ebb62"
+  ],
+  "bytes": 3895,
+  "sha256": "5bc33b18db364d83f92cc5b4705ca9ecb41c02e0db867de89982c6ccef7b550d",
+  "fetchedAt": "2026-11-18T08:22:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/guaiwu_button.jpg",
+  "path": "assets/58314a40e4e2217ce6ac.jpg"
+}

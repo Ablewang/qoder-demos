@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_567.jpg",
+  "id": "64f1ce5aa2ab1b5ba9a4",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·聚神符<em>（入魔）</em>",
+  "bytes": 1632,
+  "sha256": "d7e21085d0e37a72f86eefcca71c10b38e1213b80bf3e88d099bd7e276233387",
+  "fetchedAt": "2026-11-18T08:35:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_567.jpg",
+  "path": "assets/64f1ce5aa2ab1b5ba9a4.jpg"
+}

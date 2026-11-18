@@ -1,0 +1,16 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/map2.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "6595b2f56319731b8656",
+  "status": "ok",
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79"
+  ],
+  "bytes": 21664,
+  "sha256": "36d96110ae6b0962bace999157383b9ac2cef30442247917b3cddbb3c38aca78",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/6595b2f56319731b8656.jpg"
+}

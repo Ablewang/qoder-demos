@@ -1,0 +1,150 @@
+﻿/****************************************** 
+Web Layout:Bai Chen - baichen@wanmei.com
+******************************************/
+
+@import url(http://w2i.wanmei.com/style/w2i_logo_230x96.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+
+#w2i_logo,#transparent_logo {top:28px;left:380px;}
+
+/*--gobal--*/
+body{margin:0px;padding:0px;border:0px;color:#000000;font:0px Verdana,"宋体",Geneva,sans-serif;background:#c1c3c8;}
+div,form,ul,ol,li,img,dl,dt,dd,p{margin:0px;padding:0px;border:0;}
+h1,h2,h3,h4,h5,h6 {margin:0px;padding:0px;}
+ul,li{list-style:none;margin:0px;padding:0px;}
+
+/*--link--*/
+a{color:#000000;blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{color:#cc0000;text-decoration:none;}
+
+/*--background--*/
+#bg{width:100%;min-width:1002px;background:url(../images/indexbg.jpg) no-repeat center top;}
+
+/*--body--*/
+#wrap{width:1002px;margin:0 auto;overflow:hidden;position:relative;padding:0px;border:0px;}
+
+/*--index--*/
+.menu{width:260px;height:288px;position:relative;background:url(../images/indexh_02.jpg) no-repeat 0 0;float:left;}
+.ls{padding-left:56px;padding-top:44px;width:260px;height:20px;}
+.lq{padding-left:56px;padding-top:44px;width:260px;height:20px;}
+.jj{padding-left:56px;padding-top:44px;width:260px;height:20px;}
+.jj2{padding-left:56px;padding-top:12px;width:260px;height:20px;}
+.lc{padding-left:56px;padding-top:40px;width:260px;height:20px;}
+.menu li{font:12px "宋体";color:#FFF;float:left;position:relative;padding-left:20px;}
+.menu li a{color:#FFF}
+.menu li a:hover{color:#FF0;text-decoration:none;}
+
+.left{width:260px;margin:0 auto;overflow:hidden;padding:0px;border:0px;position:relative;float:left;}
+.left img{float:left;}
+
+.mid{width:462px;margin:0 auto;overflow:hidden;padding:0px;border:0px;position:relative;float:left;}
+.mid img{float:left;}
+
+.right{width:280px;margin:0 auto;overflow:hidden;padding:0px;border:0px;position:relative;float:left;}
+.right img{float:left;}
+
+.loop-swf{width:194px;height:156px;top:455px;left:33px;position:absolute;}
+/*--index end--*/
+
+/*--顶部iframe--*/
+.banner{width:1002px;height:280px;margin:0 auto;overflow:hidden;position:relative;padding:0px;border:0px;}
+/*--顶部iframe end--*/
+
+/*--首要内容页-*/
+#bgcon{width:100%;min-width:1002px;background:url(../images/bgcon.jpg) no-repeat center top;}
+.sycscon{width:250px;height:490px;position:relative;padding:0px;border:0px;float:left;}
+.sycsmenu{width:250px;height:410px;position:relative;background:url(../images/sycs_01.jpg) no-repeat 0 0;overflow:hidden;}
+.sycsmenu2{width:250px;height:410px;position:relative;background:url(../images/sycs_01-2.jpg) no-repeat 0 0;overflow:hidden;}
+.sycscontent{width:752px;height:490px;float:left;}
+#topframe{width:1002px;height:280px;}
+#frame{width:752px;height:490px;}
+.sycsmenubtn1{width:123px;height:26px;left:71px;top:10px;position:absolute;}
+.sycsmenubtn2{width:123px;height:26px;left:71px;top:50px;position:absolute;}
+.sycsmenubtn3{width:123px;height:26px;left:71px;top:90px;position:absolute;}
+.sycsmenubtn4{width:123px;height:26px;left:71px;top:132px;position:absolute;}
+.sycsmenubtn5{width:123px;height:26px;left:71px;top:173px;position:absolute;}
+.sycsmenubtn6{width:123px;height:26px;left:71px;top:213px;position:absolute;}
+.sycsmenubtn7{width:123px;height:26px;left:71px;top:254px;position:absolute;}
+.sycsmenubtn8{width:123px;height:26px;left:71px;top:295px;position:absolute;}
+.sycsmenubtn9{width:123px;height:26px;left:71px;top:335px;position:absolute;}
+.sycsmenubtn10{width:123px;height:26px;left:71px;top:376px;position:absolute;}
+/*--首要内容页面 end--*/
+
+/*--神月传奇iframe--*/
+.ifsycs{width:752px;height:490px;margin:0 auto;overflow:hidden;position:relative;padding:0px;border:0px;background:url(../images/sycsbox.jpg) no-repeat 0 0;}
+.ifsycscon{font:14px "宋体";width:658px;height:368px;left:35px;top:66px;position:absolute;border:1px solid #727576;}
+.isctop{width:100%;height:40px;position:relative;overflow:hidden;}
+.isctop2{width:100%;height:50px;position:relative;overflow:hidden;}
+#nrsy{width:658px;height:368px;overflow-x:hidden;}
+#nrsy2{width:658px;height:338px;overflow-x:hidden;}
+/*--神月传奇iframe end--*/
+
+/*--成就单人多人任务iframe--*/
+.iflcgl{width:752px;height:490px;margin:0 auto;overflow:hidden;position:relative;padding:0px;border:0px;}
+.lcgltop{width:752px;height:80px;position:relative;background:url(../images/cjmenu.jpg) no-repeat 0 0;}
+.lcglbtn1{width:130px;height:53px;left:50px;top:24px;position:absolute;}
+.lcglbtn2{width:130px;height:53px;left:213px;top:24px;position:absolute;}
+.lcglbtn3{width:130px;height:53px;left:376px;top:24px;position:absolute;}
+.lcglbtn4{width:130px;height:53px;left:539px;top:24px;position:absolute;}
+.lcglbot{width:752px;height:410px;position:relative;background:url(../images/cjbox.jpg) no-repeat 0 0;}
+.lcglcon{font:14px "宋体";width:658px;height:338px;left:37px;top:21px;position:absolute;border:1px solid #727576;}
+.lctop{width:100%;height:40px;position:relative;overflow:hidden;}
+/*--成就单人多人任务iframe end--*/
+
+/*--神裔iframe--*/
+.sytop{width:752px;height:80px;position:relative;background:url(../images/symenu.jpg) no-repeat 0 0;}
+.sybtn1{width:130px;height:53px;left:17px;top:24px;position:absolute;}
+.sybtn2{width:130px;height:53px;left:157px;top:24px;position:absolute;}
+.sybtn3{width:130px;height:53px;left:297px;top:24px;position:absolute;}
+.sybtn4{width:130px;height:53px;left:437px;top:24px;position:absolute;}
+.sybtn5{width:130px;height:53px;left:577px;top:24px;position:absolute;}
+/*--神裔iframe end--*/
+
+/*--神月传奇延展页--*/
+.nrsyc{width:640px;float:left;background:url(../images/nrsyrep.jpg) repeat-y 0 0;}
+.nrsyt{width:640px;float:left;background:url(../images/nrsytop.jpg) no-repeat 0 top;height:auto!important;min-height:358px;height:358px;font:14px "宋体";padding-bottom:10px;}
+.nrsyb{width:640px;float:left;background:url(../images/nrsybot.jpg) no-repeat 0 bottom;}
+.nrsycon{width:620px;height:auto;padding-left:10px;position:relative;font:14px "宋体";}
+/*--神月传奇延展页 end--*/
+
+/*--其他页面延展页--*/
+.nrsyc2{width:640px;float:left;background:url(../images/nrsyrep.jpg) repeat-y 0 0;}
+.nrsyt2{width:640px;float:left;background:url(../images/nrsytop.jpg) no-repeat 0 top;height:auto!important;min-height:328px;height:328px;font:14px "宋体";padding-bottom:10px;}
+.nrsyb2{width:640px;float:left;background:url(../images/nrsybot.jpg) no-repeat 0 bottom;}
+.nrsycon2{width:620px;height:auto;padding-left:10px;position:relative;font:14px "宋体";}
+.nrsycon3{width:620px;height:auto;padding-left:10px;padding-top:5px;position:relative;font:14px "宋体";}
+.top-menu{left:31px;top:19px;position:absolute;color:#fcbe00;font:13px "宋体";}
+.top-menu span{margin-left:1px;margin-right:1px;}
+/*--其他页面延展页 end--*/
+
+.em5{text-indent:5em;}
+.em7{text-indent:7em;}
+.nrsycon p{text-indent:2em;line-height:24px;}
+.nrsycon2 li{line-height:24px;}
+.nrsycon2 p{line-height:24px;}
+
+/**/
+table {margin: auto;font-size: 12px;border-collapse: collapse;border: 1px #841515 solid; width:550px; margin-bottom:40px}
+table td {color:#000;border:1px #841515 solid;line-height:16px;text-align:center;padding: 3px 6px;}
+table th{background:#4f0c08;color:#f6ff00;font-weight:bold;}
+table th,table td{text-align:center;padding:4px 0px;margin:0px;}
+table img{ width:200px; height:150px}
+.red{color:#F00;}
+
+.title{color:#fcbe00;}
+
+.nav{position:absolute;width:132px;height:141px;}
+.nav_01{top:390px;left:155px;background:url(../images/imenucjoff.jpg) no-repeat center;}
+.nav_01:hover{top:390px;left:155px;background:url(../images/imenucjon.jpg) no-repeat center;}
+.nav_02{top:508px;left:6px;background:url(../images/imenudroff.jpg) no-repeat center;}
+.nav_02:hover{top:508px;left:6px;background:url(../images/imenudron.jpg) no-repeat center;}
+.nav_03{top:508px;left:296px;background:url(../images/imenuduoroff.jpg) no-repeat center;}
+.nav_03:hover{top:508px;left:296px;background:url(../images/imenuduoron.jpg) no-repeat center;}
+
+.zs01{position:relative;width:400px;height:310px;left:115px;margin-bottom:10px;}
+.zs02{position:relative;width:400px;height:310px;left:115px;margin-bottom:10px;}
+.zs03{position:relative;width:400px;height:310px;left:115px;margin-bottom:10px;}
+.zs04{position:relative;width:400px;height:310px;left:115px;margin-bottom:10px;}

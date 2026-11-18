@@ -1,0 +1,145 @@
+{
+  "id": "d3f7aa4210ed0a73d8e3",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/yitiaoxin.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/yitiaoxin.htm",
+  "fetchedAt": "2026-11-18T08:15:56+00:00",
+  "sha256": "dcf8c176b5732308988960c6cd78abbdd6197dee431307549e7a0a2323d86db8",
+  "bytes": 2240,
+  "rawPath": "raw/d3f7aa4210ed0a73d8e3.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "图1\n图2\n玩法：房间内的\"魔方传送使\"要求玩家6人组队才能过关。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "图1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩法：房间内的\"魔方传送使\"要求玩家6人组队才能过关。",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：房间内的\"魔方传送使\"要求玩家6人组队才能过关。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：房间内的\"魔方传送使\"要求玩家6人组队才能过关。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_bg.jpg",
+      "label": "玩法：房间内的\"魔方传送使\"要求玩家6人组队才能过关。",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yitiaoxin_button.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/ytm_tt01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/ytm_tt02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td colspan=\"2\"><img src=\"assets/9e8fe6c9bc90133a3e0e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td><div><img src=\"assets/e72807b4a3c657e0c35a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n      </tr>\n    </table>\n    <div></div></td>\n    <td><div>\n      <table>\n        <tr>\n          <td><div><img src=\"assets/e5f86e03430460894759.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n        </tr>\n      </table>\n    </div></td>\n  </tr>\n  <tr>\n    <td><div>图1</div></td>\n    <td><div>图2</div></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\"><table>\n      <tr>\n        <td><table>\n          <tr>\n            <td><p>玩法：房间内的&quot;魔方传送使&quot;要求玩家6人组队才能过关。</p>\n              </td>\n          </tr>\n        </table>          \n          <p> </p></td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/d3f7aa4210ed0a73d8e3.json",
+  "imageCount": 4,
+  "tableCount": 5,
+  "downloadPath": "downloads/d3f7aa4210ed0a73d8e3.js"
+}

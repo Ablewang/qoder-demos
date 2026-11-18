@@ -1,0 +1,90 @@
+{
+  "id": "b0fa94fd9ec6a3c4eaad",
+  "url": "https://event51.wanmei.com/w2i/201005/xmj/header.htm",
+  "title": "仙魔劫-天外伏虎录 - 《完美国际-仙魔无界》官方网站",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 1,
+  "parents": [
+    "928b7891be2bd01492b8",
+    "1013d2d3887513272a6c",
+    "542ae75d552920993a0b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "84963c42b34dbc880b422f2c53a0943941da3b3fd988bc99be33813351ba5e03",
+  "bytes": 1942,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/b0fa94fd9ec6a3c4eaad.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/download_rycs_ty.shtml",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://pay.wanmei.com/e/epage/setup_2_wanmei2.html",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/images/header_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/images/header_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/images/header_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/images/header_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/images/header_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201005/xmj/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<img src=\"assets/89cfa35f57e13fc8bb4e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\t\n\t\t\t  \n\t\t\t  \n\t\t\t  \n\t\t\t  \n\t\t\t  \n\t\t\t\n\t\t<img src=\"assets/afd53d57853413a402cb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/0cebd853e0c5e034e8b2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/8a1fe243b54938fa950d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t<img src=\"assets/0c98d82bc55161352d36.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n",
+  "dataPath": "pages/b0fa94fd9ec6a3c4eaad.json",
+  "imageCount": 5,
+  "tableCount": 0,
+  "downloadPath": "downloads/b0fa94fd9ec6a3c4eaad.js"
+}

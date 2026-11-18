@@ -1,0 +1,135 @@
+								<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Design:; Web Layout:Zhongwei.Zhang;" />
+<meta name="keywords" content="完美国际2,神启,十周年,十年,竞技场,精英赛,怀旧副本,五帝之都,五帝名都,四帝之都,白帝城,白帝之城,日不落之城,不落城,白帝,席尔瓦,亚历山大,古德希尔,岱卡法沙,西陆,中陆,南陆,北陆,东陆,玫瑰骑士团,符纹,诡异小镇,千年之战,紫玉山庄,曙光殿,载具,奥罗拉格斗场,玄铁武士,精钢斗士,青铜勇士,辉银英雄,白金战神,极光币,游仙玲珑局,庆生会,夫妻任务,大梦想,大世界,相逢若有十,玄幻网游,国产原创" />
+<meta name="description" content="《完美国际2》全新资料片“妖猴出世”即将于6月9日正式上线，新职业【妖猴】首度登上完美舞台，让妖族再添一员猛将。同时，新服【天越】也将迎战开启，勇士可以邀朋友一起驰骋新大陆，更有诸多新服福利助你成长升级。" />
+<link rel="Shortcut Icon" href="https://w2i.games.wanmei.com/favicon.ico"/>
+<link rel="bookmark" href="https://w2i.games.wanmei.com/favicon.ico"/> 
+<link href="/style/show1309.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wm.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="http://wulin2.wanmei.com/js/ie_png.js"></script>
+<script type="text/javascript">
+ DD_belatedPNG.fix('.reg_l');
+</script>
+<![endif]-->
+<title>七载荣耀 怒放新生 -《完美国际2》官方网站</title>
+</head>
+<body>
+<div class="flashbox">
+	<div id="flashbox"></div>
+</div>
+<div class="reg_box">
+	<div class="reg_l">
+		<div id="fastreg"></div>
+	</div>
+	<img class="icon_close" src="/show1309/image/icon_close.png" />
+</div>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/jq_171.js"></script>
+<script type="text/ecmascript" src="http://www.wanmei.com/public/js/swfobject.js"></script>
+<script type="text/ecmascript">
+	var heightN = document.documentElement.clientHeight - (41+95);
+	$('.flashbox').css('height',heightN+'px');
+	//addSWF('/show1309/zhanshi.swf', 'flashbox', '100%', 701,{xml:'/xml/show_options1309.xml'});
+	/*
+	if(!-[1,]){
+		//ie5,6,7,8
+		addSWF('zhanshi.swf','flashbox',1,1,{wmode:'opaque',xml:"xml/options.xml"});
+	}else{
+		//ff 和 ie9
+		addSWF('zhanshi.swf','flashbox',1,1,{wmode:'opaque',xml:"xml/options.xml"});
+	}
+	*/
+	
+	addSWF('/show1309/zhanshi.swf','flashbox',1,1,{
+		//wmode:'window',//ie下点击跳页可能会被拦截
+		wmode:'opaque',//ff下鼠标滚轮会失效
+		xml:"/xml/show_options1309.xml",
+		bgcolor : '#000'
+	});
+	
+	function swfEventHandler(id,eventId){
+		if(id=="flashbox"){
+			//alert(eventId);
+			switch(eventId){
+				case "load":
+				
+				
+					resizeDelay();
+				break;
+			}
+		}
+	}
+	
+	var timeoutId=-1;
+	
+	function resizeDelay(){
+		window.onresize=null;
+		clearTimeout(timeoutId);
+		timeoutId=setTimeout("resize()",50);
+	}
+	function resize(){
+		
+		window.onresize=null;
+		clearTimeout(timeoutId);
+		timeoutId=setTimeout("addResizeEvent()",50);
+		
+		var wid=document.documentElement.clientWidth;
+		if(wid<1002){//如果页面宽度小于最小宽度
+			wid=1002;
+			document.body.style.overflowX="visible";
+		}else{
+			document.body.style.overflowX="hidden";
+		}
+		
+		var hei=document.documentElement.clientHeight;
+		//alert("hei="+hei);
+		if(hei<800){//如果页面高度小于最小高度
+			hei=800;
+			document.body.style.overflowY="visible";
+		}else{
+			document.body.style.overflowY="hidden";
+		}
+		hei-=41;//减去顶部高度
+		hei-=95;//减去底部高度
+		var swf=document.getElementById("flashbox");
+		
+		swf.style.width=wid;//ie
+		if(swf.style.width){
+		}else{
+			swf.width=wid;//ff
+		}
+		$('.flashbox').css('height',hei+'px');
+		swf.style.height=hei;//ie
+		if(swf.style.height){
+		}else{
+			swf.height=hei;//ff
+		}
+	}
+	function addResizeEvent(){
+		clearTimeout(timeoutId);
+		window.onresize=resizeDelay;
+	}
+	
+		
+	wm.fastreg({
+	  box: 'fastreg', 
+	  game: 'w2i', 
+	  css: 1,
+	  card : 'GJCWNMIDYJFUM5'
+	});
+	function showReg(){
+		$('.reg_box').show();
+	}
+	function closeReg(){
+		$('.reg_box').hide();
+	}
+	$('.icon_close').click(function(){
+		closeReg();
+	});
+</script>
+<div class="wm-public" analytics="{single:['w2i20130910show2796']}"></div>
+</body>
+</html>

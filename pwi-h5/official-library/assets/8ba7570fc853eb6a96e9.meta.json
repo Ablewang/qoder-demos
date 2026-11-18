@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_85.jpg",
+  "id": "8ba7570fc853eb6a96e9",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "神火符",
+  "bytes": 1488,
+  "sha256": "3e1db239393377f5d64045f637958ffebb65bdf2dbd6446cdbde30f61e9d1314",
+  "fetchedAt": "2026-11-18T08:34:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_85.jpg",
+  "path": "assets/8ba7570fc853eb6a96e9.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_455.jpg",
+  "id": "c954ea287f045ccc3168",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·火海刀山<em>（入魔）</em>",
+  "bytes": 1874,
+  "sha256": "e3609986e3c615e7339f61e8fae488caba0ef590db2f3ba5b619b302ba811f68",
+  "fetchedAt": "2026-11-18T08:34:36+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_455.jpg",
+  "path": "assets/c954ea287f045ccc3168.jpg"
+}

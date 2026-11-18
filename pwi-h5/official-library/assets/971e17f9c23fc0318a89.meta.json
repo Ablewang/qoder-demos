@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/font13.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "971e17f9c23fc0318a89",
+  "status": "ok",
+  "parents": [
+    "4bb4f2d9b0112b528281"
+  ],
+  "bytes": 6291,
+  "sha256": "67592c93abc1b5ba24c1f9ea8180b0b2c8800c97ea2b3c8d18c467cd066ad405",
+  "fetchedAt": "2026-11-18T08:19:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/font13.gif",
+  "path": "assets/971e17f9c23fc0318a89.gif"
+}

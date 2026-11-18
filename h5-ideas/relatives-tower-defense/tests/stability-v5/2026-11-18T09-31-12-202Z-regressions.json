@@ -1,0 +1,1944 @@
+{
+  "run": "2026-11-18T09-31-12-202Z",
+  "environment": "Local installed Chrome; real DOM mouse/keyboard events; CSS font-scale simulation (not OS text zoom)",
+  "focus": [
+    {
+      "tag": "320x568-text100",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      },
+      "returnAfterRerender": "pause"
+    },
+    {
+      "tag": "320x568-text130",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      },
+      "returnAfterRerender": "pause"
+    },
+    {
+      "tag": "320x740-text130",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      },
+      "returnAfterRerender": "pause"
+    },
+    {
+      "tag": "390x844-text100",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      },
+      "returnAfterRerender": "pause"
+    },
+    {
+      "tag": "390x844-text130",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      },
+      "returnAfterRerender": "pause"
+    },
+    {
+      "tag": "1280x800-text100",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      },
+      "returnAfterRerender": "pause"
+    }
+  ],
+  "pause": [
+    {
+      "tag": "320x568-text100",
+      "collapsed": {
+        "open": false,
+        "word": "\"展开\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "\"收起\"",
+        "boxScroll": 0,
+        "detailsScroll": 274,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrollPreserved": {
+        "before": 274,
+        "after": 274
+      }
+    },
+    {
+      "tag": "320x568-text130",
+      "collapsed": {
+        "open": false,
+        "word": "\"展开\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "\"收起\"",
+        "boxScroll": 0,
+        "detailsScroll": 554,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrollPreserved": {
+        "before": 554,
+        "after": 554
+      }
+    },
+    {
+      "tag": "320x740-text130",
+      "collapsed": {
+        "open": false,
+        "word": "\"展开\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "\"收起\"",
+        "boxScroll": 0,
+        "detailsScroll": 382,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrollPreserved": {
+        "before": 382,
+        "after": 382
+      }
+    },
+    {
+      "tag": "390x844-text100",
+      "collapsed": {
+        "open": false,
+        "word": "\"展开\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "\"收起\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrollPreserved": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "tag": "390x844-text130",
+      "collapsed": {
+        "open": false,
+        "word": "\"展开\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "\"收起\"",
+        "boxScroll": 0,
+        "detailsScroll": 134,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrollPreserved": {
+        "before": 134,
+        "after": 134
+      }
+    },
+    {
+      "tag": "1280x800-text100",
+      "collapsed": {
+        "open": false,
+        "word": "\"展开\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "expanded": {
+        "open": true,
+        "word": "\"收起\"",
+        "boxScroll": 0,
+        "detailsScroll": 0,
+        "buttons": [
+          {
+            "action": "resume",
+            "height": 48,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "restart",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          },
+          {
+            "action": "finish",
+            "height": 44,
+            "inside": true,
+            "visible": true,
+            "hit": true
+          }
+        ]
+      },
+      "scrollPreserved": {
+        "before": 0,
+        "after": 0
+      }
+    }
+  ],
+  "posters": [
+    {
+      "tag": "320x568-text100",
+      "failures": [
+        {
+          "step": 1,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            413,
+            556.0625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        },
+        {
+          "step": 2,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            413,
+            556.0625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        }
+      ],
+      "image": {
+        "width": 1080,
+        "height": 1440
+      },
+      "realDownload": {
+        "file": "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-download.png",
+        "bytes": 274266,
+        "width": 1080,
+        "height": 1440
+      },
+      "staleAfterSuccess": 0,
+      "staleAfterBack": 0
+    },
+    {
+      "tag": "320x568-text130",
+      "failures": [
+        {
+          "step": 1,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            393.78125,
+            556.390625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        },
+        {
+          "step": 2,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            393.78125,
+            556.390625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        }
+      ],
+      "image": {
+        "width": 1080,
+        "height": 1440
+      },
+      "realDownload": {
+        "file": "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-download.png",
+        "bytes": 274266,
+        "width": 1080,
+        "height": 1440
+      },
+      "staleAfterSuccess": 0,
+      "staleAfterBack": 0
+    },
+    {
+      "tag": "320x740-text130",
+      "failures": [
+        {
+          "step": 1,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            565.78125,
+            728.390625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        },
+        {
+          "step": 2,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            565.78125,
+            728.390625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        }
+      ],
+      "image": {
+        "width": 1080,
+        "height": 1440
+      },
+      "realDownload": {
+        "file": "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-download.png",
+        "bytes": 274266,
+        "width": 1080,
+        "height": 1440
+      },
+      "staleAfterSuccess": 0,
+      "staleAfterBack": 0
+    },
+    {
+      "tag": "390x844-text100",
+      "failures": [
+        {
+          "step": 1,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            710.796875,
+            832.171875
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        },
+        {
+          "step": 2,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            710.796875,
+            832.171875
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        }
+      ],
+      "image": {
+        "width": 1080,
+        "height": 1440
+      },
+      "realDownload": {
+        "file": "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-download.png",
+        "bytes": 274266,
+        "width": 1080,
+        "height": 1440
+      },
+      "staleAfterSuccess": 0,
+      "staleAfterBack": 0
+    },
+    {
+      "tag": "390x844-text130",
+      "failures": [
+        {
+          "step": 1,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            669.015625,
+            831.625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        },
+        {
+          "step": 2,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            669.015625,
+            831.625
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        }
+      ],
+      "image": {
+        "width": 1080,
+        "height": 1440
+      },
+      "realDownload": {
+        "file": "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-download.png",
+        "bytes": 274266,
+        "width": 1080,
+        "height": 1440
+      },
+      "staleAfterSuccess": 0,
+      "staleAfterBack": 0
+    },
+    {
+      "tag": "1280x800-text100",
+      "failures": [
+        {
+          "step": 1,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            666.796875,
+            788.171875
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        },
+        {
+          "step": 2,
+          "alerts": 1,
+          "notices": 0,
+          "box": [
+            666.796875,
+            788.171875
+          ],
+          "visible": true,
+          "height": 44,
+          "overlap": false,
+          "hit": true,
+          "focused": true,
+          "horizontal": false
+        }
+      ],
+      "image": {
+        "width": 1080,
+        "height": 1440
+      },
+      "realDownload": {
+        "file": "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-download.png",
+        "bytes": 274266,
+        "width": 1080,
+        "height": 1440
+      },
+      "staleAfterSuccess": 0,
+      "staleAfterBack": 0
+    }
+  ],
+  "natural": [
+    {
+      "identity": "married",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scale": 1,
+      "kind": "NATURAL: only read probe data; actual DOM card/reward clicks; no Game.tick/play calls or state replacement",
+      "rewards": 2,
+      "empty": {
+        "elapsed": 59.79750000000121,
+        "realSeconds": 60.152
+      },
+      "allDisabled": {
+        "elapsed": 71.96360000000301,
+        "cooldown": 1.700100000000006
+      },
+      "blank": 0,
+      "stalls": 0,
+      "delta": 0,
+      "samples": 852,
+      "states": [
+        {
+          "wave": 0,
+          "mode": "table",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "table",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "table",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "table",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "table",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "table",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "table",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "table",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "table",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "table",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "table",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "table",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 3,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "table",
+          "card": "taiji",
+          "reading": false
+        }
+      ],
+      "report": {
+        "score": 2400,
+        "title": "边界守护者",
+        "mood": 100,
+        "won": true,
+        "elapsed": 89
+      },
+      "realSeconds": 89.931
+    },
+    {
+      "identity": "single",
+      "viewport": {
+        "width": 740,
+        "height": 320
+      },
+      "scale": 2,
+      "kind": "NATURAL: only read probe data; actual DOM card/reward clicks; no Game.tick/play calls or state replacement",
+      "rewards": 2,
+      "empty": {
+        "elapsed": 59.94780000000129,
+        "realSeconds": 60.316
+      },
+      "allDisabled": {
+        "elapsed": 72.11400000000323,
+        "cooldown": 1.7000000000000004
+      },
+      "blank": 0,
+      "stalls": 0,
+      "delta": 0,
+      "samples": 852,
+      "states": [
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        }
+      ],
+      "report": {
+        "score": 2400,
+        "title": "边界守护者",
+        "mood": 100,
+        "won": true,
+        "elapsed": 90
+      },
+      "realSeconds": 90.194
+    },
+    {
+      "identity": "exam",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scale": 1.3,
+      "kind": "NATURAL: only read probe data; actual DOM card/reward clicks; no Game.tick/play calls or state replacement",
+      "rewards": 2,
+      "empty": {
+        "elapsed": 59.947600000001415,
+        "realSeconds": 60.32
+      },
+      "allDisabled": {
+        "elapsed": 72.11370000000325,
+        "cooldown": 1.7000000000000002
+      },
+      "blank": 0,
+      "stalls": 0,
+      "delta": 0,
+      "samples": 851,
+      "states": [
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        }
+      ],
+      "report": {
+        "score": 2400,
+        "title": "边界守护者",
+        "mood": 100,
+        "won": true,
+        "elapsed": 90
+      },
+      "realSeconds": 90.196
+    },
+    {
+      "identity": "single",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scale": 1,
+      "kind": "NATURAL: only read probe data; actual DOM card/reward clicks; no Game.tick/play calls or state replacement",
+      "rewards": 2,
+      "empty": {
+        "elapsed": 59.930900000001465,
+        "realSeconds": 60.305
+      },
+      "allDisabled": {
+        "elapsed": 72.09710000000342,
+        "cooldown": 1.7000000000000004
+      },
+      "blank": 0,
+      "stalls": 0,
+      "delta": 0,
+      "samples": 851,
+      "states": [
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        }
+      ],
+      "report": {
+        "score": 2400,
+        "title": "边界守护者",
+        "mood": 100,
+        "won": true,
+        "elapsed": 90
+      },
+      "realSeconds": 90.182
+    },
+    {
+      "identity": "graduate",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "scale": 1.3,
+      "kind": "NATURAL: only read probe data; actual DOM card/reward clicks; no Game.tick/play calls or state replacement",
+      "rewards": 2,
+      "empty": {
+        "elapsed": 64.23070000000166,
+        "realSeconds": 64.488
+      },
+      "allDisabled": {
+        "elapsed": 64.81400000000168,
+        "cooldown": 1.700100000000006
+      },
+      "blank": 0,
+      "stalls": 0,
+      "delta": 0,
+      "samples": 896,
+      "states": [
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "counter",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": true
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": false
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "crazy",
+          "reading": false
+        },
+        {
+          "wave": 0,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 1,
+          "mode": "reader",
+          "card": "sincere",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 2,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": true
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        },
+        {
+          "wave": 3,
+          "mode": "reader",
+          "card": "taiji",
+          "reading": false
+        }
+      ],
+      "report": {
+        "score": 2420,
+        "title": "边界守护者",
+        "mood": 100,
+        "won": true,
+        "elapsed": 94
+      },
+      "realSeconds": 94.877
+    }
+  ],
+  "viewportChanges": {
+    "values": [
+      {
+        "mode": "table",
+        "vars": "--header-h: 48px; --context-h: 32px; --question-name-h: 21px; --question-text-h: 46px; --question-meta-h: 17px; --question-h: 122px; --card-top-h: 55px; --answer-h: 41px; --effect-h: 23px; --card-h: 143px; --read-w: 80px; --read-h: 44px; --caption-h: 22px; --status-text-h: 18px; --status-h: 56px; --ghost-h: 69px; --note-h: 52px; --action-h: 71px; --art-h: 100px;"
+      },
+      {
+        "mode": "reader",
+        "vars": "--header-h: 48px; --context-h: 32px; --question-name-h: 44px; --question-text-h: 46px; --question-meta-h: 29px; --question-h: 157px; --card-top-h: 28px; --answer-h: 41px; --effect-h: 23px; --card-h: 116px; --read-w: 80px; --read-h: 44px; --caption-h: 22px; --status-text-h: 18px; --status-h: 56px; --ghost-h: 89px; --note-h: 69px; --action-h: 71px; --art-h: 56px;"
+      },
+      {
+        "mode": "reader",
+        "vars": "--header-h: 68px; --context-h: 64px; --question-name-h: 113px; --question-text-h: 225px; --question-meta-h: 64px; --question-h: 440px; --card-top-h: 49px; --answer-h: 119px; --effect-h: 39px; --card-h: 231px; --read-w: 138px; --read-h: 52px; --caption-h: 127px; --status-text-h: 99px; --status-h: 238px; --ghost-h: 191px; --note-h: 237px; --action-h: 103px; --art-h: 56px;"
+      },
+      {
+        "mode": "table",
+        "vars": "--header-h: 48px; --context-h: 32px; --question-name-h: 21px; --question-text-h: 46px; --question-meta-h: 17px; --question-h: 122px; --card-top-h: 55px; --answer-h: 41px; --effect-h: 23px; --card-h: 143px; --read-w: 80px; --read-h: 44px; --caption-h: 22px; --status-text-h: 18px; --status-h: 56px; --ghost-h: 69px; --note-h: 52px; --action-h: 71px; --art-h: 100px;"
+      }
+    ],
+    "readingFocusAndScroll": {
+      "scroll": 180,
+      "focused": "battle-reader"
+    }
+  },
+  "keyboardCards": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "focusHeldDuringCooldown": true,
+      "restoredToSameCard": true,
+      "enterPlayedAgain": true
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "focusHeldDuringCooldown": true,
+      "restoredToSameCard": true,
+      "enterPlayedAgain": true
+    }
+  ],
+  "quoteGeometry": [
+    {
+      "label": "married-390x844-text100",
+      "actualQuoteChoices": 12,
+      "scale": 2,
+      "maxDelta": 0,
+      "issues": []
+    },
+    {
+      "label": "exam-1280x800-text130",
+      "actualQuoteChoices": 12,
+      "scale": 2,
+      "maxDelta": 0,
+      "issues": []
+    },
+    {
+      "label": "single-740x320-text200",
+      "actualQuoteChoices": 12,
+      "scale": 2,
+      "maxDelta": 0,
+      "issues": []
+    },
+    {
+      "label": "single-320x568-text100",
+      "actualQuoteChoices": 12,
+      "scale": 2,
+      "maxDelta": 0,
+      "issues": []
+    },
+    {
+      "label": "graduate-320x740-text130",
+      "actualQuoteChoices": 13,
+      "scale": 2,
+      "maxDelta": 0,
+      "issues": []
+    }
+  ],
+  "background": {
+    "before": {
+      "hidden": false,
+      "state": "visible",
+      "paused": false,
+      "elapsed": 1.2919000000000007,
+      "events": []
+    },
+    "after": {
+      "state": "visible",
+      "paused": false
+    },
+    "elapsedStayed": false,
+    "verified": false
+  },
+  "screenshots": [
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-opening.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-answered.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-pause-collapsed.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-pause-expanded.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-pause-rules-end.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-poster-fail1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-poster-fail2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text100-poster-success.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-opening.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-answered.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-pause-collapsed.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-pause-expanded.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-pause-rules-end.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-poster-fail1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-poster-fail2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x568-text130-poster-success.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-opening.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-answered.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-pause-collapsed.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-pause-expanded.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-pause-rules-end.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-poster-fail1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-poster-fail2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-320x740-text130-poster-success.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-opening.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-answered.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-pause-collapsed.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-pause-expanded.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-pause-rules-end.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-poster-fail1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-poster-fail2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text100-poster-success.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-opening.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-answered.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-pause-collapsed.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-pause-expanded.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-pause-rules-end.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-poster-fail1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-poster-fail2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-390x844-text130-poster-success.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-opening.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-answered.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-pause-collapsed.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-pause-expanded.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-pause-rules-end.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-poster-fail1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-poster-fail2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-1280x800-text100-poster-success.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-married-390x844-text100-natural-reward1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-320x568-text100-natural-reward1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-740x320-text200-natural-reward1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-exam-1280x800-text130-natural-reward1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-graduate-320x740-text130-natural-reward1.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-married-390x844-text100-natural-reward2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-740x320-text200-natural-reward2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-320x568-text100-natural-reward2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-exam-1280x800-text130-natural-reward2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-married-390x844-text100-natural-empty.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-740x320-text200-natural-empty.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-exam-1280x800-text130-natural-empty.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-320x568-text100-natural-empty.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-graduate-320x740-text130-natural-empty.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-graduate-320x740-text130-natural-reward2.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-graduate-320x740-text130-natural-all-disabled.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-married-390x844-text100-natural-all-disabled.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-740x320-text200-natural-all-disabled.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-320x568-text100-natural-all-disabled.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-exam-1280x800-text130-natural-all-disabled.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-married-390x844-text100-natural-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-740x320-text200-natural-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-exam-1280x800-text130-natural-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-320x568-text100-natural-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-married-390x844-text100-200percent-full-quote.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-exam-1280x800-text130-200percent-full-quote.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-740x320-text200-200percent-full-quote.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-single-320x568-text100-200percent-full-quote.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-graduate-320x740-text130-natural-result.png",
+    "tests/stability-v5/2026-11-18T09-31-12-202Z-graduate-320x740-text130-200percent-full-quote.png"
+  ],
+  "errors": [],
+  "limits": [
+    "No physical phone, WeChat, screen reader, or human listening test. Canvas failure branches are induced, not actual resource exhaustion.",
+    "Actual Chrome hidden transition did not occur; automatic background pause remains unverified."
+  ],
+  "passed": true
+}

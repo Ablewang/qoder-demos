@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_500.jpg",
+  "id": "14bed8ba3118c47df88f",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "真·破甲一击",
+  "bytes": 1761,
+  "sha256": "6e55b8ee6ead255aaf58c57a3bc2b403ad3eceb65fae51f42a8c09323b9f806c",
+  "fetchedAt": "2026-11-18T08:35:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_500.jpg",
+  "path": "assets/14bed8ba3118c47df88f.jpg"
+}

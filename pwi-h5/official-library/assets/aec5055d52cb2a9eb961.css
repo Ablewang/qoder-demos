@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*******author:Tongyan.Guo**************/
+html{min-width:1002px;}
+body{ margin:0; padding:0; font-size:12px; font-family:"宋体",Arial, Helvetica, sans-serif; background-color:#2a2f44;}
+div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,textarea{ margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+area{outline:none;}
+img{ border:0;}
+ol,ul{list-style:none;}
+a{font-family:"宋体",Arial, Helvetica, sans-serif; text-decoration:none;outline:none;}
+a:hover{ text-decoration:underline;}
+.clearfix:after {content:"";display:block;height:0;clear:both;} 
+.clearfix {zoom:1;}
+.bg_01{ background:url(../images/bg_01.jpg) center top no-repeat;}
+.bg_02{ background:url(../images/bg_02.jpg) center 726px no-repeat;}
+.rel1002{ position:relative; width:1002px; margin:0 auto; overflow:hidden;}
+.img_banner{ position:relative; width:1002px; margin:0 auto; overflow:hidden;}
+.img_banner img{ float:left;}
+
+.a_01,.canyu,.more_01,.more_02,.taidai{ position:absolute; text-indent:-9999px; background:url(about:blank); }
+.a_01{ width:210px; height:65px; left:0; top:136px;  }
+.canyu{ width:158px; height:39px; left:743px; top:413px; }
+.more_01,.more_02{ width:297px; height:79px; top:975px;  }
+.more_01{ left:303px; }
+.more_02{ left:616px; }
+.taidai{ width:238px; height:56px; left:643px; top:1362px; }
+#video_box{ position:absolute; left:303px; top:470px; width:610px; height:500px; overflow:hidden; }
+.weibonr{ position:absolute; width:610px; height:295px; left:303px; top:1064px; }
+.over_ul{ position:absolute; left:318px; top:335px; width:610px; }
+.over_ul li{ width:55px; height:73px; margin:2px 2px 0 0; float:left; display:inline; overflow:hidden; cursor:pointer; }
+.over_ul li img{ width:32px; height:32px; margin:0 auto; display:block; }
+.over_ul li span{width:55px; display:block; height:41px; overflow:hidden; text-align:center; color:#b1a58a;  }
+/*.img_list li a.por{position:relative; }
+.pop_font{display:none; position:absolute; width:230px; padding:10px; top:16px; background:#a8a9a9; border:1px solid #a8a9a9; color:#000; line-height:18px; text-align:left;}*/
+#tip1,#tip2,#tip3,#tip4,#tip5,#tip6,#tip7,#tip8,#tip9,#tip10{ display:none; position:absolute; width:230px; padding:10px; background:#a8a9a9; border:1px solid #a8a9a9; color:#000; line-height:18px; text-align:left; top:295px; }
+#tip1{ left:200px; }
+#tip2{ left:250px;}
+#tip3{ left:300px;}
+#tip4{ left:350px; }
+#tip5{ left:400px;}
+#tip6{ left:450px;}
+#tip7{ left:500px; }
+#tip8{ left:550px;}
+#tip9{ left:600px;}
+#tip10{ left:650px;}

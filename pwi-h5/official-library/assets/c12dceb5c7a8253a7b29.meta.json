@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_387.jpg",
+  "id": "c12dceb5c7a8253a7b29",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·狂龙斩<em>（入魔）</em>",
+  "bytes": 1665,
+  "sha256": "cf9c05e92483f6f7293814216541b448897eaeb8bb812239c300be2f708c1764",
+  "fetchedAt": "2026-11-18T08:34:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_387.jpg",
+  "path": "assets/c12dceb5c7a8253a7b29.jpg"
+}

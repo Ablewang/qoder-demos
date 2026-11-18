@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_668.jpg",
+  "id": "3cb71028f44f8d3b85ed",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "真·妖煞击<em>（升仙）</em>",
+  "bytes": 1763,
+  "sha256": "8ebcabc3f3744ddf8d6e835f8e388283f397a04d3abeee851d4b2eab453a23bd",
+  "fetchedAt": "2026-11-18T08:35:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_668.jpg",
+  "path": "assets/3cb71028f44f8d3b85ed.jpg"
+}

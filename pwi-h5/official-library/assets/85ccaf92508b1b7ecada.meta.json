@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27628.jpg",
+  "id": "85ccaf92508b1b7ecada",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "狂· 绊腿斩<em>（入魔）</em> ",
+  "bytes": 1160,
+  "sha256": "3d397cfbe1399571afb23bafe505df74ca525d558c2f4794ddf24d551703dfef",
+  "fetchedAt": "2026-11-18T08:36:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27628.jpg",
+  "path": "assets/85ccaf92508b1b7ecada.jpg"
+}

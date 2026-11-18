@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131225/10021387939244381.jpg",
+  "alt": "图片: 图2：圣诞节女装.jpg",
+  "kind": "img",
+  "id": "929d7a3896fe11d9fd38",
+  "status": "ok",
+  "parents": [
+    "5f762616aae8e52dd524"
+  ],
+  "bytes": 51386,
+  "sha256": "035c467583f280ceb325b38e9b93e4dfd53d4cd6398b999d2e82838c376431c0",
+  "fetchedAt": "2026-11-18T08:23:11+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131225/10021387939244381.jpg",
+  "path": "assets/929d7a3896fe11d9fd38.jpg"
+}

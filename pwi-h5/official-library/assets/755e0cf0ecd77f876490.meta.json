@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130123/10021358903885310.jpg",
+  "alt": "图片: 图5：春节任务.jpg",
+  "kind": "img",
+  "id": "755e0cf0ecd77f876490",
+  "status": "ok",
+  "parents": [
+    "9066c33eeeda8283dd07"
+  ],
+  "bytes": 58813,
+  "sha256": "8eeb1884019716b5e50ceddaaa992767b615a47ef6cfcb389f71912a06565f31",
+  "fetchedAt": "2026-11-18T08:23:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130123/10021358903885310.jpg",
+  "path": "assets/755e0cf0ecd77f876490.jpg"
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201103/bp/images/zoom_btn.gif",
+  "id": "e608260fb198432e5d6f",
+  "status": "ok",
+  "parents": [
+    "2a57cf7d233caadf9b33",
+    "a1250a87e9c9964d7971",
+    "39e541ba79904034117c",
+    "8d3e83b72711ebe48ed4",
+    "fc1bd1184d32977d8ef8",
+    "7d1f04ccb3ecb19618de",
+    "54077598110dd21a8ab3",
+    "041600a6747d0e6956af",
+    "4caddf883e97ec7726fc"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201103/bp/style/jqUI.css",
+  "bytes": 171,
+  "sha256": "0d90ad53ba224e852000d339152028e4ecfb091742fd6636405ddfa606f18bee",
+  "fetchedAt": "2026-11-18T08:38:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://event51.wanmei.com/w2i/201103/bp/images/zoom_btn.gif",
+  "path": "assets/e608260fb198432e5d6f.gif"
+}

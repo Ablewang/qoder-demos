@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201304/treasure/images/hover.png",
+  "id": "6aced9d5b9e93caa0e0c",
+  "status": "ok",
+  "parents": [
+    "86fd3da270244a3de5ce"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201304/treasure/style/master.css",
+  "bytes": 3755,
+  "sha256": "60d30736567547bbd1dae8ad0986900416b5ed4dcf10488f9622b7ac17095803",
+  "fetchedAt": "2026-11-18T08:38:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201304/treasure/images/hover.png",
+  "path": "assets/6aced9d5b9e93caa0e0c.png"
+}

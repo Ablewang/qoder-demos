@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/birenpin_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "15ed59d11351b1b21b8d",
+  "status": "ok",
+  "parents": [
+    "df57a5295c495ab8e68e"
+  ],
+  "bytes": 3808,
+  "sha256": "f218466745488e83216c9ff40d823c546a099a79a27c84df84538e8fba109597",
+  "fetchedAt": "2026-11-18T08:22:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/birenpin_button.jpg",
+  "path": "assets/15ed59d11351b1b21b8d.jpg"
+}

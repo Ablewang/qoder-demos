@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_398.jpg",
+  "id": "1101febe06103739f886",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·疾风刺<em>（升仙）</em>",
+  "bytes": 1591,
+  "sha256": "be39914f9e8d0fc79625abeb84cab50bde1af2d56262ebf5ac768cb794c2185a",
+  "fetchedAt": "2026-11-18T08:34:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_398.jpg",
+  "path": "assets/1101febe06103739f886.jpg"
+}

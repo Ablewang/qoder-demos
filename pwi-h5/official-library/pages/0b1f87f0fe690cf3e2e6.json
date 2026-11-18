@@ -1,0 +1,315 @@
+{
+  "id": "0b1f87f0fe690cf3e2e6",
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/weapon_09.htm",
+  "title": "天怒神罚16阶顶级橙武-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "bd6a4da0ea55ad2a5bf5",
+    "ba2b70e5682e415ca7d4"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "4334842585f9869642cf9cf6f82f76141905d2f00972d9016221a2ad083d6f4a",
+  "bytes": 4672,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0b1f87f0fe690cf3e2e6.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "何人共与醉\n武器类型\n幡杖\n品阶\n16\n等级限制\n80\n力量限制\n56\n敏捷限制\n0\n体力限制\n0\n灵力限制\n280\n物理攻击\n787~962\n法术攻击\n955~1773\n附加属性\n吟唱时间\n-3%\n攻击等级\n+50\n致命一击\n+2%\n生命值\n+205\n生命值\n+205\n生命值\n+205",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "何人共与醉",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "武器类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幡杖",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "力量限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "56",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体力限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵力限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "280",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "787~962",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "955~1773",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "吟唱时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-3%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致命一击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+2%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+205",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+205",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生命值",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+205",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/main_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_l.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/pic_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_r.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<table>\n<tr>\n<td>\n<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</td>\n</tr>\n</table>\n\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm</a></p>\n</div>\n\n\n\n<div>\n\t<img src=\"assets/1d986f02125b103461ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<div>\n\t\t<img src=\"assets/3ed5df25146d4b541d8f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\n\t\t<div>\n\t\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm</a></p>\n\t\t</div>\n\t\t\n\t    <img src=\"assets/0555f936118a830aea57.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n\t\n\t<div>\n\t\t<div>\n\t<img src=\"assets/0c1f37c9e48701f1f9a3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/d8f1d98a8cecc68e17c2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/8d887fafc3c2ff37dab4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/54c0e053473b038342ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/ce6bb9a354a297803678.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/4f412405a278678d8354.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<div>\n\t\t<table>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"6\">\n\t\t\t\t<span>何人共与醉</span></td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>武器类型</td>\n\t\t\t\t<td>幡杖</td>\n\t\t\t\t<td>品阶</td>\n\t\t\t\t<td>16</td>\n\t\t\t\t<td>等级限制</td>\n\t\t\t\t<td>80</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>力量限制</td>\n\t\t\t\t<td>56</td>\n\t\t\t\t<td>敏捷限制</td>\n\t\t\t\t<td>0</td>\n\t\t\t\t<td>体力限制</td>\n\t\t\t\t<td>0</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>灵力限制</td>\n\t\t\t\t<td>280</td>\n\t\t\t\t<td>物理攻击</td>\n\t\t\t\t<td>787~962</td>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>955~1773</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"6\">附加属性</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>吟唱时间</td>\n\t\t\t\t<td>-3%</td>\n\t\t\t\t<td>攻击等级</td>\n\t\t\t\t<td>+50</td>\n\t\t\t\t<td>致命一击</td>\n\t\t\t\t<td>+2%</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>生命值</td>\n\t\t\t\t<td>+205</td>\n\t\t\t\t<td>生命值</td>\n\t\t\t\t<td>+205</td>\n\t\t\t\t<td>生命值</td>\n\t\t\t\t<td>+205</td>\n\t\t\t</tr>\n\t\t</table>\n\t</div>\n\t<img src=\"assets/6323c8de9af39aa4b1f8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> </div>\n\t\t<img src=\"assets/a63ec9b2976ce2031ffc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n</div>\n\n<table>\n<tr>\n<td><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></td>\n</tr>\n</table>\n\n\n",
+  "dataPath": "pages/0b1f87f0fe690cf3e2e6.json",
+  "imageCount": 11,
+  "tableCount": 3,
+  "downloadPath": "downloads/0b1f87f0fe690cf3e2e6.js"
+}

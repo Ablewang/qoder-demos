@@ -1,0 +1,450 @@
+{
+  "id": "6dfa9feea78ce5fc8134",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq03.htm",
+  "title": "精练宝典 -《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5",
+    "f3fba696107bbedaf3ea",
+    "de6ded2fb4eb68ce525c",
+    "9a0413ce0568e20f31a3",
+    "02e5d3da43fb43417c6a",
+    "6dfa9feea78ce5fc8134",
+    "a0d736b1f895c8a9ac74",
+    "7423dd05d3a0993cf2d1",
+    "79d7a9f0b0425180fdfd",
+    "8dc6c6b7c0e7ba9af483",
+    "a70f75ea8408096665b5",
+    "6ef60683af49b980d73c"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "983beb4bfcd7cd00af2b77af01e4149442e31b43626f72186c63a980f9d286ee",
+  "bytes": 7616,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/6dfa9feea78ce5fc8134.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "如何进行装备精练？\n精练辅助道具都有什么？\n怎样获得高级龙珠？\n如何给装备进行打孔？\n怎么用天人合一符绑定装备？\n如何进行装备精练转移？\n如何给装备镶嵌魂石？\n怎么获得高级魂石？\n怎样获得高级龙珠？\n1-5星龙珠可在乾坤袋内购得，5星以上龙珠则需用低级龙珠在祖龙城“合成大师”处通过合成获得。\n龙珠合成表\n物品名称\n合成材料\n元宝价格\n1星龙珠\n1星龙珠x1\n1\n2星龙珠\n1星龙珠x4\n4\n3星龙珠\n2星龙珠x2 1星龙珠x2\n10\n4星龙珠\n3星龙珠x2 2星龙珠x1 1星龙珠x1\n25\n5星龙珠\n4星龙珠x2 3星龙珠x1\n60\n6星龙珠\n5星龙珠x2 3星龙珠x1\n130\n7星龙珠\n6星龙珠x1 5星龙珠x1 4星龙珠x1\n215\n8星龙珠\n7星龙珠x1 6星龙珠x1 5星龙珠x1\n405\n9星龙珠\n8星龙珠x1 7星龙珠x1 6星龙珠x1\n750\n碧海龙珠\n9星龙珠x1 8星龙珠x1 7星龙珠x1\n1370\n幻彩龙珠\n碧海龙珠x1 9星龙珠x1 8星龙珠x1\n2525\n赤焰龙珠\n幻彩龙珠x1 碧海龙珠x1 9星龙珠x1\n4645",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "合成材料",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元宝价格",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1星龙珠x4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "3星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2星龙珠x2 1星龙珠x2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "4星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3星龙珠x2 2星龙珠x1 1星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "5星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4星龙珠x2 3星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "6星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5星龙珠x2 3星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "130",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "7星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6星龙珠x1 5星龙珠x1 4星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "215",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "8星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7星龙珠x1 6星龙珠x1 5星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "405",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "9星龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8星龙珠x1 7星龙珠x1 6星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "750",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "碧海龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9星龙珠x1 8星龙珠x1 7星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1370",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻彩龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碧海龙珠x1 9星龙珠x1 8星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2525",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "赤焰龙珠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "幻彩龙珠x1 碧海龙珠x1 9星龙珠x1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4645",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/main.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/jsp/member/register.jsp",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/client/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://pay.wanmei.com/e/epage/setup_2_wanmei2.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://bbs.w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq.htm",
+      "label": "如何进行装备精练？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq02.htm",
+      "label": "精练辅助道具都有什么？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq03.htm",
+      "label": "怎样获得高级龙珠？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq04.htm",
+      "label": "如何给装备进行打孔？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq05.htm",
+      "label": "怎么用天人合一符绑定装备？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq06.htm",
+      "label": "如何进行装备精练转移？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq07.htm",
+      "label": "如何给装备镶嵌魂石？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/faq08.htm",
+      "label": "怎么获得高级魂石？",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/strenthen.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/soulstone.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/compare.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq03_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/nav.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/none.gif",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/info_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/sel_new.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq03_01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p></div>\n<div>\n<div>\n<div>\n    <div>\n                <div></div>\n                <div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57b9674c5c01d917be6e.gif\" alt=\"完美国际\" loading=\"lazy\"></a></div>\n    </div>\n    \n    <div>\n    \t<img src=\"assets/0bce2fe6a932385c58fb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n        \t<a href=\"https://w2i.wanmei.com/main.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://passport.wanmei.com/jsp/member/register.jsp\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"https://w2i.wanmei.com/download/client/index.htm\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://pay.wanmei.com/e/epage/setup_2_wanmei2.html\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\n\t\t\t<a href=\"http://bbs.w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/28a82858dc7cd9f465cb.gif\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>\t\n\n    </div>\n    <div>\n    \t<img src=\"assets/2a25d6aef057604b7df5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n     \t<img src=\"assets/7eca6700ab4096d269a4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    \t<img src=\"assets/a9fe6690a68ffe0b0845.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    \t<img src=\"assets/f909a3dc6e734dfbdc54.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    </div>\n    \n    <div>\n    \t<img src=\"assets/68c77d38d4a1284b4ac1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n    </div>\n    \n    <div>\n    \t<div>\n            <div>\n            <div>\n            <div>\n                <div>\n                    <img src=\"assets/fc492e321e2197e54d91.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                </div>\n                <div>\n                      <ul>\n                        <li><a href=\"#page=9a0413ce0568e20f31a3\">如何进行装备精练？</a></li>\n                    \t<li><a href=\"#page=02e5d3da43fb43417c6a\">精练辅助道具都有什么？</a></li>\n                    \t<li><a href=\"#page=6dfa9feea78ce5fc8134\">怎样获得高级龙珠？</a></li>\n                    \t<li><a href=\"#page=a0d736b1f895c8a9ac74\">如何给装备进行打孔？</a></li>\n                    \t<li><a href=\"#page=7423dd05d3a0993cf2d1\">怎么用天人合一符绑定装备？</a></li>\n                    \t<li><a href=\"#page=79d7a9f0b0425180fdfd\">如何进行装备精练转移？</a></li>\n                    \t<li><a href=\"#page=8dc6c6b7c0e7ba9af483\">如何给装备镶嵌魂石？</a></li>\n                    \t<li><a href=\"#page=a70f75ea8408096665b5\">怎么获得高级魂石？</a></li>\n                    \t\n\n                    </ul>\n                    <div></div>\n                    <dl>\n                    <dt><a href=\"#page=6ef60683af49b980d73c\"><img src=\"assets/8232fb87f7bf54fafce3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=ddb9fc3f70957c28e9b5\"><img src=\"assets/7970e7d6beb0e016b666.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=a617111463f23ad7d400\"><img src=\"assets/7d9390847630567c4122.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    <dt><a href=\"#page=98f433995184914eec55\"><img src=\"assets/94315e8fa52c660fa97b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></dt>\n                    </dl>\n                </div>\n             </div>\n            </div>\n            </div>\n        </div>\n        <div>\n        \t\n            <div>\n            <div>\n            <div>\n<p><span>怎样获得高级龙珠？</span></p>\n<p> </p>\n<p>　　1-5星龙珠可在乾坤袋内购得，5星以上龙珠则需用低级龙珠在祖龙城“合成大师”处通过合成获得。</p>\n<p> </p>\n<p><a href=\"https://w2i.wanmei.com/hd/wi_itemsdemo/images/pic/faq03_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/e32cc1f5f2f8c644a2c8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\n<p> </p>\n<p>　　<b>龙珠合成表</b></p>\n<p> </p>\n<table>\n  <tr>\n    <td><p>物品名称</p></td>\n    <td><p>合成材料</p></td>\n    <td><p>元宝价格</p></td>\n  </tr>\n  <tr>\n    <td><p>1星龙珠</p></td>\n    <td><p>1星龙珠x1</p></td>\n    <td><p>1</p></td>\n  </tr>\n  <tr>\n    <td><p>2星龙珠</p></td>\n    <td><p>1星龙珠x4</p></td>\n    <td><p>4</p></td>\n  </tr>\n  <tr>\n    <td><p>3星龙珠</p></td>\n    <td><p>2星龙珠x2 1星龙珠x2</p></td>\n    <td><p>10</p></td>\n  </tr>\n  <tr>\n    <td><p>4星龙珠</p></td>\n    <td><p>3星龙珠x2 2星龙珠x1 1星龙珠x1</p></td>\n    <td><p>25</p></td>\n  </tr>\n  <tr>\n    <td><p>5星龙珠</p></td>\n    <td><p>4星龙珠x2 3星龙珠x1</p></td>\n    <td><p>60</p></td>\n  </tr>\n  <tr>\n    <td><p>6星龙珠</p></td>\n    <td><p>5星龙珠x2 3星龙珠x1</p></td>\n    <td><p>130</p></td>\n  </tr>\n  <tr>\n    <td><p>7星龙珠</p></td>\n    <td><p>6星龙珠x1 5星龙珠x1 4星龙珠x1</p></td>\n    <td><p>215</p></td>\n  </tr>\n  <tr>\n    <td><p>8星龙珠</p></td>\n    <td><p>7星龙珠x1 6星龙珠x1 5星龙珠x1</p></td>\n    <td><p>405</p></td>\n  </tr>\n  <tr>\n    <td><p>9星龙珠</p></td>\n    <td><p>8星龙珠x1 7星龙珠x1 6星龙珠x1</p></td>\n    <td><p>750</p></td>\n  </tr>\n  <tr>\n    <td><p>碧海龙珠</p></td>\n    <td><p>9星龙珠x1 8星龙珠x1 7星龙珠x1</p></td>\n    <td><p>1370</p></td>\n  </tr>\n  <tr>\n    <td><p>幻彩龙珠</p></td>\n    <td><p>碧海龙珠x1 9星龙珠x1 8星龙珠x1</p></td>\n    <td><p>2525</p></td>\n  </tr>\n  <tr>\n    <td><p>赤焰龙珠</p></td>\n    <td><p>幻彩龙珠x1 碧海龙珠x1 9星龙珠x1</p></td>\n    <td><p>4645</p></td>\n  </tr>\n</table>\n<p> </p>\n            </div>\n            </div>\n            </div>\n            \n        </div>\n    </div>\n\n</div>\n</div>\n</div>\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n<div>\n \n\n</div>\n",
+  "dataPath": "pages/6dfa9feea78ce5fc8134.json",
+  "imageCount": 14,
+  "tableCount": 1,
+  "downloadPath": "downloads/6dfa9feea78ce5fc8134.js"
+}

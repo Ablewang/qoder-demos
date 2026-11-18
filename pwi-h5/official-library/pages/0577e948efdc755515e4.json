@@ -1,0 +1,200 @@
+{
+  "id": "0577e948efdc755515e4",
+  "url": "https://event51.wanmei.com/w2i/201208/war/index.html",
+  "title": "英雄为女王而战 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 5,
+  "parents": [
+    "c66e7f0ce8d74a18d4c0",
+    "0577e948efdc755515e4"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/index.html",
+  "fetchedAt": "2026-11-18T08:17:02+00:00",
+  "sha256": "ba28e861904cf7e07186c858ba502c9d8ec29451bf8e86134bb9d4ced34e7a41",
+  "bytes": 6919,
+  "rawPath": "raw/0577e948efdc755515e4.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "服务器大区\n服务器名称\n开服时间\n辉煌电信\n冷月\n9月8日\n辉煌网通\n白帝\n9月6日\n辉煌电信\n青帝\n9月6日\n辉煌网通\n赤帝\n9月6日",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "服务器大区",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "服务器名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "开服时间",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌电信",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冷月",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月8日",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌网通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "白帝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月6日",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌电信",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "青帝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月6日",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌网通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "赤帝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9月6日",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/red_emperor.html",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/index.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://passport.wanmei.com/fastreg/regbonusdef.jsp?style=w2i/w2i_reg_120830&to=w2i&g=3&c=GJCWNMGUZHY9XR",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/images/topimg01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/images/topimg02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/images/topimg03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/images/topimg04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/pices/1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/pices/2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/pices/3.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+      "alt": "",
+      "kind": "link"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/js/jquery-1.7.2.min.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/js/jquery.easing.1.3.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/js/index.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201208/war/js/zcm.js",
+      "alt": "",
+      "kind": "script"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div> \r\n  \r\n  <div>\r\n    <div>\r\n      <div>\r\n        \r\n      </div>\r\n      <div>\r\n        <img src=\"assets/f8ec06157a6ecf0e4d00.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/88d6e6b26f9c0d2379f5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        \r\n          \r\n        \r\n        <img src=\"assets/67fcdfb5dd26ea9af0df.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/e917d90e336fc6f044c6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <table>\r\n          <tr>\r\n            <th>服务器大区</th>\r\n            <th>服务器名称</th>\r\n            <th>开服时间</th>\r\n          </tr>\r\n          <tr>\r\n            <td>辉煌电信</td>\r\n            <td>冷月</td>\r\n            <td>9月8日</td>\r\n          </tr>\r\n          <tr>\r\n            <td>辉煌网通</td>\r\n            <td>白帝</td>\r\n            <td>9月6日</td>\r\n          </tr>\r\n          <tr>\r\n            <td>辉煌电信</td>\r\n            <td>青帝</td>\r\n            <td>9月6日</td>\r\n          </tr>\r\n          <tr>\r\n            <td>辉煌网通</td>\r\n            <td>赤帝</td>\r\n            <td>9月6日</td>\r\n          </tr>\r\n        </table>\r\n\r\n      </div>\r\n      <div> \r\n        \r\n      \t<a href=\"#page=0577e948efdc755515e4\"></a>\r\n        <a href=\"#page=0577e948efdc755515e4\"></a> \r\n        <a href=\"#page=0577e948efdc755515e4\"></a> \r\n        <a href=\"#page=0577e948efdc755515e4\"></a> \r\n        <a href=\"#page=0577e948efdc755515e4\"></a> \r\n        <a href=\"#page=0577e948efdc755515e4\"></a> \r\n         \r\n        \r\n        \r\n<div>\r\n                <div><span></span></div>\r\n                <div>\r\n                  <p class=\"source-reference\">嵌入资源：<a href=\"http://passport.wanmei.com/fastreg/regbonusdef.jsp?style=w2i/w2i_reg_120830&amp;to=w2i&amp;g=3&amp;c=GJCWNMGUZHY9XR\" rel=\"noreferrer\">http://passport.wanmei.com/fastreg/regbonusdef.jsp?style=w2i/w2i_reg_120830&amp;to=w2i&amp;g=3&amp;c=GJCWNMGUZHY9XR</a></p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div>\r\n        <div>\r\n          <ul>\r\n            <li><a href=\"#page=0577e948efdc755515e4\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201208/war/pices/1.jpg]</span></a></li>\r\n            <li><a href=\"#page=0577e948efdc755515e4\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201208/war/pices/2.jpg]</span></a></li>\r\n            <li><a href=\"#page=0577e948efdc755515e4\"><span class=\"missing-image\">[图片未获取：https://event51.wanmei.com/w2i/201208/war/pices/3.jpg]</span></a></li>\r\n          </ul>\r\n        </div>\r\n       \r\n      </div>\r\n    </div>\r\n  </div>\r\n  \r\n  <div> \r\n    \r\n    <div>\r\n      <div>\r\n        <div>\r\n          <div>\r\n          \r\n          <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        \r\n        <div></div>\r\n      </div>\r\n    </div>\r\n     \r\n    \r\n    <div>\r\n      <div>\r\n        <div>\r\n          <div>\r\n          \r\n          <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n          \r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n\r\n            \r\n            <div>\r\n              <p class=\"source-reference\">嵌入资源：已记录于资源索引</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        \r\n        <div></div>\r\n      </div>\r\n    </div>\r\n     \r\n  </div>\r\n</div>",
+  "dataPath": "pages/0577e948efdc755515e4.json",
+  "imageCount": 7,
+  "tableCount": 1,
+  "downloadPath": "downloads/0577e948efdc755515e4.js"
+}

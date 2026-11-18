@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/enter/js/zcm.js",
+  "alt": "",
+  "kind": "script",
+  "id": "48bd35d6e3fdb528b059",
+  "status": "ok",
+  "parents": [
+    "2ed37cf6dbb67bef702a"
+  ],
+  "bytes": 1068,
+  "sha256": "b3f0e875dfc6c23636a534f33a39adaa1140869c772da991bf3e17b172111692",
+  "fetchedAt": "2026-11-18T08:24:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/enter/js/zcm.js",
+  "path": "assets/48bd35d6e3fdb528b059.js"
+}

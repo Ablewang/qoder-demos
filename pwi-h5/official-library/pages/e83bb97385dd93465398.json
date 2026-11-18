@@ -1,0 +1,112 @@
+{
+  "id": "e83bb97385dd93465398",
+  "url": "https://w2i.wanmei.com/event/200805/newline/iframe_header.htm",
+  "title": "《完美世界国际版》新主线任务揭密",
+  "category": "任务介绍",
+  "section": "任务系统",
+  "depth": 1,
+  "parents": [
+    "5186b0b0b3c3773b5d31",
+    "1fe80fc9d9958da87b08",
+    "992deb2b04eb83864a12",
+    "058e746aaf0da73a1ed5",
+    "8620a35de1f02343fc2b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "c2af1c1ddbc4d01b66ff1854b4a3423d630cf5476183f4535e06dd9f4adeb901",
+  "bytes": 2268,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/e83bb97385dd93465398.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/header_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/header_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/header_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/header_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/header_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/images/header_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\t\r\n\t<div></div>\r\n   \t<div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><span class=\"missing-image\">[图片未获取：http://images.wanmei.com/huodong/images/w2i/logo/transparent.gif]</span></a></div>\r\n\t\r\n\r\n\t<img src=\"assets/53055034c6f32e9e1bc0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t<img src=\"assets/3539c1692a75e7910e90.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t\r\n        \r\n        \r\n        \r\n        \r\n\r\n\t<img src=\"assets/13ddd6e2179336ccccac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        \r\n        \r\n        \r\n        \r\n        \r\n\r\n<img src=\"assets/36c4d34e776d107482ea.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t<img src=\"assets/7b69d05cd442c6ad7cd3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t<img src=\"assets/6d7f00a3431f6e0bb943.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\t\r\n",
+  "dataPath": "pages/e83bb97385dd93465398.json",
+  "imageCount": 7,
+  "tableCount": 0,
+  "downloadPath": "downloads/e83bb97385dd93465398.js"
+}

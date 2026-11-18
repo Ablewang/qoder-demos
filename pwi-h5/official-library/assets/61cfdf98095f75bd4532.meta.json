@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_314.jpg",
+  "id": "61cfdf98095f75bd4532",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "妖雾击",
+  "bytes": 1328,
+  "sha256": "b044d3df77231116bd06fbe1fe151e9366b68b3c5e0fbd61db3328c3d7c5da65",
+  "fetchedAt": "2026-11-18T08:35:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_314.jpg",
+  "path": "assets/61cfdf98095f75bd4532.jpg"
+}

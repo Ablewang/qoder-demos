@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_538.jpg",
+  "id": "b7b0b6f7e6c58ab8f6ae",
+  "status": "ok",
+  "parents": [
+    "2d71e0241a8a0ad65ce0"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaoshou.js",
+  "alt": "真·变身强化",
+  "bytes": 1724,
+  "sha256": "06790da0fe8a5b7df6d9ec26ec884ef9c3bf1e38bf158ac6f6741df84621c6ad",
+  "fetchedAt": "2026-11-18T08:35:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaoshou/img_538.jpg",
+  "path": "assets/b7b0b6f7e6c58ab8f6ae.jpg"
+}

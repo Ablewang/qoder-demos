@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/first/jiaoyi013001.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "57560ff1dad041c0d00c",
+  "status": "ok",
+  "parents": [
+    "ec2daf258dc40cc656cc",
+    "0facc20e25fe91904261"
+  ],
+  "bytes": 80229,
+  "sha256": "00a40cd84d1d11c7194e53bb26d7879916b343ef95d49240eddfb80ccbc33efa",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/57560ff1dad041c0d00c.jpg"
+}

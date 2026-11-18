@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_100.jpg",
+  "id": "4eace453e81422f46c69",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "缩地术",
+  "bytes": 1370,
+  "sha256": "2fcdd8795dd9ab85a43ba47b400f09c518248b40bec5cf4dabf2f5b972987df2",
+  "fetchedAt": "2026-11-18T08:34:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_100.jpg",
+  "path": "assets/4eace453e81422f46c69.jpg"
+}

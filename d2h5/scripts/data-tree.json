@@ -1,0 +1,911 @@
+{
+	"default": null,
+	"files": [
+		{
+			"name": "/.eslintrc.js",
+			"hash": "0QHuGQ03ylbdBJ+Fdhkdqu+gviK1XWUPf/4REdV6T70=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1808
+		},
+		{
+			"name": "/.gitignore",
+			"hash": "/cHn5mAtAJFNXcSycaXfwgLyEOR+1Kt6G8rZVx3ECmg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5
+		},
+		{
+			"name": "/_config.yml",
+			"hash": "kTMBN/ZTdpe+XPb08FZRuUXZIDJcvqaWAdlePQamgBk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 26
+		},
+		{
+			"name": "/compile.js",
+			"hash": "/EJw2B79Gwsx/bfSGg9VeoPbNljGbjo43kfCp0hgm3M=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11663
+		},
+		{
+			"name": "/docs/_config.yml",
+			"hash": "AZKRJlAHvSeLJTqWeihoGsRM4TKswhf05QnHSd9ujco=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 26
+		},
+		{
+			"name": "/docs/armor.js",
+			"hash": "a6/JYZjyNOhmFqWD19GpZ2OR+0J1TdcnOwkGLjbY02w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4768
+		},
+		{
+			"name": "/docs/Avqest.ttf",
+			"hash": "WSml/WwW3xcGntfPV7b/YbvjyVnZ71mzASCjhF2Y/uY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 51536
+		},
+		{
+			"name": "/docs/css/d2font.css",
+			"hash": "YD7m8jMZ6qYIJDvOp63oFjXE1fJh6jQwzYPwrB2sXQs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 158
+		},
+		{
+			"name": "/docs/drops.html",
+			"hash": "DuYvMnBWri13Rn3BayIfHICEjS38PuOREy3WKWbni+0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5257
+		},
+		{
+			"name": "/docs/drops.js",
+			"hash": "lbIfDdfs5UjI8QqzBQhc48DIMJ8M6dTP7zS3sRiysHE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 26288
+		},
+		{
+			"name": "/docs/effort.css",
+			"hash": "85ms/XTEy79sPEMrgSGvcCa0LrZXb/OOOHMVGowUm8c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1575
+		},
+		{
+			"name": "/docs/effort.js",
+			"hash": "HqGt2oCRF4XQjy9iS1gAxUtZAmjPsy6jJaUlV5c5Dk8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 10655
+		},
+		{
+			"name": "/docs/elem-effort.html",
+			"hash": "BK+I6rFxh9OISMUyOCosbElhBJvTm8ow/XETrMmz8cw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 7211
+		},
+		{
+			"name": "/docs/images/0-0.svg",
+			"hash": "q9xJBplOAvB2IxPwBWkyLj4jBEQ84F3Uq+GP2xwawyM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/0-1.svg",
+			"hash": "sFlb2M5A5zW+z4yA5UR5VR8sY7xoJ7nY/st/SwLHcgQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1243
+		},
+		{
+			"name": "/docs/images/0-2.svg",
+			"hash": "/T2fYC4b34Bmn0AgbUZoxQWJ7LgsDPZcxxtNWE0swcA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1243
+		},
+		{
+			"name": "/docs/images/1-0.svg",
+			"hash": "4bMKku1RVbhZZKayPsXCRoou5jKrR7Utqv9Ox09aXco=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/1-1.svg",
+			"hash": "lW2SBuHPbywXRlGG8IZjnoNhFIN44odCuDTFo6TIf0w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/1-2.svg",
+			"hash": "DBABK8bPowmNLsm3ur8woK8GP5ON6yP9hGDWO8sUzBs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1243
+		},
+		{
+			"name": "/docs/images/2-0.svg",
+			"hash": "JwO57dKFt5MOXu5xK9LzbjqfnFZuXIbEvVxvnB9q7i4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1243
+		},
+		{
+			"name": "/docs/images/2-1.svg",
+			"hash": "KqayPsEfheJE8xqGOhXoDW4dS4xTXx80Gfic8hoaODI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 624
+		},
+		{
+			"name": "/docs/images/2-2.svg",
+			"hash": "FDb63AyvdYQHKwHE6CZXEbTnHGT0ldfaXl8Ikvcb4Js=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/3-0.svg",
+			"hash": "zwhwSstr0jsNFoU99ZoqHQ1k8DIo0LJ7ZStjmJHIsO0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1243
+		},
+		{
+			"name": "/docs/images/3-1.svg",
+			"hash": "V53rgJ05s35MZ99gA0UlUgLOlj1XxP5Uv4+ImZj3Eqc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/3-2.svg",
+			"hash": "tlWQcGvq60bgKcAQ1EYoSxYUqmXUy5N36zSCbK11Oh4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1346
+		},
+		{
+			"name": "/docs/images/4-0.svg",
+			"hash": "9rSPQg4miF9u7MtrDfxLAwSqUyStY3uNx/Aw+xMfw4A=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/4-1.svg",
+			"hash": "Cf7o4ev3+hEdOa9kZ3NS60iXntcgnrtIIUJob0cXjlE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/4-2.svg",
+			"hash": "ZgMv/aRmDDwYZbYlX9ROy8JMy9UZKQ5npp9Y3Yjmjqw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/5-0.svg",
+			"hash": "Rwp8hqKvpcn5InnFKjp+ZLiGO/esvHnwzgiWVhJ670g=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/5-1.svg",
+			"hash": "mHtl2IcC2eCJAykrOaELhQZ2mddtw6c00lUFhseY/5I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1347
+		},
+		{
+			"name": "/docs/images/5-2.svg",
+			"hash": "EHltnMGwqGUt04e8rgQIJFeq4rw56hR/VFfHQjrS+yE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 934
+		},
+		{
+			"name": "/docs/images/6-0.svg",
+			"hash": "sRsUKgQ3sCB7kCIlLvNC6fdcwsM7pB8VYeXiaP+ntF0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1244
+		},
+		{
+			"name": "/docs/images/6-1.svg",
+			"hash": "RSdpo5h9tEEkWwriszzOQK61GkBuNHrnua1jS8l5NPI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1244
+		},
+		{
+			"name": "/docs/images/6-2.svg",
+			"hash": "tTTLTH+I3eoZCEV4fL/qrGE/u1r3ZepAREHQBNzZb3k=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1244
+		},
+		{
+			"name": "/docs/images/AmSkillicon.png",
+			"hash": "HqMV+3UmoMERhW4vlXjDGezHoDJCqjztnn5wApYvRiY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 39398
+		},
+		{
+			"name": "/docs/images/AsSkillicon.png",
+			"hash": "MKuJNH4X8V0Urach91CILwzY3NYBJhpuvrhRT3PLsMk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 74757
+		},
+		{
+			"name": "/docs/images/BaSkillicon.png",
+			"hash": "waT0EEQFEkF7dycWeRJDBRxXcVEZqUYbS1WIH+LD1zY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 34882
+		},
+		{
+			"name": "/docs/images/DrSkillicon.png",
+			"hash": "mM50px+BchO0ZNqBHPr4csFPK+cVJwrkZ6lOZLDLoOo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 77444
+		},
+		{
+			"name": "/docs/images/NeSkillicon.png",
+			"hash": "t22X3MEQpjHBvMN9vAHCOGWWI6xXDxl9a8B5VR8hyPY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 34390
+		},
+		{
+			"name": "/docs/images/PaSkillicon.png",
+			"hash": "fy0yfES4ysTNzN1D2ymqV6JGLyRX4nNvlR+iKlz2A+c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 36908
+		},
+		{
+			"name": "/docs/images/Skillicon.png",
+			"hash": "6RTwp3kFZQqQt8HFY+B9hLuMK2QNyNxZBUCimFDrINA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 13950
+		},
+		{
+			"name": "/docs/images/SoSkillicon.png",
+			"hash": "9FMkQ0Xm/t4ClhL0GK1E0ajFhm1cbLoIy/TubqRR4jI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 35547
+		},
+		{
+			"name": "/docs/index.md",
+			"hash": "j8tCz0G4VKlxDiaXuN+TqgaWrjIX7a+9uU61AhUhnyg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 197
+		},
+		{
+			"name": "/docs/items.html",
+			"hash": "QaZsMavxy2q8PMhaFZu9kHn6E0FiCnkjQYbJBXA/xRA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 8624
+		},
+		{
+			"name": "/docs/skills.css",
+			"hash": "/KPVGsDrB5A+uW0JTgQ0peOXjVtxnbxGlou4WQ2quag=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 29462
+		},
+		{
+			"name": "/docs/skills.html",
+			"hash": "Wro1yHeVVdz+WPzmQfraxZDtLwfSBSbeapl2R7VgN6M=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5670
+		},
+		{
+			"name": "/docs/skills.js",
+			"hash": "I/RzyXavhyX8rUiCenATK6Tq5seLXZUd67+JDptvnyw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 64806
+		},
+		{
+			"name": "/docs/vue-setup.js",
+			"hash": "9fpdVsiYtn+kBZaaDFMmarq2jNqV2nmEagEP56Pqczo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 213
+		},
+		{
+			"name": "/docs/weapons.js",
+			"hash": "NAoSnZKZAc70mjgOm/2XjGgKZ9PsskFf7n6/4L4kGOs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6122
+		},
+		{
+			"name": "/font-example.html",
+			"hash": "+y11TuVW0/54ezl+cu5XgP4ks5j68vvO3RzOJhGtBjg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 749
+		},
+		{
+			"name": "/json/.gitkeep",
+			"hash": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 0
+		},
+		{
+			"name": "/json/aggregate.json",
+			"hash": "eV1Zr9Qn+4d2XhS4Y0d70nWajm36UrHV8K/iErY0zN4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4445762
+		},
+		{
+			"name": "/json/Aiparms.json",
+			"hash": "Ze6NPr54wN4etxN/moOqoUFDzz2iJuBmdvwXBp27rC0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4425
+		},
+		{
+			"name": "/json/Arena.json",
+			"hash": "MtVdnRULQ+LgWGmREw3BzuOmYCp0hEW3609n3JCSUmM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 193
+		},
+		{
+			"name": "/json/armor.json",
+			"hash": "3DT2zfONYpG7kRU7FTsMxTzzWjTQ6kGGFXgVQm8UeLk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 265064
+		},
+		{
+			"name": "/json/ArmType.json",
+			"hash": "OCnBsjCcGH8dP1AqEx0CpmCmjGBqBSvqVwFOk7Qu6nM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 209
+		},
+		{
+			"name": "/json/atomic.json",
+			"hash": "2qLsTJfG7UMXDfE3HM7haLkdFemnX3vKvp8qFwCb3Hs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 22197
+		},
+		{
+			"name": "/json/automagic.json",
+			"hash": "5LxopjxmeXHszuSS4QJD1D5947ZUsrxzI7WUy4n5BoA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 10573
+		},
+		{
+			"name": "/json/AutoMap.json",
+			"hash": "hbyOx8uUWQNWWopisF9py3OFJoZ7yPa7e1zNpwnBSVE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 655991
+		},
+		{
+			"name": "/json/belts.json",
+			"hash": "NZbYp2x3O9F8qOTlskFleVNzzSYDbaUXR6YbLtDug0M=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 13369
+		},
+		{
+			"name": "/json/bodylocs.json",
+			"hash": "rzzNeHfEAmDZVAhjBDpXSTkDf5DUaH5IM54PtlrADjI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 586
+		},
+		{
+			"name": "/json/books.json",
+			"hash": "aft4JvlfuaPaW/J5lqnqM/W35DpFDKNQgn4nYbQl0wk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 608
+		},
+		{
+			"name": "/json/charstats.json",
+			"hash": "yo19wz0e1dei1LsPLLhlCj+EA8YB3C0UkRuV4XEtzGg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 9041
+		},
+		{
+			"name": "/json/CharTemplate.json",
+			"hash": "okBrtV5UlX5r9q00h+HWXqQYQ5SSSheu2vov58oPKEA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 14164
+		},
+		{
+			"name": "/json/colors.json",
+			"hash": "T7UHcp/cOdT9C/lVGht7UdOz8rjgzZJFOcybHMbODQk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1352
+		},
+		{
+			"name": "/json/compcode.json",
+			"hash": "3qLf7mL18gQkslDrk7bkN31GEtvA/IolrcJSPWDfblU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6683
+		},
+		{
+			"name": "/json/Composit.json",
+			"hash": "/ivep2aiT6YyC2VoF0cvn8ALSL9AvqfZoQ+M0MTiI80=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 795
+		},
+		{
+			"name": "/json/cubemain.json",
+			"hash": "Evx4Shc0qBUpWO7eNpnJ0SkU846b1wGNQzG0NI9uUOU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 43834
+		},
+		{
+			"name": "/json/cubemod.json",
+			"hash": "vvUCGoccgiKZkKtqk45GNNiQbVkNlLdSQTB/lCVL3K0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 686
+		},
+		{
+			"name": "/json/cubetype.json",
+			"hash": "gnJPWil5V2RjTq2Z77tkV56qtOHw+l2G79gfUn6BFVQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 829
+		},
+		{
+			"name": "/json/difficultylevels.json",
+			"hash": "WsVtbBLMIG5FdODcVkNSFNxy6WBXY6SAN7mZhRKGjt0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1605
+		},
+		{
+			"name": "/json/ElemTypes.json",
+			"hash": "j8BdvxjrjZZa0FUo5cUqV3y4+QTl0j4bU5gLHiLhvQE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 987
+		},
+		{
+			"name": "/json/events.json",
+			"hash": "v0/7heq7hHBIGcFCUjRQGAkHE2tQ8+GaGsEFBW5pMwE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 906
+		},
+		{
+			"name": "/json/experience.json",
+			"hash": "Q38AIyIoSCw5xeR0Ti5Q4N+J70I4HCMzni0kg5p8Gu0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 23271
+		},
+		{
+			"name": "/json/gamble.json",
+			"hash": "BEPVKoR/ZJkh70vv7cFvAkMfKaDbUiQfc2tUF5/hbng=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6929
+		},
+		{
+			"name": "/json/gems.json",
+			"hash": "yoFfW4bXqW0pEX6m1SSmvFyBXU+D8fYXoTAgvH+tP7Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 27156
+		},
+		{
+			"name": "/json/hiredesc.json",
+			"hash": "CL8TQaZLs8CV1dE2Gew5pgKreSeHfh0GXRdGgkIj0vM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 566
+		},
+		{
+			"name": "/json/hireling.json",
+			"hash": "fTU6Iq84gbmLUAWVrZ7g8uCPOdm3Bw6QYzOXdlzLWhs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 96952
+		},
+		{
+			"name": "/json/HitClass.json",
+			"hash": "4/i/dwZ8x9VtiCBCyR6LraULrYjIwm4ADLyQluOylbs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 795
+		},
+		{
+			"name": "/json/inventory.json",
+			"hash": "jUWyq3irmYHK+G29f6LngJMhSqeuHmGiEvEE24Se1/w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 47036
+		},
+		{
+			"name": "/json/itemratio.json",
+			"hash": "0rH8avdOS9iiOaewkasJzCqmb4LC6+aPiBLxVSYM3HI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2247
+		},
+		{
+			"name": "/json/ItemStatCost.json",
+			"hash": "Q12U36ZsxWkgJWCB5Iv22y37WLQCq24Fh1phi1aPtog=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 106987
+		},
+		{
+			"name": "/json/ItemTypes.json",
+			"hash": "Jd4rA9S60NiGWI4mUXr5LB+BICNFaCcOcMdBXLhYUT0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 21949
+		},
+		{
+			"name": "/json/Levels.json",
+			"hash": "eaILSf22XvuEMsVqBUstFCxSMewHY1PBHPFbAavhWpo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 213753
+		},
+		{
+			"name": "/json/LocaleStringsEn.json",
+			"hash": "Rdp6mSZHbiQ+13L2cBnyi71pttmfVS/RsdMPd6uOat0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 478884
+		},
+		{
+			"name": "/json/lowqualityitems.json",
+			"hash": "as/p4qa4w6vH6lsvqVmlzvUms5fiOcuAzsZsRXrwwDc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 72
+		},
+		{
+			"name": "/json/LvlMaze.json",
+			"hash": "QwHNFv16XgeSBjlk+myXKUsYzKUVkDMrir90Mn9PxYw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 14647
+		},
+		{
+			"name": "/json/LvlPrest.json",
+			"hash": "lf43jApDNedYSigRCAeNKM4kNjpdieUvG834ibc0KoM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 321715
+		},
+		{
+			"name": "/json/LvlSub.json",
+			"hash": "Wo5FSm0N/o3zNC3/txfXLCRaXVhls2g3z1DAx/eHtiU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11415
+		},
+		{
+			"name": "/json/LvlTypes.json",
+			"hash": "AKzxhty+jNmgj+wMm3ze0QS2JlJZBwxfJNhjyjo2OH0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 16431
+		},
+		{
+			"name": "/json/LvlWarp.json",
+			"hash": "9k6YsZu0++WVdwdDq+ptZ/SQwX1UFfK2s1Cu7AO1CBs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 20322
+		},
+		{
+			"name": "/json/MagicPrefix.json",
+			"hash": "1wk9WUw8YSj3z5xcVwdsa4zi3IkUrp3amNz9MognKFg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 188928
+		},
+		{
+			"name": "/json/MagicSuffix.json",
+			"hash": "inyYmgcX4tEHXenJmHVT4CILe5+J4MsvJHNPF9Agw7M=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 212659
+		},
+		{
+			"name": "/json/misc.json",
+			"hash": "6xr49YamXnJzY2RKklyUq30AfLc1le60mrT80ZNpb9U=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 163142
+		},
+		{
+			"name": "/json/misscalc.json",
+			"hash": "sQJmBVaDzJOtE20/jaYaRG9IdmG6prsJa409OT6xBEU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2765
+		},
+		{
+			"name": "/json/Missiles.json",
+			"hash": "FzEIKLur5rv3XBxFuX4D4982da2Zy+jEDfS9465WsK0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 416416
+		},
+		{
+			"name": "/json/monai.json",
+			"hash": "uXNy6sXA+IhF+xsCpDdpehcMFERJDJjcw6FB0yfB+E4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 16139
+		},
+		{
+			"name": "/json/MonCountEst.json",
+			"hash": "m71VZiHZxkuPz28vCXzBZ7PzCV+P9QTAezvlZ7iD0Yk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4055
+		},
+		{
+			"name": "/json/monequip.json",
+			"hash": "lPM668v387PSuSEifVnO3zgZBdre11l6HN5ToCqFdBw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5165
+		},
+		{
+			"name": "/json/MonItemPercent.json",
+			"hash": "uIUvuxck4+5TxJghe5hHHrkw3KZMcsnELPmbBzz5+9A=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 135
+		},
+		{
+			"name": "/json/MonLvl.json",
+			"hash": "hxRqkW9fP543NXdY/PbD31cUyp+A0BR/vylMl35t/jo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 57022
+		},
+		{
+			"name": "/json/MonMode.json",
+			"hash": "f3rspHbvYnE+n+wyjFFwiVX/wIyf4z9a2usx5hZSCqw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1349
+		},
+		{
+			"name": "/json/MonName.json",
+			"hash": "v24nGf17QPruzASbl12l8DBkXpwTyLGcK4czBb5H4sI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 887
+		},
+		{
+			"name": "/json/MonPlace.json",
+			"hash": "Nwl9NiJVfpnt+8isFbnyajxvCTi1NXQ02+N7P3hhDXI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 977
+		},
+		{
+			"name": "/json/MonPreset.json",
+			"hash": "qGM6qPuD9kuas+WinYmS9PPQ+uOv+lK+D5EnOnNQcI4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11719
+		},
+		{
+			"name": "/json/MonProp.json",
+			"hash": "7GZzmJxIVE7SjwBC33pCgxQk1JU5jHML7qY1H+fTi+M=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2259
+		},
+		{
+			"name": "/json/monseq.json",
+			"hash": "8FkLbAVmcwpBeXPJOjyXFszXu+1birW7Uzcz9KDqHwM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 79014
+		},
+		{
+			"name": "/json/monsounds.json",
+			"hash": "DY7YVoBP+t0trtTNH3Oim7jhy2RgKWcHIqvBTc2sOYM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 46760
+		},
+		{
+			"name": "/json/monstats.json",
+			"hash": "2DzK+FSrZxKVo//5qCC1y9PMVUXC38e6aVjB4EkrKw0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1265161
+		},
+		{
+			"name": "/json/monstats2.json",
+			"hash": "HbWp3q0Wi2CkmPCvB0yJBcUFSYB0m1FI864g9HBmhCU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 512931
+		},
+		{
+			"name": "/json/MonType.json",
+			"hash": "BnOo6IxP79pUAaSsxE5h37Sw3MUkEQJJWsK1XbMXhLY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4567
+		},
+		{
+			"name": "/json/monumod.json",
+			"hash": "hf1+J5N0tbEcnR6s+zzSmO37EXMmAm0eFFDy7UGf5rI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6630
+		},
+		{
+			"name": "/json/npc.json",
+			"hash": "PHEWZYhEt8bdXmYn1rYGr3b3dPb2Crav1W373V0rZ2I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5152
+		},
+		{
+			"name": "/json/objects.json",
+			"hash": "5XnwYcZ3JUw+Ia9ax4Vf2J4Z+XXenF8swraPVIm7Yk8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 519720
+		},
+		{
+			"name": "/json/objgroup.json",
+			"hash": "7aK7EZVy3xI+R/sH01kwUSrJOdj12xzXbo9QZBJZZ+4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 23053
+		},
+		{
+			"name": "/json/ObjMode.json",
+			"hash": "QJ/aiaA6nGE0s/qvJ+arHOU+BSLPUl8QDbUnClbLfJk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 560
+		},
+		{
+			"name": "/json/ObjType.json",
+			"hash": "Xy1CJU1tfnyHdnXKr1drxYooVBwDXuXmri0GVNymzuM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 35868
+		},
+		{
+			"name": "/json/Overlay.json",
+			"hash": "CVTyq5VBxrl9isqQBh4cMaP2ugTjH1T339BxdVJhS0Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 85686
+		},
+		{
+			"name": "/json/pettype.json",
+			"hash": "7jy9t0LKEU4sjoqg9hN50KndO3Ac6JCGb9AAUhuYNE8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3933
+		},
+		{
+			"name": "/json/PlayerClass.json",
+			"hash": "ULmo1utG0pV00n0MGhNQvfPcvCKMgZ/4H/OgVbgv7qs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 590
+		},
+		{
+			"name": "/json/PlrMode.json",
+			"hash": "XpbH3XxlcZrOTV2rSsy7aDOkvOrW5VxCiVIgWuSm9dw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1697
+		},
+		{
+			"name": "/json/PlrType.json",
+			"hash": "2vJ+BxCLv9Cr0ZdZS9droxevwa/mSKJd7RWhoWPK7H8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 527
+		},
+		{
+			"name": "/json/Properties.json",
+			"hash": "ckf1taO5iji0n/VYu9NLpnB1kdoCH2p7Je7pJw5Rj9c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 49916
+		},
+		{
+			"name": "/json/qualityitems.json",
+			"hash": "s5R2r6oyg9r7wI9elAweH4DapIio4nYzIdAkmEyPA+I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2762
+		},
+		{
+			"name": "/json/RarePrefix.json",
+			"hash": "CvDf+1cUb0fRVsHh44bm3shr8F1Bx3kuiI7WWEUfpUQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3641
+		},
+		{
+			"name": "/json/RareSuffix.json",
+			"hash": "CM6hYH02G/9gBO2TikQaXBCjEekmtIQInoavz/ZoTiA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11269
+		},
+		{
+			"name": "/json/Runes.json",
+			"hash": "jv9PJTsgrUXiu/2ih55VrINpta7iAtsyAlyFj/ZOU3c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 57261
+		},
+		{
+			"name": "/json/SetItems.json",
+			"hash": "ARTRkpQ69FRtIxKQgXhdwJW+VNM7XvFdLO61KjQACKE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 68717
+		},
+		{
+			"name": "/json/Sets.json",
+			"hash": "vLnTvlUG+oY+77o/gv8u1DwPnpwhtPaMR2VJBTdo+0k=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 16432
+		},
+		{
+			"name": "/json/shrines.json",
+			"hash": "Uju8c/K9fWnCIamQoSC7FQ9t0V1nqXFK2QEUzs5IyCk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 7057
+		},
+		{
+			"name": "/json/skillcalc.json",
+			"hash": "sltycU/YJYbAWz88L4pGTectmcKjuEb+Iu9cdytm89Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6419
+		},
+		{
+			"name": "/json/skilldesc.json",
+			"hash": "xUfnxawCUPgadGnTDRUtKi1CuA0SbbLVlSOIj31UYG0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 149111
+		},
+		{
+			"name": "/json/skills.json",
+			"hash": "l8g42KjkpHKGLUL4OvHz+4QMK03Ngf6hNTAKGeuutDU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 335229
+		},
+		{
+			"name": "/json/SoundEnviron.json",
+			"hash": "zA1wrd2NV2vVDcqKqClj5SvHqVwAqOA97p9ishdvmOI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 24705
+		},
+		{
+			"name": "/json/Sounds.json",
+			"hash": "r1+l3LgIUfLQzYg7sea3/GQfe45TZ2FH3fxBI2acXWw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1405263
+		},
+		{
+			"name": "/json/states.json",
+			"hash": "t2bZbw3i86XZzS5FXgbnu6yKfC6yTk7roQwBFddfoh0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 28909
+		},
+		{
+			"name": "/json/StorePage.json",
+			"hash": "noOFbaPs7KLdSNyf/qSKuuoYnYqoYFUzxBfy1y7M7FA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 325
+		},
+		{
+			"name": "/json/SuperUniques.json",
+			"hash": "EM3qP5tCEyFnihI+ZcC98eXmeTPCR08ZuoQwSZs8hXw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 23537
+		},
+		{
+			"name": "/json/TreasureClassEx.json",
+			"hash": "hmgDpSIjqDo642IS2Fyr/yP16/0CIPWUkyRMMxtskaU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1235391
+		},
+		{
+			"name": "/json/TreasureClassGroupsEx.json",
+			"hash": "RBr62Z1VOJ8oIipKB0xPn5/E6o4DvPwvREo9n1vEXP8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 18220
+		},
+		{
+			"name": "/json/UniqueAppellation.json",
+			"hash": "ot/ojF/EG8+HOiszpVNfnh2neOuP7Fgm7l2ftRd2BxU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 505
+		},
+		{
+			"name": "/json/UniqueItems.json",
+			"hash": "zq7nfaDNlTMUjfY5rwmP5KMbAUG6nN6ppfNiQvsD18Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 223975
+		},
+		{
+			"name": "/json/UniquePrefix.json",
+			"hash": "NTKcflt0i8dViGDmSA0z76eI6pa8nfhgwYUCaBHulIg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 855
+		},
+		{
+			"name": "/json/UniqueSuffix.json",
+			"hash": "dcjInTQEhNtoJFkbYqRDwcWdGl0FYFI0owUrYnRTw7E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1134
+		},
+		{
+			"name": "/json/UniqueTitle.json",
+			"hash": "BtqKYMi8klconjfBW4kJ8HQth8ht4hMLbS9AC1TNkvU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 262
+		},
+		{
+			"name": "/json/WeaponClass.json",
+			"hash": "qslHAwTxJoV3MqML28Addilik3V8a0Sb5khXNcC2bgo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1197
+		},
+		{
+			"name": "/json/weapons.json",
+			"hash": "VXYYUo4esws99mfPt4YVggJ0FOcyGaxAKlLLs15fnME=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 446505
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "2zuS8FcdLtDlG9AP9YiZnUG9KKlYL7cmJ0AWfuOxrCA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1069
+		},
+		{
+			"name": "/package.json",
+			"hash": "XVkuL7XYScEwoIJIokxsZZ1N3QVUHN1tVc1xSorAV4I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 176
+		},
+		{
+			"name": "/README.md",
+			"hash": "ELvzKpB6UD9dPMwMfldsq2bs0fjTF8RYPNYmK+aaKho=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 898
+		},
+		{
+			"name": "/txt/.gitkeep",
+			"hash": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 0
+		}
+	]
+}

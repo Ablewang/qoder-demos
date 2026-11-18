@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zk_tt02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "85bc84e84c3e9bbe4caf",
+  "status": "ok",
+  "parents": [
+    "4ad8cbfbccc65352cb65"
+  ],
+  "bytes": 12169,
+  "sha256": "2e4ad406a6a1b6bf64438bb3bd789a3419b912b020a3200479a4c24ff25e45c2",
+  "fetchedAt": "2026-11-18T08:22:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/zk_tt02.jpg",
+  "path": "assets/85bc84e84c3e9bbe4caf.jpg"
+}

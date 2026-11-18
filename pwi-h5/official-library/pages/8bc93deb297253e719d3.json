@@ -1,0 +1,83 @@
+{
+  "id": "8bc93deb297253e719d3",
+  "url": "https://event51.wanmei.com/w2i/201309/Advancing/index.htm",
+  "title": "进击的传承服 -《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 3,
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "757eb39bd625c73d60e1a64849ee3b3b0e1ed6c9d4beed07fc6a86afd3b9c366",
+  "bytes": 3236,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/8bc93deb297253e719d3.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/download/down_client.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/images/header_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201309/Advancing/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div><div></div></div>\r\n<div>\r\n\t<div><div>\r\n        <div>\r\n            \r\n            <div>\r\n            \t<span></span>\r\n                <span></span>\r\n                <span></span>\r\n            </div>\r\n            <div>\r\n            \t<a href=\"https://w2i.wanmei.com/download/down_client.htm\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n                <a href=\"http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp\" rel=\"noreferrer\" target=\"_blank\"></a>\r\n            </div>\r\n            <img src=\"assets/12f0a27e5eac897d8f4e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/6c8fcaa73fab973f640a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/8ec41e5686ec4f33c43b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/696818cec33e74f5c892.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/1e9e831c174f0ccabc33.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/e9d484eae11546d72003.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n            <img src=\"assets/1e3381fdf6b2cecf9199.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        </div>\r\n\t</div></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/8bc93deb297253e719d3.json",
+  "imageCount": 7,
+  "tableCount": 0,
+  "downloadPath": "downloads/8bc93deb297253e719d3.js"
+}

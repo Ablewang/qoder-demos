@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_548.jpg",
+  "id": "9350b3c5b422309e30d2",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·还魂咒<em>（升仙）</em>",
+  "bytes": 1582,
+  "sha256": "77373088f02cc9782e361299aaf674f8280e9f4c6776b2ff43262aaabc3bbcaa",
+  "fetchedAt": "2026-11-18T08:35:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_548.jpg",
+  "path": "assets/9350b3c5b422309e30d2.jpg"
+}

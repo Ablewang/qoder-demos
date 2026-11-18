@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_459.jpg",
+  "id": "b4dd60a361b24a53df18",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·寒冰护甲<em>（入魔）</em>",
+  "bytes": 1735,
+  "sha256": "5d4c3cc651ee745c8d0e2d2a02f67f5fda1a9504a7b28c2082f56edc4c606d2b",
+  "fetchedAt": "2026-11-18T08:34:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_459.jpg",
+  "path": "assets/b4dd60a361b24a53df18.jpg"
+}

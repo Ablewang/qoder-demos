@@ -1,0 +1,211 @@
+{
+  "id": "a121cc2c46023857e0f9",
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/arming.html",
+  "title": "装备介绍",
+  "category": "装备道具",
+  "section": "天怒神罚装备专题",
+  "depth": 0,
+  "parents": [
+    "72e2b695b87707858a89"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/arming.html",
+  "fetchedAt": "2026-11-18T08:15:28+00:00",
+  "sha256": "77ece4bbb765b54d1ff9aaf230bd9626fad69412a52de016cada617efe5b1cd3",
+  "bytes": 2523,
+  "rawPath": "raw/a121cc2c46023857e0f9.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "装 备 介 绍\n玩家在资料篇中生前装备将随机获得 蓝、紫、黄色装备（现有生产为白、蓝、紫）。黄金装备防具为2-4孔、武器为1-2孔，附加属性随机产生，同种黄金装备属性不再固定不变。人品爆发的话有可能做出超极品的装备，下面列举一些黄金装备随机属性。相信属性更好的黄金装备将在您的手中诞生。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "装 备 介 绍",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "玩家在资料篇中生前装备将随机获得 蓝、紫、黄色装备（现有生产为白、蓝、紫）。黄金装备防具为2-4孔、武器为1-2孔，附加属性随机产生，同种黄金装备属性不再固定不变。人品爆发的话有可能做出超极品的装备，下面列举一些黄金装备随机属性。相信属性更好的黄金装备将在您的手中诞生。",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_11.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_12.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_13.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/arming_14.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td colspan=\"2\">装 备 介 绍</td>\n  </tr>\n  <tr>\n    <td colspan=\"2\">\n      <p>　　玩家在资料篇中生前装备将随机获得  蓝、紫、黄色装备（现有生产为白、蓝、紫）。黄金装备防具为2-4孔、武器为1-2孔，附加属性随机产生，同种黄金装备属性不再固定不变。人品爆发的话有可能做出超极品的装备，下面列举一些黄金装备随机属性。相信属性更好的黄金装备将在您的手中诞生。</p>\n    </td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/7da7d276b471bfae10f0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/c23e5c4e1eb056ca90f5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/0aab344056b2ba3cb1c1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/248963f1192222f7fdcc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/c8cc18dc83566c1dd8c1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/f28629466eb821ad8c13.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/5d2e256f67d895d455af.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/69aff98337afbc12e548.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/6fcd9b22e0ae0a2c96d0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/69fdb94b8c2bdb7ffc2f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/50531a46d0fa9cfdd28d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/cdd985fba5aa504ec0be.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><img src=\"assets/c38672a66a09e61b3286.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/1ce0e8d5a6abb036daf7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/a121cc2c46023857e0f9.json",
+  "imageCount": 14,
+  "tableCount": 1,
+  "downloadPath": "downloads/a121cc2c46023857e0f9.js"
+}

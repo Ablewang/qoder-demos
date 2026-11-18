@@ -1,0 +1,165 @@
+{
+  "id": "f3ca84404defdd08fce4",
+  "url": "https://event51.wanmei.com/w2i/201409/new/info5.htm",
+  "title": "新手活动_新手专题-《完美国际2》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 2,
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201409/new/info5.htm",
+  "fetchedAt": "2026-11-18T08:15:52+00:00",
+  "sha256": "67361d38f9a136ac2b1704f2326ec5587e2a35c689364374ee735f067d784f57",
+  "bytes": 6901,
+  "rawPath": "raw/f3ca84404defdd08fce4.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "进入官网下载游戏\n领取三大荣耀礼包\n新手活动\n01 新手礼包\n注册账号之前，您可以领取新手大礼包，注册使用，即可获得海量新手道具，助您轻松升级。\n+ 查看详细\n02 登录有礼\n只要您的角色达到相应的等级，登录游戏即可领取相应奖励。\n+ 查看详细\n03 签到有礼\n每日登录游戏，打开签到页面进行签到，签满相应天数即可获得相应的奖励。\n+ 查看详细\n04 媒体大礼\n关注《完美国际2》合作媒体，实物大奖，虚拟礼包送不停。\n17173\n多玩\n新浪\n178",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "进入官网",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/download/down_client.htm",
+      "label": "下载游戏",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info1.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info2.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info3.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info4.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info5.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/info6.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp",
+      "label": "+ 查看详细",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20140925/73611.shtml",
+      "label": "+ 查看详细",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/road/20140925/73612.shtml",
+      "label": "+ 查看详细",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://w2i.17173.com/",
+      "label": "17173",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://w2i.duowan.com/",
+      "label": "多玩",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://games.sina.com.cn/o/z/w2i/",
+      "label": "新浪",
+      "kind": "anchor"
+    },
+    {
+      "url": "http://w2i.178.com/",
+      "label": "178",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn1.jpg",
+      "alt": "初识完美",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn2.jpg",
+      "alt": "进入完美",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn3.jpg",
+      "alt": "入门指南",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn4.jpg",
+      "alt": "游戏说明",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn5.jpg",
+      "alt": "成长指南",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn6.jpg",
+      "alt": "新手活动",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/images/btn7.jpg",
+      "alt": "结伴游戏",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/js/main.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201409/new/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n        <div>\r\n        \t<div>\r\n            \t\r\n                <div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\">进入官网</a><a href=\"https://w2i.wanmei.com/download/down_client.htm\" rel=\"noreferrer\" target=\"_blank\">下载游戏</a></div>\r\n                <div>\r\n                \t<a href=\"#page=e22dbd9a3fcf086cded8\"><img src=\"assets/4c8b3a136b1121419bc2.jpg\" alt=\"初识完美\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=250753924235fd6ee8a3\"><img src=\"assets/8eb8a7394e20a92a1de3.jpg\" alt=\"进入完美\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=09fddc70dcd77ec60f4c\"><img src=\"assets/9432b16b13d491662f36.jpg\" alt=\"入门指南\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=6086431c2237fdf64b6a\"><img src=\"assets/2569bf85f4855d95d753.jpg\" alt=\"游戏说明\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=a08c5a6f495dfd7c3c98\"><img src=\"assets/76c0f341749e1403402b.jpg\" alt=\"成长指南\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=f3ca84404defdd08fce4\"><img src=\"assets/e1416ca6af4a1813ca02.jpg\" alt=\"新手活动\" loading=\"lazy\"></a>\r\n                    <a href=\"#page=c51fddb20c83a69287b1\"><img src=\"assets/7b9c717b10ca13ac654d.jpg\" alt=\"结伴游戏\" loading=\"lazy\"></a>\r\n                </div>\r\n        \t\t领取三大荣耀礼包\r\n            </div>\r\n            <div>\r\n                <h2>新手活动</h2>                \r\n              <div>\r\n                    <h2>01 新手礼包</h2>\r\n                    <p>注册账号之前，您可以领取新手大礼包，注册使用，即可获得海量新手道具，助您轻松升级。</p>\r\n                    <h5><a href=\"http://event21.wanmei.com/w2i/201011/w2itickets/zt.jsp\" rel=\"noreferrer\" target=\"_blank\">+ 查看详细</a></h5>                  \r\n                </div>\r\n                <div>\r\n                    <h2>02 登录有礼</h2>                    \r\n                    <p>只要您的角色达到相应的等级，登录游戏即可领取相应奖励。</p>\r\n                    <h5><a href=\"#page=ecd8e0b01a681412aa26\">+ 查看详细</a></h5>  \r\n                </div>\r\n                <div>\r\n                    <h2>03 签到有礼</h2>\r\n                  <p>每日登录游戏，打开签到页面进行签到，签满相应天数即可获得相应的奖励。</p>\r\n                    <h5><a href=\"#page=4f866ef6e5465855e405\">+ 查看详细</a></h5>  \r\n                </div>\r\n                <div>\r\n                    <h2>04 媒体大礼</h2>\r\n                    <p>关注《完美国际2》合作媒体，实物大奖，虚拟礼包送不停。</p>\r\n                  <h5>17173\r\n                      多玩</h5>\r\n                      <h5>新浪\r\n                      178</h5>\r\n                </div>                \r\n            </div>\r\n        </div>\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n<div>\r\n\t\r\n\t<div></div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n",
+  "dataPath": "pages/f3ca84404defdd08fce4.json",
+  "imageCount": 7,
+  "tableCount": 0,
+  "downloadPath": "downloads/f3ca84404defdd08fce4.js"
+}

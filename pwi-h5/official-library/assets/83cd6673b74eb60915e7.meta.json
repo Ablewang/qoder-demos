@@ -1,0 +1,22 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/images/btn_libao.jpg",
+  "id": "83cd6673b74eb60915e7",
+  "status": "ok",
+  "parents": [
+    "be915459ba7523f2f56d",
+    "2ca6ae6afc1bfe5f2b0f",
+    "aaa4ac93257b24ff825e",
+    "af9743181eeb7bf3ff76",
+    "44636c791e32b874469e"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201209/sccg/style/master.css",
+  "bytes": 6761,
+  "sha256": "b2ad01c30c0d07130b01eb126f0336ae2cbd445fec3ffdd288416f9b11a7e950",
+  "fetchedAt": "2026-11-18T08:37:23+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/sccg/images/btn_libao.jpg",
+  "path": "assets/83cd6673b74eb60915e7.jpg"
+}

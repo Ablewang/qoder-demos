@@ -1,0 +1,17 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/js/lrAuto.js",
+  "alt": "",
+  "kind": "script",
+  "id": "cb642d790f980822a6d4",
+  "status": "ok",
+  "parents": [
+    "b7d74aaf0682f417291c",
+    "9331b7d5cd87224a3247",
+    "d5853afa509a7d061e6b"
+  ],
+  "bytes": 2407,
+  "sha256": "ac7a2c87e501796c87ff11d60b1b74b742cb7bb6736b62307db38a7584e7291c",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/cb642d790f980822a6d4.js"
+}

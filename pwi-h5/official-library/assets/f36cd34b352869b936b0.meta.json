@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka1_04.jpg",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "f36cd34b352869b936b0",
+  "status": "ok",
+  "parents": [
+    "4eff95687e5b49fdfaee"
+  ],
+  "bytes": 11380,
+  "sha256": "534846670318c742c43103830803ad737b7d4a15d9ae05dc46ed6882d0713cae",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/f36cd34b352869b936b0.jpg"
+}

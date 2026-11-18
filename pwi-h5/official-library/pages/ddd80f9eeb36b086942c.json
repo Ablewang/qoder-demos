@@ -1,0 +1,43 @@
+{
+  "id": "ddd80f9eeb36b086942c",
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text4_04.htm",
+  "title": "双旦贺岁 跨年狂欢 七重活动献礼 享最丰盛饕餮大餐 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 7,
+  "parents": [
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text4_04.htm",
+  "fetchedAt": "2026-11-18T08:17:29+00:00",
+  "sha256": "8db6b87e8b9385917111db020992f818703499ffd0db784549459f4fa238abbf",
+  "bytes": 2256,
+  "rawPath": "raw/ddd80f9eeb36b086942c.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "平妖令\n活动时间：1月1日-1月3日\n参与条件：组队参加，队长所需级别为19级-60级，队员所需级别为19级以上。\n活动介绍：活动期间每天20:30左右开启，NPC平妖者•树仙人将降临祖龙城，分别在城北林俊杰附近和城南十字路口附近。玩家可以通过NPC传送到副本门口，当然，也可以选择自己跑路。符合条件的玩家在副本门口找到\"平妖者\"可领取每日一次的平妖令，凭借此令可组队进入副本内开启BOSS，将其击杀后获得奖励。而队长完成自身的活动后可以作为协助队员参与到其他玩家的平妖令活动中。\n活动奖励：完成活动任务后队长能够获得灵机宝匣，队员能够获得灵机小匣。两种匣子中都蕴含着丰厚的奖励，波波鸟宝宝、红松鼠宝宝、红蝴蝶宝宝、野马披风、丛林之眼、林俊杰舞蹈时装尽在其中！",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<h2>平妖令</h2>\r\n\t<div>\r\n\t\t<p>　　活动时间：1月1日-1月3日</p>\r\n        <p>　　参与条件：组队参加，队长所需级别为19级-60级，队员所需级别为19级以上。</p>\r\n        <p>　　活动介绍：活动期间每天20:30左右开启，NPC平妖者•树仙人将降临祖龙城，分别在城北林俊杰附近和城南十字路口附近。玩家可以通过NPC传送到副本门口，当然，也可以选择自己跑路。符合条件的玩家在副本门口找到&quot;平妖者&quot;可领取每日一次的平妖令，凭借此令可组队进入副本内开启BOSS，将其击杀后获得奖励。而队长完成自身的活动后可以作为协助队员参与到其他玩家的平妖令活动中。</p>\r\n        <p>　　活动奖励：完成活动任务后队长能够获得灵机宝匣，队员能够获得灵机小匣。两种匣子中都蕴含着丰厚的奖励，波波鸟宝宝、红松鼠宝宝、红蝴蝶宝宝、野马披风、丛林之眼、林俊杰舞蹈时装尽在其中！</p>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/ddd80f9eeb36b086942c.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/ddd80f9eeb36b086942c.js"
+}

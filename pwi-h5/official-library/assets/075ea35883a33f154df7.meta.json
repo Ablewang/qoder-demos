@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/wuqi_gn/image366.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "075ea35883a33f154df7",
+  "status": "ok",
+  "parents": [
+    "d15600c7e7503aa1f7ab"
+  ],
+  "bytes": 1028,
+  "sha256": "19d13789c2fa1a0fffe7d33192c56e48c8797ff92866c54495124fe502d40e8b",
+  "fetchedAt": "2026-11-18T08:20:42+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/pic/news_img/wuqi_gn/image366.jpg",
+  "path": "assets/075ea35883a33f154df7.jpg"
+}

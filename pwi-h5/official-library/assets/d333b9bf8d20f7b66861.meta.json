@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27638.jpg",
+  "id": "d333b9bf8d20f7b66861",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·冲击术<em>（升仙）</em>",
+  "bytes": 4936,
+  "sha256": "4f1121479a3a980360f1876b760bf393a2a72ec5921bcdab917a3a5d933f1543",
+  "fetchedAt": "2026-11-18T08:36:20+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27638.jpg",
+  "path": "assets/d333b9bf8d20f7b66861.jpg"
+}

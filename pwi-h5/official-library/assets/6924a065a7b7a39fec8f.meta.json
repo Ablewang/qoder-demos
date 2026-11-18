@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/xsyrw_bossdl05.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6924a065a7b7a39fec8f",
+  "status": "ok",
+  "parents": [
+    "fb1e8a6bb49589e8c748"
+  ],
+  "bytes": 307847,
+  "sha256": "4307fcc7ab82c1b432967b0ff9641621af7cdeddbe57aec2548a4504bb2d9683",
+  "fetchedAt": "2026-11-18T08:27:37+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/pic/xsyrw_bossdl05.jpg",
+  "path": "assets/6924a065a7b7a39fec8f.jpg"
+}

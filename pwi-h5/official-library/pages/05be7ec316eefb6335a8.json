@@ -1,0 +1,1538 @@
+{
+  "id": "05be7ec316eefb6335a8",
+  "url": "https://w2i.wanmei.com/intro/guide/20091019/30126.shtml",
+  "title": "11~20级任务指南-人族",
+  "category": "进阶资料",
+  "section": "任务指南",
+  "depth": 0,
+  "parents": [
+    "05be7ec316eefb6335a8",
+    "daba61c9792359f71985",
+    "67714afaf19e9009044b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "d989ec79e63347f1400642b09f701915563adfb30299fa06ad35241a49c403b8",
+  "bytes": 75470,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/05be7ec316eefb6335a8.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族 | 妖族 | 羽族\n任务名称\n子任务名称\n等级要求\n任务地点/NPC\n金钱\n经验\n元神\n物品奖励\n四方寨\n指引\n11\n自动触发\n0\n0\n前往四方寨\n11\n直接开启\n1200\n2000\n450\n二人齐心\n无\n11\n四方寨/卫兵队长\n1300\n2130\n500\n二人齐心\n无\n11\n四方寨/卫兵队长\n600\n1000\n222\n互通声息\n无\n12\n剑仙城/长老\n600\n1000\n250\n向长老复命\n无\n12\n直接开启\n600\n1000\n250\n传递的信息\n无\n12\n剑仙城/长老\n600\n1000\n250\n向长老复命\n无\n12\n直接开启\n600\n1000\n250\n齐心协力\n无\n12\n四方寨/卫兵队长宁志远\n1500\n2480\n550\n修补兵刃\n无\n13\n四方寨/卫兵队长宁志远\n0\n0\n0\n交还兵刃\n无\n13\n侠隐村/铁匠\n1500\n2500\n550\n狂狼甲胄\n无\n13\n四方寨/裁缝韩纤云\n2900\n4740\n1100\n☆铁魂重腕、☆曼妙护腕二选一\n以毒攻毒\n无\n14\n四方寨/药师贺去病\n720\n1200\n270\n五色杖玄铜双刀二选一\n人族勇士\n无\n15\n四方寨/卫兵队长宁志远\n1500\n2500\n550\n指南神针\n会动的勺子\n15\n四方寨/货郎高顺\n0\n0\n0\n兴奋的货郎\n15\n直接开启\n0\n0\n0\n寻找磁石\n15\n直接开启\n消灭雪山赤练蛇\n15\n直接开启\n3000\n4900\n1100\n☆铁魂胸甲、☆曼妙法袍二选一\n万木岭要塞\n指引\n16\n自动触发\n0\n0\n前往万木岭\n16\n直接开启\n1800\n3000\n700\n狼蛛的巢穴\n无\n16\n伐木场/老猎手\n1800\n3000\n700\n各执己见\n铁匠的委托\n16\n剑仙城/卫兵吕青扬\n2150\n3550\n800\n巧匠的委托\n16\n剑仙城/卫兵吕青扬\n2150\n3550\n800\n往昔之笛\n残山剩水\n17\n剑仙城/长老\n0\n0\n0\n不死不休\n17\n直接开启\n0\n0\n0\n恨爱交织\n17\n直接开启\n0\n0\n0\n昔年信物\n17\n直接开启\n0\n0\n0\n半字之差\n17\n直接开启\n0\n0\n0\n永不轮回\n17\n直接开启\n5400\n9000\n2000\n隐士之镜\n隐士之镜\n17\n伐木场/老猎手\n0\n0\n0\n消灭巨门蜈蚣\n17\n直接开启\n1000\n1640\n400\n渡人渡已\n药师的问候\n18\n剑仙城/药师宋雪晨\n0\n0\n0\n打造船桨\n18\n剑仙城郊外/老船夫\n0\n0\n0\n新的船桨\n18\n剑仙城/铁匠吕贺刀\n3000\n5000\n1150\n隐士的嘱托\n无\n18\n万木岭/隐士莫休\n2700\n4460\n1000\n临行饯别\n无\n20\n人族长老\n36\n60\n13",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "任务名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "子任务名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "任务地点/NPC",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金钱",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "经验",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元神",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物品奖励",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "四方寨",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "指引",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "自动触发",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "前往四方寨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "450",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "二人齐心",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/卫兵队长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1300",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2130",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "二人齐心",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/卫兵队长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "222",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "互通声息",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "向长老复命",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传递的信息",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "向长老复命",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "600",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "250",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "齐心协力",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/卫兵队长宁志远",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2480",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "550",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "修补兵刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/卫兵队长宁志远",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "交还兵刃",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "侠隐村/铁匠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "550",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂狼甲胄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/裁缝韩纤云",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2900",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4740",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "☆铁魂重腕、☆曼妙护腕二选一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "以毒攻毒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/药师贺去病",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "720",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "270",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "五色杖玄铜双刀二选一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "人族勇士",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/卫兵队长宁志远",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "550",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "指南神针",
+            "rowspan": "4",
+            "colspan": "1"
+          },
+          {
+            "text": "会动的勺子",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "四方寨/货郎高顺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兴奋的货郎",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "寻找磁石",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "消灭雪山赤练蛇",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4900",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "☆铁魂胸甲、☆曼妙法袍二选一",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "万木岭要塞",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "指引",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "自动触发",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "前往万木岭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "700",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狼蛛的巢穴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "伐木场/老猎手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "700",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "各执己见",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "铁匠的委托",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/卫兵吕青扬",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2150",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3550",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巧匠的委托",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/卫兵吕青扬",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2150",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3550",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "往昔之笛",
+            "rowspan": "6",
+            "colspan": "1"
+          },
+          {
+            "text": "残山剩水",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "不死不休",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "恨爱交织",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "昔年信物",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "半字之差",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "永不轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5400",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "隐士之镜",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "隐士之镜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "伐木场/老猎手",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "消灭巨门蜈蚣",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "17",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "直接开启",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1640",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "400",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "渡人渡已",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "药师的问候",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/药师宋雪晨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "打造船桨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城郊外/老船夫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新的船桨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "剑仙城/铁匠吕贺刀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1150",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "隐士的嘱托",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "万木岭/隐士莫休",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2700",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4460",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "临行饯别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "人族长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "36",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/intro/guide/20091019/30126.shtml",
+      "label": "人族",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/guide/20091103/36699.shtml",
+      "label": "妖族",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/guide/20091103/36700.shtml",
+      "label": "羽族",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=05be7ec316eefb6335a8\">人族</a> | <a href=\"#page=daba61c9792359f71985\">妖族</a> | <a href=\"#page=67714afaf19e9009044b\">羽族</a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>任务名称</strong></td>\r\n            <td><strong>子任务名称</strong></td>\r\n            <td><strong>等级要求</strong></td>\r\n            <td><strong>任务地点/NPC</strong></td>\r\n            <td><strong>金钱</strong></td>\r\n            <td><strong>经验</strong></td>\r\n            <td><strong>元神</strong></td>\r\n            <td><strong>物品奖励</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">四方寨</td>\r\n            <td>指引</td>\r\n            <td>11</td>\r\n            <td>自动触发</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>前往四方寨</td>\r\n            <td>11</td>\r\n            <td>直接开启</td>\r\n            <td>1200</td>\r\n            <td>2000</td>\r\n            <td>450</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>二人齐心</td>\r\n            <td>无</td>\r\n            <td>11</td>\r\n            <td>四方寨/卫兵队长</td>\r\n            <td>1300</td>\r\n            <td>2130</td>\r\n            <td>500</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>二人齐心</td>\r\n            <td>无</td>\r\n            <td>11</td>\r\n            <td>四方寨/卫兵队长</td>\r\n            <td>600</td>\r\n            <td>1000</td>\r\n            <td>222</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>互通声息</td>\r\n            <td>无</td>\r\n            <td>12</td>\r\n            <td>剑仙城/长老</td>\r\n            <td>600</td>\r\n            <td>1000</td>\r\n            <td>250</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>向长老复命 </td>\r\n            <td>无</td>\r\n            <td>12</td>\r\n            <td>直接开启</td>\r\n            <td>600</td>\r\n            <td>1000</td>\r\n            <td>250</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传递的信息</td>\r\n            <td>无</td>\r\n            <td>12</td>\r\n            <td>剑仙城/长老</td>\r\n            <td>600</td>\r\n            <td>1000</td>\r\n            <td>250</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>向长老复命</td>\r\n            <td>无</td>\r\n            <td>12</td>\r\n            <td>直接开启</td>\r\n            <td>600</td>\r\n            <td>1000</td>\r\n            <td>250</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>齐心协力</td>\r\n            <td>无</td>\r\n            <td>12</td>\r\n            <td>四方寨/卫兵队长宁志远</td>\r\n            <td>1500</td>\r\n            <td>2480</td>\r\n            <td>550</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>修补兵刃</td>\r\n            <td>无</td>\r\n            <td>13</td>\r\n            <td>四方寨/卫兵队长宁志远</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>交还兵刃</td>\r\n            <td>无</td>\r\n            <td>13</td>\r\n            <td>侠隐村/铁匠</td>\r\n            <td>1500</td>\r\n            <td>2500</td>\r\n            <td>550</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>狂狼甲胄</td>\r\n            <td>无</td>\r\n            <td>13</td>\r\n            <td>四方寨/裁缝韩纤云</td>\r\n            <td>2900</td>\r\n            <td>4740</td>\r\n            <td>1100</td>\r\n            <td>☆铁魂重腕、☆曼妙护腕二选一</td>\r\n        </tr>\r\n        <tr>\r\n            <td>以毒攻毒</td>\r\n            <td>无</td>\r\n            <td>14</td>\r\n            <td>四方寨/药师贺去病</td>\r\n            <td>720</td>\r\n            <td>1200</td>\r\n            <td>270</td>\r\n            <td>五色杖玄铜双刀二选一</td>\r\n        </tr>\r\n        <tr>\r\n            <td>人族勇士</td>\r\n            <td>无</td>\r\n            <td>15</td>\r\n            <td>四方寨/卫兵队长宁志远</td>\r\n            <td>1500</td>\r\n            <td>2500</td>\r\n            <td>550</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"4\">指南神针</td>\r\n            <td>会动的勺子</td>\r\n            <td>15</td>\r\n            <td>四方寨/货郎高顺</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>兴奋的货郎</td>\r\n            <td>15</td>\r\n            <td>直接开启</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>寻找磁石</td>\r\n            <td>15</td>\r\n            <td>直接开启</td>\r\n            <td>　</td>\r\n            <td>　</td>\r\n            <td>　</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>消灭雪山赤练蛇</td>\r\n            <td>15</td>\r\n            <td>直接开启</td>\r\n            <td>3000</td>\r\n            <td>4900</td>\r\n            <td>1100</td>\r\n            <td>☆铁魂胸甲、☆曼妙法袍二选一</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">万木岭要塞</td>\r\n            <td>指引</td>\r\n            <td>16</td>\r\n            <td>自动触发</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>前往万木岭</td>\r\n            <td>16</td>\r\n            <td>直接开启</td>\r\n            <td>1800</td>\r\n            <td>3000</td>\r\n            <td>700</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>狼蛛的巢穴</td>\r\n            <td>无</td>\r\n            <td>16</td>\r\n            <td>伐木场/老猎手</td>\r\n            <td>1800</td>\r\n            <td>3000</td>\r\n            <td>700</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">　各执己见</td>\r\n            <td>铁匠的委托</td>\r\n            <td>16</td>\r\n            <td>剑仙城/卫兵吕青扬</td>\r\n            <td>2150</td>\r\n            <td>3550</td>\r\n            <td>800</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>巧匠的委托</td>\r\n            <td>16</td>\r\n            <td>剑仙城/卫兵吕青扬</td>\r\n            <td>2150</td>\r\n            <td>3550</td>\r\n            <td>800</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"6\">往昔之笛</td>\r\n            <td>残山剩水</td>\r\n            <td>17</td>\r\n            <td>剑仙城/长老</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>不死不休</td>\r\n            <td>17</td>\r\n            <td>直接开启</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>恨爱交织</td>\r\n            <td>17</td>\r\n            <td>直接开启</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>昔年信物</td>\r\n            <td>17</td>\r\n            <td>直接开启</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>半字之差</td>\r\n            <td>17</td>\r\n            <td>直接开启</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>永不轮回</td>\r\n            <td>17</td>\r\n            <td>直接开启</td>\r\n            <td>5400</td>\r\n            <td>9000</td>\r\n            <td>2000</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">隐士之镜</td>\r\n            <td>隐士之镜</td>\r\n            <td>17</td>\r\n            <td>伐木场/老猎手</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>消灭巨门蜈蚣</td>\r\n            <td>17</td>\r\n            <td>直接开启</td>\r\n            <td>1000</td>\r\n            <td>1640</td>\r\n            <td>400</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">渡人渡已</td>\r\n            <td>药师的问候</td>\r\n            <td>18</td>\r\n            <td>剑仙城/药师宋雪晨</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>打造船桨</td>\r\n            <td>18</td>\r\n            <td>剑仙城郊外/老船夫</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>0</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>新的船桨</td>\r\n            <td>18</td>\r\n            <td>剑仙城/铁匠吕贺刀</td>\r\n            <td>3000</td>\r\n            <td>5000</td>\r\n            <td>1150</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>隐士的嘱托</td>\r\n            <td>无</td>\r\n            <td>18</td>\r\n            <td>万木岭/隐士莫休</td>\r\n            <td>2700</td>\r\n            <td>4460</td>\r\n            <td>1000</td>\r\n            <td>　</td>\r\n        </tr>\r\n        <tr>\r\n            <td>临行饯别</td>\r\n            <td>无</td>\r\n            <td>20</td>\r\n            <td>人族长老</td>\r\n            <td>36</td>\r\n            <td>60</td>\r\n            <td>13</td>\r\n            <td>　</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/05be7ec316eefb6335a8.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/05be7ec316eefb6335a8.js"
+}

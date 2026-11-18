@@ -1,0 +1,514 @@
+{
+  "id": "4c66c69803e667c8b5ec",
+  "url": "https://event51.wanmei.com/w2i/201004/data0428/index.htm",
+  "title": "数据互通告示牌 -《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 3,
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ab1034a9529805ca78eced8c9b528bc2c1f18fc24b585e89c4f608f4bd3784cf",
+  "bytes": 42970,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4c66c69803e667c8b5ec.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "如果您长时间没有登录过游戏，发现服务器列表中没有您服务器的相关信息，那么请在第一步选择\"大区名称\"，第二步选择原服务器名称，\"现服务器名称\"栏中就会直接显示您现在所在的服务器。\n第一步：第二步：第三步：\n选择大区：\n请选择服务器名称：\n现服务器名称：\n大区名称\n原服务器名称\n数据互通日期\n数据互通后服务器名称\n电信三区\n冷帝\n2014/12/17\n涅槃双线-武圣\n传承双线\n星辰\n辉煌双线\n飞雪\n龙马\n洛神\n新网通\n火神\n2014/8/6\n火龙\n辉煌双线\n裂天\n盘龙\n辉煌网通\n天蚩\n2014/8/6\n天策\n王者网通\n凤天\n新电信\n赤羽\n2014/8/6\n羽仙\n辉煌电信\n九仙\n辉煌双线\n斗圣\n2014.6.11\n九天\n南屏\n凌天\n传承双线\n起源\n2014.6.11\n远征\n征途\n传承双线\n传承\n2014.4.23\n星辰\n新生\n辉煌双线\n踏箭\n2014.4.23\n踏炎\n烽火\n网通二区\n龙威\n2014.4.23\n寻龙\n凯旋\n王者电信\n魔雄\n2014.2.19\n魔歌\n神歌\n>\n为什么要进行数据互通？\n为什么要进行数据互通？\n为优化服务器配置，进一步提升《完美国际》的服务质量，也为给玩家们提供相互交流的机会，适应活动规模日益扩大的需求。\n互通后服务如何？\n互通后服务如何？\n数据互通后《完美国际》服务器不仅采用全新的高质量服务器，还将应用全新的服务器架构。新的服务器架构不仅可以容纳更多的玩家，同时也让玩家感受更加流畅的游戏环境与激烈的城战场面。\n玩家损失如何补偿？\n玩家损失如何补偿？\n服务器数据互通后，城战规则不做更改，原属帮派的领土需要重新占领，而原占有领土的帮会将获得补偿金，补偿及 比例为所占领的领土一周收益金的1.5倍。既一块3级领土的补偿金为1500万完美币，一块2级领土的补偿金为3000万完美币。例如帮会A原拥有3块3 级领土及1块2级领土，则数据互通之后帮会A的帮主将获得（1000*3+2000）*1.5=7500万的领土补偿金作为城战费用的补偿。奖励金将以邮寄的形式发送到各位帮主的信箱内，请帮主注意查收。请各位玩家继续支持《完美国际》，积极投入更激烈、更具挑战性的领土战争中。\n领土补偿金规定如下：\n3级领土：\n1500W\n2级领土：\n3000W\n1级领土：\n4500W",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "大区名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "原服务器名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "数据互通日期",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "数据互通后服务器名称",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "电信三区",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冷帝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014/12/17",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "涅槃双线-武圣",
+            "rowspan": "5",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传承双线",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "星辰",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌双线",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "飞雪",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "龙马",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "洛神",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新网通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "火神",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014/8/6",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "火龙",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌双线",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "裂天",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "盘龙",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌网通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天蚩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014/8/6",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "天策",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "王者网通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "凤天",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新电信",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "赤羽",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014/8/6",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "羽仙",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌电信",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "九仙",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌双线",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "斗圣",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014.6.11",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "九天",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "南屏",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凌天",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传承双线",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "起源",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014.6.11",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "远征",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "征途",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传承双线",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "传承",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014.4.23",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "星辰",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "新生",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "辉煌双线",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "踏箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014.4.23",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "踏炎",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "烽火",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "网通二区",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "龙威",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014.4.23",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "寻龙",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凯旋",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "王者电信",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "魔雄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2014.2.19",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "魔歌",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "神歌",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "3级领土：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1500W",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "2级领土：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3000W",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "1级领土：",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4500W",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/head_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/js/read.js",
+      "alt": "",
+      "kind": "script"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/tit_info.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg",
+      "label": "2014.2.19",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/images/tit_explan.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201004/data0428/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n  <div>\r\n    \r\n    \r\n    <div> <img src=\"assets/ae8a17c9e43185a608e8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/ba1b455c6bdfb3a1782f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/3d1bad4ee4ddfcbe0a10.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/92e3f22675133595e184.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/4e1b552ea24260eba123.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/b7a4d6ab0467782dc0ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/a34953d75df6c7c079b9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/d74b8de01d2f8d0f2cdc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> </div>\r\n    <div></div>\r\n    <div>\r\n      <div>\r\n        <div>\r\n          <div>\r\n            <p><strong>如果您长时间没有登录过游戏</strong>，发现服务器列表中没有您服务器的相关信息，那么请在第一步选择&quot;大区名称&quot;，第二步选择原服务器名称，&quot;现服务器名称&quot;栏中就会直接显示您现在所在的服务器。</p>\r\n            <p><span>第一步：</span><span>第二步：</span><span>第三步：</span></p>\r\n            <p>选择大区：\r\n              \r\n              <b>请选择服务器名称：</b>\r\n              \r\n              <b>现服务器名称：</b> <i></i> </p>\r\n          </div>\r\n          \r\n          <div>\r\n            <h2><img src=\"assets/6b8b5271441c0b3d03e0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></h2>\r\n            \r\n            <table>\r\n\t\t\t\t<tr>\r\n                <th>大区名称</th>\r\n                <th>原服务器名称</th>\r\n                <th>数据互通日期</th>\r\n                <th>数据互通后服务器名称</th>\r\n              </tr>\r\n              <tr>\r\n    <td>电信三区</td>\r\n    <td>冷帝</td>\r\n    <td rowspan=\"5\">2014/12/17</td>\r\n    <td rowspan=\"5\">涅槃双线-武圣</td>\r\n  </tr>\r\n  <tr>\r\n    <td>传承双线</td>\r\n    <td>星辰</td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"3\">辉煌双线</td>\r\n    <td>飞雪</td>\r\n  </tr>\r\n  <tr>\r\n    <td>龙马</td>\r\n  </tr>\r\n  <tr>\r\n    <td>洛神</td>\r\n  </tr>\r\n\t\t\t\t<tr>\r\n    <td>新网通</td>\r\n    <td>火神</td>\r\n    <td rowspan=\"3\">2014/8/6</td>\r\n    <td rowspan=\"3\">火龙</td>\r\n  </tr>\r\n  <tr>\r\n    <td rowspan=\"2\">辉煌双线</td>\r\n    <td>裂天</td>\r\n  </tr>\r\n  <tr>\r\n    <td>盘龙</td>\r\n  </tr>\r\n  <tr>\r\n    <td>辉煌网通</td>\r\n    <td>天蚩</td>\r\n    <td rowspan=\"2\">2014/8/6</td>\r\n    <td rowspan=\"2\">天策</td>\r\n  </tr>\r\n  <tr>\r\n    <td>王者网通</td>\r\n    <td>凤天</td>\r\n  </tr>\r\n  <tr>\r\n    <td>新电信</td>\r\n    <td>赤羽</td>\r\n    <td rowspan=\"2\">2014/8/6</td>\r\n    <td rowspan=\"2\">羽仙</td>\r\n  </tr>\r\n  <tr>\r\n    <td>辉煌电信</td>\r\n    <td>九仙</td>\r\n  </tr>\r\n                \r\n                <tr>\r\n\t\t\t\t  <td rowspan=\"3\">辉煌双线</td>\r\n\t\t\t\t  <td>斗圣</td>\r\n\t\t\t\t  <td rowspan=\"3\">2014.6.11</td>\r\n\t\t\t\t  <td rowspan=\"3\">九天</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>南屏</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>凌天</td>\r\n\t\t\t  </tr>\r\n                <tr>\r\n\t\t\t\t  <td rowspan=\"2\">传承双线</td>\r\n\t\t\t\t  <td>起源</td>\r\n\t\t\t\t  <td rowspan=\"2\">2014.6.11</td>\r\n\t\t\t\t  <td rowspan=\"2\">远征</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>征途</td>\r\n\t\t\t  </tr>\r\n              <tr>\r\n\t\t\t    <td rowspan=\"2\">传承双线</td>\r\n\t\t\t    <td>传承</td>\r\n\t\t\t    <td rowspan=\"2\">2014.4.23</td>\r\n\t\t\t    <td rowspan=\"2\">星辰</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>新生</td>\r\n\t\t\t  </tr>\r\n                <tr>\r\n\t\t\t\t  <td rowspan=\"2\">辉煌双线</td>\r\n\t\t\t\t  <td>踏箭</td>\r\n\t\t\t\t  <td rowspan=\"2\">2014.4.23</td>\r\n\t\t\t\t  <td rowspan=\"2\">踏炎</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>烽火</td>\r\n\t\t\t  </tr>\r\n              <tr>\r\n\t\t\t\t  <td rowspan=\"2\">网通二区</td>\r\n\t\t\t\t  <td>龙威</td>\r\n\t\t\t\t  <td rowspan=\"2\">2014.4.23</td>\r\n\t\t\t\t  <td rowspan=\"2\">寻龙</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>凯旋</td>\r\n\t\t\t  </tr>\r\n              \r\n              \r\n                \r\n                <tr>\r\n\t\t\t\t  <td rowspan=\"2\">王者电信</td>\r\n\t\t\t\t  <td>魔雄</td>\r\n\t\t\t\t  <td rowspan=\"2\">2014.2.19</td>\r\n\t\t\t\t  <td rowspan=\"2\">魔歌</td>\r\n\t\t\t  </tr>\r\n\t\t\t\t<tr>\r\n\t\t\t\t  <td>神歌</td>\r\n\t\t\t  </tr>\r\n\t\t\t \r\n              &gt;\r\n            </table>\r\n            <h2><img src=\"assets/fc7b96b8800f955c3445.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></h2>\r\n            <div>\r\n              <div>为什么要进行数据互通？</div>\r\n              <div>为什么要进行数据互通？</div>\r\n              <div>\r\n                <div> 　　为优化服务器配置，进一步提升《完美国际》的服务质量，也为给玩家们提供相互交流的机会，适应活动规模日益扩大的需求。 </div>\r\n              </div>\r\n              <div>互通后服务如何？</div>\r\n              <div>互通后服务如何？</div>\r\n              <div>\r\n                <div> 　　数据互通后《完美国际》服务器不仅采用全新的高质量服务器，还将应用全新的服务器架构。新的服务器架构不仅可以容纳更多的玩家，同时也让玩家感受更加流畅的游戏环境与激烈的城战场面。 </div>\r\n              </div>\r\n              <div>玩家损失如何补偿？</div>\r\n              <div>玩家损失如何补偿？</div>\r\n              <div>\r\n                <div> 　　服务器数据互通后，城战规则不做更改，原属帮派的领土需要重新占领，而原占有领土的帮会将获得补偿金，补偿及 比例为所占领的领土一周收益金的1.5倍。既一块3级领土的补偿金为1500万完美币，一块2级领土的补偿金为3000万完美币。例如帮会A原拥有3块3 级领土及1块2级领土，则数据互通之后帮会A的帮主将获得（1000*3+2000）*1.5=7500万的领土补偿金作为城战费用的补偿。奖励金将以邮寄的形式发送到各位帮主的信箱内，请帮主注意查收。请各位玩家继续支持《完美国际》，积极投入更激烈、更具挑战性的领土战争中。<br>\r\n                  <br>\r\n                  领土补偿金规定如下：<br>\r\n                  <table>\r\n                    <tr>\r\n                      <td>3级领土：</td>\r\n                      <td>1500W</td>\r\n                    </tr>\r\n                    <tr>\r\n                      <td>2级领土：</td>\r\n                      <td>3000W</td>\r\n                    </tr>\r\n                    <tr>\r\n                      <td>1级领土：</td>\r\n                      <td>4500W</td>\r\n                    </tr>\r\n                  </table>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            \r\n             \r\n            \r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n   \r\n</div>\r\n\r\n<div> \r\n   \r\n   \r\n</div>\r\n",
+  "dataPath": "pages/4c66c69803e667c8b5ec.json",
+  "imageCount": 11,
+  "tableCount": 2,
+  "downloadPath": "downloads/4c66c69803e667c8b5ec.js"
+}

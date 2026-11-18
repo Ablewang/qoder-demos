@@ -1,0 +1,20 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnmsjloff.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "b86281e6bb4a17efb873",
+  "status": "ok",
+  "parents": [
+    "59cb948c7b10c9712ba9",
+    "101319dd2f65319f00b7",
+    "56505232365332ed4dfe"
+  ],
+  "bytes": 4241,
+  "sha256": "666d6f07b55a0416c98111f215aa253d1b285060c8242e68836439ab15ad48c8",
+  "fetchedAt": "2026-11-18T08:23:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnmsjloff.jpg",
+  "path": "assets/b86281e6bb4a17efb873.jpg"
+}

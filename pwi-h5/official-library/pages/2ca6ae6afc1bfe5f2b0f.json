@@ -1,0 +1,84 @@
+{
+  "id": "2ca6ae6afc1bfe5f2b0f",
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/index.htm",
+  "title": "完美战备采购 -《完美国际2012》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 1,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "aaa4ac93257b24ff825e"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "371f24591d7bf85e02a5f1d54fd314ca40769707aa3b519f3ba71db70a2718f9",
+  "bytes": 2131,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/2ca6ae6afc1bfe5f2b0f.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/detail02.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/detail03.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/detail01.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/h_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/h_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/h_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/h_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/h_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/images/h_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201209/sccg/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n<div>\r\n\t<div>\r\n    \r\n   \t  \t<img src=\"assets/7be37fb33a6206834fa1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/c3dd9211a55719b57509.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/30fd6f9d089013ce2a08.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/921256447e26a10aa6dc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/8ab94cc76e91a4a1ba80.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n        <img src=\"assets/8db20060099e94b07c7e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t</div>\r\n</div>\r\n</div>\r\n\r\n\r\n\r\n  \r\n  \r\n  \r\n\r\n",
+  "dataPath": "pages/2ca6ae6afc1bfe5f2b0f.json",
+  "imageCount": 6,
+  "tableCount": 0,
+  "downloadPath": "downloads/2ca6ae6afc1bfe5f2b0f.js"
+}

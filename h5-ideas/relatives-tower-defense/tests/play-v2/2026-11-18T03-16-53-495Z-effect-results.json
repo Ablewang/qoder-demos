@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "Critical actually freezes patience; manual pause freezes the remaining critical freeze time and resumes correctly",
+    "Grandma crazy flop is attributed to grandma, but queued follow-up is not falsely assigned to grandma",
+    "Actual ally interception has its own resolved UID and grandma-helping label, rather than current target attribution"
+  ],
+  "screenshots": [
+    "2026-11-18T03-16-53-495Z-effect-critical-paused.png",
+    "2026-11-18T03-16-53-495Z-effect-critical-feedback.png",
+    "2026-11-18T03-16-53-495Z-effect-warm-flop.png",
+    "2026-11-18T03-16-53-495Z-effect-ally-interception.png"
+  ],
+  "fixture": "Engine time accelerated only to reach reproducible branches; cards, pause and resume use real DOM controls.",
+  "seeds": {
+    "critical": 1,
+    "warmFlop": 1
+  },
+  "passed": true
+}

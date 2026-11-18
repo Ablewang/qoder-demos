@@ -1,0 +1,16 @@
+import { chromium } from '@playwright/test';
+import { fileURLToPath } from 'node:url';
+const out = fileURLToPath(new URL('./', import.meta.url));
+const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
+const page = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+await page.goto('http://127.0.0.1:5211/?probe=1&seed=318');
+await page.screenshot({ path: `${out}inspect-home-390.png`, fullPage: true });
+await page.locator('[data-action="start"]').click();
+await page.screenshot({ path: `${out}inspect-game-390.png`, fullPage: true });
+await page.locator('[data-action="pause"]').click();
+await page.screenshot({ path: `${out}inspect-pause-390.png`, fullPage: true });
+await page.setViewportSize({ width: 320, height: 740 });
+await page.locator('[data-action="resume"]').click();
+await page.screenshot({ path: `${out}inspect-game-320.png`, fullPage: true });
+console.log(await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth, pageHeight: document.documentElement.scrollHeight, cards: [...document.querySelectorAll('.answer-card')].map(e => ({ y: e.getBoundingClientRect().top, bottom: e.getBoundingClientRect().bottom })) })));
+await browser.close();

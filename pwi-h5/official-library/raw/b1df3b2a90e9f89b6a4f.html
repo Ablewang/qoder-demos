@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Design:; Web Layout:Zhongwei.Zhang;" />
+<meta name="keywords" content="完美世界,完美世界国际版,王朝崛起,最美网游，跨服阵营国战,万人战场,16品,九军，白帝之都,黑帝之都,赤帝之都,青帝之都,五帝名都，城战，攻城" /> 
+<meta name="description" content="《完美国际》是完美世界倾力打造的最美3D原创网游。新版本“修真2.0”延续原有修真题材的同时，将带给玩家颠覆性的修真体验。不练级更爽，体命双修更强，万人斗法更炫，修真无界更酷！不一样的修真尽在修真2.0！" />
+<link href="style/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wm.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="http://wulin2.wanmei.com/js/ie_png.js"></script>
+<script type="text/javascript">
+ DD_belatedPNG.fix('#btn_left, #btn_right');
+</script>
+<![endif]-->
+<title>畅爽无尽 狂欢不止 -《完美国际》官方网站</title>
+</head>
+<body>
+<div id="share_line"></div>
+<div class="wrap_bg">
+<div class="wrap clearfix">
+	<!--left-->
+	<div class="left_bar">
+		<div class="wm-public" logo="{name:'w2i',skin:3,left:30,top:20}"></div>
+		<a class="a_jiemi" hidefocus="true" target="_blank" href="http://event51.wanmei.com/w2i/201303/spread/index.htm">新版揭秘</a>
+	</div>
+	<!--cont-->
+	<div id="cont">
+		<ul>
+			<li><a href="back.htm"><img src="images/pic1.jpg" /></a></li>
+			<li><a href="all.htm"><img src="images/pic2.jpg" /></a></li>
+			<li><a href="newer.htm"><img src="images/pic3.jpg" /></a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<span id="btn_left">左</span>
+<span id="btn_right">右</span>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wmshare.js" share="{type:'lineNav',game:'w2i'}"></script>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/jq_171.js"></script>
+<script type="text/javascript" src="js/lrAuto.js"></script>
+<script type="text/javascript">
+function checkW(){
+	var pageWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	if(pageWidth >= 1650){
+		return true;
+	}else{
+		return false;
+	}
+}
+$(function(){
+	$('#cont img').css('opacity',.5).live({
+		mouseover : function(){
+						$(this).css('opacity',1);
+					},
+		mouseout : function(){
+						$(this).css('opacity',.5);
+					}
+	});
+	if(!checkW()){
+		$('#btn_left,#btn_right').show();
+		lrAuto('cont', 'btn_left', 'btn_right', 450);
+	}else{
+		$('#btn_left,#btn_right').hide();
+	}
+});
+window.onresize = function(){
+	if(checkW()){
+		$('#btn_left,#btn_right').hide();
+	}else{
+		$('#btn_left,#btn_right').show();
+		lrAuto('cont', 'btn_left', 'btn_right', 450);
+	}
+}
+</script>
+<div class="wm-public" analytics="{single:['w2i201303first1793']}"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/images/knowtit_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "fc492e321e2197e54d91",
+  "status": "ok",
+  "parents": [
+    "ddb9fc3f70957c28e9b5",
+    "f3fba696107bbedaf3ea",
+    "de6ded2fb4eb68ce525c",
+    "9a0413ce0568e20f31a3",
+    "02e5d3da43fb43417c6a",
+    "6dfa9feea78ce5fc8134",
+    "a0d736b1f895c8a9ac74",
+    "7423dd05d3a0993cf2d1",
+    "79d7a9f0b0425180fdfd",
+    "8dc6c6b7c0e7ba9af483",
+    "a70f75ea8408096665b5",
+    "6ef60683af49b980d73c"
+  ],
+  "bytes": 4438,
+  "sha256": "240fa4e72dce2df827af45f3dd56cd8bbf91f834247c889249593a1ce9b88852",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/fc492e321e2197e54d91.jpg"
+}

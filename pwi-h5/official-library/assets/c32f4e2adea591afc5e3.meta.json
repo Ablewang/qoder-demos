@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/tit03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "c32f4e2adea591afc5e3",
+  "status": "ok",
+  "parents": [
+    "9331b7d5cd87224a3247"
+  ],
+  "bytes": 13669,
+  "sha256": "783569cb89a0c7b5f3423b61fab84e262ca100b953b56096a6ce3db1b7e10dc8",
+  "fetchedAt": "2026-11-18T08:21:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201402/gamefeatures/images/tit03.jpg",
+  "path": "assets/c32f4e2adea591afc5e3.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_553.jpg",
+  "id": "15cb398d78f1f74f5f5d",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·五气朝元<em>（入魔）</em>",
+  "bytes": 1668,
+  "sha256": "0c874d6d2b01f89c336735bfa5ae575746ae0ae28d85ff630bf5875da9e82525",
+  "fetchedAt": "2026-11-18T08:35:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_553.jpg",
+  "path": "assets/15cb398d78f1f74f5f5d.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/fashi.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "55b2d3539f6e607b797a",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "bytes": 57984,
+  "sha256": "3cb5a7e3593a69538af601b88d6e857c1bc5c4c5cca1d153b45ede4eb1ecb2a6",
+  "fetchedAt": "2026-11-18T08:18:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/fashi.jpg",
+  "path": "assets/55b2d3539f6e607b797a.jpg"
+}

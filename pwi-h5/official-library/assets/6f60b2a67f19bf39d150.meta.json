@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/feixing/renzu/3.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "6f60b2a67f19bf39d150",
+  "status": "ok",
+  "parents": [
+    "25fdc3b0d454765fb909"
+  ],
+  "bytes": 4682,
+  "sha256": "5c61b62cc357c64b6dbc570079b5f2397e72bcb0e5f2bda32fca7739d8c9a410",
+  "fetchedAt": "2026-11-18T08:19:51+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/feixing/renzu/3.jpg",
+  "path": "assets/6f60b2a67f19bf39d150.jpg"
+}

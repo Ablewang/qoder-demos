@@ -1,0 +1,49 @@
+{
+  "id": "010a05d9e241e8ff54ff",
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text5.htm",
+  "title": "双旦贺岁 跨年狂欢 七重活动献礼 享最丰盛饕餮大餐 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 7,
+  "parents": [
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text5.htm",
+  "fetchedAt": "2026-11-18T08:17:30+00:00",
+  "sha256": "954fc252400eeecfb462482de0b84a0a6c8e462067c4ca5c2a1554725280f20d",
+  "bytes": 2324,
+  "rawPath": "raw/010a05d9e241e8ff54ff.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "线上活动时间表\n活动时间：每周日18:00开启（部分服务器可能会有延迟）\n参与方法：点击游戏界面右上角小地图旁边的\"IE\"按钮，再点击\"完美电台\"即可打开完美电台收听活动主持人的声音，届时可以跟随电台主持人的指引去完成任务获得电台活动纪念勋章，持此道具可以在电台活动大使处兑换奖励。\n想要获得电台活动纪念勋章，请在活动时间内登录游戏打开电台并跟随电台活动主持人的播报引导去完成任务，即可获得。\n可兑换的奖励包括：\n固定奖励：500万血符（限时1小时）、经验、元神、声望。\n惊喜奖励：个别任务中还会额外获得：限时飘花特效、限时跳舞时装、烟花等。",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.playradio.cn/game_separate/game_wmgj.html",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<h2>线上活动时间表</h2>\r\n\t<div>\r\n\t\t<p>　　活动时间：每周日18:00开启（部分服务器可能会有延迟）</p>\r\n        <p>　　参与方法：点击游戏界面右上角小地图旁边的&quot;IE&quot;按钮，再点击&quot;完美电台&quot;即可打开完美电台收听活动主持人的声音，届时可以跟随电台主持人的指引去完成任务获得电台活动纪念勋章，持此道具可以在电台活动大使处兑换奖励。</p>\r\n        <p>　　想要获得电台活动纪念勋章，请在活动时间内登录游戏打开电台并跟随电台活动主持人的播报引导去完成任务，即可获得。</p>\r\n        <p>　　可兑换的奖励包括：</p>\r\n        <p>　　固定奖励：500万血符（限时1小时）、经验、元神、声望。</p>\r\n        <p>　　惊喜奖励：个别任务中还会额外获得：限时飘花特效、限时跳舞时装、烟花等。</p>\r\n        <p>　　<p class=\"source-reference\">嵌入资源：已记录于资源索引</p></p>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/010a05d9e241e8ff54ff.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/010a05d9e241e8ff54ff.js"
+}

@@ -1,0 +1,366 @@
+{
+  "id": "f98ba86fc3c135f9f7fb",
+  "url": "https://w2i.wanmei.com/intro/ts/20100419/46002.shtml",
+  "title": "仙魔转换",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "7f783ef6abb82a316c75bff2ea03d2fa4fb7dd129f9c45f4b6af4539bafe935e",
+  "bytes": 74010,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/f98ba86fc3c135f9f7fb.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-04-19",
+  "text": "易天军和月汐舞领悟到仙魔转换的方法之后，这个方法在各大种族少数高层中流传。经过了万流城长老会数百年的研究后，终于总结出了一个最有效的仙魔互换的方法。而今天，这个方法得以公诸于世，从此为完美大陆各族勇士的修真之路创造了无尽的可能！\n仙魔转换使\n转换资格：修真等级达到天仙或者魔尊。\n转换方法：玩家可到任意职业的仙魔导师处进行转换。\n转换次数：不限。\n仙魔尺获取说明：“仙魔尺”是仙魔转换所必备的道具，可由仙魔转换使处做任务获得。领取任务前先要从乾坤袋中获得仙魔尺铸具并准备200幻仙石作为材料。\n29元宝\n2元宝\n技能转换说明：仙魔转换后，除部分技能会被自动转换为对应的修真技能外，其他所有仙（魔）技能将全部被还原到仙魔技能之前的普通技能。技能等级为10级。不满10级的普通技能，将保留原等级不变。玩家转换后需重新学习新修真的仙魔技能。\n特别注意：仙魔转换后会清除快捷栏的所有技能。\n仙魔的修行是中国古代神话的一个重要组成部分，它充满了无数的神奇和奥秘，多少人为此苦苦探索和追寻，追寻一种至高至纯的境界，探索那无穷无尽的奥秘。国产史诗级唯美3D网游《完美世界国际版》以中国古代神文化为故事背景，把神秘的修真任务升华，让这种中国古文化仙魔之术达到了顶峰。\n修真级别分为筑基、灵虚、和合、元婴、空冥、履霜、渡劫、寂灭、大乘。当人物到达大乘之后可进行升仙入魔的修行，升仙分为：上仙、真仙、天仙，入魔分为：狂魔、魔圣、魔尊。当人物达到学习技能的相应等级后，还需要提升修真级别才可以学到更高级的相关技能。\n人物等级达到9级可提升至灵虚，19级可提升至合和，29级可提升至元婴，39级可提升至空冥、49级提升至履霜，59级可提升至渡劫，69级可以修真至寂灭，79级可以修真至大乘，89级即可升仙入魔，99级可以成为真仙或魔圣。\n修真等级\n需求人物等级\n所需声望\n修真等级\n需求人物等级\n所需声望\n筑基\n1\n0\n渡劫\n59\n320\n灵虚\n9\n10\n寂灭\n69\n480\n和合\n19\n25\n大乘\n79\n800\n元婴\n29\n60\n上仙/狂魔\n89\n1200\n空冥\n39\n120\n真仙/魔圣\n99\n1800\n履霜\n49\n180\n天仙/魔尊\n100\n2000\n升仙任务指南\n入魔任务指南\n修真任务是《完美世界国际版》一个特色任务，也是主线任务。玩家要想得到不断的修行提升，去完成更高的目标和追求必须要做好修真任务，而且随着级别的提升，修真任务的难度也就越大。只有亲身进入游戏体验，才能感受到中国古代神文化无穷的底蕴和魅力。在实力飞升之后选择登天成仙或者入地为魔，善恶全在一念间，选择自己的霸王之路，体验不一样的江湖人生。\n修真任务指南",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "29元宝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2元宝",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "修真等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求人物等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需声望",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求人物等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需声望",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "320",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "寂灭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "480",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "大乘",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "79",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "800",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "上仙/狂魔",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "89",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1200",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "120",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "真仙/魔圣",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1800",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "180",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天仙/魔尊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2000",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升仙任务指南",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "入魔任务指南",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/intro/guide/20091016/30073.shtml",
+      "label": "升仙任务指南",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/guide/20091016/30074.shtml",
+      "label": "入魔任务指南",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/guide/20091027/36465.shtml",
+      "label": "修真任务指南",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649259001.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649259111.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649259155.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649259200.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649259326.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649259404.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/100419/10021271649257970.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　易天军和月汐舞领悟到仙魔转换的方法之后，这个方法在各大种族少数高层中流传。经过了万流城长老会数百年的研究后，终于总结出了一个最有效的仙魔互换的方法。而今天，这个方法得以公诸于世，从此为完美大陆各族勇士的修真之路创造了无尽的可能！</p>\r\n<p><img src=\"assets/c3c564e06226fa461490.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>仙魔转换使</p>\r\n<p><strong>　　转换资格：</strong>修真等级达到天仙或者魔尊。</p>\r\n<p><strong>　　转换方法：</strong>玩家可到任意职业的仙魔导师处进行转换。</p>\r\n<p><strong>　　转换次数：</strong>不限。</p>\r\n<p><strong>　　仙魔尺获取说明：</strong>“仙魔尺”是仙魔转换所必备的道具，可由仙魔转换使处做任务获得。领取任务前先要从乾坤袋中获得仙魔尺铸具并准备200幻仙石作为材料。</p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n            <p><img src=\"assets/ed15ced3f32798fa4190.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n            </td>\r\n            <td>\r\n            <p><img src=\"assets/d8e7385e9eb33521174f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>29元宝</div>\r\n            </td>\r\n            <td>\r\n            <div>2元宝</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p><strong>　　技能转换说明：</strong>仙魔转换后，除部分技能会被自动转换为对应的修真技能外，其他所有仙（魔）技能将全部被还原到仙魔技能之前的普通技能。技能等级为10级。不满10级的普通技能，将保留原等级不变。玩家转换后需重新学习新修真的仙魔技能。</p>\r\n<p><strong>　　特别注意：</strong>仙魔转换后会清除快捷栏的所有技能。</p>\r\n<p><img src=\"assets/c07b05009d9a0c4f374a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　仙魔的修行是中国古代神话的一个重要组成部分，它充满了无数的神奇和奥秘，多少人为此苦苦探索和追寻，追寻一种至高至纯的境界，探索那无穷无尽的奥秘。国产史诗级唯美3D网游《完美世界国际版》以中国古代神文化为故事背景，把神秘的修真任务升华，让这种中国古文化仙魔之术达到了顶峰。</p>\r\n<p>　　修真级别分为筑基、灵虚、和合、元婴、空冥、履霜、渡劫、寂灭、大乘。当人物到达大乘之后可进行升仙入魔的修行，升仙分为：上仙、真仙、天仙，入魔分为：狂魔、魔圣、魔尊。当人物达到学习技能的相应等级后，还需要提升修真级别才可以学到更高级的相关技能。</p>\r\n<p>　　人物等级达到9级可提升至灵虚，19级可提升至合和，29级可提升至元婴，39级可提升至空冥、49级提升至履霜，59级可提升至渡劫，69级可以修真至寂灭，79级可以修真至大乘，89级即可升仙入魔，99级可以成为真仙或魔圣。</p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n            <p>修真等级</p>\r\n            </td>\r\n            <td>\r\n            <p>需求人物等级</p>\r\n            </td>\r\n            <td>\r\n            <p>所需声望</p>\r\n            </td>\r\n            <td>\r\n            <p>修真等级</p>\r\n            </td>\r\n            <td>\r\n            <p>需求人物等级</p>\r\n            </td>\r\n            <td>\r\n            <p>所需声望</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>筑基</p>\r\n            </td>\r\n            <td>\r\n            <p>1</p>\r\n            </td>\r\n            <td>\r\n            <p>0</p>\r\n            </td>\r\n            <td>\r\n            <p>渡劫</p>\r\n            </td>\r\n            <td>\r\n            <p>59</p>\r\n            </td>\r\n            <td>\r\n            <p>320</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>灵虚</p>\r\n            </td>\r\n            <td>\r\n            <p>9</p>\r\n            </td>\r\n            <td>\r\n            <p>10</p>\r\n            </td>\r\n            <td>\r\n            <p>寂灭</p>\r\n            </td>\r\n            <td>\r\n            <p>69</p>\r\n            </td>\r\n            <td>\r\n            <p>480</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>和合</p>\r\n            </td>\r\n            <td>\r\n            <p>19</p>\r\n            </td>\r\n            <td>\r\n            <p>25</p>\r\n            </td>\r\n            <td>\r\n            <p>大乘</p>\r\n            </td>\r\n            <td>\r\n            <p>79</p>\r\n            </td>\r\n            <td>\r\n            <p>800</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>元婴</p>\r\n            </td>\r\n            <td>\r\n            <p>29</p>\r\n            </td>\r\n            <td>\r\n            <p>60</p>\r\n            </td>\r\n            <td>\r\n            <p>上仙/狂魔</p>\r\n            </td>\r\n            <td>\r\n            <p>89</p>\r\n            </td>\r\n            <td>\r\n            <p>1200</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>空冥</p>\r\n            </td>\r\n            <td>\r\n            <p>39</p>\r\n            </td>\r\n            <td>\r\n            <p>120</p>\r\n            </td>\r\n            <td>\r\n            <p>真仙/魔圣</p>\r\n            </td>\r\n            <td>\r\n            <p>99</p>\r\n            </td>\r\n            <td>\r\n            <p>1800</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <p>履霜</p>\r\n            </td>\r\n            <td>\r\n            <p>49</p>\r\n            </td>\r\n            <td>\r\n            <p>180</p>\r\n            </td>\r\n            <td>\r\n            <p>天仙/魔尊</p>\r\n            </td>\r\n            <td>\r\n            <p>100</p>\r\n            </td>\r\n            <td>\r\n            <p>2000</p>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p> </p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td>\r\n            <p><img src=\"assets/8fb1a3a6dce8cb67a9e8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n            </td>\r\n            <td>\r\n            <p><img src=\"assets/bc07e2c1966e27452240.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div><a href=\"#page=32f0b5430848eeecd4d9\">升仙任务指南</a></div>\r\n            </td>\r\n            <td>\r\n            <div><a href=\"#page=935a169d33d49afb3db7\">入魔任务指南</a></div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p>　　修真任务是《完美世界国际版》一个特色任务，也是主线任务。玩家要想得到不断的修行提升，去完成更高的目标和追求必须要做好修真任务，而且随着级别的提升，修真任务的难度也就越大。只有亲身进入游戏体验，才能感受到中国古代神文化无穷的底蕴和魅力。在实力飞升之后选择登天成仙或者入地为魔，善恶全在一念间，选择自己的霸王之路，体验不一样的江湖人生。</p>\r\n<p><img src=\"assets/d029d6c2efe77e766af4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><a href=\"#page=b4bc31b7ced95395482d\">修真任务指南</a></p>\r\n                        </div>",
+  "dataPath": "pages/f98ba86fc3c135f9f7fb.json",
+  "imageCount": 7,
+  "tableCount": 3,
+  "downloadPath": "downloads/f98ba86fc3c135f9f7fb.js"
+}

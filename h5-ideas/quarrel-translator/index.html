@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f1f3f6" />
+    <meta name="description" content="把原话改成可说的一句，保留你的立场。不替你发送，不把推测当事实。" />
+    <title>吵架翻译器 · 改措辞，不改立场</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%232f46c7'/%3E%3Cpath d='M19 12h-7v24h7m10-24h7v24h-7M20 24h8' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="吵架翻译器首页"><span class="brand-mark" aria-hidden="true">[译]</span><span>吵架翻译器</span></a>
+        <span class="edition">改措辞，不改立场。</span>
+      </header>
+      <main id="main" tabindex="-1">
+        <section id="home" class="home-layout">
+          <div class="intro"><span class="eyebrow">表达改稿 / 01</span><h1 id="home-title">一句话，换个说法。</h1><p id="home-note">先看固定演示，不替你按发送。</p></div>
+          <div id="ai-status" class="config-status" role="status"><span id="ai-status-text">正在检查改写能力；固定演示无需 AI。</span><button id="jump-demos" class="demo-jump" type="button">看固定演示（不调用 AI）↓</button><a class="local-jump" href="#local-tools">安全提醒与求助 ↓</a></div>
+          <section id="examples" class="examples" aria-labelledby="examples-title"><div class="examples-heading"><h2 id="examples-title">固定演示</h2><span>预写稿 · 不调用 AI</span></div><p id="examples-note" class="examples-note">选一个场景，比较温和与坚定的可说句。不是对你输入的分析。</p><div id="demo-list" class="demo-list"></div></section>
+          <div class="input-panel">
+            <div id="form-slot">
+            <form id="translate-form" novalidate hidden>
+              <label class="draft-label" for="message"><span aria-hidden="true">01</span>你本来想说的话</label>
+              <div class="textarea-wrap"><textarea id="message" name="message" rows="4" placeholder="比如：你怎么又不回消息！" aria-describedby="ai-status-text char-count message-error" autocomplete="off" spellcheck="false"></textarea></div>
+              <div class="editor-foot"><span>不替你发送</span><span id="char-count" class="char-count">0 / 300</span></div>
+              <fieldset><legend>说给谁听</legend><div id="relations" class="relation-list"></div></fieldset>
+              <p id="message-error" class="error" role="alert" tabindex="-1" hidden></p>
+              <button id="translate" class="button primary full" type="submit" disabled>正在检查服务</button>
+            </form>
+            </div>
+            <div id="local-tools"><p class="local-help">涉及伤害或威胁？安全比措辞重要。<br />中国大陆即时危险：<a href="tel:110">警方 110</a><a href="tel:120">急救 120</a><small>其他地区请联系当地服务；更多资源见页尾。</small></p><details id="safety-check" hidden><summary>本地安全检查 · 不是改写</summary><p id="safety-check-note">只用本地规则提示部分伤害、威胁风险，不分析心理、不生成改写。没有提醒也不代表安全。</p></details></div>
+            <details id="config-help"><summary>本地配置说明</summary><p>在项目内将 <code>.env.example</code> 复制为 <code>.env.local</code>，在本机填写 <code>AI_API_URL</code>（供应商的 HTTPS chat/completions 完整地址）、<code>AI_MODEL</code> 和 <code>AI_API_KEY</code>，再运行 <code>pnpm dev</code>。不要使用 VITE_ 前缀，不要把密钥发到聊天里。</p><p>未配置时，普通内容会明确失败；本地安全提醒不依赖 AI。不会用演示替代真实翻译。</p></details>
+          </div>
+        </section>
+        <section id="loading" class="loading" aria-live="polite" hidden><span class="eyebrow">表达改稿 / 检查中</span><div class="working-mark" aria-hidden="true">[ <span>···</span> ]</div><h2 id="loading-title">正在检查这段话</h2><p id="loading-note">原话仍在，你可以取消。</p><button id="cancel" class="button secondary" type="button">取消，回去修改</button></section>
+        <section id="result" class="result-layout" hidden>
+          <div class="result-toolbar"><button id="back" class="text-button" type="button">← 修改原话</button><span class="relation-caption">说给 <strong id="result-relation"></strong></span></div>
+          <div id="source-banner" class="source-banner" role="status"></div>
+          <div id="result-content"></div>
+        </section>
+      </main>
+      <footer class="footer"><p>本应用不持久保存原话，也不采集行为埋点。<br />配置 AI 后，输入会发送给所配置的模型供应商。</p><p>这是一款表达辅助工具，不是心理咨询或事实判断。<br />若涉及伤害或威胁，你的安全优先。</p><details><summary>需要支持？查看求助信息</summary><div class="help-links"><span>中国大陆：即时危险请拨</span><a href="tel:110">110 警方</a><a href="tel:120">120 急救</a><a href="tel:12356">12356 心理援助</a><a href="tel:12338">12338 妇女维权</a><small>非紧急热线的服务时段和地区覆盖可能不同；其他地区请联系当地服务。</small></div></details></footer>
+    </div>
+    <dialog id="share-dialog" aria-labelledby="share-title" aria-describedby="share-warning">
+      <div class="dialog-heading"><div><span class="eyebrow">导出 / 不替你发送</span><h2 id="share-title">可说句分享卡</h2></div><button id="close-share" class="text-button" type="button" autofocus>关闭</button></div>
+      <label class="hide-control"><input id="hide-original" type="checkbox" checked />隐藏敏感原话（默认开启）</label>
+      <p id="share-contents" class="share-contents" role="status"></p>
+      <p id="share-warning" class="share-warning">可说句和风险提醒也可能透露私事。取消隐藏会公开完整原话；请检查整张卡片后再分享。</p>
+      <div class="share-preview"><img id="share-image" alt="可说句分享卡预览；不包含心理推测" /></div>
+      <p id="share-error" class="error" role="alert" hidden></p><button id="retry-share" class="text-button" type="button" hidden>重新生成图片</button>
+      <div class="download-area"><a id="download-card" class="button primary full" download="吵架翻译器-可说句.png">下载 PNG</a><p id="download-status" class="fine-print" role="status"></p><p id="share-save-hint" class="fine-print">预览就是导出的 PNG；长卡请向下滚动检查。<br />手机可长按图片保存；微信内下载是否可用取决于浏览器。</p></div>
+    </dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

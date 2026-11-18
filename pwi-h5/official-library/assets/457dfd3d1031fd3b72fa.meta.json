@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/daoju/xidian/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "457dfd3d1031fd3b72fa",
+  "status": "ok",
+  "parents": [
+    "05d6c3cbd8c33225494a"
+  ],
+  "bytes": 7514,
+  "sha256": "d68201233300918bb7605de76461e0af2a81bb2f88e4d4e16b9389233f63e49f",
+  "fetchedAt": "2026-11-18T08:20:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/daoju/xidian/1.jpg",
+  "path": "assets/457dfd3d1031fd3b72fa.jpg"
+}

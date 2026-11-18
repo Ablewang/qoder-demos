@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_896.jpg",
+  "id": "ff9df22e44300a0f472e",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂龙之力",
+  "bytes": 1614,
+  "sha256": "330c3e997015726664a27cc651da2aaac4859c7ae88141426fdabfd432287b80",
+  "fetchedAt": "2026-11-18T08:34:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_896.jpg",
+  "path": "assets/ff9df22e44300a0f472e.jpg"
+}

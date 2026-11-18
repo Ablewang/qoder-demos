@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/js/shadowbox/next.png",
+  "id": "bd25e912c23928030b45",
+  "status": "ok",
+  "parents": [
+    "2504de9daef1dc4f803a"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/js/shadowbox/shadowbox.css",
+  "bytes": 248,
+  "sha256": "d6c631c27bae6359c6467be18658dd9ce08b5703d4db07a41660bdc436962876",
+  "fetchedAt": "2026-11-18T08:38:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201209/wmgj_qsy/js/shadowbox/next.png",
+  "path": "assets/bd25e912c23928030b45.png"
+}

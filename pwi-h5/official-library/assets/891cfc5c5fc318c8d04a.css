@@ -1,0 +1,47 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@import url(http://www.wanmei.com/top/css/iframe.css);
+
+/* 共用部分 */
+* {margin:0;padding:0px;}
+body {background:#000;font-size:14px;font-family:宋体, Arial, Helvetica, sans-serif;color:#000;margin:0;padding:0px}
+.flt{float:left}.frt{float:right}.clr{clear:both}
+img{border:0px;}
+a{text-decoration:none}
+a:hover{text-decoration:none}
+.none{display:none}
+.center{text-align:center;}
+ul,li{margin:0;padding:0;list-style-type:none;}
+.red{color:red}
+
+/* LOGO的定位 */
+#w2i_logo{top:20px;left:20px;}
+#transparent_logo{top:20px;left:20px;}
+
+.wrap{width:100%;background-position:center top;background-repeat:no-repeat;clear:both;}
+#top_bg1{background: url('../images/bg.jpg') no-repeat top;clear:both;height:820px}
+
+#header,#nav,#main,#bottom{width:1002px;margin:0px auto;clear:both;}
+#header img, #left img ,#right img{float:left}
+#header{position:relative;}
+
+#container{background:black url('../images/detail_con_mid.jpg') repeat-y top;min-height:600px;_height:600px;line-height:27px;color:#493310;float:left;width:1002px}
+
+#content{width:634px;float:left;padding:0px 70px 0px 50px}
+#content p{padding:0px 30px 0px 30px}
+
+#left{width:130px;float:left}
+#right{width:118px;float:right}
+.table{margin:0px auto;border-collapse: collapse;text-align:center;border:1px #493310 solid}
+
+
+
+
+
+
+
+
+
+
+
+
+

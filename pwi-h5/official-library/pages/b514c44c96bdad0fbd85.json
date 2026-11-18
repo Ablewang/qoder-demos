@@ -1,0 +1,326 @@
+{
+  "id": "b514c44c96bdad0fbd85",
+  "url": "https://w2i.wanmei.com/event/200805/newskill/wuxia.htm",
+  "title": "《完美国际》新技能专题",
+  "category": "职业技能",
+  "section": "天怒神罚新增技能",
+  "depth": 0,
+  "parents": [
+    "1cb38395c2265ebc6d10"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/newskill/wuxia.htm",
+  "fetchedAt": "2026-11-18T08:15:28+00:00",
+  "sha256": "8deb0f7f9ebcb1abe429212ef6dcac1eeba73f67480975436834e0a656e6faf2",
+  "bytes": 4408,
+  "rawPath": "raw/b514c44c96bdad0fbd85.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "技 能\n施放距离\n所需元气\n冷却时间\n消耗真气\n准备/吟唱时间\n施放时间\n效 果\n断空\n18米\n15\n40秒\n200\n0.2秒\n1.7秒\n对敌人造成基础物理攻击附上100%基础攻击，再加上1000的物理伤害，同时封印2-3秒\n一闪（刀剑）\n5米\n两点真元\n15分钟\n500\n0.2秒\n1.5秒\n对目标造成150%基础伤害加上自身生命值上限-自身当前生命值的150%的物理伤害\n狂龙之力\n一点真元\n5分钟\n200\n瞬发\n30秒内攻击降低50%。暴击率增加25%。冷却时间5分钟\n雷霆震击（拳套）\n12米\n一点真元\n2分钟\n200\n0.4秒\n1.5秒\n对范围内所有敌人造成260%基础伤害并且移动速度降低30%、降低攻击速度30%和吟唱时间增加50%。同时对自己和目标造成5秒的定身。\n金刚气\n无\n10分钟\n400\n0.6秒\n1.8秒\n使周围的队友从装备上获取1000%额外物理防御，持续10秒。并在15秒内为自己恢复最大生命值的20%生命值",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "技 能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "施放距离",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需元气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冷却时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "消耗真气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准备/吟唱时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "施放时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "效 果",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "断空",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "18米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "40秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.2秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.7秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对敌人造成基础物理攻击附上100%基础攻击，再加上1000的物理伤害，同时封印2-3秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "一闪（刀剑）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "两点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.2秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对目标造成150%基础伤害加上自身生命值上限-自身当前生命值的150%的物理伤害",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂龙之力",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬发",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "30秒内攻击降低50%。暴击率增加25%。冷却时间5分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "雷霆震击（拳套）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "200",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.4秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对范围内所有敌人造成260%基础伤害并且移动速度降低30%、降低攻击速度30%和吟唱时间增加50%。同时对自己和目标造成5秒的定身。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "金刚气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "400",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.6秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "使周围的队友从装备上获取1000%额外物理防御，持续10秒。并在15秒内为自己恢复最大生命值的20%生命值",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm</a></p>\t\r\n</div>\r\n\t\r\n\t<div>\r\n\t\t<img src=\"assets/76a2b089ae2a088061ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<div>\r\n\t\t\t<div>\r\n\t\t\t\t\t<table>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>技  能</td>\r\n\t\t\t\t\t\t\t<td>施放距离</td>\r\n\t\t\t\t\t\t\t<td>所需元气</td>\r\n\t\t\t\t\t\t\t<td>冷却时间</td>\r\n\t\t\t\t\t\t\t<td>消耗真气</td>\r\n\t\t\t\t\t\t\t<td>准备/吟唱时间</td>\r\n\t\t\t\t\t\t\t<td>施放时间</td>\r\n\t\t\t\t\t\t\t<td>效  果</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>断空</td>\r\n\t\t\t\t\t\t\t<td>18米</td>\r\n\t\t\t\t\t\t\t<td>15</td>\r\n\t\t\t\t\t\t\t<td>40秒</td>\r\n\t\t\t\t\t\t\t<td>200</td>\r\n\t\t\t\t\t\t\t<td>0.2秒</td>\r\n\t\t\t\t\t\t\t<td>1.7秒</td>\r\n\t\t\t\t\t\t\t<td>对敌人造成基础物理攻击附上100%基础攻击，再加上1000的物理伤害，同时封印2-3秒</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>一闪（刀剑）</td>\r\n\t\t\t\t\t\t\t<td>5米</td>\r\n\t\t\t\t\t\t\t<td>两点真元</td>\r\n\t\t\t\t\t\t\t<td>15分钟</td>\r\n\t\t\t\t\t\t\t<td>500</td>\r\n\t\t\t\t\t\t\t<td>0.2秒</td>\r\n\t\t\t\t\t\t\t<td>1.5秒</td>\r\n\t\t\t\t\t\t\t<td>对目标造成150%基础伤害加上自身生命值上限-自身当前生命值的150%的物理伤害</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>狂龙之力</td>\r\n\t\t\t\t\t\t\t<td> </td>\r\n\t\t\t\t\t\t\t<td>一点真元</td>\r\n\t\t\t\t\t\t\t<td>5分钟</td>\r\n\t\t\t\t\t\t\t<td>200</td>\r\n\t\t\t\t\t\t\t<td colspan=\"2\">瞬发</td>\r\n\t\t\t\t\t\t\t<td>30秒内攻击降低50%。暴击率增加25%。冷却时间5分钟</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>雷霆震击（拳套）</td>\r\n\t\t\t\t\t\t\t<td>12米</td>\r\n\t\t\t\t\t\t\t<td>一点真元</td>\r\n\t\t\t\t\t\t\t<td>2分钟</td>\r\n\t\t\t\t\t\t\t<td>200</td>\r\n\t\t\t\t\t\t\t<td>0.4秒</td>\r\n\t\t\t\t\t\t\t<td>1.5秒</td>\r\n\t\t\t\t\t\t\t<td>对范围内所有敌人造成260%基础伤害并且移动速度降低30%、降低攻击速度30%和吟唱时间增加50%。同时对自己和目标造成5秒的定身。</td>\r\n\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t<td>金刚气</td>\r\n\t\t\t\t\t\t\t<td> </td>\r\n\t\t\t\t\t\t\t<td>无</td>\r\n\t\t\t\t\t\t\t<td>10分钟</td>\r\n\t\t\t\t\t\t\t<td>400</td>\r\n\t\t\t\t\t\t\t<td>0.6秒</td>\r\n\t\t\t\t\t\t\t<td>1.8秒</td>\r\n\t\t\t\t\t\t\t<td>使周围的队友从装备上获取1000%额外物理防御，持续10秒。并在15秒内为自己恢复最大生命值的20%生命值</td>\r\n\t\t\t\t\t\t</tr>\t\t\t\t\r\n\t\t\t\t\t</table>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t</div>\t\t\t\r\n\t\t</div>\t\r\n\t</div>\r\n\t<div>\t\t\r\n\t\t<img src=\"assets/83dee5d06950afc247ff.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/b8b50a1e1b9ccaa7912f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/bfceaafd9fc4100950e7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/50d400a79de917d8b97f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/9e2c630da23ee1fc5b09.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/b514c44c96bdad0fbd85.json",
+  "imageCount": 6,
+  "tableCount": 1,
+  "downloadPath": "downloads/b514c44c96bdad0fbd85.js"
+}

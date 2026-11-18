@@ -1,0 +1,564 @@
+{
+  "id": "7a0a27bc2b88df6a38fd",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlscz.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "61fc3a97ca15b3a16650",
+    "7a0a27bc2b88df6a38fd"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "f2cc2053cb23995de4ca535191b625367db19796daf22e6da2864a8fd7762812",
+  "bytes": 6155,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/7a0a27bc2b88df6a38fd.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "项链|腰佩|戒指\n项链\n装备名称\n类型\n品阶\n物理防御\n法术防御\n躲闪度\n等级\n装备属性\n制作材料\n★凤势护符\n多彩项链\n11\n-\n288\n-\n95\n体质+5\n物理伤害减免+1%\n碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3\n★残雷护符\n流光项链\n11\n-\n-\n181\n95\n物理伤害减免+1%\n体质+5\n碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3\n★鸣泉护符\n符文项链\n11\n288\n-\n-\n95\n物理伤害减免+1%\n体质+5\n碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3\n腰佩\n装备名称\n类型\n品阶\n物理防御\n法术防御\n躲闪度\n等级\n装备属性\n制作材料\n★浮罄纹饰\n宝坠\n11\n-\n288\n-\n95\n法术攻击+11\n体质+5\n碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3\n★混沌纹饰\n香囊\n11\n-\n-\n181\n95\n物理攻击+11\n体质+5\n碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3\n★松风纹饰\n玉佩\n11\n288\n-\n-\n95\n物理攻击+11\n体质+4\n碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3\n戒指\n装备名称\n类型\n品阶\n物理攻击\n法术攻击\n等级\n装备属性\n制作材料\n★霜鸿徽记\n金属戒指\n11\n97\n-\n95\n致命一击率+2%\n体质+4\n碎片凝结体4\n结晶凝结体1\n精华凝结体1\n自然精髓5\n★存古徽记\n宝石指环\n11\n-\n97\n95\n致命一击率+2%\n体质+4\n碎片凝结体4\n结晶凝结体1\n精华凝结体1\n自然精髓5",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "躲闪度",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★凤势护符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "多彩项链",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "288",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体质+5\n物理伤害减免+1%",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★残雷护符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "流光项链",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "181",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理伤害减免+1%\n体质+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★鸣泉护符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "符文项链",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "288",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理伤害减免+1%\n体质+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "躲闪度",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★浮罄纹饰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "宝坠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "288",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击+11\n体质+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★混沌纹饰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "香囊",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "181",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击+11\n体质+5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★松风纹饰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "玉佩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "288",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击+11\n体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体3\n结晶凝结体1\n精华凝结体1\n自然精髓3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★霜鸿徽记",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金属戒指",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "97",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致命一击率+2%\n体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体4\n结晶凝结体1\n精华凝结体1\n自然精髓5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★存古徽记",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "宝石指环",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "97",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致命一击率+2%\n体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "碎片凝结体4\n结晶凝结体1\n精华凝结体1\n自然精髓5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlscz.htm",
+      "label": "戒指",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/sycsiframetop2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/b6075712bd22ea0b1487.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                    <div><a href=\"#page=7a0a27bc2b88df6a38fd\">项链</a><span>|</span><a href=\"#page=7a0a27bc2b88df6a38fd\">腰佩</a><span>|</span><a href=\"#page=7a0a27bc2b88df6a38fd\">戒指</a></div>\n       \t    </div>\n                <div>\n                <p>项链</p>\n<table>\n  \n  \n  \n  \n  \n  \n  \n  \n  <tr>\n    <th>装备名称\n    </th><th>类型\n    </th><th>品阶\n    </th><th>物理防御\n    </th><th>法术防御\n    </th><th>躲闪度\n    </th><th>等级\n    </th><th>装备属性\n    </th><th>制作材料\n  </th></tr>\n  <tr>\n    <td>★凤势护符</td>\n    <td>多彩项链</td>\n    <td>11</td>\n    <td>-</td>\n    <td>288</td>\n    <td>-</td>\n    <td>95</td>\n    <td>体质+5<br>\n      物理伤害减免+1%</td>\n    <td>碎片凝结体3<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓3</td>\n  </tr>\n  <tr>\n    <td>★残雷护符</td>\n    <td>流光项链</td>\n    <td>11</td>\n    <td>-</td>\n    <td>-</td>\n    <td>181</td>\n    <td>95</td>\n    <td>物理伤害减免+1%<br>\n      体质+5</td>\n    <td>碎片凝结体3<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓3</td>\n  </tr>\n  <tr>\n    <td>★鸣泉护符</td>\n    <td>符文项链</td>\n    <td>11</td>\n    <td>288</td>\n    <td>-</td>\n    <td>-</td>\n    <td>95</td>\n    <td>物理伤害减免+1%<br>\n      体质+5</td>\n    <td>碎片凝结体3<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓3</td>\n  </tr>\n</table>\n<p>腰佩</p>\n<table>\n\t  <tr>\n    <th>装备名称\n    </th><th>类型\n    </th><th>品阶\n    </th><th>物理防御\n    </th><th>法术防御\n    </th><th>躲闪度\n    </th><th>等级\n    </th><th>装备属性\n    </th><th>制作材料\n  </th></tr>\n  <tr>\n    <td>★浮罄纹饰</td>\n    <td>宝坠</td>\n    <td>11</td>\n    <td>-</td>\n    <td>288</td>\n    <td>-</td>\n    <td>95</td>\n    <td>法术攻击+11<br>\n      体质+5</td>\n    <td>碎片凝结体3<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓3</td>\n  </tr>\n  <tr>\n    <td>★混沌纹饰</td>\n    <td>香囊</td>\n    <td>11</td>\n    <td>-</td>\n    <td>-</td>\n    <td>181</td>\n    <td>95</td>\n    <td>物理攻击+11<br>\n      体质+5</td>\n    <td>碎片凝结体3<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓3</td>\n  </tr>\n  <tr>\n    <td>★松风纹饰</td>\n    <td>玉佩</td>\n    <td>11</td>\n    <td>288</td>\n    <td>-</td>\n    <td>-</td>\n    <td>95</td>\n    <td>物理攻击+11<br>\n      体质+4</td>\n    <td>碎片凝结体3<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓3</td>\n  </tr>\n</table> \n<p>戒指</p>\n<table>\n  \n  \n  \n  \n  \n  \n  \n  <tr>\n    <th>装备名称\n    </th><th>类型\n    </th><th>品阶\n    </th><th>物理攻击\n    </th><th>法术攻击\n    </th><th>等级\n    </th><th>装备属性\n    </th><th>制作材料\n  </th></tr>\n  <tr>\n    <td>★霜鸿徽记</td>\n    <td>金属戒指</td>\n    <td>11</td>\n    <td>97</td>\n    <td>-</td>\n    <td>95</td>\n    <td>致命一击率+2%<br>\n      体质+4</td>\n    <td>碎片凝结体4<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓5</td>\n  </tr>\n  <tr>\n    <td>★存古徽记</td>\n    <td>宝石指环</td>\n    <td>11</td>\n    <td>-</td>\n    <td>97</td>\n    <td>95</td>\n    <td>致命一击率+2%<br>\n      体质+4</td>\n    <td>碎片凝结体4<br>\n      结晶凝结体1<br>\n      精华凝结体1<br>\n      自然精髓5</td>\n  </tr>\n</table>\n               </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/7a0a27bc2b88df6a38fd.json",
+  "imageCount": 1,
+  "tableCount": 3,
+  "downloadPath": "downloads/7a0a27bc2b88df6a38fd.js"
+}

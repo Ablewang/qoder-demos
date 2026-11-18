@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "id": "394ed9642f6c232206e3",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 48979,
+  "sha256": "083caa48b518487a6aecff97cea3cdfcadd8b5129d1dd195e5329d651f453f67",
+  "fetchedAt": "2026-11-18T08:17:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/yumang.js",
+  "path": "assets/394ed9642f6c232206e3.js"
+}

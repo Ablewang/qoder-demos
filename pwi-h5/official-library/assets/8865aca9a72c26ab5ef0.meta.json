@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/1007_mycl_b.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "8865aca9a72c26ab5ef0",
+  "status": "ok",
+  "parents": [
+    "dec38a07f8181a3d8a2f"
+  ],
+  "bytes": 83930,
+  "sha256": "68fc6d28d797fc86a337611145aeb031f92d31867edde59aa58b302f82659017",
+  "fetchedAt": "2026-11-18T08:22:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/1007_mycl_b.jpg",
+  "path": "assets/8865aca9a72c26ab5ef0.jpg"
+}

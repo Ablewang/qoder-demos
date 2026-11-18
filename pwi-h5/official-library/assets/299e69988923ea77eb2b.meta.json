@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/feixing/yaozu/9.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "299e69988923ea77eb2b",
+  "status": "ok",
+  "parents": [
+    "d114cc676f48b3dffb1a"
+  ],
+  "bytes": 5731,
+  "sha256": "c9aecd86f1d4789067c5afa6861d726b999eb048dbc0efdfc21afca0c52c7153",
+  "fetchedAt": "2026-11-18T08:19:55+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/feixing/yaozu/9.jpg",
+  "path": "assets/299e69988923ea77eb2b.jpg"
+}

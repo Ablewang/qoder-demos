@@ -1,0 +1,299 @@
+{
+  "id": "4eff95687e5b49fdfaee",
+  "url": "https://w2i.wanmei.com/event/200805/cardboss/top.htm",
+  "title": "《完美国际》卡片BOSS",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 1,
+  "parents": [
+    "46854e8de5b70a560f88",
+    "0484962163fb69a8e84f",
+    "c6fe519c6bdc0e30ec67",
+    "d4c64bd0e6166be0f1e6",
+    "3ad1c5af404501829aed",
+    "de2103bc6b71ac226e52",
+    "d8112e39d0ee2ff144bf",
+    "770830f0b29f7e263580",
+    "2f3d4daea82d77bce827",
+    "f7577df2b16b5a39aa77",
+    "7980d838465140dae37f",
+    "83f9badecd17270ba193",
+    "55e3f75226d6d46ca573",
+    "a8adb163a3323c1b6ebe",
+    "2214302694053299b13d",
+    "f3ce3b8ac2d2384cb466",
+    "e6084f24602e115f0270",
+    "67953bdc93740fd7d508",
+    "90cb7f972617ae8ce535",
+    "49c54547bb7f0d48a0e9",
+    "aec947eca13f83fe2483"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "cb094eec07b5ffb72e390ff27f4c828f28da1e014b5ae68c0eec0cc68e01d472",
+  "bytes": 4713,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4eff95687e5b49fdfaee.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/index.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/boss.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/zhuangbei.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/moka.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka1_02.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka1_03.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka1_04.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka1_05.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/logo/transparent.gif",
+      "alt": "完美国际",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_08.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_09.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/katop_10.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/ka_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/image/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n\t<tr>\n\t\t<td>\n\t\t\t<div>\n\t\t\t\t\n\t\t\t\t<div></div>\n\t\t\t   \t<div><a href=\"https://w2i.wanmei.com/\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/57b9674c5c01d917be6e.gif\" alt=\"完美国际\" loading=\"lazy\"></a></div>\n\t\t\t\t\n\t\t\t</div>\n\t\t</td>\n\t</tr>\n  <tr>\n    <td><img src=\"assets/5d9a7c9767d54d3357f1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><img src=\"assets/b84c449b191af35bece5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><img src=\"assets/dbeff2e74ef614ba28a0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n\n<table>\n\n  <tr>\n\n    <td><img src=\"assets/06b57f256d105334b8e5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><img src=\"assets/101661264025e430dc94.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><img src=\"assets/c79e0a7d6fdb18c56c62.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><img src=\"assets/089d9b256cb8d8bd281d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><img src=\"assets/aa42701028056184c51f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n  </tr>\n\n</table>\n\n<table>\n\n  <tr>\n\n    <td><img src=\"assets/9a6a36881a2d044943fe.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n    <td><a href=\"#page=0484962163fb69a8e84f\"><img src=\"assets/a9df9a441da310057d89.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n\n    <td><a href=\"#page=c6fe519c6bdc0e30ec67\"><img src=\"assets/b89ab49aa6dad6033c04.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n\n    <td><a href=\"#page=d4c64bd0e6166be0f1e6\"><img src=\"assets/ed5d1459f850bec5c396.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n\n    <td><a href=\"#page=3ad1c5af404501829aed\"><img src=\"assets/2bdc522444ef94b82844.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a><img src=\"assets/3dafe44bf523ad5e8bb8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n\n  </tr>\n\n</table>\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "dataPath": "pages/4eff95687e5b49fdfaee.json",
+  "imageCount": 19,
+  "tableCount": 3,
+  "downloadPath": "downloads/4eff95687e5b49fdfaee.js"
+}

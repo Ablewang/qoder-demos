@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/fuben/images/pic01b.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "1d43f12f08dc4895fc17",
+  "status": "ok",
+  "parents": [
+    "f458bcafb746c36b1e32"
+  ],
+  "bytes": 139908,
+  "sha256": "d8f2449b1baf5a5457c448e9d3ddb97eb7abb0cba1611ec86bec471c6280b063",
+  "fetchedAt": "2026-11-18T08:19:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/images/pic01b.jpg",
+  "path": "assets/1d43f12f08dc4895fc17.jpg"
+}

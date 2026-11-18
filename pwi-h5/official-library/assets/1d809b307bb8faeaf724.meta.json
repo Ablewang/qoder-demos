@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/style/w2i_logo_249x113.css",
+  "id": "1d809b307bb8faeaf724",
+  "status": "ok",
+  "parents": [
+    "907abf4c2ec5ee7cda19"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201004/dress/style/css.css",
+  "bytes": 539,
+  "sha256": "4849d872a01f7d6bbe1b828be6b842f155d0bd8bddc4ae05300bc9f0f872bb8d",
+  "fetchedAt": "2026-11-18T08:28:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://w2i.wanmei.com/style/w2i_logo_249x113.css",
+  "path": "assets/1d809b307bb8faeaf724.css"
+}

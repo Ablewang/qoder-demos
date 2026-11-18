@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/huodong/images/banner.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "52bda84c59b9c8671a6a",
+  "status": "ok",
+  "parents": [
+    "56186829a9aad9d27274",
+    "352b70756b0ce4301ac7",
+    "675bdc215ce9ee4f2755",
+    "312212bd876b0d5f7144"
+  ],
+  "bytes": 27479,
+  "sha256": "a3b89b5b7797c3415278a564ee9eee3f842196c8d1ac4d71541ff6313f73c0da",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/52bda84c59b9c8671a6a.jpg"
+}

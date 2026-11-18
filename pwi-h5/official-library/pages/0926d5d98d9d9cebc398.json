@@ -1,0 +1,48 @@
+{
+  "id": "0926d5d98d9d9cebc398",
+  "url": "https://w2i.wanmei.com/store/storelist/m28.htm",
+  "title": "《完美国际2012》官方网站——全新3D灾难巨制，12月创世启程！",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "c2e645ff01502a22c283",
+    "215a8767dd67caa3e31b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "122fa907eb2082ecb5c961256d1b0c5d71d2b6a18a43d96d881e8e524a6da8d3",
+  "bytes": 2511,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0926d5d98d9d9cebc398.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "loading...\n风之精灵\n用于飞行棋速度升级的道具.在万流城的飞剑加速合成炉处使用。\n1黄金\n风之精灵（10个）\n用于飞行棋速度升级的道具.在万流城的飞剑加速合成炉处使用。\n10黄金",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/images/shop1102/feixing/jiasu/1.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/images/shop1102/feixing/jiasu/2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/style/shop1102.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<div>\r\n\t\tloading...\r\n\t</div>\r\n\t<div>\r\n\t\t\r\n<div>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/013fa7ae7bd9690e82cf.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>风之精灵</h4>\r\n\t\t\t<p>用于飞行棋速度升级的道具.在万流城的飞剑加速合成炉处使用。</p>\r\n\t\t\t<p><b>1黄金</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n\t<dl>\r\n\t\t<dt><img src=\"assets/ec6ff353482a8d36ffa8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></dt>\r\n\t\t<dd>\r\n\t\t\t<h4>风之精灵（10个）</h4>\r\n\t\t\t<p>用于飞行棋速度升级的道具.在万流城的飞剑加速合成炉处使用。</p>\r\n\t\t\t<p><b>10黄金</b></p>\r\n\t\t</dd>\r\n\t</dl>\r\n</div>\r\n\t</div>\r\n\t<div>\r\n\t\t<div></div>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/0926d5d98d9d9cebc398.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/0926d5d98d9d9cebc398.js"
+}

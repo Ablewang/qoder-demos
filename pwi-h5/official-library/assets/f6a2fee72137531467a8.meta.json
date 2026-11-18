@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_474.jpg",
+  "id": "f6a2fee72137531467a8",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·磐石护甲<em>（升仙）</em>",
+  "bytes": 1668,
+  "sha256": "5ab9a76942b4f09cc3eaf00cbeef9785458e510209d4da5ca8112a0b7eaa36e0",
+  "fetchedAt": "2026-11-18T08:34:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_474.jpg",
+  "path": "assets/f6a2fee72137531467a8.jpg"
+}

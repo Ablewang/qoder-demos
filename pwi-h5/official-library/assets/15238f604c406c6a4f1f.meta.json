@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/images/prize_img1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "15238f604c406c6a4f1f",
+  "status": "ok",
+  "parents": [
+    "ca91a22b822e69131723"
+  ],
+  "bytes": 6857,
+  "sha256": "9fbbe359da48c990643a65213000851797fd17ac4fb6eb5b82cf042fe1c03a7d",
+  "fetchedAt": "2026-11-18T08:28:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/images/prize_img1.jpg",
+  "path": "assets/15238f604c406c6a4f1f.jpg"
+}

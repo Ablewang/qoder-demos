@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+/* 
+	CSS RESET  wangkun
+	@from:www.wanmei.com
+	@version:2011.12.14
+*/
+/* RESET */
+html,body,form,ol,ul,li,div,p,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,th,td{margin:0px;padding:0px;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;font-weight:normal}
+ol,ul{list-style:none;}
+html{_filter:expression(document.execCommand("BackgroundImageCache",false,true));/*解决IE6背景图片重复加载问题*/}
+body{font-size:12px;line-height:1.5;font-family:Verdana,Geneva,sans-serif,\5b8b\4f53;/*首选字体Verdana;"\5b8b\4f53"为宋体，避免编码问题*/}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{}
+img{border:0;-ms-interpolation-mode:bicubic;/*解决图片缩放失真，IE7专用*/}
+a {blr:expression(this.onFocus=this.blur());outline:none; color:#FF3; text-decoration:underline}
+area {blr:expression(this.onFocus=this.blur());outline:none;}
+
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cl{clear:both;font-size:0;height:0;overflow:hidden}
+.fix:after{content:'\20';display:block;height:0;clear:both;}
+.fix{*zoom:1}
+ins{float:right;font-family:\5b8b\4f53;}
+
+.wrap_bg{width:100%;min-width:1002px;background:#181715 url('../images/wrap_bg.jpg') no-repeat center top;}
+#header,#cont{width:1002px;margin:0px auto;}
+#header img{display:block;}
+#header{position:relative}
+
+.pic_player_top{position:absolute; width:638px; height:358px; left:25px; top:484px; overflow:hidden}
+.pic_player_top #picplayer img{display:block;width:638px; height:358px;}
+.pic_player_top .bx-captions{display:none;}
+.pic_player_top .bx_pagerbg{position:absolute;bottom:2px;left:2px;width:186px;height:26px;filter:alpha(opacity=50);opacity:0.5;background:#000;z-index:998;}
+.pic_player_top .bx-pager{position:absolute;right:10px;top:330px;z-index:999}
+.pic_player_top .bx-pager a{display:block;width:18px;height:18px;float:left;margin-left:4px;background:url(http://www.wanmei.com/placenews/images/ico.png) no-repeat 0 0;line-height:18px;text-align:center;color:#fff;text-decoration:none}
+.pic_player_top .bx-pager a.pager-active{background:url(http://www.wanmei.com/placenews/images/ico.png) no-repeat 0px -28px;color:#fffc00}
+
+#footer{background:#181715; width:100%; min-width:1002px;}
+#share_line{width:850px;background:#181715; color:#463d3a; font-size:12px; height:20px; padding:8px 0 8px 150px; margin:0 auto}

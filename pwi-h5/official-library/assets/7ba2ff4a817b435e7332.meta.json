@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_wuxia.png",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "7ba2ff4a817b435e7332",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "bytes": 2879,
+  "sha256": "97cc2f79b2a2f8a1bb78707c1c1c2c4d36265b781d24fac1e7d00cb0a165dc69",
+  "fetchedAt": "2026-11-18T08:18:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_wuxia.png",
+  "path": "assets/7ba2ff4a817b435e7332.png"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27656.jpg",
+  "id": "0466ddb48d1877adea91",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·大地灵引咒<em>（升仙）</em>",
+  "bytes": 5029,
+  "sha256": "386af6d4c21445faeed93112088037d2feaecc6ad7b0d694bc4b83f83a04ec57",
+  "fetchedAt": "2026-11-18T08:36:24+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27656.jpg",
+  "path": "assets/0466ddb48d1877adea91.jpg"
+}

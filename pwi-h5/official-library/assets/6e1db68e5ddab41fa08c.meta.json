@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/enter/images/tabh.png",
+  "id": "6e1db68e5ddab41fa08c",
+  "status": "ok",
+  "parents": [
+    "2ed37cf6dbb67bef702a"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201408/enter/style/master.css",
+  "bytes": 1944,
+  "sha256": "5cd238005109a5cf691b85fea4dc82f897d98338241f6bc2086787ce5c541726",
+  "fetchedAt": "2026-11-18T08:38:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/enter/images/tabh.png",
+  "path": "assets/6e1db68e5ddab41fa08c.png"
+}

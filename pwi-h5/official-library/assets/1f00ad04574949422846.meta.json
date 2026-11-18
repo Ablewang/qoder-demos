@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/line.jpg",
+  "id": "1f00ad04574949422846",
+  "status": "ok",
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79",
+    "3136cd49a436d43035e6",
+    "69753a1e89037ce89a9e",
+    "661ea43ec21004c38c81",
+    "e9e69bb61aec017b44a8",
+    "8716ef0ffd9713a2e50d",
+    "bb8d8f83beaa947e8748",
+    "78cd277893465d3b5c99"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201007/maoxian/style/master.css",
+  "bytes": 819,
+  "sha256": "b5cf29a5c9e5ed9c60235042cee2af88446c47195adc0ff2ee352846d54b4c58",
+  "fetchedAt": "2026-11-18T08:36:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/maoxian/images/line.jpg",
+  "path": "assets/1f00ad04574949422846.jpg"
+}

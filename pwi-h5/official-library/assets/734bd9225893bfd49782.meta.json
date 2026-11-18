@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/dds_tt02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "734bd9225893bfd49782",
+  "status": "ok",
+  "parents": [
+    "80e9679b75fa533c1650"
+  ],
+  "bytes": 12789,
+  "sha256": "1fb2b65bfac3fd2ef96acb06fe74cfcb549f653179273136cc8e616123d270a2",
+  "fetchedAt": "2026-11-18T08:22:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/dds_tt02.jpg",
+  "path": "assets/734bd9225893bfd49782.jpg"
+}

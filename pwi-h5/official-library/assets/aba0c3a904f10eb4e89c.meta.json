@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_yumang.png",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "aba0c3a904f10eb4e89c",
+  "status": "ok",
+  "parents": [
+    "cb6c35b40dff9140fce0"
+  ],
+  "bytes": 2813,
+  "sha256": "cd78efd7cf32ac481f80c1571963227b2279e6079725ee28ce2ca5ef7476efe5",
+  "fetchedAt": "2026-11-18T08:18:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_yumang.png",
+  "path": "assets/aba0c3a904f10eb4e89c.png"
+}

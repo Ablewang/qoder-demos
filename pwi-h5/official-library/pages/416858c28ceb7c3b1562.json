@@ -1,0 +1,327 @@
+{
+  "id": "416858c28ceb7c3b1562",
+  "url": "https://w2i.wanmei.com/event/200807/highweapon/weapon_03.htm",
+  "title": "天怒神罚16阶顶级橙武-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "bd6a4da0ea55ad2a5bf5",
+    "ba2b70e5682e415ca7d4"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "490a15ab6d5b532b771519d57ade71a3f6f0ac995b885c233d85e9456aa08cf7",
+  "bytes": 4804,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/416858c28ceb7c3b1562.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "人面桃花\n武器类型\n长锤\n品阶\n16\n等级限制\n80\n力量限制\n287\n敏捷限制\n52\n体力限制\n0\n灵力限制\n0\n物理攻击\n1008~1871\n法术攻击\n0~0\n附加属性\n特殊属性\n击晕\n攻击等级\n+50\n力量\n+8~9\n力量\n+8~9\n力量\n+8~9\n力量\n+14~15\n击晕说明\n一定机率将对方击晕3秒",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "人面桃花",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "武器类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长锤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "80",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "力量限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "287",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "体力限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "灵力限制",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1008~1871",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0~0",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "特殊属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "击晕",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+8~9",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+8~9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+8~9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "+14~15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "击晕说明",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一定机率将对方击晕3秒",
+            "rowspan": "1",
+            "colspan": "5"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/main_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/left_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_l.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/pic_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_r.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_top.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/box_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/images/right.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<table>\n<tr>\n<td>\n<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</td>\n</tr>\n</table>\n\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200807/highweapon/iframe_top.htm</a></p>\n</div>\n\n\n\n<div>\n\t<img src=\"assets/1d986f02125b103461ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<div>\n\t\t<img src=\"assets/3ed5df25146d4b541d8f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t\t\n\t\t<div>\n\t\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200807/highweapon/iframe_con_title.htm</a></p>\n\t\t</div>\n\t\t\n\t    <img src=\"assets/0555f936118a830aea57.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n\t\n\t<div>\n\t\t<div>\n\t<img src=\"assets/0c1f37c9e48701f1f9a3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/d8f1d98a8cecc68e17c2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/fce54912df0056a57580.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/54c0e053473b038342ac.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<img src=\"assets/ce6bb9a354a297803678.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/4f412405a278678d8354.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t<div>\n\t\t<table>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"6\"><b>\n\t\t\t\t人面桃花</b></td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>武器类型</td>\n\t\t\t\t<td>长锤</td>\n\t\t\t\t<td>品阶</td>\n\t\t\t\t<td>16</td>\n\t\t\t\t<td>等级限制</td>\n\t\t\t\t<td>80</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>力量限制</td>\n\t\t\t\t<td>287</td>\n\t\t\t\t<td>敏捷限制</td>\n\t\t\t\t<td>52</td>\n\t\t\t\t<td>体力限制</td>\n\t\t\t\t<td>0</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>灵力限制</td>\n\t\t\t\t<td>0</td>\n\t\t\t\t<td>物理攻击</td>\n\t\t\t\t<td>1008~1871</td>\n\t\t\t\t<td>法术攻击</td>\n\t\t\t\t<td>0~0</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"6\">\n\t\t\t\t附加属性</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>特殊属性</td>\n\t\t\t\t<td>击晕</td>\n\t\t\t\t<td>攻击等级</td>\n\t\t\t\t<td>+50</td>\n\t\t\t\t<td>力量</td>\n\t\t\t\t<td>+8~9</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>力量</td>\n\t\t\t\t<td>+8~9</td>\n\t\t\t\t<td>力量</td>\n\t\t\t\t<td>+8~9</td>\n\t\t\t\t<td>力量</td>\n\t\t\t\t<td>+14~15</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td>击晕说明</td>\n\t\t\t\t<td colspan=\"5\">\n\t\t\t\t一定机率将对方击晕3秒</td>\n\t\t\t</tr>\n\t\t</table>\n\t</div>\n\t<img src=\"assets/6323c8de9af39aa4b1f8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> </div>\n\t\t<img src=\"assets/a63ec9b2976ce2031ffc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n\t</div>\n</div>\n\n<table>\n<tr>\n<td><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></td>\n</tr>\n</table>\n\n\n",
+  "dataPath": "pages/416858c28ceb7c3b1562.json",
+  "imageCount": 11,
+  "tableCount": 3,
+  "downloadPath": "downloads/416858c28ceb7c3b1562.js"
+}

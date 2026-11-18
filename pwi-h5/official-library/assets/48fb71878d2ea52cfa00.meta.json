@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_subnav_14.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "48fb71878d2ea52cfa00",
+  "status": "ok",
+  "parents": [
+    "830dd26c6bed835caa41"
+  ],
+  "bytes": 4345,
+  "sha256": "4ea8ab3fc81d73b41824f3f04593aab9030341606a37c6652eec83f2253f7c80",
+  "fetchedAt": "2026-11-18T08:24:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_subnav_14.jpg",
+  "path": "assets/48fb71878d2ea52cfa00.jpg"
+}

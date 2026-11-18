@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201209/sccg/images/btn_more_dj.jpg",
+  "id": "39b1456c81ee69bb372b",
+  "status": "failed",
+  "parents": [
+    "be915459ba7523f2f56d",
+    "2ca6ae6afc1bfe5f2b0f",
+    "aaa4ac93257b24ff825e",
+    "af9743181eeb7bf3ff76",
+    "44636c791e32b874469e"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201209/sccg/style/master.css",
+  "httpStatus": 200,
+  "error": "返回的原始文件不能解码为图片；保留原始字节，不作为可用属性图",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "fetchedAt": "2026-11-18T08:37:23+00:00"
+}

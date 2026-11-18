@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_393.jpg",
+  "id": "2e297d79e46d77c4b2d2",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·无影脚<em>（入魔）</em>",
+  "bytes": 1585,
+  "sha256": "0a50c6eed9b8e0b06b5e5d17bcfb7e2d07f7e7e45ebad15f00445318fd6e58fb",
+  "fetchedAt": "2026-11-18T08:34:17+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_393.jpg",
+  "path": "assets/2e297d79e46d77c4b2d2.jpg"
+}

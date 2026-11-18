@@ -1,0 +1,1425 @@
+{
+  "id": "16b67aae2fc39d311cd9",
+  "url": "https://w2i.wanmei.com/djzb/yxwp/20091015/29943.shtml",
+  "title": "灵符",
+  "category": "装备道具",
+  "section": "游戏物品",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "92b15ac144ccf94b7bdf35d27362ecabf508b86e772416e8bf7668a341340a60",
+  "bytes": 77767,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/16b67aae2fc39d311cd9.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "名称\n图标\n种类\n需求人物等级\n冷却时间\n初级裂刃符\n物理攻击灵符\n－\n－\n中级裂刃符\n物理攻击灵符\n－\n－\n高级裂刃符\n物理攻击灵符\n－\n－\n初级雷刃符\n物理攻击灵符\n－\n－\n中级雷刃符\n物理攻击灵符\n－\n－\n高级雷刃符\n物理攻击灵符\n－\n－\n初级光刃符\n物理攻击灵符\n－\n－\n中级光刃符\n物理攻击灵符\n－\n－\n高级光刃符\n物理攻击灵符\n－\n－\n初级狂刃符\n物理攻击灵符\n－\n－\n中级狂刃符\n物理攻击灵符\n－\n－\n高级狂刃符\n物理攻击灵符\n－\n－\n初级天刃符\n物理攻击灵符\n－\n－\n中级天刃符\n物理攻击灵符\n－\n－\n高级天刃符\n物理攻击灵符\n－\n－\n初级咒灵符\n法术攻击灵符\n－\n－\n中级咒灵符\n法术攻击灵符\n－\n－\n高级咒灵符\n法术攻击灵符\n－\n－\n初级定灵符\n法术攻击灵符\n－\n－\n中级定灵符\n法术攻击灵符\n－\n－\n高级定灵符\n法术攻击灵符\n－\n－\n初级幻灵符\n法术攻击灵符\n－\n－\n中级幻灵符\n法术攻击灵符\n－\n－\n高级幻灵符\n法术攻击灵符\n－\n－\n初级道灵符\n法术攻击灵符\n－\n－\n中级道灵符\n法术攻击灵符\n－\n－\n高级道灵符\n法术攻击灵符\n－\n－\n初级仙灵符\n法术攻击灵符\n－\n－\n中级仙灵符\n法术攻击灵符\n－\n－\n高级仙灵符\n法术攻击灵符\n－\n－\n硬甲符\n物理防御灵符\n1~20\n8秒\n护甲符\n物理防御灵符\n21~40\n8秒\n麟甲符\n物理防御灵符\n41~60\n8秒\n御甲符\n物理防御灵符\n61~80\n8秒\n玄甲符\n物理防御灵符\n81~100\n8秒\n初级魔甲符\n物理防御灵符\n100\n8秒\n中级魔甲符\n物理防御灵符\n100\n8秒\n高级魔甲符\n物理防御灵符\n100\n8秒\n护神符\n法术防御灵符\n1~20\n8秒\n固神符\n法术防御灵符\n21~40\n8秒\n聚神符\n法术防御灵符\n41~60\n8秒\n凝神符\n法术防御灵符\n61~80\n8秒\n定神符\n法术防御灵符\n81~100\n8秒\n初级召神符\n法术防御灵符\n100\n8秒\n中级召神符\n法术防御灵符\n100\n8秒\n高级召神符\n法术防御灵符\n100\n8秒",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图标",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "种类",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求人物等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冷却时间",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级裂刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级裂刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级裂刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级雷刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级雷刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级雷刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级光刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级光刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级光刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级狂刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级狂刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级狂刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级天刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级天刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级天刃符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "5"
+          }
+        ],
+        [
+          {
+            "text": "初级咒灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级咒灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级咒灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级定灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级定灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级定灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级幻灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级幻灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级幻灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级道灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级道灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级道灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级仙灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级仙灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级仙灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "5"
+          }
+        ],
+        [
+          {
+            "text": "硬甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1~20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "护甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "21~40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "麟甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "41~60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "御甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "61~80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "81~100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级魔甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级魔甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级魔甲符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "5"
+          }
+        ],
+        [
+          {
+            "text": "护神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1~20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "固神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "21~40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "聚神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "41~60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "凝神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "61~80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "定神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "81~100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "初级召神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "中级召神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "高级召神符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术防御灵符",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1629.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1631.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1633.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1635.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1637.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1639.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1641.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1643.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1645.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1647.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1649.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1651.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1653.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1655.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1657.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1659.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1661.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1663.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1665.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/lingfu/image1667.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>名称</strong></td>\r\n            <td><strong>图标</strong></td>\r\n            <td><strong>种类</strong></td>\r\n            <td><strong>需求人物等级</strong></td>\r\n            <td><strong>冷却时间</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级裂刃符</td>\r\n            <td><img src=\"assets/838679418a68fc8ff4bb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级裂刃符</td>\r\n            <td><img src=\"assets/838679418a68fc8ff4bb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级裂刃符</td>\r\n            <td><img src=\"assets/838679418a68fc8ff4bb.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级雷刃符</td>\r\n            <td><img src=\"assets/21dde01008333ae4dfd9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级雷刃符</td>\r\n            <td><img src=\"assets/21dde01008333ae4dfd9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级雷刃符</td>\r\n            <td><img src=\"assets/21dde01008333ae4dfd9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级光刃符</td>\r\n            <td><img src=\"assets/be1fcb66d0b6a357c02a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级光刃符</td>\r\n            <td><img src=\"assets/be1fcb66d0b6a357c02a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级光刃符</td>\r\n            <td><img src=\"assets/be1fcb66d0b6a357c02a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级狂刃符</td>\r\n            <td><img src=\"assets/ff010c0e741203ca4b08.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级狂刃符</td>\r\n            <td><img src=\"assets/ff010c0e741203ca4b08.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级狂刃符</td>\r\n            <td><img src=\"assets/ff010c0e741203ca4b08.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级天刃符</td>\r\n            <td><img src=\"assets/eef8cdb7910d3a98f990.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级天刃符</td>\r\n            <td><img src=\"assets/eef8cdb7910d3a98f990.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级天刃符</td>\r\n            <td><img src=\"assets/eef8cdb7910d3a98f990.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"5\"> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级咒灵符</td>\r\n            <td><img src=\"assets/67027bdef94afe9714ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级咒灵符</td>\r\n            <td><img src=\"assets/67027bdef94afe9714ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级咒灵符</td>\r\n            <td><img src=\"assets/67027bdef94afe9714ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级定灵符</td>\r\n            <td><img src=\"assets/9ea8c13ca958e35a3e19.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级定灵符</td>\r\n            <td><img src=\"assets/9ea8c13ca958e35a3e19.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级定灵符</td>\r\n            <td><img src=\"assets/9ea8c13ca958e35a3e19.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级幻灵符</td>\r\n            <td><img src=\"assets/5a65a4d924a0cba62d76.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级幻灵符</td>\r\n            <td><img src=\"assets/5a65a4d924a0cba62d76.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级幻灵符</td>\r\n            <td><img src=\"assets/5a65a4d924a0cba62d76.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级道灵符</td>\r\n            <td><img src=\"assets/b4cf5024159eefec644c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级道灵符</td>\r\n            <td><img src=\"assets/b4cf5024159eefec644c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级道灵符</td>\r\n            <td><img src=\"assets/b4cf5024159eefec644c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级仙灵符</td>\r\n            <td><img src=\"assets/3f3490127b5066ea0f1c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级仙灵符</td>\r\n            <td><img src=\"assets/3f3490127b5066ea0f1c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级仙灵符</td>\r\n            <td><img src=\"assets/3f3490127b5066ea0f1c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术攻击灵符</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"5\"> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>硬甲符</td>\r\n            <td><img src=\"assets/5c70d2095d921ba8bb92.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>1~20</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>护甲符</td>\r\n            <td><img src=\"assets/37a524156c6acc067e08.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>21~40</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>麟甲符</td>\r\n            <td><img src=\"assets/18201cab0fabd085399d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>41~60</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>御甲符</td>\r\n            <td><img src=\"assets/df680dc4ec9128182a18.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>61~80</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>玄甲符</td>\r\n            <td><img src=\"assets/81482d78f3884e5e7363.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>81~100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级魔甲符</td>\r\n            <td><img src=\"assets/81482d78f3884e5e7363.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级魔甲符</td>\r\n            <td><img src=\"assets/81482d78f3884e5e7363.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级魔甲符</td>\r\n            <td><img src=\"assets/81482d78f3884e5e7363.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>物理防御灵符</td>\r\n            <td>100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td colspan=\"5\"> </td>\r\n        </tr>\r\n        <tr>\r\n            <td>护神符</td>\r\n            <td><img src=\"assets/4cef31ab85dba88d95f7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>1~20</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>固神符</td>\r\n            <td><img src=\"assets/8b9b3719e932f077600c.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>21~40</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>聚神符</td>\r\n            <td><img src=\"assets/cafc114cb6f4b39d06c9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>41~60</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>凝神符</td>\r\n            <td><img src=\"assets/25a9c67e2b652bd271a5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>61~80</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>定神符</td>\r\n            <td><img src=\"assets/8f739843603dbeefad49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>81~100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>初级召神符</td>\r\n            <td><img src=\"assets/8f739843603dbeefad49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>中级召神符</td>\r\n            <td><img src=\"assets/8f739843603dbeefad49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n        <tr>\r\n            <td>高级召神符</td>\r\n            <td><img src=\"assets/8f739843603dbeefad49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法术防御灵符</td>\r\n            <td>100</td>\r\n            <td>8秒</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/16b67aae2fc39d311cd9.json",
+  "imageCount": 20,
+  "tableCount": 1,
+  "downloadPath": "downloads/16b67aae2fc39d311cd9.js"
+}

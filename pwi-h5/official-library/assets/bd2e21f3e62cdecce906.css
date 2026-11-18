@@ -1,0 +1,25 @@
+/*css2.0*/
+#w2i_logo{
+	width:184px;
+	height:85px;
+	background:url('http://www.wanmei.com/public/images/logo/w2i/w2i1.png') no-repeat;
+	_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.wanmei.com/public/images/logo/w2i/w2i1.png',sizingMethod='scale'); 
+	position:absolute;
+	z-index:99999;
+	top:25px;
+	left:50px;
+}
+
+#transparent_logo{
+	width:184px;
+	height:85px;
+	position:absolute;
+	z-index:99999;
+	top:25px;
+	left:50px;
+}
+
+#transparent_logo img{ 
+	width:184px;
+	height:85px;
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_116.jpg",
+  "id": "a8a8af983b0f12bc5344",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "海纳百川",
+  "bytes": 1403,
+  "sha256": "f4e0b4bbb1af391ebe15e509e5a33f19f0ef48e63d1154725b05b6d5a4596476",
+  "fetchedAt": "2026-11-18T08:35:07+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_116.jpg",
+  "path": "assets/a8a8af983b0f12bc5344.jpg"
+}

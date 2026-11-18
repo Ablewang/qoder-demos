@@ -1,0 +1,24 @@
+{
+  "name": "pwi-h5",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build --target es2022",
+    "preview": "vite preview",
+    "test": "node scripts/sim.mjs",
+    "test:ui": "node scripts/ui.mjs",
+    "test:backend": "node scripts/backend.mjs",
+    "test:equipment": "node scripts/equipment.mjs",
+    "test:high-equipment": "node scripts/high-equipment.mjs",
+    "test:high-ui": "node scripts/high-ui.mjs",
+    "test:info-ui": "node scripts/info-ui.mjs",
+    "test:economy": "node scripts/economy.mjs",
+    "test:all": "npm test && npm run test:equipment && npm run test:high-equipment && npm run test:economy && npm run test:backend && npm run test:ui && npm run test:high-ui && npm run test:info-ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "vite": "^5.4.0"
+  }
+}

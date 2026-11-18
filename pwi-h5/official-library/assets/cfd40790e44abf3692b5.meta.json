@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnclon.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "cfd40790e44abf3692b5",
+  "status": "ok",
+  "parents": [
+    "a0c36536f43a6d64b99e"
+  ],
+  "bytes": 3454,
+  "sha256": "93a3e1888d5b61efc2fd1507803a3240908002fa6b1d195f01c7f8c0d259e06a",
+  "fetchedAt": "2026-11-18T08:23:02+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnclon.jpg",
+  "path": "assets/cfd40790e44abf3692b5.jpg"
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/jietu_01.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "019f0a17c28f2ab60d38",
+  "status": "ok",
+  "parents": [
+    "f56acc5dcaec3de45cd4"
+  ],
+  "bytes": 183089,
+  "sha256": "8cb9f6b849744f7966a8a4adb4418b608c6dd79e431339a4484ed24375b5b77f",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/019f0a17c28f2ab60d38.jpg"
+}

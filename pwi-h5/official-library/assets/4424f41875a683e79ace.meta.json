@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_556.jpg",
+  "id": "4424f41875a683e79ace",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·五行符<em>（升仙）</em>",
+  "bytes": 1797,
+  "sha256": "9f1cafa9c3acf17971617db87b492b10fe59f62dc87a8bd30856a23870cfad84",
+  "fetchedAt": "2026-11-18T08:35:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_556.jpg",
+  "path": "assets/4424f41875a683e79ace.jpg"
+}

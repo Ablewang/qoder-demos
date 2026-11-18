@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_28035.jpg",
+  "id": "adb559795a0df56dbb74",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "碎石灭咒",
+  "bytes": 3875,
+  "sha256": "efe7bd45ec8dc0af4edcaba29694d23cc650db882ea16e7162fc1ecea27cb947",
+  "fetchedAt": "2026-11-18T08:36:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_28035.jpg",
+  "path": "assets/adb559795a0df56dbb74.jpg"
+}

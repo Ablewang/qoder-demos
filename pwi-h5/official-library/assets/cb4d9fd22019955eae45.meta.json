@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1098.jpg",
+  "id": "cb4d9fd22019955eae45",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "金刚轮印咒",
+  "bytes": 1133,
+  "sha256": "fc97bedb03e751bb3003b5818eb22da113738d4066b7656e04a542e47b9b73c9",
+  "fetchedAt": "2026-11-18T08:35:59+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_1098.jpg",
+  "path": "assets/cb4d9fd22019955eae45.jpg"
+}

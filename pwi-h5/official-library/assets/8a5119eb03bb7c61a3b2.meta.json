@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/through/images/tabt_hover.jpg",
+  "id": "8a5119eb03bb7c61a3b2",
+  "status": "ok",
+  "parents": [
+    "94183e477d6970e218e2"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201303/through/style/master.css",
+  "bytes": 23436,
+  "sha256": "1daa70d45d6c0f69f27a571d4953370b8283efde2cd2b25038024bb305f3278d",
+  "fetchedAt": "2026-11-18T08:38:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/through/images/tabt_hover.jpg",
+  "path": "assets/8a5119eb03bb7c61a3b2.jpg"
+}

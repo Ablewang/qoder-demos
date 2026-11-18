@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_460.jpg",
+  "id": "8f0ca4c1ead0bd502171",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·冰雹<em>（升仙）</em>",
+  "bytes": 1709,
+  "sha256": "d592d775c9a2b8abd45b2f1698cc4df2ac8d087fcc461015eb7978a1a3f1134f",
+  "fetchedAt": "2026-11-18T08:34:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_460.jpg",
+  "path": "assets/8f0ca4c1ead0bd502171.jpg"
+}

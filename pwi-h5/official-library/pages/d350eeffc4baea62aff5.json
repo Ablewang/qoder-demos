@@ -1,0 +1,347 @@
+{
+  "id": "d350eeffc4baea62aff5",
+  "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37698.shtml",
+  "title": "新武器-法宝",
+  "category": "装备道具",
+  "section": "武器",
+  "depth": 1,
+  "parents": [
+    "eee3aab04ec5daeb2789",
+    "4604ff508f140a109632",
+    "6c14103ab26360a90a04",
+    "0abe6ceccad74c753902",
+    "6d95bf47eb5231d97b4f",
+    "8f0f7e0b74c57d60c065",
+    "d1cfab30817245c1085c",
+    "65aee77a1ff80bae91f7",
+    "d350eeffc4baea62aff5"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "c7709590020f6ec590df0b8ab9c0d04188e6cd0928c1b4acf902c8947f79d7e5",
+  "bytes": 70645,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d350eeffc4baea62aff5.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-12-05",
+  "text": "拳套 | 枪戟 | 利刃 | 弓弩 | 斧锤 | 法器 | 刀剑 | 匕首 | 法宝 |\n一次轮回\n二次轮回\n名称：★★别梦咒逝川·轮回\n名称：★★三秋菩提恨\n类型：法宝\n类型：法宝\n品阶：13\n品阶：15\n法术攻击力：908~1228\n法术攻击力：1033~1397\n攻击距离：2.5\n攻击距离：2.5\n升级效果：法术攻击+28\n升级效果：法术攻击+28\n附加属性：致命一击+2% 体质+18~19 灵力+18~19\n必然会出现的附加属性：致命一击+3或致命一击+4%\n升级需要的武器：★别梦咒逝川\n可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 物理伤害减免 2% 防御等级+1 法术攻击+100 法术攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 吟唱时间 -3%\n别梦依稀咒逝川，故园三十二年前。为有牺牲多壮志，遍地英雄下夕烟。\n升级需要的武器：★★别梦咒逝川·轮回\n唯堪片片紫霞映，不与蒙蒙白雾迷。\n心若无私罗汉在，参差免向日虹西。\n一次轮回\n二次轮回\n名称：★★海狱珠·轮回\n名称：★★海狱溟歌珠\n类型：法宝\n类型：法宝\n品阶：13\n品阶：15\n法术攻击力：908~1228\n法术攻击力：1033~1397\n攻击距离：2.5\n攻击距离：2.5\n升级效果：法术攻击+28\n升级效果：法术攻击+28\n附加属性：吟唱时间-6% 法术攻击+100 灵力+18~19\n必然出现的附加属性：致命一击+3% 或 致命一击+4%\n升级需要的武器：★海狱珠·镇魂\n可能出现的附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 物理伤害减免 2% 防御等级+1 法术攻击+100 法术攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 吟唱时间 -3%\n升级需要的武器：★★海狱珠·轮回",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "一次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "二次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "名称：★★别梦咒逝川·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称：★★三秋菩提恨",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "类型：法宝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型：法宝",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "品阶：13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶：15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法术攻击力：908~1228",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击力：1033~1397",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级效果：法术攻击+28",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级效果：法术攻击+28",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性：致命一击+2% 体质+18~19 灵力+18~19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "必然会出现的附加属性：致命一击+3或致命一击+4%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★别梦咒逝川",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 物理伤害减免 2% 防御等级+1 法术攻击+100 法术攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 吟唱时间 -3%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "别梦依稀咒逝川，故园三十二年前。为有牺牲多壮志，遍地英雄下夕烟。",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "升级需要的武器：★★别梦咒逝川·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "唯堪片片紫霞映，不与蒙蒙白雾迷。\n心若无私罗汉在，参差免向日虹西。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "一次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "二次轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "名称：★★海狱珠·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "名称：★★海狱溟歌珠",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "类型：法宝",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型：法宝",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "品阶：13",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶：15",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法术攻击力：908~1228",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法术攻击力：1033~1397",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击距离：2.5",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级效果：法术攻击+28",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级效果：法术攻击+28",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性：吟唱时间-6% 法术攻击+100 灵力+18~19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "必然出现的附加属性：致命一击+3% 或 致命一击+4%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★海狱珠·镇魂",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "可能出现的附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 物理伤害减免 2% 防御等级+1 法术攻击+100 法术攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 吟唱时间 -3%",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "升级需要的武器：★★海狱珠·轮回",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36688.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36687.shtml",
+      "label": "枪戟",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36686.shtml",
+      "label": "利刃",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36685.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36684.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36683.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091102/36682.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37697.shtml",
+      "label": "匕首",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/yxwp/20091205/37698.shtml",
+      "label": "法宝",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/091207/10021260175798588.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/resources/jpg/091207/10021260175798714.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=eee3aab04ec5daeb2789\">拳套</a> | <a href=\"#page=4604ff508f140a109632\">枪戟</a> | <a href=\"#page=6c14103ab26360a90a04\">利刃</a> | <a href=\"#page=0abe6ceccad74c753902\">弓弩</a> | <a href=\"#page=6d95bf47eb5231d97b4f\">斧锤</a> | <a href=\"#page=8f0f7e0b74c57d60c065\">法器</a> | <a href=\"#page=d1cfab30817245c1085c\">刀剑</a> | <a href=\"#page=65aee77a1ff80bae91f7\">匕首</a> | <a href=\"#page=d350eeffc4baea62aff5\">法宝</a> |</li>\r\n</ul>\r\n<p><img src=\"assets/9769973fc6a074bf438e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>一次轮回</strong></td>\r\n            <td><strong>二次轮回</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>名称：★★别梦咒逝川·轮回</td>\r\n            <td>\r\n            <p>名称：★★三秋菩提恨</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>类型：法宝</td>\r\n            <td>类型：法宝</td>\r\n        </tr>\r\n        <tr>\r\n            <td>品阶：13</td>\r\n            <td>品阶：15</td>\r\n        </tr>\r\n        <tr>\r\n            <td>法术攻击力：908~1228</td>\r\n            <td>法术攻击力：1033~1397</td>\r\n        </tr>\r\n        <tr>\r\n            <td>攻击距离：2.5</td>\r\n            <td>攻击距离：2.5</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级效果：法术攻击+28</td>\r\n            <td>升级效果：法术攻击+28</td>\r\n        </tr>\r\n        <tr>\r\n            <td>附加属性：致命一击+2% 体质+18~19 灵力+18~19</td>\r\n            <td>必然会出现的附加属性：致命一击+3或致命一击+4%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★别梦咒逝川</td>\r\n            <td>可能出现附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 物理伤害减免 2% 防御等级+1 法术攻击+100 法术攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 吟唱时间 -3%</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">别梦依稀咒逝川，故园三十二年前。为有牺牲多壮志，遍地英雄下夕烟。</td>\r\n            <td>升级需要的武器：★★别梦咒逝川·轮回</td>\r\n        </tr>\r\n        <tr>\r\n            <td>唯堪片片紫霞映，不与蒙蒙白雾迷。<br>\r\n            心若无私罗汉在，参差免向日虹西。</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<p><img src=\"assets/b05da95c3e264abe4137.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>一次轮回</strong></td>\r\n            <td><strong>二次轮回</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>名称：★★海狱珠·轮回</td>\r\n            <td>\r\n            <p>名称：★★海狱溟歌珠</p>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>类型：法宝</td>\r\n            <td>类型：法宝</td>\r\n        </tr>\r\n        <tr>\r\n            <td>品阶：13</td>\r\n            <td>品阶：15</td>\r\n        </tr>\r\n        <tr>\r\n            <td>法术攻击力：908~1228</td>\r\n            <td>法术攻击力：1033~1397</td>\r\n        </tr>\r\n        <tr>\r\n            <td>攻击距离：2.5</td>\r\n            <td>攻击距离：2.5</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级效果：法术攻击+28</td>\r\n            <td>升级效果：法术攻击+28</td>\r\n        </tr>\r\n        <tr>\r\n            <td>附加属性：吟唱时间-6% 法术攻击+100 灵力+18~19</td>\r\n            <td>必然出现的附加属性：致命一击+3% 或 致命一击+4%</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">升级需要的武器：★海狱珠·镇魂</td>\r\n            <td>可能出现的附加属性：致命一击+1% 真气+310 生命+350 力量+18~19 敏捷+18~19 体质+18~19 灵力+18~19 攻击等级+1 物理伤害减免 2% 防御等级+1 法术攻击+100 法术攻击上限+130 攻击等级+2 防御等级+2 致命一击+2% 吟唱时间 -3%</td>\r\n        </tr>\r\n        <tr>\r\n            <td>升级需要的武器：★★海狱珠·轮回</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/d350eeffc4baea62aff5.json",
+  "imageCount": 2,
+  "tableCount": 2,
+  "downloadPath": "downloads/d350eeffc4baea62aff5.js"
+}

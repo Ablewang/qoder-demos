@@ -1,0 +1,531 @@
+{
+  "run": "2026-11-18T07-29-58-911Z",
+  "environment": "Local Chrome via Playwright, real keyboard events, real RAF clock and DOM clicks",
+  "checks": [
+    "320: rules dialog takes focus, background inert+aria-hidden, Tab/Shift+Tab stay inside, Esc and close button return focus to 看玩法",
+    "320: pause dialog takes focus, freezes time, blocks background, Tab cycles inside, Esc/回桌继续 resume and return focus to pause; focus survives later re-renders",
+    "390: rules dialog takes focus, background inert+aria-hidden, Tab/Shift+Tab stay inside, Esc and close button return focus to 看玩法",
+    "390: pause dialog takes focus, freezes time, blocks background, Tab cycles inside, Esc/回桌继续 resume and return focus to pause; focus survives later re-renders",
+    "1280: rules dialog takes focus, background inert+aria-hidden, Tab/Shift+Tab stay inside, Esc and close button return focus to 看玩法",
+    "1280: pause dialog takes focus, freezes time, blocks background, Tab cycles inside, Esc/回桌继续 resume and return focus to pause; focus survives later re-renders",
+    "320: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG",
+    "390: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG",
+    "1280: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG",
+    "320-text130: poster fail→fail→success shows one current error at a time, retry ≥44px visible/clickable/not overlapped/focused, success clears it and decodes a 1080×1440 PNG",
+    "320 zero cards: limited charges hit 0 at 59.9s real; all four disabled during taiji cooldown observed, no blank screen or clock stall; game continued with taiji only to natural settlement (边界守护者, 2400 points, mood 100)"
+  ],
+  "focus": [
+    {
+      "size": "320",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    },
+    {
+      "size": "390",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    },
+    {
+      "size": "1280",
+      "rulesCycle": {
+        "forward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ],
+        "backward": [
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules",
+          "close-rules"
+        ]
+      },
+      "pauseCycle": {
+        "forward": [
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart",
+          "finish",
+          "SUMMARY",
+          "resume",
+          "restart"
+        ],
+        "backward": [
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume",
+          "SUMMARY",
+          "finish",
+          "restart",
+          "resume"
+        ]
+      }
+    }
+  ],
+  "posterFlow": [
+    {
+      "size": "320",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 515.0625,
+            "bottom": 559.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 44
+          },
+          "text": {
+            "top": 442,
+            "bottom": 507.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 65.0625
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 515.0625,
+            "bottom": 559.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 44
+          },
+          "text": {
+            "top": 442,
+            "bottom": 507.0625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 65.0625
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    },
+    {
+      "size": "390",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 619.171875,
+            "bottom": 663.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 44
+          },
+          "text": {
+            "top": 567.796875,
+            "bottom": 611.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 390,
+          "width": 390
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 619.171875,
+            "bottom": 663.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 44
+          },
+          "text": {
+            "top": 567.796875,
+            "bottom": 611.171875,
+            "left": 28,
+            "right": 362,
+            "width": 334,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 390,
+          "width": 390
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    },
+    {
+      "size": "1280",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 675.171875,
+            "bottom": 719.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 44
+          },
+          "text": {
+            "top": 623.796875,
+            "bottom": 667.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 1280,
+          "width": 1280
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 675.171875,
+            "bottom": 719.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 44
+          },
+          "text": {
+            "top": 623.796875,
+            "bottom": 667.171875,
+            "left": 453,
+            "right": 827,
+            "width": 374,
+            "height": 43.375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 1280,
+          "width": 1280
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    },
+    {
+      "size": "320-text130",
+      "flow": [
+        {
+          "step": "fail-1",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 483.390625,
+            "bottom": 527.390625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 44
+          },
+          "text": {
+            "top": 390.78125,
+            "bottom": 475.390625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 84.609375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "step": "fail-2-retry",
+          "errors": 1,
+          "notices": 0,
+          "alerts": 1,
+          "retry": {
+            "top": 483.390625,
+            "bottom": 527.390625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 44
+          },
+          "text": {
+            "top": 390.78125,
+            "bottom": 475.390625,
+            "left": 28,
+            "right": 292,
+            "width": 264,
+            "height": 84.609375
+          },
+          "overlap": false,
+          "hit": true,
+          "inViewport": true,
+          "focused": true,
+          "scrollWidth": 320,
+          "width": 320
+        },
+        {
+          "step": "success",
+          "errors": 0,
+          "notices": 0
+        },
+        {
+          "step": "back-to-result",
+          "errors": 0,
+          "notices": 0
+        }
+      ]
+    }
+  ],
+  "zeroCards": {
+    "seen": {
+      "allDisabled": {
+        "phase": "playing",
+        "elapsed": 71.76370000000303,
+        "charges": {
+          "counter": 0,
+          "crazy": 0,
+          "sincere": 0
+        },
+        "cooldown": 1.683400000000009,
+        "active": 1,
+        "cardCount": 4,
+        "enabled": [],
+        "mainText": 264,
+        "result": false
+      },
+      "zeroCharges": {
+        "phase": "playing",
+        "elapsed": 59.664200000001216,
+        "charges": {
+          "counter": 0,
+          "crazy": 0,
+          "sincere": 0
+        },
+        "cooldown": 0,
+        "active": 0,
+        "cardCount": 4,
+        "enabled": [],
+        "mainText": 247,
+        "result": false,
+        "at": 59.91
+      },
+      "blank": 0,
+      "stalls": 0,
+      "rewards": 2
+    },
+    "report": {
+      "score": 2400,
+      "title": "边界守护者",
+      "grade": "上上签",
+      "mood": 100,
+      "won": true,
+      "elapsed": 89
+    },
+    "realSeconds": 89.607
+  },
+  "screenshots": [
+    "2026-11-18T07-29-58-911Z-320-rules-focus.png",
+    "2026-11-18T07-29-58-911Z-320-pause-focus.png",
+    "2026-11-18T07-29-58-911Z-390-rules-focus.png",
+    "2026-11-18T07-29-58-911Z-390-pause-focus.png",
+    "2026-11-18T07-29-58-911Z-1280-rules-focus.png",
+    "2026-11-18T07-29-58-911Z-1280-pause-focus.png",
+    "2026-11-18T07-29-58-911Z-320-poster-fail.png",
+    "2026-11-18T07-29-58-911Z-320-poster-success.png",
+    "2026-11-18T07-29-58-911Z-390-poster-fail.png",
+    "2026-11-18T07-29-58-911Z-390-poster-success.png",
+    "2026-11-18T07-29-58-911Z-1280-poster-fail.png",
+    "2026-11-18T07-29-58-911Z-1280-poster-success.png",
+    "2026-11-18T07-29-58-911Z-320-text130-poster-fail.png",
+    "2026-11-18T07-29-58-911Z-320-text130-poster-success.png",
+    "2026-11-18T07-29-58-911Z-320-zero-charges.png",
+    "2026-11-18T07-29-58-911Z-320-zero-all-disabled.png",
+    "2026-11-18T07-29-58-911Z-320-zero-result.png"
+  ],
+  "errors": [],
+  "limits": [
+    "Poster failure is induced by stubbing HTMLCanvasElement.toDataURL in the page, simulating a browser canvas failure",
+    "Large text is emulated by scaling every rendered element font size 1.3x at 320px (similar to Android WebView text zoom), not OS/WeChat font settings",
+    "No physical phone, WeChat, screen reader or listening test"
+  ],
+  "passed": true
+}

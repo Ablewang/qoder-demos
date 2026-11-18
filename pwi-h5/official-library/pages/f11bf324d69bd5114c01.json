@@ -1,0 +1,1570 @@
+{
+  "id": "f11bf324d69bd5114c01",
+  "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+  "title": "刺客技能列表",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 0,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "3e844d7982ff7ea45bd4",
+    "445331485a4f02ccb3ae",
+    "94a3fb50144afb0d8e8d",
+    "f11bf324d69bd5114c01",
+    "dd1ddd3e6012fb23d9d2",
+    "53f6f5720445d51d60b4",
+    "be9cab57fa5c3ad46496",
+    "9b8447a1462b5249ff80",
+    "53fb3a1cce261d509934",
+    "4a78e24de6621d6c52cb",
+    "657500fba62f48b8d492",
+    "1653f72c7a01bd381b97",
+    "0285ea8a3bce3704b666",
+    "6086431c2237fdf64b6a"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "6ec4a4941a05326f244fc34ee66a88bbe4c02fa089e0a53d3ce78a3006ca760d",
+  "bytes": 99095,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/f11bf324d69bd5114c01.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2010-11-22",
+  "text": "武侠技能列表 | 法师技能列表 | 妖兽技能列表 | 妖精技能列表 | 羽灵技能列表 | 羽芒技能列表 | 巫师技能列表 | 刺客技能列表 | 剑灵技能列表 | 魅灵技能列表 | 夜影技能列表 | 月仙技能列表\n刺客技能列表\n技能名称\n武器\n前置技能\n修真级别\n技能类型\n最大等级\n技能学习所需级别\n升级级别\n技能说明\n连击\n匕首\n无\n筑基\n主动攻击\n10级\n天生\n5、10、15、20、25、30、35、40、45\n迅捷的刺杀技巧，对敌人造成较大物理伤害。\n斩杀\n匕首\n连击\n筑基\n主动攻击\n10级\n6\n11、16、21、26、31、36、41、46、51\n高超的刺杀技巧，对敌人造成较大物理伤害。\n狂乱斩\n匕首\n斩杀\n灵虚\n主动攻击\n10级\n9\n14、19、24、29、34、39、44、49、54\n刺客的聚力一击，对敌人造成物理伤害，并且使其移动速度降低。\n深刺\n匕首\n狂乱斩\n和合\n主动攻击\n10级\n19\n24、29、34、39、44、49、54、59、64\n阴险的刺杀技巧，对敌人造成物理伤害，并且使其昏睡。\n致命扫击\n匕首\n深刺\n元婴\n主动攻击\n10\n29\n34、39、44、49、54、59、64、69、74\n刺客以匕首之刃横扫敌人，对敌人造成物理伤害，并降低目标攻击速度。\n断喉斩\n匕首\n致命扫击\n空冥\n主动攻击\n10级\n39\n43、47、51、55、59、63、67、71、75\n迅捷一击制敌咽喉，对其造成物理伤害，并有较大可能使其封印。\n大地裂纹\n匕首\n断喉斩\n履霜\n主动攻击\n10级\n49\n53、57、61、65、69、73、77、81、85\n引爆敌人脚下的暗雷，对自身周围一定范围内的所有敌人造成物理伤害。\n斩首\n匕首\n大地裂纹\n渡劫\n主动攻击\n10级\n59\n62、65、68、71、74、77、80、83、86\n奋力一击刺敌要害，对其造成物理伤害，并使其昏迷。\n分水刺击\n匕首\n大地裂纹\n渡劫\n主动攻击\n10级\n59\n62、65、68、71、74、77、80、83、86\n刺客的高深技法，瞬息之间横扫四周，对周围8米范围内所有敌人造成物理伤害，并使敌人受到伤害加深效果。\n强冲刺杀\n匕首\n大地裂纹\n渡劫\n主动攻击\n10级\n59\n62、65、68、71、74、77、80、83、86\n刺客凭迅猛之势强冲杀敌，施展后对敌人造成物理伤害，并且提升自己暴击几率。\n匕首精通\n匕首\n无\n元婴\n被动\n10级\n29\n34、39、44、49、54、59、64、69、74\n所有匕首攻击从装备上获得额外攻击力。\n遁隐术\n匕首\n无\n灵虚\n主动祝福\n10级\n13\n18、23、28、33、38、43、48、53、58\n汐族刺客绝技，使自身进入隐身状态。所有反遁隐等级小于自身遁隐等级的敌人，都无法发现并锁定自己。只能在非战斗状态下使用。\n金刚轮印咒\n匕首\n隐遁术\n和合\n主动祝福\n10级\n19\n24、29、34、39、44、49、54、59、64\n屏气凝神，额外增加自己对技能伤害的闪避机率。\n强行隐遁\n匕首\n金刚轮印咒\n元婴\n主动祝福\n10级\n29\n34、39、44、49、54、59、64、69、74\n汐族刺客一脉不传之秘，使自身强行进入遁隐状态，并驱除自身所有不利状态。所有反遁隐等级小于自身遁隐等级的敌人，都无法发现并锁定自己。并且增加自己元气。\n嗜血咒\n匕首\n金刚轮印咒\n元婴\n主动攻击\n10级\n34\n39、44、49、54、59、64、69、74、79\n汐族以嗜血之咒凝气成狱，在嗜血炼狱的作用之下，使周围一定范围内队友都可从他自身的每次近身物理攻击中恢复生命。此效果仅能施加在武侠、妖兽、刺客身上。\n如来天心咒\n匕首\n嗜血咒\n空冥\n主动祝福\n10级\n39\n43、47、51、55、59、63、67、71、75\n汐族刺客一脉不传之秘，凭借咒法护全魂魄，使自己在一定时间内，可以免除致死打击，并恢复一定生命、吐纳吸气，额外增加自己对技能负面状态的闪避机率。\n三世明王咒\n匕首\n如来天心咒\n渡劫\n主动祝福\n10级\n59\n62、65、68、71、74、77、80、83、86\n放血\n匕首\n无\n筑基\n主动攻击\n10级\n3\n8、13、18、23、28、33、38、43、48\n割伤敌人的技巧，造成较大物理伤害，并且使其流血。\n狂狼印\n匕首\n放血\n灵虚\n主动攻击\n10级\n14\n19、24、29、34、39、44、49、54、59\n集中精力，提高自身暴击伤害上限。\n钻心袖箭\n匕首\n狂狼印\n和合\n主动攻击\n10级\n19\n24、29、34、39、44、49、54、59、64\n将袖中暗藏的匕首丢出，对目标进行远程攻击。对目标造成较大物理伤害。\n绊腿斩\n匕首\n钻心袖箭\n元婴\n主动攻击\n10级\n29\n34、39、44、49、54、59、64、69、74\n刺客的近身摔法，对其造成物理伤害，并使其在一段时间内定身。同时增加自身元气。\n深度冰刺\n匕首\n绊腿斩\n空冥\n主动攻击\n10级\n44\n48、52、56、60、64、68、72、76、80\n将深寒之气凝于武器之上，使自己攻击速度降低，攻击等级提高。\n龙腾斩\n匕首\n深度冰刺\n履霜\n主动攻击\n10\n49\n53、57、61、65、69、73、77、81、85\n高级的刺击手段，既有杀敌之效，又并蓄劲之能。对敌人造成大量物理伤害并增加自己元气，必定命中。\n背水一战\n匕首\n龙腾斩\n渡劫\n主动攻击\n10\n59\n62、65、68、71、74、77、80、83、86\n集中精力激发自身潜能，增加大量元气。\n眼力精通\n匕首\n无\n元婴\n被动\n10\n29\n34、39、44、49、54、59、64、69、74\n提高角色的反隐等级。\n疾风行\n匕首\n无\n灵虚\n主动祝福\n10\n9\n14、19、24、29、34、39、44、49、54\n足下生风，提升自己的移动速度。\n如影随形\n匕首\n疾风行\n元婴\n瞬移技能\n10\n29\n34、39、44、49、54、59、64、69、74\n刺客凭借轻灵的身份辗转腾挪，瞬间移动到目标位置。\n迷踪乱步决\n匕首\n如影随形\n空冥\n主动祝福\n10\n44\n48、52、56、60、64、68、72、76、80\n汐族刺客独特的步法，十分耗费气力。时装后提高移动速度，且不受击晕、定身等状态影响。\n百步神行决\n匕首\n迷踪乱步决\n渡劫\n瞬移技能\n10\n59\n62、65、68、71、74、77、80、83、86\n刺客蓄气力于足下，快速向目标奔袭。瞬间移动到目标位置，并且使目标眩晕。\n身形精通\n匕首\n无\n元婴\n被动\n10\n29\n34、39、44、49、54、59、64、69、74\n提高隐遁等级。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "刺客技能列表",
+            "rowspan": "1",
+            "colspan": "9"
+          }
+        ],
+        [
+          {
+            "text": "技能名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "前置技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "修真级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "最大等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能学习所需级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "升级级别",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "技能说明",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "连击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "天生",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5、10、15、20、25、30、35、40、45",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "迅捷的刺杀技巧，对敌人造成较大物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "斩杀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "连击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "11、16、21、26、31、36、41、46、51",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "高超的刺杀技巧，对敌人造成较大物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂乱斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "斩杀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14、19、24、29、34、39、44、49、54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客的聚力一击，对敌人造成物理伤害，并且使其移动速度降低。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "深刺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "狂乱斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24、29、34、39、44、49、54、59、64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "阴险的刺杀技巧，对敌人造成物理伤害，并且使其昏睡。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "致命扫击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "深刺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客以匕首之刃横扫敌人，对敌人造成物理伤害，并降低目标攻击速度。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "断喉斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "致命扫击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "43、47、51、55、59、63、67、71、75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "迅捷一击制敌咽喉，对其造成物理伤害，并有较大可能使其封印。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "大地裂纹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "断喉斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "53、57、61、65、69、73、77、81、85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "引爆敌人脚下的暗雷，对自身周围一定范围内的所有敌人造成物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "斩首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "大地裂纹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62、65、68、71、74、77、80、83、86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奋力一击刺敌要害，对其造成物理伤害，并使其昏迷。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "分水刺击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "大地裂纹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62、65、68、71、74、77、80、83、86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客的高深技法，瞬息之间横扫四周，对周围8米范围内所有敌人造成物理伤害，并使敌人受到伤害加深效果。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "强冲刺杀",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "大地裂纹",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62、65、68、71、74、77、80、83、86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客凭迅猛之势强冲杀敌，施展后对敌人造成物理伤害，并且提升自己暴击几率。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "匕首精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所有匕首攻击从装备上获得额外攻击力。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "遁隐术",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "18、23、28、33、38、43、48、53、58",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "汐族刺客绝技，使自身进入隐身状态。所有反遁隐等级小于自身遁隐等级的敌人，都无法发现并锁定自己。只能在非战斗状态下使用。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "金刚轮印咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "隐遁术",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24、29、34、39、44、49、54、59、64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "屏气凝神，额外增加自己对技能伤害的闪避机率。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "强行隐遁",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "金刚轮印咒",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "汐族刺客一脉不传之秘，使自身强行进入遁隐状态，并驱除自身所有不利状态。所有反遁隐等级小于自身遁隐等级的敌人，都无法发现并锁定自己。并且增加自己元气。",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "嗜血咒",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "金刚轮印咒",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "34",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "39、44、49、54、59、64、69、74、79",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "汐族以嗜血之咒凝气成狱，在嗜血炼狱的作用之下，使周围一定范围内队友都可从他自身的每次近身物理攻击中恢复生命。此效果仅能施加在武侠、妖兽、刺客身上。",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "如来天心咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "嗜血咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "39",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "43、47、51、55、59、63、67、71、75",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "汐族刺客一脉不传之秘，凭借咒法护全魂魄，使自己在一定时间内，可以免除致死打击，并恢复一定生命、吐纳吸气，额外增加自己对技能负面状态的闪避机率。",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "三世明王咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "如来天心咒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62、65、68、71、74、77、80、83、86",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "放血",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "筑基",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8、13、18、23、28、33、38、43、48",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "割伤敌人的技巧，造成较大物理伤害，并且使其流血。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂狼印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "放血",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19、24、29、34、39、44、49、54、59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "集中精力，提高自身暴击伤害上限。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钻心袖箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "狂狼印",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "和合",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "19",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "24、29、34、39、44、49、54、59、64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将袖中暗藏的匕首丢出，对目标进行远程攻击。对目标造成较大物理伤害。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "绊腿斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "钻心袖箭",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客的近身摔法，对其造成物理伤害，并使其在一段时间内定身。同时增加自身元气。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "深度冰刺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "绊腿斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "48、52、56、60、64、68、72、76、80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "将深寒之气凝于武器之上，使自己攻击速度降低，攻击等级提高。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "龙腾斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "深度冰刺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "履霜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "49",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "53、57、61、65、69、73、77、81、85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "高级的刺击手段，既有杀敌之效，又并蓄劲之能。对敌人造成大量物理伤害并增加自己元气，必定命中。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "背水一战",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "龙腾斩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动攻击",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62、65、68、71、74、77、80、83、86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "集中精力激发自身潜能，增加大量元气。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "眼力精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提高角色的反隐等级。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "疾风行",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵虚",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14、19、24、29、34、39、44、49、54",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "足下生风，提升自己的移动速度。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "如影随形",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "疾风行",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬移技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客凭借轻灵的身份辗转腾挪，瞬间移动到目标位置。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "迷踪乱步决",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "如影随形",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "空冥",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "主动祝福",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "48、52、56、60、64、68、72、76、80",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "汐族刺客独特的步法，十分耗费气力。时装后提高移动速度，且不受击晕、定身等状态影响。",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "百步神行决",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "迷踪乱步决",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "渡劫",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬移技能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "59",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "62、65、68、71、74、77、80、83、86",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刺客蓄气力于足下，快速向目标奔袭。瞬间移动到目标位置，并且使目标眩晕。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "身形精通",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "匕首",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "元婴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "被动",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "29",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "34、39、44、49、54、59、64、69、74",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "提高隐遁等级。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101119/56941.shtml",
+      "label": "武侠技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57006.shtml",
+      "label": "法师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57007.shtml",
+      "label": "妖兽技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57008.shtml",
+      "label": "妖精技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57009.shtml",
+      "label": "羽灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57010.shtml",
+      "label": "羽芒技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57011.shtml",
+      "label": "巫师技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57012.shtml",
+      "label": "刺客技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57013.shtml",
+      "label": "剑灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20101122/57015.shtml",
+      "label": "魅灵技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73617.shtml",
+      "label": "夜影技能列表",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/zyjn/zyjs/20140926/73618.shtml",
+      "label": "月仙技能列表",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=53f6f5720445d51d60b4\">武侠技能列表 </a>| <a href=\"#page=9b8447a1462b5249ff80\">法师技能列表 </a>| <a href=\"#page=657500fba62f48b8d492\">妖兽技能列表 </a>| <a href=\"#page=53fb3a1cce261d509934\">妖精技能列表 </a>| <a href=\"#page=be9cab57fa5c3ad46496\">羽灵技能列表 </a>| <a href=\"#page=4a78e24de6621d6c52cb\">羽芒技能列表 </a>| <a href=\"#page=dd1ddd3e6012fb23d9d2\">巫师技能列表 </a>| <a href=\"#page=f11bf324d69bd5114c01\">刺客技能列表 </a>| <a href=\"#page=1653f72c7a01bd381b97\">剑灵技能列表 </a>| <a href=\"#page=0285ea8a3bce3704b666\">魅灵技能列表 </a>| <a href=\"#page=445331485a4f02ccb3ae\">夜影技能列表 </a>| <a href=\"#page=94a3fb50144afb0d8e8d\">月仙技能列表 </a></li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td colspan=\"9\">\r\n            <div>刺客技能列表</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td><strong>技能名称</strong></td>\r\n            <td><strong>武器</strong></td>\r\n            <td><strong>前置技能</strong></td>\r\n            <td><strong>修真级别</strong></td>\r\n            <td><strong>技能类型</strong></td>\r\n            <td><strong>最大等级</strong></td>\r\n            <td><strong>技能学习所需级别</strong></td>\r\n            <td><strong>升级级别</strong></td>\r\n            <td><strong>技能说明</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>连击</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>天生</div>\r\n            </td>\r\n            <td>\r\n            <div>5、10、15、20、25、30、35、40、45</div>\r\n            </td>\r\n            <td>\r\n            <div>迅捷的刺杀技巧，对敌人造成较大物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>斩杀</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>连击</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>6</div>\r\n            </td>\r\n            <td>\r\n            <div>11、16、21、26、31、36、41、46、51</div>\r\n            </td>\r\n            <td>\r\n            <div>高超的刺杀技巧，对敌人造成较大物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>狂乱斩</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>斩杀</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14、19、24、29、34、39、44、49、54</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客的聚力一击，对敌人造成物理伤害，并且使其移动速度降低。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>深刺</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>狂乱斩</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24、29、34、39、44、49、54、59、64</div>\r\n            </td>\r\n            <td>\r\n            <div>阴险的刺杀技巧，对敌人造成物理伤害，并且使其昏睡。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>致命扫击</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>深刺</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客以匕首之刃横扫敌人，对敌人造成物理伤害，并降低目标攻击速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>断喉斩</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>致命扫击</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43、47、51、55、59、63、67、71、75</div>\r\n            </td>\r\n            <td>\r\n            <div>迅捷一击制敌咽喉，对其造成物理伤害，并有较大可能使其封印。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>大地裂纹</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>断喉斩</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53、57、61、65、69、73、77、81、85</div>\r\n            </td>\r\n            <td>\r\n            <div>引爆敌人脚下的暗雷，对自身周围一定范围内的所有敌人造成物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>斩首</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>大地裂纹</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62、65、68、71、74、77、80、83、86</div>\r\n            </td>\r\n            <td>\r\n            <div>奋力一击刺敌要害，对其造成物理伤害，并使其昏迷。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>分水刺击</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>大地裂纹</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62、65、68、71、74、77、80、83、86</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客的高深技法，瞬息之间横扫四周，对周围8米范围内所有敌人造成物理伤害，并使敌人受到伤害加深效果。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>强冲刺杀</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>大地裂纹</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62、65、68、71、74、77、80、83、86</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客凭迅猛之势强冲杀敌，施展后对敌人造成物理伤害，并且提升自己暴击几率。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>匕首精通</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td>\r\n            <div>所有匕首攻击从装备上获得额外攻击力。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>遁隐术</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>匕首</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>无</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10级</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>13</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>18、23、28、33、38、43、48、53、58</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>汐族刺客绝技，使自身进入隐身状态。所有反遁隐等级小于自身遁隐等级的敌人，都无法发现并锁定自己。只能在非战斗状态下使用。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>金刚轮印咒</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>隐遁术</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24、29、34、39、44、49、54、59、64</div>\r\n            </td>\r\n            <td>\r\n            <div>屏气凝神，额外增加自己对技能伤害的闪避机率。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">\r\n            <div>强行隐遁</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>匕首</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>金刚轮印咒</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>10级</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>29</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td rowspan=\"3\">\r\n            <div>汐族刺客一脉不传之秘，使自身强行进入遁隐状态，并驱除自身所有不利状态。所有反遁隐等级小于自身遁隐等级的敌人，都无法发现并锁定自己。并且增加自己元气。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">\r\n            <div>嗜血咒</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>匕首</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>金刚轮印咒</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>元婴</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>10级</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>34</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>39、44、49、54、59、64、69、74、79</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>汐族以嗜血之咒凝气成狱，在嗜血炼狱的作用之下，使周围一定范围内队友都可从他自身的每次近身物理攻击中恢复生命。此效果仅能施加在武侠、妖兽、刺客身上。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>如来天心咒</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>嗜血咒</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>39</div>\r\n            </td>\r\n            <td>\r\n            <div>43、47、51、55、59、63、67、71、75</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>汐族刺客一脉不传之秘，凭借咒法护全魂魄，使自己在一定时间内，可以免除致死打击，并恢复一定生命、吐纳吸气，额外增加自己对技能负面状态的闪避机率。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>三世明王咒</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>如来天心咒</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62、65、68、71、74、77、80、83、86</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>放血</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>筑基</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>3</div>\r\n            </td>\r\n            <td>\r\n            <div>8、13、18、23、28、33、38、43、48</div>\r\n            </td>\r\n            <td>\r\n            <div>割伤敌人的技巧，造成较大物理伤害，并且使其流血。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>狂狼印</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>放血</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>14</div>\r\n            </td>\r\n            <td>\r\n            <div>19、24、29、34、39、44、49、54、59</div>\r\n            </td>\r\n            <td>\r\n            <div>集中精力，提高自身暴击伤害上限。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>钻心袖箭</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>狂狼印</div>\r\n            </td>\r\n            <td>\r\n            <div>和合</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>19</div>\r\n            </td>\r\n            <td>\r\n            <div>24、29、34、39、44、49、54、59、64</div>\r\n            </td>\r\n            <td>\r\n            <div>将袖中暗藏的匕首丢出，对目标进行远程攻击。对目标造成较大物理伤害。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>绊腿斩</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>钻心袖箭</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客的近身摔法，对其造成物理伤害，并使其在一段时间内定身。同时增加自身元气。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>深度冰刺</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>绊腿斩</div>\r\n            </td>\r\n            <td>\r\n            <div>空冥</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10级</div>\r\n            </td>\r\n            <td>\r\n            <div>44</div>\r\n            </td>\r\n            <td>\r\n            <div>48、52、56、60、64、68、72、76、80</div>\r\n            </td>\r\n            <td>\r\n            <div>将深寒之气凝于武器之上，使自己攻击速度降低，攻击等级提高。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>龙腾斩</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>深度冰刺</div>\r\n            </td>\r\n            <td>\r\n            <div>履霜</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>49</div>\r\n            </td>\r\n            <td>\r\n            <div>53、57、61、65、69、73、77、81、85</div>\r\n            </td>\r\n            <td>\r\n            <div>高级的刺击手段，既有杀敌之效，又并蓄劲之能。对敌人造成大量物理伤害并增加自己元气，必定命中。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>背水一战</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>龙腾斩</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>主动攻击</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62、65、68、71、74、77、80、83、86</div>\r\n            </td>\r\n            <td>\r\n            <div>集中精力激发自身潜能，增加大量元气。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>眼力精通</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td>\r\n            <div>提高角色的反隐等级。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>疾风行</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>灵虚</div>\r\n            </td>\r\n            <td>\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>9</div>\r\n            </td>\r\n            <td>\r\n            <div>14、19、24、29、34、39、44、49、54</div>\r\n            </td>\r\n            <td>\r\n            <div>足下生风，提升自己的移动速度。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>如影随形</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>疾风行</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>瞬移技能</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客凭借轻灵的身份辗转腾挪，瞬间移动到目标位置。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">\r\n            <div>迷踪乱步决</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>匕首</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>如影随形</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>空冥</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>主动祝福</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>10</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>44</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>48、52、56、60、64、68、72、76、80</div>\r\n            </td>\r\n            <td rowspan=\"2\">\r\n            <div>汐族刺客独特的步法，十分耗费气力。时装后提高移动速度，且不受击晕、定身等状态影响。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>百步神行决</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>迷踪乱步决</div>\r\n            </td>\r\n            <td>\r\n            <div>渡劫</div>\r\n            </td>\r\n            <td>\r\n            <div>瞬移技能</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>59</div>\r\n            </td>\r\n            <td>\r\n            <div>62、65、68、71、74、77、80、83、86</div>\r\n            </td>\r\n            <td>\r\n            <div>刺客蓄气力于足下，快速向目标奔袭。瞬间移动到目标位置，并且使目标眩晕。</div>\r\n            </td>\r\n        </tr>\r\n        <tr>\r\n            <td>\r\n            <div>身形精通</div>\r\n            </td>\r\n            <td>\r\n            <div>匕首</div>\r\n            </td>\r\n            <td>\r\n            <div>无</div>\r\n            </td>\r\n            <td>\r\n            <div>元婴</div>\r\n            </td>\r\n            <td>\r\n            <div>被动</div>\r\n            </td>\r\n            <td>\r\n            <div>10</div>\r\n            </td>\r\n            <td>\r\n            <div>29</div>\r\n            </td>\r\n            <td>\r\n            <div>34、39、44、49、54、59、64、69、74</div>\r\n            </td>\r\n            <td>\r\n            <div>提高隐遁等级。</div>\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/f11bf324d69bd5114c01.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/f11bf324d69bd5114c01.js"
+}

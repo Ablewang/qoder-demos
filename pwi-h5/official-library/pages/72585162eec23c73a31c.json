@@ -1,0 +1,339 @@
+{
+  "id": "72585162eec23c73a31c",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_1.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "40fc9b8c5a83274e6f2fec83afce492417d4719d7f21ee6c4f3ffe6a4548c1bb",
+  "bytes": 2665,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/72585162eec23c73a31c.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n需求装备品阶\n武器镶嵌效果\n防具镶嵌效果\n来源\n火红之石1级\n1\n物理攻击 +3\n物理防御 +5\n怪物掉落、货郎出售\n火红之石2级\n2\n物理攻击 +6\n物理防御 +10\n怪物掉落、合成大师合成\n火红之石3级\n3\n物理攻击 +9\n物理防御 +15\n怪物掉落、合成大师合成\n火红之石4级\n4\n物理攻击 +12\n物理防御 +20\n怪物掉落、合成大师合成\n火红之石5级\n5\n物理攻击 +16\n物理防御 +26\n怪物掉落、合成大师合成\n火红之石6级\n6\n物理攻击 +20\n物理防御 +33\n怪物掉落、合成大师合成\n火红之石7级\n7\n物理攻击 +25\n物理防御 +41\n怪物掉落、合成大师合成\n火红之石8级\n8\n物理攻击 +32\n物理防御 +53\n怪物掉落、合成大师合成\n火红之石9级\n9\n物理攻击 +40\n物理防御 +66\n怪物掉落、合成大师合成\n火红之石10级\n10\n物理攻击 +50\n物理防御 +85\n怪物掉落、合成大师合成",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求装备品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防具镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "来源",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、货郎出售",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +15",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +26",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +33",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +25",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +41",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +53",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "火红之石10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理攻击 +50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物理防御 +85",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>需求装备品阶</td>\n\t\t<td>武器镶嵌效果</td>\n\t\t<td>防具镶嵌效果</td>\n        <td>来源</td>\n\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石1级</td>\n\t\t\t<td>1</td>\n\t\t\t<td>物理攻击 +3</td>\n\t\t\t<td>物理防御 +5</td>\n\t\t\t<td>怪物掉落、货郎出售</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石2级</td>\n\t\t\t<td>2</td>\n\t\t\t<td>物理攻击 +6</td>\n\t\t\t<td>物理防御 +10</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石3级</td>\n\t\t\t<td>3</td>\n\t\t\t<td>物理攻击 +9</td>\n\t\t\t<td>物理防御 +15</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石4级</td>\n\t\t\t<td>4</td>\n\t\t\t<td>物理攻击 +12</td>\n\t\t\t<td>物理防御 +20</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石5级</td>\n\t\t\t<td>5</td>\n\t\t\t<td>物理攻击 +16</td>\n\t\t\t<td>物理防御 +26</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石6级</td>\n\t\t\t<td>6</td>\n\t\t\t<td>物理攻击 +20</td>\n\t\t\t<td>物理防御 +33</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石7级</td>\n\t\t\t<td>7</td>\n\t\t\t<td>物理攻击 +25</td>\n\t\t\t<td>物理防御 +41</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石8级</td>\n\t\t\t<td>8</td>\n\t\t\t<td>物理攻击 +32</td>\n\t\t\t<td>物理防御 +53</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石9级</td>\n\t\t\t<td>9</td>\n\t\t\t<td>物理攻击 +40</td>\n\t\t\t<td>物理防御 +66</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>火红之石10级</td>\n\t\t\t<td>10</td>\n\t\t\t<td>物理攻击 +50</td>\n\t\t\t<td>物理防御 +85</td>\n\t\t\t<td>\n\t\t\t怪物掉落、合成大师合成</td>\n\t\t</tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/72585162eec23c73a31c.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/72585162eec23c73a31c.js"
+}

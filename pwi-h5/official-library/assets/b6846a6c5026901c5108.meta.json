@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_320.jpg",
+  "id": "b6846a6c5026901c5108",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "残体咒",
+  "bytes": 1481,
+  "sha256": "59917205511c6a0174c89b8862b8d530300031709d17b1e27170b25ef792d8aa",
+  "fetchedAt": "2026-11-18T08:35:44+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_320.jpg",
+  "path": "assets/b6846a6c5026901c5108.jpg"
+}

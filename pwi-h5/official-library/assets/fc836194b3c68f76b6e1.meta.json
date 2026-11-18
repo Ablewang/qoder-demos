@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_65.jpg",
+  "id": "fc836194b3c68f76b6e1",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "回马枪",
+  "bytes": 1389,
+  "sha256": "1e11ca17eab520106851b85e0a141cd95ceafadfe3e326c823e99b857a4aa117",
+  "fetchedAt": "2026-11-18T08:34:28+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_65.jpg",
+  "path": "assets/fc836194b3c68f76b6e1.jpg"
+}

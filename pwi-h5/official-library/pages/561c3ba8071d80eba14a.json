@@ -1,0 +1,60 @@
+{
+  "id": "561c3ba8071d80eba14a",
+  "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/top.htm",
+  "title": "春节大联欢 -《完美国际2012》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 7,
+  "parents": [
+    "d5ed316633e2591bbafb",
+    "afdfbdf0c16eb91ef876"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201201/SpringFestival/top.htm",
+  "fetchedAt": "2026-11-18T08:17:31+00:00",
+  "sha256": "56c1c7a7ff61b8797199233f2c6df52ebc3582f20fc1313b91edb3cb68720378",
+  "bytes": 1615,
+  "rawPath": "raw/561c3ba8071d80eba14a.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/index.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/top_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/top_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/images/top_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201201/SpringFestival/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n    \r\n    <img src=\"assets/ef61ab3da4dac35303da.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/84dea91b01d89b78207a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"> <img src=\"assets/12de67556f86972d48a9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n    \r\n      \r\n    \r\n  </div>\r\n\r\n",
+  "dataPath": "pages/561c3ba8071d80eba14a.json",
+  "imageCount": 3,
+  "tableCount": 0,
+  "downloadPath": "downloads/561c3ba8071d80eba14a.js"
+}

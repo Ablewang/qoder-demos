@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/130123/10021358903879241.jpg",
+  "alt": "图片: 图1：新春旗袍.jpg",
+  "kind": "img",
+  "id": "ad280e890e29f6944617",
+  "status": "ok",
+  "parents": [
+    "9066c33eeeda8283dd07"
+  ],
+  "bytes": 68506,
+  "sha256": "c64802ecf7d370f9c0ee39900e1945ded24d259590055dc507528ba89ee82693",
+  "fetchedAt": "2026-11-18T08:23:06+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/130123/10021358903879241.jpg",
+  "path": "assets/ad280e890e29f6944617.jpg"
+}

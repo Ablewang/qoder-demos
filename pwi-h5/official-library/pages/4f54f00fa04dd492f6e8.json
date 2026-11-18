@@ -1,0 +1,456 @@
+{
+  "id": "4f54f00fa04dd492f6e8",
+  "url": "https://w2i.wanmei.com/djzb/zb/20091015/29986.shtml",
+  "title": "武器 - 创世",
+  "category": "装备道具",
+  "section": "普通武器",
+  "depth": 1,
+  "parents": [
+    "e1fe6614443052284ef7",
+    "b107c028737ae8ee7b6d",
+    "59138861d3ccb56e4cf5",
+    "e0f6bb305652eb19836c",
+    "d15600c7e7503aa1f7ab",
+    "9c1ef01ee36759a5edb2",
+    "b61c999a769de8c62384",
+    "4f54f00fa04dd492f6e8",
+    "1c482d5c6674e7246a7b",
+    "8baeb5e5dddea159404b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "778138f341b92256aa442cac077c5247dcd193b653a80e15d274f1589f0c493a",
+  "bytes": 68921,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/4f54f00fa04dd492f6e8.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "刀剑 | 长兵 | 斧锤 | 拳套 | 弓弩 | 法器 | 传说 | 创世 | 弹药 | 任务奖励 |\n名称\n图标\n类型\n需求人物等级\n需求职业\n需求力量点数\n需求敏捷点数\n需求体质点数\n需求灵力点数\n霸道\n刀剑\n99\n－\n201\n152\n－\n－\n横行\n长兵\n99\n－\n240\n112\n－\n－\n泰森\n拳套\n99\n－\n161\n191\n－\n－\n元霸\n斧锤\n60\n－\n187\n28\n－\n－\n不系舟\n法器\n99\n－\n44\n－\n－\n306\n秦皇\n弓弩\n99\n羽芒\n63\n289\n－\n－",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图标",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求人物等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求职业",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求力量点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求敏捷点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求体质点数",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求灵力点数",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "霸道",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "刀剑",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "201",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "152",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "横行",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "长兵",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "240",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "112",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "泰森",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "拳套",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "161",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "191",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "元霸",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "斧锤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "187",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "28",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "不系舟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "法器",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "44",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "306",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "秦皇",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "弓弩",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "99",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "羽芒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "63",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "289",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "－",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29859.shtml",
+      "label": "刀剑",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29873.shtml",
+      "label": "长兵",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29877.shtml",
+      "label": "斧锤",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29896.shtml",
+      "label": "拳套",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29900.shtml",
+      "label": "弓弩",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29901.shtml",
+      "label": "法器",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29985.shtml",
+      "label": "传说",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29986.shtml",
+      "label": "创世",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29987.shtml",
+      "label": "弹药",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/djzb/zb/20091015/29990.shtml",
+      "label": "任务奖励",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cs/image570.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cs/image580.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cs/image582.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cs/image596.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cs/image604.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/wuqi_cs/image612.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=e1fe6614443052284ef7\">刀剑</a> | <a href=\"#page=b107c028737ae8ee7b6d\">长兵</a> | <a href=\"#page=59138861d3ccb56e4cf5\">斧锤</a> | <a href=\"#page=e0f6bb305652eb19836c\">拳套</a> | <a href=\"#page=d15600c7e7503aa1f7ab\">弓弩</a> | <a href=\"#page=9c1ef01ee36759a5edb2\">法器</a> | <a href=\"#page=b61c999a769de8c62384\">传说</a> | <a href=\"#page=4f54f00fa04dd492f6e8\">创世</a> | <a href=\"#page=1c482d5c6674e7246a7b\">弹药</a> | <a href=\"#page=8baeb5e5dddea159404b\">任务奖励</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>名称</strong></td>\r\n            <td><strong>图标</strong></td>\r\n            <td><strong>类型</strong></td>\r\n            <td><strong>需求人物等级</strong></td>\r\n            <td><strong>需求职业</strong></td>\r\n            <td><strong>需求力量点数</strong></td>\r\n            <td><strong>需求敏捷点数</strong></td>\r\n            <td><strong>需求体质点数</strong></td>\r\n            <td><strong>需求灵力点数</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>霸道</td>\r\n            <td><img src=\"assets/8b64a66a9f9e60aa47a2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>刀剑</td>\r\n            <td>99</td>\r\n            <td>－</td>\r\n            <td>201</td>\r\n            <td>152</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>横行</td>\r\n            <td><img src=\"assets/481fce113ce40ed00631.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>长兵</td>\r\n            <td>99</td>\r\n            <td>－</td>\r\n            <td>240</td>\r\n            <td>112</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>泰森</td>\r\n            <td><img src=\"assets/7a2f7c758c387f8ed71d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>拳套</td>\r\n            <td>99</td>\r\n            <td>－</td>\r\n            <td>161</td>\r\n            <td>191</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>元霸</td>\r\n            <td><img src=\"assets/04c126b44a0e98860a54.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>斧锤</td>\r\n            <td>60</td>\r\n            <td>－</td>\r\n            <td>187</td>\r\n            <td>28</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n        <tr>\r\n            <td>不系舟</td>\r\n            <td><img src=\"assets/20ed98ecc35abb05d7bf.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>法器</td>\r\n            <td>99</td>\r\n            <td>－</td>\r\n            <td>44</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n            <td>306</td>\r\n        </tr>\r\n        <tr>\r\n            <td>秦皇</td>\r\n            <td><img src=\"assets/cca43834a9c343e963c9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n            <td>弓弩</td>\r\n            <td>99</td>\r\n            <td>羽芒</td>\r\n            <td>63</td>\r\n            <td>289</td>\r\n            <td>－</td>\r\n            <td>－</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/4f54f00fa04dd492f6e8.json",
+  "imageCount": 6,
+  "tableCount": 1,
+  "downloadPath": "downloads/4f54f00fa04dd492f6e8.js"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/daoju/qizhen/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "8925fda72cb9e3cbeba9",
+  "status": "ok",
+  "parents": [
+    "80dcf06a22e8f51fddec"
+  ],
+  "bytes": 5556,
+  "sha256": "b41052c7fbf0b133eeec6a560f4a780d8f9f9f4d5427325076974639a4b82296",
+  "fetchedAt": "2026-11-18T08:20:04+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/daoju/qizhen/1.jpg",
+  "path": "assets/8925fda72cb9e3cbeba9.jpg"
+}

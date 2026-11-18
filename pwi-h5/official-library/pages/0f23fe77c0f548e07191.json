@@ -1,0 +1,31 @@
+{
+  "id": "0f23fe77c0f548e07191",
+  "url": "https://w2i.wanmei.com/newplayer/begin/20091015/29898.shtml",
+  "title": "基础配置",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 0,
+  "parents": [
+    "250753924235fd6ee8a3"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "655a0b0699cfa0a2a0106edf0679eb030c16540919d2596839fc00b8da741ecb",
+  "bytes": 65878,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/0f23fe77c0f548e07191.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "机器配置：\nCPU：\n赛扬 800Mhz\n内存：\n256MB 以上\n显卡：\n32M显存，支持3D图形加速（GF2系列或相同档次显卡）\n硬盘：\n4G以上剩余空间\n推荐配置：\nCPU：\n奔4处理器2.4Ghz\n内存：\n512M\n显卡：\nNvidia Geforce4 或 ATI radeon 9700 以上\n硬盘：\n4G以上剩余空间",
+  "tables": [],
+  "links": [],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　<strong>机器配置：</strong><br>\r\n　　CPU：<br>\r\n　　赛扬 800Mhz<br>\r\n　　内存：<br>\r\n　　256MB 以上<br>\r\n　　显卡：<br>\r\n　　32M显存，支持3D图形加速（GF2系列或相同档次显卡）<br>\r\n　　硬盘：<br>\r\n　　4G以上剩余空间</p>\r\n<p>　　<strong>推荐配置：</strong><br>\r\n　　CPU：<br>\r\n　　奔4处理器2.4Ghz<br>\r\n　　内存：<br>\r\n　　512M<br>\r\n　　显卡：<br>\r\n　　Nvidia Geforce4 或 ATI radeon 9700 以上<br>\r\n　　硬盘：<br>\r\n　　4G以上剩余空间</p>\r\n                        </div>",
+  "dataPath": "pages/0f23fe77c0f548e07191.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/0f23fe77c0f548e07191.js"
+}

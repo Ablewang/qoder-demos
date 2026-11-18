@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/vancl/images/h_08.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "59642d1484bdda34ad9b",
+  "status": "ok",
+  "parents": [
+    "564258e6117f453e2dc1"
+  ],
+  "bytes": 34615,
+  "sha256": "965f327be341f9373ff800431c2ab7877b4349b88b8abfb213f36acb3ce7ff48",
+  "fetchedAt": "2026-11-18T08:27:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/vancl/images/h_08.jpg",
+  "path": "assets/59642d1484bdda34ad9b.jpg"
+}

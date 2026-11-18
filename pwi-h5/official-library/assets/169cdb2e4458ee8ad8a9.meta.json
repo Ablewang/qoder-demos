@@ -1,0 +1,26 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/cent_y2.jpg",
+  "id": "169cdb2e4458ee8ad8a9",
+  "status": "ok",
+  "parents": [
+    "05cdabe45948659d0214",
+    "464bf204b6294ec64b79",
+    "3136cd49a436d43035e6",
+    "69753a1e89037ce89a9e",
+    "661ea43ec21004c38c81",
+    "e9e69bb61aec017b44a8",
+    "8716ef0ffd9713a2e50d",
+    "bb8d8f83beaa947e8748",
+    "78cd277893465d3b5c99"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201007/maoxian/style/master.css",
+  "bytes": 18653,
+  "sha256": "8b4e0b410f2ae6cc599e424dbf616bbef68c1050f39e76a9221831ecdd301c44",
+  "fetchedAt": "2026-11-18T08:36:58+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201007/maoxian/images/cent_y2.jpg",
+  "path": "assets/169cdb2e4458ee8ad8a9.jpg"
+}

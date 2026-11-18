@@ -1,0 +1,93 @@
+{
+  "id": "67215fa210ec728b7612",
+  "url": "https://w2i.wanmei.com/intro/ts/20091016/30070.shtml",
+  "title": "相依相偎",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 0,
+  "parents": [
+    "c51fddb20c83a69287b1"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "617ac03dbe30c52fb7b53d2b5ba0b69330746e0c172723a56a1b646a1e3f2546",
+  "bytes": 66655,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/67215fa210ec728b7612.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "双人行动：由一方发起，另一方同意后开始（必需一男一女）。开始后双方一起行动，移动由男方控制，男方为人类形态时体现为抱着，白虎形态时体现为骑乘。此功能可以在飞行时及骑乘时使用。开始双人行动后，双方的元气值（如果有）会随时间增长。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_01.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_02.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_03.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_04.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_05.jpg",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/intro/ts/20091016/images/sr_06.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/sr_01s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/sr_02s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/sr_03s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/sr_04s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/sr_05s.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/tese/sr_06s.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　双人行动：由一方发起，另一方同意后开始（必需一男一女）。开始后双方一起行动，移动由男方控制，男方为人类形态时体现为抱着，白虎形态时体现为骑乘。此功能可以在飞行时及骑乘时使用。开始双人行动后，双方的元气值（如果有）会随时间增长。</p>\r\n<p><a href=\"https://w2i.wanmei.com/intro/ts/20091016/images/sr_01.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/aa7729b9b9954b982220.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>　<a href=\"https://w2i.wanmei.com/intro/ts/20091016/images/sr_02.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/f71dd5481d3e742b2c1a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p><a href=\"https://w2i.wanmei.com/intro/ts/20091016/images/sr_03.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/14cc4b32e722cc7827fd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>　<a href=\"https://w2i.wanmei.com/intro/ts/20091016/images/sr_04.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/9ec55fa41aa2e30463aa.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n<p><a href=\"https://w2i.wanmei.com/intro/ts/20091016/images/sr_05.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/f8aecc12eaa8e557917b.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a>　<a href=\"https://w2i.wanmei.com/intro/ts/20091016/images/sr_06.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/6dd3290712e9acb5a419.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n                        </div>",
+  "dataPath": "pages/67215fa210ec728b7612.json",
+  "imageCount": 6,
+  "tableCount": 0,
+  "downloadPath": "downloads/67215fa210ec728b7612.js"
+}

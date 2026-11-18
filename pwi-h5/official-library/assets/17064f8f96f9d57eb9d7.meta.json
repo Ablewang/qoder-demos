@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/resources/jpg/131018/10021382073942546.jpg",
+  "alt": "图片: 图6：柠檬黄夏威夷男装.jpg",
+  "kind": "img",
+  "id": "17064f8f96f9d57eb9d7",
+  "status": "ok",
+  "parents": [
+    "8c2890b7c58397a01a02"
+  ],
+  "bytes": 41772,
+  "sha256": "bcff3b51322e6c0384fcc204a482fca678ac3cb1043e6fa454ce58481aeee1d5",
+  "fetchedAt": "2026-11-18T08:23:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/resources/jpg/131018/10021382073942546.jpg",
+  "path": "assets/17064f8f96f9d57eb9d7.jpg"
+}

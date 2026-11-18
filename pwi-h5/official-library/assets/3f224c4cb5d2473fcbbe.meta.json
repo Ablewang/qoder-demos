@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201111/new/images/zb1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "3f224c4cb5d2473fcbbe",
+  "status": "ok",
+  "parents": [
+    "bcbecb5b3fc81d489d12"
+  ],
+  "bytes": 24147,
+  "sha256": "b00d1cd9fd27ba81f85abaaf974b58d5b88c62a808d5a839f544d99231e0d227",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/3f224c4cb5d2473fcbbe.jpg"
+}

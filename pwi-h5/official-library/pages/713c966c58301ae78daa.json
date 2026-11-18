@@ -1,0 +1,648 @@
+{
+  "id": "713c966c58301ae78daa",
+  "url": "https://w2i.wanmei.com/event/200809/xld/detail_04.htm",
+  "title": "修罗道-《完美国际》官方网站",
+  "category": "系统介绍",
+  "section": "系统活动",
+  "depth": 1,
+  "parents": [
+    "808eef118f1364f8f88f",
+    "09196aa36fa6c0bb2721"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "7a92fd20583bb6d244a247472be458b005bf1dd50b142e68edd702c0373c76e5",
+  "bytes": 6091,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/713c966c58301ae78daa.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "14品的橙色项链天枢（物防）和天机（法防）需先在“绯色魂炉”处兑换“炼魂梭”后才可生产。每3个“炼魂梭”即可生产一个14品的橙色项链。\n天机\n品阶\n14\n等级要求\n50\n耐久上限\n300\n基础属性\n物防\n350\n金防\n-\n木防\n-\n水防\n-\n火防\n-\n土防\n-\n附加属性\n生命上限\n物理伤害减免\n体质\n+5%\n+3%\n+8\n物品精练\n精练1级\n精练2级\n精练3级\n精练4级\n精练5级\n精练6级\n389\n428\n469\n517\n574\n644\n精练7级\n精练8级\n精练9级\n精练10级\n精练11级\n精练12级\n738\n857\n1015\n1219\n1481\n1812\n天枢\n品阶\n14\n等级要求\n50\n耐久上限\n300\n基础属性\n物防\n-\n金防\n350\n木防\n350\n水防\n350\n火防\n350\n土防\n350\n附加属性\n生命上限\n物理伤害减免\n体质\n+5%\n+3%\n+7\n物品精练\n精练1级\n精练2级\n精练3级\n精练4级\n精练5级\n精练6级\n382\n414\n447\n487\n534\n591\n精练7级\n精练8级\n精练9级\n精练10级\n精练11级\n精练12级\n668\n766\n895\n1063\n1278\n1550",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "天机",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "耐久上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "300",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "基础属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "物防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "350",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "木防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "火防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "生命上限",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "物理伤害减免",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "体质",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "+5%",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "+3%",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "+8",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "物品精练",
+            "rowspan": "4",
+            "colspan": "1"
+          },
+          {
+            "text": "精练1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练6级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "389",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "428",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "469",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "517",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "574",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "644",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "精练7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练11级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练12级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "738",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "857",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1015",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1219",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1481",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1812",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "天枢",
+            "rowspan": "1",
+            "colspan": "6"
+          }
+        ],
+        [
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "14",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级要求",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "耐久上限",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "300",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "基础属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "物防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "-",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "金防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "350",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "木防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "350",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "350",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "火防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "350",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "350",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "附加属性",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "生命上限",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "物理伤害减免",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "体质",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "+5%",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "+3%",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "+7",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "物品精练",
+            "rowspan": "4",
+            "colspan": "1"
+          },
+          {
+            "text": "精练1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练6级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "382",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "414",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "447",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "487",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "534",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "591",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "精练7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练11级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精练12级",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "668",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "766",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "895",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1063",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1278",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1550",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/iframe_header.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/detail_left.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/pic_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/pic_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/detail_right.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/images/detail_con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200809/xld/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n\r\n<div>\r\n\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200809/xld/iframe_header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200809/xld/iframe_header.htm</a></p>\r\n</div>\r\n\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<div><img src=\"assets/2e13bf107703efb2f6b9.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n\t\t\r\n\t\t\r\n\t\t<div>\r\n\t\t\t<p>　　14品的橙色项链天枢（物防）和天机（法防）需先在“绯色魂炉”处兑换“炼魂梭”后才可生产。每3个“炼魂梭”即可生产一个14品的橙色项链。</p>\r\n\t\t\t<br>\r\n\t\t\t<table>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"2\"><img src=\"assets/25693783e504da4259ce.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n\t\t\t\t    <td colspan=\"6\"><b>天机</b></td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>品阶</td>\r\n\t\t\t\t    <td>14</td>\r\n\t\t\t\t    <td>等级要求</td>\r\n\t\t\t\t    <td>50</td>\r\n\t\t\t\t    <td>耐久上限</td>\r\n\t\t\t\t    <td>300</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"2\">基础属性</td>\r\n\t\t\t\t    <td>物防</td>\r\n\t\t\t\t    <td>350</td>\r\n\t\t\t\t    <td>金防</td>\r\n\t\t\t\t    <td>-</td>\r\n\t\t\t\t    <td>木防</td>\r\n\t\t\t\t    <td>-</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>水防</td>\r\n\t\t\t\t    <td>-</td>\r\n\t\t\t\t    <td>火防</td>\r\n\t\t\t\t    <td>-</td>\r\n\t\t\t\t    <td>土防</td>\r\n\t\t\t\t    <td>-</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"2\">附加属性</td>\r\n\t\t\t\t    <td colspan=\"2\">生命上限</td>\r\n\t\t\t\t    <td colspan=\"2\">物理伤害减免</td>\r\n\t\t\t\t    <td colspan=\"2\">体质</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td colspan=\"2\">+5%</td>\r\n\t\t\t\t    <td colspan=\"2\">+3%</td>\r\n\t\t\t\t    <td colspan=\"2\">+8</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"4\">物品精练</td>\r\n\t\t\t\t    <td>精练1级</td>\r\n\t\t\t\t    <td>精练2级</td>\r\n\t\t\t\t    <td>精练3级</td>\r\n\t\t\t\t    <td>精练4级</td>\r\n\t\t\t\t    <td>精练5级</td>\r\n\t\t\t\t    <td>精练6级</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>389</td>\r\n\t\t\t\t    <td>428</td>\r\n\t\t\t\t    <td>469</td>\r\n\t\t\t\t    <td>517</td>\r\n\t\t\t\t    <td>574</td>\r\n\t\t\t\t    <td>644</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>精练7级</td>\r\n\t\t\t\t    <td>精练8级</td>\r\n\t\t\t\t    <td>精练9级</td>\r\n\t\t\t\t    <td>精练10级</td>\r\n\t\t\t\t    <td>精练11级</td>\r\n\t\t\t\t    <td>精练12级</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>738</td>\r\n\t\t\t\t    <td>857</td>\r\n\t\t\t\t    <td>1015</td>\r\n\t\t\t\t    <td>1219</td>\r\n\t\t\t\t    <td>1481</td>\r\n\t\t\t\t    <td>1812</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t</table>\r\n\t\t\t<br>\r\n\t\t\t<br>\r\n\t\t\t<table>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"2\"><img src=\"assets/d38f1377789ecc31ec09.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\r\n\t\t\t\t    <td colspan=\"6\"><strong>天枢</strong></td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>品阶</td>\r\n\t\t\t\t    <td>14</td>\r\n\t\t\t\t    <td>等级要求</td>\r\n\t\t\t\t    <td>50</td>\r\n\t\t\t\t    <td>耐久上限</td>\r\n\t\t\t\t    <td>300</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"2\">基础属性</td>\r\n\t\t\t\t    <td>物防</td>\r\n\t\t\t\t    <td>-</td>\r\n\t\t\t\t    <td>金防</td>\r\n\t\t\t\t    <td>350</td>\r\n\t\t\t\t    <td>木防</td>\r\n\t\t\t\t    <td>350</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>水防</td>\r\n\t\t\t\t    <td>350</td>\r\n\t\t\t\t    <td>火防</td>\r\n\t\t\t\t    <td>350</td>\r\n\t\t\t\t    <td>土防</td>\r\n\t\t\t\t    <td>350</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"2\">附加属性</td>\r\n\t\t\t\t    <td colspan=\"2\">生命上限</td>\r\n\t\t\t\t    <td colspan=\"2\">物理伤害减免</td>\r\n\t\t\t\t    <td colspan=\"2\">体质</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td colspan=\"2\">+5%</td>\r\n\t\t\t\t    <td colspan=\"2\">+3%</td>\r\n\t\t\t\t    <td colspan=\"2\">+7</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td rowspan=\"4\">物品精练</td>\r\n\t\t\t\t    <td>精练1级</td>\r\n\t\t\t\t    <td>精练2级</td>\r\n\t\t\t\t    <td>精练3级</td>\r\n\t\t\t\t    <td>精练4级</td>\r\n\t\t\t\t    <td>精练5级</td>\r\n\t\t\t\t    <td>精练6级</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>382</td>\r\n\t\t\t\t    <td>414</td>\r\n\t\t\t\t    <td>447</td>\r\n\t\t\t\t    <td>487</td>\r\n\t\t\t\t    <td>534</td>\r\n\t\t\t\t    <td>591</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>精练7级</td>\r\n\t\t\t\t    <td>精练8级</td>\r\n\t\t\t\t    <td>精练9级</td>\r\n\t\t\t\t    <td>精练10级</td>\r\n\t\t\t\t    <td>精练11级</td>\r\n\t\t\t\t    <td>精练12级</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t\t  <tr>\r\n\t\t\t\t    <td>668</td>\r\n\t\t\t\t    <td>766</td>\r\n\t\t\t\t    <td>895</td>\r\n\t\t\t\t    <td>1063</td>\r\n\t\t\t\t    <td>1278</td>\r\n\t\t\t\t    <td>1550</td>\r\n\t\t\t\t  </tr>\r\n\t\t\t</table>\r\n\t\t</div>\r\n\t\t\r\n\t\t\r\n\t\t<div><img src=\"assets/969c168de0ce473a12b3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n\t</div>\r\n\t<div><img src=\"assets/22464cc9f47ed4e7a20d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\r\n</div>\r\n\r\n<div>\r\n \r\n\r\n</div>\r\n\r\n\r\n",
+  "dataPath": "pages/713c966c58301ae78daa.json",
+  "imageCount": 5,
+  "tableCount": 2,
+  "downloadPath": "downloads/713c966c58301ae78daa.js"
+}

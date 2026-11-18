@@ -1,0 +1,61 @@
+{
+  "id": "a0c36536f43a6d64b99e",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/sylccl.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "802cb9477586c2d0b514",
+    "13a8d5a1e48d8078fb00",
+    "b16ad4622fca71c729fe",
+    "0251776a5870f30fec7b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "b380353ac667d422e2388b053e4d3c3d16e863af8a62b891d5db5ffa80c3a2bb",
+  "bytes": 1795,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/a0c36536f43a6d64b99e.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/sylcsh.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlccl.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnclon.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnshoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<div>\n    <div><img src=\"assets/cfd40790e44abf3692b5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n    <div><a href=\"#page=0251776a5870f30fec7b\"><img src=\"assets/5f2513459bc0903157d2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n</div>\n    <div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlccl.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conlccl.htm</a></p>\n        </div>\n    </div>\n</div>\n",
+  "dataPath": "pages/a0c36536f43a6d64b99e.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/a0c36536f43a6d64b99e.js"
+}

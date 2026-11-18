@@ -1,0 +1,222 @@
+{
+  "id": "b2956d72897ba16abc89",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conjjsg.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "52cc38545b796715aef9",
+    "b2956d72897ba16abc89"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conjjsg.htm",
+  "fetchedAt": "2026-11-18T08:16:52+00:00",
+  "sha256": "7b282f1b74a06f60542d4ff8143fe8d2ec85643d0a802fae37afd667b8f8e611",
+  "bytes": 3274,
+  "rawPath": "raw/b2956d72897ba16abc89.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "★神月·光芒披风|★神月·光彩披风\n装备名称\n类型\n品阶\n躲闪\n等级\n装备属性\n制作材料\n★神月·光芒披风\n披风\n13\n242\n95\n敏捷+6-7\n体质+9\n攻击间隔-0.05秒\n精华凝结体2\n无名燧石6\n多彩燧石3\n远古燧石9\n自然精髓30\n★神月·光彩披风\n披风\n13\n242\n95\n灵力+6-7\n体质+9\n吟唱时间-6%\n精华凝结体2\n无名燧石6\n多彩燧石3\n远古燧石9\n自然精髓30",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "装备名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "类型",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "躲闪",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "装备属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "制作材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★神月·光芒披风",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "披风",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "242",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+6-7\n体质+9\n攻击间隔-0.05秒",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "精华凝结体2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无名燧石6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "多彩燧石3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "远古燧石9",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "自然精髓30",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "★神月·光彩披风",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "披风",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "13",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "242",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "95",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+6-7\n体质+9\n吟唱时间-6%",
+            "rowspan": "5",
+            "colspan": "1"
+          },
+          {
+            "text": "精华凝结体2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "无名燧石6",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "多彩燧石3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "远古燧石9",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "自然精髓30",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conjjsg.htm",
+      "label": "★神月·光彩披风",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/sycsiframetop2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n\t<div>\n\t\t<div>\n\t\t\t<div>\n\t\t\t\t<div>\n            \t\t<img src=\"assets/b6075712bd22ea0b1487.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n                    <div><a href=\"#page=b2956d72897ba16abc89\">★神月·光芒披风</a><span>|</span><a href=\"#page=b2956d72897ba16abc89\">★神月·光彩披风</a></div>\n       \t    </div>\n                <div>\n<table>\n\t\t\t\t\t<tr>\n                    \t<th>装备名称</th>\n                        <th>类型</th>\n                        <th>品阶</th>\n                        <th>躲闪</th>\n                        <th>等级</th>\n                        <th>装备属性</th>\n                        <th>制作材料</th>\n                    </tr>\n  <tr>\n    <td rowspan=\"5\">★神月·光芒披风</td>\n    <td rowspan=\"5\">披风</td>\n    <td rowspan=\"5\">13</td>\n    <td rowspan=\"5\">242</td>\n    <td rowspan=\"5\">95</td>\n    <td rowspan=\"5\">敏捷+6-7<br>\n      体质+9<br>\n      攻击间隔-0.05秒</td>\n    <td>精华凝结体2</td>\n  </tr>\n  <tr>\n    <td>无名燧石6</td>\n  </tr>\n  <tr>\n    <td>多彩燧石3</td>\n  </tr>\n  <tr>\n    <td>远古燧石9</td>\n  </tr>\n  <tr>\n    <td>自然精髓30</td>\n  </tr>\n  <tr>\n    <td rowspan=\"5\">★神月·光彩披风</td>\n    <td rowspan=\"5\">披风</td>\n    <td rowspan=\"5\">13</td>\n    <td rowspan=\"5\">242</td>\n    <td rowspan=\"5\">95</td>\n    <td rowspan=\"5\">灵力+6-7<br>\n      体质+9<br>\n      吟唱时间-6%</td>\n    <td>精华凝结体2</td>\n  </tr>\n  <tr>\n    <td>无名燧石6</td>\n  </tr>\n  <tr>\n    <td>多彩燧石3</td>\n  </tr>\n  <tr>\n    <td>远古燧石9</td>\n  </tr>\n  <tr>\n    <td>自然精髓30</td>\n  </tr>\n                    </table>\n                </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n",
+  "dataPath": "pages/b2956d72897ba16abc89.json",
+  "imageCount": 1,
+  "tableCount": 1,
+  "downloadPath": "downloads/b2956d72897ba16abc89.js"
+}

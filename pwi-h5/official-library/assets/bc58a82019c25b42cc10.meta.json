@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/kaishi.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "bc58a82019c25b42cc10",
+  "status": "ok",
+  "parents": [
+    "f74f6ffc52245c0f3b91"
+  ],
+  "bytes": 19720,
+  "sha256": "93689b6a8298a8c708ccbe7c6a52ddaa0e73af4805715522072a33373040ebbc",
+  "fetchedAt": "2026-11-18T08:22:50+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/kaishi.jpg",
+  "path": "assets/bc58a82019c25b42cc10.jpg"
+}

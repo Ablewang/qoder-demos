@@ -1,0 +1,340 @@
+{
+  "id": "ed4882b11937af979ba3",
+  "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_10.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "装备道具",
+  "section": "魂石专题",
+  "depth": 1,
+  "parents": [
+    "ddb9fc3f70957c28e9b5"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/wi_itemsdemo/iframe/list01_10.htm",
+  "fetchedAt": "2026-11-18T08:15:46+00:00",
+  "sha256": "986eae05b518e7094747f3673f70c2f082cd90d4788ec6c969e97ec20dd7b9b2",
+  "bytes": 2684,
+  "rawPath": "raw/ed4882b11937af979ba3.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n需求装备品阶\n武器镶嵌效果\n防具镶嵌效果\n来源\n黄玉之石1级\n1\n附加土系伤害 +6\n土防 +8\n怪物掉落、货郎出售\n黄玉之石2级\n2\n附加土系伤害 +12\n土防 +16\n怪物掉落、合成大师合成\n黄玉之石3级\n3\n附加土系伤害 +18\n土防 +24\n怪物掉落、合成大师合成\n黄玉之石4级\n4\n附加土系伤害 +24\n土防 +32\n怪物掉落、合成大师合成\n黄玉之石5级\n5\n附加土系伤害 +32\n土防 +42\n怪物掉落、合成大师合成\n黄玉之石6级\n6\n附加土系伤害 +40\n土防 +52\n怪物掉落、合成大师合成\n黄玉之石7级\n7\n附加土系伤害 +50\n土防 +66\n怪物掉落、合成大师合成\n黄玉之石8级\n8\n附加土系伤害 +64\n土防 +84\n怪物掉落、合成大师合成\n黄玉之石9级\n9\n附加土系伤害 +80\n土防 +106\n怪物掉落、合成大师合成\n黄玉之石10级\n10\n附加土系伤害 +100\n土防 +140\n怪物掉落、合成大师合成",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "需求装备品阶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "武器镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "防具镶嵌效果",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "来源",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、货郎出售",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石2级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +12",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +16",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石3级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +18",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +24",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石5级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +32",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +42",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石6级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +40",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +52",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石7级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石8级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +64",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +84",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石9级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "9",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +80",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +106",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "黄玉之石10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "附加土系伤害 +100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "土防 +140",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "怪物掉落、合成大师合成",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/wi_itemsdemo/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>需求装备品阶</td>\n\t\t<td>武器镶嵌效果</td>\n\t\t<td>防具镶嵌效果</td>\n        <td>来源</td>\n\t</tr>\n\t\t<tr>\n    <td>黄玉之石1级</td>\n    <td>1</td>\n    <td>附加土系伤害 +6</td>\n    <td>土防 +8</td>\n    <td>怪物掉落、货郎出售</td>\n  </tr>\n  <tr>\n    <td>黄玉之石2级</td>\n    <td>2</td>\n    <td>附加土系伤害 +12</td>\n    <td>土防 +16</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石3级</td>\n    <td>3</td>\n    <td>附加土系伤害 +18</td>\n    <td>土防 +24</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石4级</td>\n    <td>4</td>\n    <td>附加土系伤害 +24</td>\n    <td>土防 +32</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石5级</td>\n    <td>5</td>\n    <td>附加土系伤害 +32</td>\n    <td>土防 +42</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石6级</td>\n    <td>6</td>\n    <td>附加土系伤害 +40</td>\n    <td>土防 +52</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石7级</td>\n    <td>7</td>\n    <td>附加土系伤害 +50</td>\n    <td>土防 +66</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石8级</td>\n    <td>8</td>\n    <td>附加土系伤害 +64</td>\n    <td>土防 +84</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石9级</td>\n    <td>9</td>\n    <td>附加土系伤害 +80</td>\n    <td>土防 +106</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n  <tr>\n    <td>黄玉之石10级</td>\n    <td>10</td>\n    <td>附加土系伤害 +100</td>\n    <td>土防 +140</td>\n    <td>怪物掉落、合成大师合成</td>\n  </tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/ed4882b11937af979ba3.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/ed4882b11937af979ba3.js"
+}

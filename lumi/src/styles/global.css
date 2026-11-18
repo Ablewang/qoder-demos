@@ -1,0 +1,157 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: var(--line-height-md);
+  font-variant-numeric: tabular-nums;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-control) var(--color-bg);
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-weight: var(--font-weight-regular);
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, blockquote, figure, pre, dl, dd) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, strong, b) {
+  font-weight: var(--font-weight-semibold);
+}
+
+:where(ul, ol) {
+  margin: 0;
+  padding-inline-start: 1.5em;
+}
+
+:where(button, input, textarea, select, optgroup) {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(input, textarea, select) {
+  font-size: max(1rem, 16px);
+  accent-color: var(--color-primary);
+}
+
+:where(button, [type='button'], [type='submit'], [type='reset']) {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+:where(button, input, textarea, select):disabled {
+  cursor: not-allowed;
+}
+
+:where(input, textarea)::placeholder {
+  color: var(--color-faint);
+  opacity: 1;
+}
+
+:where(textarea) {
+  resize: vertical;
+}
+
+:where(a) {
+  color: var(--color-primary);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  overflow-wrap: anywhere;
+}
+
+:where(img, picture, video, canvas, svg) {
+  display: block;
+  max-width: 100%;
+}
+
+:where(img, video) {
+  height: auto;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:where(code, kbd, samp, pre) {
+  font-family: var(--font-mono);
+}
+
+:where(hr) {
+  margin-block: var(--space-4);
+  border: 0;
+  border-block-start: 1px solid var(--color-border);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Replace browser-blue focus without suppressing keyboard visibility. */
+:focus {
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+}
+
+::selection {
+  background: var(--color-primary-soft);
+  color: var(--color-text);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-control) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid var(--color-bg);
+  border-radius: var(--radius-full);
+  background: var(--color-border-control);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

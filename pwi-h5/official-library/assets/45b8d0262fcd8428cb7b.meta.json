@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/lianji/1m.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "45b8d0262fcd8428cb7b",
+  "status": "ok",
+  "parents": [
+    "fe512b4e745862d10a82"
+  ],
+  "bytes": 3355032,
+  "sha256": "8d3060f2eca323caff8abb86f924f3b0ed7c1e61d24da5801f6b24ab07798d93",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/45b8d0262fcd8428cb7b.jpg"
+}

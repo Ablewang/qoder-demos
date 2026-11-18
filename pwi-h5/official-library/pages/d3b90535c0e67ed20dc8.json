@@ -1,0 +1,52 @@
+{
+  "id": "d3b90535c0e67ed20dc8",
+  "url": "https://event51.wanmei.com/w2i/201111/new/index.htm",
+  "title": "《完美国际》官方网站",
+  "category": "新手指引",
+  "section": "初识完美",
+  "depth": 1,
+  "parents": [
+    "22965a8aa329ca111aad",
+    "a3206e96933ebb3a1648",
+    "cde23b2634eea8bb4b52",
+    "03091fe92256285c414b",
+    "795e92504f6461d2f316",
+    "4aec96cd45f020cede4e",
+    "a30584665576a2f6b306",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ebf20d9a78584967eab7fe2539be6d2da08488cfea93e8f649371f150e609d72",
+  "bytes": 1345,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d3b90535c0e67ed20dc8.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/index.htm",
+      "label": "",
+      "kind": "script-reference"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "http://www.wanmei.com/wa.js",
+      "label": "",
+      "kind": "script-reference"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\r\n</div>\r\n",
+  "dataPath": "pages/d3b90535c0e67ed20dc8.json",
+  "imageCount": 0,
+  "tableCount": 0,
+  "downloadPath": "downloads/d3b90535c0e67ed20dc8.js"
+}

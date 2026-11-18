@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201304/treasure/js/shadowbox/shadowbox.css",
+  "alt": "",
+  "kind": "link",
+  "id": "e8a4808cd5a7de08d90d",
+  "status": "ok",
+  "parents": [
+    "86fd3da270244a3de5ce"
+  ],
+  "bytes": 1844,
+  "sha256": "177ad5fa4ff79d488ea53986c5320bab8503b7ae4c73de1eb980f373c046212f",
+  "fetchedAt": "2026-11-18T08:24:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://www.wanmei.com/error/error.htm",
+  "path": "assets/e8a4808cd5a7de08d90d.css"
+}

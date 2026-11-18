@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/vancl/images/wrap_bg.jpg",
+  "id": "e2c9bfc4d753bbcdf61b",
+  "status": "ok",
+  "parents": [
+    "564258e6117f453e2dc1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201112/vancl/style/master.css",
+  "bytes": 57638,
+  "sha256": "b92406249ddf844d3bcb079bbaf2c95a398c37567ba2aed46d4c409f5a8b7940",
+  "fetchedAt": "2026-11-18T08:39:13+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/vancl/images/wrap_bg.jpg",
+  "path": "assets/e2c9bfc4d753bbcdf61b.jpg"
+}

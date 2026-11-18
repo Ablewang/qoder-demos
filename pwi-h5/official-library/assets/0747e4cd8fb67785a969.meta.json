@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcon.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "0747e4cd8fb67785a969",
+  "status": "ok",
+  "parents": [
+    "59cb948c7b10c9712ba9",
+    "3a60265176d060953606",
+    "1751f53360fb91b12ba9",
+    "c51c6aaefda2f64eecac"
+  ],
+  "bytes": 4276,
+  "sha256": "b2e85d3210b2c50a37ff9ce2409b4c88cd72f1e92c1ff68779299f74381bc85b",
+  "fetchedAt": "2026-11-18T08:23:02+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcon.jpg",
+  "path": "assets/0747e4cd8fb67785a969.jpg"
+}

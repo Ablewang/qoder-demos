@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "id": "fc3f4974f479bcda4ef9",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 62850,
+  "sha256": "7ee67aa8ea3c76bb037dc3611e86ba32f34bdde1c88051ed81749289dda74473",
+  "fetchedAt": "2026-11-18T08:17:47+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "path": "assets/fc3f4974f479bcda4ef9.js"
+}

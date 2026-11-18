@@ -1,0 +1,47 @@
+﻿@import url(http://www.wanmei.com/public/style/wm.css);
+body{ margin:0px; padding:0px; color:#9b0000;font:12px Verdana,SimSun,Geneva,sans-serif;background:#2A2F44}
+div,form,ul,ol,li,img,dl,dt,dd,p{margin:0px; padding:0px; border:0;}
+div{width:auto}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+em{font-style:normal;}
+
+.bodybg{width:100%;min-width:1002px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");background:#001c21 url(../images/bodybg.jpg) no-repeat center top;}
+
+#index_top{background:#1b2222 url(../images/indexbg_01.jpg) no-repeat top center;}
+#index_bot{background:url(../images/indexbg_02.jpg) no-repeat center 635px;}
+#insidebg{background:#fff url(../images/insidebg.jpg) no-repeat center top;}
+
+#wrap{width:1002px;min-width:1002px;margin:0 auto;overflow:hidden;position:relative;}
+.h img{display:block;}
+
+.main{position:absolute;left:33px;top:333px;width:735px;height:890px;}
+
+.tabt{height:56px;}
+.tabt a{display:block;width:145px;height:56px;float:left;text-align:center;line-height:56px;font-family:Microsoft YaHei;color:#f6cf7b;font-size:20px;}
+.tabt a#tab1{width:150px;}
+.tabt a#tab5{width:147px;}
+.tabt a.hover,.tabt a:hover{background:url(../images/hover.png);text-decoration:none}
+.tabt a img{display:block;}
+
+.tabc{width:690px;padding:20px 30px;color:#555555;line-height:20px;}
+.tabc p{text-indent:2em;padding-bottom:10px;}
+.tabc p.first{text-indent:0em;}
+.tabc p.copyr{text-align:center;padding:10px 0 20px;}
+.tabc p.img{text-indent:0em;text-align:center;}
+.tabc p.img img{border:8px solid #154876;}
+.tabc h2{color:#0072bc;font-family:Microsoft YaHei;font-size:18px;line-height:50px;font-weight:bold;}
+.tabc h3{font-weight:bold;color:#00bff3;line-height:26px;}
+.tabc .blue{color:#00bff3;}
+
+.tab1,.tab2,.tab3,.tab4,.tab5,.tab6{height:805px;padding:0 20px;overflow-x:hidden;overflow-y:auto;}
+.tab2,.tab3,.tab4,.tab5,.tab6{display:none}
+
+
+.side{width:180px;height:413px;background:url(../images/side.png) no-repeat;padding:50px 9px 0;position:absolute;left:775px;top:333px;}
+.side a{display:block;margin-bottom:10px;}
+.side a img{display:block;}
+
+.table{text-align:center;padding-bottom:15px;}
+.table table{border:1px solid #ccc;border-collapse:collapse;width:90%;margin:0 auto;zoom:1}
+.table td{border:1px solid #ccc;padding:5px;}

@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/jianling.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ee218dacfde34e5b1fc7",
+  "status": "ok",
+  "parents": [
+    "5b908110a16d3bc6fa0c"
+  ],
+  "bytes": 56401,
+  "sha256": "8c2de1cdf4ae79123209056ae2e3199f058a22f0bc276113ce12860b3496b0be",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/ee218dacfde34e5b1fc7.jpg"
+}

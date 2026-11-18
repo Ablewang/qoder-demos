@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1498.jpg",
+  "id": "a20c30857f060efcebd6",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "alt": "治疗召唤物",
+  "bytes": 4385,
+  "sha256": "c483fa3360c7c9fcec3a4409d036a3d6502c85aad98852ba7c31e96297f134ca",
+  "fetchedAt": "2026-11-18T08:36:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1498.jpg",
+  "path": "assets/a20c30857f060efcebd6.jpg"
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/images/role_03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "43ed64eb1270cb3cb816",
+  "status": "ok",
+  "parents": [
+    "49f2ee350bcf56efbcbf"
+  ],
+  "bytes": 15383,
+  "sha256": "7cb036326975b08739e6285e15126ac08677ee85a122f3e8de7115db1beaf110",
+  "fetchedAt": "2026-11-18T08:18:12+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/images/role_03.jpg",
+  "path": "assets/43ed64eb1270cb3cb816.jpg"
+}

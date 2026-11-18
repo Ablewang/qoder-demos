@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "identity": "single",
+      "keyboardSpaceToggles": true,
+      "escapeReturnsFocus": true,
+      "poster": {
+        "w": 1080,
+        "h": 1440,
+        "overflowX": false
+      }
+    },
+    {
+      "identity": "married",
+      "keyboardSpaceToggles": true,
+      "escapeReturnsFocus": true,
+      "poster": {
+        "w": 1080,
+        "h": 1440,
+        "overflowX": false
+      }
+    },
+    {
+      "identity": "graduate",
+      "keyboardSpaceToggles": true,
+      "escapeReturnsFocus": true,
+      "poster": {
+        "w": 1080,
+        "h": 1440,
+        "overflowX": false
+      }
+    },
+    {
+      "identity": "exam",
+      "keyboardSpaceToggles": true,
+      "escapeReturnsFocus": true,
+      "poster": {
+        "w": 1080,
+        "h": 1440,
+        "overflowX": false
+      }
+    }
+  ],
+  "passed": true
+}

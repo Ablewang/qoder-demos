@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/1007_skby_b.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "4c52ca6d2e734b56ab28",
+  "status": "ok",
+  "parents": [
+    "dec38a07f8181a3d8a2f"
+  ],
+  "bytes": 86026,
+  "sha256": "6c5757b2e838ea8042d32a88cacc47dca8725391b35249cb53268420e1945b77",
+  "fetchedAt": "2026-11-18T08:22:56+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/yincang/1007_skby_b.jpg",
+  "path": "assets/4c52ca6d2e734b56ab28.jpg"
+}

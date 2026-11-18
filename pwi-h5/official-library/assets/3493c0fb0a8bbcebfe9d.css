@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*******author:Tongyan.Guo**************/
+html{min-width:1002px;}
+body{ margin:0; padding:0; font-size:12px; font-family:"宋体",Arial, Helvetica, sans-serif; background-color:#2a2f44;}
+div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,textarea{ margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+area{outline:none;}
+img{ border:0;}
+ol,ul{list-style:none;}
+a{font-family:"宋体",Arial, Helvetica, sans-serif; text-decoration:none;outline:none;}
+a:hover{ text-decoration:underline;}
+.clearfix:after {content:"";display:block;height:0;clear:both;} 
+.clearfix {zoom:1;}
+.bg{ background:url(../images/bg.jpg) center top no-repeat #240803;}
+.rel1002{ position:relative; width:1002px; margin:0 auto; overflow:hidden;}
+.img_banner{ position:relative; width:1002px; margin:0 auto; overflow:hidden;}
+.img_banner img{ float:left;}
+.over_ul{ overflow:hidden; width:150px; height:360px; position:absolute; left:182px; top:585px; }
+.over_ul li{ float:left; width:150px; height:30px; background:url(about:blank); cursor:pointer; }
+#tip1,#tip2,#tip3,#tip4,#tip5,#tip6,#tip7,#tip8,#tip9,#tip10,#tip11,#tip12{ display:none; position:absolute; left:333px;}
+#tip1{ top:540px; }
+#tip2{ top:550px; }
+#tip3{ top:560px; }
+#tip4{ top:570px; }
+#tip5{ top:580px; }
+#tip6{ top:590px; }
+#tip7{ top:600px;  }
+#tip8{ top:610px; }
+#tip9{ top:620px; }
+#tip10{ top:630px; }
+#tip11{ top:640px; }
+#tip12{ top:650px;}

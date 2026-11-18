@@ -1,0 +1,408 @@
+{
+  "id": "ecd8e0b01a681412aa26",
+  "url": "https://w2i.wanmei.com/newplayer/road/20140925/73611.shtml",
+  "title": "登录有礼",
+  "category": "进阶资料",
+  "section": "活动指南",
+  "depth": 0,
+  "parents": [
+    "f3ca84404defdd08fce4"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "bb7b623fca52a3ffe55e804c7332848b934b2b0bad649ddf59db2904ea3497ee",
+  "bytes": 71030,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/ecd8e0b01a681412aa26.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2014-09-25",
+  "text": "只要您的角色达到相应的等级，登录游戏即可领取相应奖励。\n领取等级\n奖励内容及数量\n等级1级\n红花露*25 理气露*25\n等级5级\n回城香*50 战灵之源：C*1\n等级10级\n7天限时时装一套\n等级15级\n军用归元丹*500 军用聚神丹*500 3天限时时装武器*1\n等级20级\n愿望灵童*20 传送石*50\n等级25级\n2级魂石兑换卡*1\n等级30级\n冥想之石*12 结丹石*5 千里传音*30\n等级35级\n山河地理图*1 回城香*50 传送石*50\n等级40级\n4级魂石兑换卡*1\n等级45级\n玄鉴丹*20 绝圣丹*20\n等级50级\n保命符*20 愿望灵童*30 冥想金鳞石*12\n等级55级\n一星龙珠*1 二星龙珠*1 三星龙珠*1\n等级60级\n6级魂石兑换卡*1 千里传音*30\n等级65级\n四星龙珠*1 黄金护身符*1 黄金守神符*1\n等级70级\n30天限时装一套\n等级75级\n8级魂石兑换卡*1\n等级80级\n饺子*500 汤圆*500\n等级85级\n5星龙珠*1\n等级90级\n队伍集结令*3 缩地铃7天*1 养生石7天*1\n等级95级\n天罡石*20 地煞石*20\n等级100级\n7天限时售卖凭证*1 7天限时龙纹契约*1 号角*7\n等级105级\n鸿利元宝300元\n完成转生\n转生黄金武器*1 转生黄金胸甲*1 转生黄金腿甲*1\n玄天5重\n10级魂石兑换卡*1\n玄天10重\n6星龙珠*1\n幻天1重\n地煞石*25 天罡石*25\n幻天5重\n7星龙珠*1\n幻天10重\n地煞石*25 天罡石*25\n周天五重\n战灵之源：A*3\n周天十重\n战灵宝箱：A*1",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "领取等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "奖励内容及数量",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级1级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "红花露*25 理气露*25",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级5级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "回城香*50 战灵之源：C*1",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级10级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7天限时时装一套",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级15级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "军用归元丹*500 军用聚神丹*500 3天限时时装武器*1",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级20级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "愿望灵童*20 传送石*50",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级25级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2级魂石兑换卡*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级30级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "冥想之石*12 结丹石*5 千里传音*30",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级35级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "山河地理图*1 回城香*50 传送石*50",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级40级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "4级魂石兑换卡*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级45级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "玄鉴丹*20 绝圣丹*20",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级50级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "保命符*20 愿望灵童*30 冥想金鳞石*12",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级55级",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "一星龙珠*1 二星龙珠*1 三星龙珠*1",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级60级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6级魂石兑换卡*1 千里传音*30",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级65级",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "四星龙珠*1 黄金护身符*1 黄金守神符*1",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级70级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30天限时装一套",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级75级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "8级魂石兑换卡*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级80级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "饺子*500 汤圆*500",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级85级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5星龙珠*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级90级",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "队伍集结令*3 缩地铃7天*1 养生石7天*1",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级95级",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "天罡石*20 地煞石*20",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级100级",
+            "rowspan": "3",
+            "colspan": "1"
+          },
+          {
+            "text": "7天限时售卖凭证*1 7天限时龙纹契约*1 号角*7",
+            "rowspan": "3",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "等级105级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "鸿利元宝300元",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "完成转生",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "转生黄金武器*1 转生黄金胸甲*1 转生黄金腿甲*1",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄天5重",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10级魂石兑换卡*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玄天10重",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "6星龙珠*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻天1重",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "地煞石*25 天罡石*25",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻天5重",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "7星龙珠*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "幻天10重",
+            "rowspan": "2",
+            "colspan": "1"
+          },
+          {
+            "text": "地煞石*25 天罡石*25",
+            "rowspan": "2",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "周天五重",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战灵之源：A*3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "周天十重",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战灵宝箱：A*1",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>只要您的角色达到相应的等级，登录游戏即可领取相应奖励。</p>\r\n<div>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <th>领取等级</th>\r\n            <th>奖励内容及数量</th>\r\n        </tr>\r\n        <tr>\r\n            <td>等级1级</td>\r\n            <td>红花露*25  理气露*25</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级5级</td>\r\n            <td rowspan=\"2\">回城香*50   战灵之源：C*1</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级10级</td>\r\n            <td>7天限时时装一套</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级15级</td>\r\n            <td rowspan=\"2\">军用归元丹*500 军用聚神丹*500 3天限时时装武器*1</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级20级</td>\r\n            <td rowspan=\"2\">愿望灵童*20 传送石*50</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级25级</td>\r\n            <td>2级魂石兑换卡*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级30级</td>\r\n            <td rowspan=\"2\"> 冥想之石*12 结丹石*5 千里传音*30</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级35级</td>\r\n            <td rowspan=\"2\">山河地理图*1 回城香*50 传送石*50</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级40级</td>\r\n            <td>4级魂石兑换卡*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级45级</td>\r\n            <td rowspan=\"2\">玄鉴丹*20 绝圣丹*20</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级50级</td>\r\n            <td rowspan=\"2\">保命符*20 愿望灵童*30 冥想金鳞石*12</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">等级55级</td>\r\n            <td rowspan=\"3\">一星龙珠*1 二星龙珠*1 三星龙珠*1</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级60级</td>\r\n            <td>6级魂石兑换卡*1 千里传音*30</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">等级65级</td>\r\n            <td rowspan=\"3\">四星龙珠*1 黄金护身符*1 黄金守神符*1</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级70级</td>\r\n            <td>30天限时装一套</td>\r\n        </tr>\r\n        <tr>\r\n            <td>等级75级</td>\r\n            <td>8级魂石兑换卡*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级80级</td>\r\n            <td rowspan=\"2\">饺子*500 汤圆*500</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级85级</td>\r\n            <td>5星龙珠*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">等级90级</td>\r\n            <td rowspan=\"3\">队伍集结令*3 缩地铃7天*1 养生石7天*1</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">等级95级</td>\r\n            <td rowspan=\"2\">天罡石*20 地煞石*20</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"3\">等级100级</td>\r\n            <td rowspan=\"3\">7天限时售卖凭证*1 7天限时龙纹契约*1 号角*7</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>等级105级</td>\r\n            <td>鸿利元宝300元</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">完成转生</td>\r\n            <td rowspan=\"2\">转生黄金武器*1 转生黄金胸甲*1 转生黄金腿甲*1</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>玄天5重</td>\r\n            <td>10级魂石兑换卡*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td>玄天10重</td>\r\n            <td>6星龙珠*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">幻天1重</td>\r\n            <td rowspan=\"2\">地煞石*25 天罡石*25</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>幻天5重</td>\r\n            <td>7星龙珠*1</td>\r\n        </tr>\r\n        <tr>\r\n            <td rowspan=\"2\">幻天10重</td>\r\n            <td rowspan=\"2\">地煞石*25 天罡石*25</td>\r\n        </tr>\r\n        <tr>\r\n        </tr>\r\n        <tr>\r\n            <td>周天五重</td>\r\n            <td>战灵之源：A*3</td>\r\n        </tr>\r\n        <tr>\r\n            <td>周天十重</td>\r\n            <td>战灵宝箱：A*1</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n</div>\r\n                        </div>",
+  "dataPath": "pages/ecd8e0b01a681412aa26.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/ecd8e0b01a681412aa26.js"
+}

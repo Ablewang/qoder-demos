@@ -1,0 +1,22 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/style/master.css",
+  "alt": "",
+  "kind": "link",
+  "id": "d31f1934bd1fae863d65",
+  "status": "ok",
+  "parents": [
+    "ca91a22b822e69131723",
+    "6f7d6402d8cd6892ef08",
+    "63ba1e94e228726a1fad",
+    "ba01dee565ef6edbf9c1",
+    "aa1f5c8b062c173e0b7d"
+  ],
+  "bytes": 4806,
+  "sha256": "bb871a686ec373f63ed022c7c2bf2780336633a9fa26bfa39382378f3103f324",
+  "fetchedAt": "2026-11-18T08:28:03+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "text/css",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/style/master.css",
+  "path": "assets/d31f1934bd1fae863d65.css"
+}

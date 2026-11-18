@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/event/200809/xld/js/mouse.js",
+  "alt": "",
+  "kind": "script",
+  "id": "7b99247798d184839bfb",
+  "status": "ok",
+  "parents": [
+    "808eef118f1364f8f88f",
+    "09196aa36fa6c0bb2721"
+  ],
+  "bytes": 1063,
+  "sha256": "5fb04481687a639db8d7adb39080d9b33943cfe68ffdb1dd0d4462972c76bbe0",
+  "fetchedAt": "2026-11-18T08:17:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://w2i.wanmei.com/event/200809/xld/js/mouse.js",
+  "path": "assets/7b99247798d184839bfb.js"
+}

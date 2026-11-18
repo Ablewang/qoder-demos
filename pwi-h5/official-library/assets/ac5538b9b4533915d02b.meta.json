@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/first/images/nav3_on.png",
+  "alt": "",
+  "kind": "img",
+  "id": "ac5538b9b4533915d02b",
+  "status": "ok",
+  "parents": [
+    "f1a22718bf7ba5a42e0e"
+  ],
+  "bytes": 6820,
+  "sha256": "b5036dbb9f41fffd00447c7f4140123d46babf061d35d60e976fbc1d4419da16",
+  "fetchedAt": "2026-11-18T08:26:34+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/first/images/nav3_on.png",
+  "path": "assets/ac5538b9b4533915d02b.png"
+}

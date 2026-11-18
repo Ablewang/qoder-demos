@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml
+	prevloadPercent="0.8"
+	simulateDownload="false"
+>
+	
+	<loading>
+		<style color="#DDDDDD" size="72" autoSize="center" html="false">LOADING...${percent}%</style>
+	</loading>
+	
+	<music src="http://media101.wanmei.com/media/w2i/201309/gj1.mp3">
+		<layout verticalCenter="-140" right="0" min_x="1002"/>
+	</music>
+	
+	<nav selected="true" noShowLoading="true">
+		
+		<swf src="/show1309/swf/shouye.swf" prevload="true"/>
+		<sky src="/show1309/swf/sky.swf" prevload="true"/>
+		<cloud src="/show1309/swf/cloud.swf" prevload="true"/>
+
+		
+		<logo src="/show1309/image/logo.png" href="http://w2i.wanmei.com/" target="_blank" align="center top"/>
+		
+		<chars>
+			<char src="/show1309/swf/chars/char0.swf" prevload="true">
+				<label size="42" color="#ffffff" text="境界系统" autoSize="left"/>
+				<enLabel size="20" color="#ffffff" text="Reincarnation System" autoSize="left"/>
+			</char>
+			<char src="/show1309/swf/chars/char1.swf" prevload="true">
+				<label size="42" color="#ffffff" text="全新副本" autoSize="left"/>
+				<enLabel size="20" color="#ffffff" text="New Copys Of The Game" autoSize="left"/>
+			</char>
+			<char src="/show1309/swf/chars/char2.swf" prevload="true">
+				<label size="42" color="#ffffff" text="全新地图" autoSize="left"/>
+				<enLabel size="20" color="#ffffff" text="New Maps" autoSize="left"/>
+			</char>
+			<char src="/show1309/swf/chars/char3.swf" prevload="true">
+				<label size="42" color="#ffffff" text="游戏视频" autoSize="left"/>
+				<enLabel size="20" color="#ffffff" text="Game Videos" autoSize="left"/>
+			</char>
+			<char src="/show1309/swf/chars/char4.swf" prevload="true">
+				<label size="42" color="#ffffff" text="原画赏析" autoSize="left"/>
+				<enLabel size="20" color="#ffffff" text="Original Paintings" autoSize="left"/>
+			</char>
+		</chars>
+		
+		<nav>
+			<btn>
+				<label size="14" color="#ffffff" text="境界&#xA;系统" autoSize="center"/>
+				<xitong>
+					
+					<label size="16" color="#61ADFB" text="团队协助" autoSize="center"/>
+					<label size="16" color="#61ADFB" text="单体输出" autoSize="center"/>
+					<label size="16" color="#61ADFB" text="群体输出" autoSize="center"/>
+					<label size="16" color="#61ADFB" text="控制能力" autoSize="center"/>
+					<label size="16" color="#61ADFB" text="生存能力" autoSize="center"/>
+					<label size="16" color="#61ADFB" text="机动能力" autoSize="center"/>
+					
+					<tab>
+						<label size="12" color="#65ADF7" text="破镜亦人" autoSize="center"/>
+						<points>
+							<!--境界之前																							-->
+											武侠					法师					羽灵					羽芒					巫师
+							<!--团队协助-->	7	<!--团队协助-->	4	<!--团队协助-->	8	<!--团队协助-->	4	<!--团队协助-->	4
+							<!--单体输出-->	4	<!--单体输出-->	5	<!--单体输出-->	5	<!--单体输出-->	8	<!--单体输出-->	5
+							<!--群体输出-->	6	<!--群体输出-->	8	<!--群体输出-->	4	<!--群体输出-->	7	<!--群体输出-->	6
+							<!--控制能力-->	8	<!--控制能力-->	6	<!--控制能力-->	5	<!--控制能力-->	4	<!--控制能力-->	5
+							<!--生存能力-->	5	<!--生存能力-->	6	<!--生存能力-->	7	<!--生存能力-->	4	<!--生存能力-->	5
+							<!--机动能力-->	6	<!--机动能力-->	7	<!--机动能力-->	5	<!--机动能力-->	5	<!--机动能力-->	4
+							<!--			36					36					34					32					29	-->
+							
+											妖兽					妖精					魅灵					剑灵					刺客
+							<!--团队协助-->	6	<!--团队协助-->	5	<!--团队协助-->	7	<!--团队协助-->	5	<!--团队协助-->	3
+							<!--单体输出-->	4	<!--单体输出-->	6	<!--单体输出-->	5	<!--单体输出-->	4	<!--单体输出-->	8
+							<!--群体输出-->	4	<!--群体输出-->	4	<!--群体输出-->	5	<!--群体输出-->	8	<!--群体输出-->	4
+							<!--控制能力-->	4	<!--控制能力-->	5	<!--控制能力-->	5	<!--控制能力-->	5	<!--控制能力-->	7
+							<!--生存能力-->	8	<!--生存能力-->	6	<!--生存能力-->	8	<!--生存能力-->	4	<!--生存能力-->	4
+							<!--机动能力-->	8	<!--机动能力-->	8	<!--机动能力-->	3	<!--机动能力-->	4	<!--机动能力-->	7
+							<!--			34					34					33					30					33	-->
+						</points>
+					</tab>
+					<tab>
+						<label size="12" color="#65ADF7" text="入境亦神" autoSize="center"/>
+						<points>
+							<!--境界之后																							-->
+											武侠					法师					羽灵					羽芒					巫师
+							<!--团队协助-->	9	<!--团队协助-->	6	<!--团队协助-->	10	<!--团队协助-->	5	<!--团队协助-->	5
+							<!--单体输出-->	5	<!--单体输出-->	7	<!--单体输出-->	6	<!--单体输出-->	9	<!--单体输出-->	7
+							<!--群体输出-->	6	<!--群体输出-->	8	<!--群体输出-->	4	<!--群体输出-->	8	<!--群体输出-->	8
+							<!--控制能力-->	9	<!--控制能力-->	7	<!--控制能力-->	7	<!--控制能力-->	6	<!--控制能力-->	7
+							<!--生存能力-->	7	<!--生存能力-->	7	<!--生存能力-->	8	<!--生存能力-->	5	<!--生存能力-->	8
+							<!--机动能力-->	7	<!--机动能力-->	7	<!--机动能力-->	5	<!--机动能力-->	8	<!--机动能力-->	5
+							<!--			43					42					40					41					40	-->
+							
+											妖兽					妖精					魅灵					剑灵					刺客
+							<!--团队协助-->	8	<!--团队协助-->	7	<!--团队协助-->	8	<!--团队协助-->	6	<!--团队协助-->	4
+							<!--单体输出-->	5	<!--单体输出-->	6	<!--单体输出-->	6	<!--单体输出-->	6	<!--单体输出-->	10
+							<!--群体输出-->	5	<!--群体输出-->	5	<!--群体输出-->	5	<!--群体输出-->	10	<!--群体输出-->	5
+							<!--控制能力-->	5	<!--控制能力-->	7	<!--控制能力-->	7	<!--控制能力-->	5	<!--控制能力-->	9
+							<!--生存能力-->	10	<!--生存能力-->	7	<!--生存能力-->	9	<!--生存能力-->	7	<!--生存能力-->	5
+							<!--机动能力-->	8	<!--机动能力-->	10	<!--机动能力-->	5	<!--机动能力-->	6	<!--机动能力-->	8
+							<!--			41					42					40					40					41	-->
+						</points>
+					</tab>
+					
+					<char src="/show1309/swf/xitong/char_.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　境界是一种给达到顶峰的玩家可以有继续挑战自己的空间的系统。这个系统就是可以把玩家恢复到一定等级，同时增加玩家自身能力。游戏系统对完成了不同阶段境界提升的玩家进行一定额外的奖励并且对该系统玩家的成长做一定的调整，达到一定等级之后玩家会晋升成神，拥有改变世界的无穷能力！ </content>
+					</char>
+					<char name="剑灵" src="/show1309/swf/xitong/char0.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　剑灵讲究剑技与法术双修。剑技上，他们能将金元素的力量附着于剑身近身攻击对手，身形灵活，出招凶狠凌厉，令敌防不胜防。法术上，他们化自然之力自成剑气，以心御剑，释放出惊人剑气，造成致命伤害。 </content>
+					</char>
+					<char name="魅灵" src="/show1309/swf/xitong/char1.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　魅灵高深莫测的诅咒技能常常给敌人造成致命的伤害。战斗中，魅灵能召唤自然界身具异能的伙伴协助战斗，这些守护神兽有着强烈的自我牺牲精神和神秘的再生能力，无论是空战还是陆地战，无论是远程战还是近身战它们都忠诚地护卫着它们的主人。 </content>
+					</char>
+					<char name="武侠" src="/show1309/swf/xitong/char2.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　武侠精于各种兵器、御气之术的侠义化身，是文武全才的剑仙后世传人，善于运用近距离攻击技巧给予敌人致命的伤害，以敏捷的身法躲避敌人强大的攻击，力量与速度的完美结合。 </content>
+					</char>
+					<char name="法师" src="/show1309/swf/xitong/char3.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　法师擅长施展攻击性法术，掌握了水、火、土的自然奥义，由于长久沉浸在玄思冥想中，以求领悟高深奥妙的法术，致使法师的体魄变得相当虚弱 ，虽然能够施展出威力强大的法术 ，却不擅长近战肉搏。 </content>
+					</char>
+					<char name="妖兽" src="/show1309/swf/xitong/char4.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　妖兽经历了无数次轮回之苦的它们，有着坚韧不可磨灭的意志，它们的强悍让任何人都会产生畏惧。妖兽拥有强大的爆发力，如果让它们接近你，后果不堪设想，当兽性被唤醒时，它们还会变身为野兽形态。 </content>
+					</char>
+					<char name="妖精" src="/show1309/swf/xitong/char5.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　妖精的原形多为草木狐蛇，感孕千年日月精华幻化而成，或娇俏可爱，或妩媚风流。由于拥有天生的媚力，妖精们可以驯服完美大陆很多动物充作宠物。妖精通常精于毒术，擅长使用各类毒蛊对敌人进行木系攻击。 </content>
+					</char>
+					<char name="羽灵" src="/show1309/swf/xitong/char6.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　
+羽灵由于拥有神的血统而受到眷顾，生来就带有羽翼，能够自由飞翔，她们擅长辅助性的魔法与大型法术阵、诅咒术等精神力量，精通风、雷、电的自然奥义，同法师一样不善于近身肉搏。 </content>
+					</char>
+					<char name="羽芒" src="/show1309/swf/xitong/char7.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　羽芒作为带有神的血统的族群，骨骼轻盈，姿态优美，虽然柔韧但不脆弱，头上天生拥有"神赐之翼" ，他们是人类女性和神的后代，作为羽族的卫士，他们身手矫健，既是优秀的弓箭手也是勇猛的武士，擅长使用弓弩等远程武器。 </content>
+					</char>
+					<char name="刺客" src="/show1309/swf/xitong/char8.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　刺客近身攻击能力强大，机动性灵活出众。具有隐身能力，并且有增加暴击伤害的特殊技能，可以通过短时间的爆发性伤害秒杀对手。在队伍中，他们是出色的伤害制造者，同时可以用“嗜血咒”加强团队的整体生存力。 </content>
+					</char>
+					<char name="巫师" src="/show1309/swf/xitong/char9.swf" innerprevload="true">
+						<content size="12" color="#63ADF7" autoSize="left" width="400" wordWrap="true" leading="8">　　巫师擅长操控及引导生物原始的本能，即可以增强自己和队友的力量，又可以打击敌人。巫师本身较为脆弱，但敌人对巫师造成伤害的同时都要付出惨痛的代价，辅以巫师的“生命禁锢”等一系列负面状态技能，令其战斗力不可小觑。 </content>
+					</char>
+				</xitong>
+			</btn>
+			<btn>
+				<label size="14" color="#ffffff" text="全新&#xA;副本" autoSize="center"/>
+				<copy>
+					<node>
+						<label size="24" color="#ffffff" text="伏波堂" autoSize="left"/>
+						<img src="/show1309/image/copy/1.jpg"/>
+						<content2 size="14" color="#fcc9b0" autoSize="left" width="270" wordWrap="true" leading="8">　　人界曾有辉煌的文明，但一朝倾覆，繁华不再，正是一宗灾难引起的后果。四帝的先祖也与此灾难有关。白帝亚历山大每每受先祖托梦所扰，预感此梦性命攸关，只得托付于人们，帮助其回到过去，禳除此梦中之灾。伏波堂是人界中知天下灾难事的大厅，大厅中央是一座人界科技最高的成就之结晶——地动仪。原来当时四方元灵一起作难，泛滥成灾，每一方有难，地动仪对应方向的龙珠会落下，并在伏波幻影中映照出该方受灾的情境，人们便回到过去后，即可通过地动仪得知情况，并前往救灾。</content2>
+					</node>
+					<node>
+						<label size="24" color="#ffffff" text="流银宫" autoSize="left"/>
+						<img src="/show1309/image/copy/2.jpg"/>
+						<content1 size="14" color="#469ce3" autoSize="left" width="270" wordWrap="true" leading="8">　　暴君在位六十三年，期间搜刮奇珍，横敛巨财，在被讨伐后，藏匿着这些财宝的流银宫被世人们发现。然而其中却布满精巧机关和各种迷惑人心的陷阱，使得外来入侵者断送性命于一一道道通往最终房间的大门之前。经幸存之人描述，这流银宫内共分为七个各异的房间，从最开始的可怕陷阱，到关押水银珍兽的水银池，从金碧辉煌的宝库到美轮美奂的梦魇困境，最终如果有幸通过以上的重重考验，你将会看到记载着暴君一族历代辉煌和兴衰文书的古籍阁，古籍阁将是通往最后陈列历代帝王雕像的殿堂，但一处不起眼的暗门将带你来到失心疯王妃的囚牢之中，最终能否化解她的强大怨气将成为你最终和暴君之子战斗的关键筹码。</content1>
+					</node>
+				</copy>
+			</btn>
+			<btn>
+				<label size="14" color="#ffffff" text="全新&#xA;地图" autoSize="center"/>
+				<map>
+					<map src="/show1309/image/map/map.jpg"/>
+					<btn>
+						<label size="14" color="#ffffff" text="霸帝军要塞" font="Microsoft YaHei Bold" autoSize="center"/>
+						<img src="/show1309/image/map/1.jpg"/>
+					</btn>
+					<btn>
+						<label size="14" color="#ffffff" text="雪猿山" font="Microsoft YaHei Bold" autoSize="center"/>
+						<img src="/show1309/image/map/2.jpg"/>
+					</btn>
+					<btn>
+						<label size="14" color="#ffffff" text="镜花水国" font="Microsoft YaHei Bold" autoSize="center"/>
+						<img src="/show1309/image/map/3.jpg"/>
+					</btn>
+					<btn>
+						<label size="14" color="#ffffff" text="竹浣村" font="Microsoft YaHei Bold" autoSize="center"/>
+						<img src="/show1309/image/map/4.jpg"/>
+					</btn>
+					<btn>
+						<label size="14" color="#ffffff" text="空枭营" font="Microsoft YaHei Bold" autoSize="center"/>
+						<img src="/show1309/image/map/5.jpg"/>
+					</btn>
+					<btn>
+						<label size="14" color="#ffffff" text="麒麟镇" font="Microsoft YaHei Bold" autoSize="center"/>
+						<img src="/show1309/image/map/6.jpg"/>
+					</btn>
+					<content size="14" color="#3b1500" autoSize="left" width="300" wordWrap="true" leading="8">　　血海之劫后，人界开始了数千年的休养生息，不断繁衍出更多的生命，分化出复杂的势力派系。在一个名为霸州的地方，这里的百姓长久以来正遭受来自暴君的可怕统治。人们奋起抗争，在推翻暴君的时候，子纯借怨灵之力复生，夺取意外坠落人界的白帝之剑，并交给暴君之子，表辅其政视其傀儡。当下时局颠倒惊变，百姓退守。土地逐渐干涸枯竭，苍凉顿生。<br/>
+ 　　 白帝呼唤完美世界诸位志士，协助百姓推翻暴政夺回白帝之剑。为救干涸大地，青帝之剑被送往此地镇守，生机由其身远远不断散出，滋养着周围的生灵。<br/>
+  　　然而胜利之路中必有重重险阻，浩荡霸气的帝军大营中布满精兵强将、奇美秀丽的水下王国充斥着诱惑心神的女子、胖瘦两大浣熊部落内部经常因为捍卫自己的审美而爆发战斗，神秘的雪山白猿又对青帝之剑虎视眈眈，还有驾驶着精巧机关飞艇的空贼……修神的最高境界在何处？白帝之剑究竟是在藏匿珍宝的神秘地下宫殿中，还是在虚幻之境中的灾难之神居所里？谋划着惊天阴谋的子纯又将付出怎样的代价？一切的一切都在等你到来给我们答案。<br/>
+					</content>
+				</map>
+			</btn>
+			<btn>
+				<label size="14" color="#ffffff" text="游戏&#xA;视频" autoSize="center"/>
+				<videos>
+					<video icon="http://w2i.wanmei.com/resources/jpg/131014/10021381722568891.jpg" src="http://media101.wanmei.com/media/w2i/201310/2013zulong.flv"/>
+					<video icon="http://w2i.wanmei.com/resources/jpg/131011/10021381480192053.jpg" src="http://md2.w2i.com.cn/w2i/patch/10arrive.flv"/>
+					<video icon="/show1309/image/video/3s.jpg" src="http://media101.wanmei.com/media/w2i/flv/show1309_3.flv"/>
+					<video icon="/show1309/image/video/1s.jpg" src="http://media101.wanmei.com/media/w2i/flv/show1309_1.flv"/>
+				</videos>
+			</btn>
+			<btn>
+				<label size="14" color="#ffffff" text="原画&#xA;赏析" autoSize="center"/>
+				<pics>
+					<yuanhua>
+						<label size="24" color="#ffffff" text="游戏原画" autoSize="left"/>
+						<img src="/show1309/image/pic/yuanhua/1.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/2.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/3.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/4.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/5.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/6.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/7.jpg"/>
+						<img src="/show1309/image/pic/yuanhua/8.jpg"/>
+					</yuanhua>
+					<bizhi>
+						<label size="24" color="#ffffff" text="游戏壁纸" autoSize="left"/>
+						<img src="/show1309/image/pic/bizhi/1.jpg"/>
+						<img src="/show1309/image/pic/bizhi/2.jpg"/>
+						<img src="/show1309/image/pic/bizhi/3.jpg"/>
+						<img src="/show1309/image/pic/bizhi/4.jpg"/>
+					</bizhi>
+					<jietu>
+						<label size="24" color="#ffffff" text="游戏截图" autoSize="left"/>
+						<img src="/show1309/image/pic/jietu/1.jpg"/>
+						<img src="/show1309/image/pic/jietu/2.jpg"/>
+						<img src="/show1309/image/pic/jietu/3.jpg"/>
+						<img src="/show1309/image/pic/jietu/4.jpg"/>
+						<img src="/show1309/image/pic/jietu/5.jpg"/>
+						<img src="/show1309/image/pic/jietu/6.jpg"/>
+						<img src="/show1309/image/pic/jietu/7.jpg"/>
+						<img src="/show1309/image/pic/jietu/8.jpg"/>
+						<img src="/show1309/image/pic/jietu/9.jpg"/>
+						<img src="/show1309/image/pic/jietu/10.jpg"/>
+						<img src="/show1309/image/pic/jietu/11.jpg"/>
+						<img src="/show1309/image/pic/jietu/12.jpg"/>
+						<img src="/show1309/image/pic/jietu/13.jpg"/>
+						<img src="/show1309/image/pic/jietu/14.jpg"/>
+						<img src="/show1309/image/pic/jietu/15.jpg"/>
+						<img src="/show1309/image/pic/jietu/16.jpg"/>
+						<img src="/show1309/image/pic/jietu/17.jpg"/>
+						<img src="/show1309/image/pic/jietu/18.jpg"/>
+						<img src="/show1309/image/pic/jietu/19.jpg"/>
+						<img src="/show1309/image/pic/jietu/20.jpg"/>
+						<img src="/show1309/image/pic/jietu/21.jpg"/>
+						<img src="/show1309/image/pic/jietu/22.jpg"/>
+						<img src="/show1309/image/pic/jietu/23.jpg"/>
+					</jietu>
+				</pics>
+			</btn>
+			<btn js="showReg()">
+				<label size="14" color="#ffffff" text="快速&#xA;注册" autoSize="center"/>
+			</btn>
+			<btn href="http://w2i.wanmei.com/main.htm" target="_blank">
+				<label size="14" color="#ffffff" text="官方&#xA;网站" autoSize="center"/>
+			</btn>
+			<btn href="http://w2i.wanmei.com/download/down_client.htm" target="_blank">
+				<label size="14" color="#ffffff" text="游戏&#xA;下载" autoSize="center"/>
+			</btn>
+			<btn>
+				<icon src="/show1309/image/2wm.jpg" align="center middle"/>
+			</btn>
+			<btn href="http://weibo.com/wmsj" target="_blank">
+				<icon src="/show1309/image/shared01.png" align="center middle"/>
+			</btn>
+			<btn href="http://e.t.qq.com/wanmeiguoji" target="_blank">
+				<icon src="/show1309/image/shared02.png" align="center middle"/>
+			</btn>
+		</nav>
+		
+	</nav>
+</xml>

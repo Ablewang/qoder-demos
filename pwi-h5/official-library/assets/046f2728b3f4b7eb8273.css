@@ -1,0 +1,105 @@
+﻿@import url(http://www.wanmei.com/public/style/wm.css);
+body{ margin:0px; padding:0px; color:#9b0000;font:12px Verdana,SimSun,Geneva,sans-serif;background:#2A2F44}
+div,form,ul,ol,li,img,dl,dt,dd,p{margin:0px; padding:0px; border:0;}
+div{width:auto}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+em{font-style:normal;}
+
+.bodybg{width:100%;min-width:1002px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1002?"1002px":"");background:#001c21 url(../images/bodybg.jpg) no-repeat center top;}
+
+#index_top{background:#1b2222 url(../images/bodybg_01.jpg) no-repeat top center;}
+#index_bot{background:url(../images/bodybg_02.jpg) no-repeat center 485px;}
+#insidebg{background:#fff url(../images/insidebg.jpg) no-repeat center top;}
+
+#wrap{width:1002px;min-width:1002px;margin:0 auto;overflow:hidden;position:relative;}
+.h img{display:block;}
+table {border: 1px solid #b50100;  padding:0; margin:0 auto; border-collapse: collapse;}  
+td {border: 1px solid #b50100; background: #ffe5e5;font-size:12px;padding: 5px 3px 5px 8px; color: #4f6b72;}  
+
+/*---------------*/
+
+.btns{position:absolute;left:57px;top:197px;width:344px;height:538px;background:url(../images/btns.png) no-repeat;}
+.btns a{display:block;width:290px;height:70px;position:absolute;overflow:hidden;text-indent:-99999px;}
+.btns a#btn1{left:28px;top:0px;}
+.btns a#btn1:hover{background:url(../images/btns.png) no-repeat -382px 0;}
+
+.btns a#btn2{left:11px;top:80px;}
+.btns a#btn2:hover{background:url(../images/btns.png) no-repeat -365px -80px;}
+
+.btns a#btn3{left:0px;top:165px;}
+.btns a#btn3:hover{background:url(../images/btns.png) no-repeat -354px -165px;}
+
+.btns a#btn4{left:0px;top:238px;}
+.btns a#btn4:hover{background:url(../images/btns.png) no-repeat -354px -238px;}
+
+.btns a#btn5{left:0px;top:314px;}
+.btns a#btn5:hover{background:url(../images/btns.png) no-repeat -354px -314px;}
+
+.btns a#btn6{left:18px;top:391px;}
+.btns a#btn6:hover{background:url(../images/btns.png) no-repeat -372px -391px;}
+
+.btns a#btn7{left:48px;top:468px;}
+.btns a#btn7:hover{background:url(../images/btns.png) no-repeat -402px -468px;}
+
+
+.main{width:1002px;background:url(../images/conbg.jpg) no-repeat;min-height:620px;padding-bottom:50px;}
+
+.menu{width:236px;float:left;font-family:Microsoft YaHei;color:#ffd4d4;margin-left:16px;display:inline;}
+.menu a{color:#ffd4d4;}
+.menu h2{width:236px;height:40px;background:#ce3635;line-height:40px;text-align:center;font-weight:bold;font-size:16px;text-indent:20px;margin-bottom:8px;}
+.menu h3{background:#f17a79 url(../images/menu.png) no-repeat 0 0;width:236px;height:37px;line-height:36px;font-weight:bold;font-size:14px;text-indent:15px;cursor:pointer}
+.menu ul{display:none;width:236px;background:#f17a79;color:#991616;}
+.menu ul li{padding-left:20px;line-height:24px;}
+.menu ul li *{vertical-align:middle}
+.menu ul li a{color:#991616;font-size:14px;}
+
+
+.con{width:706px;background:#ce3635;float:left;margin-left:9px;display:inline;padding:8px 10px 30px;}
+
+.iframeH h2{background:#aa1a1a;line-height:40px;height:40px;text-align:center;color:#fdc8c8;font-family:Microsoft YaHei;font-size:18px;font-weight:bold;}
+.iframeH .detail{color:#fdc8c8;padding:20px;}
+.iframeH .detail p{line-height:20px;padding-top:8px;}
+.iframeH .detail p.img{text-align:center;}
+
+.slide{width:590px;height:101px;position:relative;padding-left:30px;clear:both;}
+.slide li{width:150px;height:101px;}
+.slide li img{width:134px;height:101px;}
+.slide a.bx-prev,.slide a.bx-next{display:block;width:21px;height:102px;position:absolute;top:0px;text-indent:-9999px;overflow:hidden;}
+.slide a.bx-prev{background:url(../images/prev.png) no-repeat 0 30px;left:-30px;}
+.slide a.bx-next{background:url(../images/next.png) no-repeat 0 30px;right:-25px;}
+
+
+.open{width:660px;height:180px;background:#450e08;color:#fbe5c3;padding:30px 25px 20px;overflow:hidden;position:absolute;left:151px;top:300px;display:none}
+.oclose{position:absolute;right:10px;top:5px;color:#9a9a9a;cursor:pointer}
+
+.open h2{font-weight:bold;}
+.open p{padding-bottom:10px;}
+#open1{height:400px}
+.rules{padding-bottom:10px;}
+
+.open table{border-collapse:collapse;}
+.open table th{background:#b04135;color:#fefefe;text-align:center;border:1px solid #450e08;padding:3px}
+.open table td{background:#af3535;border:1px solid #450e08;text-align:center;padding:3px}
+.open table td strong{color:#fee300;}
+
+/*-------滚动--------*/
+.switchable-triggers li{display:inline;} 
+.switchable-triggers li.current{color:#F90}
+#scrollable-1 img{width:110px;height:100px;display:block}
+#scrollable-1 {position:relative;width:600px;height:130px;overflow:hidden;}
+#scrollable-1 li {float:left;margin-right:10px;}
+#scrollable-1 li em {width:110px;display:block;text-align:center; line-height:28px;}
+
+
+.lunbo{position:relative;width:600px;left:35px;top:0;}
+.switchable-triggers{position:absolute;left:0;top:130px;width:600px;text-align:center;}
+
+
+.regbox{width:68px; height:270px;position:absolute;top:370px; right:0; background:#000; z-index:1000; overflow:hidden;}
+.reg{width:305px;height:270px;}
+.regbtn{width:68px;height:270px;float:left;overflow:hidden;}
+.regbtn a{display:block;}
+.regbtn a.btnin{display:none}
+
+.regifr{width:236px;height:270px;background:url(http://w2i.wanmei.com/images/cover120827/reg_bg.png) no-repeat;float:left;padding-top:20px; overflow:hidden;}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/yaojing.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "3262921e02c4c60023d2",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "bytes": 66375,
+  "sha256": "761173b0755133dad712f48a37e07907ec08ff2dc719d815f6d6875fbec11350",
+  "fetchedAt": "2026-11-18T08:18:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/yaojing.jpg",
+  "path": "assets/3262921e02c4c60023d2.jpg"
+}

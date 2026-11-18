@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1388.jpg",
+  "id": "5e748484a5547258ae30",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "alt": "灾星降临",
+  "bytes": 4494,
+  "sha256": "c5085a3473b67bb51d2055b786ffbc1efd4df3f50c013e3b0d2cf235e208fb93",
+  "fetchedAt": "2026-11-18T08:36:45+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/meiling/img_1388.jpg",
+  "path": "assets/5e748484a5547258ae30.jpg"
+}

@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Seed 4: concurrent questions retain independent UIDs inside one speaker-connected comic bubble",
+    "Timeout of a non-current UID retains the expired asker in visible feedback even after another question spawns",
+    "Zero-play result uses \"离席时想说\", not an invented quote claimed as spoken"
+  ],
+  "screenshots": [
+    "2026-11-18T03-14-26-968Z-edge-same-asker.png",
+    "2026-11-18T03-14-26-968Z-edge-async-timeout.png",
+    "2026-11-18T03-14-26-968Z-edge-zero-answer-poster.png"
+  ],
+  "fixture": "Real engine through DOM clicks. Time accelerated by repeated Game.tick(0.25) ONLY for edge reproductions, not natural full-game evidence.",
+  "passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnsylson.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "05d94a076a57818ef5f3",
+  "status": "ok",
+  "parents": [
+    "af1eb3a1bd8046cdc772",
+    "a4b42e91ee31b6e4bdff",
+    "50fa322d58c6f563e398",
+    "a5806a31ec5d4079ebcf"
+  ],
+  "bytes": 2487,
+  "sha256": "263c1fa7acb2c814ff6a701bd74213017dfc20b10e6209eb6907f8dde95a1b1a",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/05d94a076a57818ef5f3.jpg"
+}

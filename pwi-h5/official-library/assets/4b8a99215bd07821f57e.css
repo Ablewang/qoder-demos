@@ -1,0 +1,81 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo_249x113.css); 
+@import url(http://www.wanmei.com/top/css/iframe.css);
+/* CSS Document */
+body {margin:0; padding:0;font-size:0px;color:#1A695D;font-family:"宋体",Arial, Helvetica, sans-serif;}	
+div,img,ul,ol,li,p,map,area{margin:0;padding:0;border:0;list-style:none;}
+a {blr:expression(this.onFocus=this.blur());outline:none;}
+area{blr:expression(this.onFocus=this.blur());outline:none;}
+
+a:visited {color:#000000;text-decoration:none; }
+a:hover {color:#000000;text-decoration:none; }
+
+#w2i_logo ,#transparent_logo{top:10px;left:0px;} 
+
+#wrapper{width:100%;min-width:1002px;float:left;background:url(../images/bg.jpg) center top no-repeat; height:820px;}
+#cont,.img_box{width:1002px;margin:0 auto;position:relative;}
+.img_box img,.right img{ float:left;}
+
+#bg{width:100%;min-width:1002px;background:url(../images/bg_02.jpg) no-repeat center 496px;}
+#wrapper_01{width:100%;min-width:1002px;background:url(../images/bg_01.jpg) no-repeat center top;} 
+
+#bg_02{width:100%;min-width:1002px;background:url(../images/bg_04.jpg) no-repeat center 390px;}
+#wrapper_02{width:100%;min-width:1002px;background:url(../images/bg_03.jpg) no-repeat center 66px;} 
+
+.bann_08{background:url(../images/banner_08.jpg) left top no-repeat; width:999px; height:95px; float:left; overflow:hidden;}
+.bann_08 #a{margin-left:189px; margin-top:41px;}
+.bann_08 .btn_03{position:absolute; left:210px; top:568px; height:80px;}
+.bann_08 .btn_04{position:absolute; left:580px; top:568px; height:80px;}
+.bann_08 img{float:left; margin-right:8px; }
+.bann_09{background:url(../images/banner_09.jpg) left top no-repeat; width:999px; height:165px; float:left; overflow:hidden;}
+.bann_09 #demo{margin-left:100px; margin-top:20px;}
+.bann_06{background:url(../images/banner_06.jpg) left top no-repeat; width:603px; height:317px; float:left; overflow:hidden;}
+.bann_29{background:url(../images/banner_29.jpg) left top no-repeat; width:999px; height:160px; float:left; overflow:hidden;}
+.bann_29 #demo{margin-left:100px; margin-top:18px;}
+.bann_28{background:url(../images/banner_28.jpg) left top no-repeat; width:999px; height:114px; float:left; overflow:hidden;}
+.bann_28 div{margin-left:189px; margin-top:53px;}
+.bann_28 img{float:left; margin-right:8px; }
+
+
+.bann_80{background:url(../images/banner_80.jpg) left top no-repeat; width:999px; height:70px; float:left; overflow:hidden;}
+.bann_81{background:url(../images/banner_81.jpg) left top no-repeat; width:999px; height:203px; float:left; overflow:hidden;}
+.bann_81 #demo{margin-left:115px; margin-top:25px;}
+
+.bann_28 .btn_01{/*margin-top:18px; margin-left:248px;*/ position:absolute; left:10px; top:660px; height:80px;}
+.bann_28 .btn_02{/*margin-top:18px; margin-left:548px;*/position:absolute; left:400px; top:660px; height:80px;}
+.bann_26{background:url(../images/banner_26.jpg) left top no-repeat; width:776px; height:431px; float:left; overflow:hidden;}
+.bann_26 img{ margin-right:21px;}
+.bann_26 .bg_box{margin-left:50px; margin-top:30px; margin-right:15px; background:url(../images/pic_31.jpg) left top; width:690px; height:155px;}
+.bann_26 .bg_box img{margin-left:6px; margin-top:5px; border:1px solid #9E6D12;}
+.bann_26 .bg_box p{font-size:14px; font-weight:bold; color:#fff;float:left;  margin-top:4px; margin-left:63px;}
+.bann_26 ul{ margin-left:70px;}
+.bann_26 ul li{ float:left; font-size:16px; font-weight:bold; color:#000; text-decoration:none; margin-top:5px;}
+.bann_26 ul li a{color:#000; text-decoration:none; margin-right:6px;}
+.pic_c{margin-left:-15px; margin-top:30px;background:url(../images/pic_c.jpg) left top no-repeat; width:106px; height:374px; float:left;}
+.pic_x{background:url(../images/pic_x.jpg) left top no-repeat; margin-left:5px; width:361px; height:81px; float:left; float:left;}
+.pic_x img{margin-left:7px; margin-top:16px;}
+.pic_x p{font-size:12px; color:#000; line-height:1.8em;}
+.pic_x p span{font-weight:bold;  color:#000;}
+.pic_red{background:url(../images/pic_red.jpg) left top no-repeat; width:277px; height:41px; float:left; margin-left:50px; margin-top:20px;}
+.pic_red p{font-size:14px; font-weight:bold; color:#fff; margin-left:95px; margin-top:7px;}
+.pic_c p{font-size:14px; }
+
+#demo {  
+overflow:hidden; 
+width: 785px; 
+height:125px;
+} 
+#demo img { 
+border: 1px solid #4D4D4D;
+margin-right:15px; 
+} 
+#indemo { 
+float: left; 
+width: 800%; 
+} 
+#demo1 { 
+float: left; 
+} 
+.left{ float:left; }
+#demo2 { 
+float: left; 
+}

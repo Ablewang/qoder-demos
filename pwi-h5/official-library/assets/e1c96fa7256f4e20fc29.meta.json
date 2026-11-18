@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_655.jpg",
+  "id": "e1c96fa7256f4e20fc29",
+  "status": "ok",
+  "parents": [
+    "c652c8e6bd34847ecdd2"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yaojing.js",
+  "alt": "狂·移元术<em>（入魔）</em>",
+  "bytes": 1504,
+  "sha256": "7b09c9ca0f97d8761f38ca11e9bc9bb6196fd7ee827141c573f0ad3e6f596f12",
+  "fetchedAt": "2026-11-18T08:35:50+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yaojing/img_655.jpg",
+  "path": "assets/e1c96fa7256f4e20fc29.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27671.jpg",
+  "id": "168af911f114cfe6c259",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·水瀑泓泱<em>（入魔）</em>",
+  "bytes": 4505,
+  "sha256": "f2c030eece23cbc5c27b5e059ab534066a50c0924794f096052047a210a600d6",
+  "fetchedAt": "2026-11-18T08:36:26+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27671.jpg",
+  "path": "assets/168af911f114cfe6c259.jpg"
+}

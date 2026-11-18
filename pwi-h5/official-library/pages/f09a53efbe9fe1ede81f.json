@@ -1,0 +1,72 @@
+{
+  "id": "f09a53efbe9fe1ede81f",
+  "url": "https://w2i.wanmei.com/intro/ts/20091016/30071.shtml",
+  "title": "坐骑骑乘",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 0,
+  "parents": [
+    "dc35782b075005c68fbc"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "b54799d6fea0bb1bdd7192710e5272d88ba134c3707b7d8c52c8eaacbb8bc457",
+  "bytes": 66452,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/f09a53efbe9fe1ede81f.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "让我们骑上黑骏马，奔驰在一望无际的草原；让我们骑上玉麒麟，翱翔在白云悠游的蓝天，完美大陆为我们准备了各种绚丽的坐骑，更能百倍衬托出男儿的英武与女儿的娇媚，上天入地，与你同行。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103091.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103092.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103093.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103094.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103095.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103096.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103097.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/091103/1103098.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　让我们骑上黑骏马，奔驰在一望无际的草原；让我们骑上玉麒麟，翱翔在白云悠游的蓝天，完美大陆为我们准备了各种绚丽的坐骑，更能百倍衬托出男儿的英武与女儿的娇媚，上天入地，与你同行。</p>\r\n<p><img src=\"assets/258822d51c66c7d0963a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/0ae79c37fbc7467e1971.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/cd469ead701aa941200a.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/9f8b9c13d256d0e51a96.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/f92be9cd27bce0c3c227.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/23770d6eccb795f0fb05.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/d2e5468242fce41bebb2.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/35e037618e7a94b6865d.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n                        </div>",
+  "dataPath": "pages/f09a53efbe9fe1ede81f.json",
+  "imageCount": 8,
+  "tableCount": 0,
+  "downloadPath": "downloads/f09a53efbe9fe1ede81f.js"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_588.jpg",
+  "id": "ef29a5ca5b3a6c3db953",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·金精通<em>（升仙）</em>",
+  "bytes": 1732,
+  "sha256": "5a60f94260c590b3cd29d6c065f43322e4de3bc19a3860cdb7f7de0c5a742332",
+  "fetchedAt": "2026-11-18T08:35:22+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_588.jpg",
+  "path": "assets/ef29a5ca5b3a6c3db953.jpg"
+}

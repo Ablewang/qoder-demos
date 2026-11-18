@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/brp_tt02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "958fcf782d3e152d583f",
+  "status": "ok",
+  "parents": [
+    "df57a5295c495ab8e68e"
+  ],
+  "bytes": 12391,
+  "sha256": "8ce999628af490cb1990693ba04f50abe4ee5f5d5babf9210c0c69ca822e40de",
+  "fetchedAt": "2026-11-18T08:22:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/brp_tt02.jpg",
+  "path": "assets/958fcf782d3e152d583f.jpg"
+}

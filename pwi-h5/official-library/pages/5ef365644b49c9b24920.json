@@ -1,0 +1,54 @@
+{
+  "id": "5ef365644b49c9b24920",
+  "url": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text1.htm",
+  "title": "双旦贺岁 跨年狂欢 七重活动献礼 享最丰盛饕餮大餐 -《完美国际》“王朝崛起”官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 7,
+  "parents": [
+    "a3411beada614b0dff34",
+    "5bf38054437c2d3c96c8",
+    "09ca9e4e6993f099fb3d",
+    "d16f0749d19d5c7c7e72",
+    "cfd405b724b0669810af",
+    "c6558e3e22eac12b4e94"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/201212/christmas/iframe/text1.htm",
+  "fetchedAt": "2026-11-18T08:17:26+00:00",
+  "sha256": "7f6bb9a0e70a18aafad325ce43a9b77df849b29dd6aa4fc44fd9380157cb4593",
+  "bytes": 2292,
+  "rawPath": "raw/5ef365644b49c9b24920.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "活动简介\n12月20日-1月3日期间，通过参加指定活动可获得相应数量的圣诞礼物，使用圣诞礼物可在游戏内参与活动。\n登录游戏后方可参与本活动，参与活动只需点击游戏界面右上角M地图旁\"IE\"图标按钮，再点击\"完美活动\"按钮即可打开活动页面参与本活动。\n使用圣诞礼物抽奖需要先收集圣诞礼物，请在\"如何获取圣诞礼物\"页面中查看可以获得礼物的方法和时间限制，每次抽奖会消耗掉1个圣诞礼物，并随机获得一种奖励。\n参与活动抽奖有机会获得十星碧海龙珠、无双之翼、飞行器兑换券、极品魂石礼包、圣诞时装礼包、骑宠兑换券等等奖励，详见\"活动奖励\"页面介绍。\n已获得的圣诞礼物使用抽奖时间截止到1月9日。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic4_03b.jpg",
+      "label": "",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/images/pic4_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201212/christmas/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<div>\r\n\t<h2>活动简介</h2>\r\n\t<div>\r\n\t\t<p>　　12月20日-1月3日期间，通过参加指定活动可获得相应数量的圣诞礼物，使用圣诞礼物可在游戏内参与活动。</p>\r\n        <p>　　登录游戏后方可参与本活动，参与活动只需点击游戏界面右上角M地图旁&quot;IE&quot;图标按钮，再点击&quot;完美活动&quot;按钮即可打开活动页面参与本活动。</p>\r\n        <p>　　使用圣诞礼物抽奖需要先收集圣诞礼物，请在&quot;如何获取圣诞礼物&quot;页面中查看可以获得礼物的方法和时间限制，每次抽奖会消耗掉1个圣诞礼物，并随机获得一种奖励。</p>\r\n        <p>　　参与活动抽奖有机会获得十星碧海龙珠、无双之翼、飞行器兑换券、极品魂石礼包、圣诞时装礼包、骑宠兑换券等等奖励，详见&quot;活动奖励&quot;页面介绍。</p>\r\n        <p>　　已获得的圣诞礼物使用抽奖时间截止到1月9日。</p>\r\n        <p><a href=\"https://event51.wanmei.com/w2i/201212/christmas/images/pic4_03b.jpg\" rel=\"noreferrer\" target=\"_blank\"><img src=\"assets/bf2d8091374a1ce1cf13.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></p>\r\n\t</div>\r\n</div>\r\n",
+  "dataPath": "pages/5ef365644b49c9b24920.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/5ef365644b49c9b24920.js"
+}

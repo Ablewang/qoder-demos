@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/active120216/active04.gif",
+  "alt": "",
+  "kind": "img",
+  "id": "9c2e9318c10a5a15ae58",
+  "status": "ok",
+  "parents": [
+    "795e92504f6461d2f316"
+  ],
+  "bytes": 1860,
+  "sha256": "e46091472ecd43f71803a19c642d6690b226a08b55eb25ca61c02f77c176be12",
+  "fetchedAt": "2026-11-18T08:21:57+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/gif",
+  "finalUrl": "https://w2i.wanmei.com/images/active120216/active04.gif",
+  "path": "assets/9c2e9318c10a5a15ae58.gif"
+}

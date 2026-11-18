@@ -1,0 +1,84 @@
+{
+  "id": "0ce3769df2917897496e",
+  "url": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t8.htm",
+  "title": "修真专题 《完美国际》官方网站",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 4,
+  "parents": [
+    "830dd26c6bed835caa41"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200808/xiuzhen/detail_t8.htm",
+  "fetchedAt": "2026-11-18T08:16:56+00:00",
+  "sha256": "8f59e0db0d717c203a21f399cae061a2773679d6b246e8bd6e054b5cb1df4eee",
+  "bytes": 2519,
+  "rawPath": "raw/0ce3769df2917897496e.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "1、击杀天尊（第二形态）后即可触发任务；\n2、与神无谷的天尊元神对话，触发后续任务；\n3、与仙界的灵虚大仙（480，506）对话后即可完成任务，并获得“天仙”称号；\n天尊元神\n天仙",
+  "tables": [],
+  "links": [
+    {
+      "url": "http://www.wanmei.com/top/topw2i.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm",
+      "label": "",
+      "kind": "iframe"
+    },
+    {
+      "url": "http://www.wanmei.com/top/down.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_title_16.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_24.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/pic/pic_21.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_side.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/images/detail_con_bot.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/topw2i.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/topw2i.htm</a></p>\n</div>\n\n\n<div>\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_top.htm</a></p>\n    </div>\t\n</div>\n\n<div>\n\t<div>\n\t\t<div><img src=\"assets/009bc1c33216ea08710e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t</div>\n\t\n\t<div>\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200808/xiuzhen/iframe_detail_subnav2.htm</a></p>\n        \n        <div>\n\t\t     <p>\n\t\t\t\t　　1、击杀天尊（第二形态）后即可触发任务；<br>\n\t\t\t\t　　2、与神无谷的天尊元神对话，触发后续任务；<br>\n\t\t\t\t　　3、与仙界的灵虚大仙（480，506）对话后即可完成任务，并获得“天仙”称号；\n\t\t     </p>\n\t\t\t\n\t\t     <div><img src=\"assets/2162687f882d1c4dfad3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t     <p>天尊元神</p>\n\t\t\t\n\t\t     <div><img src=\"assets/d918a159a40e0b44bedc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t\t     <p>天仙</p>\n\t   </div>\n  \t</div>\n  \t\n\t<div><img src=\"assets/a390b066ffc65598eb81.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n\t<img src=\"assets/397760d8e3a09cd48cf3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\n</div>\n\n\n<div><p class=\"source-reference\">嵌入资源：<a href=\"http://www.wanmei.com/top/down.htm\" rel=\"noreferrer\">http://www.wanmei.com/top/down.htm</a></p></div>\n\n",
+  "dataPath": "pages/0ce3769df2917897496e.json",
+  "imageCount": 5,
+  "tableCount": 0,
+  "downloadPath": "downloads/0ce3769df2917897496e.js"
+}

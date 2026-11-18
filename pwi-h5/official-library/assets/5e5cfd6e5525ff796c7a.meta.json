@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27583.jpg",
+  "id": "5e5cfd6e5525ff796c7a",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 大地裂纹<em>（升仙）</em>",
+  "bytes": 1182,
+  "sha256": "9e9a66a47747ae7f4f596f2189cc699b64870d76f7d2aec4b75e5c38e90971e3",
+  "fetchedAt": "2026-11-18T08:36:04+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27583.jpg",
+  "path": "assets/5e5cfd6e5525ff796c7a.jpg"
+}

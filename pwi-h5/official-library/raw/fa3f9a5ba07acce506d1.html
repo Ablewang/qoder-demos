@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+<head>
+    <title></title>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content=""/>
+    
+    <!--css引入-->
+    <link href="./css/index.css?v=1732264055804" rel="stylesheet" type="text/css"/>
+</head>
+<body data-name="index">
+    <!--头部栏-->
+    <div class="header-bar">
+        <div class="content-panel">
+            <div class="left-panel">
+                <a href="https://w2i.wanmei.com" class="logo null">完美国际</a>
+                <a href="https://w2i.wanmei.com" class="home-btn null">官网</a>
+                <a href="./index.html" class="strategy-btn null">攻略站</a>
+            </div>
+            <div class="right-panel">
+                <div class="login-after hide">
+                    <a href="javascript:;" class="link">
+                        <img/>
+                        <span></span>
+                    </a>
+                    <a href="javascript:;" class="logout-btn null">登出</a>
+                </div>
+                <a href="javascript:;" class="login-btn null hide">登录</a>
+            </div>
+        </div>
+    </div>
+    <!--页面内容-->
+     <div class="page-container">
+         <div class="left-board">
+             <div class="nav-panel">
+                 <a href="javascript:;" data-type="btn" data-val="2" class="btn">最新</a>
+                 <a href="javascript:;" data-type="btn" data-val="12" class="btn">最热</a>
+             </div>
+             <div class="top-news-panel hide"></div>
+             <div class="author-panel hide">
+                 <div class="title-panel">
+                     <a href="javascript:;" class="switch-btn null">切换</a>
+                 </div>
+                 <div class="conetnt-panel clear"></div>
+                 <script type="text/template" id="author-temp">
+                     <a href="./personal.html?uid={{uid}}">
+                         <img src="{{avatar}}" class="avatar"/>
+                         <span class="name">{{nickname}}</span>
+                     </a>
+                 </script>
+             </div>
+             <div class="article-panel">
+                 <div class="section-panel"></div>
+                 <div class="content-panel">
+                     <div class="list-panel"></div>
+                     <div class="empty-panel hide">
+                         <p>抱歉~这里什么都没有~</p>
+                     </div>
+                     <div class="loading-wait hide">加载中...</div>
+                     <div class="loading-the-end hide">
+                         已经全部展示
+                     </div>
+                 </div>
+                 <script type="text/template" id="list-temp">
+                     <a class="item" href="./article-detail.html?aid={{articleId}}">
+                         {{snapshot}}
+                         <dl class="info-panel">
+                             <dt>{{title}}</dt>
+                             <dd class="detail">{{content}}</dd>
+                             <dd class="author">
+                                 <img src={{avatar}}/>
+                                 <span class="name">{{nickname}}</span>
+                                 <span class="time">{{updateTime}}</span>
+                             </dd>
+                         </dl>
+                     </a>
+                 </script>
+             </div>
+         </div>
+         <div class="right-board">
+             <a href="./publish.html" class="publish-btn null">发布攻略</a>
+             <div class="search-panel">
+                 <input type="text" placeholder="请输入搜索信息"/>
+                 <a href="javascript:;" class="btn">搜索</a>
+             </div>
+             <dl class="recommend-panel hide gonggao" data-name="gonggao">
+                 <dt>
+                     <span>系统公告</span>
+                     <div class="btn-panel">
+                         <a href="javascript:;" class="btn null" data-type="prev">prev</a>
+                         <a href="javascript:;" class="btn null" data-type="next">next</a>
+                     </div>
+                 </dt>
+                 <dd></dd>
+             </dl>
+             <dl class="recommend-panel hide gonglue" data-name="gonglue">
+                 <dt>
+                     <span>优秀攻略</span>
+                     <div class="btn-panel">
+                         <a href="javascript:;" class="btn null" data-type="prev">prev</a>
+                         <a href="javascript:;" class="btn null" data-type="next">next</a>
+                     </div>
+                 </dt>
+                 <dd></dd>
+             </dl>
+             <div class="qrcode-panel clear hide">
+                 <script type="text/template" data-temp="qrcodeItemTemp">
+                     <div class="item">
+                         <div class="qrcode">
+                             <img src="{{img}}"/>
+                         </div>
+                         <div class="name">
+                             <span>{{title}}</span>
+                         </div>
+                     </div>
+                 </script>
+             </div>
+         </div>
+     </div> 
+    <script type="text/javascript" src="./js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/tjsdk-min-1.5.3.js"></script>
+    <script type="text/javascript" src="./js/lib/stat.js"></script>
+    <script type="text/javascript" src="./js/lib/login.js?v=1732264055804"></script>
+    <script type="text/javascript" src="./js/lib/lazyload.js?v=1732264055804"></script>
+    <script type="text/javascript" src="./js/lib/emotion.json.js?v=1732264055804"></script>
+    <script type="text/javascript" src="./js/lib/purify.min.js?v=1732264055804"></script>
+    <script type="text/javascript" src="./js/public-plugin.js?v=1732264055804"></script>
+    <script type="text/javascript" src="https://static.games.wanmei.com/public/js/stat.js"></script>
+    <script type="text/javascript" src="./js/header-bar.js?v=1732264055804"></script>
+    <script type="text/javascript">
+        window.GLOBAL_DATA = {
+            domain : 'https://pwgcapi.wanmei.com',
+            circleId: 56
+        }
+    </script> 
+    <!-- 探数 -->
+    <script type="text/javascript">
+        //初始化打点
+        var myAnaly = new webSdk();
+        myAnaly.initSDK({
+            project: "laohuapp",
+            linkHost: "https://clog.tanshudata.com",
+            withAppJsBridge: false
+        });
+        myAnaly.pageVisted();
+    </script>
+    
+        <!--外链js-->
+        <script type="text/javascript" src="./js/lib/purify.min.js"></script>
+    
+    <!--页面js-->
+    <script type="text/javascript" src="./js/index.js?v=1732264055804"></script>
+    
+</body>
+</html>

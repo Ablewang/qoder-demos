@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1100.jpg",
+  "id": "069648b1b0dd3cbb17e4",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "复仇之魂—惩戒",
+  "bytes": 4185,
+  "sha256": "1843dd0ceff463f95fe58284fda60bffdd46de63ad7e86888bd3ef6fd7fdc8db",
+  "fetchedAt": "2026-11-18T08:36:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1100.jpg",
+  "path": "assets/069648b1b0dd3cbb17e4.jpg"
+}

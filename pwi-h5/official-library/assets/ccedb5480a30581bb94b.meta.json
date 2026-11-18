@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/images/make_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ccedb5480a30581bb94b",
+  "status": "ok",
+  "parents": [
+    "3a43e50ca16a22bc7963"
+  ],
+  "bytes": 17587,
+  "sha256": "6006b8f9a57a7ea318e8569180314265d37aa20ac862577491b172cbd9fb4d9b",
+  "fetchedAt": "2026-11-18T08:23:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/images/make_01.jpg",
+  "path": "assets/ccedb5480a30581bb94b.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_467.jpg",
+  "id": "bb7c0eb53553241ad9f2",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·霜刃<em>（入魔）</em>",
+  "bytes": 1702,
+  "sha256": "0738688689aa232d4c03f320a26b9b22e5c1b2f754ee404adfbc19a7ee044201",
+  "fetchedAt": "2026-11-18T08:34:40+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_467.jpg",
+  "path": "assets/bb7c0eb53553241ad9f2.jpg"
+}

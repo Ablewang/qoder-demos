@@ -1,0 +1,24 @@
+{
+  "url": "http://wulin2.wanmei.com/images/cover1403/jiantou.png",
+  "id": "3f95ddc60a97597bcae6",
+  "status": "ok",
+  "parents": [
+    "e22dbd9a3fcf086cded8",
+    "250753924235fd6ee8a3",
+    "09fddc70dcd77ec60f4c",
+    "6086431c2237fdf64b6a",
+    "a08c5a6f495dfd7c3c98",
+    "f3ca84404defdd08fce4",
+    "c51fddb20c83a69287b1"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201409/new/style/master.css",
+  "bytes": 19988,
+  "sha256": "5fc82785b77ac960fa380642b5cf1073b1d5930b71c00ce33d99025a689391a6",
+  "fetchedAt": "2026-11-18T08:37:32+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://wulin2.wanmei.com/images/cover1403/jiantou.png",
+  "path": "assets/3f95ddc60a97597bcae6.png"
+}

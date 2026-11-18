@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/yanhua/bangpai/7.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "dfd6785c05e029450ffd",
+  "status": "ok",
+  "parents": [
+    "925d191f4764a4a1eacd"
+  ],
+  "bytes": 5053,
+  "sha256": "1a19a15fc602c5f7f9ffc6a8906f2363f63b63258428a6af4cf2574a94a9faa8",
+  "fetchedAt": "2026-11-18T08:19:41+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/yanhua/bangpai/7.jpg",
+  "path": "assets/dfd6785c05e029450ffd.jpg"
+}

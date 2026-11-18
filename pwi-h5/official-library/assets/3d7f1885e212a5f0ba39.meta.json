@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/event/200805/newline/images/left_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "3d7f1885e212a5f0ba39",
+  "status": "ok",
+  "parents": [
+    "5186b0b0b3c3773b5d31",
+    "1fe80fc9d9958da87b08",
+    "992deb2b04eb83864a12",
+    "058e746aaf0da73a1ed5",
+    "8620a35de1f02343fc2b"
+  ],
+  "bytes": 5571,
+  "sha256": "ba302b47af71c22698932b82b6d1c6737d2991280d377f10539a6fc4065a5af5",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/3d7f1885e212a5f0ba39.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_28032.jpg",
+  "id": "e05a905b5d247d8556b6",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "海风召唤",
+  "bytes": 1309,
+  "sha256": "791f1c88dc575c7e2605754378daac25fa3b7be23a28fa31dea0df62a2589b2b",
+  "fetchedAt": "2026-11-18T08:36:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_28032.jpg",
+  "path": "assets/e05a905b5d247d8556b6.jpg"
+}

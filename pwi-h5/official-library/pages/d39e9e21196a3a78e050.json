@@ -1,0 +1,438 @@
+{
+  "id": "d39e9e21196a3a78e050",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+  "title": "NPC查找 - 獠牙镇周边",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "5c93127a42b0e318f29715c1ef488095da6d891365d4f292988bc8ccba8761f1",
+  "bytes": 70099,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d39e9e21196a3a78e050.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n药师谢悬壶\n432.460\n铁匠宋大锤\n430.461\n传送师慕容千里\n432.460\n宏儿\n434.459\n踏箭山庄庄主\n428.458\n钱庄掌柜赵福安\n426.460\n禹王鼎村长\n465.432\n游商许景悠\n466.426\n游侠阿飞\n469.424\n游商薛强\n473.427\n盗贼阿星\n473.429\n水仙儿\n470.430\n洪星\n470.429\n采药人\n448.426\n旺强\n458.343\n赢弱囚徒\n462.344\n王飞\n464.340\n野人土著\n471.332\n钱庄掌柜裴丰\n471.625\n裁缝陆襄\n470.321\n铁匠莫骢\n468.320\n药师毕明伦\n465.324\n巧匠孟晓雨\n458.329\n货郎张晔\n457.327\n传送师纪云渺\n446.336\n獠牙镇祭司\n447.341",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师谢悬壶",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "432.460",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠宋大锤",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "430.461",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师慕容千里",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "432.460",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "宏儿",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "434.459",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "踏箭山庄庄主",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "428.458",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜赵福安",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "426.460",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "禹王鼎村长",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "465.432",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "游商许景悠",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "466.426",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "游侠阿飞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "469.424",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "游商薛强",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "473.427",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "盗贼阿星",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "473.429",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "水仙儿",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "470.430",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "洪星",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "470.429",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "采药人",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "448.426",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "旺强",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "458.343",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "赢弱囚徒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "462.344",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "王飞",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "464.340",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "野人土著",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "471.332",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜裴丰",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "471.625",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝陆襄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "470.321",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠莫骢",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "468.320",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师毕明伦",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "465.324",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巧匠孟晓雨",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "458.329",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎张晔",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "457.327",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师纪云渺",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "446.336",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "獠牙镇祭司",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "447.341",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师谢悬壶</td>\r\n            <td>432.460</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠宋大锤<br>\r\n             </td>\r\n            <td>430.461</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师慕容千里<br>\r\n             </td>\r\n            <td>432.460</td>\r\n        </tr>\r\n        <tr>\r\n            <td>宏儿<br>\r\n             </td>\r\n            <td>434.459</td>\r\n        </tr>\r\n        <tr>\r\n            <td>踏箭山庄庄主<br>\r\n             </td>\r\n            <td>428.458</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜赵福安<br>\r\n             </td>\r\n            <td>426.460</td>\r\n        </tr>\r\n        <tr>\r\n            <td>禹王鼎村长<br>\r\n             </td>\r\n            <td>465.432</td>\r\n        </tr>\r\n        <tr>\r\n            <td>游商许景悠<br>\r\n             </td>\r\n            <td>466.426</td>\r\n        </tr>\r\n        <tr>\r\n            <td>游侠阿飞<br>\r\n             </td>\r\n            <td>469.424</td>\r\n        </tr>\r\n        <tr>\r\n            <td>游商薛强<br>\r\n             </td>\r\n            <td>473.427</td>\r\n        </tr>\r\n        <tr>\r\n            <td>盗贼阿星<br>\r\n             </td>\r\n            <td>473.429</td>\r\n        </tr>\r\n        <tr>\r\n            <td>水仙儿<br>\r\n             </td>\r\n            <td>470.430</td>\r\n        </tr>\r\n        <tr>\r\n            <td>洪星<br>\r\n             </td>\r\n            <td>470.429</td>\r\n        </tr>\r\n        <tr>\r\n            <td>采药人<br>\r\n             </td>\r\n            <td>448.426</td>\r\n        </tr>\r\n        <tr>\r\n            <td>旺强<br>\r\n             </td>\r\n            <td>458.343</td>\r\n        </tr>\r\n        <tr>\r\n            <td>赢弱囚徒<br>\r\n             </td>\r\n            <td>462.344</td>\r\n        </tr>\r\n        <tr>\r\n            <td>王飞<br>\r\n             </td>\r\n            <td>464.340</td>\r\n        </tr>\r\n        <tr>\r\n            <td>野人土著<br>\r\n             </td>\r\n            <td>471.332</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜裴丰<br>\r\n             </td>\r\n            <td>471.625</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝陆襄<br>\r\n             </td>\r\n            <td>470.321</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠莫骢<br>\r\n             </td>\r\n            <td>468.320</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师毕明伦<br>\r\n             </td>\r\n            <td>465.324</td>\r\n        </tr>\r\n        <tr>\r\n            <td>巧匠孟晓雨<br>\r\n             </td>\r\n            <td>458.329</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎张晔<br>\r\n             </td>\r\n            <td>457.327</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师纪云渺<br>\r\n             </td>\r\n            <td>446.336</td>\r\n        </tr>\r\n        <tr>\r\n            <td>獠牙镇祭司</td>\r\n            <td>447.341</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/d39e9e21196a3a78e050.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/d39e9e21196a3a78e050.js"
+}

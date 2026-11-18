@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201112/upgrade/js/showbox.js",
+  "alt": "",
+  "kind": "script",
+  "id": "c84b1c28cb2a0f08b7c6",
+  "status": "ok",
+  "parents": [
+    "aa1f5c8b062c173e0b7d"
+  ],
+  "bytes": 1152,
+  "sha256": "b512d889912b0faccacf1a8dcadd68c0d586d459b8c620b0be90ac9e728388d9",
+  "fetchedAt": "2026-11-18T08:28:22+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201112/upgrade/js/showbox.js",
+  "path": "assets/c84b1c28cb2a0f08b7c6.js"
+}

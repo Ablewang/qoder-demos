@@ -1,0 +1,21 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/ejt_03.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "65a651c7e59b210efa9f",
+  "status": "ok",
+  "parents": [
+    "fe4487ae624051d870aa",
+    "a245c2e97a44a02cb495",
+    "2cb07116a2adc8020ca9",
+    "ff0a5b259dfdf67e49c9"
+  ],
+  "bytes": 6468,
+  "sha256": "642098c8b3518208eba5eb1b3d56318e5c0a0fef04e2ae1cb3a0fee3a078cd6e",
+  "fetchedAt": "2026-11-18T08:24:00+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/temp120824/ejt_03.jpg",
+  "path": "assets/65a651c7e59b210efa9f.jpg"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "f4938f1ff11279e66d40",
+  "url": "https://w2i.wanmei.com/intro/strong/20091015/29991.shtml",
+  "title": "装备绑定",
+  "category": "进阶资料",
+  "section": "装备强化",
+  "depth": 0,
+  "parents": [],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "8443b3ff281f27517d87e0bfbb0eadfdfa75ea8248461d8ed952a90b45258961",
+  "bytes": 65993,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/f4938f1ff11279e66d40.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-15",
+  "text": "在各主城“完美活动管理员”处可进行装备绑定的相关操作，当玩家绑定装备时背包内需要有一个天人合一符，然后将要绑定的装备放到界面里，点击确定即可完成装备绑定。\n绑定说明：\n可将装备、时装、飞行器绑定为天人合一状态（天人合一状态下，天人合一的装备将变为死亡保护状态，且无法交易、丢弃、出售、拆分。可在管理员处将天人合一的装备销毁，销毁72小时内仍可以免费找回）。",
+  "tables": [],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/zbbd_01.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <p>　　在各主城“完美活动管理员”处可进行装备绑定的相关操作，当玩家绑定装备时背包内需要有一个天人合一符，然后将要绑定的装备放到界面里，点击确定即可完成装备绑定。</p>\r\n<p><img src=\"assets/e41dc6d3daac552810b5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　<strong>绑定说明：</strong></p>\r\n<p>　　可将装备、时装、飞行器绑定为天人合一状态（天人合一状态下，天人合一的装备将变为死亡保护状态，且无法交易、丢弃、出售、拆分。可在管理员处将天人合一的装备销毁，销毁72小时内仍可以免费找回）。</p>\r\n                        </div>",
+  "dataPath": "pages/f4938f1ff11279e66d40.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/f4938f1ff11279e66d40.js"
+}

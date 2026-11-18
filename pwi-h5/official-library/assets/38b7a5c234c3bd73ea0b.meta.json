@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/images/pic/quyu_02.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "38b7a5c234c3bd73ea0b",
+  "status": "ok",
+  "parents": [
+    "bdcae170cf4cfccd4e7a"
+  ],
+  "bytes": 105289,
+  "sha256": "cac417cc2fa76eeed218d5ecd56cf446da0b00df86a9e3378fc1620fcc795c90",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/38b7a5c234c3bd73ea0b.jpg"
+}

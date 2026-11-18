@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_67.jpg",
+  "id": "094800cc8163182a4bb2",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "寒冰刃域",
+  "bytes": 1402,
+  "sha256": "bd79e167c7ef25bf6f988fd73fd66dbc52e1c1eddb16d12711021d42435a7551",
+  "fetchedAt": "2026-11-18T08:34:29+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_67.jpg",
+  "path": "assets/094800cc8163182a4bb2.jpg"
+}

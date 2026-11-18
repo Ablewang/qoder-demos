@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_421.jpg",
+  "id": "68a3121ba548b88dc379",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·万剑诀<em>（入魔）</em>",
+  "bytes": 1777,
+  "sha256": "17708cba9019ab5560b57f51bb9cde3109bdfd56d8d4f4be56cb047abcb88cda",
+  "fetchedAt": "2026-11-18T08:34:22+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_421.jpg",
+  "path": "assets/68a3121ba548b88dc379.jpg"
+}

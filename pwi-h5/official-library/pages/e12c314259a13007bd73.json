@@ -1,0 +1,321 @@
+{
+  "id": "e12c314259a13007bd73",
+  "url": "https://w2i.wanmei.com/event/200805/newskill/yaojing.htm",
+  "title": "《完美国际》新技能专题",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 1,
+  "parents": [
+    "1cb38395c2265ebc6d10"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/newskill/yaojing.htm",
+  "fetchedAt": "2026-11-18T08:15:44+00:00",
+  "sha256": "ea33678fb0a885719e96852591a776df39ec213699d4d5344b7e6bff247e28a2",
+  "bytes": 4521,
+  "rawPath": "raw/e12c314259a13007bd73.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "技 能\n施放距离\n所需元气\n冷却时间\n消耗真气\n准备/吟唱时间\n施放时间\n效 果\n媚惑(人形)\n27米\n一点真元\n10分钟\n1000\n3秒\n1秒\n对敌人造成基础伤害加自身法力值上限的50%的物理伤害，并且使他们陷入痴呆状态。（移动速度降低70%，法术吟唱时间增加90%）\n化石咒（狐形）\n10米\n一点真元\n15分钟\n1000\n2秒\n1.3秒\n对目标造成和自身生命值上限的50%木系伤害。同时使目标陷入石化状态（物理防御增加200%，物理攻击速度降低100%，命中率降低300%）\n彩虹蛊（狐形）\n12米\n20\n20秒\n800\n瞬发\n向四周释放各种大量的蛊，并有几率对周围15米内目标造成各种不同的负面状态。流血：物理持续伤害4500；中毒：木系持续伤害4500；湮甲：物理防御降低100%；破灵：法术防御降低100%。持续9秒\n彩虹蛊·妖(人形)\n25米\n20\n30秒\n800\n瞬发\n向指定目标释放各种大量的蛊有几率造成各种不同的负面状态。流血：物理持续伤害4500；中毒：木系持续伤害4500；湮甲：物理防御降低100%；破灵：法术防御降低100%。持续9秒\n不动咒(人形)\n一点真元\n5分钟\n500\n3秒\n1秒\n吸收所有伤害，同时自身也会定身封印，持续10秒",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "技 能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "施放距离",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需元气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冷却时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "消耗真气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准备/吟唱时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "施放时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "效 果",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "媚惑(人形)",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "27米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对敌人造成基础伤害加自身法力值上限的50%的物理伤害，并且使他们陷入痴呆状态。（移动速度降低70%，法术吟唱时间增加90%）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "化石咒（狐形）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "15分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1000",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "2秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.3秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对目标造成和自身生命值上限的50%木系伤害。同时使目标陷入石化状态（物理防御增加200%，物理攻击速度降低100%，命中率降低300%）",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "彩虹蛊（狐形）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "12米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬发",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "向四周释放各种大量的蛊，并有几率对周围15米内目标造成各种不同的负面状态。流血：物理持续伤害4500；中毒：木系持续伤害4500；湮甲：物理防御降低100%；破灵：法术防御降低100%。持续9秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "彩虹蛊·妖(人形)",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "25米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "800",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬发",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "向指定目标释放各种大量的蛊有几率造成各种不同的负面状态。流血：物理持续伤害4500；中毒：木系持续伤害4500；湮甲：物理防御降低100%；破灵：法术防御降低100%。持续9秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "不动咒(人形)",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "3秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "吸收所有伤害，同时自身也会定身封印，持续10秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm</a></p>\t\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t\t<img src=\"assets/76a2b089ae2a088061ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<div>\r\n\t\t\t<div>\r\n\t\t\t\t<table>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>技  能</td>\r\n\t\t\t\t\t\t<td>施放距离</td>\r\n\t\t\t\t\t\t<td>所需元气</td>\r\n\t\t\t\t\t\t<td>冷却时间</td>\r\n\t\t\t\t\t\t<td>消耗真气</td>\r\n\t\t\t\t\t\t<td>准备/吟唱时间</td>\r\n\t\t\t\t\t\t<td>施放时间</td>\r\n\t\t\t\t\t\t<td>效  果</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>媚惑(人形)</td>\r\n\t\t\t\t\t\t<td>27米</td>\r\n\t\t\t\t\t\t<td>一点真元</td>\r\n\t\t\t\t\t\t<td>10分钟</td>\r\n\t\t\t\t\t\t<td>1000</td>\r\n\t\t\t\t\t\t<td>3秒</td>\r\n\t\t\t\t\t\t<td>1秒</td>\r\n\t\t\t\t\t\t<td>对敌人造成基础伤害加自身法力值上限的50%的物理伤害，并且使他们陷入痴呆状态。（移动速度降低70%，法术吟唱时间增加90%）</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>化石咒（狐形）</td>\r\n\t\t\t\t\t\t<td>10米</td>\r\n\t\t\t\t\t\t<td>一点真元</td>\r\n\t\t\t\t\t\t<td>15分钟</td>\r\n\t\t\t\t\t\t<td>1000</td>\r\n\t\t\t\t\t\t<td>2秒</td>\r\n\t\t\t\t\t\t<td>1.3秒</td>\r\n\t\t\t\t\t\t<td>对目标造成和自身生命值上限的50%木系伤害。同时使目标陷入石化状态（物理防御增加200%，物理攻击速度降低100%，命中率降低300%）</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>彩虹蛊（狐形）</td>\r\n\t\t\t\t\t\t<td>12米</td>\r\n\t\t\t\t\t\t<td>20</td>\r\n\t\t\t\t\t\t<td>20秒</td>\r\n\t\t\t\t\t\t<td>800</td>\r\n\t\t\t\t\t\t<td colspan=\"2\">瞬发</td>\r\n\t\t\t\t\t\t<td>向四周释放各种大量的蛊，并有几率对周围15米内目标造成各种不同的负面状态。流血：物理持续伤害4500；中毒：木系持续伤害4500；湮甲：物理防御降低100%；破灵：法术防御降低100%。持续9秒</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>彩虹蛊·妖(人形)</td>\r\n\t\t\t\t\t\t<td>25米</td>\r\n\t\t\t\t\t\t<td>20</td>\r\n\t\t\t\t\t\t<td>30秒</td>\r\n\t\t\t\t\t\t<td>800</td>\r\n\t\t\t\t\t\t<td colspan=\"2\">瞬发</td>\r\n\t\t\t\t\t\t<td>向指定目标释放各种大量的蛊有几率造成各种不同的负面状态。流血：物理持续伤害4500；中毒：木系持续伤害4500；湮甲：物理防御降低100%；破灵：法术防御降低100%。持续9秒</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>不动咒(人形)</td>\r\n\t\t\t\t\t\t<td> </td>\r\n\t\t\t\t\t\t<td>一点真元</td>\r\n\t\t\t\t\t\t<td>5分钟</td>\r\n\t\t\t\t\t\t<td>500</td>\r\n\t\t\t\t\t\t<td>3秒</td>\r\n\t\t\t\t\t\t<td>1秒</td>\r\n\t\t\t\t\t\t<td>吸收所有伤害，同时自身也会定身封印，持续10秒</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table>\t\r\n\t\t\t</div>\t\t\t\r\n\t\t</div>\t\r\n\t</div>\r\n\t<div>\t\t\r\n\t\t<img src=\"assets/83dee5d06950afc247ff.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/b8b50a1e1b9ccaa7912f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/bfceaafd9fc4100950e7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/50d400a79de917d8b97f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/9e2c630da23ee1fc5b09.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/e12c314259a13007bd73.json",
+  "imageCount": 6,
+  "tableCount": 1,
+  "downloadPath": "downloads/e12c314259a13007bd73.js"
+}

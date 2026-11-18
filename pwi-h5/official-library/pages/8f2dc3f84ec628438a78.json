@@ -1,0 +1,593 @@
+{
+  "id": "8f2dc3f84ec628438a78",
+  "url": "https://event51.wanmei.com/w2i/200905/ectype/iframe/list01_5.htm",
+  "title": "战歌之城-《完美国际》官方网站",
+  "category": "进阶资料",
+  "section": "特色亮点",
+  "depth": 3,
+  "parents": [
+    "c2c8339195f44648ab5c"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://event51.wanmei.com/w2i/200905/ectype/iframe/list01_5.htm",
+  "fetchedAt": "2026-11-18T08:16:06+00:00",
+  "sha256": "571fcb1e4c84eec1db0181f0889c819afd734cdffc636ea9719f2b0edcae179a",
+  "bytes": 3996,
+  "rawPath": "raw/8f2dc3f84ec628438a78.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "物品名称\n精灵所需等级\n物品属性\n生产材料\n怒火之镜·4级\n65\n力量+4 敏捷+4\n战歌徽章 x3\n海啸之镜·4级\n66\n力量+4 体质+4\n战歌徽章 x3\n苍鬼之镜·4级\n67\n敏捷+4 体质+4\n战歌徽章 x3\n风霜之镜·4级\n68\n敏捷+4 灵力+4\n战歌徽章 x3\n时光之镜·4级\n69\n灵力+4 体质+4\n战歌徽章 x3\n地狱之镜·4级\n70\n力量+4 灵力+4\n战歌徽章 x3\n怒火之玉·4级\n65\n力量+4 敏捷+4\n战歌徽章 x3\n海啸之玉·4级\n66\n力量+4 体质+4\n战歌徽章 x3\n苍鬼之玉·4级\n67\n敏捷+4 体质+4\n战歌徽章 x3\n风霜之玉·4级\n68\n敏捷+4 灵力+4\n战歌徽章 x3\n时光之玉·4级\n69\n灵力+4 体质+4\n战歌徽章 x3\n地狱之玉·4级\n70\n力量+4 灵力+4\n战歌徽章 x3\n怒火符文·4级\n65\n力量+4 敏捷+4\n战歌徽章 x3\n海啸符文·4级\n66\n力量+4 体质+4\n战歌徽章 x3\n苍鬼符文·4级\n67\n敏捷+4 体质+4\n战歌徽章 x3\n风霜符文·4级\n68\n敏捷+4 灵力+4\n战歌徽章 x3\n时光符文·4级\n69\n灵力+4 体质+4\n战歌徽章 x3\n地狱符文·4级\n70\n力量+4 灵力+4\n战歌徽章 x3\n怒火宝珠·4级\n65\n力量+4 敏捷+4\n战歌徽章 x3\n海啸宝珠·4级\n66\n力量+4 体质+4\n战歌徽章 x3\n苍鬼宝珠·4级\n67\n敏捷+4 体质+4\n战歌徽章 x3\n风霜宝珠·4级\n68\n敏捷+4 灵力+4\n战歌徽章 x3\n时光宝珠·4级\n69\n灵力+4 体质+4\n战歌徽章 x3\n地狱宝珠·4级\n70\n力量+4 灵力+4\n战歌徽章 x3",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "物品名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "精灵所需等级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "物品属性",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "生产材料",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怒火之镜·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 敏捷+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "海啸之镜·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "苍鬼之镜·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "67",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "风霜之镜·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "时光之镜·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "地狱之镜·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怒火之玉·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 敏捷+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "海啸之玉·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "苍鬼之玉·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "67",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "风霜之玉·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "时光之玉·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "地狱之玉·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怒火符文·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 敏捷+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "海啸符文·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "苍鬼符文·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "67",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "风霜符文·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "时光符文·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "地狱符文·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "怒火宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "65",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 敏捷+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "海啸宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "66",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "苍鬼宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "67",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "风霜宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "68",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "敏捷+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "时光宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "69",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "灵力+4 体质+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "地狱宝珠·4级",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "70",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "力量+4 灵力+4",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "战歌徽章 x3",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/200905/ectype/style/content.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\t<div>\n\t\t<table>\n\t<tr>\n\t\t<td>物品名称</td>\n\t\t<td>精灵所需等级</td>\n\t\t<td>物品属性</td>\n\t\t<td>生产材料</td>\n\t</tr>\n\t<tr>\n    <td>怒火之镜·4级</td>\n    <td>65</td>\n    <td>力量+4 敏捷+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>海啸之镜·4级</td>\n    <td>66</td>\n    <td>力量+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>苍鬼之镜·4级</td>\n    <td>67</td>\n    <td>敏捷+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>风霜之镜·4级</td>\n    <td>68</td>\n    <td>敏捷+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>时光之镜·4级</td>\n    <td>69</td>\n    <td>灵力+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>地狱之镜·4级</td>\n    <td>70</td>\n    <td>力量+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>怒火之玉·4级</td>\n    <td>65</td>\n    <td>力量+4 敏捷+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>海啸之玉·4级</td>\n    <td>66</td>\n    <td>力量+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>苍鬼之玉·4级</td>\n    <td>67</td>\n    <td>敏捷+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>风霜之玉·4级</td>\n    <td>68</td>\n    <td>敏捷+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>时光之玉·4级</td>\n    <td>69</td>\n    <td>灵力+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>地狱之玉·4级</td>\n    <td>70</td>\n    <td>力量+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>怒火符文·4级</td>\n    <td>65</td>\n    <td>力量+4 敏捷+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>海啸符文·4级</td>\n    <td>66</td>\n    <td>力量+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>苍鬼符文·4级</td>\n    <td>67</td>\n    <td>敏捷+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>风霜符文·4级</td>\n    <td>68</td>\n    <td>敏捷+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>时光符文·4级</td>\n    <td>69</td>\n    <td>灵力+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>地狱符文·4级</td>\n    <td>70</td>\n    <td>力量+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>怒火宝珠·4级</td>\n    <td>65</td>\n    <td>力量+4 敏捷+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>海啸宝珠·4级</td>\n    <td>66</td>\n    <td>力量+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>苍鬼宝珠·4级</td>\n    <td>67</td>\n    <td>敏捷+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>风霜宝珠·4级</td>\n    <td>68</td>\n    <td>敏捷+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>时光宝珠·4级</td>\n    <td>69</td>\n    <td>灵力+4 体质+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n  <tr>\n    <td>地狱宝珠·4级</td>\n    <td>70</td>\n    <td>力量+4 灵力+4</td>\n    <td>战歌徽章 x3</td>\n  </tr>\n</table>\n\n\t</div>\n",
+  "dataPath": "pages/8f2dc3f84ec628438a78.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/8f2dc3f84ec628438a78.js"
+}

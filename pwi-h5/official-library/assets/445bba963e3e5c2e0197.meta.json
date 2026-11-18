@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_80.jpg",
+  "id": "445bba963e3e5c2e0197",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "拳术精通",
+  "bytes": 1486,
+  "sha256": "c6bc570da035d006471f9a7f3c6063f761d13837e1a105ffadb84177ab3b5f31",
+  "fetchedAt": "2026-11-18T08:34:31+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_80.jpg",
+  "path": "assets/445bba963e3e5c2e0197.jpg"
+}

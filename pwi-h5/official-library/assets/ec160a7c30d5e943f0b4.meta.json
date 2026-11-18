@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/inup_left_bg.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ec160a7c30d5e943f0b4",
+  "status": "ok",
+  "parents": [
+    "db4164927f8b96f824a9",
+    "f43f7393ca74d7767d5c"
+  ],
+  "bytes": 1080,
+  "sha256": "245f5121802c40a7ee1d920389d7aef5c5fdd8a716a8e9420072257c43119557",
+  "fetchedAt": "2026-11-18T08:18:51+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/inup_left_bg.jpg",
+  "path": "assets/ec160a7c30d5e943f0b4.jpg"
+}

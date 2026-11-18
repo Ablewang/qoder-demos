@@ -1,0 +1,25 @@
+{
+  "url": "https://w2i.wanmei.com/event/200811/anniversary/images/title01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "bec3e7589e23ebf160bc",
+  "status": "ok",
+  "parents": [
+    "a899f6f8dc4e23a35959",
+    "253dfd94d971bfc9a892",
+    "6f04c1c29de1e26657e0",
+    "e21939f1362abea70f5a",
+    "9c69355fa82bc264091c",
+    "5bd1a8bfdb1b51ef4743",
+    "44689cc7c278488dc3ad",
+    "f6200bfbe47d15bdfdb9",
+    "e56bc44c111f67f9e0f7",
+    "2d6d528f7e84bc55995e",
+    "e55a0b3c264a67093187"
+  ],
+  "bytes": 5960,
+  "sha256": "c0fbfb5ba8a42f3db0e4b08514698913180861c280f9adfe1289b686f0136b51",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/bec3e7589e23ebf160bc.jpg"
+}

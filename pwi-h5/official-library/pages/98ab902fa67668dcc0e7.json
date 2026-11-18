@@ -1,0 +1,145 @@
+{
+  "id": "98ab902fa67668dcc0e7",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/kuaile.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "c8ffe36ad63705a57ede"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/wanfa/kuaile.htm",
+  "fetchedAt": "2026-11-18T08:16:00+00:00",
+  "sha256": "409c08a4a22176d0fd87a33c677699d0103d714396deed0bc3b07186d12b300c",
+  "bytes": 2236,
+  "rawPath": "raw/98ab902fa67668dcc0e7.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "图1\n图2\n玩法：与“魔方传送使”对话，直接获得该房间的骰子。",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "图1",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "图2",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "玩法：与“魔方传送使”对话，直接获得该房间的骰子。",
+            "rowspan": "1",
+            "colspan": "2"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：与“魔方传送使”对话，直接获得该房间的骰子。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "玩法：与“魔方传送使”对话，直接获得该房间的骰子。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/wanfa_bg.jpg",
+      "label": "玩法：与“魔方传送使”对话，直接获得该房间的骰子。",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/kuaile_button.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/kl_tt01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/kl_tt02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td colspan=\"2\"><img src=\"assets/2a479f141f89e7bc72fd.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><table>\n      <tr>\n        <td><div><img src=\"assets/50b1fe3aed32aebc7105.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n      </tr>\n    </table>\n    <div></div></td>\n    <td><div>\n      <table>\n        <tr>\n          <td><div><img src=\"assets/fda69d47c9e4448814be.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div></td>\n        </tr>\n      </table>\n    </div></td>\n  </tr>\n  <tr>\n    <td><div>图1</div></td>\n    <td><div>图2</div></td>\n  </tr>\n  <tr>\n    <td colspan=\"2\"><table>\n      <tr>\n        <td><table>\n          <tr>\n            <td><p>玩法：与“魔方传送使”对话，直接获得该房间的骰子。</p>\n              </td>\n          </tr>\n        </table>          \n          <p> </p></td>\n      </tr>\n    </table></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/98ab902fa67668dcc0e7.json",
+  "imageCount": 4,
+  "tableCount": 5,
+  "downloadPath": "downloads/98ab902fa67668dcc0e7.js"
+}

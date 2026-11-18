@@ -1,0 +1,21 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/tue_02.jpg",
+  "alt": "活动时间",
+  "kind": "img",
+  "id": "c2fa14655c4190071417",
+  "status": "ok",
+  "parents": [
+    "fe4487ae624051d870aa",
+    "a245c2e97a44a02cb495",
+    "2cb07116a2adc8020ca9",
+    "ff0a5b259dfdf67e49c9"
+  ],
+  "bytes": 3254,
+  "sha256": "621e5299348eb5cd1e337ead2a7348bf82a2a8032e64f8dedda55b91fe9afaeb",
+  "fetchedAt": "2026-11-18T08:24:01+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/temp120824/tue_02.jpg",
+  "path": "assets/c2fa14655c4190071417.jpg"
+}

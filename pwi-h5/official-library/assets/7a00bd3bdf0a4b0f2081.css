@@ -1,0 +1,30 @@
+﻿@import url(http://w2i.wanmei.com/style/w2i_logo.css);
+@charset "gb2312";
+body {
+	margin: 0px;
+	background-image: url(bg.gif);
+	background-repeat: repeat;
+}
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+img{
+	border:0px
+}
+#logo{
+	position:relative
+}
+/* LOGO的定位 */
+#w2i_logo{top:10px;left:10px;}
+#transparent_logo{top:10px;left:10px;}

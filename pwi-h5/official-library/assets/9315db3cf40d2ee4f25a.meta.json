@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/2014show/js/main_frame0628.js",
+  "alt": "",
+  "kind": "script",
+  "id": "9315db3cf40d2ee4f25a",
+  "status": "ok",
+  "parents": [
+    "75f67334bcc741d278d7"
+  ],
+  "bytes": 7122,
+  "sha256": "32997873360bfd4f93517c6f976d8c2b0deb443625e8ab33c7bdfa6f97cad648",
+  "fetchedAt": "2026-11-18T08:23:49+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/2014show/js/main_frame0628.js",
+  "path": "assets/9315db3cf40d2ee4f25a.js"
+}

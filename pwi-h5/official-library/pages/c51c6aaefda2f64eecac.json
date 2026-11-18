@@ -1,0 +1,59 @@
+{
+  "id": "c51c6aaefda2f64eecac",
+  "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/rwlcgl.htm",
+  "title": "新·神月谷动态副本全揭秘 - 《完美世界前传-人鱼传说》官方网站",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 3,
+  "parents": [
+    "81575c76ad674636fd28",
+    "52f807777be176be16eb"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "5bfe8bef116dbc666cfbb7b53057057b41b75dc590a3374b692430a048e02047",
+  "bytes": 1809,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/c51c6aaefda2f64eecac.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/rwbossdl.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conrwlc.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnlcon.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/images/btnbossoff.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://event51.wanmei.com/w2i/201002/w2isyg/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n\n<div>\n\t<div>\n    <div><img src=\"assets/0747e4cd8fb67785a969.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></div>\n    <div><a href=\"#page=52f807777be176be16eb\"><img src=\"assets/c26daee0bd4ecc504d49.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></div>\n    </div>\n    <div>\n    \t<div>\n        \t<p class=\"source-reference\">嵌入资源：<a href=\"https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conrwlc.htm\" rel=\"noreferrer\">https://event51.wanmei.com/w2i/201002/w2isyg/iframe/conrwlc.htm</a></p>\n        </div>\n    </div>\n</div>\n",
+  "dataPath": "pages/c51c6aaefda2f64eecac.json",
+  "imageCount": 2,
+  "tableCount": 0,
+  "downloadPath": "downloads/c51c6aaefda2f64eecac.js"
+}

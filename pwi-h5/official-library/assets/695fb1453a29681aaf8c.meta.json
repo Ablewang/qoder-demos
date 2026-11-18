@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/button01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "695fb1453a29681aaf8c",
+  "status": "ok",
+  "parents": [
+    "db4164927f8b96f824a9"
+  ],
+  "bytes": 4383,
+  "sha256": "6694a486d24a3d0c35621fb4ee3d06ee3fa1571dcc8901644c1f59b5ae05a7c2",
+  "fetchedAt": "2026-11-18T08:18:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/button01.jpg",
+  "path": "assets/695fb1453a29681aaf8c.jpg"
+}

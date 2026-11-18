@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/qita/yirong/1.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "a78b3996c282053c94a1",
+  "status": "ok",
+  "parents": [
+    "fd1bc0c5aec8403691cd"
+  ],
+  "bytes": 4640,
+  "sha256": "a28a700e7991124fb42a018f0ba9629778ab119880f6d9cb575553d994123d1f",
+  "fetchedAt": "2026-11-18T08:20:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/qita/yirong/1.jpg",
+  "path": "assets/a78b3996c282053c94a1.jpg"
+}

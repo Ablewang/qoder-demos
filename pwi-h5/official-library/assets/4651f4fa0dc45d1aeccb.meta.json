@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/images/shop1102/rexiao/temai/49.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "4651f4fa0dc45d1aeccb",
+  "status": "ok",
+  "parents": [
+    "8c6dbf04199caeafccd0",
+    "090c3b6f4d7072cf2ec0"
+  ],
+  "bytes": 5025,
+  "sha256": "c4e6851902509ac4e606d302bb9510b7d5dfb933ec71357d80b29809b7ad779f",
+  "fetchedAt": "2026-11-18T08:19:35+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/shop1102/rexiao/temai/49.jpg",
+  "path": "assets/4651f4fa0dc45d1aeccb.jpg"
+}

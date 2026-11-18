@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_416.jpg",
+  "id": "6a768b111889ff1b6cf0",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·追魂诀<em>（升仙）</em>",
+  "bytes": 1644,
+  "sha256": "cd1e4b9dc40dbda42ce12b4a1a8629bd3797c556f71e81ec17f48971ea8ccea7",
+  "fetchedAt": "2026-11-18T08:34:21+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_416.jpg",
+  "path": "assets/6a768b111889ff1b6cf0.jpg"
+}

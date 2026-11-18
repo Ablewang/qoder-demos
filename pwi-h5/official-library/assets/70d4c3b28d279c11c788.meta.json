@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zhima_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "70d4c3b28d279c11c788",
+  "status": "ok",
+  "parents": [
+    "2e54a2f28183461ebced"
+  ],
+  "bytes": 3909,
+  "sha256": "45efb15ff056648a98bbc179faaf800a61862190c66eeceb9a6131b9b1589e37",
+  "fetchedAt": "2026-11-18T08:22:39+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/zhima_button.jpg",
+  "path": "assets/70d4c3b28d279c11c788.jpg"
+}

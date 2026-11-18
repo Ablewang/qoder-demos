@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201007/maoxian/images/dt_01.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "8b4d91f4a0df84aa8dbc",
+  "status": "ok",
+  "parents": [
+    "661ea43ec21004c38c81"
+  ],
+  "bytes": 630587,
+  "sha256": "c58065f0bc82a435114c15cec54f716861dde6e26a2e5d644af7236cf7c51ae4",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/8b4d91f4a0df84aa8dbc.jpg"
+}

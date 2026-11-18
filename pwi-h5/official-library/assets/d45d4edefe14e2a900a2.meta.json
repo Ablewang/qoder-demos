@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_465.jpg",
+  "id": "d45d4edefe14e2a900a2",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·润泽<em>（入魔）</em>",
+  "bytes": 1709,
+  "sha256": "606d140383beae2a4ef4c23126f7e4f8721d3c4dc7810f865e7ad04f0c8785a7",
+  "fetchedAt": "2026-11-18T08:34:39+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_465.jpg",
+  "path": "assets/d45d4edefe14e2a900a2.jpg"
+}

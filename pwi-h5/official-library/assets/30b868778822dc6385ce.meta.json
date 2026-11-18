@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/xiandan/lingtu/sl/44.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "30b868778822dc6385ce",
+  "status": "ok",
+  "parents": [
+    "ddb4d9ff9c0f1d6f8efb"
+  ],
+  "bytes": 74524,
+  "sha256": "cbeb851449dd591816f308d621955b5b4a3648b256ceefe470b297e85eac09e5",
+  "fetchedAt": "2026-11-18T08:18:33+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/xiandan/lingtu/sl/44.jpg",
+  "path": "assets/30b868778822dc6385ce.jpg"
+}

@@ -1,0 +1,284 @@
+{
+  "id": "44521279923f28343ae9",
+  "url": "https://w2i.wanmei.com/event/200805/newskill/yaoshou.htm",
+  "title": "《完美国际》新技能专题",
+  "category": "职业技能",
+  "section": "职业技能",
+  "depth": 1,
+  "parents": [
+    "1cb38395c2265ebc6d10"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200805/newskill/yaoshou.htm",
+  "fetchedAt": "2026-11-18T08:15:44+00:00",
+  "sha256": "f25d908e615a532e9b9c5d0bee255ce4380fb95c9b78c92fa65d822bc37b1bc2",
+  "bytes": 3772,
+  "rawPath": "raw/44521279923f28343ae9.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "技 能\n施放距离\n所需元气\n冷却时间\n消耗真气\n准备/吟唱时间\n施放时间\n效 果\n狂怒\n近身\n无\n30秒\n170\n0.5秒\n0.5秒\n攻击目标，造成基础攻击并且有20%几率驱除目标正面状态\n兽神之怒（虎形）\n20米\n一点真元\n5分钟\n500\n0.5秒\n0.5秒\n对20米内的目标造成200%基础伤害，并且定身8秒。\n野性咆哮\n10米\n无\n60秒\n400\n1.0秒\n1.5秒\n对周围15米内敌人造成大量仇恨，并且造成1秒的眩晕\n巨灵狂暴\n50\n60秒\n100\n瞬发\n短时间内让自身免疫眩晕定神等负面状态，持续10秒",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "技 能",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "施放距离",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "所需元气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "冷却时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "消耗真气",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "准备/吟唱时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "施放时间",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "效 果",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "狂怒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "近身",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "30秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "170",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "攻击目标，造成基础攻击并且有20%几率驱除目标正面状态",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "兽神之怒（虎形）",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "20米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "一点真元",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "5分钟",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "500",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "0.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对20米内的目标造成200%基础伤害，并且定身8秒。",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "野性咆哮",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "10米",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "无",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "400",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.0秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "1.5秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "对周围15米内敌人造成大量仇恨，并且造成1秒的眩晕",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "巨灵狂暴",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "50",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "60秒",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "100",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "瞬发",
+            "rowspan": "1",
+            "colspan": "2"
+          },
+          {
+            "text": "短时间内让自身免疫眩晕定神等负面状态，持续10秒",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm",
+      "label": "",
+      "kind": "iframe"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_06.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/images/content_07.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/style/master.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n\r\n\r\n<div>\r\n\t<div>\r\n\t\t<p class=\"source-reference\">嵌入资源：<a href=\"https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm\" rel=\"noreferrer\">https://w2i.wanmei.com/event/200805/newskill/iframe_header.htm</a></p>\t\r\n\t</div>\r\n\t\r\n\t<div>\r\n\t\t<img src=\"assets/76a2b089ae2a088061ba.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<div>\r\n\t\t\t<div>\r\n\t\t\t\t<table>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>技  能</td>\r\n\t\t\t\t\t\t<td>施放距离</td>\r\n\t\t\t\t\t\t<td>所需元气</td>\r\n\t\t\t\t\t\t<td>冷却时间</td>\r\n\t\t\t\t\t\t<td>消耗真气</td>\r\n\t\t\t\t\t\t<td>准备/吟唱时间</td>\r\n\t\t\t\t\t\t<td>施放时间</td>\r\n\t\t\t\t\t\t<td>效  果</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>狂怒</td>\r\n\t\t\t\t\t\t<td>近身</td>\r\n\t\t\t\t\t\t<td>无</td>\r\n\t\t\t\t\t\t<td>30秒</td>\r\n\t\t\t\t\t\t<td>170</td>\r\n\t\t\t\t\t\t<td>0.5秒</td>\r\n\t\t\t\t\t\t<td>0.5秒</td>\r\n\t\t\t\t\t\t<td>攻击目标，造成基础攻击并且有20%几率驱除目标正面状态</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>兽神之怒（虎形）</td>\r\n\t\t\t\t\t\t<td>20米</td>\r\n\t\t\t\t\t\t<td>一点真元</td>\r\n\t\t\t\t\t\t<td>5分钟</td>\r\n\t\t\t\t\t\t<td>500</td>\r\n\t\t\t\t\t\t<td>0.5秒</td>\r\n\t\t\t\t\t\t<td>0.5秒</td>\r\n\t\t\t\t\t\t<td>对20米内的目标造成200%基础伤害，并且定身8秒。</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>野性咆哮</td>\r\n\t\t\t\t\t\t<td>10米</td>\r\n\t\t\t\t\t\t<td>无</td>\r\n\t\t\t\t\t\t<td>60秒</td>\r\n\t\t\t\t\t\t<td>400</td>\r\n\t\t\t\t\t\t<td>1.0秒</td>\r\n\t\t\t\t\t\t<td>1.5秒</td>\r\n\t\t\t\t\t\t<td>对周围15米内敌人造成大量仇恨，并且造成1秒的眩晕</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t<td>巨灵狂暴</td>\r\n\t\t\t\t\t\t<td> </td>\r\n\t\t\t\t\t\t<td>50</td>\r\n\t\t\t\t\t\t<td>60秒</td>\r\n\t\t\t\t\t\t<td>100</td>\r\n\t\t\t\t\t\t<td colspan=\"2\">瞬发</td>\r\n\t\t\t\t\t\t<td>短时间内让自身免疫眩晕定神等负面状态，持续10秒</td>\r\n\t\t\t\t\t</tr>\r\n\t\t\t\t</table>\t\r\n\t\t\t</div>\t\t\t\r\n\t\t</div>\t\r\n\t</div>\r\n\t<div>\t\t\r\n\t\t<img src=\"assets/83dee5d06950afc247ff.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/b8b50a1e1b9ccaa7912f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/bfceaafd9fc4100950e7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/50d400a79de917d8b97f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t\t<img src=\"assets/9e2c630da23ee1fc5b09.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\t</div>\r\n</div>\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/44521279923f28343ae9.json",
+  "imageCount": 6,
+  "tableCount": 1,
+  "downloadPath": "downloads/44521279923f28343ae9.js"
+}

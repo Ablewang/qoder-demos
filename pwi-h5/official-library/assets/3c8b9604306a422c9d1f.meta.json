@@ -1,0 +1,23 @@
+{
+  "url": "https://w2i.wanmei.com/images/reg130106/btn.jpg",
+  "id": "3c8b9604306a422c9d1f",
+  "status": "ok",
+  "parents": [
+    "f346ebcd02289d6be1e8",
+    "8850afce6df57f68c619",
+    "300550d59d7922420efa",
+    "fa20936b2f13bae0066f",
+    "af7452f32febc01ba799",
+    "bf1c1062ff301d05bd10"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201301/year/style/master.css",
+  "bytes": 12579,
+  "sha256": "9281102211a13aae59ad39819fe339bb9b314dbbad245765c34c455817a26206",
+  "fetchedAt": "2026-11-18T08:38:43+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/images/reg130106/btn.jpg",
+  "path": "assets/3c8b9604306a422c9d1f.jpg"
+}

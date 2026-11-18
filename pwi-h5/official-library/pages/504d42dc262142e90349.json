@@ -1,0 +1,238 @@
+{
+  "id": "504d42dc262142e90349",
+  "url": "https://w2i.wanmei.com/event/200806/arming/html/menu.html",
+  "title": "《完美国际》新装备揭秘",
+  "category": "装备道具",
+  "section": "天怒神罚装备专题",
+  "depth": 2,
+  "parents": [
+    "f415d2fafc0e72df0612",
+    "72e2b695b87707858a89",
+    "99d339b7076fa83b762f",
+    "ff44626d4c80beceefa4"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/event/200806/arming/html/menu.html",
+  "fetchedAt": "2026-11-18T08:16:04+00:00",
+  "sha256": "ddf83cbc5248b893611dbe448c30c50a3d448026b61d6fd58046795adc45c6b1",
+  "bytes": 4562,
+  "rawPath": "raw/504d42dc262142e90349.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/info_make.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/info_material.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/info_arming.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/info_role.html",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200807/highweapon/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newskill/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/newline/index.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200805/cardboss/",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200808/xiuzhen/",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/button_002.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_001.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_002.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_03.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_004.jpg",
+      "label": "",
+      "kind": "inline-reference"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_2.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_004.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_005.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_006.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_007.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/top_008.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_003.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/images/info_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/event/200806/arming/html/style/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n\n</table>\n<table>\n  <tr>\n    <td><img src=\"assets/3aded717740d9d0b35d5.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n<table>\n  <tr>\n    <td><img src=\"assets/f4d0227dc8e2487d81a6.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/1077ff828fe51dfed30e.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><img src=\"assets/9d93e1e84093392bb0c8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n</table>\n<table>\n  <tr>\n    <td><img src=\"assets/c5ad6ff9623d9c01ae7f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n    <td><a href=\"#page=f415d2fafc0e72df0612\"><img src=\"assets/528ef92577aa86e49581.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n    <td><img src=\"assets/bcd179906a16097b60f4.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=99d339b7076fa83b762f\"><img src=\"assets/e749481af6b0a32436b0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n    <td><a href=\"#page=72e2b695b87707858a89\"><img src=\"assets/eac36217b0430da84df8.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n    <td><a href=\"#page=ff44626d4c80beceefa4\"><img src=\"assets/642e37c370295ad377c7.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></a></td>\n  </tr>\n</table>\n\n\n\n\n\n\n\n\n\n\n",
+  "dataPath": "pages/504d42dc262142e90349.json",
+  "imageCount": 15,
+  "tableCount": 3,
+  "downloadPath": "downloads/504d42dc262142e90349.js"
+}

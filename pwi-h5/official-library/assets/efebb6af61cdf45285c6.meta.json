@@ -1,0 +1,18 @@
+{
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/images/zhangkong_button.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "efebb6af61cdf45285c6",
+  "status": "ok",
+  "parents": [
+    "4ad8cbfbccc65352cb65"
+  ],
+  "bytes": 3925,
+  "sha256": "4c9dfbe29bb125a8f047a812759d10c727fdbbd73f51b0dae27827dd2ac6c07d",
+  "fetchedAt": "2026-11-18T08:22:46+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/images/zhangkong_button.jpg",
+  "path": "assets/efebb6af61cdf45285c6.jpg"
+}

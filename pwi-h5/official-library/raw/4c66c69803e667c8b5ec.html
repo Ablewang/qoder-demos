@@ -1,0 +1,827 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Design:Chen.zi; Web Layout:wang.kun" />
+<meta name="keywords" content="完美世界,完美世界国际版,中国最美网游,网络游戏,3D创世奇幻网游,永久免费网游,完美时空,羽灵,羽芒,妖兽,妖精,法师,武侠,公会,种族,游戏,MMOG,RPG,热门,流行,攻城,黄金装备,极品装备,戒指,聊天,PK,升仙入魔,城战"/>
+<meta name="description" content="完美世界,完美世界国际版,中国最美网游,网络游戏,3D创世奇幻网游,永久免费网游,完美时空,羽灵,羽芒,妖兽,妖精,法师,武侠,公会,种族,游戏,MMOG,RPG,热门,流行,攻城,黄金装备,极品装备,戒指,聊天,PK,升仙入魔,城战"/>
+<link href="http://event51.wanmei.com/w2i/201004/data0428/style/master.css" rel="stylesheet" type="text/css" />
+<title>数据互通告示牌 -《完美国际》官方网站</title>
+<script type="text/javascript" src="http://www.wanmei.com/public/js/wm.js"></script>
+<script type="text/javascript" language="javascript">
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+function MM_preloadImages() {
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function ChangeDiv(divId,divName,btn,btna,zDivCount) 
+{
+ for(i=0;i<=zDivCount;i++)
+ {
+ 	 if(document.getElementById(btn+i) == undefined || document.getElementById(divName+i) == undefined || document.getElementById(btna+i) == undefined)
+	 {
+	 alert("找不到id对象，您设置的'zDivCount'参数或者页面中元素id设置有误，请注意计数是从0开始以及元素id的对应关系！");
+	 }
+	document.getElementById(divName+i).style.display="none";
+	document.getElementById(btn+i).style.display="block";
+	document.getElementById(btna+i).style.display="none";
+	document.getElementById(divName+divId).style.display="block";
+	document.getElementById(btn+divId).style.display="none";
+	document.getElementById(btna+divId).style.display="block";
+ } 
+}
+
+function reDiv(divId,divName,divNamea,divNameb,zDivCount) 
+{ 
+ for(i=0;i<=zDivCount;i++)
+ {
+    //提示信息，您的页面没有任何问题了，请删除这个判断。
+	 if(document.getElementById(divNamea+i) == undefined || document.getElementById(divName+i) == undefined || document.getElementById(divNameb+i) == undefined)
+	 {
+	 alert("找不到id对象，您设置的'zDivCount'参数或者页面中元素id设置有误，请注意计数是从0开始以及元素id的对应关系！");
+	 }
+	document.getElementById(divNamea+i).style.display="none";
+	document.getElementById(divName+divId).style.display="block";
+	document.getElementById(divNameb+divId).style.display="none";
+ } 
+}
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="cont"><!--cont start-->
+    
+    <h1 class="wm-public" logo="{name:'w2i',skin:2,top:15,left:30}">完美国际</h1>
+    <div class="banner_box"> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_01.jpg" alt="" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_02.jpg" alt="" border="0" usemap="#Map" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_03.jpg" alt="" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_04.jpg" alt="" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_05.jpg" alt="" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_06.jpg" alt="" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_07.jpg" alt="" /> <img src="http://event51.wanmei.com/w2i/201004/data0428/images/head_08.jpg" alt="" /> </div>
+    <div class="clear"></div>
+    <div class="data_rep">
+      <div class="data_bot">
+        <div class="data_top">
+          <div class="seach">
+            <p class="marl"><strong>如果您长时间没有登录过游戏</strong>，发现服务器列表中没有您服务器的相关信息，那么请在第一步选择"大区名称"，第二步选择原服务器名称，"现服务器名称"栏中就会直接显示您现在所在的服务器。</p>
+            <p><span>第一步：</span><span class="padd">第二步：</span><span class="padd1">第三步：</span></p>
+            <p>选择大区：
+              <select id="province" name="province">
+              </select>
+              <b>请选择服务器名称：</b>
+              <select id="city" name="city">
+              </select>
+              <b style="padding-left:38px;">现服务器名称：</b> <i id="county" name="county"></i> </p>
+          </div>
+          <script language="javascript" type="text/javascript" src="http://event51.wanmei.com/w2i/201004/data0428/js/read.js"></script>
+          <div class="data_info">
+            <h2><img src="http://event51.wanmei.com/w2i/201004/data0428/images/tit_info.jpg" alt="" /></h2>
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab_class">
+				<tr>
+                <th class="left_bor">大区名称</th>
+                <th>原服务器名称</th>
+                <th>数据互通日期</th>
+                <th>数据互通后服务器名称</th>
+              </tr>
+              <tr>
+    <td style="border-left: 1px solid #56554F;">电信三区</td>
+    <td>冷帝</td>
+    <td rowspan="5" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014/12/17</td>
+    <td rowspan="5">涅槃双线-武圣</td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #56554F;">传承双线</td>
+    <td>星辰</td>
+  </tr>
+  <tr>
+    <td rowspan="3" style="border-left: 1px solid #56554F;">辉煌双线</td>
+    <td>飞雪</td>
+  </tr>
+  <tr>
+    <td>龙马</td>
+  </tr>
+  <tr>
+    <td>洛神</td>
+  </tr>
+				<tr>
+    <td style="border-left: 1px solid #56554F;">新网通</td>
+    <td>火神</td>
+    <td rowspan="3" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014/8/6</td>
+    <td rowspan="3">火龙</td>
+  </tr>
+  <tr>
+    <td rowspan="2" style="border-left: 1px solid #56554F;">辉煌双线</td>
+    <td>裂天</td>
+  </tr>
+  <tr>
+    <td>盘龙</td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #56554F;">辉煌网通</td>
+    <td>天蚩</td>
+    <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014/8/6</td>
+    <td rowspan="2">天策</td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #56554F;">王者网通</td>
+    <td>凤天</td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #56554F;">新电信</td>
+    <td>赤羽</td>
+    <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014/8/6</td>
+    <td rowspan="2">羽仙</td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #56554F;">辉煌电信</td>
+    <td>九仙</td>
+  </tr>
+                
+                <tr>
+				  <td rowspan="3" style="border-left: 1px solid #56554F;">辉煌双线</td>
+				  <td>斗圣</td>
+				  <td rowspan="3" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014.6.11</td>
+				  <td rowspan="3">九天</td>
+			  </tr>
+				<tr>
+				  <td>南屏</td>
+			  </tr>
+				<tr>
+				  <td>凌天</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">传承双线</td>
+				  <td>起源</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014.6.11</td>
+				  <td rowspan="2">远征</td>
+			  </tr>
+				<tr>
+				  <td>征途</td>
+			  </tr>
+              <tr>
+			    <td rowspan="2" style="border-left: 1px solid #56554F;">传承双线</td>
+			    <td>传承</td>
+			    <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014.4.23</td>
+			    <td rowspan="2">星辰</td>
+			  </tr>
+				<tr>
+				  <td>新生</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">辉煌双线</td>
+				  <td>踏箭</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014.4.23</td>
+				  <td rowspan="2">踏炎</td>
+			  </tr>
+				<tr>
+				  <td>烽火</td>
+			  </tr>
+              <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">网通二区</td>
+				  <td>龙威</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014.4.23</td>
+				  <td rowspan="2">寻龙</td>
+			  </tr>
+				<tr>
+				  <td>凯旋</td>
+			  </tr>
+              
+              
+                
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">王者电信</td>
+				  <td>魔雄</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2014.2.19</td>
+				  <td rowspan="2">魔歌</td>
+			  </tr>
+				<tr>
+				  <td>神歌</td>
+			  </tr>
+			 <!-- <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">电信二区</td>
+				  <td>苍炎</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.12.04</td>
+				  <td rowspan="2">黑炎</td>
+			  </tr>
+				<tr>
+				  <td>黑皇</td>
+			  </tr>
+                <tr>
+				  <td rowspan="3" style="border-left: 1px solid #56554F;">辉煌电信</td>
+				  <td>九霄</td>
+				  <td rowspan="3" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.08.14</td>
+				  <td rowspan="3">九仙</td>
+			  </tr>
+				<tr>
+				  <td>盘古</td>
+			  </tr>
+				<tr>
+				  <td>仙劫</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">王者网通</td>
+				  <td>凤逐</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.08.14</td>
+				  <td rowspan="2">凤天</td>
+			  </tr>
+				<tr>
+				  <td>天耀</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">辉煌网通</td>
+				  <td>开天</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.08.14</td>
+				  <td rowspan="2">天蚩</td>
+			  </tr>
+				<tr>
+				  <td>蚩尤</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">辉煌双线</td>
+				  <td>武尊</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.08.14</td>
+				  <td rowspan="2">浩尊</td>
+			  </tr>
+				<tr>
+				  <td>浩然</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">辉煌电信</td>
+				  <td>封魔</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.08.14</td>
+				  <td rowspan="2">魔雄</td>
+			  </tr>
+				<tr>
+				  <td>神雄</td>
+			  </tr>
+                <tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">网通一区</td>
+				  <td>帝魂</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.08.14</td>
+				  <td rowspan="2">浩神</td>
+			  </tr>
+				<tr>
+				  <td>浩神</td>
+			  </tr>
+                <tr>
+				  <td rowspan="3" style="border-left: 1px solid #56554F;">电信二区</td>
+				  <td>龙皇</td>
+				  <td rowspan="3" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.05.15</td>
+				  <td rowspan="3">黑皇</td>
+			  </tr>
+				<tr>
+				  <td>黑帝</td>
+			  </tr>
+				<tr>
+				  <td>麒麟</td>
+			  </tr>
+              <tr>
+				  <td rowspan="3" style="border-left: 1px solid #56554F;">电信三区</td>
+				  <td>君王</td>
+				  <td rowspan="3" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="3">冷帝</td>
+			  </tr>
+				<tr>
+				  <td>青帝</td>
+			  </tr>
+				<tr>
+				  <td>冷月</td>
+			  </tr>
+				<tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">王者网通</td>
+				  <td>凤耀</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="2">凤逐</td>
+			  </tr>
+				<tr>
+				  <td>逐鹿</td>
+			  </tr>
+				<tr>
+				  <td rowspan="3" style="border-left: 1px solid #56554F;">王者电信</td>
+				  <td>山河</td>
+				  <td rowspan="3" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="3">神歌</td>
+			  </tr>
+				<tr>
+				  <td>影歌</td>
+			  </tr>
+				<tr>
+				  <td>神龙</td>
+			  </tr>
+				<tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">王者电信</td>
+				  <td>英雄</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="2">神雄</td>
+			  </tr>
+				<tr>
+				  <td>神州</td>
+			  </tr>
+				<tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">王者网通</td>
+				  <td>辉耀</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="2">天耀</td>
+			  </tr>
+				<tr>
+				  <td>天将</td>
+			  </tr>
+				<tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">辉煌网通</td>
+				  <td>白帝</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="2">帝魂</td>
+			  </tr>
+				<tr>
+				  <td>赤帝</td>
+			  </tr>
+				<tr>
+				  <td rowspan="2" style="border-left: 1px solid #56554F;">新电信</td>
+				  <td>天舞</td>
+				  <td rowspan="2" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2013.03.20</td>
+				  <td rowspan="2">天魂</td>
+			  </tr>
+				<tr>
+				  <td>噬魂</td>
+			  </tr>-->
+              <!--<tr>
+                <td rowspan="2" width="112">新网通</td>
+                <td width="226">灵耀</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.04.18</td>
+                <td rowspan="2" width="241">灵剑</td>
+              </tr>
+              <tr>
+                <td width="226">名剑</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新电信</td>
+                <td width="226">涅磐</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.04.18</td>
+                <td rowspan="2" width="241">无畏</td>
+              </tr>
+              <tr>
+                <td width="226">无畏</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新网通</td>
+                <td width="226">啸云</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.05.16</td>
+                <td rowspan="2" width="241">天啸</td>
+              </tr>
+              <tr>
+                <td width="226">天霄</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新电信</td>
+                <td width="226">仙羽</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.05.16</td>
+                <td rowspan="2" width="241">仙羽</td>
+              </tr>
+              <tr>
+                <td width="226">女娲</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信5区</td>
+                <td width="226">龙炎</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.05.16</td>
+                <td rowspan="2" width="241">凤炎</td>
+              </tr>
+              <tr>
+                <td width="226">龙凤</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新网通</td>
+                <td width="226">惊云</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.06.13</td>
+                <td rowspan="2" width="241">云圣</td>
+              </tr>
+              <tr>
+                <td width="226">圣日</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通2区</td>
+                <td width="226">苍翼</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.06.13</td>
+                <td rowspan="2" width="241">金翼</td>
+              </tr>
+              <tr>
+                <td width="226">金龙</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通1区</td>
+                <td width="226">焚天</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.06.13</td>
+                <td rowspan="2" width="241">神天</td>
+              </tr>
+              <tr>
+                <td width="226">神风</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通1区</td>
+                <td width="226">逐云</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.06.13</td>
+                <td rowspan="2" width="241">豪云</td>
+              </tr>
+              <tr>
+                <td width="226">仙豪</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新电信</td>
+                <td width="226">飞尊</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.07.25</td>
+                <td rowspan="2" width="241">仙尊</td>
+              </tr>
+              <tr>
+                <td width="226">仙志</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新电信</td>
+                <td width="226">骇龙</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.07.25</td>
+                <td rowspan="2" width="241">龙泪</td>
+              </tr>
+              <tr>
+                <td width="226">雷霆</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">新网通</td>
+                <td width="226">战歌</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.07.25</td>
+                <td rowspan="2" width="241">战皇</td>
+              </tr>
+              <tr>
+                <td width="226">仙皇</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信一区</td>
+                <td width="226">天武</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.14</td>
+                <td rowspan="2" width="241">天海</td>
+              </tr>
+              <tr>
+                <td width="226">碧海</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信一区</td>
+                <td width="226">龙吟</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.14</td>
+                <td rowspan="2" width="241">龙星</td>
+              </tr>
+              <tr>
+                <td width="226">星魂</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信一区</td>
+                <td width="226">凌云</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.14</td>
+                <td rowspan="2" width="241">风林</td>
+              </tr>
+              <tr>
+                <td width="226">灵风</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信一区</td>
+                <td width="226">霹雳</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.15</td>
+                <td rowspan="2" width="241">龙霆</td>
+              </tr>
+              <tr>
+                <td width="226">天龙</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信二区</td>
+                <td width="226">苍云</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.15</td>
+                <td rowspan="2" width="241">苍炎</td>
+              </tr>
+              <tr>
+                <td width="226">烈焰</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信二区</td>
+                <td width="226">天翼</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.15</td>
+                <td rowspan="2" width="241">出云</td>
+              </tr>
+              <tr>
+                <td width="226">云仙</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信三区</td>
+                <td width="226">无极</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.20</td>
+                <td rowspan="2" width="241">雾雨</td>
+              </tr>
+              <tr>
+                <td width="226">紫雨</td>
+              </tr>
+              <tr>
+                <td rowspan="4" width="112">电信四区</td>
+                <td width="226">寻梦</td>
+                <td rowspan="4" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.20</td>
+                <td rowspan="4" width="241">浩然</td>
+              </tr>
+              <tr>
+                <td width="226">霸神</td>
+              </tr>
+              <tr>
+                <td width="226">飞云</td>
+              </tr>
+              <tr>
+                <td width="226">雄霸</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信五区</td>
+                <td width="226">凤炎</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.20</td>
+                <td rowspan="2" width="241">狂炎</td>
+              </tr>
+              <tr>
+                <td width="226">天狂</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">电信五区</td>
+                <td width="226">神魂</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.21</td>
+                <td rowspan="2" width="241">神光</td>
+              </tr>
+              <tr>
+                <td width="226">光熙</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width="112">电信六区</td>
+                <td width="226">银鳞</td>
+                <td rowspan="3" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.21</td>
+                <td rowspan="3" width="241">银魂</td>
+              </tr>
+              <tr>
+                <td width="226">震魂</td>
+              </tr>
+              <tr>
+                <td width="226">龙狂</td>
+              </tr>
+              <tr>
+                <td rowspan="4" width="112">王者电信</td>
+                <td width="226">逐龙</td>
+                <td rowspan="4" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.21</td>
+                <td rowspan="4" width="241">神龙</td>
+              </tr>
+              <tr>
+                <td width="226">神影</td>
+              </tr>
+              <tr>
+                <td width="226">华光</td>
+              </tr>
+              <tr>
+                <td width="226">盛世</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width="112">王者电信</td>
+                <td width="226">月影</td>
+                <td rowspan="3" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.22</td>
+                <td rowspan="3" width="241">影歌</td>
+              </tr>
+              <tr>
+                <td width="226">天道</td>
+              </tr>
+              <tr>
+                <td width="226">圣歌</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">王者电信</td>
+                <td width="226">弑神</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.22</td>
+                <td rowspan="2" width="241">神州</td>
+              </tr>
+              <tr>
+                <td width="226">神州</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width="112">新电信</td>
+                <td width="226">人鱼</td>
+                <td rowspan="3" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.22</td>
+                <td rowspan="3" width="241">独尊</td>
+              </tr>
+              <tr>
+                <td width="226">仙尊</td>
+              </tr>
+              <tr>
+                <td width="226">龙泪</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width="112">新电信</td>
+                <td width="226">传世</td>
+                <td rowspan="3" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.23</td>
+                <td rowspan="3" width="241">噬魂</td>
+              </tr>
+              <tr>
+                <td width="226">兽魂</td>
+              </tr>
+              <tr>
+                <td width="226">无畏</td>
+              </tr>
+              <tr>
+                <td rowspan="4" width="112">新电信</td>
+                <td width="226">仙羽</td>
+                <td rowspan="4" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.23</td>
+                <td rowspan="4" width="241">赤羽</td>
+              </tr>
+              <tr>
+                <td width="226">神英</td>
+              </tr>
+              <tr>
+                <td width="226">赤日</td>
+              </tr>
+              <tr>
+                <td width="226">灵神</td>
+              </tr>
+              <tr>
+                <td rowspan="4" width="112">新电信</td>
+                <td width="226">魅风</td>
+                <td rowspan="4" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.23</td>
+                <td rowspan="4" width="241">天舞</td>
+              </tr>
+              <tr>
+                <td width="226">云巅</td>
+              </tr>
+              <tr>
+                <td width="226">武神</td>
+              </tr>
+              <tr>
+                <td width="226">天霜</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通一区</td>
+                <td width="226">斗神</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.24</td>
+                <td rowspan="2" width="241">帝神</td>
+              </tr>
+              <tr>
+                <td width="226">帝王</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通一区</td>
+                <td width="226">神天</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.24</td>
+                <td rowspan="2" width="241">神豪</td>
+              </tr>
+              <tr>
+                <td width="226">豪云</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通二区</td>
+                <td width="226">狂云</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.24</td>
+                <td rowspan="2" width="241">云扬</td>
+              </tr>
+              <tr>
+                <td width="226">金翼</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112">网通二区</td>
+                <td width="226">龙神</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.27</td>
+                <td rowspan="2" width="241">龙威</td>
+              </tr>
+              <tr>
+                <td width="226">魔侠</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width="112">新网通</td>
+                <td width="226">战皇</td>
+                <td rowspan="3" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.27</td>
+                <td rowspan="3" width="241">天剑</td>
+              </tr>
+              <tr>
+                <td width="226">天元</td>
+              </tr>
+              <tr>
+                <td width="226">灵剑</td>
+              </tr>
+              <tr>
+                <td rowspan="4" width="112">新网通</td>
+                <td width="226">天啸</td>
+                <td rowspan="4" width="187" style="background:#d1cbbd url(images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.27</td>
+                <td rowspan="4" width="241">火神</td>
+              </tr>
+              <tr>
+                <td width="226">焚神</td>
+              </tr>
+              <tr>
+                <td width="226">云圣</td>
+              </tr>
+              <tr>
+                <td width="226">神域</td>
+              </tr>
+              <tr>
+                <td rowspan="3" width="112">王者网通</td>
+                <td width="226">黑曜</td>
+                <td rowspan="3" width="187" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.28</td>
+                <td rowspan="3" width="241">辉耀</td>
+              </tr>
+              <tr>
+                <td width="226">傲世</td>
+              </tr>
+              <tr>
+                <td width="226">辉夜</td>
+              </tr>
+              <tr>
+                <td rowspan="4" width="112">王者网通</td>
+                <td width="226">至尊</td>
+                <td rowspan="4" width="187" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.08.28</td>
+                <td rowspan="4" width="241">天将</td>
+              </tr>
+              <tr>
+                <td width="226">天骄</td>
+              </tr>
+              <tr>
+                <td width="226">蓬莱</td>
+              </tr>
+              <tr>
+                <td width="226">无疆</td>
+              </tr>
+              
+              <tr>
+              
+                <td rowspan="2" width="112" style="border-left: 1px solid #56554F;">网通一区</td>
+                <td width="226">浩天</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.12.12</td>
+                <td rowspan="2" width="241">浩神</td>
+              </tr>
+              <tr>
+                <td width="226">神豪</td>
+              </tr>
+              <tr>
+                <td rowspan="2" width="112" style="border-left: 1px solid #56554F;">电信二区</td>
+                <td width="226">武皇</td>
+                <td rowspan="2" width="187" style="background:#d1cbbd url(http://event51.wanmei.com/w2i/201004/data0428/images/td_bg.jpg) no-repeat center; width:240px; height:35px; padding:0 5px; font-size:18px; font-weight:bold;">2012.12.12</td>
+                <td rowspan="2" width="241">龙皇</td>
+              </tr>
+              <tr>
+                <td width="226">龙舞</td>
+              </tr-->>
+            </table>
+            <h2><img src="http://event51.wanmei.com/w2i/201004/data0428/images/tit_explan.jpg" alt="" /></h2>
+            <div id="explan_box">
+              <div id="btn0" class="btn hide" onclick="ChangeDiv('0','con_list','btn','btna','2')">为什么要进行数据互通？</div>
+              <div id="btna0" class="btn" onclick="reDiv('0','btn','btna','con_list','2')">为什么要进行数据互通？</div>
+              <div id="con_list0">
+                <div class="con_list_bg fcolor"> 　　为优化服务器配置，进一步提升《完美国际》的服务质量，也为给玩家们提供相互交流的机会，适应活动规模日益扩大的需求。 </div>
+              </div>
+              <div id="btn1" class="btn" onclick="ChangeDiv('1','con_list','btn','btna','2')">互通后服务如何？</div>
+              <div id="btna1" class="btn hide" onclick="reDiv('1','btn','btna','con_list','2')">互通后服务如何？</div>
+              <div id="con_list1" class="hide">
+                <div class="con_list_bg fcolor"> 　　数据互通后《完美国际》服务器不仅采用全新的高质量服务器，还将应用全新的服务器架构。新的服务器架构不仅可以容纳更多的玩家，同时也让玩家感受更加流畅的游戏环境与激烈的城战场面。 </div>
+              </div>
+              <div id="btn2" class="btn" onclick="ChangeDiv('2','con_list','btn','btna','2')">玩家损失如何补偿？</div>
+              <div id="btna2" class="btn hide" onclick="reDiv('2','btn','btna','con_list','2')">玩家损失如何补偿？</div>
+              <div id="con_list2" class="hide">
+                <div class="con_list_bg fcolor"> 　　服务器数据互通后，城战规则不做更改，原属帮派的领土需要重新占领，而原占有领土的帮会将获得补偿金，补偿及 比例为所占领的领土一周收益金的1.5倍。既一块3级领土的补偿金为1500万完美币，一块2级领土的补偿金为3000万完美币。例如帮会A原拥有3块3 级领土及1块2级领土，则数据互通之后帮会A的帮主将获得（1000*3+2000）*1.5=7500万的领土补偿金作为城战费用的补偿。奖励金将以邮寄的形式发送到各位帮主的信箱内，请帮主注意查收。请各位玩家继续支持《完美国际》，积极投入更激烈、更具挑战性的领土战争中。<br />
+                  <br />
+                  领土补偿金规定如下：<br />
+                  <table border="0" cellspacing="0" cellpadding="0" class="tab1_class">
+                    <tr>
+                      <td>3级领土：</td>
+                      <td style="border-right:none;">1500W</td>
+                    </tr>
+                    <tr>
+                      <td>2级领土：</td>
+                      <td style="border-right:none;">3000W</td>
+                    </tr>
+                    <tr>
+                      <td style="border-bottom:none;">1级领土：</td>
+                      <td style="border-right:none; border-bottom:none;">4500W</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            
+            <!--e--> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cont End--> 
+</div>
+<!--统计代码-->
+<div style="display:none;"> 
+  <script src="http://cookie.bi.wanmei.com/jsp/pvbi/wanmeibihd.js"></script> 
+  <script>
+    <!--
+	wanmeihuodongbi('w2i100428data');
+    //-->
+    </script> 
+</div>
+</body>
+</html>
+<map name="Map" id="Map">
+  <area shape="rect" coords="18,13,96,42" href="http://w2i.wanmei.com/main.htm" target="_blank" />
+  <area shape="rect" coords="104,14,201,43" href="http://w2i.wanmei.com/download/download_rycs_ty.shtml" target="_blank" />
+  <area shape="rect" coords="210,14,290,42" href="http://passport.wanmei.com/jsp/member/register.jsp" target="_blank" />
+  <area shape="rect" coords="295,14,399,42" href="http://bbs.w2i.wanmei.com/" target="_blank" />
+</map>

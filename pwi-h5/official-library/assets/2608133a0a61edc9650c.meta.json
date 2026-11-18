@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "id": "2608133a0a61edc9650c",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "kind": "verified-data-resource",
+  "category": "职业技能",
+  "section": "技能模拟器数据",
+  "bytes": 54207,
+  "sha256": "640f4bb7cafcc440e2e716a933b83785944dafd6abcbce93a6757efb9d5cfdf3",
+  "fetchedAt": "2026-11-18T08:17:48+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "application/javascript",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/js/meiling.js",
+  "path": "assets/2608133a0a61edc9650c.js"
+}

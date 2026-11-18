@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_565.jpg",
+  "id": "7e0173713683b006749b",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "狂·坚甲符<em>（入魔）</em>",
+  "bytes": 1682,
+  "sha256": "5c892bfb99ad1fa484f0b8c12477c030cbace0313af5019fbf7e0dabcabf53fa",
+  "fetchedAt": "2026-11-18T08:35:18+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_565.jpg",
+  "path": "assets/7e0173713683b006749b.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27674.jpg",
+  "id": "30c1299afc4e98046364",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·白巫咒<em>（入魔）</em>",
+  "bytes": 4644,
+  "sha256": "44e8aee3d91b94b9cf7ea408fc43251ed2fc85fe737555f803acd657c1046422",
+  "fetchedAt": "2026-11-18T08:36:27+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27674.jpg",
+  "path": "assets/30c1299afc4e98046364.jpg"
+}

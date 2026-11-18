@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_437.jpg",
+  "id": "c869024040f10a0654af",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "真·拳术精通<em>（升仙）</em>",
+  "bytes": 1734,
+  "sha256": "8b4fe58940ec9b4b2f6a0a301b38293623c7264ea117ee15ddae18f014996a26",
+  "fetchedAt": "2026-11-18T08:34:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_437.jpg",
+  "path": "assets/c869024040f10a0654af.jpg"
+}

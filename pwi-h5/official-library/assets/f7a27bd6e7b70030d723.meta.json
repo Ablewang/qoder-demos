@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27666.jpg",
+  "id": "f7a27bd6e7b70030d723",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "狂·气爆术<em>（入魔）</em>",
+  "bytes": 4515,
+  "sha256": "c2c873a5c47ffb2127da98da6e70762e2736118e33bc3cfc97947e33283de383",
+  "fetchedAt": "2026-11-18T08:36:25+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_27666.jpg",
+  "path": "assets/f7a27bd6e7b70030d723.jpg"
+}

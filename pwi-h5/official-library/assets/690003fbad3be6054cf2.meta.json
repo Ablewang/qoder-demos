@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_9561.jpg",
+  "id": "690003fbad3be6054cf2",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "真·土精通<em>（升仙）</em>",
+  "bytes": 4365,
+  "sha256": "3a87ce5bd3912c65e7160f4600ee04a7991c000ae38cdf2e9a4e5669802eed45",
+  "fetchedAt": "2026-11-18T08:36:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_9561.jpg",
+  "path": "assets/690003fbad3be6054cf2.jpg"
+}

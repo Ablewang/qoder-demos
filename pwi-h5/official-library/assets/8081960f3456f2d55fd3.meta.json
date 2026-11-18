@@ -1,0 +1,17 @@
+{
+  "url": "https://w2i.wanmei.com/event/200809/contend/images/main_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "8081960f3456f2d55fd3",
+  "status": "ok",
+  "parents": [
+    "a09ff0fa34b978a1cd22",
+    "0df8164e3f7875c34126",
+    "a910fec6e628b15f8c31"
+  ],
+  "bytes": 3388,
+  "sha256": "f6fde7a03e3a996c6643cab7b0871ec6ffe1ed31bf26a52e68c00850a451a7ec",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/8081960f3456f2d55fd3.jpg"
+}

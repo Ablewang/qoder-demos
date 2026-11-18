@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201408/enter/images/taba.png",
+  "id": "b1952506e4b917ab2cbc",
+  "status": "ok",
+  "parents": [
+    "2ed37cf6dbb67bef702a"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201408/enter/style/master.css",
+  "bytes": 1950,
+  "sha256": "7ffd5d608e1c48fc28484e615b38071065ca1e47d3ae24216c715068cc535993",
+  "fetchedAt": "2026-11-18T08:38:30+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201408/enter/images/taba.png",
+  "path": "assets/b1952506e4b917ab2cbc.png"
+}

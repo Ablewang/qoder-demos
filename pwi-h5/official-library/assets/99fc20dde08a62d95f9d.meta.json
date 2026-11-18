@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_464.jpg",
+  "id": "99fc20dde08a62d95f9d",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·润泽<em>（升仙）</em>",
+  "bytes": 1670,
+  "sha256": "ebe4c768c277b5d8e7843e89df69a08c5c093419a67f4dd6daffe30ce4070119",
+  "fetchedAt": "2026-11-18T08:34:38+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_464.jpg",
+  "path": "assets/99fc20dde08a62d95f9d.jpg"
+}

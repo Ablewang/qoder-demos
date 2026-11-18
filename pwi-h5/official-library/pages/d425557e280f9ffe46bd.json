@@ -1,0 +1,143 @@
+{
+  "id": "d425557e280f9ffe46bd",
+  "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/iframe_fangju.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "8474f423a0704705848f",
+    "dc28dfdc1fa8fbd788e8",
+    "1ca31d522cf773ec4412",
+    "68a97a82ec5a2d3fffd9",
+    "1c7a4437a2fd0a34051a",
+    "f674c58a45057796d95f",
+    "a8f992586eee0aa7a1a8",
+    "8efeb6e0bb5c644ddcad",
+    "cf07c0635c1190fc01e9",
+    "e42b9469b76693a23fe6",
+    "45dd47bfa9affff9728c",
+    "acd9c6b1a6fa7a96df14",
+    "449d85c02ef147219c69",
+    "304973e086e3c39512e7",
+    "92c5af8c0b0c9818dd36",
+    "f9c3727ede4dd9d9305d",
+    "2cfdd66ab41c34c21bc6",
+    "ffb75bde709b02e53151",
+    "fa95668c3095800c30d1",
+    "3224e30d804bb1069132",
+    "1f4c96e224099de3106c",
+    "6c0c7d9df380a383c3a0",
+    "1a09d6b1c9e2e00f3cfa",
+    "a4f52e4618ea9cb7beac",
+    "3a2e8914b4d13ceb7d5b",
+    "dfc3a2ead97753bdc5f0",
+    "23ba00b18cc27c65fc1d",
+    "74327b4284a3676aa0a1",
+    "ac02fbbabd9d97c97a61"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ddb54376bb5a42351e85c3bc3bad76661067abeacb088338b8ead83e6eda19be",
+  "bytes": 2060,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/d425557e280f9ffe46bd.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "重甲\n重盔\n轻甲\n法袍\n法帽\n披风",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "重甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "重盔",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "轻甲",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法袍",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "法帽",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "披风",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/B101.htm",
+      "label": "重甲",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/B111.htm",
+      "label": "重盔",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/B121.htm",
+      "label": "轻甲",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/B131.htm",
+      "label": "法袍",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/B141.htm",
+      "label": "法帽",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/zhuangbei/B151.htm",
+      "label": "披风",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/hhsd/images/css.css",
+      "alt": "",
+      "kind": "link"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n                  <tr>\n                    <td><a href=\"#page=f9c3727ede4dd9d9305d\">重甲</a></td>\n                  </tr>\n                  <tr>\n                    <td><a href=\"#page=2cfdd66ab41c34c21bc6\">重盔</a></td>\n                  </tr>\n                  <tr>\n                    <td><a href=\"#page=ffb75bde709b02e53151\">轻甲</a></td>\n                  </tr>\n                  <tr>\n                    <td><a href=\"#page=fa95668c3095800c30d1\">法袍</a></td>\n                  </tr>\n                  <tr>\n                    <td><a href=\"#page=3224e30d804bb1069132\">法帽</a></td>\n                  </tr>\n                  <tr>\n                    <td><a href=\"#page=1f4c96e224099de3106c\">披风</a></td>\n                  </tr>\n                </table>\n",
+  "dataPath": "pages/d425557e280f9ffe46bd.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/d425557e280f9ffe46bd.js"
+}

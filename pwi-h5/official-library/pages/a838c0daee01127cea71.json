@@ -1,0 +1,127 @@
+{
+  "id": "a838c0daee01127cea71",
+  "url": "https://w2i.wanmei.com/hd/fuben/wuqi/faqileft.htm",
+  "title": "无标题文档",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 4,
+  "parents": [
+    "c858379ee2d31cfa6be8",
+    "1895a789e435810d6920",
+    "4b1e730c0a07f9e771ad",
+    "d1e0da585ef85c05c6a3",
+    "a6a7c20b672e3a1d75be",
+    "d177346e17d445f61a2f"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/fuben/wuqi/faqileft.htm",
+  "fetchedAt": "2026-11-18T08:16:26+00:00",
+  "sha256": "c706750f7ea716517f2be341e11df7d4ff389f15c3fb738eae03e3adb25c675b",
+  "bytes": 1894,
+  "rawPath": "raw/a838c0daee01127cea71.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "陶然自忘机\n业火焚玉\n潋滟千波\n忘机\n焚玉\n潋滟",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "陶然自忘机",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "业火焚玉",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "潋滟千波",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "忘机",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "焚玉",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "潋滟",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/03.htm",
+      "label": "陶然自忘机",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/032.htm",
+      "label": "业火焚玉",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/012.htm",
+      "label": "",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/033.htm",
+      "label": "潋滟千波",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/034.htm",
+      "label": "忘机",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/035.htm",
+      "label": "焚玉",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/fuben/wuqi/036.htm",
+      "label": "潋滟",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "topic",
+  "readableHtml": "\n<table>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=c858379ee2d31cfa6be8\">陶然自忘机</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=1895a789e435810d6920\">业火焚玉</a><a href=\"#page=b290837af805724e4087\"></a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=4b1e730c0a07f9e771ad\">潋滟千波</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=d1e0da585ef85c05c6a3\">忘机</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=a6a7c20b672e3a1d75be\">焚玉</a></td>\n  </tr>\n  <tr>\n    <td><a href=\"#page=d177346e17d445f61a2f\">潋滟</a></td>\n  </tr>\n</table>\n",
+  "dataPath": "pages/a838c0daee01127cea71.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/a838c0daee01127cea71.js"
+}

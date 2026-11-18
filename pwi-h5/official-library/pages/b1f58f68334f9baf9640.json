@@ -1,0 +1,68 @@
+{
+  "id": "b1f58f68334f9baf9640",
+  "url": "https://w2i.wanmei.com/hd/080313_mofang/button_iframe.htm",
+  "title": "摩方_button",
+  "category": "进阶资料",
+  "section": "副本指南",
+  "depth": 2,
+  "parents": [
+    "db4164927f8b96f824a9",
+    "f43f7393ca74d7767d5c",
+    "9e806ff55dbec0376dad",
+    "c8ffe36ad63705a57ede",
+    "7efee68b25cc6c382609"
+  ],
+  "status": "ok",
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "finalUrl": "https://w2i.wanmei.com/hd/080313_mofang/button_iframe.htm",
+  "fetchedAt": "2026-11-18T08:15:54+00:00",
+  "sha256": "21a807815e12db7bd30cd1d21ed942146e4aad956ccea73045cad3aaa8a6ec57",
+  "bytes": 972,
+  "rawPath": "raw/b1f58f68334f9baf9640.html",
+  "encoding": "gb18030",
+  "replacementCharacters": 0,
+  "publishedAt": null,
+  "text": "",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/hdjs.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/jinru.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/jiangli.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/wanfa.htm",
+      "label": "",
+      "kind": "image-map"
+    },
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/yincang.htm",
+      "label": "",
+      "kind": "image-map"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/hd/080313_mofang/images/button.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "topic",
+  "readableHtml": "\r\n<img src=\"assets/5d048462e93ab2b8d2bc.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\">\r\n\r\n  \r\n\r\n\r\n\r\n\r\n\r\n",
+  "dataPath": "pages/b1f58f68334f9baf9640.json",
+  "imageCount": 1,
+  "tableCount": 0,
+  "downloadPath": "downloads/b1f58f68334f9baf9640.js"
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://w2i.wanmei.com/pic/news_img/jinglian/3.jpg",
+  "label": "",
+  "kind": "anchor",
+  "id": "a9ea17b5ef22b3e6050d",
+  "status": "ok",
+  "parents": [
+    "2f9c020e1a40e8c4ef76"
+  ],
+  "bytes": 75895,
+  "sha256": "af16b49d5cf8f789adce8feac3633e3c7307b6a812e6bcba6f6e8a5d6ebf9297",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/a9ea17b5ef22b3e6050d.jpg"
+}

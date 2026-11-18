@@ -1,0 +1,140 @@
+{
+  "id": "7eedb1771e5ba2058b12",
+  "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+  "title": "第一次使用包裹",
+  "category": "新手指引",
+  "section": "初入完美",
+  "depth": 0,
+  "parents": [
+    "52bb242ab2be6a273274",
+    "795e2fc25f6366b4a743",
+    "e0d13df0f10091557b88",
+    "ec2daf258dc40cc656cc",
+    "80b64af2df0ec04bc9f5",
+    "b01d438a263d5990ed20",
+    "e1af6d0e32387f82d096",
+    "0ec3e5f2d64060878db6",
+    "d953218d5c4ee41c8389",
+    "7eedb1771e5ba2058b12",
+    "50ef20375a9c3fe211e7",
+    "bf2cf85d433eb7fcebcc",
+    "c975ac74bf780de1674b"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "ca8f24b7d57aeaee84bc8a36f3bd6a3a9014d3e7a8789d8f5997d0dda9c4ac1b",
+  "bytes": 68715,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/7eedb1771e5ba2058b12.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-16",
+  "text": "第一次做任务 | 第一次战斗 | 第一次组队 | 第一次加好友 | 第一次自动寻路 | 第一次买东西 | 第一次使用表情\n第一次摆摊交易 | 第一次使用包裹 | 第一次传送 | 第一次升级 | 第一次创建聊天室 | 第一次聊天 |\n1、主窗口 按下B键或者ALT+B键打开包裹栏，也可以在屏幕右下方点击包裹按钮打开\n2、人物外观 分男女两种\n3、物品显示 堆叠的物品会显示当前数量\n4、装备颜色显示 正常；\n红色：装备条件不满足的物品\n灰色：耐久度为0的物品\n5、包裹格数及金钱数量 包裹分普通物品和任务物品栏位都是32格，金钱上限2亿（普通物品可以交易、可以丢弃，任务物品不可交易、不可丢弃）\n6、装备的放置方式\n左键拖放\n左键双击（双击戒指只能放在左边的栏位中）\n右键单击（作用同左键双击）\n7、物品丢弃 鼠标拖拽物品到包裹栏外就可以丢弃，丢弃金钱时点击包裹栏上的金钱图标，然后输入丢弃数额就可以。\n时装模式\n点击时装物品按钮，打开衣柜和个性换装框。\n将时装拖动到衣柜和个性换装框的相应位置上。\n时装试衣模式\n点击时装试衣按钮，打开试衣间，查看当前时装效果。",
+  "tables": [],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30059.shtml",
+      "label": "第一次做任务",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30061.shtml",
+      "label": "第一次战斗",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30063.shtml",
+      "label": "第一次组队",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30064.shtml",
+      "label": "第一次加好友",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29926.shtml",
+      "label": "第一次自动寻路",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30062.shtml",
+      "label": "第一次买东西",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30065.shtml",
+      "label": "第一次使用表情",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30066.shtml",
+      "label": "第一次摆摊交易",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30067.shtml",
+      "label": "第一次使用包裹",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091016/30068.shtml",
+      "label": "第一次传送",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36530.shtml",
+      "label": "第一次升级",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091015/29924.shtml",
+      "label": "第一次创建聊天室",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/newplayer/into/20091028/36531.shtml",
+      "label": "第一次聊天",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/baoguo_01.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/baoguo_02.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/baoguo_03.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/baoguo_04.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/baoguo_05.jpg",
+      "alt": "",
+      "kind": "img"
+    },
+    {
+      "url": "https://w2i.wanmei.com/pic/news_img/first/baoguo_06.jpg",
+      "alt": "",
+      "kind": "img"
+    }
+  ],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=52bb242ab2be6a273274\">第一次做任务</a> | <a href=\"#page=795e2fc25f6366b4a743\">第一次战斗 </a>| <a href=\"#page=80b64af2df0ec04bc9f5\">第一次组队 </a>| <a href=\"#page=b01d438a263d5990ed20\">第一次加好友 </a>| <a href=\"#page=c975ac74bf780de1674b\">第一次自动寻路 </a>| <a href=\"#page=ec2daf258dc40cc656cc\">第一次买东西 </a>| <a href=\"#page=e1af6d0e32387f82d096\">第一次使用表情 </a><br>\r\n    <a href=\"#page=d953218d5c4ee41c8389\">第一次摆摊交易 </a>| <a href=\"#page=7eedb1771e5ba2058b12\">第一次使用包裹 </a>| <a href=\"#page=50ef20375a9c3fe211e7\">第一次传送 </a>| <a href=\"#page=e0d13df0f10091557b88\">第一次升级 </a>| <a href=\"#page=bf2cf85d433eb7fcebcc\">第一次创建聊天室</a> | <a href=\"#page=0ec3e5f2d64060878db6\">第一次聊天 </a>|</li>\r\n</ul>\r\n<p><img src=\"assets/574e2b342bed3d83d970.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　1、主窗口 按下B键或者ALT+B键打开包裹栏，也可以在屏幕右下方点击包裹按钮打开</p>\r\n<p>　　2、人物外观 分男女两种</p>\r\n<p>　　3、物品显示 堆叠的物品会显示当前数量</p>\r\n<p>　　4、装备颜色显示 正常；<br>\r\n红色：装备条件不满足的物品<br>\r\n灰色：耐久度为0的物品</p>\r\n<p>　　5、包裹格数及金钱数量 包裹分普通物品和任务物品栏位都是32格，金钱上限2亿（普通物品可以交易、可以丢弃，任务物品不可交易、不可丢弃）</p>\r\n<p>　　6、装备的放置方式 <br>\r\n　　左键拖放<br>\r\n　　左键双击（双击戒指只能放在左边的栏位中）<br>\r\n　　右键单击（作用同左键双击）</p>\r\n<p>　　7、物品丢弃 鼠标拖拽物品到包裹栏外就可以丢弃，丢弃金钱时点击包裹栏上的金钱图标，然后输入丢弃数额就可以。</p>\r\n<p>　　<strong>时装模式</strong></p>\r\n<p><img src=\"assets/4e555e143344d06a2ff3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/b1e8aae2e663452c66d3.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　点击时装物品按钮，打开衣柜和个性换装框。</p>\r\n<p><img src=\"assets/e8628ed5bccc6066e05f.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p><img src=\"assets/b571f90b97a78c6b5fb1.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　将时装拖动到衣柜和个性换装框的相应位置上。</p>\r\n<p>　　<strong>时装试衣模式</strong></p>\r\n<p><img src=\"assets/7b4088c6aadfafd4e6f0.jpg\" alt=\"官方原始图片，未自动识读\" loading=\"lazy\"></p>\r\n<p>　　点击时装试衣按钮，打开试衣间，查看当前时装效果。</p>\r\n                        </div>",
+  "dataPath": "pages/7eedb1771e5ba2058b12.json",
+  "imageCount": 6,
+  "tableCount": 0,
+  "downloadPath": "downloads/7eedb1771e5ba2058b12.js"
+}

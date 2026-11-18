@@ -1,0 +1,19 @@
+{
+  "url": "https://w2i.wanmei.com/images/temp120824/errhead_02.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "ed3a2c095b0be26612fd",
+  "status": "ok",
+  "parents": [
+    "a3206e96933ebb3a1648",
+    "cde23b2634eea8bb4b52",
+    "03091fe92256285c414b",
+    "4aec96cd45f020cede4e",
+    "a30584665576a2f6b306"
+  ],
+  "bytes": 31217,
+  "sha256": "f774edfafe744d379c450199388f3a508eff0db8a127ac25884abd0660f2be41",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/ed3a2c095b0be26612fd.jpg"
+}

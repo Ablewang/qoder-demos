@@ -1,0 +1,330 @@
+{
+  "id": "1ee469eea6a084f6d68f",
+  "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+  "title": "NPC查找 - 疾风部落周边",
+  "category": "系统介绍",
+  "section": "集卡系统：\n集卡系统\n时装系统：\n服装展示\n系统活动：\n冥城争霸\n| 修罗道\n结婚系统：\n系统简介\n| 结婚红包\n城战系统：\n炼丹系统\n| 领土战争\n声望系统：\n军衔套装\n宠物系统：\n其他宠物\n| 元素精灵\n精炼系统：\n系统简介\n| 精炼宝典\n练级指引：\n练级指引",
+  "depth": 1,
+  "parents": [
+    "fb262072d5b46a210c39",
+    "bc74a9a07db5ca320e30",
+    "fd2b30facce6ba69fa94",
+    "6701bd2db04e295409ad",
+    "1ee469eea6a084f6d68f",
+    "de3e898177625299c354",
+    "f9f06882fe07a6a2426a",
+    "d7673a80b6f61672af82",
+    "8a35af2dd91a586a6f7b",
+    "d0aabc61d6b30e1dbe90",
+    "d39e9e21196a3a78e050",
+    "0881f82bcfcf2f9f27ac",
+    "e14aa7700763f0843dad"
+  ],
+  "status": "ok",
+  "fetchedAt": null,
+  "sha256": "4a93432e4b578ba693c4b0379776eddc21494959839c1c89bc735e64636ff3b5",
+  "bytes": 68656,
+  "cached": true,
+  "provenance": "recovered-raw-without-fetch-metadata",
+  "rawPath": "raw/1ee469eea6a084f6d68f.html",
+  "encoding": "utf-8-sig",
+  "replacementCharacters": 0,
+  "publishedAt": "2009-10-19",
+  "text": "人族新手村周边 | 妖族新手村周边 | 羽族新手村周边 | 万流城周边 | 疾风部落周边 | 祖龙城周边 | 桃源镇周边\n冰风谷周边 | 风沙谷周边 | 万劫城以及渔村周边 | 獠牙镇周边 | 寻梦港周边 | 其他NPC |\nNPC名称\nNPC坐标\n疾风部落长老\n366.760\n裁缝杨小玄\n369.760\n货郎雷扬\n370.760\n铁匠莫云树\n368.762\n疾风部落首领\n368.764\n药师苏畅\n370.763\n钱庄掌柜李进\n372.764\n传送师刘远\n273.762\n信风镇百草仙\n433.730\n铁匠段卓\n433.736\n货郎陈凯\n431.736\n钱庄掌柜王臻\n430.737\n传送师傅韩晓莜\n428.737\n药师简约\n425.740\n祭司之墓\n419.747\n部落先知\n351.758\n部落勇士\n382.790",
+  "tables": [
+    {
+      "rows": [
+        [
+          {
+            "text": "NPC名称",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "NPC坐标",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "疾风部落长老",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "366.760",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "裁缝杨小玄",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "369.760",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎雷扬",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.760",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠莫云树",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "368.762",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "疾风部落首领",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "368.764",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师苏畅",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "370.763",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜李进",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "372.764",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师刘远",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "273.762",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "信风镇百草仙",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "433.730",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "铁匠段卓",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "433.736",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "货郎陈凯",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "431.736",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "钱庄掌柜王臻",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "430.737",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "传送师傅韩晓莜",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "428.737",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "药师简约",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "425.740",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "祭司之墓",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "419.747",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "部落先知",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "351.758",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ],
+        [
+          {
+            "text": "部落勇士",
+            "rowspan": "1",
+            "colspan": "1"
+          },
+          {
+            "text": "382.790",
+            "rowspan": "1",
+            "colspan": "1"
+          }
+        ]
+      ]
+    }
+  ],
+  "links": [
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30112.shtml",
+      "label": "人族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30113.shtml",
+      "label": "妖族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30114.shtml",
+      "label": "羽族新手村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30115.shtml",
+      "label": "万流城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30116.shtml",
+      "label": "疾风部落周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30117.shtml",
+      "label": "祖龙城周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30118.shtml",
+      "label": "桃源镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30119.shtml",
+      "label": "冰风谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30120.shtml",
+      "label": "风沙谷周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30121.shtml",
+      "label": "万劫城以及渔村周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30122.shtml",
+      "label": "獠牙镇周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30123.shtml",
+      "label": "寻梦港周边",
+      "kind": "anchor"
+    },
+    {
+      "url": "https://w2i.wanmei.com/xtjs/npc/20091019/30124.shtml",
+      "label": "其他NPC",
+      "kind": "anchor"
+    }
+  ],
+  "imageRefs": [],
+  "bodyMode": "article",
+  "readableHtml": "<div>\r\n                            <ul>\r\n    <li><a href=\"#page=fb262072d5b46a210c39\">人族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=bc74a9a07db5ca320e30\">妖族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=fd2b30facce6ba69fa94\">羽族新手村周边</a> |  \t\t\t\t\t<a href=\"#page=6701bd2db04e295409ad\">万流城周边</a> |  \t\t\t\t\t<a href=\"#page=1ee469eea6a084f6d68f\">疾风部落周边</a> |  \t\t\t\t\t<a href=\"#page=de3e898177625299c354\">祖龙城周边</a> |  \t\t\t\t\t<a href=\"#page=f9f06882fe07a6a2426a\">桃源镇周边</a><br>\r\n    <a href=\"#page=d7673a80b6f61672af82\">冰风谷周边</a> |  \t\t\t\t\t<a href=\"#page=8a35af2dd91a586a6f7b\">风沙谷周边</a> |  \t\t\t\t\t<a href=\"#page=d0aabc61d6b30e1dbe90\">万劫城以及渔村周边</a> |  \t\t\t\t\t<a href=\"#page=d39e9e21196a3a78e050\">獠牙镇周边</a> |  \t\t\t\t\t<a href=\"#page=0881f82bcfcf2f9f27ac\">寻梦港周边</a> |  \t\t\t\t\t<a href=\"#page=e14aa7700763f0843dad\">其他NPC</a> |</li>\r\n</ul>\r\n<table>\r\n    <tbody>\r\n        <tr>\r\n            <td><strong>NPC名称</strong></td>\r\n            <td><strong>NPC坐标</strong></td>\r\n        </tr>\r\n        <tr>\r\n            <td>疾风部落长老</td>\r\n            <td>366.760</td>\r\n        </tr>\r\n        <tr>\r\n            <td>裁缝杨小玄</td>\r\n            <td>369.760</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎雷扬</td>\r\n            <td>370.760</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠莫云树</td>\r\n            <td>368.762</td>\r\n        </tr>\r\n        <tr>\r\n            <td>疾风部落首领</td>\r\n            <td>368.764</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师苏畅</td>\r\n            <td>370.763</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜李进</td>\r\n            <td>372.764</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师刘远</td>\r\n            <td>273.762</td>\r\n        </tr>\r\n        <tr>\r\n            <td>信风镇百草仙</td>\r\n            <td>433.730</td>\r\n        </tr>\r\n        <tr>\r\n            <td>铁匠段卓</td>\r\n            <td>433.736</td>\r\n        </tr>\r\n        <tr>\r\n            <td>货郎陈凯</td>\r\n            <td>431.736</td>\r\n        </tr>\r\n        <tr>\r\n            <td>钱庄掌柜王臻</td>\r\n            <td>430.737</td>\r\n        </tr>\r\n        <tr>\r\n            <td>传送师傅韩晓莜</td>\r\n            <td>428.737</td>\r\n        </tr>\r\n        <tr>\r\n            <td>药师简约</td>\r\n            <td>425.740</td>\r\n        </tr>\r\n        <tr>\r\n            <td>祭司之墓</td>\r\n            <td>419.747</td>\r\n        </tr>\r\n        <tr>\r\n            <td>部落先知</td>\r\n            <td>351.758</td>\r\n        </tr>\r\n        <tr>\r\n            <td>部落勇士</td>\r\n            <td>382.790</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n                        </div>",
+  "dataPath": "pages/1ee469eea6a084f6d68f.json",
+  "imageCount": 0,
+  "tableCount": 1,
+  "downloadPath": "downloads/1ee469eea6a084f6d68f.js"
+}

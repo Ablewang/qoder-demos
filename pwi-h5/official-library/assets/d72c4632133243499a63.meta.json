@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_449.jpg",
+  "id": "d72c4632133243499a63",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "狂·炙炎阵<em>（入魔）</em>",
+  "bytes": 1750,
+  "sha256": "bc88dfe84f4ac7cc6a7c1cca94857c51ab99712310d739214745483555bf8f79",
+  "fetchedAt": "2026-11-18T08:34:35+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_449.jpg",
+  "path": "assets/d72c4632133243499a63.jpg"
+}

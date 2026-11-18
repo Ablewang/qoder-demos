@@ -1,0 +1,345 @@
+{
+  "browser": "157.0.8103.79",
+  "scenarios": [
+    {
+      "width": 390,
+      "height": 844,
+      "tier": "std",
+      "captures": [
+        {
+          "name": "home",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 1541,
+          "visibleOverflow": []
+        },
+        {
+          "name": "home-pending-expanded",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 3041,
+          "visibleOverflow": []
+        },
+        {
+          "name": "results",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 844,
+          "visibleOverflow": []
+        },
+        {
+          "name": "evidence",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 1706,
+          "visibleOverflow": []
+        },
+        {
+          "name": "evidence-expanded",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 2645,
+          "visibleOverflow": []
+        },
+        {
+          "name": "pending-results",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 844,
+          "visibleOverflow": []
+        },
+        {
+          "name": "pending",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 1048,
+          "visibleOverflow": []
+        },
+        {
+          "name": "export-ready",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 1051,
+          "visibleOverflow": []
+        },
+        {
+          "name": "export-updating",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 991,
+          "visibleOverflow": []
+        },
+        {
+          "name": "thanks-ready",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 1051,
+          "visibleOverflow": []
+        },
+        {
+          "name": "thanks-updating",
+          "rootFont": "18px",
+          "width": 390,
+          "documentWidth": 390,
+          "height": 991,
+          "visibleOverflow": []
+        }
+      ],
+      "staticInteractions": "passed; not a production download or native long-press test"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "tier": "std",
+      "captures": [
+        {
+          "name": "home",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 1593,
+          "visibleOverflow": []
+        },
+        {
+          "name": "home-pending-expanded",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 3123,
+          "visibleOverflow": []
+        },
+        {
+          "name": "results",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 740,
+          "visibleOverflow": []
+        },
+        {
+          "name": "evidence",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 1812,
+          "visibleOverflow": []
+        },
+        {
+          "name": "evidence-expanded",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 2831,
+          "visibleOverflow": []
+        },
+        {
+          "name": "pending-results",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 792,
+          "visibleOverflow": []
+        },
+        {
+          "name": "pending",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 1143,
+          "visibleOverflow": []
+        },
+        {
+          "name": "export-ready",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 958,
+          "visibleOverflow": []
+        },
+        {
+          "name": "export-updating",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 897,
+          "visibleOverflow": []
+        },
+        {
+          "name": "thanks-ready",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 958,
+          "visibleOverflow": []
+        },
+        {
+          "name": "thanks-updating",
+          "rootFont": "18px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 897,
+          "visibleOverflow": []
+        }
+      ],
+      "staticInteractions": "passed; not a production download or native long-press test"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "tier": "xl",
+      "captures": [
+        {
+          "name": "home",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 2146,
+          "visibleOverflow": []
+        },
+        {
+          "name": "home-pending-expanded",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 4279,
+          "visibleOverflow": []
+        },
+        {
+          "name": "results",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 873,
+          "visibleOverflow": []
+        },
+        {
+          "name": "evidence",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 2532,
+          "visibleOverflow": []
+        },
+        {
+          "name": "evidence-expanded",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 3982,
+          "visibleOverflow": []
+        },
+        {
+          "name": "pending-results",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 989,
+          "visibleOverflow": []
+        },
+        {
+          "name": "pending",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 1569,
+          "visibleOverflow": []
+        },
+        {
+          "name": "export-ready",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 1016,
+          "visibleOverflow": []
+        },
+        {
+          "name": "export-updating",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 904,
+          "visibleOverflow": []
+        },
+        {
+          "name": "thanks-ready",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 1016,
+          "visibleOverflow": []
+        },
+        {
+          "name": "thanks-updating",
+          "rootFont": "25px",
+          "width": 320,
+          "documentWidth": 320,
+          "height": 904,
+          "visibleOverflow": []
+        }
+      ],
+      "staticInteractions": "passed; not a production download or native long-press test"
+    }
+  ],
+  "errors": [],
+  "originalSource": {
+    "url": "https://www.nanchong.gov.cn/jkzx/jkjy/jkbj/202205/t20220517_1681869.html",
+    "title": "中国居民膳食指南（2022）平衡膳食八准则-南充市疾病预防控制中心",
+    "opened": true
+  },
+  "pngs": [
+    {
+      "file": "claim-note.png",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 202523
+    },
+    {
+      "file": "thanks-note.png",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 134357
+    }
+  ],
+  "contrast": [
+    {
+      "foreground": "#293432",
+      "background": "#fafbf8",
+      "ratio": 12.39
+    },
+    {
+      "foreground": "#53635e",
+      "background": "#fafbf8",
+      "ratio": 6.1
+    },
+    {
+      "foreground": "#285d54",
+      "background": "#fafbf8",
+      "ratio": 7.26
+    },
+    {
+      "foreground": "#735226",
+      "background": "#f2eadb",
+      "ratio": 5.93
+    },
+    {
+      "foreground": "#53635e",
+      "background": "#eeefea",
+      "ratio": 5.48
+    }
+  ],
+  "limitations": [
+    "Explicit 18px/25px prototype font tiers, not real-device system font validation.",
+    "Static interactions and actual visual PNG assets; no production download-chain verification.",
+    "Production sources, rendering, gates, tests and documents unchanged."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://w2i.wanmei.com/hd/xiandan/images/map.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "05a9d838f974dff9cf55",
+  "status": "ok",
+  "parents": [
+    "19ab30249fb4fa5dd6d5",
+    "f8859daa94f212cf8f46"
+  ],
+  "bytes": 64025,
+  "sha256": "1ff3003b8f8f43b0e6051ae0104140a28c7153a688b8a2dcf4e445039f00eb4d",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/05a9d838f974dff9cf55.jpg"
+}

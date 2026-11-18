@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27594.jpg",
+  "id": "a6bb1df641f1d63123a2",
+  "status": "ok",
+  "parents": [
+    "931a6dafedf147fb6c1c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/cike.js",
+  "alt": "真· 放血<em>（升仙）</em>  ",
+  "bytes": 1087,
+  "sha256": "1e3a9da7b2e11c6f587b2926eac99ee0ef8539db08a40691362d7365fa85f045",
+  "fetchedAt": "2026-11-18T08:36:05+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/cike/img_27594.jpg",
+  "path": "assets/a6bb1df641f1d63123a2.jpg"
+}

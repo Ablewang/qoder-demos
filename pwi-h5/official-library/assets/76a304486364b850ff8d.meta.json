@@ -1,0 +1,15 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201311/landmark/images/main_01.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "76a304486364b850ff8d",
+  "status": "ok",
+  "parents": [
+    "dcf675f95e132ae5a3d5"
+  ],
+  "bytes": 53391,
+  "sha256": "c6fcec1554fc8b676da5df97faef61427f1401027e43ee4ff75ba55e5e8e2539",
+  "fetchedAt": null,
+  "cached": true,
+  "path": "assets/76a304486364b850ff8d.jpg"
+}

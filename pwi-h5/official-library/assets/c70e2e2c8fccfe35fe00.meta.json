@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_389.jpg",
+  "id": "c70e2e2c8fccfe35fe00",
+  "status": "ok",
+  "parents": [
+    "54749c1e17c97af0290c"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wuxia.js",
+  "alt": "狂·横扫千军<em>（入魔）</em>",
+  "bytes": 1649,
+  "sha256": "85f5703ceaf82c3aa5940ec265397d742dd72bd74177940f83799978dbac47e3",
+  "fetchedAt": "2026-11-18T08:34:16+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wuxia/img_389.jpg",
+  "path": "assets/c70e2e2c8fccfe35fe00.jpg"
+}

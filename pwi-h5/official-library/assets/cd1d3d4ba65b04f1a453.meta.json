@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201303/spread/images/tab3.jpg",
+  "alt": "",
+  "kind": "img",
+  "id": "cd1d3d4ba65b04f1a453",
+  "status": "ok",
+  "parents": [
+    "16e10f9ab511825734e6"
+  ],
+  "bytes": 72692,
+  "sha256": "ef3357ede7c196832ca7f0cc19cbbd77afea622d053c94fe6f5f03509284ec01",
+  "fetchedAt": "2026-11-18T08:26:09+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201303/spread/images/tab3.jpg",
+  "path": "assets/cd1d3d4ba65b04f1a453.jpg"
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201208/war/images/adslide_next.jpg",
+  "id": "1497ad7e99f6aabc89a9",
+  "status": "ok",
+  "parents": [
+    "0577e948efdc755515e4",
+    "66e9b32e9d063beff2cc",
+    "4b1b3a20290c0a8c1c0e",
+    "f0296add0dcd2ecfd34f"
+  ],
+  "kind": "stylesheet-reference",
+  "from": "https://event51.wanmei.com/w2i/201208/war/style/master.css",
+  "bytes": 1382,
+  "sha256": "20c75f455ae766cedd7f960ebbe0e183cb52a8269d49a5a6fdf9602c2685e13d",
+  "fetchedAt": "2026-11-18T08:38:52+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201208/war/images/adslide_next.jpg",
+  "path": "assets/1497ad7e99f6aabc89a9.jpg"
+}

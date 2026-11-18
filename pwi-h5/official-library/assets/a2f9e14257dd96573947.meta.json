@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_550.jpg",
+  "id": "a2f9e14257dd96573947",
+  "status": "ok",
+  "parents": [
+    "b1309fa8235af23fd447"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/yuling.js",
+  "alt": "真·玄净咒<em>（升仙）</em>",
+  "bytes": 1722,
+  "sha256": "34e5c726b343aa6e29b03e7d834b9d6120701e646091c3805b5c2285f535fb55",
+  "fetchedAt": "2026-11-18T08:35:15+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/yuling/img_550.jpg",
+  "path": "assets/a2f9e14257dd96573947.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_444.jpg",
+  "id": "7f43675baa7a2712449e",
+  "status": "ok",
+  "parents": [
+    "6fca40007eb0cce295dc"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/fashi.js",
+  "alt": "真·火煞天灯<em>（升仙）</em>",
+  "bytes": 1739,
+  "sha256": "8b33efc6a7a16683244f6269ad5f30970fd02647fcc1c6c21a9c8986d6a6df90",
+  "fetchedAt": "2026-11-18T08:34:35+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/fashi/img_444.jpg",
+  "path": "assets/7f43675baa7a2712449e.jpg"
+}

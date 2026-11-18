@@ -1,0 +1,18 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_meiling.png",
+  "label": "",
+  "kind": "inline-reference",
+  "id": "a0275026f968f6946408",
+  "status": "ok",
+  "parents": [
+    "90bad051d888ea8430b6"
+  ],
+  "bytes": 2239,
+  "sha256": "6306a0ade663a228ad45acf73e3d7be4b066c65cc2071af2ac03fc3fc359f784",
+  "fetchedAt": "2026-11-18T08:18:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/png",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/public/arr_meiling.png",
+  "path": "assets/a0275026f968f6946408.png"
+}

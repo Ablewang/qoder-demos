@@ -1,0 +1,498 @@
+[
+  {
+    "name": "after-first-320-viewport",
+    "viewport": [
+      320,
+      740
+    ],
+    "scrollY": 0,
+    "scrollWidth": 320,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 428,
+        "bottom": 540,
+        "width": 146.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 428,
+        "bottom": 540,
+        "width": 146.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 547,
+        "bottom": 666.375,
+        "width": 146.5,
+        "height": 119.375,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 547,
+        "bottom": 666.375,
+        "width": 146.5,
+        "height": 119.375,
+        "font": "14px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 68,
+        "height": 44
+      },
+      {
+        "action": "pause",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "action": "read",
+        "top": 384,
+        "bottom": 428,
+        "width": 70,
+        "height": 44
+      }
+    ],
+    "questions": [
+      {
+        "top": 124,
+        "bottom": 232,
+        "width": 260,
+        "height": 108,
+        "font": "14px"
+      }
+    ],
+    "feedback": "先读题，再回答\n不急，可以暂停\n\n选适合自己的话，拒绝也算有效回答。",
+    "animation": 0
+  },
+  {
+    "name": "after-two-320-viewport",
+    "viewport": [
+      320,
+      740
+    ],
+    "scrollY": 0,
+    "scrollWidth": 320,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 428,
+        "bottom": 540,
+        "width": 146.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 428,
+        "bottom": 540,
+        "width": 146.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 547,
+        "bottom": 666.375,
+        "width": 146.5,
+        "height": 119.375,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 547,
+        "bottom": 666.375,
+        "width": 146.5,
+        "height": 119.375,
+        "font": "14px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 68,
+        "height": 44
+      },
+      {
+        "action": "pause",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    ],
+    "questions": [
+      {
+        "top": 124,
+        "bottom": 238.921875,
+        "width": 146,
+        "height": 114.921875,
+        "font": "14px"
+      },
+      {
+        "top": 124,
+        "bottom": 232,
+        "width": 146,
+        "height": 108,
+        "font": "14px"
+      }
+    ],
+    "feedback": "◎ 成功挡下\n上一问 · 三姑\n\n「钱够花吗？」已挡下，边界说清了",
+    "animation": 0
+  },
+  {
+    "name": "after-ally-320-viewport",
+    "viewport": [
+      320,
+      740
+    ],
+    "scrollY": 0,
+    "scrollWidth": 320,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 428,
+        "bottom": 540,
+        "width": 146.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 428,
+        "bottom": 540,
+        "width": 146.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 547,
+        "bottom": 666.375,
+        "width": 146.5,
+        "height": 119.375,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 547,
+        "bottom": 666.375,
+        "width": 146.5,
+        "height": 119.375,
+        "font": "14px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 68,
+        "height": 44
+      },
+      {
+        "action": "pause",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    ],
+    "questions": [
+      {
+        "top": 124,
+        "bottom": 232,
+        "width": 260,
+        "height": 108,
+        "font": "14px"
+      }
+    ],
+    "feedback": "♥ 盟友救场\n上一问 · 大姨\n\n「这工作有前途吗？」队友已替你挡下一问",
+    "animation": 0
+  },
+  {
+    "name": "all-content-layout-fixture-320",
+    "fixtureOnly": true,
+    "questionCount": 72,
+    "answerCount": 288,
+    "maximumCardBottom": 679.9375,
+    "worstQuestion": "compare-07",
+    "viewport": [
+      320,
+      740
+    ]
+  },
+  {
+    "name": "after-first-390-viewport",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollY": 0,
+    "scrollWidth": 390,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 486,
+        "bottom": 598,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 486,
+        "bottom": 598,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 605,
+        "bottom": 717,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 605,
+        "bottom": 717,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 68,
+        "height": 44
+      },
+      {
+        "action": "pause",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "action": "read",
+        "top": 442,
+        "bottom": 486,
+        "width": 70,
+        "height": 44
+      }
+    ],
+    "questions": [
+      {
+        "top": 124,
+        "bottom": 232,
+        "width": 260,
+        "height": 108,
+        "font": "14px"
+      }
+    ],
+    "feedback": "先读题，再回答\n不急，可以暂停\n\n选适合自己的话，拒绝也算有效回答。",
+    "animation": 0
+  },
+  {
+    "name": "after-two-390-viewport",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollY": 0,
+    "scrollWidth": 390,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 486,
+        "bottom": 598,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 486,
+        "bottom": 598,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 605,
+        "bottom": 717,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 605,
+        "bottom": 717,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 68,
+        "height": 44
+      },
+      {
+        "action": "pause",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    ],
+    "questions": [
+      {
+        "top": 124,
+        "bottom": 238.921875,
+        "width": 181,
+        "height": 114.921875,
+        "font": "14px"
+      },
+      {
+        "top": 124,
+        "bottom": 232,
+        "width": 181,
+        "height": 108,
+        "font": "14px"
+      }
+    ],
+    "feedback": "◎ 成功挡下\n上一问 · 三姑\n\n「钱够花吗？」已挡下，边界说清了",
+    "animation": 0
+  },
+  {
+    "name": "after-ally-390-viewport",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollY": 0,
+    "scrollWidth": 390,
+    "cards": [
+      {
+        "card": "taiji",
+        "top": 486,
+        "bottom": 598,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "counter",
+        "top": 486,
+        "bottom": 598,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "crazy",
+        "top": 605,
+        "bottom": 717,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      },
+      {
+        "card": "sincere",
+        "top": 605,
+        "bottom": 717,
+        "width": 181.5,
+        "height": 112,
+        "font": "14px",
+        "clipped": false
+      }
+    ],
+    "controls": [
+      {
+        "action": "sound",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 68,
+        "height": 44
+      },
+      {
+        "action": "pause",
+        "top": 5.5,
+        "bottom": 49.5,
+        "width": 44,
+        "height": 44
+      }
+    ],
+    "questions": [
+      {
+        "top": 124,
+        "bottom": 232,
+        "width": 260,
+        "height": 108,
+        "font": "14px"
+      }
+    ],
+    "feedback": "♥ 盟友救场\n上一问 · 大姨\n\n「这工作有前途吗？」队友已替你挡下一问",
+    "animation": 0
+  },
+  {
+    "name": "all-content-layout-fixture-390",
+    "fixtureOnly": true,
+    "questionCount": 72,
+    "answerCount": 288,
+    "maximumCardBottom": 724.375,
+    "worstQuestion": "married-05",
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

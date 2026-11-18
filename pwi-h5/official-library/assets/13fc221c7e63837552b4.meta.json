@@ -1,0 +1,19 @@
+{
+  "url": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1140.jpg",
+  "id": "13fc221c7e63837552b4",
+  "status": "ok",
+  "parents": [
+    "ade9457f523181b12f33"
+  ],
+  "kind": "skill-icon",
+  "from": "https://event51.wanmei.com/w2i/201102/imitator/js/wushi.js",
+  "alt": "潮汐精灵",
+  "bytes": 4573,
+  "sha256": "db8d50ace44ab2c7a92dc56969a276724c7371799c35a50646a846862df67a85",
+  "fetchedAt": "2026-11-18T08:36:19+00:00",
+  "cached": true,
+  "httpStatus": 200,
+  "contentType": "image/jpeg",
+  "finalUrl": "https://event51.wanmei.com/w2i/201102/imitator/images/wushi/img_1140.jpg",
+  "path": "assets/13fc221c7e63837552b4.jpg"
+}
