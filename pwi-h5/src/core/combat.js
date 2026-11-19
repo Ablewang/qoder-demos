@@ -45,10 +45,11 @@ export function skillCooldown(p, b, id) {
   return Math.max(1, Math.round(s.cd * (1 - stats(p, b).channel)));
 }
 
-const charmRecovery = (p, st, type) => {
+const charmRecovery = (p, st, type, realtime = false) => {
   const stored = p.charms?.[type];
   if (!Number.isSafeInteger(stored) || stored <= 0 || p.hp <= 0) return 0;
-  if (p[type] > st[type] * (type === 'hp' ? 0.5 : 0.75)) return 0;
+  const threshold = st[type] * (type === 'hp' ? 0.5 : 0.75);
+  if (realtime ? p[type] >= threshold || p.charmCooldowns[type] > 0 : p[type] > threshold) return 0;
   return Math.max(0, Math.min(st[type] - p[type], stored));
 };
 

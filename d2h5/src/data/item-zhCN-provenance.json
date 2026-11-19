@@ -1,0 +1,50 @@
+{
+  "importedOn": "2026-11-18",
+  "locale": "zhCN",
+  "baseline": "D2R item localization; LoD 1.14d numerical data is unchanged",
+  "mirror": "the-overdriven/D2R-simple-loot-filter-custom",
+  "scope": "Only zhCN item names, name affixes and runewords. The mirror modifies enUS; no enUS or other language is imported. A third-party mirror, not an official Blizzard download. No license grant for Blizzard strings is implied. Content hashes pin this local snapshot; main is not an immutable git revision.",
+  "strings": 2790,
+  "storedSha256": "17a067ffc29f2deba38229e63d410d26f1e81e7c4daf5be05474bd6b72fc952a",
+  "sources": [
+    {
+      "url": "https://cdn.jsdelivr.net/gh/the-overdriven/D2R-simple-loot-filter-custom@main/item-names.json",
+      "sha256": "ccb36fd9ce998ac91f227e600dc70f39b6051f8669012003dac17868232c85b7",
+      "rows": 1536,
+      "field": "zhCN"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/the-overdriven/D2R-simple-loot-filter-custom@main/item-nameaffixes.json",
+      "sha256": "d54825c4d1b9d3ec7f22bed9537ce267c95499cff20814cdafb9affee0432e12",
+      "rows": 1004,
+      "field": "zhCN"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/the-overdriven/D2R-simple-loot-filter-custom@main/item-runes.json",
+      "sha256": "8ccaf4e11363f39d66197929af9fafbebf3f1e684100dede98c9730bda7dfb8e",
+      "rows": 245,
+      "field": "zhCN"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/the-overdriven/D2R-simple-loot-filter-custom@main/item-modifiers.json",
+      "sha256": "b3081d60749dd8eeb283c6f9161f6fc42f210372e1726adbeda1fb3110d40cf2",
+      "rows": 345,
+      "field": "zhCN",
+      "importedKeys": [
+        "toa",
+        "ice",
+        "tr2"
+      ]
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/SeonEngineer/D2R@main/ui.json",
+      "sha256": "5dea63393a3439b6966d31aaa339a728c7c61f8d009afc93b07a7b1a4f516c38",
+      "rows": 1745,
+      "field": "zhCN",
+      "importedKeys": [
+        "xyz",
+        "ass"
+      ]
+    }
+  ]
+}
