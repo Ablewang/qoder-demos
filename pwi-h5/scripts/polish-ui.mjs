@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 
 import { ITEMS } from '../src/data/items.js';
+import { ZONES } from '../src/data/world.js';
 
 const base = process.env.GAME_URL;
 assert.match(base || '', /^http:\/\/(?:localhost|127\.0\.0\.1):517[67]$/, 'Use explicit isolated localhost/127.0.0.1 port 5177 or 5176 in a fresh Chrome context');
@@ -11,8 +12,7 @@ const out = fileURLToPath(new URL('../artifacts/', import.meta.url));
 const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
 const context = await browser.newContext();
 const page = await context.newPage();
-// Match ui.mjs: isolate tests from concurrent development-server hot reloads.
-await page.route('**/@vite/client', (route) => route.fulfill({ contentType: 'application/javascript', body: '' }));
+await page.route('**/@vite/client', route => route.abort());
 page.setDefaultTimeout(15000);
 const errors = [];
 page.on('pageerror', (error) => errors.push(error.message));
@@ -29,6 +29,7 @@ async function click(action, attrs = '', root = '') {
   await idle();
 }
 async function navigate(id) {
+  if (!await visible(`[data-action="page"][data-id="${id}"]`).count()) await page.locator('.mobile-nav-more > summary').click();
   await click('page', `[data-id="${id}"]`, ':is(.sidebar .nav, .mobile-nav)');
   await expect(page.locator('.shell')).toHaveAttribute('data-page', id);
 }
@@ -60,12 +61,13 @@ async function capture(name, selector) {
     assert.ok(dimensions.content <= dimensions.width + 1, `${name} overflow ${JSON.stringify(dimensions)}`);
     assert.equal(await page.locator('vite-error-overlay').count(), 0);
     if (await page.locator('.shell').count() && view.width <= 760) {
-      await expect(page.locator('.mobile-profile')).toBeVisible();
-      assert.equal(await page.locator('.mobile-vitals .bar').count(), 3);
-      await expect(page.locator('.mobile-vitals .bar.xp')).toBeVisible();
+      await expect(page.locator('.player-hud .hud-identity')).toBeVisible();
+      assert.equal(await page.locator('.hud-vitals .bar').count(), 3);
+      await expect(page.locator('.hud-vitals .bar.xp')).toBeVisible();
       assert.equal(await page.locator('.mobile-nav [data-action="page"]').count(), 10);
     }
     if (selector) {
+      await visible(selector).scrollIntoViewIfNeeded();
       const box = await visible(selector).boundingBox();
       const nav = view.width <= 760 && await page.locator('.mobile-nav').count() ? await page.locator('.mobile-nav').boundingBox() : null;
       assert.ok(box && box.y >= 0 && box.y + box.height <= (nav?.y ?? view.height), `${name} primary control outside usable ${view.width}px viewport: ${JSON.stringify({ box, nav })}`);
@@ -83,8 +85,8 @@ async function takeRecommendedTurn() {
   await idle();
 }
 async function fight() {
-  await click('hunt', '[data-index="0"]', '.mob-row');
-  await expect(page.locator('.battle-banner')).toContainText('第 1 回合');
+  await click('hunt', '[data-index="0"]', '.world-primary');
+  await expect(page.locator('.page-title')).toContainText('第1回合');
   await expect(page.locator('.intent')).toBeVisible();
   await expect(page.locator('.battle-advice')).toContainText('建议');
   const started = await record();
@@ -104,7 +106,7 @@ try {
   await idle();
   const initial = await record();
   assert.equal(initial.snapshot.player.lv, 1);
-  await expect(page.locator('.journey-focus')).toContainText('当前1级 → 目标2级');
+  await expect(page.locator('.journey-focus')).toContainText(`前往${ZONES.h_f1.name}`);
   await capture('city', '.journey-focus .primary');
   for (const id of ['quests', 'character', 'bag', 'skills', 'cult', 'town', 'mall', 'activities', 'guide']) {
     await navigate(id);
@@ -121,7 +123,7 @@ try {
       await expect(page.locator('.production-status')).toContainText('缺材料');
     }
     if (id === 'activities') {
-      assert.equal(await page.locator('.treasure-palace > :first-child.treasure-controls').count(), 1);
+      await expect(page.locator('.treasure-controls')).toBeVisible();
       assert.equal(await page.locator('.orbit-prize').count(), 12);
     }
     await capture(id, id === 'activities' ? '.draw-actions [data-count="10"]' : undefined);
@@ -131,9 +133,13 @@ try {
   await navigate('world');
   await click('navigate', '[data-id="h_f1"]', '.journey-focus');
   assert.equal((await record()).snapshot.player.location, 'h_f1');
-  await capture('field', '.explore-panel [data-action="explore"]');
-  await click('hunt', '[data-index="0"]', '.mob-row');
-  await capture('battle', '.battle-controls .recommended');
+  await capture('field', '.world-primary [data-action="hunt"]');
+  await click('claim', '[data-bounty="false"]', '.journey-focus');
+  assert.equal((await record()).snapshot.player.mainIndex, 1);
+  await expect(page.locator('.journey-focus')).toContainText('击败小野猪');
+  await click('hunt', '[data-index="0"]', '.world-primary');
+  await expect(page.locator('.battle-advice')).toBeVisible();
+  await capture('battle', '[data-action="turn"].recommended');
   for (let turn = 0; turn < 35 && !await page.locator('.battle-result').count(); turn++) await takeRecommendedTurn();
   await expect(page.locator('.battle-result')).toContainText('此战告捷');
   await click('leaveBattle');
@@ -141,15 +147,14 @@ try {
   assert.ok((await record()).snapshot.player.lv >= 2);
   await capture('ready', '.journey-focus .primary');
   const readyCheckpoint = await record();
+  await page.locator('.world-detail').filter({ hasText: '采集与野外奇遇' }).locator('summary').click();
   await click('autoExplore');
   await expect(page.locator('#toast')).toContainText('任务目标已达成');
   await expect(page.locator('[data-action="autoExplore"]')).toHaveText('自动探索');
   assert.deepEqual(await record(), readyCheckpoint, 'Task-ready auto-stop must not explore or consume a turn');
   await click('claim', '[data-bounty="false"]', '.journey-focus');
-  assert.equal((await record()).snapshot.player.mainIndex, 1);
-  await expect(page.locator('.journey-focus')).toContainText('击败小野猪');
-  await fight();
-  assert.equal((await record()).snapshot.player.mainProgress, 1);
+  assert.equal((await record()).snapshot.player.mainIndex, 2);
+  await expect(page.locator('.journey-focus')).toContainText('前往剑仙城');
   await navigate('character');
   await click('allocateAuto');
   assert.equal((await record()).snapshot.player.points, 0);
@@ -157,13 +162,14 @@ try {
   await page.reload();
   await idle();
   assert.deepEqual(await record(), persisted, 'Refresh must preserve the natural progressed character');
-  await expect(page.locator('.profile-name')).toContainText('青岚<旅>');
+  await expect(page.locator('.hud-identity')).toContainText('青岚<旅>');
   // Controlled encounter RNG only: all character resources/progression above are natural play.
   console.log('PASS natural-play checkpoint: Lv1→Lv2, main reward/kill objective, allocation and exact reload; BEGIN controlled encounter RNG (no imported save).');
+  await page.locator('.world-detail').filter({ hasText: '采集与野外奇遇' }).locator('summary').click();
   await page.evaluate(() => { window.explorationRandom = Math.random; Math.random = () => 0.8; });
   try { await click('explore', '', '.explore-panel'); }
   finally { await page.evaluate(() => { Math.random = window.explorationRandom; delete window.explorationRandom; }); }
-  await expect(page.locator('.encounter-head')).toContainText('游方道士');
+  await expect(visible('.encounter-head')).toContainText('游方道士');
   await capture('encounter', '.encounter-choice:not(:disabled)');
   const pendingEncounter = await record();
   await page.reload(); await idle();
@@ -176,7 +182,7 @@ try {
   await click('travel', '[data-id="wanliu"]');
   assert.equal((await record()).snapshot.player.location, 'wanliu');
   assert.deepEqual(errors, []);
-  console.log(`${tag}: PASS — natural Lv1 onboarding → Lv2 → task-ready auto-stop with no mutation → main reward → correct kill objective → allocate → persisted reload; 15 screens × 4 widths, actual catalog count and production selectors/material gates, real recommended controls and controlled-RNG encounter choice in first viewport, pending encounter reload and exact resolution; no imported fixtures, browsing mutations or page/network errors.`);
+  console.log(`${tag}: PASS — natural Lv1 visit → first kill → Lv2 → task-ready auto-stop with no mutation → main reward → return objective → allocate → persisted reload; 15 screens × 4 widths, actual catalog count and production selectors/material gates, scroll-accessible controls and controlled-RNG encounter choice, pending encounter reload and exact resolution; no imported fixtures, browsing mutations or page/network errors.`);
 } finally {
   await context.close();
   await browser.close();

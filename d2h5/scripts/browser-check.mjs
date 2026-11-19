@@ -190,6 +190,7 @@ const verifyItemSelection = async mobile => {
   vp.on('console',m=>{if(m.type()==='error')errors.push(`item selection: ${m.text()}`);});
   const activate = locator => mobile ? locator.tap() : locator.click();
   const selectStable = async (panel, uid, keyboard = false) => {
+    if(mobile && await vp.locator('.item-popup').isVisible()) await activate(vp.getByRole('button',{name:'关闭物品浮层',exact:true}));
     const trading = await vp.locator('.trade-workspace').count() > 0;
     if(trading) {
       await activate(vp.locator(`[data-focus="trade-view:${panel}"]`));
@@ -214,6 +215,7 @@ const verifyItemSelection = async mobile => {
         return old.workspace===document.querySelector('.trade-workspace')&&old.nav===document.querySelector('.trade-switcher')&&old.buttons.every(button=>button.isConnected)&&old.frames.every(({node,body,grid,stock,detail})=>node.isConnected&&node.querySelector('.panel-body')===body&&node.querySelector('.item-grid')===grid&&node.querySelector('.vendor-stock')===stock&&node.querySelector('.item-detail')!==detail);
       }),true,'The first revealing touch also replaces only both details, never either frame, body, grid, stock, nav or item button');
     }
+    if(mobile && await vp.locator('.item-popup').isVisible()) await activate(vp.getByRole('button',{name:'关闭物品浮层',exact:true}));
     await item.scrollIntoViewIfNeeded();
     await vp.evaluate(({panel,uid})=>{
       const frame=document.querySelector(`.panel-${panel}`),body=frame.querySelector('.panel-body');
@@ -250,9 +252,9 @@ const verifyItemSelection = async mobile => {
     await selectStable('inventory',initial.weapon);
     await selectStable('inventory',initial.scroll,!mobile);
     await selectStable('inventory',initial.weapon,!mobile);
-    await activate(vp.locator('.panel-inventory .item-detail').getByRole('button',{name:'卸下至背包',exact:true}));
+    await activate(vp.locator(mobile ? '.item-popup .item-detail' : '.panel-inventory .item-detail').getByRole('button',{name:'卸下至背包',exact:true}));
     await vp.waitForFunction(uid=>window.sanctuary.engine.state.player.inventory.some(i=>i.uid===uid),initial.weapon);
-    if(mobile){await selectStable('inventory',initial.weapon);await activate(vp.locator('.panel-inventory .item-detail').getByRole('button',{name:'装备',exact:true}));}
+    if(mobile){await selectStable('inventory',initial.weapon);await activate(vp.locator(mobile ? '.item-popup .item-detail' : '.panel-inventory .item-detail').getByRole('button',{name:'装备',exact:true}));}
     else await vp.locator(`.panel-inventory .grid-item[data-focus="item:${initial.weapon}"]`).dblclick();
     await vp.waitForFunction(uid=>window.sanctuary.engine.state.player.equipment.weapon?.uid===uid,initial.weapon);
     await activate(vp.locator('.panel-inventory .close-button'));
@@ -264,7 +266,7 @@ const verifyItemSelection = async mobile => {
     for(const code of ['isc','tsc']){
       const before=await vp.evaluate(code=>{const p=window.sanctuary.engine.state.player;return {item:p.inventory.find(i=>i.code===code),gold:p.gold};},code);
       await selectStable('inventory',before.item.uid,!mobile);
-      await activate(vp.locator('.panel-inventory .item-detail').getByRole('button',{name:'出售',exact:true}));
+      await activate(vp.locator(mobile ? '.item-popup .item-detail' : '.panel-inventory .item-detail').getByRole('button',{name:'出售',exact:true}));
       await vp.waitForFunction(({uid,gold})=>{const p=window.sanctuary.engine.state.player;return !p.inventory.some(i=>i.uid===uid)&&p.gold>gold;},{uid:before.item.uid,gold:before.gold});
       await vp.waitForFunction(()=>!window.__itemSelectionNodes.frame.isConnected);
       assert.equal(await vp.evaluate(()=>window.__itemSelectionNodes.frame.isConnected),false,'An actual inventory transaction still rebuilds the panel');
@@ -272,13 +274,13 @@ const verifyItemSelection = async mobile => {
     const offer=await vp.evaluate(()=>{const s=window.sanctuary.engine.state;return {item:s.vendorItems.find(i=>i.code==='hp1'),gold:s.player.gold,count:s.player.inventory.filter(i=>i.code==='hp1').length};});
     assert.ok(offer.gold>=offer.item.price,'Real starter-item sales fund the purchase');
     await selectStable('vendor',offer.item.uid,!mobile);
-    await activate(vp.locator('.panel-vendor .item-detail').getByRole('button',{name:/^购买 · [\d,]+ 金币$/}));
+    await activate(vp.locator(mobile ? '.item-popup .item-detail' : '.panel-vendor .item-detail').getByRole('button',{name:/^购买 · [\d,]+ 金币$/}));
     await vp.waitForFunction(({gold,price,count})=>{const p=window.sanctuary.engine.state.player;return p.gold===gold-price&&p.inventory.filter(i=>i.code==='hp1').length===count+1;},{gold:offer.gold,price:offer.item.price,count:offer.count});
     const bought=await vp.evaluate(()=>{const p=window.sanctuary.engine.state.player;return {item:p.inventory.find(i=>i.code==='hp1'),gold:p.gold,belt:p.belt.map(i=>i?.uid??null)};});
     assert.equal(await vp.locator('.panel-layer').getAttribute('data-trade-view'),'inventory','An inventory purchase selects the backpack window');
     if(mobile)assert.equal(await vp.locator('.panel-vendor').isVisible(),false);
     await selectStable('inventory',bought.item.uid,!mobile);
-    await activate(vp.locator('.panel-inventory .item-detail').getByRole('button',{name:'出售',exact:true}));
+    await activate(vp.locator(mobile ? '.item-popup .item-detail' : '.panel-inventory .item-detail').getByRole('button',{name:'出售',exact:true}));
     await vp.waitForFunction(({uid,gold})=>{const p=window.sanctuary.engine.state.player;return !p.inventory.some(i=>i.uid===uid)&&p.gold>gold;},{uid:bought.item.uid,gold:bought.gold});
     assert.deepEqual(await vp.evaluate(()=>window.sanctuary.engine.state.player.belt.map(i=>i?.uid??null)),bought.belt,'Selling an inventory potion cannot consume belt reserves');
     assert.equal(await vp.evaluate(()=>window.sanctuary.engine.state.activeSaveId),initial.id);
@@ -540,7 +542,7 @@ try {
   await page.locator('[data-kind="rune"]').click();
   await page.getByRole('searchbox',{name:'搜索装备图鉴'}).fill('r33');
   assert.equal(await page.locator('.catalog-entry').count(),1);
-  assert.match(await page.locator('.catalog-detail').innerText(),/萨德|Zod/i);
+  assert.match(await page.locator('.catalog-detail').innerText(),/佐德|Zod/i);
   await page.getByRole('button',{name:'清空',exact:true}).click();
   await page.locator('[data-kind="gem"]').click();
   await page.getByRole('searchbox',{name:'搜索装备图鉴'}).pressSequentially('蓝宝石');
@@ -763,9 +765,11 @@ try {
     await np.waitForFunction(rune=>!window.sanctuary.engine.state.player.inventory.some(item=>item.uid===rune),rune);
     await np.locator(`.socket-row option[value="${rune}"]`).waitFor({state:'detached'});
   }
-  await np.waitForFunction(()=>document.querySelector('.item-detail')?.textContent.includes('+3 火焰技能'));
-  assert.match(await np.locator('.item-detail').innerText(),/\+3 火焰技能/);
-  assert.match(await np.locator('.item-detail').innerText(),/未实现属性：ac\/lvl/);
+  await np.locator(`.panel-inventory .item-grid [data-focus="item:${leafItems.staff}"]`).hover();
+  await np.locator('.item-tooltip').waitFor({state:'visible'});
+  assert.match(await np.locator('.item-tooltip').innerText(),/\+3 火焰技能/);
+  assert.match(await np.locator('.item-tooltip').innerText(),/未实现属性：ac\/lvl/);
+  await np.mouse.move(0,0);
   await np.getByRole('button',{name:'装备',exact:true}).click();
   const leafLevels=()=>np.evaluate(async()=>{
     const {skillLevel}=await import('/src/rules.ts'), engine=window.sanctuary.engine, p=engine.state.player;
@@ -805,7 +809,8 @@ try {
   });
   await np.setViewportSize({width:390,height:844}); await np.keyboard.press('i');
   await np.locator(`[data-focus="item:${leafItems.charm}"]`).tap();
-  assert.match(await np.locator('.item-detail').innerText(),/\+1 火焰法术（仅限法师）/);
+  await np.locator('.item-popup').waitFor({state:'visible'});
+  assert.match(await np.locator('.item-popup .item-properties').innerText(),/\+1 火焰法术（仅限法师）/);
   await np.screenshot({path:output+'22-leaf-mobile-charm.png'});
   await np.getByRole('button',{name:'存入仓库',exact:true}).tap();
   assert.deepEqual(await leafLevels(),{fire:6,cold:0,warmth:7,regen:117});

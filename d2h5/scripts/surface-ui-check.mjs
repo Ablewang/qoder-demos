@@ -395,23 +395,24 @@ async function checkConvenienceShop(mobile) {
     await activate(page.locator('.belt-grid [data-column="0"]'));
     await page.waitForFunction(() => { const s = window.sanctuary.engine.state; return !s.player.belt[0] && s.player.life === s.stats.maxLife && s.player.mana === s.stats.maxMana; });
     await filter('gems'); await page.waitForFunction(() => document.querySelectorAll('.vendor-row').length === 68);
-    const runeNames = ['艾尔', '艾德', '特尔', '那夫', '爱斯', '伊司', '塔尔', '拉尔', '欧特', '书尔', '安姆', '索尔', '夏', '多尔', '海尔', '埃欧', '卢姆', '科', '法尔', '蓝姆', '普尔', '乌姆', '马尔', '伊司特', '古尔', '伐克斯', '欧姆', '罗', '瑟', '贝', '乔', '查姆', '萨德'];
+    const runeNames = ['艾尔', '艾德', '提尔', '奈夫', '艾斯', '伊司', '塔尔', '拉尔', '欧特', '图尔', '安姆', '索尔', '沙伊', '多尔', '海尔', '艾欧', '卢姆', '科', '法尔', '兰姆', '普尔', '乌姆', '玛尔', '伊司特', '古尔', '伐克斯', '欧姆', '罗', '瑟', '贝', '扎哈', '查姆', '佐德'];
     const runeRows = runeNames.map((name, i) => ({ code: `r${String(i + 1).padStart(2, '0')}`, name: `${i + 1}号 · ${name}符文`, rank: String(i + 1) }));
     const gemFamilies = [
       ['紫宝石', ['gcv', 'gfv', 'gsv', 'gzv', 'gpv']], ['蓝宝石', ['gcb', 'gfb', 'gsb', 'glb', 'gpb']],
       ['绿宝石', ['gcg', 'gfg', 'gsg', 'glg', 'gpg']], ['红宝石', ['gcr', 'gfr', 'gsr', 'glr', 'gpr']],
       ['钻石', ['gcw', 'gfw', 'gsw', 'glw', 'gpw']], ['黄宝石', ['gcy', 'gfy', 'gsy', 'gly', 'gpy']],
-      ['骷髅', ['skc', 'skf', 'sku', 'skl', 'skz']],
+      ['头骨宝石', ['skc', 'skf', 'sku', 'skl', 'skz']],
     ];
-    const gemNames = ['碎裂的', '裂开的', '', '无瑕疵的', '完美的'];
+    const gemNames = ['碎裂的', '有瑕疵的', '', '无瑕的', '完美的'];
     const definitions = await page.evaluate(async () => { const { RUNES, GEMS } = await import('/src/items.ts'); return { runes: RUNES, gems: GEMS }; });
     assert.equal(definitions.runes.length, 33); assert.equal(definitions.gems.length, 35);
     assert.deepEqual(definitions.runes.map(rune => ({ code: rune.code, number: rune.number, name: rune.name })), runeRows.map((rune, i) => ({ code: rune.code, number: i + 1, name: `${runeNames[i]}符文` })));
     const gemRows = gemFamilies.flatMap(([name, codes]) => gemNames.map((prefix, grade) => {
       const definition = definitions.gems.find(gem => gem.code === codes[grade]);
       assert.ok(definition, `Gem/skull ${codes[grade]} is defined`);
-      assert.equal(definition.name, prefix + name); assert.equal(definition.grade, grade);
-      return { code: codes[grade], name: prefix + name, rank: `${grade + 1}/5` };
+      const label = (codes[grade] === 'skl' ? '无瑕疵的' : prefix) + name;
+      assert.equal(definition.name, label); assert.equal(definition.grade, grade);
+      return { code: codes[grade], name: label, rank: `${grade + 1}/5` };
     }));
     assert.equal(new Set(gemRows.map(gem => gem.code)).size, 35);
     assert.equal(new Set(definitions.gems.map(gem => gem.grade)).size, 5);

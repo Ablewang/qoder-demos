@@ -8,6 +8,7 @@ import { createBattle, takeTurn } from '../src/core/combat.js';
 import { economyAction } from '../src/core/economy.js';
 import { HONGYUN_POOL } from '../src/data/economy.js';
 import { DUNGEONS } from '../src/data/world.js';
+import { itemNameColor, ITEM_COLOR_PALETTE } from '../src/data/item-colors.js';
 
 let passed = 0;
 const failures = [];
@@ -61,6 +62,30 @@ test('five named templates preserve official grade stage ranges and red names', 
   assert.deepEqual(HIGH_EQUIPMENT.axe19c.attackRanges.patk, [1647, 3843]);
   assert.deepEqual(HIGH_EQUIPMENT.sword18b.attackRanges.matk, [1768, 2161]);
   assert.equal(QUALITY[4].color, '#ff5454');
+});
+test('robe provenance durability classes and exact historical variant remain verifiable', () => {
+  const it = makeHighEquip('robe17c');
+  assert.equal(it.maxDurability, 320);
+  assert.deepEqual(it.classes, ['wizard', 'psychic', 'venomancer', 'cleric', 'mystic']);
+  assert.equal(it.source[0], 'https://w2i.wanmei.com/mobile/mobilenews/20180815/80718.shtml');
+  for (const element of ['metal', 'wood', 'water', 'fire', 'earth']) assert.equal(it.base[`${element}Def`], 2515);
+  const old = { ...structuredClone(it), classes: null, base: { def: 349, mdef: 2515 }, durability: 100, maxDurability: 100,
+    source: ['https://w2i.wanmei.com/mobile/mobilebroad/20221114/85515.shtml'],
+    adaptation: '五行防御各2515合并为mdef=2515，不是五项总和；4孔和100耐久为本作适配，原图耐久未核。生命上限增幅按本作属性模型计算。未核特殊效果，无额外战斗效果。' };
+  assert.ok(matchesHighEquip(old));
+  const g = fixture(); g.p.bag = [it, old]; old.uid += 'old'; validateSave(g.state);
+  for (const mutate of [x => x.base.def++, x => x.source[0] = 'wrong', x => x.maxDurability = 320]) {
+    const forged = structuredClone(old); mutate(forged); assert.equal(matchesHighEquip(forged), false);
+  }
+});
+test('item name colors require exact evidence and never depend on quality grade or stars', () => {
+  for (const q of [0, 1, 2, 3, 4]) {
+    assert.equal(itemNameColor({ name: '★凤兮法冠', q, grade: 11, stars: 1 }), 'green');
+    assert.equal(itemNameColor({ name: '★未知装备', q, grade: 19, stars: 3, nameColor: 'red' }), 'unknown');
+    assert.equal(itemNameColor({ name: '幻仙石', q }), 'purple');
+  }
+  for (const it of Object.values(HIGH_EQUIPMENT)) assert.equal(itemNameColor(it), 'red');
+  assert.deepEqual(Object.keys(ITEM_COLOR_PALETTE), ['unknown', 'white', 'blue', 'purple', 'gold', 'green', 'orange', 'red']);
 });
 test('craft deducts exact local recipe and delivers a fixed 105-level instance', () => {
   for (const [id, recipe] of Object.entries(HIGH_RECIPES).filter(([, x]) => !x.from)) {

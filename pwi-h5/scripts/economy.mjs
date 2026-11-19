@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import { ITEMS, makeEquip } from '../src/data/items.js';
 import { CLASSES } from '../src/data/classes.js';
-import { matchesGearSpec, allowedWeaponClasses } from '../src/data/gear-specs.js';
 import { validateEquipment } from '../src/core/equipment.js';
+import { NAMED_EQUIPMENT, matchesNamedEquip } from '../src/data/named-equipment.js';
 import { HIGH_EQUIPMENT, matchesHighEquip } from '../src/data/high-equipment.js';
 import { createPlayer, stats } from '../src/core/model.js';
 import { createBattle, takeTurn } from '../src/core/combat.js';
@@ -72,18 +72,19 @@ function delivered(game, before, definitions, actual, multiplier = 1) {
       for (const entry of equipment) {
         if (reward.templateId) {
           assert.equal(entry.equipment.templateId, reward.templateId);
-          assert.ok(matchesHighEquip(entry.equipment));
-          assert.equal(entry.equipment.lv, 105);
+          assert.ok(Object.hasOwn(HIGH_EQUIPMENT, reward.templateId) || Object.hasOwn(NAMED_EQUIPMENT, reward.templateId));
+          if (Object.hasOwn(HIGH_EQUIPMENT, reward.templateId)) {
+            assert.ok(matchesHighEquip(entry.equipment)); assert.equal(entry.equipment.lv, 105);
+          } else assert.ok(matchesNamedEquip(entry.equipment));
         } else {
-          assert.equal(entry.equipment.q, reward.quality);
-          assert.equal(entry.equipment.lv, game.p.lv);
+          assert.equal(entry.equipment.q, 0, 'q is legacy bookkeeping, not prize stat quality');
           assert.equal(entry.equipment.slot, reward.slot);
-          assert.ok(matchesGearSpec(entry.equipment), 'Economy must deliver canonical new-rule equipment');
+          assert.ok(Object.hasOwn(NAMED_EQUIPMENT, entry.equipment.templateId), 'Economy must deliver a known finite named template');
+          assert.ok(matchesNamedEquip(entry.equipment));
+          assert.ok(entry.equipment.lv <= game.p.lv); assert.ok(entry.equipment.classes.includes(game.p.cls));
           validateEquipment(entry.equipment);
           assert.equal(entry.equipment.refine, 0); assert.equal(entry.equipment.rerolls, 0); assert.equal(entry.equipment.upgrades, 0);
-          const cap = entry.equipment.slot === 'weapon' ? 2 : ['head', 'body', 'legs', 'feet', 'wrist'].includes(entry.equipment.slot) ? 4 : 0;
-          assert.equal(entry.equipment.socketLimit, cap);
-          assert.deepEqual(entry.equipment.sockets, Array(cap && reward.quality >= 2 ? 1 : 0).fill(null));
+          assert.deepEqual(entry.equipment.sockets, Array(NAMED_EQUIPMENT[entry.equipment.templateId].initialSockets).fill(null));
         }
         assert.ok(game.p.bag.some((owned) => owned.uid === entry.equipment.uid));
       }
@@ -176,8 +177,11 @@ if (!process.exitCode) {
           rewardTypes.add(reward.type);
           if (reward.type === 'item') assert.ok(Object.hasOwn(ITEMS, reward.itemId));
           if (reward.type === 'equip') {
-            if (reward.templateId) assert.ok(Object.hasOwn(HIGH_EQUIPMENT, reward.templateId));
-            else assert.equal(reward.quality, entry.rarity === 'legendary' ? 3 : 2);
+            if (reward.templateId) assert.ok(Object.hasOwn(HIGH_EQUIPMENT, reward.templateId) || Object.hasOwn(NAMED_EQUIPMENT, reward.templateId));
+            else {
+              assert.ok(['weapon', 'body'].includes(reward.slot));
+              assert.ok([2, 3].includes(reward.quality), 'pool tier remains metadata only');
+            }
           }
         }
       }
@@ -212,7 +216,9 @@ if (!process.exitCode) {
       }
       const result = act(g, 'treasure.draw', { count: 1 });
       assert.equal(result.results[0].guaranteed, true); assert.equal(result.results[0].rarity, 'legendary');
-      assert.equal(result.results[0].rewards[0].equipment.q, 3); assert.equal(result.pity, 0);
+      const equipment = result.results[0].rewards[0].equipment;
+      assert.equal(equipment.q, 0); assert.ok(Object.hasOwn(NAMED_EQUIPMENT, equipment.templateId)); assert.ok(matchesNamedEquip(equipment));
+      assert.equal(result.pity, 0);
     });
     assert.equal(g.p.events.hongyun.draws, 50); assert.equal(g.p.items.treasureKey, 950);
     g.p.events.hongyun.pity = 20;
@@ -256,15 +262,15 @@ if (!process.exitCode) {
       assert.equal(g.p.events[definition.counter], 10); assert.equal(g.p.drawHistory.length, 10);
     }
   });
-  test('all ten classes receive a real same-level class-compatible legendary weapon', () => {
+  test('all ten classes receive a known finite class-compatible legendary-tier weapon prize', () => {
     assert.equal(Object.keys(CLASSES).length, 10);
     for (const cls of Object.keys(CLASSES)) {
       const g = fixture(cls, 30); g.p.events.hongyun.pity = 49;
       const result = random(0, () => act(g, 'treasure.draw', { count: 1 }));
       const equipment = result.results[0].rewards[0].equipment;
-      assert.equal(equipment.q, 3); assert.equal(equipment.lv, 30);
-      assert.equal(equipment.cls, cls); assert.equal(equipment.slot, 'weapon');
-      assert.ok(matchesGearSpec(equipment)); assert.ok(allowedWeaponClasses(equipment.weaponType).includes(cls));
+      assert.equal(equipment.q, 0); assert.ok(equipment.lv <= 30);
+      assert.equal(equipment.slot, 'weapon'); assert.ok(equipment.classes.includes(cls));
+      assert.ok(Object.hasOwn(NAMED_EQUIPMENT, equipment.templateId)); assert.ok(matchesNamedEquip(equipment));
       assert.equal(equipment.weaponType, CLASSES[cls].weapon);
       assert.ok(Object.values(equipment.base).every((amount) => Number.isFinite(amount) && amount >= 0));
       assert.deepEqual(g.p.bag.at(-1), equipment);
@@ -368,7 +374,8 @@ if (!process.exitCode) {
     g.p.bag.pop(); unchanged(g, () => act(g, 'treasure.draw', { count: 10 }), /背包/);
     const guaranteed = random(0, () => act(g, 'treasure.draw', { count: 1 }));
     assert.equal(guaranteed.results[0].guaranteed, true); assert.equal(g.p.bag.length, ECONOMY_LIMITS.bag);
-    assert.equal(g.p.bag.at(-1).q, 3); assert.equal(g.p.events.hongyun.pity, 0);
+    assert.equal(g.p.bag.at(-1).q, 0); assert.ok(Object.hasOwn(NAMED_EQUIPMENT, g.p.bag.at(-1).templateId));
+    assert.ok(matchesNamedEquip(g.p.bag.at(-1))); assert.equal(g.p.events.hongyun.pity, 0);
   });
   test('daily welfare and gold exchange 99+1 reach cap; next day resets only contract daily fields', () => {
     const noon = new OriginalDate(2026, 10, 17, 12).getTime(); let g;

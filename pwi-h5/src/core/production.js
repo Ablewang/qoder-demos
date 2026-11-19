@@ -1,6 +1,6 @@
 import { ZONES } from '../data/world.js';
-import { ITEMS, makeEquip } from '../data/items.js';
-import { gearSpec, matchesGearSpec } from '../data/gear-specs.js';
+import { ITEMS, makeNamedEquip } from '../data/items.js';
+import { namedSpec, matchesNamedEquip } from '../data/named-equipment.js';
 import {
   PRODUCTION_MATERIALS, PRODUCTION_SKILLS, PRODUCTION_LEVELS, PRODUCTION_ADAPTATION,
   MACHINE_RECIPE, QIANKUN_TRANSFER_COSTS, productionState, getProductionRecipes,
@@ -36,9 +36,7 @@ function commitPayment(p, gold, materials) {
 }
 function matchesPredecessor(it, recipe) {
   const from = recipe.from;
-  return Boolean(from && matchesGearSpec(it) && !own(it, 'templateId') && it.q === 3
-    && it.slot === from.slot && it.weaponType === from.weaponType && it.armorType === from.armorType
-    && from.alternatives.some((entry) => it.series === entry.series && it.lv === entry.lv));
+  return Boolean(Array.isArray(from) && matchesNamedEquip(it) && from.includes(it.templateId));
 }
 function ownedPredecessor(p, recipe, uid) {
   if (typeof uid !== 'string' || !uid) throw new Error('请选择行囊中匹配的前阶装备UID。');
@@ -48,7 +46,7 @@ function ownedPredecessor(p, recipe, uid) {
   if (worn.length) throw new Error('不能消耗穿戴中的装备，请先卸下至行囊。');
   const it = packed[0];
   validateEquipment(it);
-  if (!matchesPredecessor(it, recipe)) throw new Error('前阶装备必须是同武器/护甲类型、匹配系列等级的真实配方装备。');
+  if (!matchesPredecessor(it, recipe)) throw new Error('前阶装备必须匹配配方的精确templateId，系列或等级相同不能替代。');
   if (it.locked) throw new Error('锁定装备不能作为制造前身。');
   return it;
 }
@@ -57,12 +55,6 @@ function inheritanceCost(it) {
   return QIANKUN_TRANSFER_COSTS[it.refine]
     + it.sockets.length * 2
     + it.sockets.filter(Boolean).reduce((total, id) => total + gemRequiredGrade(id, ITEMS[id]), 0);
-}
-function optionsFor(recipe) {
-  return { series: recipe.series,
-    ...(recipe.weaponType ? { weaponType: recipe.weaponType } : {}),
-    ...(recipe.armorType ? { armorType: recipe.armorType } : {}),
-  };
 }
 function missingPayment(p, gold, materials) {
   return { gold: Math.max(0, gold - (p.gold || 0)), materials: Object.fromEntries(
@@ -96,7 +88,7 @@ export function getProductionCatalog(p) {
       skillExpCap: state[recipe.skill].exp >= 1e7,
     };
     return { ...recipe, costs: { gold: recipe.gold, materials: { ...recipe.materials } }, candidates,
-      previews: recipe.qualities.map((q) => gearSpec(recipe.slot, recipe.lv, q, p.cls, optionsFor(recipe))),
+      previews: [namedSpec(recipe.templateId)],
       missing, available: !missing.gold && !Object.keys(missing.materials).length
         && !missing.playerLv && !missing.skillLevel && !missing.predecessor && !missing.bagSpace && !missing.city && !missing.skillExpCap,
       defaultInherit: false,
@@ -161,28 +153,29 @@ export function productionAction(game, action, params = {}) {
     const predecessor = recipe.from ? ownedPredecessor(p, recipe, params.uid) : null;
     if (!predecessor && p.bag.length >= BAG_LIMIT) throw new Error('背包已满。');
     const inherit = params.inherit === true;
-    const target = gearSpec(recipe.slot, recipe.lv, recipe.series === 'ordinary' ? 1 : 3, p.cls, optionsFor(recipe));
+    if (inherit && !recipe.inheritance) throw new Error('该配方没有已核实的培养继承规则。');
+    const target = namedSpec(recipe.templateId);
     const maxHoles = target.slot === 'weapon' ? 2 : ['head', 'body', 'legs', 'feet', 'wrist'].includes(target.slot) ? 4 : 0;
     if (inherit && (predecessor.sockets.length > maxHoles || predecessor.durability > 100)) throw new Error('前身孔位或耐久无法继承至目标。');
+    if (inherit && (target.grade === null || predecessor.grade === null)) throw new Error('来源未载品阶，不能继承精炼或宝石。');
     if (inherit && predecessor.sockets.filter(Boolean).some((id) => gemRequiredGrade(id, ITEMS[id]) > target.grade)) throw new Error('继承宝石的所需品阶高于目标装备。');
     const materials = { ...recipe.materials };
     const qiankun = inherit ? inheritanceCost(predecessor) : 0;
     if (qiankun) materials.qiankun = (materials.qiankun || 0) + qiankun;
     checkPayment(p, recipe.gold, materials);
-    const q = recipe.series === 'ordinary' ? (Math.random() < 0.1 ? 2 : 1) : 3;
-    const equipment = makeEquip(recipe.slot, recipe.lv, q, p.cls, { ...optionsFor(recipe), origin: `production:${recipe.id}` });
+    const equipment = makeNamedEquip(recipe.templateId, { origin: `production:${recipe.id}` });
     if (predecessor) {
       equipment.uid = predecessor.uid;
       equipment.bound = predecessor.bound;
       if (inherit) for (const key of ['refine', 'sockets', 'durability']) equipment[key] = structuredClone(predecessor[key]);
     }
     validateEquipment(equipment);
-    if (!matchesGearSpec(equipment)) throw new Error('生成装备与生产规格不符。');
+    if (!matchesNamedEquip(equipment) || equipment.templateId !== recipe.templateId) throw new Error('生成装备与具名生产模板不符。');
     if (!predecessor && [...p.bag, ...Object.values(p.equipment || {})].some((it) => it?.uid === equipment.uid)) throw new Error('新装备UID冲突，请重试。');
     const index = predecessor ? p.bag.indexOf(predecessor) : p.bag.length;
-    result = { action, recipeId: recipe.id, uid: equipment.uid, equipment: structuredClone(equipment),
+    result = { action, recipeId: recipe.id, templateId: recipe.templateId, uid: equipment.uid, equipment: structuredClone(equipment),
       gold: recipe.gold, consumed: materials, consumedUid: predecessor?.uid ?? null, received: {}, inherit, inheritanceQiankun: qiankun,
-      message: `制造获得${equipment.name}；材料、金币与品质为本作适配。${predecessor ? inherit
+      message: `制造获得${equipment.name}；${recipe.adaptation}${predecessor ? inherit
         ? `前身已消耗，培养继承消耗${qiankun}乾坤石（含本作孔/宝石适配费用）。`
         : '前身已消耗；未选择继承，精炼与宝石丢失，新孔位重新生成，不返还宝石。' : ''}` };
     commitPayment(p, recipe.gold, materials);

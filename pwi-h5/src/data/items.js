@@ -2,6 +2,8 @@ import { GEAR_RULES, gearSpec, gearAddonSpec } from './gear-specs.js';
 import { CLASSES } from './classes.js';
 import { HIGH_EQUIPMENT } from './high-equipment.js';
 import { PRODUCTION_MATERIALS } from './production.js';
+import { NAMED_EQUIPMENT, namedSpec, matchesNamedEquip, selectEquipmentTemplate, equipmentForShop } from './named-equipment.js';
+export { equipmentForShop } from './named-equipment.js';
 
 export const SLOTS = {
   weapon: '武器', head: '头盔', body: '上衣', legs: '护腿', feet: '鞋子', wrist: '护腕',
@@ -26,6 +28,7 @@ export const STAT_NAMES = {
   metalRes: '金伤减免比例', woodRes: '木伤减免比例', waterRes: '水伤减免比例', fireRes: '火伤减免比例', earthRes: '土伤减免比例',
   metalDef: '金系防御值', woodDef: '木系防御值', waterDef: '水系防御值', fireDef: '火系防御值', earthDef: '土系防御值',
   hpPct: '生命上限增幅', huntLevel: '猎魔等级', spirit: '气魄', creation: '创世等级',
+  evasionRating: '躲闪度', physicalReduction: '物理伤害减免',
 };
 
 export const EQUIPMENT_DEFAULTS = {
@@ -106,6 +109,32 @@ export function makeEquip(slot, lv, q, cls, options = {}) {
   };
 }
 
+export function makeNamedEquip(templateId, options = {}) {
+  if (!options || typeof options !== 'object' || Array.isArray(options)
+    || Object.keys(options).some((key) => key !== 'origin')
+    || (options.origin !== undefined && (typeof options.origin !== 'string' || !options.origin || options.origin.length > 80))) throw new Error('具名装备创建选项无效。');
+  const spec = namedSpec(templateId);
+  if (spec.referenceOnly) throw new Error('该来源类型仅供参考，不能创建实际装备。');
+  const affixRolls = spec.affixes.filter((effect) => effect.supported).map((effect) => {
+    const [min, max] = effect.range;
+    if (min === max) return min;
+    const unit = 10 ** effect.precision;
+    return (Math.round(min * unit) + Math.floor(Math.random() * (Math.round(max * unit) - Math.round(min * unit) + 1))) / unit;
+  });
+  const addons = {};
+  spec.affixes.filter((effect) => effect.supported).forEach((effect, index) => {
+    addons[effect.stat] = +((addons[effect.stat] || 0) + affixRolls[index]).toFixed(6);
+  });
+  return { ...structuredClone(EQUIPMENT_DEFAULTS), ...spec, uid: uid(), refine: 0,
+    durability: spec.maxDurability, sockets: Array(spec.initialSockets).fill(null), affixRolls, addons,
+    ...(options.origin === undefined ? {} : { origin: options.origin }) };
+}
+
+export function makeEquipmentFor(slot, lv, q, cls, options = {}) {
+  if (!Number.isInteger(q) || q < 0 || q > 3) throw new Error('装备旧品质记账参数必须为0—3。');
+  return makeNamedEquip(selectEquipmentTemplate({ slot, lv, cls, channel: options?.origin === 'starter' ? 'starter' : options?.origin || 'loot' }), options);
+}
+
 // Known fixed template types, not equipment-name inference: sword18b is a 法剑
 // (magic weapon), NOT a physical 刀剑. Keep immutable template/save data untouched.
 const FIXED_WEAPON_TYPES = Object.freeze({ axe19a: 'axe', axe19b: 'axe', axe19c: 'axe', sword18b: 'wand' });
@@ -113,6 +142,9 @@ export function equippedWeaponType(p) {
   const it = p.equipment?.weapon;
   if (!it) return 'unarmed';
   if (it.slot !== 'weapon') return null;
+  if (it.ruleVersion === 2 || Object.hasOwn(NAMED_EQUIPMENT, it.templateId)) {
+    return matchesNamedEquip(it) && NAMED_EQUIPMENT[it.templateId].slot === 'weapon' ? NAMED_EQUIPMENT[it.templateId].weaponType : null;
+  }
   if (it.templateId) return HIGH_EQUIPMENT[it.templateId]?.slot === 'weapon' ? FIXED_WEAPON_TYPES[it.templateId] || null : null;
   if (Object.hasOwn(it, 'weaponType')) return Object.hasOwn(GEAR_RULES.weapons, it.weaponType) ? it.weaponType : null;
   // Old weapons encoded their default type by generating class, not their name.
@@ -162,6 +194,10 @@ function legacyRefinedBase(it, level) {
 export function refineGain(it, level = it?.refine ?? 0) {
   if (!it) return {};
   if (!Number.isInteger(level) || level < 0 || level > REFINE_MAX) throw new Error('精炼等级必须为0—12的整数。');
+  if (it.ruleVersion === 2 && it.grade === null) {
+    if (level > 0) throw new Error('来源未载品阶，不能精炼。');
+    return {};
+  }
   const out = {};
   if (it.ruleVersion !== 1 || it.templateId) {
     const refined = legacyRefinedBase(it, level);
@@ -192,7 +228,8 @@ export function refineGain(it, level = it?.refine ?? 0) {
 export function equipStats(it) {
   if (!it) return {};
   const ordinary = it.ruleVersion === 1 && !it.templateId;
-  const out = ordinary ? { ...(it.base || {}) } : legacyRefinedBase(it, it.refine || 0);
+  const out = it.ruleVersion === 2 && it.grade === null ? { ...(it.base || {}) }
+    : ordinary ? { ...(it.base || {}) } : legacyRefinedBase(it, it.refine || 0);
   if (ordinary) {
     for (const [k, v] of Object.entries(refineGain(it))) out[k] = +((out[k] || 0) + v).toFixed(3);
   }
@@ -242,6 +279,7 @@ export const ITEMS = {
 Object.assign(ITEMS, PRODUCTION_MATERIALS);
 
 export function refinePlan(it, aid = '') {
+  if (it?.ruleVersion === 2 && it.grade === null) throw new Error('来源未载品阶，不能精炼。');
   if (!it || it.refine >= REFINE_MAX) throw new Error('装备不存在或精炼已满。');
   if (aid && !['tiangang', 'disha', 'qiankun', 'dragonOrb1'].includes(aid)) throw new Error('精炼辅料无效。');
   if (aid === 'dragonOrb1' && it.refine !== 0) throw new Error('一星龙珠只能保证下一次+1，不能用于+2及以上。');
@@ -284,12 +322,6 @@ export function shopList(type, playerLv) {
     ...Object.keys(ITEMS).filter((id) => ITEMS[id].type === 'gem' && ITEMS[id].lv <= playerLv + 5)];
 }
 
-// 装备商店：当前等级段白装/蓝装
 export function equipShop(cls, playerLv) {
-  const lv = Math.max(1, Math.floor(playerLv / 5) * 5 || 1);
-  const slots = ['weapon', 'head', 'body', 'legs', 'feet', 'wrist', 'cape', 'neck', 'waist', 'ring1'];
-  return slots.map((s) => {
-    const spec = gearSpec(s, lv, 0, cls);
-    return { ...spec, price: Math.round((20 + lv * lv * 0.8) * 2.2) };
-  });
+  return equipmentForShop({ cls, lv: playerLv });
 }

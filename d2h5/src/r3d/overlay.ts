@@ -1,5 +1,6 @@
 import type { AreaState, Effect, GameState, Monster, Point, Quality } from '../types';
 import { artUrl } from '../art';
+import { itemLabel } from '../items';
 
 export const QUALITY: Record<Quality, string> = {
   low: '#b5aca1', normal: '#eee8d9', superior: '#eee8d9', magic: '#7c9dff',
@@ -120,7 +121,7 @@ export class Overlay {
     for (const drop of area.drops) {
       if (!state.showLoot && Math.hypot(drop.x - player.x, drop.y - player.y) >= 2.8) continue;
       const p = project(drop, 0.4);
-      this.label(p.x, p.y, drop.item.name || drop.item.code, QUALITY[drop.item.quality], hover === drop.item.uid);
+      this.label(p.x, p.y, itemLabel(drop.item), QUALITY[drop.item.quality], hover === drop.item.uid);
     }
     if (player.corpse && (player.corpse.areaId === area.def.id || area.regions?.some(r => r.def.id === player.corpse!.areaId))) {
       const p = project(player.corpse, 0.4);

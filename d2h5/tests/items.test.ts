@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { readFileSync } from 'node:fs';
 import { getClass, num, rawRows, text } from '../src/catalog';
 import type { ClassId, Item, Monster, Player, Rng } from '../src/types';
 import { deriveStats, skillLevel } from '../src/rules';
 import {
   BASE_ITEMS, ITEM_LIMITATIONS, RUNES, GEMS, RUNEWORDS, affixLevel, allowedSockets, itemLabel,
-  consumePotion, createItem, createStartingItems, describeItem, equipItem, fitsItem,
+  consumePotion, consumeInventoryPotion, isUsableItem, itemName, runewordName,
+  createItem, createStartingItems, describeItem, equipItem, fitsItem,
   getBase, insertSocket, itemHasType, placeItem, qualityDenominator, effectiveMagicFind,
   repairCost, repairItems, rollLoot, transmute, unequipItem, vendorStock,
 } from '../src/items';
@@ -23,6 +25,19 @@ test('ordinary and event keys have a self-contained key icon, not the sword fall
   assert.equal(itemArtKey('r33'), 'rune');
   assert.equal(itemArtKey('crs'), 'sword');
 });
+
+const localizedNames = JSON.parse(readFileSync(new URL('../src/data/item-zhCN.json', import.meta.url), 'utf8')) as Record<string, string>;
+function assertDisplayOnly(item: Item, expected: string): void {
+  const before = structuredClone(item), persisted = JSON.stringify(item);
+  assert.equal(itemLabel(item), expected);
+  assert.equal(describeItem(item)[0], expected);
+  assert.deepEqual(item, before, 'display must not change UID, raw identity, mods or other item fields');
+  assert.equal(JSON.stringify(item), persisted, 'saved representation must remain byte-for-byte identical');
+  const loaded = JSON.parse(persisted) as Item;
+  assert.equal(itemLabel(loaded), expected);
+  assert.equal(describeItem(loaded)[0], expected);
+  assert.equal(JSON.stringify(loaded), persisted);
+}
 
 const fixed: Rng = () => .5;
 function seeded(seed: number): Rng { return () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; }; }
@@ -54,7 +69,7 @@ test('all five skulls have a dedicated self-contained skull icon instead of a ru
 test('raw base catalogs contain real enabled equipment, all 33 runes, Chinese principal names', () => {
   assert.ok(BASE_ITEMS.length > 600);
   assert.equal(RUNES.length, 33); assert.deepEqual(RUNES.map(r => r.number), Array.from({ length: 33 }, (_, i) => i + 1));
-  assert.equal(getBase('sst')!.name, '短棍'); assert.equal(getBase('gld')!.name, '金币'); assert.equal(getBase('xxx'), undefined);
+  assert.equal(getBase('sst')!.name, '短杖'); assert.equal(getBase('gld')!.name, '金币'); assert.equal(getBase('xxx'), undefined);
   for (const base of BASE_ITEMS) { assert.ok(base.width > 0 && base.height > 0); assert.notEqual(num(base.raw, 'enabled', 1), 0); }
   assert.throws(() => createItem('not-a-base', 1, fixed), /未知/);
   assert.ok(ITEM_LIMITATIONS.length > 0);
@@ -393,6 +408,10 @@ test('all 383 eligible offline unique definitions can be selected, including all
     assert.equal(item.quality, 'unique', text(row, 'index'));
     assert.equal(item.name, text(row, 'index'));
     assert.equal(item.mods['internal:namedRow'], num(row, 'lineNumber', -1));
+    assertDisplayOnly(item, `未鉴定的${localizedNames[text(getBase(code)!.raw, 'namestr')]}`);
+    item.identified = true;
+    assertDisplayOnly(item, localizedNames[text(row, 'index')]);
+    assert.equal(item.name, text(row, 'index'), 'localization must retain the exact English named identity');
   }
 });
 
@@ -491,6 +510,170 @@ for (const difficulty of ['normal', 'nightmare', 'hell'] as const) test(`conveni
   assert.equal(new Set(stock.map(item => item.uid)).size, stock.length);
   assert.ok(!stock.some(item => item.code === 'box'));
   assert.equal(RUNEWORDS.length, 55);
+});
+
+test('all 635 runtime bases and legacy English base saves display exact namestr Chinese', () => {
+  assert.equal(BASE_ITEMS.length, 635);
+  for (const base of BASE_ITEMS) {
+    const key = text(base.raw, 'namestr');
+    assert.ok(Object.hasOwn(localizedNames, key), `${base.code}: ${key}`);
+    assert.equal(base.name, localizedNames[key]);
+    assert.match(base.name, /[\u4e00-\u9fff]/, base.code);
+    assert.doesNotMatch(base.name, /未收录译名/, base.code);
+    const saved = createItem(base.code, 99, fixed);
+    saved.name = base.english;
+    const label = base.code === 'gld' ? `${saved.quantity} ${base.name}`
+      : /^r\d{2}$/.test(base.code) ? `${Number(base.code.slice(1))}号 · ${base.name}` : base.name;
+    assertDisplayOnly(saved, label);
+  }
+});
+
+test('known Blizzard names are pinned rather than guessed or hand-translated', () => {
+  for (const [key, expected] of [
+    ['sst', '短杖'], ['mpi', '军镐'], ['wnd', '魔杖'], ['qui', '内衬甲'],
+    ['glb', '无瑕的蓝宝石'], ['gpv', '完美的紫宝石'], ['Azurewrath', '碧蓝怒火'],
+    ['The Gnasher', '血肉撕咬'], ['The Stone of Jordan', '乔丹之石'],
+    ["Aldur's Watchtower", '艾尔多的警戒塔'], ["Civerb's Ward", '希弗伯的防护'],
+    ['Cruel', '暴虐'], ['of the Magus', '术士之'],
+    ['Runeword14', '荣耀之链'], ['Runeword47', '悔恨'], ['Runeword99', '理智之声'],
+  ]) assert.equal(itemName(key), expected, key);
+  for (const [name, expected] of [
+    ['Chains of Honor', '荣耀之链'], ['Bound by Duty', '荣耀之链'], ['Runeword14', '荣耀之链'],
+    ['Grief', '悔恨'], ['Widowmaker', '悔恨'], ['Runeword47', '悔恨'],
+    ['Voice of Reason', '理智之声'], ['Winter', '理智之声'], ['Runeword99', '理智之声'],
+    ['Infinity', '无限'], ['Runeword60', '无限'],
+  ]) assert.equal(runewordName(name), expected, name);
+});
+
+test('every set item displays its exact localized identity without changing stored English', () => {
+  const definitions = rawRows('SetItems').filter(row => text(row, 'index') && text(row, 'item'));
+  assert.equal(definitions.length, 127);
+  for (const row of definitions) {
+    const identity = text(row, 'index'), code = text(row, 'item');
+    const item = createItem(code, 99, fixed, 'set', identity);
+    assert.equal(item.name, identity); assert.equal(item.quality, 'set');
+    assertDisplayOnly(item, `未鉴定的${getBase(code)!.name}`);
+    item.identified = true;
+    assertDisplayOnly(item, localizedNames[identity]);
+    assert.equal(item.name, identity);
+  }
+});
+
+test('old mixed Chinese and English magic saves preserve identities and use suffix-prefix-base order', () => {
+  for (const [code, rawName, expected] of [
+    ['ssd', 'Jagged 短剑 of Strength', '力量之参差短剑'],
+    ['ssd', 'Jagged Short Sword of Strength', '力量之参差短剑'],
+    ['ssd', 'Jagged Short Sword', '参差短剑'],
+    ['ssd', 'Short Sword of Strength', '力量之短剑'],
+    ['mpi', 'Jagged 军用锹 of Strength', '力量之参差军镐'],
+    ['mpi', 'Jagged Military Pick of Strength', '力量之参差军镐'],
+    ['sst', '短棍 of the Apprentice', '习法者之短杖'],
+    ['sst', 'Short Staff of the Apprentice', '习法者之短杖'],
+  ]) {
+    const saved = createItem(code, 99, fixed, 'magic');
+    saved.identified = true; saved.name = rawName;
+    saved.mods.strength = 7; saved.mods['internal:legacy-fixture'] = 99;
+    assertDisplayOnly(saved, expected);
+  }
+});
+
+test('new magic labels across levels 1–99 and many seeds contain only localized affixes and bases', () => {
+  const prefixNames = [...new Set(rawRows('MagicPrefix').map(row => text(row, 'Name')).filter(Boolean))].sort((a, b) => b.length - a.length);
+  const suffixNames = [...new Set(rawRows('MagicSuffix').map(row => text(row, 'Name')).filter(Boolean))].sort((a, b) => b.length - a.length);
+  let withPrefix = 0, withSuffix = 0, withBoth = 0;
+  for (let level = 1; level <= 99; level++) for (let seed = 1; seed <= 12; seed++) {
+    for (const code of ['ssd', 'sst', 'rin', 'amu', 'cm1', 'cm3', 'ob1', 'jew']) {
+      const item = createItem(code, level, seeded(seed * 65537 + level), 'magic'); item.identified = true;
+      const prefix = prefixNames.find(name => item.name.startsWith(name + ' '));
+      const suffix = suffixNames.find(name => item.name.endsWith(' ' + name));
+      if (prefix) withPrefix++; if (suffix) withSuffix++; if (prefix && suffix) withBoth++;
+      const expected = [suffix && localizedNames[suffix], prefix && localizedNames[prefix], getBase(code)!.name].filter(Boolean).join('');
+      const label = itemLabel(item);
+      assert.equal(label, expected, `${code}, ilvl=${level}, seed=${seed}, raw=${item.name}`);
+      assert.match(label, /[\u4e00-\u9fff]/);
+      assert.doesNotMatch(label, /[a-z]|未收录译名/i);
+      assertDisplayOnly(item, expected);
+    }
+  }
+  assert.ok(withPrefix > 0 && withSuffix > 0 && withBoth > 0, 'exercise all affix arrangements');
+});
+
+test('old English rune names including Zod keep their numbered Chinese display and save data', () => {
+  for (const rune of RUNES) {
+    for (const rawName of [getBase(rune.code)!.english, rune.code === 'r33' ? 'Zod' : getBase(rune.code)!.english.replace(/ Rune$/, '')]) {
+      const saved = createItem(rune.code, 1, fixed); saved.name = rawName;
+      assertDisplayOnly(saved, `${rune.number}号 · ${localizedNames[rune.code]}`);
+    }
+  }
+  const zod = createItem('r33', 1, fixed); zod.name = 'Zod';
+  assertDisplayOnly(zod, '33号 · 佐德符文');
+});
+
+test('runeword display and descriptions never mutate English rule identities or persisted player data', () => {
+  const p = player();
+  for (const word of RUNEWORDS) {
+    const item = createItem('sst', 99, fixed);
+    item.name = 'Short Staff'; item.runeword = word.name;
+    item.sockets = word.runes.length; item.socketed = [...word.runes];
+    item.mods['internal:persisted-word'] = 1;
+    p.inventory.push(item); p.stash.push(structuredClone(item)); p.cube.push(structuredClone(item));
+    assert.equal(runewordName(word.name), localizedNames[text(word.raw, 'Name')]);
+    assertDisplayOnly(item, localizedNames[text(word.raw, 'Name')]);
+    assert.equal(item.runeword, word.name); assert.equal(item.name, 'Short Staff');
+  }
+  assert.ok(RUNEWORDS.some(word => word.name === 'Leaf'));
+  const persisted = JSON.stringify(p), loaded = JSON.parse(persisted) as Player;
+  for (const item of [...loaded.inventory, ...loaded.stash, ...loaded.cube]) {
+    assertDisplayOnly(item, runewordName(item.runeword!));
+    assert.doesNotMatch(describeItem(item).slice(0, 3).join(' '), /[a-z]|未收录译名/i);
+  }
+  assert.equal(JSON.stringify(loaded), persisted);
+});
+
+test('inventory potion consumption removes only the exact UID and leaves belt and resources unchanged', () => {
+  for (const classId of ['ama', 'sor', 'nec', 'pal', 'bar', 'dru', 'ass'] as ClassId[]) {
+    for (const code of ['hp1', 'hp5', 'mp1', 'mp5', 'rvs', 'rvl']) {
+      const p = player(classId), first = put(p, code), selected = put(p, code), last = put(p, code);
+      p.equipment.belt = createItem('hbl', 1, fixed);
+      p.belt[0] = createItem(code, 1, fixed); p.belt[4] = createItem('hp2', 1, fixed);
+      const charm = put(p, 'cm1'); charm.identified = true; charm.mods = { life: 20.5, mana: 25.5 };
+      p.stash.push(createItem(code, 1, fixed)); p.cube.push(createItem(code, 1, fixed));
+      const before = structuredClone(p), beltPlayer = structuredClone(p);
+      beltPlayer.belt[0] = structuredClone(selected);
+      const expected = consumePotion(beltPlayer, 0), result = consumeInventoryPotion(p, selected.uid);
+      assert.equal(result.ok, true); assert.deepEqual(result, expected, `${classId}: ${code}`);
+      assert.deepEqual(p, { ...before, inventory: before.inventory.filter(item => item.uid !== selected.uid) });
+      assert.deepEqual(p.inventory.map(item => item.uid), [first.uid, last.uid, charm.uid]);
+      assert.deepEqual(selected, before.inventory[1]);
+      const after = structuredClone(p);
+      assert.equal(consumeInventoryPotion(p, selected.uid).ok, false, 'the same UID cannot be consumed twice');
+      assert.deepEqual(p, after);
+    }
+  }
+});
+
+test('usable-item boundaries do not consume scrolls, books, unimplemented potions or unknown inventory UIDs', () => {
+  const usable = ['hp1', 'hp2', 'hp3', 'hp4', 'hp5', 'mp1', 'mp2', 'mp3', 'mp4', 'mp5', 'rvs', 'rvl', 'tsc', 'isc', 'tbk', 'ibk'];
+  for (const base of BASE_ITEMS) assert.equal(isUsableItem(createItem(base.code, 1, fixed)), usable.includes(base.code), base.code);
+  const p = player();
+  for (const code of ['tsc', 'isc', 'tbk', 'ibk', 'yps', 'wms', 'vps', 'r33', 'gpb', 'pk1', 'box', 'ssd']) {
+    const item = put(p, code), before = structuredClone(p);
+    assert.deepEqual(consumeInventoryPotion(p, item.uid), { ok: false, message: '此药水状态效果尚未实现', life: 0, mana: 0, duration: 0 });
+    assert.deepEqual(p, before);
+  }
+  for (const code of ['hp0', 'hp6', 'mp6', 'rvx', 'hp1extra', 'HP1', 'unknown']) {
+    const item = { ...createItem('hp1', 1, fixed), code }; p.inventory.push(item);
+    assert.equal(isUsableItem(item), false, code);
+    const before = structuredClone(p);
+    assert.equal(consumeInventoryPotion(p, item.uid).ok, false); assert.deepEqual(p, before);
+  }
+  const beltPotion = createItem('hp1', 1, fixed), storedPotion = createItem('hp1', 1, fixed);
+  p.belt[0] = beltPotion; p.stash.push(storedPotion); p.cube.push(createItem('hp1', 1, fixed));
+  for (const uid of ['', 'unknown-uid', beltPotion.uid, storedPotion.uid, p.cube[0].uid]) {
+    const before = structuredClone(p), result = consumeInventoryPotion(p, uid);
+    assert.equal(result.ok, false); assert.deepEqual([result.life, result.mana, result.duration], [0, 0, 0]);
+    assert.deepEqual(p, before);
+  }
 });
 
 test('vendor excludes quest cube and repair is transactional, excludes ethereal', () => {

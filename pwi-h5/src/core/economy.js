@@ -1,4 +1,5 @@
-import { ITEMS, SLOTS, makeEquip, makeHighEquip } from '../data/items.js';
+import { ITEMS, SLOTS, makeEquipmentFor, makeNamedEquip, makeHighEquip } from '../data/items.js';
+import { NAMED_EQUIPMENT } from '../data/named-equipment.js';
 import { HIGH_EQUIPMENT } from '../data/high-equipment.js';
 import { CLASSES } from '../data/classes.js';
 import {
@@ -101,7 +102,8 @@ function checkRewards(rewards) {
       if (!cosmeticById(reward.cosmeticId) || reward.quantity !== 1) throw new Error('外观奖励配置无效。');
     } else if (reward.type === 'equip') {
       if (own(reward, 'templateId')) {
-        if (!own(HIGH_EQUIPMENT, reward.templateId) || reward.quantity !== 1
+        if ((!own(HIGH_EQUIPMENT, reward.templateId) && (!own(NAMED_EQUIPMENT, reward.templateId)
+          || NAMED_EQUIPMENT[reward.templateId].referenceOnly || !['ordinary', 'local-tutorial'].includes(NAMED_EQUIPMENT[reward.templateId].series))) || reward.quantity !== 1
           || Object.keys(reward).some((key) => !['type', 'templateId', 'quantity'].includes(key))) throw new Error('具名装备奖励配置无效。');
       } else {
         if (!own(SLOTS, reward.slot) || reward.slot === 'ring2' || reward.level !== 'player') throw new Error('装备奖励配置无效。');
@@ -149,7 +151,8 @@ function grant(p, rewards, multiplier = 1, allowDuplicate = true) {
       delivered.push({ ...reward, quantity, name: ITEMS[reward.itemId].name });
     } else if (reward.type === 'equip') {
       for (let i = 0; i < quantity; i++) {
-        const equipment = reward.templateId ? makeHighEquip(reward.templateId) : makeEquip(reward.slot, p.lv, reward.quality, p.cls);
+        const equipment = own(NAMED_EQUIPMENT, reward.templateId) ? makeNamedEquip(reward.templateId, { origin: 'event' })
+          : reward.templateId ? makeHighEquip(reward.templateId) : makeEquipmentFor(reward.slot, p.lv, reward.quality, p.cls, { origin: 'event' });
         p.bag.push(equipment);
         delivered.push({ type: 'equip', quantity: 1, equipment: structuredClone(equipment), name: equipment.name });
       }
@@ -212,7 +215,7 @@ function draw(p, source, poolId, pool, count) {
     }
     const time = new Date().toISOString();
     const result = { id: `${poolId}-${sequence}`, source, poolId, sequence, time,
-      prizeId: entry.id, name: entry.name, rarity: entry.rarity, guaranteed,
+      prizeId: entry.id, name: rewards.length === 1 && rewards[0].type === 'equip' ? rewards[0].name : entry.name, rarity: entry.rarity, guaranteed,
       pityBefore, pityAfter: isHongyun ? p.events.hongyun.pity : null, rewards };
     appendHistory(p, result); results.push(result);
   }

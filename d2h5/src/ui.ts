@@ -1,7 +1,7 @@
 import type { Action, ClassId, Control, Dispatch, GameState, Item, Panel, Player, Point, SkillDef, Slot, StatKey, WorldObject } from './types';
 import { CLASSES, SKILLS, EXPERIENCE, getClass, getSkill } from './catalog';
 import { skillLevel, skillEffect } from './rules';
-import { getBase, itemLabel, describeItem, RUNES, GEMS, RUNEWORDS } from './items';
+import { getBase, isUsableItem, itemLabel, describeItem, runewordName, RUNES, GEMS, RUNEWORDS, INVENTORY_WIDTH, INVENTORY_HEIGHT, fitsItem } from './items';
 import { AREAS, QUESTS, NPCS, hasLineOfSight, questKey } from './world';
 import type { Renderer } from './renderer3d';
 import { monsterSpec } from './r3d/rigs';
@@ -19,7 +19,7 @@ function el<K extends keyof HTMLElementTagNameMap>(tag: K, className = '', text?
   const node = document.createElement(tag); if (className) node.className = className;
   if (text !== undefined) node.textContent = text; return node;
 }
-function btn(text: string, fn: () => void, className = '', disabled = false): HTMLButtonElement {
+function btn(text: string, fn: (event: MouseEvent) => void, className = '', disabled = false): HTMLButtonElement {
   const button = el('button', className, text); button.type = 'button'; button.disabled = disabled; button.addEventListener('click', fn); return button;
 }
 function svgNode<K extends keyof SVGElementTagNameMap>(tag: K, attrs: Record<string, string>): SVGElementTagNameMap[K] {
@@ -106,17 +106,41 @@ export class GameUI {
   private inputFocused = true;
   private lootHeld = false;
   private hoveringItem: Item | null = null;
+  private readonly itemPopup = el('div', 'item-popup');
+  private popup: { uid: string; location: string; x: number; y: number; signature: string } | null = null;
+  private lastItemPointer = '';
+  private drag: {
+    id: number; uid: string; node: HTMLElement; grid: HTMLElement; start: Point; anchor: Point;
+    active: boolean; ghost: HTMLElement | null; preview: HTMLElement | null;
+    target: { type: 'move'; x: number; y: number } | { type: 'sell' } | null;
+    saleZone: HTMLElement | null;
+  } | null = null;
+  private suppressItemUntil = 0;
+  private suppressDragClick = false;
 
   constructor(private readonly root: HTMLElement, state: GameState, private readonly dispatch: Dispatch) {
     this.state = state;
     this.root.classList.add('game-shell');
     this.canvas = el('canvas', 'world-canvas'); this.canvas.setAttribute('aria-label', '固定 3D 视角游戏场景：WASD 或方向键移动，鼠标瞄准，单击左键攻击、右键施法，按住连续释放；点击设施交互或掉落拾取，营地点击地面移动；H 查看指南'); this.canvas.tabIndex = 0;
     this.canvas.setAttribute('aria-keyshortcuts', 'W A S D ArrowUp ArrowDown ArrowLeft ArrowRight H');
-    this.tooltip.hidden = true; this.tooltip.setAttribute('role', 'tooltip');
+    this.tooltip.hidden = true; this.tooltip.id = 'item-hover-tooltip'; this.tooltip.setAttribute('role', 'tooltip');
+    this.itemPopup.hidden = true; this.itemPopup.setAttribute('role', 'dialog'); this.itemPopup.setAttribute('aria-label', '物品属性与操作');
+    this.itemPopup.addEventListener('pointerdown', e => e.stopPropagation(), { signal: this.abort.signal });
+    const options = { signal: this.abort.signal };
+    this.root.addEventListener('pointerdown', e => {
+      this.lastItemPointer = e.pointerType; this.suppressDragClick = false;
+      if (!this.itemPopup.contains(e.target as Node)) this.closeItemPopup();
+    }, { ...options, capture: true });
+    for (const type of ['click', 'dblclick', 'contextmenu'] as const) this.root.addEventListener(type, e => {
+      if (performance.now() < this.suppressItemUntil && (type === 'click' ? this.suppressDragClick && e.detail !== 0 : true)) { e.preventDefault(); e.stopImmediatePropagation(); if (type === 'click') this.suppressDragClick = false; }
+    }, { ...options, capture: true });
+    window.addEventListener('pointermove', e => this.moveItemDrag(e), options);
+    window.addEventListener('pointerup', e => this.finishItemDrag(e), options);
+    window.addEventListener('pointercancel', e => { if (this.drag?.id === e.pointerId) this.cancelItemDrag(); }, options);
     this.messages.setAttribute('role', 'log'); this.messages.setAttribute('aria-live', 'polite');
     this.areaNotice.hidden = true; this.areaNotice.setAttribute('role', 'status'); this.areaNotice.setAttribute('aria-live', 'polite');
     this.areaNotice.addEventListener('animationend', () => { this.areaNotice.hidden = true; }, { signal: this.abort.signal });
-    this.root.replaceChildren(this.canvas, this.screenLayer, this.hud, this.messages, this.areaNotice, this.panelLayer, this.overlay, this.tooltip);
+    this.root.replaceChildren(this.canvas, this.screenLayer, this.hud, this.messages, this.areaNotice, this.panelLayer, this.overlay, this.tooltip, this.itemPopup);
     this.buildHUD(); this.installInput();
     this.update(state);
   }
@@ -209,6 +233,7 @@ export class GameUI {
   }
 
   update(state: GameState): void {
+    if (this.previousPanel !== state.panel || this.screen !== state.screen || this.tradeNpc && this.tradeNpc !== state.npc) { this.cancelItemDrag(); this.closeItemPopup(); }
     this.state = state;
     if (this.isTrading()) {
       if (this.previousPanel !== 'vendor' || this.tradeNpc !== state.npc) { this.tradeInventoryOpen = true; this.tradeView = 'vendor'; this.vendorFilter = 'all'; this.selectedUid = null; }
@@ -237,6 +262,7 @@ export class GameUI {
     if (!game) this.areaNotice.hidden = true;
     this.screenLayer.hidden = game;
     this.root.classList.toggle('has-panel', game && state.panel !== 'none'); this.root.classList.toggle('is-paused', game && state.paused);
+    this.root.classList.toggle('is-identifying', game && state.identifySource !== null && !state.paused && !state.player?.dead);
     if (!game || !state.player || !state.stats || !state.area) { this.overlay.hidden = true; return; }
     const p = state.player, stats = state.stats;
     const areaSignature = `${p.difficulty}:${state.area.def.id}`;
@@ -292,7 +318,7 @@ export class GameUI {
     this.messages.hidden = performance.now() - this.messageTime > 8000;
     const signature = this.getPanelSignature();
     if (this.panelSignature !== signature) { this.panelSignature = signature; this.renderPanel(); }
-    this.updateOverlay();
+    this.updateOverlay(); this.refreshItemPopup();
   }
 
   private objective(): string {
@@ -419,7 +445,7 @@ export class GameUI {
     const s = this.state, p = s.player!;
     if (s.panel === 'none') return 'none';
     if (s.panel === 'catalog') return JSON.stringify([s.panel, this.catalogKind, this.catalogQuery, this.catalogPage, this.catalogSelected]);
-    const base: unknown[] = [s.panel, this.selectedUid, this.selectedSkill, this.skillTree, this.bindRight, this.questAct, p.level, p.classId, p.difficulty];
+    const base: unknown[] = [s.panel, this.selectedUid, this.selectedSkill, this.skillTree, this.bindRight, this.questAct, p.level, p.classId, p.difficulty, s.identifySource, s.paused, p.dead];
     if (['inventory', 'stash', 'cube', 'vendor'].includes(s.panel)) base.push(p.inventory, p.equipment, p.stash, p.cube, p.gold, p.weaponSwap, s.vendorItems, s.npc, s.dialogue, this.socketRune, s.stats?.strength, s.stats?.dexterity);
     if (s.panel === 'vendor') base.push(this.vendorFilter, this.tradeInventoryOpen, this.tradeView);
     if (s.panel === 'character') base.push(s.stats, p.statPoints, p.skillPoints, p.experience);
@@ -439,12 +465,13 @@ export class GameUI {
   }
 
   private toggleTradeInventory() {
-    this.resetControls(); this.tradeInventoryOpen = !this.tradeInventoryOpen;
+    this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.tradeInventoryOpen = !this.tradeInventoryOpen;
+    if (!this.tradeInventoryOpen) this.send({ type: 'cancel-identify' });
     this.tradeView = this.tradeInventoryOpen ? 'inventory' : 'vendor'; this.invalidatePanel(); this.updatePanelButtons();
   }
 
   private showTradeView(view: 'vendor' | 'inventory') {
-    this.resetControls(); this.hideTooltip(); this.tradeView = view;
+    this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); this.tradeView = view;
     if (view === 'inventory' && !this.tradeInventoryOpen) { this.tradeInventoryOpen = true; this.invalidatePanel(); }
     else {
       this.panelLayer.dataset.tradeView = view;
@@ -495,7 +522,7 @@ export class GameUI {
     const oldScroll = new Map<string, { top: number; left: number }>();
     for (const node of this.panelLayer.querySelectorAll<HTMLElement>('[data-scroll]')) oldScroll.set(node.dataset.scroll!, { top: node.scrollTop, left: node.scrollLeft });
     const focus = this.panelLayer.contains(document.activeElement) ? (document.activeElement as HTMLElement)?.dataset.focus : undefined;
-    this.hideTooltip(); this.panelLayer.replaceChildren();
+    this.cancelItemDrag(); this.hideTooltip(); this.panelLayer.replaceChildren();
     this.panelLayer.classList.toggle('trade-mode', this.isTrading()); this.panelLayer.dataset.tradeView = this.tradeView;
     if (panel === 'none' || !this.state.player) return;
     if (this.isTrading()) this.renderTradePanels();
@@ -536,34 +563,65 @@ export class GameUI {
   }
 
   private grid(items: Item[], columns: number, rows: number, location: 'inventory' | 'stash' | 'cube') {
-    const grid = el('div', 'item-grid'); grid.style.setProperty('--columns', String(columns)); grid.style.setProperty('--rows', String(rows)); grid.setAttribute('aria-label', `${location === 'inventory' ? '背包' : location === 'stash' ? '储物箱' : '方块'} ${columns} × ${rows}`);
+    const grid = el('div', 'item-grid'); grid.style.setProperty('--columns', String(columns)); grid.style.setProperty('--rows', String(rows)); grid.dataset.location = location; grid.setAttribute('aria-label', `${location === 'inventory' ? '背包' : location === 'stash' ? '储物箱' : '方块'} ${columns} × ${rows}`);
     for (const item of items) {
-      const b = this.itemButton(item); b.classList.add('grid-item');
+      let identifyingClick = false;
+      const b = this.itemButton(item, event => {
+        if (event.detail > 1) return;
+        const source = location === 'inventory' ? this.state.identifySource : null;
+        identifyingClick = source !== null; this.selectItem(item.uid);
+        if (source !== null) this.useInventoryItem(source, item.uid);
+      }); b.classList.add('grid-item');
       b.style.gridColumn = `${item.x + 1} / span ${item.width}`; b.style.gridRow = `${item.y + 1} / span ${item.height}`;
-      b.addEventListener('dblclick', () => location === 'inventory' ? this.send({ type: 'equip', uid: item.uid }) : this.send({ type: 'storage', uid: item.uid, destination: 'inventory' })); grid.append(b);
+      if (location === 'inventory') this.installItemDrag(b, grid, item);
+      if (location !== 'inventory' || !isUsableItem(item)) b.addEventListener('dblclick', () => {
+        if (identifyingClick || this.state.identifySource) return;
+        this.send(location === 'inventory' ? { type: 'equip', uid: item.uid } : { type: 'storage', uid: item.uid, destination: 'inventory' });
+      });
+      grid.append(b);
     }
-    const scroll = el('div', 'grid-scroll'); scroll.dataset.scroll = `grid:${location}`; scroll.append(grid); return scroll;
+    if (location === 'inventory') grid.addEventListener('contextmenu', event => {
+      event.preventDefault(); event.stopPropagation();
+      if (this.lastItemPointer === 'touch' || this.drag?.active) return;
+      if (this.state.identifySource !== null) { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); return; }
+      const button = (event.target as HTMLElement).closest<HTMLElement>('.item-button');
+      const uid = button?.dataset.focus?.slice('item:'.length);
+      if (!uid || !this.state.player?.inventory.some(item => item.uid === uid)) return;
+      this.selectItem(uid); this.useInventoryItem(uid);
+    });
+    const scroll = el('div', 'grid-scroll'); scroll.dataset.scroll = `grid:${location}`;
+    scroll.append(grid); return scroll;
+  }
+
+  private useInventoryItem(uid: string, targetUid?: string) {
+    this.send({ type: 'use-item', uid, targetUid });
+    if (targetUid === undefined && this.state.identifySource === uid) this.closeItemPopup();
+    if (this.panelSignature !== this.getPanelSignature()) this.invalidatePanel();
+    this.refreshItemPopup();
   }
 
   private selectItem(uid: string | null) {
-    const changed = this.selectedUid !== uid;
-    this.selectedUid = uid; this.hideTooltip();
+    this.selectedUid = uid;
+    if (this.popup?.uid !== uid) this.closeItemPopup();
     for (const node of this.panelLayer.querySelectorAll<HTMLElement>('.item-button')) {
       const selected = node.dataset.focus === `item:${uid}`;
       node.classList.toggle('selected', selected); node.setAttribute('aria-pressed', String(selected));
     }
-    for (const detail of this.panelLayer.querySelectorAll<HTMLElement>('.item-detail')) {
-      const owner = detail.dataset.owner as 'vendor' | 'inventory' | undefined, properties = detail.querySelector('.item-properties');
-      const next = this.itemDetail(owner); detail.replaceWith(next);
-      const nextProperties = next.querySelector('.item-properties'); if (nextProperties) nextProperties.scrollTop = properties?.scrollTop ?? 0;
-      if (changed && owner && !next.classList.contains('empty-detail') && window.matchMedia('(max-width: 1000px)').matches) next.scrollIntoView({ block: 'nearest' });
-    }
+    // Selection never rebuilds either trade window or moves its scroll position.
+    const focus = (document.activeElement as HTMLElement | null)?.dataset.focus;
+    const scroll = [...this.panelLayer.querySelectorAll<HTMLElement>('[data-scroll]')].map(node => ({ node, top: node.scrollTop, left: node.scrollLeft }));
+    for (const detail of this.panelLayer.querySelectorAll<HTMLElement>('.item-detail')) detail.replaceWith(this.itemDetail(detail.dataset.owner as 'vendor' | 'inventory' | undefined));
+    if (focus) [...this.panelLayer.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === focus)?.focus({ preventScroll: true });
+    for (const entry of scroll) { entry.node.scrollTop = entry.top; entry.node.scrollLeft = entry.left; }
     this.panelSignature = this.getPanelSignature();
   }
 
-  private itemButton(item: Item) {
-    const b = btn('', () => this.selectItem(item.uid), `item-button quality-${item.quality}${this.selectedUid === item.uid ? ' selected' : ''}`);
-    b.dataset.focus = `item:${item.uid}`; b.setAttribute('aria-label', itemLabel(item)); b.setAttribute('aria-pressed', String(this.selectedUid === item.uid)); b.append(itemSprite(item));
+  private itemButton(item: Item, select: (event: MouseEvent) => void = () => this.selectItem(item.uid)) {
+    const b = btn('', event => {
+      select(event);
+      if (this.lastItemPointer === 'touch' && event.detail <= 1) this.openItemPopup(item.uid, event.clientX, event.clientY);
+    }, `item-button quality-${item.quality}${this.selectedUid === item.uid ? ' selected' : ''}`);
+    b.dataset.uid = item.uid; b.dataset.focus = `item:${item.uid}`; b.setAttribute('aria-label', itemLabel(item)); b.setAttribute('aria-pressed', String(this.selectedUid === item.uid)); b.append(itemSprite(item));
     const rune = RUNES.find(r => r.code === item.code), gem = GEMS.find(g => g.code === item.code);
     if (rune) b.append(el('span', 'item-rank rune-number', String(rune.number)));
     else if (gem) b.append(el('span', 'item-rank gem-grade', `${gem.grade + 1}/5`));
@@ -585,9 +643,11 @@ export class GameUI {
       wrap.append(el('span', 'slot-label', SLOT_NAMES[slot])); paperdoll.append(wrap);
     }
     equipment.append(paperdoll, btn(`切换武器组 · ${p.weaponSwap ? 'II' : 'I'} · X`, () => this.send({ type: 'swap' }), 'secondary-button'));
-    const bag = el('div', 'bag-column'); bag.append(el('div', 'section-caption', '行囊 · 10 × 4'), this.grid(p.inventory, 10, 4, 'inventory'), el('div', 'gold-line', `${p.gold.toLocaleString()} 金币`));
+    const bag = el('div', 'bag-column');
+    if (this.isTrading()) { const sale = el('div', 'sell-dropzone', '拖到此处出售 · 松手确认'); sale.dataset.sellDropzone = 'inventory'; sale.setAttribute('aria-label', '背包物品出售区域'); bag.append(sale); }
+    bag.append(el('div', 'section-caption', `行囊 · ${INVENTORY_WIDTH} × ${INVENTORY_HEIGHT}`), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory'), el('div', 'gold-line', `${p.gold.toLocaleString()} 金币`));
     const buttons = el('div', 'button-row'); buttons.append(btn('赫拉迪克方块', () => this.send({ type: 'panel', panel: 'cube' }), 'secondary-button', !this.ownsCube()), btn('回城卷轴', () => this.send({ type: 'portal' }), 'secondary-button'));
-    bag.append(buttons, el('p', 'muted', this.isTrading() ? '交易中 · 点击物品查看或出售，双击装备。' : '点击查看 · 双击装备。储物与交易需靠近营地设施。')); layout.append(equipment, bag); body.append(layout, this.itemDetail(this.isTrading() ? 'inventory' : undefined));
+    bag.append(buttons, el('p', 'muted', '点击查看 · 双击装备 · 右键使用药水 / 卷轴，或点击详情「使用」。' + (this.isTrading() ? '交易中可出售行囊物品，商品不能直接使用。' : '储物与交易需靠近营地设施。'))); layout.append(equipment, bag); body.append(layout, this.itemDetail(this.isTrading() ? 'inventory' : undefined));
   }
 
   private selectedItem(): { item: Item; location: 'inventory' | 'stash' | 'cube' | 'equipment' | 'vendor'; slot?: Slot } | null {
@@ -597,8 +657,8 @@ export class GameUI {
     const item = this.state.vendorItems.find(i => i.uid === this.selectedUid); return item ? { item, location: 'vendor' } : null;
   }
 
-  private itemDetail(owner?: 'vendor' | 'inventory') {
-    const detail = el('section', 'item-detail'); let selected = this.selectedItem();
+  private itemDetail(owner?: 'vendor' | 'inventory', full = false) {
+    const detail = el('section', `item-detail${full ? '' : ' compact-item-detail'}`); let selected = this.selectedItem();
     if (owner) {
       detail.dataset.owner = owner;
       if (selected && (owner === 'vendor' ? selected.location !== 'vendor' : !['inventory', 'equipment'].includes(selected.location))) selected = null;
@@ -609,15 +669,23 @@ export class GameUI {
     const heading = el('header', 'item-detail-heading'); heading.append(el('h3', `quality-${item.quality}`, itemLabel(item)), el('span', 'muted', { inventory: '行囊', stash: '储物箱', cube: '方块', equipment: '已装备', vendor: '商店' }[location])); detail.append(heading);
     const properties = el('div', 'item-properties'); if (owner) properties.dataset.scroll = `detail:${owner}`;
     for (const line of lines(describeItem(item))) if (line) properties.append(el('div', 'item-property', line));
-    properties.append(el('p', 'muted', `占用 ${item.width} × ${item.height} · 物品等级 ${item.ilvl}${item.ethereal ? ' · 无形' : ''}${item.runeword ? ` · ${item.runeword}` : ''}`));
-    detail.append(properties);
+    properties.append(el('p', 'muted', `占用 ${item.width} × ${item.height} · 物品等级 ${item.ilvl}${item.ethereal ? ' · 无形' : ''}${item.runeword ? ` · ${runewordName(item.runeword)}` : ''}`));
+    properties.hidden = !full; detail.append(properties);
     const actions = el('div', 'item-actions'); actions.setAttribute('role', 'group'); actions.setAttribute('aria-label', `${itemLabel(item)}操作`);
     if (location === 'vendor') { actions.append(btn(`购买 · ${item.price.toLocaleString()} 金币`, () => this.buyItem(item), 'primary-button', p.gold < item.price)); }
     else if (location === 'equipment' && slot) { actions.append(btn('卸下至背包', () => this.send({ type: 'unequip', slot }), 'secondary-button')); }
     else {
       if (location === 'inventory') {
         actions.append(btn('装备', () => this.send({ type: 'equip', uid: item.uid }), 'secondary-button', !base?.slot), btn('丢弃', () => this.send({ type: 'drop', uid: item.uid }), 'secondary-button'));
-        if (!item.identified) actions.append(btn('鉴定', () => this.send({ type: 'identify', uid: item.uid }), 'secondary-button'));
+        if (isUsableItem(item)) {
+          const use = btn('使用', () => this.useInventoryItem(item.uid), 'primary-button', this.state.paused || p.dead); use.dataset.focus = `use:${item.uid}`; actions.prepend(use);
+        }
+        if (!item.identified) {
+          const identify = btn('鉴定', () => {
+            const source = this.state.identifySource;
+            if (source !== null) this.useInventoryItem(source, item.uid); else this.send({ type: 'identify', uid: item.uid });
+          }, 'secondary-button', !!this.state.identifySource && (this.state.paused || p.dead)); identify.dataset.focus = `identify:${item.uid}`; actions.append(identify);
+        }
         const canStash = this.nearFacility('stash');
         actions.append(btn('存入仓库', () => { if (this.state.panel !== 'stash') this.send({ type: 'panel', panel: 'stash' }); this.send({ type: 'storage', uid: item.uid, destination: 'stash' }); }, 'secondary-button', !canStash));
         if (!canStash) actions.lastElementChild!.setAttribute('title', '靠近营地储物箱后可存入');
@@ -637,6 +705,10 @@ export class GameUI {
       socketRow.append(select, socketButton); detail.append(socketRow, el('p', 'warning', '镶嵌顺序不可逆。符文之语只适用于正确底材、孔数与符文顺序。'));
     }
     if (base && location !== 'vendor') properties.append(el('p', 'muted', `需求：等级 ${item.requiredLevel} · 力量 ${base.strength} · 敏捷 ${base.dexterity}`));
+    [...actions.querySelectorAll<HTMLButtonElement>('button')].forEach((button, index) => { button.dataset.focus ||= `action:${item.uid}:${index}`; });
+    if (this.state.identifySource !== null) {
+      const cancel = btn('取消鉴定', () => { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); }, 'secondary-button'); cancel.dataset.focus = 'cancel-identify'; actions.append(cancel);
+    }
     return detail;
   }
 
@@ -649,7 +721,7 @@ export class GameUI {
     if (destination === 'stash' && !this.nearFacility('stash')) { body.append(el('p', 'warning', '储物箱在营地中。靠近并点击箱子后才能访问。')); return; }
     store.append(el('div', 'section-caption', destination === 'stash' ? '私人仓库 · 6 × 8' : '方块容器 · 3 × 4'), this.grid(p[destination], destination === 'stash' ? 6 : 3, destination === 'stash' ? 8 : 4, destination));
     if (destination === 'cube') store.append(btn('转化', () => this.send({ type: 'transmute' }), 'primary-button'), el('p', 'muted', '仅已实现且材料匹配的配方可转化；失败不会凭空产出物品。'));
-    bag.append(el('div', 'section-caption', '行囊 · 点击查看 / 双击装备'), this.grid(p.inventory, 10, 4, 'inventory')); layout.append(store, bag); body.append(layout, this.itemDetail());
+    bag.append(el('div', 'section-caption', '行囊 · 点击查看 / 双击装备'), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory')); layout.append(store, bag); body.append(layout, this.itemDetail());
     if (destination === 'cube') {
       const recipes = el('details', 'reference-details'); recipes.append(el('summary', '', '符文与符文之语 · 数据参考'));
       recipes.append(el('p', 'muted', `收录符文 ${Array.isArray(RUNES) ? RUNES.length : Object.keys(RUNES).length} 种，符文之语 ${Array.isArray(RUNEWORDS) ? RUNEWORDS.length : Object.keys(RUNEWORDS).length} 种。数据收录不代表所有附加属性已实现。`)); body.append(recipes);
@@ -898,7 +970,7 @@ export class GameUI {
   }
 
   private helpPanel(body: HTMLElement) {
-    const rows: [string, string][] = [['WASD / 方向键', '固定 3D 视角，按屏幕方向连续移动；松开立即停止。可边移动边用鼠标瞄准。'], ['鼠标 / 左键', '鼠标指向地面或敌人瞄准，单击左键攻击一次，按住连续攻击。点击设施交互、点击掉落拾取；仅营地内点击地面寻路移动。'], ['右键', '单击施放右键绑定的已获得、已支持的主动技能，按住连续施放，松开停止。技能树中绑定成功会关闭面板；营地内禁用攻击技能。'], ['1–8', '切换已分配的右键技能；在技能详情中点击数字分配快捷键，本次旅人会话有效。未获得或不可执行的技能不能绑定。'], ['Shift+1–4', '使用腰带对应列的药水；也可点击腰带。'], ['Q / F', '使用腰带中当前可取用的生命 / 法力药水；没有对应药水时尝试回复活力药水，不跨过列首药水。'], ['E', '与三格内最近的设施交互或拾取掉落；超过范围须先靠近。'], ['I / C / T / J', '背包 / 角色属性 / 技能树 / 任务日志。'], ['L / 图鉴', '查阅全部装备定义、原始参数及实现状态；只读，不生成装备。'], ['X / R', '切换武器组 / 行走与奔跑。'], ['Tab / Alt', '切换探索地图 / 按住显示掉落名称。面板内 Tab 保留键盘导航。'], ['Esc / H', '关闭面板；无面板时暂停或继续 / 打开旅人指南。打开面板、暂停、切走窗口或取消触控都会释放移动与攻击，关闭后需重新按下。'], ['触屏', '左下摇杆按屏幕方向连续移动；轻点攻击或施法一次，按住连续释放，自动瞄准九格内最近的敌人。交互 / 拾取按钮选择三格内最近的设施 / 掉落。'], ['装备', '单击查看详情，双击装备/卸下。符文宝石通过详情按钮镶嵌。'], ['存档', '点击保存后存储在当前浏览器；标题页继续旅程。离线单人，无云端账户。']];
+    const rows: [string, string][] = [['WASD / 方向键', '固定 3D 视角，按屏幕方向连续移动；松开立即停止。可边移动边用鼠标瞄准。'], ['鼠标 / 左键', '鼠标指向地面或敌人瞄准，单击左键攻击一次，按住连续攻击。点击设施交互、点击掉落拾取；仅营地内点击地面寻路移动。'], ['右键', '单击施放右键绑定的已获得、已支持的主动技能，按住连续施放，松开停止。技能树中绑定成功会关闭面板；营地内禁用攻击技能。'], ['1–8', '切换已分配的右键技能；在技能详情中点击数字分配快捷键，本次旅人会话有效。未获得或不可执行的技能不能绑定。'], ['Shift+1–4', '使用腰带对应列的药水；也可点击腰带。'], ['Q / F', '使用腰带中当前可取用的生命 / 法力药水；没有对应药水时尝试回复活力药水，不跨过列首药水。'], ['E', '与三格内最近的设施交互或拾取掉落；超过范围须先靠近。'], ['I / C / T / J', '背包 / 角色属性 / 技能树 / 任务日志。'], ['L / 图鉴', '查阅全部装备定义、原始参数及实现状态；只读，不生成装备。'], ['X / R', '切换武器组 / 行走与奔跑。'], ['Tab / Alt', '切换探索地图 / 按住显示掉落名称。面板内 Tab 保留键盘导航。'], ['Esc / H', '关闭面板；无面板时暂停或继续 / 打开旅人指南。打开面板、暂停、切走窗口或取消触控都会释放移动与攻击，关闭后需重新按下。'], ['触屏', '左下摇杆按屏幕方向连续移动；轻点攻击或施法一次，按住连续释放，自动瞄准九格内最近的敌人。交互 / 拾取按钮选择三格内最近的设施 / 掉落。'], ['行囊物品', '单击查看详情，双击装备/卸下。药水、卷轴与书右键使用，触屏或键盘可选择物品后点击「使用」（Enter 激活按钮）。回城卷轴为蓝色、鉴定卷轴为红色。右键鉴定卷轴后鼠标变为鉴定样式，点击未鉴定行囊物品即可鉴定；再次右键或 Esc 取消。触屏点击「使用」后点选目标。符文宝石通过详情按钮镶嵌。'], ['存档', '点击保存后存储在当前浏览器；标题页继续旅程。离线单人，无云端账户。']];
     for (const [key, description] of rows) { const row = el('div', 'help-row'); row.append(el('kbd', '', key), el('p', '', description)); body.append(row); }
     body.append(el('h3', 'section-caption', '诚实的实现边界'), el('p', 'muted', 'LoD 1.14d 扩展模式规则重构研究项目，非官方。原创写实角色、物品与材质贴图；不含原版美术、音乐或代码。人物使用程序化骨骼动作，非原版完整方向动画与行动帧。五幕地图与技能数据收录不代表完整服务器行为、首领脚本、词缀和配方已经验收。'));
   }
@@ -916,11 +988,111 @@ export class GameUI {
     this.overlay.append(card);
   }
 
+  private openItemPopup(uid: string, x: number, y: number) {
+    if (this.selectedUid !== uid || !this.state.player || this.drag?.active) return;
+    const source = this.selectedItem(); if (!source || source.item.uid !== uid) return;
+    this.hideTooltip(); this.popup = { uid, location: source.location, x, y, signature: '' };
+    this.itemPopup.hidden = false; this.root.classList.add('has-item-popup'); this.refreshItemPopup();
+    this.itemPopup.querySelector<HTMLButtonElement>('.popup-close')?.focus({ preventScroll: true });
+  }
+
+  private closeItemPopup() {
+    this.popup = null; this.itemPopup.hidden = true; this.itemPopup.replaceChildren(); this.root.classList.remove('has-item-popup');
+  }
+
+  private refreshItemPopup() {
+    const popup = this.popup; if (!popup) return;
+    const selected = this.state.player && this.selectedItem();
+    if (!selected || selected.item.uid !== popup.uid || selected.location !== popup.location || this.state.screen !== 'game' || this.state.panel === 'none' || this.state.paused || this.state.player?.dead) { this.closeItemPopup(); return; }
+    const signature = JSON.stringify([selected.item, this.getPanelSignature()]);
+    if (signature !== popup.signature) {
+      popup.signature = signature;
+      const scroll = this.itemPopup.scrollTop, focused = this.itemPopup.contains(document.activeElement) ? (document.activeElement as HTMLElement).dataset.focus : null;
+      const close = btn('关闭 ×', () => this.closeItemPopup(), 'close-button popup-close'); close.dataset.focus = 'popup-close'; close.setAttribute('aria-label', '关闭物品浮层');
+      this.itemPopup.replaceChildren(close, this.itemDetail(undefined, true));
+      if (focused) [...this.itemPopup.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === focused)?.focus({ preventScroll: true });
+      this.itemPopup.scrollTop = scroll;
+    }
+    const rect = this.itemPopup.getBoundingClientRect();
+    this.itemPopup.style.left = `${clamp(popup.x + 12, 8, innerWidth - rect.width - 8)}px`;
+    this.itemPopup.style.top = `${clamp(popup.y + 12, 8, innerHeight - rect.height - 8)}px`;
+  }
+
+  private installItemDrag(node: HTMLElement, grid: HTMLElement, item: Item) {
+    node.addEventListener('pointerdown', e => {
+      if (e.button !== 0 || !e.isPrimary || this.drag || this.state.identifySource !== null || this.state.paused || this.state.player?.dead || !this.state.player?.inventory.some(i => i.uid === item.uid)) return;
+      this.resetControls();
+      const rect = grid.getBoundingClientRect(), cell = (rect.width - 2) / INVENTORY_WIDTH;
+      this.drag = { id: e.pointerId, uid: item.uid, node, grid, start: { x: e.clientX, y: e.clientY }, anchor: { x: clamp(Math.floor((e.clientX - rect.left - 1) / cell) - item.x, 0, item.width - 1), y: clamp(Math.floor((e.clientY - rect.top - 1) / cell) - item.y, 0, item.height - 1) }, active: false, ghost: null, preview: null, target: null, saleZone: null };
+      node.setPointerCapture(e.pointerId);
+    });
+    node.addEventListener('lostpointercapture', e => { if (this.drag?.id === e.pointerId) this.cancelItemDrag(); });
+    node.addEventListener('dragstart', e => e.preventDefault());
+  }
+
+  private moveItemDrag(e: PointerEvent) {
+    const drag = this.drag; if (!drag || drag.id !== e.pointerId) return;
+    const item = this.state.player?.inventory.find(i => i.uid === drag.uid);
+    if (!item || !drag.node.isConnected || this.state.paused || this.state.player?.dead) { this.cancelItemDrag(); return; }
+    if (!drag.active) {
+      if (Math.hypot(e.clientX - drag.start.x, e.clientY - drag.start.y) < (e.pointerType === 'touch' ? 10 : 6)) return;
+      drag.active = true; this.hideTooltip(); this.closeItemPopup();
+      drag.node.classList.add('drag-source'); this.root.classList.add('is-item-dragging');
+      drag.ghost = el('div', `item-drag-ghost quality-${item.quality}`); drag.ghost.append(itemSprite(item)); drag.ghost.setAttribute('aria-hidden', 'true'); this.root.append(drag.ghost);
+      drag.preview = el('div', 'item-drop-preview'); drag.preview.setAttribute('aria-hidden', 'true');
+    }
+    e.preventDefault(); e.stopPropagation();
+    drag.target = null; drag.saleZone?.classList.remove('sell-drag-over'); drag.saleZone = null; drag.preview?.remove();
+    const rect = drag.grid.getBoundingClientRect(), cell = (rect.width - 2) / INVENTORY_WIDTH;
+    if (drag.ghost) {
+      drag.ghost.style.width = `${item.width * cell}px`; drag.ghost.style.height = `${item.height * cell}px`;
+      drag.ghost.style.left = `${e.clientX - (drag.anchor.x + .5) * cell}px`; drag.ghost.style.top = `${e.clientY - (drag.anchor.y + .5) * cell}px`;
+    }
+    const hit = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement | null;
+    const sale = hit?.closest<HTMLElement>('[data-sell-dropzone], .trade-mode .panel-vendor');
+    if (sale && this.isTrading()) {
+      if (item.code !== 'box' && getBase(item.code)?.type !== 'ques') { drag.target = { type: 'sell' }; drag.saleZone = sale; sale.classList.add('sell-drag-over'); }
+    }
+    else {
+      const targetGrid = hit?.closest<HTMLElement>('.item-grid[data-location="inventory"]');
+      if (targetGrid && drag.preview) {
+        const r = targetGrid.getBoundingClientRect(), unit = (r.width - 2) / INVENTORY_WIDTH;
+        const x = Math.floor((e.clientX - r.left - 1) / unit) - drag.anchor.x, y = Math.floor((e.clientY - r.top - 1) / unit) - drag.anchor.y;
+        const valid = fitsItem(this.state.player!.inventory.filter(i => i.uid !== item.uid), item, x, y, INVENTORY_WIDTH, INVENTORY_HEIGHT);
+        drag.preview.classList.toggle('invalid', !valid); drag.preview.style.left = `${1 + x * unit}px`; drag.preview.style.top = `${1 + y * unit}px`;
+        drag.preview.style.width = `${item.width * unit}px`; drag.preview.style.height = `${item.height * unit}px`; targetGrid.append(drag.preview);
+        if (valid) drag.target = { type: 'move', x, y };
+      }
+    }
+    drag.ghost?.classList.toggle('invalid', !drag.target);
+  }
+
+  private finishItemDrag(e: PointerEvent) {
+    const drag = this.drag; if (!drag || drag.id !== e.pointerId) return;
+    if (drag.active) this.moveItemDrag(e);
+    const target = drag.target, uid = drag.uid, active = drag.active;
+    if (active) { e.preventDefault(); e.stopPropagation(); }
+    this.cancelItemDrag();
+    if (!active || !target || !this.state.player?.inventory.some(i => i.uid === uid)) return;
+    if (target.type === 'sell') { if (this.isTrading()) this.send({ type: 'sell', uid }); }
+    else this.send({ type: 'move-item', uid, x: target.x, y: target.y });
+    if (this.panelSignature !== this.getPanelSignature()) this.invalidatePanel();
+  }
+
+  private cancelItemDrag() {
+    const drag = this.drag; if (!drag) return;
+    this.drag = null;
+    if (drag.active) { this.suppressItemUntil = performance.now() + 650; this.suppressDragClick = true; }
+    drag.node.classList.remove('drag-source'); drag.ghost?.remove(); drag.preview?.remove(); drag.saleZone?.classList.remove('sell-drag-over'); this.root.classList.remove('is-item-dragging');
+    if (drag.node.hasPointerCapture(drag.id)) drag.node.releasePointerCapture(drag.id);
+  }
+
   private itemTooltip(node: HTMLElement, item: Item) {
-    node.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch') this.showTooltip(item, e.clientX, e.clientY); });
-    node.addEventListener('pointermove', e => { if (this.hoveringItem === item) this.positionTooltip(e.clientX, e.clientY); });
-    node.addEventListener('pointerleave', () => this.hideTooltip());
-    node.addEventListener('focus', () => { const r = node.getBoundingClientRect(); this.showTooltip(item, r.right, r.top); }); node.addEventListener('blur', () => this.hideTooltip());
+    node.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch' && !this.drag?.active && !this.popup) { node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, e.clientX, e.clientY); } });
+    node.addEventListener('pointermove', e => { if (this.hoveringItem === item && !this.drag?.active) this.positionTooltip(e.clientX, e.clientY); });
+    node.addEventListener('pointerleave', () => { node.removeAttribute('aria-describedby'); if (this.hoveringItem === item) this.hideTooltip(); });
+    node.addEventListener('focus', () => { if (this.lastItemPointer !== 'touch' && !this.drag?.active && !this.popup) { const r = node.getBoundingClientRect(); node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, r.right, r.top); } });
+    node.addEventListener('blur', () => { node.removeAttribute('aria-describedby'); if (this.hoveringItem === item) this.hideTooltip(); });
   }
   private showTooltip(item: Item, x: number, y: number) {
     this.hoveringItem = item; this.tooltip.hidden = false; this.tooltip.replaceChildren(el('h3', `quality-${item.quality}`, itemLabel(item)), ...lines(describeItem(item)).filter(Boolean).map(line => el('div', 'item-property', line)));
@@ -1011,20 +1183,24 @@ export class GameUI {
       if (this.moveKeys.delete(e.code)) { e.preventDefault(); this.updateControl(); }
       if (e.key === 'Alt' && this.lootHeld) { e.preventDefault(); this.lootHeld = false; if (this.state.showLoot) this.send({ type: 'loot' }); }
     }, options);
-    window.addEventListener('blur', () => { this.inputFocused = false; this.resetControls(); this.hideTooltip(); }, options);
+    window.addEventListener('blur', () => { this.inputFocused = false; this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); }, options);
     window.addEventListener('focus', () => { this.inputFocused = true; this.updateControl(); }, options);
-    window.addEventListener('pagehide', () => { this.resetControls(); this.hideTooltip(); }, options);
-    document.addEventListener('visibilitychange', () => { if (document.hidden) { this.resetControls(); this.hideTooltip(); } else this.updateControl(); }, options);
+    window.addEventListener('pagehide', () => { this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); }, options);
+    document.addEventListener('visibilitychange', () => { if (document.hidden) { this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); } else this.updateControl(); }, options);
     this.root.addEventListener('focusin', e => { const target = e.target as HTMLElement; if (target.matches('input,textarea,select') || target.isContentEditable) this.resetControls(); }, options);
-    window.addEventListener('resize', () => { this.renderer?.resize(); this.hideTooltip(); this.updateControl(); }, options);
+    window.addEventListener('resize', () => { this.renderer?.resize(); this.cancelItemDrag(); this.hideTooltip(); this.refreshItemPopup(); this.updateControl(); }, options);
   }
 
   private keydown(e: KeyboardEvent) {
     const target = e.target as HTMLElement;
+    this.lastItemPointer = '';
     if (this.state.screen !== 'game' || !this.state.player || !this.inputFocused || document.hidden) return;
     if (e.key === 'Escape') {
       e.preventDefault(); if (e.repeat) return;
-      if (this.state.panel !== 'none') this.send({ type: 'panel', panel: 'none' }); else if (!this.state.player.dead) this.send({ type: 'pause' });
+      if (this.drag) { this.cancelItemDrag(); return; }
+      if (this.popup) { this.closeItemPopup(); if (this.state.identifySource !== null) { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); } return; }
+      if (this.state.identifySource !== null) { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); }
+      else if (this.state.panel !== 'none') this.send({ type: 'panel', panel: 'none' }); else if (!this.state.player.dead) this.send({ type: 'pause' });
       return;
     }
     if (target?.matches('input,textarea,select') || target?.isContentEditable || e.metaKey || e.ctrlKey) return;
@@ -1114,7 +1290,7 @@ export class GameUI {
     };
     const interaction = (o: WorldObject) => ({ action: { type: 'interact', uid: o.uid } as Action, uid: o.uid, point: { x: o.x, y: o.y } });
     const portal = closest(area.objects.filter(o => o.kind === 'portal'), objectScore); if (portal) return interaction(portal);
-    const dropLabel = closest(area.drops, d => this.state.showLoot || Math.hypot(d.x - player.x, d.y - player.y) < 2.8 ? labelScore(d, d.item.name || d.item.code, .4) : Infinity);
+    const dropLabel = closest(area.drops, d => this.state.showLoot || Math.hypot(d.x - player.x, d.y - player.y) < 2.8 ? labelScore(d, itemLabel(d.item), .4) : Infinity);
     if (dropLabel) return { action: { type: 'pickup', uid: dropLabel.item.uid }, uid: dropLabel.item.uid, point: { x: dropLabel.x, y: dropLabel.y } };
     const monster = closest(area.monsters.filter(m => !m.dead), m => {
       const spec = monsterSpec(m.code, m.color, m.boss, m.champion);
@@ -1123,7 +1299,7 @@ export class GameUI {
     });
     if (monster) return { action: { type: 'attack', point: { x: monster.x, y: monster.y } }, uid: monster.uid, point: { x: monster.x, y: monster.y } };
     // A chest's drop keeps priority over its used footprint.
-    const drop = closest(area.drops, d => score(d, .55, .2, this.state.showLoot || Math.hypot(d.x - player.x, d.y - player.y) < 2.8 ? { text: d.item.name || d.item.code, lift: .4 } : undefined));
+    const drop = closest(area.drops, d => score(d, .55, .2, this.state.showLoot || Math.hypot(d.x - player.x, d.y - player.y) < 2.8 ? { text: itemLabel(d.item), lift: .4 } : undefined));
     if (drop) return { action: { type: 'pickup', uid: drop.item.uid }, uid: drop.item.uid, point: { x: drop.x, y: drop.y } };
     const object = closest(area.objects.filter(o => !(o.used && (o.kind === 'chest' || o.kind === 'shrine'))), objectScore);
     return object ? interaction(object) : null;
@@ -1261,5 +1437,5 @@ export class GameUI {
     if (drop) { this.resetControls(); this.send({ type: 'pickup', uid: drop.item.uid }); }
   }
 
-  destroy(): void { this.resetControls(); this.controlHandler = null; if (this.introTimer) clearTimeout(this.introTimer); this.abort.abort(); this.renderer?.destroy(); this.root.replaceChildren(); this.fields.clear(); }
+  destroy(): void { this.cancelItemDrag(); this.closeItemPopup(); this.resetControls(); this.controlHandler = null; if (this.introTimer) clearTimeout(this.introTimer); this.abort.abort(); this.renderer?.destroy(); this.root.replaceChildren(); this.fields.clear(); }
 }

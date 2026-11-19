@@ -3,7 +3,8 @@ import { Game, validateSave } from '../src/core/game.js';
 import { CLASSES, SKILLS } from '../src/data/classes.js';
 import { GEAR_RULES, gearSpec, matchesGearSpec, allowedWeaponClasses } from '../src/data/gear-specs.js';
 import { ITEMS, makeEquip, equipStats, equipShop, refineGain, refinePlan, REFINE_RATE, REFINE_BONUS } from '../src/data/items.js';
-import { PRODUCTION_SKILLS, PRODUCTION_LEVELS, QIANKUN_TRANSFER_COSTS, MACHINE_RECIPE, getProductionRecipes, getProductionRecipe, gemRequiredGrade } from '../src/data/production.js';
+import { NAMED_EQUIPMENT, TUTORIAL_LEVELS, namedSpec, matchesNamedEquip } from '../src/data/named-equipment.js';
+import { PRODUCTION_SKILLS, PRODUCTION_LEVELS, QIANKUN_TRANSFER_COSTS, MACHINE_RECIPE, LUNAR_MATERIAL_IDS, getProductionRecipes, getProductionRecipe, gemRequiredGrade } from '../src/data/production.js';
 import { productionAction, getProductionCatalog } from '../src/core/production.js';
 import { equipmentAction, validateEquipment } from '../src/core/equipment.js';
 import { stats, BAG_LIMIT } from '../src/core/model.js';
@@ -125,14 +126,22 @@ for (const [series, line] of Object.entries(GEAR_RULES.seriesRules).filter(([id]
     }
   }
 });
-test('pure previews and production catalog draw no RNG/create no UID/mutate nothing', () => {
+test('pure finite previews and exact production catalog bindings draw no RNG/create no UID/mutate nothing', () => {
   const g = fixture(); delete g.p.production; const before = structuredClone(g.state);
   Math.random = () => { throw new Error('Preview consumed RNG'); };
   for (const slot of slots) assert.ok(!Object.hasOwn(gearSpec(slot, 35, 2, g.p.cls), 'uid'));
-  const shop = equipShop(g.p.cls, 35); assert.equal(shop.length, 10); assert.ok(shop.every((it) => !Object.hasOwn(it, 'uid')));
-  const catalog = getProductionCatalog(g.p); assert.equal(catalog.recipes.length, 141);
-  assert.ok(catalog.recipes.every((r) => r.previews.every((s) => !Object.hasOwn(s, 'uid'))));
-  catalog.recipes[0].materials.ore1 = -99; catalog.skills.blacksmith.level = 6; catalog.materials.ore1.name = 'changed';
+  const shop = equipShop(g.p.cls, 35); assert.ok(shop.length > 0); assert.ok(shop.every((it) => it.ruleVersion === 2 && !Object.hasOwn(it, 'uid')));
+  const expected = getProductionRecipes(g.p.cls), catalog = getProductionCatalog(g.p);
+  assert.equal(catalog.recipes.length, expected.length);
+  assert.deepEqual(catalog.recipes.map(({ id, templateId }) => [id, templateId]), expected.map(({ id, templateId }) => [id, templateId]));
+  for (const recipe of catalog.recipes) {
+    assert.equal(recipe.id, `named:${recipe.templateId}`);
+    assert.ok(Object.hasOwn(NAMED_EQUIPMENT, recipe.templateId));
+    assert.deepEqual(recipe.previews, [namedSpec(recipe.templateId)]);
+    assert.ok(recipe.previews.every((spec) => !Object.hasOwn(spec, 'uid')));
+  }
+  catalog.recipes[0].materials[Object.keys(catalog.recipes[0].materials)[0]] = -99;
+  catalog.skills.blacksmith.level = 6; catalog.materials.ore1.name = 'changed';
   assert.deepEqual(g.state, before); assert.notEqual(getProductionCatalog(g.p).materials.ore1.name, 'changed');
 });
 const mutations = {
@@ -172,11 +181,11 @@ for (const cls of Object.keys(CLASSES)) test(`default odd weapon skill compatibi
   g.p.cult = 8; g.p.chi = 300; g.p.skills = Object.fromEntries(SKILLS[cls].filter((s) => s.lv <= 60).map((s) => [s.id, 1]));
   for (const skill of SKILLS[cls].filter((s) => s.lv <= 60 && !['passive', 'petheal'].includes(s.kind))) {
     const p = structuredClone(g.p), b = createBattle(p, [{ name: '兼容靶', lv: 1, hp: 1e8, maxHp: 1e8, atk: 0, statuses: [{ kind: 'stun', turns: 99 }] }]);
-    assert.equal(canUseSkill(p, b, skill.id), null, `${cls}/${skill.id}`);
+    if (skill.source.weapons.supportedTypes.includes(CLASSES[cls].weapon)) assert.equal(canUseSkill(p, b, skill.id), null, `${cls}/${skill.id}`);
+    else assert.match(canUseSkill(p, b, skill.id), /武器不支持/, `${cls}/${skill.id}`);
   }
 });
-const skillWeapons = { blademaster: ['blade', 'axe', 'sword'], barbarian: ['axe'], archer: ['bow'], assassin: ['dagger'], seeker: ['sword'], psychic: ['soulsphere'], wizard: ['wand', 'glaive'], cleric: ['wand', 'glaive'], venomancer: ['wand', 'glaive'], mystic: ['wand', 'glaive'] };
-for (const cls of Object.keys(CLASSES)) test(`skill grouping permits general BM/magic and rejects worn incompatible/${cls}`, () => {
+for (const cls of Object.keys(CLASSES)) test(`skill source permits supported types and rejects worn incompatible/${cls}`, () => {
   const skill = SKILLS[cls].find((s) => s.kind === 'dmg');
   for (const type of Object.keys(GEAR_RULES.weapons)) {
     const owner = allowedWeaponClasses(type)[0], it = makeEquip('weapon', 60, 0, owner, { weaponType: type });
@@ -186,7 +195,7 @@ for (const cls of Object.keys(CLASSES)) test(`skill grouping permits general BM/
     }
     g.equip(it.uid); assert.equal(g.p.equipment.weapon.uid, it.uid, 'ordinary generated class must not be a wear lock');
     const b = createBattle(g.p, [{ name: '技能适配靶', lv: 1, hp: 1e8, maxHp: 1e8, atk: 0, statuses: [{ kind: 'stun', turns: 99 }] }]);
-    if (skillWeapons[cls].includes(type)) {
+    if (skill.source.weapons.supportedTypes.includes(type)) {
       assert.equal(canUseSkill(g.p, b, skill.id), null); random(.5, () => takeTurn(g.p, b, `skill:${skill.id}`)); assert.equal(b.round, 1);
     } else {
       assert.match(canUseSkill(g.p, b, skill.id), /武器不支持/);
@@ -196,78 +205,96 @@ for (const cls of Object.keys(CLASSES)) test(`skill grouping permits general BM/
     }
   }
 });
-test('catalog predecessor inheritance previews stay detached and RNG-free', () => {
-  const g = fixture(), old = makeEquip('weapon', 95, 3, g.p.cls, { series: 'lunar' });
-  old.refine = 3; old.bound = true; old.sockets = ['gemPatk2', null]; g.p.bag = [old]; const before = structuredClone(g.state);
-  Math.random = () => { throw new Error('Candidate preview drew RNG'); };
-  const catalog = getProductionCatalog(g.p), recipe = catalog.recipes.find((r) => r.id === 'nirvana1-100-weapon');
-  assert.equal(recipe.defaultInherit, false); assert.equal(recipe.candidates.length, 1);
-  assert.equal(recipe.candidates[0].inherit.qiankun, 21); assert.equal(recipe.candidates[0].uid, old.uid);
-  recipe.candidates[0].sockets[0] = 'gemHp1'; recipe.candidates[0].inherit.costs.materials.qiankun = 0;
-  assert.deepEqual(g.state, before);
+test('independent literal source examples bind exact finite templates and recipes', () => {
+  const examples = [
+    ['official:2d8855695daeb73911ea:0:1', { name: '★金鳞斩', slot: 'weapon', weaponType: 'axe', lv: 95, grade: 11,
+      requirements: { str: 287, dex: 52, con: null, mag: null }, base: { patk: 1077 }, ranges: { patk: [646, 1508] },
+      materials: [['碎片凝结体', 5], ['结晶凝结体', 1], ['精华凝结体', 1], ['自然精髓', 5]] }],
+    ['official:645e40c39c6b495aa26f:2:1', { name: '★凤兮法袍', slot: 'body', armorType: 'robe', lv: 95, grade: 11,
+      requirements: { str: 52, dex: null, con: null, mag: 146 }, base: { def: 188, mdef: 1685 }, ranges: {},
+      materials: [['碎片凝结体', 3], ['结晶凝结体', 1], ['纯水精华', 2], ['火炎精华', 2], ['大地精华', 2], ['生命精华', 2], ['精铁精华', 5], ['自然精髓', 3]] }],
+  ];
+  for (const [templateId, expected] of examples) {
+    const template = namedSpec(templateId);
+    for (const key of ['name', 'slot', 'weaponType', 'armorType', 'lv', 'grade', 'requirements', 'base', 'ranges']) if (Object.hasOwn(expected, key)) assert.deepEqual(template[key], expected[key]);
+    assert.deepEqual(template.materials.map(({ name, qty }) => [name, qty]), expected.materials);
+    const recipe = getProductionRecipe(`named:${templateId}`, template.slot === 'weapon' ? 'barbarian' : 'wizard');
+    assert.equal(recipe.templateId, templateId);
+    assert.deepEqual(recipe.materials, Object.fromEntries(expected.materials.map(([name, qty]) => [LUNAR_MATERIAL_IDS[name], qty])));
+  }
 });
-for (const [roll, quality] of [[.099999, 2], [.1, 1], [.99999, 1]]) test(`ordinary production quality threshold/${roll}`, () => {
-  const g = fixture(); const result = random(roll, () => produce(g, 'ordinary-1-weapon'));
-  assert.equal(result.equipment.q, quality); assert.ok(matchesGearSpec(result.equipment));
+for (const roll of [.099999, .1, .99999]) test(`named production q is bookkeeping only/${roll}`, () => {
+  const g = fixture(); const recipe = getProductionRecipes(g.p.cls).find((r) => r.series === 'local-tutorial' && r.slot === 'weapon' && r.lv === 1);
+  const result = random(roll, () => produce(g, recipe.id));
+  assert.equal(result.equipment.q, 0); assert.ok(matchesNamedEquip(result.equipment));
+  assert.equal(result.equipment.templateId, recipe.templateId); assert.deepEqual(result.equipment.base, NAMED_EQUIPMENT[recipe.templateId].base);
 });
-for (const skill of Object.keys(PRODUCTION_SKILLS)) for (let level = 1; level < 6; level++) test(`five crafts + level gate training/${skill}/${level}`, () => {
-  const g = fixture(); const slot = skill === 'blacksmith' ? 'weapon' : skill === 'tailor' ? 'body' : 'neck';
-  g.p.production[skill] = { level, exp: 0 }; const next = PRODUCTION_LEVELS[level];
+for (const skill of Object.keys(PRODUCTION_SKILLS)) for (let level = 1; level < 6; level++) test(`five exact named crafts + level gate training/${skill}/${level}`, () => {
+  const g = fixture();
+  const recipe = getProductionRecipes(g.p.cls).find((entry) => entry.skill === skill && entry.series === 'local-tutorial' && entry.lv === 1);
+  assert.ok(recipe); g.p.production[skill] = { level, exp: 0 }; const next = PRODUCTION_LEVELS[level];
   for (let i = 0; i < 5; i++) {
     reject(g, () => productionAction(g, 'train', { skill }), /经验/);
-    random(.5, () => produce(g, `ordinary-1-${slot}`)); assert.equal(g.p.production[skill].exp, i + 1);
+    random(.5, () => produce(g, recipe.id)); assert.equal(g.p.production[skill].exp, i + 1); g.p.bag = [];
   }
   g.p.lv = next.lv - 1; reject(g, () => productionAction(g, 'train', { skill }), /角色/); g.p.lv = next.lv;
   const gold = g.p.gold; productionAction(g, 'train', { skill });
   assert.deepEqual(g.p.production[skill], { level: level + 1, exp: 0 }); assert.equal(g.p.gold, gold - next.gold);
 });
-for (const cls of Object.keys(CLASSES)) test(`all real production recipes/costs/UID/${cls}`, () => {
-  const g = fixture(cls);
-  for (const recipe of getProductionRecipes(cls)) {
-    g.p.bag = [];
-    let predecessor;
-    if (recipe.from) {
-      const from = recipe.from.alternatives[0]; predecessor = makeEquip(recipe.slot, from.lv, 3, cls, { series: from.series }); g.p.bag.push(predecessor);
+for (const cls of Object.keys(CLASSES)) test(`all finite production recipes/exact costs/UID/${cls}`, () => {
+  const g = fixture(cls), recipes = getProductionRecipes(cls);
+  const tutorialWeapons = ['dagger', 'soulsphere'].includes(CLASSES[cls].weapon) ? TUTORIAL_LEVELS.length : 1;
+  assert.equal(recipes.filter((r) => r.series === 'local-tutorial').length, TUTORIAL_LEVELS.length * 9 + tutorialWeapons);
+  assert.ok([16, 17, 18].includes(recipes.filter((r) => r.series === 'lunar').length));
+  assert.ok(recipes.every((r) => ['local-tutorial', 'lunar'].includes(r.series)));
+  assert.equal(new Set(recipes.map((r) => r.id)).size, recipes.length);
+  for (const recipe of recipes) {
+    assert.equal(recipe.id, `named:${recipe.templateId}`); assert.equal(recipe.from, null); assert.equal(recipe.inheritance, false);
+    assert.ok(Object.hasOwn(NAMED_EQUIPMENT, recipe.templateId)); g.p.bag = [];
+    const paid = structuredClone(g.p);
+    g.p.gold = recipe.gold - 1; reject(g, () => produce(g, recipe.id), /金币/); g.p.gold = paid.gold;
+    for (const [id, amount] of Object.entries(recipe.materials)) {
+      g.p.items[id] = amount - 1; reject(g, () => produce(g, recipe.id), /不足/); g.p.items[id] = paid.items[id];
     }
-    const before = structuredClone(g.p); const result = random(.5, () => produce(g, recipe.id, predecessor ? { uid: predecessor.uid } : {}));
+    const before = structuredClone(g.p), result = random(.5, () => produce(g, recipe.id));
     assert.equal(g.p.gold, before.gold - recipe.gold); assert.deepEqual(result.consumed, recipe.materials);
     for (const [id, amount] of Object.entries(recipe.materials)) assert.equal(g.p.items[id], before.items[id] - amount);
-    assert.equal(g.p.bag.length, 1); assert.ok(matchesGearSpec(g.p.bag[0])); assert.equal(g.p.bag[0].series, recipe.series);
-    assert.equal(g.p.bag[0].q, recipe.series === 'ordinary' ? 1 : 3);
-    if (predecessor) assert.equal(g.p.bag[0].uid, predecessor.uid);
+    assert.equal(g.p.bag.length, 1); assert.ok(matchesNamedEquip(g.p.bag[0]));
+    assert.equal(g.p.bag[0].templateId, recipe.templateId); assert.equal(g.p.bag[0].q, 0);
     assert.equal(g.p.production[recipe.skill].exp, before.production[recipe.skill].exp + 1); validateSave(g.state);
   }
 });
-for (const inherit of [false, true]) test(`paid inheritance/bound/UID/socket resources/${inherit}`, () => {
-  const g = fixture(); const old = makeEquip('weapon', 95, 3, g.p.cls, { series: 'lunar' });
-  old.refine = 3; old.bound = true; old.durability = 37; old.sockets = ['gemPatk2', null]; g.p.bag.push(old);
-  const before = structuredClone(g.p); const recipe = getProductionRecipe('nirvana1-100-weapon', g.p.cls);
-  const result = produce(g, recipe.id, { uid: old.uid, inherit }); const it = g.p.bag[0];
-  assert.equal(it.uid, old.uid); assert.equal(it.bound, true); assert.equal(it.refine, inherit ? 3 : 0);
-  assert.deepEqual(it.sockets, inherit ? old.sockets : [null]); assert.equal(it.durability, inherit ? 37 : 100);
-  assert.equal(result.inheritanceQiankun, inherit ? 12 + 4 + 5 : 0);
-  assert.equal(g.p.items.qiankun, before.items.qiankun - (inherit ? 21 : 0));
-  assert.equal(g.p.items.gemPatk2, before.items.gemPatk2, 'no free gemstone return or extra charge');
-  assert.equal(g.p.items.rapture, before.items.rapture - recipe.materials.rapture); validateSave(g.state);
+for (const inherit of [false, true]) test(`retired Nirvana recipe absent and historical item preserved/inherit=${inherit}`, () => {
+  const g = fixture(), old = makeEquip('weapon', 95, 3, g.p.cls, { series: 'lunar' });
+  old.refine = 3; old.bound = true; old.durability = 37; old.sockets = ['gemPatk2', null]; g.p.bag = [old];
+  assert.equal(getProductionRecipe('nirvana1-100-weapon', g.p.cls), null);
+  assert.ok(!getProductionRecipes(g.p.cls).some((r) => /^(ordinary|twilight|lunar|nirvana)/.test(r.id)));
+  let draws = 0; Math.random = () => { draws++; return .5; };
+  reject(g, () => produce(g, 'nirvana1-100-weapon', { uid: old.uid, inherit }), /不存在/);
+  assert.equal(draws, 0); assert.deepEqual(g.p.bag, [old]); validateSave(g.state);
 });
 for (const [name, mutate] of Object.entries({
   unconfirmed: (g, it, b) => b.confirm = false, badInherit: (g, it, b) => b.inherit = 'true', wrongUID: (g, it, b) => b.uid = 'absent',
-  wrongSeries: (g, it) => { g.p.bag[0] = makeEquip('weapon', 95, 3, g.p.cls); }, wrongType: (g, it) => { g.p.bag[0] = makeEquip('body', 95, 3, g.p.cls, { series: 'lunar' }); },
+  ordinaryHistorical: (g) => { g.p.bag[0] = makeEquip('weapon', 95, 3, g.p.cls); }, wrongTypeHistorical: (g) => { g.p.bag[0] = makeEquip('body', 95, 3, g.p.cls, { series: 'lunar' }); },
   locked: (g, it) => it.locked = true, worn: (g, it) => { g.p.bag = []; g.p.equipment.weapon = it; },
-  duplicate: (g, it) => g.p.bag.push(structuredClone(it)), missingCrystal: g => g.p.items.rapture = 9, missingInheritance: g => g.p.items.qiankun = 0,
+  duplicate: (g, it) => g.p.bag.push(structuredClone(it)), missingCrystal: g => g.p.items.rapture = 0, missingInheritance: g => g.p.items.qiankun = 0,
   poor: g => g.p.gold = 0, lowLevel: g => g.p.lv = 99, lowSkill: g => g.p.production.blacksmith.level = 5,
-})) test(`atomic predecessor/paid inheritance rejection/${name}`, () => {
+})) test(`retired Nirvana atomic rejection preserves historical equipment/${name}`, () => {
   const g = fixture(), it = makeEquip('weapon', 95, 3, g.p.cls, { series: 'lunar' }); it.refine = 3; g.p.bag = [it];
   const body = { recipeId: 'nirvana1-100-weapon', uid: it.uid, confirm: true, inherit: true }; mutate(g, it, body);
+  const historical = structuredClone({ bag: g.p.bag, equipment: g.p.equipment });
   let draws = 0; Math.random = () => { draws++; return .5; };
   reject(g, () => productionAction(g, 'produce', body)); assert.equal(draws, 0);
+  assert.deepEqual({ bag: g.p.bag, equipment: g.p.equipment }, historical);
 });
-test('full bag root fails unchanged but predecessor replacement occupies same slot', () => {
-  const g = fixture(); g.p.bag = Array.from({ length: BAG_LIMIT }, () => makeEquip('head', 1, 0, g.p.cls));
+test('full bag exact named root fails unchanged; retired predecessor cannot replace historical item', () => {
+  const g = fixture(), recipe = getProductionRecipes(g.p.cls).find((r) => r.series === 'local-tutorial' && r.slot === 'weapon' && r.lv === 1);
+  g.p.bag = Array.from({ length: BAG_LIMIT }, () => makeEquip('head', 1, 0, g.p.cls));
   Math.random = () => { throw new Error('Full bag consumed RNG'); };
-  reject(g, () => produce(g, 'ordinary-1-weapon'), /背包/); Math.random = originalRandom;
-  g.p.bag[37] = makeEquip('weapon', 95, 3, g.p.cls, { series: 'lunar' }); const uid = g.p.bag[37].uid;
-  produce(g, 'nirvana1-100-weapon', { uid }); assert.equal(g.p.bag.length, 80); assert.equal(g.p.bag[37].uid, uid);
+  reject(g, () => produce(g, recipe.id), /背包/); Math.random = originalRandom;
+  g.p.bag[37] = makeEquip('weapon', 95, 3, g.p.cls, { series: 'lunar' }); const historical = structuredClone(g.p.bag[37]);
+  reject(g, () => produce(g, 'nirvana1-100-weapon', { uid: historical.uid }), /不存在/);
+  assert.equal(g.p.bag.length, BAG_LIMIT); assert.deepEqual(g.p.bag[37], historical);
 });
 test('machine consumes accessible tier-1/2 recipe without equipment XP', () => {
   const g = fixture(), before = structuredClone(g.p); const result = productionAction(g, 'manufactureMachine');
@@ -387,7 +414,8 @@ for (const d of DUNGEONS) test(`every dungeon wave reward family/${d.id}`, () =>
   }
   assert.equal(g.p.clears[d.id], 1);
   if (d.rewardKind === 'materials') for (const id of d.rewardMaterials) assert.equal(g.p.items[id], beforeItems[id] + 4);
-  else assert.ok(g.p.bag.some((it) => it.slot === 'weapon' && it.lv === d.lv && it.q === 2 && matchesGearSpec(it)));
+  else assert.ok(g.p.bag.some((it) => it.slot === 'weapon' && it.ruleVersion === 2 && it.q === 0
+    && Object.hasOwn(NAMED_EQUIPMENT, it.templateId) && matchesNamedEquip(it)));
   assert.equal(g.p.items.highForgeSigil, beforeItems.highForgeSigil + (d.lv >= 75 ? 2 : 0));
 });
 test('level-60 machine has no tier-3 resource gate', () => {

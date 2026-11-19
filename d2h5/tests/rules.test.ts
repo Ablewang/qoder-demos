@@ -257,7 +257,7 @@ test('weapon raw StrBonus/DexBonus, global flat damage, and active shield block'
   const player = createPlayer('ama', '亚马逊'); player.running = false;
   player.equipment.weapon = item('jav', {}, { minDamage: 10, maxDamage: 20 });
   player.equipment.ring1 = item('rin', { minDamage: 2, maxDamage: 4 });
-  assert.deepEqual([deriveStats(player).minDamage, deriveStats(player).maxDamage], [16, 32]); // 33.75% from Str20/Dex25
+  assert.deepEqual([deriveStats(player).minDamage, deriveStats(player).maxDamage], [15, 31]);
   player.equipment.offhand = item('buc', {}, { defense: 5 });
   assert.equal(deriveStats(player).block, 75); player.running = true; assert.equal(deriveStats(player).block, 75);
   player.weaponSwap = true; assert.equal(deriveStats(player).block, 0);

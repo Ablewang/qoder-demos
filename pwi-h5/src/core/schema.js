@@ -3,6 +3,7 @@ import { ZONES, CULTIVATION, DUNGEONS } from '../data/world.js';
 import { ITEMS, SLOTS, STAT_NAMES, REFINE_MAX, EQUIPMENT_SETS } from '../data/items.js';
 import { HIGH_EQUIPMENT, matchesHighEquip } from '../data/high-equipment.js';
 import { matchesGearSpec } from '../data/gear-specs.js';
+import { NAMED_EQUIPMENT } from '../data/named-equipment.js';
 import { PRODUCTION_MATERIALS, PRODUCTION_SKILLS } from '../data/production.js';
 import { buildMainline } from '../data/quests.js';
 import { ENCOUNTERS } from '../data/encounters.js';
@@ -37,6 +38,14 @@ function counterMap(o, validKey = () => true, max = 1e12) {
 }
 function equipment(it, seen, extended) {
   require(object(it) && it.kind === 'equip' && string(it.uid) && /^[a-z0-9]+$/i.test(it.uid) && !seen.has(it.uid), '装备标识无效或重复。');
+  const named = it.ruleVersion === 2 || own(NAMED_EQUIPMENT, it.templateId) || /^(official:|local-tutorial:)/.test(it.templateId || '');
+  if (named) {
+    validateEquipment(it);
+    seen.add(it.uid);
+    return;
+  }
+  require(!['sourceRecord', 'sourceStats', 'status', 'adaptedFields', 'runtimeAdaptation', 'affixes', 'affixRolls', 'addonBudget', 'referenceOnly', 'nameColor', 'materials'].some((key) => own(it, key))
+    && !Object.values(NAMED_EQUIPMENT).some((t) => t.name === it.name), '具名装备不能删除templateId或ruleVersion绕过校验。');
   const high = own(it, 'templateId') || it.q === 4 || it.grade > 16;
   require(string(it.name, 80) && own(SLOTS, it.slot) && integer(it.lv, 105) && it.lv >= 1 && integer(it.q, high ? 4 : 3) && integer(it.refine, REFINE_MAX) && integer(it.grade, high ? 19 : 16) && num(it.price), '装备数据无效。');
   if (high) require(matchesHighEquip(it) && !GENERATED_FIELDS.some((key) => own(it, key)), '高阶装备身份、基础属性或固定词条与官方模板不符。');

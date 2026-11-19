@@ -38,11 +38,12 @@ test('all 49 original runtime assets have positive manifest dimensions and real 
     assert.equal(artUrl(key), `/art/${key}.webp`);
   }
 });
-test('every runtime base maps to available raster or inline key art; gems and runes remain distinct', () => {
+test('every runtime base maps to available art; scrolls, gems and runes remain distinct', () => {
   for (const base of BASE_ITEMS) {
     const icon = itemArtKey(base.code);
-    if (icon === 'key' || icon === 'skull') {
-      assert.match(base.code, icon === 'key' ? /^(key|pk[1-3])$/ : /^sk[cfulz]$/);
+    if (icon === 'key' || icon === 'skull' || icon === 'town-scroll' || icon === 'identify-scroll') {
+      const codes: Record<string, RegExp> = { key: /^(key|pk[1-3])$/, skull: /^sk[cfulz]$/, 'town-scroll': /^tsc$/, 'identify-scroll': /^isc$/ };
+      assert.match(base.code, codes[icon]);
       assert.match(artUrl(icon), /^data:image\/svg\+xml,/);
     } else assert.ok(ART_KEYS.includes(icon as typeof ART_KEYS[number]), base.code);
   }
@@ -50,7 +51,16 @@ test('every runtime base maps to available raster or inline key art; gems and ru
     const code = text(row, 'code');
     if (code) assert.equal(itemArtKey(code), /^r\d{2}$/.test(code) ? 'rune' : /^sk[cfulz]$/.test(code) ? 'skull' : 'gem', code);
   }
-  for (const [code, family] of Object.entries({hp1:'health',mp5:'mana',rvs:'rejuvenation',rvl:'rejuvenation',box:'cube',gld:'gold',aqv:'arrows',cqv:'arrows',rin:'ring',amu:'amulet',tsc:'scroll',tbk:'book',cap:'helm',buc:'shield',hax:'axe',sst:'staff',jav:'spear',sbb:'bow'})) assert.equal(itemArtKey(code), family, code);
+  for (const [code, family] of Object.entries({hp1:'health',mp5:'mana',rvs:'rejuvenation',rvl:'rejuvenation',box:'cube',gld:'gold',aqv:'arrows',cqv:'arrows',rin:'ring',amu:'amulet',tsc:'town-scroll',isc:'identify-scroll',tbk:'book',cap:'helm',buc:'shield',hax:'axe',sst:'staff',jav:'spear',sbb:'bow'})) assert.equal(itemArtKey(code), family, code);
+});
+test('town and identify scroll art use blue and red ink without changing the original asset manifest', () => {
+  for (const [code, color] of [['tsc', '#367ed8'], ['isc', '#c54139']]) {
+    const url = artUrl(itemArtKey(code));
+    assert.match(url, /^data:image\/svg\+xml,/);
+    assert.ok(decodeURIComponent(url.split(',')[1]).includes(color));
+  }
+  assert.notEqual(artUrl(itemArtKey('tsc')), artUrl(itemArtKey('isc')));
+  assert.equal(ART_KEYS.length, 49);
 });
 test('all seven class portraits and generic NPC portraits use dedicated art', () => {
   for (const code of ['ama','sor','nec','pal','bar','dru','ass']) assert.equal(heroArtKey(code), code);

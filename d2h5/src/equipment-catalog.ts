@@ -1,5 +1,5 @@
 import { num, rawRows, text } from './catalog';
-import { getBase, RUNEWORDS } from './items';
+import { getBase, itemName, RUNEWORDS } from './items';
 import type { RawRow } from './types';
 import uniques from './data/raw/UniqueItems.json';
 import prefixes from './data/raw/MagicPrefix.json';
@@ -27,25 +27,13 @@ export interface EquipmentEntry {
 
 const PARTIAL = '仅部分行为已接入，不代表完整生成或全部属性生效';
 const DEFINITION = '仅定义，未接入执行';
-const WORD_NAMES: Record<string, string> = {
-  Runeword4: 'Beast', Runeword14: 'Chains of Honor', Runeword26: 'Doom',
-  Runeword37: 'Exile', Runeword47: 'Grief', Runeword60: 'Infinity', Runeword99: 'Voice of Reason',
-};
+const SET_KEYS = new Map(rawRows('Sets').map(row => [text(row, 'index'), text(row, 'name')]));
 const offlineWords = new Set(RUNEWORDS.map(word => text(word.raw, 'Name')));
+const WORD_ALIASES = new Map(Object.entries(words).map(([name, row]) => [`${row.Name}:${row.lineNumber}`, name]));
 const baseRows = ['weapons', 'armor', 'misc'].flatMap(table => rawRows(table));
 const rawBases = new Map(baseRows.map(row => [text(row, 'code'), row]));
-const gemNames = new Map(rawRows('gems').filter(row => !/^r\d{2}$/.test(text(row, 'code'))).map(row => [
-  text(row, 'code'), text(row, 'name')
-    .replace(/^(Chipped|Flawed|Flawless|Flwless|Perfect) /, grade => ({
-      'Chipped ': '碎裂的', 'Flawed ': '裂开的', 'Flawless ': '无瑕疵的', 'Flwless ': '无瑕疵的', 'Perfect ': '完美的',
-    })[grade]!)
-    .replace(/Amethyst|Sapphire|Saphire|Emerald|Ruby|Diamond|Topaz|Skull/g, family => ({
-      Amethyst: '紫宝石', Sapphire: '蓝宝石', Saphire: '蓝宝石', Emerald: '绿宝石',
-      Ruby: '红宝石', Diamond: '钻石', Topaz: '黄宝石', Skull: '骷髅',
-    })[family]!),
-]));
 function baseName(code: string): string {
-  return gemNames.get(code) ?? getBase(code)?.name ?? text(rawBases.get(code) ?? {}, 'name', code);
+  return getBase(code)?.name ?? itemName(text(rawBases.get(code) ?? {}, 'namestr', code));
 }
 function baseLines(code: string): string[] {
   const base = getBase(code), row = rawBases.get(code);
@@ -77,7 +65,7 @@ function affixes(kind: 'prefix' | 'suffix', rows: Record<string, RawRow>): Equip
   return Object.entries(rows).filter(([, raw]) => text(raw, 'Name')).map(([key, raw]) => {
     const eligible = [1, 100].includes(num(raw, 'version')) && num(raw, 'spawnable') === 1 && num(raw, 'frequency') > 0;
     const status = eligible ? `运行时候选，仍受类型、等级与组别限制；${PARTIAL}` : `历史版本或不可随机生成，运行时禁用；${DEFINITION}`;
-    return entry(kind, key, text(raw, 'Name'), '', status, raw);
+    return entry(kind, key, itemName(text(raw, 'Name')), '', status, raw);
   });
 }
 
@@ -89,19 +77,19 @@ export const EQUIPMENT_CATALOG: EquipmentEntry[] = [
     return entry('base', code, baseName(code), code, status, raw);
   }),
   ...Object.entries(uniques).filter(([, raw]) => text(raw, 'index') && text(raw, 'code')).map(([key, raw]) =>
-    entry('unique', key, text(raw, 'index'), text(raw, 'code'), namedStatus(raw, true), raw,
+    entry('unique', key, itemName(text(raw, 'index')), text(raw, 'code'), namedStatus(raw, true), raw,
       [`定义等级：${num(raw, 'lvl')} / 定义需求等级：${num(raw, 'lvl req')}`])),
   ...rawRows('SetItems').filter(raw => text(raw, 'index') && text(raw, 'item')).map(raw =>
-    entry('set-item', text(raw, 'index'), text(raw, 'index'), text(raw, 'item'), namedStatus(raw, false), raw,
-      [`所属套装：${text(raw, 'set')}`, `定义等级：${num(raw, 'lvl')} / 定义需求等级：${num(raw, 'lvl req')}`])),
+    entry('set-item', text(raw, 'index'), itemName(text(raw, 'index')), text(raw, 'item'), namedStatus(raw, false), raw,
+      [`所属套装：${itemName(SET_KEYS.get(text(raw, 'set')) ?? text(raw, 'set'))}`, `定义等级：${num(raw, 'lvl')} / 定义需求等级：${num(raw, 'lvl req')}`])),
   ...rawRows('Sets').filter(raw => text(raw, 'index')).map(raw =>
-    entry('set', text(raw, 'index'), text(raw, 'name', text(raw, 'index')), '', `组合奖励未实现；${DEFINITION}`, raw)),
+    entry('set', text(raw, 'index'), itemName(text(raw, 'name', text(raw, 'index'))), '', `组合奖励未实现；${DEFINITION}`, raw)),
   // RawRow's legacy type omits null; preserve Infinity's null cell, as catalog.ts does.
   ...Object.entries(words as unknown as Record<string, RawRow>).filter(([, raw]) => text(raw, 'Name')).map(([sourceName, raw]) => {
     const identity = text(raw, 'Name');
     // The pinned incomplete Patience row repeats Passion's Name=Runeword95.
     const key = identity === 'Runeword95' && num(raw, 'complete') !== 1 ? `${identity}:${num(raw, 'lineNumber')}` : identity;
-    const name = WORD_NAMES[identity] && num(raw, 'complete') === 1 ? WORD_NAMES[identity] : text(raw, 'Rune Name', sourceName);
+    const name = key.includes(':') ? '未完成符文之语（原始名称键重复）' : itemName(identity);
     const status = num(raw, 'complete') !== 1 ? `原始未完成（complete≠1），离线匹配禁用；${DEFINITION}`
       : num(raw, 'server') === 1 ? `服务器限定（server=1），原版离线匹配禁用；${DEFINITION}，属性处理仍不完整`
       : offlineWords.has(identity) ? `原版离线匹配已启用；${PARTIAL}` : `离线匹配未纳入；${DEFINITION}`;
@@ -136,6 +124,6 @@ Object.freeze(EQUIPMENT_CATALOG);
 export function searchEquipment(kind: CatalogKind, query: string): EquipmentEntry[] {
   const needle = query.trim().toLowerCase();
   return EQUIPMENT_CATALOG.filter(entry => entry.kind === kind && (!needle || [
-    entry.name, entry.code, ...['name', 'Name', 'Rune Name', 'index', 'namestr', '*name', 'description', 'set'].map(key => String(entry.raw[key] ?? '')),
+    entry.name, entry.code, entry.kind === 'runeword' ? WORD_ALIASES.get(`${text(entry.raw, 'Name')}:${num(entry.raw, 'lineNumber')}`) ?? '' : '', ...['name', 'Name', 'Rune Name', 'index', 'namestr', '*name', 'description', 'set'].map(key => String(entry.raw[key] ?? '')),
   ].some(value => value.toLowerCase().includes(needle))));
 }

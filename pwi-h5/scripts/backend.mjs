@@ -16,7 +16,13 @@ try {
     const { makeEquip, ITEMS } = await import('/src/data/items.js');
     const { CLASSES, SKILLS, skillReq } = await import('/src/data/classes.js');
     const { ZONES, DUNGEONS, CULTIVATION } = await import('/src/data/world.js');
-    const { getProductionRecipe, PRODUCTION_SKILLS, QIANKUN_TRANSFER_COSTS } = await import('/src/data/production.js');
+    const { getProductionRecipe, getProductionRecipes, PRODUCTION_SKILLS, QIANKUN_TRANSFER_COSTS } = await import('/src/data/production.js');
+    const { NAMED_EQUIPMENT, matchesNamedEquip, equipmentForShop } = await import('/src/data/named-equipment.js');
+    const tutorialRecipe = (cls, slot) => {
+      const recipe = getProductionRecipes(cls).find(r => r.slot === slot && r.lv === 1 && !r.from);
+      if (!recipe) throw new Error(`Missing finite tutorial recipe: ${cls}/${slot}`);
+      return recipe;
+    };
     const { gearSpec, matchesGearSpec } = await import('/src/data/gear-specs.js');
     const { createBattle } = await import('/src/core/combat.js');
     const { ENCOUNTERS } = await import('/src/data/encounters.js');
@@ -283,7 +289,9 @@ try {
       await command(api, '/v1/character/attributes', { key: 'mag', quantity: 5 });
       await command(api, '/v1/character/attributes/recommended');
       await command(api, '/v1/items/use', { id: 'hp1' }); await command(api, '/v1/world/rest');
-      await command(api, '/v1/shop/equipment/buy', { slot: 'weapon' });
+      const stock = equipmentForShop(api.game.p).find(entry => (entry.slot || entry.equipment?.slot) === 'weapon');
+      check(stock, 'No actual named weapon stock');
+      await command(api, '/v1/shop/equipment/buy', { templateId: stock.templateId });
       await command(api, '/v1/equipment/forge', { slot: 'body', quality: 1 });
       await command(api, '/v1/equipment/equip', { uid: api.game.p.bag.at(-1).uid });
       await command(api, '/v1/equipment/refine', { slot: 'body', aid: 'tiangang' });
@@ -535,7 +543,8 @@ try {
         for (const [path, expected] of Object.entries(fields)) same(API_ROUTES.find(r => r.path === path && r.method === 'POST').fields, expected, path);
         const before = structuredClone(api.game.state), revision = api.revision, disk = await api.store.current();
         const catalog = await withRandom(() => { throw new Error('GET created random equipment'); }, () => api.request('GET', '/v1/equipment/production'));
-        check(catalog.data.recipes.length === 141, 'Detached real recipe catalog incomplete');
+        check(catalog.data.recipes.length === getProductionRecipes(api.game.p.cls).length, 'Detached named recipe catalog incomplete');
+        check(catalog.data.recipes.every(r => Object.hasOwn(NAMED_EQUIPMENT, r.templateId)), 'Recipe still uses generated series identity');
         check(catalog.data.recipes.every(r => r.previews.every(p => !Object.hasOwn(p, 'uid'))), 'Preview created UID');
         catalog.data.recipes[0].materials.ore1 = -99; catalog.data.skills.blacksmith.level = 1;
         same(api.game.state, before, 'GET mutated player'); same(await api.store.current(), disk, 'GET wrote checkpoint'); check(api.revision === revision, 'GET committed revision');
@@ -546,7 +555,7 @@ try {
       try {
         await load(api);
         for (const [path, valid] of [
-          ['/v1/equipment/produce', { recipeId: 'ordinary-1-weapon', confirm: true }],
+          ['/v1/equipment/produce', { recipeId: tutorialRecipe(api.game.p.cls, 'weapon').id, confirm: true }],
           ['/v1/equipment/train', { skill: 'blacksmith' }], ['/v1/equipment/machine', {}],
           ['/v1/equipment/punch', { uid: api.game.p.equipment.weapon.uid }],
           ['/v1/equipment/transfer', { fromUid: api.game.p.equipment.weapon.uid, toUid: api.game.p.equipment.body.uid, confirm: true }],
@@ -556,8 +565,8 @@ try {
           await unchangedReject(api, () => command(api, path, { ...valid, admin: true }), 'INVALID_FIELD');
           for (const key of Object.keys(valid)) await unchangedReject(api, () => command(api, path, { ...valid, [key]: typeof valid[key] === 'boolean' ? 'true' : 1 }), 'INVALID_FIELD');
         }
-        for (const body of [{ recipeId: 'ordinary-1-weapon', confirm: false }, { recipeId: 'constructor', confirm: true }, { recipeId: 'ordinary-1-weapon', uid: 'absent', confirm: true }, { recipeId: 'ordinary-1-weapon', inherit: true, confirm: true }]) await unchangedReject(api, () => command(api, '/v1/equipment/produce', body), 'RULE_REJECTED');
-        await unchangedReject(api, () => command(api, '/v1/equipment/produce', { recipeId: 'ordinary-1-weapon', confirm: true, inherit: 'true' }), 'INVALID_FIELD');
+        for (const body of [{ recipeId: tutorialRecipe(api.game.p.cls, 'weapon').id, confirm: false }, { recipeId: 'constructor', confirm: true }, { recipeId: tutorialRecipe(api.game.p.cls, 'weapon').id, uid: 'absent', confirm: true }, { recipeId: tutorialRecipe(api.game.p.cls, 'weapon').id, inherit: true, confirm: true }]) await unchangedReject(api, () => command(api, '/v1/equipment/produce', body), 'RULE_REJECTED');
+        await unchangedReject(api, () => command(api, '/v1/equipment/produce', { recipeId: tutorialRecipe(api.game.p.cls, 'weapon').id, confirm: true, inherit: 'true' }), 'INVALID_FIELD');
         for (const mutate of [it => it.base.matk++, it => it.wear.mag = 0, it => it.addons.creation = 1, it => it.sockets = ['gemHp1'], it => it.socketLimit = 4, it => delete it.ruleVersion]) {
           const forged = structuredClone(api.game.state); mutate(forged.player.equipment.weapon);
           await unchangedReject(api, () => load(api, forged));
@@ -568,16 +577,16 @@ try {
       const api = await open('produce-replay');
       try {
         await load(api); const before = structuredClone(api.game.state), revision = api.revision;
-        const recipe = getProductionRecipe('ordinary-1-weapon', api.game.p.cls), body = { recipeId: recipe.id, confirm: true }, options = { requestId: 'produce-once' };
+        const recipe = tutorialRecipe(api.game.p.cls, 'weapon'), body = { recipeId: recipe.id, confirm: true }, options = { requestId: 'produce-once' };
         const first = await withRandom(.5, () => command(api, '/v1/equipment/produce', body, options));
-        const it = api.game.p.bag.at(-1); check(it.q === 1 && matchesGearSpec(it), 'Actual production output not canonical');
+        const it = api.game.p.bag.at(-1); check(it.ruleVersion === 2 && it.templateId === recipe.templateId && matchesNamedEquip(it), 'Actual production output not named canonical');
         check(api.game.p.gold === before.player.gold - recipe.gold && api.game.p.production.blacksmith.exp === 1, 'Produce cost/XP mismatch');
         for (const [id, qty] of Object.entries(recipe.materials)) check(api.game.p.items[id] === before.player.items[id] - qty, `Consume ${id}`);
         const committed = structuredClone(api.game.state), copy = structuredClone(first.data);
         first.data.result.equipment.base.matk = -1; same(api.game.state, committed, 'Response references live item');
         const duplicate = await withRandom(() => { throw new Error('Replay rerolled'); }, () => command(api, '/v1/equipment/produce', body, options));
         same(duplicate.data, copy, 'Replay receipt changed'); check(duplicate.meta.duplicate && api.revision === revision + 1, 'Replay committed twice'); same(api.game.state, committed, 'Replay double charge');
-        await unchangedReject(api, () => command(api, '/v1/equipment/produce', { recipeId: 'ordinary-1-body', confirm: true }, options), 'REQUEST_ID_REUSED');
+        await unchangedReject(api, () => command(api, '/v1/equipment/produce', { recipeId: tutorialRecipe(api.game.p.cls, 'body').id, confirm: true }, options), 'REQUEST_ID_REUSED');
         const restored = await LocalBackend.open({ databaseName: api.store.db.name, legacyStorage: null });
         try { same(restored.game.state, committed, 'Produce checkpoint lost'); } finally { restored.close(); }
       } finally { api.close(); }
@@ -603,21 +612,16 @@ try {
         try { same(restored.game.state, api.game.state, 'Socket checkpoint mismatch'); } finally { restored.close(); }
       } finally { api.close(); }
     });
-    await test('轮回前身UID绑定收费继承全事务及重放不二次消耗', async () => {
-      const api = await open('inheritance');
+    await test('未核轮回公式链退出生产且保留旧前身全部培养状态', async () => {
+      const api = await open('retired-inheritance');
       try {
         const snap = fixture('blademaster'), old = makeEquip('weapon', 99, 3, 'blademaster', { series: 'twilight' });
         old.refine = 3; old.bound = true; old.sockets = ['gemPatk2', null]; old.durability = 37; snap.player.bag = [old]; await load(api, snap);
-        const before = structuredClone(api.game.state), revision = api.revision;
-        const body = { recipeId: 'nirvana1-100-weapon', uid: old.uid, inherit: true, confirm: true }, options = { requestId: 'inherit-once' };
-        const catalog = (await api.request('GET', '/v1/equipment/production')).data.recipes.find(r => r.id === body.recipeId);
-        check(catalog.candidates[0].inherit.qiankun === 21, 'Paid inheritance preview wrong');
-        const result = await command(api, '/v1/equipment/produce', body, options), it = api.game.p.bag[0];
-        check(it.uid === old.uid && it.refine === 3 && it.bound && it.durability === 37 && it.series === 'nirvana1', 'Inheritance identity/cultivation lost'); same(it.sockets, old.sockets, 'Inheritance sockets lost');
-        check(api.game.p.items.qiankun === before.player.items.qiankun - 21, 'Inheritance must be paid'); check(api.game.p.bag.length === 1 && api.game.p.items.gemPatk2 === before.player.items.gemPatk2, 'Old gem refunded or predecessor duplicated');
-        const committed = structuredClone(api.game.state);
-        const replay = await withRandom(() => { throw new Error('Inheritance replay rerolled'); }, () => command(api, '/v1/equipment/produce', body, options));
-        same(replay.data, result.data, 'Inheritance replay changed output'); same(api.game.state, committed, 'Inheritance paid twice'); check(api.revision === revision + 1, 'Inheritance committed twice');
+        const recipes = (await api.request('GET', '/v1/equipment/production')).data.recipes;
+        check(!recipes.some(r => r.id === 'nirvana1-100-weapon'), 'Unverified formula chain still offered');
+        const body = { recipeId: 'nirvana1-100-weapon', uid: old.uid, inherit: true, confirm: true };
+        await unchangedReject(api, () => command(api, '/v1/equipment/produce', body), 'RULE_REJECTED');
+        same(api.game.p.bag[0], old, 'Retired chain rewrote historical predecessor');
       } finally { api.close(); }
     });
     await test('制造IndexedDB中止和CAS冲突不消耗材料经验且刷新可恢复', async () => {
@@ -626,13 +630,13 @@ try {
         await load(api); const before = structuredClone(api.game.state), revision = api.revision;
         const db = api.store.db, transaction = db.transaction.bind(db);
         db.transaction = (...args) => { const tx = transaction(...args); if (args[1] === 'readwrite') queueMicrotask(() => tx.abort()); return tx; };
-        try { await reject(() => command(api, '/v1/equipment/produce', { recipeId: 'ordinary-1-body', confirm: true }), 'STORAGE_WRITE_FAILED'); }
+        try { await reject(() => command(api, '/v1/equipment/produce', { recipeId: tutorialRecipe(api.game.p.cls, 'body').id, confirm: true }), 'STORAGE_WRITE_FAILED'); }
         finally { db.transaction = transaction; }
         same(api.game.state, before, 'Produce abort changed memory'); same((await api.store.current()).snapshot, before, 'Produce abort changed disk'); check(api.revision === revision, 'Abort advanced revision');
         const other = await LocalBackend.open({ databaseName: db.name, legacyStorage: null });
         try {
-          await command(api, '/v1/equipment/produce', { recipeId: 'ordinary-1-body', confirm: true });
-          await reject(() => command(other, '/v1/equipment/produce', { recipeId: 'ordinary-1-weapon', confirm: true }), 'REVISION_CONFLICT');
+          await command(api, '/v1/equipment/produce', { recipeId: tutorialRecipe(api.game.p.cls, 'body').id, confirm: true });
+          await reject(() => command(other, '/v1/equipment/produce', { recipeId: tutorialRecipe(api.game.p.cls, 'weapon').id, confirm: true }), 'REVISION_CONFLICT');
           same(other.game.state, before, 'Losing producer spent resources'); same((await api.store.current()).snapshot, api.game.state, 'CAS overwrote winner');
         } finally { other.close(); }
       } finally { api.close(); }

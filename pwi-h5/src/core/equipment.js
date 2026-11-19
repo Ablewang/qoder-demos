@@ -1,8 +1,9 @@
 import { CLASSES } from '../data/classes.js';
 import { ZONES } from '../data/world.js';
-import { EQUIPMENT_DEFAULTS, ITEMS, SLOTS, REFINE_MAX, makeEquip, makeHighEquip, rollAddons } from '../data/items.js';
+import { EQUIPMENT_DEFAULTS, ITEMS, SLOTS, REFINE_MAX, makeHighEquip, rollAddons } from '../data/items.js';
+import { NAMED_EQUIPMENT, matchesNamedEquip } from '../data/named-equipment.js';
 import { HIGH_EQUIPMENT, HIGH_RECIPES, matchesHighEquip } from '../data/high-equipment.js';
-import { matchesGearSpec } from '../data/gear-specs.js';
+import { matchesGearSpec, gearSpec } from '../data/gear-specs.js';
 import { PRODUCTION_MATERIALS, QIANKUN_TRANSFER_COSTS, productionTier, gemRequiredGrade } from '../data/production.js';
 import { BAG_LIMIT, MAX_LEVEL, stats } from './model.js';
 
@@ -16,6 +17,7 @@ const ACTION_PARAMS = {
 };
 const ARMOR_SLOTS = ['head', 'body', 'legs', 'feet', 'wrist'];
 const GENERATED_FIELDS = ['ruleVersion', 'series', 'weaponType', 'wear', 'ranges', 'stars', 'attackType', 'origin'];
+const NAMED_FIELDS = ['sourceRecord', 'sourceStats', 'status', 'adaptedFields', 'runtimeAdaptation', 'affixes', 'affixRolls', 'addonBudget', 'referenceOnly', 'nameColor', 'materials'];
 const generatedSocketLimit = (it) => it.slot === 'weapon' ? 2 : ARMOR_SLOTS.includes(it.slot) ? 4 : 0;
 function gemFits(it, id) {
   const gem = ITEMS[id];
@@ -55,15 +57,22 @@ export function wearEquipment(p) {
 
 export function validateEquipment(it) {
   if (!it || typeof it !== 'object' || Array.isArray(it)) throw new Error('装备数据无效。');
-  const high = own(it, 'templateId') || it.q === 4 || it.grade > 16;
+  const named = it.ruleVersion === 2 || own(NAMED_EQUIPMENT, it.templateId) || /^(official:|local-tutorial:)/.test(it.templateId || '');
+  const high = !named && (own(it, 'templateId') || it.q === 4 || it.grade > 16);
   const generated = own(it, 'ruleVersion');
+  if (named && !matchesNamedEquip(it)) throw new Error('具名装备身份、来源、基础属性或原文词条与模板不符。');
+  if (!named && (NAMED_FIELDS.some((key) => own(it, key)) || Object.values(NAMED_EQUIPMENT).some((t) => t.name === it.name))) throw new Error('具名装备不能删除templateId或ruleVersion绕过校验。');
   if (high && (!matchesHighEquip(it) || GENERATED_FIELDS.some((key) => own(it, key)))) throw new Error('高阶装备与官方固定模板不符。');
-  if (!high && ['stage', 'id', 'requirements', 'classes', 'attackRanges', 'effects', 'source', 'adaptation', 'initialSockets'].some((key) => own(it, key))) throw new Error('普通装备不能伪造高阶模板身份。');
-  if (!high && !generated && GENERATED_FIELDS.some((key) => own(it, key))) throw new Error('新装备元数据不能通过删除ruleVersion降级为旧装备。');
-  if (generated && !matchesGearSpec(it)) throw new Error('新装备身份、基础属性或词条与制造规格不符。');
+  if (!named && !high && ['stage', 'id', 'requirements', 'classes', 'attackRanges', 'effects', 'source', 'adaptation', 'initialSockets'].some((key) => own(it, key))) throw new Error('普通装备不能伪造高阶模板身份。');
+  if (!named && !high && !generated && GENERATED_FIELDS.some((key) => own(it, key))) throw new Error('新装备元数据不能通过删除ruleVersion降级为旧装备。');
+  if (!named && generated && !matchesGearSpec(it)) throw new Error('新装备身份、基础属性或词条与制造规格不符。');
   if (it.kind !== 'equip' || typeof it.uid !== 'string' || !/^[a-z0-9]+$/i.test(it.uid) || !own(SLOTS, it.slot)
     || !Number.isInteger(it.lv) || it.lv < 1 || it.lv > MAX_LEVEL
-    || !Number.isInteger(it.grade) || it.grade < 1 || it.grade > (high ? 19 : 16)
+    || (!(named && it.grade === null) && (!Number.isInteger(it.grade) || it.grade < 1 || it.grade > (high || named ? 19 : 16)))
+    || (named && it.grade === null && (it.refine !== 0 || it.sockets?.length !== 0))
+    || (named && (!finite(it.price) || it.rerolls !== 0 || it.upgrades !== 0
+      || (own(it, 'origin') && (typeof it.origin !== 'string' || !it.origin || it.origin.length > 80))
+      || (own(it, 'locked') && typeof it.locked !== 'boolean')))
     || !Number.isInteger(it.refine) || it.refine < 0 || it.refine > REFINE_MAX
     || !Number.isInteger(it.q) || it.q < 0 || it.q > (high ? 4 : 3) || (!high && it.maxDurability !== 100)
     || !Number.isInteger(it.durability) || it.durability < 0 || it.durability > it.maxDurability
@@ -135,6 +144,7 @@ export function equipmentAction(game, action, params = {}) {
     const from = { ...structuredClone(EQUIPMENT_DEFAULTS), ...source[0] };
     const to = { ...structuredClone(EQUIPMENT_DEFAULTS), ...target[0] };
     validateEquipment(from); validateEquipment(to);
+    if ([from, to].some((it) => it.ruleVersion === 2 && it.grade === null)) throw new Error('来源未载品阶，不能转移精炼。');
     if (from.refine <= to.refine) throw new Error('源装备精炼等级必须高于目标装备。');
     if (from.bound && !to.bound) throw new Error('绑定源装备只能转移到绑定目标装备。');
     const level = from.refine, cost = QIANKUN_TRANSFER_COSTS[level];
@@ -155,6 +165,7 @@ export function equipmentAction(game, action, params = {}) {
   const it = worn[0] || packed[0];
   const migrated = { ...structuredClone(EQUIPMENT_DEFAULTS), ...it };
   validateEquipment(migrated);
+  if (it.ruleVersion === 2 && it.grade === null && ['punch', 'socket', 'decompose'].includes(action)) throw new Error('来源未载品阶，不能开孔、镶嵌或分解。');
   if (it.templateId && ['reroll', 'upgrade'].includes(action)) throw new Error('固定神铸模板不能重洗或普通升级；请使用神铸升阶。');
   if (it.ruleVersion === 1 && ['reroll', 'upgrade'].includes(action)) throw new Error('新制造装备不能任意重洗或通用+5升级；请按配方制造/轮回重铸。');
   const result = { action, uid: it.uid, gold: 0, consumed: {}, received: {} };
@@ -197,7 +208,7 @@ export function equipmentAction(game, action, params = {}) {
     case 'socket': {
       const gem = typeof params.gemId === 'string' && own(ITEMS, params.gemId) ? ITEMS[params.gemId] : null;
       if (gem?.type !== 'gem') throw new Error('请选择有效的宝石。');
-      if (it.ruleVersion === 1) {
+      if ([1, 2].includes(it.ruleVersion)) {
         const grade = gemRequiredGrade(params.gemId, gem);
         if (it.grade < grade) throw new Error(`宝石需要装备达到${grade}品，不以角色等级代替品阶。`);
         if (!gemFits(it, params.gemId)) throw new Error('该宝石不适配栏位：武器只镶嵌攻击类，护甲只镶嵌生命/真气/防御类。');
@@ -244,7 +255,8 @@ export function equipmentAction(game, action, params = {}) {
       result.consumed = { upgradeStone: 1, salvage: 2 };
       result.lv = targetLv;
       change = () => {
-        const next = makeEquip(it.slot, targetLv, it.q, cls);
+        const next = gearSpec(it.slot, targetLv, it.q, cls);
+        next.price = Math.round((20 + targetLv * targetLv * 0.8) * (1 + it.q * 0.8));
         for (const key of ['lv', 'grade', 'name', 'base', 'price']) it[key] = next[key];
         it.upgrades++;
       };

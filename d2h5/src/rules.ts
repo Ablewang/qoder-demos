@@ -1,4 +1,5 @@
 import { getClass, getSkill, num, rawRows, SKILLS, text, EXPERIENCE } from './catalog';
+import { attributeDamagePercent, DIFFICULTY_RULES, lifeBits, playerResistance, resistedDamageBits } from './combat';
 import type { ClassId, DerivedStats, Difficulty, Element, Item, ItemMods, Player, RawRow, SkillEffect, Slot, StatKey } from './types';
 
 const clamp = (value: number, min: number, max: number): number => Math.min(max, Math.max(min, value));
@@ -226,7 +227,7 @@ export function deriveStats(player: Player): DerivedStats {
   })) as DerivedStats['elementalDamage'];
   const attackRating = Math.max(0, Math.floor((5 * (dexterity - 7) + def.arFactor + mod('attackRating') - (localOffhand.attackRating ?? 0)) * (100 + mod('attackRatingPercent') - (localOffhand.attackRatingPercent ?? 0) + passiveValue(player, 23)) / 100));
   const statDamagePercent = weaponRow
-    ? (strength * num(weaponRow, 'StrBonus') + dexterity * num(weaponRow, 'DexBonus')) / 100
+    ? attributeDamagePercent(strength, dexterity, num(weaponRow, 'StrBonus'), num(weaponRow, 'DexBonus'))
     : strength;
   // localDamagePercent on the attacking weapon is baked in; on other items it
   // is off-weapon enhanced damage (for example an ED jewel in body armor).
@@ -242,9 +243,14 @@ export function deriveStats(player: Player): DerivedStats {
   // is established in research/01-classes-skills.md §1, not a class base chance.
   const shieldBase = shieldRow ? num(shieldRow, 'block', offhand?.code === 'buc' ? 5 : 0) : 0;
   const block = shield ? blockChance(shieldBase + def.blockFactor + mod('block'), dexterity, player.level) : 0;
-  const penalty = player.difficulty === 'hell' ? -100 : player.difficulty === 'nightmare' ? -40 : 0;
+  const penalty = DIFFICULTY_RULES[player.difficulty].resistancePenalty;
   const commonResist = penalty + player.bonusResist + mod('resAll') + passiveValue(player, 153);
-  const resistance = (key: string): number => clamp(commonResist + mod(key), -100, 75);
+  const resistances = {
+    fire: playerResistance(commonResist + mod('resFire')),
+    cold: playerResistance(commonResist + mod('resCold')),
+    lightning: playerResistance(commonResist + mod('resLightning')),
+    poison: playerResistance(commonResist + mod('resPoison')),
+  };
   const belt = equipment.find(([slot]) => slot === 'belt')?.[1];
   const beltRow = belt ? armorRows.get(belt.code) : undefined;
   // Armor.belt indexes Belts.txt; never interpret it as the row count.
@@ -254,8 +260,8 @@ export function deriveStats(player: Player): DerivedStats {
   const beltRows = upgradedBelt ? 4 : layout ? num(layout, 'numboxes', 4) / 4 : 1;
   return {
     strength, dexterity, vitality, energy, maxLife, maxMana, maxStamina, defense, attackRating,
-    minDamage, maxDamage, block, resFire: resistance('resFire'), resCold: resistance('resCold'),
-    resLightning: resistance('resLightning'), resPoison: resistance('resPoison'),
+    minDamage, maxDamage, block, resistances, resFire: resistances.fire.effective, resCold: resistances.cold.effective,
+    resLightning: resistances.lightning.effective, resPoison: resistances.poison.effective,
     magicFind: mod('magicFind'), goldFind: mod('goldFind'), fcr: mod('fcr'), fhr: mod('fhr'),
     ias: mod('ias') - (localOffhand.ias ?? 0), frw: mod('frw'),
     lifeLeech: mod('lifeLeech') - (localOffhand.lifeLeech ?? 0), manaLeech: mod('manaLeech') - (localOffhand.manaLeech ?? 0),
@@ -405,12 +411,10 @@ export function blockChance(blockBase: number, dexterity: number, level: number,
   return running ? Math.floor(chance / 3) : chance;
 }
 export function resistDamage(damage: number, resistance: number): number {
-  if (resistance >= 100) return 0;
-  const bits = Math.floor(Math.max(0, damage) * 256);
-  return Math.floor(bits * (100 - Math.max(-100, resistance)) / 100) / 256;
+  return resistedDamageBits(lifeBits(damage), resistance) / 256;
 }
 export function leechAmount(physicalDamage: number, percent: number, drain: number, difficulty: Difficulty): number {
-  const divisor = difficulty === 'normal' ? 1 : difficulty === 'nightmare' ? 2 : 3;
+  const divisor = DIFFICULTY_RULES[difficulty].leechDivisor;
   const rate = Math.floor(Math.max(0, percent) * 64 / divisor);
   const damageBits = Math.floor(Math.max(0, physicalDamage) * 256);
   const drained = Math.floor(Math.floor(damageBits * rate / 100) * Math.max(0, drain) / 100);

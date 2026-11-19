@@ -3,12 +3,14 @@ import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 
 import { ITEMS, SLOTS, EQUIPMENT_SETS } from '../src/data/items.js';
-import { GEAR_RULES } from '../src/data/gear-specs.js';
+import { CATALOG_TYPES, CATALOG_MAX_LEVEL, EQUIPMENT_CATALOG, queryEquipmentCatalog } from '../src/data/gear-catalog.js';
+import { equipmentForShop } from '../src/data/named-equipment.js';
+import { OFFICIAL_EQUIPMENT } from '../src/data/official-equipment.js';
 import { getProductionRecipes, PRODUCTION_SKILLS } from '../src/data/production.js';
 import { DUNGEONS, ZONES } from '../src/data/world.js';
 
-const base = process.env.GAME_URL;
-assert.match(base || '', /^http:\/\/(?:localhost|127\.0\.0\.1):517[67]$/, 'Use explicit isolated localhost/127.0.0.1 port 5177 or 5176 in a fresh Chrome context');
+const base = process.env.GAME_URL || 'http://127.0.0.1:5176';
+assert.match(base, /^http:\/\/(?:localhost|127\.0\.0\.1):5176$/, 'Use only the existing isolated production preview on port 5176 in a fresh context');
 const artifacts = fileURLToPath(new URL('../artifacts/', import.meta.url));
 const browser = await chromium.launch({
   executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
@@ -16,8 +18,7 @@ const browser = await chromium.launch({
 });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
 const page = await context.newPage();
-// The independent app work must not HMR-reset navigation in this isolated test context.
-await page.route('**/@vite/client', (route) => route.fulfill({ contentType: 'application/javascript', body: '' }));
+// Production preview needs neither source-module imports nor a Vite client stub.
 page.setDefaultTimeout(15000);
 page.setDefaultNavigationTimeout(30000);
 const errors = [];
@@ -30,7 +31,7 @@ page.on('dialog', async (dialog) => {
 let tag = new URL(base).port === '5176' ? 'production' : 'development';
 
 const slots = Object.keys(SLOTS);
-const tabs = ['equipment', 'items', 'catalog', 'arsenal'];
+const tabs = ['equipment', 'items', 'catalog', 'arsenal', 'specs'];
 const allIds = Object.keys(ITEMS);
 const groupOf = ({ type }) => ['hp', 'mp'].includes(type) ? 'potions'
   : ['mat', 'material'].includes(type) ? 'materials' : type === 'gem' ? 'gems'
@@ -47,7 +48,12 @@ const modalBody = () => page.locator('#modal .modal-body').filter({ visible: tru
 
 async function idle() {
   await page.waitForFunction(() => document.querySelector('#app')?.getAttribute('aria-busy') === 'false');
-  await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+  await page.evaluate(async () => {
+    const api = globalThis[Symbol.for('pwi-h5.main-session')]?.api;
+    if (!api) throw new Error('Missing main-session API in the isolated preview');
+    await api.queue;
+    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  });
   await page.waitForFunction(() => document.querySelector('#app')?.getAttribute('aria-busy') === 'false');
 }
 async function click(name, attrs = '', root = '') {
@@ -57,7 +63,9 @@ async function click(name, attrs = '', root = '') {
 }
 async function navigate(id) {
   await idle();
-  await visible(`.sidebar .nav [data-action="page"][data-id="${id}"], .mobile-nav [data-action="page"][data-id="${id}"]`).click();
+  const locator = visible(`.sidebar .nav [data-action="page"][data-id="${id}"], .mobile-nav [data-action="page"][data-id="${id}"]`);
+  if (!await locator.count() && await page.locator('.mobile-nav-more > summary').isVisible()) await page.locator('.mobile-nav-more > summary').click();
+  await locator.click();
   await idle();
 }
 async function bagTab(id) {
@@ -107,7 +115,7 @@ async function unchanged(checkpoint, label) {
 async function reloadUnchanged(checkpoint) {
   await closeIfOpen();
   await page.reload();
-  await page.locator('.profile-name').waitFor({ state: 'attached' });
+  await page.locator('.hud-identity strong').waitFor({ state: 'attached' });
   await idle();
   await unchanged(checkpoint, 'Reload');
 }
@@ -206,31 +214,62 @@ async function tabContents(id) {
     assert.deepEqual(sorted(await catalogIds()), sorted(allIds));
   } else {
     await page.locator('#catalog-class').selectOption('all');
-    await page.locator('.gear-catalog-advanced > summary').click();
-    await page.locator('#catalog-series').selectOption('all');
+    await page.locator('#catalog-slot').selectOption('all');
+    await page.locator('#catalog-min-level').fill('');
+    await page.locator('#catalog-max-level').fill('');
+    if (!await page.locator('.gear-catalog-advanced').evaluate((node) => node.open)) await page.locator('.gear-catalog-advanced > summary').click();
+    await page.locator('#catalog-type').selectOption('all');
+    await page.locator('#catalog-grade').selectOption('all');
+    await page.locator('#catalog-sort').selectOption('level-grade');
     await idle();
     assert.deepEqual(await page.locator('#catalog-slot option').evaluateAll((nodes) => nodes.map((node) => node.value)), ['all', ...slots.filter((slot) => slot !== 'ring2')]);
-    assert.deepEqual(await page.locator('#catalog-quality option').evaluateAll((nodes) => nodes.map((node) => node.value)), ['all', '0', '1', '2', '3', '4']);
-    await expect(page.locator('.equipment-catalog')).toContainText('不生成装备、UID或随机词条');
-    await expect(page.locator('#catalog-count')).toContainText('17,766');
-    await expect(page.locator('.gear-catalog-row')).toHaveCount(60);
-    await page.locator('.catalog-cultivation > summary').click();
+    assert.deepEqual(await page.locator('#catalog-type option').evaluateAll((nodes) => nodes.map((node) => node.value)), ['all', ...Object.keys(CATALOG_TYPES)]);
+    const grades = [...new Set(EQUIPMENT_CATALOG.map((entry) => entry.grade).filter((grade) => grade != null))].sort((a, b) => a - b).map(String);
+    assert.deepEqual(await page.locator('#catalog-grade option').evaluateAll((nodes) => nodes.map((node) => node.value)), ['all', ...grades]);
+    await expect(page.locator('#catalog-quality, #catalog-stars, #catalog-series')).toHaveCount(0);
+    await expect(page.locator('#catalog-max-level')).toHaveAttribute('max', String(CATALOG_MAX_LEVEL));
+    await expect(page.locator('.equipment-catalog')).toContainText('未知');
+    const result = queryEquipmentCatalog({ cls: 'all' });
+    assert.equal(result.catalogTotal, EQUIPMENT_CATALOG.length);
+    await expect(page.locator('#catalog-count')).toContainText(`全目录 ${EQUIPMENT_CATALOG.length.toLocaleString('zh-CN')} 条`);
+    assert.deepEqual(await page.locator('.gear-catalog-row').evaluateAll((nodes) => nodes.map((node) => node.dataset.id)), result.entries.map((entry) => entry.id));
+    await page.locator('#catalog-min-level').fill(String(CATALOG_MAX_LEVEL));
+    await page.locator('#catalog-max-level').fill(String(CATALOG_MAX_LEVEL));
+    await idle();
+    const highest = queryEquipmentCatalog({ cls: 'all', minLv: CATALOG_MAX_LEVEL, maxLv: CATALOG_MAX_LEVEL });
+    assert.ok(highest.total > 0, 'Highest recorded level must remain discoverable');
+    assert.deepEqual(await page.locator('.gear-catalog-row').evaluateAll((nodes) => nodes.map((node) => node.dataset.id)), highest.entries.map((entry) => entry.id));
+    await page.locator('#catalog-min-level').fill(''); await page.locator('#catalog-max-level').fill('');
+    await idle();
+    if (!await page.locator('.catalog-cultivation').evaluate((node) => node.open)) await page.locator('.catalog-cultivation > summary').click();
     await expect(page.locator('.cultivation-reference article')).toHaveCount(3);
-    for (const text of ['先开孔', '武器最多2孔', '品阶', '不支持通用+5升级或任意洗练', '天罡+15', '地煞+5', '乾坤']) await expect(page.locator('.cultivation-reference')).toContainText(text);
+    for (const text of ['先开孔', '武器最多2孔', '品阶', '精确具名配方', '天罡+15', '地煞+5', '乾坤']) await expect(page.locator('.cultivation-reference')).toContainText(text);
     const legacy = page.locator('.rules-boundary').filter({ hasText: '旧存档套装兼容' });
     for (const set of Object.values(EQUIPMENT_SETS)) await expect(legacy).toContainText(set.name);
     await expect(legacy).toContainText('无ruleVersion旧装备仍可旧制升级与洗练');
     await expect(page.locator('.high-forge-entry')).toHaveCount(0);
     await expect(page.locator('#equipment-high')).toHaveCount(0);
-    await expect(page.locator('.rules-boundary a')).toHaveCount(3);
+    await expect(page.locator('.equipment-catalog .rules-boundary a')).toHaveCount(3);
+    if (id === 'arsenal') {
+      const reference = page.locator('.page > details.rules-boundary');
+      await reference.locator('summary').first().click();
+      await expect(page.locator('#official-results')).toContainText(String(OFFICIAL_EQUIPMENT.length));
+      await reference.locator('summary').first().click();
+    }
   }
 }
 async function checkHighDetail(checkpoint) {
   if (!await page.locator('.gear-catalog-advanced').evaluate((node) => node.open)) await page.locator('.gear-catalog-advanced > summary').click();
   await page.locator('#catalog-class').selectOption('all');
-  await page.locator('#catalog-series').selectOption('high');
+  await page.locator('#catalog-slot').selectOption('all');
+  await page.locator('#catalog-min-level').fill(''); await page.locator('#catalog-max-level').fill('');
+  await page.locator('#catalog-type').selectOption('axe');
+  await page.locator('#catalog-grade').selectOption('19');
+  await page.locator('#catalog-sort').selectOption('level-grade');
   await idle();
-  await expect(page.locator('.gear-catalog-row')).toHaveCount(5);
+  const result = queryEquipmentCatalog({ cls: 'all', type: 'axe', grade: 19 });
+  assert.deepEqual(await page.locator('.gear-catalog-row').evaluateAll((nodes) => nodes.map((node) => node.dataset.id)), result.entries.map((entry) => entry.id));
+  assert.ok(result.entries.some((entry) => entry.id === 'high:axe19c'));
   await click('catalogEquipmentDetail', '[data-id="high:axe19c"]');
   await modalSettled();
   const text = compact(await modalBody().innerText());
@@ -259,7 +298,7 @@ try {
   await click('class', '[data-id="blademaster"]');
   await page.locator('#char-name').fill('装备道具验收');
   await page.getByRole('button', { name: '进入完美大陆' }).click();
-  await page.locator('.profile-name').waitFor({ state: 'attached' });
+  await page.locator('.hud-identity strong').waitFor({ state: 'attached' });
   await idle();
   const initial = await record();
   const starter = initial.snapshot.player;
@@ -267,18 +306,18 @@ try {
   assert.equal(starter.gold, 300);
   assert.equal(starter.cls, 'blademaster');
   assert.equal(starter.location, starter.lastCity);
-  assert.deepEqual(sorted(Object.keys(starter.equipment)), sorted(['weapon', 'body', 'legs', 'feet']));
+  const starterSlots = Object.keys(starter.equipment);
+  assert.ok(starterSlots.includes('weapon') && starterSlots.every((slot) => slots.includes(slot)), 'Starter equipment must use actual supported slots');
   assert.deepEqual(starter.bag, []);
   assert.equal(starter.items.town, 3);
 
   await navigate('world');
-  for (const id of ['equipment', 'catalog', 'arsenal']) {
-    await expect(action('catalogGo', `[data-page="bag"][data-tab="${id}"]`, '.page')).toBeVisible();
-  }
-  await click('catalogGo', '[data-page="bag"][data-tab="equipment"]', '.page');
+  await expect(action('page', '[data-id="bag"]', '.quick-services')).toBeVisible();
+  await click('page', '[data-id="bag"]', '.quick-services');
+  await bagTab('equipment');
   await expect(page.locator('.bag-tabs [data-id="equipment"]')).toHaveClass(/\bactive\b/);
   await tabContents('equipment');
-  await expect(page.locator('.page .equip-slot .equipment-name')).toHaveCount(4);
+  await expect(page.locator('.page .equip-slot .equipment-name')).toHaveCount(starterSlots.length);
   for (const [slot, item] of Object.entries(starter.equipment)) {
     await expect(page.locator(`.page .equip-slot[data-id="${slot}"]`)).toContainText(item.name);
   }
@@ -291,17 +330,20 @@ try {
   await click('catalogGo', '[data-page="town"][data-tab="equipment"]', '#modal');
   await expect(page.locator('#modal')).toBeHidden();
   await expect(action('townTab', '[data-id="equipment"]')).toHaveClass(/\bactive\b/);
-  const headBuy = action('buyEquip', '[data-id="head"]', '.page');
+  const headSpec = equipmentForShop(starter).find((entry) => entry.slot === 'head' && entry.lv === 1 && entry.price <= starter.gold);
+  assert.ok(headSpec, 'A real level-1 head template must be available');
+  const headBuy = action('buyEquip', `[data-id="${headSpec.templateId}"]`, '.page');
   await expect(headBuy).toBeEnabled();
   const displayedPrice = Number((await headBuy.innerText()).match(/([\d,，]+)\s*金币/)?.[1].replace(/[,，]/g, ''));
   assert.ok(Number.isFinite(displayedPrice) && displayedPrice > 0 && displayedPrice <= 300, 'Head purchase must be affordable with starting gold');
   await unchanged(initial, 'Empty-slot acquisition navigation');
-  await click('buyEquip', '[data-id="head"]', '.page');
+  await click('buyEquip', `[data-id="${headSpec.templateId}"]`, '.page');
   await closeIfOpen();
   const purchased = await record();
   assert.equal(purchased.revision, initial.revision + 1);
   assert.equal(purchased.snapshot.player.bag.length, 1);
   const head = purchased.snapshot.player.bag[0];
+  assert.equal(head.templateId, headSpec.templateId);
   assert.equal(head.slot, 'head');
   assert.equal(head.lv, 1);
   assert.equal(head.price, displayedPrice);
@@ -319,7 +361,7 @@ try {
   expectedEquipped.bag = []; expectedEquipped.equipment.head = head;
   assert.deepEqual(equipped.snapshot.player, expectedEquipped, 'Equipping must move the same UID without charging resources');
   await expect(page.locator('.page .equip-slot[data-id="head"]')).toContainText(head.name);
-  await expect(page.locator('.page .equip-slot .equipment-name')).toHaveCount(5);
+  await expect(page.locator('.page .equip-slot .equipment-name')).toHaveCount(starterSlots.length + 1);
   await reloadUnchanged(equipped);
   await navigate('bag');
   await expect(page.locator('.bag-tabs [data-id="equipment"]')).toHaveClass(/\bactive\b/);
@@ -328,14 +370,15 @@ try {
   await click('unequip', '[data-id="head"]', '#modal');
   const browsing = await record();
   assert.equal(browsing.revision, equipped.revision + 1);
-  assert.deepEqual(browsing.snapshot.player, expectedPurchase, 'Unequipping must restore the exact bag item and original four equipped items');
+  assert.deepEqual(browsing.snapshot.player, expectedPurchase, 'Unequipping must restore the exact bag item and original starter equipped items');
   await expect(page.locator('.page .equip-slot[data-id="head"]')).toContainText('尚未装备');
   await reloadUnchanged(browsing);
 
   for (const origin of ['world', 'guide']) {
     for (const id of ['equipment', 'catalog', 'arsenal']) {
       await navigate(origin);
-      await click('catalogGo', `[data-page="bag"][data-tab="${id}"]`, '.page');
+      await click('page', '[data-id="bag"]', origin === 'world' ? '.quick-services' : '.system-overview');
+      await bagTab(id);
       await expect(page.locator(`.bag-tabs [data-id="${id}"]`)).toHaveClass(/\bactive\b/);
       await tabContents(id);
       await unchanged(browsing, `${origin} shortcut to ${id}`);
@@ -356,7 +399,7 @@ try {
     await expect(card).toHaveCount(1);
     await expect(card.locator(`[data-action="itemDetail"][data-id="${id}"]`).first()).toBeVisible();
     await expect(card).toContainText(`Lv.${levelOf(id)}`);
-    const name = (await card.locator('.codex-copy strong').innerText()).trim();
+    const name = await card.locator('.codex-copy strong .equipment-name').getAttribute('data-item-name');
     await openItem(id, browsing);
     await expect(modalBody().locator('h3')).toContainText(name);
     const text = compact(await modalBody().innerText());
@@ -516,10 +559,12 @@ try {
   await click('highForgeTab', '', '#modal');
   await disabledNoCharge(action('highCraft', '[data-id="axe19a"]', '.page'), browsing, 'Level-1 crafting is disabled in the actual town forge');
   await unchanged(browsing, 'Complete read-only directory/template browsing');
-  // Natural level-1 browsing of the real catalog: all series/slot recipe lists,
+  // Natural level-1 browsing of the real catalog: local-tutorial/lunar slot recipe lists,
   // exact materials and actual player/production-skill requirements, no fixture resources.
   await navigate('town'); await click('townTab', '[data-id="forge"]');
   const productionRecipes = getProductionRecipes(starter.cls);
+  assert.deepEqual(await page.locator('#production-series option').evaluateAll((nodes) => nodes.map((node) => node.value)), [...new Set(productionRecipes.map((recipe) => recipe.series))]);
+  assert.ok(productionRecipes.every((recipe) => ['local-tutorial', 'lunar'].includes(recipe.series)));
   for (const series of [...new Set(productionRecipes.map((recipe) => recipe.series))]) {
     await page.locator('#production-series').selectOption(series); await idle();
     const seriesRecipes = productionRecipes.filter((recipe) => recipe.series === series);
@@ -549,7 +594,7 @@ try {
     }
   }
   for (const skill of Object.keys(PRODUCTION_SKILLS)) await disabledNoCharge(action('productionTrain', `[data-id="${skill}"]`), browsing, `Untrained ${skill} cannot charge gold`);
-  console.log(`PASS natural catalog checkpoint: ${allIds.length} details, real sources/fixed high specifications, ${productionRecipes.length} recipe IDs and exact endpoint costs/skill gates; no imported fixtures.`);
+  console.log(`PASS natural catalog checkpoint${sourceDefects.length ? ` (excluding ${sourceDefects.length} reported source defects)` : ''}: ${allIds.length} details, ${EQUIPMENT_CATALOG.length} equipment entries, ${OFFICIAL_EQUIPMENT.length} official references, fixed high specifications, ${productionRecipes.length} recipe IDs and exact endpoint costs/skill gates; no imported fixtures.`);
   await reloadUnchanged(browsing);
 
   await navigate('world'); await click('travel', '[data-id="h_f1"][data-teleport="false"]', '.page');
@@ -558,7 +603,7 @@ try {
   assert.equal(wilderness.snapshot.player.location, 'h_f1');
   assert.equal(wilderness.snapshot.player.lastCity, starter.lastCity);
   assert.equal(wilderness.snapshot.player.gold, browsing.snapshot.player.gold);
-  await click('catalogGo', '[data-page="bag"][data-tab="arsenal"]', '.page');
+  await navigate('bag'); await bagTab('arsenal');
   await tabContents('arsenal');
   await checkHighDetail(wilderness);
   await click('catalogEquipmentDetail', '[data-id="high:axe19a"]');
@@ -579,7 +624,7 @@ try {
   assert.deepEqual(returned.snapshot.player, expectedReturn, 'Catalog return-scroll use must consume exactly one scroll, return to town, and change no other player resources');
   assert.equal(returned.snapshot.battle, null);
   await navigate('world');
-  await expect(page.locator('.location-hero')).toContainText('剑仙城');
+  await expect(page.locator('.world-scene')).toContainText('剑仙城');
   await reloadUnchanged(returned);
   await openCatalog(); await openItem('town', returned);
   assert.match(compact(await modalBody().innerText()), /持有2个/);
@@ -590,7 +635,7 @@ try {
     await navigate('bag');
     for (const id of tabs) {
       await bagTab(id); await tabContents(id); await noOverflow();
-      await expect(page.locator('.bag-tabs [data-action="bagTab"]')).toHaveCount(4);
+      await expect(page.locator('.bag-tabs [data-action="bagTab"]')).toHaveCount(tabs.length);
       for (const tab of tabs) await visibleWithinWidth(page.locator(`.bag-tabs [data-id="${tab}"]`), `${width}px ${tab} tab`);
       if (id === 'equipment') {
         for (const slot of slots) await visibleWithinWidth(page.locator(`.page .equip-slot[data-id="${slot}"]`), `${width}px ${slot} slot`, width < 1440);
@@ -611,9 +656,9 @@ try {
   }
   await unchanged(returned, 'Final complete save invariant');
   assert.deepEqual(errors, [], 'Browser errors or unexpected executable search text');
-  console.log(`${sourceDefects.length ? 'PASS remaining coverage (source defects below prevent overall PASS)' : 'PASS'} ${tag} Chrome info UI: isolated natural level-1 character; world/guide discovery; 11 slots and four starter equips; real head purchase/equip/unequip and reload; ${allIds.length} item details, ${gemIds.length} gems, effect/name/Chinese-category search, combined filters, no results, persistent input focus and literal HTML/XSS safety; real product/dungeon/pool sources; insufficient-resource/level/city disabling without charges; five high templates and axe19c fixed specification; catalog return scroll consumes exactly one and persists; complete IndexedDB record invariants; four tabs and settled modal opacity/bounds at 1440/390/320px.`);
+  console.log(`${sourceDefects.length ? 'PASS remaining coverage (source defects below prevent overall PASS)' : 'PASS'} ${tag} Chrome info UI: isolated natural level-1 character; world/guide discovery; 11 slots and data-counted starter equips; real head purchase/equip/unequip and reload; ${allIds.length} item details, ${gemIds.length} gems, effect/name/Chinese-category search, combined filters, no results, persistent input focus and literal HTML/XSS safety; real product/dungeon/pool sources; insufficient-resource/level/city disabling without charges; finite named/type/grade catalog, highest-level filtering and axe19c fixed specification; catalog return scroll consumes exactly one and persists; complete IndexedDB record invariants; five tabs and settled modal opacity/bounds at 1440/390/320px.`);
   console.log(`Screenshots: ${artifacts}info-${tag}-{equipment-1440,catalog-320,arsenal-320,detail-320}.png`);
-  assert.deepEqual(sourceDefects, [], 'Genuine source defects: every catalog item must disclose an actual acquisition source; remaining coverage was still executed');
+  assert.equal(sourceDefects.length, 0, `Genuine source defects (${sourceDefects.map((defect) => defect.name).join('、')}): every catalog item must disclose an actual acquisition source; remaining coverage was still executed`);
 } finally {
   await context.close();
   await browser.close();

@@ -2,12 +2,12 @@ import { CLASSES, SKILLS, skillResources } from '../data/classes.js';
 import { ITEMS, equippedWeaponType } from '../data/items.js';
 import { GEAR_RULES } from '../data/gear-specs.js';
 import { stats, makeMonster, clamp } from './model.js';
+import { combatDamage, defenseRating, hitChance } from './combat-math.js';
 
 const alive = (b) => b.monsters.filter((m) => m.hp > 0);
 const skillOf = (p, id) => (SKILLS[p.cls] || []).find((s) => s.id === id);
 const skillLevel = (p, s) => clamp(Math.floor(p.skills?.[s.id] || 0), 0, s.maxLv);
 const multiplier = (p, s) => (s.mult || 0) + s.per * (skillLevel(p, s) - 1);
-const mitigate = (atk, def) => atk * 100 / (100 + Math.max(0, def) * 0.32);
 const buffValue = (b, key) => b.buffs.reduce((n, x) => n + (x.values[key] || 0), 0);
 const damageType = (p, s) => s?.elem ? 'magic' : CLASSES[p.cls].atkType;
 const attackKey = (s) => s?.attackBasis === 'phys' ? 'patk' : s?.attackBasis === 'magic' ? 'matk' : 'atk';
@@ -15,7 +15,6 @@ const attackMean = (st, s) => st[attackKey(s)];
 const dotElement = (s) => Object.hasOwn(s, 'dotElem') ? s.dotElem : s.elem || null;
 const dotType = (p, s) => s.dotType || damageType(p, s);
 const skillBuffValues = (p, s) => Object.fromEntries(Object.entries(s.buff || {}).map(([key, value]) => [key, value * (s.buffPerRank ? skillLevel(p, s) : 1)]));
-const defenseRating = (st, type, elem = null) => type === 'magic' ? (elem ? st[`${elem}Def`] ?? st.mdef : st.mdef) : st.def;
 function attackDamage(p, b, st, s, m, amount) {
   const components = s?.components || [{ type: damageType(p, s), elem: s?.elem || null, share: 1 }];
   return components.reduce((total, c) => total + combatDamage(amount * c.share, st, m, c.type, c.elem,
@@ -24,7 +23,6 @@ function attackDamage(p, b, st, s, m, amount) {
 const hasBuff = (b, id) => b.buffs.some((x) => x.id === id);
 const highWeapon = (p) => p.equipment?.weapon?.durability > 0 ? p.equipment.weapon.templateId : null;
 const doubleStrike = (p) => ['axe19c', 'sword18b'].includes(highWeapon(p));
-const evasion = (st) => st.evasion ?? st.dodge ?? 0;
 export const INTENTS = ['attack', 'heavy', 'exposed'];
 const intentOf = (m) => INTENTS.includes(m.intent) ? m.intent : 'attack';
 const exposedBonus = (m) => intentOf(m) === 'exposed' ? 1.5 : 1;
@@ -41,22 +39,6 @@ function announceIntent(b, m) {
   if (m.intent === 'heavy') log(b, `${m.name}${m.type === 'magic' ? '开始吟唱' : '开始蓄力'}——下回合将发动重击！可「防御调息」完美格挡，或用眩晕打断。`, 'danger');
   else if (m.intent === 'exposed') log(b, `${m.name}露出破绽——下回合受到的伤害+50%，正是全力出手的时机！`, 'victory');
 }
-const hitChance = (attacker, defender, extra = 0) => clamp(1 - clamp(evasion(defender) + extra, 0, 0.9) / Math.max(0.1, attacker.accuracy ?? 1), 0.1, 1);
-const levelMultiplier = (attacker, defender) => {
-  const gap = clamp((attacker.attackLevel || 0) - (defender.defenseLevel || 0), -300, 300);
-  return gap >= 0 ? 1 + gap * 0.01 : 1 / (1 - gap * 0.01);
-};
-
-function combatDamage(amount, attacker, defender, type, elem = null, defense = null, pve = true) {
-  const magic = type === 'magic';
-  const penetration = clamp(attacker[magic ? 'penetrationM' : 'penetrationP'] || 0, 0, 0.8);
-  const effective = (defense ?? defenseRating(defender, type, elem)) * (1 - penetration);
-  const resistance = elem ? clamp(defender[`${elem}Res`] || 0, 0, 0.8) : 0;
-  const spirit = (1 + (attacker.spirit || 0) * 0.0005) / (1 + (defender.spirit || 0) * 0.0005);
-  const hunt = pve ? 1 + (attacker.huntLevel || 0) * 0.001 : 1;
-  return mitigate(amount, effective) * levelMultiplier(attacker, defender) * (1 - resistance) * spirit * hunt * (1 + (attacker.creation || 0) * 0.05);
-}
-
 export function skillCooldown(p, b, id) {
   const s = skillOf(p, id);
   if (!s?.cd) return 0;

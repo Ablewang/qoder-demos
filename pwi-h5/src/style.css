@@ -11,8 +11,6 @@
   --accent-ink: #e0a68d;
   --jade: var(--accent); --jade-bright: var(--accent-hover); --jade-dim: #755046;
   --blue: #91afc3; --gold: #be9e68; --gold-bright: #dac095; --red: #eb9288;
-  --quality-0: #d8d8d8; --quality-1: #5aa9ff; --quality-2: #caa2fa;
-  --quality-3: #ff8a3d; --quality-4: #ff5454;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   --serif: "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", serif;
   --radius: 4px;
@@ -368,8 +366,8 @@ label:has(input[type="radio"]), label:has(input[type="checkbox"]) { display: fle
 .bag-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .bag-tabs .tab { min-width: 0; padding-inline: 5px; white-space: normal; }
 .item-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(210px, 100%), 1fr)); gap: 10px; }
-.item-card { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 13px; border: 1px solid var(--line); border-top: 2px solid var(--quality-color, var(--line)); border-radius: 3px; background: var(--surface); overflow-wrap: anywhere; }
-.item-icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 9px; border: 1px solid var(--line); border-radius: 3px; background: #1b191d; color: var(--quality-color, var(--gold)); box-shadow: inset 0 1px 3px rgb(0 0 0 / 20%); }
+.item-card { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 13px; border: 1px solid var(--line); border-top: 2px solid var(--line); border-radius: 3px; background: var(--surface); overflow-wrap: anywhere; }
+.item-icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 9px; border: 1px solid var(--line); border-radius: 3px; background: #1b191d; color: var(--muted); box-shadow: inset 0 1px 3px rgb(0 0 0 / 20%); }
 .item-icon svg { width: 26px; height: 26px; }
 .item-icon .relic-art, .item-icon.high-bag-art .relic-art { width: 44px; height: 44px; }
 .item-name { margin-bottom: 5px; font-size: 14px; font-weight: 600; }
@@ -377,13 +375,20 @@ label:has(input[type="radio"]), label:has(input[type="checkbox"]) { display: fle
 .item-stats { margin-block: 8px; font-size: 12px; line-height: 1.75; }
 .item-actions { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; margin-top: auto; padding-top: 12px; }
 .item-actions .btn { flex: 1 1 70px; }
-.quality-0 { --quality-color: var(--quality-0); }
-.quality-1 { --quality-color: var(--quality-1); }
-.quality-2 { --quality-color: var(--quality-2); }
-.quality-3 { --quality-color: var(--quality-3); }
-.quality-4 { --quality-color: var(--quality-4); }
-.equipment-name { color: var(--quality-color, var(--text)); background: #19171b; padding: 2px 5px; border-radius: 2px; font-weight: 600; overflow-wrap: anywhere; box-decoration-break: clone; }
-.equipment-name.quality-4 { text-shadow: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.equipment-name { color: var(--item-color-unknown); background: #19171b; padding: 2px 5px; border-radius: 2px; font-weight: 600; overflow-wrap: anywhere; box-decoration-break: clone; }
+.item-color-unknown { color: var(--item-color-unknown); }
+.item-color-white { color: var(--item-color-white); }
+.item-color-blue { color: var(--item-color-blue); }
+.item-color-purple { color: var(--item-color-purple); }
+.item-color-gold { color: var(--item-color-gold); }
+.item-color-green { color: var(--item-color-green); }
+.item-color-orange { color: var(--item-color-orange); }
+.item-color-red { color: var(--item-color-red); }
+.named-source-details, .source-links { min-width: 0; overflow-wrap: anywhere; }
+.named-source-details pre, .rules-boundary pre { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; }
+.named-shop-card { display: flex; flex-direction: column; min-width: 0; }
+.named-shop-card .btn { margin-top: auto; }
 .character-banner { display: grid; grid-template-columns: 84px minmax(0, 1fr) minmax(260px, .9fr); align-items: center; gap: 16px; margin-bottom: 16px; padding-right: 16px; overflow: hidden; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); }
 .character-portrait { align-self: stretch; overflow: hidden; border-right: 1px solid var(--line-soft); }
 .character-portrait img { width: 100%; height: 118px; object-position: center 20%; }
@@ -396,10 +401,10 @@ label:has(input[type="radio"]), label:has(input[type="checkbox"]) { display: fle
 .paperdoll-art img { width: 100%; height: 100%; min-height: 280px; max-height: 460px; object-position: center 25%; }
 .paperdoll-art figcaption { position: absolute; inset: auto 0 0; padding: 24px 8px 10px; background: linear-gradient(transparent, #1b191d); color: var(--text); font-size: 11px; text-align: center; }
 .equipped-grid, .bag-equipped-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-.equip-slot { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; min-width: 0; min-height: 104px; padding: 9px 7px; border: 1px solid var(--line); border-top: 2px solid var(--quality-color, var(--line)); border-radius: 3px; background: var(--surface-soft); font-size: 12px; text-align: center; overflow-wrap: anywhere; }
+.equip-slot { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; min-width: 0; min-height: 104px; padding: 9px 7px; border: 1px solid var(--line); border-top: 2px solid var(--line); border-radius: 3px; background: var(--surface-soft); font-size: 12px; text-align: center; overflow-wrap: anywhere; }
 .equip-slot strong { font-size: 12px; }
 .equip-slot small, .slot-label { color: var(--muted); font-size: 10px; }
-.slot-art { display: grid; place-items: center; width: 36px; height: 36px; color: var(--quality-color, var(--muted)); }
+.slot-art { display: grid; place-items: center; width: 36px; height: 36px; color: var(--muted); }
 .slot-art svg { width: 24px; height: 24px; }
 .slot-art .relic-art { width: 36px; height: 36px; }
 .attribute-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-block: 9px; border-bottom: 1px solid var(--line-soft); }
@@ -413,7 +418,7 @@ label:has(input[type="radio"]), label:has(input[type="checkbox"]) { display: fle
 .raw-stat-grid { font-size: 12px; }
 .raw-stat-grid > * { min-width: 0; padding: 6px; background: var(--surface-soft); overflow-wrap: anywhere; }
 .spec-dimensions, .spec-preview-head { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 10px; font-size: 12px; }
-.spec-preview { margin-block: 12px; padding: 13px; border: 1px solid var(--line); border-left: 2px solid var(--quality-color, var(--gold)); border-radius: 3px; background: var(--surface-soft); }
+.spec-preview { margin-block: 12px; padding: 13px; border: 1px solid var(--line); border-left: 2px solid var(--line); border-radius: 3px; background: var(--surface-soft); }
 .spec-ranges, .fixed-effects, .wear-requirements, .socket-list { font-size: 12px; overflow-wrap: anywhere; }
 .spec-affixes, .rules-boundary, .machine-workbench, .gear-catalog-advanced, .economy-fold { min-width: 0; margin-top: 12px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); }
 summary { min-height: 34px; cursor: pointer; color: var(--text); font-size: 12px; font-weight: 600; }
@@ -602,7 +607,7 @@ td { overflow-wrap: anywhere; }
 .treasure-orbit, .sovereign-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; min-width: 0; }
 .orbit-prize { display: flex; flex-direction: column; align-items: center; gap: 5px; min-width: 0; padding: 11px 8px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface-soft); text-align: center; overflow-wrap: anywhere; }
 .orbit-prize.legendary { border-color: #917044; background: #31291f; }
-.sovereign-prize { border-top: 3px solid var(--quality-4); }
+.sovereign-prize { border-top: 3px solid var(--line); }
 .sovereign-rank { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; font-size: 10px; color: var(--muted); }
 .armory-preview { display: grid; place-items: center; width: 100%; height: 106px; border: 1px solid var(--line-soft); border-radius: 3px; background: #1b191d; }
 .collection-seal { display: none; }

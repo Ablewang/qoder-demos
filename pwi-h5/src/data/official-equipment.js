@@ -1,11 +1,33 @@
-import archive from '../../official-library/structured/equipment-compare.json';
+import archive from '../../official-library/structured/equipment-compare.json' with { type: 'json' };
 import { HIGH_EQUIPMENT } from './high-equipment.js';
 import { CLASSES } from './classes.js';
+import sourceGear from './official-gear.json' with { type: 'json' };
+import { NAMED_EQUIPMENT } from './named-equipment.js';
+import { itemNameColor } from './item-colors.js';
 
 const integer = (value) => /^\d+$/.test(String(value ?? '')) ? Number(value) : null;
-export const OFFICIAL_EQUIPMENT_NOTE = '历史对比器只载名称、类别、品阶、精炼单位和部分材料；没有记载的穿戴等级、基础属性、职业限制和随机词条保持未知。五个高阶样本来自不同年代，单独标明来源，不拼成同一版本。';
-export const OFFICIAL_EQUIPMENT_TYPES = Object.freeze({ ...archive.types, high: '已核高阶样本' });
-export const OFFICIAL_EQUIPMENT = Object.freeze([
+function freezeTree(value) {
+  if (value && typeof value === 'object') {
+    Object.values(value).forEach(freezeTree);
+    Object.freeze(value);
+  }
+  return value;
+}
+export const OFFICIAL_EQUIPMENT_NOTE = '207条原表具名记录、744条历史对比记录及5个高阶样本分别保留来源。原表中可运行的记录关联具名模板，其余只供查阅；未知攻击、品阶、星数、名称色及材料不按公式补成官方字段。历史对比器没有穿戴等级和基础属性，不冒充装备实例。各来源不拼成同一版本，也不是完整官方装备库。';
+const sourceTypes = Object.fromEntries([...new Set(sourceGear.records.map((record) => record.type))].map((type) => [`source:${type}`, `原表·${type}`]));
+export const OFFICIAL_EQUIPMENT_TYPES = Object.freeze({ ...archive.types, ...sourceTypes, high: '已核高阶样本' });
+export const OFFICIAL_EQUIPMENT = freezeTree([
+  ...sourceGear.records.map((record) => Object.freeze({
+    id: `source:${record.id}`, name: record.name, typeId: `source:${record.type}`, type: record.type,
+    grade: record.grade, lv: record.lv, slot: record.slot,
+    classes: NAMED_EQUIPMENT[record.id]?.classes ?? null,
+    base: structuredClone(record.sourceStats), addons: structuredClone(record.affixes), randomAffixes: structuredClone(record.affixes),
+    materialsText: record.materials.map(({ name, qty }) => `${name}×${qty}`).join('、') || null,
+    refineUnit: null, refineStatLabel: null, source: record.source.url,
+    sourceFields: structuredClone(record.source), sourceRecord: structuredClone(record), nameColor: itemNameColor(record),
+    libraryUrl: `/official-library/index.html#page=${record.source.pageId}`,
+    sourceKind: 'source-table', templateId: NAMED_EQUIPMENT[record.id] ? record.id : null,
+  })),
   ...archive.records.map((record) => Object.freeze({
     id: `official:${record.id}`, name: record.name, typeId: record.sourceFields.typeid,
     type: record.type, grade: integer(record.sourceLevel), lv: null, slot: null,
@@ -38,7 +60,7 @@ export function queryOfficialEquipment(filters = {}) {
   if (filters.grade !== '' && filters.grade != null && (grade === null || grade < 1 || grade > 19)) return empty('品阶须为1—19的整数。');
   if (filters.cls && filters.cls !== 'all' && !Object.hasOwn(CLASSES, filters.cls)) return empty('职业筛选无效。');
   if (filters.type && filters.type !== 'all' && !Object.hasOwn(OFFICIAL_EQUIPMENT_TYPES, filters.type)) return empty('类型筛选无效。');
-  if (filters.slot && !['all', 'weapon', 'body'].includes(filters.slot)) return empty('部位筛选无效。');
+  if (filters.slot && !['all', 'weapon', 'head', 'body', 'legs', 'feet', 'wrist', 'cape', 'neck', 'waist', 'ring1', 'ring2'].includes(filters.slot)) return empty('部位筛选无效。');
   const unknown = filters.includeUnknown !== false;
   const match = (value, predicate) => value === null ? unknown : predicate(value);
   const search = String(filters.search || '').trim().toLocaleLowerCase();
@@ -54,5 +76,5 @@ export function queryOfficialEquipment(filters = {}) {
   const requested = Number(filters.page ?? 1);
   if (!Number.isSafeInteger(requested) || requested < 1) return empty('页码须为正整数。');
   const page = Math.min(requested, Math.max(1, pageCount));
-  return { entries: entries.slice((page - 1) * 40, page * 40), total: entries.length, page, pageCount, pageSize: 40, error: '' };
+  return { entries: structuredClone(entries.slice((page - 1) * 40, page * 40)), total: entries.length, page, pageCount, pageSize: 40, error: '' };
 }

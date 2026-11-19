@@ -4,6 +4,7 @@ import { Game } from '../src/core/game.js';
 import { stats } from '../src/core/model.js';
 import { makeEquip } from '../src/data/items.js';
 import { matchesHighEquip } from '../src/data/high-equipment.js';
+import { ITEM_COLOR_PALETTE } from '../src/data/item-colors.js';
 
 const base = process.env.GAME_URL || 'http://127.0.0.1:5183';
 assert.match(base, /^http:\/\/127\.0\.0\.1:(5176|5177|5183)$/, 'Use an isolated local preview');
@@ -43,7 +44,9 @@ async function noOverflow() {
   assert.ok(size[1] <= size[0] + 1, `Overflow at ${size[0]}px: ${size[1]}`);
 }
 async function red(locator) {
-  assert.equal(await locator.evaluate((e) => getComputedStyle(e).color), 'rgb(255, 84, 84)');
+  const hex = ITEM_COLOR_PALETTE.red.slice(1);
+  const rgb = [0, 2, 4].map(offset => parseInt(hex.slice(offset, offset + 2), 16));
+  assert.equal(await locator.evaluate((e) => getComputedStyle(e).color), `rgb(${rgb.join(', ')})`);
 }
 try {
   await page.goto(base); await page.locator('#char-name').fill('神铸界面验收');

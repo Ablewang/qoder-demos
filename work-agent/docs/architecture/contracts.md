@@ -1,8 +1,8 @@
 # 跨模块接口 v1
 
-- 状态：待评审
-- 版本：v1-草案
-- 更新：2026-11-18
+- 状态：已批准（技术基线冻结；变更由总架构师评审）
+- 版本：v1
+- 更新：2026-11-19
 
 这是所有模块设计的唯一依据。代码形态放在 `src/contracts/`，内容必须和本文一致。
 
@@ -35,6 +35,77 @@ type Actor =
   | { kind: 'system'; component: string }
   | { kind: 'remote'; personId: PersonId; via: string };   // M4：别人的 agent
 ```
+
+### 1.1 公共类型与平台服务（MOD-01）
+
+```ts
+type JsonSchema = Record<string, unknown>;
+type EntityType = string;                 // 内置类型或 <extension>.<type>，必须登记 Schema
+type AttrsOf<T extends EntityType> = Record<string, unknown>;
+type Unsubscribe = () => void;
+type SqlValue = string | number | bigint | Uint8Array | null;
+
+interface Tx {
+  run(sql: string, params?: SqlValue[]): { changes: number };
+  get(sql: string, params?: SqlValue[]): Record<string, SqlValue> | undefined;
+  all(sql: string, params?: SqlValue[]): Array<Record<string, SqlValue>>;
+}
+interface Migration { version: number; checksum: string; apply(tx: Tx): void }
+interface StorageService {
+  registerMigrations(moduleId: string, tablePrefixes: string[], migrations: Migration[]): void;
+  transaction<T>(work: (tx: Tx) => T): T;
+}
+interface SecretStore {
+  get(key: string): Promise<string | undefined>;
+  set(key: string, value: string): Promise<void>;
+  delete(key: string): Promise<void>;
+}
+interface AuditWriter { append(record: AuditRecord, tx?: Tx): void }
+interface KeyValueStore {
+  get<T>(key: string): T | undefined;
+  set<T>(key: string, value: T): void;
+  delete(key: string): void;
+}
+interface Logger {
+  info(event: string, fields?: Record<string, unknown>): void;
+  warn(event: string, fields?: Record<string, unknown>): void;
+  error(event: string, fields?: Record<string, unknown>): void;
+}
+interface EventFilter { types: DomainEvent['type'][]; source?: SourceId }
+interface EventEnvelope { id: string; at: Timestamp; event: DomainEvent }
+interface TriggerEvent { id: string; kind: Trigger['kind']; at: Timestamp; input?: unknown; event?: EventEnvelope }
+interface ApplyResult { upserted: EntityId[]; deleted: EntityId[]; snapshotCompleted: boolean }
+interface DecisionStat { accepted: number; edited: number; dismissed: number; snoozed: number; completed: number; sampleSize: number }
+
+type EvidenceRef =
+  | { kind: 'entity'; id: EntityId; owner: PersonId }
+  | { kind: 'memory'; id: string }
+  | { kind: 'tool_result'; id: string };
+interface ToolReadResult {
+  id: string; source: SourceId; value: unknown;
+  sensitivity: Sensitivity; evidence: EvidenceRef[]; createdAt: Timestamp;
+}
+interface ToolResultReader { get(id: string): ToolReadResult | undefined }
+interface ToolDefinition { name: string; description: string; inputSchema: JsonSchema }
+interface ToolInvocation { id: string; name: string; args: unknown }
+interface LlmResult {
+  text: string; json?: unknown; toolCalls?: ToolInvocation[];
+  usage: { inputTokens: number; outputTokens: number };
+}
+
+type ChatChunk =
+  | { kind: 'text'; text: string }
+  | { kind: 'proposal'; proposalId: ProposalId }
+  | { kind: 'auth'; requestId: string }
+  | { kind: 'error'; code: string; message: string }
+  | { kind: 'done'; conversationId: string };
+```
+
+- Tx 回调必须同步，不跨网络等待；同一事务可调用游标、审计和事件 outbox 写入，失败一起回滚。Tx 是事务接口而非沙箱；受信模块仍只写自己的表，跨模块写入走服务接口。
+- MOD-01 管理 `platform_` 与中央 `audit_` 表，其他模块通过 AuditWriter 追加。迁移按模块有序登记，历史版本和校验和不可改，迁移前备份；恢复方案在模块设计中明确。
+- SecretStore 只注入授权代理、网关的供应商认证和本机服务认证；不注入普通能力或皮肤。
+- SourceId 是本机连接实例的稳定命名空间，provider 是厂商类型；账号绑定变化不得覆盖旧实例身份。来自外部的 id 在连接实例内唯一。
+- EvidenceRef、工具结果敏感度与 origin 的可信部分由宿主填充，不能接受模型或连接器自报的降级。无来源的外部数据不进入可信 instruction/system。
 
 ## 2. 工作图谱（MOD-02）
 
@@ -111,11 +182,12 @@ interface Relation {
 interface SyncBatch {
   source: SourceId;
   stream: string;
+  owner: PersonId;
   entities: Entity[];
-  relations: Relation[];         // 由 from 对应的实体负责；同一批里整体替换
+  relations: Relation[];
   identities: Entity<'identity'>[];
   deletions: EntityId[];
-  window?: { from: Timestamp; to: Timestamp };   // 按窗口同步时，窗口内没出现的实体视为已删除
+  snapshot?: { id: string; window: { from: Timestamp; to: Timestamp }; complete: boolean };
   nextCursor: string | null;
 }
 
@@ -125,10 +197,10 @@ interface WorkGraphWriter {           // 只有同步引擎能拿到
 
 interface WorkGraphReader {           // 能力、交互层能拿到
   get(id: EntityId, owner?: PersonId): Entity | undefined;
-  query(q: EntityQuery): Entity[];
-  related(id: EntityId, opts?: { kind?: RelationKind; direction?: 'out' | 'in' }): Array<{ relation: Relation; entity?: Entity }>;
-  search(text: string, opts?: { types?: EntityType[]; limit?: number }): Entity[];   // FTS5 trigram
-  content(id: EntityId): string | undefined;      // 读正文会写审计
+  query(q: EntityQuery): { items: Entity[]; nextCursor?: string };
+  related(id: EntityId, opts?: { owner?: PersonId; kind?: RelationKind; direction?: 'out' | 'in' }): Array<{ relation: Relation; entity?: Entity }>;
+  search(text: string, opts?: { owner?: PersonId; types?: EntityType[]; limit?: number }): Entity[];
+  content(id: EntityId, owner?: PersonId): string | undefined;
   person(id: PersonId): Person | undefined;
   self(): Person;
 }
@@ -157,11 +229,15 @@ interface Person {
 }
 ```
 
+**读取范围**：所有读取接口绑定调用者与允许的 owner；默认 self，指定其他 owner 仍须校验共享可见性。正文读取写审计，不能通过 search/related 绕过相同授权。source/stream 记录实体同步归属。关系仅替换本页实体的出边，不清空其他分页的关系。
+
+**窗口快照**：宿主持久化快照 id、范围、已见实体和分页进度。每页 upsert 与分页检查点同事务提交；仅 complete=true 且全页成功后，按该 owner/source/stream 的窗口归属对账删除。半途失败、过期游标、不同范围不能复用完成标记。过滤掉的取消日程等必须最终删除，不能留成幽灵日程。重复应用安全，不要求动态上游字节级不变。
+
 **身份解析规则（v1）**：先按邮箱精确匹配；飞书优先用 `union_id`（`open_id` 只在单个应用内有效，不能跨应用）；匹配不上就建 `person:local:*`；用户可以在控制台手动合并，合并记录保存下来，重新同步时不会丢。
 
 ## 3. 连接器：MCP 扩展 `work-agent/connector` v1（MOD-03 / MOD-04）
 
-目标协议版本是 MCP 2026-07-28（无会话）。
+目标协议版本是 MCP 2026-07-28（官方 current，ADR-0017 已核验）；每次请求声明 protocolVersion 元数据。具体 SDK 的 discover/stdio/_meta 互操作先由 MOD-03 验证，协议无会话不代表同步或执行状态不需要持久化。
 
 ### 3.1 清单
 
@@ -197,11 +273,12 @@ interface ToolSpec {
   requiredScopes: string[];
   risk: 'low' | 'medium' | 'high';    // 例如给自己发消息为 low，以本人身份群发为 high
   supportsDryRun: boolean;
-  idempotent: boolean;
+  idempotency: { kind: 'none' } | { kind: 'provider_key'; scope: 'account_tool'; retentionMs: number };
+  reconciliationTool?: string;        // 已登记只读核验工具：found/not_found/unknown
 }
 ```
 
-MCP 的工具注解（如 `readOnlyHint`）应该和 `kind` 保持一致；但**宿主只认清单里的 `kind`**，不认注解。
+清单和 MCP 注解都是声明而非授权。自研受信清单经宿主登记与 Schema 验证后使用；第三方工具默认 write/high，用户显式信任并审核后才可标只读。工具权限、调用范围和输出敏感度由宿主策略裁决，安装工具不能自动拿到账号凭证。
 
 ### 3.2 增量同步工具 `wa_sync_pull`
 
@@ -215,21 +292,26 @@ MCP 的工具注解（如 `readOnlyHint`）应该和 `kind` 保持一致；但**
 ```
 
 - 连接器不保存游标和凭证；游标由同步引擎保存，每次调用时传进来。
-- 用同一个游标重复拉取，结果必须一样（幂等），方便失败重试。
+- 同一个游标可安全重拉，宿主重复应用不增加副作用；上游可能变化，不保证结果字节相同。窗口快照 id/完成状态由宿主设置，不能以单页 hasMore=false 代替整个窗口成功。
 - 输出里的 `owner` 由宿主填写，连接器填一个占位值即可。
 
 ### 3.3 写工具约定
 
 - 输入可以带 `dryRun: true`：只返回预览 `{ preview: { summary, recipients?, body?, target } }`，不产生副作用。
-- 输入必须带 `idempotencyKey`：连接器要尽量借助数据源本身的幂等能力（如飞书的 `uuid` 参数）去重。
-- 执行成功返回 `{ ref: { entityId?, nativeUrl? } }`，用于核对结果和写审计。
+- 输入必须带 `idempotencyKey`，作用域为连接实例/账号/工具/冻结步骤；数据源不支持时明确声明 none，不以本地去重冒充远端幂等。
+- 执行成功返回 `WriteResult`，用于核对结果和写审计；网络中断或超时且无法排除成功时必须报告结果未知，不能当作普通 retryable 错误。
+- 核验工具返回 `{ status: 'found'; result: WriteResult } | { status: 'not_found'; authoritative: boolean } | { status: 'unknown' }`。只有权威未执行、或幂等键仍在保证期内，才可重试；未知时留给用户核对。
+
+```ts
+interface WriteResult { ref: { entityId?: EntityId; nativeUrl?: string; providerId?: string } }
+```
 
 ### 3.4 凭证传递
 
 宿主每次 `tools/call` 都在 `_meta["work-agent/credential"]` 里放：
 
 ```ts
-{ accessToken: string; expiresAt: Timestamp; account: string }
+{ accessToken: string; expiresAt?: Timestamp; account: string }
 ```
 
 连接器**不能**记录、缓存或回传这个字段。
@@ -246,7 +328,8 @@ type ConnectorError =
   | { code: 'not_found'; target: string }
   | { code: 'conflict'; detail: string }          // 例如前置条件已经不成立
   | { code: 'invalid_input'; detail: string }
-  | { code: 'upstream_error'; status?: number; detail: string; retryable: boolean };
+  | { code: 'upstream_error'; status?: number; detail: string; retryable: boolean }
+  | { code: 'outcome_unknown'; detail: string };
 ```
 
 ### 3.6 宿主侧接口（MOD-03 对内提供）
@@ -255,20 +338,32 @@ type ConnectorError =
 interface ConnectorHost {
   list(): ConnectorInfo[];                          // 清单 + 授权状态 + 健康状态
   tool(qualifiedName: string): ToolSpec & { source: SourceId; thirdParty: boolean };
-  callRead(qualifiedName: string, args: unknown, actor: Actor): Promise<unknown>;
-  callWrite(qualifiedName: string, args: unknown, ctx: { executionId: string; actor: Actor }): Promise<unknown>;  // 只有执行器能拿到
+  callRead(qualifiedName: string, args: unknown, actor: Actor): Promise<ToolReadResult>;
+  callWrite(qualifiedName: string, args: unknown, ctx: { executionId: string; stepId: string; account: string; decisionHash: string; actor: Actor }): Promise<WriteResult>;
 }
 
+interface Credential { accessToken: string; expiresAt?: Timestamp; account: string; scopes: string[] }
+interface AuthResume { executionId: string; stepId: string; proposalRevision: number; decisionHash: string }
+interface GrantRequest {
+  source: SourceId; provider: string; scopes: string[]; reason: string; requestedBy: Actor;
+  expectedAccount?: string; resume?: AuthResume;
+}
+interface AuthRequest { id: string; source: SourceId; status: 'pending' | 'granted' | 'cancelled' | 'expired'; expiresAt: Timestamp; grantUrl?: string }
+interface ConnectorInfo { manifest: ConnectorManifest; source: SourceId; account?: string; authorized: boolean; health: 'ready' | 'degraded' | 'offline' }
+
 interface AuthBroker {
-  status(provider: string): { granted: boolean; account?: string; scopes: string[] };
-  credential(provider: string, scopes: string[]): Promise<Credential>;   // 权限不够时抛出 AuthRequiredError
-  requestGrant(req: { provider: string; scopes: string[]; reason: string; requestedBy: Actor; resume?: string }): AuthRequest;
-  completeGrant(state: string, code: string): Promise<void>;           // OAuth 回调
-  revoke(provider: string): Promise<void>;                              // 删除凭证；视为一次决定，写审计
+  status(source: SourceId): { granted: boolean; account?: string; scopes: string[] };
+  credential(source: SourceId, scopes: string[]): Promise<Credential>;
+  requestGrant(req: GrantRequest): AuthRequest;
+  completeGrant(state: string, code: string): Promise<void>;
+  cancelGrant(requestId: string, by: Actor): Promise<void>;
+  revoke(source: SourceId): Promise<void>;
 }
 ```
 
-第三方 MCP 服务器：工具一律按 `kind: 'write', risk: 'high'` 处理；用户在控制台把某个工具标为只读后才按只读处理。
+授权请求持久化并绑定 state、PKCE、有效期、source/provider/scopes/预期账号和 AuthResume；完成回调校验 issuer/state/重放/账号，拒绝意外账号切换。取消、过期、断开源不会恢复执行。恢复必须回到策略和当前前置条件检查，不从外呼直接续跑。
+
+第三方 MCP 进程是本机代码，不是沙箱；启动需用户显式信任，只传批准的环境和工作目录，不能继承全部供应商凭证。输出通过宿主封装为 ToolReadResult，工具结果的文字不能升级成 instruction。
 
 ## 4. 能力运行时（MOD-06）
 
@@ -288,7 +383,7 @@ type Trigger =
   | { kind: 'cron'; expr: string; onMissed: 'run_once' | 'skip' }
   | { kind: 'event'; filter: EventFilter; debounceMs?: number }
   | { kind: 'manual'; inputSchema?: JsonSchema }
-  | { kind: 'intent'; description: string };     // 给对话助理路由用（M3）
+  | { kind: 'intent'; description: string };     // 对话路由 M2
 
 interface Capability {
   manifest: CapabilityManifest;
@@ -302,7 +397,7 @@ interface CapabilityContext {
   now(): Timestamp;
   graph: WorkGraphReader & DerivedWriter;
   llm: LlmGateway;                          // 已经绑定了 capabilityId，用于审计和预算
-  tools: { callRead(name: string, args: unknown): Promise<unknown> };   // 只能调用清单里声明过的只读工具
+  tools: { callRead(name: string, args: unknown): Promise<ToolReadResult> };
   propose(draft: ProposalDraft): Promise<ProposalId>;
   notify(notice: Notice): Promise<void>;
   publishReport(report: Report): Promise<void>;
@@ -322,16 +417,16 @@ type DomainEvent =
   | { type: 'entity.changed'; source: SourceId; entityType: EntityType; ids: EntityId[]; change: 'upsert' | 'delete' }
   | { type: 'sync.completed'; source: SourceId; stream: string }
   | { type: 'proposal.created' | 'proposal.decided' | 'proposal.finished'; proposalId: ProposalId; status: ProposalStatus }
-  | { type: 'auth.granted' | 'auth.revoked'; provider: string }
+  | { type: 'auth.granted' | 'auth.revoked'; source: SourceId; provider: string; requestId?: string }
   | { type: 'remote.request'; requestId: string };   // M4
 
 interface EventBus {
-  publish(e: DomainEvent): void;          // 先持久化，再投递
-  subscribe(filter: EventFilter, handler: (e: DomainEvent) => Promise<void>): Unsubscribe;
+  publish(e: DomainEvent, tx?: Tx): void;
+  subscribe(filter: EventFilter, handler: (e: EventEnvelope) => Promise<void>): Unsubscribe;
 }
 ```
 
-投递语义是**至少一次**，处理器必须能承受重复投递（幂等）。
+投递语义是**至少一次**，稳定事件 id 与业务写入通过同事务 outbox 持久化；每个订阅者有持久化检查点，重复投递按事件 id 去重。休眠补跑、并发上限、重试预算与禁用能力由 MOD-06 管理，不能让失败事件无限堆积。客户端推送超过保留窗口时发送 resync_required，客户端先拉当前快照再恢复事件，不伪装续传完整。
 
 ## 5. 动作层（MOD-07）
 
@@ -346,18 +441,20 @@ interface ProposalDraft {
   recommendedOptionId?: string;
   urgency: 'low' | 'normal' | 'high';
   expiresAt?: Timestamp;
-  dedupeKey: string;                        // 同一个能力下 dedupeKey 相同、尚未结束的提议不会重复创建，只会更新
+  dedupeKey: string;                        // 同能力下只可更新 pending 提议；批准后不可变
 }
 
 interface ProposalOption {
   id: string;
   label: string;
-  steps: ActionStep[];                      // 可以为空：例如“明早提醒我”只在内部登记，不对外写入
+  steps: ActionStep[];
+  localEffect?: { kind: 'remind'; at: Timestamp };   // 空步骤仅配合明确的本地效果；忽略由系统追加
   editable?: EditableField[];               // 用户可以在决定前修改的字段，例如回复正文
 }
 
 interface ActionStep {
-  tool: string;                             // 写工具全名，例如 'feishu.send_message'
+  tool: string;                             // 已登记工具；M4 内部写处理器另登记，仍经执行器
+  account: string;                          // 冻结目标账号
   args: unknown;
   preconditions?: Precondition[];
   idempotencyKey: string;
@@ -372,21 +469,36 @@ interface EditableField { stepIndex: number; path: string; label: string; multil
 type ProposalStatus =
   | 'pending' | 'expired' | 'superseded' | 'dismissed'
   | 'approved' | 'executing' | 'waiting_auth'
-  | 'succeeded' | 'failed' | 'partially_failed';
+  | 'succeeded' | 'failed' | 'partially_failed' | 'waiting_verification';
+
+interface Proposal extends ProposalDraft {
+  id: ProposalId; capabilityId: CapabilityId; revision: number; status: ProposalStatus;
+  createdAt: Timestamp; origin: Actor;
+}
+interface StepPreview { tool: string; account: string; target: string; recipients?: string[]; body?: string; args: unknown }
+interface ProposalPreview { proposalId: ProposalId; revision: number; optionId: string; actionHash: string; steps: StepPreview[]; localEffect?: ProposalOption['localEffect'] }
+interface StepExecution {
+  id: string; executionId: string; decisionId: string; actionHash: string; stepIndex: number;
+  status: 'pending' | 'started' | 'waiting_auth' | 'succeeded' | 'failed' | 'unknown';
+  idempotencyKey: string; result?: WriteResult; updatedAt: Timestamp;
+}
 
 interface Decision {
+  id: string;
   proposalId: ProposalId;
+  proposalRevision: number;
+  actionHash: string;
   optionId: string;                         // 选“忽略”也是一个决定
   edits?: Record<string, unknown>;          // 以 EditableField.path 为键
   decidedBy: PersonId;
-  channel: 'console' | 'feishu_card' | 'cli';
+  channel: 'pet' | 'console' | 'feishu_card' | 'cli';
   decidedAt: Timestamp;
 }
 
 interface ActionService {
   create(capabilityId: CapabilityId, draft: ProposalDraft, origin: Actor): ProposalId;
   list(filter: { status?: ProposalStatus[]; limit?: number }): Proposal[];
-  preview(id: ProposalId, optionId: string, edits?: Record<string, unknown>): Promise<StepPreview[]>;  // 调用 dryRun；不支持预演的工具由宿主根据参数生成预览
+  preview(id: ProposalId, optionId: string, edits?: Record<string, unknown>): Promise<ProposalPreview>;
   decide(decision: Decision): Promise<void>;   // 交互层调用；随后异步执行
 }
 
@@ -396,15 +508,18 @@ interface Policy {
 }
 ```
 
+**决定与预览**：actionHash 覆盖最终参数、工具版本、账号、接收方、前置条件及本地效果。只接受 editable 白名单内编辑，Schema 再校验；编辑后需重新预览。服务器按认证身份填写 decidedBy/时间/渠道，不信任客户端自报。决定以 id 去重并原子比较 pending/revision/hash/有效期；多通道同时点只允许一条生效。批准内容冻结，后续变化新建提议而非修改原步骤。忽略无外呼；稍后本地提醒必须持久化并可取消。
+
 **执行器流程（每一步）**：
 
-1. 检查策略。
-2. 重新检查前置条件；不满足就把提议标为失败，原因是 `conflict`，提示用户重新看。
-3. 取凭证；遇到 `AuthRequiredError` 就把状态改为 `waiting_auth`，调用 `requestGrant`，等收到 `auth.granted` 后从这一步继续。
-4. `callWrite`。
-5. 写审计。
+1. 读取冻结决定与已持久化步骤；成功步骤不重放。
+2. 检查策略、有效期、工具版本与账号；前置条件通过源系统当前只读查询核验，不能仅比较陈旧同步库。
+3. 取凭证；不足时持久化 waiting_auth 和 AuthResume。授权完成后重新从第 2 步开始；账号或内容改变要求新决定。
+4. 事务写入 started、稳定幂等键与尝试审计，然后外呼。
+5. 事务记录结果、终态、结果审计与领域事件。确定失败则停止并显示已成功/未执行步骤；不自动补偿。
+6. 超时、断连或重启看到 started 但无结果时进入 waiting_verification，先核验。仅有数据源有效幂等保证或权威未执行证据才重试；否则等待用户核对，不盲重发。
 
-每一步都失败即停；v1 不做自动补偿（回滚）。
+M1 的动作空实现明确返回 feature_unavailable；不接受决定、不假完成。共享等本地写处理器经动作层登记，不伪装成外部 MCP 连接器，也不绕开策略和审计。
 
 ### 5.1 审计
 
@@ -412,9 +527,9 @@ interface Policy {
 interface AuditRecord {
   id: string; at: Timestamp; actor: Actor;
   kind: 'decision' | 'tool_write' | 'tool_read_content' | 'llm_call' | 'auth' | 'share' | 'config';
-  refs: { proposalId?: ProposalId; entityIds?: EntityId[]; tool?: string; provider?: string };
+  refs: { proposalId?: ProposalId; decisionId?: string; executionId?: string; stepId?: string; entityIds?: EntityId[]; tool?: string; provider?: string };
   summary: string;               // 不含凭证；正文只放摘要或哈希
-  outcome: 'ok' | 'error';
+  outcome: 'started' | 'ok' | 'error' | 'unknown';
   detail?: Record<string, unknown>;
 }
 ```
@@ -425,6 +540,8 @@ interface AuditRecord {
 
 ```ts
 interface Notice {
+  sensitivity: Sensitivity;
+  evidence: EvidenceRef[];
   kind: string;                              // 例如 'time-audit.weekly_ready'，伙伴按 kind 选择动作和台词模板
   title: string;                             // 事实性标题
   facts: Array<{ label: string; value: string | number; unit?: string; ref?: EntityId }>;   // 原样展示，不能被人格改写
@@ -433,16 +550,19 @@ interface Notice {
   links?: EntityId[];
   urgency: 'low' | 'normal' | 'high';
   dedupeKey: string;
-  channels?: Array<'pet' | 'console' | 'feishu_bot'>;    // 默认由用户设置决定；宠物没在运行时退回到飞书
+  channels?: Array<'pet' | 'console' | 'feishu_bot'>;    // 只在用户允许的渠道和披露范围内投递
 }
 
 interface Report {
+  sensitivity: Sensitivity; evidence: EvidenceRef[];
   id: string; title: string;
   period?: { from: Timestamp; to: Timestamp };
   data: unknown;                             // 结构化数据，存下来
   renderer: string;                          // 交互层按 renderer 找渲染组件，例如 'time-audit/v1'
 }
 ```
+
+投递前过滤整个 title/body/facts/links/台词与报告：继承来源最高敏感度，secret 不进入主动气泡或外发；confidential 遵循用户渠道披露设置。飞书机器人免审批仅限已验证绑定本人且符合设置的通知，默认关闭跨渠道自动回退；离线时先存本机，不能偷偷把工作内容转发到飞书。人格事实部分使用结构化原文，台词也按相同敏感度处理。
 
 ## 7. 模型网关（MOD-05）
 
@@ -455,16 +575,17 @@ interface LlmGateway {
     input: LlmInput[];
     schema?: JsonSchema;                   // 有就做结构化输出并校验，失败自动重试一次
     maxOutputTokens?: number;
-  }): Promise<{ text: string; json?: unknown; usage: { inputTokens: number; outputTokens: number } }>;
-
-  // 对话助理（M3）：多轮工具调用；写工具的调用不会执行，而是返回给调用方去创建提议
-  runTools?(req: unknown): Promise<unknown>;
+    tools?: ToolDefinition[];
+    signal?: AbortSignal;
+  }): Promise<LlmResult>;
 }
 
 type LlmInput =
   | { kind: 'instruction'; text: string }                                 // 可信：来自代码或用户
   | { kind: 'entities'; ids: EntityId[]; fields: Array<'title' | 'time' | 'participants' | 'content'> }
-  | { kind: 'data'; label: string; value: unknown };                     // 聚合数据
+  | { kind: 'data'; label: string; value: unknown; evidence: EvidenceRef[]; sensitivity: Sensitivity }
+  | { kind: 'tool_result'; id: string }
+  | { kind: 'memory'; ids: string[] };
 ```
 
 网关负责：
@@ -473,7 +594,9 @@ type LlmInput =
 - **写调用审计**：用途、实体 id、token 用量，默认不记录全文；
 - **控制预算**：按天、按能力限额。
 
-能力**不能**把实体正文自己拼成字符串交给网关，只能用 `entities` 输入。
+能力不能把实体、记忆或工具正文塞入 system/instruction/data 冒充可信内容；直接内容使用引用类型，聚合 data 保留依据且不得低于原始敏感度。网关从受信 Reader 解析实体/记忆/工具结果、校验范围与时效，再统一过滤；来源缺失的外部内容拒绝入模。secret 不因来自 profile 而例外。原始 SDK 回包、system 和工具描述不得夹入未批准的外部提示。
+
+M2 的对话助理由 MOD-06 能力实现多轮规划循环，MOD-05 只返回 ToolInvocation，不执行工具。只读调用经声明范围内的 ctx.tools，结果作为 tool_result 输入；写调用只生成提议。每轮验证参数、调用额度、取消信号及预算，循环有上限。普通能力无 MemoryWriter；“记住/编辑/忘记”由已认证对话入口验证用户证据后调用记忆服务。
 
 ## 8. 记忆（MOD-09，M2 实现；M1 先提供空实现）
 
@@ -482,9 +605,9 @@ type LlmInput =
 ```ts
 type MemoryLayer = 'profile' | 'long_term' | 'journal';   // 分别对应 user.md、memory.md、journal/*.md
 type MemoryOrigin =
-  | { kind: 'user' }                                  // 用户亲口说的或手动写的
-  | { kind: 'consolidation'; runId: string }          // 夜间整理
-  | { kind: 'companion' }                             // 伙伴写的日记
+  | { kind: 'user'; evidenceId: string; evidenceType: 'message' | 'decision' | 'local_edit' }
+  | { kind: 'consolidation'; runId: string; evidence: EvidenceRef[] }
+  | { kind: 'companion'; evidence: EvidenceRef[] }
   | { kind: 'external'; entityIds: EntityId[] };      // 根据外部内容得出
 
 interface MemoryItem {
@@ -501,7 +624,7 @@ interface MemoryItem {
 }
 
 interface MemoryReader {
-  profile(): MemoryItem[];                                   // 画像里的规则和偏好；对话时全部注入
+  profile(): MemoryItem[];                                   // 注入前仍须网关过滤、限长与有效期检查
   longTerm(opts?: { about?: Array<EntityId | PersonId>; limit?: number }): MemoryItem[];
   search(query: string, opts?: { layers?: MemoryLayer[]; limit?: number }): MemoryItem[];
   feedback(capabilityId: CapabilityId, dedupeKeyPrefix?: string): DecisionStat[];   // 过去的提议被采纳还是被忽略
@@ -509,12 +632,15 @@ interface MemoryReader {
 
 interface MemoryWriter {        // 只有伙伴层、对话助理、夜间整理能拿到；普通能力拿不到
   remember(item: Omit<MemoryItem, 'id' | 'createdAt' | 'file' | 'line'>): MemoryItem;
-  appendJournal(date: string, text: string, about?: Array<EntityId | PersonId>): void;
-  forget(id: string): void;                                  // 文件、索引、向量一起删除，并写审计
+  update(id: string, patch: { text?: string; sensitivity?: Sensitivity; validUntil?: Timestamp }, by: Actor, evidenceId: string): MemoryItem;
+  appendJournal(date: string, item: { text: string; about?: Array<EntityId | PersonId>; origin: MemoryOrigin; sensitivity: Sensitivity }): void;
+  forget(id: string, by: Actor): void;
 }
 ```
 
-**规则**：`kind = 'rule'` 的记忆，`origin` 必须是 `user`，或者来自用户决定过的提议（例如“要不要把‘周五下午不排会’记成规则？”）。来源为 `external` 的只能是 `fact` 或 `episode`。
+**规则**：rule 只接受 user 来源，evidenceId 必须能关联到已认证本人消息、决定或本机手动编辑；调用者自行声明 user 不够。整理和日记保存原始依据链、继承最高敏感度，外部/整理来源只能为 fact/episode，不能借多次整理变成规则。外部派生内容视为未核实事实并保留来源，不自动获得可信指令地位。
+
+修改/删除需用户证据，忘记同步删除正文、索引和向量；追加无正文墓碑阻止历史整理重新生成同条已忘信息。备份保留和审计中无正文引用的处理要明确告知，不能承诺无痕删除已有离线备份。文件原子写入，索引可重建；多进程并发和手改冲突由 MOD-09 设计，不直接覆盖用户修改。
 
 ## 9. 共享（MOD-10，M4 实现，先保留语义）
 
@@ -560,12 +686,18 @@ type PetActivity =
 interface PetState {
   activity: PetActivity;
   badge: { proposals: number; notices: number; authRequests: number };
-  quietReason?: 'meeting' | 'screen_share' | 'fullscreen' | 'user_dnd';
+  quietReasons: QuietReason[];
+  expression?: { activityId: string; animationId: string; startedAt: Timestamp };
+  audio: { enabled: boolean; playing: boolean; volume: number };
   growth: GrowthSnapshot;
   updatedAt: Timestamp;
 }
 
-interface PetUtterance {           // 宠物要说的一句话
+type QuietReason = 'meeting' | 'screen_share' | 'fullscreen' | 'user_dnd';
+interface QuietSignal { source: 'calendar' | 'client' | 'user'; reasons: QuietReason[]; detection: 'known' | 'unknown'; expiresAt?: Timestamp }
+
+interface PetUtterance {
+  sensitivity: Sensitivity;
   id: string;
   text: string;                    // 人格包装后的话
   facts?: Notice['facts'];         // 原样展示的事实卡片
@@ -591,27 +723,76 @@ interface CompanionService {
   updatePersona(patch: Partial<Persona>, by: Actor): Persona;          // by 必须是用户，写审计
   onInteraction(e: PetInteraction): Promise<PetUtterance | null>;      // 鼠标交互：摸头、拖动、戳一下……
   chat(message: string, conversationId?: string): AsyncIterable<ChatChunk>;   // 转给对话助理能力
-  setQuiet(reason: PetState['quietReason'] | null): void;             // 客户端检测到共享屏幕或全屏时上报
+  setQuiet(signal: QuietSignal): void;
+  setAudio(settings: { enabled: boolean; volume: number }, by: Actor): void;
 }
 
 type PetInteraction =
   | { kind: 'click' } | { kind: 'double_click' } | { kind: 'pet' }     // 摸头
   | { kind: 'drag_start' } | { kind: 'drop'; screenEdge?: 'left' | 'right' | 'top' | 'bottom' }
   | { kind: 'hover' } | { kind: 'poke'; times: number }
+  | { kind: 'feed' } | { kind: 'play'; activityId: string }
+  | { kind: 'audio_pause' }
   | { kind: 'utterance_dismissed'; id: string };
 ```
 
+工作状态 PetActivity 与皮肤动作 id 分离；新增自娱动作不用改办公状态枚举。自主活动注册只含本机视觉与已启用音频，不能携带任意工具调用。QuietSignal 按来源合并，清除客户端信号不能清掉用户勿扰；临时系统信号有租约，过期变 unknown 而不是擅自认定无共享。unknown 显示检测限制并提供显式演示模式；用户启用保护模式时可直接隐藏团子。真实音频启用需用户操作，quiet/隐藏策略立即停止，不把 disabled 改回 true。
+
 ## 11. 本地接口与事件推送（MOD-08 实现）
 
-- 所有接口都在 `http://127.0.0.1:8787/api/v1/` 下，只能用 JSON。
+- 业务接口在 `http://127.0.0.1:8787/api/v1/` 下，用 JSON；OAuth 回调单独列入 allowlist，校验一次性 state/PKCE/issuer，不要求 Bearer，但不能访问业务资源。
 - **认证**：
   - 宠物客户端和命令行用本机令牌：后台进程首次启动时生成随机令牌，存进系统凭证库（macOS 钥匙串 / Windows 凭据管理器），请求头带 `Authorization: Bearer`；
   - 浏览器控制台用一次性登录码换取同源会话 Cookie（命令行打开控制台时附带登录码）；
-  - 另外仍然校验 Host 和 Origin。
+  - 仍校验 Host 与明确的浏览器/Tauri Origin allowlist；Cookie 会话需要 SameSite/CSRF 防护，令牌不得进URL、日志、前端持久化；登录码一次性短有效期，用后从地址栏清除。
 - **事件推送**：`GET /api/v1/stream`（Server-Sent Events），推送 `pet.state`、`pet.utterance`、`proposal.*`、`auth.request`、`report.published`。客户端断开重连时带上 `Last-Event-ID` 续传。
 - 接口清单由 MOD-08 设计列出，必须只调用 `CompanionService`、`ActionService`、`WorkGraphReader`、`MemoryReader/Writer`、`AuthBroker` 这些已定义的接口。
+
+## 12. 扩展登记边界
+
+```ts
+interface EntitySchemaSpec { type: EntityType; version: number; attrsSchema: JsonSchema }
+interface EntitySchemaRegistry { register(spec: EntitySchemaSpec): void; get(type: EntityType, version: number): EntitySchemaSpec | undefined }
+
+interface ProviderGrant { credential: Credential; refreshToken?: string; issuer?: string }
+interface AuthProvider {
+  id: string;
+  kind: 'oauth2' | 'token' | 'none';
+  grantUrl(req: { state: string; challenge: string; redirectUri: string; scopes: string[]; expectedAccount?: string }): string;
+  exchange(req: { code: string; verifier: string; redirectUri: string }): Promise<ProviderGrant>;
+  refresh(refreshToken: string): Promise<ProviderGrant>;
+}
+interface AuthProviderRegistry { register(provider: AuthProvider): void; get(id: string): AuthProvider | undefined }
+interface CapabilityRegistry { register(capability: Capability): void; disable(id: CapabilityId): void }
+interface ReportRenderer { id: string; dataSchema: JsonSchema; render(report: Report): string }
+interface ReportRendererRegistry { register(renderer: ReportRenderer): void }
+
+interface SkinManifest {
+  id: string; formatVersion: 1; version: string;
+  assets: Array<{ path: string; sha256: string; mediaType: string }>;
+  anchor: { x: number; y: number };          // 归一化坐标，窗口边停靠的身体基准
+  hitAreas: Array<{ x: number; y: number; width: number; height: number }>;
+  animations: Record<string, string[]>;    // 动作 id → 本包素材路径，细节由 MOD-12 Schema 定义
+  semanticMap: Partial<Record<PetActivity, string>>;
+  activities: Array<{ id: string; animationId: string; minIntervalMs: number; audioAsset?: string }>;
+}
+interface SkinRegistry { register(skin: SkinManifest): void; get(id: string): SkinManifest | undefined }
+interface WindowAnchor {
+  kind: 'window_edge' | 'desktop_edge';
+  screenId: string; windowHandle?: string; edge: 'left' | 'right' | 'top' | 'bottom'; offset: number;
+}
+```
+
+- Schema/AuthProvider/Capability/Renderer/Skin 注册分别属于 MOD-02/03/06/08/12；启动组合根执行显式登记，统一 id 与版本冲突检查，v1 不做远程任意代码热加载。
+- 内置类型按 §2.2，扩展类型命名空间与 Schema 先经总架构师批准；旧版本迁移不能通过登记覆盖实现。共享仅在支持对应 Schema 时导入，不理解的资源标不支持。
+- OAuth 实现由受信适配器注入，token/none 不调用 grantUrl/exchange；MOD-03 校验允许端点、issuer、账号和 scopes，refreshToken 只存 SecretStore。provider 的回包不是授权证据，需 host 校验后才生效。
+- Renderer 是受信本机实现，动态事实需转义，不直接渲染来源HTML或执行脚本；未知 renderer 以受过滤的结构化数据视图显示。插件自己声明只读或 renderer 不是安全许可。
+- Skin 是纯素材/清单，没有脚本/可执行文件或远程资源；路径限制在包内，校验大小、格式与哈希，不容许穿越目录。音频仅用有许可的素材或用户明确选择的文件。
+- WindowAnchor 属于客户端平台层，windowHandle 仅本机临时标识，不上传或记忆化窗口内容；跨屏/DPI、窗口销毁需重新校验。平台信号与能力可用性由 MOD-12 提供本地探针，工作后端不枚举窗口。
+- 产品统计只记录决定/执行/通知时间与计数，与中央不可变审计分离并可清除；测量细则见 acceptance.md。
 
 ## 变更记录
 
 - v1-草案（2026-11-18）：初稿。
+- v1-评审修正版（2026-11-19）：ADR-0016/0017；补公共接口、审批冻结、窗口快照、结果未知、数据来源出口检查、记忆证据、M2 对话与编辑、多源安静模式、皮肤与扩展注册。
 - v1-草案（2026-11-18）：根据 ADR-0012、ADR-0013 新增第 8 节（记忆完整接口）、第 10 节（伙伴）、第 11 节（本地接口）；`Notice` 改成事实和语气分开；`CapabilityContext.memory` 改为必有。

@@ -1,43 +1,67 @@
 import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
-import { makeEquip, QUALITY, ITEMS } from '../src/data/items.js';
-import { getProductionRecipe } from '../src/data/production.js';
+import { makeNamedEquip, makeHighEquip, ITEMS } from '../src/data/items.js';
+import { NAMED_EQUIPMENT, matchesNamedEquip } from '../src/data/named-equipment.js';
+import { itemNameColor, ITEM_COLOR_PALETTE } from '../src/data/item-colors.js';
+import { getProductionRecipes } from '../src/data/production.js';
 import { SHOP_PRODUCTS, ACTIVITY_POOLS, MILESTONES } from '../src/data/economy.js';
 
-const base = process.env.GAME_URL;
-assert.match(base || '', /^http:\/\/(?:localhost|127\.0\.0\.1):5177$/, 'Use explicit isolated localhost/127.0.0.1 port 5177 in a fresh Chrome context');
+const base = process.env.GAME_URL || 'http://127.0.0.1:5176';
+assert.match(base, /^http:\/\/(?:localhost|127\.0\.0\.1):5176$/, 'Use only the existing isolated production preview on port 5176 in a fresh context');
 
 const out = new URL('../artifacts/', import.meta.url).pathname;
 await mkdir(out, { recursive: true });
 const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
 const page = await context.newPage();
-await page.route('**/@vite/client', (route) => route.fulfill({ contentType: 'application/javascript', body: '' }));
+page.setDefaultTimeout(15000);
 const errors = [];
 page.on('pageerror', (err) => errors.push(err.message));
 const settled = async () => {
   await page.waitForFunction(() => document.querySelector('#app')?.getAttribute('aria-busy') === 'false');
-  await page.evaluate(async () => { const { api } = await import('/src/main.js'); await api?.queue; });
+  await page.evaluate(async () => {
+    const api = globalThis[Symbol.for('pwi-h5.main-session')]?.api;
+    if (!api) throw new Error('Missing main-session API in the isolated preview');
+    await api.queue;
+  });
   await page.waitForFunction(() => document.querySelector('#app')?.getAttribute('aria-busy') === 'false');
 };
 const state = async () => { await settled(); return page.evaluate(async () => {
-  const { api } = await import('/src/main.js');
+  const api = globalThis[Symbol.for('pwi-h5.main-session')].api;
   return (await api.request('GET', '/v1/state')).data.snapshot;
 }); };
-const click = async (action, attrs = '', root = '') => { await settled(); await page.locator(`${root} [data-action="${action}"]${attrs}`.trim()).filter({ visible: true }).first().click(); await settled(); };
+const click = async (action, attrs = '', root = '') => {
+  await settled();
+  const locator = page.locator(`${root} [data-action="${action}"]${attrs}`.trim()).filter({ visible: true }).first();
+  if (action === 'page' && !await locator.count() && await page.locator('.mobile-nav-more > summary').isVisible()) {
+    await page.locator('.mobile-nav-more > summary').click();
+  }
+  await locator.click(); await settled();
+};
+const renderedName = (locator) => locator.evaluate((element) => {
+  const copy = element.cloneNode(true); copy.querySelectorAll('.sr-only').forEach((node) => node.remove());
+  return copy.textContent.trim();
+});
 async function disabledNoCharge(locator, checkpoint, label) {
   assert.ok(await locator.isVisible(), `${label}: action must be visible`);
   assert.ok(await locator.isDisabled(), `${label}: action must be disabled`);
   await locator.evaluate((button) => button.click());
   assert.deepEqual(await state(), checkpoint, `${label}: disabled action must not charge or change the save`);
 }
-async function nameColor(locator, q) {
-  const hex = QUALITY[q].color.slice(1);
-  const rgb = [0, 2, 4].map((offset) => parseInt(hex.slice(offset, offset + 2), 16));
-  const colors = await locator.evaluateAll((elements) => elements.map((element) => getComputedStyle(element).color));
-  assert.ok(colors.length > 0, 'Expected an equipment name');
-  for (const color of colors) assert.equal(color, `rgb(${rgb.join(', ')})`);
+async function nameColor(locator, item) {
+  const nodes = await locator.evaluateAll((elements) => elements.map((element) => ({
+    name: element.dataset.itemName, token: element.dataset.itemColor, color: getComputedStyle(element).color,
+  })));
+  assert.ok(nodes.length > 0, 'Expected an item name with color evidence');
+  for (const node of nodes) {
+    assert.ok(node.name, 'Name color must identify the actual item, not q');
+    if (item) assert.equal(node.name, typeof item === 'string' ? item : item.name);
+    const token = itemNameColor(node.name), hex = ITEM_COLOR_PALETTE[token].slice(1);
+    const rgb = [0, 2, 4].map((offset) => parseInt(hex.slice(offset, offset + 2), 16));
+    assert.equal(node.token, token, `${node.name}: source-evidenced color token`);
+    assert.equal(node.color, `rgb(${rgb.join(', ')})`, `${node.name}: evidence palette CSS`);
+  }
 }
 const screenshot = async (name) => { await settled(); await page.waitForFunction(() => !document.querySelector('#toast')?.classList.contains('show')); await page.evaluate(() => window.scrollTo(0, 0)); await page.screenshot({ path: `${out}${name}`, fullPage: true, animations: 'disabled' }); };
 async function noOverflow() {
@@ -52,7 +76,8 @@ async function fightPig() {
     assert.ok(await recommended.count(), 'Manual combat must explain an available next action');
     await recommended.click(); await settled();
   }
-  assert.equal(await page.locator('.battle-controls, .battle-grid, .battle-banner').count(), 0);
+  assert.equal(await page.locator('.battle-controls').count(), 0, 'Resolved combat removes turn controls');
+  assert.equal(await page.locator('[data-action="turn"]:not(:disabled)').count(), 0, 'Resolved combat cannot advance another turn');
   assert.match(await page.locator('.battle-result').innerText(), /此战告捷/);
   await click('leaveBattle');
 }
@@ -63,15 +88,21 @@ try {
   assert.equal(await page.locator('.shell').count(), 0);
   for (const [id, home] of [['human', '剑仙城'], ['elf', '积羽城'], ['untamed', '万化城'], ['tideborn', '惊涛城'], ['earthguard', '灵犀城']]) {
     await click('race', `[data-id="${id}"]`);
-    assert.match(await page.locator('.class-detail').innerText(), new RegExp(home));
+    assert.match(await page.locator('.creation-preview').innerText(), new RegExp(home));
     assert.equal(await page.locator('.class-option').count(), 2);
   }
   await click('race', '[data-id="human"]');
   await noOverflow();
   await screenshot('desktop-create.png');
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 844 }); await noOverflow();
+    await screenshot(`mobile-${width}-create.png`);
+  }
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  assert.equal(await page.evaluate(async () => globalThis[Symbol.for('pwi-h5.main-session')].api.store.current()), null, 'Fresh context must start with no save');
   await page.locator('#char-name').fill('云归');
   await page.getByRole('button', { name: '进入完美大陆' }).click();
-  assert.match(await page.locator('.profile-name').innerText(), /云归/);
+  assert.match(await page.locator('.hud-identity strong').innerText(), /云归/);
   await click('travel', '[data-id="h_f1"]');
   await noOverflow();
   await screenshot('desktop-world.png');
@@ -87,7 +118,8 @@ try {
   await fightPig();
   assert.equal((await state()).player.mainProgress, 1);
   // Natural play: collect the actual root-recipe resources, never import forge materials.
-  const rootRecipe = getProductionRecipe('ordinary-1-weapon', (await state()).player.cls);
+  const rootRecipe = getProductionRecipes((await state()).player.cls).find((recipe) => recipe.series === 'local-tutorial' && recipe.lv === 1 && recipe.slot === 'weapon');
+  assert.ok(rootRecipe?.id && rootRecipe.templateId, 'Select an actual level-1 local-tutorial weapon recipe');
   for (const [id, required] of Object.entries(rootRecipe.materials)) {
     while (((await state()).player.items[id] || 0) < required) {
       await page.locator(`[data-action="gather"][data-id="${id.slice(0, -1)}"]:not(:disabled)`).waitFor();
@@ -108,7 +140,7 @@ try {
   assert.equal((await state()).player.daily.signed, true);
   assert.ok(await page.locator('[data-action="sign"]').isDisabled());
   await click('townTab', '[data-id="forge"]');
-  await page.locator('#production-series').selectOption('ordinary'); await settled();
+  await page.locator('#production-series').selectOption(rootRecipe.series); await settled();
   await page.locator('#forge-slot').selectOption('weapon'); await settled();
   await page.locator('#production-recipe').selectOption(rootRecipe.id); await settled();
   const beforeForge = await state();
@@ -123,7 +155,11 @@ try {
   await click('confirmModal');
   const beforeEquip = await state();
   const weapon = beforeEquip.player.bag.find((it) => it.origin === `production:${rootRecipe.id}`);
-  assert.ok(weapon && [1, 2].includes(weapon.q) && weapon.ruleVersion === 1);
+  assert.ok(weapon && matchesNamedEquip(weapon));
+  assert.equal(weapon.templateId, rootRecipe.templateId);
+  assert.equal(weapon.q, 0, 'q0 is only legacy accounting, never a color or random quality roll');
+  assert.equal(weapon.stars, null);
+  assert.equal(weapon.nameColor, null);
   assert.equal(beforeEquip.player.bag.length, beforeForge.player.bag.length + 1);
   assert.equal(beforeEquip.player.gold, beforeForge.player.gold - rootRecipe.gold);
   for (const [id, quantity] of Object.entries(rootRecipe.materials)) assert.equal(beforeEquip.player.items[id], beforeForge.player.items[id] - quantity);
@@ -257,7 +293,7 @@ try {
       else if (reward.type === 'equip') {
         assert.ok(reward.equipment.uid && !prior.player.bag.some((item) => item.uid === reward.equipment.uid));
         expected.bag.push(reward.equipment);
-        assert.equal(await page.locator('#modal .real-prize .equipment-name').innerText(), reward.equipment.name);
+        assert.equal(await renderedName(page.locator('#modal .real-prize .equipment-name')), reward.equipment.name);
       } else if (reward.type === 'cosmetic') expected.cosmetics.owned.push(reward.cosmeticId);
       else if (['yuanbao', 'boundYuanbao'].includes(reward.type)) expected.wallet[reward.type] += reward.quantity;
       else expected[reward.type] += reward.quantity;
@@ -374,16 +410,19 @@ try {
   await page.locator('#toast').filter({ hasText: 'JSON格式错误' }).waitFor();
   assert.equal((await state()).player.name, '云归');
   console.log('PASS natural-play checkpoint: creation/combat/progression, natural-resource production, mall purchases routed to owned-only bag items, four independent item-detail pools and recorded opening rewards/UIDs without extra key/wallet charges, consumed-card removal, daily mall subsidy, punch/compatible weapon gem, new-gear no reroll/+5, reload/export and invalid JSON rejection.');
-  // CONTROLLED IMPORT FIXTURE: palette, legacy-name XSS, keys, opening milestones and near-pity counters;
+  // CONTROLLED IMPORT FIXTURE: finite named palette, legacy-name XSS, keys, opening milestones and near-pity counters;
   // none of these supplied assets/counters are claimed as naturally earned progress.
-  console.log('BEGIN controlled imported fixture: generated four-quality palette, legacy-name XSS, 20 keys, five chest/zongzi opening counters and 49-draw pity checkpoint.');
+  console.log('BEGIN controlled imported fixture: finite level-1 named weapons, verified red high template, legacy-name XSS, 20 keys, five chest/zongzi opening counters and 49-draw pity checkpoint; not naturally earned.');
   const fixture = structuredClone(backup); fixture.player.name = '<b>test</b>';
-  const palette = QUALITY.slice(0, 4).map((quality, q) => ({ ...makeEquip('weapon', 1, q, fixture.player.cls, { stars: q < 2 ? q + 1 : 3, origin: 'controlled-import:palette' }), uid: `palette${q}` }));
+  const palette = Object.values(NAMED_EQUIPMENT).filter((template) => template.status === 'local-tutorial' && template.slot === 'weapon' && template.lv === 1 && template.classes.includes(fixture.player.cls)).slice(0, 4)
+    .map((template, index) => ({ ...makeNamedEquip(template.templateId, { origin: 'controlled-import:palette' }), uid: `palette${index}` }));
+  assert.equal(palette.length, 4);
+  const verifiedColor = makeHighEquip('axe19c');
   // A genuine old-format compatibility fixture, not a new gear identity with renamed metadata.
   const legacyXss = { uid: 'legacyxss', kind: 'equip', slot: 'weapon', name: '<b>配色验证·旧制珍品</b>', desc: 'Controlled imported legacy XSS fixture',
     lv: 1, grade: 1, q: 3, cls: fixture.player.cls, armorType: null, base: { patk: 10 }, addons: {}, refine: 0,
     durability: 100, maxDurability: 100, bound: false, sockets: [], socketLimit: 2, rerolls: 0, upgrades: 0, setId: null, price: 20 };
-  fixture.player.bag.push(...palette, legacyXss);
+  fixture.player.bag.push(...palette, verifiedColor, legacyXss);
   fixture.player.items.treasureKey = 20;
   fixture.player.events.chestsOpened = 5;
   fixture.player.events.zongziOpened = 5;
@@ -396,7 +435,7 @@ try {
   assert.equal((await state()).player.name, '云归');
   await click('confirmModal');
   assert.equal((await state()).player.name, '<b>test</b>');
-  assert.equal(await page.locator('.profile-name b').count(), 0);
+  assert.equal(await page.locator('.hud-identity strong b').count(), 0);
   await click('page', '[data-id="bag"]');
   await click('bagTab', '[data-id="items"]');
   const openingMilestones = page.locator('.economy-fold[data-fold="物品开启累计礼"]');
@@ -421,52 +460,58 @@ try {
   assert.equal(await page.locator('.page .codex-item[data-item="bigZongzi"]').count(), 1, 'Claimed opening reward must appear as a real owned item');
   await click('bagTab', '[data-id="equipment"]');
   for (const it of palette) {
-    await nameColor(page.locator(`.item-card.quality-${it.q} .equipment-name`).filter({ hasText: it.name }), it.q);
+    await nameColor(page.locator('.item-card').filter({ has: page.locator(`[data-action="equipmentDetail"][data-id="${it.uid}"]`) }).locator('h3 .equipment-name'), it);
   }
   assert.equal(await page.locator('.equipment-name b').count(), 0);
-  await nameColor(page.locator('.item-card.quality-3 .equipment-name').filter({ hasText: legacyXss.name }), 3);
+  await nameColor(page.locator('.item-card .equipment-name').filter({ hasText: legacyXss.name }), legacyXss);
+  await nameColor(page.locator('.item-card .equipment-name').filter({ hasText: verifiedColor.name }), verifiedColor);
+  assert.equal(await page.locator('[class*="quality-"]').count(), 0, 'No q-driven name, icon or border classes');
   await click('equipmentDetail', `[data-id="${legacyXss.uid}"]`);
-  assert.equal(await page.locator('#modal .modal-body > h3 .equipment-name').first().innerText(), legacyXss.name);
+  assert.equal(await renderedName(page.locator('#modal .modal-body > h3 .equipment-name').first()), legacyXss.name);
   assert.equal(await page.locator('#modal .equipment-name b').count(), 0);
   await click('closeModal');
   await screenshot('desktop-equipment-colors.png');
   for (const it of palette) {
     await click('equipmentDetail', `[data-id="${it.uid}"]`);
-    await nameColor(page.locator('#modal h3 .equipment-name'), it.q);
+    await nameColor(page.locator('#modal h3 .equipment-name'), it);
     assert.match(await page.locator('.modal-body').innerText(), new RegExp(`${it.grade}品`));
     await click('closeModal');
     await click('equip', `[data-id="${it.uid}"]`);
     await click('page', '[data-id="character"]');
-    await nameColor(page.locator('.equip-slot[data-id="weapon"] .equipment-name'), it.q);
+    await nameColor(page.locator('.equip-slot[data-id="weapon"] .equipment-name'), it);
     await click('equipped', '[data-id="weapon"]');
     await click('equipmentAction', '[data-op="bind"]');
-    await nameColor(page.locator('#modal .equipment-name'), it.q);
+    await nameColor(page.locator('#modal .equipment-name'), it);
     await click('closeModal');
     await click('page', '[data-id="town"]');
     await click('townTab', '[data-id="refine"]');
-    await nameColor(page.locator('.item-card .equipment-name').filter({ hasText: it.name }), it.q);
+    await nameColor(page.locator('.item-card .equipment-name').filter({ hasText: it.name }), it);
     await click('refineConfirm', '[data-id="weapon"]');
-    await nameColor(page.locator('#modal .equipment-name'), it.q);
+    await nameColor(page.locator('#modal .equipment-name'), it);
     await click('closeModal');
     await click('page', '[data-id="bag"]');
   }
   await click('page', '[data-id="town"]');
   await click('townTab', '[data-id="equipment"]');
-  await nameColor(page.locator('.item-card .equipment-name').first(), 0);
+  await nameColor(page.locator('.named-shop-card h3 .equipment-name').first());
   await click('page', '[data-id="activities"]');
-  await nameColor(page.locator('.orbit-prize .equipment-name.quality-2'), 2);
-  await nameColor(page.locator('.orbit-prize .equipment-name.quality-3'), 3);
-  for (const [random, q] of [[0.01, 3], [0.8, 2]]) {
+  await nameColor(page.locator('.orbit-prize .equipment-name'));
+  const delivered = [];
+  for (const [random, rarity] of [[0.01, 'legendary'], [0.8, 'rare']]) {
     await page.evaluate((value) => { window.paletteRandom = Math.random; Math.random = () => value; }, random);
     try { await click('treasureDraw', '[data-count="1"]'); }
     finally { await page.evaluate(() => { Math.random = window.paletteRandom; delete window.paletteRandom; }); }
-    const reward = (await state()).player.drawHistory.at(-1).rewards.find((entry) => entry.type === 'equip');
-    assert.equal(reward.equipment.q, q);
-    await nameColor(page.locator('#modal .real-prize > strong .equipment-name'), q);
-    await nameColor(page.locator('#modal .reward-line .equipment-name'), q);
-    assert.equal(await page.locator('#modal .reward-line .equipment-name').innerText(), reward.equipment.name);
+    const result = (await state()).player.drawHistory.at(-1);
+    assert.equal(result.rarity, rarity, 'Prize tier is independent from equipment q and name color');
+    const reward = result.rewards.find((entry) => entry.type === 'equip');
+    assert.ok(reward?.equipment && matchesNamedEquip(reward.equipment));
+    assert.equal(reward.equipment.q, 0);
+    delivered.push(reward.equipment);
+    await nameColor(page.locator('#modal .real-prize > strong .equipment-name'), reward.equipment);
+    await nameColor(page.locator('#modal .reward-line .equipment-name'), reward.equipment);
+    assert.equal(await renderedName(page.locator('#modal .reward-line .equipment-name')), reward.equipment.name);
     await click('closeModal');
-    await nameColor(page.locator('.delivery-showcase .reward-line .equipment-name'), q);
+    await nameColor(page.locator('.delivery-showcase .reward-line .equipment-name'), reward.equipment);
   }
   assert.equal(await page.locator('.treasure-progress [data-draw-total]').innerText(), '51');
   assert.equal((await state()).player.events.hongyun.pity, 1);
@@ -500,12 +545,12 @@ try {
   assert.equal(await treasureHistory.locator('.economy-history article').count(), hongyunRecords.length);
   for (const entry of hongyunRecords) assert.equal(await treasureHistory.locator('.economy-history article small').filter({ hasText: entry.id }).count(), 1);
   assert.doesNotMatch(await treasureHistory.innerText(), /青铜宝箱|黄金宝箱|幸运粽子|大粽子/);
-  for (const q of [2, 3]) await nameColor(page.locator(`.economy-history .reward-line .equipment-name.quality-${q}`).last(), q);
+  for (const item of delivered) await nameColor(page.locator('.economy-history .reward-line .equipment-name').filter({ hasText: item.name }), item);
   for (const width of [390, 320]) {
     await page.setViewportSize({ width, height: 844 });
-    await page.locator('.mobile-nav [data-action="page"][data-id="bag"]').click();
+    await click('page', '[data-id="bag"]', '.mobile-nav');
     await settled(); await noOverflow();
-    for (const it of palette.slice(0, 3)) await nameColor(page.locator(`.item-card.quality-${it.q} .equipment-name`).filter({ hasText: it.name }), it.q);
+    for (const it of [...palette.slice(0, 3), verifiedColor]) await nameColor(page.locator('.item-card').filter({ has: page.locator(`[data-action="equipmentDetail"][data-id="${it.uid}"]`) }).locator('h3 .equipment-name'), it);
     await screenshot(`mobile-${width}-equipment-colors.png`);
   }
   await page.setViewportSize({ width: 1440, height: 1000 });
@@ -514,7 +559,7 @@ try {
   await click('hunt', '[data-index="0"]');
   await click('turn', '[data-id="defend"]');
   const battleCheckpoint = (await state()).battle;
-  await page.reload(); await page.locator('.battle-banner').waitFor();
+  await page.reload(); await page.locator('.battle-controls').waitFor();
   assert.deepEqual((await state()).battle, battleCheckpoint);
   await click('auto');
   await page.locator('.battle-result').waitFor({ timeout: 30000 });
@@ -525,7 +570,7 @@ try {
   await noOverflow();
   await screenshot('mobile-world.png');
   for (const id of ['quests', 'character', 'bag', 'skills', 'cult', 'town', 'mall', 'activities', 'guide']) {
-    await page.locator(`.mobile-nav [data-action="page"][data-id="${id}"]`).click();
+    await click('page', `[data-id="${id}"]`, '.mobile-nav');
     await settled(); await noOverflow();
     if (id === 'mall' || id === 'activities') {
       await page.locator(id === 'mall' ? '.mall-page' : '.treasure-page').waitFor();
@@ -534,12 +579,12 @@ try {
   }
   await page.setViewportSize({ width: 320, height: 740 });
   for (const id of ['mall', 'activities']) {
-    await page.locator(`.mobile-nav [data-action="page"][data-id="${id}"]`).click();
+    await click('page', `[data-id="${id}"]`, '.mobile-nav');
     await page.locator(id === 'mall' ? '.mall-page' : '.treasure-page').waitFor();
     await noOverflow(); await screenshot(`mobile-320-${id}.png`);
   }
   await noOverflow();
-  await page.locator('.mobile-nav [data-id="world"]').click();
+  await click('page', '[data-id="world"]', '.mobile-nav');
   const beforeAtlas = await state();
   await click('map');
   assert.equal(await page.locator('#modal.atlas-modal, #modal .atlas-modal').count(), 1);
@@ -549,15 +594,8 @@ try {
   assert.deepEqual(await state(), beforeAtlas, 'Layered atlas browsing must not mutate the save');
   await page.keyboard.press('Escape');
   assert.ok(await page.locator('#modal').evaluate((el) => el.classList.contains('hidden')));
-  await page.locator('.mobile-nav [data-id="guide"]').click();
-  await click('newConfirm');
-  await click('confirmModal');
-  await noOverflow();
-  await page.setViewportSize({ width: 390, height: 844 });
-  await screenshot('mobile-create.png');
-  await click('cancelCreate');
-  assert.equal((await state()).player.name, '<b>test</b>');
+  assert.equal((await state()).player.name, '<b>test</b>', 'No new-character rebuild is used on an existing save');
   assert.deepEqual(errors, []);
-  console.log('PASS browser: five races, creation, combat, level, points, quests, shop, forge, equipment, refine cancel, bounty, autosave, export/import, XSS escaping, auto combat, 1440/390/320px layouts, modal, new-character cancel; production-data-counted mall, virtual-wallet limits, secret treasure with Hongyun-only history, two chests and two zongzi pools opened from actual owned bag cards, disabled unowned/insufficient-count details without charges, purchase-result bag routing, consumed-card removal, separate opening history, daily mall subsidy, bag opening milestone claims, charm/cosmetic, explicit punch/compatible patk socket/unsocket, HP-gem rejection, new gear no reroll/+5, bind cancel, active battle reload, ten mobile navigation entries; four-quality name colors in bag/detail/equipped/refine/shop/confirm, actual rare/legendary equipment delivery and history, 390/320px equipment palette; visible left cumulative rewards, insufficient-count disable, actual 10/50 milestone delivery, legendary reset independent from cumulative draws, claim persistence, 1080/850/761px treasure layouts.');
+  console.log('PASS browser: five races, creation, combat, level, points, quests, shop, forge, equipment, refine cancel, bounty, autosave, export/import, XSS escaping, auto combat, 1440/390/320px layouts, modal, fresh-context mobile creation; production-data-counted mall, virtual-wallet limits, secret treasure with Hongyun-only history, two chests and two zongzi pools opened from actual owned bag cards, disabled unowned/insufficient-count details without charges, purchase-result bag routing, consumed-card removal, separate opening history, daily mall subsidy, bag opening milestone claims, charm/cosmetic, explicit punch/compatible patk socket/unsocket, HP-gem rejection, new gear no reroll/+5, bind cancel, active battle reload, ten mobile navigation entries; source-evidenced/unknown name colors in bag/detail/equipped/refine/shop/confirm, actual rare/legendary equipment delivery and history, 390/320px equipment palette; visible left cumulative rewards, insufficient-count disable, actual 10/50 milestone delivery, legendary reset independent from cumulative draws, claim persistence, 1080/850/761px treasure layouts.');
   console.log(`Screenshots: ${out}`);
-} finally { await browser.close(); }
+} finally { await context.close(); await browser.close(); }

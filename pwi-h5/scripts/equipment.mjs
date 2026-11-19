@@ -3,7 +3,7 @@ import { CLASSES, SKILLS } from '../src/data/classes.js';
 import { ARMOR_SLOTS, ITEMS, STAT_NAMES, EQUIPMENT_DEFAULTS, EQUIPMENT_SETS, makeEquip, equipStats, setStats, shopList } from '../src/data/items.js';
 import { createPlayer, stats, makeMonster } from '../src/core/model.js';
 import { ensureEquipment, equipmentAction, wearEquipment } from '../src/core/equipment.js';
-import { matchesGearSpec } from '../src/data/gear-specs.js';
+import { matchesNamedEquip } from '../src/data/named-equipment.js';
 
 // Controlled pre-ruleVersion compatibility fixtures; never downgrade a live item.
 function legacyEquip(slot, lv, q, cls) {
@@ -78,7 +78,7 @@ test('ten classes / 72 skills remain intact', () => {
     const p = createPlayer('初始角色', cls);
     assert.ok(!Object.hasOwn(p, 'charms'));
     for (const it of Object.values(p.equipment)) {
-      assert.ok(matchesGearSpec(it));
+      assert.ok(matchesNamedEquip(it));
       for (const [key, value] of Object.entries(EQUIPMENT_DEFAULTS)) {
         if (key === 'socketLimit') assert.equal(it[key], it.slot === 'weapon' ? 2 : 4);
         else assert.deepEqual(it[key], value);

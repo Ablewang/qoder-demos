@@ -1,12 +1,14 @@
 import type { Action, AreaState, Control, Difficulty, Element, GameEvent, GameState, Item, Monster, Player, Point, Projectile, Rng, Slot } from './types';
 import { CLASSES, EXPERIENCE, getClass, getSkill, num, rawRows } from './catalog';
-import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, resistDamage, skillEffect, skillLevel } from './rules';
-import { consumePotion, createItem, createStartingItems, describeItem, equipItem, getBase, insertSocket, itemLabel, placeItem, repairItems, rollLoot, transmute, unequipItem, vendorStock } from './items';
+import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, skillEffect, skillLevel } from './rules';
+import { consumeInventoryPotion, consumePotion, createItem, createStartingItems, describeItem, equipItem, getBase, insertSocket, INVENTORY_HEIGHT, INVENTORY_WIDTH, isUsableItem, itemLabel, moveInventoryItem, placeItem, repairItems, rollLoot, transmute, unequipItem, vendorStock } from './items';
 import { SURFACE_IDS, canTravel, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, hasLineOfSight, isTownPoint, onEnterArea, onKill, surfaceRegionAt, talkNPC, townForAct } from './world';
 
+import { COMBAT_HZ, DIFFICULTY_RULES, lifeBits, rollDamageBits, settleDirectDamage } from './combat';
+import type { DamageComponent } from './combat';
 import { LEGACY_CHARACTER_ID } from './storage';
 import type { SaveRecord, SaveStore } from './storage';
-export const FPS = 25;
+export const FPS = COMBAT_HZ;
 export const ENGINE_LIMITATIONS = [
   '当前战斗碰撞、怪物 AI 和攻击动画是自主实现，未达到原版服务器函数级一致。',
   '战役任务仅以 world 模块已实现的触发器为准，不能以区域数量认定完整五幕。',
@@ -70,7 +72,7 @@ export class Engine {
     screen: 'intro', player: null, area: null, stats: null, panel: 'none', projectiles: [], effects: [], summons: [],
     characters: [], activeSaveId: null, storageStatus: 'loading', storageError: '', loadingSave: false,
     messages: [], tick: 0, seed: Date.now() >>> 0, paused: false, automap: false, showLoot: false, target: null,
-    selectedMonster: null, selectedItem: null, npc: null, vendorItems: [], dialogue: '', saved: false,
+    selectedMonster: null, selectedItem: null, identifySource: null, npc: null, vendorItems: [], dialogue: '', saved: false,
     events: [], eventSeq: 0, facing: Math.PI * .75, moving: false,
   };
   readonly control: Control = {move: {x: 0, y: 0}, aim: null, aimMonster: null, left: false, right: false};
@@ -154,7 +156,7 @@ export class Engine {
     this.runtimeRevision++;
     this.path = []; this.attackTarget = null; this.pendingInteraction = null; this.cooldown = 0; this.meleeSwings = new WeakMap(); this.runningThisFrame = false; this.state.events = []; this.state.moving = false;
     this.regeneration = []; this.aura = null; this.state.projectiles = []; this.state.effects = []; this.state.summons = [];
-    this.state.target = null; this.state.selectedMonster = null; this.state.selectedItem = null; this.state.panel = 'none';
+    this.state.target = null; this.state.selectedMonster = null; this.state.selectedItem = null; this.state.identifySource = null; this.state.panel = 'none';
     this.state.npc = null; this.state.vendorItems = []; this.state.dialogue = ''; this.npcServices = [];
   }
   private cachedArea(id: number): AreaState {
@@ -186,6 +188,7 @@ export class Engine {
     const region=surfaceRegionAt(area,p);
     if (!region || region.def.id===area.def.id) return;
     const from = area.def.id;
+    this.state.identifySource = null;
     area.def=region.def;area.spawn=region.spawn;
     this.regionMessage(from);
   }
@@ -233,7 +236,8 @@ export class Engine {
         if (Math.hypot(x - p.x, y - p.y) <= radius) area.revealed[y][x] = true;
   }
   dispatch = (action: Action): void => {
-    if (action.type === 'creation') { if (!this.state.loadingSave) this.state.screen = 'creation'; return; }
+    if (action.type === 'cancel-identify') { this.state.identifySource = null; return; }
+    if (action.type === 'creation') { if (!this.state.loadingSave) { this.state.identifySource = null; this.state.screen = 'creation'; } return; }
     if (action.type === 'new') {
       if (this.state.loadingSave || (this.store && this.state.storageStatus !== 'ready')) return;
       const name = action.name.trim().slice(0, 24);
@@ -248,18 +252,18 @@ export class Engine {
     if (action.type === 'title') {
       if (this.state.loadingSave) return;
       if (this.state.screen === 'game') void this.save(false);
-      this.state.screen = 'title'; this.state.paused = true; return;
+      this.state.identifySource = null; this.state.screen = 'title'; this.state.paused = true; return;
     }
     const p = this.state.player, area = this.state.area;
     if (!p || !area || this.state.screen !== 'game') return;
     if (action.type === 'save') { this.save(); return; }
-    if (action.type === 'panel') { this.state.panel = this.state.panel === action.panel ? 'none' : action.panel; return; }
+    if (action.type === 'panel') { this.state.identifySource = null; this.state.panel = this.state.panel === action.panel ? 'none' : action.panel; return; }
     if (action.type === 'pause') { this.state.paused = !this.state.paused; return; }
     if (action.type === 'map') { this.state.automap = !this.state.automap; return; }
     if (action.type === 'loot') { this.state.showLoot = !this.state.showLoot; return; }
     if (action.type === 'respawn') { this.respawn(); return; }
     if (p.dead) return;
-    if (this.state.paused && ['move', 'attack', 'interact', 'pickup', 'potion', 'portal', 'travel'].includes(action.type)) return;
+    if (this.state.paused && ['move', 'attack', 'interact', 'pickup', 'potion', 'use-item', 'move-item', 'portal', 'travel'].includes(action.type)) return;
     switch (action.type) {
       case 'move':
         if (!Number.isFinite(action.point.x) || !Number.isFinite(action.point.y)) break;
@@ -288,6 +292,8 @@ export class Engine {
       case 'swap': p.weaponSwap = !p.weaponSwap; this.updateStats(); this.message(`切换武器组 ${p.weaponSwap ? 'II' : 'I'}`); break;
       case 'drop': { const i = p.inventory.findIndex(i => i.uid === action.uid); if (i >= 0) { const [item] = p.inventory.splice(i, 1); area.drops.push({item, x: p.x, y: p.y}); this.updateStats(); } break; }
       case 'potion': this.drink(action.column); break;
+      case 'use-item': this.useItem(action.uid, action.targetUid); break;
+      case 'move-item': { const r = moveInventoryItem(p, action.uid, action.x, action.y); if (!r.ok) this.message(r.message, 'error'); break; }
       case 'heal': if (area.def.town && this.npcServices.includes('heal')) { p.life = this.state.stats!.maxLife; p.mana = this.state.stats!.maxMana; p.stamina = this.state.stats!.maxStamina; this.regeneration = []; this.message('生命和法力已恢复。'); } break;
       case 'identify': this.identify(action.uid); break;
       case 'buy': this.buy(action.uid); break;
@@ -354,6 +360,7 @@ export class Engine {
     switch (o.kind) {
       case 'exit': if (o.targetArea !== undefined && getConnections(p, sourceDef.id).includes(o.targetArea)) this.enterArea(o.targetArea,undefined,false,sourceDef.id); else this.message('这里的道路尚未开启。', 'error'); break;
       case 'npc': {
+        this.state.identifySource = null;
         const result = talkNPC(p, o.npcId!); this.state.npc = o.npcId!; this.state.dialogue = result.message; this.npcServices = result.services;
         if (result.services.includes('trade')) {
           let stock = this.vendorStocks.get(o.npcId!);
@@ -362,8 +369,8 @@ export class Engine {
         } else this.state.vendorItems = [];
         this.state.panel = 'vendor'; this.message(result.message); this.updateStats(true); break;
       }
-      case 'waypoint': if (!p.waypoints.includes(sourceDef.id)) { p.waypoints.push(sourceDef.id); this.message(`已激活 ${sourceDef.name} 的传送点。`); } this.state.panel = 'waypoint'; break;
-      case 'stash': this.state.panel = 'stash'; break;
+      case 'waypoint': this.state.identifySource = null; if (!p.waypoints.includes(sourceDef.id)) { p.waypoints.push(sourceDef.id); this.message(`已激活 ${sourceDef.name} 的传送点。`); } this.state.panel = 'waypoint'; break;
+      case 'stash': this.state.identifySource = null; this.state.panel = 'stash'; break;
       case 'chest': if (!o.used) {
         o.used = true;
         const choices = rawRows('weapons').filter(b => num(b, 'level') <= Math.max(1, p.level) && num(b, 'spawnable') === 1);
@@ -389,7 +396,7 @@ export class Engine {
     const item = area.drops[index].item;
     if (item.code === 'gld') { p.gold += item.quantity; this.message(`拾取 ${item.quantity} 金币`, 'loot'); }
     else if (/^(?:(hp|mp)[1-5]|rvs|rvl)$/.test(item.code) && this.putBelt(item)) this.message(`拾取 ${itemLabel(item)} → 腰带`, 'loot');
-    else if (placeItem(p.inventory, item, 10, 4)) this.message(`拾取 ${itemLabel(item)}`, 'loot');
+    else if (placeItem(p.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) this.message(`拾取 ${itemLabel(item)}`, 'loot');
     else { this.message('背包已满。', 'error'); this.pendingInteraction = null; return; }
     area.drops.splice(index, 1); this.pendingInteraction = null; this.path = []; this.updateStats(); this.state.saved = false;
   }
@@ -404,22 +411,50 @@ export class Engine {
     if (idx < 0) return false;
     p.belt[idx] = item; return true;
   }
-  private drink(column: number) {
-    if (!Number.isInteger(column) || column < 0 || column > 3) return;
-    const p = this.state.player!, r = consumePotion(p, column);
+  private drink(column: number, inventoryUid?: string) {
+    if (inventoryUid === undefined && (!Number.isInteger(column) || column < 0 || column > 3)) return;
+    const p = this.state.player!, r = inventoryUid === undefined ? consumePotion(p, column) : consumeInventoryPotion(p, inventoryUid);
     if (!r.ok) { this.message(r.message, 'error'); return; }
     const frames = Math.round(r.duration * FPS);
     if (frames > 0) this.regeneration.push({life: r.life / frames, mana: r.mana / frames, frames});
     else { p.life += r.life; p.mana += r.mana; this.updateStats(); }
     this.effect(p, 'heal', .6); this.message(r.message);
   }
-  private consumeScroll(code: 'tsc' | 'isc', tome: 'tbk' | 'ibk'): boolean {
+  private consumeScroll(code: 'tsc' | 'isc', tome: 'tbk' | 'ibk', uid?: string): boolean {
     const p = this.state.player!;
+    if (uid !== undefined) {
+      const index = p.inventory.findIndex(i => i.uid === uid);
+      if (index < 0) return false;
+      const source = p.inventory[index];
+      if (source.code === tome && source.quantity > 0) { source.quantity--; return true; }
+      if (source.code !== code) return false;
+      p.inventory.splice(index, 1); return true;
+    }
     const book = p.inventory.find(i => i.code === tome && i.quantity > 0);
     if (book) { book.quantity--; return true; }
     const index = p.inventory.findIndex(i => i.code === code);
     if (index < 0) return false;
     p.inventory.splice(index, 1); return true;
+  }
+  private useItem(uid: string, targetUid?: string) {
+    const p = this.state.player!, source = p.inventory.find(i => i.uid === uid);
+    if (!source || !isUsableItem(source)) {
+      this.message(source ? `${itemLabel(source)}不能使用。` : '只能使用行囊中的物品。', 'error'); return;
+    }
+    if (source.code === 'isc' || source.code === 'ibk') {
+      if (source.code === 'ibk' && source.quantity <= 0) { this.message(`${itemLabel(source)}已用尽。`, 'error'); return; }
+      if (targetUid === undefined) {
+        this.state.identifySource = source.uid; return;
+      }
+      const target = p.inventory.find(i => i.uid === targetUid);
+      if (!target || target.identified || target.uid === source.uid) { this.message('请选择行囊中的未鉴定物品。', 'error'); return; }
+      if (!this.consumeScroll('isc', 'ibk', source.uid)) { this.message('鉴定来源已失效。', 'error'); return; }
+      target.identified = true; this.state.identifySource = null;
+      this.message(`鉴定成功：${itemLabel(target)}`, 'loot'); this.updateStats(); return;
+    }
+    if (targetUid !== undefined) { this.message('该物品不能用于鉴定。', 'error'); return; }
+    if (source.code === 'tsc' || source.code === 'tbk') this.openPortal(source.uid);
+    else this.drink(0, source.uid);
   }
   private identify(uid?: string) {
     const p = this.state.player!;
@@ -429,7 +464,7 @@ export class Engine {
     for (const item of candidates) {
       if (item.identified) continue;
       if (!cain && !this.consumeScroll('isc', 'ibk')) { this.message('需要辨识卷轴。', 'error'); break; }
-      item.identified = true; this.message(`已鉴定：${itemLabel(item)}`, 'loot');
+      item.identified = true; this.message(`鉴定成功：${itemLabel(item)}`, 'loot');
     }
     this.updateStats();
   }
@@ -441,7 +476,7 @@ export class Engine {
     if (p.gold < offer.price) { this.message('金币不足。', 'error'); return; }
     const item = structuredClone(offer); item.uid = this.id('shop'); item.x = item.y = -1;
     if (/^(?:(hp|mp)[1-5]|rvs|rvl)$/.test(item.code) && this.putBelt(item)) p.gold -= offer.price;
-    else if (placeItem(p.inventory, item, 10, 4)) p.gold -= offer.price;
+    else if (placeItem(p.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) p.gold -= offer.price;
     else { this.message('背包已满。', 'error'); return; }
     this.message(`购买 ${itemLabel(item)}`, 'loot');
   }
@@ -465,7 +500,7 @@ export class Engine {
     if (source === p.stash && !this.state.area!.def.town) return;
     const index = source.findIndex(i => i.uid === uid), item = source[index];
     if (item.code === 'box' && destination === 'cube') { this.message('方块不能放入自身。', 'error'); return; }
-    const [w, h] = destination === 'inventory' ? [10, 4] : destination === 'stash' ? [6, 8] : [3, 4];
+    const [w, h] = destination === 'inventory' ? [INVENTORY_WIDTH, INVENTORY_HEIGHT] : destination === 'stash' ? [6, 8] : [3, 4];
     if (!placeItem(p[destination], item, w, h)) { this.message('目标空间不足。', 'error'); return; }
     source.splice(index, 1); this.updateStats();
   }
@@ -475,10 +510,10 @@ export class Engine {
     for (const area of new Set(this.areas.values())) area.objects=area.objects.filter(o=>o.uid!==portal.sourceUid && o.uid!==portal.townUid);
     this.portal=null;
   }
-  private openPortal() {
+  private openPortal(sourceUid?: string) {
     const p = this.state.player!, area = this.state.area!;
     if (area.def.town) { this.message('不能在营地施放城镇传送。', 'error'); return; }
-    if (!this.consumeScroll('tsc', 'tbk')) { this.message('需要城镇传送卷轴。', 'error'); return; }
+    if (!this.consumeScroll('tsc', 'tbk', sourceUid)) { this.message('需要城镇传送卷轴。', 'error'); return; }
     this.removePortal();
     const townId = townForAct(area.def.act), point = {x: p.x, y: p.y};
     this.portal = {areaId: area.def.id, point, townId,sourceUid:this.id('portal'),townUid:this.id('portal')};
@@ -588,37 +623,39 @@ export class Engine {
     const p = this.state.player!, stats = this.state.stats!;
     if (m.dead) return;
     if (melee && this.rng() * 100 >= hitChance(stats.attackRating, m.defense, p.level, m.level)) { this.effect(m, 'text', .7, '未命中'); this.event(m.uid, 'miss', m); return; }
-    const lo = Math.ceil(min * 256), hi = Math.floor(Math.max(min, max) * 256);
-    let rolled = (lo + Math.floor(this.rng() * (hi - lo + 1))) / 256;
-    if (melee && element === 'physical') {
+    let rolledBits = rollDamageBits(min, max, this.rng);
+    const weaponAttack = melee && element === 'physical';
+    if (weaponAttack) {
       const critical = stats.criticalStrike > 0 && this.rng() * 100 < stats.criticalStrike;
       const deadly = !critical && stats.deadlyStrike > 0 && this.rng() * 100 < stats.deadlyStrike;
-      if (critical || deadly) rolled *= 2;
+      if (critical || deadly) rolledBits *= 2;
     }
-    let damage = resistDamage(rolled, m.resists[element] ?? 0);
-    let coldDamage = element === 'cold' ? damage : 0, coldFrames = chillDuration;
-    if (melee && element === 'physical') {
-      const physicalLoss = Math.min(m.life, damage);
-      const raw = rawRows('monstats').find(r => r.Id === m.code);
-      const suffix = p.difficulty === 'normal' ? '' : p.difficulty === 'nightmare' ? '(N)' : '(H)';
-      const drain = raw ? num(raw, `Drain${suffix}`) : 0;
-      p.life = Math.min(stats.maxLife, p.life + leechAmount(physicalLoss, stats.lifeLeech, drain, p.difficulty));
-      p.mana = Math.min(stats.maxMana, p.mana + leechAmount(physicalLoss, stats.manaLeech, drain, p.difficulty));
+    const packet: DamageComponent[] = [{ element, bits: rolledBits }];
+    let coldFrames = chillDuration;
+    if (weaponAttack) {
       for (const e of ['fire', 'cold', 'lightning', 'magic'] as const) {
         const range = stats.elementalDamage[e];
         if (range.max <= 0) continue;
-        const lower = Math.ceil(range.min * 256), upper = Math.floor(Math.max(range.min, range.max) * 256);
-        const extra = resistDamage((lower + Math.floor(this.rng() * (upper - lower + 1))) / 256, m.resists[e]);
-        damage += extra;
-        if (e === 'cold') { coldDamage = extra; coldFrames = stats.coldLength; }
+        packet.push({ element: e, bits: rollDamageBits(range.min, range.max, this.rng) });
+        if (e === 'cold') coldFrames = stats.coldLength;
       }
     }
+    const result = settleDirectDamage(packet, m.life, { resistances: m.resists });
+    if (weaponAttack) {
+      const raw = rawRows('monstats').find(r => r.Id === m.code);
+      const suffix = p.difficulty === 'normal' ? '' : p.difficulty === 'nightmare' ? '(N)' : '(H)';
+      const drain = raw ? num(raw, `Drain${suffix}`) : 0;
+      p.life = Math.min(stats.maxLife, p.life + leechAmount(result.physicalLifeLoss, stats.lifeLeech, drain, p.difficulty));
+      p.mana = Math.min(stats.maxMana, p.mana + leechAmount(result.physicalLifeLoss, stats.manaLeech, drain, p.difficulty));
+    }
+    const coldDamage = result.stages.find(stage => stage.element === 'cold')?.afterResistanceBits ?? 0;
     if (coldDamage > 0 && coldFrames > 0) {
       const raw = rawRows('monstats').find(r => r.Id === m.code);
       const suffix = p.difficulty === 'normal' ? '' : p.difficulty === 'nightmare' ? '(N)' : '(H)';
-      if (raw && num(raw, `coldeffect${suffix}`) < 0) m.chill = Math.floor(coldFrames / (p.difficulty === 'normal' ? 1 : p.difficulty === 'nightmare' ? 2 : 4));
+      if (raw && num(raw, `coldeffect${suffix}`) < 0) m.chill = Math.floor(coldFrames / DIFFICULTY_RULES[p.difficulty].coldLengthDivisor);
     }
-    m.life = Math.max(0, m.life - damage); if (damage > 0) { this.alertedMonsters.add(m); this.event(m.uid, 'hurt', m, m, element); } this.effect(m, 'text', .75, damage > 0 ? String(Math.max(1, Math.floor(damage))) : '免疫');
+    const damage = result.lifeLoss;
+    m.life = result.remainingLife; if (damage > 0) { this.alertedMonsters.add(m); this.event(m.uid, 'hurt', m, m, element); } this.effect(m, 'text', .75, damage > 0 ? String(Math.max(1, Math.floor(damage))) : '免疫');
     this.effect(m, element === 'physical' || element === 'magic' ? 'hit' : element as 'fire', .25);
     if (m.life <= 0) this.kill(m);
   }
@@ -646,9 +683,13 @@ export class Engine {
     if (p.dead || isTownPoint(this.state.area!,p)) return;
     if (element === 'physical' && this.rng() * 100 >= hitChance(m.attackRating, s.defense, m.level, p.level, this.runningThisFrame)) return;
     if (element === 'physical' && this.rng() * 100 < Math.floor(s.block / (this.runningThisFrame ? 3 : 1))) { this.effect(p, 'text', .4, '格挡'); this.event('player', 'block', p); return; }
-    const resistance = element === 'physical' ? Math.min(50, s.damageReduction) : element === 'fire' ? s.resFire : element === 'cold' ? s.resCold : element === 'lightning' ? s.resLightning : element === 'poison' ? s.resPoison : 0;
-    const damage = resistDamage(Math.max(0, amount - (element === 'physical' ? s.flatReduction : 0)), resistance);
-    p.life = Math.max(0, p.life - damage); this.event('player', 'hurt', p, p, element); this.effect(p, 'hit', .3); this.effect(p, 'text', .8, `−${Math.max(1, Math.floor(damage))}`);
+    const result = settleDirectDamage([{ element, bits: lifeBits(amount) }], p.life, {
+      resistances: { physical: s.damageReduction, fire: s.resFire, cold: s.resCold, lightning: s.resLightning, poison: s.resPoison, magic: 0 },
+      flatPhysical: s.flatReduction,
+    });
+    const damage = result.lifeLoss;
+    p.life = result.remainingLife;
+    if (damage > 0) { this.event('player', 'hurt', p, p, element); this.effect(p, 'hit', .3); this.effect(p, 'text', .8, `−${Math.max(1, Math.floor(damage))}`); }
     if (p.life <= 0) this.die();
   }
   private die() {
@@ -677,7 +718,7 @@ export class Engine {
     if ((!region && (area.regions || area.def.id!==p.corpse.areaId)) || distance(p,p.corpse)>2) return;
     for (const [slot, item] of Object.entries(p.corpse.equipment) as [Slot, Item][]) {
       if (!p.equipment[slot]) { p.equipment[slot] = item; delete p.corpse.equipment[slot]; }
-      else if (placeItem(p.inventory, item, 10, 4)) delete p.corpse.equipment[slot];
+      else if (placeItem(p.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) delete p.corpse.equipment[slot];
     }
     this.updateStats(true);
     if (Object.keys(p.corpse.equipment).length) { this.message('背包空间不足，尸体上仍有装备。', 'error'); return; }
@@ -860,7 +901,7 @@ export class Engine {
   }
   async load(id: string) {
     if (!this.store || this.state.storageStatus !== 'ready' || this.state.loadingSave) return;
-    this.state.loadingSave = true;
+    this.state.identifySource = null; this.state.loadingSave = true;
     try {
       await this.saving;
       const save = await this.store.get(id);

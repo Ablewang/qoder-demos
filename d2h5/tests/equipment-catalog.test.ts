@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import test from 'node:test';
 import { rawRows } from '../src/catalog';
-import { BASE_ITEMS, getBase, RUNES, RUNEWORDS } from '../src/items';
+import { BASE_ITEMS, getBase, itemName, runewordName, RUNES, RUNEWORDS } from '../src/items';
 import { CATALOG_CATEGORIES, EQUIPMENT_CATALOG, searchEquipment } from '../src/equipment-catalog';
 import type { CatalogKind, EquipmentEntry } from '../src/equipment-catalog';
 
@@ -16,6 +17,9 @@ const basesByCode = new Map(bases.map(row => [String(row.code), row]));
 const uniqueRows = source('UniqueItems'), setItems = source('SetItems'), sets = source('Sets');
 const wordRows = source('Runes'), socketRows = source('gems'), cubeRows = source('cubemain');
 const prefixRows = source('MagicPrefix'), suffixRows = source('MagicSuffix');
+const localizedBytes = readFileSync(new URL('../src/data/item-zhCN.json', import.meta.url));
+const localizedNames = JSON.parse(localizedBytes.toString('utf8')) as Record<string, string>;
+const localizedProvenance = JSON.parse(readFileSync(new URL('../src/data/item-zhCN-provenance.json', import.meta.url), 'utf8'));
 const byId = new Map(EQUIPMENT_CATALOG.map(entry => [entry.id, entry]));
 const entries = (kind: CatalogKind) => EQUIPMENT_CATALOG.filter(entry => entry.kind === kind);
 function find(id: string): EquipmentEntry {
@@ -180,7 +184,7 @@ test('all 33 runes and seven complete five-grade gem families retain exact codes
   }
   // Pinned spelling/type anomalies are presentation-only corrections, never raw edits.
   assert.equal(find('gem:glb').raw.name, 'Flwless Saphire');
-  assert.equal(find('gem:glb').name, '无瑕疵的蓝宝石');
+  assert.equal(find('gem:glb').name, '无瑕的蓝宝石');
   assert.equal(find('base:gcb').raw.type, 'gems');
   assert.equal(find('base:gcb').name, '碎裂的蓝宝石');
 });
@@ -200,7 +204,7 @@ test('385 enabled uniques and every set piece have valid bases; all 32 set relat
   });
   for (const entry of entries('set-item')) {
     assert.ok(byId.has(`set:${entry.raw.set}`), entry.id);
-    assert.ok(entry.lines.includes(`所属套装：${entry.raw.set}`), entry.id);
+    assert.ok(entry.lines.includes(`所属套装：${localizedNames[String(sets[String(entry.raw.set)].name)]}`), entry.id);
     assert.match(entry.status, /组合奖励未实现/);
   }
   for (const entry of entries('set')) assert.match(entry.status, /仅定义/);
@@ -212,18 +216,18 @@ test('disabled unique rows, sparse IDs, placeholders and level restrictions stay
   assert.deepEqual(Object.keys(uniqueRows).filter(key => !uniqueRows[key].code), placeholders);
   for (const key of placeholders) assert.equal(byId.has(`unique:${key}`), false, 'no single-base definition');
   assert.equal(uniqueRows['129'], undefined, 'source key hole must not shift later IDs');
-  assert.equal(find('unique:130').name, String(uniqueRows['130'].index));
+  assert.equal(find('unique:130').name, '冰殛');
   assert.deepEqual(entries('unique').filter(entry => entry.raw.enabled !== 1).map(entry => entry.id), ['unique:29', 'unique:264', 'unique:347']);
   for (const id of ['unique:29', 'unique:264', 'unique:347']) assert.match(find(id).status, /原始禁用.*仅定义/);
-  assert.equal(find('unique:29').name, 'Azurewrath');
+  assert.equal(find('unique:29').name, '碧蓝怒火');
   assert.equal(find('unique:29').code, 'crs');
-  assert.equal(find('unique:302').name, 'Azurewrath');
+  assert.equal(find('unique:302').name, '碧蓝怒火');
   assert.equal(find('unique:302').code, '7cr');
   const ladderKeys = [291, 293, 299, 301, 302, 303, 310, 311, 312, 314, 315, 316, 317, 318, 323, 326, 327, 331, 332, 335, 337, 339, 346, 355, 358, 360, 372, 376, 387];
   assert.deepEqual(entries('unique').filter(entry => entry.raw.ladder === 1).map(entry => entry.id), ladderKeys.map(key => `unique:${key}`));
   for (const key of ladderKeys) assert.match(find(`unique:${key}`).status, /运行时候选.*天梯标记不限制原版离线/);
   const eventDefinitions = entries('unique').filter(entry => Number(entry.raw.lvl) > 99);
-  assert.deepEqual(eventDefinitions.map(entry => entry.name), ['Annihilus', 'Hellfire Torch']);
+  assert.deepEqual(eventDefinitions.map(entry => entry.name), ['毁灭', '地狱火炬']);
   for (const entry of eventDefinitions) assert.match(entry.status, /不可选取.*仅定义/);
   assert.equal(entries('unique').filter(entry => entry.status.startsWith('运行时候选')).length, 383);
 });
@@ -248,19 +252,19 @@ test('78 complete words have original Name identities: 55 offline matches, 23 se
   }
   for (const entry of offline) {
     assert.match(entry.status, /离线匹配已启用.*仅部分行为/);
-    assert.equal(entry.name, RUNEWORDS.find(word => word.raw.Name === entry.raw.Name)!.name);
+    assert.equal(entry.name, runewordName(RUNEWORDS.find(word => word.raw.Name === entry.raw.Name)!.name));
   }
   for (const entry of server) assert.match(entry.status, /server=1.*离线匹配禁用.*仅定义.*不完整/);
   for (const entry of entries('runeword').filter(entry => entry.raw.complete !== 1)) assert.match(entry.status, /未完成.*匹配禁用.*仅定义/);
-  assert.equal(find('runeword:Runeword47').name, 'Grief');
-  assert.equal(find('runeword:Runeword99').name, 'Voice of Reason');
-  assert.equal(find('runeword:Runeword14').name, 'Chains of Honor');
-  assert.equal(find('runeword:Runeword60').name, 'Infinity');
+  assert.equal(find('runeword:Runeword47').name, '悔恨');
+  assert.equal(find('runeword:Runeword99').name, '理智之声');
+  assert.equal(find('runeword:Runeword14').name, '荣耀之链');
+  assert.equal(find('runeword:Runeword60').name, '无限');
   assert.equal(find('runeword:Runeword60').raw['Rune Name'], null);
-  assert.equal(find('runeword:Runeword95').name, 'Passion');
-  assert.equal(find('runeword:Runeword95:118').name, 'Patience');
+  assert.equal(find('runeword:Runeword95').name, '热情');
+  assert.equal(find('runeword:Runeword95:118').name, '未完成符文之语（原始名称键重复）');
   assert.equal(wordRows.Patience.Name, wordRows.Passion.Name, 'explicit pinned duplicate identity');
-  assert.equal(find('runeword:Runeword97').name, 'Pattern');
+  assert.equal(find('runeword:Runeword97').name, '典范');
   assert.match(find('runeword:Runeword97').status, /未完成/, 'do not enable a later D2R word');
 });
 
@@ -271,8 +275,8 @@ test('historical affixes and all 151 cube definitions are visible without claimi
   assert.deepEqual(Object.keys(suffixRows).filter(key => !suffixRows[key].Name), ['4']);
   assert.equal(byId.has('prefix:153'), false);
   assert.equal(byId.has('suffix:4'), false);
-  assert.equal(find('prefix:669').name, String(prefixRows['669'].Name));
-  assert.equal(find('suffix:747').name, String(suffixRows['747'].Name));
+  assert.equal(find('prefix:669').name, '暴虐');
+  assert.equal(find('suffix:747').name, '吸魂鬼之');
   assert.equal(entries('prefix').filter(entry => entry.status.startsWith('运行时候选')).length, 501);
   assert.equal(entries('suffix').filter(entry => entry.status.startsWith('运行时候选')).length, 466);
   for (const entry of [...entries('prefix'), ...entries('suffix')].filter(entry => entry.raw.version !== 1 && entry.raw.version !== 100)) {
@@ -301,13 +305,84 @@ test('search is case-insensitive substring matching of Chinese, display, raw nam
       assert.ok(searchEquipment(entry.kind, query.toUpperCase()).some(result => result.id === entry.id), `${entry.id}: ${query}`);
     }
   }
-  assert.deepEqual(searchEquipment('base', ' 短棍 ').map(entry => entry.id), ['base:sst']);
+  assert.deepEqual(searchEquipment('base', ' 短杖 ').map(entry => entry.id), ['base:sst']);
   assert.ok(searchEquipment('base', 'HaNd Ax').some(entry => entry.code === 'hax'));
   assert.deepEqual(searchEquipment('unique', 'azurewrath').map(entry => entry.code), ['crs', '7cr']);
-  assert.deepEqual(searchEquipment('runeword', 'by duty').map(entry => entry.name), ['Chains of Honor']);
-  assert.deepEqual(searchEquipment('runeword', 'Runeword95').map(entry => entry.name), ['Passion', 'Patience']);
+  assert.deepEqual(searchEquipment('runeword', 'by duty').map(entry => entry.name), ['荣耀之链']);
+  assert.deepEqual(searchEquipment('runeword', 'Runeword95').map(entry => entry.name), ['热情', '未完成符文之语（原始名称键重复）']);
+  assert.deepEqual(searchEquipment('runeword', 'Patience').map(entry => entry.id), ['runeword:Runeword95:118']);
+  assert.deepEqual(searchEquipment('unique', '碧蓝怒火').map(entry => entry.code), ['crs', '7cr']);
   assert.deepEqual(searchEquipment('gem', '蓝宝石').map(entry => entry.code).sort(), ['gcb', 'gfb', 'glb', 'gpb', 'gsb']);
   assert.deepEqual(searchEquipment('runeword', 'inFinIty').map(entry => entry.id), ['runeword:Runeword60']);
+});
+
+test('the 2790-key zhCN snapshot matches its pinned on-disk provenance hash', () => {
+  assert.equal(Object.keys(localizedNames).length, 2790);
+  assert.equal(localizedProvenance.locale, 'zhCN');
+  assert.equal(localizedProvenance.strings, 2790);
+  assert.equal(localizedProvenance.storedSha256, '17a067ffc29f2deba38229e63d410d26f1e81e7c4daf5be05474bd6b72fc952a');
+  assert.equal(createHash('sha256').update(localizedBytes).digest('hex'), localizedProvenance.storedSha256);
+  assert.match(localizedProvenance.scope, /third-party mirror, not an official Blizzard download/);
+  assert.equal(localizedProvenance.sources.length, 5);
+  for (const source of localizedProvenance.sources) {
+    assert.equal(source.field, 'zhCN');
+    assert.match(source.sha256, /^[a-f0-9]{64}$/);
+    assert.ok(source.rows > 0);
+  }
+});
+
+test('every runtime namestr and all named catalog rows use exact imported Chinese keys', () => {
+  const assertName = (id: string, key: string) => {
+    assert.ok(Object.hasOwn(localizedNames, key), `${id}: exact key ${key}`);
+    const expectedName = localizedNames[key];
+    assert.match(expectedName, /[\u4e00-\u9fff]/, id);
+    assert.doesNotMatch(expectedName, /未收录译名|未完成符文之语/, id);
+    assert.equal(itemName(key), expectedName, id);
+    assert.equal(find(id).name, expectedName, id);
+  };
+  for (const base of BASE_ITEMS) {
+    const key = String(basesByCode.get(base.code)!.namestr);
+    assertName(`base:${base.code}`, key);
+    assert.equal(base.name, localizedNames[key], base.code);
+  }
+  for (const [key, row] of Object.entries(uniqueRows).filter(([, row]) => row.index && row.code)) assertName(`unique:${key}`, String(row.index));
+  for (const row of Object.values(setItems)) assertName(`set-item:${row.index}`, String(row.index));
+  for (const row of Object.values(sets)) assertName(`set:${row.index}`, String(row.name));
+  for (const [kind, rows] of [['prefix', prefixRows], ['suffix', suffixRows]] as const) {
+    for (const [key, row] of Object.entries(rows).filter(([, row]) => row.Name)) assertName(`${kind}:${key}`, String(row.Name));
+  }
+  for (const [sourceName, row] of Object.entries(wordRows)) {
+    // Both duplicate rows have a string key, but it is not Patience's identity.
+    assert.ok(Object.hasOwn(localizedNames, String(row.Name)), sourceName);
+    if (sourceName !== 'Patience') assertName(`runeword:${row.Name}`, String(row.Name));
+    else {
+      const entry = find('runeword:Runeword95:118');
+      assert.equal(entry.name, '未完成符文之语（原始名称键重复）');
+      assert.notEqual(entry.name, localizedNames[String(row.Name)]);
+      assert.ok(entry.lines.includes('原始名称：Patience / 身份：Runeword95'));
+      assert.deepEqual(entry.raw, row);
+    }
+  }
+  for (const row of Object.values(socketRows)) {
+    const code = String(row.code), kind = /^r\d{2}$/.test(code) ? 'rune' : 'gem';
+    assertName(`${kind}:${code}`, String(basesByCode.get(code)!.namestr));
+  }
+});
+
+test('only eight deprecated nonruntime bases lack exact strings and remain explicitly untranslated', () => {
+  const missing = ['bpl', 'bps', 'hpf', 'hpo', 'mpf', 'mpo', 'rpl', 'rps'];
+  assert.deepEqual(sorted(bases.filter(row => !Object.hasOwn(localizedNames, String(row.namestr))).map(row => String(row.code))), missing);
+  for (const row of bases) {
+    const code = String(row.code), entry = find(`base:${code}`);
+    if (missing.includes(code)) {
+      assert.equal(getBase(code), undefined, code);
+      assert.equal(entry.name, `未收录译名（${code}）`);
+      assert.match(entry.status, /仅定义/);
+      assert.equal(entry.raw.name, row.name);
+    } else assert.equal(entry.name, localizedNames[String(row.namestr)], code);
+  }
+  assert.equal(itemName('not-a-localization-key'), '未收录译名（not-a-localization-key）');
+  assert.equal(runewordName('Unknown Word'), '未收录译名（Unknown Word）');
 });
 
 test('the index is read-only and search results cannot mutate shared runtime or catalog data', () => {

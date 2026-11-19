@@ -45,6 +45,7 @@ export interface DerivedStats {
   maxLife: number; maxMana: number; maxStamina: number; defense: number; attackRating: number;
   minDamage: number; maxDamage: number; block: number;
   resFire: number; resCold: number; resLightning: number; resPoison: number;
+  resistances: Record<'fire' | 'cold' | 'lightning' | 'poison', { stored: number; maximum: number; effective: number }>;
   magicFind: number; goldFind: number; fcr: number; fhr: number; ias: number; frw: number;
   lifeLeech: number; manaLeech: number; damageReduction: number; flatReduction: number;
   criticalStrike: number; deadlyStrike: number; manaRegenPercent: number;
@@ -117,7 +118,7 @@ export interface GameState {
   events: GameEvent[]; eventSeq: number; facing: number; moving: boolean;
   messages: {text: string; time: number; kind: 'info' | 'loot' | 'error'}[];
   tick: number; seed: number; paused: boolean; automap: boolean; showLoot: boolean;
-  target: Point | null; selectedMonster: string | null; selectedItem: string | null;
+  target: Point | null; selectedMonster: string | null; selectedItem: string | null; identifySource: string | null;
   npc: string | null; vendorItems: Item[]; dialogue: string; saved: boolean;
 }
 export type Action =
@@ -129,6 +130,8 @@ export type Action =
   | {type: 'learn'; skillId: number} | {type: 'bind'; skillId: number; right: boolean}
   | {type: 'equip'; uid: string} | {type: 'unequip'; slot: Slot}
   | {type: 'drop'; uid: string} | {type: 'potion'; column: number}
+  | {type: 'move-item'; uid: string; x: number; y: number}
+  | {type: 'use-item'; uid: string; targetUid?: string} | {type: 'cancel-identify'}
   | {type: 'identify'; uid?: string} | {type: 'buy'; uid: string} | {type: 'sell'; uid: string}
   | {type: 'repair'} | {type: 'heal'} | {type: 'portal'} | {type: 'travel'; areaId: number}
   | {type: 'storage'; uid: string; destination: 'inventory' | 'stash' | 'cube'}

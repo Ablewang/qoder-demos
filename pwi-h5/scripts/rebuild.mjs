@@ -14,6 +14,8 @@ import { Game, validateSave } from '../src/core/game.js';
 import { stats, expNeed, makeMonster, monsterReward } from '../src/core/model.js';
 import { createBattle, canUseSkill, pickAutoAction, takeTurn, expectedAttack } from '../src/core/combat.js';
 import { productionAction } from '../src/core/production.js';
+import { getProductionRecipes } from '../src/data/production.js';
+import { matchesNamedEquip, equipmentForShop } from '../src/data/named-equipment.js';
 
 // Run: node /absolute/path/to/scripts/rebuild.mjs (Node 24).
 // Only local files are read. No browser, storage adapter, network, upstream
@@ -651,6 +653,7 @@ try {
   if (catalog) {
     const { OFFICIAL_EQUIPMENT: entries, OFFICIAL_EQUIPMENT_TYPES: types, queryOfficialEquipment: query } = catalog;
     const equipmentArchive = readJSON('official-library/structured/equipment-compare.json');
+    const sourceEquipment = readJSON('src/data/official-gear.json');
     const before = JSON.stringify({ entries, HIGH_EQUIPMENT, CLASSES, SKILL_SOURCES });
     const collect = (filters = {}) => {
       const input = structuredClone(filters), first = query(filters), rows = [];
@@ -671,13 +674,26 @@ try {
     };
     const sorted = (rows) => [...rows].sort((a, b) => (a.lv ?? Infinity) - (b.lv ?? Infinity) || (a.grade ?? Infinity) - (b.grade ?? Infinity) || a.name.localeCompare(b.name, 'zh-CN') || a.id.localeCompare(b.id));
     const matches = (value, condition, unknown) => value === null ? unknown : condition(value);
-    test('catalogue: exactly 744 historical records + 5 separate verified samples', () => {
+    test('catalogue: 207 source-table + 744 historical + 5 verified samples', () => {
+      assert.equal(sourceEquipment.records.length, 207);
       assert.equal(equipmentArchive.records.length, 744);
-      assert.equal(entries.length, 749);
-      assert.equal(new Set(entries.map((e) => e.id)).size, 749);
-      assert.deepEqual(types, { ...equipmentArchive.types, high: '已核高阶样本' });
+      assert.equal(entries.length, 956);
+      assert.equal(new Set(entries.map((e) => e.id)).size, 956);
+      const sourceTypes = Object.fromEntries([...new Set(sourceEquipment.records.map((r) => r.type))].map((type) => [`source:${type}`, `原表·${type}`]));
+      assert.deepEqual(types, { ...equipmentArchive.types, ...sourceTypes, high: '已核高阶样本' });
       assert.ok(Object.isFrozen(entries) && Object.isFrozen(types));
       const byId = new Map(entries.map((e) => [e.id, e]));
+      for (const r of sourceEquipment.records) {
+        const e = byId.get(`source:${r.id}`);
+        assert.ok(e && Object.isFrozen(e) && Object.isFrozen(e.sourceRecord) && Object.isFrozen(e.sourceRecord.requirements));
+        assert.equal(e.name, r.name); assert.equal(e.typeId, `source:${r.type}`);
+        assert.equal(e.grade, r.grade); assert.equal(e.lv, r.lv); assert.equal(e.slot, r.slot);
+        assert.deepEqual(e.base, r.sourceStats); assert.deepEqual(e.addons, r.affixes);
+        assert.equal(e.materialsText, r.materials.map(({ name, qty }) => `${name}×${qty}`).join('、') || null);
+        assert.deepEqual(e.sourceFields, r.source); assert.deepEqual(e.sourceRecord, r);
+        assert.equal(e.sourceKind, 'source-table'); assert.equal(e.templateId, r.id);
+        assert.equal(Object.hasOwn(e, 'uid'), false);
+      }
       for (const r of equipmentArchive.records) {
         const e = byId.get(`official:${r.id}`);
         assert.ok(e && Object.isFrozen(e) && Object.isFrozen(e.sourceFields));
@@ -706,9 +722,9 @@ try {
         assert.equal(e.sourceFields, null);
       }
       assert.deepEqual(collect(), sorted(entries));
-      assert.equal(query().pageCount, 19);
-      assert.equal(query({ page: 19 }).entries.length, 29);
-      assert.equal(query({ page: 999 }).page, 19);
+      assert.equal(query().pageCount, 24);
+      assert.equal(query({ page: 24 }).entries.length, 36);
+      assert.equal(query({ page: 999 }).page, 24);
     });
     for (const unknown of [true, false]) {
       for (const cls of Object.keys(CLASSES)) {
@@ -731,12 +747,13 @@ try {
       for (const search of ['亡骨刀', '千机材', '★', '不存在的装备xyz']) {
         assert.deepEqual(collect({ search: ` ${search} ` }), sorted(entries.filter((e) => `${e.name} ${e.type} ${e.materialsText || ''}`.toLocaleLowerCase().includes(search.toLocaleLowerCase()))));
       }
-      assert.equal(query({ minLv: 105, includeUnknown: false }).total, 5);
-      assert.equal(query({ minLv: 105, includeUnknown: true }).total, 749);
-      assert.equal(query({ maxLv: 104, includeUnknown: false }).total, 0);
-      assert.equal(query({ cls: 'seeker', slot: 'weapon', includeUnknown: false }).total, 0);
-      assert.equal(query({ minLv: '', maxLv: '', grade: '', cls: 'all', type: 'all', slot: 'all' }).total, 749);
-      for (const filters of [{ minLv: 0 }, { maxLv: 106 }, { minLv: 1.5 }, { minLv: 'NaN' }, { minLv: 80, maxLv: 1 }, { grade: 20 }, { grade: 0 }, { grade: NaN }, { grade: false }, { grade: -1 }, { grade: 1.5 }, { grade: 'oops' }, { page: 0 }, { page: 1.5 }, { page: 'oops' }, { cls: 'unknown' }, { type: 'unknown' }, { slot: 'head' }]) {
+      assert.equal(query({ minLv: 105, includeUnknown: false }).total, entries.filter((e) => e.lv !== null && e.lv >= 105).length);
+      assert.equal(query({ minLv: 105, includeUnknown: true }).total, entries.filter((e) => e.lv === null || e.lv >= 105).length);
+      assert.equal(query({ maxLv: 104, includeUnknown: false }).total, entries.filter((e) => e.lv !== null && e.lv <= 104).length);
+      assert.equal(query({ cls: 'seeker', slot: 'weapon', includeUnknown: false }).total,
+        entries.filter((e) => e.classes !== null && e.classes.includes('seeker') && e.slot === 'weapon').length);
+      assert.equal(query({ minLv: '', maxLv: '', grade: '', cls: 'all', type: 'all', slot: 'all' }).total, entries.length);
+      for (const filters of [{ minLv: 0 }, { maxLv: 106 }, { minLv: 1.5 }, { minLv: 'NaN' }, { minLv: 80, maxLv: 1 }, { grade: 20 }, { grade: 0 }, { grade: NaN }, { grade: false }, { grade: -1 }, { grade: 1.5 }, { grade: 'oops' }, { page: 0 }, { page: 1.5 }, { page: 'oops' }, { cls: 'unknown' }, { type: 'unknown' }, { slot: 'helmet' }]) {
         const result = query(filters);
         assert.ok(result.error, `invalid filter accepted: ${JSON.stringify(filters)}`);
         assert.equal(result.total, 0);
@@ -862,7 +879,7 @@ try {
       assert.equal(b.round, previous + 1, `auto chose rejected action ${choice.action}`);
       checkSave(g);
     }
-    assert.equal(b.result, 'win', `${g.p.cls} lost/stalled at Lv.${g.p.lv}: ${enemies.map((m) => m.name).join(', ')}; last log: ${b.logs.at(-1)?.text}`);
+    assert.equal(b.result, 'win', `${g.p.cls} lost/stalled at Lv.${g.p.lv}: ${enemies.map((m) => m.name).join(', ')}; last log: ${b.logs.at(-1)?.text}; gear: ${Object.values(g.p.equipment).map((it) => `${it.slot}@${it.lv}`).join(',')}; bag: ${g.p.bag.map((it) => `${it.slot}@${it.lv}:${it.name}`).join(",")}; lv${g.p.lv} attrs ${JSON.stringify(g.p.attrs)}`);
     assert.equal(g.p.totals.deaths, before.deaths);
     assert.equal(g.p.totals.battles, before.wins + 1);
     const reward = b.context.type === 'cult' ? { exp: 0, sp: 0, gold: 0 } : enemies.map(monsterReward).reduce((sum, r) => ({ exp: sum.exp + r.exp, sp: sum.sp + r.sp, gold: sum.gold + r.gold }), { exp: 0, sp: 0, gold: 0 });
@@ -885,9 +902,24 @@ try {
       }
     }
   }
+  function shopEarned(g, reserve) {
+    const listings = equipmentForShop(g.p);
+    for (const slot of ['weapon', 'head', 'body', 'legs', 'feet', 'wrist', 'cape', 'neck', 'waist', 'ring1']) {
+      const worn = g.p.equipment[slot];
+      const best = listings.filter((t) => t.slot === slot && t.classes.includes(g.p.cls)
+        && Object.entries(t.requirements || {}).every(([key, value]) => (g.p.attrs[key] ?? 0) >= value)).at(-1);
+      if (!best || worn && worn.lv >= best.lv || g.p.bag.some((it) => it.templateId === best.templateId)) continue;
+      if (g.p.gold - best.price < reserve) continue;
+      const gold = g.p.gold, count = g.p.bag.length;
+      const bought = g.buyEquip(best.templateId);
+      assert.equal(g.p.gold, gold - best.price); assert.equal(g.p.bag.length, count + 1);
+      assert.equal(bought.templateId, best.templateId); assert.ok(matchesNamedEquip(g.p.bag.at(-1)));
+    }
+  }
   function recoverEarned(g, home) {
     if (g.p.location !== home) g.travel(home);
     if (g.p.points) g.autoAllocate();
+    shopEarned(g, skillReq(SKILLS[g.p.cls][0], 2).gold + 200);
     equipEarned(g);
     const st = finiteStats(g.p);
     if (g.p.hp < st.hp || g.p.mp < st.mp) {
@@ -947,14 +979,20 @@ try {
           claimEarned(g, ledger);
           assert.equal(p.mainIndex, 3);
           assert.equal(p.bag.length, countBefore + 1);
-          assert.equal(p.bag.at(-1).origin, 'quest'); assert.equal(p.bag.at(-1).q, 1);
+          assert.equal(p.bag.at(-1).origin, 'quest');
+          assert.equal(p.bag.at(-1).q, 0);
+          assert.ok(matchesNamedEquip(p.bag.at(-1)));
           if (p.points) g.autoAllocate();
+          const recipe = getProductionRecipes(cls).find((candidate) => candidate.slot === 'body' && candidate.lv === 1 && !candidate.from);
+          assert.ok(recipe, 'missing finite tutorial body recipe');
           const beforeGold = p.gold, beforeItems = { ...p.items };
-          const made = productionAction(g, 'produce', { recipeId: 'ordinary-1-body', confirm: true });
+          const made = productionAction(g, 'produce', { recipeId: recipe.id, confirm: true });
           assert.equal(p.gold, beforeGold - made.gold);
           for (const [id, quantity] of Object.entries(made.consumed)) assert.equal(p.items[id], beforeItems[id] - quantity);
           assert.equal(p.production.tailor.exp, 1);
-          assert.equal(made.equipment.origin, 'production:ordinary-1-body');
+          assert.equal(made.equipment.templateId, recipe.templateId);
+          assert.equal(made.equipment.origin, `production:${recipe.id}`);
+          assert.ok(matchesNamedEquip(made.equipment));
           g.equip(made.uid);
           assert.equal(p.equipment.body.uid, made.uid);
           assert.equal(p.items.huanxian >= 5, true, 'ordinary crafting consumed refine material');
@@ -1048,7 +1086,7 @@ try {
 
 for (const j of journeys) console.log(`JOURNEY ${j.cls} seed=${j.seed}: Lv.${j.lv}, cult=${j.cult}, ${j.quests} quests, ${j.fights} wins/${j.rounds} rounds, earnedXP=${j.earnedXp}, attackRank=${j.attackRank}`);
 console.log(`Rebuild regression: ${passed}/${tests} checks passed; ${sourceRanks} archived source ranks, ${learningRanks} learning transactions, ${journeys.length}/20 natural early journeys.`);
-console.log('Scope: 72 skills; 744 historical equipment + 5 separately sourced samples; early earned progression only, NOT 1→105. No browser/server, real storage, network or filesystem writes.');
+console.log('Scope: 72 skills; 207 source-table records + 744 historical comparisons + 5 verified high samples; early earned progression only, NOT natural 1→105. No browser/server, real storage, network or filesystem writes.');
 if (failures.length) {
   console.error(`REGRESSIONS: ${failures.length} (details above); exiting 1.`);
   process.exitCode = 1;

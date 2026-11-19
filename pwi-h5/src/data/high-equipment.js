@@ -18,8 +18,8 @@ export const HIGH_ADAPTATION = {
   huntLevel: '猎魔等级保留原图数值；其对副本伤害的具体换算为本作规则，不代表端游公式。',
   spirit: '气魄保留原图数值；攻防换算为本作规则，不代表端游公式。',
   creation: '创世等级保留原图数值；实际作用采用本作规则，不猜测端游公式或额外特殊效果。',
-  defense: '本作将五行防御合并为法术防御；通天者法袍五行防御各2515，记录mdef=2515，不相加。',
-  sockets: '武器原图初始2孔，本作最多4孔；法袍初始4孔及100耐久为本作适配，原图耐久未核。',
+  defense: '通天者法袍原图五行防御各2515，分别记录；mdef=2515仅为本作综合显示值，不相加。',
+  sockets: '武器原图初始2孔，本作最多4孔；通天者法袍原图4孔、最大耐久320。',
   cultivation: '城镇105级神铸兑换与逐阶培养、神铸凭证及金币成本均为本作获取规则，不是官方配方。升阶仅限行囊，保留精炼、孔位、绑定和当前耐久。',
 };
 
@@ -62,11 +62,12 @@ export const HIGH_EQUIPMENT = {
   },
   robe17c: {
     id: 'robe17c', name: '★★★通天者法袍·正气', grade: 17, stage: 3, slot: 'body', armorType: 'robe', lv: 105,
-    requirements: { str: 57, mag: 161 }, classes: null, attackRanges: {}, base: { def: 349, mdef: 2515 },
+    requirements: { str: 57, mag: 161 }, classes: ['wizard', 'psychic', 'venomancer', 'cleric', 'mystic'],
+    attackRanges: {}, base: { def: 349, mdef: 2515, metalDef: 2515, woodDef: 2515, waterDef: 2515, fireDef: 2515, earthDef: 2515 },
     addons: { con: 20, hpPct: 0.05, hp: 250, defenseLevel: 5, crit: 0.03 },
-    maxDurability: 100, socketLimit: 4, initialSockets: 4, effects: [],
-    source: ['https://w2i.wanmei.com/mobile/mobilebroad/20221114/85515.shtml'],
-    adaptation: '五行防御各2515合并为mdef=2515，不是五项总和；4孔和100耐久为本作适配，原图耐久未核。生命上限增幅按本作属性模型计算。未核特殊效果，无额外战斗效果。',
+    maxDurability: 320, socketLimit: 4, initialSockets: 4, effects: [],
+    source: ['https://w2i.wanmei.com/mobile/mobilenews/20180815/80718.shtml'],
+    adaptation: '原图五行防御各2515、4孔、最大耐久320及法系职业限制已核；月仙尚未实现。mdef=2515仅为本作综合显示值，不是五项总和。生命上限增幅按本作属性模型计算。未核特殊效果，无额外战斗效果。',
   },
 };
 
@@ -85,6 +86,12 @@ function freezeTree(value) {
   }
   return value;
 }
+const LEGACY_ROBE = freezeTree({
+  ...HIGH_EQUIPMENT.robe17c,
+  classes: null, base: { def: 349, mdef: 2515 }, maxDurability: 100,
+  source: ['https://w2i.wanmei.com/mobile/mobilebroad/20221114/85515.shtml'],
+  adaptation: '五行防御各2515合并为mdef=2515，不是五项总和；4孔和100耐久为本作适配，原图耐久未核。生命上限增幅按本作属性模型计算。未核特殊效果，无额外战斗效果。',
+});
 freezeTree(HIGH_EQUIPMENT);
 freezeTree(HIGH_RECIPES);
 freezeTree(HIGH_ADAPTATION);
@@ -99,7 +106,7 @@ function same(a, b) {
 // 模板身份和固定数据不可变；仅精炼、宝石与当前耐久属于培养状态。
 export function matchesHighEquip(it) {
   if (!it || typeof it !== 'object' || typeof it.templateId !== 'string' || !Object.hasOwn(HIGH_EQUIPMENT, it.templateId)) return false;
-  const template = HIGH_EQUIPMENT[it.templateId];
+  const template = it.templateId === 'robe17c' && it.classes === null ? LEGACY_ROBE : HIGH_EQUIPMENT[it.templateId];
   if (it.kind !== 'equip' || it.q !== 4 || it.cls !== null || it.bound !== true || it.setId !== null
     || it.price !== (template.slot === 'weapon' ? 231200 : 20000) || it.rerolls !== 0 || it.upgrades !== 0
     || typeof it.uid !== 'string' || !/^[a-z0-9]+$/i.test(it.uid)

@@ -1,12 +1,12 @@
 import { CLASSES, SKILLS } from '../data/classes.js';
 import { CULTIVATION, HOME_CITY } from '../data/world.js';
-import { makeEquip, equipStats, setStats, STAT_NAMES, REFINE_BONUS } from '../data/items.js';
+import { makeEquipmentFor, equipStats, setStats, STAT_NAMES, REFINE_BONUS } from '../data/items.js';
+import { NAMED_EQUIPMENT, namedSpec, selectEquipmentTemplate } from '../data/named-equipment.js';
 import { HIGH_EQUIPMENT } from '../data/high-equipment.js';
-import { gearSpec } from '../data/gear-specs.js';
 
 export const STAT_ADAPTATION = Object.freeze({
   hit: 'DEX准确/躲闪度系数来自官方；accuracyRating×0.0001转命中倍率，evasionRating×0.00005转闪避比例，概率公式/基础值/上限为本作适配。整数rating不直接作为概率。',
-  defense: '五行Def是防御数值，Res是额外伤害减免比例；每件装备缺少分项Def时以该装备mdef本地回退，裸属性及修真法防换算仍为本作规则。磐石护甲仅加成装备物防与装备土防，不加成裸属性、套装额外防御或修真。',
+  defense: '五行Def是防御数值，Res是额外伤害减免比例；每件装备缺少分项Def时以该装备mdef本地回退，裸属性及修真法防换算仍为本作规则。物理伤害减免是独立比例，仅作用于物理通道。磐石护甲仅加成装备物防与装备土防，不加成裸属性、套装额外防御或修真。',
 });
 export const MAX_LEVEL = 105;
 export const BAG_LIMIT = 80;
@@ -19,7 +19,7 @@ export function createPlayer(name, cls) {
   const c = CLASSES[cls];
   // Local tutorial loadout, not an original birth-kit: keep a usable weapon;
   // subsequent equipment comes through ordinary quest/loot/production paths.
-  const equipment = { weapon: makeEquip('weapon', 1, 0, cls, { origin: 'starter' }) };
+  const equipment = { weapon: makeEquipmentFor('weapon', 1, 0, cls, { origin: 'starter' }) };
   const p = {
     name, cls, race: c.race, lv: 1, exp: 0, sp: 0, gold: 300,
     attrs: { ...c.base }, points: 0, equipment, bag: [],
@@ -48,8 +48,8 @@ export function recommendedAttributes(p) {
   if (!Number.isSafeInteger(p.points) || p.points < 0) throw new Error('自由属性点无效。');
   if (!p.attrs || ['str', 'con', 'dex', 'mag'].some((key) => !Number.isSafeInteger(p.attrs[key]) || p.attrs[key] < 0)) throw new Error('角色基础属性无效。');
   const c = CLASSES[p.cls];
-  const weapon = gearSpec('weapon', p.lv, 0, p.cls);
-  const armor = gearSpec('body', p.lv, 0, p.cls);
+  const weapon = namedSpec(selectEquipmentTemplate({ slot: 'weapon', lv: p.lv, cls: p.cls }));
+  const armor = namedSpec(selectEquipmentTemplate({ slot: 'body', lv: p.lv, cls: p.cls }));
   const out = {};
   let remaining = p.points;
   for (const key of ['str', 'dex', 'mag', 'con']) {
@@ -108,16 +108,17 @@ export function stats(p, battle = null) {
   const mdef = Math.round((a.mag * 1.4 + a.con * 0.8 + p.lv * 2 + gear.mdef) * (1 + bonus.mdefPct + (buffs.mdef || 0)));
   const crit = clamp(0.03 + a.dex * 0.0005 + gear.crit + bonus.crit + (buffs.crit || 0) + (p.cls === 'assassin' || p.cls === 'archer' ? 0.04 : 0), 0, 0.75);
   const accuracyRating = a.dex * c.accuracyDex;
-  const evasionRating = a.dex * c.evasionDex;
+  const evasionRating = a.dex * c.evasionDex + gear.evasionRating;
   // Source ratings → the existing adapted probability model (local scales).
   const dodge = clamp(0.02 + evasionRating * 0.00005 + gear.dodge + (buffs.dodge || 0), 0, 0.5);
   const atk = c.atkType === 'phys' ? patk : matk;
   const weapon = p.equipment?.weapon;
-  const template = weapon?.templateId ? HIGH_EQUIPMENT[weapon.templateId] : null;
+  const named = weapon?.ruleVersion === 2 && Object.hasOwn(NAMED_EQUIPMENT, weapon.templateId);
+  const template = !named && weapon?.templateId ? HIGH_EQUIPMENT[weapon.templateId] : null;
   const ranges = {};
   for (const [key, attack] of [['patk', patk], ['matk', matk]]) {
     const ordinary = !template && weapon?.ruleVersion === 1;
-    const range = template?.attackRanges[key] || (ordinary ? weapon.ranges?.[key] : null);
+    const range = template?.attackRanges[key] || (ordinary || named ? weapon.ranges?.[key] : null);
     // 新普通基础区间已含等级/星级预算；精炼只加攻击均值，不能再次放大区间宽度。
     const refineScale = ordinary ? 1 : 1 + REFINE_BONUS[weapon?.refine];
     const durabilityScale = ordinary ? ((weapon.durability ?? 100) <= 0 ? 0.5 : 1) : (weapon?.durability === 0 ? 0.5 : 1);
@@ -139,6 +140,7 @@ export function stats(p, battle = null) {
     critDamage: clamp(2 + gear.critDamage + (buffs.critDamage || 0), 1, 5),
     attackLevel: clamp(gear.attackLevel + (buffs.attackLevel || 0), 0, 300),
     defenseLevel: clamp(gear.defenseLevel + (buffs.defenseLevel || 0), 0, 300),
+    physicalReduction: clamp(gear.physicalReduction + (buffs.physicalReduction || 0), 0, 0.8),
     penetrationP: clamp(gear.penetrationP + (buffs.penetrationP || 0), 0, 0.8),
     penetrationM: clamp(gear.penetrationM + (buffs.penetrationM || 0), 0, 0.8),
     channel: clamp(gear.channel + (buffs.channel || 0), 0, 0.75),

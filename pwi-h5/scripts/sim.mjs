@@ -8,8 +8,8 @@ import { Game, validateSave } from '../src/core/game.js';
 import { validateSnapshot } from '../src/core/schema.js';
 import { ensureEquipment } from '../src/core/equipment.js';
 import { ensureEconomy } from '../src/core/economy.js';
-import { getProductionRecipe } from '../src/data/production.js';
-import { gearSpec, matchesGearSpec } from '../src/data/gear-specs.js';
+import { getProductionRecipes } from '../src/data/production.js';
+import { NAMED_EQUIPMENT, namedSpec, matchesNamedEquip, selectEquipmentTemplate, equipmentForShop } from '../src/data/named-equipment.js';
 
 // Clone-only legacy stats fixtures for arbitrary damage-oracle addons. New
 // generation/API/save tests retain all canonical metadata and validate it.
@@ -271,6 +271,11 @@ function testCreation() {
     assert.deepEqual(p.discovered, [p.location]);
     assert.deepEqual(p.visits, [], 'discovery at creation is not a completed visit');
     assert.deepEqual(Object.keys(p.equipment), ['weapon']);
+    assert.equal(p.equipment.weapon.ruleVersion, 2);
+    assert.equal(p.equipment.weapon.q, 0);
+    assert.match(p.equipment.weapon.templateId, /^local-tutorial:weapon:/);
+    assert.ok(Object.hasOwn(NAMED_EQUIPMENT, p.equipment.weapon.templateId));
+    assert.ok(matchesNamedEquip(p.equipment.weapon));
     const tutorialSkills = SKILLS[cls].filter((s) => s.tutorialUnlock);
     assert.equal(tutorialSkills.length, 1);
     assert.equal(tutorialSkills[0], SKILLS[cls][0]);
@@ -327,10 +332,10 @@ function testExperienceAndAllocation() {
   const before = structuredClone(p.attrs);
   g.autoAllocate();
   assert.equal(p.points, 0, 'recommended allocation spends all controlled available points');
-  assert.deepEqual(p.attrs, { ...before, str: before.str + 12, con: before.con + 1 });
+  assert.deepEqual(p.attrs, { ...before, str: before.str + 10, dex: before.dex + 1, con: before.con + 2 });
   for (const slot of ['weapon', 'body']) {
-    const wear = gearSpec(slot, p.lv, 0, p.cls).wear;
-    for (const [key, need] of Object.entries(wear)) if (key !== 'lv') assert.ok(p.attrs[key] >= need);
+    const wear = namedSpec(selectEquipmentTemplate({ slot, lv: p.lv, cls: p.cls })).wear;
+    for (const [key, need] of Object.entries(wear)) if (key !== 'lv' && need !== null) assert.ok(p.attrs[key] >= need);
   }
   unchanged(g, () => g.autoAllocate());
   p.points = 5;
@@ -487,8 +492,13 @@ function testEquipmentAndRing2() {
   g.sellCommon();
   assert.equal(g.p.gold, money + itemSell(common));
   assert.deepEqual(g.p.bag.map((x) => x.uid), [refined.uid, blue.uid]);
+  const listing = equipmentForShop(g.p).find((entry) => entry.slot === 'weapon');
+  assert.ok(listing && Object.hasOwn(NAMED_EQUIPMENT, listing.templateId));
+  const beforePurchase = g.p.gold, bought = g.buyEquip(listing.templateId);
+  assert.equal(bought.templateId, listing.templateId); assert.ok(matchesNamedEquip(bought));
+  assert.equal(g.p.gold, beforePurchase - listing.price); assert.deepEqual(g.p.bag.at(-1), bought);
   g.p.bag = Array.from({ length: BAG_LIMIT }, () => makeEquip('head', 20, 0, g.p.cls));
-  unchanged(g, () => g.buyEquip('weapon'), /背包已满/);
+  unchanged(g, () => g.buyEquip(listing.templateId), /背包已满/);
   const overflow = makeEquip('body', 20, 2, g.p.cls);
   const beforeOverflow = g.p.gold;
   assert.equal(g.putEquip(overflow), false);
@@ -667,7 +677,8 @@ function testDailyRefreshAndSignIn() {
 function testForge() {
   for (const quality of [1, 2]) {
     const g = fixture('wizard', 20);
-    const recipe = getProductionRecipe('ordinary-20-weapon', g.p.cls);
+    const recipe = getProductionRecipes(g.p.cls).filter((entry) => entry.series === 'local-tutorial' && entry.slot === 'weapon' && entry.lv <= g.p.lv).at(-1);
+    assert.ok(recipe && recipe.id === `named:${recipe.templateId}`);
     g.p.production = { blacksmith: { level: recipe.skillLevel, exp: 0 } };
     g.p.items = { ...g.p.items, ...recipe.materials };
     g.p.gold = recipe.gold - 1;
@@ -678,18 +689,19 @@ function testForge() {
     unchanged(g, () => g.forge('weapon', quality));
     g.p.items[material]++;
     const huanxian = g.p.items.huanxian;
-    // Both old quality requests redirect to actual production, not forced q2.
+    // Both legacy quality request values select the same exact finite named recipe.
     withRandom(0.5, () => g.forge('weapon', quality));
     assert.equal(g.p.gold, 0);
     assert.equal(g.p.items.huanxian, huanxian);
     for (const id of Object.keys(recipe.materials)) assert.equal(g.p.items[id], 0);
     assert.equal(g.p.production.blacksmith.exp, 1);
     assert.equal(g.p.bag.length, 1);
-    assert.equal(g.p.bag[0].q, 1);
-    assert.ok(matchesGearSpec(g.p.bag[0]));
-    assert.equal(g.p.bag[0].lv, g.p.lv);
-    assert.equal(g.p.bag[0].cls, 'wizard');
-    assert.ok(Object.keys(g.p.bag[0].addons).length > 0);
+    assert.equal(g.p.bag[0].q, 0);
+    assert.equal(g.p.bag[0].templateId, recipe.templateId);
+    assert.ok(Object.hasOwn(NAMED_EQUIPMENT, g.p.bag[0].templateId));
+    assert.ok(matchesNamedEquip(g.p.bag[0]));
+    assert.equal(g.p.bag[0].lv, 1);
+    assert.ok(g.p.bag[0].classes.includes('wizard'));
     assert.ok(Object.values(equipStats(g.p.bag[0])).every(Number.isFinite));
   }
   const g = fixture();
@@ -804,7 +816,8 @@ function testDungeonWavesAndGuaranteedLoot(id) {
   if (d.rewardKind === 'materials') {
     assert.equal(g.p.bag.length, 0, 'material dungeons must never drop finished gear in any wave');
     for (const id of d.rewardMaterials) assert.equal(g.p.items[id] - (startItems[id] || 0), 4);
-  } else assert.ok(g.p.bag.some((it) => it.slot === 'weapon' && it.lv === d.lv && it.q === 2 && matchesGearSpec(it)), 'guaranteed classic/Frost weapon missing');
+  } else assert.ok(g.p.bag.some((it) => it.slot === 'weapon' && it.q === 0
+    && Object.hasOwn(NAMED_EQUIPMENT, it.templateId) && matchesNamedEquip(it)), 'guaranteed finite named classic/Frost weapon missing');
   assert.equal(g.p.items.card, 1);
   assert.equal(g.p.items.tiangang, 1);
   assert.ok(g.p.items.huanxian >= startItems.huanxian + 8, 'boss and clear guaranteed stones missing');
@@ -1815,7 +1828,10 @@ function testEncounterChoices(id) {
     for (const [key, qty] of Object.entries(expected.items)) items[key] = (items[key] || 0) + qty;
     assert.deepEqual(p.items, items);
     assert.equal(p.bag.length - before.bag.length, expected.loot);
-    if (expected.loot) assert.equal(p.bag.at(-1).q, 1);
+    if (expected.loot) {
+      const equipment = p.bag.at(-1);
+      assert.equal(equipment.q, 0); assert.ok(Object.hasOwn(NAMED_EQUIPMENT, equipment.templateId)); assert.ok(matchesNamedEquip(equipment));
+    }
     if (expected.fight) {
       const m = g.battle.monsters[0];
       assert.deepEqual([m.name, m.lv, m.rank, m.intent], expected.fight);
@@ -1976,7 +1992,10 @@ function assertRewardLedger(g, before, xp, expMultiplier = 1) {
   let remaining = before.exp + r.exp; let level = before.lv;
   while (level < MAX_LEVEL && remaining >= expNeed(level)) { remaining -= expNeed(level); level++; }
   assert.equal(r.levelUps, level - before.lv); assert.equal(g.p.lv, level);
-  assert.deepEqual(r.loot, g.p.bag.slice(before.bag.length).map(({ name, q }) => ({ name, q })));
+  assert.deepEqual(r.loot, g.p.bag.slice(before.bag.length).map(({ name, q, templateId }) => ({ name, q, templateId })));
+  for (const it of g.p.bag.slice(before.bag.length)) {
+    assert.equal(it.q, 0); assert.ok(Object.hasOwn(NAMED_EQUIPMENT, it.templateId)); assert.ok(matchesNamedEquip(it));
+  }
   assert.deepEqual(r.items, Object.entries(g.p.items).filter(([id, n]) => n > (before.items[id] || 0)).map(([id, n]) => ({ id, qty: n - (before.items[id] || 0) })));
   validateSave(g.state);
   const finished = structuredClone(g.state);
@@ -2019,7 +2038,11 @@ function testDungeonBattleRewardMetadata(id) {
     assert.equal(g.battle.rewards.loot.length, bossWave && d.rewardKind === 'equipment' ? 2 : 0);
     const items = bossWave ? [{ id: 'huanxian', qty: 8 }, { id: 'card', qty: 1 }, ...(d.rewardMaterials || []).map((id) => ({ id, qty: 4 })), { id: 'tiangang', qty: 1 }, ...(d.lv >= 75 ? [{ id: 'highForgeSigil', qty: 2 }] : [])] : [];
     assert.deepEqual(g.battle.rewards.items, items);
-    if (bossWave && d.rewardKind === 'equipment') assert.equal(g.battle.rewards.loot.at(-1).q, 2);
+    if (bossWave && d.rewardKind === 'equipment') {
+      for (const loot of g.battle.rewards.loot) {
+        assert.equal(loot.q, 0); assert.ok(Object.hasOwn(NAMED_EQUIPMENT, loot.templateId));
+      }
+    }
   }
 }
 function testBattleRewardsSaveBoundaries() {

@@ -12,6 +12,9 @@ import { GEAR_RULES } from '../data/gear-specs.js';
 import { PRODUCTION_MATERIALS, PRODUCTION_SKILLS, PRODUCTION_LEVELS, ORDINARY_RECIPE_LEVELS, PRODUCTION_ADAPTATION, QIANKUN_TRANSFER_COSTS } from '../data/production.js';
 import { productionAction, getProductionCatalog } from './production.js';
 import { economyAction, queryEconomy } from './economy.js';
+import { NAMED_EQUIPMENT, NAMED_EQUIPMENT_NOTE, equipmentForShop } from '../data/named-equipment.js';
+import { ITEM_COLOR_PALETTE, VERIFIED_ITEM_COLORS, ITEM_COLOR_NOTE } from '../data/item-colors.js';
+import officialGear from '../data/official-gear.json' with { type: 'json' };
 
 export class ApiError extends Error {
   constructor(code, message, status = 400) { super(message); this.name = 'ApiError'; this.code = code; this.status = status; }
@@ -41,7 +44,7 @@ const routes = {
   '/v1/world/encounter': route({ choice: 'string' }, (g, b) => g.chooseEncounter(b.choice)),
   '/v1/items/use': route({ id: 'string' }, (g, b) => g.busy ? battleAction(g, `item:${b.id}`) : g.useItem(b.id)),
   '/v1/shop/potions/buy': route({ id: 'string', quantity: 'integer' }, (g, b) => g.buy(b.id, b.quantity)),
-  '/v1/shop/equipment/buy': route({ slot: 'string' }, (g, b) => g.buyEquip(b.slot)),
+  '/v1/shop/equipment/buy': route({ templateId: 'string' }, (g, b) => g.buyEquip(b.templateId)),
   '/v1/equipment/equip': route({ uid: 'string', slot: 'string?' }, (g, b) => g.equip(b.uid, b.slot)),
   '/v1/equipment/unequip': route({ slot: 'string' }, (g, b) => g.unequip(b.slot)),
   '/v1/equipment/sell': route({ uid: 'string' }, (g, b) => g.sell(b.uid)),
@@ -201,8 +204,11 @@ export class LocalBackend {
     const g = this._game; const p = g.p;
     if (path === '/v1/api') return this.response(API_ROUTES);
     if (path === '/v1/equipment/catalog') return this.response({ templates: HIGH_EQUIPMENT, recipes: HIGH_RECIPES, adaptation: HIGH_ADAPTATION,
-      official: { records: OFFICIAL_EQUIPMENT, types: OFFICIAL_EQUIPMENT_TYPES, note: OFFICIAL_EQUIPMENT_NOTE }, 
-      gearRules: GEAR_RULES, production: { materials: PRODUCTION_MATERIALS, skills: PRODUCTION_SKILLS,
+      named: { templates: NAMED_EQUIPMENT, note: NAMED_EQUIPMENT_NOTE },
+      colors: { palette: ITEM_COLOR_PALETTE, evidence: VERIFIED_ITEM_COLORS, note: ITEM_COLOR_NOTE },
+      official: { records: OFFICIAL_EQUIPMENT, types: OFFICIAL_EQUIPMENT_TYPES, note: OFFICIAL_EQUIPMENT_NOTE,
+        sourceRecords: officialGear.records, gaps: officialGear.gaps },
+      legacyGearRules: GEAR_RULES, production: { materials: PRODUCTION_MATERIALS, skills: PRODUCTION_SKILLS,
         levels: PRODUCTION_LEVELS, ordinaryRecipeLevels: ORDINARY_RECIPE_LEVELS,
         adaptation: PRODUCTION_ADAPTATION, transferCosts: QIANKUN_TRANSFER_COSTS } });
     if (path === '/v1/bootstrap' || path === '/v1/state') return this.response({ snapshot: g.state, loadError: this.loadError, storage: { engine: 'IndexedDB', schemaVersion: 2 } });
@@ -222,12 +228,15 @@ export class LocalBackend {
     if (path === '/v1/character') return this.response({ player: p, stats: stats(p, g.busy ? g.battle : null), class: CLASSES[p.cls] });
     if (path === '/v1/world') return this.response({ zones: ZONES, location: p.location, discovered: p.discovered, battle: g.battle,
       atlas: ATLAS_NODES, atlasSources: ATLAS_SOURCES, atlasAdaptation: ATLAS_ADAPTATION });
-    if (path === '/v1/inventory') return this.response({ bag: p.bag, equipment: p.equipment, items: p.items, catalog: { ...ITEMS, ...PRODUCTION_MATERIALS }, slots: SLOTS, qualities: QUALITY, templates: HIGH_EQUIPMENT, recipes: HIGH_RECIPES, adaptation: HIGH_ADAPTATION });
+    if (path === '/v1/inventory') return this.response({ bag: p.bag, equipment: p.equipment, items: p.items, catalog: { ...ITEMS, ...PRODUCTION_MATERIALS }, slots: SLOTS, qualities: QUALITY, templates: HIGH_EQUIPMENT, recipes: HIGH_RECIPES, adaptation: HIGH_ADAPTATION,
+      named: { templates: NAMED_EQUIPMENT, note: NAMED_EQUIPMENT_NOTE },
+      colors: { palette: ITEM_COLOR_PALETTE, evidence: VERIFIED_ITEM_COLORS, note: ITEM_COLOR_NOTE } });
     if (path === '/v1/skills') return this.response({ catalog: SKILLS[p.cls], learned: p.skills });
     if (path === '/v1/quests') return this.response({ main: g.mainQuest, mainProgress: g.questProgress(g.mainQuest), bounty: p.bounty, bountyProgress: g.questProgress(p.bounty, true) });
     if (path === '/v1/cultivation') return this.response({ catalog: CULTIVATION, rank: p.cult, path: p.path, trialReady: p.trialReady });
     if (path === '/v1/dungeons') return this.response({ catalog: DUNGEONS, daily: p.daily.dungeons, clears: p.clears });
-    if (path === '/v1/shop') return this.response({ catalog: ITEMS, gold: p.gold });
+    if (path === '/v1/shop') return this.response({ catalog: ITEMS, gold: p.gold, equipment: equipmentForShop(p),
+      note: NAMED_EQUIPMENT_NOTE, colors: { palette: ITEM_COLOR_PALETTE, evidence: VERIFIED_ITEM_COLORS, note: ITEM_COLOR_NOTE } });
     return this.response(queryEconomy(new Game(structuredClone(g.state)), 'all'));
   }
   close() { this.store.close(); }

@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import { Engine, findPath, seededRandom, validSave } from '../src/engine';
 import { LEGACY_CHARACTER_ID } from '../src/storage';
 import type { SaveRecord } from '../src/storage';
-import { createPlayer, deriveStats, skillLevel } from '../src/rules';
+import { createPlayer, deriveStats, manaRegeneration, skillLevel } from '../src/rules';
 import type { Rng } from '../src/types';
-import { createItem, createStartingItems, insertSocket, rollLoot } from '../src/items';
-import { createArea, hasLineOfSight } from '../src/world';
+import { consumePotion, createItem, createStartingItems, insertSocket, rollLoot } from '../src/items';
+import { createArea, getSurfaceRegion, hasLineOfSight } from '../src/world';
 
 const memoryStore = () => {
   const values = new Map<string, SaveRecord>();
@@ -20,6 +20,192 @@ const memoryStore = () => {
     importLegacy: async (record: SaveRecord) => { if (!legacyDeleted && !values.has(record.id)) values.set(record.id, structuredClone(record)); },
   };
 };
+
+function inventoryUseFixture(town = true) {
+  const engine = new Engine(); engine.dispatch({ type: 'new', classId: 'sor', name: '行囊使用测试' });
+  const p = engine.state.player!; p.inventory = [];
+  if (!town) { engine.state.area = createArea(2, 'normal', 123, p); engine.state.area.monsters = []; Object.assign(p, engine.state.area.spawn); }
+  const add = (code: string, quantity = 1) => {
+    const item = createItem(code, 1, () => .5); Object.assign(item, { quantity, x: p.inventory.length % 10, y: 0 }); p.inventory.push(item); return item;
+  };
+  const target = () => { const item = add('cm1'); item.quality = 'magic'; item.identified = false; item.mods = { life: 20, mana: 25 }; return item; };
+  return { engine, p, add, target };
+}
+
+for (const code of ['hp1', 'hp2', 'hp3', 'hp4', 'hp5', 'mp1', 'mp2', 'mp3', 'mp4', 'mp5', 'rvs', 'rvl']) test(`inventory use ${code} applies real potion results and never shifts the belt`, () => {
+  const { engine, p, add } = inventoryUseFixture(), item = add(code), belt = structuredClone(p.belt);
+  const charm = add('cm1'); charm.identified = true; charm.mods = { life: 1000, mana: 1000 }; engine.state.stats = deriveStats(p);
+  p.life = p.mana = 1;
+  const reference = structuredClone(p); reference.belt[0] = structuredClone(item);
+  const result = consumePotion(reference, 0); assert.equal(result.ok, true);
+  const frames = Math.round(result.duration * 25), stats = engine.state.stats!;
+  engine.dispatch({ type: 'use-item', uid: item.uid });
+  assert.ok(!p.inventory.some(i => i.uid === item.uid)); assert.deepEqual(p.belt, belt);
+  assert.equal(p.life, frames ? 1 : Math.min(stats.maxLife, 1 + result.life));
+  assert.equal(p.mana, frames ? 1 : Math.min(stats.maxMana, 1 + result.mana));
+  assert.equal(engine.state.effects.at(-1)!.kind, 'heal');
+  const effects = engine.state.effects.length, snapshot = structuredClone(p);
+  engine.dispatch({ type: 'use-item', uid: item.uid }); assert.deepEqual(p, snapshot); assert.equal(engine.state.effects.length, effects);
+  if (frames) {
+    engine.dispatch({ type: 'pause' }); engine.step(); assert.equal(p.life, 1); assert.equal(p.mana, 1); engine.dispatch({ type: 'pause' });
+    engine.step(); assertClose(p.life, 1 + result.life / frames, 'inventory life regeneration');
+    assertClose(p.mana, 1 + result.mana / frames + manaRegeneration(stats.maxMana, stats.manaRegenPercent), 'inventory mana regeneration');
+    for (let frame = 1; frame < frames; frame++) engine.step();
+    assertClose(p.life, Math.min(stats.maxLife, 1 + result.life), 'complete inventory life regeneration');
+    assertClose(p.mana, Math.min(stats.maxMana, 1 + result.mana + frames * manaRegeneration(stats.maxMana, stats.manaRegenPercent)), 'complete inventory mana regeneration');
+  }
+  assert.deepEqual(p.belt, belt);
+});
+
+for (const code of ['tsc', 'tbk']) test(`inventory portal uses exact ${code} UID instead of another scroll or book`, () => {
+  const { engine, p, add } = inventoryUseFixture(false), otherBook = add('tbk', 9), otherScroll = add('tsc'), source = add(code, 3);
+  const before = structuredClone([otherBook, otherScroll]);
+  engine.dispatch({ type: 'use-item', uid: source.uid });
+  assert.deepEqual([otherBook, otherScroll], before);
+  assert.equal(engine.state.area!.objects.filter(o => o.kind === 'portal').length, 1);
+  if (code === 'tbk') { assert.equal(source.quantity, 2); assert.ok(p.inventory.includes(source)); }
+  else { assert.ok(!p.inventory.includes(source)); assert.equal(source.quantity, 3); }
+});
+
+for (const gate of ['town', 'empty', 'dead', 'paused'] as const) test(`inventory portal rejects ${gate} without consumption or automatic fallback`, () => {
+  const { engine, p, add } = inventoryUseFixture(gate === 'town'), source = add('tbk', gate === 'empty' ? 0 : 2);
+  add('tbk', 8); add('tsc');
+  if (gate === 'dead') p.dead = true;
+  if (gate === 'paused') engine.state.paused = true;
+  const before = structuredClone(p), portals = engine.state.area!.objects.filter(o => o.kind === 'portal').length;
+  engine.dispatch({ type: 'use-item', uid: source.uid });
+  assert.deepEqual(p, before); assert.equal(engine.state.area!.objects.filter(o => o.kind === 'portal').length, portals);
+  assert.equal(engine.state.identifySource, null);
+});
+
+test('inventory scroll in town rejects before removing that exact scroll', () => {
+  const { engine, p, add } = inventoryUseFixture(), scroll = add('tsc'); add('tbk', 10);
+  const before = structuredClone(p); engine.dispatch({ type: 'use-item', uid: scroll.uid }); assert.deepEqual(p, before);
+});
+
+for (const code of ['isc', 'ibk']) test(`exact ${code} arms without cost and identifies one inventory target even beside Cain`, () => {
+  const { engine, p, add, target } = inventoryUseFixture(), otherBook = add('ibk', 10), otherScroll = add('isc'), source = add(code, 3), first = target(), second = target();
+  engine.state.npc = 'cain'; (engine as unknown as { npcServices: string[] }).npcServices = ['identify'];
+  const before = structuredClone(p), messages = structuredClone(engine.state.messages); engine.dispatch({ type: 'use-item', uid: source.uid });
+  assert.deepEqual(p, before); assert.equal(engine.state.identifySource, source.uid); assert.deepEqual(engine.state.messages, messages);
+  engine.dispatch({ type: 'use-item', uid: source.uid, targetUid: first.uid });
+  assert.equal(first.identified, true); assert.equal(second.identified, false); assert.equal(engine.state.identifySource, null);
+  assert.match(engine.state.messages.at(-1)!.text, /^鉴定成功：/);
+  assert.equal(engine.state.stats!.maxLife, 60); assert.equal(engine.state.stats!.maxMana, 60);
+  assert.equal(otherBook.quantity, 10); assert.ok(p.inventory.includes(otherScroll));
+  if (code === 'ibk') assert.equal(source.quantity, 2); else assert.ok(!p.inventory.includes(source));
+  const after = structuredClone(p); engine.dispatch({ type: 'use-item', uid: source.uid, targetUid: first.uid }); assert.deepEqual(p, after);
+});
+
+for (const location of ['stash', 'cube', 'belt', 'equipment', 'vendor', 'missing'] as const) test(`use-item rejects ${location} source UIDs without spending owned books or potions`, () => {
+  const { engine, p, add, target } = inventoryUseFixture(false), owned = add('ibk', 10), unidentified = target();
+  for (const code of ['hp1', 'rvl', 'tsc', 'tbk', 'isc', 'ibk']) {
+    const foreign = createItem(code, 1, () => .5); foreign.quantity = 5;
+    if (location === 'equipment') p.equipment.head = foreign;
+    else if (location === 'vendor') engine.state.vendorItems = [foreign];
+    else if (location !== 'missing') p[location].push(foreign);
+    const before = structuredClone(p), stock = structuredClone(engine.state.vendorItems);
+    engine.dispatch({ type: 'use-item', uid: foreign.uid });
+    engine.dispatch({ type: 'use-item', uid: foreign.uid, targetUid: unidentified.uid });
+    assert.deepEqual(p, before); assert.deepEqual(engine.state.vendorItems, stock); assert.equal(engine.state.identifySource, null);
+  }
+  assert.equal(owned.quantity, 10);
+});
+
+for (const scenario of ['identified', 'stash', 'cube', 'equipment', 'vendor', 'missing'] as const) test(`armed identification rejects ${scenario} target without consuming exact source`, () => {
+  const { engine, p, add, target } = inventoryUseFixture(), source = add('ibk', 2), item = target(); add('ibk', 9);
+  if (scenario === 'identified') item.identified = true;
+  else { p.inventory.splice(p.inventory.indexOf(item), 1); if (scenario === 'equipment') p.equipment.head = item; else if (scenario === 'vendor') engine.state.vendorItems = [item]; else if (scenario !== 'missing') p[scenario].push(item); }
+  engine.dispatch({ type: 'use-item', uid: source.uid }); const before = structuredClone(p), stock = structuredClone(engine.state.vendorItems);
+  engine.dispatch({ type: 'use-item', uid: source.uid, targetUid: item.uid });
+  assert.deepEqual(p, before); assert.deepEqual(engine.state.vendorItems, stock); assert.equal(engine.state.identifySource, source.uid);
+});
+
+for (const scenario of ['removed', 'moved', 'empty', 'changed-code'] as const) test(`stale armed ${scenario} identification source cannot fall back to another book or Cain`, () => {
+  const { engine, p, add, target } = inventoryUseFixture(), source = add('ibk', 2), fallback = add('ibk', 9), item = target();
+  engine.state.npc = 'cain'; (engine as unknown as { npcServices: string[] }).npcServices = ['identify'];
+  engine.dispatch({ type: 'use-item', uid: source.uid });
+  if (scenario === 'empty') source.quantity = 0;
+  else if (scenario === 'changed-code') source.code = 'hp1';
+  else { p.inventory.splice(p.inventory.indexOf(source), 1); if (scenario === 'moved') p.stash.push(source); }
+  const before = structuredClone(p); engine.dispatch({ type: 'use-item', uid: source.uid, targetUid: item.uid });
+  assert.deepEqual(p, before); assert.equal(item.identified, false); assert.equal(fallback.quantity, 9);
+});
+
+test('empty identification book cannot arm or consume another source', () => {
+  const { engine, p, add, target } = inventoryUseFixture(), empty = add('ibk', 0), item = target(); add('ibk', 8); add('isc');
+  const before = structuredClone(p); engine.dispatch({ type: 'use-item', uid: empty.uid }); engine.dispatch({ type: 'use-item', uid: empty.uid, targetUid: item.uid });
+  assert.deepEqual(p, before); assert.equal(engine.state.identifySource, null);
+});
+
+for (const gate of ['dead', 'paused'] as const) test(`${gate} blocks inventory potions and identify but allows cancelling identification`, () => {
+  const { engine, p, add, target } = inventoryUseFixture(), source = add('ibk', 2), potion = add('rvl'), item = target();
+  engine.dispatch({ type: 'use-item', uid: source.uid }); p.life = p.mana = 1;
+  if (gate === 'dead') p.dead = true; else engine.state.paused = true;
+  const before = structuredClone(p);
+  engine.dispatch({ type: 'use-item', uid: potion.uid }); engine.dispatch({ type: 'use-item', uid: source.uid, targetUid: item.uid });
+  assert.deepEqual(p, before); assert.equal(engine.state.identifySource, source.uid);
+  engine.dispatch({ type: 'cancel-identify' }); assert.equal(engine.state.identifySource, null); assert.deepEqual(p, before);
+});
+
+test('unsupported inventory items cannot fake a potion effect or identify', () => {
+  const { engine, p, add, target } = inventoryUseFixture(), item = target();
+  for (const code of ['hp6', 'mp6', 'vps', 'yps', 'wms', 'r01', 'cm1']) {
+    const source = add('hp1'); source.code = code; p.life = p.mana = 1;
+    const before = structuredClone(p), effects = structuredClone(engine.state.effects);
+    engine.dispatch({ type: 'use-item', uid: source.uid }); engine.dispatch({ type: 'use-item', uid: source.uid, targetUid: item.uid });
+    assert.deepEqual(p, before); assert.deepEqual(engine.state.effects, effects); assert.equal(engine.state.identifySource, null);
+  }
+});
+
+test('automatic portal and identification still consume available sources and Cain still identifies freely', () => {
+  const { engine, p, add, target } = inventoryUseFixture(false), portal = add('tbk', 2), book = add('ibk', 2), first = target();
+  engine.dispatch({ type: 'portal' }); assert.equal(portal.quantity, 1);
+  engine.dispatch({ type: 'identify', uid: first.uid }); assert.equal(first.identified, true); assert.equal(book.quantity, 1);
+  engine.state.area = createArea(1, 'normal', 123, p); engine.state.npc = 'cain'; (engine as unknown as { npcServices: string[] }).npcServices = ['identify'];
+  const second = target(), third = target(); engine.dispatch({ type: 'identify' });
+  assert.equal(second.identified, true); assert.equal(third.identified, true); assert.equal(book.quantity, 1);
+});
+
+for (const action of ['cancel-identify', 'panel', 'title', 'new', 'area'] as const) test(`${action} clears runtime identification without spending its source`, () => {
+  const { engine, p, add } = inventoryUseFixture(), source = add('ibk', 2); engine.dispatch({ type: 'panel', panel: 'inventory' }); engine.dispatch({ type: 'use-item', uid: source.uid });
+  const inventory = structuredClone(p.inventory);
+  if (action === 'panel') engine.dispatch({ type: 'panel', panel: 'none' });
+  else if (action === 'new') engine.dispatch({ type: 'new', classId: 'bar', name: '新旅人' });
+  else if (action === 'area') (engine as unknown as { enterArea: (id: number) => void }).enterArea(2);
+  else engine.dispatch({ type: action });
+  assert.equal(engine.state.identifySource, null); assert.deepEqual(p.inventory, inventory); assert.equal(source.quantity, 2);
+});
+
+test('crossing a surface region clears armed identification without consuming it', () => {
+  const { engine, p, add } = inventoryUseFixture(), source = add('ibk', 2), region = getSurfaceRegion(engine.state.area!, 2)!;
+  engine.dispatch({ type: 'panel', panel: 'inventory' }); engine.dispatch({ type: 'use-item', uid: source.uid });
+  Object.assign(p, region.spawn); engine.state.area!.monsters = []; engine.step();
+  assert.equal(engine.state.area!.def.id, 2); assert.equal(engine.state.identifySource, null); assert.equal(source.quantity, 2);
+});
+
+test('using owned inventory during trade leaves stock unchanged and selling stays restricted to trade', () => {
+  const { engine, p, stock } = convenienceShop(), potion = createItem('rvl', 1, () => .5), book = createItem('ibk', 1, () => .5), target = createItem('cm1', 1, () => .5);
+  book.quantity = 2; target.quality = 'magic'; target.identified = false; p.inventory.push(potion, book, target); p.life = p.mana = 1;
+  const offers = structuredClone(stock), gold = p.gold, belt = structuredClone(p.belt);
+  engine.dispatch({ type: 'use-item', uid: potion.uid }); engine.dispatch({ type: 'use-item', uid: book.uid, targetUid: target.uid });
+  assert.equal(engine.state.panel, 'vendor'); assert.equal(engine.state.vendorItems, stock); assert.deepEqual(stock, offers); assert.equal(p.gold, gold); assert.deepEqual(p.belt, belt);
+  assert.equal(p.life, engine.state.stats!.maxLife); assert.equal(target.identified, true); assert.equal(book.quantity, 1);
+  engine.dispatch({ type: 'panel', panel: 'inventory' }); const before = structuredClone(p); engine.dispatch({ type: 'sell', uid: target.uid }); assert.deepEqual(p, before);
+});
+
+test('inventory potion use preserves version-1 save data and load never persists armed identification', async () => {
+  const store = memoryStore(), engine = new Engine(store); await engine.initialize(); engine.dispatch({ type: 'new', classId: 'sor', name: '行囊存档' });
+  const p = engine.state.player!, equipment = structuredClone(p.equipment), belt = structuredClone(p.belt), source = createItem('ibk', 1, () => .5), potion = createItem('rvl', 1, () => .5);
+  Object.assign(source, { quantity: 5, x: 4, y: 0 }); Object.assign(potion, { x: 6, y: 0 }); p.inventory.push(source, potion);
+  p.life = p.mana = 1; engine.dispatch({ type: 'use-item', uid: potion.uid }); engine.dispatch({ type: 'use-item', uid: source.uid });
+  await engine.save(false); const id = engine.state.activeSaveId!, record = (await store.get(id))!;
+  assert.equal(record.version, 1); assert.ok(validSave(record)); assert.ok(!('identifySource' in record)); assert.ok(!('identifySource' in record.player));
+  assert.deepEqual(record.player.equipment, equipment); assert.deepEqual(record.player.belt, belt); assert.equal(record.player.inventory.find(i => i.uid === source.uid)!.quantity, 5);
+  assert.ok(!record.player.inventory.some(i => i.uid === potion.uid));
+  await engine.load(id); assert.equal(engine.state.identifySource, null); assert.deepEqual(engine.state.player!.inventory, record.player.inventory);
+  assert.deepEqual(await store.get(id), record); assert.deepEqual(engine.state.player!.equipment, equipment); assert.deepEqual(engine.state.player!.belt, belt);
+});
 
 test('independent seeded RNG is reproducible and bounded', () => {
   const a = seededRandom(123), b = seededRandom(123);
@@ -118,7 +304,7 @@ test('insufficient gold and a packed belt and inventory reject purchases transac
   p.gold = rune.price - 1; const before = structuredClone(p);
   engine.dispatch({ type: 'buy', uid: rune.uid }); assert.deepEqual(p, before);
   p.inventory = []; p.gold = 1_000_000;
-  for (let y = 0; y < 4; y++) for (let x = 0; x < 10; x++) p.inventory.push({ ...createItem('r01', 1, () => .5), x, y });
+  for (let y = 0; y < 8; y++) for (let x = 0; x < 10; x++) p.inventory.push({ ...createItem('r01', 1, () => .5), x, y });
   const packed = structuredClone(p);
   for (const code of ['rvl', 'pk1', 'r33', 'gcv', 'gpv', 'skc', 'skz', 'rin']) {
     engine.dispatch({ type: 'buy', uid: stock.find(item => item.code === code)!.uid });
@@ -402,6 +588,23 @@ function ordinaryAttackFixture() {
   (engine as unknown as { rng: Rng }).rng = () => 0;
   return { engine, p, m, weapon };
 }
+
+test('player damage uses the common bit pipeline and does not emit hurt for fully reduced hits', () => {
+  const { engine, p, m, weapon } = ordinaryAttackFixture();
+  weapon.mods = { flatReduction: 10 }; p.running = false; m.cooldown = 0;
+  engine.state.stats = deriveStats(p);
+  for (let tick = 0; tick < 8; tick++) engine.step();
+  assert.equal(p.life, 1);
+  assert.equal(engine.state.events.some(event => event.actor === 'player' && event.kind === 'hurt'), false);
+});
+test('monster fire damage retains fractional resisted player life loss without physical block', () => {
+  const { engine, p, m, weapon } = ordinaryAttackFixture();
+  weapon.mods = { resFire: 75 }; p.life = 40; p.running = false;
+  Object.assign(m, { ai: 'shaman', cooldown: 0, minDamage: 101, maxDamage: 101 });
+  engine.state.stats = deriveStats(p); engine.step();
+  assert.equal(p.life, 14.75);
+  assert.equal(engine.state.events.filter(event => event.actor === 'player' && event.kind === 'hurt').length, 1);
+});
 
 for (const mode of ['critical', 'deadly', 'both', 'deadly-after-critical-fails'] as const) test(`ordinary attack resolves ${mode} once before resistance without doubling elements`, () => {
   const { engine, p, m, weapon } = ordinaryAttackFixture();

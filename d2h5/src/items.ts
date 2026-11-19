@@ -1,6 +1,10 @@
 import type { BaseItem, ClassId, Difficulty, Item, ItemMods, Monster, Player, Quality, RawRow, Rng, Slot } from './types';
 import { getClass, getSkill, num, rawRows, text } from './catalog';
 import { deriveStats } from './rules';
+import zhCN from './data/item-zhCN.json';
+
+const ITEM_NAMES: Readonly<Record<string, string>> = zhCN;
+export const itemName = (key: string): string => ITEM_NAMES[key] ?? `未收录译名（${key}）`;
 
 /** Executable subset, not a claim of bit-exact legacy item generation. */
 export const ITEM_LIMITATIONS: string[] = [
@@ -40,16 +44,9 @@ const CN: Record<string, string> = {
   yps: '解毒药水', wms: '解冻药水', vps: '耐力药水', cm1: '小护身符', cm2: '大护身符', cm3: '超大型护身符',
   pk1: '恐惧之钥', pk2: '憎恨之钥', pk3: '毁灭之钥',
 };
-const RUNE_CN = ['艾尔', '艾德', '特尔', '那夫', '爱斯', '伊司', '塔尔', '拉尔', '欧特', '书尔', '安姆', '索尔', '夏', '多尔', '海尔', '埃欧', '卢姆', '科', '法尔', '蓝姆', '普尔', '乌姆', '马尔', '伊司特', '古尔', '伐克斯', '欧姆', '罗', '瑟', '贝', '乔', '查姆', '萨德'];
-const GEM_CN: Record<string, string> = { gema: '紫宝石', gems: '蓝宝石', geme: '绿宝石', gemr: '红宝石', gemd: '钻石', gemt: '黄宝石', gemz: '骷髅' };
-const GRADES = ['碎裂的', '裂开的', '', '无瑕疵的', '完美的'];
+const GEM_TYPES = ['gema', 'gems', 'geme', 'gemr', 'gemd', 'gemt', 'gemz'];
 function baseName(row: RawRow): string {
-  const code = text(row, 'code');
-  const rune = /^r(\d{2})$/.exec(code);
-  if (rune && RUNE_CN[Number(rune[1]) - 1]) return `${RUNE_CN[Number(rune[1]) - 1]}符文`;
-  const grade = /^gem([0-4])$/.exec(text(row, 'type2'));
-  if (grade && GEM_CN[text(row, 'type')]) return GRADES[Number(grade[1])] + GEM_CN[text(row, 'type')];
-  return CN[code] ?? text(row, 'name', code);
+  return itemName(text(row, 'namestr', text(row, 'code')));
 }
 
 const TYPES = new Map(rawRows('ItemTypes').map(row => [text(row, 'Code').toLowerCase(), row]));
@@ -106,7 +103,7 @@ export const BASE_ITEMS: BaseItem[] = ['weapons', 'armor', 'misc'].flatMap(table
 const BASE_BY_CODE = new Map(BASE_ITEMS.map(base => [base.code, base]));
 export function getBase(code: string): BaseItem | undefined { return BASE_BY_CODE.get(code); }
 export const RUNES: { code: string; name: string; level: number; number: number }[] = BASE_ITEMS.filter(b => /^r\d{2}$/.test(b.code)).map(b => ({ code: b.code, name: b.name, level: b.requiredLevel, number: Number(b.code.slice(1)) })).sort((a, b) => a.number - b.number);
-export const GEMS: { code: string; name: string; type: string; grade: number }[] = Object.keys(GEM_CN).flatMap(type => BASE_ITEMS.filter(base => base.type === type && /^gem[0-4]$/.test(text(base.raw, 'type2'))).map(base => ({ code: base.code, name: base.name, type, grade: Number(text(base.raw, 'type2').slice(3)) })).sort((a, b) => a.grade - b.grade));
+export const GEMS: { code: string; name: string; type: string; grade: number }[] = GEM_TYPES.flatMap(type => BASE_ITEMS.filter(base => base.type === type && /^gem[0-4]$/.test(text(base.raw, 'type2'))).map(base => ({ code: base.code, name: base.name, type, grade: Number(text(base.raw, 'type2').slice(3)) })).sort((a, b) => a.grade - b.grade));
 const WORD_NAMES: Record<string, string> = { 'Bound by Duty': 'Chains of Honor', Doomsayer: 'Doom', "Exile's Path": 'Exile', 'The Beast': 'Beast', Widowmaker: 'Grief', Winter: 'Voice of Reason' };
 export const RUNEWORDS: { name: string; runes: string[]; types: string[]; raw: RawRow }[] = rawRows('Runes').filter(r => num(r, 'complete') === 1 && num(r, 'server') !== 1).map(raw => {
   const name = text(raw, 'Rune Name', text(raw, 'Name'));
@@ -403,7 +400,18 @@ export function rollLoot(monster: Monster, rng: Rng, difficulty: Difficulty, mag
   return drops;
 }
 
-export function fitsItem(items: Item[], item: Item, x: number, y: number, width = 10, height = 4): boolean {
+export const INVENTORY_WIDTH = 10;
+export const INVENTORY_HEIGHT = 8;
+
+export function moveInventoryItem(player: Player, uid: string, x: number, y: number): Result {
+  const item = player.inventory.find(item => item.uid === uid);
+  if (!item) return fail('背包中找不到此物品');
+  if (!fitsItem(player.inventory, item, x, y, INVENTORY_WIDTH, INVENTORY_HEIGHT)) return fail('目标格子被占用或超出背包范围');
+  item.x = x; item.y = y;
+  return success('已移动 ' + itemLabel(item));
+}
+
+export function fitsItem(items: Item[], item: Item, x: number, y: number, width = INVENTORY_WIDTH, height = INVENTORY_HEIGHT): boolean {
   if (![x, y, width, height, item.width, item.height].every(Number.isInteger) || x < 0 || y < 0 || item.width <= 0 || item.height <= 0 || x + item.width > width || y + item.height > height) return false;
   return items.every(other => other.uid === item.uid || x + item.width <= other.x || other.x + other.width <= x || y + item.height <= other.y || other.y + other.height <= y);
 }
@@ -433,7 +441,7 @@ export function createStartingItems(player: Player): void {
         const cell = player.belt.slice(0, 4).findIndex(potion => !potion);
         if (cell < 0) throw new Error('初始腰带底行已满');
         player.belt[cell] = item;
-      } else if (!placeItem(player.inventory, item, 10, 4)) throw new Error('初始背包空间不足');
+      } else if (!placeItem(player.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) throw new Error('初始背包空间不足');
     }
   }
 }
@@ -476,7 +484,7 @@ function packReturns(player: Player, incomingUid: string | undefined, returned: 
   const inventory = player.inventory.filter(i => i.uid !== incomingUid).map(i => ({ ...i }));
   const belt = player.belt.slice();
   for (let i = newRows * 4; i < belt.length; i++) { if (belt[i]) returned.push(belt[i]!); belt[i] = null; }
-  for (const item of returned) if (!placeItem(inventory, { ...item }, 10, 4)) return undefined;
+  for (const item of returned) if (!placeItem(inventory, { ...item }, INVENTORY_WIDTH, INVENTORY_HEIGHT)) return undefined;
   return { inventory, belt };
 }
 function applyEquipmentDamage(player: Player): void {
@@ -537,16 +545,12 @@ export function unequipItem(player: Player, slot: Slot): Result {
   return success('已卸下装备');
 }
 
-export function consumePotion(player: Player, column: number): Result & { life: number; mana: number; duration: number } {
-  const empty = (message: string) => ({ ...fail(message), life: 0, mana: 0, duration: 0 });
-  if (!Number.isInteger(column) || column < 0 || column > 3) return empty('药水列无效');
-  const rows = player.equipment.belt ? getBase(player.equipment.belt.code)!.beltRows : 1;
-  let index = column;
-  while (index < rows * 4 && !player.belt[index]) index += 4;
-  const item = player.belt[index]; if (!item || index >= rows * 4) return empty('此列没有药水');
+export const isUsableItem = (item: Item): boolean => /^(?:[hm]p[1-5]|rv[sl]|[ti]sc|[ti]bk)$/.test(item.code);
+type PotionResult = Result & { life: number; mana: number; duration: number };
+const emptyPotion = (message: string): PotionResult => ({ ...fail(message), life: 0, mana: 0, duration: 0 });
+function potionResult(player: Player, item: Item): PotionResult {
+  if (!/^([hm]p[1-5]|rv[sl])$/.test(item.code)) return emptyPotion('此药水状态效果尚未实现');
   const base = getBase(item.code)!;
-  if (!/^([hm]p[1-5]|rv[sl])$/.test(item.code)) return empty('此药水状态效果尚未实现');
-  // Public duration is seconds; engine converts to its fixed 25 Hz frame clock.
   let life = 0, mana = 0, duration = num(base.raw, 'len') / 25;
   if (item.code.startsWith('hp')) life = num(base.raw, 'calc1') * (player.classId === 'bar' ? 2 : ['ama', 'pal', 'ass'].includes(player.classId) ? 1.5 : 1);
   else if (item.code.startsWith('mp')) mana = num(base.raw, 'calc1') * (player.classId === 'bar' ? 1 : ['ama', 'pal', 'ass'].includes(player.classId) ? 1.5 : 2);
@@ -557,10 +561,26 @@ export function consumePotion(player: Player, column: number): Result & { life: 
     mana = Math.floor(stats.maxMana * fraction * 256) / 256;
     duration = 0;
   }
+  return { ...success('使用了 ' + itemLabel(item)), life, mana, duration };
+}
+export function consumePotion(player: Player, column: number): PotionResult {
+  if (!Number.isInteger(column) || column < 0 || column > 3) return emptyPotion('药水列无效');
+  const rows = player.equipment.belt ? getBase(player.equipment.belt.code)!.beltRows : 1;
+  let index = column;
+  while (index < rows * 4 && !player.belt[index]) index += 4;
+  const item = player.belt[index]; if (!item || index >= rows * 4) return emptyPotion('此列没有药水');
+  const result = potionResult(player, item); if (!result.ok) return result;
   const remaining: Item[] = [];
   for (let i = column; i < rows * 4; i += 4) if (i !== index && player.belt[i]) remaining.push(player.belt[i]!);
   for (let row = 0; row < rows; row++) player.belt[column + row * 4] = remaining[row] ?? null;
-  return { ...success('使用了 ' + itemLabel(item)), life, mana, duration };
+  return result;
+}
+export function consumeInventoryPotion(player: Player, uid: string): PotionResult {
+  const index = player.inventory.findIndex(item => item.uid === uid);
+  if (index < 0) return emptyPotion('背包中找不到此药水');
+  const result = potionResult(player, player.inventory[index]);
+  if (result.ok) player.inventory.splice(index, 1);
+  return result;
 }
 
 function socketContext(base: BaseItem): 'weapon' | 'helm' | 'shield' {
@@ -592,7 +612,7 @@ export function insertSocket(player: Player, itemUid: string, runeUid: string): 
     if (word) { copy.runeword = word.name; copy.identified = true; properties(copy, word.raw, 'word', Math.random); }
   }
   applyLocal(copy); Object.assign(item, copy); source!.splice(source!.findIndex(i => i.uid === runeUid), 1);
-  return success(copy.runeword ? '制成符文之语：' + copy.runeword : '已镶嵌 ' + rune.name);
+  return success(copy.runeword ? '制成符文之语：' + runewordName(copy.runeword) : '已镶嵌 ' + itemLabel(rune));
 }
 
 function matchesCodes(items: Item[], codes: string[]): boolean {
@@ -658,13 +678,30 @@ export function transmute(player: Player): Result {
   return success('合成了 ' + itemLabel(output));
 }
 
+const PREFIX_NAMES = [...new Set(rawRows('MagicPrefix').map(row => text(row, 'Name')).filter(Boolean))].sort((a, b) => b.length - a.length);
+const SUFFIX_NAMES = [...new Set(rawRows('MagicSuffix').map(row => text(row, 'Name')).filter(Boolean))].sort((a, b) => b.length - a.length);
+const WORD_KEYS = new Map(rawRows('Runes').filter(row => num(row, 'complete') === 1).flatMap(row => {
+  const key = text(row, 'Name'), name = text(row, 'Rune Name');
+  return [name, WORD_NAMES[name], key].filter(Boolean).map(alias => [alias, key] as const);
+}));
+WORD_KEYS.set('Infinity', 'Runeword60');
+export const runewordName = (name: string): string => itemName(WORD_KEYS.get(name) ?? name);
 export function itemLabel(item: Item): string {
-  if (item.code === 'gld') return `${item.quantity} 金币`;
-  if (!item.identified) return `未辨识的${getBase(item.code)?.name ?? item.name}`;
-  if (/^r\d{2}$/.test(item.code)) return `${Number(item.code.slice(1))}号 · ${item.name}`;
-  const gem = GEMS.find(gem => gem.code === item.code); if (gem) return gem.name;
-  if (item.quality === 'unique' && item.name === 'The Stone of Jordan') return '乔丹之石';
-  return item.runeword ? item.runeword : `${item.quality === 'low' ? '劣质 ' : item.quality === 'superior' ? '超强 ' : ''}${item.name}`;
+  const base = getBase(item.code), name = base?.name ?? itemName(item.code);
+  if (item.code === 'gld') return `${item.quantity} ${name}`;
+  if (!item.identified) return `未鉴定的${name}`;
+  if (/^r\d{2}$/.test(item.code)) return `${Number(item.code.slice(1))}号 · ${name}`;
+  if (item.runeword) return runewordName(item.runeword);
+  if (item.quality === 'unique' || item.quality === 'set') return itemName(item.name);
+  if (item.quality === 'magic') {
+    let remaining = item.name;
+    const prefix = PREFIX_NAMES.find(key => remaining.startsWith(key + ' '));
+    if (prefix) remaining = remaining.slice(prefix.length + 1);
+    const suffix = SUFFIX_NAMES.find(key => remaining.endsWith(' ' + key));
+    if (suffix) remaining = remaining.slice(0, -suffix.length - 1);
+    if ([name, base?.english, CN[item.code]].includes(remaining)) return [suffix && itemName(suffix), prefix && itemName(prefix), name].filter(Boolean).join('');
+  }
+  return `${item.quality === 'low' ? itemName('Low Quality') : item.quality === 'superior' ? '超强' : item.quality === 'rare' ? '稀有' : ''}${name}`;
 }
 const MOD_LABELS: Record<string, string> = {
   strength: '力量', dexterity: '敏捷', vitality: '体力', energy: '精力', life: '生命', mana: '法力', stamina: '耐力', attackRating: '攻击准确率', attackRatingPercent: '攻击准确率%',

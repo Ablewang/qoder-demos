@@ -1,5 +1,6 @@
 import type { AreaState, GameState, Monster, Point, WorldObject, Quality } from './types';
 import { artUrl, heroArtKey, itemArtKey } from './art';
+import { itemLabel } from './items';
 
 const TW = 96, TH = 48;
 const GROUND_ART: Record<string, string> = { grass: 'earth', town: 'flagstone', jungle: 'earth', desert: 'sand', snow: 'snow', hell: 'volcanic', cave: 'basalt', dungeon: 'flagstone' };
@@ -217,7 +218,7 @@ export class Renderer {
       c.beginPath(); c.ellipse(p.x, p.y, 11, 5, 0, 0, Math.PI * 2); c.stroke();
     }
     for (const drop of area.drops) if (visible(drop) && (state.showLoot || Math.hypot(drop.x - player.x, drop.y - player.y) < 2.8)) {
-      const p = this.project(drop); this.label(p.x, p.y - 15, drop.item.name || drop.item.code, QUALITY[drop.item.quality]);
+      const p = this.project(drop); this.label(p.x, p.y - 15, itemLabel(drop.item), QUALITY[drop.item.quality]);
     }
     if (player.corpse && player.corpse.areaId === area.def.id) {
       const p = this.project(player.corpse); ellipse(c, p.x, p.y - 1, 18, 6, '#88745f'); this.label(p.x, p.y - 20, '你的遗体', '#d5d0c2');

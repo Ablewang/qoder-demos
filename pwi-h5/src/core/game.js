@@ -1,8 +1,9 @@
 import { CLASSES, findSkill, skillReq } from '../data/classes.js';
 import { ZONES, CULTIVATION, CULT_TRIALS, DUNGEONS, DUNGEON_DAILY } from '../data/world.js';
-import { ITEMS, SLOTS, makeEquip, randomSlot, rollQuality, itemSell, refinePlan } from '../data/items.js';
+import { ITEMS, SLOTS, EQUIPMENT_DEFAULTS, makeEquipmentFor, makeNamedEquip, randomSlot, itemSell, refinePlan } from '../data/items.js';
+import { NAMED_EQUIPMENT, matchesNamedEquip, equipmentForShop } from '../data/named-equipment.js';
 import { gearWearRequirements, allowedWeaponClasses, matchesGearSpec } from '../data/gear-specs.js';
-import { getProductionRecipes, productionTier } from '../data/production.js';
+import { getProductionRecipes, productionTier, LUNAR_MATERIAL_DROPS } from '../data/production.js';
 import { productionAction } from './production.js';
 import { matchesHighEquip } from '../data/high-equipment.js';
 import { buildMainline, makeBounty, BOUNTY_DAILY } from '../data/quests.js';
@@ -11,7 +12,7 @@ import { createPlayer, stats, recommendedAttributes, gainExp, expNeed, makeMonst
 import { createBattle, takeTurn, pickAutoAction } from './combat.js';
 
 import { validateSnapshot } from './schema.js';
-import { ensureEquipment, wearEquipment } from './equipment.js';
+import { ensureEquipment, wearEquipment, validateEquipment } from './equipment.js';
 import { ensureEconomy } from './economy.js';
 
 const own = (obj, key) => Object.hasOwn(obj, key);
@@ -106,20 +107,32 @@ export class Game {
     if (!it || !it.price || it.lv > this.p.lv + 5 || !Number.isInteger(qty) || qty < 1 || qty > 99) throw new Error('无法购买。');
     if (this.p.gold < it.price * qty) throw new Error('金币不足。');
     this.p.gold -= it.price * qty; this.addItem(id, qty); this.event(`购买${it.name} × ${qty}。`);  }
-  buyEquip(slot) {
-    if (this.busy || ZONES[this.p.location].type !== 'city' || !own(SLOTS, slot) || slot === 'ring2') throw new Error('请在城镇装备商购买。');
-    if (this.p.bag.length >= BAG_LIMIT) throw new Error('背包已满。');
-    const lv = Math.max(1, Math.floor(this.p.lv / 5) * 5);
-    const it = makeEquip(slot, lv, 0, this.p.cls, { origin: 'shop' }); it.price = Math.round(it.price * 2.2);
-    if (this.p.gold < it.price) throw new Error('金币不足。');
-    this.p.gold -= it.price; this.putEquip(it); this.event(`购入${it.name}，可在背包装备。`);  }
+  buyEquip(templateId) {
+    if (!this.p || this.busy || ZONES[this.p.location]?.type !== 'city') throw new Error('请在城镇装备商购买。');
+    const listing = equipmentForShop(this.p).find((entry) => entry.templateId === templateId);
+    if (!listing || listing.lv > this.p.lv) throw new Error('该具名模板不在当前装备商列表中。');
+    if (!Array.isArray(this.p.bag) || this.p.bag.length >= BAG_LIMIT) throw new Error('背包已满。');
+    if (!Number.isSafeInteger(this.p.gold) || this.p.gold < listing.price) throw new Error('金币不足。');
+    const it = makeNamedEquip(listing.templateId, { origin: 'shop' });
+    validateEquipment(it);
+    if ([...this.p.bag, ...Object.values(this.p.equipment)].some((owned) => owned.uid === it.uid)) throw new Error('新装备UID冲突，请重试。');
+    this.p.gold -= listing.price; this.p.bag.push(it); this.event(`购入${it.name}，可在背包装备；金币价格为本作适配。`);
+    return structuredClone(it);
+  }
   equip(uid, slot = null) {
     if (this.busy) throw new Error('战斗中无法更换装备。');
     const i = this.p.bag.findIndex((it) => it.uid === uid); if (i < 0) throw new Error('装备不存在。');
     const it = this.p.bag[i];
+    validateEquipment({ ...structuredClone(EQUIPMENT_DEFAULTS), ...it });
     const target = slot || (it.slot === 'ring1' && this.p.equipment.ring1 && !this.p.equipment.ring2 ? 'ring2' : it.slot);
     if (target !== it.slot && !(it.slot === 'ring1' && target === 'ring2')) throw new Error('栏位不符。');
-    if (own(it, 'templateId') || it.q === 4 || it.grade > 16) {
+    if (it.ruleVersion === 2 || own(NAMED_EQUIPMENT, it.templateId)) {
+      if (!matchesNamedEquip(it)) throw new Error('装备与具名来源模板不符。');
+      if (!it.classes.includes(this.p.cls)) throw new Error('该来源武器类型不适用于当前职业。');
+      const remaining = Object.fromEntries(Object.entries(this.p.equipment).filter(([key]) => key !== target));
+      const available = stats({ ...this.p, equipment: remaining });
+      if (it.lv > this.p.lv || Object.entries(it.requirements).some(([key, need]) => need !== null && (!Number.isFinite(available[key]) || available[key] < need))) throw new Error('等级或来源力量、体质、敏捷、灵力需求不足（不含被替换栏位）。');
+    } else if (own(it, 'templateId') || it.q === 4 || it.grade > 16) {
       if (!matchesHighEquip(it)) throw new Error('高阶装备与官方固定模板不符。');
       if (this.p.lv !== 105 || (it.classes !== null && !it.classes.includes(this.p.cls))) throw new Error('神铸装备需要105级及允许的职业。');
       // 不计算目标装备或被换下装备，避免靠该槽属性自撑门槛。
@@ -149,11 +162,13 @@ export class Game {
   sell(uid) {
     if (this.busy || ZONES[this.p.location].type !== 'city') throw new Error('请在城镇出售。');
     const i = this.p.bag.findIndex((it) => it.uid === uid); if (i < 0) throw new Error('装备不存在。');
+    validateEquipment({ ...structuredClone(EQUIPMENT_DEFAULTS), ...this.p.bag[i] });
     if (this.p.bag[i].bound) throw new Error('绑定装备不能出售。');
     const [it] = this.p.bag.splice(i, 1); const money = itemSell(it); this.p.gold += money;
     this.event(`售出${it.name}，获得${money}金币。`);  }
   sellCommon() {
     if (this.busy || ZONES[this.p.location].type !== 'city') throw new Error('请在城镇出售。');
+    for (const it of this.p.bag) validateEquipment({ ...structuredClone(EQUIPMENT_DEFAULTS), ...it });
     let money = 0; let count = 0;
     this.p.bag = this.p.bag.filter((it) => { if (it.q > 0 || it.refine > 0 || it.bound || it.sockets.length) return true; money += itemSell(it); count++; return false; });
     this.p.gold += money; this.event(`出售${count}件未精炼普通装备，获得${money}金币。`);  }
@@ -168,6 +183,7 @@ export class Game {
   refine(slot, aid = '') {
     if (this.busy || !ZONES[this.p.location].npcs?.includes('refine')) throw new Error('请在城镇精炼师处操作。');
     const it = this.p.equipment[slot]; if (!it) throw new Error('装备不存在。');
+    validateEquipment({ ...structuredClone(EQUIPMENT_DEFAULTS), ...it });
     const { stones, cost, rate, failLevel } = refinePlan(it, aid);
     if ((this.p.items.huanxian || 0) < stones || this.p.gold < cost || (aid && !(this.p.items[aid] > 0))) throw new Error('金币、幻仙石或辅助材料不足。');
     this.p.gold -= cost; this.p.items.huanxian -= stones; if (aid) this.p.items[aid]--;
@@ -176,7 +192,7 @@ export class Game {
     const s = stats(this.p); this.p.hp = Math.min(this.p.hp, s.hp);  }
   forge(slot, quality = 1) {
     if (this.busy || ZONES[this.p.location].type !== 'city' || !own(SLOTS, slot) || slot === 'ring2' || ![1, 2].includes(quality)) throw new Error('无法打造。');
-    const recipe = getProductionRecipes(this.p.cls).filter((entry) => entry.series === 'ordinary' && entry.slot === slot && entry.lv <= this.p.lv).at(-1);
+    const recipe = getProductionRecipes(this.p.cls).filter((entry) => entry.series === 'local-tutorial' && entry.slot === slot && entry.lv <= this.p.lv).at(-1);
     if (!recipe) throw new Error('没有对应等级的生产配方。');
     return productionAction(this, 'produce', { recipeId: recipe.id, confirm: true });  }
   questProgress(q, isBounty = false) {
@@ -196,7 +212,7 @@ export class Game {
     const exp = Math.round(expNeed(Math.min(105, q.rlv)) * q.rexp);
     const sp = Math.round((100 + q.rlv * q.rlv * 1.5) * q.rsp); const gold = Math.round(150 + q.rlv * 100);
     this.p.sp += sp; this.p.gold += gold;
-    if (q.equip != null) this.putEquip(makeEquip(randomSlot(), Math.min(105, q.rlv), q.equip, this.p.cls, { origin: isBounty ? 'bounty' : 'quest' }));
+    if (q.equip != null) this.putEquip(makeEquipmentFor(randomSlot(), Math.min(105, q.rlv), q.equip, this.p.cls, { origin: isBounty ? 'bounty' : 'quest' }));
     const starterKit = !isBounty && this.p.mainIndex === 0;
     if (isBounty) { this.p.bounty = null; this.p.bountyProgress = 0; this.p.daily.bounties++; }
     else {
@@ -331,7 +347,7 @@ export class Game {
       sp: (n) => { this.p.sp += n; gains.push(`元神+${n}`); },
       exp: (frac) => { const n = Math.round(expNeed(lv) * frac); exp += n; gains.push(`经验+${n}`); },
       item: (id, qty) => { this.p.items[id] = Math.max(0, (this.p.items[id] || 0) + qty); gains.push(`${ITEMS[id].name}${qty > 0 ? '+' : ''}${qty}`); },
-      equip: (q) => { const it = makeEquip(randomSlot(), lv, q, this.p.cls, { origin: `encounter:${enc.id}` }); this.putEquip(it); gains.push(it.name); },
+      equip: (q) => { const it = makeEquipmentFor(randomSlot(), lv, q, this.p.cls, { origin: `encounter:${enc.id}` }); this.putEquip(it); gains.push(it.name); },
       heal: (frac) => { const s = stats(this.p); this.p.hp = Math.min(s.hp, this.p.hp + Math.round(s.hp * frac)); this.p.mp = Math.min(s.mp, this.p.mp + Math.round(s.mp * frac)); gains.push('生命真气恢复'); },
       hurt: (frac) => { const n = Math.min(this.p.hp - 1, Math.round(stats(this.p).hp * frac)); this.p.hp -= n; gains.push(`生命-${n}`); },
       boost: (n) => { this.p.expBoost += n; gains.push(`双倍经验+${n}场`); },
@@ -421,7 +437,7 @@ export class Game {
         if (this.mainQuest?.goal.type === 'kill' && this.mainQuest.goal.mob === m.name && this.mainQuest.zone === ctx.zone) this.p.mainProgress++;
         if (this.p.bounty?.goal.mob === m.name && this.p.bounty.zone === ctx.zone) this.p.bountyProgress++;
         if (!materialsOnly && Math.random() < (m.rank === 'boss' ? 1 : m.rank === 'elite' ? 0.7 : 0.22)) {
-          const it = makeEquip(randomSlot(), m.lv, rollQuality(m.rank === 'boss' ? 0.12 : 0), this.p.cls, { origin: ctx.type === 'dungeon' ? `dungeon:${ctx.id}` : `field:${ctx.zone}` }); this.putEquip(it); loot.push({ name: it.name, q: it.q });
+          const it = makeEquipmentFor(randomSlot(), m.lv, 0, this.p.cls, { origin: ctx.type === 'dungeon' ? `dungeon:${ctx.id}` : `field:${ctx.zone}` }); this.putEquip(it); loot.push({ name: it.name, q: it.q, templateId: it.templateId });
         }
         if (ctx.type === 'field') this.addItem(`hide${productionTier(m.lv)}`);
         if (m.rank === 'boss') { this.addItem('card'); this.addItem('huanxian', 3); }
@@ -436,11 +452,16 @@ export class Game {
         if (d.family === 'twilight') {
           const material = { d75: 'tt1', d85: 'tt2', d95: 'tt3' }[d.id];
           this.addItem(material, 4);
-        } else if (d.family === 'lunar') this.addItem('lunarEssence', 4);
+        } else if (d.family === 'lunar') {
+          this.addItem('lunarEssence', 4);
+          for (const [id, qty] of Object.entries(LUNAR_MATERIAL_DROPS)) this.addItem(id, qty);
+          const text = '神月具名材料每种各1份；分配与数量是本作掉落适配，制造用量按来源逐件精确配方。';
+          this.event(text, 'victory'); b.logs.push({ text, kind: 'victory' });
+        }
         else if (d.family === 'nirvana') { this.addItem('rapture', 4); this.addItem('uncanny', 4); }
         else {
-          const it = makeEquip('weapon', d.lv, 2, this.p.cls, { ...(d.family === 'frost' ? { series: 'frost' } : {}), origin: `dungeon:${d.id}` });
-          this.putEquip(it); loot.push({ name: it.name, q: it.q });
+          const it = makeEquipmentFor('weapon', d.lv, 2, this.p.cls, { origin: `dungeon:${d.id}` });
+          this.putEquip(it); loot.push({ name: it.name, q: it.q, templateId: it.templateId });
         }
         this.addItem('tiangang'); this.addItem('huanxian', 5);
         if (d.lv >= 75) {
