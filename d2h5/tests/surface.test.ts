@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { Engine, findPath, seededRandom } from '../src/engine';
 import { createPlayer, deriveStats } from '../src/rules';
-import { createItem, createStartingItems, rollLoot } from '../src/items';
+import { createItem, createStartingItems, getBase, rollLoot } from '../src/items';
 import { SURFACE_IDS, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, isTownPoint, onKill, questKey, surfaceRegionAt } from '../src/world';
 import type { AreaState, Monster, Point, Rng, WorldObject } from '../src/types';
 import type { SaveRecord } from '../src/storage';
@@ -66,6 +66,7 @@ test('vendor stock stays stable across reopen, other NPCs and same-town waypoint
   assert.equal(openShop(engine), akara); assert.deepEqual(akara, snapshot); assert.equal(rolls, afterAkara);
   const charsi = openShop(engine, 'charsi'), afterCharsi = rolls;
   assert.notEqual(charsi, akara); assert.ok(afterCharsi > afterAkara);
+  assert.ok(charsi.length > 0); assert.ok(charsi.every(item => getBase(item.code)?.slot === 'weapon'));
   assert.equal(openShop(engine), akara); assert.equal(openShop(engine, 'charsi'), charsi);
   assert.equal(rolls, afterCharsi);
   const waypoint = area.objects.find(o => o.kind === 'waypoint' && o.regionId === 1)!;
@@ -77,7 +78,7 @@ test('vendor stock stays stable across reopen, other NPCs and same-town waypoint
 test('walking out and back refreshes every camp merchant while preserving owned items and world identity', () => {
   const { engine, p, area } = fixture();
   const akara = openShop(engine), charsi = openShop(engine, 'charsi');
-  p.gold = 10000; engine.dispatch({ type: 'buy', uid: charsi.find(i => i.code === 'hp1')!.uid });
+  p.gold = 10000; engine.dispatch({ type: 'buy', uid: charsi[0]!.uid });
   const owned = () => structuredClone({ inventory: p.inventory, equipment: p.equipment, belt: p.belt, stash: p.stash, gold: p.gold });
   const snapshot = owned(), destination = sign(area, 2, 1), town = getSurfaceRegion(area, 1)!.spawn;
   engine.dispatch({ type: 'panel', panel: 'vendor' });
@@ -131,6 +132,47 @@ test('shared surface preserves every original region seed, monster UID, level, H
       assert.deepEqual(world.objects.filter(o => o.regionId === region.def.id).map(o => o.targetArea), local.objects.map(o => o.targetArea));
     }
     assert.deepEqual(createSurfaceWorld(difficulty, seed, p), world);
+  }
+});
+
+test('Flavie stands on the Blood Moor / Cold Plains connecting road in every difficulty and seed', () => {
+  for (const difficulty of ['normal', 'nightmare', 'hell'] as const) for (const mapSeed of [1, seed, 12345]) {
+    const p = createPlayer('sor', '边境守卫'); p.difficulty = difficulty;
+    const before = structuredClone(p), area = createSurfaceWorld(difficulty, mapSeed, p);
+    const guards = area.objects.filter(o => o.npcId === 'flavie');
+    assert.equal(guards.length, 1);
+    const flavie = guards[0], source = sign(area, 2, 3), back = sign(area, 3, 2);
+    const moor = getSurfaceRegion(area, 2)!, plains = getSurfaceRegion(area, 3)!;
+    assert.ok(flavie.x >= moor.x + moor.width && flavie.x < plains.x, 'the guard is in the actual gap, not inside either field');
+    assert.equal(flavie.x, Math.floor((Math.floor(source.x) + Math.floor(back.x)) / 2) + .5);
+    assert.equal(flavie.y, source.y + 1, 'the guard leaves the road centerline clear');
+    assert.equal(area.tiles[Math.floor(flavie.y)][Math.floor(flavie.x)], 0);
+    assert.equal(area.tiles[Math.floor(source.y)][Math.floor(flavie.x)], 0);
+    assert.ok(findPath(area, source, flavie).length);
+    assert.ok(findPath(area, back, flavie).length);
+    assert.ok(findPath(area, source, back).length);
+    assert.equal(flavie.regionId, 2);
+    const local = createArea(2, difficulty, (mapSeed ^ 2 * 2654435761) >>> 0, p);
+    assert.equal(flavie.uid, local.objects.find(o => o.npcId === 'flavie')!.uid);
+    assert.deepEqual(p, before);
+  }
+});
+
+test('Flavie remains approachable from both fields and walking past preserves the shared world and owned items', () => {
+  for (const [source, target] of [[2, 3], [3, 2]]) {
+    const { engine, p, area } = fixture(source), from = sign(area, source, target), destination = sign(area, target, source);
+    const flavie = area.objects.find(o => o.npcId === 'flavie')!;
+    const owned = structuredClone({ inventory: p.inventory, equipment: p.equipment, gold: p.gold });
+    Object.assign(p, { x: from.x, y: from.y }); engine.step();
+    engine.dispatch({ type: 'interact', uid: flavie.uid });
+    for (let frame = 0; frame < 200 && engine.state.panel !== 'vendor'; frame++) engine.step();
+    assert.equal(engine.state.panel, 'vendor'); assert.equal(engine.state.npc, 'flavie');
+    assert.ok(engine.state.dialogue); assert.equal(engine.state.vendorItems.length, 0);
+    assert.ok(Math.hypot(p.x - flavie.x, p.y - flavie.y) <= 2);
+    engine.dispatch({ type: 'panel', panel: 'none' });
+    engine.dispatch({ type: 'move', point: destination }); walk(engine, destination, target);
+    assert.equal(engine.state.area, area); assert.equal(area.objects.find(o => o.npcId === 'flavie'), flavie);
+    assert.deepEqual({ inventory: p.inventory, equipment: p.equipment, gold: p.gold }, owned);
   }
 });
 

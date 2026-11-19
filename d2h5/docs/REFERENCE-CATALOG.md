@@ -1,6 +1,6 @@
 # 全量规则目录与数据索引
 
-生成日期：2026-11-17。这是当前本地固定数据的查询快照，不是功能完成证明。
+生成日期：2026-11-17；现行状态说明于 2026-11-19 同步基德赌博与 Edge 单项覆盖。这是本地固定数据的查询快照，原始字段不变，不是功能完成或本轮测试通过证明。
 
 返回 [文档入口](README.md) · [中文玩法总手册](GAME-DESIGN.md) · [装备、词缀与配方全量目录](ITEM-CATALOG.md)。
 
@@ -12,7 +12,7 @@
 
 - 任务奖励列是原版目标，只有标记了当前触发的条目具备首版步骤实现；仍须看手册的奖励限制。
 
-- NPC 服务为基础声明。实际服务受任务/当前上下文控制；赌博、雇佣、佣兵复活等声明并不代表引擎已执行。
+- NPC 服务为基础声明。基德赌博已接入独立 14 货位、免费刷新/买后单槽补货与当前报价/折扣路径，详见 [手册 20.4](GAME-DESIGN.md#204-赌博详解基德经典算法候选与-d2r-风格交互)；仅对城镇内邻近基德的合法上下文执行。其他 NPC 的赌博声明、雇佣与佣兵复活仍不代表已执行。本轮赌博隔离浏览器与全单测验收见手册20.4.7，不能代表原D2R全面等价。
 
 - 符文之语只说明序列/底材和规则匹配是否启用，不保证每种触发、光环、充能或特殊属性已经生效。
 
@@ -730,7 +730,7 @@
 | --- | --- | --- | --- | --- |
 | akara | 阿卡拉 | 1 | 交易、治疗 | 清空邪恶洞窟后回来领取技能点；进入洞窟即可开始。治疗由治疗操作执行。 |
 | charsi | 恰西 | 1 | 交易、维修 | 军营的马勒斯必须从铁架取回；注入任务尚未实现。 |
-| gheed | 基德 | 1 | 交易、赌博 | 出售装备与杂货，提供赌博；不提供修理。 |
+| gheed | 基德 | 1 | 交易、赌博 | 基础交易及已接入的14位赌博/免费刷新/单槽补货；报价与折扣见手册20.4，须城镇内邻近基德且未暂停/死亡；不提供修理。 |
 | kashya | 卡夏 | 1 | 无 | 从冰冷之原前往埋骨之地杀死血鸟，再回来领取罗格招聘权限。 |
 | cain | 迪卡·凯恩 | 1 | 无 | 救援卷轴、石柱与牢笼触发尚未实现；对话不会自动解救凯恩。 |
 | warriv | 瓦瑞夫 | 1 | 无 | 杀死地下墓穴第四层安达利尔后，回来交付并向东旅行。 |
@@ -844,7 +844,7 @@ weaponMod 为武器位置，helmMod 为头盔/护甲位置，shieldMod 为盾牌
 
 ## 原版启用的 78 个符文之语
 
-当前离线规则匹配启用 55 个，其余保留原版服务器/天梯限制。下面的 itype/etype 是原始物品类型，须按 ItemTypes 继承判断，不能仅按外观判断。
+当前匹配为 **LoD 离线 55 个＋仅额外 Edge 1 个＝56 个启用**；原 23 个 server=1 完成定义中，其他 **22 个仍禁用**，Spirit/Insight/Infinity 不开放。Edge（原始身份 `Runeword31`、server=1）是唯一 D2R 离线覆盖，不改变固定原表或其他限制，也不代表其光环/全部属性已实现。下面的 itype/etype 保留原始物品类型，须按 ItemTypes 继承判断；Edge 的 miss 对应合法弓/弩，恰好三孔按 Tir→Tal→Amn 制作，不能仅按外观判断。赌博/折扣和证据边界见手册 20.4。
 
 | 当前/原始英文名称 | 符文顺序 | 孔数 | 允许类型 | 排除类型 | 原始server | 当前离线匹配 | 原始额外属性 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -865,7 +865,7 @@ weaponMod 为武器位置，helmMod 为头盔/护甲位置，shieldMod 为盾牌
 | Dragon | 瑟符文 → 罗符文 → 索尔符文 | 3 | tors, shld | 无 | 1 | 禁用匹配 | {"T1Code1":"ac","T1Min1":360,"T1Max1":360,"T1Code2":"ac-miss","T1Min2":230,"T1Max2":230,"T1Code3":"str/lvl","T1Param3":3,"T1Code4":"hit-skill","T1Param4":"Hydra","T1Min4":12,"T1Max4":15,"T1Code5":"gethit-skill","T1Param5":"Venom","T1Min5":20,"T1Max5":18,"T1Code6":"aura","T1Param6":"Holy Fire","T1Min6":14,"T1Max6":14,"T1Code7":"all-stats","T1Min7":3,"T1Max7":5} |
 | Dream | 埃欧符文 → 乔符文 → 普尔符文 | 3 | helm, shld | 无 | 1 | 禁用匹配 | {"T1Code1":"ac","T1Min1":150,"T1Max1":220,"T1Code2":"gethit-skill","T1Param2":"Confuse","T1Min2":10,"T1Max2":15,"T1Code3":"mana/lvl","T1Param3":5,"T1Code4":"res-all","T1Min4":5,"T1Max4":20,"T1Code5":"balance3","T1Min5":20,"T1Max5":30,"T1Code6":"aura","T1Param6":"Holy Shock","T1Min6":15,"T1Max6":15,"T1Code7":"mag%","T1Min7":12,"T1Max7":25} |
 | Duress | 夏符文 → 乌姆符文 → 书尔符文 | 3 | tors | 无 | 0 | 启用匹配 | {"T1Code1":"dmg-cold","T1Param1":50,"T1Min1":37,"T1Max1":133,"T1Code2":"dmg%","T1Min2":10,"T1Max2":20,"T1Code3":"ac%","T1Min3":150,"T1Max3":200,"T1Code4":"balance2","T1Min4":20,"T1Max4":20,"T1Code5":"openwounds","T1Min5":33,"T1Max5":33,"T1Code6":"crush","T1Min6":15,"T1Max6":15,"T1Code7":"stamdrain","T1Min7":-20,"T1Max7":-20} |
-| Edge | 特尔符文 → 塔尔符文 → 安姆符文 | 3 | miss | 无 | 1 | 禁用匹配 | {"T1Code1":"dmg-demon","T1Min1":320,"T1Max1":380,"T1Code2":"dmg-undead","T1Min2":280,"T1Max2":280,"T1Code3":"swing2","T1Min3":35,"T1Max3":35,"T1Code4":"noheal","T1Min4":1,"T1Max4":1,"T1Code5":"aura","T1Param5":"Thorns","T1Min5":15,"T1Max5":15,"T1Code6":"all-stats","T1Min6":5,"T1Max6":10,"T1Code7":"cheap","T1Min7":15,"T1Max7":15} |
+| Edge | 特尔符文 → 塔尔符文 → 安姆符文 | 3 | miss | 无 | 1 | D2R 离线单项覆盖启用（Runeword31）；当前组折扣15%，光环等仍不完整 | {"T1Code1":"dmg-demon","T1Min1":320,"T1Max1":380,"T1Code2":"dmg-undead","T1Min2":280,"T1Max2":280,"T1Code3":"swing2","T1Min3":35,"T1Max3":35,"T1Code4":"noheal","T1Min4":1,"T1Max4":1,"T1Code5":"aura","T1Param5":"Thorns","T1Min5":15,"T1Max5":15,"T1Code6":"all-stats","T1Min6":5,"T1Max6":10,"T1Code7":"cheap","T1Min7":15,"T1Max7":15} |
 | Enigma | 乔符文 → 伊司符文 → 贝符文 | 3 | tors | 无 | 0 | 启用匹配 | {"T1Code1":"ac","T1Min1":750,"T1Max1":775,"T1Code2":"heal-kill","T1Min2":14,"T1Max2":14,"T1Code3":"move2","T1Min3":45,"T1Max3":45,"T1Code4":"str/lvl","T1Param4":6,"T1Code5":"allskills","T1Min5":2,"T1Max5":2,"T1Code6":"mag%/lvl","T1Param6":8,"T1Code7":"oskill","T1Param7":"Teleport","T1Min7":1,"T1Max7":1} |
 | Enlightenment | 普尔符文 → 拉尔符文 → 索尔符文 | 3 | tors | 无 | 0 | 启用匹配 | {"T1Code1":"hit-skill","T1Param1":"Fire Ball","T1Min1":5,"T1Max1":15,"T1Code2":"gethit-skill","T1Param2":"Blaze","T1Min2":5,"T1Max2":15,"T1Code3":"sor","T1Min3":2,"T1Max3":2,"T1Code4":"oskill","T1Param4":"Warmth","T1Min4":1,"T1Max4":1} |
 | Eternity | 安姆符文 → 贝符文 → 伊司特符文 → 索尔符文 → 瑟符文 | 5 | mele | 无 | 0 | 启用匹配 | {"T1Code1":"dmg%","T1Min1":260,"T1Max1":310,"T1Code2":"indestruct","T1Min2":1,"T1Max2":1,"T1Code3":"slow","T1Min3":33,"T1Max3":33,"T1Code4":"charged","T1Param4":"Revive","T1Min4":88,"T1Max4":8,"T1Code5":"regen","T1Min5":16,"T1Max5":16,"T1Code6":"regen-mana","T1Min6":16,"T1Max6":16,"T1Code7":"nofreeze","T1Min7":1,"T1Max7":1} |

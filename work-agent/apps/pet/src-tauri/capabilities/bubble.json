@@ -1,0 +1,10 @@
+{
+  "identifier": "pet-bubble",
+  "description": "Local bubble: API reads, event relay, and closing its own bubble; no startup or settings writes.",
+  "local": true,
+  "windows": ["bubble"],
+  "permissions": [
+    "core:event:allow-listen", "core:event:allow-unlisten", "core:event:allow-emit",
+    "native-get-api-token", "native-read-daemon-info", "native-read-client-settings", "native-hide-aux"
+  ]
+}

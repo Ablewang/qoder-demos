@@ -7,11 +7,14 @@
     "node": ">=24"
   },
   "scripts": {
+    "start": "node scripts/start.mjs",
     "serve": "node --disable-warning=ExperimentalWarning src/cli.ts serve",
     "run-report": "node --disable-warning=ExperimentalWarning src/cli.ts run",
     "probe:feishu-im": "node --disable-warning=ExperimentalWarning src/cli.ts probe-feishu-im",
-    "test": "TZ=Asia/Shanghai node --disable-warning=ExperimentalWarning --test test/*.test.ts",
-    "typecheck": "tsc"
+    "test": "TZ=Asia/Shanghai node --disable-warning=ExperimentalWarning --test 'test/**/*.test.ts'",
+    "typecheck": "tsc",
+    "daemon": "node --disable-warning=ExperimentalWarning src/daemon.ts",
+    "notify": "node --disable-warning=ExperimentalWarning scripts/notify.ts"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",

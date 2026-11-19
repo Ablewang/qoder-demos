@@ -77,7 +77,7 @@ export class Overlay {
     this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
   }
 
-  render(state: GameState, time: number, project: Project, hover: string | null): void {
+  render(state: GameState, time: number, project: Project, hover: string | null, playerPosition?: Point): void {
     if (this.destroyed) return;
     const c = this.ctx;
     c.setTransform(1, 0, 0, 1, 0, 0);
@@ -127,6 +127,11 @@ export class Overlay {
       const p = project(player.corpse, 0.4);
       this.label(p.x, p.y, '你的遗体', '#d5d0c2');
     }
+    if (!player.dead && state.stats) {
+      const p = project(playerPosition ?? player, 2.2);
+      this.smallBar(p.x, p.y - 14, player.life / Math.max(1, state.stats.maxLife), '#df5148', true, 54);
+      this.smallBar(p.x, p.y - 6, player.mana / Math.max(1, state.stats.maxMana), '#4f93e5', true, 54);
+    }
     this.refreshMap(state, area);
     this.minimap(area, player);
     if (state.automap) this.automap(area, player);
@@ -156,13 +161,13 @@ export class Overlay {
     return (MONSTER_SCALE[base] ?? 1) * (monster.boss ? 1.15 : monster.champion ? 1.1 : 1);
   }
 
-  private smallBar(x: number, y: number, ratio: number, color: string, highlighted = false): void {
-    if (!this.fits(x - 22, y - 1, 44, 7)) return;
-    const c = this.ctx;
-    c.save(); c.fillStyle = '#0b100c'; c.fillRect(x - 21, y, 42, 5);
-    c.fillStyle = color; c.fillRect(x - 20, y + 1, 40 * clamp(ratio || 0, 0, 1), 3);
+  private smallBar(x: number, y: number, ratio: number, color: string, highlighted = false, width = 42): void {
+    if (!this.fits(x - width / 2 - 1, y - 1, width + 2, 7)) return;
+    const c = this.ctx, left = x - width / 2;
+    c.save(); c.fillStyle = '#0b100c'; c.fillRect(left, y, width, 5);
+    c.fillStyle = color; c.fillRect(left + 1, y + 1, (width - 2) * clamp(ratio || 0, 0, 1), 3);
     if (highlighted) {
-      c.strokeStyle = '#d8c17abb'; c.strokeRect(x - 21.5, y - 0.5, 43, 6);
+      c.strokeStyle = '#d8c17abb'; c.strokeRect(left - 0.5, y - 0.5, width + 1, 6);
     }
     c.restore();
   }

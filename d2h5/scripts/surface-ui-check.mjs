@@ -81,8 +81,7 @@ async function run(mobile) {
       await activate(page.locator('[data-focus="trade-view:vendor"]'));
       await activate(page.locator('[data-focus="trade-close:vendor"]'));
       await page.locator('.panel-vendor').waitFor({ state: 'hidden' });
-      assert.equal(await page.evaluate(() => window.sanctuary.engine.state.panel), 'inventory');
-      await activate(page.locator('.panel-inventory .close-button'));
+      assert.equal(await page.evaluate(() => window.sanctuary.engine.state.panel), 'none');
     } else await activate(page.locator('.gothic-panel .close-button'));
     await page.locator('.gothic-panel').waitFor({ state: 'hidden' });
   };
@@ -508,7 +507,9 @@ async function checkConvenienceShop(mobile) {
     assert.deepEqual(await page.evaluate(() => { const p = window.sanctuary.engine.state.player; return { inventory: p.inventory, belt: p.belt }; }), beforeFailure);
     await selectInventory(jordan.uid); await view('vendor');
     await activate(page.locator('[data-focus="trade-close:vendor"]')); await page.locator('.panel-vendor').waitFor({ state: 'hidden' });
-    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.panel), 'inventory', 'Closing only the merchant leaves the backpack open');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.panel), 'none', 'Closing the merchant returns to the scene without opening the backpack');
+    await page.locator('.panel-inventory').waitFor({ state: 'hidden' });
+    await activate(page.locator('.quick-button[data-panel="inventory"]'));
     await page.locator('.panel-inventory').waitFor({ state: 'visible' });
     assert.equal(await page.locator('.panel-inventory.trade-inventory').count(), 0);
     assert.equal(await page.locator('.panel-inventory .item-detail').getByRole('button', { name: '出售', exact: true }).isDisabled(), true, 'Backpack selling is disabled after trading ends');

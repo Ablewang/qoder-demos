@@ -11,7 +11,7 @@ const RACE_ROUTE = {
 const ZONE_STORY = {
   f_kuangkeng: '沿祭旗坡的历练路线前行，准备探索青衣冢。',
   f_taoyuan: '青衣冢的挑战在前，先确认附近的通行安全。',
-  f_jifeng: `从${ZONES.jifeng.name}出发，继续前往${ZONES.f_jifeng.name}方向。`,
+  f_jifeng: `取道${ZONES.xidao.name}一带的海岛，继续前往${ZONES.f_jifeng.name}。`,
   f_fengsha: `${ZONES.f_fengsha.name}的试炼更为艰险，先击退路上的敌人。`,
   f_bingfeng: '在云梦岭整顿行装，为怨灵之门的挑战做准备。',
   f_shangqi: '怨灵之门近在眼前，先完成入口一带的历练。',

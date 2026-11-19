@@ -4,7 +4,9 @@ import * as THREE from 'three';
 import { createArea, createSurfaceWorld } from '../src/world';
 import { createPlayer } from '../src/rules';
 import { Terrain } from '../src/r3d/terrain';
-import type { AreaState } from '../src/types';
+import { Overlay } from '../src/r3d/overlay';
+import { Engine } from '../src/engine';
+import type { AreaState, Point } from '../src/types';
 
 test('outdoor scenery differs in geometry rather than only ground color', () => {
   const texture = new THREE.Texture(), signatures = new Set<string>();
@@ -97,4 +99,68 @@ test('surface districts keep world offsets, cull distant scenery, and dispose ow
   assert.ok(disposals > 2);
   assert.equal(terrain.group.parent, null); assert.equal(districts[0].parent, null); assert.equal(districts[1].parent, null);
   texture.dispose();
+});
+
+function playerBarFixture() {
+  const engine = new Engine(); engine.dispatch({ type: 'new', classId: 'sor', name: '头顶状态条' });
+  const state = engine.state;
+  state.area!.objects = []; state.area!.monsters = []; state.area!.drops = [];
+  const fills: { color: string; x: number; y: number; width: number; height: number }[] = [];
+  const transforms: number[][] = [];
+  const ctx = {
+    fillStyle: '', save() {}, restore() {}, clearRect() {}, strokeRect() {},
+    setTransform(...values: number[]) { transforms.push(values); },
+    fillRect(x: number, y: number, width: number, height: number) { fills.push({ color: this.fillStyle, x, y, width, height }); },
+  };
+  const canvas = { width: 400, height: 300 };
+  const overlay: Overlay = Object.assign(Object.create(Overlay.prototype) as Overlay, {
+    ctx, canvas, width: 400, height: 300, dpr: 1, lastTick: -Infinity, destroyed: false,
+    refreshMap() {}, minimap() {}, automap() {}, titleScene() {},
+  });
+  return { overlay, state, fills, transforms, canvas };
+}
+
+test('player overhead bars show red life and blue mana ratios without changing the player', () => {
+  const { overlay, state, fills } = playerBarFixture(), p = state.player!;
+  state.stats!.maxLife = 100; state.stats!.maxMana = 80; p.life = 25; p.mana = 40;
+  const before = structuredClone(p);
+  overlay.render(state, 0, () => ({ x: 100, y: 100 }), null);
+  assert.deepEqual(fills.filter(fill => fill.color !== '#0b100c'), [
+    { color: '#df5148', x: 74, y: 87, width: 13, height: 3 },
+    { color: '#4f93e5', x: 74, y: 95, width: 26, height: 3 },
+  ]);
+  assert.deepEqual(p, before);
+  p.life = 200; p.mana = -20; fills.length = 0;
+  overlay.render(state, 1, () => ({ x: 100, y: 100 }), null);
+  assert.deepEqual(fills.filter(fill => fill.color !== '#0b100c').map(fill => fill.width), [52, 0]);
+  state.stats!.maxLife = 200; state.stats!.maxMana = 160; p.life = 100; p.mana = 80; fills.length = 0;
+  overlay.render(state, 2, () => ({ x: 100, y: 100 }), null);
+  assert.deepEqual(fills.filter(fill => fill.color !== '#0b100c').map(fill => fill.width), [26, 26]);
+});
+
+test('player bars follow interpolated actor position, remain while paused and hide on death or outside gameplay', () => {
+  const { overlay, state, fills } = playerBarFixture(), anchor = { x: 8.5, y: 9.5 };
+  const projected: { point: Point; lift?: number }[] = [];
+  const project = (point: Point, lift?: number) => { projected.push({ point, lift }); return { x: 100, y: 100 }; };
+  state.paused = true; overlay.render(state, 0, project, null, anchor);
+  assert.deepEqual(projected, [{ point: anchor, lift: 2.2 }]); assert.equal(fills.length, 4);
+  fills.length = 0; state.player!.dead = true; overlay.render(state, 1, project, null, anchor); assert.equal(fills.length, 0);
+  state.player!.dead = false;
+  for (const screen of ['intro', 'title', 'creation'] as const) {
+    state.screen = screen; overlay.render(state, 2, project, null, anchor); assert.equal(fills.length, 0);
+  }
+  state.screen = 'game'; state.stats = null; overlay.render(state, 3, project, null, anchor); assert.equal(fills.length, 0);
+});
+
+test('overhead bars keep CSS-pixel size at high DPR, clip outside the viewport and preserve monster bar width', () => {
+  const { overlay, state, fills, transforms, canvas } = playerBarFixture();
+  overlay.resize(320, 568, 2); assert.deepEqual(canvas, { width: 640, height: 1136 });
+  overlay.render(state, 0, () => ({ x: 160, y: 280 }), null);
+  assert.equal(fills[0].width, 54); assert.deepEqual(transforms.at(-1), [2, 0, 0, 2, 0, 0]);
+  for (const point of [{ x: 5, y: 280 }, { x: 315, y: 280 }, { x: 160, y: -10 }, { x: NaN, y: 100 }]) {
+    fills.length = 0; overlay.render(state, 1, () => point, null); assert.equal(fills.length, 0);
+  }
+  fills.length = 0;
+  (overlay as unknown as { smallBar(x: number, y: number, ratio: number, color: string): void }).smallBar(160, 280, .5, '#a44636');
+  assert.deepEqual(fills.map(fill => fill.width), [42, 20]);
 });

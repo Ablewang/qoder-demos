@@ -185,7 +185,7 @@ export const QUESTS: QuestDef[] = [
 type NPCDef = { id: string; name: string; services: string[]; act: number; description: string };
 export const NPCS: Record<string, NPCDef> = {};
 const npcRows: [string, string, number, string[], string][] = [
-  ['akara','阿卡拉',1,['trade','heal'],'清空邪恶洞窟后回来领取技能点；进入洞窟即可开始。治疗由治疗操作执行。'],
+  ['akara','阿卡拉',1,['trade','heal'],'清空邪恶洞窟后回来领取技能点；进入洞窟即可开始。交谈时自动恢复生命和法力。'],
   ['charsi','恰西',1,['trade','repair'],'军营的马勒斯必须从铁架取回；注入任务尚未实现。'],
   ['gheed','基德',1,['trade','gamble'],'出售装备与杂货，提供赌博；不提供修理。'],
   ['kashya','卡夏',1,[],'从冰冷之原前往埋骨之地杀死血鸟，再回来领取罗格招聘权限。'],
@@ -717,6 +717,10 @@ export function createSurfaceWorld(difficulty: Difficulty, engineSeed: number, p
       const middle=Math.floor((ap.x+bp.x)/2);
       const allowed=(p: Point) => p.x>=Math.min(ap.x,bp.x)-1 && p.x<=Math.max(ap.x,bp.x)+1 && p.y>=Math.min(ap.y,bp.y)-1 && p.y<=Math.max(ap.y,bp.y)+1;
       carve(ap,{x:middle,y:ap.y},allowed);carve({x:middle,y:ap.y},{x:middle,y:bp.y},allowed);carve({x:middle,y:bp.y},bp,allowed);
+      if (a.def.id === 2 && target === 3) {
+        const flavie = world.objects.find(o => o.npcId === 'flavie')!;
+        Object.assign(flavie, { x: middle + .5, y: ap.y + 1.5 });
+      }
     } else {
       const middle=Math.floor((ap.y+bp.y)/2);
       const allowed=(p: Point) => p.y>=Math.min(ap.y,bp.y)-1 && p.y<=Math.max(ap.y,bp.y)+1 && p.x>=Math.min(ap.x,bp.x)-1 && p.x<=Math.max(ap.x,bp.x)+1;

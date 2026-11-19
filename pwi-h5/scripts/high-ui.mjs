@@ -59,9 +59,9 @@ try {
   g.p.wallet.yuanbao = 10000; g.p.hp = stats(g.p).hp; g.p.mp = stats(g.p).mp;
   await importFixture(g.state);
   await click('page', '[data-id="activities"]');
-  assert.equal(await page.locator('.orbit-prize').count(), 12);
+  assert.equal(await page.locator('.orbit-prize').count(), 36);
   assert.equal(await page.locator('.sovereign-prize').count(), 3);
-  await red(page.locator('.sovereign-prize[data-prize="hySovereign19"] h3 .equipment-name'));
+  await red(page.locator('.sovereign-prize[data-prize="hySovereign19"] .hy-cell-name .equipment-name'));
   await click('highDetail', '[data-id="axe19c"]');
   assert.match(await page.locator('.modal-body').innerText(), /1,647—3,843/);
   assert.match(await page.locator('.modal-body').innerText(), /狂天神/);
@@ -130,5 +130,5 @@ try {
   await click('page', '[data-id="activities"]');
   assert.ok(await page.locator('[data-action="treasureDraw"][data-count="1"]').isDisabled());
   assert.deepEqual(errors, []);
-  console.log(`PASS ${tag} Chrome high UI: 12 prizes, red fixed names, five catalog details, craft/ascend cancellation, exact payment, stage preservation, equipped color, actual nineteen-grade pity delivery, cumulative claim, IndexedDB reload, poor/full-bag disabling, 1440/1080/850/761/390/320px. Imported mechanics fixtures, not natural progression.`);
+  console.log(`PASS ${tag} Chrome high UI: 36 prizes, red fixed names, five catalog details, craft/ascend cancellation, exact payment, stage preservation, equipped color, actual nineteen-grade pity delivery, cumulative claim, IndexedDB reload, poor/full-bag disabling, 1440/1080/850/761/390/320px. Imported mechanics fixtures, not natural progression.`);
 } finally { await browser.close(); }

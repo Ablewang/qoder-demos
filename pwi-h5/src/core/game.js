@@ -9,7 +9,7 @@ import { matchesHighEquip } from '../data/high-equipment.js';
 import { buildMainline, makeBounty, BOUNTY_DAILY } from '../data/quests.js';
 import { ENCOUNTERS, ENCOUNTER_IDS } from '../data/encounters.js';
 import { createPlayer, stats, recommendedAttributes, gainExp, expNeed, makeMonster, monsterReward, BAG_LIMIT, dayKey } from './model.js';
-import { createBattle, takeTurn, pickAutoAction } from './combat.js';
+import { createBattle, takeTurn, pickAutoAction, enableRealtime, advanceRealtime, realtimeAction } from './combat.js';
 
 import { validateSnapshot } from './schema.js';
 import { ensureEquipment, wearEquipment, validateEquipment } from './equipment.js';
@@ -88,7 +88,7 @@ export class Game {
     this.p.gold -= fee; this.p.hp = s.hp; this.p.mp = s.mp;
     this.event(`客栈休息，花费${fee}金币，状态已恢复。`);  }
   useItem(id) {
-    if (this.busy) return this.turn(`item:${id}`);
+    if (this.busy) return this.battle.rt ? this.realtimeAction(`item:${id}`) : this.turn(`item:${id}`);
     const it = ITEMS[id]; if (!it || !(this.p.items[id] > 0)) throw new Error('物品不足。');
     if (this.p.lv < it.lv) throw new Error(`需要${it.lv}级才能使用。`);
     const s = stats(this.p);
@@ -417,11 +417,31 @@ export class Game {
     if (result) this.resolveBattle(); return result;
   }
   autoTurn() {
+    if (this.battle?.rt) throw new Error('实时战斗不能使用旧自动回合。');
     if (!this.busy) return;
     const { action, targetId } = pickAutoAction(this.p, this.battle); return this.turn(action, targetId);
   }
+  enableRealtime(layout) {
+    if (!this.busy) throw new Error('当前没有进行中的战斗。');
+    return enableRealtime(this.p, this.battle, layout);
+  }
+  advanceRealtime(options = {}) {
+    if (!this.busy) throw new Error('当前没有进行中的战斗。');
+    const result = advanceRealtime(this.p, this.battle, options);
+    if (result) this.resolveBattle();
+    return result;
+  }
+  realtimeAction(action, targetId) {
+    if (!this.busy) throw new Error('当前没有进行中的战斗。');
+    const result = realtimeAction(this.p, this.battle, action, targetId);
+    if (result) this.resolveBattle();
+    return result;
+  }
   resolveBattle() {
-    const b = this.battle; const ctx = b.context;
+    const b = this.battle;
+    if (!b?.result || b.resolved) return;
+    b.resolved = true;
+    const ctx = b.context;
     wearEquipment(this.p);
     const s = stats(this.p); this.p.hp = Math.min(this.p.hp, s.hp); this.p.mp = Math.min(this.p.mp, s.mp);
     if (b.result === 'win') {

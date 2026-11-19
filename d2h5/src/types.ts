@@ -107,19 +107,20 @@ export interface GameEvent {
 }
 export interface Control { move: Point; aim: Point | null; aimMonster: string | null; left: boolean; right: boolean }
 export interface Summon extends Point { uid: string; name: string; life: number; maxLife: number; min: number; max: number; cooldown: number; duration: number; color: string }
-export type Panel = 'inventory' | 'character' | 'skills' | 'quests' | 'waypoint' | 'stash' | 'cube' | 'vendor' | 'help' | 'catalog' | 'none';
+export interface GamblingOffer { uid: string; code: string; item: Item }
+export type Panel = 'inventory' | 'character' | 'skills' | 'quests' | 'waypoint' | 'stash' | 'cube' | 'vendor' | 'gamble' | 'help' | 'catalog' | 'none';
 export interface CharacterSave {
   id: string; name: string; classId: ClassId; level: number; difficulty: Difficulty; timestamp: number;
 }
 export interface GameState {
   screen: 'intro' | 'title' | 'creation' | 'game'; player: Player | null; area: AreaState | null;
-  characters: CharacterSave[]; activeSaveId: string | null; storageStatus: 'loading' | 'ready' | 'error'; storageError: string; loadingSave: boolean;
+  characters: CharacterSave[]; activeSaveId: string | null; storageStatus: 'loading' | 'ready' | 'error'; storageError: string; loadingSave: boolean; savingAndExiting: boolean;
   stats: DerivedStats | null; panel: Panel; projectiles: Projectile[]; effects: Effect[]; summons: Summon[];
   events: GameEvent[]; eventSeq: number; facing: number; moving: boolean;
   messages: {text: string; time: number; kind: 'info' | 'loot' | 'error'}[];
   tick: number; seed: number; paused: boolean; automap: boolean; showLoot: boolean;
   target: Point | null; selectedMonster: string | null; selectedItem: string | null; identifySource: string | null;
-  npc: string | null; vendorItems: Item[]; dialogue: string; saved: boolean;
+  npc: string | null; vendorItems: Item[]; gamblingOffers: GamblingOffer[]; dialogue: string; saved: boolean;
 }
 export type Action =
   | {type: 'new'; classId: ClassId; name: string}
@@ -133,10 +134,11 @@ export type Action =
   | {type: 'move-item'; uid: string; x: number; y: number}
   | {type: 'use-item'; uid: string; targetUid?: string} | {type: 'cancel-identify'}
   | {type: 'identify'; uid?: string} | {type: 'buy'; uid: string} | {type: 'sell'; uid: string}
+  | {type: 'gamble-open'} | {type: 'gamble-refresh'} | {type: 'gamble-buy'; uid: string}
   | {type: 'repair'} | {type: 'heal'} | {type: 'portal'} | {type: 'travel'; areaId: number}
   | {type: 'storage'; uid: string; destination: 'inventory' | 'stash' | 'cube'}
   | {type: 'socket'; itemUid: string; runeUid: string} | {type: 'transmute'}
-  | {type: 'save'} | {type: 'run'} | {type: 'map'} | {type: 'loot'} | {type: 'pause'}
+  | {type: 'save'} | {type: 'save-and-title'} | {type: 'run'} | {type: 'map'} | {type: 'loot'} | {type: 'pause'}
   | {type: 'swap'} | {type: 'respawn'} | {type: 'respec'}
   | {type: 'difficulty'; difficulty: Difficulty};
 export type Dispatch = (action: Action) => void;

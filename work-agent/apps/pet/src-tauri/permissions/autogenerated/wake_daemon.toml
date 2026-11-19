@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-wake-daemon"
+description = "Enables the wake_daemon command without any pre-configured scope."
+commands.allow = ["wake_daemon"]
+
+[[permission]]
+identifier = "deny-wake-daemon"
+description = "Denies the wake_daemon command without any pre-configured scope."
+commands.deny = ["wake_daemon"]

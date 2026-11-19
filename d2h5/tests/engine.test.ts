@@ -5,8 +5,8 @@ import { LEGACY_CHARACTER_ID } from '../src/storage';
 import type { SaveRecord } from '../src/storage';
 import { createPlayer, deriveStats, manaRegeneration, skillLevel } from '../src/rules';
 import type { Rng } from '../src/types';
-import { consumePotion, createItem, createStartingItems, insertSocket, rollLoot } from '../src/items';
-import { createArea, getSurfaceRegion, hasLineOfSight } from '../src/world';
+import { consumePotion, createItem, createStartingItems, insertSocket, rollLoot, STASH_HEIGHT, STASH_WIDTH } from '../src/items';
+import { createArea, getSurfaceRegion, hasLineOfSight, questKey } from '../src/world';
 
 const memoryStore = () => {
   const values = new Map<string, SaveRecord>();
@@ -57,6 +57,61 @@ for (const code of ['hp1', 'hp2', 'hp3', 'hp4', 'hp5', 'mp1', 'mp2', 'mp3', 'mp4
   assert.deepEqual(p.belt, belt);
 });
 
+test('private stash accepts a 10 by 10 grid while preserving existing item coordinates', () => {
+  const { engine, p } = inventoryUseFixture(), existing = createItem('cm1', 1, () => .5);
+  Object.assign(existing, { uid: 'existing-stash-item', x: 5, y: 7 }); p.inventory = []; p.stash = [existing];
+  engine.dispatch({ type: 'panel', panel: 'stash' });
+  for (let index = 0; index < STASH_WIDTH * STASH_HEIGHT - 1; index++) {
+    const item = createItem('cm1', 1, () => .5); item.uid = `expanded-stash-${index}`; p.inventory = [item];
+    engine.dispatch({ type: 'storage', uid: item.uid, destination: 'stash' }); assert.equal(p.inventory.length, 0);
+  }
+  assert.equal(p.stash.length, 100); assert.deepEqual({ x: existing.x, y: existing.y }, { x: 5, y: 7 });
+  assert.equal(new Set(p.stash.map(item => `${item.x}:${item.y}`)).size, 100);
+  assert.ok(p.stash.every(item => item.x >= 0 && item.x < STASH_WIDTH && item.y >= 0 && item.y < STASH_HEIGHT));
+  const overflow = createItem('cm1', 1, () => .5); overflow.uid = 'expanded-stash-overflow'; p.inventory = [overflow];
+  engine.dispatch({ type: 'storage', uid: overflow.uid, destination: 'stash' });
+  assert.deepEqual(p.inventory, [overflow]); assert.equal(p.stash.length, 100); assert.match(engine.state.messages.at(-1)!.text, /空间不足/);
+});
+
+test('talking to Akara automatically heals to current equipment caps without consuming gold or owned items', () => {
+  const { engine, p, add } = inventoryUseFixture();
+  const charm = add('cm1'); charm.identified = true; charm.mods = { life: 20, mana: 25 }; engine.state.stats = deriveStats(p);
+  p.life = 1; engine.dispatch({ type: 'use-item', uid: add('hp1').uid });
+  p.life = p.mana = p.stamina = 1;
+  const owned = structuredClone({ inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold });
+  const akara = engine.state.area!.objects.find(o => o.npcId === 'akara')!; Object.assign(p, { x: akara.x, y: akara.y });
+  engine.dispatch({ type: 'interact', uid: akara.uid });
+  assert.equal(p.life, engine.state.stats!.maxLife); assert.equal(p.mana, engine.state.stats!.maxMana); assert.equal(p.stamina, engine.state.stats!.maxStamina);
+  assert.equal(engine.state.npc, 'akara'); assert.equal(engine.state.panel, 'vendor'); assert.ok(engine.state.vendorItems.length > 0);
+  assert.match(engine.state.messages.at(-1)!.text, /生命和法力已恢复/);
+  assert.equal((engine as unknown as { regeneration: unknown[] }).regeneration.length, 0);
+  assert.deepEqual({ inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold }, owned);
+  const skillPoints = p.skillPoints; engine.dispatch({ type: 'panel', panel: 'none' }); engine.dispatch({ type: 'interact', uid: akara.uid });
+  assert.equal(p.skillPoints, skillPoints); assert.deepEqual({ inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold }, owned);
+});
+test('a distant click heals only after the player approaches and talks to Akara', () => {
+  const { engine, p } = inventoryUseFixture(), area = engine.state.area!, akara = area.objects.find(o => o.npcId === 'akara')!;
+  Object.assign(p, area.spawn); p.life = p.mana = 1;
+  assert.ok(Math.hypot(p.x - akara.x, p.y - akara.y) > 2);
+  engine.dispatch({ type: 'interact', uid: akara.uid }); assert.equal(p.life, 1); assert.equal(p.mana, 1); assert.equal(engine.state.npc, null);
+  for (let frame = 0; frame < 500 && engine.state.panel !== 'vendor'; frame++) engine.step();
+  assert.equal(engine.state.npc, 'akara'); assert.ok(Math.hypot(p.x - akara.x, p.y - akara.y) <= 2);
+  assert.equal(p.life, engine.state.stats!.maxLife); assert.equal(p.mana, engine.state.stats!.maxMana);
+});
+for (const gate of ['paused', 'dead', 'missing', 'non-healer', 'outside-town'] as const) test(`Akara automatic healing respects the ${gate} interaction gate`, () => {
+  const { engine, p } = inventoryUseFixture(), area = engine.state.area!;
+  const npc = area.objects.find(o => o.npcId === (gate === 'non-healer' ? 'charsi' : 'akara'))!;
+  Object.assign(p, { x: npc.x, y: npc.y });
+  if (gate === 'paused') engine.state.paused = true;
+  if (gate === 'dead') p.dead = true;
+  if (gate === 'outside-town') {
+    const field = createArea(2, 'normal', 123, p); field.monsters = []; Object.assign(p, field.spawn);
+    field.objects.push({ ...npc, x: p.x, y: p.y, regionId: 2 }); engine.state.area = field;
+  }
+  p.life = p.mana = 1; const gold = p.gold;
+  engine.dispatch({ type: 'interact', uid: gate === 'missing' ? 'missing-npc' : npc.uid });
+  assert.equal(p.life, 1); assert.equal(p.mana, 1); assert.equal(p.gold, gold);
+});
 for (const code of ['tsc', 'tbk']) test(`inventory portal uses exact ${code} UID instead of another scroll or book`, () => {
   const { engine, p, add } = inventoryUseFixture(false), otherBook = add('tbk', 9), otherScroll = add('tsc'), source = add(code, 3);
   const before = structuredClone([otherBook, otherScroll]);
@@ -162,9 +217,50 @@ test('automatic portal and identification still consume available sources and Ca
   const { engine, p, add, target } = inventoryUseFixture(false), portal = add('tbk', 2), book = add('ibk', 2), first = target();
   engine.dispatch({ type: 'portal' }); assert.equal(portal.quantity, 1);
   engine.dispatch({ type: 'identify', uid: first.uid }); assert.equal(first.identified, true); assert.equal(book.quantity, 1);
-  engine.state.area = createArea(1, 'normal', 123, p); engine.state.npc = 'cain'; (engine as unknown as { npcServices: string[] }).npcServices = ['identify'];
+  p.quests[questKey(p, 'a1q3')] = 3; engine.state.area = createArea(1, 'normal', 123, p);
+  const cain = engine.state.area.objects.find(o => o.npcId === 'cain')!; Object.assign(p, { x: cain.x, y: cain.y }); engine.dispatch({ type: 'interact', uid: cain.uid });
   const second = target(), third = target(); engine.dispatch({ type: 'identify' });
   assert.equal(second.identified, true); assert.equal(third.identified, true); assert.equal(book.quantity, 1);
+});
+
+test('merchant conversations cannot identify all or silently spend player scrolls', () => {
+  const { engine, p, add, target } = inventoryUseFixture(); add('ibk', 5); add('isc'); target(); target();
+  for (const npcId of ['akara', 'charsi', 'gheed', 'warriv']) {
+    const npc = engine.state.area!.objects.find(o => o.npcId === npcId)!; Object.assign(p, { x: npc.x, y: npc.y }); engine.dispatch({ type: 'interact', uid: npc.uid });
+    const owned = structuredClone({ inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold });
+    engine.dispatch({ type: 'identify' });
+    assert.deepEqual({ inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold }, owned);
+    assert.match(engine.state.messages.at(-1)!.text, /已获救的凯恩/);
+  }
+});
+for (const gate of ['unrescued', 'other-difficulty', 'closed', 'far', 'missing', 'field', 'paused', 'dead', 'no-service'] as const) test(`Cain identify-all respects the ${gate} gate without falling back to scrolls`, () => {
+  const { engine, p, add, target } = inventoryUseFixture(); add('ibk', 5); add('isc'); target(); target();
+  p.quests[questKey(p, 'a1q3')] = 3; engine.state.area = createArea(1, p.difficulty, 123, p);
+  const cain = engine.state.area.objects.find(o => o.npcId === 'cain')!; Object.assign(p, { x: cain.x, y: cain.y }); engine.dispatch({ type: 'interact', uid: cain.uid });
+  if (gate === 'unrescued') p.quests[questKey(p, 'a1q3')] = 1;
+  if (gate === 'other-difficulty') p.difficulty = 'nightmare';
+  if (gate === 'closed') engine.dispatch({ type: 'panel', panel: 'none' });
+  if (gate === 'far') p.x -= 8;
+  if (gate === 'missing') engine.state.area.objects = engine.state.area.objects.filter(o => o.uid !== cain.uid);
+  if (gate === 'field') {
+    const field = createArea(2, p.difficulty, 123, p); field.monsters = []; Object.assign(p, field.spawn);
+    field.objects.push({ ...cain, x: p.x, y: p.y, regionId: 2 }); engine.state.area = field;
+  }
+  if (gate === 'paused') engine.state.paused = true;
+  if (gate === 'dead') p.dead = true;
+  if (gate === 'no-service') (engine as unknown as { npcServices: string[] }).npcServices = [];
+  const before = structuredClone(p); engine.dispatch({ type: 'identify' }); assert.deepEqual(p, before);
+});
+test('rescued Cain identifies every inventory item for free without rerolling or changing other owned items', () => {
+  const { engine, p, target } = inventoryUseFixture(), first = target(), second = target(), stored = target();
+  p.inventory.splice(p.inventory.indexOf(stored), 1); p.stash.push(stored);
+  p.quests[questKey(p, 'a1q3')] = 3; engine.state.area = createArea(1, p.difficulty, 123, p);
+  const cain = engine.state.area.objects.find(o => o.npcId === 'cain')!; Object.assign(p, { x: cain.x, y: cain.y }); engine.dispatch({ type: 'interact', uid: cain.uid });
+  const expected = structuredClone(p); expected.inventory.forEach(item => item.identified = true);
+  engine.dispatch({ type: 'identify' }); assert.deepEqual(p, expected);
+  assert.equal(first.identified, true); assert.equal(second.identified, true); assert.equal(stored.identified, false);
+  assert.equal(engine.state.stats!.maxLife, 80); assert.equal(engine.state.stats!.maxMana, 85);
+  const before = structuredClone(p); engine.dispatch({ type: 'identify' }); assert.deepEqual(p, before); assert.match(engine.state.messages.at(-1)!.text, /没有需要鉴定/);
 });
 
 for (const action of ['cancel-identify', 'panel', 'title', 'new', 'area'] as const) test(`${action} clears runtime identification without spending its source`, () => {
@@ -470,6 +566,39 @@ test('failed writes do not report saved and later writes can recover', async () 
   assert.equal(engine.state.saved,false); assert.match(engine.state.storageError,/写入失败/);
   fail = false; await engine.save(); assert.equal(engine.state.saved,true); assert.equal(engine.state.storageError,'');
 });
+test('save-and-title waits for queued writes, blocks duplicate exits and refreshes the roster before returning', async () => {
+  const memory = memoryStore(); let blocked = false, writes = 0, release!: () => void;
+  const gate = new Promise<void>(resolve => { release = resolve; });
+  const store = { ...memory, put: async (record: SaveRecord) => { if (blocked) { writes++; await gate; } await memory.put(record); } };
+  const engine = new Engine(store); await engine.initialize();
+  engine.dispatch({ type: 'new', classId: 'pal', name: '保留旅人' }); await engine.save(false);
+  const otherId = engine.state.activeSaveId!, other = await store.get(otherId);
+  engine.dispatch({ type: 'new', classId: 'sor', name: '保存返回' }); await engine.save(false);
+  const id = engine.state.activeSaveId!, p = engine.state.player!, owned = structuredClone({ inventory: p.inventory, equipment: p.equipment });
+  const before = await store.get(id); blocked = true;
+  p.gold = 321; void engine.save(false); p.gold = 789;
+  const exiting = engine.saveAndReturnToTitle();
+  assert.equal(engine.state.savingAndExiting, true); assert.equal(engine.state.paused, true); assert.equal(engine.state.screen, 'game');
+  for (const action of [{ type: 'save-and-title' }, { type: 'save' }, { type: 'title' }, { type: 'creation' }, { type: 'pause' }, { type: 'new', classId: 'bar', name: '不能创建' }] as const) engine.dispatch(action);
+  await Promise.resolve(); assert.deepEqual(await store.get(id), before); assert.equal(engine.state.activeSaveId, id); assert.equal(engine.state.paused, true);
+  release(); await exiting;
+  assert.equal(writes, 2); assert.equal(engine.state.screen, 'title'); assert.equal(engine.state.savingAndExiting, false); assert.equal(engine.state.saved, true);
+  assert.equal((await store.get(id))!.player.gold, 789); assert.equal(engine.state.characters.find(c => c.id === id)!.name, p.name);
+  assert.deepEqual({ inventory: p.inventory, equipment: p.equipment }, owned); assert.deepEqual(await store.get(otherId), other);
+  await engine.load(id); assert.equal(engine.state.player!.gold, 789); assert.equal(engine.state.area!.def.town, true);
+});
+test('failed save-and-title stays paused, preserves the prior record and allows a successful retry', async () => {
+  const memory = memoryStore(); let fail = false;
+  const store = { ...memory, put: async (record: SaveRecord) => { if (fail) throw new Error('quota'); await memory.put(record); } };
+  const engine = new Engine(store); await engine.initialize(); engine.dispatch({ type: 'new', classId: 'sor', name: '保存重试' }); await engine.save(false);
+  const id = engine.state.activeSaveId!, p = engine.state.player!, before = await store.get(id);
+  p.gold = 456; fail = true; await engine.saveAndReturnToTitle();
+  assert.equal(engine.state.screen, 'game'); assert.equal(engine.state.paused, true); assert.equal(engine.state.saved, false);
+  assert.equal(engine.state.savingAndExiting, false); assert.match(engine.state.storageError, /写入失败/); assert.deepEqual(await store.get(id), before);
+  assert.equal(engine.state.player, p); assert.equal(p.gold, 456);
+  fail = false; await engine.saveAndReturnToTitle(); assert.equal(engine.state.screen, 'title'); assert.equal(engine.state.saved, true);
+  assert.equal(engine.state.storageError, ''); assert.equal((await store.get(id))!.player.gold, 456); assert.equal(memory.values.size, 1);
+});
 test('missing and invalid character records are not loaded or overwritten', async () => {
   const store = memoryStore(), engine = new Engine(store); await engine.initialize();
   await engine.load('missing'); assert.equal(engine.state.player,null); assert.match(engine.state.storageError,/找不到/);
@@ -732,6 +861,33 @@ test('actual Leaf resolves native levels, exact spell damage, mana and Warmth th
   const mana = p.mana;
   engine.dispatch({ type: 'attack', point: m, right: true });
   assert.equal(p.mana, mana); assert.equal(engine.state.projectiles.length, 0); assert.equal(m.life, 991);
+});
+
+test('weapon swap updates active stats in panels without moving or rerolling owned equipment', () => {
+  const engine = new Engine(); engine.dispatch({ type: 'new', classId: 'sor', name: '武器切换测试' });
+  const p = engine.state.player!, first = createItem('hax', 1, () => .5), second = createItem('sst', 1, () => .5);
+  first.mods = { mana: 10 }; second.mods = { mana: 40, 'skill:36': 1 };
+  p.equipment = { weapon: first, weapon2: second }; engine.state.stats = deriveStats(p);
+  const equipment = structuredClone(p.equipment), inventory = structuredClone(p.inventory), initialMana = engine.state.stats.maxMana;
+  for (const panel of ['inventory', 'character', 'vendor', 'gamble', 'none'] as const) {
+    engine.state.panel = panel;
+    engine.dispatch({ type: 'swap' });
+    assert.equal(p.weaponSwap, true); assert.equal(engine.state.panel, panel);
+    assert.equal(engine.state.stats!.maxMana, initialMana + 30); assert.equal(skillLevel(p, 36), 1);
+    assert.match(engine.state.messages.at(-1)!.text, /武器组 II$/);
+    engine.dispatch({ type: 'swap' });
+    assert.equal(p.weaponSwap, false); assert.equal(engine.state.stats!.maxMana, initialMana); assert.equal(skillLevel(p, 36), 0);
+    assert.deepEqual(p.equipment, equipment); assert.deepEqual(p.inventory, inventory);
+  }
+});
+
+for (const gate of ['paused', 'dead'] as const) test(`weapon swap rejects ${gate} without altering equipment or stats`, () => {
+  const engine = new Engine(); engine.dispatch({ type: 'new', classId: 'sor', name: '武器切换门槛' });
+  engine.state.panel = 'inventory';
+  if (gate === 'paused') engine.state.paused = true; else engine.state.player!.dead = true;
+  const before = structuredClone({ player: engine.state.player, stats: engine.state.stats, messages: engine.state.messages });
+  engine.dispatch({ type: 'swap' });
+  assert.deepEqual({ player: engine.state.player, stats: engine.state.stats, messages: engine.state.messages }, before);
 });
 
 test('town attacks neither consume mana nor create projectiles', () => {
@@ -1020,6 +1176,39 @@ test('insufficient mana never emits a cast or deals damage and does not start a 
   p.mana = 2.5; engine.step();
   assert.equal(engine.state.events[0].kind, 'cast'); assert.equal(engine.state.events[0].tick, 41);
   assert.equal(p.mana, 2 / 256); assert.equal(m.life, 9997);
+});
+
+test('right press explains missing staff-granted Fire Bolt after swapping and casting recovers without changing items', () => {
+  const { engine, p } = inventoryUseFixture(false);
+  const owned = structuredClone({ inventory: p.inventory, equipment: p.equipment, gold: p.gold });
+  const aim = { x: p.x + 2, y: p.y };
+  assert.equal(p.skills[36] ?? 0, 0); assert.equal(skillLevel(p, 36), 1);
+  engine.setControl({ right: true, aim }, true);
+  engine.setControl({ right: false });
+  for (let frame = 0; frame < 13; frame++) engine.step();
+  assert.equal(engine.state.events.filter(e => e.actor === 'player' && e.kind === 'cast').length, 1);
+  engine.dispatch({ type: 'swap' }); assert.equal(skillLevel(p, 36), 0);
+  const mana = p.mana, seq = engine.state.eventSeq;
+  engine.setControl({ right: true, aim }, true);
+  assert.equal(engine.state.eventSeq, seq); assert.equal(p.mana, mana);
+  assert.match(engine.state.messages.at(-1)!.text, /未获得火弹.*武器组/);
+  engine.setControl({ right: false });
+  for (let frame = 0; frame < 13; frame++) engine.step();
+  assert.equal(engine.state.eventSeq, seq);
+  engine.dispatch({ type: 'swap' }); assert.equal(skillLevel(p, 36), 1);
+  const restoredMana = p.mana;
+  engine.setControl({ right: true, aim }, true); engine.setControl({ right: false });
+  assert.equal(engine.state.events.filter(e => e.actor === 'player' && e.kind === 'cast').length, 2);
+  assert.equal(p.mana, restoredMana - 2.5);
+  assert.deepEqual({ inventory: p.inventory, equipment: p.equipment, gold: p.gold }, owned);
+});
+
+test('explicit right press in town explains the restriction without spending mana or emitting a spell', () => {
+  const { engine, p } = inventoryUseFixture(), mana = p.mana, events = structuredClone(engine.state.events);
+  engine.setControl({ right: true, aim: { x: p.x + 2, y: p.y } }, true);
+  engine.setControl({ right: false });
+  assert.equal(p.mana, mana); assert.deepEqual(engine.state.events, events);
+  assert.match(engine.state.messages.at(-1)!.text, /营地内不能.*野外/);
 });
 
 test('held unlearned skills cannot consume mana, damage, or emit combat events', () => {

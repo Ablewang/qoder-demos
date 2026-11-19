@@ -85,8 +85,8 @@ try {
       await reject(() => command(api, '/v1/daily/sign'), 'NO_CHARACTER');
       await command(api, '/v1/character', { name: '测试角色', cls: 'blademaster' });
       check(api.revision === 1 && api.game.p.wallet.yuanbao === 300, 'Creation metadata');
-      check(API_ROUTES.length === 73 && API_ROUTES.filter((r) => r.method === 'GET').length === 18 && API_ROUTES.filter((r) => r.method === 'POST').length === 55, 'Expected inspected route table: 73 routes / 18 GET / 55 POST');
-      check(new Set(API_ROUTES.map((r) => `${r.method}:${r.path}`)).size === 73, 'Duplicate advertised route');
+      check(API_ROUTES.length === 76 && API_ROUTES.filter((r) => r.method === 'GET').length === 18 && API_ROUTES.filter((r) => r.method === 'POST').length === 58, 'Expected inspected route table: 76 routes / 18 GET / 58 POST');
+      check(new Set(API_ROUTES.map((r) => `${r.method}:${r.path}`)).size === 76, 'Duplicate advertised route');
       same(API_ROUTES.find((r) => r.path === '/v1/world/explore'), { method: 'POST', path: '/v1/world/explore', fields: {} }, 'Explore route contract');
       same(API_ROUTES.find((r) => r.path === '/v1/world/encounter'), { method: 'POST', path: '/v1/world/encounter', fields: { choice: 'string' } }, 'Encounter route contract');
       for (const r of API_ROUTES.filter((r) => r.method === 'GET')) check((await api.request('GET', r.path)).ok, r.path);

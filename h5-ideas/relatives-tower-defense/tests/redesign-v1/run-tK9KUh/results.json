@@ -1,0 +1,54 @@
+{
+  "complete": false,
+  "headless": true,
+  "output": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-tK9KUh",
+  "routes": [],
+  "geometry": [
+    {
+      "label": "fishpond/ask-nainai/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "cold-sangu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/ask-nainai/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "cold-erjiu",
+      "problems": [
+        {
+          "type": "text-outside",
+          "class": "choice-line",
+          "text": "「二舅先说您的鱼塘！去年说要扩，扩成没？」",
+          "element": {
+            "x": 30,
+            "y": 599.140625,
+            "right": 363,
+            "bottom": 625.53125
+          },
+          "glyph": {
+            "x": 30,
+            "y": 601.140625,
+            "right": 366,
+            "bottom": 623.140625
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-tK9KUh/fishpond-ask-nainai-reaction.png",
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-tK9KUh/fishpond-ask-nainai-next-failure.png"
+  ],
+  "downloads": [],
+  "checks": [],
+  "errors": [],
+  "external": [],
+  "fingerprints": null,
+  "failure": "AssertionError [ERR_ASSERTION]: fishpond/ask-nainai/next: [{\"type\":\"text-outside\",\"class\":\"choice-line\",\"text\":\"「二舅先说您的鱼塘！去年说要扩，扩成没？」\",\"element\":{\"x\":30,\"y\":599.140625,\"right\":363,\"bottom\":625.53125},\"glyph\":{\"x\":30,\"y\":601.140625,\"right\":366,\"bottom\":623.140625}}]\n+ actual - expected\n\n+ [\n+   {\n+     class: 'choice-line',\n+     element: {\n+       bottom: 625.53125,\n+       right: 363,\n+       x: 30,\n+       y: 599.140625\n+     },\n+     glyph: {\n+       bottom: 623.140625,\n+       right: 366,\n+       x: 30,\n+       y: 601.140625\n+     },\n+     text: '「二舅先说您的鱼塘！去年说要扩，扩成没？」',\n+     type: 'text-outside'\n+   }\n+ ]\n- []\n\n    at audit (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:90:10)\n    at async goldenRoutes (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:154:51)\n    at async file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:281:3"
+}

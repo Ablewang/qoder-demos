@@ -12,20 +12,27 @@ const equip = (slot, quality) => ({ type: 'equip', slot, quality, quantity: 1, l
 const namedEquip = (templateId) => ({ type: 'equip', templateId, quantity: 1 });
 const cosmetic = (cosmeticId) => ({ type: 'cosmetic', cosmeticId, quantity: 1 });
 const classicItems = new Set(['huanxian', 'tiangang', 'disha', 'qiankun', 'charmHp', 'charmMp', 'zongzi', 'julin']);
+// 乾坤袋“热卖”角标：本作推荐陈列，不代表任何真实或官方销量。
+const hotItems = new Set(['goldChest', 'zongzi', 'treasureKey', 'huanxian', 'tiangang', 'disha', 'qiankun', 'charmHp', 'charmMp', 'julin']);
 const product = (id, name, category, currency, price, quantity, dailyLimit, minLevel, rewards) =>
   ({ id, name, category, currency, price, quantity, dailyLimit, minLevel, rewards, enabled: true,
-    catalog: classicItems.has(id) ? 'classic' : 'adaptation' });
+    catalog: classicItems.has(id) ? 'classic' : 'adaptation', tags: hotItems.has(id) ? ['hot'] : [] });
 const prize = (id, name, weight, rarity, rewards) => ({ id, name, weight, rarity, rewards });
 
 export const ECONOMY_LIMITS = freeze({
   purchaseQuantity: 99, exchangeQuantity: 99, openCount: 10, history: 100,
   orders: 100, balance: 1e12, itemStack: 1e7, bag: 80, pity: 50,
 });
+// 按端游乾坤袋货架习惯分页；只陈列本作已有用途的物品。本作未实现宠物系统，故不设宠物页。
 export const SHOP_CATEGORIES = freeze([
-  { id: 'supplies', name: '本作补给' }, { id: 'cultivation', name: '精炼与灵符' },
-  { id: 'gems', name: '魂石·改编' }, { id: 'bundles', name: '本作礼包' },
-  { id: 'outfit', name: '本作时装' }, { id: 'mount', name: '本作骑宠' },
-  { id: 'flyer', name: '本作飞行器' }, { id: 'activity', name: '宝盒与粽礼' },
+  { id: 'supplies', name: '药品补给', desc: '生命/真气药、回城符、复活卷轴。' },
+  { id: 'cultivation', name: '精炼强化', desc: '幻仙石、天罡石、地煞石、乾坤石与本作开孔/神铸材料。' },
+  { id: 'gems', name: '镶嵌宝石', desc: '本作三阶魂石，镶嵌前需先开孔。' },
+  { id: 'function', name: '功能道具', desc: '护身符、守神符、聚灵丹与秘宝钥匙。' },
+  { id: 'outfit', name: '时装外观', desc: '角色名片文字时装，无属性加成。' },
+  { id: 'mount', name: '坐骑飞行', desc: '名片坐骑外观与30级飞行器。' },
+  { id: 'activity', name: '宝箱粽礼', desc: '买入后存入包裹，消耗物品本身直接开启，不另扣秘宝钥匙。' },
+  { id: 'bundles', name: '超值礼包', desc: '本作组合礼包；仅在内容全部可同货币单买时显示省额。' },
 ]);
 export const COSMETICS = freeze([
   { id: 'outfitCloud', name: '流云素衣', slot: 'outfit', minLevel: 1, desc: '角色名片的流云时装文字外观。' },
@@ -48,7 +55,7 @@ const supplies = [
   ))),
   product('town', '回城符', 'supplies', 'boundYuanbao', 2, 3, 10, 1, [item('town', 3)]),
   product('revive', '复活卷轴', 'supplies', 'yuanbao', 8, 1, 10, 1, [item('revive')]),
-  product('julin', '聚灵丹', 'supplies', 'yuanbao', 12, 1, 10, 1, [item('julin')]),
+  product('julin', '聚灵丹', 'function', 'yuanbao', 12, 1, 10, 1, [item('julin')]),
 ];
 const cultivation = [
   ['huanxian', '幻仙石', 'boundYuanbao', 5, 5, 20],
@@ -62,7 +69,7 @@ const cultivation = [
   ['charmHp', '黄金护身符', 'yuanbao', 20, 1, 10],
   ['charmMp', '黄金守神符', 'yuanbao', 16, 1, 10],
 ].map(([id, name, currency, price, quantity, dailyLimit]) => product(
-  id, name, 'cultivation', currency, price, quantity, dailyLimit, 1, [item(id, quantity)],
+  id, name, id.startsWith('charm') ? 'function' : 'cultivation', currency, price, quantity, dailyLimit, 1, [item(id, quantity)],
 ));
 const gemTypes = [
   ['Hp', '黄沉之石'], ['Mp', '暗青之石'], ['Patk', '火红之石'], ['Matk', '白雾之石'], ['Def', '磐甲石'],
@@ -87,26 +94,50 @@ export const SHOP_PRODUCTS = freeze([
     ['outfitBamboo', '青竹雅装', 'outfit', 'boundYuanbao', 120, 1],
     ['mountDeer', '踏露灵鹿', 'mount', 'yuanbao', 180, 1],
     ['mountJade', '碧玉灵驹', 'mount', 'yuanbao', 220, 1],
-    ['flyerKite', '纸鸢飞行器', 'flyer', 'boundYuanbao', 160, 30],
-    ['flyerLotus', '莲华飞行器', 'flyer', 'yuanbao', 240, 30],
+    ['flyerKite', '纸鸢飞行器', 'mount', 'boundYuanbao', 160, 30],
+    ['flyerLotus', '莲华飞行器', 'mount', 'yuanbao', 240, 30],
   ].map(([id, name, category, currency, price, minLevel]) =>
     product(id, name, category, currency, price, 1, 1, minLevel, [cosmetic(id)])),
-  product('treasureKey', '秘宝钥匙', 'activity', 'boundYuanbao', 8, 1, 20, 1, [item('treasureKey')]),
+  product('treasureKey', '秘宝钥匙', 'function', 'boundYuanbao', 8, 1, 20, 1, [item('treasureKey')]),
   product('bronzeChest', '青铜宝箱', 'activity', 'boundYuanbao', 10, 1, 10, 1, [item('bronzeChest')]),
   product('goldChest', '黄金宝箱', 'activity', 'yuanbao', 25, 1, 10, 1, [item('goldChest')]),
   product('zongzi', '幸运粽子', 'activity', 'boundYuanbao', 6, 1, 10, 1, [item('zongzi')]),
   product('bigZongzi', '大粽子·本作', 'activity', 'yuanbao', 18, 1, 10, 1, [item('bigZongzi')]),
-  product('festivalBundle', '常驻粽礼礼包', 'activity', 'boundYuanbao', 35, 1, 2, 1,
+  product('festivalBundle', '常驻粽礼礼包', 'bundles', 'boundYuanbao', 35, 1, 2, 1,
     [item('zongzi', 2), item('bigZongzi'), item('treasureKey', 2)]),
 ]);
 
 export const HONGYUN_POOL = freeze([
   prize('hyGold', '金币2500', 1200, 'common', [money('gold', 2500)]),
-  prize('hySp', '元神1500', 2000, 'common', [money('sp', 1500)]),
+  prize('hySp', '元神1500', 400, 'common', [money('sp', 1500)]),
+  prize('hyHpSmall', '金创药20', 200, 'common', [item('hp1', 20)]),
+  prize('hyMpSmall', '回灵散20', 200, 'common', [item('mp1', 20)]),
+  prize('hyHpLarge', '大还丹10', 200, 'common', [item('hp2', 10)]),
+  prize('hyMpLarge', '凝神丹10', 200, 'common', [item('mp2', 10)]),
+  prize('hyTown', '回城符3', 200, 'common', [item('town', 3)]),
+  prize('hyRevive', '复活卷轴', 200, 'common', [item('revive')]),
+  prize('hyJulin', '聚灵丹', 200, 'common', [item('julin')]),
+  prize('hyOre', '铁矿10', 200, 'common', [item('ore1', 10)]),
   prize('hyBound', '绑定元宝10', 1500, 'common', [money('boundYuanbao', 10)]),
   prize('hyStone', '幻仙石3', 1500, 'uncommon', [item('huanxian', 3)]),
-  prize('hyGem', '1阶暴击石', 1000, 'uncommon', [item('gemCrit1')]),
-  prize('hyRare', '具名武器·稀有奖档（本作）', 1000, 'rare', [equip('weapon', 2)]),
+  prize('hyGem', '1阶暴击石', 200, 'uncommon', [item('gemCrit1')]),
+  prize('hyTiangang', '天罡石', 80, 'uncommon', [item('tiangang')]),
+  prize('hyDisha', '地煞石', 80, 'uncommon', [item('disha')]),
+  prize('hyQiankun', '乾坤石', 80, 'uncommon', [item('qiankun')]),
+  prize('hySocket', '镶嵌石·本作3', 80, 'uncommon', [item('socketStone', 3)]),
+  prize('hyGemPatk', '2阶火红之石', 80, 'uncommon', [item('gemPatk2')]),
+  prize('hyGemMatk', '2阶白雾之石', 80, 'uncommon', [item('gemMatk2')]),
+  prize('hyGemHp', '2阶黄沉之石', 80, 'uncommon', [item('gemHp2')]),
+  prize('hyGemMp', '2阶暗青之石', 80, 'uncommon', [item('gemMp2')]),
+  prize('hyGemDef', '2阶磐甲石', 80, 'uncommon', [item('gemDef2')]),
+  prize('hyGemMdef', '2阶御灵石', 80, 'uncommon', [item('gemMdef2')]),
+  prize('hyRare', '具名武器·稀有奖档（本作）', 250, 'rare', [equip('weapon', 2)]),
+  prize('hyCharmHp', '黄金护身符', 125, 'rare', [item('charmHp')]),
+  prize('hyCharmMp', '黄金守神符', 125, 'rare', [item('charmMp')]),
+  prize('hyGemAtkLevel', '2阶斗神石', 125, 'rare', [item('gemAtkLevel2')]),
+  prize('hyGemDefLevel', '2阶守神石', 125, 'rare', [item('gemDefLevel2')]),
+  prize('hyMount', '踏露灵鹿', 125, 'rare', [cosmetic('mountDeer')]),
+  prize('hyFlyer', '纸鸢飞行器', 125, 'rare', [cosmetic('flyerKite')]),
   prize('hyLegend', '具名武器·传说奖档（本作）', 300, 'legendary', [equip('weapon', 3)]),
   prize('hyOutfit', '鸿运锦衣', 200, 'legendary', [cosmetic('outfitLucky')]),
   prize('hySovereign19', '★★★千古一色', 100, 'legendary', [namedEquip('axe19c')]),
@@ -160,7 +191,7 @@ export const ECONOMY_RULES = freeze({
   equipment: '装备奖项从有限具名模板选择；稀有/传说只表示本作奖池档，不承诺同级、固定名称色、星数或品质加倍。来源缺失属性另列本作适配。',
   festival: '宝箱与粽子在乾坤袋购买，买入后消耗物品直接打开，不额外扣秘宝钥匙。本作常驻展示，不代表官方当前上架活动。',
   appearance: '外观只展示文字角色名片；不假装3D世界、骑乘动画或空中场景。坐骑时装无数值加成，30级飞行器启用已有飞行资格。',
-  probability: '权重单位为万分之一；每个基础奖池合计10000，即100%。鸿运基础传说率8%；保底条件概率：具名武器·传说奖档（本作）37.5%、鸿运锦衣25%、十九品千古一色12.5%、十八品浩然25%。十七品法袍基础概率5%，不属于传说保底档。所有概率为本作设定。',
+  probability: '权重单位为万分之一；每个基础奖池合计10000，即100%。鸿运36项，传说/稀有/精良/基础分别4/9/12/11项，档率8%/20%/25%/47%；保底条件概率：具名武器·传说奖档（本作）37.5%、鸿运锦衣25%、十九品千古一色12.5%、十八品浩然25%。十七品法袍基础概率5%，不属于传说保底档。所有概率为本作设定。',
   pity: '鸿运每次消耗1把秘宝钥匙，仅支持1抽或10抽。连续49次未得传说后，第50次必得传说；任意传说（包括重复外观补偿）清零连续计数。开箱开粽不增加或重置鸿运保底。',
   capacity: '含装备的奖池须预留本批次数的装备格；不足时整批拒绝，不消耗钥匙/物品、不扣钱、不改保底或历史，传说不会被自动出售或丢弃。消耗品使用独立堆叠，不占装备格。',
   duplicateCosmetic: '抽奖或里程碑得到已拥有外观，真实发放120绑定元宝补偿；商城拒绝重复购买外观。',
@@ -171,6 +202,7 @@ export const ECONOMY_RULES = freeze({
   festivalDaily: { id: 'festival.daily', name: '每日商城补贴', rewards: [money('boundYuanbao', 10)] },
   charm: '黄金护身符每枚600000生命储量，黄金守神符每枚900000真气储量；战斗外追加装填，不直接治疗。生命不高于50%、真气不高于75%时按储量恢复。本作回合检查，不模拟端游10秒/5秒冷却。',
   catalog: '经典道具名称参考端游旧商城；价格、概率和回合效果为本作设定。青铜/黄金宝箱、大粽子、扩展魂石及原创外观属于本作扩展；本作“鸿运秘宝”不是官方“鸿彩秘宝”或“鸿运财宝匣”。',
+  badges: '“热卖”为本作推荐陈列，不代表真实或官方销量；“省”仅在礼包内容全部可在本商城以同一货币单买时，按单买合计与礼包价之差计算；“限购”为每日份数上限。本作没有限时折扣商品，也未实现宠物系统，故不上架宠物。',
 });
 export const ECONOMY_ACTIONS = freeze({
   'shop.buy': { params: ['productId', 'quantity'], quantity: 'integer 1..99, default 1' },

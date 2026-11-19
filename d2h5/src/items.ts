@@ -17,7 +17,7 @@ export const ITEM_LIMITATIONS: string[] = [
   '商店为第一幕基础库存加改编便利商品（大紫、33种符文、35种宝石与骷髅、乔丹之石、3种事件钥匙），并非原版商店；钥匙仅可购买保存，出售乔丹不会召唤黑毛。普通商品取原始底价，乔丹按戒指底价×暗金倍率＋附加价报价；维修为耐久比例估算，未实现原版完整价格/折扣/聚气费用。',
   '药水返回职业基础回复量和持续秒数（原始帧数/25），不包含属性双倍概率、混合药效叠加及解毒/解冻/耐力状态；引擎负责实际回复。',
   '镶嵌的可变符文之语属性及方块打孔使用 Math.random（接口未提供 RNG）；掉落和生成使用调用方 RNG。',
-  '23 个 server/天梯限定符文之语在原版离线模式禁用；未实现珠宝镶嵌。',
+  '55 个原版离线符文之语加重制版边缘覆盖可匹配；其余 22 个 server 限定定义禁用，未实现珠宝镶嵌。',
 ];
 
 const CLASS_IDS: ClassId[] = ['ama', 'sor', 'nec', 'pal', 'bar', 'dru', 'ass'];
@@ -105,7 +105,7 @@ export function getBase(code: string): BaseItem | undefined { return BASE_BY_COD
 export const RUNES: { code: string; name: string; level: number; number: number }[] = BASE_ITEMS.filter(b => /^r\d{2}$/.test(b.code)).map(b => ({ code: b.code, name: b.name, level: b.requiredLevel, number: Number(b.code.slice(1)) })).sort((a, b) => a.number - b.number);
 export const GEMS: { code: string; name: string; type: string; grade: number }[] = GEM_TYPES.flatMap(type => BASE_ITEMS.filter(base => base.type === type && /^gem[0-4]$/.test(text(base.raw, 'type2'))).map(base => ({ code: base.code, name: base.name, type, grade: Number(text(base.raw, 'type2').slice(3)) })).sort((a, b) => a.grade - b.grade));
 const WORD_NAMES: Record<string, string> = { 'Bound by Duty': 'Chains of Honor', Doomsayer: 'Doom', "Exile's Path": 'Exile', 'The Beast': 'Beast', Widowmaker: 'Grief', Winter: 'Voice of Reason' };
-export const RUNEWORDS: { name: string; runes: string[]; types: string[]; raw: RawRow }[] = rawRows('Runes').filter(r => num(r, 'complete') === 1 && num(r, 'server') !== 1).map(raw => {
+export const RUNEWORDS: { name: string; runes: string[]; types: string[]; raw: RawRow }[] = rawRows('Runes').filter(r => num(r, 'complete') === 1 && (num(r, 'server') !== 1 || text(r, 'Rune Name') === 'Edge')).map(raw => {
   const name = text(raw, 'Rune Name', text(raw, 'Name'));
   return { name: WORD_NAMES[name] ?? name, runes: Array.from({ length: 6 }, (_, i) => text(raw, `Rune${i + 1}`)).filter(Boolean), types: Array.from({ length: 6 }, (_, i) => text(raw, `itype${i + 1}`)).filter(Boolean), raw };
 }).filter(word => word.runes.length >= 2 && word.runes.every(r => !!getBase(r)) && word.types.length > 0);
@@ -155,7 +155,7 @@ const SCALAR: Record<string, string> = {
   'ac%': 'defensePercent', ac: 'defense', 'res-fire': 'resFire', 'res-cold': 'resCold', 'res-ltng': 'resLightning', 'res-pois': 'resPoison', 'res-all': 'resAll',
   'mag%': 'magicFind', 'gold%': 'goldFind', cast1: 'fcr', cast2: 'fcr', cast3: 'fcr', balance1: 'fhr', balance2: 'fhr', balance3: 'fhr',
   swing1: 'ias', swing2: 'ias', swing3: 'ias', move1: 'frw', move2: 'frw', move3: 'frw', lifesteal: 'lifeLeech', manasteal: 'manaLeech',
-  'red-dmg%': 'damageReduction', 'red-dmg': 'flatReduction', allskills: 'allSkills', fireskill: 'fireSkills', deadly: 'deadlyStrike', 'regen-mana': 'manaRegenPercent', indestruct: 'indestructible', ethereal: 'forcedEthereal',
+  'red-dmg%': 'damageReduction', 'red-dmg': 'flatReduction', allskills: 'allSkills', fireskill: 'fireSkills', deadly: 'deadlyStrike', 'regen-mana': 'manaRegenPercent', indestruct: 'indestructible', ethereal: 'forcedEthereal', cheap: 'vendorDiscount',
 };
 function add(mods: ItemMods, key: string, value: number): void { mods[key] = (mods[key] ?? 0) + value; }
 function skillId(parameter: string): number | undefined {
@@ -270,7 +270,7 @@ function namedDefinitions(base: BaseItem, ilvl: number, quality: 'unique' | 'set
 let uidSequence = 0;
 const uidPrefix = Date.now().toString(36) + Math.random().toString(36).slice(2, 9);
 function nextUid(): string { return `item-${uidPrefix}-${++uidSequence}`; }
-export function createItem(code: string, ilvl: number, rng: Rng, quality: Quality = 'normal', namedIndex?: string): Item {
+export function createItem(code: string, ilvl: number, rng: Rng, quality: Quality = 'normal', namedIndex?: string, source: 'drop' | 'gambling' = 'drop'): Item {
   const base = getBase(code);
   if (!base) throw new Error(`未知物品底材：${code}`);
   if (quality === 'crafted') throw new Error('手工品质必须由已支持的具体配方生成；目前未支持手工配方。');
@@ -287,7 +287,7 @@ export function createItem(code: string, ilvl: number, rng: Rng, quality: Qualit
   const eligible = base.durability > 0 && base.slot !== undefined && !itemHasType(base, 'bow') && !itemHasType(base, 'xbow') && num(base.raw, 'nodurability') !== 1;
   const item: Item = {
     uid: nextUid(), code, name: definition ? text(definition, 'index') : base.name, quality, ilvl, width: base.width, height: base.height,
-    x: -1, y: -1, identified: !['magic', 'rare', 'set', 'unique'].includes(quality), ethereal: eligible && !['set', 'low'].includes(quality) && random(rng) < .05,
+    x: -1, y: -1, identified: source === 'gambling' || !['magic', 'rare', 'set', 'unique'].includes(quality), ethereal: source !== 'gambling' && eligible && !['set', 'low'].includes(quality) && random(rng) < .05,
     durability: base.durability, maxDurability: base.durability, minDamage: base.minDamage, maxDamage: base.maxDamage,
     defense: integer(rng, base.defenseMin, base.defenseMax), mods: {}, sockets: 0, socketed: [], requiredLevel: base.requiredLevel,
     price: num(base.raw, 'cost'), quantity: num(base.raw, 'stackable') ? integer(rng, num(base.raw, 'minstack', 1), num(base.raw, 'spawnstack', num(base.raw, 'maxstack', 1))) : 1,
@@ -317,7 +317,7 @@ export function createItem(code: string, ilvl: number, rng: Rng, quality: Qualit
     max = Math.floor(max * .75); defense = Math.floor(defense * .75);
     item.maxDurability = Math.max(0, Math.floor((base.durability - 1) / 3));
   } else {
-    item.maxDurability = Math.min(333, Math.floor(base.durability * failedMultiplier * (100 + (item.mods['internal:durabilityPercent'] ?? 0)) / 100) + (item.mods['internal:durabilityFlat'] ?? 0));
+    item.maxDurability = Math.min(source === 'gambling' ? 255 : 333, Math.floor(base.durability * failedMultiplier * (100 + (item.mods['internal:durabilityPercent'] ?? 0)) / 100) + (item.mods['internal:durabilityFlat'] ?? 0));
   }
   if (item.ethereal) {
     min = Math.floor(min * 1.5); max = Math.floor(max * 1.5); defense = Math.floor(defense * 1.5);
@@ -402,6 +402,8 @@ export function rollLoot(monster: Monster, rng: Rng, difficulty: Difficulty, mag
 
 export const INVENTORY_WIDTH = 10;
 export const INVENTORY_HEIGHT = 8;
+export const STASH_WIDTH = 10;
+export const STASH_HEIGHT = 10;
 
 export function moveInventoryItem(player: Player, uid: string, x: number, y: number): Result {
   const item = player.inventory.find(item => item.uid === uid);
@@ -464,17 +466,29 @@ function requirements(base: BaseItem, item: Item): { strength: number; dexterity
   const multiplier = Math.max(0, 100 + (item.mods.requirementsPercent ?? 0)) / 100;
   return { strength: Math.max(0, Math.floor(base.strength * multiplier) - (item.ethereal ? 10 : 0)), dexterity: Math.max(0, Math.floor(base.dexterity * multiplier) - (item.ethereal && base.slot === 'weapon' ? 10 : 0)) };
 }
-function requirementError(player: Player, item: Item, equipment = player.equipment): string | undefined {
+function requirementChecks(player: Player, item: Item, equipment = player.equipment) {
   const base = getBase(item.code);
-  if (!base?.slot) return '此物品不能装备';
-  if (!item.identified) return '请先辨识物品';
-  if (item.maxDurability > 0 && item.durability <= 0 && !item.mods.indestructible) return '装备已经损坏';
-  if (player.level < item.requiredLevel) return `需要等级 ${item.requiredLevel}`;
-  if (base.classId && base.classId !== player.classId) return '职业不符';
+  if (!base) return [];
   const attrs = attributes(player, equipment, item.uid), req = requirements(base, item);
-  if (attrs.strength < req.strength) return `需要力量 ${req.strength}`;
-  if (attrs.dexterity < req.dexterity) return `需要敏捷 ${req.dexterity}`;
-  return undefined;
+  const checks = [{ line: '尚未辨识', message: '请先辨识物品', met: item.identified }];
+  if (item.maxDurability && !item.mods.indestructible) checks.push({ line: `耐久度：${item.durability}/${item.maxDurability}`, message: '装备已经损坏', met: item.durability > 0 });
+  if (item.requiredLevel) checks.push({ line: `需要等级：${item.requiredLevel}`, message: `需要等级 ${item.requiredLevel}`, met: player.level >= item.requiredLevel });
+  if (base.classId) checks.push({ line: `仅限${getClass(base.classId).name}`, message: '职业不符', met: base.classId === player.classId });
+  if (req.strength) checks.push({ line: `需要力量：${req.strength}`, message: `需要力量 ${req.strength}`, met: attrs.strength >= req.strength });
+  if (req.dexterity) checks.push({ line: `需要敏捷：${req.dexterity}`, message: `需要敏捷 ${req.dexterity}`, met: attrs.dexterity >= req.dexterity });
+  return checks;
+}
+function requirementError(player: Player, item: Item, equipment = player.equipment): string | undefined {
+  if (!getBase(item.code)?.slot) return '此物品不能装备';
+  return requirementChecks(player, item, equipment).find(check => !check.met)?.message;
+}
+export function unmetItemRequirements(player: Player, item: Item): string[] {
+  const checks = requirementChecks(player, item), base = getBase(item.code);
+  if (base?.slot && !Object.values(player.equipment).some(held => held?.uid === item.uid)) {
+    const change = equipmentChange(player, item, base);
+    checks.push(...requirementChecks(player, item, change.equipment));
+  }
+  return [...new Set(checks.filter(check => !check.met).map(check => check.line))];
 }
 function oneHanded(player: Player, base: BaseItem): boolean { return !base.twoHanded || player.classId === 'bar' && num(base.raw, '1or2handed') === 1; }
 function dualWield(player: Player, base: BaseItem): boolean {
@@ -501,11 +515,8 @@ function applyEquipmentDamage(player: Player): void {
     item.mods['internal:baseMin'] = min; item.mods['internal:baseMax'] = max; applyLocal(item);
   }
 }
-export function equipItem(player: Player, uid: string): Result {
-  const item = player.inventory.find(i => i.uid === uid), base = item && getBase(item.code);
-  if (!item || !base?.slot) return fail('背包中没有可装备物品');
-  const error = requirementError(player, item); if (error) return fail(error);
-  let slot = base.slot;
+function equipmentChange(player: Player, item: Item, base: BaseItem) {
+  let slot = base.slot!;
   const weapon: Slot = player.weaponSwap ? 'weapon2' : 'weapon', offhand: Slot = player.weaponSwap ? 'offhand2' : 'offhand';
   if (slot === 'ring1') slot = !player.equipment.ring1 ? 'ring1' : !player.equipment.ring2 ? 'ring2' : 'ring1';
   if (slot === 'weapon') {
@@ -524,10 +535,18 @@ export function equipItem(player: Player, uid: string): Result {
   if (slot === offhand) {
     const current = equipment[weapon], main = current && getBase(current.code)!;
     const ammunition = itemHasType(base, 'bowq') || itemHasType(base, 'xboq');
-    if (ammunition && (!main || itemHasType(base, 'bowq') && !itemHasType(main, 'bow') || itemHasType(base, 'xboq') && !itemHasType(main, 'xbow'))) return fail('弹药与当前武器不匹配');
+    if (ammunition && (!main || itemHasType(base, 'bowq') && !itemHasType(main, 'bow') || itemHasType(base, 'xboq') && !itemHasType(main, 'xbow'))) return { equipment, returned, error: '弹药与当前武器不匹配' };
     if (main && !oneHanded(player, main) && !ammunition) remove(weapon);
   }
   equipment[slot] = item;
+  return { equipment, returned, error: undefined };
+}
+export function equipItem(player: Player, uid: string): Result {
+  const item = player.inventory.find(i => i.uid === uid), base = item && getBase(item.code);
+  if (!item || !base?.slot) return fail('背包中没有可装备物品');
+  const error = requirementError(player, item); if (error) return fail(error);
+  const { equipment, returned, error: changeError } = equipmentChange(player, item, base);
+  if (changeError) return fail(changeError);
   const after = requirementError(player, item, equipment); if (after) return fail(after);
   const rows = equipment.belt ? getBase(equipment.belt.code)!.beltRows : 1;
   const packed = packReturns(player, uid, returned, rows); if (!packed) return fail('背包空间不足，未更换装备');
@@ -708,7 +727,7 @@ const MOD_LABELS: Record<string, string> = {
   localDamagePercent: '武器增强伤害%', damagePercent: '增强伤害%', minDamage: '最小伤害', maxDamage: '最大伤害', defense: '防御', defensePercent: '增强防御%',
   resFire: '火焰抗性%', resCold: '冰冷抗性%', resLightning: '闪电抗性%', resPoison: '毒素抗性%', resAll: '所有抗性%', magicFind: '更佳获取魔法装备几率%', goldFind: '额外金币%',
   fcr: '快速施法速度%', fhr: '快速打击恢复%', ias: '提升攻击速度%', frw: '快速跑步/行走%', lifeLeech: '击中偷取生命%', manaLeech: '击中偷取法力%',
-  damageReduction: '伤害减少%', flatReduction: '伤害减少', allSkills: '所有技能', fireSkills: '火焰技能', deadlyStrike: '致命攻击%', manaRegenPercent: '法力回复速度%', maxManaPercent: '最大法力%', requirementsPercent: '装备需求%', indestructible: '无法破坏',
+  damageReduction: '伤害减少%', flatReduction: '伤害减少', allSkills: '所有技能', fireSkills: '火焰技能', deadlyStrike: '致命攻击%', manaRegenPercent: '法力回复速度%', maxManaPercent: '最大法力%', requirementsPercent: '装备需求%', indestructible: '无法破坏', vendorDiscount: '赌博价格降低%',
 };
 export function describeItem(item: Item): string[] {
   const base = getBase(item.code), lines = [itemLabel(item)];
@@ -747,17 +766,20 @@ export function describeItem(item: Item): string[] {
   if (/^pk[1-3]$/.test(item.code)) lines.push('超级6 Boss事件尚未开放：仅可购买、保存，不能合成事件传送门。');
   return lines;
 }
-export function vendorStock(player: Player, rng: Rng): Item[] {
+export function vendorStock(player: Player, rng: Rng, npcId = 'akara'): Item[] {
   const ilvl = Math.min(12, player.level + 5);
   const stock: Item[] = [];
-  const tier = player.difficulty === 'hell' ? 5 : player.difficulty === 'nightmare' ? 4 : Math.min(5, 1 + Math.floor((player.level - 1) / 8));
-  for (let i = 1; i <= tier; i++) for (const prefix of ['hp', 'mp']) stock.push(createItem(prefix + i, ilvl, () => .5));
-  for (const code of ['tsc', 'isc', 'tbk', 'ibk', 'key', 'rvl', ...RUNES.map(rune => rune.code), ...GEMS.map(gem => gem.code), 'pk1', 'pk2', 'pk3']) stock.push(createItem(code, ilvl, () => .5));
-  const jordanRow = rawRows('UniqueItems').find(row => text(row, 'index') === 'The Stone of Jordan')!;
-  const jordan = createItem('rin', num(jordanRow, 'lvl'), () => .5, 'unique', 'The Stone of Jordan');
-  jordan.identified = true; jordan.price = num(getBase('rin')!.raw, 'cost') * num(jordanRow, 'cost mult') + num(jordanRow, 'cost add'); stock.push(jordan);
-  const candidates = BASE_ITEMS.filter(b => b.slot && droppable(b) && b.qlvl <= ilvl && b.requiredLevel <= player.level && (!b.classId || b.classId === player.classId) &&
-    (!text(b.raw, 'normcode') || text(b.raw, 'normcode') === b.code) && (num(b.raw, 'CharsiMax') > 0 || num(b.raw, 'AkaraMax') > 0) && b.code !== 'box');
+  if (npcId !== 'charsi') {
+    const tier = player.difficulty === 'hell' ? 5 : player.difficulty === 'nightmare' ? 4 : Math.min(5, 1 + Math.floor((player.level - 1) / 8));
+    for (let i = 1; i <= tier; i++) for (const prefix of ['hp', 'mp']) stock.push(createItem(prefix + i, ilvl, () => .5));
+    for (const code of ['tsc', 'isc', 'tbk', 'ibk', 'key', 'rvl', ...RUNES.map(rune => rune.code), ...GEMS.map(gem => gem.code), 'pk1', 'pk2', 'pk3']) stock.push(createItem(code, ilvl, () => .5));
+    const jordanRow = rawRows('UniqueItems').find(row => text(row, 'index') === 'The Stone of Jordan')!;
+    const jordan = createItem('rin', num(jordanRow, 'lvl'), () => .5, 'unique', 'The Stone of Jordan');
+    jordan.identified = true; jordan.price = num(getBase('rin')!.raw, 'cost') * num(jordanRow, 'cost mult') + num(jordanRow, 'cost add'); stock.push(jordan);
+  }
+  const vendorColumn = npcId === 'charsi' ? 'CharsiMax' : 'AkaraMax';
+  const candidates = BASE_ITEMS.filter(base => base.slot && droppable(base) && base.qlvl <= ilvl && base.requiredLevel <= player.level && (!base.classId || base.classId === player.classId) &&
+    (!text(base.raw, 'normcode') || text(base.raw, 'normcode') === base.code) && num(base.raw, vendorColumn) > 0 && base.code !== 'box' && (npcId !== 'charsi' || base.slot === 'weapon'));
   const available = [...candidates];
   for (let i = 0; i < 12 && available.length; i++) {
     const base = weighted(available, b => num(b.raw, 'rarity', 1), rng)!; available.splice(available.indexOf(base), 1);

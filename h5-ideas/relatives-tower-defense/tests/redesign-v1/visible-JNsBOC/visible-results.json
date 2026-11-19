@@ -1,0 +1,1453 @@
+{
+  "complete": true,
+  "headless": true,
+  "noProbe": true,
+  "output": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC",
+  "routes": [
+    {
+      "label": "direct",
+      "steps": [
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-0-choose.png",
+            "phase": "choose",
+            "node": "cold-sangu",
+            "ask": "「今年有对象了没？过完年都二十九了吧。」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [
+              {
+                "id": "ask-nainai",
+                "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+                "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+                "change": "盯你 1 →\n1\n· 二舅",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-sangu",
+                "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+                "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "honest-sangu",
+                "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+                "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 928,
+            "probe": false
+          },
+          "chosen": {
+            "id": "honest-sangu",
+            "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+            "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+            "change": "盯你 1 →\n1\n· 大姨",
+            "top": 763.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "先给三姑一句具体、不过度承诺的实话；预告她会站我这边，接下来只需处理大姨的工作话题。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-1-react.png",
+            "phase": "react",
+            "node": "cold-sangu",
+            "ask": "「今年有对象了没？过完年都二十九了吧。」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n大姨",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「还没呢。今年先把工作站稳，遇到合适的一定带回来。」\n盯你 1 →\n1\n· 大姨",
+            "replies": "大家怎么接\n三姑\n「行，有数就好，姑不催了。」\n大姨\n「工作站稳？那我可得问问——」\n局势变化 · 盯着你 1 → 1\n三姑不再盯着你\n大姨开始盯着你\n三姑站到了你这边",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 907,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-1-choose.png",
+            "phase": "choose",
+            "node": "cold-dayi",
+            "ask": "「那你那工作稳不稳？要不回老家考个编制？」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n大姨",
+            "choices": [
+              {
+                "id": "ask-dayi",
+                "line": "「大姨，小宇今年考得咋样？上岸了没？」",
+                "risk": "大姨会聊儿子聊很久；二舅听到“考公”会凑过来盯你",
+                "change": "盯你 1 →\n1\n· 二舅",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "own-plan",
+                "line": "「先在外面再试两年，回不回来我自己掂量。」",
+                "risk": "三姑会替你说句话；但大姨还不太放心，会继续盯着你",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "own-plan",
+            "line": "「先在外面再试两年，回不回来我自己掂量。」",
+            "risk": "三姑会替你说句话；但大姨还不太放心，会继续盯着你",
+            "change": "盯你 1 →\n1\n· 大姨",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "不把小宇拉进来比较，直接给大姨讲自己的安排。代价已经写明：大姨仍会惦记，但三姑支持。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-2-react.png",
+            "phase": "react",
+            "node": "cold-dayi",
+            "ask": "「那你那工作稳不稳？要不回老家考个编制？」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n大姨",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「先在外面再试两年，回不回来我自己掂量。」\n盯你 1 →\n1\n· 大姨",
+            "replies": "大家怎么接\n三姑\n「孩子有主意，挺好。」\n大姨\n「你有数就行……不过还是得想想。」\n局势变化 · 盯着你 1 → 1\n谁也没换位置：还是原来的人盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 862,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-2-choose.png",
+            "phase": "choose",
+            "node": "hot-erjiu",
+            "ask": "「隔壁小王都在省城买房了，你啥时候买？」",
+            "header": "第 2/3 道 · 热菜上桌\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n二舅、大姨",
+            "choices": [
+              {
+                "id": "ask-erjiu",
+                "line": "「二舅，您当年在县城买房，首付咋凑的？」",
+                "risk": "二舅会讲开；三姑已经站你这边，会帮你挡一句，不会跟着劝",
+                "change": "盯你 2 →\n1\n· 大姨",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "lottery",
+                "line": "「买！等我中了彩票，给全桌一人一套！」",
+                "risk": "二舅会被逗乐、站你这边；大姨会让你“正经点”，盯上你",
+                "change": "盯你 2 →\n1\n· 大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "ask-erjiu",
+            "line": "「二舅，您当年在县城买房，首付咋凑的？」",
+            "risk": "二舅会讲开；三姑已经站你这边，会帮你挡一句，不会跟着劝",
+            "change": "盯你 2 →\n1\n· 大姨",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "请二舅聊自己的经历，不开买房彩票的空头玩笑；预告三姑会替我挡一句，盯着我的人从二舅和大姨降到大姨。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-3-react.png",
+            "phase": "react",
+            "node": "hot-erjiu",
+            "ask": "「隔壁小王都在省城买房了，你啥时候买？」",
+            "header": "第 2/3 道 · 热菜上桌\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n大姨",
+            "choices": [],
+            "reaction": "话头引开了\n你\n「二舅，您当年在县城买房，首付咋凑的？」\n盯你 2 →\n1\n· 大姨",
+            "replies": "大家怎么接\n二舅\n「那会儿可难了，我跟你舅妈借遍了全村……」\n三姑\n「孩子自己有安排，咱不催。」\n局势变化 · 盯着你 2 → 1\n二舅不再盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 886,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-3-choose.png",
+            "phase": "choose",
+            "node": "dumpling",
+            "ask": "「来，今年到底咋打算的？说说！」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n大姨",
+            "choices": [
+              {
+                "id": "say-plan",
+                "line": "「好好工作，常回家，别的我自己慢慢定。」",
+                "risk": "三姑会替你挡住追问；不报日期，吃完收场",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "table-round",
+                "line": "「大家轮着说吧，今年各想做成一件啥事？」",
+                "risk": "三姑替你改成聊天；大姨再问一件事，不问日期",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-help",
+                "line": "「奶奶，今年饺子包硬币了吗？谁吃到谁先说！」",
+                "risk": "用掉奶奶这次帮忙；全桌找硬币，不报打算就收场",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 928,
+            "probe": false
+          },
+          "chosen": {
+            "id": "say-plan",
+            "line": "「好好工作，常回家，别的我自己慢慢定。」",
+            "risk": "三姑会替你挡住追问；不报日期，吃完收场",
+            "change": "盯你 1 →\n0\n· 没人",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "只剩大姨等我，三姑明确会挡住追问；我愿意自己说明边界，省下奶奶的正式帮忙，也不用再接轮聊的问题。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-4-react.png",
+            "phase": "react",
+            "node": "dumpling",
+            "ask": "「来，今年到底咋打算的？说说！」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n0/3\n没人",
+            "choices": [],
+            "reaction": "这顿饭，吃完了\n你\n「好好工作，常回家，别的我自己慢慢定。」\n盯你 1 →\n0\n· 没人",
+            "replies": "大家怎么接\n三姑\n「开席就说有安排了，咱别再追着问。」\n大姨\n「行，那我不问日期了。」\n二舅\n「来，饺子快凉了。」\n局势变化 · 盯着你 1 → 0\n大姨不再盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 898,
+            "probe": false
+          }
+        }
+      ],
+      "start": {
+        "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-0-choose.png",
+        "phase": "choose",
+        "node": "cold-sangu",
+        "ask": "「今年有对象了没？过完年都二十九了吧。」",
+        "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+        "choices": [
+          {
+            "id": "ask-nainai",
+            "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+            "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+            "change": "盯你 1 →\n1\n· 二舅",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          {
+            "id": "ask-sangu",
+            "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+            "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+            "change": "盯你 1 →\n0\n· 没人",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          {
+            "id": "honest-sangu",
+            "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+            "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+            "change": "盯你 1 →\n1\n· 大姨",
+            "top": 763.1875,
+            "width": 362,
+            "height": 143
+          }
+        ],
+        "boxes": {
+          ".ask-bubble": {
+            "top": 293.1875,
+            "width": 362,
+            "height": 112
+          }
+        },
+        "pageWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 928,
+        "probe": false
+      },
+      "ending": "这一桌回放\n\n安稳吃完 · 吃完 3/3 道菜\n\n自己把打算说清了\n\n开席那句实话让三姑放心了。压轴你没报日期，她替你挡住追问，大家继续吃饭。\n\n这桌帮过你的人：三姑\n\n这一桌是怎么走的\n4 次开口\n凉菜开席\n盯着你 1 → 1\n\n三姑：「今年有对象了没？过完年都二十九了吧。」\n\n你（真心）：「还没呢。今年先把工作站稳，遇到合适的一定带回来。」\n三姑「行，有数就好，姑不催了。」\n大姨「工作站稳？那我可得问问——」\n三姑不再盯着你\n大姨开始盯着你\n三姑站到了你这边\n凉菜开席\n盯着你 1 → 1\n\n大姨：「那你那工作稳不稳？要不回老家考个编制？」\n\n你（真心）：「先在外面再试两年，回不回来我自己掂量。」\n三姑「孩子有主意，挺好。」\n大姨「你有数就行……不过还是得想想。」\n谁也没换位置：还是原来的人盯着你\n热菜上桌\n盯着你 2 → 1\n\n二舅：「隔壁小王都在省城买房了，你啥时候买？」\n\n你（反问）：「二舅，您当年在县城买房，首付咋凑的？」\n二舅「那会儿可难了，我跟你舅妈借遍了全村……」\n三姑「孩子自己有安排，咱不催。」\n二舅不再盯着你\n饺子压轴\n盯着你 1 → 0\n\n全桌：「来，今年到底咋打算的？说说！」\n\n你（真心）：「好好工作，常回家，别的我自己慢慢定。」\n三姑「开席就说有安排了，咱别再追着问。」\n大姨「行，那我不问日期了。」\n二舅「来，饺子快凉了。」\n大姨不再盯着你\n下一桌可以这样试\n第一道反问三姑，看看表姐会不会跟你站一边。\n问问二舅的鱼塘，压轴他能分走盘问；大姨还会问一件小事。\n再吃一桌，换个走法\n↗\n把这桌存成回放图\n回到开席页\n\n只在本地玩、生成图片。不上传，没有排行榜。",
+      "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-4-result.png",
+      "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/direct-poster.png"
+    },
+    {
+      "label": "friend",
+      "steps": [
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-0-choose.png",
+            "phase": "choose",
+            "node": "cold-sangu",
+            "ask": "「今年有对象了没？过完年都二十九了吧。」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [
+              {
+                "id": "ask-nainai",
+                "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+                "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+                "change": "盯你 1 →\n1\n· 二舅",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-sangu",
+                "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+                "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "honest-sangu",
+                "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+                "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 928,
+            "probe": false
+          },
+          "chosen": {
+            "id": "ask-sangu",
+            "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+            "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+            "change": "盯你 1 →\n0\n· 没人",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "想听三姑自己的经历，把奶奶的正式帮忙留到后面；预告会把表姐扯进来，到时候要看怎样接住她。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-1-react.png",
+            "phase": "react",
+            "node": "cold-sangu",
+            "ask": "「今年有对象了没？过完年都二十九了吧。」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n0/3\n没人",
+            "choices": [],
+            "reaction": "话头引开了\n你\n「三姑，您跟姑父当年谁先开的口？我取取经。」\n盯你 1 →\n0\n· 没人",
+            "replies": "大家怎么接\n三姑\n「那肯定是你姑父！骑着车在我家门口绕了三圈……」\n三姑\n「哎，说到这个——小琳！」\n表姐\n「……怎么又到我了。」\n局势变化 · 盯着你 1 → 0\n三姑不再盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 922,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-1-choose.png",
+            "phase": "choose",
+            "node": "cold-biaojie",
+            "ask": "「小琳你也三十了，还挑呢？」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n0/3\n没人",
+            "choices": [
+              {
+                "id": "cover-biaojie",
+                "line": "「三姑，表姐这叫有主见，我还想跟她学呢。」",
+                "risk": "表姐会记你这份情，之后能请她帮腔；三姑会转回来盯你",
+                "change": "盯你 0 →\n1\n· 三姑",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "eat-quietly",
+                "line": "「（低头夹菜）这凉拌木耳真脆。」",
+                "risk": "三姑不会回头找你；但表姐被晾着，会盯着你等机会甩回来",
+                "change": "盯你 0 →\n1\n· 表姐",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "cover-biaojie",
+            "line": "「三姑，表姐这叫有主见，我还想跟她学呢。」",
+            "risk": "表姐会记你这份情，之后能请她帮腔；三姑会转回来盯你",
+            "change": "盯你 0 →\n1\n· 三姑",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "刚把话头带到表姐，不想晾着她；愿意承受三姑转回来盯我的代价，换来表姐以后愿意帮腔。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-2-react.png",
+            "phase": "react",
+            "node": "cold-biaojie",
+            "ask": "「小琳你也三十了，还挑呢？」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [],
+            "reaction": "又多了人盯着你\n你\n「三姑，表姐这叫有主见，我还想跟她学呢。」\n盯你 0 →\n1\n· 三姑",
+            "replies": "大家怎么接\n表姐\n「听见没，这桌终于有人懂我。」\n三姑\n「你俩一伙的是吧？那你先说你的。」\n局势变化 · 盯着你 0 → 1\n三姑开始盯着你\n表姐站到了你这边",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 885,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-2-choose.png",
+            "phase": "choose",
+            "node": "hot-erjiu",
+            "ask": "「隔壁小王都在省城买房了，你啥时候买？」",
+            "header": "第 2/3 道 · 热菜上桌\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n三姑、二舅",
+            "choices": [
+              {
+                "id": "biaojie-help",
+                "line": "「表姐，你不是研究过房价？给二舅讲讲。」",
+                "risk": "二舅会被说服；表姐这次帮完，压轴就不能再请她",
+                "change": "盯你 2 →\n1\n· 三姑",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-erjiu",
+                "line": "「二舅，您当年在县城买房，首付咋凑的？」",
+                "risk": "二舅会讲开；但三姑本来就盯着你，会接着劝你攒钱",
+                "change": "盯你 2 →\n1\n· 三姑",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "lottery",
+                "line": "「买！等我中了彩票，给全桌一人一套！」",
+                "risk": "二舅会被逗乐、站你这边；但大姨和三姑都会让你“正经点”，一起盯你",
+                "change": "盯你 2 →\n2\n· 三姑、大姨",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 928,
+            "probe": false
+          },
+          "chosen": {
+            "id": "ask-erjiu",
+            "line": "「二舅，您当年在县城买房，首付咋凑的？」",
+            "risk": "二舅会讲开；但三姑本来就盯着你，会接着劝你攒钱",
+            "change": "盯你 2 →\n1\n· 三姑",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "请二舅讲自己的经历，承受三姑继续劝攒钱的预告，保留表姐的正式帮忙给压轴；不用彩票玩笑再招来大姨。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-3-react.png",
+            "phase": "react",
+            "node": "hot-erjiu",
+            "ask": "「隔壁小王都在省城买房了，你啥时候买？」",
+            "header": "第 2/3 道 · 热菜上桌\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [],
+            "reaction": "话头引开了\n你\n「二舅，您当年在县城买房，首付咋凑的？」\n盯你 2 →\n1\n· 三姑",
+            "replies": "大家怎么接\n二舅\n「那会儿可难了，我跟你舅妈借遍了全村……」\n三姑\n「所以说，你也得早点攒首付了。」\n局势变化 · 盯着你 2 → 1\n二舅不再盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 886,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-3-choose.png",
+            "phase": "choose",
+            "node": "dumpling",
+            "ask": "「来，今年到底咋打算的？说说！」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [
+              {
+                "id": "say-plan",
+                "line": "「好好工作，常回家，别的我自己慢慢定。」",
+                "risk": "表姐记着你护她，会附和；不报日期，吃完收场",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "table-round",
+                "line": "「大家轮着说吧，今年各想做成一件啥事？」",
+                "risk": "表姐陪你改成聊天；大姨再问一件事，不问日期",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-help",
+                "line": "「先请懂我的人接一句，我再说。」",
+                "risk": "下一步可选奶奶或表姐；有二舅帮腔也会列出",
+                "change": "盯你 1 →\n1\n· 三姑",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 928,
+            "probe": false
+          },
+          "chosen": {
+            "id": "ask-help",
+            "line": "「先请懂我的人接一句，我再说。」",
+            "risk": "下一步可选奶奶或表姐；有二舅帮腔也会列出",
+            "change": "盯你 1 →\n1\n· 三姑",
+            "top": 763.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "眼前自己说也能完成，但我想听刚才被问的表姐先说，而不是只借她附和。预告下一步仍可选奶奶或表姐，这一步没有用掉帮忙，也不会立即结算。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-4-react.png",
+            "phase": "react",
+            "node": "dumpling",
+            "ask": "「来，今年到底咋打算的？说说！」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「先请懂我的人接一句，我再说。」\n盯你 1 →\n1\n· 三姑",
+            "replies": "大家怎么接\n表姐\n「刚才你替我说过，我可以接。」\n奶奶\n「奶奶也还没帮过你，这次可以。」\n局势变化 · 盯着你 1 → 1\n谁也没换位置：还是原来的人盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 862,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-4-choose.png",
+            "phase": "choose",
+            "node": "helper-pick",
+            "ask": "「好，想先听谁说？」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [
+              {
+                "id": "coin-dumpling",
+                "line": "「奶奶，今年饺子包硬币了吗？谁吃到谁先说！」",
+                "risk": "用掉奶奶这次帮忙；全桌找硬币，不报打算就收场",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "biaojie-team",
+                "line": "「表姐，咱俩的打算一起说？」",
+                "risk": "用掉表姐的帮忙；她分走盘问，但你还要接一句",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "biaojie-team",
+            "line": "「表姐，咱俩的打算一起说？」",
+            "risk": "用掉表姐的帮忙；她分走盘问，但你还要接一句",
+            "change": "盯你 1 →\n0\n· 没人",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "奶奶仍能用硬币饺子直接收场，我选择让表姐实际说出她的打算。接受用掉表姐正式帮忙、还必须接下一句的代价，而不是把结盟只写进结算文案。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-5-react.png",
+            "phase": "react",
+            "node": "helper-pick",
+            "ask": "「好，想先听谁说？」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n0/3\n没人",
+            "choices": [],
+            "reaction": "话头引开了\n你\n「表姐，咱俩的打算一起说？」\n盯你 1 →\n0\n· 没人",
+            "replies": "大家怎么接\n表姐\n「你开席护了我，这回我先答：我想换个工作。」\n三姑\n「哦，先说工作也行，不催日期了。」\n表姐\n「你要一起说，还是先听我说？」\n局势变化 · 盯着你 1 → 0\n三姑不再盯着你\n表姐帮你接了话，本局不能再请",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 944,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-5-choose.png",
+            "phase": "choose",
+            "node": "cousin-answer",
+            "ask": "「你要一起说，还是先听我说？」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n0/3\n没人",
+            "choices": [
+              {
+                "id": "both-plan",
+                "line": "「我先做好手头的项目。咱俩都不赶日期。」",
+                "risk": "说出一件工作安排；表姐和你一起守住日期，吃完收场",
+                "change": "盯你 0 →\n0\n· 没人",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "listen-cousin",
+                "line": "「表姐，先听你说吧，你想换哪行？」",
+                "risk": "表姐继续聊；大姨还会问你一件小事，不用报工作细节",
+                "change": "盯你 0 →\n1\n· 大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "both-plan",
+            "line": "「我先做好手头的项目。咱俩都不赶日期。」",
+            "risk": "说出一件工作安排；表姐和你一起守住日期，吃完收场",
+            "change": "盯你 0 →\n0\n· 没人",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "表姐已经说了工作，我也愿意交出一件眼前的工作安排，不交买房结婚日期；选择现在一起收场，而不是继续听她并再回答大姨的小事。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-6-react.png",
+            "phase": "react",
+            "node": "cousin-answer",
+            "ask": "「你要一起说，还是先听我说？」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n0/3\n没人",
+            "choices": [],
+            "reaction": "这顿饭，吃完了\n你\n「我先做好手头的项目。咱俩都不赶日期。」\n盯你 0 →\n0\n· 没人",
+            "replies": "大家怎么接\n表姐\n「对，各忙各的，但一起回来吃饭。」\n三姑\n「行，你俩一伙的，先吃吧。」\n局势变化 · 盯着你 0 → 0\n谁也没换位置：还是原来的人盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 862,
+            "probe": false
+          }
+        }
+      ],
+      "start": {
+        "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-0-choose.png",
+        "phase": "choose",
+        "node": "cold-sangu",
+        "ask": "「今年有对象了没？过完年都二十九了吧。」",
+        "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+        "choices": [
+          {
+            "id": "ask-nainai",
+            "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+            "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+            "change": "盯你 1 →\n1\n· 二舅",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          {
+            "id": "ask-sangu",
+            "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+            "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+            "change": "盯你 1 →\n0\n· 没人",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          {
+            "id": "honest-sangu",
+            "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+            "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+            "change": "盯你 1 →\n1\n· 大姨",
+            "top": 763.1875,
+            "width": 362,
+            "height": 143
+          }
+        ],
+        "boxes": {
+          ".ask-bubble": {
+            "top": 293.1875,
+            "width": 362,
+            "height": 112
+          }
+        },
+        "pageWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 928,
+        "probe": false
+      },
+      "ending": "这一桌回放\n\n安稳吃完 · 吃完 3/3 道菜\n\n和表姐结成了饭桌同盟\n\n开席你护了表姐，压轴她先说换工作。你也补了一件项目安排，两个人一起拒绝报日期，饭吃完了。\n\n这桌帮过你的人：表姐\n\n这一桌是怎么走的\n6 次开口\n凉菜开席\n盯着你 1 → 0\n\n三姑：「今年有对象了没？过完年都二十九了吧。」\n\n你（反问）：「三姑，您跟姑父当年谁先开的口？我取取经。」\n三姑「那肯定是你姑父！骑着车在我家门口绕了三圈……」\n三姑「哎，说到这个——小琳！」\n表姐「……怎么又到我了。」\n三姑不再盯着你\n凉菜开席\n盯着你 0 → 1\n\n三姑：「小琳你也三十了，还挑呢？」\n\n你（真心）：「三姑，表姐这叫有主见，我还想跟她学呢。」\n表姐「听见没，这桌终于有人懂我。」\n三姑「你俩一伙的是吧？那你先说你的。」\n三姑开始盯着你\n表姐站到了你这边\n热菜上桌\n盯着你 2 → 1\n\n二舅：「隔壁小王都在省城买房了，你啥时候买？」\n\n你（反问）：「二舅，您当年在县城买房，首付咋凑的？」\n二舅「那会儿可难了，我跟你舅妈借遍了全村……」\n三姑「所以说，你也得早点攒首付了。」\n二舅不再盯着你\n饺子压轴\n盯着你 1 → 1\n\n全桌：「来，今年到底咋打算的？说说！」\n\n你（请人接话）：「先请懂我的人接一句，我再说。」\n表姐「刚才你替我说过，我可以接。」\n奶奶「奶奶也还没帮过你，这次可以。」\n谁也没换位置：还是原来的人盯着你\n饺子压轴\n盯着你 1 → 0\n\n全桌：「好，想先听谁说？」\n\n你（请人接话）：「表姐，咱俩的打算一起说？」\n表姐「你开席护了我，这回我先答：我想换个工作。」\n三姑「哦，先说工作也行，不催日期了。」\n表姐「你要一起说，还是先听我说？」\n三姑不再盯着你\n表姐帮你接了话，本局不能再请\n饺子压轴\n盯着你 0 → 0\n\n表姐：「你要一起说，还是先听我说？」\n\n你（真心）：「我先做好手头的项目。咱俩都不赶日期。」\n表姐「对，各忙各的，但一起回来吃饭。」\n三姑「行，你俩一伙的，先吃吧。」\n谁也没换位置：还是原来的人盯着你\n下一桌可以这样试\n第一道跟三姑说句实话，热菜时她会替你挡一句。\n问问二舅的鱼塘，压轴他能分走盘问；大姨还会问一件小事。\n再吃一桌，换个走法\n↗\n把这桌存成回放图\n回到开席页\n\n只在本地玩、生成图片。不上传，没有排行榜。",
+      "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-6-result.png",
+      "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/friend-poster.png"
+    },
+    {
+      "label": "followup-risk",
+      "steps": [
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-0-choose.png",
+            "phase": "choose",
+            "node": "cold-sangu",
+            "ask": "「今年有对象了没？过完年都二十九了吧。」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+            "choices": [
+              {
+                "id": "ask-nainai",
+                "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+                "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+                "change": "盯你 1 →\n1\n· 二舅",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-sangu",
+                "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+                "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+                "change": "盯你 1 →\n0\n· 没人",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "honest-sangu",
+                "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+                "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 928,
+            "probe": false
+          },
+          "chosen": {
+            "id": "ask-nainai",
+            "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+            "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+            "change": "盯你 1 →\n1\n· 二舅",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "想先把对象话题换成饺子。预告明确会用掉奶奶这次帮忙并让二舅插进来；接受这个代价，再根据二舅实际问什么回应。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-1-react.png",
+            "phase": "react",
+            "node": "cold-sangu",
+            "ask": "「今年有对象了没？过完年都二十九了吧。」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n二舅",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」\n盯你 1 →\n1\n· 二舅",
+            "replies": "大家怎么接\n奶奶\n「加虾仁了！他三姑先尝，我去煮下一锅。」\n三姑\n「哟，真鲜……行，那我回头再问。」\n二舅\n「说到吃，我倒想问问——」\n局势变化 · 盯着你 1 → 1\n三姑不再盯着你\n二舅开始盯着你\n奶奶帮你接了话，本局不能再请",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 943,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-1-choose.png",
+            "phase": "choose",
+            "node": "cold-erjiu",
+            "ask": "「在上海一个月到手多少？够不够你吃饭？」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n二舅",
+            "choices": [
+              {
+                "id": "fishpond",
+                "line": "「二舅先说您的鱼塘！去年说要扩，扩成没？」",
+                "risk": "二舅会记住这个话题，压轴还能再请他讲；大姨听烦了会转头盯你",
+                "change": "盯你 1 →\n1\n· 大姨",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "enough",
+                "line": "「够吃够住，还给奶奶买了件新棉袄。」",
+                "risk": "不会扯进别人；但二舅没问到数，会继续盯着你",
+                "change": "盯你 1 →\n1\n· 二舅",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "fishpond",
+            "line": "「二舅先说您的鱼塘！去年说要扩，扩成没？」",
+            "risk": "二舅会记住这个话题，压轴还能再请他讲；大姨听烦了会转头盯你",
+            "change": "盯你 1 →\n1\n· 大姨",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "不交工资数字，真问二舅自己的鱼塘。预告大姨会听烦转来盯我，但鱼塘会成为压轴可用的话题，比只说够吃够住更有后续选择。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-2-react.png",
+            "phase": "react",
+            "node": "cold-erjiu",
+            "ask": "「在上海一个月到手多少？够不够你吃饭？」",
+            "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n大姨",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「二舅先说您的鱼塘！去年说要扩，扩成没？」\n盯你 1 →\n1\n· 大姨",
+            "replies": "大家怎么接\n二舅\n「扩了！三亩变五亩，那增氧机我跟你说……」\n大姨\n「又是鱼塘。孩子，你说说你的。」\n局势变化 · 盯着你 1 → 1\n二舅不再盯着你\n大姨开始盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 908,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-2-choose.png",
+            "phase": "choose",
+            "node": "hot-erjiu",
+            "ask": "「隔壁小王都在省城买房了，你啥时候买？」",
+            "header": "第 2/3 道 · 热菜上桌\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n二舅、大姨",
+            "choices": [
+              {
+                "id": "ask-erjiu",
+                "line": "「二舅，您当年在县城买房，首付咋凑的？」",
+                "risk": "二舅会讲开；但三姑会接一句“你也该攒攒了”，开始盯你",
+                "change": "盯你 2 →\n2\n· 三姑、大姨",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "lottery",
+                "line": "「买！等我中了彩票，给全桌一人一套！」",
+                "risk": "二舅会被逗乐、站你这边；但大姨和三姑都会让你“正经点”，一起盯你",
+                "change": "盯你 2 →\n2\n· 三姑、大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "ask-erjiu",
+            "line": "「二舅，您当年在县城买房，首付咋凑的？」",
+            "risk": "二舅会讲开；但三姑会接一句“你也该攒攒了”，开始盯你",
+            "change": "盯你 2 →\n2\n· 三姑、大姨",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "继续听实际买房经历，不做彩票承诺；知道三姑会加入，压轴将有三姑和大姨两个人盯我。我保留聊过的鱼塘，等下一问再决定请二舅还是自己说。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-3-react.png",
+            "phase": "react",
+            "node": "hot-erjiu",
+            "ask": "「隔壁小王都在省城买房了，你啥时候买？」",
+            "header": "第 2/3 道 · 热菜上桌\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n三姑、大姨",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「二舅，您当年在县城买房，首付咋凑的？」\n盯你 2 →\n2\n· 三姑、大姨",
+            "replies": "大家怎么接\n二舅\n「那会儿可难了，我跟你舅妈借遍了全村……」\n三姑\n「所以说，你也得早点攒首付了。」\n局势变化 · 盯着你 2 → 2\n二舅不再盯着你\n三姑开始盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 908,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-3-choose.png",
+            "phase": "choose",
+            "node": "dumpling",
+            "ask": "「来，今年到底咋打算的？说说！」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n三姑、大姨",
+            "choices": [
+              {
+                "id": "say-plan",
+                "line": "「好好工作，常回家，别的我自己慢慢定。」",
+                "risk": "三姑、大姨仍会追问日期；还能再选一句回应",
+                "change": "盯你 2 →\n2\n· 三姑、大姨",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "table-round",
+                "line": "「大家轮着说吧，今年各想做成一件啥事？」",
+                "risk": "二舅会讲鱼塘；大姨再问你一件事，不问日期",
+                "change": "盯你 2 →\n1\n· 大姨",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "ask-help",
+                "line": "「二舅，鱼塘那增氧机后来装上没？」",
+                "risk": "二舅接走大部分盘问；大姨仍要问你一件小事",
+                "change": "盯你 2 →\n1\n· 大姨",
+                "top": 763.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 987,
+            "probe": false
+          },
+          "chosen": {
+            "id": "say-plan",
+            "line": "「好好工作，常回家，别的我自己慢慢定。」",
+            "risk": "三姑、大姨仍会追问日期；还能再选一句回应",
+            "change": "盯你 2 →\n2\n· 三姑、大姨",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "两个人盯着也没有禁掉认真说。我选择先讲自己的打算，接受明确预告的追问日期风险；眼前轮聊和鱼塘都可继续，但此刻不请二舅替我说。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-4-react.png",
+            "phase": "react",
+            "node": "dumpling",
+            "ask": "「来，今年到底咋打算的？说说！」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n三姑、大姨",
+            "choices": [],
+            "reaction": "暂时稳住了\n你\n「好好工作，常回家，别的我自己慢慢定。」\n盯你 2 →\n2\n· 三姑、大姨",
+            "replies": "大家怎么接\n大姨\n「工作之外呢？买房和对象总得定一个吧。」\n三姑\n「哪年能定啊？说个时间嘛。」\n局势变化 · 盯着你 2 → 2\n谁也没换位置：还是原来的人盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 862,
+            "probe": false
+          }
+        },
+        {
+          "before": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-4-choose.png",
+            "phase": "choose",
+            "node": "plan-followup",
+            "ask": "「买房和对象，哪年能定啊？」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n2/3\n三姑、大姨",
+            "choices": [
+              {
+                "id": "one-step",
+                "line": "「先做完手头的项目，买房和结婚不赶日期。」",
+                "risk": "讲出一件具体工作；不报日期，大家不再追问",
+                "change": "盯你 2 →\n0\n· 没人",
+                "top": 461.1875,
+                "width": 362,
+                "height": 143
+              },
+              {
+                "id": "draw-line",
+                "line": "「我想好会说，今天不报日期。咱们吃饭。」",
+                "risk": "没人会替这句接话；二舅加入三人，会被围住",
+                "change": "盯你 2 →\n3\n· 三姑、二舅、大姨\n会被围住",
+                "top": 612.1875,
+                "width": 362,
+                "height": 143
+              }
+            ],
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 112
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 844,
+            "probe": false
+          },
+          "chosen": {
+            "id": "draw-line",
+            "line": "「我想好会说，今天不报日期。咱们吃饭。」",
+            "risk": "没人会替这句接话；二舅加入三人，会被围住",
+            "change": "盯你 2 →\n3\n· 三姑、二舅、大姨\n会被围住",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          "why": "这一条明确预告没人接话、二舅加入后会被围住；另一条可讲项目安全收场。风险试玩选择不补任何细节，接受已显示的围问后果，检查边界说法不是被暗中禁用或伪装成安全选项。",
+          "after": {
+            "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-5-react.png",
+            "phase": "react",
+            "node": "plan-followup",
+            "ask": "「买房和对象，哪年能定啊？」",
+            "header": "第 3/3 道 · 饺子压轴\n玩法\n目标：吃完三道菜\n盯着你\n3/3\n三姑、二舅、大姨",
+            "choices": [],
+            "reaction": "被围住了\n你\n「我想好会说，今天不报日期。咱们吃饭。」\n盯你 2 →\n3\n· 三姑、二舅、大姨\n会被围住",
+            "replies": "大家怎么接\n二舅\n「连个日期都不说？来，大家一起听听。」\n三姑\n「有个大概也行啊。」\n全桌\n「来来来，大家都听听，到底咋打算的？」\n奶奶\n「好了好了，让孩子先去厨房透口气。」\n局势变化 · 盯着你 2 → 3\n二舅开始盯着你",
+            "boxes": {
+              ".ask-bubble": {
+                "top": 293.1875,
+                "width": 362,
+                "height": 77
+              },
+              ".reaction": {
+                "top": 382.1875,
+                "width": 362,
+                "height": 177
+              },
+              ".continue-row .primary": {
+                "top": 571.1875,
+                "width": 362,
+                "height": 52
+              }
+            },
+            "pageWidth": 390,
+            "viewportWidth": 390,
+            "pageHeight": 934,
+            "probe": false
+          }
+        }
+      ],
+      "start": {
+        "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-0-choose.png",
+        "phase": "choose",
+        "node": "cold-sangu",
+        "ask": "「今年有对象了没？过完年都二十九了吧。」",
+        "header": "第 1/3 道 · 凉菜开席\n玩法\n目标：吃完三道菜\n盯着你\n1/3\n三姑",
+        "choices": [
+          {
+            "id": "ask-nainai",
+            "line": "「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」",
+            "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+            "change": "盯你 1 →\n1\n· 二舅",
+            "top": 461.1875,
+            "width": 362,
+            "height": 143
+          },
+          {
+            "id": "ask-sangu",
+            "line": "「三姑，您跟姑父当年谁先开的口？我取取经。」",
+            "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+            "change": "盯你 1 →\n0\n· 没人",
+            "top": 612.1875,
+            "width": 362,
+            "height": 143
+          },
+          {
+            "id": "honest-sangu",
+            "line": "「还没呢。今年先把工作站稳，遇到合适的一定带回来。」",
+            "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+            "change": "盯你 1 →\n1\n· 大姨",
+            "top": 763.1875,
+            "width": 362,
+            "height": 143
+          }
+        ],
+        "boxes": {
+          ".ask-bubble": {
+            "top": 293.1875,
+            "width": 362,
+            "height": 112
+          }
+        },
+        "pageWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 928,
+        "probe": false
+      },
+      "ending": "这一桌回放\n\n被全桌围住 · 吃完 2/3 道菜\n\n被全桌围住，先去厨房透口气\n\n三姑、二舅、大姨同时盯着你，话头全回到了你身上。不是你答错了，是一下子被太多人围住了。\n\n这桌帮过你的人：奶奶\n\n这一桌是怎么走的\n5 次开口\n凉菜开席\n盯着你 1 → 1\n\n三姑：「今年有对象了没？过完年都二十九了吧。」\n\n你（请人接话）：「奶奶，三姑说您今年饺子换馅了，快给她夹一个！」\n奶奶「加虾仁了！他三姑先尝，我去煮下一锅。」\n三姑「哟，真鲜……行，那我回头再问。」\n二舅「说到吃，我倒想问问——」\n三姑不再盯着你\n二舅开始盯着你\n奶奶帮你接了话，本局不能再请\n凉菜开席\n盯着你 1 → 1\n\n二舅：「在上海一个月到手多少？够不够你吃饭？」\n\n你（反问）：「二舅先说您的鱼塘！去年说要扩，扩成没？」\n二舅「扩了！三亩变五亩，那增氧机我跟你说……」\n大姨「又是鱼塘。孩子，你说说你的。」\n二舅不再盯着你\n大姨开始盯着你\n热菜上桌\n盯着你 2 → 2\n\n二舅：「隔壁小王都在省城买房了，你啥时候买？」\n\n你（反问）：「二舅，您当年在县城买房，首付咋凑的？」\n二舅「那会儿可难了，我跟你舅妈借遍了全村……」\n三姑「所以说，你也得早点攒首付了。」\n二舅不再盯着你\n三姑开始盯着你\n饺子压轴\n盯着你 2 → 2\n\n全桌：「来，今年到底咋打算的？说说！」\n\n你（真心）：「好好工作，常回家，别的我自己慢慢定。」\n大姨「工作之外呢？买房和对象总得定一个吧。」\n三姑「哪年能定啊？说个时间嘛。」\n谁也没换位置：还是原来的人盯着你\n饺子压轴\n盯着你 2 → 3\n\n全桌：「买房和对象，哪年能定啊？」\n\n你（真心）：「我想好会说，今天不报日期。咱们吃饭。」\n二舅「连个日期都不说？来，大家一起听听。」\n三姑「有个大概也行啊。」\n全桌「来来来，大家都听听，到底咋打算的？」\n奶奶「好了好了，让孩子先去厨房透口气。」\n二舅开始盯着你\n下一桌可以这样试\n别让三个人同时盯着你：选项下方会写这句话会招来谁。\n把奶奶留到饺子压轴，她有一招“硬币饺子”。\n再吃一桌，换个走法\n↗\n把这桌存成回放图\n回到开席页\n\n只在本地玩、生成图片。不上传，没有排行榜。",
+      "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-5-result.png",
+      "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/followup-risk-poster.png"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

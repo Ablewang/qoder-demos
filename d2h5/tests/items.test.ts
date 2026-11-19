@@ -7,7 +7,7 @@ import { deriveStats, skillLevel } from '../src/rules';
 import {
   BASE_ITEMS, ITEM_LIMITATIONS, RUNES, GEMS, RUNEWORDS, affixLevel, allowedSockets, itemLabel,
   consumePotion, consumeInventoryPotion, isUsableItem, itemName, runewordName,
-  createItem, createStartingItems, describeItem, equipItem, fitsItem,
+  createItem, createStartingItems, describeItem, unmetItemRequirements, equipItem, fitsItem,
   getBase, insertSocket, itemHasType, placeItem, qualityDenominator, effectiveMagicFind,
   repairCost, repairItems, rollLoot, transmute, unequipItem, vendorStock,
 } from '../src/items';
@@ -89,7 +89,7 @@ test('10×4 packing rejects overlap, overflow, rotation and duplicate pushes ato
   const items: Item[] = [], armor = createItem('qui', 1, fixed);
   assert.equal(placeItem(items, armor, 10, 4), true); assert.deepEqual([armor.x, armor.y], [0, 0]);
   const sword = createItem('2hs', 1, fixed);
-  assert.equal(fitsItem(items, sword, 0, 0), false); assert.equal(fitsItem(items, sword, 10, 0), false); assert.equal(fitsItem(items, sword, 2, 1), false);
+  assert.equal(fitsItem(items, sword, 0, 0, 10, 4), false); assert.equal(fitsItem(items, sword, 10, 0, 10, 4), false); assert.equal(fitsItem(items, sword, 2, 1, 10, 4), false);
   assert.equal(placeItem(items, sword, 10, 4), true); assert.deepEqual([sword.x, sword.y], [2, 0]);
   assert.equal(placeItem(items, sword, 10, 4), false); assert.equal(items.length, 2);
   const tooTall = { ...createItem('hp1', 1, fixed), height: 5, width: 1 };
@@ -136,6 +136,58 @@ test('equip validates class, level, strength, dexterity, identification and brok
   const claw = put(p, 'ktr'); assert.equal(equipItem(p, claw.uid).ok, false);
 });
 
+test('unmet requirement lines cover every failed threshold and clear at exact equip limits', () => {
+  const p = player(), sword = put(p, '2hs'), base = getBase(sword.code)!;
+  p.strength = p.dexterity = 0; sword.requiredLevel = 10;
+  assert.deepEqual(unmetItemRequirements(p, sword), ['需要等级：10', `需要力量：${base.strength}`, `需要敏捷：${base.dexterity}`]);
+  for (const line of unmetItemRequirements(p, sword)) assert.ok(describeItem(sword).includes(line));
+  p.level = 10; p.strength = base.strength; p.dexterity = base.dexterity;
+  assert.deepEqual(unmetItemRequirements(p, sword), []); assert.equal(equipItem(p, sword.uid).ok, true);
+});
+
+test('class requirements remain unmet independently of level and attributes', () => {
+  const p = player(), claw = put(p, 'ktr'); p.level = 99; p.strength = p.dexterity = 1000;
+  assert.deepEqual(unmetItemRequirements(p, claw), ['仅限刺客']); assert.equal(equipItem(p, claw.uid).ok, false);
+  p.classId = 'ass'; assert.deepEqual(unmetItemRequirements(p, claw), []); assert.equal(equipItem(p, claw.uid).ok, true);
+});
+
+test('unidentified and broken lines use the same restrictions as actual equipment validation', () => {
+  const p = player(), item = put(p, 'hax'); item.identified = false; item.durability = 0;
+  assert.deepEqual(unmetItemRequirements(p, item), ['尚未辨识', `耐久度：0/${item.maxDurability}`]);
+  assert.equal(equipItem(p, item.uid).message, '请先辨识物品'); item.identified = true;
+  assert.equal(equipItem(p, item.uid).message, '装备已经损坏'); item.mods.indestructible = 1;
+  assert.deepEqual(unmetItemRequirements(p, item), []); assert.equal(equipItem(p, item.uid).ok, true);
+});
+
+test('requirement display uses reduced ethereal thresholds rather than raw base values', () => {
+  const p = player(), item = put(p, '2hs'), base = getBase(item.code)!;
+  item.ethereal = true; item.mods.requirementsPercent = -20;
+  const strength = Math.max(0, Math.floor(base.strength * .8) - 10), dexterity = Math.max(0, Math.floor(base.dexterity * .8) - 10);
+  p.strength = strength - 1; p.dexterity = dexterity - 1;
+  assert.deepEqual(unmetItemRequirements(p, item), [`需要力量：${strength}`, `需要敏捷：${dexterity}`]);
+  p.strength = strength; p.dexterity = dexterity;
+  assert.deepEqual(unmetItemRequirements(p, item), []); assert.equal(equipItem(p, item.uid).ok, true);
+});
+
+test('preview rejects self bonuses and stats lost by replacement but retains independent support', () => {
+  const p = player('sor'), shield = put(p, 'tow'); p.strength = 0; shield.mods.strength = 1000;
+  const support = createItem('sst', 1, fixed); support.mods.strength = 1000; p.equipment.weapon = support;
+  const line = `需要力量：${getBase(shield.code)!.strength}`;
+  assert.deepEqual(unmetItemRequirements(p, shield), [line]); assert.equal(equipItem(p, shield.uid).ok, false, 'shield removes a supporting two-handed staff');
+  p.equipment = { ring1: Object.assign(createItem('rin', 1, fixed), { mods: { strength: 1000 } }) };
+  assert.deepEqual(unmetItemRequirements(p, shield), []); assert.equal(equipItem(p, shield.uid).ok, true);
+});
+
+test('preview follows active weapon bonuses and never mutates held or candidate items', () => {
+  const p = player('sor'), shield = put(p, 'tow'); p.strength = 0;
+  p.equipment.weapon2 = Object.assign(createItem('hax', 1, fixed), { mods: { strength: 1000 } });
+  const before = structuredClone(p), line = `需要力量：${getBase(shield.code)!.strength}`;
+  assert.deepEqual(unmetItemRequirements(p, shield), [line]); assert.deepEqual(p, before);
+  p.weaponSwap = true; assert.deepEqual(unmetItemRequirements(p, shield), []);
+  p.equipment.weapon2.durability = 0; assert.deepEqual(unmetItemRequirements(p, shield), [line]);
+  const broken = structuredClone(p); for (let i = 0; i < 5; i++) unmetItemRequirements(p, shield); assert.deepEqual(p, broken);
+});
+
 test('equipment attribute bonuses count, incoming item cannot satisfy its own requirement', () => {
   const p = player('sor'), ring = put(p, 'rin'); ring.mods.strength = 20;
   assert.ok(equipItem(p, ring.uid).ok);
@@ -173,7 +225,7 @@ test('failed two-hand replacement and unequip have exact atomic rollback when in
   const p = player(); p.strength = p.dexterity = 100;
   p.equipment.weapon = createItem('gsd', 1, fixed); p.equipment.offhand = createItem('buc', 1, fixed);
   const sword = put(p, '2hs');
-  while (placeItem(p.inventory, createItem('hp1', 1, fixed), 10, 4)) { /* fill every remaining cell */ }
+  while (placeItem(p.inventory, createItem('hp1', 1, fixed), 10, 8)) {}
   const before = JSON.stringify(p);
   assert.equal(equipItem(p, sword.uid).ok, false); assert.equal(JSON.stringify(p), before);
   assert.equal(unequipItem(p, 'offhand').ok, false); assert.equal(JSON.stringify(p), before);
@@ -189,7 +241,7 @@ test('rings choose two distinct slots; losing belt rows never deletes potions', 
 });
 
 test('normal exact rune order makes Leaf once; reverse order and magic bases do not', () => {
-  assert.equal(RUNEWORDS.length, 55); assert.ok(RUNEWORDS.some(w => w.name === 'Leaf')); assert.ok(!RUNEWORDS.some(w => w.name === 'Spirit'));
+  assert.equal(RUNEWORDS.length, 56); assert.ok(RUNEWORDS.some(w => w.name === 'Leaf')); assert.ok(!RUNEWORDS.some(w => w.name === 'Spirit'));
   for (const mode of ['normal', 'reverse', 'magic', 'superior'] as const) {
     const p = player('sor'), staff = createItem('sst', 20, fixed, mode === 'magic' ? 'magic' : mode === 'superior' ? 'superior' : 'normal');
     staff.sockets = 2; staff.mods['skill:36'] = 1; assert.ok(placeItem(p.inventory, staff, 10, 4));
@@ -509,7 +561,7 @@ for (const difficulty of ['normal', 'nightmare', 'hell'] as const) test(`conveni
   assert.equal(jordan.mods.maxManaPercent, 25); assert.equal(itemLabel(jordan), '乔丹之石');
   assert.equal(new Set(stock.map(item => item.uid)).size, stock.length);
   assert.ok(!stock.some(item => item.code === 'box'));
-  assert.equal(RUNEWORDS.length, 55);
+  assert.equal(RUNEWORDS.length, 56);
 });
 
 test('all 635 runtime bases and legacy English base saves display exact namestr Chinese', () => {

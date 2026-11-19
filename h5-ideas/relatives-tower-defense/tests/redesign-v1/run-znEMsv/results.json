@@ -1,0 +1,992 @@
+{
+  "complete": false,
+  "headless": true,
+  "output": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-znEMsv",
+  "routes": [
+    {
+      "label": "fishpond",
+      "ids": [
+        "ask-nainai",
+        "fishpond",
+        "ask-erjiu",
+        "erjiu-help"
+      ],
+      "ending": "won",
+      "title": "二舅的鱼塘讲到了散席",
+      "dishes": 3,
+      "turns": [
+        {
+          "id": "ask-nainai",
+          "strategy": "ally",
+          "line": "奶奶，三姑说您今年饺子换馅了，快给她夹一个！",
+          "intent": "请奶奶接话，把话头引到年菜",
+          "available": true,
+          "lock": "",
+          "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+          "before": [
+            "sangu"
+          ],
+          "after": [
+            "erjiu"
+          ],
+          "gained": [],
+          "spent": [
+            "nainai"
+          ],
+          "ending": null,
+          "index": 0,
+          "scene": 0,
+          "node": {
+            "id": "cold-sangu",
+            "scene": 0,
+            "speaker": "sangu",
+            "target": "you",
+            "topic": "对象",
+            "situation": "凉菜刚上，三姑夹了一筷子木耳，眼睛先落在你身上。",
+            "ask": "今年有对象了没？过完年都二十九了吧。",
+            "actions": [
+              {
+                "id": "ask-nainai",
+                "strategy": "ally",
+                "line": "奶奶，三姑说您今年饺子换馅了，快给她夹一个！",
+                "intent": "请奶奶接话，把话头引到年菜",
+                "requires": [
+                  {
+                    "ally": "nainai"
+                  }
+                ],
+                "locks": [
+                  {
+                    "text": "奶奶已经帮你接过一次话了"
+                  }
+                ],
+                "outcomes": [
+                  {
+                    "risk": "奶奶帮完这次就去厨房忙；二舅会顺着“吃”插进来盯你",
+                    "remove": [
+                      "sangu"
+                    ],
+                    "use": [
+                      "nainai"
+                    ],
+                    "add": [
+                      "erjiu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "nainai",
+                        "text": "对，今年加了虾仁！他三姑，你先尝一个。"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "哟，真鲜……行，那我回头再问。"
+                      },
+                      {
+                        "who": "erjiu",
+                        "text": "说到吃，我倒想问问——"
+                      }
+                    ],
+                    "next": "cold-erjiu"
+                  }
+                ]
+              },
+              {
+                "id": "ask-sangu",
+                "strategy": "counter",
+                "line": "三姑，您跟姑父当年谁先开的口？我取取经。",
+                "intent": "把问题抛回三姑，让她讲自己的故事",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "risk": "三姑讲开心了，会把表姐也扯进来，话头落到表姐身上",
+                    "remove": [
+                      "sangu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "sangu",
+                        "text": "那肯定是你姑父！骑着车在我家门口绕了三圈……"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "哎，说到这个——小琳！"
+                      },
+                      {
+                        "who": "biaojie",
+                        "text": "……怎么又到我了。"
+                      }
+                    ],
+                    "next": "cold-biaojie"
+                  }
+                ]
+              },
+              {
+                "id": "honest-sangu",
+                "strategy": "sincere",
+                "line": "还没呢。今年先把工作站稳，遇到合适的一定带回来。",
+                "intent": "说句实话，让三姑放下心",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "risk": "三姑会站到你这边；大姨会顺着“工作”问下去",
+                    "remove": [
+                      "sangu"
+                    ],
+                    "allies": [
+                      "sangu"
+                    ],
+                    "add": [
+                      "dayi"
+                    ],
+                    "beats": [
+                      {
+                        "who": "sangu",
+                        "text": "行，有数就好，姑不催了。"
+                      },
+                      {
+                        "who": "dayi",
+                        "text": "工作站稳？那我可得问问——"
+                      }
+                    ],
+                    "next": "cold-dayi"
+                  }
+                ]
+              }
+            ]
+          },
+          "beats": [
+            {
+              "who": "nainai",
+              "text": "对，今年加了虾仁！他三姑，你先尝一个。"
+            },
+            {
+              "who": "sangu",
+              "text": "哟，真鲜……行，那我回头再问。"
+            },
+            {
+              "who": "erjiu",
+              "text": "说到吃，我倒想问问——"
+            }
+          ],
+          "next": "cold-erjiu",
+          "title": "",
+          "summary": ""
+        },
+        {
+          "id": "fishpond",
+          "strategy": "counter",
+          "line": "二舅先说您的鱼塘！去年说要扩，扩成没？",
+          "intent": "把话题引到二舅最爱聊的鱼塘",
+          "available": true,
+          "lock": "",
+          "risk": "二舅会记住这个话题，压轴还能再请他讲；大姨听烦了会转头盯你",
+          "before": [
+            "erjiu"
+          ],
+          "after": [
+            "dayi"
+          ],
+          "gained": [],
+          "spent": [],
+          "ending": null,
+          "index": 1,
+          "scene": 0,
+          "node": {
+            "id": "cold-erjiu",
+            "scene": 0,
+            "speaker": "erjiu",
+            "target": "you",
+            "topic": "工资",
+            "situation": "奶奶的虾仁饺子引开了三姑，二舅顺着“吃”接过了话头。",
+            "ask": "在上海一个月到手多少？够不够你吃饭？",
+            "actions": [
+              {
+                "id": "fishpond",
+                "strategy": "counter",
+                "line": "二舅先说您的鱼塘！去年说要扩，扩成没？",
+                "intent": "把话题引到二舅最爱聊的鱼塘",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "risk": "二舅会记住这个话题，压轴还能再请他讲；大姨听烦了会转头盯你",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "flags": [
+                      "fishpond"
+                    ],
+                    "add": [
+                      "dayi"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "扩了！三亩变五亩，那增氧机我跟你说……"
+                      },
+                      {
+                        "who": "dayi",
+                        "text": "又是鱼塘。孩子，你说说你的。"
+                      }
+                    ],
+                    "next": "hot-erjiu"
+                  }
+                ]
+              },
+              {
+                "id": "enough",
+                "strategy": "taiji",
+                "line": "够吃够住，还给奶奶买了件新棉袄。",
+                "intent": "不报数字，把话题带回奶奶",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "risk": "不会扯进别人；但二舅没问到数，会继续盯着你",
+                    "beats": [
+                      {
+                        "who": "nainai",
+                        "text": "那棉袄可暖和了！"
+                      },
+                      {
+                        "who": "erjiu",
+                        "text": "嗯……行，回头再细聊。"
+                      }
+                    ],
+                    "next": "hot-erjiu"
+                  }
+                ]
+              }
+            ]
+          },
+          "beats": [
+            {
+              "who": "erjiu",
+              "text": "扩了！三亩变五亩，那增氧机我跟你说……"
+            },
+            {
+              "who": "dayi",
+              "text": "又是鱼塘。孩子，你说说你的。"
+            }
+          ],
+          "next": "hot-erjiu",
+          "title": "",
+          "summary": ""
+        },
+        {
+          "id": "ask-erjiu",
+          "strategy": "counter",
+          "line": "二舅，您当年在县城买房，首付咋凑的？",
+          "intent": "把问题抛回二舅自己的经历",
+          "available": true,
+          "lock": "",
+          "risk": "二舅会讲开；但三姑会接一句“你也该攒攒了”，开始盯你",
+          "before": [
+            "erjiu",
+            "dayi"
+          ],
+          "after": [
+            "sangu",
+            "dayi"
+          ],
+          "gained": [],
+          "spent": [],
+          "ending": null,
+          "index": 2,
+          "scene": 1,
+          "node": {
+            "id": "hot-erjiu",
+            "scene": 1,
+            "speaker": "erjiu",
+            "target": "you",
+            "topic": "买房",
+            "situation": "热菜上桌，二舅端着酒杯坐到你旁边，也盯上了你。",
+            "enter": [
+              "erjiu"
+            ],
+            "ask": "隔壁小王都在省城买房了，你啥时候买？",
+            "actions": [
+              {
+                "id": "biaojie-help",
+                "strategy": "ally",
+                "line": "表姐，你不是研究过房价？给二舅讲讲。",
+                "intent": "请表姐帮腔，把买房变成她的专业",
+                "requires": [
+                  {
+                    "ally": "biaojie"
+                  }
+                ],
+                "locks": [
+                  {
+                    "when": {
+                      "watching": "biaojie"
+                    },
+                    "text": "表姐还记着你第一道没帮她，这会儿不会替你说话"
+                  },
+                  {
+                    "text": "表姐还没站到你这边：第一道替她说句话才行"
+                  }
+                ],
+                "outcomes": [
+                  {
+                    "risk": "二舅会被说服；表姐这次帮完，压轴就不能再请她",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "use": [
+                      "biaojie"
+                    ],
+                    "beats": [
+                      {
+                        "who": "biaojie",
+                        "text": "二舅，省城房价今年跌了两成，等等更划算。"
+                      },
+                      {
+                        "who": "erjiu",
+                        "text": "哦？那……是得再等等。"
+                      }
+                    ],
+                    "next": "dumpling"
+                  }
+                ]
+              },
+              {
+                "id": "ask-erjiu",
+                "strategy": "counter",
+                "line": "二舅，您当年在县城买房，首付咋凑的？",
+                "intent": "把问题抛回二舅自己的经历",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "when": {
+                      "ally": "sangu"
+                    },
+                    "risk": "二舅会讲开；三姑已经站你这边，会帮你挡一句，不会跟着劝",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "那会儿可难了，我跟你舅妈借遍了全村……"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "孩子自己有安排，咱不催。"
+                      }
+                    ],
+                    "next": "dumpling"
+                  },
+                  {
+                    "when": {
+                      "watching": "sangu"
+                    },
+                    "risk": "二舅会讲开；但三姑本来就盯着你，会接着劝你攒钱",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "那会儿可难了，我跟你舅妈借遍了全村……"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "所以说，你也得早点攒首付了。"
+                      }
+                    ],
+                    "next": "dumpling"
+                  },
+                  {
+                    "risk": "二舅会讲开；但三姑会接一句“你也该攒攒了”，开始盯你",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "add": [
+                      "sangu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "那会儿可难了，我跟你舅妈借遍了全村……"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "所以说，你也得早点攒首付了。"
+                      }
+                    ],
+                    "next": "dumpling"
+                  }
+                ]
+              },
+              {
+                "id": "lottery",
+                "strategy": "crazy",
+                "line": "买！等我中了彩票，给全桌一人一套！",
+                "intent": "用玩笑把买房话题炸开",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "when": {
+                      "ally": "sangu"
+                    },
+                    "risk": "二舅会被逗乐、站你这边；大姨会让你“正经点”，盯上你",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "allies": [
+                      "erjiu"
+                    ],
+                    "add": [
+                      "dayi"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "哈哈哈，这孩子有意思！来，舅敬你一杯。"
+                      },
+                      {
+                        "who": "dayi",
+                        "text": "你这孩子，正经点，到底咋打算的？"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "大过年的，乐呵乐呵嘛。"
+                      }
+                    ],
+                    "next": "dumpling"
+                  },
+                  {
+                    "risk": "二舅会被逗乐、站你这边；但大姨和三姑都会让你“正经点”，一起盯你",
+                    "remove": [
+                      "erjiu"
+                    ],
+                    "allies": [
+                      "erjiu"
+                    ],
+                    "add": [
+                      "dayi",
+                      "sangu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "哈哈哈，这孩子有意思！来，舅敬你一杯。"
+                      },
+                      {
+                        "who": "dayi",
+                        "text": "你这孩子，正经点，到底咋打算的？"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "就是，说正经的！"
+                      }
+                    ],
+                    "next": "dumpling"
+                  }
+                ]
+              }
+            ]
+          },
+          "beats": [
+            {
+              "who": "erjiu",
+              "text": "那会儿可难了，我跟你舅妈借遍了全村……"
+            },
+            {
+              "who": "sangu",
+              "text": "所以说，你也得早点攒首付了。"
+            }
+          ],
+          "next": "dumpling",
+          "title": "",
+          "summary": ""
+        },
+        {
+          "id": "erjiu-help",
+          "strategy": "ally",
+          "line": "二舅，鱼塘那增氧机后来装上没？大家都想听！",
+          "intent": "请二舅讲鱼塘，全桌跟着听",
+          "available": true,
+          "lock": "",
+          "risk": "二舅会讲到散席，饭能吃完；你得陪他听完增氧机",
+          "before": [
+            "sangu",
+            "dayi"
+          ],
+          "after": [],
+          "gained": [],
+          "spent": [
+            "erjiu"
+          ],
+          "ending": "won",
+          "index": 3,
+          "scene": 2,
+          "node": {
+            "id": "dumpling",
+            "scene": 2,
+            "speaker": "table",
+            "target": "you",
+            "topic": "打算",
+            "situation": "饺子端上来了，全桌放下筷子，一起转头看向你。",
+            "ask": "来，今年到底咋打算的？说说！",
+            "actions": [
+              {
+                "id": "coin-dumpling",
+                "strategy": "ally",
+                "line": "奶奶，今年饺子包硬币了吗？谁吃到谁先说！",
+                "intent": "请奶奶把话头变成找硬币",
+                "requires": [
+                  {
+                    "ally": "nainai"
+                  }
+                ],
+                "blockedBy": [
+                  {
+                    "ally": "erjiu"
+                  },
+                  {
+                    "ally": "biaojie"
+                  },
+                  {
+                    "flag": "fishpond"
+                  }
+                ],
+                "locks": [
+                  {
+                    "when": {
+                      "used": "nainai"
+                    },
+                    "text": "奶奶第一道已经帮你接过话，这会儿在厨房下饺子"
+                  },
+                  {
+                    "when": {
+                      "ally": "erjiu"
+                    },
+                    "text": "二舅已经愿意接话，奶奶笑着让你们先聊，不再打岔"
+                  },
+                  {
+                    "when": {
+                      "ally": "biaojie"
+                    },
+                    "text": "表姐正等着和你一起答，奶奶让你们先聊，不再打岔"
+                  },
+                  {
+                    "when": {
+                      "flag": "fishpond"
+                    },
+                    "text": "二舅等着接着讲鱼塘，奶奶让你们先聊，不再打岔"
+                  },
+                  {
+                    "text": "奶奶在厨房忙，这会儿不能接话"
+                  }
+                ],
+                "outcomes": [
+                  {
+                    "risk": "全桌会去翻饺子，饭能安稳吃完；奶奶会让你明早陪她去拜年",
+                    "clear": true,
+                    "use": [
+                      "nainai"
+                    ],
+                    "beats": [
+                      {
+                        "who": "nainai",
+                        "text": "包了包了！吃到的明年最顺。"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "我先来！"
+                      },
+                      {
+                        "who": "erjiu",
+                        "text": "哎哟——这个硬！是我的！"
+                      },
+                      {
+                        "who": "nainai",
+                        "text": "乖，明早陪奶奶去拜年。"
+                      }
+                    ],
+                    "ending": "won",
+                    "title": "奶奶的硬币饺子救了场",
+                    "summary": "你把奶奶留到了最后。一句“谁吃到硬币谁先说”，全桌都低头翻饺子去了。"
+                  }
+                ]
+              },
+              {
+                "id": "erjiu-help",
+                "strategy": "ally",
+                "line": "二舅，您那鱼塘的事，给大家讲讲？",
+                "intent": "请二舅接话",
+                "requires": [
+                  {
+                    "flag": "fishpond"
+                  },
+                  {
+                    "ally": "erjiu"
+                  }
+                ],
+                "locks": [
+                  {
+                    "text": "二舅还没跟你聊开：第一道问问他的鱼塘，或热菜时把他逗乐"
+                  }
+                ],
+                "outcomes": [
+                  {
+                    "when": {
+                      "flag": "fishpond"
+                    },
+                    "line": "二舅，鱼塘那增氧机后来装上没？大家都想听！",
+                    "intent": "请二舅讲鱼塘，全桌跟着听",
+                    "risk": "二舅会讲到散席，饭能吃完；你得陪他听完增氧机",
+                    "clear": true,
+                    "use": [
+                      "erjiu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "装上了！我跟你们说，那天晚上停电……"
+                      },
+                      {
+                        "who": "dayi",
+                        "text": "又来了……"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "哈哈，听他讲，听他讲。"
+                      }
+                    ],
+                    "ending": "won",
+                    "title": "二舅的鱼塘讲到了散席",
+                    "summary": "第一道你问了二舅的鱼塘，压轴他接着讲，全桌都被增氧机吸走了。"
+                  },
+                  {
+                    "line": "二舅，刚才那杯还没碰呢！",
+                    "intent": "请二舅带头碰杯，把话题敬过去",
+                    "risk": "全桌会跟着碰杯，饭能吃完；二舅会让你明年回来陪他喝",
+                    "clear": true,
+                    "use": [
+                      "erjiu"
+                    ],
+                    "beats": [
+                      {
+                        "who": "erjiu",
+                        "text": "对对对！来，全桌一起，新年好！"
+                      },
+                      {
+                        "who": "table",
+                        "text": "新年好！"
+                      },
+                      {
+                        "who": "erjiu",
+                        "text": "明年还回来陪舅喝啊。"
+                      }
+                    ],
+                    "ending": "won",
+                    "title": "二舅带头碰杯，话题散了",
+                    "summary": "热菜时一个彩票玩笑把二舅逗乐了，压轴他替你举起了杯。"
+                  }
+                ]
+              },
+              {
+                "id": "biaojie-team",
+                "strategy": "ally",
+                "line": "表姐，咱俩的打算一起说？",
+                "intent": "和表姐一起回应，把问题分成两半",
+                "requires": [
+                  {
+                    "ally": "biaojie"
+                  }
+                ],
+                "locks": [
+                  {
+                    "when": {
+                      "watching": "biaojie"
+                    },
+                    "text": "表姐还记着你第一道没帮她，正等着看你怎么答"
+                  },
+                  {
+                    "when": {
+                      "used": "biaojie"
+                    },
+                    "text": "表姐热菜时已经帮你挡过二舅了"
+                  },
+                  {
+                    "text": "表姐还没站到你这边：第一道替她说句话才行"
+                  }
+                ],
+                "outcomes": [
+                  {
+                    "risk": "饭能吃完；全桌会说你俩一伙的，三姑明年要一起催",
+                    "clear": true,
+                    "use": [
+                      "biaojie"
+                    ],
+                    "beats": [
+                      {
+                        "who": "biaojie",
+                        "text": "我俩的打算就是：明年一起回来吃奶奶的饺子！"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "好好好，明年俩一起催。"
+                      },
+                      {
+                        "who": "nainai",
+                        "text": "都回来就好。"
+                      }
+                    ],
+                    "ending": "won",
+                    "title": "和表姐结成了饭桌同盟",
+                    "summary": "第一道你替表姐说了句话，压轴她拉着你一起答，问题被分成了两半。"
+                  }
+                ]
+              },
+              {
+                "id": "say-plan",
+                "strategy": "sincere",
+                "line": "我的打算：好好工作，常回家，别的我自己慢慢定。",
+                "intent": "认真说一句自己的打算",
+                "requires": [
+                  {
+                    "maxWatching": 1
+                  }
+                ],
+                "locks": [
+                  {
+                    "text": "{watching}都还盯着你，现在开口会被几个人一起追问；先请人接话，或下次早点把人引开"
+                  }
+                ],
+                "outcomes": [
+                  {
+                    "risk": "盯着你的人不到两位，说完大家就放心了",
+                    "clear": true,
+                    "beats": [
+                      {
+                        "who": "nainai",
+                        "text": "说得好，奶奶就爱听这个。"
+                      },
+                      {
+                        "who": "dayi",
+                        "text": "行，有自己的主意就好。"
+                      },
+                      {
+                        "who": "sangu",
+                        "text": "那就……吃饺子！"
+                      }
+                    ],
+                    "ending": "won",
+                    "title": "自己把打算说清了",
+                    "summary": "前两道你把盘问慢慢引开，压轴时盯着你的人不到两位，你自己说清了打算。"
+                  }
+                ]
+              },
+              {
+                "id": "to-kitchen",
+                "strategy": "leave",
+                "line": "我去厨房帮奶奶端饺子！",
+                "intent": "起身离席，先躲开这一轮",
+                "requires": [],
+                "locks": [],
+                "outcomes": [
+                  {
+                    "risk": "马上就能脱身；但这顿饭没吃完，以提前离席收场",
+                    "clear": true,
+                    "beats": [
+                      {
+                        "who": "nainai",
+                        "text": "来得正好，帮奶奶捞饺子。"
+                      },
+                      {
+                        "who": "table",
+                        "text": "哎，人呢？"
+                      }
+                    ],
+                    "ending": "left",
+                    "title": "端着饺子溜去了厨房",
+                    "summary": "压轴时你借口端饺子离了席。没吃完这顿，但也没硬扛。"
+                  }
+                ]
+              }
+            ]
+          },
+          "beats": [
+            {
+              "who": "erjiu",
+              "text": "装上了！我跟你们说，那天晚上停电……"
+            },
+            {
+              "who": "dayi",
+              "text": "又来了……"
+            },
+            {
+              "who": "sangu",
+              "text": "哈哈，听他讲，听他讲。"
+            }
+          ],
+          "next": null,
+          "title": "二舅的鱼塘讲到了散席",
+          "summary": "第一道你问了二舅的鱼塘，压轴他接着讲，全桌都被增氧机吸走了。"
+        }
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "label": "fishpond/ask-nainai/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "cold-sangu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/ask-nainai/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "cold-erjiu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/fishpond/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "cold-erjiu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/fishpond/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "hot-erjiu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/ask-erjiu/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "hot-erjiu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/ask-erjiu/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "dumpling",
+      "problems": []
+    },
+    {
+      "label": "fishpond/erjiu-help/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "dumpling",
+      "problems": []
+    },
+    {
+      "label": "fishpond/result",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "problems": []
+    },
+    {
+      "label": "cousin/ask-sangu/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "cold-sangu",
+      "problems": []
+    },
+    {
+      "label": "cousin/ask-sangu/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "cold-biaojie",
+      "problems": []
+    },
+    {
+      "label": "cousin/cover-biaojie/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "cold-biaojie",
+      "problems": []
+    },
+    {
+      "label": "cousin/cover-biaojie/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "hot-erjiu",
+      "problems": []
+    },
+    {
+      "label": "cousin/lottery/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "hot-erjiu",
+      "problems": [
+        {
+          "type": "text-outside",
+          "class": "you-said",
+          "text": "「买！等我中了彩票，给全桌一人一套！」",
+          "element": {
+            "x": 30,
+            "y": 432.1875,
+            "right": 360,
+            "bottom": 482.203125
+          },
+          "glyph": {
+            "x": 30,
+            "y": 455.1875,
+            "right": 364.40625,
+            "bottom": 480.1875
+          }
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-znEMsv/fishpond-ask-nainai-reaction.png",
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-znEMsv/fishpond-result.png",
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-znEMsv/cousin-cover-biaojie-reaction.png",
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-znEMsv/cousin-lottery-react-failure.png"
+  ],
+  "downloads": [
+    {
+      "label": "fishpond",
+      "file": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-znEMsv/fishpond-poster.png",
+      "bytes": 276307,
+      "sha256": "4ddda79689a4fa69ec146527240ac4ff15c1f2930c95afa4b4927dcda8ef0c36"
+    }
+  ],
+  "checks": [],
+  "errors": [],
+  "external": [],
+  "fingerprints": null,
+  "failure": "AssertionError [ERR_ASSERTION]: cousin/lottery/react: [{\"type\":\"text-outside\",\"class\":\"you-said\",\"text\":\"「买！等我中了彩票，给全桌一人一套！」\",\"element\":{\"x\":30,\"y\":432.1875,\"right\":360,\"bottom\":482.203125},\"glyph\":{\"x\":30,\"y\":455.1875,\"right\":364.40625,\"bottom\":480.1875}}]\n+ actual - expected\n\n+ [\n+   {\n+     class: 'you-said',\n+     element: {\n+       bottom: 482.203125,\n+       right: 360,\n+       x: 30,\n+       y: 432.1875\n+     },\n+     glyph: {\n+       bottom: 480.1875,\n+       right: 364.40625,\n+       x: 30,\n+       y: 455.1875\n+     },\n+     text: '「买！等我中了彩票，给全桌一人一套！」',\n+     type: 'text-outside'\n+   }\n+ ]\n- []\n\n    at audit (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:90:10)\n    at async goldenRoutes (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:151:7)\n    at async file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:281:3"
+}

@@ -1,0 +1,31 @@
+{
+  "headless": true,
+  "errors": [],
+  "external": [],
+  "views": [
+    {
+      "width": 320,
+      "height": 568,
+      "start": {
+        "x": 31,
+        "y": 392.640625,
+        "width": 261,
+        "height": 52
+      },
+      "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/entrance-320x568.png",
+      "fontSize": "16px"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "start": {
+        "x": 35,
+        "y": 384.1875,
+        "width": 323,
+        "height": 52
+      },
+      "screenshot": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/entrance-390x844.png",
+      "fontSize": "16px"
+    }
+  ]
+}

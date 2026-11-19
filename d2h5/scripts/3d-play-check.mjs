@@ -200,8 +200,8 @@ async function run(mobile) {
     console.log(JSON.stringify({ platform: mobile ? 'touch' : 'desktop', area: fight.area, level: fight.player.level, xp: fight.player.experience, mana: fight.player.mana, life: fight.player.life, draw: fight.draw, frames, checks: 'movement, sustained moving casts with real displacement, release, panel reset, native exit, held spell, XP, two-button/two-finger cancel, portal/E, panel potions and paused safety, IndexedDB reload, no overflow' }));
   } finally { await context.close(); }
 }
-async function checkSkillPresses(mobile) {
-  const context = await browser.newContext({ viewport: mobile ? { width: 390, height: 844 } : { width: 1440, height: 900 }, isMobile: mobile, hasTouch: mobile, reducedMotion: 'reduce' });
+async function checkSkillPresses(mobile, width = mobile ? 390 : 1440) {
+  const context = await browser.newContext({ viewport: { width, height: width === 320 ? 568 : mobile ? 844 : 900 }, isMobile: mobile, hasTouch: mobile, deviceScaleFactor: mobile ? 2 : 1, reducedMotion: 'reduce' });
   try {
     const page = await context.newPage(), activate = node => mobile ? node.tap() : node.click();
     page.on('pageerror', e => errors.push(e.message));
@@ -234,7 +234,7 @@ async function checkSkillPresses(mobile) {
     };
     await bindFire(true);
     if (mobile) assert.equal(await page.locator('.touch-action.cast').isDisabled(), true, 'town keeps cast disabled');
-    else { await press(); assert.deepEqual(await casts(), []); }
+    else { await press(); assert.deepEqual(await casts(), []); assert.match(await page.evaluate(() => window.sanctuary.engine.state.messages.at(-1).text), /营地内不能.*野外/); }
     // Isolated input fixture removes enemies, not a campaign traversal or combat proof.
     await page.evaluate(() => { const e = window.sanctuary.engine; e.enterArea(2, undefined, true); e.state.area.monsters = []; });
     await page.waitForFunction(() => window.sanctuary.renderer.groundArea === window.sanctuary.engine.state.area && !document.querySelector('.touch-action.cast').disabled);
@@ -258,9 +258,41 @@ async function checkSkillPresses(mobile) {
     await press(); assert.deepEqual(await casts(), released);
     assert.match(await page.evaluate(() => window.sanctuary.engine.state.messages.at(-1).text), /法力不足/);
     await page.evaluate(() => { const e = window.sanctuary.engine; e.state.player.mana = e.state.stats.maxMana; });
+    const owned = () => page.evaluate(() => { const p = window.sanctuary.engine.state.player; return { inventory: p.inventory, equipment: p.equipment, gold: p.gold }; });
+    const ownedBeforeSwap = await owned(), beforeUnavailable = await casts();
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.player.skills[36] ?? 0), 0);
+    await page.keyboard.press('KeyX');
+    await page.waitForFunction(() => document.querySelector('.right-skill')?.classList.contains('skill-unavailable'));
+    assert.equal(await page.evaluate(async () => (await import('/src/rules.ts')).skillLevel(window.sanctuary.engine.state.player, 36)), 0);
+    assert.equal(await page.locator('.right-skill').isDisabled(), false, 'unavailable binding remains selectable');
+    const statusNode = page.locator(mobile ? '.touch-action.cast .action-skill' : '.right-skill');
+    assert.match(await statusNode.innerText(), mobile ? /不可用 · 火弹/ : /火弹（不可用）/);
+    if (mobile) assert.equal(await statusNode.evaluate(node => node.scrollWidth <= node.clientWidth), true, 'short unavailable label fits the touch button');
+    assert.equal(await statusNode.evaluate(node => getComputedStyle(node).color), 'rgb(255, 98, 98)');
+    if (mobile) assert.equal(await page.locator('.touch-action.cast').isDisabled(), true);
+    else {
+      await ready();
+      const unavailableMana = await page.evaluate(() => { const e = window.sanctuary.engine; e.state.player.mana = e.state.stats.maxMana; return e.state.player.mana; });
+      await press();
+      assert.match(await page.evaluate(() => window.sanctuary.engine.state.messages.at(-1).text), /未获得火弹.*武器组/);
+      const point = await mousePoint(); await page.mouse.move(point.x, point.y); await page.mouse.down({ button: 'right' });
+      await page.waitForTimeout(700); await page.mouse.up({ button: 'right' });
+      assert.deepEqual(await casts(), beforeUnavailable, 'unavailable right skill cannot cast even while held');
+      assert.equal(await page.evaluate(() => window.sanctuary.engine.state.player.mana), unavailableMana);
+      assert.equal(await page.evaluate(() => window.sanctuary.engine.cooldown), 0);
+      assert.equal(await page.evaluate(() => window.sanctuary.engine.control.right), false);
+    }
+    assert.deepEqual(await owned(), ownedBeforeSwap);
+    await page.screenshot({ path: output + `77-right-skill-unavailable-${width}.png` });
+    await page.keyboard.press('KeyX');
+    await page.waitForFunction(() => !document.querySelector('.right-skill')?.classList.contains('skill-unavailable'));
+    await ready(); const beforeRecovered = await casts(); await press();
+    assert.equal((await casts()).length, beforeRecovered.length + 1, 'switching back restores native casting without learning or rerolling items');
+    assert.deepEqual(await owned(), ownedBeforeSwap);
+    await page.screenshot({ path: output + `77-right-cast-recovered-${width}.png` });
     await bindFire(false); await ready(); const beforeLeft = await casts(); await press(false);
     assert.equal((await casts()).length, beforeLeft.length + 1, 'quick left click/native attack tap uses the bound active skill');
-    await page.screenshot({ path: output + (mobile ? '44-skill-touch-press.png' : '43-skill-desktop-press.png') });
+    await page.screenshot({ path: output + `77-left-cast-${width}.png` });
     await ready(); const beforePanel = await casts();
     await activate(page.locator('.game-hud [data-panel="inventory"]'));
     await page.locator('.panel-inventory').waitFor();
@@ -273,7 +305,345 @@ async function checkSkillPresses(mobile) {
       await page.locator('.touch-action.cast').focus(); await page.keyboard.press('Enter');
       assert.equal((await casts()).length, beforePanel.length + 1, 'keyboard activation of touch cast also responds to a short press');
     }
-    console.log(`${mobile ? 'Touch' : 'Desktop'} isolated skill input fixture PASS: 5 quick casts, left binding, automatic panel close, hold/release/cancel, mana, town/panel gates${mobile ? ', keyboard press' : ''}`);
+    console.log(`${width}px ${mobile ? 'Touch' : 'Desktop'} isolated skill input fixture PASS: 5 quick casts, left binding, automatic panel close, hold/release/cancel, mana, town/panel gates, unavailable staff skill after swap, red status, restored native casting, unchanged items${mobile ? ', keyboard press' : ', explicit rejection reason'}`);
   } finally { await context.close(); }
 }
-try { await checkSkillPresses(false); await checkSkillPresses(true); await run(false); await run(true); assert.deepEqual(errors, []); console.log('3D isolated play smoke PASS; no production saves used.'); } finally { await browser.close(); }
+async function checkPauseSaveExit(width) {
+  const mobile = width < 1000, context = await browser.newContext({ viewport: { width, height: width === 320 ? 568 : mobile ? 844 : 900 }, isMobile: mobile, hasTouch: mobile, deviceScaleFactor: mobile ? 2 : 1, reducedMotion: 'reduce' });
+  try {
+    const page = await context.newPage(), activate = node => mobile ? node.tap() : node.click();
+    page.on('pageerror', e => errors.push(e.message));
+    page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    const create = async name => {
+      await activate(page.getByRole('button', { name: '新建角色', exact: true }));
+      await activate(page.locator('[data-class="sor"]')); await page.locator('#hero-name').fill(name);
+      await activate(page.getByRole('button', { name: '开启旅程', exact: true }));
+      await page.waitForFunction(() => window.sanctuary.engine.state.screen === 'game');
+      await page.evaluate(() => window.sanctuary.engine.save(false));
+    };
+    const pause = async () => {
+      if (mobile) await activate(page.locator('.pause-button')); else await page.keyboard.press('Escape');
+      await page.locator('.modal-layer .modal-card').waitFor();
+    };
+    const exit = () => page.getByRole('button', { name: '保存并返回角色菜单', exact: true });
+    await page.goto('http://127.0.0.1:5173', { waitUntil: 'networkidle' });
+    await activate(page.getByRole('button', { name: '开始游戏', exact: true }));
+    await create(`保留旅人${width}`); await pause(); await activate(exit());
+    await page.waitForFunction(() => window.sanctuary.engine.state.screen === 'title' && !window.sanctuary.engine.state.savingAndExiting);
+    const other = await page.evaluate(async () => { const e = window.sanctuary.engine; return e.store.get(e.state.activeSaveId); });
+    await create(`暂停返回隔离${width}`);
+    const baseline = await page.evaluate(async () => { const e = window.sanctuary.engine; return e.store.get(e.state.activeSaveId); });
+    await activate(page.locator('.game-hud [data-panel="inventory"]')); await page.keyboard.press('Escape');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.panel), 'none');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.paused), false);
+    await pause();
+    assert.match(await page.locator('#save-exit-note').innerText(), /保存当前角色进度到本机.*成功后返回角色菜单.*营地.*怪物会刷新/);
+    assert.equal(await exit().getAttribute('aria-describedby'), 'save-exit-note');
+    await page.screenshot({ path: output + `78-pause-menu-${width}.png` });
+    await page.keyboard.press('Escape'); assert.equal(await page.evaluate(() => window.sanctuary.engine.state.paused), false);
+    await pause();
+    await page.evaluate(() => {
+      const e = window.sanctuary.engine, put = e.store.put.bind(e.store);
+      e.state.player.gold = 321; window.__exitFail = true; window.__exitWrites = 0;
+      e.store.put = async record => { window.__exitWrites++; if (window.__exitFail) throw new Error('isolated quota fixture'); if (window.__exitGate) await window.__exitGate; await put(record); };
+    });
+    await activate(exit()); await page.locator('.modal-card [role="alert"]').waitFor();
+    assert.match(await page.locator('.modal-card [role="alert"]').innerText(), /写入失败.*未返回角色菜单.*重试/);
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.screen), 'game');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.paused), true);
+    assert.deepEqual(await page.evaluate(async () => { const e = window.sanctuary.engine; return e.store.get(e.state.activeSaveId); }), baseline);
+    assert.equal(await exit().isEnabled(), true);
+    await page.screenshot({ path: output + `78-save-failed-${width}.png` });
+    await page.evaluate(() => { window.__exitFail = false; window.__exitWrites = 0; window.__exitGate = new Promise(resolve => { window.__exitRelease = resolve; }); });
+    await activate(exit()); await page.getByRole('button', { name: '正在保存，请稍候…', exact: true }).waitFor();
+    assert.equal(await page.locator('.modal-card').getAttribute('aria-busy'), 'true');
+    assert.equal(await page.locator('.modal-card button:enabled').count(), 0);
+    assert.equal(await page.locator('.modal-card [role="alert"]').count(), 0, 'retry hides the previous failure while saving');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.screen), 'game');
+    const savingButton = page.getByRole('button', { name: '正在保存，请稍候…', exact: true }), b = await savingButton.boundingBox();
+    if (mobile) await page.touchscreen.tap(b.x + b.width / 2, b.y + b.height / 2); else await page.mouse.click(b.x + b.width / 2, b.y + b.height / 2);
+    await page.keyboard.press('Escape');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.paused), true);
+    assert.deepEqual(await page.evaluate(async () => { const e = window.sanctuary.engine; return e.store.get(e.state.activeSaveId); }), baseline);
+    assert.equal(await page.evaluate(() => window.__exitWrites), 1);
+    await page.screenshot({ path: output + `78-save-waiting-${width}.png` });
+    await page.evaluate(() => window.__exitRelease());
+    await page.waitForFunction(() => window.sanctuary.engine.state.screen === 'title' && !window.sanctuary.engine.state.savingAndExiting);
+    await page.locator('.character-screen').waitFor();
+    const records = await page.evaluate(() => window.sanctuary.engine.store.list());
+    assert.equal(records.length, 2);
+    const saved = records.find(r => r.id === baseline.id);
+    assert.equal(saved.player.gold, 321); assert.deepEqual(saved.player.equipment, baseline.player.equipment); assert.deepEqual(saved.player.inventory, baseline.player.inventory);
+    assert.deepEqual(records.find(r => r.id === other.id), other);
+    await page.screenshot({ path: output + `78-returned-roster-${width}.png` });
+    await page.reload({ waitUntil: 'networkidle' }); await activate(page.getByRole('button', { name: '开始游戏', exact: true }));
+    await activate(page.locator(`[data-save-id="${baseline.id}"]`)); await activate(page.getByRole('button', { name: '进入', exact: true }));
+    await page.waitForFunction(() => window.sanctuary.engine.state.screen === 'game' && !window.sanctuary.engine.state.loadingSave);
+    const reloaded = await page.evaluate(() => { const e = window.sanctuary.engine; return { player: e.state.player, town: e.state.area.def.town }; });
+    assert.equal(reloaded.player.gold, 321); assert.deepEqual(reloaded.player.equipment, baseline.player.equipment); assert.deepEqual(reloaded.player.inventory, baseline.player.inventory); assert.equal(reloaded.town, true);
+    console.log(`${width}px isolated pause menu PASS: native Esc/touch, explicit save-and-return note, failure stays paused, delayed save/duplicate guards, IndexedDB v1 persistence/reload, other character unchanged`);
+  } finally { await context.close(); }
+}
+async function checkCameraFraming(mobile) {
+  const sizes = mobile ? [[390, 844], [320, 568], [844, 390]] : [[1440, 900], [1920, 1080], [1280, 500]];
+  const context = await browser.newContext({ viewport: { width: sizes[0][0], height: sizes[0][1] }, isMobile: mobile, hasTouch: mobile, deviceScaleFactor: mobile ? 2 : 1, reducedMotion: 'reduce' });
+  try {
+    const page = await context.newPage(), activate = node => mobile ? node.tap() : node.click();
+    page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    await page.goto('http://127.0.0.1:5173', { waitUntil: 'networkidle' });
+    await activate(page.getByRole('button', { name: '开始游戏', exact: true }));
+    await activate(page.getByRole('button', { name: '新建角色', exact: true }));
+    await activate(page.locator('[data-class="sor"]')); await page.locator('#hero-name').fill(mobile ? '手机镜头隔离' : '高视角隔离');
+    await activate(page.getByRole('button', { name: '开启旅程', exact: true }));
+    await page.waitForFunction(() => { const { renderer, engine } = window.sanctuary; return engine.state.screen === 'game' && renderer.groundArea === engine.state.area; });
+    const owned = () => page.evaluate(() => { const p = window.sanctuary.engine.state.player; return { inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold, experience: p.experience }; });
+    const before = await owned();
+    for (const [width, height] of sizes) {
+      await page.setViewportSize({ width, height });
+      await page.waitForFunction(({ width, height }) => { const r = window.sanctuary.renderer; return r.width === width && r.height === height; }, { width, height });
+      const frame = await page.evaluate(async () => {
+        await new Promise(requestAnimationFrame); await new Promise(requestAnimationFrame);
+        const { renderer: r, engine: e } = window.sanctuary, camera = r.camera, target = r.target, p = e.state.player;
+        const dx = camera.position.x - target.x, dy = camera.position.y - target.y, dz = camera.position.z - target.z;
+        const points = [[0, 0], [3, -2], [-2, 3], [.25, -.5]].map(([dx, dy]) => {
+          const world = { x: p.x + dx, y: p.y + dy }, screen = r.worldToScreen(world), restored = r.screenToWorld(screen.x, screen.y);
+          return { error: Math.hypot(world.x - restored.x, world.y - restored.y), finite: Number.isFinite(screen.x) && Number.isFinite(screen.y) };
+        });
+        return { coarse: r.coarse, fov: camera.fov, distance: r.distance, actualDistance: Math.hypot(dx, dy, dz), elevation: Math.atan2(dy, Math.hypot(dx, dz)) * 180 / Math.PI,
+          height: dy, diagonalError: Math.abs(dx - dz), points, fogNear: r.scene.fog.near, fogFar: r.scene.fog.far, calls: r.gl.info.render.calls,
+          hero: r.worldToScreen(p, 1), contextLost: r.gl.getContext().isContextLost() };
+      });
+      const expected = (mobile ? 28 : 32) * Math.max(1, (1.3 / (width / height)) ** .6);
+      assert.equal(frame.coarse, mobile); assert.equal(frame.fov, 34);
+      assert.ok(Math.abs(frame.distance - expected) < 1e-6 && Math.abs(frame.actualDistance - expected) < 1e-6);
+      assert.ok(Math.abs(frame.elevation - 65) < 1e-6 && frame.diagonalError < 1e-6, 'diagonal orientation and elevation remain unchanged');
+      assert.ok(Math.abs(frame.height - expected * Math.sin(65 * Math.PI / 180)) < 1e-6);
+      assert.ok(frame.points.every(point => point.finite && point.error < 1e-6), 'resized camera preserves world/screen click projection');
+      assert.ok(Math.abs(frame.fogNear - (expected + 6)) < 1e-6 && Math.abs(frame.fogFar - (expected + 26)) < 1e-6, 'fog follows camera distance');
+      assert.ok(frame.calls > 0 && !frame.contextLost && frame.hero.x > 0 && frame.hero.x < width && frame.hero.y > 0 && frame.hero.y < height - 112, 'live hero remains above the HUD');
+      assert.deepEqual(await owned(), before, 'camera resize does not change owned items, gold or XP');
+      await page.screenshot({ path: output + `82-camera-${mobile ? 'touch-unchanged' : 'pc-higher'}-${width}x${height}.png` });
+      console.log(`${width}x${height} isolated camera PASS: base distance ${mobile ? 28 : 32}, 65-degree elevation, diagonal, click roundtrip, fog, live hero, unchanged owned items`);
+    }
+  } finally { await context.close(); }
+}
+
+async function checkRosterFullscreen(width, height) {
+  const mobile = width < 1000, context = await browser.newContext({ viewport: { width, height }, isMobile: mobile, hasTouch: mobile, deviceScaleFactor: mobile ? 2 : 1, reducedMotion: 'reduce' });
+  try {
+    const page = await context.newPage(), activate = node => mobile ? node.tap() : node.click();
+    page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    await page.goto('http://127.0.0.1:5173', { waitUntil: 'networkidle' });
+    await activate(page.getByRole('button', { name: '开始游戏', exact: true }));
+    const layout = async () => {
+      await page.locator('.character-screen').waitFor({ state: 'visible' });
+      const sizes = await page.evaluate(() => {
+        const screen = document.querySelector('.character-screen'), roster = screen.querySelector('.character-roster'), list = screen.querySelector('.character-list'), layer = screen.closest('.screen-layer'), style = getComputedStyle(screen);
+        const rect = node => { const r = node.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width, height: r.height, right: r.right, bottom: r.bottom }; };
+        return { screen: rect(screen), roster: rect(roster), padding: Number.parseFloat(style.paddingLeft) + Number.parseFloat(style.paddingRight), overflowX: screen.scrollWidth - screen.clientWidth, overflowY: screen.scrollHeight - screen.clientHeight, layerScroll: layer.scrollTop, listOverflow: list.scrollHeight > list.clientHeight,
+          buttons: [...screen.querySelectorAll('.character-create, .character-actions button')].map(rect) };
+      });
+      assert.deepEqual(sizes.screen, { x: 0, y: 0, width, height, right: width, bottom: height }, 'character page fills the viewport');
+      assert.ok(Math.abs(sizes.roster.width - (width - sizes.padding)) < 1, 'roster has no centered width cap');
+      assert.ok(sizes.overflowX <= 1 && sizes.overflowY <= 1, JSON.stringify(sizes)); assert.equal(sizes.layerScroll, 0, 'only the character list may scroll');
+      for (const button of sizes.buttons) assert.ok(button.x >= 0 && button.y >= 0 && button.right <= width + 1 && button.bottom <= height + 1, JSON.stringify(button));
+      return sizes;
+    };
+    await page.waitForFunction(() => window.sanctuary.engine.state.storageStatus === 'ready');
+    await layout(); assert.equal(await page.getByRole('button', { name: '进入', exact: true }).isDisabled(), true);
+    assert.equal(await page.getByRole('button', { name: '删除', exact: true }).isDisabled(), true);
+    await page.screenshot({ path: output + `81-roster-empty-${width}x${height}.png` });
+    await activate(page.getByRole('button', { name: '新建角色', exact: true }));
+    await activate(page.locator('[data-class="sor"]')); await page.locator('#hero-name').fill(`全屏隔离${width}`);
+    await activate(page.getByRole('button', { name: '开启旅程', exact: true }));
+    await page.waitForFunction(() => window.sanctuary.engine.state.screen === 'game');
+    const exit = async () => {
+      if (mobile) await activate(page.locator('.pause-button')); else await page.keyboard.press('Escape');
+      await activate(page.getByRole('button', { name: '保存并返回角色菜单', exact: true }));
+      await page.waitForFunction(() => { const s = window.sanctuary.engine.state; return s.screen === 'title' && !s.savingAndExiting; });
+    };
+    await exit();
+    const original = await page.evaluate(async () => { const e = window.sanctuary.engine; return e.store.get(e.state.activeSaveId); });
+    await page.evaluate(async () => {
+      const e = window.sanctuary.engine, record = await e.store.get(e.state.activeSaveId);
+      for (let index = 1; index <= 12; index++) {
+        const fixture = structuredClone(record); fixture.id = crypto.randomUUID(); fixture.timestamp -= index;
+        fixture.player.name = index === 12 ? '这是一位名字很长的隔离测试旅人用于核对换行布局' : `隔离列表旅人${index}`;
+        await e.store.put(fixture);
+      }
+      await e.refreshCharacters();
+    });
+    await page.waitForFunction(() => document.querySelectorAll('.character-save').length === 13);
+    assert.equal((await layout()).listOverflow, true);
+    const card = page.locator('.character-save').last(), selectedId = await card.getAttribute('data-save-id');
+    await card.scrollIntoViewIfNeeded();
+    const scroll = await page.evaluate(() => document.querySelector('.character-list').scrollTop); assert.ok(scroll > 0, 'the last character scrolls the internal list');
+    await activate(card);
+    await page.waitForFunction(id => document.querySelector('.character-save.selected')?.getAttribute('data-save-id') === id, selectedId);
+    const scrollSamples = await page.evaluate(async () => {
+      const samples = [];
+      for (let frame = 0; frame < 8; frame++) { await new Promise(requestAnimationFrame); samples.push(document.querySelector('.character-list').scrollTop); }
+      return samples;
+    });
+    assert.deepEqual(scrollSamples, Array(8).fill(scroll), 'selection preserves the live list scroll across render frames');
+    await page.locator('.character-figure .portrait-art').evaluate(image => image.decode());
+    await layout();
+    const portrait = await page.locator('.character-figure .portrait-art').boundingBox(); assert.ok(portrait.height > 10 && portrait.width > 10);
+    await page.screenshot({ path: output + `81-roster-fullscreen-${width}x${height}.png` });
+    await activate(page.getByRole('button', { name: '进入', exact: true }));
+    await page.waitForFunction(id => { const s = window.sanctuary.engine.state; return s.screen === 'game' && s.activeSaveId === id && !s.loadingSave; }, selectedId);
+    await exit(); await layout();
+    await Promise.all([page.waitForEvent('dialog').then(dialog => dialog.dismiss()), activate(page.getByRole('button', { name: '删除', exact: true }))]);
+    assert.equal(await page.evaluate(async id => !!await window.sanctuary.engine.store.get(id), selectedId), true, 'cancel keeps the selected fixture');
+    await Promise.all([page.waitForEvent('dialog').then(dialog => dialog.accept()), activate(page.getByRole('button', { name: '删除', exact: true }))]);
+    await page.waitForFunction(() => document.querySelectorAll('.character-save').length === 12);
+    assert.equal(await page.evaluate(async id => !!await window.sanctuary.engine.store.get(id), selectedId), false, 'confirm deletes only the selected fixture');
+    assert.deepEqual(await page.evaluate(async id => window.sanctuary.engine.store.get(id), original.id), original, 'another character and its item values remain unchanged');
+    await layout();
+    console.log(`${width}x${height} isolated fullscreen roster PASS: empty/populated, no width/height cap or outer overflow, internal list scroll, native selection/enter/save return/cancel and confirm delete, other record unchanged`);
+  } finally { await context.close(); }
+}
+
+async function checkCainIdentify(width) {
+  const mobile = width < 1000, context = await browser.newContext({ viewport: { width, height: width === 320 ? 568 : mobile ? 844 : 900 }, isMobile: mobile, hasTouch: mobile, deviceScaleFactor: mobile ? 2 : 1, reducedMotion: 'reduce' });
+  try {
+    const page = await context.newPage(), activate = node => mobile ? node.tap() : node.click();
+    page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    await page.goto('http://127.0.0.1:5173', { waitUntil: 'networkidle' });
+    await activate(page.getByRole('button', { name: '开始游戏', exact: true }));
+    await activate(page.getByRole('button', { name: '新建角色', exact: true }));
+    await activate(page.locator('[data-class="sor"]')); await page.locator('#hero-name').fill(`凯恩隔离${width}`);
+    await activate(page.getByRole('button', { name: '开启旅程', exact: true }));
+    await page.waitForFunction(() => window.sanctuary.renderer.groundArea === window.sanctuary.engine.state.area);
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.area.objects.some(o => o.npcId === 'cain')), false, 'Cain is absent before rescue');
+    await page.evaluate(async () => {
+      const e = window.sanctuary.engine, p = e.state.player, { createItem } = await import('/src/items.ts');
+      p.inventory = ['cm1', 'cm1', 'cm1', 'ibk', 'isc'].map((code, index) => Object.assign(createItem(code, 1, () => .5), { uid: `cain-item-${index}`, x: index, y: 0, quantity: code === 'ibk' ? 5 : 1, identified: code !== 'cm1', requiredLevel: 1, mods: code === 'cm1' ? { life: 20, mana: 25 } : {} }));
+      p.gold = 123; e.updateStats(); await e.save(false);
+    });
+    const owned = () => page.evaluate(() => { const p = window.sanctuary.engine.state.player; return { inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold }; });
+    const before = await owned();
+    const place = async npcId => {
+      await page.evaluate(npcId => {
+        const { engine: e, ui } = window.sanctuary, npc = e.state.area.objects.find(o => o.npcId === npcId);
+        e.dispatch({ type: 'panel', panel: 'none' }); Object.assign(e.state.player, { x: npc.x + 1, y: npc.y + 1 }); e.reveal(); ui.resetControls();
+      }, npcId);
+      await page.waitForTimeout(200);
+    };
+    const clickNPC = async npcId => {
+      const point = await page.evaluate(npcId => { const { engine, renderer } = window.sanctuary; return renderer.worldToScreen(engine.state.area.objects.find(o => o.npcId === npcId), 1.35); }, npcId);
+      assert.equal(await page.evaluate(point => document.elementFromPoint(point.x, point.y)?.classList.contains('world-canvas'), point), true);
+      if (mobile) await page.touchscreen.tap(point.x, point.y); else await page.mouse.click(point.x, point.y);
+      await page.waitForFunction(npcId => { const s = window.sanctuary.engine.state; return s.npc === npcId && ['vendor', 'gamble'].includes(s.panel); }, npcId);
+    };
+    for (const npcId of ['akara', 'charsi', 'gheed']) {
+      await place(npcId); await clickNPC(npcId);
+      assert.equal(await page.getByRole('button', { name: '鉴定全部', exact: true }).count(), 0);
+      assert.deepEqual(await owned(), before, 'merchants do not identify or consume scrolls');
+      if (npcId === 'akara') {
+        assert.ok(await page.locator('.vendor-stock .vendor-row').count() > 0);
+        await page.screenshot({ path: output + `80-akara-no-identify-${width}.png` });
+      }
+    }
+    await page.evaluate(() => window.sanctuary.engine.dispatch({ type: 'panel', panel: 'none' }));
+    if (mobile) await activate(page.locator('.game-hud [data-panel="inventory"]')); else await page.keyboard.press('KeyI');
+    await activate(page.locator('.item-grid[data-location="inventory"] [data-uid="cain-item-0"]'));
+    await activate(page.locator(mobile ? '.item-popup [data-focus="identify:cain-item-0"]' : '.compact-item-detail [data-focus="identify:cain-item-0"]'));
+    await page.waitForFunction(() => window.sanctuary.engine.state.player.inventory.find(i => i.uid === 'cain-item-0').identified);
+    const scrollExpected = structuredClone(before); scrollExpected.inventory[0].identified = true; scrollExpected.inventory[3].quantity = 4;
+    assert.deepEqual(await owned(), scrollExpected, 'individual inventory identification spends one scroll without Cain');
+    if (mobile) await activate(page.locator('.popup-close'));
+    await page.evaluate(async () => {
+      const e = window.sanctuary.engine, p = e.state.player, { createArea, questKey } = await import('/src/world.ts');
+      e.dispatch({ type: 'panel', panel: 'none' }); p.quests[questKey(p, 'a1q3')] = 3; e.state.area = createArea(1, p.difficulty, e.state.seed, p);
+    });
+    await page.waitForFunction(() => window.sanctuary.renderer.groundArea === window.sanctuary.engine.state.area);
+    await place('cain'); await clickNPC('cain');
+    const identifyAll = page.getByRole('button', { name: '鉴定全部', exact: true }); await identifyAll.waitFor({ state: 'visible' });
+    assert.equal(await page.locator('.vendor-stock').count(), 0, 'Cain has no merchant stock');
+    await page.screenshot({ path: output + `80-cain-identify-${width}.png` });
+    await activate(identifyAll);
+    await page.waitForFunction(() => window.sanctuary.engine.state.player.inventory.every(i => i.identified));
+    const expected = structuredClone(scrollExpected); expected.inventory.forEach(item => item.identified = true);
+    assert.deepEqual(await owned(), expected, 'Cain identifies all freely without rerolling or changing gold/equipment/belt/scrolls');
+    await activate(identifyAll); assert.deepEqual(await owned(), expected, 'empty repeat costs nothing');
+    await page.screenshot({ path: output + `80-cain-identified-${width}.png` });
+    for (const gate of ['unrescued', 'other-difficulty']) {
+      await page.evaluate(async gate => {
+        const e = window.sanctuary.engine, p = e.state.player, { questKey } = await import('/src/world.ts');
+        if (gate === 'unrescued') p.quests[questKey(p, 'a1q3')] = 1;
+        else { p.quests[questKey(p, 'a1q3')] = 3; p.difficulty = 'nightmare'; }
+        p.inventory[1].identified = false;
+      }, gate);
+      await place('cain'); await clickNPC('cain');
+      assert.equal(await page.getByRole('button', { name: '鉴定全部', exact: true }).count(), 0, `${gate} has no service`);
+      assert.equal(await page.evaluate(() => window.sanctuary.engine.state.player.inventory[1].identified), false);
+      assert.equal((await owned()).inventory[3].quantity, 4);
+    }
+    console.log(`${width}px isolated Cain PASS: merchants have no identify-all, native individual scroll identification, rescued Cain native free identify-all, no reroll/cost, unrescued and difficulty gates; rescue completion is a fixture, not campaign verification`);
+  } finally { await context.close(); }
+}
+
+async function checkAkaraHeal(width) {
+  const mobile = width < 1000, context = await browser.newContext({ viewport: { width, height: width === 320 ? 568 : mobile ? 844 : 900 }, isMobile: mobile, hasTouch: mobile, deviceScaleFactor: mobile ? 2 : 1, reducedMotion: 'reduce' });
+  try {
+    const page = await context.newPage(), activate = node => mobile ? node.tap() : node.click();
+    page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    await page.goto('http://127.0.0.1:5173', { waitUntil: 'networkidle' });
+    await activate(page.getByRole('button', { name: '开始游戏', exact: true }));
+    await activate(page.getByRole('button', { name: '新建角色', exact: true }));
+    await activate(page.locator('[data-class="sor"]')); await page.locator('#hero-name').fill(`阿卡拉隔离${width}`);
+    await activate(page.getByRole('button', { name: '开启旅程', exact: true }));
+    await page.waitForFunction(() => window.sanctuary.renderer.groundArea === window.sanctuary.engine.state.area);
+    await page.evaluate(async () => {
+      const e = window.sanctuary.engine, { createItem } = await import('/src/items.ts');
+      const charm = createItem('cm1', 1, () => .5); charm.identified = true; charm.requiredLevel = 1; charm.mods = { life: 20, mana: 25 }; charm.x = 0; charm.y = 0;
+      e.state.player.inventory.push(charm); e.updateStats(); await e.save(false);
+    });
+    const owned = () => page.evaluate(() => { const p = window.sanctuary.engine.state.player; return { inventory: p.inventory, equipment: p.equipment, belt: p.belt, gold: p.gold }; });
+    const before = await owned();
+    const fixture = async (npcId, offset = 1) => {
+      await page.evaluate(async ({ npcId, offset }) => {
+        const { engine: e, ui } = window.sanctuary, p = e.state.player, area = e.state.area;
+        const { isTownPoint } = await import('/src/world.ts'), npc = area.objects.find(o => o.npcId === npcId);
+        const candidates = [[offset, offset], [-offset, -offset], [offset, -offset], [-offset, offset]].map(([dx, dy]) => ({ x: npc.x + dx, y: npc.y + dy }));
+        const position = candidates.find(point => area.tiles[Math.floor(point.y)]?.[Math.floor(point.x)] === 0 && isTownPoint(area, point));
+        if (!position) throw new Error('No walkable town position for isolated NPC fixture');
+        e.dispatch({ type: 'panel', panel: 'none' }); Object.assign(p, position); p.life = p.mana = 1; e.state.messages = []; ui.resetControls();
+      }, { npcId, offset });
+      await page.waitForTimeout(200);
+    };
+    const nativeClick = async npcId => {
+      const point = await page.evaluate(npcId => { const { engine, renderer } = window.sanctuary; return renderer.worldToScreen(engine.state.area.objects.find(o => o.npcId === npcId), 1.35); }, npcId);
+      assert.equal(await page.evaluate(point => document.elementFromPoint(point.x, point.y)?.classList.contains('world-canvas'), point), true, 'NPC click reaches the scene');
+      if (mobile) await page.touchscreen.tap(point.x, point.y); else await page.mouse.click(point.x, point.y);
+    };
+    const checkHealed = async () => {
+      const state = await page.evaluate(() => { const e = window.sanctuary.engine; return { life: e.state.player.life, mana: e.state.player.mana, maxLife: e.state.stats.maxLife, maxMana: e.state.stats.maxMana, npc: e.state.npc, panel: e.state.panel, messages: e.state.messages }; });
+      assert.equal(state.npc, 'akara'); assert.equal(state.panel, 'vendor'); assert.equal(state.life, state.maxLife); assert.equal(state.mana, state.maxMana);
+      assert.match(state.messages.at(-1).text, /生命和法力已恢复/); assert.deepEqual(await owned(), before);
+    };
+    await fixture('akara', 4);
+    await page.screenshot({ path: output + `79-akara-before-${width}.png` });
+    await nativeClick('akara');
+    const immediate = await page.evaluate(() => { const e = window.sanctuary.engine; return { life: e.state.player.life, maxLife: e.state.stats.maxLife }; });
+    assert.ok(immediate.life < immediate.maxLife, 'distant click does not heal before approaching');
+    await page.waitForFunction(() => { const e = window.sanctuary.engine; return e.state.panel === 'vendor' && e.state.npc === 'akara'; });
+    await checkHealed(); await page.screenshot({ path: output + `79-akara-auto-heal-${width}.png` });
+    await activate(page.locator('[data-focus="trade-close:vendor"]'));
+    await page.waitForFunction(() => window.sanctuary.engine.state.panel === 'none');
+    await page.screenshot({ path: output + `79-akara-healed-scene-${width}.png` });
+    await fixture('akara'); await nativeClick('akara');
+    await page.waitForFunction(() => window.sanctuary.engine.state.panel === 'vendor'); await checkHealed();
+    await activate(page.locator('[data-focus="trade-close:vendor"]')); await fixture('akara');
+    if (mobile) await activate(page.locator('.touch-action.interact')); else await page.keyboard.press('KeyE');
+    await page.waitForFunction(() => window.sanctuary.engine.state.panel === 'vendor'); await checkHealed();
+    await activate(page.locator('[data-focus="trade-close:vendor"]')); await fixture('charsi'); await nativeClick('charsi');
+    await page.waitForFunction(() => window.sanctuary.engine.state.panel === 'vendor');
+    assert.equal(await page.evaluate(() => window.sanctuary.engine.state.npc), 'charsi');
+    assert.ok(await page.evaluate(() => { const e = window.sanctuary.engine; return e.state.player.life < e.state.stats.maxLife && e.state.player.mana < e.state.stats.maxMana; }));
+    assert.deepEqual(await owned(), before);
+    console.log(`${width}px isolated Akara PASS: native NPC click/tap with approach, nearby click, E/touch interaction, current charm caps, no extra treatment click/cost/items, Charsi does not heal`);
+  } finally { await context.close(); }
+}
+try { await checkCameraFraming(false); await checkCameraFraming(true); await checkRosterFullscreen(1920, 1080); await checkRosterFullscreen(1440, 900); await checkRosterFullscreen(390, 844); await checkRosterFullscreen(320, 568); await checkRosterFullscreen(844, 390); await checkRosterFullscreen(1280, 500); await checkCainIdentify(1440); await checkCainIdentify(390); await checkCainIdentify(320); await checkAkaraHeal(1440); await checkAkaraHeal(390); await checkAkaraHeal(320); await checkPauseSaveExit(1440); await checkPauseSaveExit(390); await checkPauseSaveExit(320); await checkSkillPresses(false); await checkSkillPresses(true); await checkSkillPresses(true, 320); await run(false); await run(true); assert.deepEqual(errors, []); console.log('3D isolated play smoke PASS; no production saves used.'); } finally { await browser.close(); }

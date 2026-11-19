@@ -189,7 +189,7 @@ function roll(pool) {
   let accumulated = 0;
   for (const entry of pool) {
     accumulated += entry.weight;
-    if (random * total < accumulated) return entry;
+    if (random < accumulated / total) return entry;
   }
   throw new Error('奖池配置无法命中。');
 }

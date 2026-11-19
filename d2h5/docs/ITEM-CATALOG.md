@@ -35,7 +35,7 @@
 | 魔法后缀 | 741 |
 | 方块配方 | 151 |
 
-388 条暗金中 385 条原始启用，383 条在等级 99 内满足当前选取条件，含全部 29 条 ladder 标记；原版离线单人不排除这些暗金。毁灭/地狱火炬的事件入口仍未实现。这与 23 个 server=1 符文之语的离线禁用是不同规则。
+388 条暗金中 385 条原始启用，383 条在等级 99 内满足当前选取条件，含全部 29 条 ladder 标记；原版离线单人不排除这些暗金。毁灭/地狱火炬的事件入口仍未实现。这与符文之语的 server=1 限制是不同规则；23 个原始服务器定义中只有边缘按 D2R 离线覆盖启用，其余 22 个仍禁用。
 
 ## 635 个归一化底材
 
@@ -2675,7 +2675,7 @@
 
 ## 全部符文之语原始身份（169 条）
 
-含 78 个完成及 91 个未完成定义；完成定义仅 55 个离线匹配启用，23 个 server=1 禁用。原始 null、同名未完成行、全部条件和参数不丢失。
+含 78 个完成及 91 个未完成定义；完成定义有 55 个 LoD 离线匹配加 1 个 D2R 边缘覆盖启用，另外 22 个 server=1 仍禁用。原始 null、同名未完成行、全部条件和参数不丢失。
 
 | 稳定身份 | 显示名称 | 状态 | 完整原始字段 |
 | --- | --- | --- | --- |
@@ -2711,7 +2711,7 @@
 | runeword:Runeword29 | Dream | 服务器限定（server=1），原版离线匹配禁用；仅定义，未接入执行，属性处理仍不完整 | {"Name":"Runeword29","Rune Name":"Dream","complete":1,"server":1,"itype1":"helm","itype2":"shld","*runes":"IoJahPul","Rune1":"r16","Rune2":"r31","Rune3":"r21","T1Code1":"ac","T1Min1":150,"T1Max1":220,"T1Code2":"gethit-skill","T1Param2":"Confuse","T1Min2":10,"T1Max2":15,"T1Code3":"mana/lvl","T1Param3":5,"T1Code4":"res-all","T1Min4":5,"T1Max4":20,"T1Code5":"balance3","T1Min5":20,"T1Max5":30,"T1Code6":"aura","T1Param6":"Holy Shock","T1Min6":15,"T1Max6":15,"T1Code7":"mag%","T1Min7":12,"T1Max7":25,"lineNumber":91} |
 | runeword:Runeword30 | Duress | 原版离线匹配已启用；仅部分行为已接入，不代表完整生成或全部属性生效 | {"Name":"Runeword30","Rune Name":"Duress","complete":1,"itype1":"tors","*runes":"ShaelUmThul","Rune1":"r13","Rune2":"r22","Rune3":"r10","T1Code1":"dmg-cold","T1Param1":50,"T1Min1":37,"T1Max1":133,"T1Code2":"dmg%","T1Min2":10,"T1Max2":20,"T1Code3":"ac%","T1Min3":150,"T1Max3":200,"T1Code4":"balance2","T1Min4":20,"T1Max4":20,"T1Code5":"openwounds","T1Min5":33,"T1Max5":33,"T1Code6":"crush","T1Min6":15,"T1Max6":15,"T1Code7":"stamdrain","T1Min7":-20,"T1Max7":-20,"lineNumber":53} |
 | runeword:Runeword56 | Dweomer | 原始未完成（complete≠1），离线匹配禁用；仅定义，未接入执行 | {"Name":"Runeword56","Rune Name":"Dweomer","lineNumber":92} |
-| runeword:Runeword31 | Edge | 服务器限定（server=1），原版离线匹配禁用；仅定义，未接入执行，属性处理仍不完整 | {"Name":"Runeword31","Rune Name":"Edge","complete":1,"server":1,"itype1":"miss","*runes":"TirTalAmn","Rune1":"r03","Rune2":"r07","Rune3":"r11","T1Code1":"dmg-demon","T1Min1":320,"T1Max1":380,"T1Code2":"dmg-undead","T1Min2":280,"T1Max2":280,"T1Code3":"swing2","T1Min3":35,"T1Max3":35,"T1Code4":"noheal","T1Min4":1,"T1Max4":1,"T1Code5":"aura","T1Param5":"Thorns","T1Min5":15,"T1Max5":15,"T1Code6":"all-stats","T1Min6":5,"T1Max6":10,"T1Code7":"cheap","T1Min7":15,"T1Max7":15,"lineNumber":93} |
+| runeword:Runeword31 | Edge | 重制版离线边缘覆盖已启用（原始 server=1）；仅部分行为已接入，不代表完整生成或全部属性生效 | {"Name":"Runeword31","Rune Name":"Edge","complete":1,"server":1,"itype1":"miss","*runes":"TirTalAmn","Rune1":"r03","Rune2":"r07","Rune3":"r11","T1Code1":"dmg-demon","T1Min1":320,"T1Max1":380,"T1Code2":"dmg-undead","T1Min2":280,"T1Max2":280,"T1Code3":"swing2","T1Min3":35,"T1Max3":35,"T1Code4":"noheal","T1Min4":1,"T1Max4":1,"T1Code5":"aura","T1Param5":"Thorns","T1Min5":15,"T1Max5":15,"T1Code6":"all-stats","T1Min6":5,"T1Max6":10,"T1Code7":"cheap","T1Min7":15,"T1Max7":15,"lineNumber":93} |
 | runeword:Runeword33 | Enigma | 原版离线匹配已启用；仅部分行为已接入，不代表完整生成或全部属性生效 | {"Name":"Runeword33","Rune Name":"Enigma","complete":1,"itype1":"tors","*runes":"JahIthBer","Rune1":"r31","Rune2":"r06","Rune3":"r30","T1Code1":"ac","T1Min1":750,"T1Max1":775,"T1Code2":"heal-kill","T1Min2":14,"T1Max2":14,"T1Code3":"move2","T1Min3":45,"T1Max3":45,"T1Code4":"str/lvl","T1Param4":6,"T1Code5":"allskills","T1Min5":2,"T1Max5":2,"T1Code6":"mag%/lvl","T1Param6":8,"T1Code7":"oskill","T1Param7":"Teleport","T1Min7":1,"T1Max7":1,"lineNumber":31} |
 | runeword:Runeword34 | Enlightenment | 原版离线匹配已启用；仅部分行为已接入，不代表完整生成或全部属性生效 | {"Name":"Runeword34","Rune Name":"Enlightenment","complete":1,"itype1":"tors","*runes":"PulRalSur","Rune1":"r21","Rune2":"r08","Rune3":"r12","T1Code1":"hit-skill","T1Param1":"Fire Ball","T1Min1":5,"T1Max1":15,"T1Code2":"gethit-skill","T1Param2":"Blaze","T1Min2":5,"T1Max2":15,"T1Code3":"sor","T1Min3":2,"T1Max3":2,"T1Code4":"oskill","T1Param4":"Warmth","T1Min4":1,"T1Max4":1,"lineNumber":94} |
 | runeword:Runeword35 | Envy | 原始未完成（complete≠1），离线匹配禁用；仅定义，未接入执行 | {"Name":"Runeword35","Rune Name":"Envy","lineNumber":95} |

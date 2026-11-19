@@ -1,0 +1,11 @@
+{
+  "identifier": "pet-panel",
+  "description": "Local panel: API/settings, owned shortcut replacement, and companion folder only.",
+  "local": true,
+  "windows": ["panel"],
+  "permissions": [
+    "core:event:allow-listen", "core:event:allow-unlisten", "core:event:allow-emit",
+    "native-get-api-token", "native-read-daemon-info", "native-read-client-settings",
+    "native-write-client-settings", "native-open-memory-folder", "native-register-shortcut", "native-hide-aux"
+  ]
+}

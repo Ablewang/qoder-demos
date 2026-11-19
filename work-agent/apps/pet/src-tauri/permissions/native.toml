@@ -1,0 +1,70 @@
+# No default permission set: each window explicitly receives only its commands.
+[[permission]]
+identifier = "native-get-api-token"
+description = "Read the local API credential into an authorized client window."
+commands.allow = ["get_api_token"]
+
+[[permission]]
+identifier = "native-read-daemon-info"
+description = "Read local daemon discovery."
+commands.allow = ["read_daemon_info"]
+
+[[permission]]
+identifier = "native-wake-daemon"
+description = "Bootstrap the local daemon with the trusted build-time Node."
+commands.allow = ["wake_daemon"]
+
+[[permission]]
+identifier = "native-read-client-settings"
+description = "Read local client settings."
+commands.allow = ["read_client_settings"]
+
+[[permission]]
+identifier = "native-write-client-settings"
+description = "Atomically save validated client settings."
+commands.allow = ["write_client_settings"]
+
+[[permission]]
+identifier = "native-open-memory-folder"
+description = "Open only the configured companion directory."
+commands.allow = ["open_memory_folder"]
+
+[[permission]]
+identifier = "native-window-frames"
+description = "Read window geometry without screen content."
+commands.allow = ["window_frames"]
+
+[[permission]]
+identifier = "native-fullscreen-probe"
+description = "Read the unsupported fullscreen probe status."
+commands.allow = ["fullscreen_probe"]
+
+[[permission]]
+identifier = "native-set-hit-areas"
+description = "Set bounded pet hit areas."
+commands.allow = ["set_hit_areas"]
+
+[[permission]]
+identifier = "native-show-aux"
+description = "Show only the bounded companion bubble or panel."
+commands.allow = ["show_aux"]
+
+[[permission]]
+identifier = "native-hide-aux"
+description = "Hide only a companion auxiliary window."
+commands.allow = ["hide_aux"]
+
+[[permission]]
+identifier = "native-set-demo-visual"
+description = "Toggle native pet demo visibility."
+commands.allow = ["set_demo_visual"]
+
+[[permission]]
+identifier = "native-register-shortcut"
+description = "Transactionally replace the app-owned shortcut."
+commands.allow = ["register_shortcut"]
+
+[[permission]]
+identifier = "native-quit-pet"
+description = "Exit the companion client, not the daemon."
+commands.allow = ["quit_pet"]

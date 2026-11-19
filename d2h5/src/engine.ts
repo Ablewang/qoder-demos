@@ -1,11 +1,12 @@
 import type { Action, AreaState, Control, Difficulty, Element, GameEvent, GameState, Item, Monster, Player, Point, Projectile, Rng, Slot } from './types';
 import { CLASSES, EXPERIENCE, getClass, getSkill, num, rawRows } from './catalog';
 import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, skillEffect, skillLevel } from './rules';
-import { consumeInventoryPotion, consumePotion, createItem, createStartingItems, describeItem, equipItem, getBase, insertSocket, INVENTORY_HEIGHT, INVENTORY_WIDTH, isUsableItem, itemLabel, moveInventoryItem, placeItem, repairItems, rollLoot, transmute, unequipItem, vendorStock } from './items';
-import { SURFACE_IDS, canTravel, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, hasLineOfSight, isTownPoint, onEnterArea, onKill, surfaceRegionAt, talkNPC, townForAct } from './world';
+import { consumeInventoryPotion, consumePotion, createItem, createStartingItems, describeItem, equipItem, getBase, insertSocket, INVENTORY_HEIGHT, INVENTORY_WIDTH, isUsableItem, itemLabel, moveInventoryItem, placeItem, repairItems, rollLoot, STASH_HEIGHT, STASH_WIDTH, transmute, unequipItem, vendorStock } from './items';
+import { SURFACE_IDS, canTravel, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, hasLineOfSight, isTownPoint, onEnterArea, onKill, questKey, surfaceRegionAt, talkNPC, townForAct } from './world';
 
 import { COMBAT_HZ, DIFFICULTY_RULES, lifeBits, rollDamageBits, settleDirectDamage } from './combat';
 import type { DamageComponent } from './combat';
+import { gamblingCost, gamblingStock, refillGamblingOffer } from './gambling';
 import { LEGACY_CHARACTER_ID } from './storage';
 import type { SaveRecord, SaveStore } from './storage';
 export const FPS = COMBAT_HZ;
@@ -70,9 +71,9 @@ export function validSave(value: unknown): value is { version: number; player: P
 export class Engine {
   readonly state: GameState = {
     screen: 'intro', player: null, area: null, stats: null, panel: 'none', projectiles: [], effects: [], summons: [],
-    characters: [], activeSaveId: null, storageStatus: 'loading', storageError: '', loadingSave: false,
+    characters: [], activeSaveId: null, storageStatus: 'loading', storageError: '', loadingSave: false, savingAndExiting: false,
     messages: [], tick: 0, seed: Date.now() >>> 0, paused: false, automap: false, showLoot: false, target: null,
-    selectedMonster: null, selectedItem: null, identifySource: null, npc: null, vendorItems: [], dialogue: '', saved: false,
+    selectedMonster: null, selectedItem: null, identifySource: null, npc: null, vendorItems: [], gamblingOffers: [], dialogue: '', saved: false,
     events: [], eventSeq: 0, facing: Math.PI * .75, moving: false,
   };
   readonly control: Control = {move: {x: 0, y: 0}, aim: null, aimMonster: null, left: false, right: false};
@@ -92,6 +93,7 @@ export class Engine {
   private aura: {skillId: number; next: number} | null = null;
   private npcServices: string[] = [];
   private vendorStocks = new Map<string, Item[]>();
+  private gamblingNpcUid: string | null = null;
   private saving: Promise<void> = Promise.resolve();
   private deletingSaveId: string | null = null;
   constructor(private readonly store?: SaveStore) {}
@@ -125,7 +127,8 @@ export class Engine {
       if (this.attackTarget && !this.pendingInteraction) this.path = [];
       this.attackTarget = null;
     }
-    if (press === undefined || !(press ? c.right : c.left && !c.right) || !c.aim || this.cooldown > 0 || s.screen !== 'game' || !s.player || !s.area || !s.stats || s.player.dead || s.paused || s.panel !== 'none' || s.area.def.town) return;
+    if (press === undefined || !(press ? c.right : c.left && !c.right) || !c.aim || this.cooldown > 0 || s.screen !== 'game' || !s.player || !s.area || !s.stats || s.player.dead || s.paused || s.panel !== 'none') return;
+    if (s.area.def.town) { this.message('营地内不能使用攻击技能，请先前往野外。', 'error'); return; }
     this.pendingInteraction = null;
     this.aimAttack(press, Math.hypot(c.move.x, c.move.y) > .05);
     this.tryAttack();
@@ -157,7 +160,7 @@ export class Engine {
     this.path = []; this.attackTarget = null; this.pendingInteraction = null; this.cooldown = 0; this.meleeSwings = new WeakMap(); this.runningThisFrame = false; this.state.events = []; this.state.moving = false;
     this.regeneration = []; this.aura = null; this.state.projectiles = []; this.state.effects = []; this.state.summons = [];
     this.state.target = null; this.state.selectedMonster = null; this.state.selectedItem = null; this.state.identifySource = null; this.state.panel = 'none';
-    this.state.npc = null; this.state.vendorItems = []; this.state.dialogue = ''; this.npcServices = [];
+    this.state.npc = null; this.state.vendorItems = []; this.state.gamblingOffers = []; this.gamblingNpcUid = null; this.state.dialogue = ''; this.npcServices = [];
   }
   private cachedArea(id: number): AreaState {
     const cached = this.areas.get(id);
@@ -236,6 +239,8 @@ export class Engine {
         if (Math.hypot(x - p.x, y - p.y) <= radius) area.revealed[y][x] = true;
   }
   dispatch = (action: Action): void => {
+    if (this.state.savingAndExiting) return;
+    if (action.type === 'save-and-title') { void this.saveAndReturnToTitle(); return; }
     if (action.type === 'cancel-identify') { this.state.identifySource = null; return; }
     if (action.type === 'creation') { if (!this.state.loadingSave) { this.state.identifySource = null; this.state.screen = 'creation'; } return; }
     if (action.type === 'new') {
@@ -252,18 +257,22 @@ export class Engine {
     if (action.type === 'title') {
       if (this.state.loadingSave) return;
       if (this.state.screen === 'game') void this.save(false);
-      this.state.identifySource = null; this.state.screen = 'title'; this.state.paused = true; return;
+      this.state.identifySource = null; this.state.gamblingOffers = []; this.gamblingNpcUid = null; this.state.screen = 'title'; this.state.paused = true; return;
     }
     const p = this.state.player, area = this.state.area;
     if (!p || !area || this.state.screen !== 'game') return;
     if (action.type === 'save') { this.save(); return; }
-    if (action.type === 'panel') { this.state.identifySource = null; this.state.panel = this.state.panel === action.panel ? 'none' : action.panel; return; }
+    if (action.type === 'panel') {
+      if (action.panel === 'gamble') return;
+      this.state.identifySource = null; this.state.gamblingOffers = []; this.gamblingNpcUid = null;
+      this.state.panel = this.state.panel === action.panel ? 'none' : action.panel; return;
+    }
     if (action.type === 'pause') { this.state.paused = !this.state.paused; return; }
     if (action.type === 'map') { this.state.automap = !this.state.automap; return; }
     if (action.type === 'loot') { this.state.showLoot = !this.state.showLoot; return; }
     if (action.type === 'respawn') { this.respawn(); return; }
     if (p.dead) return;
-    if (this.state.paused && ['move', 'attack', 'interact', 'pickup', 'potion', 'use-item', 'move-item', 'portal', 'travel'].includes(action.type)) return;
+    if (this.state.paused && ['move', 'attack', 'interact', 'pickup', 'potion', 'use-item', 'move-item', 'portal', 'travel', 'swap'].includes(action.type)) return;
     switch (action.type) {
       case 'move':
         if (!Number.isFinite(action.point.x) || !Number.isFinite(action.point.y)) break;
@@ -297,6 +306,9 @@ export class Engine {
       case 'heal': if (area.def.town && this.npcServices.includes('heal')) { p.life = this.state.stats!.maxLife; p.mana = this.state.stats!.maxMana; p.stamina = this.state.stats!.maxStamina; this.regeneration = []; this.message('生命和法力已恢复。'); } break;
       case 'identify': this.identify(action.uid); break;
       case 'buy': this.buy(action.uid); break;
+      case 'gamble-open': this.openGambling(); break;
+      case 'gamble-refresh': if (this.gamblingContext()) this.state.gamblingOffers = gamblingStock(p.level, this.rng); break;
+      case 'gamble-buy': this.gamble(action.uid); break;
       case 'sell': this.sell(action.uid); break;
       case 'repair': if (area.def.town && this.npcServices.includes('repair')) { const r = repairItems(p); this.message(r.message, r.ok ? 'info' : 'error'); this.updateStats(); } break;
       case 'storage': this.storage(action.uid, action.destination); break;
@@ -361,13 +373,18 @@ export class Engine {
       case 'exit': if (o.targetArea !== undefined && getConnections(p, sourceDef.id).includes(o.targetArea)) this.enterArea(o.targetArea,undefined,false,sourceDef.id); else this.message('这里的道路尚未开启。', 'error'); break;
       case 'npc': {
         this.state.identifySource = null;
+        this.state.gamblingOffers = []; this.gamblingNpcUid = null;
         const result = talkNPC(p, o.npcId!); this.state.npc = o.npcId!; this.state.dialogue = result.message; this.npcServices = result.services;
         if (result.services.includes('trade')) {
           let stock = this.vendorStocks.get(o.npcId!);
-          if (!stock) { stock = vendorStock(p, this.rng); this.vendorStocks.set(o.npcId!, stock); }
+          if (!stock) { stock = vendorStock(p, this.rng, o.npcId!); this.vendorStocks.set(o.npcId!, stock); }
           this.state.vendorItems = stock;
         } else this.state.vendorItems = [];
-        this.state.panel = 'vendor'; this.message(result.message); this.updateStats(true); break;
+        this.state.panel = 'vendor';
+        if (o.npcId === 'gheed' && result.services.includes('gamble')) this.openGambling();
+        this.message(result.message); this.updateStats(true);
+        if (o.npcId === 'akara' && sourceDef.town && isTownPoint(area, p) && result.services.includes('heal')) this.dispatch({ type: 'heal' });
+        break;
       }
       case 'waypoint': this.state.identifySource = null; if (!p.waypoints.includes(sourceDef.id)) { p.waypoints.push(sourceDef.id); this.message(`已激活 ${sourceDef.name} 的传送点。`); } this.state.panel = 'waypoint'; break;
       case 'stash': this.state.identifySource = null; this.state.panel = 'stash'; break;
@@ -457,16 +474,49 @@ export class Engine {
     else this.drink(0, source.uid);
   }
   private identify(uid?: string) {
-    const p = this.state.player!;
+    const s = this.state, p = s.player!, area = s.area!;
+    if (s.paused) return;
+    const cain = s.panel === 'vendor' && s.npc === 'cain' && p.quests[questKey(p, 'a1q3')] === 3 && this.npcServices.includes('identify') && isTownPoint(area, p)
+      && area.objects.some(o => o.kind === 'npc' && o.npcId === 'cain' && getArea(o.regionId ?? area.def.id).town && distance(o, p) <= 2);
+    if (uid === undefined && !cain) { this.message('鉴定全部需要与本难度已获救的凯恩交谈；也可使用鉴定卷轴逐件鉴定。', 'error'); return; }
     const candidates = uid ? p.inventory.filter(i => i.uid === uid) : p.inventory.filter(i => !i.identified);
     if (!candidates.length) { this.message('没有需要鉴定的物品。'); return; }
-    const cain = this.state.area!.def.town && this.state.npc === 'cain' && this.npcServices.includes('identify');
     for (const item of candidates) {
       if (item.identified) continue;
       if (!cain && !this.consumeScroll('isc', 'ibk')) { this.message('需要辨识卷轴。', 'error'); break; }
       item.identified = true; this.message(`鉴定成功：${itemLabel(item)}`, 'loot');
     }
     this.updateStats();
+  }
+  private gamblingContext(opening = false) {
+    const s = this.state, p = s.player!, area = s.area!;
+    if (s.paused || p.dead || s.npc !== 'gheed' || !this.npcServices.includes('gamble') || !isTownPoint(area, p)) return false;
+    if (opening ? s.panel !== 'vendor' : s.panel !== 'gamble') return false;
+    return area.objects.some(o => o.kind === 'npc' && o.npcId === 'gheed' && (opening || o.uid === this.gamblingNpcUid) && getArea(o.regionId ?? area.def.id).town && distance(o, p) <= 2);
+  }
+  private openGambling() {
+    if (!this.gamblingContext(true)) return;
+    this.gamblingNpcUid = this.state.area!.objects.find(o => o.kind === 'npc' && o.npcId === 'gheed' && distance(o, this.state.player!) <= 2)!.uid;
+    this.state.identifySource = null; this.state.selectedItem = null;
+    this.state.gamblingOffers = gamblingStock(this.state.player!.level, this.rng);
+    this.state.panel = 'gamble';
+  }
+  private gamble(uid: string) {
+    if (!this.gamblingContext()) return;
+    const p = this.state.player!, offer = this.state.gamblingOffers.find(o => o.uid === uid);
+    if (!offer) return;
+    const price = gamblingCost(offer.code, p), base = getBase(offer.code)!;
+    if (p.gold < price) { this.message('金币不足。', 'error'); return; }
+    let room = false;
+    for (let y = 0; y <= INVENTORY_HEIGHT - base.height && !room; y++) for (let x = 0; x <= INVENTORY_WIDTH - base.width && !room; x++) {
+      room = p.inventory.every(i => x + base.width <= i.x || i.x + i.width <= x || y + base.height <= i.y || i.y + i.height <= y);
+    }
+    if (!room) { this.message('背包已满。', 'error'); return; }
+    const item = structuredClone(offer.item);
+    if (!placeItem(p.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) { this.message('背包已满。', 'error'); return; }
+    p.gold -= price; this.state.selectedItem = item.uid;
+    this.state.gamblingOffers[this.state.gamblingOffers.indexOf(offer)] = refillGamblingOffer(offer, p.level, this.rng);
+    this.updateStats(); this.message(`赌博获得：${itemLabel(item)}`, 'loot');
   }
   private buy(uid: string) {
     const p = this.state.player!;
@@ -482,7 +532,7 @@ export class Engine {
   }
   private sell(uid: string) {
     const p = this.state.player!;
-    if (!this.state.area!.def.town || this.state.panel !== 'vendor' || !this.npcServices.includes('trade')) { this.message('请先与商人交谈。', 'error'); return; }
+    if (this.state.panel === 'gamble' ? !this.gamblingContext() : !this.state.area!.def.town || this.state.panel !== 'vendor' || !this.npcServices.includes('trade')) { this.message('请先与商人交谈。', 'error'); return; }
     const idx = p.inventory.findIndex(i => i.uid === uid);
     if (idx < 0) return;
     const item = p.inventory[idx];
@@ -500,7 +550,7 @@ export class Engine {
     if (source === p.stash && !this.state.area!.def.town) return;
     const index = source.findIndex(i => i.uid === uid), item = source[index];
     if (item.code === 'box' && destination === 'cube') { this.message('方块不能放入自身。', 'error'); return; }
-    const [w, h] = destination === 'inventory' ? [INVENTORY_WIDTH, INVENTORY_HEIGHT] : destination === 'stash' ? [6, 8] : [3, 4];
+    const [w, h] = destination === 'inventory' ? [INVENTORY_WIDTH, INVENTORY_HEIGHT] : destination === 'stash' ? [STASH_WIDTH, STASH_HEIGHT] : [3, 4];
     if (!placeItem(p[destination], item, w, h)) { this.message('目标空间不足。', 'error'); return; }
     source.splice(index, 1); this.updateStats();
   }
@@ -553,7 +603,8 @@ export class Engine {
     if (!intent || this.cooldown > 0 || p.dead || area.def.town) return;
     const skillId = intent.right ? p.rightSkill : p.leftSkill;
     const e = skillEffect(p, skillId);
-    if (!e.supported || (skillId !== 0 && skillLevel(p, skillId) <= 0)) { this.message('此技能的特殊行为尚未实现，或当前未获得。', 'error'); this.attackTarget = null; return; }
+    if (skillId !== 0 && skillLevel(p, skillId) <= 0) { this.message(`当前未获得${getSkill(skillId)?.name ?? '所选技能'}，请学习技能或切换到提供该技能的武器组。`, 'error'); this.attackTarget = null; return; }
+    if (!e.supported) { this.message('此技能的特殊行为尚未实现。', 'error'); this.attackTarget = null; return; }
     const target = intent.monster ? area.monsters.find(m => m.uid === intent.monster && !m.dead) : undefined;
     const point = target ?? intent.point;
     if (e.kind === 'passive') { this.message('被动技能无需施放。'); this.attackTarget = null; return; }
@@ -879,6 +930,16 @@ export class Engine {
       }
     });
     return this.saving;
+  }
+  async saveAndReturnToTitle() {
+    const s = this.state;
+    if (!this.store || !s.player || !s.activeSaveId || s.screen !== 'game' || s.loadingSave || s.savingAndExiting) return;
+    s.savingAndExiting = true; s.paused = true;
+    try {
+      await this.save(false);
+      if (!s.saved) return;
+      s.identifySource = null; s.gamblingOffers = []; this.gamblingNpcUid = null; s.panel = 'none'; s.screen = 'title';
+    } finally { s.savingAndExiting = false; }
   }
   async deleteCharacter(id: string) {
     if (!this.store || this.state.storageStatus !== 'ready' || this.state.loadingSave || this.state.screen !== 'title' || !this.state.characters.some(c => c.id === id)) return;

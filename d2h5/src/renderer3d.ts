@@ -82,7 +82,7 @@ export class Renderer {
     if (this.destroyed) return;
     const rect = this.canvas.getBoundingClientRect(); this.width = Math.max(1, Math.round(rect.width)); this.height = Math.max(1, Math.round(rect.height));
     this.gl.setSize(this.width, this.height, false); this.overlay.resize(this.width, this.height, Math.min(devicePixelRatio || 1, 2));
-    const aspect = this.width / this.height; this.distance = 28 * Math.max(1, Math.pow(1.3 / aspect, .6));
+    const aspect = this.width / this.height; this.distance = (this.coarse ? 28 : 32) * Math.max(1, Math.pow(1.3 / aspect, .6));
     const shift = Math.max(0, 112 / 2 - 35);
     this.camera.aspect = aspect; this.camera.setViewOffset(this.width, this.height + shift * 2, 0, shift * 2, this.width, this.height); this.camera.updateProjectionMatrix();
     this.lookId = -1;
@@ -182,7 +182,7 @@ export class Renderer {
     this.targetRing.visible = !!state.target && !player.dead; if (state.target) this.targetRing.position.set(state.target.x, .035, state.target.y);
     this.gl.render(this.scene, this.camera);
     const rect = this.canvas.getBoundingClientRect();
-    this.overlay.render(state, time, (p, lift) => { const s = this.worldToScreen(p, lift); return { x: s.x - rect.left, y: s.y - rect.top }; }, this.hover);
+    this.overlay.render(state, time, (p, lift) => { const s = this.worldToScreen(p, lift); return { x: s.x - rect.left, y: s.y - rect.top }; }, this.hover, hero);
   }
 
   private updateDrops(state: GameState, time: number): void {

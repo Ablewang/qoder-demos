@@ -166,6 +166,12 @@ if (!process.exitCode) {
     assert.match(ECONOMY_RULES.catalog, /不是官方/);
   });
   test('all 5 base probability pools total exactly 100%, positive weights and reward quality', () => {
+    assert.equal(HONGYUN_POOL.length, 36);
+    for (const [rarity, count, weight] of [['legendary', 4, 800], ['rare', 9, 2000], ['uncommon', 12, 2500], ['common', 11, 4700]]) {
+      const tier = HONGYUN_POOL.filter((entry) => entry.rarity === rarity);
+      assert.equal(tier.length, count);
+      assert.equal(tier.reduce((sum, entry) => sum + entry.weight, 0), weight);
+    }
     const pools = [HONGYUN_POOL, ...Object.values(ACTIVITY_POOLS).map((entry) => entry.pool)];
     const rewardTypes = new Set();
     for (const pool of pools) {

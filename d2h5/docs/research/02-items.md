@@ -65,6 +65,46 @@ Appendices preserve the source property tuple `code(param;min;max)` beside decod
 
 证据：[官方技能加成／协同规则](https://classic.battle.net/diablo2exp/skills/basics.shtml)、[官方 Leaf](https://classic.battle.net/diablo2exp/items/runewords-original.shtml)、[经典 Skills 字段指南 EType](https://d2mods.info/forum/kb/viewarticle?a=440)、[官方护符容器规则](https://classic.battle.net/diablo2exp/items/charms.shtml)，以及固定运行提交中的 Properties、ItemStatCost、Runes、MagicPrefix、Skills、SkillDesc。字段指南及官方网页不是合法 1.14d 客户端实测，不能据此宣称执行全面等价。
 
+## 0.3 基德赌博：当前实现与证据（2026-11-19）
+
+**本节是当前项目实现说明，不重写前述 legacy 研究或后面的历史附表。** 正文 §9.5 保留 Arreat Summit 的公开公式与原 LoD 交互目标；不能用其中的 `+100`、legacy 刷新限制或“价格未重建”描述替代本节的现行代码。运行表仍来自项目固定提交 `0edfaf6d006f2eb82857c066e07ce03614285981`，不是历史附表的 fabd 1.13 镜像，也没有改为 D2R master 表。完整玩家规则与精确整数价格顺序见 [总手册 20.4](../GAME-DESIGN.md#204-赌博详解基德经典算法候选与-d2r-风格交互)。
+
+### 当前已接通的执行路径
+
+- **货物与隐藏结果**：`gambling.ts` 读取 `gamble` 表 125 个候选 code，每货位独立生成 ilvl 后以普通底材 `qlvl≤ilvl` 过滤；共 14 位，首位戒指 `rin`、次位项链 `amu` 必有。陈列前预生成完整且已鉴定的隐藏 item，界面仅显示普通底材图标/名称/报价，不显示隐藏升级、品质或词缀。
+- **等级与品质**：`ilvl=clamp(clvl−5+floor(rng×10),5,99)`；一次 100,000 格离散品质 roll 为 unique 50、set 100、rare 10,000、magic 89,850，累计阈值 50/150/10150。MF、players/player count、难度不参与。暗金/套装无合法定义时的降级会改变最终品质，因此不能将请求品质分布当成所有底材的最终暗金/套装获得率。
+- **升级选择**：exceptional 优先，`T=90×(ilvl−exceptional.qlvl)+1`；无映射或 T≤0 直接保留普通底材，不抽 elite。正 T 才 roll `[0,9999]<T`；exceptional 失败才尝试正 `eliteT=33×(ilvl−elite.qlvl)+1`。本版用 **+1/10000**，不是官方公开百分比换算的 **+100/10000**；条件 roll 不能相加成互斥最终概率。
+- **付款与补货**：引擎克隆所买 offer 的原隐藏 item，放入当前 **10×8 背包**，成功后扣当前折扣价；不在购买时重掷该物品。只补这一槽，新的 offer UID、item UID 和输出，其余 13 槽不变。通常普通底材保持；`ci0`/`ci1` 补货随机二选一，`ci2`/`ci3` 的陈列和报价经 normcode 归 `ci1`。免费刷新全 14 位，同时保持普通商店、已有物品/腰带/金币不变。
+- **报价**：戒指 50,000、项链 63,000；其他底材按 `gamblingBaseCost` 中 exceptional/elite 权重 50/25、平均 stack、加权 cost 与 clvl 系数，依次 `trunc` 各中间值，**不能合并舍入，也不能用升级 roll 的 90/33 权重**。最终 `price−floor(price×d/100)`；clvl50 的 `hax` 为 **15,239**，30% 后 **10,668**。这是本版精确操作顺序，不是原 D2R 精确等价证明。
+- **折扣**：新 `cheap→vendorDiscount` 保存实际值；基德的运气 10–15%＋当前武器组 active Edge 15%，正常合法配装最高 **30%，不是 35%**，戒指 35,000、项链 44,100。仅读当前未破损、已鉴定且达到等级门槛的装备与背包护符，排除备用武器组/仓库/方块。聚合代码的 0…99 防护不是合法上限或唯一性规则。已有 vendorDiscount 优先；旧 `unsupported:cheap::15:15` 可只读固定值、不修改物品，旧 `unsupported:cheap::10:15` 已失抽值，不猜测、不重掷，暂不折扣。
+- **模式边界**：固定表 78 个 complete 定义中，**LoD 离线 55＋只额外 Edge 1＝当前 56 个匹配启用**，原 23 个 server 定义的其他 **22 个仍禁用**。Edge 原始 `Name=Runeword31`、server=1 保留；普通/超强合法弓弩恰好三孔，Tir `r03`→Tal `r07`→Amn `r11`，允许合法无形标记。它是唯一 D2R 离线覆盖，**Spirit / Insight / Infinity 不开放**；制作和折扣不意味着 Edge 其他伤害/光环都运行。
+- **无消费拒绝**：开/刷新/买要求城镇内基德的真实 gamble 上下文、正确面板、未暂停/死亡、距会话绑定的同一 NPC≤2；金币不足、满包、缺连续矩形的碎格、远离/移除/非基德/缺服务/野外、过期 UID 或拿普通商品/隐藏 item UID 当 offer 均拒绝，不扣款、不增物品、不补货。
+- **生成与存档**：`source='gambling'` 输出立即鉴定，不随机 ethereal，原属性强制 ethereal 仍保留；failed unique→rare 3×基础耐久、failed set→magic 2×，已支持耐久修正后 gambling cap255，普通生成路径不变。offers/会话不写 v1；购买物品按原 UID/结果正常保存，旧物品不重掷、不猜旧折扣。这里是代码合同，未对用户实际存档作任何操作。
+
+当前背包 10×8 是项目扩容，不是 LoD 原版 10×4；§1 的尺寸表保留原版研究目标。赌博买价路径也没有替换普通交易：旧卖价仍为 item.price 的四分之一并应用难度/幕上限，完整买卖/维修/任务优惠尚未实现。全装备属性、全部词缀、staffmods、automods、装备光环、暗金单局唯一性和全技能行为仍不完整；当前只有 **11 supported 职业技能**，不宣称五幕/全部技能已验收。
+
+### 代码与证据分层
+
+| 层级 | 可核对的证据 | 能证明/不能证明什么 |
+|---|---|---|
+| 当前规则代码 | [gambling.ts](../../src/gambling.ts)：GAMBLING_CODES、gamblingItemLevel/Quality/Upgrade、Stock/refill、BaseCost/Cost/Discount | 证明本版算法、报价与兼容读取的实现选择，不证明原 D2R 二进制行为 |
+| 当前上下文与提交 | [engine.ts](../../src/engine.ts)：gamblingContext/openGambling/gamble、gamble-refresh、save | 证明同一 NPC/距离/面板/空间/金币/UID 门禁、克隆原输出和 v1 快照形状 |
+| 当前呈现与物品 | [ui.ts](../../src/ui.ts)：vendorPanel/gamblingPanel；[items.ts](../../src/items.ts)：createItem source、cheap、RUNEWORDS；[equipment-catalog.ts](../../src/equipment-catalog.ts)：Runeword31 状态 | 证明独立 UI 路径、仅普通底材展示、鉴定/无形/cap 与 Edge 覆盖；不代替本轮浏览器执行验收 |
+| 测试源码 | [gambling.test.ts](../../tests/gambling.test.ts)、[items.test.ts](../../tests/items.test.ts)、[equipment-catalog.test.ts](../../tests/equipment-catalog.test.ts) | 包含离散品质计数、价格/升级边界、折扣/兼容、单槽补货/拒绝、v1 内存存储恢复及 55＋1/22 断言；阅读源码不是通过记录 |
+
+2026-11-19 **407 项单测通过，其中 32 项赌博测试；类型检查/生产构建通过**，保留大 chunk 警告。[gambling-check.mjs](../../scripts/gambling-check.mjs) 在隔离无头 Chromium 的 1440/390/320 三端通过真实右键/点击/触屏购买、隐藏结果/即鉴定/补货/刷新、折扣/出售、消费拒绝和 v1 保存恢复，控制台错误 0；卷轴使用与物品交互脚本同样三端回归通过。主会话已查看桌面/390/320截图，详见总手册20.4.7。这验证本项目行为，不证明原 D2R 二进制数值等价、全属性或正常全战役；没有操作用户真实角色或启动/重启已有开发服务。既有历史记录仍按各自日期/版本解释。
+
+### 外部来源及未决冲突
+
+以下 URL 与位置来自已核验来源，本轮未重新在线抓取：
+
+1. [Arreat Summit — Gambling](https://classic.battle.net/diablo2exp/basics/gambling.shtml)：公开品质概率、等级规则与 exceptional/elite 的 `+1%`，在万分单位应为 **+100**。保留 §9.5 原公开公式，不声称它与本版 +1 相同。
+2. [D2MOO D2Common — Items.cpp](https://cdn.jsdelivr.net/gh/ThePhrozenKeep/D2MOO@master/source/D2Common/src/Items/Items.cpp)：既有核验行 2619–2689 赌博价格；行 2057 自身带 rounding TODO，精确舍入仍需客户端对照。
+3. [D2MOO D2Game — SUnitNpc.cpp](https://cdn.jsdelivr.net/gh/ThePhrozenKeep/D2MOO@master/source/D2Game/src/UNIT/SUnitNpc.cpp)：既有核验行 2338 FillGamble、2382–2479 roll，支持经典重建的 +1 阈值和 exceptional 优先候选。
+4. [D2R 赌博模拟器 bundle](https://gambling.diablo.deadlybossmods.com/assets/render-DeNPOmuq.js)：辅助交叉检查 `rerollBoughtSlot: true`、+1 threshold 与 circlet 家族交互；它不是官方原游戏实现。
+
+**可信度限制**：D2MOO 是经典 1.10f 逆向重建，1.14d 地址注释不证明语义一致；以上两个 **master URL 未固定 commit**，既有行号可能漂移，模拟器 asset 也不是原客户端版本证据。本版选择 +1 与确定整数价格顺序，但不声称原 D2R 二进制实测或全面等价；后续合法客户端对照才可提升可信度，不把辅助模拟器结果当作唯一裁决。
+
 ## 1. Equipment, storage, and dimensions
 
 | Location | Legacy LoD rule |
@@ -527,6 +567,8 @@ Vendors pay the same sale amount for the same item/difficulty/act caps; buying i
 Pricing inputs: base `cost`; affix `multiply/add/divide`; unique/set `cost mult/cost add`; durability/quantity/charges and NPC difficulty factors; quest discounts and vendor-price-reduction stats. Appendix A/C/F preserves cost fields and §9.1 supplies potion base costs. **A complete exact buy/sell/repair/gamble price arithmetic engine has not been reconstructed**; no invented universal “sell for25%ofvalue” formula is specified. Edge reduces vendor prices15%; Gheed's10–15%; together maximum30%, including gambling, with rounding to verify. Radament quest gives an ActII10%price discount; do not assume all quest discounts are global.
 
 ### 9.5 Gambling
+
+> Historical legacy research is retained below, including the published `+1%` (`+100/10000`) formulas and legacy refresh target. For the current project's `+1/10000` exceptional-first implementation, D2R-style refresh/rebuy, integer price order, Edge-only overlay and evidence limitations, see [§0.3 current implementation](#03-基德赌博当前实现与证据2026-11-19). These are distinct claims, not a rewrite of the historical source.
 
 Source: [official gambling](https://classic.battle.net/diablo2exp/basics/gambling.shtml).
 

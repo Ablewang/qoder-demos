@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-fullscreen-probe"
+description = "Enables the fullscreen_probe command without any pre-configured scope."
+commands.allow = ["fullscreen_probe"]
+
+[[permission]]
+identifier = "deny-fullscreen-probe"
+description = "Denies the fullscreen_probe command without any pre-configured scope."
+commands.deny = ["fullscreen_probe"]

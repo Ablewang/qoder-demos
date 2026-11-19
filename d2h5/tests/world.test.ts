@@ -200,6 +200,22 @@ test('unsupported quest chains never auto-complete or grant bonuses on NPC talk'
   assert.ok(WORLD_LIMITATIONS.some(s=>s.includes('未实现')));
 });
 
+for (const difficulty of ['normal', 'nightmare', 'hell'] as const) test(`Cain appears and offers identification only after rescue in ${difficulty}`, () => {
+  const p = player(); p.difficulty = difficulty;
+  for (const other of ['normal', 'nightmare', 'hell'] as const) if (other !== difficulty) p.quests[questKey(other, 'a1q3')] = 3;
+  p.quests.a1q3 = 3;
+  for (const status of [0, 1, 2]) {
+    p.quests[questKey(p, 'a1q3')] = status;
+    assert.ok(!createArea(1, difficulty, 123, p).objects.some(o => o.npcId === 'cain'));
+    assert.ok(!talkNPC(p, 'cain').services.includes('identify'));
+    assert.equal(p.quests[questKey(p, 'a1q3')], status);
+  }
+  p.quests[questKey(p, 'a1q3')] = 3;
+  assert.equal(createArea(1, difficulty, 123, p).objects.filter(o => o.npcId === 'cain').length, 1);
+  assert.ok(talkNPC(p, 'cain').services.includes('identify'));
+  assert.ok(!talkNPC(p, 'akara').services.includes('identify'));
+});
+
 test('native zombie and Fallen stats use exact integer scaling and normal monster level, not alvl', () => {
   const zombie=monsterStats('zombie1',37,'normal');
   assert.equal(zombie.baseLevel,1);assert.equal(zombie.level,1);

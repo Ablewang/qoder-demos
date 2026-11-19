@@ -1,0 +1,222 @@
+.pet { width:160px;height:160px;position:relative; --ear:#6abec9; --look-x:0px;--look-y:0px;touch-action:none;user-select:none; }
+.pet svg {width:100%;height:100%;overflow:visible;pointer-events:none}
+.mochi { transform-origin:80px 124px; animation:breathe 4s steps(120) infinite }
+.face {transform:translate(var(--look-x),var(--look-y))}
+.prop,.closed-eyes,.brows,.nightcap,.yarn,.giggle-mouth,.surprised-mouth {display:none}
+.ear-ring {fill:var(--ear)}
+.pet.mint {--ear:#9bd7b6}.pet.sakura {--ear:#efa5be}.pet.yarn-equipped .yarn {display:block}
+.pet.cap-equipped[data-action=sleep] .nightcap {display:block}
+.pet[data-action=pet_squint] .eyes,.pet[data-action=doze] .eyes,.pet[data-action=sleep] .eyes,.pet[data-action=quiet_curl] .eyes,.pet[data-action=offline_sleep] .eyes {display:none}
+.pet[data-action=pet_squint] .closed-eyes,.pet[data-action=doze] .closed-eyes,.pet[data-action=sleep] .closed-eyes,.pet[data-action=quiet_curl] .closed-eyes,.pet[data-action=offline_sleep] .closed-eyes {display:block}
+.pet[data-action=pet_squint] .blush {fill:#fa909e;opacity:1}
+.pet[data-action=pet_squint] .hearts {display:block;animation:float 1.2s steps(36) infinite}
+.pet[data-action=pet_squint] .mochi {animation:squint 1.2s steps(36) infinite}
+.pet[data-action=look_at_cursor] .mochi {transform:rotate(2deg);animation:none}
+.pet[data-action=poke_wobble] .mochi {animation:wobble .6s steps(18) both}
+.pet[data-action=poke_pout] .mochi {animation:pout 1.2s steps(36) both}
+.pet[data-action=poke_pout] .mouth {transform:translate(0,3px) scale(1.05);transform-origin:center}
+.pet[data-action=drag_hold] .mochi {animation:hold .8s steps(24) infinite}
+.pet[data-action=drag_hold] .arms {transform:translate(0,-24px)}
+.pet[data-action=drag_hold] .feet {animation:feet .6s steps(18) infinite;transform-origin:80px 125px}
+.pet[data-action=drop_land] .mochi {animation:land .5s steps(15) both}
+.pet[data-action=perch_edge] .mochi {animation:perch 4s steps(120) infinite}
+.pet[data-action=perch_edge] .arms {transform:translate(0,2px)}
+.pet[data-action=doze] .mochi {animation:nod 3s steps(90) infinite}
+.pet[data-action=sleep] .mochi {transform:scale(1.08,.74);animation:none}
+.pet[data-action=sleep] .zzz {display:block;animation:float 3s steps(90) infinite}
+.pet[data-action=play_ball] .ball {display:block;animation:ball 1.3s steps(39) infinite}
+.pet[data-action=play_ball] .paw-right {animation:tap .6s steps(18) infinite;transform-origin:100px 110px}
+.pet[data-action=stretch] .mochi {animation:stretch 2s steps(60) both}
+.pet[data-action=music_nod] .mochi {animation:nod .8s steps(24) infinite}
+.pet[data-action=music_nod] .notes {display:block;animation:float 1.6s steps(48) infinite}
+.pet[data-action=eat_snack] .snack {display:block;animation:snack 1.5s steps(45) both}
+.pet[data-action=eat_snack] .arms {transform:translate(0,-5px)}
+.pet[data-action=sign_hold] .sign {display:block;animation:nod 2s steps(60) infinite;transform-origin:120px 100px}
+.pet[data-action=happy_bounce] .mochi {animation:bounce 1.2s steps(36) both}
+.pet[data-action=happy_bounce] .stars {display:block;animation:float 1.2s steps(36) both}
+.pet[data-action=worried] .brows {display:block}
+.pet[data-action=worried] .arms {animation:rub 1.5s steps(45) infinite}
+.pet[data-action=caring] .tea {display:block;animation:tea 2s steps(60) both}
+.pet[data-action=working] .keyboard {display:block}
+.pet[data-action=working] .arms {animation:type .4s steps(12) infinite}
+.pet[data-action=wait_auth] .key {display:block}
+.pet[data-action=wait_auth] .mochi {animation:nod 2.5s steps(75) infinite}
+.pet[data-action=quiet_curl] {opacity:.6}
+.pet[data-action=quiet_curl] .mochi {transform:scale(.78,.8);animation:none}
+.pet[data-action=offline_sleep] {filter:grayscale(1)}
+.pet[data-action=offline_sleep] .mochi {transform:scale(1.05,.8);animation:none}
+.pet[data-action=offline_sleep] .plug {display:block}
+.pet[data-action=read_notebook] .notebook {display:block;animation:page 1.2s steps(36) infinite;transform-origin:80px 118px}
+/* SVG transforms leave the native hit regions fixed. */
+.pet:is([data-action=ear_twitch],[data-action=cheek_squish],[data-action=belly_giggle],[data-action=face_rub],[data-action=roll_over],[data-action=poke_guard],[data-action=drop_rub],[data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss],[data-action=box_peek],[data-action=box_hide],[data-action=box_pop]) .mochi {animation:none}
+.pet:is([data-action=cheek_squish],[data-action=belly_giggle],[data-action=face_rub],[data-action=poke_guard],[data-action=drop_rub],[data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss]) .paw-left {transform-origin:56px 114px}
+.pet:is([data-action=cheek_squish],[data-action=belly_giggle],[data-action=face_rub],[data-action=poke_guard],[data-action=drop_rub],[data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss]) .paw-right {transform-origin:102px 114px}
+.pet:is([data-action=cheek_squish],[data-action=belly_giggle],[data-action=face_rub],[data-action=poke_guard]) .eyes {display:none}
+.pet:is([data-action=cheek_squish],[data-action=belly_giggle],[data-action=face_rub],[data-action=poke_guard]) .closed-eyes {display:block}
+
+.pet[data-action=ear_twitch] .ear-left {transform-origin:56px 52px;animation:ear-flick-left .8s ease-in-out both}
+.pet[data-action=ear_twitch] .ear-right {transform-origin:114px 57px;animation:ear-flick-right .8s ease-in-out both}
+.pet[data-action=ear_twitch] .headset-left {transform-origin:28px 89px;animation:earcup-left .8s ease-in-out both}
+.pet[data-action=ear_twitch] .headset-right {transform-origin:135px 89px;animation:earcup-right .8s ease-in-out both}
+.pet[data-action=ear_twitch] .headband {transform-origin:80px 70px;animation:headband-flex .8s ease-in-out both}
+.pet[data-action=cheek_squish] .mochi {animation:cheek-body .7s ease-in-out both}
+.pet[data-action=cheek_squish] .face {transform-origin:81px 90px;animation:cheek-face .7s ease-in-out both}
+.pet[data-action=cheek_squish] .blush {transform-origin:81px 93px;animation:cheek-blush .7s ease-in-out both}
+.pet[data-action=cheek_squish] .paw-left {animation:cheek-paw-left .7s ease-in-out both}
+.pet[data-action=cheek_squish] .paw-right {animation:cheek-paw-right .7s ease-in-out both}
+.pet[data-action=belly_giggle] .mochi {animation:belly-laugh 1.1s ease-in-out both}
+.pet[data-action=belly_giggle] .mouth {display:none}
+.pet[data-action=belly_giggle] .giggle-mouth {display:block}
+.pet[data-action=belly_giggle] .blush {fill:#fa9f9c;opacity:1}
+.pet[data-action=belly_giggle] .closed-eyes {transform-origin:81px 81px;animation:laugh-squint 1.1s ease-in-out both}
+.pet[data-action=belly_giggle] .paw-left {animation:belly-paw-left 1.1s ease-in-out both}
+.pet[data-action=belly_giggle] .paw-right {animation:belly-paw-right 1.1s ease-in-out both}
+.pet[data-action=face_rub] .mochi {animation:face-rub-sway 1.15s ease-in-out both}
+.pet[data-action=face_rub] .paw-left {animation:face-rub-left 1.15s ease-in-out both}
+.pet[data-action=face_rub] .paw-right {animation:face-rub-right 1.15s ease-in-out both}
+.pet[data-action=roll_over] .mochi {transform-origin:80px 102px;animation:side-roll 1.1s ease-in-out both}
+.pet[data-action=roll_over] .arms {transform-origin:80px 114px;animation:roll-tuck 1.1s ease-in-out both}
+.pet[data-action=roll_over] .feet {transform-origin:80px 125px;animation:roll-tuck 1.1s ease-in-out both}
+.pet[data-action=poke_guard] .mochi {animation:guard-curl .7s ease-in-out both}
+.pet[data-action=poke_guard] .brows {display:block}
+.pet[data-action=poke_guard] .paw-left {animation:guard-left .7s ease-in-out both}
+.pet[data-action=poke_guard] .paw-right {animation:guard-right .7s ease-in-out both}
+.pet[data-action=drop_rub] .mochi {animation:drop-settle .7s ease-in-out both}
+.pet[data-action=drop_rub] .paw-left {animation:self-rub .7s ease-in-out both}
+.pet[data-action=drop_rub] .paw-right {animation:self-steady .7s ease-in-out both}
+
+/* --throw-side mirrors the SVG arc without moving the window. */
+.pet:is([data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss]) .ball {display:block;transform-origin:126px 132px;transform:translate(-46px,-18px)}
+.pet:is([data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss]) .ball-grip {display:block;transform-origin:80px 124px}
+.pet:is([data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss]) .paw-left {transform:translate(10px,-2px)}
+.pet:is([data-action=ball_ready],[data-action=ball_toss],[data-action=ball_catch],[data-action=ball_miss]) .paw-right {transform:translate(-10px,-2px)}
+.pet[data-action=ball_ready] .paw-left {animation:ready-left .4s ease-out both}
+.pet[data-action=ball_ready] .paw-right {animation:ready-right .4s ease-out both}
+.pet[data-action=ball_toss] .ball {animation:throw-arc 1.4s linear both}
+.pet[data-action=ball_toss] .mochi {animation:throw-body 1.4s ease-in-out both}
+.pet[data-action=ball_toss] .eyes {transform-origin:81px 81px;animation:follow-ball 1.4s ease-in-out both}
+.pet[data-action=ball_toss] .paw-left {animation:throw-left 1.4s ease-in-out both}
+.pet[data-action=ball_toss] .paw-right {animation:throw-right 1.4s ease-in-out both}
+.pet[data-action=ball_toss] .ball-grip {animation:release-grip 1.4s linear both}
+.pet[data-action=ball_catch] .mochi,.pet[data-action=ball_catch] .ball-grip {animation:catch-bounce .7s ease-in-out both}
+.pet[data-action=ball_catch] .ball {animation:catch-ball .7s ease-in-out both}
+.pet[data-action=ball_miss] .ball {animation:miss-roll .9s ease-in-out both}
+.pet[data-action=ball_miss] .mochi {animation:miss-lean .9s ease-in-out both}
+.pet[data-action=ball_miss] .arms {transform-origin:80px 114px;animation:miss-reach .9s ease-in-out both}
+.pet[data-action=ball_miss] .ball-grip {animation:recover-grip .9s linear both}
+.pet[data-action=ball_miss] .surprised-mouth {display:block;animation:recover-surprise .9s linear both}
+.pet[data-action=ball_miss] .mouth {animation:recover-smile .9s linear both}
+
+/* The box front occludes the face at the end of the hide frame. */
+.pet:is([data-action=box_peek],[data-action=box_hide],[data-action=box_pop]) .box-back,
+.pet:is([data-action=box_peek],[data-action=box_hide],[data-action=box_pop]) .box-front {display:block}
+.pet:is([data-action=box_peek],[data-action=box_hide]) .box-paws {display:block;transform-origin:80px 112px}
+.pet:is([data-action=box_peek],[data-action=box_hide]) .arms {transform:translateY(-18px)}
+.pet[data-action=box_peek] .mochi {animation:box-peek 2.4s ease-in-out infinite}
+.pet[data-action=box_peek] .box-paws {animation:box-peek-paws 2.4s ease-in-out infinite}
+.pet[data-action=box_hide] .mochi {animation:box-hide .45s ease-in both}
+.pet[data-action=box_hide] .box-paws {animation:box-hide-paws .45s ease-in both}
+.pet[data-action=box_pop] .mochi {animation:box-pop .7s ease-out both}
+.pet[data-action=box_pop] .arms {animation:box-pop-arms .7s ease-out both}
+.pet[data-action=box_pop] .box-flap-left {transform-origin:42px 111px;animation:box-open-left .7s ease-out both}
+.pet[data-action=box_pop] .box-flap-right {transform-origin:118px 111px;animation:box-open-right .7s ease-out both}
+.pet[data-action=box_pop] .box-flap-back-left {transform-origin:42px 105px;animation:box-open-right .7s ease-out both}
+.pet[data-action=box_pop] .box-flap-back-right {transform-origin:118px 105px;animation:box-open-left .7s ease-out both}
+/* Step counts bound the shortest keyframe segment, not the whole animation. */
+.pet.pet:is([data-action=ear_twitch],[data-action=drop_rub]) * {animation-timing-function:steps(2)}
+.pet.pet[data-action=cheek_squish] * {animation-timing-function:steps(6)}
+.pet.pet:is([data-action=poke_guard],[data-action=belly_giggle],[data-action=roll_over],[data-action=ball_toss],[data-action=ball_miss],[data-action=box_hide]) * {animation-timing-function:steps(4)}
+.pet.pet:is([data-action=ball_catch],[data-action=box_pop]) * {animation-timing-function:steps(3)}
+.pet.pet[data-action=face_rub] * {animation-timing-function:steps(5)}
+.pet.pet[data-action=ball_ready] * {animation-timing-function:steps(12)}
+.pet.pet[data-action=box_peek] * {animation-timing-function:steps(36)}
+.pet.blink .eyes {transform:scaleY(.08);transform-origin:80px 81px}
+.hidden-document *,.paused * {animation-play-state:paused!important}
+@keyframes breathe {50%{transform:scale(1.01,.98)}}
+@keyframes squint {50%{transform:scale(1.04,.96)}}
+@keyframes wobble {20%{transform:scale(1.14,.8)}60%{transform:scale(.95,1.05)}}
+@keyframes pout {30%,80%{transform:scale(1.16,1.01)}}
+@keyframes hold {50%{transform:translateY(-7px) rotate(-3deg)}}
+@keyframes feet {50%{transform:rotate(7deg)}}
+@keyframes land {0%{transform:translateY(-18px)}35%{transform:scale(1.17,.75)}70%{transform:scale(.96,1.04)}}
+@keyframes perch {0%,100%{transform:scale(1.05,.88)}50%{transform:scale(1.06,.86)}}
+@keyframes nod {50%{transform:rotate(4deg) translateY(3px)}}
+@keyframes ball {0%,100%{transform:translateX(-7px)}50%{transform:translateX(8px) translateY(-12px) rotate(20deg)}}
+@keyframes tap {50%{transform:rotate(-15deg)}}
+@keyframes stretch {50%{transform:scale(.87,1.15) translateY(-5px)}}
+@keyframes snack {50%{transform:translateY(-8px) rotate(8deg)}100%{transform:scale(.8)}}
+@keyframes bounce {20%,60%{transform:translateY(-12px)}40%,80%{transform:scale(1.04,.93)}}
+@keyframes float {0%{opacity:0;transform:translateY(6px)}40%{opacity:1}100%{opacity:0;transform:translateY(-10px)}}
+@keyframes rub {50%{transform:translateX(3px)}}
+@keyframes tea {0%{transform:translateY(8px)}100%{transform:translateY(-3px)}}
+@keyframes type {50%{transform:translateY(-3px)}}
+@keyframes page {50%{transform:skewY(4deg)}}
+
+@keyframes ear-flick-left {0%,35%,70%,100%{transform:none}12%,52%{transform:rotate(-7deg) translateY(-1px)}22%,61%{transform:rotate(3deg)}}
+@keyframes ear-flick-right {0%,25%,65%,100%{transform:none}38%,76%{transform:rotate(6deg) translateY(-1px)}49%,86%{transform:rotate(-3deg)}}
+@keyframes earcup-left {0%,35%,70%,100%{transform:none}12%,52%{transform:rotate(-4deg) translateY(-1px)}22%,61%{transform:rotate(2deg)}}
+@keyframes earcup-right {0%,25%,65%,100%{transform:none}38%,76%{transform:rotate(4deg) translateY(-1px)}49%,86%{transform:rotate(-2deg)}}
+@keyframes headband-flex {0%,35%,65%,100%{transform:none}12%,52%,76%{transform:scale(.985,1.015)}}
+@keyframes cheek-body {0%,100%{transform:none}35%,65%{transform:scale(.95,1.02)}}
+@keyframes cheek-face {0%,100%{transform:translate(var(--look-x),var(--look-y))}35%,65%{transform:translate(var(--look-x),var(--look-y)) scale(.82,1.08)}}
+@keyframes cheek-blush {0%,100%{transform:none}35%,65%{transform:scale(1.2,.8)}}
+@keyframes cheek-paw-left {0%,100%{transform:none}35%,65%{transform:translate(-3px,-19px) rotate(-20deg)}}
+@keyframes cheek-paw-right {0%,100%{transform:none}35%,65%{transform:translate(3px,-19px) rotate(20deg)}}
+@keyframes belly-laugh {0%,100%{transform:none}20%,55%,85%{transform:scale(1.035,.96) rotate(-1.5deg)}37%,70%{transform:scale(.985,1.015) rotate(1.5deg)}}
+@keyframes laugh-squint {0%,100%{transform:none}20%,55%,85%{transform:scaleY(.65)}}
+@keyframes belly-paw-left {0%,100%{transform:none}20%,55%,85%{transform:translate(10px,1px) rotate(-8deg)}37%,70%{transform:translate(7px,3px) rotate(3deg)}}
+@keyframes belly-paw-right {0%,100%{transform:none}20%,55%,85%{transform:translate(-7px,3px) rotate(-3deg)}37%,70%{transform:translate(-10px,1px) rotate(8deg)}}
+@keyframes face-rub-sway {0%,100%{transform:none}25%,65%{transform:rotate(-1.5deg)}45%,82%{transform:rotate(1.5deg)}}
+@keyframes face-rub-left {0%,100%{transform:none}20%,60%{transform:translate(9px,-27px) rotate(16deg)}40%,80%{transform:translate(5px,-22px) rotate(6deg)}}
+@keyframes face-rub-right {0%,100%{transform:none}20%,60%{transform:translate(-5px,-22px) rotate(-6deg)}40%,80%{transform:translate(-9px,-27px) rotate(-16deg)}}
+@keyframes side-roll {0%,100%{transform:translateX(0) rotate(0deg) scale(1)}20%{transform:translateX(2px) rotate(8deg) scale(.9,.82)}45%{transform:translateX(8px) rotate(24deg) scale(.85)}65%{transform:translateX(-6px) rotate(-18deg) scale(.88)}85%{transform:translateX(1px) rotate(4deg) scale(.96)}}
+@keyframes roll-tuck {0%,100%{transform:none}25%,65%{transform:scale(.82,.9)}}
+@keyframes guard-curl {0%{transform:none}20%,60%{transform:translateY(4px) scale(.93,.92)}40%,80%{transform:translate(1px,3px) scale(.94,.93)}100%{transform:translateY(3px) scale(.96,.96)}}
+@keyframes guard-left {0%{transform:none}20%,60%,100%{transform:translate(12px,-29px) rotate(-20deg)}40%,80%{transform:translate(11px,-27px) rotate(-16deg)}}
+@keyframes guard-right {0%{transform:none}20%,60%,100%{transform:translate(-12px,-29px) rotate(20deg)}40%,80%{transform:translate(-11px,-27px) rotate(16deg)}}
+@keyframes drop-settle {0%{transform:translateY(-6px)}16%{transform:scale(1.08,.87)}33%,60%{transform:rotate(-2deg)}46%,75%{transform:rotate(2deg)}100%{transform:none}}
+@keyframes self-rub {0%,16%,100%{transform:none}35%,65%{transform:translate(1px,-58px) rotate(-14deg)}48%,78%{transform:translate(5px,-53px) rotate(-5deg)}}
+@keyframes self-steady {0%,100%{transform:none}25%,80%{transform:translate(-3px,-4px)}}
+@keyframes ready-left {0%{transform:none}100%{transform:translate(10px,-2px)}}
+@keyframes ready-right {0%{transform:none}100%{transform:translate(-10px,-2px)}}
+@keyframes throw-arc {
+  0% {transform:translate(-46px,-18px) rotate(0deg)}
+  10% {transform:translate(calc(-46px + var(--throw-side,1) * 8px),-50px) rotate(calc(var(--throw-side,1) * 36deg))}
+  20% {transform:translate(calc(-46px + var(--throw-side,1) * 14px),-75px) rotate(calc(var(--throw-side,1) * 72deg))}
+  30% {transform:translate(calc(-46px + var(--throw-side,1) * 18px),-93px) rotate(calc(var(--throw-side,1) * 108deg))}
+  40% {transform:translate(calc(-46px + var(--throw-side,1) * 21px),-104px) rotate(calc(var(--throw-side,1) * 144deg))}
+  50% {transform:translate(calc(-46px + var(--throw-side,1) * 22px),-108px) rotate(calc(var(--throw-side,1) * 180deg))}
+  60% {transform:translate(calc(-46px + var(--throw-side,1) * 21px),-104px) rotate(calc(var(--throw-side,1) * 216deg))}
+  70% {transform:translate(calc(-46px + var(--throw-side,1) * 18px),-93px) rotate(calc(var(--throw-side,1) * 252deg))}
+  80% {transform:translate(calc(-46px + var(--throw-side,1) * 14px),-75px) rotate(calc(var(--throw-side,1) * 288deg))}
+  90% {transform:translate(calc(-46px + var(--throw-side,1) * 8px),-50px) rotate(calc(var(--throw-side,1) * 324deg))}
+  100% {transform:translate(-46px,-18px) rotate(calc(var(--throw-side,1) * 360deg))}
+}
+@keyframes throw-body {0%,45%,100%{transform:none}12%{transform:scale(.98,.95)}26%{transform:translateY(-3px) scale(1.015,1)}}
+@keyframes follow-ball {0%,100%{transform:none}25%,75%{transform:translateY(-2px)}}
+@keyframes throw-left {0%,100%{transform:translate(10px,-2px)}15%{transform:translate(12px,-12px) rotate(-12deg)}40%,80%{transform:translate(5px,-6px) rotate(-5deg)}}
+@keyframes throw-right {0%,100%{transform:translate(-10px,-2px)}15%{transform:translate(-12px,-12px) rotate(12deg)}40%,80%{transform:translate(-5px,-6px) rotate(5deg)}}
+@keyframes release-grip {0%,100%{opacity:1;transform:none}10%{opacity:0;transform:translateY(-6px) scale(.8)}90%{opacity:0;transform:translateY(-3px) scale(.9)}}
+@keyframes catch-bounce {0%,100%{transform:none}18%{transform:scale(1.05,.9)}42%{transform:translateY(-9px)}65%{transform:scale(1.02,.96)}82%{transform:translateY(-3px)}}
+@keyframes catch-ball {0%,100%{transform:translate(-46px,-18px)}18%{transform:translate(-46px,-17px) scale(1.05,.9)}42%{transform:translate(-46px,-27px)}65%{transform:translate(-46px,-17.6px) scale(1.02,.96)}82%{transform:translate(-46px,-21px)}}
+@keyframes miss-roll {
+  0% {transform:translate(-46px,-18px) rotate(0deg)}
+  15% {transform:translate(calc(-46px + var(--throw-side,1) * 22px),-7px) rotate(calc(var(--throw-side,1) * 90deg))}
+  35%,50% {transform:translate(calc(-46px + var(--throw-side,1) * 54px),0px) rotate(calc(var(--throw-side,1) * 230deg))}
+  65% {transform:translate(calc(-46px + var(--throw-side,1) * 45px),-2px) rotate(calc(var(--throw-side,1) * 255deg))}
+  80% {transform:translate(calc(-46px + var(--throw-side,1) * 24px),-13px) rotate(calc(var(--throw-side,1) * 310deg))}
+  100% {transform:translate(-46px,-18px) rotate(calc(var(--throw-side,1) * 360deg))}
+}
+@keyframes miss-lean {0%,100%{transform:none}35%,50%{transform:translateX(calc(var(--throw-side,1) * 4px)) rotate(calc(var(--throw-side,1) * 4deg))}70%{transform:translateX(calc(var(--throw-side,1) * 3px)) rotate(calc(var(--throw-side,1) * 2deg))}}
+@keyframes miss-reach {0%,100%{transform:none}35%,50%{transform:translate(calc(var(--throw-side,1) * 22px),5px) rotate(calc(var(--throw-side,1) * 8deg))}70%{transform:translate(calc(var(--throw-side,1) * 15px),2px) rotate(calc(var(--throw-side,1) * 4deg))}}
+@keyframes recover-grip {0%,85%{opacity:0;transform:translate(calc(var(--throw-side,1) * 12px),3px)}100%{opacity:1;transform:none}}
+@keyframes recover-surprise {0%,75%{opacity:1}100%{opacity:0}}
+@keyframes recover-smile {0%,75%{opacity:0}100%{opacity:1}}
+@keyframes box-peek {0%,100%{transform:translate(calc(var(--peek-side,1) * 7px),8px) scale(.74)}50%{transform:translate(calc(var(--peek-side,1) * 11px),5px) scale(.74) rotate(calc(var(--peek-side,1) * 3deg))}}
+@keyframes box-peek-paws {0%,100%{transform:translateX(calc(var(--peek-side,1) * 7px))}50%{transform:translateX(calc(var(--peek-side,1) * 11px))}}
+@keyframes box-hide {0%{transform:translate(calc(var(--peek-side,1) * 7px),8px) scale(.74)}30%{transform:translate(calc(var(--peek-side,1) * 4px),12px) scale(.66,.6)}70%,100%{transform:translate(0px,8px) scale(.45,.16)}}
+@keyframes box-hide-paws {0%{opacity:1;transform:translateX(calc(var(--peek-side,1) * 7px))}35%,100%{opacity:0;transform:translate(0px,9px) scale(.7,.2)}}
+@keyframes box-pop {0%{transform:translate(0px,8px) scale(.45,.16)}15%{transform:translate(0px,10px) scale(.55,.2)}52%{transform:translateY(-12px) scale(.9,1.04)}76%{transform:translateY(1px) scale(.94,.82)}100%{transform:translateY(-4px) scale(.88)}}
+@keyframes box-pop-arms {0%{transform:translateY(-18px)}52%{transform:translateY(-25px)}100%{transform:translateY(-12px)}}
+@keyframes box-open-left {0%{transform:rotate(0deg)}20%{transform:rotate(-4deg)}55%{transform:rotate(20deg)}100%{transform:rotate(16deg)}}
+@keyframes box-open-right {0%{transform:rotate(0deg)}20%{transform:rotate(4deg)}55%{transform:rotate(-20deg)}100%{transform:rotate(-16deg)}}

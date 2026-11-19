@@ -1,0 +1,28 @@
+{
+  "name": "tuanzi-pet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:integration": "TZ=Asia/Shanghai node --disable-warning=ExperimentalWarning --test test/real-daemon.integration.mjs",
+    "mock-daemon": "node test/mock-daemon.mjs",
+    "tauri": "tauri",
+    "cargo:build": "cargo build --manifest-path src-tauri/Cargo.toml"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@tauri-apps/cli": "^2.12.6",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.5"
+  }
+}

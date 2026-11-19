@@ -28,12 +28,17 @@ function snapshot(input = {}) {
     weapon: WEAPONS.has(weapon) ? weapon : profession.weapon,
     armor: profession.armor,
     round: Number.isFinite(input.round) ? input.round : 0,
+    rt: input.rt ? structuredClone(input.rt) : null,
+    hp: Number.isFinite(input.hp) ? input.hp : null,
+    showcase: !explorable && !input.rt && monsters.length === 0,
     targetId: input.targetId ?? null,
     monsters: roster.map((m) => ({
-      id: m.id, name: String(m.name ?? ''), rank: m.rank ?? '',
+      id: m.id, name: String(m.name ?? ''), rank: m.rank ?? '', intent: m.intent ?? 'attack',
       hp: Number.isFinite(m.hp) ? m.hp : 1,
       maxHp: Number.isFinite(m.maxHp) ? m.maxHp : 1,
       lv: Number.isFinite(m.lv) ? m.lv : 1,
+      aggro: Number.isFinite(m.aggro) ? m.aggro : 0,
+      ambient: Boolean(m.ambient),
     })),
   };
 }
@@ -164,8 +169,10 @@ function lantern(parent, k, position, palette, size = 1) {
   const lamp = group(parent, position);
   lamp.scale.setScalar(size);
   rod(lamp, k, palette.wood, [0, 0.08, 0], [0, 0.35, 0], 0.025);
-  sphere(lamp, k, 0xffdda2, [0, 0, 0], [0.14, 0.18, 0.14], { emissive: 0xffbc65, emissiveIntensity: 0.3 });
-  for (const y of [-0.17, 0.17]) cylinder(lamp, k, palette.trim, [0, y, 0], 0.11, 0.11, 0.04);
+  modelingSphere(lamp, k, 0xffd295, [0, 0, 0], [0.14, 0.18, 0.14], { emissive: 0xffbc65, emissiveIntensity: 0.3 });
+  for (const y of [-0.17, 0.17]) cylinder(lamp, k, palette.trim, [0, y, 0], 0.11, 0.11, 0.04, 10);
+  rod(lamp, k, 0xb5654c, [0, -0.19, 0], [0, -0.29, 0], 0.017);
+  cylinder(lamp, k, palette.trim, [0, -0.32, 0], 0.023, 0.037, 0.09, 6);
 }
 
 function layeredRoof(parent, k, position, size, palette) {
@@ -174,7 +181,13 @@ function layeredRoof(parent, k, position, size, palette) {
       [position[0], position[1] + tier * 0.09, position[2]],
       [size[0] * (tier ? 0.94 : 1), size[1], size[2] * (tier ? 0.94 : 1)], { side: THREE.DoubleSide });
   }
-  sphere(parent, k, palette.trim, [position[0], position[1] + size[1] * 0.85 + 0.15, position[2]], [0.12, 0.14, 0.12]);
+  modelingSphere(parent, k, palette.trim, [position[0], position[1] + size[1] * 0.85 + 0.15, position[2]], [0.1, 0.16, 0.1]);
+  const seams = group(parent, position);
+  for (const x of [-1, 1]) for (const z of [-1, 1]) {
+    rod(seams, k, palette.trim, [x * size[0] * 1.08, size[1] * 0.17, z * size[2] * 1.08], [x * size[0] * 0.69, size[1] * 0.44 + 0.1, z * size[2] * 0.69], 0.025);
+    rod(seams, k, palette.trim, [x * size[0] * 0.69, size[1] * 0.44 + 0.1, z * size[2] * 0.69], [x * size[0] * 0.04, size[1] * 0.85 + 0.1, z * size[2] * 0.04], 0.025);
+  }
+  seams.userData.modelingBatch = true;
 }
 
 function pavilion(parent, k, position, size, palette, enclosed = false) {
@@ -209,7 +222,9 @@ function buildEnvironment(state) {
   const k = kit();
   const root = new THREE.Group();
   const landmark = ZONE_LANDMARKS[state.location] ?? ZONE_LANDMARKS.wanliu;
-  const p = landmark.palette;
+  const p = { ...landmark.palette };
+  for (const key of ['ground', 'stone', 'wood']) p[key] = new THREE.Color(p[key]).lerp(new THREE.Color(0xf0d6b5), 0.055).getHex();
+  const sphere = modelingSphere;
   const { motif, biome } = landmark;
   // A finite, bevel-like toy island: no endless plane or interchangeable forest.
   const base = cylinder(root, k, p.stone, [0, -0.32, -1.6], 1, 0.96, 0.6, 64);
@@ -235,12 +250,14 @@ function buildEnvironment(state) {
       rod(t, k, p.wood, [side * 0.65, 1.8, 0], [side * 0.92, 2.12, -0.12], 0.045);
     }
     if (!bare) {
-      sphere(t, k, color, [0, 2.15, -0.08], [0.97, 0.83, 0.83]);
+      const shade = new THREE.Color(color).lerp(new THREE.Color(0x345d4b), 0.18).getHex();
+      const light = new THREE.Color(color).lerp(new THREE.Color(0xffe8bc), 0.18).getHex();
+      sphere(t, k, shade, [0, 1.98, -0.08], [1.04, 0.52, 0.79]);
       for (const side of [-1, 1]) {
-        sphere(t, k, color, [side * 0.72, 1.95, 0.12], [0.65, 0.58, 0.66]);
-        sphere(t, k, color, [side * 0.38, 2.65, -0.05], [0.57, 0.48, 0.55]);
+        sphere(t, k, color, [side * 0.66, 2.14, 0.13], [0.69, 0.5, 0.65]);
+        sphere(t, k, light, [side * 0.33, 2.66, -0.07], [0.6, 0.48, 0.55]);
       }
-      sphere(t, k, new THREE.Color(color).lerp(new THREE.Color(0xffe8bc), 0.15).getHex(), [-0.32, 2.53, 0.5], [0.48, 0.35, 0.33]);
+      sphere(t, k, color, [-0.21, 2.43, 0.32], [0.77, 0.54, 0.56]);
     }
     return t;
   };
@@ -761,6 +778,17 @@ function buildEnvironment(state) {
     const faded = k.material(normal.color.getHex(), { transparent: true, opacity: 0.18, depthWrite: false, roughness: normal.roughness, metalness: normal.metalness, side: normal.side });
     occluders.push({ object, bounds, normal, faded });
   });
+  if (state.rt && !state.explorable) {
+    const arena = new THREE.Box3(new THREE.Vector3(-4.2, 0, -2.9), new THREE.Vector3(4.2, 3, 2.9));
+    dressing.children.forEach(object => { if (new THREE.Box3().setFromObject(object).intersectsBox(arena)) object.visible = false; });
+    const corners = [[-4, 0.025, -2.8], [4, 0.025, -2.8], [4, 0.025, 2.8], [-4, 0.025, 2.8]];
+    corners.forEach((from, i) => rod(root, k, 0xc8b98b, from, corners[(i + 1) % 4], 0.018));
+  }
+  const detailGroups = [];
+  const occlusionMeshes = new Set(occluders.map(cover => cover.object));
+  dressing.traverse(object => { if (object.userData.modelingBatch) detailGroups.push(object); });
+  detailGroups.forEach(detail => modelingBatch(detail, k, object => !occlusionMeshes.has(object)));
+  modelingBatch(dressing, k, object => object.geometry.boundingBox.clone().applyMatrix4(object.matrixWorld).max.y < 0.6);
   return { root, k, palette: p, framePoints, focalPoints, motif, navigation, occluders };
 }
 
@@ -797,181 +825,382 @@ function buildWeapon(parent, k, type) {
     for (const side of [-1, 1]) rod(grip, k, gold, [0, 1.16, 0], [side * 0.16, 1.42, 0], 0.025);
   } else if (type === 'axe') {
     cylinder(grip, k, dark, [0, 0.35, 0], 0.045, 0.055, 1.45);
-    const axeGeo = k.geometry('axe', () => shapeGeometry([
-      [-0.42, 0.23], [-0.13, 0.12], [0.12, 0.12], [0.47, 0.28],
-      [0.45, -0.2], [0.16, -0.1], [-0.13, -0.1], [-0.39, -0.2],
-    ]));
-    mesh(grip, k, axeGeo, steel, [0, 0.92, 0], [1, 1, 1], { side: THREE.DoubleSide });
-    box(grip, k, gold, [0, 0.92, 0], [0.11, 0.32, 0.12]);
+    modelingSolid(grip, k, steel, [[-0.44, 0.28], [-0.18, 0.13], [0.18, 0.13], [0.44, 0.28], [0.53, 0.08], [0.48, -0.23], [0.17, -0.11], [-0.17, -0.11], [-0.48, -0.23], [-0.53, 0.08]], [0, 0.92, 0], 0.09);
+    box(grip, k, gold, [0, 0.92, 0], [0.13, 0.35, 0.14]);
   } else {
     const dagger = type === 'dagger';
     const length = dagger ? 0.52 : 1.14;
     cylinder(grip, k, dark, [0, 0, 0], 0.045, 0.045, 0.24);
     box(grip, k, gold, [0, 0.15, 0], [dagger ? 0.21 : 0.32, 0.055, 0.07]);
-    const swordGeo = k.geometry(`blade:${type}`, () => shapeGeometry(type === 'blade'
-      ? [[-0.04, 0], [0.1, 0], [0.14, length * 0.72], [0.045, length], [-0.055, length * 0.8]]
-      : [[-0.065, 0], [0.065, 0], [0.065, length * 0.82], [0, length], [-0.065, length * 0.82]]));
-    mesh(grip, k, swordGeo, steel, [0, 0.18, 0], [1, 1, 1], { side: THREE.DoubleSide, metalness: 0.35 });
-    rod(grip, k, 0xf1ece2, [0, 0.2, 0.005], [0, length * 0.83, 0.005], 0.01);
+    const blade = modelingSolid(grip, k, steel, type === 'blade'
+      ? [[-0.055, 0], [0.11, 0], [0.17, length * 0.72], [0.085, length], [-0.055, length * 0.8]]
+      : [[-0.075, 0], [0.075, 0], [0.075, length * 0.82], [0, length], [-0.075, length * 0.82]], [0, 0.18, 0], 0.045);
+    blade.material = k.material(steel, { metalness: 0.4, roughness: 0.38 });
+    rod(grip, k, 0xf1ece2, [0, 0.2, 0.033], [0, length * 0.83, 0.033], 0.01);
     stone(grip, k, gold, [0, -0.16, 0], [0.055, 0.055, 0.055]);
   }
   grip.rotation.z = -0.12;
   return grip;
 }
 
-// Deliberately authored profession costumes, independent of equipment statistics.
+// Authored silhouettes and palettes, independent of equipment statistics.
 const CLASS_LOOKS = {
-  blademaster: { coat: 0xb75449, trim: 0xffd48e, hair: 0x3e353b, accent: 0xe88369, style: 'topknot' },
-  wizard: { coat: 0x6279be, trim: 0xf8d99c, hair: 0x454161, accent: 0x9aabe2, style: 'crown' },
-  archer: { coat: 0x588d78, trim: 0xead298, hair: 0x705747, accent: 0x9bd5b1, style: 'ponytail' },
-  cleric: { coat: 0xe5dcca, trim: 0xd8b776, hair: 0xabb7ce, accent: 0x85bed1, style: 'twintail' },
-  barbarian: { coat: 0xa57a53, trim: 0xf4cf88, hair: 0xe5dfcc, accent: 0xc86647, style: 'tiger' },
-  venomancer: { coat: 0xa775ad, trim: 0xf6d49b, hair: 0x744855, accent: 0xb4cc89, style: 'fox' },
-  assassin: { coat: 0x4a7389, trim: 0xbee0df, hair: 0x3f5369, accent: 0x85c9c5, style: 'swept' },
-  psychic: { coat: 0x8274b5, trim: 0xf5d1a2, hair: 0x7085ab, accent: 0xa4d4e5, style: 'wave' },
-  seeker: { coat: 0x65969c, trim: 0xf0d19a, hair: 0x475b62, accent: 0xa8d4c3, style: 'crest' },
-  mystic: { coat: 0x91ae75, trim: 0xffe2ac, hair: 0x6d667e, accent: 0xe4a5c2, style: 'flower' },
+  blademaster: { coat: 0xb95151, trim: 0xf5d49c, hair: 0x302b39, accent: 0xe9977c, iris: 0x925743, style: 'topknot' },
+  wizard: { coat: 0x7776bc, trim: 0xffe4b5, hair: 0x393451, accent: 0xb8c8ee, iris: 0x7666a6, style: 'ribbon' },
+  archer: { coat: 0x599f8e, trim: 0xf4eedc, hair: 0x536f69, accent: 0xb8dfca, iris: 0x448e78, style: 'ponytail' },
+  cleric: { coat: 0xf2eddf, trim: 0xa3cebf, hair: 0xc4d9db, accent: 0x78b5a7, iris: 0x529b98, style: 'feather' },
+  barbarian: { coat: 0x597b86, trim: 0xefce96, hair: 0xf6f2e8, accent: 0x96b6b7, iris: 0xc28c3b, style: 'tiger' },
+  venomancer: { coat: 0xae8ac3, trim: 0xf7dfce, hair: 0x986778, accent: 0xd9b6dc, iris: 0x9971b5, style: 'fox' },
+  assassin: { coat: 0x325e7b, trim: 0x91d8d5, hair: 0x284b68, accent: 0x639fb5, iris: 0x30879b, style: 'wave-short' },
+  psychic: { coat: 0x6688b8, trim: 0xc0efea, hair: 0x507dac, accent: 0xb7c6ee, iris: 0x6973bc, style: 'wave-long' },
+  seeker: { coat: 0x548a7b, trim: 0xe2d8a9, hair: 0x345954, accent: 0xa4d6b9, iris: 0x408d74, style: 'leaf' },
+  mystic: { coat: 0x94b995, trim: 0xf6e6c8, hair: 0x79658d, accent: 0xe8b5d0, iris: 0x9377af, style: 'flower' },
 };
+
+// Rounded, tapering volumes for designed locks, plumes, ribbons and feathers.
+// Every custom geometry belongs to the avatar kit and is disposed with it.
+function avatarSweep(parent, k, color, points, width, depth, tipColor) {
+  const colored = tipColor !== undefined;
+  const key = `avatar-sweep:${JSON.stringify(points)}:${width}:${depth}:${colored ? `${color}:${tipColor}` : ''}`;
+  const geo = k.geometry(key, () => {
+    const curve = new THREE.CatmullRomCurve3(points.map((p) => new THREE.Vector3(...p)));
+    const positions = [], colors = [], indices = [];
+    const length = 12, sides = 8;
+    for (let i = 0; i <= length; i++) {
+      const t = i / length;
+      const center = curve.getPoint(t), tangent = curve.getTangent(t).normalize();
+      const lateral = new THREE.Vector3(tangent.y, -tangent.x, 0);
+      if (lateral.lengthSq() < 0.0001) lateral.set(1, 0, 0);
+      lateral.normalize();
+      const normal = new THREE.Vector3().crossVectors(lateral, tangent).normalize();
+      const taper = Math.pow(Math.max(0, Math.sin(Math.PI * t)), 0.65);
+      const tint = colored ? new THREE.Color(t > 0.69 ? tipColor : color) : null;
+      for (let j = 0; j <= sides; j++) {
+        const a = j / sides * TAU;
+        const vertex = center.clone().addScaledVector(lateral, Math.cos(a) * width * taper)
+          .addScaledVector(normal, Math.sin(a) * depth * taper);
+        positions.push(vertex.x, vertex.y, vertex.z);
+        if (tint) colors.push(tint.r, tint.g, tint.b);
+        if (i < length && j < sides) {
+          const n = i * (sides + 1) + j;
+          indices.push(n, n + sides + 1, n + 1, n + 1, n + sides + 1, n + sides + 2);
+        }
+      }
+    }
+    const result = new THREE.BufferGeometry();
+    result.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    if (colored) result.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+    result.setIndex(indices);
+    result.computeVertexNormals();
+    return result;
+  });
+  return mesh(parent, k, geo, colored ? 0xffffff : color, [0, 0, 0], [1, 1, 1], colored ? { vertexColors: true } : undefined);
+}
+
+function avatarStroke(parent, k, color, points, radius = 0.01) {
+  const geo = k.geometry(`avatar-stroke:${JSON.stringify(points)}:${radius}`, () =>
+    new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points.map((p) => new THREE.Vector3(...p))), 12, radius, 5, false));
+  return mesh(parent, k, geo, color, [0, 0, 0]);
+}
+
+function avatarPetal(parent, k, color, position, size, kind = 'leaf') {
+  const geo = k.geometry(`avatar-petal:${kind}`, () => {
+    const s = new THREE.Shape();
+    if (kind === 'ear') {
+      s.moveTo(-0.42, -0.42);
+      s.quadraticCurveTo(-0.44, -0.05, 0, 0.53);
+      s.quadraticCurveTo(0.44, -0.05, 0.42, -0.42);
+      s.quadraticCurveTo(0, -0.56, -0.42, -0.42);
+    } else if (kind === 'fin') {
+      s.moveTo(0, -0.43);
+      s.quadraticCurveTo(0.25, -0.39, 0.5, -0.15);
+      s.lineTo(0.26, -0.08); s.lineTo(0.58, 0.1);
+      s.lineTo(0.29, 0.13); s.lineTo(0.46, 0.43);
+      s.quadraticCurveTo(0.13, 0.35, 0, 0.19);
+      s.lineTo(0, -0.43);
+    } else {
+      s.moveTo(0, -0.5);
+      s.bezierCurveTo(-0.46, -0.21, -0.43, 0.16, 0, 0.5);
+      s.bezierCurveTo(0.43, 0.16, 0.46, -0.21, 0, -0.5);
+    }
+    return new THREE.ExtrudeGeometry(s, { depth: 0.5, bevelEnabled: true, bevelThickness: 0.12, bevelSize: 0.035, bevelSegments: 1, steps: 1, curveSegments: 8 });
+  });
+  return mesh(parent, k, geo, color, position, size);
+}
+
+function avatarScalpGeometry() {
+  const positions = [], indices = [];
+  const sides = 24, rows = 12;
+  for (let i = 0; i <= rows; i++) for (let j = 0; j <= sides; j++) {
+    const phi = j / sides * TAU;
+    // A raised front hairline leaves the eyes (and earthguard third eye) open.
+    const rim = 1.55 - Math.max(0, Math.sin(phi)) * 0.57 + Math.max(0, -Math.sin(phi)) * 0.4;
+    const theta = i / rows * rim;
+    positions.push(-Math.cos(phi) * Math.sin(theta), Math.cos(theta), Math.sin(phi) * Math.sin(theta));
+    if (i < rows && j < sides) {
+      const n = i * (sides + 1) + j;
+      indices.push(n, n + sides + 1, n + 1, n + 1, n + sides + 1, n + sides + 2);
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  geo.setIndex(indices);
+  geo.computeVertexNormals();
+  return geo;
+}
 
 function buildAvatar(state) {
   const k = kit();
   const root = new THREE.Group();
   root.position.set(-1.65, 0, 0.55);
-  const shadow = contact(root, k, 0.6, 0.23);
+  const shadow = contact(root, k, 0.59, 0.21);
   const body = group(root);
   body.rotation.y = 0.24;
   const look = CLASS_LOOKS[state.cls];
-  const heavy = state.armor === 'heavy';
-  const robe = state.armor === 'robe';
-  const tiger = state.cls === 'barbarian';
-  const broad = tiger ? 1.15 : 1;
-  const skin = tiger ? 0xf2e7cf : state.race === 'tideborn' ? 0xd4e6e3 : 0xf5d5bd;
-  const dark = 0x455064;
-  // ~2.3 units, with a 0.88-unit face: a little 2.6-head-tall adventurer.
-  const torso = group(body, [0, 1.06, 0]);
-  sphere(torso, k, look.coat, [0, 0.02, 0], [0.33 * broad, 0.36, 0.25]);
+  const heavy = state.armor === 'heavy', robe = state.armor === 'robe';
+  const tiger = state.cls === 'barbarian', fox = state.cls === 'venomancer';
+  const elf = state.race === 'elf', tide = state.race === 'tideborn', earth = state.race === 'earthguard';
+  const broad = tiger ? 1.22 : 1;
+  const skin = tiger ? 0xf6f2e8 : tide ? 0xa5d9e0 : earth ? 0xeee0cc : 0xffdfce;
+  const ink = 0x343645, cream = 0xfff5e5;
+  const boot = tiger ? skin : tide ? 0x355b77 : earth ? 0x52776b : 0x585367;
+
+  const sphere = modelingSphere;
+  const torso = group(body, [0, 0.99, 0]);
+  sphere(torso, k, look.coat, [0, 0, 0], [0.3 * broad, 0.3, 0.225]);
   for (const side of [-1, 1]) {
-    const collar = box(torso, k, 0xffecd2, [side * 0.1, 0.19, 0.225], [0.085, 0.31, 0.04]);
-    collar.rotation.z = side * 0.48;
+    const collar = avatarPetal(torso, k, cream, [side * 0.075, 0.15, 0.207], [0.12, 0.31, 0.04]);
+    collar.rotation.z = side * 0.5;
   }
   if (heavy) {
-    sphere(torso, k, look.accent, [0, 0.01, 0.22], [0.26 * broad, 0.25, 0.09]);
-    box(torso, k, look.trim, [0, 0.04, 0.31], [0.06, 0.3, 0.04]);
-  } else sphere(torso, k, look.accent, [0, 0.08, 0.25], [0.08, 0.09, 0.035]);
-  cylinder(body, k, look.trim, [0, 0.85, 0], 0.3 * broad, 0.3 * broad, 0.1, 20).scale.z = 0.82;
-  sphere(body, k, look.accent, [0, 0.85, 0.265], [0.1, 0.085, 0.04]);
-  const sash = box(body, k, look.accent, [-0.2, 0.64, 0.265], [0.12, 0.4, 0.035]);
-  sash.rotation.z = -0.16;
-  const hem = group(body, [0, 0.79, 0]);
-  const hemGeo = k.geometry('hem', () => new THREE.CylinderGeometry(0.28, robe ? 0.44 : 0.36, robe ? 0.55 : 0.3, 24, 1, true, 0.25, TAU - 0.5));
-  mesh(hem, k, hemGeo, look.coat, [0, robe ? -0.22 : -0.12, 0], [broad, 1, 0.84], { side: THREE.DoubleSide });
-  cylinder(hem, k, look.trim, [0, robe ? -0.48 : -0.26, 0], robe ? 0.43 : 0.35, robe ? 0.43 : 0.35, 0.045, 24).scale.z = 0.84;
+    const plate = modelingSolid(torso, k, look.trim, [[-0.23, 0.18], [-0.11, 0.23], [0, 0.13], [0.11, 0.23], [0.23, 0.18], [0.25, -0.1], [0, -0.24], [-0.25, -0.1]], [0, 0, 0.223], 0.06); plate.scale.x = broad;
+    for (const side of [-1, 1]) {
+      modelingSolid(torso, k, look.coat, [[0, 0.08], [side * 0.19, 0.14], [side * 0.2, -0.08], [0, -0.19]], [0, 0, 0.266], 0.025);
+      rod(torso, k, look.accent, [side * 0.05, 0.12, 0.291], [side * 0.18, 0.04, 0.291], 0.018);
+    }
+    if (tiger) avatarPetal(torso, k, cream, [0, 0.09, 0.291], [0.28, 0.28, 0.06]);
+  } else if (robe) {
+    for (const side of [-1, 1]) avatarSweep(torso, k, look.trim,
+      [[side * 0.15, 0.22, 0.17], [side * 0.12, 0.07, 0.24], [-side * 0.12, -0.21, 0.235]], 0.028, 0.012);
+    avatarPetal(torso, k, look.accent, [0, 0.065, 0.255], [0.15, 0.19, 0.035]);
+  } else {
+    avatarSweep(torso, k, look.trim, [[-0.19, 0.2, 0.17], [0, 0, 0.245], [0.2, -0.2, 0.16]], 0.04, 0.018);
+    avatarPetal(torso, k, look.accent, [0.03, 0, 0.267], [0.12, 0.16, 0.035]);
+  }
+  cylinder(body, k, look.trim, [0, 0.76, 0], 0.28 * broad, 0.28 * broad, 0.075, 24).scale.z = 0.8;
+  avatarPetal(body, k, look.accent, [0, 0.76, 0.238], [0.19, 0.13, 0.045]);
+  const hem = group(body, [0, 0.73, 0]);
+  const hemLength = robe ? 0.44 : 0.27, hemWidth = robe ? 0.4 : 0.34;
+  const hemGeo = k.geometry(`avatar-hem:${robe}`, () => new THREE.LatheGeometry([
+    new THREE.Vector2(hemWidth, -hemLength), new THREE.Vector2(hemWidth - 0.01, -hemLength + 0.025),
+    new THREE.Vector2(0.31, -0.13), new THREE.Vector2(0.27, 0),
+  ], 28, 0.24, TAU - 0.48));
+  mesh(hem, k, hemGeo, look.coat, [0, 0, 0], [broad, 1, 0.8], { side: THREE.DoubleSide });
+  cylinder(hem, k, look.trim, [0, -hemLength + 0.017, 0], hemWidth, hemWidth, 0.034, 28).scale.set(broad, 0.034, 0.8);
+  avatarSweep(hem, k, look.accent, [[-0.13, 0.02, 0.24], [-0.18, -0.15, 0.29], [-0.11, -hemLength - 0.03, 0.32]], 0.065, 0.018);
+  if (look.style === 'flower') for (const side of [-1, 0, 1]) {
+    const petal = avatarPetal(hem, k, side ? look.accent : 0xc4ddaf, [side * 0.21, -0.24, 0.27], [0.34, 0.46, 0.055]);
+    petal.rotation.z = -side * 0.22;
+  }
   const legs = [];
   for (const side of [-1, 1]) {
-    const leg = group(body, [side * 0.17, 0.73, 0]);
+    const leg = group(body, [side * 0.165 * broad, 0.65, 0]);
     legs.push(leg);
-    sphere(leg, k, look.coat, [0, -0.15, 0], [0.12, 0.22, 0.13]);
-    const knee = group(leg, [0, -0.32, 0]);
-    cylinder(knee, k, dark, [0, -0.1, 0.02], 0.12, 0.13, 0.3, 16);
-    sphere(knee, k, dark, [0, -0.27, 0.11], [0.15, 0.14, 0.23]);
-    cylinder(knee, k, look.trim, [0, 0.01, 0.02], 0.135, 0.135, 0.05, 16);
-    if (heavy) sphere(leg, k, look.accent, [0, -0.25, 0.12], [0.14, 0.14, 0.08]);
+    sphere(leg, k, look.coat, [0, -0.13, 0], [0.12, 0.17, 0.125]);
+    const knee = group(leg, [0, -0.25, 0]);
+    sphere(knee, k, boot, [0, -0.08, 0.015], [0.125, 0.15, 0.13]);
+    sphere(knee, k, boot, [0, -0.26, 0.09], [tiger ? 0.175 : 0.15, 0.115, 0.205]);
+    cylinder(knee, k, look.trim, [0, 0.005, 0.015], 0.127, 0.127, 0.045, 20);
+    if (heavy && !tiger) avatarPetal(knee, k, look.accent, [0, -0.075, 0.14], [0.2, 0.19, 0.035]);
   }
-  cylinder(body, k, skin, [0, 1.43, 0], 0.1, 0.1, 0.14);
-  const head = group(body, [0, 1.81, 0]);
-  sphere(head, k, skin, [0, 0, 0], [0.4 * broad, 0.44, 0.35]);
-  sphere(head, k, look.hair, [0, 0.19, -0.07], [0.42 * broad, 0.3, 0.35]);
+  cylinder(body, k, skin, [0, 1.27, 0], 0.105, 0.11, 0.13, 20);
+  const head = group(body, [0, 1.66, 0]);
+  head.scale.set(1.075, 1.06, 1.05);
+  const hx = tiger ? 0.545 : 0.475, hz = tiger ? 0.425 : 0.4;
+  mesh(head, k, k.geometry('sphere', () => new THREE.SphereGeometry(1, 20, 14)), skin, [0, 0, 0], [hx, 0.5, hz]);
+  const faceZ = (x, y) => hz * Math.sqrt(Math.max(0, 1 - (x / hx) ** 2 - (y / 0.5) ** 2));
+
+  // Shallow eye layers follow the face, not protruding ball eyes. No human nose.
   for (const side of [-1, 1]) {
-    sphere(head, k, skin, [side * 0.39 * broad, -0.02, 0], [0.075, 0.11, 0.065]);
-    sphere(head, k, dark, [side * 0.145, 0.015, 0.328], [0.069, 0.098, 0.04]);
-    sphere(head, k, 0xfff9eb, [side * 0.145 - 0.02, 0.052, 0.365], [0.021, 0.027, 0.012]);
-    sphere(head, k, 0xefb5a7, [side * 0.24, -0.12, 0.287], [0.071, 0.036, 0.021]);
-    const fringe = sphere(head, k, look.hair, [side * 0.19, 0.25, 0.23], [0.18, 0.17, 0.14]);
-    fringe.rotation.z = side * 0.32;
-    sphere(head, k, look.hair, [side * 0.37 * broad, 0.03, -0.04], [0.085, 0.23, 0.18]);
-  }
-  sphere(head, k, skin, [0, -0.1, 0.348], [0.038, 0.045, 0.037]);
-  sphere(head, k, 0xb77d76, [0, -0.22, 0.297], [0.047, 0.019, 0.015]);
-  if (['topknot', 'crest', 'crown'].includes(look.style)) {
-    sphere(head, k, look.hair, [0, 0.49, -0.06], [0.16, 0.15, 0.15]);
-    cylinder(head, k, look.accent, [0, 0.43, -0.06], 0.16, 0.16, 0.065);
-    rod(head, k, look.trim, [-0.23, 0.5, -0.04], [0.23, 0.5, -0.04], 0.025);
-    if (look.style === 'crown') for (const side of [-1, 1]) crystalCrest(head, k, [side * 0.17, 0.32, 0.16], look.trim);
-  }
-  if (['ponytail', 'twintail', 'fox', 'flower', 'wave'].includes(look.style)) {
-    const sides = ['twintail', 'flower'].includes(look.style) ? [-1, 1] : [1];
-    for (const side of sides) {
-      const tail = sphere(head, k, look.hair, [side * 0.3, -0.16, -0.29], [0.16, 0.37, 0.19]);
-      tail.rotation.z = side * 0.25;
-      sphere(head, k, look.accent, [side * 0.32, 0.1, -0.2], [0.1, 0.08, 0.08]);
+    const x = side * (tiger ? 0.205 : 0.18), y = tiger ? 0.025 : -0.015;
+    const eye = group(head, [x, y, faceZ(x, y) + 0.012]);
+    eye.rotation.y = side * 0.32;
+    eye.rotation.z = side * (state.cls === 'assassin' ? 0.14 : fox ? -0.1 : 0);
+    eye.scale.y = state.cls === 'assassin' || tiger ? 0.85 : robe ? 1.05 : 0.96;
+    sphere(eye, k, ink, [0, 0.006, 0], [0.105, 0.128, 0.025]);
+    sphere(eye, k, cream, [0, 0, 0.018], [0.095, 0.116, 0.013]);
+    sphere(eye, k, look.iris, [0.004, -0.012, 0.031], [0.067, 0.087, 0.009], { roughness: 0.4 });
+    sphere(eye, k, ink, [0.005, -0.002, 0.039], [0.032, 0.063, 0.007]);
+    sphere(eye, k, 0xffffff, [-0.025, 0.042, 0.05], [0.025, 0.029, 0.005], { emissive: 0xffffff, emissiveIntensity: 0.12 });
+    sphere(eye, k, cream, [0.027, -0.046, 0.048], [0.01, 0.012, 0.004]);
+    avatarStroke(eye, k, tiger ? ink : look.hair, [[-0.067, 0.16, -0.012], [0, 0.172, 0], [0.07, 0.155, -0.012]], 0.012);
+    if (!tiger) {
+      const blush = group(head, [side * 0.295, -0.16, faceZ(0.295, -0.16) + 0.01]);
+      blush.rotation.y = side * 0.53;
+      blush.rotation.x = 0.25;
+      sphere(blush, k, tide ? 0x8cbdcf : 0xf0b4b5, [0, 0, 0], [0.069, 0.029, 0.007]);
     }
   }
-  if (look.style === 'swept') {
-    const lock = sphere(head, k, look.hair, [-0.1, 0.36, 0.22], [0.3, 0.14, 0.16]);
-    lock.rotation.z = -0.25;
-    rod(head, k, look.accent, [-0.37, 0.21, 0.12], [0.3, 0.25, 0.24], 0.022);
-  }
-  if (state.race === 'untamed') {
+  if (!tiger) avatarStroke(head, k, 0xaa747e, [[-0.045, -0.207, 0.367], [0, -0.222, 0.367], [0.045, -0.207, 0.367]], 0.009);
+
+  if (tiger) {
+    // A feline skull, cheek ruff and broad muzzle, with no human hair or ears.
     for (const side of [-1, 1]) {
-      const ear = sphere(head, k, tiger ? skin : look.hair, [side * 0.3, 0.37, -0.01], [0.135, tiger ? 0.17 : 0.24, 0.1]);
-      ear.rotation.z = -side * 0.26;
-      sphere(head, k, 0xe8aca1, [side * 0.3, 0.39, 0.075], [0.065, 0.1, 0.025]);
-    }
-    const tailCurve = new THREE.CatmullRomCurve3([
-      new THREE.Vector3(0, 0.7, -0.2), new THREE.Vector3(-0.5, 0.5, -0.5), new THREE.Vector3(-0.6, 0.75, -0.6),
-    ]);
-    mesh(body, k, k.geometry('tail', () => new THREE.TubeGeometry(tailCurve, 14, tiger ? 0.075 : 0.12, 10, false)),
-      tiger ? skin : look.hair, [0, 0, 0]);
-    if (tiger) {
-      for (const side of [-1, 1]) {
-        sphere(head, k, 0xfff0d9, [side * 0.09, -0.16, 0.32], [0.12, 0.08, 0.06]);
-        for (let i = 0; i < 2; i++) {
-          const stripe = sphere(head, k, 0x776654, [side * 0.3, -0.03 - i * 0.12, 0.265], [0.075, 0.023, 0.025]);
-          stripe.rotation.z = side * 0.22;
-        }
+      sphere(head, k, ink, [side * 0.385, 0.38, -0.015], [0.153, 0.16, 0.085]);
+      sphere(head, k, skin, [side * 0.385, 0.385, 0.038], [0.124, 0.127, 0.055]);
+      sphere(head, k, 0xd6b3b6, [side * 0.385, 0.385, 0.089], [0.065, 0.071, 0.019]);
+      avatarSweep(head, k, skin, [[side * 0.4, -0.1, 0.02], [side * 0.535, -0.16, 0.1], [side * 0.44, -0.31, 0.12]], 0.1, 0.11);
+      sphere(head, k, cream, [side * 0.125, -0.195, 0.38], [0.17, 0.115, 0.125]);
+      for (let i = 0; i < 2; i++) {
+        avatarSweep(head, k, ink, [[side * 0.48, 0.04 - i * 0.13, 0.2], [side * 0.39, -0.015 - i * 0.13, 0.303], [side * 0.32, -0.04 - i * 0.13, 0.342]], 0.023, 0.009);
+        avatarStroke(head, k, 0x73727d, [[side * 0.22, -0.18 - i * 0.055, 0.48], [side * 0.32, -0.17 - i * 0.06, 0.435], [side * 0.38, -0.15 - i * 0.07, 0.394]], 0.006);
       }
-      sphere(head, k, 0x8d6b66, [0, -0.13, 0.39], [0.046, 0.03, 0.025]);
-      for (const x of [-0.08, 0, 0.08]) sphere(head, k, 0x776654, [x, 0.3, 0.33], [0.025, 0.08, 0.025]);
     }
-  }
-  if (state.race === 'earthguard') sphere(head, k, look.accent, [0, 0.2, 0.343], [0.045, 0.067, 0.025], { emissive: look.accent, emissiveIntensity: 0.22 });
-  if (look.style === 'flower') for (let i = 0; i < 5; i++) {
-    const a = i / 5 * TAU;
-    sphere(head, k, look.accent, [-0.33 + Math.cos(a) * 0.075, 0.33 + Math.sin(a) * 0.075, 0.2], [0.06, 0.06, 0.035]);
+    mesh(head, k, k.geometry('avatar-tiger-nose', () => shapeGeometry([[-0.063, 0.027], [0.063, 0.027], [0.035, -0.015], [0, -0.039], [-0.035, -0.015]])),
+      0x5d4a59, [0, -0.135, 0.511], [1, 1, 1], { side: THREE.DoubleSide });
+    avatarStroke(head, k, ink, [[0, -0.173, 0.513], [0, -0.222, 0.505], [-0.06, -0.244, 0.493]], 0.008);
+    avatarStroke(head, k, ink, [[0, -0.222, 0.505], [0.035, -0.243, 0.5], [0.06, -0.244, 0.493]], 0.008);
+    for (const x of [-0.125, 0, 0.125]) {
+      avatarSweep(head, k, ink, [[x * 0.7, 0.425, faceZ(x * 0.7, 0.425) + 0.008], [x, 0.34, faceZ(x, 0.34) + 0.01], [x * 0.8, 0.235, faceZ(x * 0.8, 0.235) + 0.012]], 0.023, 0.01);
+    }
+    const tailPoints = [[0, 0.64, -0.2], [-0.45, 0.48, -0.46], [-0.68, 0.68, -0.4], [-0.64, 0.99, -0.34]];
+    avatarStroke(body, k, skin, tailPoints, 0.095);
+    const tailCurve = new THREE.CatmullRomCurve3(tailPoints.map((p) => new THREE.Vector3(...p)));
+    for (const t of [0.24, 0.48, 0.72, 0.93]) {
+      const band = mesh(body, k, k.geometry('avatar-tail-band', () => new THREE.TorusGeometry(0.096, 0.014, 6, 16)), ink, tailCurve.getPoint(t).toArray());
+      band.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), tailCurve.getTangent(t).normalize());
+    }
+    sphere(body, k, ink, tailPoints[3], [0.099, 0.1, 0.099]);
+  } else {
+    mesh(head, k, k.geometry('avatar-scalp', avatarScalpGeometry), look.hair, [0, 0.018, -0.016], [hx + 0.016, 0.514, 0.425]);
+    for (const side of [-1, 1]) {
+      avatarSweep(head, k, look.hair, [[side * 0.33, 0.32, 0.05], [side * 0.46, 0.04, 0.03], [side * 0.395, -0.27, 0.1]], 0.07, 0.09);
+      if (fox) {
+        const ear = avatarPetal(head, k, look.hair, [side * 0.34, 0.365, -0.01], [0.32, 0.48, 0.12], 'ear');
+        ear.rotation.z = -side * 0.24;
+        avatarPetal(ear, k, 0xf2c6cf, [0, 0.025, 0.63], [0.65, 0.68, 0.1], 'ear');
+      } else if (elf) {
+        const ear = avatarPetal(head, k, skin, [side * 0.465, -0.025, 0], [0.18, 0.34, 0.085], 'ear');
+        ear.rotation.z = -side * 0.95;
+        avatarPetal(ear, k, 0xe4bdb6, [0, -0.03, 0.64], [0.55, 0.65, 0.1], 'ear');
+      } else if (tide) {
+        avatarPetal(head, k, 0x70b4c9, [side * 0.455, -0.01, 0.015], [side * 0.43, 0.53, 0.08], 'fin');
+        for (const tip of [[0.5, -0.15], [0.58, 0.1], [0.46, 0.43]]) avatarStroke(head, k, look.trim,
+          [[side * 0.465, -0.11, 0.074], [side * 0.53, 0, 0.074], [side * (0.455 + tip[0] * 0.43), -0.01 + tip[1] * 0.53, 0.074]], 0.007);
+      } else sphere(head, k, skin, [side * 0.465, -0.04, 0], [0.064, 0.095, 0.065]);
+    }
+    if (earth || ['ribbon', 'feather', 'fox'].includes(look.style)) {
+      for (const side of [-1, 1]) avatarSweep(head, k, look.hair,
+        [[side * 0.04, 0.4, 0.255], [side * 0.22, 0.32, 0.354], [side * 0.37, 0.095, 0.266]], 0.095, 0.035);
+    } else if (!tide) {
+      avatarSweep(head, k, look.hair, [[-0.34, 0.32, 0.28], [-0.1, 0.3, 0.399], [0.16, 0.17, 0.371]], 0.105, 0.04);
+      avatarSweep(head, k, look.hair, [[0.15, 0.4, 0.24], [0.31, 0.27, 0.3], [0.38, 0.1, 0.224]], 0.075, 0.035);
+    }
+    if (look.style === 'topknot' || look.style === 'ribbon') {
+      avatarSweep(head, k, look.hair, [[-0.1, 0.39, -0.11], [-0.1, 0.6, -0.1], [0.1, 0.61, -0.12], [0.11, 0.42, -0.13]], 0.105, 0.095);
+      cylinder(head, k, look.accent, [0, 0.45, -0.115], 0.13, 0.13, 0.055, 24);
+      rod(head, k, look.trim, [-0.23, 0.5, -0.11], [0.23, 0.5, -0.11], 0.016);
+      if (look.style === 'ribbon') for (const side of [-1, 1]) avatarSweep(head, k, look.accent,
+        [[side * 0.12, 0.47, -0.13], [side * 0.5, 0.2, -0.23], [side * 0.56, -0.27, -0.15], [side * 0.42, -0.56, -0.06]], 0.07, 0.016);
+    }
+    if (look.style === 'ponytail') {
+      avatarSweep(head, k, look.hair, [[0.07, 0.35, -0.31], [0.32, 0.05, -0.41], [0.4, -0.43, -0.28], [0.25, -0.59, -0.17]], 0.135, 0.12);
+      avatarPetal(head, k, look.accent, [0.16, 0.26, -0.36], [0.19, 0.2, 0.06]);
+    }
+    if (['feather', 'fox', 'flower'].includes(look.style)) for (const side of [-1, 1]) {
+      avatarSweep(head, k, look.hair, [[side * 0.35, 0.16, -0.18], [side * 0.41, -0.19, -0.28], [side * 0.3, -0.54, -0.17], [side * 0.43, -0.64, -0.1]], 0.115, 0.09);
+    }
+    if (fox) avatarSweep(body, k, 0xb48caa,
+      [[0, 0.64, -0.24], [-0.5, 0.43, -0.51], [-0.82, 0.76, -0.42], [-0.72, 1.15, -0.31], [-0.52, 1.2, -0.3]], 0.24, 0.19, cream);
+    if (tide) {
+      for (let i = 0; i < 3; i++) avatarSweep(head, k, i === 1 ? look.accent : look.hair,
+        [[-0.38 + i * 0.11, 0.17 + i * 0.05, 0.22], [-0.26 + i * 0.12, 0.43 + i * 0.055, 0.25], [0.15 + i * 0.09, 0.37 + i * 0.025, 0.28], [0.28 + i * 0.055, 0.2, 0.28]], 0.073, 0.045);
+      if (look.style === 'wave-long') avatarSweep(head, k, look.hair,
+        [[0.2, 0.28, -0.29], [0.4, -0.12, -0.31], [0.22, -0.49, -0.23], [0.38, -0.58, -0.16]], 0.15, 0.1);
+      const coral = group(head, [0.37, 0.24, 0.24]);
+      avatarStroke(coral, k, 0xe5aebc, [[0, -0.08, 0], [0.025, 0.05, 0], [0.005, 0.18, 0]], 0.019);
+      avatarStroke(coral, k, 0xe5aebc, [[0.02, 0.035, 0], [0.11, 0.07, 0], [0.13, 0.14, 0]], 0.015);
+      sphere(coral, k, look.trim, [0, -0.075, 0.018], [0.037, 0.039, 0.025]);
+    }
+    if (earth) {
+      // An actual third eye, including sclera, iris and highlight, not a gem.
+      const thirdEye = group(head, [0, 0.205, faceZ(0, 0.205) + 0.012]);
+      thirdEye.rotation.x = -0.36;
+      sphere(thirdEye, k, look.trim, [0, 0, 0], [0.092, 0.058, 0.013]);
+      sphere(thirdEye, k, ink, [0, 0, 0.012], [0.076, 0.046, 0.009]);
+      sphere(thirdEye, k, cream, [0, 0, 0.021], [0.064, 0.034, 0.006]);
+      sphere(thirdEye, k, look.iris, [0, 0, 0.027], [0.027, 0.031, 0.005]);
+      sphere(thirdEye, k, ink, [0, 0, 0.032], [0.012, 0.023, 0.004]);
+      sphere(thirdEye, k, 0xffffff, [-0.009, 0.012, 0.038], [0.009, 0.01, 0.003]);
+    }
+    if (earth || elf) for (const side of [-1, 1]) {
+      const leaf = avatarPetal(head, k, elf ? cream : look.accent, [side * 0.245, 0.355, 0.235], [0.19, 0.32, 0.05]);
+      leaf.rotation.z = -side * 0.52;
+    }
+    if (look.style === 'flower') {
+      for (let i = 0; i < 5; i++) {
+        const a = i / 5 * TAU;
+        const petal = avatarPetal(head, k, look.accent, [Math.sin(a) * 0.07, 0.45 + Math.cos(a) * 0.07, 0.23], [0.16, 0.2, 0.04]);
+        petal.rotation.z = -a;
+      }
+      sphere(head, k, look.trim, [0, 0.45, 0.263], [0.056, 0.055, 0.022]);
+    }
   }
 
   const arms = [-1, 1].map((side) => {
-    const arm = group(body, [side * 0.36 * broad, 1.31, 0]);
+    const arm = group(body, [side * 0.335 * broad, 1.15, 0]);
     arm.rotation.z = side * 0.2;
-    sphere(arm, k, look.coat, [0, -0.14, 0], [robe ? 0.15 : 0.12, 0.21, 0.14]);
-    if (heavy) sphere(arm, k, look.accent, [side * 0.03, 0, 0], [0.2, 0.12, 0.18]);
-    const forearm = group(arm, [0, -0.3, 0]);
+    sphere(arm, k, look.coat, [0, -0.12, 0], [robe ? 0.145 : 0.12, 0.17, 0.13]);
+    if (heavy) {
+      const plate = avatarPetal(arm, k, look.accent, [side * 0.04, -0.01, 0.075], [tiger ? 0.42 : 0.32, 0.23, 0.14]);
+      plate.rotation.z = side * 0.22;
+    }
+    const forearm = group(arm, [0, -0.235, 0]);
     forearm.rotation.x = -0.28;
-    sphere(forearm, k, look.coat, [0, -0.1, 0], [0.11, 0.16, 0.12]);
-    cylinder(forearm, k, look.trim, [0, -0.21, 0], 0.115, 0.12, 0.055);
-    sphere(forearm, k, skin, [0, -0.28, 0.02], [0.095, 0.1, 0.085]);
-    const hand = group(forearm, [0, -0.28, 0.06]);
+    sphere(forearm, k, look.coat, [0, -0.085, 0], [robe ? 0.145 : 0.105, 0.13, 0.115]);
+    cylinder(forearm, k, look.trim, [0, -0.16, 0], robe ? 0.145 : 0.11, robe ? 0.15 : 0.115, 0.05, 20);
+    sphere(forearm, k, skin, [0, -0.225, 0.025], [tiger ? 0.115 : 0.09, 0.09, 0.085]);
+    const hand = group(forearm, [0, -0.225, 0.06]);
     return { arm, forearm, hand, rest: arm.rotation.z };
   });
-  buildWeapon(arms[1].hand, k, state.weapon).scale.setScalar(0.72);
-  if (state.weapon === 'dagger') buildWeapon(arms[0].hand, k, 'dagger').scale.setScalar(0.72);
+  const weaponScale = state.weapon === 'bow' ? 0.68 : state.weapon === 'wand' ? 0.67 : state.weapon === 'axe' ? 0.68 : 0.76;
+  const weapon = buildWeapon(arms[1].hand, k, state.weapon);
+  weapon.scale.setScalar(weaponScale);
+  weapon.rotation.z = state.weapon === 'bow' ? -0.25 : state.weapon === 'wand' ? -0.48 : state.weapon === 'soulsphere' ? -0.55 : -0.88;
+  weapon.rotation.y = -0.08;
+  arms[1].forearm.rotation.x = state.weapon === 'bow' || state.weapon === 'soulsphere' ? -0.85 : -0.46;
+  if (state.weapon === 'bow') weapon.position.x = -0.18;
+  if (state.weapon === 'soulsphere') weapon.position.set(0.06, 0.1, 0.08);
+  if (state.weapon === 'dagger') {
+    const offhand = buildWeapon(arms[0].hand, k, 'dagger');
+    offhand.scale.setScalar(0.76); offhand.rotation.z = 1.08;
+    arms[0].forearm.rotation.x = -0.46;
+  }
   if (state.weapon === 'bow') {
-    const quiver = cylinder(body, k, dark, [-0.22, 1.12, -0.27], 0.1, 0.09, 0.46);
+    const quiver = cylinder(body, k, boot, [-0.2, 1.05, -0.265], 0.08, 0.075, 0.36);
     quiver.rotation.z = -0.2;
-    for (let i = 0; i < 3; i++) rod(body, k, look.trim, [-0.25 + i * 0.055, 1.2, -0.29], [-0.32 + i * 0.055, 1.6, -0.29], 0.015);
+    for (let i = 0; i < 3; i++) rod(body, k, look.trim, [-0.23 + i * 0.045, 1.12, -0.28], [-0.28 + i * 0.045, 1.42, -0.28], 0.012);
   }
   const wings = [];
-  if (state.race === 'elf') for (const side of [-1, 1]) {
-    const wing = group(body, [side * 0.26, 1.22, -0.22]);
-    wing.rotation.y = -side * 0.15;
-    sphere(wing, k, 0xffefda, [side * 0.23, 0.12, 0], [0.32, 0.21, 0.07]);
-    for (let i = 0; i < 5; i++) {
-      const feather = sphere(wing, k, i % 2 ? 0xe1e9e4 : 0xfff4df,
-        [side * (0.16 + i * 0.09), -0.03 + i * 0.035, -0.02], [0.07, 0.32 - i * 0.02, 0.045]);
-      feather.rotation.z = -side * (0.55 + i * 0.17);
-    }
+  if (elf) for (const side of [-1, 1]) {
+    const wing = group(body, [side * 0.26, 1.15, -0.28]);
+    wing.rotation.y = -side * 0.22;
+    wing.scale.setScalar(state.cls === 'cleric' ? 1.05 : 0.94);
+    // Long primary fan behind a shorter overlapping row of mint coverts.
+    for (let i = 0; i < 6; i++) avatarSweep(wing, k, i % 2 ? 0xe7eee4 : 0xfff4e2,
+      [[side * (0.1 + i * 0.024), 0.12 - i * 0.024, -0.025], [side * (0.48 + i * 0.025), 0.29 - i * 0.075, -0.015], [side * (0.97 - i * 0.073), 0.46 - i * 0.155, 0]], 0.083, 0.035);
+    avatarSweep(wing, k, cream, [[0, 0, 0.025], [side * 0.33, 0.29, 0.025], [side * 0.75, 0.39, 0.015]], 0.12, 0.045);
+    for (let i = 0; i < 4; i++) avatarSweep(wing, k, i % 2 ? 0xd1e5d7 : look.trim,
+      [[side * 0.12, 0.1, 0.072], [side * (0.3 + i * 0.065), 0.18 - i * 0.04, 0.074], [side * (0.47 + i * 0.055), 0.18 - i * 0.095, 0.06]], 0.063, 0.024);
     wings.push({ wing, rest: wing.rotation.y, side });
   }
+  const outfitParts = body.children.filter(part => part !== head);
+  const outfit = group(body);
+  outfitParts.forEach(part => outfit.add(part));
+  outfit.scale.y = 0.91;
+  modelingBatch(head, k);
+  modelingBatch(torso, k);
+  legs.forEach(leg => modelingBatch(leg, k));
   root.updateMatrixWorld(true);
   return { root, k, body, torso, head, hem, legs, arms, wings, shadow };
 }
@@ -985,11 +1214,55 @@ function monsterKind(name, id) {
   if (/蟹|虾|蛛|蝎|蜂|虫|刺猬/.test(name)) return 'crawler';
   if (/鸟|雕|蝠|蝶/.test(name)) return 'bird';
   if (/蛇|蛟|龙/.test(name)) return 'serpent';
-  if (/狼|猪|熊|狮|虎|狐|兔|犀|蜥|鳄|兽|麒麟/.test(name)) return 'beast';
+  if (/狼|鬣狗|猪|熊|狮|虎|狐|兔|犀|蜥|鳄|兽|麒麟/.test(name)) return 'beast';
   if (/石|傀|巨人|魔像|树|木桩/.test(name)) return 'golem';
   if (/魂|灵|雾|风|冰晶|元素/.test(name)) return 'spirit';
   if (/兵|贼|寇|匪|将|守卫|巫|信徒|祭司|骷髅|人|鬼|女|卒|官/.test(name)) return 'humanoid';
   return ['beast', 'golem', 'humanoid'][hash(id ?? name) % 3];
+}
+
+function modelingSphere(parent, k, color, position, size, options) {
+  const small = Math.max(...size.map(Math.abs)) < 0.16;
+  const geometry = k.geometry(`modeling-sphere:${small}`, () => new THREE.SphereGeometry(1, small ? 10 : 16, small ? 8 : 12));
+  return mesh(parent, k, geometry, color, position, size, options);
+}
+
+function modelingSolid(parent, k, color, points, position, thickness = 0.06) {
+  const geometry = k.geometry(`modeling-solid:${JSON.stringify(points)}:${thickness}`, () => {
+    const shape = new THREE.Shape();
+    points.forEach(([x, y], i) => i ? shape.lineTo(x, y) : shape.moveTo(x, y));
+    shape.closePath();
+    return new THREE.ExtrudeGeometry(shape, { depth: thickness, bevelEnabled: true, bevelThickness: 0.012, bevelSize: 0.012, bevelSegments: 1, curveSegments: 6 });
+  });
+  return mesh(parent, k, geometry, color, [position[0], position[1], position[2] - thickness / 2]);
+}
+
+function modelingBatch(parent, k, accept = () => true) {
+  parent.updateWorldMatrix(true, true);
+  const inverse = parent.matrixWorld.clone().invert();
+  const batches = new Map();
+  parent.traverse(object => {
+    if (!object.isMesh || object.isInstancedMesh || object.children.length || !object.visible || object.matrixWorld.determinant() < 0 || !accept(object)) return;
+    for (let ancestor = object.parent; ancestor; ancestor = ancestor.parent) if (!ancestor.visible) return;
+    const key = `${object.geometry.uuid}:${object.material.uuid}`;
+    if (!batches.has(key)) batches.set(key, []);
+    batches.get(key).push(object);
+  });
+  const instances = [];
+  for (const objects of batches.values()) {
+    if (objects.length < 3) continue;
+    const first = objects[0];
+    const batch = new THREE.InstancedMesh(first.geometry, first.material, objects.length);
+    objects.forEach((object, i) => {
+      batch.setMatrixAt(i, inverse.clone().multiply(object.matrixWorld));
+      object.removeFromParent();
+    });
+    batch.instanceMatrix.needsUpdate = true;
+    batch.computeBoundingBox(); batch.computeBoundingSphere();
+    parent.add(batch); instances.push(batch);
+  }
+  const dispose = k.dispose.bind(k);
+  k.dispose = () => { instances.forEach(instance => instance.dispose()); dispose(); };
 }
 
 function buildEnemy(monster, position, index) {
@@ -1002,11 +1275,21 @@ function buildEnemy(monster, position, index) {
   const kind = monsterKind(monster.name, monster.id);
   const boss = monster.rank === 'boss';
   const elite = boss || monster.rank === 'elite';
-  const tint = { humanoid: 0xa892bd, golem: 0x92afa1, beast: 0xc6a380, crawler: 0xd99788, bird: 0x8eb6c5, serpent: 0x96b881, spirit: 0xaaa7d8 }[kind];
+  const sphere = modelingSphere;
+  const boar = kind === 'beast' && /猪/.test(monster.name);
+  const wolf = kind === 'beast' && /狼|鬣狗/.test(monster.name);
+  const bear = kind === 'beast' && /熊/.test(monster.name);
+  const rabbit = kind === 'beast' && /兔/.test(monster.name);
+  const reptile = kind === 'beast' && /蜥|鳄|犀/.test(monster.name);
+  const wooden = kind === 'golem' && /木|树|藤/.test(monster.name);
+  const bandit = kind === 'humanoid' && /贼|寇|匪/.test(monster.name);
+  const baseTint = { humanoid: bandit ? 0x785c4d : 0x827fa3, golem: wooden ? 0xa37950 : 0x92afa1, beast: boar ? 0xb48664 : wolf ? 0x7f949d : bear ? 0x987451 : rabbit ? 0xebe0c9 : reptile ? 0x7b9c7b : 0xc7a278, crawler: 0xd99788, bird: 0x8eb6c5, serpent: 0x96b881, spirit: 0xaaa7d8 }[kind];
+  const tint = new THREE.Color(baseTint).lerp(new THREE.Color(boss ? 0x693c35 : 0x755f4f), elite ? 0.2 : 0).getHex();
   const pale = 0xf3dfbd;
-  const dark = 0x435165;
-  const amber = 0xf3ca83;
-  const size = boss ? 1.15 : elite ? 1.04 : 0.92;
+  const dark = 0x39404b;
+  const amber = 0xe8b866;
+  const sash = elite ? 0xa8423e : 0xbb6954;
+  const size = boss ? 1.2 : elite ? 1.06 : 0.92;
   model.scale.setScalar(size);
   const eyes = (position, spread = 0.13, radius = 0.065) => {
     for (const side of [-1, 1]) {
@@ -1015,21 +1298,62 @@ function buildEnemy(monster, position, index) {
     }
   };
   if (kind === 'humanoid') {
-    sphere(model, k, tint, [0, 0.87, 0], [0.31, 0.39, 0.24]);
-    cylinder(model, k, tint, [0, 0.6, 0], 0.26, 0.38, 0.42, 20);
-    cylinder(model, k, amber, [0, 0.74, 0], 0.31, 0.31, 0.075);
-    sphere(model, k, pale, [0, 1.43, 0.02], [0.35, 0.39, 0.3]);
-    sphere(model, k, dark, [0, 1.65, -0.04], [0.36, 0.2, 0.29]);
-    eyes([0, 1.43, 0.297]);
-    sphere(model, k, 0xcc9a8b, [0, 1.25, 0.284], [0.04, 0.017, 0.016]);
+    sphere(model, k, tint, [0, 0.87, 0], [0.32, 0.31, 0.23]);
+    cylinder(model, k, tint, [0, 0.61, 0], 0.25, 0.33, 0.3, 12);
+    cylinder(model, k, sash, [0, 0.72, 0], 0.3, 0.3, 0.1, 12).scale.z = 0.8;
+    modelingSolid(model, k, pale, [[-0.2, 0.23], [-0.06, 0.16], [0.19, -0.16], [0.1, -0.18]], [0, 0.96, 0.225], 0.025);
+    sphere(model, k, pale, [0, 1.43, 0.02], [0.39, 0.4, 0.32]);
+    mesh(model, k, k.geometry('monster-scalp', avatarScalpGeometry), dark, [0, 1.455, 0.004], [0.404, 0.414, 0.337]);
+    eyes([0, 1.43, 0.327], 0.16, 0.068);
     for (const side of [-1, 1]) {
-      sphere(model, k, dark, [side * 0.16, 0.19, 0.07], [0.13, 0.21, 0.19]);
-      rod(model, k, tint, [side * 0.3, 1.05, 0], [side * 0.43, 0.7, 0.06], 0.105);
-      sphere(model, k, pale, [side * 0.43, 0.65, 0.08], [0.1, 0.11, 0.09]);
+      rod(model, k, dark, [side * 0.09, 1.55, 0.321], [side * 0.24, 1.59, 0.283], 0.025);
+      sphere(model, k, pale, [side * 0.37, 1.42, 0.015], [0.06, 0.09, 0.055]);
+      sphere(model, k, dark, [side * 0.16, 0.28, 0], [0.125, 0.22, 0.12]);
+      sphere(model, k, dark, [side * 0.16, 0.12, 0.09], [0.15, 0.12, 0.2]);
+      cylinder(model, k, sash, [side * 0.16, 0.32, 0], 0.126, 0.126, 0.075, 12);
+      rod(model, k, tint, [side * 0.3, 1.04, 0], [side * 0.45, 0.78, 0.09], 0.105);
+      sphere(model, k, pale, [side * 0.45, 0.72, 0.12], [0.1, 0.1, 0.085]);
     }
-    cylinder(model, k, amber, [0, 1.8, 0], 0.21, 0.37, 0.15, 20);
-    rod(model, k, dark, [0.47, 0.36, 0.1], [0.47, 1.38, 0.1], 0.035);
-    cylinder(model, k, pale, [0.47, 1.48, 0.1], 0, 0.085, 0.23, 8);
+    sphere(model, k, 0xd59a78, [0, 1.37, 0.345], [0.045, 0.035, 0.035]);
+    avatarStroke(model, k, dark, [[-0.07, 1.28, 0.299], [0, 1.26, 0.319], [0.09, 1.29, 0.289]], 0.012);
+    if (bandit) {
+      const band = cylinder(model, k, sash, [0, 1.65, 0.01], 0.345, 0.37, 0.1, 16); band.scale.z = 0.84;
+      sphere(model, k, sash, [-0.36, 1.65, -0.03], [0.08, 0.07, 0.08]);
+      avatarSweep(model, k, sash, [[-0.36, 1.65, -0.07], [-0.5, 1.52, -0.11], [-0.44, 1.31, -0.14]], 0.06, 0.02);
+      const saber = buildWeapon(model, k, 'blade'); saber.position.set(0.45, 0.73, 0.15); saber.rotation.z = -0.92; saber.scale.setScalar(0.67);
+      modelingSolid(model, k, sash, [[0, 0.02], [0.12, 0], [0.08, -0.35], [-0.04, -0.26]], [-0.17, 0.72, 0.245], 0.03);
+      if (elite) {
+        sphere(model, k, amber, [-0.34, 1.03, 0], [0.18, 0.11, 0.25]);
+        sphere(model, k, dark, [-0.16, 1.43, 0.35], [0.095, 0.075, 0.025]);
+        rod(model, k, dark, [-0.34, 1.53, 0.15], [0.33, 1.35, 0.21], 0.012);
+        sphere(model, k, amber, [0, 0.72, 0.258], [0.07, 0.075, 0.03]);
+      }
+    } else {
+      cylinder(model, k, amber, [0, 1.82, 0], 0.18, 0.31, 0.1, 12);
+      rod(model, k, dark, [0.45, 0.25, 0.13], [0.45, 1.4, 0.13], 0.03);
+      cylinder(model, k, pale, [0.45, 1.49, 0.13], 0, 0.075, 0.23, 6);
+    }
+  } else if (kind === 'golem' && wooden) {
+    cylinder(model, k, tint, [0, 0.99, 0], 0.38, 0.46, 1.28, 10);
+    cylinder(model, k, pale, [0, 1.638, 0], 0.345, 0.345, 0.035, 10);
+    for (const radius of [0.12, 0.23]) {
+      const grain = mesh(model, k, k.geometry(`stump-grain:${radius}`, () => new THREE.TorusGeometry(radius, 0.013, 4, 16)), 0x9e734a, [0, 1.662, 0]); grain.rotation.x = -Math.PI / 2;
+    }
+    for (let i = 0; i < 7; i++) {
+      const a = i / 7 * TAU;
+      rod(model, k, 0x78573d, [Math.sin(a) * 0.41, 0.5, Math.cos(a) * 0.41], [Math.sin(a) * 0.368, 1.53 - i % 3 * 0.08, Math.cos(a) * 0.368], 0.024);
+    }
+    eyes([0, 1.23, 0.386], 0.17, 0.078);
+    avatarStroke(model, k, 0x5d4939, [[-0.11, 0.98, 0.434], [0, 0.94, 0.444], [0.11, 0.98, 0.434]], 0.019);
+    for (const side of [-1, 1]) {
+      rod(model, k, tint, [side * 0.27, 0.48, 0], [side * 0.38, 0.13, 0.24], 0.13);
+      rod(model, k, tint, [side * 0.38, 0.13, 0.24], [side * 0.54, 0.08, 0.35], 0.085);
+      rod(model, k, tint, [side * 0.38, 1.1, 0], [side * 0.62, 0.96, 0.06], 0.105);
+      rod(model, k, tint, [side * 0.62, 0.96, 0.06], [side * 0.64, 0.71, 0.19], 0.085);
+      rod(model, k, tint, [side * 0.62, 0.96, 0.06], [side * 0.8, 1.08, 0.09], 0.042);
+      avatarPetal(model, k, 0x7fa267, [side * 0.25, 1.7, 0], [0.32, 0.32, 0.1]).rotation.z = -side * 0.6;
+      sphere(model, k, 0x7fa267, [side * 0.27, 0.47, 0.31], [0.2, 0.09, 0.1]);
+    }
   } else if (kind === 'golem') {
     stone(model, k, tint, [0, 0.88, 0], [0.46, 0.46, 0.33]);
     stone(model, k, pale, [0, 1.46, 0.025], [0.4, 0.36, 0.32]);
@@ -1042,24 +1366,65 @@ function buildEnemy(monster, position, index) {
       sphere(model, k, 0x739b76, [side * 0.28, 1.72, -0.06], [0.19, 0.1, 0.17]);
     }
   } else if (kind === 'beast') {
-    const boar = /猪|熊|犀/.test(monster.name);
-    sphere(model, k, tint, [0, 0.65, 0], [0.46, 0.43, 0.61]);
-    sphere(model, k, tint, [0, 1.03, 0.43], [0.37, 0.37, 0.34]);
-    sphere(model, k, pale, [0, 0.9, 0.72], [0.23, 0.16, 0.2]);
-    sphere(model, k, dark, [0, 0.94, 0.89], [0.1, 0.065, 0.04]);
-    eyes([0, 1.12, 0.728], 0.16, 0.062);
-    for (const side of [-1, 1]) {
-      for (const z of [-0.34, 0.32]) {
-        sphere(model, k, tint, [side * 0.29, 0.3, z], [0.13, 0.26, 0.13]);
-        sphere(model, k, dark, [side * 0.29, 0.12, z + 0.08], [0.14, 0.12, 0.18]);
+    const squat = boar || bear || reptile;
+    const headY = reptile ? 0.73 : boar ? 1.01 : rabbit ? 1.14 : 1.13;
+    sphere(model, k, tint, [0, squat ? 0.65 : 0.72, -0.04], [squat ? 0.46 : 0.34, squat ? 0.4 : 0.33, rabbit ? 0.4 : 0.59]);
+    sphere(model, k, tint, [0, headY, 0.43], [boar ? 0.39 : rabbit ? 0.34 : 0.31, reptile ? 0.23 : 0.34, reptile ? 0.4 : 0.32]);
+    if (boar) {
+      sphere(model, k, 0xdba899, [0, 0.95, 0.765], [0.235, 0.17, 0.125]);
+      for (const side of [-1, 1]) {
+        sphere(model, k, dark, [side * 0.084, 0.97, 0.878], [0.034, 0.044, 0.015]);
+        avatarSweep(model, k, pale, [[side * 0.235, 0.79, 0.73], [side * 0.31, 0.84, 0.9], [side * (boss ? 0.34 : 0.28), boss ? 1.17 : 1.03, 0.87]], boss ? 0.083 : 0.046, boss ? 0.064 : 0.038);
+        const ear = avatarPetal(model, k, tint, [side * 0.28, 1.31, 0.34], [0.24, 0.32, 0.12], 'ear'); ear.rotation.z = -side * 0.65;
+        avatarPetal(ear, k, 0xdba899, [0, -0.03, 0.65], [0.6, 0.65, 0.1], 'ear');
       }
-      const ear = sphere(model, k, tint, [side * 0.26, 1.36, 0.38], [0.12, boar ? 0.13 : 0.23, 0.085]);
-      ear.rotation.z = -side * 0.3;
-      sphere(model, k, 0xe5b4a6, [side * 0.26, 1.38, 0.45], [0.055, 0.09, 0.02]);
-      if (boar) cylinder(model, k, pale, [side * 0.21, 0.89, 0.79], 0, 0.05, 0.21, 10).rotation.x = 0.35;
+      for (let i = 0; i < 4; i++) modelingSolid(model, k, 0x604538, [[-0.055, 0], [0, 0.19], [0.055, 0]], [0, 1.02 + i * 0.055, -0.37 + i * 0.19], 0.085);
+      avatarStroke(model, k, tint, [[0, 0.65, -0.61], [0.12, 0.8, -0.75], [0.24, 0.75, -0.78], [0.16, 0.65, -0.75]], 0.032);
+    } else if (rabbit) {
+      sphere(model, k, pale, [0, 1.03, 0.704], [0.17, 0.13, 0.075]);
+      sphere(model, k, 0xc58792, [0, 1.075, 0.775], [0.043, 0.034, 0.025]);
+      for (const side of [-1, 1]) {
+        const ear = sphere(model, k, tint, [side * 0.18, 1.64, 0.39], [0.105, 0.36, 0.07]); ear.rotation.z = -side * 0.18;
+        sphere(model, k, 0xe8afb4, [side * 0.205, 1.68, 0.455], [0.057, 0.23, 0.015]).rotation.z = -side * 0.18;
+      }
+      sphere(model, k, pale, [0, 0.57, -0.47], [0.16, 0.16, 0.16]);
+    } else {
+      sphere(model, k, pale, [0, headY - 0.13, reptile ? 0.8 : 0.737], [reptile ? 0.27 : 0.18, reptile ? 0.095 : 0.12, wolf || reptile ? 0.24 : 0.14]);
+      sphere(model, k, dark, [0, headY - 0.07, wolf || reptile ? 0.951 : 0.851], [0.076, 0.053, 0.04]);
+      for (const side of [-1, 1]) {
+        if (bear) {
+          sphere(model, k, tint, [side * 0.25, 1.42, 0.36], [0.12, 0.13, 0.08]);
+          sphere(model, k, 0xd3ac92, [side * 0.25, 1.43, 0.431], [0.065, 0.07, 0.017]);
+        } else if (!reptile) {
+          const ear = avatarPetal(model, k, tint, [side * 0.23, 1.43, 0.35], [0.24, 0.46, 0.1], 'ear'); ear.rotation.z = -side * 0.22;
+          avatarPetal(ear, k, pale, [0, -0.035, 0.64], [0.57, 0.68, 0.1], 'ear');
+          avatarSweep(model, k, pale, [[side * 0.22, 1.03, 0.52], [side * 0.36, 0.98, 0.47], [side * 0.26, 0.87, 0.53]], 0.085, 0.045);
+        }
+      }
+      if (reptile) {
+        avatarSweep(model, k, tint, [[0, 0.64, -0.5], [0.3, 0.39, -0.75], [0.46, 0.2, -0.85]], 0.15, 0.13);
+        for (let i = 0; i < 4; i++) crystalCrest(model, k, [0, 0.96, -0.45 + i * 0.23], amber);
+        if (/犀/.test(monster.name)) cylinder(model, k, pale, [0, 0.98, 0.77], 0, 0.1, 0.35, 8);
+      } else if (!bear) {
+        avatarSweep(model, k, tint, [[0, 0.65, -0.53], [-0.25, 0.6, -0.72], [-0.4, 0.84, -0.81], [-0.37, 1.09, -0.73]], 0.13, 0.115, pale);
+        avatarPetal(model, k, pale, [0, 0.72, 0.44], [0.4, 0.48, 0.065]);
+      } else sphere(model, k, tint, [0, 0.63, -0.62], [0.13, 0.14, 0.13]);
     }
-    rod(model, k, tint, [0, 0.6, -0.52], [0.13, 0.91, -0.81], 0.065);
-    sphere(model, k, pale, [0.13, 0.92, -0.82], [0.1, 0.12, 0.1]);
+    eyes([0, headY + 0.08, reptile ? 0.745 : 0.718], boar ? 0.2 : 0.15, rabbit ? 0.075 : 0.064);
+    for (const side of [-1, 1]) for (const z of [-0.34, 0.32]) {
+      const hind = rabbit && z < 0;
+      sphere(model, k, tint, [side * 0.28, 0.31, z], [hind ? 0.19 : 0.12, squat ? 0.23 : 0.29, hind ? 0.23 : 0.12]);
+      sphere(model, k, boar ? dark : rabbit ? pale : tint, [side * 0.28, 0.11, z + 0.08], [hind ? 0.18 : 0.135, 0.11, hind ? 0.25 : 0.18]);
+      if (boar) box(model, k, 0x766055, [side * 0.28, 0.1, z + 0.239], [0.022, 0.13, 0.016]);
+    }
+    if (elite) {
+      const collar = mesh(model, k, k.geometry('beast-collar', () => new THREE.TorusGeometry(0.3, 0.055, 6, 16)), sash, [0, 0.89, 0.38]); collar.rotation.x = -0.45;
+      sphere(model, k, amber, [0, 0.64, 0.52], [0.105, 0.11, 0.04]);
+      if (boss && boar) {
+        for (const side of [-1, 1]) sphere(model, k, amber, [side * 0.4, 0.78, -0.03], [0.065, 0.27, 0.34]);
+        for (let i = 0; i < 3; i++) sphere(model, k, amber, [0, 1.15, -0.34 + i * 0.19], [0.15, 0.04, 0.09]);
+      }
+    }
   } else if (kind === 'crawler') {
     sphere(model, k, tint, [0, 0.44, 0], [0.49, 0.33, 0.48]);
     sphere(model, k, pale, [0, 0.43, 0.39], [0.25, 0.19, 0.23]);
@@ -1114,8 +1479,8 @@ function buildEnemy(monster, position, index) {
     }
     sphere(model, k, tint, [-0.06, 1.8, -0.025], [0.14, 0.22, 0.13]).rotation.z = -0.35;
   }
-  if (elite) {
-    const top = { humanoid: 1.91, golem: 1.85, beast: 1.62, crawler: 0.84, bird: 1.85, serpent: 1.6, spirit: 2.01 }[kind];
+  if (elite && kind !== 'beast' && !(bandit && !boss)) {
+    const top = { humanoid: 1.91, golem: 1.85, crawler: 0.84, bird: 1.85, serpent: 1.6, spirit: 2.01 }[kind];
     if (boss) {
       cylinder(model, k, amber, [0, top, 0], 0.23, 0.26, 0.1, 20);
       for (let i = 0; i < 5; i++) {
@@ -1135,10 +1500,14 @@ function buildEnemy(monster, position, index) {
   model.updateWorldMatrix(true, true);
   const fallHeight = new THREE.Box3().setFromObject(model).max.x - root.position.x + 0.025;
   model.rotation.y = -0.48;
+  modelingBatch(model, k);
   const shadow = contact(root, k, kind === 'crawler' || kind === 'beast' ? 0.72 : 0.46);
   const selection = ring(root, k, kind === 'crawler' || kind === 'beast' ? 0.82 : 0.61);
   selection.visible = false;
-  return { root, model, k, shadow, selection, fallHeight, id: monster.id, hp: monster.hp, dead: null, hit: 0, phase: index * 1.7, baseYaw: -0.48 };
+  const warning = mesh(root, k, k.geometry('heavy-warning', () => new THREE.CircleGeometry(1.4, 48)), 0xe44842, [0, 0.025, 0], [1, 1, 1], { transparent: true, opacity: 0.48, depthWrite: false, side: THREE.DoubleSide, emissive: 0xf04444, emissiveIntensity: 1, toneMapped: false });
+  warning.rotation.x = -Math.PI / 2;
+  warning.visible = false;
+  return { root, model, k, shadow, selection, warning, fallHeight, id: monster.id, hp: monster.hp, dead: null, hit: 0, phase: index * 1.7, baseYaw: -0.48 };
 }
 
 const ENEMY_POSITIONS = {
@@ -1234,7 +1603,10 @@ function nearestNode(nav, point, requireSegment = false, maxDistance = Infinity)
   return best;
 }
 
-function findPath(nav, from, goal, radius = 0) {
+// Auto-walk detours around other aggressive monsters' rings when a route exists; manual movement does not.
+const RING_PENALTY = 12;
+function findPath(nav, from, goal, radius = 0, avoid = []) {
+  const penalty = (n) => avoid.some((c) => Math.hypot(n.x - c.x, n.z - c.z) <= c.r) ? RING_PENALTY : 0;
   const start = nearestNode(nav, from, true);
   if (!start || !nav.inside(goal.x, goal.z)) return null;
   const end = radius ? null : nearestNode(nav, goal, nav.free(goal.x, goal.z), 1.8);
@@ -1288,7 +1660,7 @@ function findPath(nav, from, goal, radius = 0) {
     for (const neighbor of node.neighbors) {
       if (closed[neighbor]) continue;
       const other = nav.nodes[neighbor];
-      const g = scores[index] + Math.hypot(other.x - node.x, other.z - node.z);
+      const g = scores[index] + Math.hypot(other.x - node.x, other.z - node.z) + (avoid.length ? penalty(other) : 0);
       if (g >= scores[neighbor]) continue;
       scores[neighbor] = g; parents[neighbor] = index;
       push({ index: neighbor, f: g + heuristic(other) });
@@ -1304,22 +1676,74 @@ function fieldPosition(s, monster) {
   const angle = seed / 4294967296 * TAU;
   const radius = 4.6 + ((seed >>> 12) % 1000) / 1000 * 8.3;
   const desired = { x: Math.sin(angle) * radius, z: -1.6 + Math.cos(angle) * radius * 0.78 };
+  const placed = [...s.fieldPositions.values()];
+  const aggro = monster.aggro || 0;
+  // Prefer spots where the spawn and every attack position stay outside other monsters' rings.
+  const spacing = (p, strict) => strict ? Math.max(aggro, p.aggro || 0) + REACH + 0.4 : 2.6;
   let best = null;
-  let bestScore = Infinity;
-  for (const node of nav.reachable) {
-    if (Math.hypot(node.x - nav.spawn.x, node.z - nav.spawn.z) < 3.7) continue;
-    if ([...s.fieldPositions.values()].some((p) => Math.hypot(node.x - p.x, node.z - p.z) < 2.6)) continue;
-    const score = Math.hypot(node.x - desired.x, node.z - desired.z);
-    if (score < bestScore) { best = node; bestScore = score; }
+  for (const strict of [true, false]) {
+    let bestScore = Infinity;
+    for (const node of nav.reachable) {
+      if (Math.hypot(node.x - nav.spawn.x, node.z - nav.spawn.z) < (strict ? Math.max(3.7, aggro + 1.2) : 3.7)) continue;
+      if (placed.some((p) => Math.hypot(node.x - p.x, node.z - p.z) < spacing(p, strict))) continue;
+      const score = Math.hypot(node.x - desired.x, node.z - desired.z);
+      if (score < bestScore) { best = node; bestScore = score; }
+    }
+    if (best) break;
   }
   best ??= nearestNode(nav, desired);
-  const position = { x: best.x, z: best.z, name: monster.name };
+  const position = { x: best.x, z: best.z, name: monster.name, aggro };
   s.fieldPositions.set(monster.id, position);
   return position;
 }
 
 function movementAllowed(s) {
   return Boolean(s?.state?.explorable && s.state.movementEnabled && !s.state.active && canRender(s));
+}
+
+const rtOrigin = (state) => (state?.explorable && state.rt?.origin) || { x: 0, z: 0 };
+
+// Passive monsters still fight back once the player walks right up to them.
+const TOUCH_RADIUS = 1.6;
+
+// Field monsters stay still; engagement fires once per entry into the radius.
+function checkAggro(s) {
+  const watching = movementAllowed(s);
+  const { x, z } = s.avatar?.root.position ?? {};
+  for (const enemy of s.enemies) {
+    const radius = enemy.aggro || enemy.touch;
+    if (!radius) continue;
+    const distance = Math.hypot(x - enemy.root.position.x, z - enemy.root.position.z);
+    if (enemy.aggroRing) enemy.aggroRing.visible = watching && !enemy.dead && distance <= enemy.aggro + 2.5;
+    if (!watching || enemy.dead) continue;
+    if (distance > radius + 0.4) enemy.armed = true;
+    else if (enemy.armed && distance <= radius) {
+      enemy.armed = false;
+      haltMovement(s);
+      document.dispatchEvent(new CustomEvent('scene-aggro', { detail: { id: enemy.id } }));
+      return;
+    }
+  }
+}
+
+function arrive(s, id) {
+  const approaching = s.approach;
+  haltMovement(s, true);
+  if (!approaching && id != null) document.dispatchEvent(new CustomEvent('scene-engage', { detail: { id } }));
+}
+
+export function getEncounterLayout(id) {
+  const s = live;
+  const enemy = s?.enemies.find((e) => e.id === id && !e.dead);
+  if (!enemy || !s.avatar) return null;
+  const a = s.avatar.root.position;
+  const b = enemy.root.position;
+  const round = (n) => Math.round(n * 1000) / 1000;
+  let hx = THREE.MathUtils.clamp((b.x - a.x) / 2, -3.6, 3.6);
+  let hz = THREE.MathUtils.clamp((b.z - a.z) / 2, -2.5, 2.5);
+  if (Math.hypot(hx, hz) < 0.4) { hx = 0.4; hz = 0; }
+  hx = round(hx); hz = round(hz);
+  return { origin: { x: round(a.x + hx), z: round(a.z + hz) }, player: { x: -hx, z: -hz }, enemy: { x: hx, z: hz } };
 }
 
 function movementData(s) {
@@ -1367,7 +1791,8 @@ function startWalk(s, goal, id = null) {
   haltMovement(s);
   if (!movementAllowed(s)) return false;
   const nav = s.environment.navigation;
-  const path = findPath(nav, s.avatar.root.position, goal, id == null ? 0 : REACH - 0.15);
+  const avoid = s.enemies.filter((e) => e.aggro && e.id !== id && !e.dead).map((e) => ({ x: e.root.position.x, z: e.root.position.z, r: e.aggro + 0.5 }));
+  const path = findPath(nav, s.avatar.root.position, goal, id == null ? 0 : REACH - 0.15, avoid);
   if (!path) return false;
   s.path = path;
   s.walkTarget = id;
@@ -1387,7 +1812,7 @@ function tickMovement(s, delta) {
   if (s.walkTarget != null && !enemy) { haltMovement(s); return; }
   const position = s.avatar.root.position;
   if (enemy && Math.hypot(position.x - enemy.root.position.x, position.z - enemy.root.position.z) <= REACH) {
-    haltMovement(s, true); return;
+    arrive(s, enemy.id); return;
   }
   const directions = new Set([...s.heldDirections, ...[...s.heldKeys].map((key) => KEY_DIRECTIONS[key])]);
   const horizontal = Number(directions.has('right')) - Number(directions.has('left'));
@@ -1435,9 +1860,10 @@ function tickMovement(s, delta) {
     s.walkPhase += travelled * 3.2;
     if (!s.overview) positionCamera(s);
   }
-  if (enemy && Math.hypot(position.x - enemy.root.position.x, position.z - enemy.root.position.z) <= REACH) haltMovement(s, true);
+  if (enemy && Math.hypot(position.x - enemy.root.position.x, position.z - enemy.root.position.z) <= REACH) arrive(s, enemy.id);
   else if (!s.path.length && s.walkTarget != null) haltMovement(s);
   emitMovement(s);
+  if (s.moving) checkAggro(s);
 }
 
 export function getWorldMovement() {
@@ -1503,10 +1929,10 @@ function removeLayer(scene, layer) {
 
 function updateWorld(s, next) {
   const previous = s.state;
-  const mapKey = JSON.stringify([next.location, next.explorable, next.explorable ? next.city : next.city && !next.active]);
+  const mapKey = JSON.stringify([next.location, next.explorable, !next.explorable && !!next.rt, next.explorable ? next.city : next.city && !next.active]);
   const avatarKey = JSON.stringify([next.cls, next.race, next.weapon]);
   const roster = !next.explorable && next.city && !next.active ? [] : next.monsters;
-  const rosterKey = JSON.stringify([next.active, roster.map((m) => [m.id, m.name, m.rank])]);
+  const rosterKey = JSON.stringify([next.active, roster.map((m) => [m.id, m.name, m.rank, m.ambient, m.aggro])]);
   const sameContext = s.mapKey === mapKey && s.rosterKey === rosterKey && s.avatarKey === avatarKey;
   const changedMap = s.mapKey !== mapKey;
   if (changedMap) {
@@ -1533,13 +1959,23 @@ function updateWorld(s, next) {
   }
   if (savedPosition) s.avatar.root.position.set(savedPosition.x, 0, savedPosition.z);
   else if (changedMap) s.avatar.root.position.set(-1.65, 0, 0.55);
+  if (next.explorable && previous?.rt && !next.rt) {
+    const nav = s.environment.navigation;
+    const at = s.avatar.root.position;
+    if (!nav.free(at.x, at.z)) {
+      const node = nearestNode(nav, at);
+      if (node) at.set(node.x, 0, node.z);
+    }
+  }
+  const origin = rtOrigin(next);
   if (next.explorable && next.active && !previous?.active) {
     haltMovement(s);
     s.battlePositions.clear();
     const nav = s.environment.navigation;
-    let anchor = s.fieldSelected && roster[0]?.name === s.fieldSelected.name ? s.fieldSelected : [...s.fieldPositions.values()].find((p) => p.name === roster[0]?.name);
+    const fighters = roster.filter((m) => !m.ambient);
+    let anchor = s.fieldSelected && fighters[0]?.name === s.fieldSelected.name ? s.fieldSelected : [...s.fieldPositions.values()].find((p) => p.name === fighters[0]?.name);
     anchor ??= nearestNode(nav, { x: s.avatar.root.position.x + 2.1, z: s.avatar.root.position.z - 0.5 });
-    roster.forEach((m, i) => {
+    fighters.forEach((m, i) => {
       const desired = i ? { x: anchor.x + Math.cos(i * 2.4) * 2.1, z: anchor.z + Math.sin(i * 2.4) * 2.1 } : anchor;
       let best = null;
       let distance = Infinity;
@@ -1558,15 +1994,49 @@ function updateWorld(s, next) {
     if (next.explorable && !next.active) roster.filter((m) => !s.battlePositions.has(m.id)).sort((a, b) => String(a.id).localeCompare(String(b.id))).forEach((m) => fieldPosition(s, m));
     s.enemies = roster.map((m, i) => {
       const p = next.explorable ? s.battlePositions.get(m.id) ?? fieldPosition(s, m) : null;
-      return buildEnemy(m, p ? [p.x, p.z] : ENEMY_POSITIONS[roster.length][i], i);
+      const enemy = buildEnemy(m, p ? [p.x, p.z] : ENEMY_POSITIONS[roster.length][i], i);
+      enemy.ambient = m.ambient;
+      enemy.aggro = next.explorable && !next.active ? m.aggro : 0;
+      enemy.touch = next.explorable && !next.active && !m.ambient && m.aggro === 0 ? TOUCH_RADIUS : 0;
+      if (enemy.touch) enemy.armed = Math.hypot(s.avatar.root.position.x - enemy.root.position.x, s.avatar.root.position.z - enemy.root.position.z) > enemy.touch;
+      if (enemy.aggro > 0) {
+        enemy.aggroRing = mesh(enemy.root, enemy.k, enemy.k.geometry(`aggro:${enemy.aggro}`, () => new THREE.RingGeometry(enemy.aggro - 0.05, enemy.aggro, 56)),
+          0xd9574c, [0, 0.03, 0], [1, 1, 1], { transparent: true, opacity: 0.42, depthWrite: false, side: THREE.DoubleSide, emissive: 0xd9574c, emissiveIntensity: 0.6, toneMapped: false });
+        enemy.aggroRing.rotation.x = -Math.PI / 2;
+        enemy.aggroRing.visible = false;
+        enemy.armed = Math.hypot(s.avatar.root.position.x - enemy.root.position.x, s.avatar.root.position.z - enemy.root.position.z) > enemy.aggro;
+      }
+      return enemy;
     });
     s.enemies.forEach((enemy) => s.scene.add(enemy.root));
     s.rosterKey = rosterKey;
   }
-  const advanced = sameContext && previous && next.round > previous.round && (previous.active || next.active);
-  s.attack = advanced && !s.reducedMotion ? 0.52 : sameContext ? s.attack : 0;
+  const advanced = sameContext && previous && (next.rt ? next.rt.tick > (previous.rt?.tick || 0) : next.round > previous.round) && (previous.active || next.active);
+  if (next.rt) {
+    if (!previous?.rt || next.rt.tick < previous.rt.tick) { s.eventSequence = 0; s.floats.forEach(f => f.node.remove()); s.floats = []; }
+    if (!previous?.rt) s.avatar.root.position.set(origin.x + next.rt.player.x, 0, origin.z + next.rt.player.z);
+    for (const ev of next.rt.events) {
+      if (ev.seq <= s.eventSequence) continue;
+      s.eventSequence = ev.seq;
+      if (ev.actor === 'player' && ['attack', 'cast'].includes(ev.kind)) s.attack = 0.52;
+      if (['damage', 'heal', 'miss', 'guard'].includes(ev.kind)) {
+        const node = document.createElement('span'); node.className = `scene-float ${ev.kind}`;
+        node.textContent = ev.kind === 'damage' ? `−${Math.round(ev.amount)}` : ev.kind === 'heal' ? `+${Math.round(ev.amount)}` : ev.kind === 'guard' ? '守御' : '闪避';
+        const target = ev.target || ev.actor;
+        const lane = s.floats.filter(f => f.target === target && f.age < 0.3).length;
+        s.overlay.appendChild(node); s.floats.push({ node, target, age: 0, lane });
+      }
+    }
+  }
+  if (!next.rt) s.attack = advanced && !s.reducedMotion ? 0.52 : sameContext ? s.attack : 0;
   s.enemies.forEach((enemy, i) => {
     const current = roster[i];
+    const rtEnemy = next.rt?.enemies[current.id];
+    if (rtEnemy) {
+      if (!previous?.rt) enemy.root.position.set(origin.x + rtEnemy.x, 0, origin.z + rtEnemy.z);
+      enemy.warning.visible = current.hp > 0 && current.intent === 'heavy' && rtEnemy.windupUntil > next.rt.tick && !!rtEnemy.aim;
+      if (enemy.warning.visible) enemy.warning.position.set(origin.x + rtEnemy.aim.x - enemy.root.position.x, 0.04, origin.z + rtEnemy.aim.z - enemy.root.position.z);
+    }
     if (advanced && current.hp < enemy.hp && !s.reducedMotion) enemy.hit = 0.46;
     enemy.hp = current.hp;
     const dead = current.hp <= 0;
@@ -1574,7 +2044,7 @@ function updateWorld(s, next) {
       enemy.dead = dead;
       enemy.k.eachMaterial((m) => {
         // The ground ring and contact shadow are not part of the fallen model.
-        if (m === enemy.selection.material || m === enemy.shadow.material) return;
+        if (m === enemy.selection.material || m === enemy.shadow.material || m === enemy.warning.material || m === enemy.aggroRing?.material) return;
         m.transparent = dead;
         m.opacity = dead ? 0.28 : 1;
         m.depthWrite = !dead;
@@ -1585,6 +2055,7 @@ function updateWorld(s, next) {
     enemy.selection.visible = !dead && current.id != null && current.id === next.targetId;
   });
   s.state = next;
+  checkAggro(s);
   if (!next.movementEnabled || next.active || !next.explorable
       || (previous && previous.targetId !== next.targetId && s.walkTarget !== next.targetId)
       || (s.walkTarget != null && !s.enemies.some((e) => e.id === s.walkTarget && !e.dead))) haltMovement(s);
@@ -1603,6 +2074,15 @@ function positionCamera(s) {
   const aspect = Math.max(1, s.width) / Math.max(1, s.height);
   s.camera.aspect = aspect;
   const tangent = Math.tan(THREE.MathUtils.degToRad(s.camera.fov / 2));
+  if (s.state?.showcase || (s.state?.rt && !s.state.explorable)) {
+    const focus = s.state.showcase ? new THREE.Vector3(s.avatar.root.position.x, 1.15, s.avatar.root.position.z) : new THREE.Vector3(0, 0.8, 0);
+    const distance = s.state.showcase ? Math.max(6, 3.6 / (2 * tangent * aspect)) : Math.max(12, 10.2 / (2 * tangent * Math.max(0.55, aspect)));
+    const elevation = s.state.showcase ? 0.16 : 0.65;
+    s.camera.position.set(focus.x + Math.sin(s.yaw) * Math.cos(elevation) * distance, focus.y + Math.sin(elevation) * distance, focus.z + Math.cos(s.yaw) * Math.cos(elevation) * distance);
+    s.camera.lookAt(focus); s.camera.far = 100;
+    s.scene.fog.near = distance + 15; s.scene.fog.far = distance + 40;
+    s.camera.updateProjectionMatrix(); s.camera.updateMatrixWorld(true); return;
+  }
   if (s.state?.explorable && !s.overview) {
     const focus = new THREE.Vector3(s.avatar.root.position.x, 0.75, s.avatar.root.position.z - 0.7);
     const distance = Math.max(14.5, 7.2 / (2 * tangent * Math.max(0.5, aspect)));
@@ -1687,7 +2167,7 @@ function pose(s, delta) {
     enemy.k.eachMaterial((m) => {
       m.emissive.copy(m.userData.baseEmission);
       m.emissiveIntensity = m.userData.baseIntensity;
-      if (recoil > 0 && m !== enemy.selection.material && m !== enemy.shadow.material) {
+      if (recoil > 0 && m !== enemy.selection.material && m !== enemy.shadow.material && m !== enemy.warning.material && m !== enemy.aggroRing?.material) {
         m.emissive.setHex(0xd7a07e);
         m.emissiveIntensity = recoil * 0.38;
       }
@@ -1731,6 +2211,14 @@ function updateOcclusion(s) {
 }
 
 function draw(s) {
+  for (const f of s.floats) {
+    const actor = f.target === 'player' || f.target === 'pet' ? s.avatar : s.enemies.find(e => e.id === f.target);
+    if (!actor) continue;
+    const point = actor.root.position.clone(); point.y += 2.2 + f.age * 0.55; point.project(s.camera);
+    f.node.style.left = `${(point.x + 1) * s.width / 2}px`;
+    f.node.style.top = `${(1 - point.y) * s.height / 2 - f.lane * 24}px`;
+    f.node.style.opacity = String(Math.max(0, 1 - f.age / 1.1));
+  }
   updateOcclusion(s);
   // Do not swallow application/model errors; only the actual GPU boundary fails
   // closed, once, leaving the static portrait to the owning UI.
@@ -1768,7 +2256,31 @@ function frame(s, now) {
   const delta = s.lastFrame ? Math.min((now - s.lastFrame) / 1000, 0.06) : 0;
   s.lastFrame = now;
   s.time += delta;
-  tickMovement(s, delta);
+  if (s.state.rt) {
+    const factor = 1 - Math.exp(-delta * 18);
+    const origin = rtOrigin(s.state);
+    const move = (actor, local) => {
+      const dx = origin.x + local.x - actor.root.position.x, dz = origin.z + local.z - actor.root.position.z;
+      actor.root.position.x += dx * factor; actor.root.position.z += dz * factor;
+      return { dx, dz, distance: Math.hypot(dx, dz) };
+    };
+    const travel = move(s.avatar, s.state.rt.player);
+    s.moving = travel.distance > 0.04;
+    if (s.moving) { s.facing = Math.atan2(travel.dx, travel.dz); s.walkPhase += travel.distance * factor * 3.2; }
+    else {
+      const target = s.enemies.find(e => e.id === s.state.targetId && !e.dead);
+      if (target) s.facing = Math.atan2(target.root.position.x - s.avatar.root.position.x, target.root.position.z - s.avatar.root.position.z);
+    }
+    if (s.state.explorable && !s.overview && travel.distance > 0.002) positionCamera(s);
+    s.enemies.forEach(enemy => {
+      const data = s.state.rt.enemies[enemy.id]; if (!data) return;
+      if (!enemy.dead) move(enemy, data);
+      enemy.baseYaw = Math.atan2(s.avatar.root.position.x - enemy.root.position.x, s.avatar.root.position.z - enemy.root.position.z);
+      if (enemy.warning.visible && data.aim) enemy.warning.position.set(origin.x + data.aim.x - enemy.root.position.x, 0.04, origin.z + data.aim.z - enemy.root.position.z);
+      enemy.warning.material.opacity = 0.48 + Math.sin(s.time * 10) * 0.08;
+    });
+  } else tickMovement(s, delta);
+  s.floats = s.floats.filter(f => { f.age += delta; if (f.age <= 1.1) return true; f.node.remove(); return false; });
   pose(s, delta);
   s.dirty = false;
   if (draw(s)) schedule(s);
@@ -1813,7 +2325,7 @@ function pick(s, event) {
   s.pointerNdc.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1);
   s.scene.updateMatrixWorld(true);
   s.raycaster.setFromCamera(s.pointerNdc, s.camera);
-  const hits = s.raycaster.intersectObjects([s.avatar.body, ...s.enemies.filter((e) => !e.dead).map((e) => e.model)], true);
+  const hits = s.raycaster.intersectObjects([s.avatar.body, ...s.enemies.filter((e) => !e.dead && !(e.ambient && s.state.active)).map((e) => e.model)], true);
   if (hits.length) {
     let object = hits[0].object;
     while (object) {
@@ -1829,6 +2341,12 @@ function pick(s, event) {
       }
       object = object.parent;
     }
+    return;
+  }
+  if (s.state.rt && s.state.active) {
+    const goal = s.raycaster.ray.intersectPlane(s.groundPlane, s.groundPoint);
+    const origin = rtOrigin(s.state);
+    if (goal) document.dispatchEvent(new CustomEvent('scene-combat-goal', { detail: { x: goal.x - origin.x, z: goal.z - origin.z } }));
     return;
   }
   if (!movementAllowed(s)) return;
@@ -1883,6 +2401,7 @@ function wire(s) {
   listen(s, s.canvas, 'lostpointercapture', () => releasePointer(s));
   listen(s, s.canvas, 'keydown', (event) => {
     if (!canRender(s) || document.activeElement !== s.canvas || event.ctrlKey || event.metaKey || event.altKey || event.isComposing) return;
+    if (s.state.rt) return;
     const key = event.key.toLowerCase();
     if (key === 'escape') { event.preventDefault(); stopWorldMovement(); return; }
     if (movementAllowed(s) && KEY_DIRECTIONS[key]) {
@@ -1907,7 +2426,7 @@ function wire(s) {
     if (!['arrowleft', 'arrowright', 'enter', ' '].includes(key)) return;
     if (s.state.explorable && !s.state.active && ['arrowleft', 'arrowright'].includes(key)) return;
     event.preventDefault();
-    const alive = s.enemies.filter((e) => !e.dead && e.id != null);
+    const alive = s.enemies.filter((e) => !e.dead && e.id != null && !(e.ambient && s.state.active));
     if (!alive.length) return;
     const current = alive.findIndex((e) => e.id === s.state.targetId);
     if (movementAllowed(s) && (key === 'enter' || key === ' ')) {
@@ -2007,10 +2526,11 @@ function wire(s) {
 function createSession() {
   const canvas = document.createElement('canvas');
   canvas.title = '修真场景：横拖转视角，点击地面行走，点击怪物靠近；聚焦后 WASD / 方向键移动，E 近身交战，Esc 停止';
-  canvas.setAttribute('aria-label', '修真角色与地图。横向拖动旋转视角；探索时点击地面寻路、点击怪物靠近，WASD 或方向键移动，E 近身交战，Escape 停止。战斗时左右键选择目标，Enter 和空格只选择，不自动攻击。');
+  canvas.setAttribute('aria-label', '修真角色与地图。横向拖动旋转视角；探索时点击地面寻路、点击怪物靠近，WASD 或方向键移动，E 近身交战，Escape 停止。实时交战时点击怪物选择目标，点击地面或方向键走位，空格守御；普攻与已学四格技能自动施放。');
   canvas.setAttribute('role', 'img');
   canvas.tabIndex = 0;
   Object.assign(canvas.style, { width: '100%', height: '100%', display: 'block', touchAction: 'pan-y', cursor: 'grab' });
+  const overlay = document.createElement('div'); overlay.className = 'scene-effects'; overlay.setAttribute('aria-hidden', 'true');
   const options = { alpha: false, antialias: true, depth: true, stencil: false, powerPreference: 'low-power' };
   let context;
   let renderer;
@@ -2040,7 +2560,7 @@ function createSession() {
   rim.position.set(4, 4, -5);
   scene.add(rim);
   const s = {
-    renderer, canvas, scene, camera: new THREE.PerspectiveCamera(36, 1, 0.1, 65),
+    renderer, canvas, overlay, floats: [], eventSequence: 0, scene, camera: new THREE.PerspectiveCamera(36, 1, 0.1, 65),
     host: null, state: null, environment: null, avatar: null, enemies: [],
     width: 0, height: 0, pixelRatio: 0, yaw: 0.27, time: 0, attack: 0,
     raf: 0, lastFrame: 0, dirty: true, inView: true, hostVisible: true,
@@ -2078,6 +2598,8 @@ function disposeSession(s) {
   s.renderer.dispose();
   s.renderer.forceContextLoss();
   s.canvas.remove();
+  s.overlay.remove();
+  s.floats = [];
   s.host = null;
   if (live === s) live = null;
 }
@@ -2105,6 +2627,7 @@ export function mountWorldScene(container, state = {}) {
   }
   try {
     if (s.canvas.parentNode !== container) container.appendChild(s.canvas);
+    if (s.overlay.parentNode !== container) container.appendChild(s.overlay);
   } finally {
     s.reparenting = false;
   }

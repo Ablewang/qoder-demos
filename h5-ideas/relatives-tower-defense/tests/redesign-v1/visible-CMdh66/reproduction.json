@@ -1,0 +1,86 @@
+{
+  "source": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-JNsBOC/visible-results.json",
+  "mode": "reproduce previously chosen full visible sentences after state-copy correction",
+  "routes": [
+    {
+      "label": "direct",
+      "path": [
+        "honest-sangu",
+        "own-plan",
+        "ask-erjiu",
+        "say-plan"
+      ],
+      "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/direct-4-result.png",
+      "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/direct-poster.png"
+    },
+    {
+      "label": "friend",
+      "path": [
+        "ask-sangu",
+        "cover-biaojie",
+        "ask-erjiu",
+        "ask-help",
+        "biaojie-team",
+        "both-plan"
+      ],
+      "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/friend-6-result.png",
+      "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/friend-poster.png"
+    },
+    {
+      "label": "followup-risk",
+      "path": [
+        "ask-nainai",
+        "fishpond",
+        "ask-erjiu",
+        "say-plan",
+        "draw-line"
+      ],
+      "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/followup-risk-5-result.png",
+      "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/followup-risk-poster.png"
+    }
+  ],
+  "close": {
+    "complete": true,
+    "output": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66",
+    "routes": [
+      {
+        "label": "direct",
+        "path": [
+          "honest-sangu",
+          "own-plan",
+          "ask-erjiu",
+          "say-plan"
+        ],
+        "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/direct-4-result.png",
+        "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/direct-poster.png"
+      },
+      {
+        "label": "friend",
+        "path": [
+          "ask-sangu",
+          "cover-biaojie",
+          "ask-erjiu",
+          "ask-help",
+          "biaojie-team",
+          "both-plan"
+        ],
+        "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/friend-6-result.png",
+        "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/friend-poster.png"
+      },
+      {
+        "label": "followup-risk",
+        "path": [
+          "ask-nainai",
+          "fishpond",
+          "ask-erjiu",
+          "say-plan",
+          "draw-line"
+        ],
+        "result": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/followup-risk-5-result.png",
+        "poster": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/visible-CMdh66/followup-risk-poster.png"
+      }
+    ],
+    "errors": [],
+    "external": []
+  }
+}

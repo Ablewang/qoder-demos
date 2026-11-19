@@ -6,6 +6,11 @@ import { CLASSES, RACES } from '../src/data/classes.js';
 const base = 'http://127.0.0.1:5183';
 const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
 const context = await browser.newContext({ viewport: { width: 1024, height: 650 }, reducedMotion: 'reduce' });
+await context.route('**/@vite/client', route => route.fulfill({ contentType: 'application/javascript', body: `
+export const createHotContext = () => ({ accept() {}, prune() {}, dispose() {}, invalidate() {}, on() {}, off() {} });
+export function updateStyle(id, content) { let el = [...document.querySelectorAll('style[data-vite-dev-id]')].find(el => el.dataset.viteDevId === id); if (!el) { el = document.createElement('style'); el.dataset.viteDevId = id; document.head.appendChild(el); } el.textContent = content; }
+export function removeStyle(id) { [...document.querySelectorAll('style[data-vite-dev-id]')].find(el => el.dataset.viteDevId === id)?.remove(); }
+` }));
 const page = await context.newPage(); const errors = [], external = [];
 page.on('pageerror', error => errors.push(error.message));
 page.on('request', request => { if (/^https?:/.test(request.url()) && new URL(request.url()).origin !== base) external.push(request.url()); });
@@ -19,7 +24,7 @@ try {
   });
   for (const [id, zone] of Object.entries(ZONES)) {
     const cls = Object.values(RACES).find(race => race.home === id)?.classes[0] || 'blademaster';
-    const monsters = (zone.mobs || []).map(([name, lv, rank], i) => ({ id: `field-${i}`, name, lv, rank, hp: 1, maxHp: 1 }));
+    const monsters = (zone.mobs || []).map(([name, lv, rank], i) => ({ id: `field-${i}`, name, lv, rank, hp: 1, maxHp: 1, ambient: true }));
     const state = { cls, race: CLASSES[cls].race, location: id, city: zone.type === 'city', active: false, explorable: true, movementEnabled: true, monsters, targetId: monsters[0]?.id || null };
     assert.equal(await page.evaluate(state => { document.querySelector('#scene-fixture-title').textContent = `${state.location} · 区域行走测试`; return __movingScene.mountWorldScene(document.querySelector('#scene-fixture'), state); }, state), true);
     const initial = await page.evaluate(() => __movingScene.getWorldMovement());
@@ -42,6 +47,29 @@ try {
     }
     console.log(`PASS ${id}: movement and ${monsters.length ? 'first/last monster paths' : 'city key movement'}`);
   }
+  await page.evaluate(async () => {
+    const monster = { id: 'field-0', name: '小野猪', lv: 1, rank: 'normal', hp: 1, maxHp: 1, aggro: 0 };
+    __movingScene.mountWorldScene(document.querySelector('#scene-fixture'), { cls: 'blademaster', location: 'h_f1', city: false, explorable: true, movementEnabled: true, active: false, monsters: [monster], targetId: monster.id });
+    window.__touchEvents = [];
+    document.addEventListener('scene-aggro', ev => __touchEvents.push(ev.detail.id));
+    await __movingScene.approachWorldTarget(monster.id);
+  });
+  assert.deepEqual(await page.evaluate(() => __touchEvents), [], 'Passive monster does not aggro at approach range');
+  await page.evaluate(() => {
+    const at = __movingScene.getWorldMovement();
+    const layout = __movingScene.getEncounterLayout('field-0');
+    const dx = layout.origin.x + layout.enemy.x - at.x;
+    const dz = layout.origin.z + layout.enemy.z - at.z;
+    const horizontal = dx * Math.cos(0.27) - dz * Math.sin(0.27);
+    const vertical = dx * Math.sin(0.27) + dz * Math.cos(0.27);
+    __movingScene.moveWorldDirection(horizontal > 0 ? 'right' : 'left');
+    __movingScene.moveWorldDirection(vertical > 0 ? 'down' : 'up');
+  });
+  await page.waitForFunction(() => __touchEvents.length === 1);
+  assert.deepEqual(await page.evaluate(() => __touchEvents), ['field-0'], 'Manual movement into passive touch radius triggers combat without target click');
+  const touch = await page.evaluate(() => __movingScene.getWorldMovement());
+  assert.ok(touch.distance <= 1.6 && !touch.moving);
+  console.log('PASS passive monster touch radius starts combat once on manual approach');
   const battlePosition = await page.evaluate(async () => {
     const host = document.querySelector('#scene-fixture');
     const field = { id: 'field-0', name: '啄木鸟精', lv: 1, rank: 'normal', hp: 1, maxHp: 1 };

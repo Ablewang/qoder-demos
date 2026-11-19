@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-read-daemon-info"
+description = "Enables the read_daemon_info command without any pre-configured scope."
+commands.allow = ["read_daemon_info"]
+
+[[permission]]
+identifier = "deny-read-daemon-info"
+description = "Denies the read_daemon_info command without any pre-configured scope."
+commands.deny = ["read_daemon_info"]

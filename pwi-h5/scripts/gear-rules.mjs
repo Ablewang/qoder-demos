@@ -10,7 +10,7 @@ import { equipmentAction, validateEquipment } from '../src/core/equipment.js';
 import { stats, BAG_LIMIT } from '../src/core/model.js';
 import { createBattle, takeTurn, canUseSkill } from '../src/core/combat.js';
 import { ZONES, DUNGEONS, DUNGEON_DAILY } from '../src/data/world.js';
-import { ATLAS_NODES, routeTo } from '../src/data/atlas.js';
+import { ATLAS_NODES, ATLAS_REGIONS, regionOf, routeTo } from '../src/data/atlas.js';
 
 // Controlled imported domain fixtures, not naturally earned levels/resources.
 let passed = 0, total = 0, combinations = 0;
@@ -402,6 +402,18 @@ test('real names/reciprocal map/independent BFS eligible and blocked routes', ()
     if (actual) for (let i = 1; i < actual.length; i++) assert.ok(ZONES[actual[i - 1]].links.includes(actual[i]));
   }
   assert.equal(routeTo('wanliu', 'f_xianmo', { lv: 105, cult: 0 }), null);
+});
+test('万流城 region: hierarchy covers every zone once and official neighbours are linked', () => {
+  const covered = ATLAS_REGIONS.flatMap((r) => r.zones);
+  assert.deepEqual([...covered].sort(), Object.keys(ZONES).sort());
+  assert.equal(new Set(covered).size, covered.length);
+  for (const id of Object.keys(ZONES)) assert.ok(regionOf(id)?.zones.includes(id), id);
+  assert.equal(ZONES.wl_city.name, '万流城'); assert.equal(ZONES.wl_city.type, 'city');
+  for (const id of ['wl_fenxin', 'wl_cangmang', 'wl_changcheng', 'wl_jimo', 'wl_cigu']) assert.equal(regionOf(id).id, regionOf('wl_city').id);
+  assert.ok(ZONES.f_xianmo.links.includes('wl_city'), '仙魔两界入口位于万流城归宗塔下');
+  assert.ok(ZONES.jifeng.links.includes('wanhua'), '龙战之野东接万化城');
+  assert.ok(ATLAS_NODES.wl_city.x < ATLAS_NODES.wanliu.x && ATLAS_NODES.wl_city.y < ATLAS_NODES.taoyuan.y, '万流城位于大陆西北');
+  assert.ok(routeTo('jifeng', 'wl_city', { lv: 80, cult: 0 })?.at(-1) === 'wl_city');
 });
 for (const d of DUNGEONS) test(`every dungeon wave reward family/${d.id}`, () => {
   const g = fixture(); const beforeItems = structuredClone(g.p.items);

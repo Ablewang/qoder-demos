@@ -1,17 +1,18 @@
 import type { Action, ClassId, Control, Dispatch, GameState, Item, Panel, Player, Point, SkillDef, Slot, StatKey, WorldObject } from './types';
 import { CLASSES, SKILLS, EXPERIENCE, getClass, getSkill } from './catalog';
 import { skillLevel, skillEffect } from './rules';
-import { getBase, isUsableItem, itemLabel, describeItem, runewordName, RUNES, GEMS, RUNEWORDS, INVENTORY_WIDTH, INVENTORY_HEIGHT, fitsItem } from './items';
+import { getBase, isUsableItem, itemLabel, describeItem, unmetItemRequirements, runewordName, RUNES, GEMS, RUNEWORDS, INVENTORY_WIDTH, INVENTORY_HEIGHT, STASH_WIDTH, STASH_HEIGHT, fitsItem } from './items';
 import { AREAS, QUESTS, NPCS, hasLineOfSight, questKey } from './world';
 import type { Renderer } from './renderer3d';
 import { monsterSpec } from './r3d/rigs';
 import { artUrl, heroArtKey, itemArtKey } from './art';
-import { CATALOG_CATEGORIES, EQUIPMENT_CATALOG, searchEquipment } from './equipment-catalog';
+import { CATALOG_CATEGORIES, EQUIPMENT_CATALOG, equipmentPropertyLines, runewordEquipmentGroup, runewordRequiredLevel, searchEquipment } from './equipment-catalog';
 import type { CatalogKind } from './equipment-catalog';
+import { gamblingCost, gamblingDiscount } from './gambling';
 
 const NS = 'http://www.w3.org/2000/svg';
-const SLOT_NAMES: Record<Slot, string> = { head: '头盔', neck: '项链', body: '护甲', weapon: '主手', offhand: '副手', gloves: '手套', belt: '腰带', boots: '靴子', ring1: '戒指 · 左', ring2: '戒指 · 右', weapon2: '备用主手', offhand2: '备用副手' };
-const PANEL_NAMES: Record<Panel, string> = { none: '', inventory: '行囊与装备', character: '角色属性', skills: '技能树', quests: '任务日志', waypoint: '传送点', stash: '私人储物箱', cube: '赫拉迪克方块', vendor: '交易与对话', help: '旅人指南', catalog: '装备图鉴' };
+const SLOT_NAMES: Record<Slot, string> = { head: '头盔', neck: '项链', body: '护甲', weapon: '主手', offhand: '副手', gloves: '手套', belt: '腰带', boots: '靴子', ring1: '左戒', ring2: '右戒', weapon2: '备用主手', offhand2: '备用副手' };
+const PANEL_NAMES: Record<Panel, string> = { none: '', inventory: '行囊与装备', character: '角色属性', skills: '技能树', quests: '任务日志', waypoint: '传送点', stash: '私人储物箱', cube: '赫拉迪克方块', vendor: '交易与对话', gamble: '基德 · 赌博', help: '旅人指南', catalog: '装备图鉴' };
 const DIFFICULTY = { normal: '普通', nightmare: '噩梦', hell: '地狱' };
 const STAT_NAMES: Record<StatKey, string> = { strength: '力量', dexterity: '敏捷', vitality: '体力', energy: '精力' };
 const clamp = (n: number, low: number, high: number) => Math.max(low, Math.min(high, n));
@@ -152,7 +153,7 @@ export class GameUI {
 
   private send(action: Action, endTrade = false) {
     if (!endTrade && action.type === 'panel' && action.panel === 'inventory' && this.isTrading()) { this.toggleTradeInventory(); return; }
-    if (action.type === 'panel' || action.type === 'pause' || action.type === 'title' || action.type === 'respawn' || action.type === 'travel' || action.type === 'difficulty') this.resetControls();
+    if (action.type === 'panel' || action.type === 'pause' || action.type === 'title' || action.type === 'save-and-title' || action.type === 'respawn' || action.type === 'travel' || action.type === 'difficulty') this.resetControls();
     this.dispatch(action);
     if (!this.activeGame()) this.resetControls();
   }
@@ -236,7 +237,7 @@ export class GameUI {
     if (this.previousPanel !== state.panel || this.screen !== state.screen || this.tradeNpc && this.tradeNpc !== state.npc) { this.cancelItemDrag(); this.closeItemPopup(); }
     this.state = state;
     if (this.isTrading()) {
-      if (this.previousPanel !== 'vendor' || this.tradeNpc !== state.npc) { this.tradeInventoryOpen = true; this.tradeView = 'vendor'; this.vendorFilter = 'all'; this.selectedUid = null; }
+      if (!['vendor', 'gamble'].includes(this.previousPanel) || this.tradeNpc !== state.npc) { this.tradeInventoryOpen = true; this.tradeView = 'vendor'; this.vendorFilter = 'all'; this.selectedUid = null; }
       this.tradeNpc = state.npc;
     } else { this.tradeInventoryOpen = false; this.tradeView = 'vendor'; this.tradeNpc = null; }
     if (this.inputArea !== state.area || !this.activeGame()) this.resetControls();
@@ -290,12 +291,15 @@ export class GameUI {
     this.fields.get('xp-fill')!.style.width = `${progress * 100}%`;
     this.text('xp-label', p.level >= 99 ? '已满级' : `经验 ${Math.floor(progress * 100)}%`);
     this.fields.get('xp-fill')!.parentElement!.title = `经验 ${Math.floor(p.experience).toLocaleString()} / ${next.toLocaleString()}`;
-    this.text('left-skill', `${this.skillName(p.leftSkill)} · 左`); this.text('right-skill', `${this.skillName(p.rightSkill)} · 右`);
-    this.fields.get('left-skill')!.title = '战场单击左键攻击一次，按住连续攻击；点击此处选择左键技能'; this.fields.get('right-skill')!.title = '战场单击右键施法一次，按住连续施法；点击此处选择右键技能，1–8 只切换技能';
+    const castAvailable = this.canCast(), rightSkillName = `${this.skillName(p.rightSkill)}${castAvailable ? '' : '（不可用）'}`;
+    this.text('left-skill', `${this.skillName(p.leftSkill)} · 左`); this.text('right-skill', `${rightSkillName} · 右`);
+    this.fields.get('right-skill')!.classList.toggle('skill-unavailable', !castAvailable);
+    this.fields.get('touch-cast')!.classList.toggle('skill-unavailable', !castAvailable);
+    this.fields.get('left-skill')!.title = '战场单击左键攻击一次，按住连续攻击；点击此处选择左键技能'; this.fields.get('right-skill')!.title = castAvailable ? '战场单击右键施法一次，按住连续施法；点击此处选择右键技能，1–8 只切换技能' : '当前未获得或未支持此技能；请学习技能、切换到提供该技能的武器组，或点击重新绑定可用技能';
     this.fields.get('left-skill')!.setAttribute('aria-label', `选择左键技能：${this.skillName(p.leftSkill)}`);
-    this.fields.get('right-skill')!.setAttribute('aria-label', `选择右键技能：${this.skillName(p.rightSkill)}`);
-    this.text('touch-attack-skill', this.skillName(p.leftSkill)); this.text('touch-cast-skill', this.skillName(p.rightSkill));
-    (this.fields.get('touch-cast') as HTMLButtonElement).disabled = !this.activeGame() || !!state.area.def.town || !this.canCast();
+    this.fields.get('right-skill')!.setAttribute('aria-label', `选择右键技能：${rightSkillName}`);
+    this.text('touch-attack-skill', this.skillName(p.leftSkill)); this.text('touch-cast-skill', castAvailable ? this.skillName(p.rightSkill) : `不可用 · ${this.skillName(p.rightSkill)}`);
+    (this.fields.get('touch-cast') as HTMLButtonElement).disabled = !this.activeGame() || !!state.area.def.town || !castAvailable;
     (this.fields.get('touch-attack') as HTMLButtonElement).disabled = !this.activeGame() || !!state.area.def.town;
     this.updateNearbyActions();
     const runButton = this.hud.querySelector('.run-button'); if (runButton) { runButton.textContent = p.running ? '奔跑' : '行走'; runButton.setAttribute('aria-pressed', String(p.running)); }
@@ -365,7 +369,7 @@ export class GameUI {
     if (!this.state.characters.some(c => c.id === this.selectedSaveId)) this.selectedSaveId = this.state.characters.find(c => c.id === this.state.activeSaveId)?.id ?? this.state.characters[0]?.id ?? null;
     for (const save of this.state.characters) {
       const def = getClass(save.classId);
-      const card = btn('', () => { this.selectedSaveId = save.id; this.titleSignature = ''; this.buildTitle(); }, 'character-save', this.state.loadingSave);
+      const card = btn('', () => { this.selectedSaveId = save.id; }, 'character-save', this.state.loadingSave);
       card.dataset.saveId = save.id; card.setAttribute('aria-pressed', String(save.id === this.selectedSaveId)); card.classList.toggle('selected', save.id === this.selectedSaveId);
       const info = el('div', 'character-save-info');
       const details = el('div', 'saved-details');
@@ -446,8 +450,8 @@ export class GameUI {
     if (s.panel === 'none') return 'none';
     if (s.panel === 'catalog') return JSON.stringify([s.panel, this.catalogKind, this.catalogQuery, this.catalogPage, this.catalogSelected]);
     const base: unknown[] = [s.panel, this.selectedUid, this.selectedSkill, this.skillTree, this.bindRight, this.questAct, p.level, p.classId, p.difficulty, s.identifySource, s.paused, p.dead];
-    if (['inventory', 'stash', 'cube', 'vendor'].includes(s.panel)) base.push(p.inventory, p.equipment, p.stash, p.cube, p.gold, p.weaponSwap, s.vendorItems, s.npc, s.dialogue, this.socketRune, s.stats?.strength, s.stats?.dexterity);
-    if (s.panel === 'vendor') base.push(this.vendorFilter, this.tradeInventoryOpen, this.tradeView);
+    if (['inventory', 'stash', 'cube', 'vendor', 'gamble'].includes(s.panel)) base.push(p.inventory, p.equipment, p.stash, p.cube, p.gold, p.weaponSwap, s.vendorItems, s.gamblingOffers, s.npc, s.dialogue, this.socketRune, s.stats?.strength, s.stats?.dexterity, s.selectedItem);
+    if (s.panel === 'vendor' || s.panel === 'gamble') base.push(this.vendorFilter, this.tradeInventoryOpen, this.tradeView);
     if (s.panel === 'character') base.push(s.stats, p.statPoints, p.skillPoints, p.experience);
     if (s.panel === 'skills') base.push(p.skills, p.skillPoints, p.leftSkill, p.rightSkill, p.equipment, this.hotkeys, s.stats);
     if (s.panel === 'quests') base.push(p.quests, p.unlockedActs);
@@ -455,7 +459,7 @@ export class GameUI {
     return JSON.stringify(base);
   }
 
-  private isTrading() { return this.state.screen === 'game' && this.state.panel === 'vendor' && !!NPCS[this.state.npc ?? '']?.services.includes('trade'); }
+  private isTrading() { return this.state.screen === 'game' && (this.state.panel === 'vendor' && !!NPCS[this.state.npc ?? '']?.services.includes('trade') || this.state.panel === 'gamble' && this.state.npc === 'gheed'); }
 
   private updatePanelButtons() {
     for (const node of this.hud.querySelectorAll<HTMLButtonElement>('[data-panel]')) {
@@ -494,23 +498,24 @@ export class GameUI {
   }
 
   private renderTradePanels() {
+    const gambling = this.state.panel === 'gamble', merchantLabel = gambling ? '赌博' : '商店';
     const workspace = el('div', `trade-workspace${this.tradeInventoryOpen ? '' : ' trade-bag-closed'}`); this.panelLayer.append(workspace);
     const nav = el('nav', 'trade-switcher'); nav.setAttribute('aria-label', '交易窗口切换');
-    for (const [view, label] of [['vendor', '商店'], ['inventory', this.tradeInventoryOpen ? '背包 · I' : '打开背包 · I']] as const) {
+    for (const [view, label] of [['vendor', merchantLabel], ['inventory', this.tradeInventoryOpen ? '背包 · I' : '打开背包 · I']] as const) {
       const button = btn(label, () => this.showTradeView(view), `tab-button${this.tradeView === view ? ' active' : ''}`);
       button.dataset.tradeView = view; button.dataset.focus = `trade-view:${view}`; button.setAttribute('aria-pressed', String(this.tradeView === view)); nav.append(button);
     }
     workspace.append(nav);
     for (const kind of ['vendor', 'inventory'] as const) {
       if (kind === 'inventory' && !this.tradeInventoryOpen) continue;
-      const title = kind === 'vendor' ? `${NPCS[this.state.npc ?? '']?.name ?? '商人'} · 商店` : PANEL_NAMES.inventory;
+      const title = kind === 'vendor' ? `${NPCS[this.state.npc ?? '']?.name ?? '商人'} · ${merchantLabel}` : PANEL_NAMES.inventory;
       const frame = el('section', `gothic-panel panel-${kind}${kind === 'inventory' ? ' trade-inventory' : ''}`); frame.setAttribute('aria-label', title);
       const heading = el('div', 'panel-heading'); heading.append(el('span', 'panel-inscription', kind === 'vendor' ? '交易' : '装备'), el('h2', '', title));
-      const close = btn('关闭 ×', () => kind === 'inventory' ? this.toggleTradeInventory() : this.send({ type: 'panel', panel: this.tradeInventoryOpen ? 'inventory' : 'none' }, true), 'close-button');
-      close.dataset.focus = `trade-close:${kind}`; close.setAttribute('aria-label', kind === 'vendor' ? '关闭商店，结束交易' : '关闭背包，保留商店');
+      const close = btn('关闭 ×', () => kind === 'inventory' ? this.toggleTradeInventory() : this.send({ type: 'panel', panel: 'none' }), 'close-button');
+      close.dataset.focus = `trade-close:${kind}`; close.setAttribute('aria-label', kind === 'vendor' ? `关闭${merchantLabel}，结束交易并返回场景` : `关闭背包，保留${merchantLabel}`);
       const header = el('header', 'panel-header'); header.append(heading, close);
       const body = el('div', 'panel-body'); body.dataset.scroll = `panel:${kind}`;
-      if (kind === 'vendor') this.vendorPanel(body); else this.inventoryPanel(body);
+      if (kind === 'vendor') { if (gambling) this.gamblingPanel(body); else this.vendorPanel(body); } else this.inventoryPanel(body);
       frame.append(header, body); workspace.append(frame);
     }
   }
@@ -555,6 +560,7 @@ export class GameUI {
       case 'quests': this.questsPanel(body); break;
       case 'stash': case 'cube': this.storagePanel(body, panel); break;
       case 'vendor': this.vendorPanel(body); break;
+      case 'gamble': this.gamblingPanel(body); break;
       case 'waypoint': this.waypointPanel(body); break;
       case 'help': this.helpPanel(body); break;
       case 'catalog': this.catalogPanel(body); break;
@@ -635,14 +641,21 @@ export class GameUI {
     const layout = el('div', 'inventory-layout'), equipment = el('div', 'equipment-column');
     equipment.append(el('div', 'section-caption', '装备 · 双击穿戴 / 点击查看'));
     const paperdoll = el('div', 'paperdoll'); paperdoll.append(portrait(p.classId));
+    const weaponTabs = el('div', 'weapon-set-tabs'); weaponTabs.setAttribute('role', 'tablist'); weaponTabs.setAttribute('aria-label', '武器组');
+    const primaryWeapon = btn('主武器', () => { if (p.weaponSwap) this.send({ type: 'swap' }); }, `weapon-set-tab${p.weaponSwap ? '' : ' active'}`, this.state.paused || p.dead);
+    const secondaryWeapon = btn('副武器', () => { if (!p.weaponSwap) this.send({ type: 'swap' }); }, `weapon-set-tab${p.weaponSwap ? ' active' : ''}`, this.state.paused || p.dead);
+    primaryWeapon.setAttribute('role', 'tab'); primaryWeapon.setAttribute('aria-selected', String(!p.weaponSwap)); primaryWeapon.title = '主武器组 · 快捷键 X';
+    secondaryWeapon.setAttribute('role', 'tab'); secondaryWeapon.setAttribute('aria-selected', String(p.weaponSwap)); secondaryWeapon.title = '副武器组 · 快捷键 X';
+    weaponTabs.append(primaryWeapon, secondaryWeapon); paperdoll.append(weaponTabs);
     const slots: Slot[] = ['head', 'neck', 'body', 'weapon', 'offhand', 'gloves', 'belt', 'boots', 'ring1', 'ring2', 'weapon2', 'offhand2'];
     for (const slot of slots) {
       const item = p.equipment[slot], wrap = el('div', `equipment-slot slot-${slot}${p.weaponSwap && ['weapon2', 'offhand2'].includes(slot) || !p.weaponSwap && ['weapon', 'offhand'].includes(slot) ? ' active-weapon' : ''}`);
+      wrap.dataset.slot = slot;
       if (item) { const b = this.itemButton(item); b.addEventListener('dblclick', () => this.send({ type: 'unequip', slot })); wrap.append(b); }
-      else { const b = btn(SLOT_NAMES[slot], () => this.selectItem(null), 'empty-slot'); b.setAttribute('aria-label', `${SLOT_NAMES[slot]}：未装备`); wrap.append(b); }
+      else { const b = btn('', () => this.selectItem(null), 'empty-slot'); b.setAttribute('aria-label', `${SLOT_NAMES[slot]}：未装备`); b.title = `${SLOT_NAMES[slot]}：未装备`; wrap.append(b); }
       wrap.append(el('span', 'slot-label', SLOT_NAMES[slot])); paperdoll.append(wrap);
     }
-    equipment.append(paperdoll, btn(`切换武器组 · ${p.weaponSwap ? 'II' : 'I'} · X`, () => this.send({ type: 'swap' }), 'secondary-button'));
+    equipment.append(paperdoll);
     const bag = el('div', 'bag-column');
     if (this.isTrading()) { const sale = el('div', 'sell-dropzone', '拖到此处出售 · 松手确认'); sale.dataset.sellDropzone = 'inventory'; sale.setAttribute('aria-label', '背包物品出售区域'); bag.append(sale); }
     bag.append(el('div', 'section-caption', `行囊 · ${INVENTORY_WIDTH} × ${INVENTORY_HEIGHT}`), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory'), el('div', 'gold-line', `${p.gold.toLocaleString()} 金币`));
@@ -668,7 +681,7 @@ export class GameUI {
     const { item, location, slot } = selected, p = this.state.player!, base = getBase(item.code);
     const heading = el('header', 'item-detail-heading'); heading.append(el('h3', `quality-${item.quality}`, itemLabel(item)), el('span', 'muted', { inventory: '行囊', stash: '储物箱', cube: '方块', equipment: '已装备', vendor: '商店' }[location])); detail.append(heading);
     const properties = el('div', 'item-properties'); if (owner) properties.dataset.scroll = `detail:${owner}`;
-    for (const line of lines(describeItem(item))) if (line) properties.append(el('div', 'item-property', line));
+    properties.append(...this.itemProperties(item));
     properties.append(el('p', 'muted', `占用 ${item.width} × ${item.height} · 物品等级 ${item.ilvl}${item.ethereal ? ' · 无形' : ''}${item.runeword ? ` · ${runewordName(item.runeword)}` : ''}`));
     properties.hidden = !full; detail.append(properties);
     const actions = el('div', 'item-actions'); actions.setAttribute('role', 'group'); actions.setAttribute('aria-label', `${itemLabel(item)}操作`);
@@ -690,8 +703,8 @@ export class GameUI {
         actions.append(btn('存入仓库', () => { if (this.state.panel !== 'stash') this.send({ type: 'panel', panel: 'stash' }); this.send({ type: 'storage', uid: item.uid, destination: 'stash' }); }, 'secondary-button', !canStash));
         if (!canStash) actions.lastElementChild!.setAttribute('title', '靠近营地储物箱后可存入');
         actions.append(btn('放入方块', () => this.send({ type: 'storage', uid: item.uid, destination: 'cube' }), 'secondary-button', !this.ownsCube() || item.code === 'box'));
-        actions.append(btn('出售', () => this.send({ type: 'sell', uid: item.uid }), 'secondary-button', this.state.panel !== 'vendor' || !NPCS[this.state.npc ?? '']?.services.includes('trade')));
-        if (this.state.panel !== 'vendor') actions.lastElementChild!.setAttribute('title', '与商人交谈后，在交易面板出售');
+        actions.append(btn('出售', () => this.send({ type: 'sell', uid: item.uid }), 'secondary-button', !this.isTrading()));
+        if (!this.isTrading()) actions.lastElementChild!.setAttribute('title', '与商人交谈后，在交易面板出售');
       } else actions.append(btn('取回背包', () => this.send({ type: 'storage', uid: item.uid, destination: 'inventory' }), 'secondary-button'));
     }
     detail.append(actions);
@@ -704,7 +717,6 @@ export class GameUI {
       select.addEventListener('change', () => { this.socketRune = select.value; socketButton.disabled = !select.value; });
       socketRow.append(select, socketButton); detail.append(socketRow, el('p', 'warning', '镶嵌顺序不可逆。符文之语只适用于正确底材、孔数与符文顺序。'));
     }
-    if (base && location !== 'vendor') properties.append(el('p', 'muted', `需求：等级 ${item.requiredLevel} · 力量 ${base.strength} · 敏捷 ${base.dexterity}`));
     [...actions.querySelectorAll<HTMLButtonElement>('button')].forEach((button, index) => { button.dataset.focus ||= `action:${item.uid}:${index}`; });
     if (this.state.identifySource !== null) {
       const cancel = btn('取消鉴定', () => { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); }, 'secondary-button'); cancel.dataset.focus = 'cancel-identify'; actions.append(cancel);
@@ -719,7 +731,7 @@ export class GameUI {
     const p = this.state.player!, layout = el('div', 'storage-layout'), store = el('div', 'storage-column'), bag = el('div', 'bag-column');
     if (destination === 'cube' && !this.ownsCube()) { body.append(el('p', 'warning', '尚未获得赫拉迪克方块。请在旅途中寻找；不能凭空使用方块。'), btn('查看背包', () => this.send({ type: 'panel', panel: 'inventory' }), 'secondary-button')); return; }
     if (destination === 'stash' && !this.nearFacility('stash')) { body.append(el('p', 'warning', '储物箱在营地中。靠近并点击箱子后才能访问。')); return; }
-    store.append(el('div', 'section-caption', destination === 'stash' ? '私人仓库 · 6 × 8' : '方块容器 · 3 × 4'), this.grid(p[destination], destination === 'stash' ? 6 : 3, destination === 'stash' ? 8 : 4, destination));
+    store.append(el('div', 'section-caption', destination === 'stash' ? `私人仓库 · ${STASH_WIDTH} × ${STASH_HEIGHT}` : '方块容器 · 3 × 4'), this.grid(p[destination], destination === 'stash' ? STASH_WIDTH : 3, destination === 'stash' ? STASH_HEIGHT : 4, destination));
     if (destination === 'cube') store.append(btn('转化', () => this.send({ type: 'transmute' }), 'primary-button'), el('p', 'muted', '仅已实现且材料匹配的配方可转化；失败不会凭空产出物品。'));
     bag.append(el('div', 'section-caption', '行囊 · 点击查看 / 双击装备'), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory')); layout.append(store, bag); body.append(layout, this.itemDetail());
     if (destination === 'cube') {
@@ -884,18 +896,23 @@ export class GameUI {
     const services = NPCS[this.state.npc ?? '']?.services ?? [], canTrade = services.includes('trade');
     body.append(el('h3', 'npc-name', npc?.name || '营地旅人'), el('p', 'npc-dialogue', this.state.dialogue || '与旅人交谈，了解这片土地。'));
     const controls = el('div', 'button-row npc-services');
+    if (this.state.npc === 'gheed' && services.includes('gamble')) controls.append(btn('赌博', () => { this.closeItemPopup(); this.tradeView = 'vendor'; this.send({ type: 'gamble-open' }); this.invalidatePanel(); }, 'primary-button', this.state.paused || p.dead));
     if (services.includes('heal')) controls.append(btn('治疗', () => this.send({ type: 'heal' }), 'secondary-button'));
-    if (canTrade || this.state.npc === 'cain') controls.append(btn('鉴定全部', () => this.send({ type: 'identify' }), 'secondary-button'));
+    if (this.state.npc === 'cain' && p.quests[questKey(p, 'a1q3')] === 3) controls.append(btn('鉴定全部', () => this.send({ type: 'identify' }), 'secondary-button', this.state.paused || p.dead));
     if (services.includes('repair')) controls.append(btn('修理装备', () => this.send({ type: 'repair' }), 'secondary-button'));
     if (this.state.npc === 'akara') controls.append(btn('任务奖励洗点', () => this.send({ type: 'respec' }), 'secondary-button', p.quests[questKey(p.difficulty, 'respec')] !== 1));
     if (this.state.npc === 'warriv' && p.unlockedActs >= 2) controls.append(btn('向东旅行 · 鲁高因', () => this.send({ type: 'travel', areaId: 40 }), 'primary-button'));
     if (controls.childElementCount) body.append(controls);
     if (!canTrade) return;
-    body.append(el('div', 'gold-line', `持有 ${p.gold.toLocaleString()} 金币`), el('p', 'warning vendor-warning', '改编便利商店，不等于原版掉落与交易：大紫、全等级符文与宝石可购买，镶嵌需求不变。三种钥匙仅可购买、保存，不能开启尚未实现的 Uber 门。黑毛事件尚未开放，出售乔丹不会召唤。'));
+    const charsi = this.state.npc === 'charsi';
+    const notice = charsi ? '恰西的货架只陈列武器；她也可以修理已装备且并非无形的物品。' : '改编便利商店，不等于原版掉落与交易：大紫、全等级符文与宝石可购买，镶嵌需求不变。三种钥匙仅可购买、保存，不能开启尚未实现的 Uber 门。黑毛事件尚未开放，出售乔丹不会召唤。';
+    body.append(el('div', 'gold-line', `持有 ${p.gold.toLocaleString()} 金币`), el('p', 'warning vendor-warning', notice));
     const filters = el('div', 'panel-tabs vendor-filters'); filters.setAttribute('role', 'group'); filters.setAttribute('aria-label', '商店商品分类');
-    for (const [key, label] of [['all', '全部商品'], ['gems', '符文与宝石 · 33 + 35'], ['keys', '事件 / 珍品']]) {
-      const button = btn(label!, () => { this.vendorFilter = key!; this.invalidatePanel(); }, `tab-button${this.vendorFilter === key ? ' active' : ''}`);
-      button.dataset.focus = `vendor-filter:${key}`; button.setAttribute('aria-pressed', String(this.vendorFilter === key)); filters.append(button);
+    if (!charsi) {
+      for (const [key, label] of [['all', '全部商品'], ['gems', '符文与宝石 · 33 + 35'], ['keys', '事件 / 珍品']]) {
+        const button = btn(label!, () => { this.vendorFilter = key!; this.invalidatePanel(); }, `tab-button${this.vendorFilter === key ? ' active' : ''}`);
+        button.dataset.focus = `vendor-filter:${key}`; button.setAttribute('aria-pressed', String(this.vendorFilter === key)); filters.append(button);
+      }
     }
     const ranks = new Map([...RUNES, ...GEMS].map((item, index) => [item.code, index]));
     const items = this.state.vendorItems.filter(item => {
@@ -913,7 +930,39 @@ export class GameUI {
       row.append(button, buy); stock.append(row);
     }
     if (!items.length) stock.append(el('p', 'muted', '此分类暂无商品。'));
-    body.append(filters, el('div', 'section-caption vendor-stock-caption', `陈列 ${items.length} 件 · 点击图标查看属性`), stock, this.itemDetail('vendor'));
+    if (filters.childElementCount) body.append(filters);
+    body.append(el('div', 'section-caption vendor-stock-caption', `${charsi ? '武器 ' : ''}陈列 ${items.length} 件 · 点击图标查看属性`), stock, this.itemDetail('vendor'));
+  }
+
+  private gamblingPanel(body: HTMLElement) {
+    const p = this.state.player!, blocked = this.state.paused || p.dead;
+    const controls = el('div', 'button-row gambling-controls');
+    controls.append(btn('刷新货物', () => { this.closeItemPopup(); this.send({ type: 'gamble-refresh' }); this.invalidatePanel(); }, 'primary-button', blocked), btn('返回基德商店', () => { this.closeItemPopup(); this.send({ type: 'panel', panel: 'vendor' }, true); this.invalidatePanel(); }, 'secondary-button'));
+    body.append(el('p', 'npc-dialogue', '“来试试运气吧。”'), controls, el('div', 'gold-line', `持有 ${p.gold.toLocaleString()} 金币 · 折扣 ${gamblingDiscount(p)}%`), el('p', 'muted', '品质与属性购买后揭晓，立即鉴定。同一货位可以连续购买；右键图标或点击「赌博购买」。'));
+    const stock = el('div', 'gambling-stock'); stock.setAttribute('aria-label', '赌博货物陈列');
+    for (const offer of this.state.gamblingOffers) {
+      const base = getBase(offer.code)!, price = gamblingCost(offer.code, p);
+      const buy = () => {
+        this.closeItemPopup(); const previous = this.state.selectedItem;
+        this.send({ type: 'gamble-buy', uid: offer.uid });
+        if (this.state.selectedItem !== previous) this.selectedUid = this.state.selectedItem;
+        this.invalidatePanel();
+      };
+      const row = el('div', 'gambling-slot'); row.dataset.offerUid = offer.uid; row.dataset.code = offer.code;
+      const icon = btn('', buy, 'gambling-icon', blocked || p.gold < price);
+      const image = el('img', 'item-sprite'); image.src = artUrl(itemArtKey(offer.code)); image.alt = ''; image.draggable = false;
+      icon.append(image); icon.setAttribute('aria-label', `${base.name} · 赌博购买`); icon.title = `${base.name} · ${price.toLocaleString()} 金币 · 品质未知`;
+      icon.addEventListener('contextmenu', event => { event.preventDefault(); if (!icon.disabled) buy(); });
+      const purchase = btn(`${price.toLocaleString()} 金币`, buy, 'small-button', blocked || p.gold < price); purchase.setAttribute('aria-label', `${base.name} · ${price.toLocaleString()} 金币 · 赌博购买`); purchase.dataset.focus = `gamble:${offer.uid}`;
+      row.append(icon, el('span', 'gambling-base-name', base.name), purchase); stock.append(row);
+    }
+    body.append(stock);
+    const result = p.inventory.find(i => i.uid === this.state.selectedItem);
+    if (result) {
+      const last = el('section', 'gambling-result'); last.setAttribute('aria-label', '最近赌博结果'); last.append(el('div', 'section-caption', '最近获得 · 已鉴定'), this.itemButton(result), el('strong', `item-name quality-${result.quality}`, itemLabel(result)));
+      body.append(last, this.itemDetail('inventory'));
+    }
+    body.append(el('p', 'warning gambling-baseline', '采用经典赌博算法与重制版刷新交互；精确报价、底材升级冲突及词缀实现边界见旅人手册，不宣称重制版逐项实测一致。'));
   }
 
   private catalogPanel(body: HTMLElement) {
@@ -941,21 +990,29 @@ export class GameUI {
       const visible = results.slice(this.catalogPage * 24, (this.catalogPage + 1) * 24);
       if (!visible.some(entry => entry.id === this.catalogSelected)) this.catalogSelected = visible[0]?.id ?? '';
       list.replaceChildren(); detail.replaceChildren();
+      let previousRunewordGroup = '';
       for (const entry of visible) {
+        const runewordGroup = entry.kind === 'runeword' ? runewordEquipmentGroup(entry) : '';
+        if (runewordGroup && runewordGroup !== previousRunewordGroup) {
+          list.append(el('div', 'catalog-group-heading', `装备类型 · ${runewordGroup}`));
+          previousRunewordGroup = runewordGroup;
+        }
         const card = btn('', () => { this.catalogSelected = entry.id; refresh(); }, `catalog-entry catalog-${entry.kind}${this.catalogSelected === entry.id ? ' selected' : ''}`);
         card.dataset.entryId = entry.id; card.setAttribute('aria-pressed', String(this.catalogSelected === entry.id));
         if (entry.code) { const image = el('img', 'catalog-icon'); image.src = artUrl(itemArtKey(entry.code)); image.alt = ''; card.append(image); }
-        const label = el('span', 'catalog-entry-label'); label.append(el('strong', '', entry.name), el('small', 'muted', entry.code || entry.id));
+        const label = el('span', 'catalog-entry-label');
+        const level = entry.kind === 'runeword' ? runewordRequiredLevel(entry) : Number.POSITIVE_INFINITY;
+        label.append(el('strong', '', entry.name), el('small', 'muted', entry.kind === 'runeword' ? `${runewordGroup} · ${Number.isFinite(level) ? `需求等级 ${level}` : '等级未定义'}` : entry.code || entry.id));
         card.append(label); list.append(card);
       }
       const selected = results.find(entry => entry.id === this.catalogSelected);
       if (selected) {
         detail.append(el('h3', `catalog-${selected.kind}`, selected.name), el('p', 'catalog-entry-status', selected.status));
         for (const line of selected.lines.filter(line => !line.startsWith('原始字段：'))) detail.append(el('div', 'item-property', line));
-        const properties = Object.entries(selected.raw).filter(([key, value]) => value !== '' && /^(prop\d+|aprop\d+[ab]|PCode\d+[ab]|FCode\d+|T1Code\d+|mod\d+code|(weapon|helm|shield)Mod\d+Code)$/.test(key));
+        const properties = equipmentPropertyLines(selected);
         if (properties.length) {
-          detail.append(el('h4', 'section-caption', '原始属性代码 · 不代表全部生效'));
-          for (const [key, value] of properties) detail.append(el('div', 'item-property', `${key} = ${value}`));
+          detail.append(el('h4', 'section-caption', '装备属性 · 定义展示不代表全部已生效'));
+          for (const property of properties) detail.append(el('div', 'item-property', property));
         }
         const raw = el('details', 'catalog-raw'); raw.append(el('summary', '', '查看完整原始定义与参数'), el('pre', '', JSON.stringify(selected.raw, null, 2))); detail.append(raw);
       } else list.append(el('p', 'muted', '没有匹配的装备定义，请尝试名称或代码。'));
@@ -970,21 +1027,27 @@ export class GameUI {
   }
 
   private helpPanel(body: HTMLElement) {
-    const rows: [string, string][] = [['WASD / 方向键', '固定 3D 视角，按屏幕方向连续移动；松开立即停止。可边移动边用鼠标瞄准。'], ['鼠标 / 左键', '鼠标指向地面或敌人瞄准，单击左键攻击一次，按住连续攻击。点击设施交互、点击掉落拾取；仅营地内点击地面寻路移动。'], ['右键', '单击施放右键绑定的已获得、已支持的主动技能，按住连续施放，松开停止。技能树中绑定成功会关闭面板；营地内禁用攻击技能。'], ['1–8', '切换已分配的右键技能；在技能详情中点击数字分配快捷键，本次旅人会话有效。未获得或不可执行的技能不能绑定。'], ['Shift+1–4', '使用腰带对应列的药水；也可点击腰带。'], ['Q / F', '使用腰带中当前可取用的生命 / 法力药水；没有对应药水时尝试回复活力药水，不跨过列首药水。'], ['E', '与三格内最近的设施交互或拾取掉落；超过范围须先靠近。'], ['I / C / T / J', '背包 / 角色属性 / 技能树 / 任务日志。'], ['L / 图鉴', '查阅全部装备定义、原始参数及实现状态；只读，不生成装备。'], ['X / R', '切换武器组 / 行走与奔跑。'], ['Tab / Alt', '切换探索地图 / 按住显示掉落名称。面板内 Tab 保留键盘导航。'], ['Esc / H', '关闭面板；无面板时暂停或继续 / 打开旅人指南。打开面板、暂停、切走窗口或取消触控都会释放移动与攻击，关闭后需重新按下。'], ['触屏', '左下摇杆按屏幕方向连续移动；轻点攻击或施法一次，按住连续释放，自动瞄准九格内最近的敌人。交互 / 拾取按钮选择三格内最近的设施 / 掉落。'], ['行囊物品', '单击查看详情，双击装备/卸下。药水、卷轴与书右键使用，触屏或键盘可选择物品后点击「使用」（Enter 激活按钮）。回城卷轴为蓝色、鉴定卷轴为红色。右键鉴定卷轴后鼠标变为鉴定样式，点击未鉴定行囊物品即可鉴定；再次右键或 Esc 取消。触屏点击「使用」后点选目标。符文宝石通过详情按钮镶嵌。'], ['存档', '点击保存后存储在当前浏览器；标题页继续旅程。离线单人，无云端账户。']];
+    const rows: [string, string][] = [['WASD / 方向键', '固定 3D 视角，按屏幕方向连续移动；松开立即停止。可边移动边用鼠标瞄准。'], ['鼠标 / 左键', '鼠标指向地面或敌人瞄准，单击左键攻击一次，按住连续攻击。点击设施交互、点击掉落拾取；仅营地内点击地面寻路移动。'], ['右键', '单击施放右键绑定的已获得、已支持的主动技能，按住连续施放，松开停止。技能树中绑定成功会关闭面板；营地内禁用攻击技能。'], ['1–8', '切换已分配的右键技能；在技能详情中点击数字分配快捷键，本次旅人会话有效。未获得或不可执行的技能不能绑定。'], ['Shift+1–4', '使用腰带对应列的药水；也可点击腰带。'], ['Q / F', '使用腰带中当前可取用的生命 / 法力药水；没有对应药水时尝试回复活力药水，不跨过列首药水。'], ['E', '与三格内最近的设施交互或拾取掉落；超过范围须先靠近。'], ['I / C / T / J', '背包 / 角色属性 / 技能树 / 任务日志。'], ['L / 图鉴', '查阅全部装备定义、原始参数及实现状态；只读，不生成装备。'], ['X / R', 'X 按物理按键切换武器组，面板打开时也有效，中文输入法下无需切换英文；输入框、暂停、死亡或拖动物品时不触发。R 切换行走与奔跑。'], ['Tab / Alt', '切换探索地图 / 按住显示掉落名称。面板内 Tab 保留键盘导航。'], ['Esc / H', '关闭面板；无面板时暂停或继续 / 打开旅人指南。打开面板、暂停、切走窗口或取消触控都会释放移动与攻击，关闭后需重新按下。'], ['触屏', '左下摇杆按屏幕方向连续移动；轻点攻击或施法一次，按住连续释放，自动瞄准九格内最近的敌人。交互 / 拾取按钮选择三格内最近的设施 / 掉落。'], ['行囊物品', '单击查看详情，双击装备/卸下。药水、卷轴与书右键使用，触屏或键盘可选择物品后点击「使用」（Enter 激活按钮）。回城卷轴为蓝色、鉴定卷轴为红色。右键鉴定卷轴后鼠标变为鉴定样式，点击未鉴定行囊物品即可鉴定；再次右键或 Esc 取消。触屏点击「使用」后点选目标。符文宝石通过详情按钮镶嵌。'], ['存档', '点击保存后存储在当前浏览器；标题页继续旅程。离线单人，无云端账户。']];
     for (const [key, description] of rows) { const row = el('div', 'help-row'); row.append(el('kbd', '', key), el('p', '', description)); body.append(row); }
     body.append(el('h3', 'section-caption', '诚实的实现边界'), el('p', 'muted', 'LoD 1.14d 扩展模式规则重构研究项目，非官方。原创写实角色、物品与材质贴图；不含原版美术、音乐或代码。人物使用程序化骨骼动作，非原版完整方向动画与行动帧。五幕地图与技能数据收录不代表完整服务器行为、首领脚本、词缀和配方已经验收。'));
   }
 
   private updateOverlay() {
     const s = this.state, p = s.player!;
-    const signature = `${p.dead}:${s.paused}:${s.panel}`;
+    const signature = `${p.dead}:${s.paused}:${s.panel}:${s.savingAndExiting}:${s.storageError}`;
     this.overlay.hidden = !p.dead && (!s.paused || s.panel !== 'none');
     if (this.overlaySignature === signature) return; this.overlaySignature = signature; this.overlay.replaceChildren();
     if (this.overlay.hidden) return;
     const card = el('section', `modal-card${p.dead ? ' death-card' : ''}`); card.setAttribute('role', 'dialog'); card.setAttribute('aria-modal', 'true');
     card.append(el('div', 'eyebrow', p.dead ? 'THE EMBER REMAINS' : 'A MOMENT OF SILENCE'), el('h2', '', p.dead ? '你已倒下' : '旅途暂歇'), el('p', 'muted', p.dead ? '回到营地重新出发，取回遗体与失落的装备。' : '黑暗仍在等待。准备好后继续你的旅途。'));
     if (p.dead) card.append(btn('在营地复活', () => this.send({ type: 'respawn' }), 'primary-button'));
-    else card.append(btn('继续 · Esc', () => this.send({ type: 'pause' }), 'primary-button'), btn('保存旅程', () => this.send({ type: 'save' }), 'secondary-button'), btn('旅人指南', () => this.send({ type: 'panel', panel: 'help' }), 'secondary-button'), btn('返回角色列表', () => this.send({ type: 'title' }), 'secondary-button'));
+    else {
+      card.setAttribute('aria-busy', String(s.savingAndExiting));
+      const saveExitNote = el('p', 'muted', '保存当前角色进度到本机，成功后返回角色菜单；再次进入会从营地出发，怪物会刷新。'); saveExitNote.id = 'save-exit-note';
+      const saveExit = btn(s.savingAndExiting ? '正在保存，请稍候…' : '保存并返回角色菜单', () => this.send({ type: 'save-and-title' }), 'secondary-button', s.savingAndExiting); saveExit.setAttribute('aria-describedby', saveExitNote.id);
+      card.append(btn('继续 · Esc', () => this.send({ type: 'pause' }), 'primary-button', s.savingAndExiting), btn('保存旅程', () => this.send({ type: 'save' }), 'secondary-button', s.savingAndExiting), btn('旅人指南', () => this.send({ type: 'panel', panel: 'help' }), 'secondary-button', s.savingAndExiting), saveExit, saveExitNote);
+      if (s.storageError && !s.savingAndExiting) { const error = el('p', 'warning', `${s.storageError} 未返回角色菜单，请重试保存。`); error.setAttribute('role', 'alert'); card.append(error); }
+    }
     this.overlay.append(card);
   }
 
@@ -1094,8 +1157,12 @@ export class GameUI {
     node.addEventListener('focus', () => { if (this.lastItemPointer !== 'touch' && !this.drag?.active && !this.popup) { const r = node.getBoundingClientRect(); node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, r.right, r.top); } });
     node.addEventListener('blur', () => { node.removeAttribute('aria-describedby'); if (this.hoveringItem === item) this.hideTooltip(); });
   }
+  private itemProperties(item: Item): HTMLElement[] {
+    const unmet = new Set(unmetItemRequirements(this.state.player!, item));
+    return lines(describeItem(item)).filter(Boolean).map(line => el('div', `item-property${unmet.has(line) ? ' unmet-requirement' : ''}`, line));
+  }
   private showTooltip(item: Item, x: number, y: number) {
-    this.hoveringItem = item; this.tooltip.hidden = false; this.tooltip.replaceChildren(el('h3', `quality-${item.quality}`, itemLabel(item)), ...lines(describeItem(item)).filter(Boolean).map(line => el('div', 'item-property', line)));
+    this.hoveringItem = item; this.tooltip.hidden = false; this.tooltip.replaceChildren(el('h3', `quality-${item.quality}`, itemLabel(item)), ...this.itemProperties(item));
     this.positionTooltip(x, y);
   }
   private positionTooltip(x: number, y: number) {
@@ -1216,6 +1283,10 @@ export class GameUI {
       return;
     }
     if (e.repeat) return;
+    if (e.code === 'KeyX') {
+      if (!this.state.area || this.state.player.dead || this.state.paused || this.drag || e.altKey) return;
+      e.preventDefault(); this.send({ type: 'swap' }); this.updateControl(); return;
+    }
     const key = e.key.toLowerCase();
     const panels: Record<string, Panel> = { i: 'inventory', c: 'character', t: 'skills', j: 'quests', l: 'catalog', h: 'help' };
     if (panels[key]) { e.preventDefault(); this.togglePanel(panels[key]!); return; }
@@ -1234,7 +1305,6 @@ export class GameUI {
         }
       }
     } else if (key === 'e') { e.preventDefault(); this.nearbyInteract(true); }
-    else if (key === 'x') { e.preventDefault(); this.send({ type: 'swap' }); }
     else if (key === 'r') { e.preventDefault(); this.send({ type: 'run' }); }
     else if (key === 'tab') { e.preventDefault(); this.send({ type: 'map' }); }
     this.updateControl();
@@ -1346,7 +1416,7 @@ export class GameUI {
       const holds = [...this.touchHolds.values()];
       const touchLeft = this.touchKeyHolds.has(false) || holds.some(h => !h.right), touchRight = this.touchKeyHolds.has(true) || holds.some(h => h.right);
       control.left = !area.def.town && (!!this.pointer && !!(this.pointer.buttons & 1) && !this.pointer.suppressLeft || touchLeft);
-      control.right = !area.def.town && this.canCast() && (!!this.pointer && !!(this.pointer.buttons & 2) || touchRight);
+      control.right = (press === true || !area.def.town && this.canCast()) && (!!this.pointer && !!(this.pointer.buttons & 2) || touchRight);
       if (touchLeft || touchRight) {
         const target = area.monsters.filter(m => !m.dead && Math.hypot(m.x - p.x, m.y - p.y) <= 9 && hasLineOfSight(area, p, m)).sort((a, b) => Math.hypot(a.x - p.x, a.y - p.y) - Math.hypot(b.x - p.x, b.y - p.y))[0];
         control.aim = target ? { x: target.x, y: target.y } : { x: p.x + Math.cos(this.state.facing) * 3, y: p.y + Math.sin(this.state.facing) * 3 };

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "团子", "version": "0.1.0", "identifier": "local.work-agent.tuanzi",
+  "build": { "frontendDist": "../dist", "devUrl": "http://127.0.0.1:1420", "beforeBuildCommand": "npm run build" },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [{ "label": "pet", "title": "团子", "url": "index.html", "width": 160, "height": 160,
+      "transparent": true, "decorations": false, "alwaysOnTop": true, "skipTaskbar": true,
+      "resizable": false, "visible": false, "visibleOnAllWorkspaces": true, "focus": false, "focusable": false, "shadow": false }],
+    "security": {
+      "capabilities": ["pet-master", "pet-panel", "pet-bubble"],
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'self' ipc: http://ipc.localhost http://127.0.0.1:*; script-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'"
+    }
+  },
+  "bundle": { "active": false }
+}

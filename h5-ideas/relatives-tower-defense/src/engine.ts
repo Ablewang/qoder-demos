@@ -1,240 +1,168 @@
-import { questions, relatives, type Card, type Identity, type Question, type Relative } from './content';
+import { dinner, nameOf, nodeById, PILE_LIMIT, type Action, type Beat, type Cast, type Cond, type DinnerNode, type Ending, type Outcome, type Strategy } from './content';
 
-export const MAX_MOOD = 6;
-export const TOTAL_TURNS = 8;
-export type Phase = 'question' | 'feedback' | 'reward' | 'finished';
-export type Reward = 'soup' | 'counter' | 'sincere' | 'crazy';
-export interface Carry {
-  kind: 'followup' | 'ally';
-  asker: Relative;
-  amount: 1;
-}
-export interface Encounter {
-  index: number;
-  question: Question;
-  asker: Relative;
-  basePressure: number;
-  pressure: number;
-  incoming: Carry | null;
-}
-export interface Preview {
-  card: Card;
+export interface State { watching: Cast[]; allies: Cast[]; used: Cast[]; flags: string[] }
+export interface Option {
+  id: string;
+  strategy: Strategy;
+  line: string;
+  intent: string;
   available: boolean;
-  blocked: number;
-  loss: number;
-  cost: number;
-  next: Carry | null;
+  lock: string;
+  risk: string;
+  before: Cast[];
+  after: Cast[];
+  gained: Cast[];
+  spent: Cast[];
+  ending: Ending | null;
 }
-export interface TurnResult {
-  turn: number;
-  question: Question;
-  asker: Relative;
-  basePressure: number;
-  pressure: number;
-  incoming: Carry | null;
-  card: Card;
-  quote: string;
-  reply: string;
-  blocked: number;
-  loss: number;
-  moodBefore: number;
-  moodAfter: number;
-  next: Carry | null;
+export interface Turn extends Option {
+  index: number;
+  scene: number;
+  node: DinnerNode;
+  beats: Beat[];
+  next: string | null;
+  title: string;
+  summary: string;
 }
 export interface Report {
-  won: boolean;
-  reason: string;
+  ending: Ending;
   title: string;
-  identity: Identity;
-  mood: number;
-  turns: number;
-  blocked: number;
-  counters: number;
-  sincere: number;
-  allies: number;
-  history: TurnResult[];
-  highlights: TurnResult[];
-  quotes: string[];
-  lines: string[];
+  summary: string;
+  dishes: number;
+  turns: Turn[];
+  helpers: Cast[];
+  tips: string[];
+}
+export type Phase = 'choose' | 'react' | 'over';
+export const PILE_TITLE = '被全桌围住，先去厨房透口气';
+export const LEAVE_TITLE = '借口离席，这顿先吃到这';
+
+const castOrder = dinner.cast;
+const sorted = (list: Cast[]): Cast[] => castOrder.filter(who => list.includes(who));
+export const names = (list: Cast[]): string => list.length ? list.map(nameOf).join('、') : '没人';
+
+export function holds(cond: Cond, state: State): boolean {
+  if (cond.ally && !(state.allies.includes(cond.ally) && !state.used.includes(cond.ally))) return false;
+  if (cond.used && !state.used.includes(cond.used)) return false;
+  if (cond.unused && state.used.includes(cond.unused)) return false;
+  if (cond.watching && !state.watching.includes(cond.watching)) return false;
+  if (cond.flag && !state.flags.includes(cond.flag)) return false;
+  if (cond.maxWatching !== undefined && state.watching.length > cond.maxWatching) return false;
+  return true;
 }
 
-const copyCarry = (carry: Carry | null): Carry | null => carry ? { ...carry } : null;
+export function initialState(): State {
+  return { watching: sorted(dinner.watching), allies: sorted(dinner.allies), used: [], flags: [] };
+}
+
+function outcomeOf(action: Action, state: State): Outcome {
+  return action.outcomes.find(item => !item.when || holds(item.when, state)) ?? action.outcomes[action.outcomes.length - 1];
+}
+
+export function applyOutcome(outcome: Outcome, state: State): State {
+  const allies = sorted([...state.allies, ...(outcome.allies ?? [])]);
+  const used = sorted([...state.used, ...(outcome.use ?? [])]);
+  let watching = outcome.clear ? [] : state.watching.filter(who => !outcome.remove?.includes(who));
+  watching = sorted([...watching, ...(outcome.add ?? [])]).filter(who => !(outcome.allies ?? []).includes(who));
+  const flags = [...new Set([...state.flags, ...(outcome.flags ?? [])])];
+  return { watching, allies, used, flags };
+}
+
+export function preview(action: Action, state: State): Option {
+  const available = (action.requires.length === 0 || action.requires.some(cond => holds(cond, state))) && !action.blockedBy?.some(cond => holds(cond, state));
+  const fill = (text: string) => text.replace('{watching}', names(state.watching));
+  const lockSource = action.locks.find(item => !item.when || holds(item.when, state));
+  const outcome = outcomeOf(action, state);
+  const after = applyOutcome(outcome, state);
+  const piled = after.watching.length >= PILE_LIMIT;
+  return {
+    id: action.id,
+    strategy: action.strategy,
+    line: outcome.line ?? action.line,
+    intent: outcome.intent ?? action.intent,
+    available,
+    lock: available ? '' : fill(lockSource?.text ?? '现在用不了'),
+    risk: fill(outcome.risk),
+    before: [...state.watching],
+    after: after.watching,
+    gained: after.allies.filter(who => !state.allies.includes(who)),
+    spent: after.used.filter(who => !state.used.includes(who)),
+    ending: piled ? 'piled' : outcome.ending ?? null,
+  };
+}
 
 export class Game {
-  phase: Phase = 'question';
-  mood = MAX_MOOD;
-  charges: Record<Card, number> = { taiji: Infinity, counter: 2, sincere: 2, crazy: 1 };
-  history: TurnResult[] = [];
+  state: State = initialState();
+  node: DinnerNode = nodeById(dinner.start);
+  phase: Phase = 'choose';
+  turns: Turn[] = [];
   report: Report | null = null;
-  private rngState: number;
-  private readonly deck: { question: Question; asker: Relative; basePressure: number }[];
-  private current: Encounter;
-  private pending: Carry | null = null;
 
-  constructor(readonly identity: Identity, seed = Date.now(), source = questions) {
-    this.rngState = seed >>> 0 || 1;
-    const pool = [...new Map(source.filter(q => q.identities.includes(identity)
-      && ['normal', 'fast', 'tough', 'boss'].includes(q.kind)).map(q => [q.id, q])).values()];
-    if (pool.some(q => !q.askers.length || q.askers.some(asker => !Object.prototype.hasOwnProperty.call(relatives, asker)))) {
-      throw new Error('身份题库包含非法发问亲戚');
-    }
-    const normal = this.shuffle(pool.filter(q => q.kind === 'normal' || q.kind === 'fast'));
-    const tough = this.shuffle(pool.filter(q => q.kind === 'tough'));
-    const bosses = this.shuffle(pool.filter(q => q.kind === 'boss'));
-    const first = normal.find(q => q.identities.length === 1) ?? normal[0];
-    const others = normal.filter(q => q.id !== first?.id);
-    const boss = bosses.find(q => q.identities.length === 1) ?? bosses[0];
-    if (!first || others.length < 4 || tough.length < 2 || !boss) throw new Error('身份题库不完整');
-    const middle = this.shuffle([others[1], tough[0], others[2], tough[1], others[3]]);
-    this.deck = [first, others[0], ...middle, boss].map((question, index) => ({
-      question, asker: question.askers[Math.floor(this.random() * question.askers.length)],
-      basePressure: index === 0 ? 1 : question.kind === 'boss' ? 6 : question.kind === 'tough' ? 5 : 2,
-    }));
-    this.current = this.encounter(0, null);
+  get scene(): number { return this.node.scene; }
+  get last(): Turn | null { return this.turns[this.turns.length - 1] ?? null; }
+
+  options(): Option[] {
+    return this.node.actions.map(action => preview(action, this.state));
   }
 
-  private random(): number {
-    this.rngState ^= this.rngState << 13;
-    this.rngState ^= this.rngState >>> 17;
-    this.rngState ^= this.rngState << 5;
-    return (this.rngState >>> 0) / 4294967296;
-  }
-
-  private shuffle<T>(values: T[]): T[] {
-    const out = [...values];
-    for (let i = out.length - 1; i > 0; i--) {
-      const j = Math.floor(this.random() * (i + 1));
-      [out[i], out[j]] = [out[j], out[i]];
-    }
-    return out;
-  }
-
-  private encounter(index: number, incoming: Carry | null): Encounter {
-    const { basePressure } = this.deck[index];
-    const adjustment = incoming ? (incoming.kind === 'followup' ? incoming.amount : -incoming.amount) : 0;
-    return { index, ...this.deck[index], basePressure, pressure: Math.max(0, basePressure + adjustment), incoming: copyCarry(incoming) };
-  }
-
-  get index(): number { return this.current.index; }
-  get wave(): number { return Math.floor(this.index / 2); }
-  get target(): Encounter { return this.current; }
-  get lastResult(): TurnResult | undefined { return this.history[this.history.length - 1]; }
-  get resolved(): number { return this.history.length; }
-
-  mealPressures(wave: number): number[] {
-    return this.deck.slice(wave * 2, wave * 2 + 2).map(turn => turn.basePressure);
-  }
-
-  canPlay(card: Card): boolean {
-    return this.phase === 'question' && this.mood > 0 && this.charges[card] > 0;
-  }
-
-  preview(card: Card): Preview {
-    const { question, asker, pressure } = this.current;
-    const capacity = card === 'taiji' ? 1 : card === 'counter' ? 3 : card === 'crazy' ? pressure
-      : question.kind === 'tough' || question.kind === 'boss' ? 1 : 2;
-    const blocked = Math.min(pressure, capacity);
-    const selfLoss = card === 'crazy' ? 1 : 0;
-    const kind = card === 'counter' ? 'followup' : card === 'sincere' ? 'ally' : null;
-    return {
-      card, available: this.canPlay(card), blocked,
-      loss: Math.max(0, pressure - blocked) + selfLoss,
-      cost: selfLoss,
-      next: kind && this.index < TOTAL_TURNS - 1 ? { kind, asker, amount: 1 } : null,
+  choose(id: string): Turn | null {
+    if (this.phase !== 'choose') return null;
+    const action = this.node.actions.find(item => item.id === id);
+    if (!action) return null;
+    const option = preview(action, this.state);
+    if (!option.available) return null;
+    const outcome = outcomeOf(action, this.state);
+    this.state = applyOutcome(outcome, this.state);
+    const piled = option.ending === 'piled';
+    const turn: Turn = {
+      ...option,
+      index: this.turns.length,
+      scene: this.node.scene,
+      node: this.node,
+      beats: piled && outcome.ending !== 'piled' ? [...outcome.beats, ...dinner.pileOn] : outcome.beats,
+      next: option.ending ? null : outcome.next ?? null,
+      title: piled ? PILE_TITLE : outcome.title ?? '',
+      summary: piled ? `${names(option.after)}同时盯着你，话头全回到了你身上。不是你答错了，是一下子被太多人围住了。` : outcome.summary ?? '',
     };
+    this.turns.push(turn);
+    this.phase = 'react';
+    return turn;
   }
 
-  play(card: Card): boolean {
-    if (!this.canPlay(card)) return false;
-    const preview = this.preview(card);
-    const target = this.current;
-    const moodBefore = this.mood;
-    if (card !== 'taiji') this.charges[card]--;
-    this.mood = Math.max(0, this.mood - preview.loss);
-    const reply = card === 'sincere' ? relatives[target.asker].line
-      : card === 'counter' ? (preview.next ? '那我再多问一句。' : '好，这个问题就说到这儿。')
-      : card === 'crazy' ? '好家伙……先吃饭吧。' : '行，先吃菜。';
-    this.history.push({
-      turn: this.index + 1, question: target.question, asker: target.asker,
-      basePressure: target.basePressure, pressure: target.pressure, incoming: copyCarry(target.incoming),
-      card, quote: target.question.answers[card], reply, blocked: preview.blocked, loss: preview.loss,
-      moodBefore, moodAfter: this.mood, next: copyCarry(preview.next),
-    });
-    // A future carry is separate from the encounter being displayed during feedback/reward.
-    this.pending = copyCarry(preview.next);
-    this.phase = this.mood > 0 && [1, 3, 5].includes(this.index) ? 'reward' : 'feedback';
+  advance(): boolean {
+    if (this.phase !== 'react') return false;
+    const turn = this.last!;
+    if (turn.ending) { this.settle(turn.ending, turn.title, turn.summary); return true; }
+    this.node = nodeById(turn.next!);
+    if (this.node.enter) this.state = { ...this.state, watching: sorted([...this.state.watching, ...this.node.enter]) };
+    this.phase = 'choose';
     return true;
   }
 
-  private advance(): void {
-    this.current = this.encounter(this.index + 1, this.pending);
-    this.pending = null;
-    this.phase = 'question';
-  }
-
-  next(): boolean {
-    if (this.phase !== 'feedback') return false;
-    if (this.mood === 0) this.settle('心态见底，去厨房歇一歇', false);
-    else if (this.resolved === TOTAL_TURNS) this.settle('好好吃完这顿饭', true);
-    else this.advance();
+  leave(): boolean {
+    if (this.phase === 'over') return false;
+    this.settle('left', LEAVE_TITLE, `第 ${this.scene + 1} 道菜时你先离了席。没吃完这顿，但也没硬扛。`);
     return true;
   }
 
-  canReward(choice: Reward): boolean {
-    if (this.phase !== 'reward' || this.mood <= 0) return false;
-    return choice === 'soup' ? this.mood < MAX_MOOD
-      : ['counter', 'sincere', 'crazy'].includes(choice) && this.charges[choice] < 3;
-  }
-
-  reward(choice: Reward): boolean {
-    if (!this.canReward(choice)) return false;
-    if (choice === 'soup') this.mood = Math.min(MAX_MOOD, this.mood + 1);
-    else this.charges[choice] = Math.min(3, this.charges[choice] + 1);
-    this.advance();
-    return true;
-  }
-
-  finish(reason = '主动离席，先去厨房歇一歇'): void {
-    this.settle(reason, false);
-  }
-
-  private settle(reason: string, complete: boolean): void {
-    if (this.phase === 'finished') return;
-    this.phase = 'finished';
-    this.pending = null;
-    const history = this.history.slice();
-    const won = complete && history.length === TOTAL_TURNS && this.mood > 0;
-    const blocked = history.filter(turn => turn.loss === 0).length;
-    const counters = history.filter(turn => turn.card === 'counter').length;
-    const sincere = history.filter(turn => turn.card === 'sincere').length;
-    const allies = history.filter(turn => turn.incoming?.kind === 'ally').length;
-    const highlights: TurnResult[] = [];
-    const add = (turn: TurnResult | undefined) => {
-      if (turn && highlights.length < 3 && !highlights.includes(turn)) highlights.push(turn);
-    };
-    const allyTurns = history.filter(turn => turn.incoming?.kind === 'ally');
-    const dangerous = history.filter(turn => (turn.pressure >= 3 || turn.pressure >= turn.moodBefore)
-      && turn.loss < turn.pressure);
-    const allyCause = history.find((turn, i) => turn.next?.kind === 'ally' && history[i + 1]?.incoming?.kind === 'ally');
-    const counterCause = history.find((turn, i) => turn.next?.kind === 'followup' && history[i + 1]?.incoming?.kind === 'followup');
-    add(allyCause ?? allyTurns[0]);
-    add(counterCause ?? dangerous[0]);
-    add(history[history.length - 1]);
-    for (const turn of [...allyTurns, ...dangerous, ...history]) add(turn);
-    highlights.sort((a, b) => a.turn - b.turn);
-    const quotes = [...new Set(history.flatMap(turn => [
-      ...(turn.incoming?.kind === 'ally' ? [relatives[turn.incoming.asker].line] : []),
-      turn.quote, turn.reply,
-    ]))];
+  private settle(ending: Ending, title: string, summary: string): void {
+    this.phase = 'over';
+    const helpers = sorted([...this.state.used, ...this.state.allies.filter(who => who !== 'nainai' || this.state.used.includes('nainai'))]);
+    const done = new Set(this.turns.map(turn => turn.id));
+    const tips: string[] = [];
+    if (done.has('ask-nainai')) tips.push('把奶奶留到饺子压轴，她有一招“硬币饺子”。');
+    if (!done.has('ask-sangu')) tips.push('第一道反问三姑，看看表姐会不会跟你站一边。');
+    if (!done.has('honest-sangu')) tips.push('第一道跟三姑说句实话，热菜时她会替你挡一句。');
+    if (!done.has('fishpond')) tips.push('问问二舅的鱼塘，压轴他能分走盘问；大姨还会问一件小事。');
+    if (ending === 'piled') tips.unshift('别让三个人同时盯着你：选项下方会写这句话会招来谁。');
     this.report = {
-      won, reason, title: won ? '这桌饭，吃完了' : '先去厨房歇一歇', identity: this.identity,
-      mood: this.mood, turns: history.length, blocked, counters, sincere, allies, history, highlights,
-      quotes: quotes.length ? quotes : ['先去厨房歇一歇，大家慢慢吃。'],
-      lines: [
-        `回答了 ${history.length} 问 · 心态剩余 ${this.mood}/${MAX_MOOD}`,
-        `未扣心态 ${blocked} 问 · 反问 ${counters} 次`,
-        `真心 ${sincere} 次 · 帮腔兑现 ${allies} 次`,
-      ],
+      ending,
+      title,
+      summary,
+      dishes: ending === 'won' ? dinner.scenes.length : this.scene,
+      turns: [...this.turns],
+      helpers,
+      tips: tips.slice(0, 2),
     };
   }
 }

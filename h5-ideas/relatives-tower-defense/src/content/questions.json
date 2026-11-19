@@ -1,1010 +1,853 @@
-[
-  {
-    "id": "income-01",
-    "category": "收入",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "gufu"],
-    "text": "一个月挣多少钱？",
-    "answers": {
-      "taiji": "工资先放一边，这鱼可不能凉了。",
-      "counter": "年夜饭能不附带财务报表吗？",
-      "crazy": "税前是梦想，税后是梦，到手是念想。",
-      "sincere": "收入就不报了，我会按自己的预算生活。"
-    }
-  },
-  {
-    "id": "income-02",
-    "category": "收入",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "dayi"],
-    "text": "年终奖发了多少？",
-    "answers": {
-      "taiji": "奖金还在路上，先给这盘菜颁个奖。",
-      "counter": "这桌能只评厨艺，不评奖金吗？",
-      "crazy": "发了个盼头，已经存进精神账户。",
-      "sincere": "有没有奖金、多少奖金，我都不公开聊。"
-    }
-  },
-  {
-    "id": "income-03",
-    "category": "收入",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "ershen"],
-    "text": "今年涨工资了吗？",
-    "answers": {
-      "taiji": "先不聊涨没涨，您尝尝这锅新汤。",
-      "counter": "没涨也能安心吃顿年夜饭吧？",
-      "crazy": "涨了，工资条的字号从小四涨到三号。",
-      "sincere": "工资变动是我的私事，今天不展开。"
-    }
-  },
-  {
-    "id": "income-04",
-    "category": "收入",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "wangayi"],
-    "text": "存了多少钱了？",
-    "answers": {
-      "taiji": "存款先封存，咱聊聊今年去哪儿玩。",
-      "counter": "存款能和手机密码一样保密吗？",
-      "crazy": "我的存款走极简风，一眼就看完。",
-      "sincere": "存款数额不分享，我会自己做好规划。"
-    }
-  },
-  {
-    "id": "income-05",
-    "category": "收入",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "gufu"],
-    "text": "一个月能挣一万吗？",
-    "answers": {
-      "taiji": "先不凑那个整数，咱凑一桌好菜。",
-      "counter": "一顿团圆饭需要设收入门槛吗？",
-      "crazy": "能，我在计算器里按个等号就到账。",
-      "sincere": "具体收入不说，也不拿整数衡量自己。"
-    }
-  },
-  {
-    "id": "income-06",
-    "category": "收入",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["sangu", "ershen"],
-    "text": "钱够花吗？",
-    "answers": {
-      "taiji": "账本回去再算，今晚先算饺子够不够。",
-      "counter": "关心我就好，不必查我的收支吧？",
-      "crazy": "我和钱包达成共识，路过商场假装不熟。",
-      "sincere": "我会量入为出，需要帮助时会主动说。"
-    }
-  },
-  {
-    "id": "income-07",
-    "category": "收入",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["biaojie", "wangayi"],
-    "text": "没做点副业吗？",
-    "answers": {
-      "taiji": "今晚先兼职吃饭，这道菜值得加班。",
-      "counter": "休息也可以是正经安排吧？",
-      "crazy": "我给月亮做夜班客服，工资按月光结。",
-      "sincere": "是否做副业由我决定，暂时不加新安排。"
-    }
-  },
-  {
-    "id": "income-08",
-    "category": "收入",
-    "kind": "tough",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "ershen"],
-    "text": "比去年赚得多吗？",
-    "answers": {
-      "taiji": "去年账本先合上，今年这菜更香了。",
-      "counter": "过年一定要公布同比增长率吗？",
-      "crazy": "我的收入学会了隐身，增长全靠想象。",
-      "sincere": "我不在饭桌上比较收入，生活有自己的节奏。"
-    }
-  },
-  {
-    "id": "housing-01",
-    "category": "住房",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["sangu", "gufu"],
-    "text": "买房了吗？",
-    "answers": {
-      "taiji": "房子慢慢看，先看看这盘饺子。",
-      "counter": "没房本也不影响我有个好年吧？",
-      "crazy": "买了，在收藏夹里三室两厅。",
-      "sincere": "买房会按我的能力安排，不在饭桌上定。"
-    }
-  },
-  {
-    "id": "housing-02",
-    "category": "住房",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "wangayi"],
-    "text": "打算在哪儿买房？",
-    "answers": {
-      "taiji": "地图改天再看，先聊聊附近哪家菜好吃。",
-      "counter": "地方还没选好，可以先不宣布吗？",
-      "crazy": "选在云端，除了登机不方便，风景都好。",
-      "sincere": "住哪里我会自己考虑，没决定就先不聊。"
-    }
-  },
-  {
-    "id": "housing-03",
-    "category": "住房",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "gufu"],
-    "text": "首付攒够了吗？",
-    "answers": {
-      "taiji": "首付先不盘，咱盘盘这道菜怎么做。",
-      "counter": "买房预算可以留在我自己的账本里吧？",
-      "crazy": "攒够了首付两个字，金额还在加载。",
-      "sincere": "购房资金不公开，我不会超出能力做决定。"
-    }
-  },
-  {
-    "id": "housing-04",
-    "category": "住房",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["ershen", "sangu"],
-    "text": "怎么还在租房？",
-    "answers": {
-      "taiji": "住的事慢慢聊，这桌布置得真有年味。",
-      "counter": "住得合适，不也算安居吗？",
-      "crazy": "我家钥匙很讲礼貌，先租后熟。",
-      "sincere": "租房也可以过好日子，我按实际需要选择。"
-    }
-  },
-  {
-    "id": "housing-05",
-    "category": "住房",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "biaojie"],
-    "text": "房子有多大？",
-    "answers": {
-      "taiji": "面积先不量，咱看看合照怎么站。",
-      "counter": "家的舒适度一定要用平方米算吗？",
-      "crazy": "打开扫地机器人地图，已经算一方领主。",
-      "sincere": "住房细节不展开，住得合适对我更重要。"
-    }
-  },
-  {
-    "id": "housing-06",
-    "category": "住房",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "erjiu"],
-    "text": "房贷一个月多少？",
-    "answers": {
-      "taiji": "月供先暂停，年味得按顿续费。",
-      "counter": "团圆饭能跳过负债明细这一页吗？",
-      "crazy": "我跟房贷先网恋，至今没正式见面。",
-      "sincere": "有没有房贷、还多少，都属于我的财务隐私。"
-    }
-  },
-  {
-    "id": "housing-07",
-    "category": "住房",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["wangayi", "ershen"],
-    "text": "要不要换个大房子？",
-    "answers": {
-      "taiji": "房子先不升级，今晚先升级一下菜单。",
-      "counter": "够住就好，不必每年扩容吧？",
-      "crazy": "换好了，手机壁纸现在是全景豪宅。",
-      "sincere": "是否换房看实际需求，我不为面子增加开支。"
-    }
-  },
-  {
-    "id": "housing-08",
-    "category": "住房",
-    "kind": "tough",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "gufu"],
-    "text": "什么时候有自己的房？",
-    "answers": {
-      "taiji": "交房日期先不定，开饭时间可不能拖。",
-      "counter": "安定的生活，能不只看房本吗？",
-      "crazy": "等我的乐高小屋通过阳台验收。",
-      "sincere": "买不买、何时买都由我决定，不承诺日期。"
-    }
-  },
-  {
-    "id": "compare-01",
-    "category": "比较",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "dayi"],
-    "text": "同龄人都升职了，你呢？",
-    "answers": {
-      "taiji": "职级先别排，年菜倒可以排个前三。",
-      "counter": "不同的路，为什么要用同一张进度表？",
-      "crazy": "我升了，刚从沙发左护法升成右护法。",
-      "sincere": "我按自己的阶段走，不用同龄人的职级衡量。"
-    }
-  },
-  {
-    "id": "compare-02",
-    "category": "比较",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "wangayi"],
-    "text": "别人都买车了，你呢？",
-    "answers": {
-      "taiji": "车先停在话题外，聊聊回家沿途的风景。",
-      "counter": "出行方便，不比车标更重要吗？",
-      "crazy": "我有购物车，动力是满减，刹车是余额。",
-      "sincere": "买不买车看我的需要，不跟别人比配置。"
-    }
-  },
-  {
-    "id": "compare-03",
-    "category": "比较",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["sangu", "ershen"],
-    "text": "同学都买房了，你呢？",
-    "answers": {
-      "taiji": "房本先别排队，咱给饺子排个队。",
-      "counter": "祝福别人和不催我，可以同时做到吧？",
-      "crazy": "我先买了门垫，正在等房子主动配套。",
-      "sincere": "我祝福同学，也按自己的条件安排住房。"
-    }
-  },
-  {
-    "id": "compare-04",
-    "category": "比较",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "erjiu"],
-    "text": "别人进度那么快，你不急？",
-    "answers": {
-      "taiji": "先把进度条收起来，咱慢慢吃这顿饭。",
-      "counter": "人生不是统一发车的高铁吧？",
-      "crazy": "我开了步行导航，人生禁止自动超车。",
-      "sincere": "我也会有压力，但不会照搬别人的时间表。"
-    }
-  },
-  {
-    "id": "compare-05",
-    "category": "比较",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "ershen"],
-    "text": "怎么没别人会挣钱？",
-    "answers": {
-      "taiji": "挣钱榜先关了，咱聊个不用计算器的。",
-      "counter": "能聊我的生活，而不是别人的排名吗？",
-      "crazy": "我把发财技能点错了，点成了发呆。",
-      "sincere": "收入不是全部，请不要用挣钱多少给我排名。"
-    }
-  },
-  {
-    "id": "compare-06",
-    "category": "比较",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["sangu", "wangayi"],
-    "text": "你怎么不学学别人？",
-    "answers": {
-      "taiji": "先学个现成的，这道菜的做法教教我。",
-      "counter": "学优点可以，整个人照着复制合适吗？",
-      "crazy": "人生禁止复制粘贴，我还在手动输入。",
-      "sincere": "有用的经验我会参考，但不复制别人的生活。"
-    }
-  },
-  {
-    "id": "compare-07",
-    "category": "比较",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "biaojie"],
-    "text": "你怎么不如以前努力？",
-    "answers": {
-      "taiji": "旧版本先不复盘，咱看看今年的新照片。",
-      "counter": "努力也有安静的样子，不一定都看得见吧？",
-      "crazy": "我转成后台运行了，桌面只剩吃饭图标。",
-      "sincere": "我在调整节奏，请不要只凭表面判断努力。"
-    }
-  },
-  {
-    "id": "compare-08",
-    "category": "比较",
-    "kind": "tough",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "erjiu"],
-    "text": "什么时候让大家刮目相看？",
-    "answers": {
-      "taiji": "大事先不预告，今晚看我把餐桌收漂亮。",
-      "counter": "不惊艳全场，也可以过好自己的日子吧？",
-      "crazy": "等我考下筷子飞行执照，夹菜自带航线。",
-      "sincere": "我不以惊艳大家为目标，会认真过自己的生活。"
-    }
-  },
-  {
-    "id": "work-01",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "wangayi"],
-    "text": "现在做什么工作？",
-    "answers": {
-      "taiji": "工作的事稍后讲，先说说这桌谁掌勺。",
-      "counter": "我可以简单介绍，不必现场做答辩吧？",
-      "crazy": "任职生活有限公司，兼任闹钟谈判代表。",
-      "sincere": "我可以聊目前状态，单位和具体细节就不说了。"
-    }
-  },
-  {
-    "id": "work-02",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "ershen"],
-    "text": "工作稳定吗？",
-    "answers": {
-      "taiji": "稳定的先说一个，这顿饭我肯定不缺席。",
-      "counter": "稳定之外，适不适合我也值得考虑吧？",
-      "crazy": "稳定，我和待办清单已经长期合作了。",
-      "sincere": "我会评估自己的选择，稳定不是唯一标准。"
-    }
-  },
-  {
-    "id": "work-03",
-    "category": "工作",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "erjiu"],
-    "text": "怎么不去考个编？",
-    "answers": {
-      "taiji": "报考指南改天翻，今晚先翻翻老相册。",
-      "counter": "职业选择可以不只有一条路吗？",
-      "crazy": "我先考个饭桌编制，岗位是年年到岗。",
-      "sincere": "考不考编由我结合兴趣和条件决定，不催着选。"
-    }
-  },
-  {
-    "id": "work-04",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["sangu", "biaojie"],
-    "text": "怎么还不换工作？",
-    "answers": {
-      "taiji": "换工作的事先放放，咱换首过年的歌。",
-      "counter": "换与不换，都该先看适不适合我吧？",
-      "crazy": "我的简历还在选出场音乐，暂未登台。",
-      "sincere": "是否换工作我会认真判断，不为回应催促而换。"
-    }
-  },
-  {
-    "id": "work-05",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "ershen"],
-    "text": "天天都这么忙吗？",
-    "answers": {
-      "taiji": "今晚已切成吃饭模式，先聊点轻松的。",
-      "counter": "忙不忙能不能不等于有没有出息？",
-      "crazy": "我的日程表像俄罗斯方块，空一格就来一块。",
-      "sincere": "我会调整工作和休息，今天不细聊日程。"
-    }
-  },
-  {
-    "id": "work-06",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["gufu", "wangayi"],
-    "text": "这工作有前途吗？",
-    "answers": {
-      "taiji": "远处的路慢慢看，眼前这锅汤先照顾好。",
-      "counter": "前途能不能也包括做得有意思？",
-      "crazy": "前途正在导航，暂时还没下载离线地图。",
-      "sincere": "发展我会持续评估，不在今天给它下定论。"
-    }
-  },
-  {
-    "id": "work-07",
-    "category": "工作",
-    "kind": "fast",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "sangu"],
-    "text": "以后有什么打算？",
-    "answers": {
-      "taiji": "远期先保密，近期打算尝遍这一桌。",
-      "counter": "计划还在想，可以不交年夜饭版方案吗？",
-      "crazy": "先把人生草稿保存，防止明天忘带脑内硬盘。",
-      "sincere": "我在考虑下一步，没确定的计划先不公开。"
-    }
-  },
-  {
-    "id": "work-08",
-    "category": "工作",
-    "kind": "tough",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "gufu"],
-    "text": "能找个轻松的工作吗？",
-    "answers": {
-      "taiji": "轻松的先从今晚开始，咱不聊工作了。",
-      "counter": "工作怎么选，能让我自己权衡吗？",
-      "crazy": "想应聘抱枕试睡员，可惜我的抱枕不招人。",
-      "sincere": "我会照顾自己的状态，也会自己决定职业方向。"
-    }
-  },
-  {
-    "id": "single-01",
-    "category": "婚恋",
-    "kind": "normal",
-    "identities": ["single"],
-    "askers": ["sangu", "dayi", "wangayi"],
-    "text": "有对象了吗？",
-    "answers": {
-      "taiji": "感情先卖个关子，您尝尝这道新菜。",
-      "counter": "对象不是年货，不用每年检查库存吧？",
-      "crazy": "有，我和被窝关系稳定，闹钟一直反对。",
-      "sincere": "感情状态我暂时不分享，有想说的会主动说。"
-    }
-  },
-  {
-    "id": "single-02",
-    "category": "婚恋",
-    "kind": "normal",
-    "identities": ["single"],
-    "askers": ["ershen", "sangu"],
-    "text": "怎么还没谈恋爱？",
-    "answers": {
-      "taiji": "缘分慢慢等，热菜可不等人。",
-      "counter": "一个人过得好，也算好消息吧？",
-      "crazy": "我的缘分坐了慢车，站站停还爱看风景。",
-      "sincere": "我有自己的节奏，不会为了赶进度谈恋爱。"
-    }
-  },
-  {
-    "id": "single-03",
-    "category": "婚恋",
-    "kind": "normal",
-    "identities": ["single"],
-    "askers": ["dayi", "erjiu"],
-    "text": "什么时候结婚？",
-    "answers": {
-      "taiji": "婚期先不排，今晚的合照可以先排上。",
-      "counter": "结婚不是快递，能不催预计送达吗？",
-      "crazy": "等月老把我的订单从预售改成现货。",
-      "sincere": "结婚没有承诺日期，我只会在愿意且合适时决定。"
-    }
-  },
-  {
-    "id": "single-04",
-    "category": "婚恋",
-    "kind": "normal",
-    "identities": ["single"],
-    "askers": ["wangayi", "sangu"],
-    "text": "给你介绍一个好吗？",
-    "answers": {
-      "taiji": "介绍的事改天聊，先给我介绍这道拿手菜。",
-      "counter": "先问我愿不愿意，再给联系方式好吗？",
-      "crazy": "我的恋爱预约系统还在维护，先别取号。",
-      "sincere": "谢谢好意，我暂时不接受介绍，也请别替我约人。"
-    }
-  },
-  {
-    "id": "single-05",
-    "category": "婚恋",
-    "kind": "tough",
-    "identities": ["single"],
-    "askers": ["dayi", "ershen"],
-    "text": "是不是眼光太高了？",
-    "answers": {
-      "taiji": "择偶标准先收好，咱聊聊这盘菜的配方。",
-      "counter": "想要合适的关系，也算合理要求吧？",
-      "crazy": "我的择偶雷达很节能，目前只接收到饭香。",
-      "sincere": "我重视相处是否合适，不接受用挑剔概括我。"
-    }
-  },
-  {
-    "id": "single-06",
-    "category": "婚恋",
-    "kind": "fast",
-    "identities": ["single"],
-    "askers": ["sangu", "wangayi", "biaojie"],
-    "text": "要不先加个微信？",
-    "answers": {
-      "taiji": "手机先歇会儿，咱把这顿饭吃热乎。",
-      "counter": "加好友之前，先征得我同意可以吗？",
-      "crazy": "我的桃花验证码过期了，暂时登录不了。",
-      "sincere": "我现在不想加，请不要代我发送联系方式。"
-    }
-  },
-  {
-    "id": "single-07",
-    "category": "婚恋",
-    "kind": "tough",
-    "identities": ["single"],
-    "askers": ["dayi", "ershen"],
-    "text": "相亲怎么又没下文了？",
-    "answers": {
-      "taiji": "感情故事先不续，咱续一壶热茶。",
-      "counter": "没有继续，也可能是认真选择的结果吧？",
-      "crazy": "我这部恋爱连续剧经费有限，片头播了三年。",
-      "sincere": "相处经过是私事，没有继续也不需要饭桌复盘。"
-    }
-  },
-  {
-    "id": "married-01",
-    "category": "生育",
-    "kind": "normal",
-    "identities": ["married"],
-    "askers": ["sangu", "dayi"],
-    "text": "什么时候要孩子？",
-    "answers": {
-      "taiji": "未来慢慢聊，今晚先把团圆过好。",
-      "counter": "生育不是年终任务，可以不设期限吧？",
-      "crazy": "我们家的未来日历还在等宇宙发更新包。",
-      "sincere": "生育我们自己安排，今天不承诺时间。"
-    }
-  },
-  {
-    "id": "married-02",
-    "category": "生育",
-    "kind": "normal",
-    "identities": ["married"],
-    "askers": ["ershen", "wangayi"],
-    "text": "打算生几个？",
-    "answers": {
-      "taiji": "这个数先不算，咱数数年菜有几道。",
-      "counter": "家庭计划可以不在饭桌上投票吗？",
-      "crazy": "我连家里几盆绿萝都没盘明白，先暂停算术。",
-      "sincere": "是否生育、生几个由我们决定，不公开讨论。"
-    }
-  },
-  {
-    "id": "married-03",
-    "category": "生育",
-    "kind": "normal",
-    "identities": ["married"],
-    "askers": ["dayi", "sangu"],
-    "text": "怎么还不备孕？",
-    "answers": {
-      "taiji": "家里的安排先留着，咱先聊聊过年去哪玩。",
-      "counter": "关心可以有，但能不催我们的生育安排吗？",
-      "crazy": "我家的计划表是慢炖锅，不支持一键催熟。",
-      "sincere": "备孕是我们的私事，请不要追问或催促。"
-    }
-  },
-  {
-    "id": "married-04",
-    "category": "生育",
-    "kind": "normal",
-    "identities": ["married"],
-    "askers": ["ershen", "erjiu"],
-    "text": "为什么不早点生？",
-    "answers": {
-      "taiji": "家庭计划先不加单，咱给茶壶续点水。",
-      "counter": "这不是凑满减，能让我们自己决定吗？",
-      "crazy": "我的生活服务器先维护，不自动新增账号。",
-      "sincere": "是否生育由我们商量，请不要替我们安排。"
-    }
-  },
-  {
-    "id": "married-05",
-    "category": "生育",
-    "kind": "tough",
-    "identities": ["married"],
-    "askers": ["gufu", "dayi"],
-    "text": "生孩子的事谁做主？",
-    "answers": {
-      "taiji": "这项议题先休会，来尝尝这锅刚煮好的。",
-      "counter": "两个人共同决定，不用选个总指挥吧？",
-      "crazy": "我们家的家庭会议不设主席，只有零食席。",
-      "sincere": "这由我们两个人共同决定，不接受饭桌上的指派。"
-    }
-  },
-  {
-    "id": "married-06",
-    "category": "婚恋",
-    "kind": "fast",
-    "identities": ["married"],
-    "askers": ["sangu", "ershen"],
-    "text": "结婚后谁管钱？",
-    "answers": {
-      "taiji": "财务分工先保密，今晚我负责给茶添水。",
-      "counter": "过得有商有量，不比谁管钱更重要吗？",
-      "crazy": "钱归预算表管，我俩都是申请报销的。",
-      "sincere": "我们的财务分工会自己协商，具体不对外聊。"
-    }
-  },
-  {
-    "id": "married-07",
-    "category": "婚恋",
-    "kind": "tough",
-    "identities": ["married"],
-    "askers": ["dayi", "wangayi"],
-    "text": "两个人总不吵架吧？",
-    "answers": {
-      "taiji": "家常细节先收着，咱聊聊今年看过的喜剧。",
-      "counter": "关系里的小事，可以留给我们自己聊吗？",
-      "crazy": "我俩争遥控器靠石头剪刀布，目前打成联赛。",
-      "sincere": "相处细节我们自己沟通，不在饭桌上复盘。"
-    }
-  },
-  {
-    "id": "graduate-01",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["graduate"],
-    "askers": ["erjiu", "dayi"],
-    "text": "毕业找到工作了吗？",
-    "answers": {
-      "taiji": "求职进度稍后说，先聊聊毕业照拍得怎样。",
-      "counter": "毕业后的第一步，可以不按秒计时吧？",
-      "crazy": "我和录用通知正在捉迷藏，它藏得很专业。",
-      "sincere": "我在安排毕业后的生活，进展会选择合适时机说。"
-    }
-  },
-  {
-    "id": "graduate-02",
-    "category": "收入",
-    "kind": "normal",
-    "identities": ["graduate"],
-    "askers": ["gufu", "ershen"],
-    "text": "第一份工资多少？",
-    "answers": {
-      "taiji": "第一份工资先不报，先夸夸第一盘出锅的菜。",
-      "counter": "第一份工作的价值，不只是一行金额吧？",
-      "crazy": "工资像体验装，够我认识一下成年生活。",
-      "sincere": "工资数额是我的隐私，我不在这里公开。"
-    }
-  },
-  {
-    "id": "graduate-03",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["graduate"],
-    "askers": ["sangu", "wangayi"],
-    "text": "怎么不回家找工作？",
-    "answers": {
-      "taiji": "工作地点先不定，先定下饭后一起散步。",
-      "counter": "在哪里发展，能先看机会和我自己的意愿吗？",
-      "crazy": "我的人生导航还在选路线，没勾选强制返航。",
-      "sincere": "工作地点我会自己选择，离家远近不是唯一标准。"
-    }
-  },
-  {
-    "id": "graduate-04",
-    "category": "工作",
-    "kind": "normal",
-    "identities": ["graduate"],
-    "askers": ["biaojie", "erjiu"],
-    "text": "投了多少份简历？",
-    "answers": {
-      "taiji": "投递统计先下班，来聊聊最近看了什么电影。",
-      "counter": "找合适的机会，可以不靠数量打分吧？",
-      "crazy": "简历投出去像纸飞机，回信得等顺风。",
-      "sincere": "投递细节我自己跟进，今天不汇报数量。"
-    }
-  },
-  {
-    "id": "graduate-05",
-    "category": "考学",
-    "kind": "tough",
-    "identities": ["graduate"],
-    "askers": ["dayi", "gufu"],
-    "text": "大学毕业就不读了？",
-    "answers": {
-      "taiji": "下一本书慢慢选，先翻翻毕业相册。",
-      "counter": "继续学习，也不只有继续读学位这一种吧？",
-      "crazy": "我刚从学校毕业，又被生活录取为终身学生。",
-      "sincere": "是否继续读书我会自己判断，不为学历比较做选择。"
-    }
-  },
-  {
-    "id": "graduate-06",
-    "category": "工作",
-    "kind": "fast",
-    "identities": ["graduate"],
-    "askers": ["wangayi", "ershen"],
-    "text": "学的专业能干什么？",
-    "answers": {
-      "taiji": "专业改天慢慢讲，今天先研究这道菜的火候。",
-      "counter": "专业是起点，不一定是终点吧？",
-      "crazy": "先干一件大事，把毕业证从纸袋升级到相框。",
-      "sincere": "我会探索专业相关的机会，也保留转向的选择。"
-    }
-  },
-  {
-    "id": "graduate-07",
-    "category": "工作",
-    "kind": "tough",
-    "identities": ["graduate"],
-    "askers": ["erjiu", "gufu"],
-    "text": "实习能转正吗？",
-    "answers": {
-      "taiji": "转正消息先等等，今晚先正式开饭。",
-      "counter": "还没确定的结果，能不让我提前保证吗？",
-      "crazy": "我的工牌还在练习去掉实习两个字。",
-      "sincere": "结果没确定前我不承诺，也会准备其他选择。"
-    }
-  },
-  {
-    "id": "exam-01",
-    "category": "考学",
-    "kind": "normal",
-    "identities": ["exam"],
-    "askers": ["dayi", "erjiu"],
-    "text": "考得怎么样？",
-    "answers": {
-      "taiji": "考试先放个假，咱聊聊今年最开心的事。",
-      "counter": "今天可以先过年，不现场对答案吗？",
-      "crazy": "我和标准答案有时差，正在努力倒时差。",
-      "sincere": "考试情况我暂时不聊，想分享时会主动说。"
-    }
-  },
-  {
-    "id": "exam-02",
-    "category": "考学",
-    "kind": "normal",
-    "identities": ["exam"],
-    "askers": ["gufu", "wangayi"],
-    "text": "有把握考上吗？",
-    "answers": {
-      "taiji": "结果先留点悬念，这盘饺子我倒很有把握。",
-      "counter": "认真准备就好，不必提前保证结果吧？",
-      "crazy": "知识点还在集合，我负责举旗，答案负责迟到。",
-      "sincere": "我会认真准备，但不对无法保证的结果许诺。"
-    }
-  },
-  {
-    "id": "exam-03",
-    "category": "考学",
-    "kind": "normal",
-    "identities": ["exam"],
-    "askers": ["sangu", "ershen"],
-    "text": "每天学几个小时？",
-    "answers": {
-      "taiji": "计时器今晚放假，咱好好吃顿不赶时间的饭。",
-      "counter": "学得有效，比只看钟表更重要吧？",
-      "crazy": "我和书桌绑定套餐，离座还得提交出差申请。",
-      "sincere": "学习安排我自己管理，不在饭桌上报工时。"
-    }
-  },
-  {
-    "id": "exam-04",
-    "category": "考学",
-    "kind": "normal",
-    "identities": ["exam"],
-    "askers": ["dayi", "erjiu"],
-    "text": "今年一定能上岸吧？",
-    "answers": {
-      "taiji": "上岸日期先不写，今晚团圆已经按时抵达。",
-      "counter": "祝我顺利就好，可以不加一个一定吗？",
-      "crazy": "我的知识小船正在补帆，暂不提供到岸时刻表。",
-      "sincere": "我会尽力，但请不要把期待变成必须兑现的承诺。"
-    }
-  },
-  {
-    "id": "exam-05",
-    "category": "考学",
-    "kind": "tough",
-    "identities": ["exam"],
-    "askers": ["gufu", "ershen"],
-    "text": "没考上打算怎么办？",
-    "answers": {
-      "taiji": "备选方案明天再翻，今晚先翻个饺子。",
-      "counter": "先做好眼前的事，不提前给自己判结果好吗？",
-      "crazy": "人生不是单选题，我的橡皮还支持改路线。",
-      "sincere": "我会准备其他路径，具体方案不在这里展开。"
-    }
-  },
-  {
-    "id": "exam-06",
-    "category": "考学",
-    "kind": "fast",
-    "identities": ["exam"],
-    "askers": ["wangayi", "sangu"],
-    "text": "怎么还在准备考试？",
-    "answers": {
-      "taiji": "进度先按暂停，咱聊聊小时候怎么过年。",
-      "counter": "认真走自己的路，不需要和谁同天到站吧？",
-      "crazy": "我和知识点签了长租合同，退租得逐条验收。",
-      "sincere": "我在评估自己的投入和方向，不按催促决定去留。"
-    }
-  },
-  {
-    "id": "exam-07",
-    "category": "考学",
-    "kind": "tough",
-    "identities": ["exam"],
-    "askers": ["dayi", "biaojie"],
-    "text": "要不要换个考试试试？",
-    "answers": {
-      "taiji": "考试清单先合上，今晚先换个轻松的话题。",
-      "counter": "换方向之前，能让我先把自己的目标想清楚吗？",
-      "crazy": "我的考试地图还在加载，不支持随机传送。",
-      "sincere": "建议我会参考，是否换方向最终由我自己决定。"
-    }
-  },
-  {
-    "id": "warm-01",
-    "category": "暖心",
-    "kind": "warm",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["nainai"],
-    "text": "最近过得开心吗？",
-    "answers": {
-      "taiji": "先吃口饺子，再慢慢跟您说。",
-      "counter": "开心能不能也算今年的成绩？",
-      "crazy": "我的快乐电池正在饭桌充电，闻着菜香已满格。",
-      "sincere": "有开心也有烦恼，今晚想陪您慢慢聊聊。"
-    }
-  },
-  {
-    "id": "warm-02",
-    "category": "暖心",
-    "kind": "warm",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["nainai"],
-    "text": "累了就回家吃饭好吗？",
-    "answers": {
-      "taiji": "那先给这顿饭多留一点聊天时间。",
-      "counter": "回家可以只当家人，不交成绩单吧？",
-      "crazy": "收到，我把家设成默认充电站，导航永不删除。",
-      "sincere": "好，我也想多陪陪您，饭后一起坐一会儿。"
-    }
-  },
-  {
-    "id": "warm-03",
-    "category": "暖心",
-    "kind": "warm",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["nainai"],
-    "text": "还记得小时候爱吃什么吗？",
-    "answers": {
-      "taiji": "咱边吃边猜，看谁先认出当年的味道。",
-      "counter": "这道拿手菜，能不能顺便教会我？",
-      "crazy": "记得，我的味觉硬盘把这份菜单设成了只读。",
-      "sincere": "记得您做的味道，今天想陪您一起再尝尝。"
-    }
-  },
-  {
-    "id": "warm-04",
-    "category": "暖心",
-    "kind": "warm",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["nainai"],
-    "text": "明年还一起吃年夜饭吗？",
-    "answers": {
-      "taiji": "明年的菜单慢慢想，今晚先拍张合照。",
-      "counter": "除了过年，平时也能约一顿团圆饭吧？",
-      "crazy": "我给团圆饭办了年卡，附赠全年想念套餐。",
-      "sincere": "我想继续陪您过年，平时也多找时间一起吃饭。"
-    }
-  },
-  {
-    "id": "boss-single",
-    "category": "婚恋",
-    "kind": "boss",
-    "identities": ["single"],
-    "askers": ["table"],
-    "text": "对象、婚期，今天都说说？",
-    "answers": {
-      "taiji": "这题先小火慢炖，饺子得趁热。",
-      "counter": "团圆饭可以不打包催婚套餐吗？",
-      "crazy": "我的月老客服还在排队，桌上再问也插不了号。",
-      "sincere": "感情隐私不公开，婚期不承诺，请别轮流催问。"
-    }
-  },
-  {
-    "id": "boss-married",
-    "category": "生育",
-    "kind": "boss",
-    "identities": ["married"],
-    "askers": ["table"],
-    "text": "孩子、房子，何时安排好？",
-    "answers": {
-      "taiji": "家庭大事先不排期，年菜上桌倒要趁热。",
-      "counter": "我们的生活计划，可以不由整桌人审批吧？",
-      "crazy": "我家的项目经理是日历，今天它只批开饭。",
-      "sincere": "生育和住房由我们自己安排，不接受集体催办。"
-    }
-  },
-  {
-    "id": "boss-graduate",
-    "category": "工作",
-    "kind": "boss",
-    "identities": ["graduate"],
-    "askers": ["table"],
-    "text": "工作、收入，能一次说清吗？",
-    "answers": {
-      "taiji": "毕业汇报先延期，今晚先汇总哪道菜最好吃。",
-      "counter": "这是团圆饭，能不变成毕业答辩加财务审计吗？",
-      "crazy": "人生报告还在排版，目前目录只有先吃饭。",
-      "sincere": "求职进度会择时分享，收入不报，请别连续追问。"
-    }
-  },
-  {
-    "id": "boss-exam",
-    "category": "考学",
-    "kind": "boss",
-    "identities": ["exam"],
-    "askers": ["table"],
-    "text": "成绩、上岸，今年给个准话？",
-    "answers": {
-      "taiji": "考试议程先休息，今晚的主题是团圆。",
-      "counter": "认真准备的人，可以不在饭桌上签结果保证书吗？",
-      "crazy": "我的知识舰队正在造船，暂不承接全桌登岸预订。",
-      "sincere": "成绩我选择何时分享，结果不能保证，请停止催问。"
-    }
-  },
-  {
-    "id": "followup-01",
-    "category": "收入",
-    "kind": "followup",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "gufu"],
-    "text": "到底多少，给个数嘛？",
-    "answers": {
-      "taiji": "给个别的数吧，这盘饺子我数了三十个。",
-      "counter": "我已经说不公开了，能尊重这个答案吗？",
-      "crazy": "我的余额是薛定谔的零钱，不打开就当它很多。",
-      "sincere": "收入数字不会说，继续问也不会改变我的决定。"
-    }
-  },
-  {
-    "id": "followup-02",
-    "category": "住房",
-    "kind": "followup",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["sangu", "ershen"],
-    "text": "别绕了，买还是不买？",
-    "answers": {
-      "taiji": "这题先不二选一，今晚先选红烧还是清蒸。",
-      "counter": "还没决定也是答案，不必逼我当场二选一吧？",
-      "crazy": "我先买个暂停键，给人生遥控器配齐功能。",
-      "sincere": "我现在不作承诺，住房决定会按自己的情况来。"
-    }
-  },
-  {
-    "id": "followup-03",
-    "category": "比较",
-    "kind": "followup",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["dayi", "wangayi"],
-    "text": "大家都为你好，还不能问？",
-    "answers": {
-      "taiji": "心意我收到了，接下来咱收集点开心话题。",
-      "counter": "关心我，也可以包括尊重我不回答吧？",
-      "crazy": "我的人生客服今天休假，自动回复只有新年快乐。",
-      "sincere": "我理解关心，也有权不回答，请不要继续比较。"
-    }
-  },
-  {
-    "id": "followup-04",
-    "category": "工作",
-    "kind": "followup",
-    "identities": ["single", "married", "graduate", "exam"],
-    "askers": ["erjiu", "dayi"],
-    "text": "先别夹菜，打算说清楚？",
-    "answers": {
-      "taiji": "菜先夹上，工作计划明天再开文档。",
-      "counter": "我说了今天不聊，可以让这个话题结束吗？",
-      "crazy": "我的人生幻灯片卡在第一页，上面写着开饭。",
-      "sincere": "计划没确定前不会汇报，今天就聊到这里。"
-    }
-  }
-]
+{
+  "start": "cold-sangu",
+  "scenes": ["凉菜开席", "热菜上桌", "饺子压轴"],
+  "cast": ["sangu", "erjiu", "nainai", "dayi", "biaojie"],
+  "allies": ["nainai"],
+  "watching": ["sangu"],
+  "pileOn": [
+    { "who": "table", "text": "来来来，大家都听听，到底咋打算的？" },
+    { "who": "nainai", "text": "好了好了，让孩子先去厨房透口气。" }
+  ],
+  "nodes": [
+    {
+      "id": "cold-sangu",
+      "scene": 0,
+      "speaker": "sangu",
+      "target": "you",
+      "topic": "对象",
+      "situation": "凉菜刚上，三姑夹了一筷子木耳，眼睛先落在你身上。",
+      "ask": "今年有对象了没？过完年都二十九了吧。",
+      "actions": [
+        {
+          "id": "ask-nainai",
+          "strategy": "ally",
+          "line": "奶奶，三姑说您今年饺子换馅了，快给她夹一个！",
+          "intent": "请奶奶接话，把话头引到年菜",
+          "requires": [{ "ally": "nainai" }],
+          "locks": [{ "text": "奶奶已经帮你接过一次话了" }],
+          "outcomes": [
+            {
+              "risk": "奶奶用掉去厨房；二舅盯你",
+              "remove": ["sangu"],
+              "use": ["nainai"],
+              "add": ["erjiu"],
+              "beats": [
+                { "who": "nainai", "text": "加虾仁了！他三姑先尝，我去煮下一锅。" },
+                { "who": "sangu", "text": "哟，真鲜……行，那我回头再问。" },
+                { "who": "erjiu", "text": "说到吃，我倒想问问——" }
+              ],
+              "next": "cold-erjiu"
+            }
+          ]
+        },
+        {
+          "id": "ask-sangu",
+          "strategy": "counter",
+          "line": "三姑，您跟姑父当年谁先开的口？我取取经。",
+          "intent": "把问题抛回三姑，让她讲自己的故事",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "三姑讲往事，转去问表姐",
+              "remove": ["sangu"],
+              "beats": [
+                { "who": "sangu", "text": "那肯定是你姑父！骑着车在我家门口绕了三圈……" },
+                { "who": "sangu", "text": "哎，说到这个——小琳！" },
+                { "who": "biaojie", "text": "……怎么又到我了。" }
+              ],
+              "next": "cold-biaojie"
+            }
+          ]
+        },
+        {
+          "id": "honest-sangu",
+          "strategy": "sincere",
+          "line": "还没呢。今年先把工作站稳，遇到合适的一定带回来。",
+          "intent": "说句实话，让三姑放下心",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "三姑支持你；大姨改问工作",
+              "remove": ["sangu"],
+              "allies": ["sangu"],
+              "add": ["dayi"],
+              "beats": [
+                { "who": "sangu", "text": "行，有数就好，姑不催了。" },
+                { "who": "dayi", "text": "工作站稳？那我可得问问——" }
+              ],
+              "next": "cold-dayi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cold-erjiu",
+      "scene": 0,
+      "speaker": "erjiu",
+      "target": "you",
+      "topic": "工资",
+      "situation": "奶奶的虾仁饺子引开了三姑，二舅顺着“吃”接过了话头。",
+      "ask": "在上海一个月到手多少？够不够你吃饭？",
+      "actions": [
+        {
+          "id": "fishpond",
+          "strategy": "counter",
+          "line": "二舅先说您的鱼塘！去年说要扩，扩成没？",
+          "intent": "把话题引到二舅最爱聊的鱼塘",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "留住二舅的话题；大姨盯你",
+              "remove": ["erjiu"],
+              "flags": ["fishpond"],
+              "add": ["dayi"],
+              "beats": [
+                { "who": "erjiu", "text": "扩了！三亩变五亩，那增氧机我跟你说……" },
+                { "who": "dayi", "text": "又是鱼塘。孩子，你说说你的。" }
+              ],
+              "next": "hot-erjiu"
+            }
+          ]
+        },
+        {
+          "id": "enough",
+          "strategy": "taiji",
+          "line": "够吃够住，还给奶奶买了件新棉袄。",
+          "intent": "不报数字，把话题带回奶奶",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "不拉别人；二舅仍盯你",
+              "beats": [
+                { "who": "nainai", "text": "那棉袄可暖和了！" },
+                { "who": "erjiu", "text": "嗯……行，回头再细聊。" }
+              ],
+              "next": "hot-erjiu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cold-biaojie",
+      "scene": 0,
+      "speaker": "sangu",
+      "target": "biaojie",
+      "topic": "对象",
+      "situation": "三姑讲完恋爱史，转头点了表姐的名。表姐看了你一眼。",
+      "ask": "小琳你也三十了，还挑呢？",
+      "actions": [
+        {
+          "id": "cover-biaojie",
+          "strategy": "sincere",
+          "line": "三姑，表姐这叫有主见，我还想跟她学呢。",
+          "intent": "替表姐说句话，跟她站一边",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "表姐可帮腔；三姑改盯你",
+              "allies": ["biaojie"],
+              "add": ["sangu"],
+              "beats": [
+                { "who": "biaojie", "text": "听见没，这桌终于有人懂我。" },
+                { "who": "sangu", "text": "你俩一伙的是吧？那你先说你的。" }
+              ],
+              "next": "hot-erjiu"
+            }
+          ]
+        },
+        {
+          "id": "eat-quietly",
+          "strategy": "taiji",
+          "line": "（低头夹菜）这凉拌木耳真脆。",
+          "intent": "低头吃菜，让表姐自己接",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "三姑不盯了；表姐改盯你",
+              "add": ["biaojie"],
+              "beats": [
+                { "who": "biaojie", "text": "……我还年轻。" },
+                { "who": "sangu", "text": "年轻啥呀，过两年就晚了。" },
+                { "who": "biaojie", "text": "（小声）行，你等着。" }
+              ],
+              "next": "hot-erjiu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cold-dayi",
+      "scene": 0,
+      "speaker": "dayi",
+      "target": "you",
+      "topic": "工作",
+      "situation": "三姑不催了，大姨接过话头，往你碗里夹了块鸡。",
+      "ask": "那你那工作稳不稳？要不回老家考个编制？",
+      "actions": [
+        {
+          "id": "ask-dayi",
+          "strategy": "counter",
+          "line": "大姨，小宇今年考得咋样？上岸了没？",
+          "intent": "把话头抛给大姨家的小宇",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "大姨聊儿子；二舅改盯你",
+              "remove": ["dayi"],
+              "add": ["erjiu"],
+              "beats": [
+                { "who": "dayi", "text": "进面了！就差最后一轮……" },
+                { "who": "erjiu", "text": "考公好啊，比上海那些公司稳。你说是不是？" }
+              ],
+              "next": "hot-erjiu"
+            }
+          ]
+        },
+        {
+          "id": "own-plan",
+          "strategy": "sincere",
+          "line": "先在外面再试两年，回不回来我自己掂量。",
+          "intent": "讲清楚自己的打算",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "三姑帮你说话；大姨仍盯你",
+              "beats": [
+                { "who": "sangu", "text": "孩子有主意，挺好。" },
+                { "who": "dayi", "text": "你有数就行……不过还是得想想。" }
+              ],
+              "next": "hot-erjiu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hot-erjiu",
+      "scene": 1,
+      "speaker": "erjiu",
+      "target": "you",
+      "topic": "买房",
+      "situation": "热菜上桌，二舅端着酒杯坐到你旁边，也盯上了你。",
+      "enter": ["erjiu"],
+      "ask": "隔壁小王都在省城买房了，你啥时候买？",
+      "actions": [
+        {
+          "id": "biaojie-help",
+          "strategy": "ally",
+          "line": "表姐，你不是研究过房价？给二舅讲讲。",
+          "intent": "请表姐帮腔，把买房变成她的专业",
+          "requires": [{ "ally": "biaojie" }],
+          "locks": [
+            { "when": { "watching": "biaojie" }, "text": "表姐还记着你第一道没帮她，这会儿不会替你说话" },
+            { "text": "表姐还没站到你这边：第一道替她说句话才行" }
+          ],
+          "outcomes": [
+            {
+              "risk": "二舅不盯了；表姐帮忙用掉",
+              "remove": ["erjiu"],
+              "use": ["biaojie"],
+              "beats": [
+                { "who": "biaojie", "text": "二舅，省城房价今年跌了两成，等等更划算。" },
+                { "who": "erjiu", "text": "哦？那……是得再等等。" }
+              ],
+              "next": "dumpling"
+            }
+          ]
+        },
+        {
+          "id": "ask-erjiu",
+          "strategy": "counter",
+          "line": "二舅，您当年在县城买房，首付咋凑的？",
+          "intent": "把问题抛回二舅自己的经历",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "when": { "ally": "sangu" },
+              "risk": "二舅讲开；三姑支持你挡一句",
+              "remove": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "那会儿可难了，我跟你舅妈借遍了全村……" },
+                { "who": "sangu", "text": "孩子自己有安排，咱不催。" }
+              ],
+              "next": "dumpling"
+            },
+            {
+              "when": { "watching": "sangu" },
+              "risk": "二舅讲开；三姑仍盯你",
+              "remove": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "那会儿可难了，我跟你舅妈借遍了全村……" },
+                { "who": "sangu", "text": "所以说，你也得早点攒首付了。" }
+              ],
+              "next": "dumpling"
+            },
+            {
+              "risk": "二舅讲开；三姑开始盯你",
+              "remove": ["erjiu"],
+              "add": ["sangu"],
+              "beats": [
+                { "who": "erjiu", "text": "那会儿可难了，我跟你舅妈借遍了全村……" },
+                { "who": "sangu", "text": "所以说，你也得早点攒首付了。" }
+              ],
+              "next": "dumpling"
+            }
+          ]
+        },
+        {
+          "id": "lottery",
+          "strategy": "crazy",
+          "line": "买！等我中了彩票，给全桌一人一套！",
+          "intent": "用玩笑把买房话题炸开",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "when": { "ally": "sangu" },
+              "risk": "二舅支持你；大姨盯你",
+              "remove": ["erjiu"],
+              "allies": ["erjiu"],
+              "add": ["dayi"],
+              "beats": [
+                { "who": "erjiu", "text": "哈哈哈，这孩子有意思！来，舅敬你一杯。" },
+                { "who": "dayi", "text": "你这孩子，正经点，到底咋打算的？" },
+                { "who": "sangu", "text": "大过年的，乐呵乐呵嘛。" }
+              ],
+              "next": "dumpling"
+            },
+            {
+              "risk": "二舅支持；大姨、三姑盯你",
+              "remove": ["erjiu"],
+              "allies": ["erjiu"],
+              "add": ["dayi", "sangu"],
+              "beats": [
+                { "who": "erjiu", "text": "哈哈哈，这孩子有意思！来，舅敬你一杯。" },
+                { "who": "dayi", "text": "你这孩子，正经点，到底咋打算的？" },
+                { "who": "sangu", "text": "就是，说正经的！" }
+              ],
+              "next": "dumpling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dumpling",
+      "scene": 2,
+      "speaker": "table",
+      "target": "you",
+      "topic": "打算",
+      "situation": "饺子上桌，话头又落到你身上。",
+      "ask": "来，今年到底咋打算的？说说！",
+      "actions": [
+        {
+          "id": "say-plan",
+          "strategy": "sincere",
+          "line": "好好工作，常回家，别的我自己慢慢定。",
+          "intent": "自己讲打算",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "when": { "maxWatching": 1, "ally": "sangu" },
+              "risk": "三姑挡追问；不报日期收场",
+              "clear": true,
+              "beats": [
+                { "who": "sangu", "text": "开席就说有安排了，咱别再追着问。" },
+                { "who": "dayi", "text": "行，那我不问日期了。" },
+                { "who": "erjiu", "text": "来，饺子快凉了。" }
+              ],
+              "ending": "won",
+              "title": "自己把打算说清了",
+              "summary": "开席那句实话让三姑放心了。压轴你没报日期，她替你挡住追问，大家继续吃饭。"
+            },
+            {
+              "when": { "maxWatching": 1, "ally": "biaojie" },
+              "risk": "表姐替你说话；不报日期收场",
+              "clear": true,
+              "beats": [
+                { "who": "biaojie", "text": "刚才你替我说过了，有主见就挺好。" },
+                { "who": "sangu", "text": "好好，你俩心里有数就行。" },
+                { "who": "dayi", "text": "那先吃吧。" }
+              ],
+              "ending": "won",
+              "title": "自己把打算说清了",
+              "summary": "你自己讲了打算，表姐记着开席的维护，主动附和。没有报出买房或结婚的日期。"
+            },
+            {
+              "when": { "maxWatching": 1 },
+              "risk": "人少能说清；不报日期收场",
+              "clear": true,
+              "beats": [
+                { "who": "dayi", "text": "有自己的主意就好。" },
+                { "who": "sangu", "text": "那就先吃饺子！" }
+              ],
+              "ending": "won",
+              "title": "自己把打算说清了",
+              "summary": "前两道引开了大部分盘问。压轴你讲清自己的边界，没有报日期，饭吃完了。"
+            },
+            {
+              "when": { "watching": "biaojie" },
+              "risk": "三姑、表姐追问日期；还能回应",
+              "beats": [
+                { "who": "biaojie", "text": "刚才我被问你不说话，现在该你答了。" },
+                { "who": "sangu", "text": "别的慢慢定？哪年能定啊？" }
+              ],
+              "next": "plan-followup"
+            },
+            {
+              "risk": "三姑、大姨追问日期；还能回应",
+              "beats": [
+                { "who": "dayi", "text": "工作之外呢？买房和对象总得定一个吧。" },
+                { "who": "sangu", "text": "哪年能定啊？说个时间嘛。" }
+              ],
+              "next": "plan-followup"
+            }
+          ]
+        },
+        {
+          "id": "table-round",
+          "strategy": "counter",
+          "line": "大家轮着说吧，今年各想做成一件啥事？",
+          "intent": "把盘问变成轮流聊天",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "when": { "flag": "fishpond" },
+              "risk": "二舅聊鱼塘；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "beats": [
+                { "who": "erjiu", "text": "还记着我的鱼塘呢？今年想把增氧机修好。" },
+                { "who": "dayi", "text": "我盼小宇考上。那孩子，你想做啥？" }
+              ],
+              "next": "one-thing"
+            },
+            {
+              "when": { "ally": "sangu" },
+              "risk": "三姑改成聊天；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "beats": [
+                { "who": "sangu", "text": "孩子有安排，换个轻松的，挨个说。" },
+                { "who": "dayi", "text": "我盼小宇考上。那你想做啥？" }
+              ],
+              "next": "one-thing"
+            },
+            {
+              "when": { "ally": "biaojie" },
+              "risk": "表姐陪你聊；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "beats": [
+                { "who": "biaojie", "text": "你刚替我说过，这次我先来：想换个工作。" },
+                { "who": "dayi", "text": "我盼小宇考上。轮到你了。" }
+              ],
+              "next": "one-thing"
+            },
+            {
+              "risk": "全桌轮着聊；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "beats": [
+                { "who": "sangu", "text": "我想学跳舞，挨个说，先听大姨。" },
+                { "who": "dayi", "text": "我盼小宇考上。那你想做啥？" }
+              ],
+              "next": "one-thing"
+            }
+          ]
+        },
+        {
+          "id": "ask-help",
+          "strategy": "ally",
+          "line": "先请懂我的人接一句，我再说。",
+          "intent": "请人接过话口",
+          "requires": [{ "ally": "nainai" }, { "ally": "biaojie" }, { "ally": "erjiu" }, { "flag": "fishpond", "unused": "erjiu" }],
+          "locks": [{ "text": "奶奶已帮过；二舅和表姐还没愿意替你接话" }],
+          "outcomes": [
+            {
+              "when": { "ally": "biaojie" },
+              "risk": "下一步选帮手，奶奶仍可选",
+              "beats": [
+                { "who": "biaojie", "text": "刚才你替我说过，我可以接。" },
+                { "who": "nainai", "text": "奶奶也还没帮过你，这次可以。" }
+              ],
+              "next": "helper-pick"
+            },
+            {
+              "when": { "ally": "erjiu", "unused": "nainai" },
+              "risk": "下一步选奶奶或二舅，先看后果",
+              "beats": [
+                { "who": "erjiu", "text": "刚才逗得舅开心，这句我能接。" },
+                { "who": "nainai", "text": "奶奶也还没帮过你，这次可以。" }
+              ],
+              "next": "helper-pick"
+            },
+            {
+              "when": { "flag": "fishpond" },
+              "line": "二舅，鱼塘那增氧机后来装上没？",
+              "intent": "请二舅讲鱼塘",
+              "risk": "用掉二舅帮忙；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "use": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "装上了！我跟你们说，那天晚上停电……" },
+                { "who": "dayi", "text": "别光听鱼塘。孩子，说件今年想做的事？" },
+                { "who": "sangu", "text": "不催日期了，随便聊一件就行。" }
+              ],
+              "next": "one-thing"
+            },
+            {
+              "when": { "ally": "erjiu" },
+              "line": "二舅，刚才那杯还没碰呢！",
+              "intent": "请二舅带头碰杯",
+              "risk": "用掉二舅帮忙；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "use": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "对对，刚才的彩票先不提，来，新年好！" },
+                { "who": "table", "text": "新年好！" },
+                { "who": "dayi", "text": "杯碰完了，说件今年想做的事吧？" }
+              ],
+              "next": "one-thing"
+            },
+            {
+              "line": "奶奶，今年饺子包硬币了吗？谁吃到谁先说！",
+              "intent": "请奶奶发动硬币饺子",
+              "risk": "用掉奶奶帮忙；不报打算收场",
+              "clear": true,
+              "use": ["nainai"],
+              "beats": [
+                { "who": "nainai", "text": "包了！先找硬币，吃到的先说！" },
+                { "who": "sangu", "text": "我先来！" },
+                { "who": "erjiu", "text": "哎哟，这个硬！我吃到了！" }
+              ],
+              "ending": "won",
+              "title": "奶奶的硬币饺子救了场",
+              "summary": "奶奶此前没有被请过，这次把全桌带去找硬币。你没报出自己的打算，饺子吃完了。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "helper-pick",
+      "scene": 2,
+      "speaker": "table",
+      "target": "you",
+      "topic": "接话",
+      "situation": "你留出话口，愿意帮你的人等你点名。",
+      "ask": "好，想先听谁说？",
+      "actions": [
+        {
+          "id": "coin-dumpling",
+          "strategy": "ally",
+          "line": "奶奶，今年饺子包硬币了吗？谁吃到谁先说！",
+          "intent": "请奶奶发动硬币饺子",
+          "requires": [{ "ally": "nainai" }],
+          "locks": [{ "text": "奶奶开席已帮你接过话，现在在厨房忙" }],
+          "outcomes": [
+            {
+              "risk": "用掉奶奶帮忙；不报打算收场",
+              "clear": true,
+              "use": ["nainai"],
+              "beats": [
+                { "who": "nainai", "text": "包了！先找硬币，吃到的先说！" },
+                { "who": "sangu", "text": "我先来！" },
+                { "who": "erjiu", "text": "哎哟，这个硬！我吃到了！" }
+              ],
+              "ending": "won",
+              "title": "奶奶的硬币饺子救了场",
+              "summary": "奶奶此前没有被请过，多交朋友没有让她消失。这次全桌找硬币，你没报打算就吃完了。"
+            }
+          ]
+        },
+        {
+          "id": "erjiu-help",
+          "strategy": "ally",
+          "line": "二舅，刚才那杯还没碰呢！",
+          "intent": "请二舅带头碰杯",
+          "requires": [{ "flag": "fishpond", "unused": "erjiu" }, { "ally": "erjiu" }],
+          "locks": [{ "text": "二舅还没跟你聊开：问过鱼塘或把他逗乐，才愿意帮腔" }],
+          "outcomes": [
+            {
+              "when": { "flag": "fishpond" },
+              "line": "二舅，鱼塘那增氧机后来装上没？",
+              "intent": "请二舅讲鱼塘",
+              "risk": "用掉二舅帮忙；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "use": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "装上了！我跟你们说，那天晚上停电……" },
+                { "who": "dayi", "text": "别光听鱼塘。孩子，说件今年想做的事？" },
+                { "who": "sangu", "text": "不催日期了，随便聊一件就行。" }
+              ],
+              "next": "one-thing"
+            },
+            {
+              "risk": "用掉二舅帮忙；大姨再问一件事",
+              "clear": true,
+              "add": ["dayi"],
+              "use": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "对对，刚才的彩票先不提，来，新年好！" },
+                { "who": "table", "text": "新年好！" },
+                { "who": "dayi", "text": "杯碰完了，说件今年想做的事吧？" }
+              ],
+              "next": "one-thing"
+            }
+          ]
+        },
+        {
+          "id": "biaojie-team",
+          "strategy": "ally",
+          "line": "表姐，咱俩的打算一起说？",
+          "intent": "和表姐一起回应",
+          "requires": [{ "ally": "biaojie" }],
+          "locks": [
+            { "when": { "used": "biaojie" }, "text": "表姐热菜时已帮过你，这次不能再请" },
+            { "text": "表姐还记着开席没人护她，这次不会替你接话" }
+          ],
+          "outcomes": [
+            {
+              "risk": "用掉表姐帮忙；你还要接一句",
+              "clear": true,
+              "use": ["biaojie"],
+              "beats": [
+                { "who": "biaojie", "text": "你开席护了我，这回我先答：我想换个工作。" },
+                { "who": "sangu", "text": "哦，先说工作也行，不催日期了。" },
+                { "who": "biaojie", "text": "你要一起说，还是先听我说？" }
+              ],
+              "next": "cousin-answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan-followup",
+      "scene": 2,
+      "speaker": "table",
+      "target": "you",
+      "topic": "日期",
+      "situation": "刚才那句没挡住追问，你仍可以接着答。",
+      "ask": "买房和对象，哪年能定啊？",
+      "actions": [
+        {
+          "id": "one-step",
+          "strategy": "sincere",
+          "line": "先做完手头的项目，买房和结婚不赶日期。",
+          "intent": "说具体一步，不报日期",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "说一件工作；不报日期收场",
+              "clear": true,
+              "flags": ["shared-project"],
+              "beats": [
+                { "who": "dayi", "text": "哦，手头有项目，先做好眼前的。" },
+                { "who": "sangu", "text": "那我不催日期了，吃吧。" }
+              ],
+              "ending": "won",
+              "title": "说了眼前一步，没交出时间表",
+              "summary": "泛泛的打算招来了追问。你补充一件真实的工作安排，但没有承诺买房或结婚的日期，盘问停了。"
+            }
+          ]
+        },
+        {
+          "id": "draw-line",
+          "strategy": "sincere",
+          "line": "我想好会说，今天不报日期。咱们吃饭。",
+          "intent": "守住边界，不补细节",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "when": { "ally": "sangu" },
+              "risk": "三姑挡追问；不补细节收场",
+              "clear": true,
+              "beats": [
+                { "who": "sangu", "text": "开席就说好了，让孩子自己慢慢定。" },
+                { "who": "dayi", "text": "行，我不问了。" }
+              ],
+              "ending": "won",
+              "title": "三姑接住了你的边界",
+              "summary": "开席的认真回应换来了三姑的理解。追问日期时，她替你接住“不补细节”，没有再请一位帮手。"
+            },
+            {
+              "when": { "ally": "biaojie" },
+              "risk": "用掉表姐帮忙；不补细节收场",
+              "clear": true,
+              "use": ["biaojie"],
+              "beats": [
+                { "who": "biaojie", "text": "刚才你护我，现在我护你。别逼日期了。" },
+                { "who": "sangu", "text": "好，先吃饭。" }
+              ],
+              "ending": "won",
+              "title": "表姐接住了你的边界",
+              "summary": "开席护过表姐，压轴她替你挡住了日期追问。你没有补工作细节，表姐这次正式帮忙已用掉。"
+            },
+            {
+              "when": { "ally": "erjiu" },
+              "risk": "用掉二舅帮忙；不补细节收场",
+              "clear": true,
+              "use": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "刚才都笑了，别又审孩子，先吃饭。" },
+                { "who": "dayi", "text": "行，那今天不追着问了。" }
+              ],
+              "ending": "won",
+              "title": "二舅接住了你的边界",
+              "summary": "热菜的玩笑让二舅愿意替你接话。你坚持不补细节，他出面拦下了追问，本次帮忙已用掉。"
+            },
+            {
+              "when": { "ally": "nainai" },
+              "line": "奶奶，今天不报日期，咱们先吃饭好不好？",
+              "risk": "用掉奶奶帮忙；不补细节收场",
+              "clear": true,
+              "use": ["nainai"],
+              "beats": [
+                { "who": "nainai", "text": "好！先吃饭，今天别逼孩子报日期。" },
+                { "who": "sangu", "text": "听您的，吃饭。" }
+              ],
+              "ending": "won",
+              "title": "奶奶接住了你的边界",
+              "summary": "你把奶奶的帮忙留到了压轴，没有找硬币，而是请她替你接住“不报日期”。这次帮忙已用掉。"
+            },
+            {
+              "risk": "没人帮腔；二舅加入，会被围住",
+              "add": ["erjiu"],
+              "beats": [
+                { "who": "erjiu", "text": "连个日期都不说？来，大家一起听听。" },
+                { "who": "sangu", "text": "有个大概也行啊。" }
+              ],
+              "next": "one-thing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-thing",
+      "scene": 2,
+      "speaker": "dayi",
+      "target": "you",
+      "topic": "一件小事",
+      "situation": "话题已经缩成一件小事，只剩大姨等你接。",
+      "ask": "不问日期了，今年想做成一件啥事？",
+      "actions": [
+        {
+          "id": "small-goal",
+          "strategy": "sincere",
+          "line": "我想学会一道拿手菜，下次做给大家尝。",
+          "intent": "聊一件小事，安心收场",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "说件生活小事；大姨放心收场",
+              "clear": true,
+              "flags": ["shared-small-goal"],
+              "beats": [
+                { "who": "dayi", "text": "这事好，先学我这道凉拌木耳吧。" },
+                { "who": "erjiu", "text": "我负责尝，哈哈。" }
+              ],
+              "ending": "won",
+              "title": "用一道拿手菜收了场",
+              "summary": "盘问变成一件生活小事。你说想学菜，没有交出日期，大姨也不再盯着你，饺子吃完了。"
+            }
+          ]
+        },
+        {
+          "id": "keep-private",
+          "strategy": "taiji",
+          "line": "先不说啦，等做成了再请您看。饺子真香！",
+          "intent": "保留细节，边吃边收场",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "不说打算；大姨仍盯着，饭吃完",
+              "beats": [
+                { "who": "dayi", "text": "你这嘴啊……行，做成了记得告诉我。" },
+                { "who": "sangu", "text": "先吃吧，菜都凉了。" }
+              ],
+              "ending": "won",
+              "title": "留着自己的打算吃完了饭",
+              "summary": "你没有补任何细节。大姨仍惦记这事，但话题已经降下来，没有再招人围问，饭吃完了。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cousin-answer",
+      "scene": 2,
+      "speaker": "biaojie",
+      "target": "you",
+      "topic": "一起回应",
+      "situation": "表姐先说了换工作，替你分走了盘问。",
+      "ask": "你要一起说，还是先听我说？",
+      "actions": [
+        {
+          "id": "both-plan",
+          "strategy": "sincere",
+          "line": "我先做好手头的项目。咱俩都不赶日期。",
+          "intent": "和表姐各说一步",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "说件工作；和表姐不报日期收场",
+              "clear": true,
+              "flags": ["shared-project"],
+              "beats": [
+                { "who": "biaojie", "text": "对，各忙各的，但一起回来吃饭。" },
+                { "who": "sangu", "text": "行，你俩一伙的，先吃吧。" }
+              ],
+              "ending": "won",
+              "title": "和表姐结成了饭桌同盟",
+              "summary": "开席你护了表姐，压轴她先说换工作。你也补了一件项目安排，两个人一起拒绝报日期，饭吃完了。"
+            }
+          ]
+        },
+        {
+          "id": "listen-cousin",
+          "strategy": "counter",
+          "line": "表姐，先听你说吧，你想换哪行？",
+          "intent": "先把话口留给表姐",
+          "requires": [],
+          "locks": [],
+          "outcomes": [
+            {
+              "risk": "不报工作；大姨再问一件小事",
+              "add": ["dayi"],
+              "beats": [
+                { "who": "biaojie", "text": "我想做设计。你先不用交代，听我讲。" },
+                { "who": "dayi", "text": "好，那你等会儿说件生活小事就行。" }
+              ],
+              "next": "one-thing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

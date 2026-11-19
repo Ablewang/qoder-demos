@@ -1,0 +1,41 @@
+{
+  "complete": false,
+  "headless": true,
+  "output": "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-HXjSEf",
+  "routes": [],
+  "geometry": [
+    {
+      "label": "fishpond/ask-nainai/react",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "react",
+      "node": "cold-sangu",
+      "problems": []
+    },
+    {
+      "label": "fishpond/ask-nainai/next",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "phase": "choose",
+      "node": "cold-erjiu",
+      "problems": [
+        {
+          "type": "text-outside",
+          "class": "choice-line",
+          "text": "「二舅先说您的鱼塘！去年说要扩，扩成没？」"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "/Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/run-HXjSEf/fishpond-ask-nainai-reaction.png"
+  ],
+  "downloads": [],
+  "checks": [],
+  "errors": [],
+  "external": [],
+  "fingerprints": null,
+  "failure": "AssertionError [ERR_ASSERTION]: fishpond/ask-nainai/next: [{\"type\":\"text-outside\",\"class\":\"choice-line\",\"text\":\"「二舅先说您的鱼塘！去年说要扩，扩成没？」\"}]\n+ actual - expected\n\n+ [\n+   {\n+     class: 'choice-line',\n+     text: '「二舅先说您的鱼塘！去年说要扩，扩成没？」',\n+     type: 'text-outside'\n+   }\n+ ]\n- []\n\n    at audit (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:89:10)\n    at async goldenRoutes (file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:153:51)\n    at async file:///Users/wangyong/yong/qoder/h5-ideas/relatives-tower-defense/tests/redesign-v1/browser.mjs:280:3"
+}

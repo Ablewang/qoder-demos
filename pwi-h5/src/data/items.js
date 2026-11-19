@@ -272,8 +272,8 @@ export const ITEMS = {
   goldChest: { name: '黄金宝箱', type: 'chest', price: 0, lv: 1, desc: '乾坤袋购买后直接打开，每次消耗1个宝箱；不额外消耗钥匙。' },
   zongzi: { name: '幸运粽子', type: 'event', price: 0, lv: 1, desc: '乾坤袋购买的粽礼，直接打开获得随机奖励；不额外消耗钥匙。' },
   bigZongzi: { name: '大粽子', type: 'event', price: 0, lv: 1, desc: '乾坤袋购买的进阶粽礼，直接打开获得随机奖励；不额外消耗钥匙。' },
-  charmHp: { name: '黄金护身符', type: 'charm', resource: 'hp', value: 600000, price: 0, lv: 1, desc: '装载600000点生命储量；生命不高于50%时自动消耗储量恢复。本作按回合检查，不模拟端游10秒冷却。' },
-  charmMp: { name: '黄金守神符', type: 'charm', resource: 'mp', value: 900000, price: 0, lv: 1, desc: '装载900000点真气储量；真气不高于75%时自动消耗储量恢复。本作按回合检查，不模拟端游5秒冷却。' },
+  charmHp: { name: '黄金护身符', type: 'charm', resource: 'hp', value: 600000, price: 0, lv: 1, desc: '装载600000点生命储量；实时战斗生命低于50%时恢复，独立冷却10逻辑秒。暂停或刷新不清冷却，装填不直接治疗。' },
+  charmMp: { name: '黄金守神符', type: 'charm', resource: 'mp', value: 900000, price: 0, lv: 1, desc: '装载900000点真气储量；实时战斗真气低于75%时恢复，独立冷却5逻辑秒。暂停或刷新不清冷却，装填不直接治疗。' },
 };
 
 Object.assign(ITEMS, PRODUCTION_MATERIALS);

@@ -9,6 +9,7 @@ import { buildMainline } from '../data/quests.js';
 import { ENCOUNTERS } from '../data/encounters.js';
 import { ensureEquipment, validateEquipment } from './equipment.js';
 import { ensureEconomy } from './economy.js';
+import { REALTIME_RULES, ENEMY_AI } from './combat.js';
 
 import { SHOP_PRODUCTS, COSMETICS, MILESTONES, HONGYUN_POOL, ACTIVITY_POOLS, ECONOMY_LIMITS, ECONOMY_RULES } from '../data/economy.js';
 
@@ -23,14 +24,24 @@ const require = (ok, message) => { if (!ok) throw new Error(message); };
 const dungeon = (id) => DUNGEONS.some((d) => d.id === id);
 const knownItem = (id) => own(ITEMS, id) || own(PRODUCTION_MATERIALS, id);
 const GENERATED_FIELDS = ['ruleVersion', 'series', 'weaponType', 'wear', 'ranges', 'stars', 'attackType', 'origin'];
-function safeTree(value, depth = 0) {
+function safeTree(value, depth = 0, path = []) {
   require(depth <= 20, '存档嵌套过深。');
-  if (typeof value === 'number') require(num(value, Number.MAX_SAFE_INTEGER), '存档包含非法数值。');
+  if (typeof value === 'number') {
+    // Only realtime position/aim leaves may be signed; all other save numbers
+    // retain the original non-negative validation, including equipment/buffs.
+    const coordinate = path[0] === 'battle' && path[1] === 'rt' && ['x', 'z'].includes(path.at(-1))
+      && (path.length === 4 && path[2] === 'player'
+        || path[2] === 'enemies' && (path.length === 5 || path.length === 6 && path[4] === 'aim'));
+    const origin = path[0] === 'battle' && path[1] === 'rt' && path[2] === 'origin' && path.length === 4 && ['x', 'z'].includes(path[3]);
+    require(coordinate ? Number.isFinite(value) && Math.abs(value) <= 4
+      : origin ? Number.isFinite(value) && Math.abs(value) <= REALTIME_RULES.originLimit
+        : num(value, Number.MAX_SAFE_INTEGER), '存档包含非法数值。');
+  }
   else if (typeof value === 'string') require(value.length <= 4000, '存档文字过长。');
-  else if (Array.isArray(value)) { require(value.length <= 1000, '存档数组过长。'); for (const v of value) safeTree(v, depth + 1); }
+  else if (Array.isArray(value)) { require(value.length <= 1000, '存档数组过长。'); for (const [i, v] of value.entries()) safeTree(v, depth + 1, [...path, i]); }
   else if (object(value)) {
     require(Object.keys(value).length <= 1000, '存档对象过大。');
-    for (const [k, v] of Object.entries(value)) { require(!['__proto__', 'prototype', 'constructor'].includes(k), '存档字段不安全。'); safeTree(v, depth + 1); }
+    for (const [k, v] of Object.entries(value)) { require(!['__proto__', 'prototype', 'constructor'].includes(k), '存档字段不安全。'); safeTree(v, depth + 1, [...path, k]); }
   } else require(value === null || typeof value === 'boolean', '存档包含非法类型。');
 }
 function counterMap(o, validKey = () => true, max = 1e12) {
@@ -68,6 +79,55 @@ function equipment(it, seen, extended) {
   }
   seen.add(it.uid);
 }
+function realtime(rt, b, p, ids) {
+  const r = REALTIME_RULES;
+  const keys = (o, allowed) => object(o) && Object.keys(o).every((k) => allowed.includes(k));
+  const position = (o) => object(o) && Number.isFinite(o.x) && o.x >= r.minX && o.x <= r.maxX
+    && Number.isFinite(o.z) && o.z >= r.minZ && o.z <= r.maxZ;
+  require(keys(rt, ['tick', 'paused', 'autoSkills', 'player', 'enemies', 'sequence', 'events', 'basicReadyAt', 'petReadyAt', 'skillReady', 'origin'])
+    && integer(rt.tick, 1e7) && typeof rt.paused === 'boolean' && typeof rt.autoSkills === 'boolean'
+    && integer(rt.sequence, 1e9), '实时时钟或标志无效。');
+  require(rt.origin === undefined || keys(rt.origin, ['x', 'z']) && Object.keys(rt.origin).length === 2
+    && [rt.origin.x, rt.origin.z].every((n) => Number.isFinite(n) && Math.abs(n) <= r.originLimit), '实时战场原点无效。');
+  const timer = (n, horizon = 1000) => integer(n, rt.tick + horizon);
+  require(keys(rt.player, ['x', 'z', 'readyAt', 'guardUntil', 'guardReadyAt', 'potionReadyAt']) && position(rt.player)
+    && timer(rt.player.readyAt, r.skillGlobalTicks) && timer(rt.player.guardUntil, r.guardTicks)
+    && timer(rt.player.guardReadyAt, r.guardCooldownTicks) && timer(rt.player.potionReadyAt, r.potionCooldownTicks)
+    && timer(rt.basicReadyAt, r.basicTicks) && timer(rt.petReadyAt, r.basicTicks), '实时玩家坐标或计时器无效。');
+  require(b.monsters.length <= 4 && !ids.has('player') && !ids.has('pet') && object(rt.enemies)
+    && Object.keys(rt.enemies).length === ids.size && Object.keys(rt.enemies).every((id) => ids.has(id)), '实时敌人ID无效。');
+  for (const [id, e] of Object.entries(rt.enemies)) {
+    const m = b.monsters.find((m) => m.id === id);
+    require(keys(e, ['x', 'z', 'readyAt', 'windupUntil', 'aim', 'mode', 'chargeAt', 'phase', 'combo']) && position(e)
+      // Optional AI fields (absent in older saves): special-move tag only while a red circle exists.
+      && (e.mode === undefined || ['charge', 'quake'].includes(e.mode) && e.aim !== null)
+      && (e.chargeAt === undefined || timer(e.chargeAt, ENEMY_AI.chargeCooldownTicks))
+      && (e.phase === undefined || e.phase === 2) && (e.combo === undefined || integer(e.combo, ENEMY_AI.quakeEvery))
+      && timer(e.readyAt, r.enemyCooldownTicks) && timer(e.windupUntil, r.heavyWindupTicks)
+      && (e.aim === null || keys(e.aim, ['x', 'z']) && Object.keys(e.aim).length === 2 && position(e.aim))
+      && (e.windupUntil > 0 || e.aim === null)
+      && (b.result !== null || m.hp <= 0 || e.windupUntil === 0 || e.windupUntil > rt.tick && (m.intent === 'heavy' ? e.aim !== null : e.aim === null)), '实时敌人坐标、前摇或落点无效。');
+  }
+  require(counterMap(rt.skillReady, (id) => !!findSkill(p.cls, id), rt.tick + 1000)
+    && Object.entries(b.cooldowns).every(([id, turns]) => own(rt.skillReady, id) && turns === Math.ceil(Math.max(0, rt.skillReady[id] - rt.tick) / r.effectTicks))
+    && Object.entries(rt.skillReady).every(([id, at]) => (b.cooldowns[id] || 0) === Math.ceil(Math.max(0, at - rt.tick) / r.effectTicks)), '实时技能冷却与旧字段不一致。');
+  require(object(p.charmCooldowns), '实时战斗缺少护符时钟。');
+  for (const effect of [...b.buffs, ...b.monsters.flatMap((m) => m.statuses)]) require(timer(effect.nextEffectAt, r.effectTicks), '实时效果计时器无效。');
+  for (const effect of [...b.buffs, ...b.monsters.filter((m) => m.hp > 0).flatMap((m) => m.statuses)]) require(effect.nextEffectAt > rt.tick, '实时存活效果时钟已过期。');
+  require(Array.isArray(rt.events) && rt.events.length <= r.eventLimit && rt.events.length <= rt.sequence
+    && (rt.events.length > 0 || rt.sequence === 0), '实时事件队列无效。');
+  const actor = (id) => id === 'player' || id === 'pet' || ids.has(id);
+  let previousTick = 0;
+  for (const [i, e] of rt.events.entries()) {
+    require(keys(e, ['seq', 'tick', 'kind', 'actor', 'target', 'amount', 'name', 'element']) && Object.keys(e).length === 8
+      && integer(e.seq, rt.sequence) && e.seq === rt.sequence - rt.events.length + i + 1
+      && integer(e.tick, rt.tick) && e.tick >= previousTick
+      && ['attack', 'cast', 'damage', 'heal', 'miss', 'guard', 'death', 'telegraph'].includes(e.kind)
+      && actor(e.actor) && actor(e.target) && integer(e.amount) && typeof e.name === 'string' && e.name.length <= 1000
+      && (e.element === null || ['metal', 'wood', 'water', 'fire', 'earth'].includes(e.element)), '实时事件字段无效。');
+    previousTick = e.tick;
+  }
+}
 function battle(b, p) {
   if (b === null) return;
   require(object(b) && integer(b.round, 1e7) && [null, 'win', 'lose', 'escape'].includes(b.result) && num(b.shield) && typeof b.stealth === 'boolean' && typeof b.revived === 'boolean', '战斗状态无效。');
@@ -93,6 +153,8 @@ function battle(b, p) {
     ids.add(m.id);
   }
   if (b.result === null) require(p.hp > 0 && b.monsters.some((m) => m.hp > 0), '进行中的战斗必须有存活双方。');
+  if (b.resolved !== undefined) require(typeof b.resolved === 'boolean' && (!b.resolved || b.result !== null), '战斗结算标志无效。');
+  if (b.rt !== undefined) realtime(b.rt, b, p, ids);
   require(object(b.cooldowns) && Object.entries(b.cooldowns).every(([k, v]) => findSkill(p.cls, k) && integer(v, 100)), '技能冷却无效。');
   require(Array.isArray(b.buffs) && b.buffs.length <= 100, '战斗增益无效。');
   const buffKeys = [...Object.keys(STAT_NAMES), 'atk', 'shield', 'lifesteal', 'regen', 'equipmentDefPct', 'equipmentEarthDefPct'];
@@ -162,6 +224,8 @@ function economy(p) {
   }
   require(object(p.cosmetics) && Array.isArray(p.cosmetics.owned) && new Set(p.cosmetics.owned).size === p.cosmetics.owned.length && p.cosmetics.owned.every((id) => cosmetic(id)) && ['outfit', 'mount', 'flyer'].every((slot) => p.cosmetics[slot] === null || (p.cosmetics.owned.includes(p.cosmetics[slot]) && cosmetic(p.cosmetics[slot]).slot === slot)), '外观拥有或穿戴数据无效。');
   require(object(p.charms) && integer(p.charms.hp) && integer(p.charms.mp), '神符储量无效。');
+  if (p.charmCooldowns !== undefined) require(object(p.charmCooldowns) && Object.keys(p.charmCooldowns).length === 2
+    && integer(p.charmCooldowns.hp, REALTIME_RULES.hpCharmTicks) && integer(p.charmCooldowns.mp, REALTIME_RULES.mpCharmTicks), '护符时钟无效。');
 }
 
 export function validateSnapshot(raw) {

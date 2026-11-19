@@ -1,0 +1,16 @@
+{
+  "identifier": "pet-master",
+  "description": "Local pet controller; no generic filesystem, shell, navigation, or shortcut plugin grants.",
+  "local": true,
+  "windows": ["pet"],
+  "permissions": [
+    "core:event:allow-listen", "core:event:allow-unlisten", "core:event:allow-emit",
+    "core:resources:allow-close", "core:menu:allow-new", "core:menu:allow-popup",
+    "core:window:allow-start-dragging", "core:window:allow-set-size", "core:window:allow-set-position",
+    "core:window:allow-current-monitor", "core:window:allow-available-monitors",
+    "core:window:allow-outer-position", "core:window:allow-outer-size", "core:window:allow-scale-factor",
+    "native-get-api-token", "native-read-daemon-info", "native-wake-daemon", "native-read-client-settings",
+    "native-write-client-settings", "native-window-frames", "native-set-hit-areas", "native-show-aux",
+    "native-hide-aux", "native-set-demo-visual", "native-quit-pet"
+  ]
+}

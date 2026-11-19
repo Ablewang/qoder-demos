@@ -587,14 +587,14 @@ try {
   await page.keyboard.press('Escape'); const mana=(await game()).player.mana;
   await holdMouse(page,{x:700,y:400});assert.equal((await game()).player.mana,mana);
   console.log('Desktop golden path: opening, creation, combat, XP, loot, potion, portal, panels, IndexedDB save/reload, pause PASS');
-  await page.getByRole('button',{name:'返回角色列表',exact:true}).click();
+  await page.getByRole('button',{name:'保存并返回角色菜单',exact:true}).click(); await page.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
   await page.getByRole('button',{name:'新建角色',exact:true}).click();
   await page.locator('[data-class="pal"]').click(); await page.locator('#hero-name').fill('伊芙');
   await page.getByRole('button',{name:'开启旅程',exact:true}).click();
   await page.waitForFunction(()=>window.sanctuary.engine.state.screen==='game');
   const secondId=await page.evaluate(()=>window.sanctuary.engine.state.activeSaveId);
   assert.notEqual(firstId,secondId);
-  await page.keyboard.press('Escape'); await page.getByRole('button',{name:'返回角色列表',exact:true}).click();
+  await page.keyboard.press('Escape'); await page.getByRole('button',{name:'保存并返回角色菜单',exact:true}).click(); await page.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
   await page.waitForFunction(()=>window.sanctuary.engine.state.characters.length===2);
   await page.locator('.character-save').nth(1).waitFor();
   assert.equal(await page.locator('.character-save').count(),2);
@@ -604,7 +604,7 @@ try {
   await page.waitForFunction(()=>window.sanctuary.engine.state.screen==='game');
   s=await game(); assert.equal(s.player.classId,'sor'); assert.equal(s.player.experience,before.player.experience);
   assert.equal(s.player.belt.filter(Boolean).length,before.player.belt.filter(Boolean).length);
-  await page.keyboard.press('Escape'); await page.getByRole('button',{name:'返回角色列表',exact:true}).click();
+  await page.keyboard.press('Escape'); await page.getByRole('button',{name:'保存并返回角色菜单',exact:true}).click(); await page.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
   await page.reload({waitUntil:'networkidle'}); await enterRoster(page);
   assert.equal(await page.locator('.character-save').count(),2);
   await page.locator(`[data-save-id="${secondId}"]`).click(); await page.getByRole('button',{name:'进入',exact:true}).click();
@@ -658,12 +658,12 @@ try {
   await mp.screenshot({path:output+'16-mobile-equipment.png'});
   await mp.keyboard.press('Escape');
   console.log('Mobile original assets, non-overlapping HUD, catalog category/search/detail and no horizontal overflow PASS');
-  await mp.keyboard.press('Escape'); await mp.getByRole('button',{name:'返回角色列表',exact:true}).tap();
+  await mp.keyboard.press('Escape'); await mp.getByRole('button',{name:'保存并返回角色菜单',exact:true}).tap(); await mp.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
   await mp.locator('.character-save').first().waitFor();
   await mp.getByRole('button',{name:'新建角色',exact:true}).tap(); await mp.locator('[data-class="sor"]').tap();
   await mp.getByRole('button',{name:'开启旅程',exact:true}).tap();
   await mp.waitForFunction(()=>window.sanctuary.engine.state.screen==='game');
-  await mp.keyboard.press('Escape'); await mp.getByRole('button',{name:'返回角色列表',exact:true}).tap();
+  await mp.keyboard.press('Escape'); await mp.getByRole('button',{name:'保存并返回角色菜单',exact:true}).tap(); await mp.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
   await mp.locator('.character-save').nth(1).waitFor(); await mp.screenshot({path:output+'13-mobile-characters.png'});
   assert.equal(await mp.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),true);
   console.log('Mobile 390×844: opening/skip, multiple characters, creation, HUD, responsive overflow check PASS');
@@ -911,7 +911,7 @@ try {
       await activate(rp.getByRole('button',{name:'开启旅程',exact:true}));
       await rp.waitForFunction(()=>window.sanctuary.engine.state.screen==='game'&&window.sanctuary.engine.state.saved);
       ids.push(await rp.evaluate(()=>window.sanctuary.engine.state.activeSaveId));
-      await rp.keyboard.press('Escape'); await activate(rp.getByRole('button',{name:'返回角色列表',exact:true}));
+      await rp.keyboard.press('Escape'); await activate(rp.getByRole('button',{name:'保存并返回角色菜单',exact:true})); await rp.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
       await rp.waitForFunction(()=>window.sanctuary.engine.state.saved);
     }
     const select = async id => {
@@ -947,7 +947,7 @@ try {
     await rp.waitForFunction(()=>window.sanctuary.engine.state.screen==='game');
     assert.equal(await rp.evaluate(()=>window.sanctuary.engine.state.activeSaveId),ids[1]);
     assert.equal(await rp.evaluate(()=>window.sanctuary.engine.state.player.classId),'bar');
-    await rp.keyboard.press('Escape'); await activate(rp.getByRole('button',{name:'返回角色列表',exact:true}));
+    await rp.keyboard.press('Escape'); await activate(rp.getByRole('button',{name:'保存并返回角色菜单',exact:true})); await rp.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
     await rp.waitForFunction(()=>window.sanctuary.engine.state.saved);
     for(const id of ids.slice(1)) {
       await select(id); rp.once('dialog',d=>d.accept()); await activate(rp.getByRole('button',{name:'删除',exact:true}));
@@ -983,7 +983,7 @@ try {
   await concurrent.getByRole('button',{name:'进入',exact:true}).click(); await concurrent.waitForFunction(()=>window.sanctuary.engine.state.screen==='game');
   assert.equal(await concurrent.evaluate(()=>window.sanctuary.engine.state.player.gold),987);
   console.log('Real IndexedDB legacy migration, stale snapshot protection across reload/tabs and retained localStorage PASS');
-  await lp.keyboard.press('Escape'); await lp.getByRole('button',{name:'返回角色列表',exact:true}).click();
+  await lp.keyboard.press('Escape'); await lp.getByRole('button',{name:'保存并返回角色菜单',exact:true}).click(); await lp.waitForFunction(()=>window.sanctuary.engine.state.screen==='title'&&!window.sanctuary.engine.state.savingAndExiting);
   await lp.waitForFunction(()=>window.sanctuary.engine.state.saved);
   lp.once('dialog',d=>d.accept()); await lp.getByRole('button',{name:'删除',exact:true}).click();
   await lp.waitForFunction(()=>!window.sanctuary.engine.state.loadingSave&&window.sanctuary.engine.state.characters.length===0);

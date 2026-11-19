@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import test from 'node:test';
 import { rawRows } from '../src/catalog';
 import { BASE_ITEMS, getBase, itemName, runewordName, RUNES, RUNEWORDS } from '../src/items';
-import { CATALOG_CATEGORIES, EQUIPMENT_CATALOG, searchEquipment } from '../src/equipment-catalog';
+import { CATALOG_CATEGORIES, EQUIPMENT_CATALOG, equipmentPropertyLines, runewordEquipmentGroup, runewordRequiredLevel, searchEquipment } from '../src/equipment-catalog';
 import type { CatalogKind, EquipmentEntry } from '../src/equipment-catalog';
 
 // Read files independently: do not use rawRows or runtime filters as the oracle.
@@ -232,14 +232,14 @@ test('disabled unique rows, sparse IDs, placeholders and level restrictions stay
   assert.equal(entries('unique').filter(entry => entry.status.startsWith('运行时候选')).length, 383);
 });
 
-test('78 complete words have original Name identities: 55 offline matches, 23 server-disabled, 91 incomplete', () => {
+test('78 complete words retain 55 offline definitions plus one D2R Edge overlay and 22 server-disabled', () => {
   const complete = entries('runeword').filter(entry => entry.raw.complete === 1);
   const offline = complete.filter(entry => entry.raw.server !== 1), server = complete.filter(entry => entry.raw.server === 1);
   assert.equal(complete.length, 78);
   assert.equal(offline.length, 55);
   assert.equal(server.length, 23);
   assert.equal(entries('runeword').length - complete.length, 91);
-  assert.deepEqual(sorted(RUNEWORDS.map(word => String(word.raw.Name))), sorted(offline.map(entry => String(entry.raw.Name))));
+  assert.deepEqual(sorted(RUNEWORDS.map(word => String(word.raw.Name))), sorted([...offline.map(entry => String(entry.raw.Name)), 'Runeword31']));
   const itemTypes = new Set(Object.values(source('ItemTypes')).map(row => row.Code));
   for (const entry of complete) {
     assert.equal(entry.id, `runeword:${entry.raw.Name}`, entry.name);
@@ -254,7 +254,10 @@ test('78 complete words have original Name identities: 55 offline matches, 23 se
     assert.match(entry.status, /离线匹配已启用.*仅部分行为/);
     assert.equal(entry.name, runewordName(RUNEWORDS.find(word => word.raw.Name === entry.raw.Name)!.name));
   }
-  for (const entry of server) assert.match(entry.status, /server=1.*离线匹配禁用.*仅定义.*不完整/);
+  for (const entry of server) {
+    if (entry.raw.Name === 'Runeword31') assert.match(entry.status, /重制版离线边缘覆盖已启用.*server=1.*仅部分行为/);
+    else assert.match(entry.status, /server=1.*离线匹配禁用.*仅定义.*不完整/);
+  }
   for (const entry of entries('runeword').filter(entry => entry.raw.complete !== 1)) assert.match(entry.status, /未完成.*匹配禁用.*仅定义/);
   assert.equal(find('runeword:Runeword47').name, '悔恨');
   assert.equal(find('runeword:Runeword99').name, '理智之声');
@@ -296,8 +299,14 @@ test('historical affixes and all 151 cube definitions are visible without claimi
 
 test('search is case-insensitive substring matching of Chinese, display, raw names and codes', () => {
   for (const kind of Object.keys(counts) as CatalogKind[]) {
-    assert.deepEqual(searchEquipment(kind, ''), entries(kind));
-    assert.deepEqual(searchEquipment(kind, ' \t\n '), entries(kind));
+    const empty = searchEquipment(kind, ''), whitespace = searchEquipment(kind, ' \t\n ');
+    if (kind === 'runeword') {
+      assert.deepEqual(sorted(empty.map(entry => entry.id)), sorted(entries(kind).map(entry => entry.id)));
+      assert.deepEqual(whitespace, empty);
+    } else {
+      assert.deepEqual(empty, entries(kind));
+      assert.deepEqual(whitespace, entries(kind));
+    }
     assert.deepEqual(searchEquipment(kind, 'not-a-real-definition-!'), []);
   }
   for (const entry of EQUIPMENT_CATALOG) {
@@ -314,6 +323,53 @@ test('search is case-insensitive substring matching of Chinese, display, raw nam
   assert.deepEqual(searchEquipment('unique', '碧蓝怒火').map(entry => entry.code), ['crs', '7cr']);
   assert.deepEqual(searchEquipment('gem', '蓝宝石').map(entry => entry.code).sort(), ['gcb', 'gfb', 'glb', 'gpb', 'gsb']);
   assert.deepEqual(searchEquipment('runeword', 'inFinIty').map(entry => entry.id), ['runeword:Runeword60']);
+});
+
+test('runewords are grouped by equipment type and sorted by required level', () => {
+  const results = searchEquipment('runeword', '');
+  const closedGroups = new Set<string>();
+  let currentGroup = '', previousLevel = -1;
+  for (const entry of results) {
+    const group = runewordEquipmentGroup(entry), level = runewordRequiredLevel(entry);
+    if (group !== currentGroup) {
+      if (currentGroup) closedGroups.add(currentGroup);
+      assert.ok(!closedGroups.has(group), `${group} must be contiguous`);
+      currentGroup = group;
+      previousLevel = -1;
+    }
+    assert.ok(level >= previousLevel, `${group}: ${entry.name} level ${level} after ${previousLevel}`);
+    previousLevel = level;
+  }
+  assert.equal(runewordEquipmentGroup(find('runeword:Runeword133')), '盔甲');
+  assert.equal(runewordRequiredLevel(find('runeword:Runeword133')), 17);
+  assert.equal(runewordEquipmentGroup(find('runeword:Runeword130')), '武器 / 盾牌');
+  assert.equal(runewordRequiredLevel(find('runeword:Runeword130')), 25);
+  assert.equal(runewordEquipmentGroup(find('runeword:Runeword95:118')), '未定义');
+  assert.equal(runewordRequiredLevel(find('runeword:Runeword95:118')), Number.POSITIVE_INFINITY);
+});
+
+test('catalog properties use complete Chinese tooltip lines instead of internal codes', () => {
+  assert.deepEqual(equipmentPropertyLines(find('runeword:Runeword134')), [
+    '提升 25% 攻击速度',
+    '+3 最小伤害',
+    '+3 最大伤害',
+    '50% 撕开伤口机会',
+    '增强伤害 20%',
+  ]);
+  assert.deepEqual(equipmentPropertyLines(find('runeword:Runeword8')), [
+    '15% 几率在击中敌人时施展 10 级 骨矛',
+    '15% 几率在被击中时施展 10 级 白骨装甲',
+    '+2 死灵法师技能等级',
+    '+100–150 法力',
+  ]);
+  assert.ok(equipmentPropertyLines(find('runeword:Runeword6')).includes('4 级 尸体爆炸（12/12 聚气）'));
+  assert.ok(equipmentPropertyLines(find('runeword:Runeword9')).includes('装备时赋予 15–21 级 荆棘灵气'));
+  for (const entry of EQUIPMENT_CATALOG) {
+    for (const line of equipmentPropertyLines(entry)) {
+      assert.doesNotMatch(line, /(?:T1Code|PCode|FCode|Mod\d+Code|mod\d+code|prop\d+|swing\d|openwounds|dmg%)/, `${entry.id}: ${line}`);
+      assert.match(line, /[\u4e00-\u9fff]/, `${entry.id}: ${line}`);
+    }
+  }
 });
 
 test('the 2790-key zhCN snapshot matches its pinned on-disk provenance hash', () => {

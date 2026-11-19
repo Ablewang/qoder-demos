@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-window-frames"
+description = "Enables the window_frames command without any pre-configured scope."
+commands.allow = ["window_frames"]
+
+[[permission]]
+identifier = "deny-window-frames"
+description = "Denies the window_frames command without any pre-configured scope."
+commands.deny = ["window_frames"]

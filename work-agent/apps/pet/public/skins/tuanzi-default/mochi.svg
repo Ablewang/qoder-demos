@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="戴耳麦的奶白团子">
+<ellipse class="shadow" cx="80" cy="133" rx="51" ry="7" fill="#4b342b" opacity=".12"/>
+<g class="prop box-back" stroke="#4a3027" stroke-width="2.5" stroke-linejoin="round">
+<path d="M42 105 L51 90 H109 L118 105 V122 H42Z" fill="#c99b70"/>
+<path class="box-flap-back-left" d="M42 105 L51 90 L29 83 L19 101Z" fill="#e6bd90"/>
+<path class="box-flap-back-right" d="M118 105 L109 90 L131 83 L141 101Z" fill="#e6bd90"/>
+<path d="M42 105 H118 L129 113 L80 127 L31 113Z" fill="#99704e"/>
+</g>
+<g class="mochi" stroke="#4a3027" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path class="headband" d="M28 90 Q25 39 79 39 Q135 39 134 92" fill="none" stroke="#292b2b" stroke-width="11"/>
+<g class="feet" fill="#fff7eb"><ellipse cx="54" cy="125" rx="12" ry="7"/><ellipse cx="107" cy="125" rx="12" ry="7"/></g>
+<g class="body">
+<g class="ear-left"><path d="M43 56 Q39 34 51 33 Q64 30 69 48" fill="#fff9ef"/><path d="M46 48 Q48 36 57 42 L61 49" stroke="none" fill="#ffc0b5"/></g>
+<g class="ear-right"><path d="M100 49 Q110 32 121 38 Q133 43 125 64" fill="#fff9ef"/><path d="M110 50 Q115 39 122 46 L120 55" stroke="none" fill="#ffc0b5"/></g>
+<path d="M28 94 Q25 65 43 56 L69 48 Q85 44 100 49 L125 64 Q141 83 135 108 Q132 130 83 129 Q32 132 28 94Z" fill="#fff9ef" stroke="none"/>
+<path d="M28 94 Q25 65 43 56 M69 48 Q85 44 100 49 M125 64 Q141 83 135 108 Q132 130 83 129 Q32 132 28 94" fill="none"/>
+<path d="M33 113 Q75 132 130 111 Q124 130 81 129 Q41 130 33 113" stroke="none" fill="#f9e6d7"/>
+<g class="face"><g class="eyes" stroke="none" fill="#40281f"><ellipse cx="63" cy="81" rx="3.8" ry="5"/><ellipse cx="99" cy="81" rx="3.8" ry="5"/></g>
+<g class="closed-eyes" fill="none"><path d="M58 81 Q63 75 68 81 M94 81 Q99 75 104 81"/></g>
+<g class="blush" stroke="none" fill="#ffbdb0" opacity=".8"><ellipse cx="48" cy="93" rx="9" ry="6"/><ellipse cx="115" cy="93" rx="9" ry="6"/></g>
+<path class="mouth" d="M76 91 Q80 96 84 91 M80 94 Q84 99 88 94" fill="none" stroke-width="2.2"/>
+<g class="giggle-mouth" stroke-width="2.2"><path d="M75 91 Q81 95 87 91 Q87 104 81 104 Q75 104 75 91Z" fill="#734c45"/><path d="M78 101 Q81 98 84 101" fill="none" stroke="#ffc0b5"/></g>
+<path class="surprised-mouth" d="M79 93 Q81 90 83 93 Q86 99 81 99 Q77 99 79 93Z" fill="#734c45" stroke-width="2.2"/>
+<g class="brows" fill="none" stroke-width="2"><path d="M60 73 L67 76 M95 76 L102 73"/></g></g>
+</g>
+<g class="arms" fill="#fff9ef"><path class="paw-left" d="M48 106 Q38 114 47 121 Q61 127 64 115"/><path class="paw-right" d="M109 106 Q119 114 110 121 Q97 127 94 115"/></g>
+<g class="headset"><g class="headset-left"><ellipse cx="28" cy="89" rx="11" ry="18" fill="#303636"/><ellipse class="ear-ring" cx="26" cy="89" rx="7" ry="14" fill="#6abec9" stroke="none"/><ellipse cx="26" cy="89" rx="4" ry="11" fill="#465559" stroke="none"/></g>
+<g class="headset-right"><ellipse cx="135" cy="89" rx="11" ry="18" fill="#303636"/><ellipse class="ear-ring" cx="138" cy="89" rx="7" ry="14" fill="#6abec9" stroke="none"/><ellipse cx="138" cy="89" rx="4" ry="11" fill="#465559" stroke="none"/></g>
+<path d="M130 103 Q119 114 109 111" fill="none" stroke="#303636" stroke-width="5"/><rect x="98" y="106" width="13" height="8" rx="4" fill="#4d5b5d"/></g>
+<g class="nightcap"><path d="M63 49 Q82 7 104 28 L111 51 Q89 41 63 49" fill="#a3b9d9"/><circle cx="103" cy="26" r="5" fill="#fff9ef"/></g>
+<g class="prop sign"><path d="M116 67 L114 107" stroke-width="4"/><rect x="95" y="33" width="48" height="31" rx="4" fill="#fff5dd"/><path d="M108 44 H132 M108 53 H125" stroke="#76b7bc"/></g>
+<g class="prop key"><rect x="101" y="32" width="43" height="36" rx="4" fill="#fff5dd"/><circle cx="115" cy="48" r="5" fill="none" stroke="#b9964c"/><path d="M120 48 H135 M130 48 V53" stroke="#b9964c"/></g>
+<g class="prop keyboard" fill="#98c8c5"><rect x="50" y="116" width="60" height="14" rx="3"/><path d="M59 121 H102 M61 125 H100" stroke-width="1.5"/></g>
+<g class="prop tea"><path d="M67 112 H88 V124 Q78 132 67 124Z" fill="#b5d7c3"/><path d="M88 115 Q100 117 88 123 M73 105 Q70 100 74 95 M83 105 Q80 100 84 95" fill="none" stroke-width="2"/></g>
+<g class="prop snack"><circle cx="79" cy="114" r="10" fill="#e3b978"/><path d="M74 109 L74 110 M82 114 L82 115 M76 118 L76 119"/></g>
+<g class="prop notebook"><path d="M54 105 Q66 100 80 107 Q92 100 106 105 V127 Q92 122 80 128 Q67 121 54 127Z" fill="#f4d8b6"/><path d="M80 108 V126 M60 111 H73 M87 111 H100 M60 116 H71 M87 116 H97" stroke-width="1.5"/></g>
+</g>
+<g class="prop box-front" stroke="#4a3027" stroke-width="2.5" stroke-linejoin="round">
+<path class="box-flap-left" d="M42 111 L31 103 L17 123 L42 127Z" fill="#edc89e"/>
+<path class="box-flap-right" d="M118 111 L129 103 L143 123 L118 127Z" fill="#edc89e"/>
+<path d="M31 113 L42 111 L45 147 L34 138Z" fill="#bb8a61"/>
+<path d="M118 111 L129 113 L126 138 L115 147Z" fill="#b48259"/>
+<path d="M42 111 H118 L115 147 H45Z" fill="#dfb68b"/>
+<path d="M75 112 H85 L84 146 H76Z" fill="#f1d1a4" stroke="none"/>
+<path d="M43 115 H117 M50 139 L58 140 M103 138 L109 136" fill="none" stroke="#bd9169" stroke-width="1.5"/>
+</g>
+<g class="prop box-paws" fill="#fff9ef" stroke="#4a3027" stroke-width="2.5" stroke-linecap="round"><ellipse cx="60" cy="112" rx="8" ry="5"/><ellipse cx="100" cy="112" rx="8" ry="5"/><path d="M58 113 V115 M62 113 V115 M98 113 V115 M102 113 V115"/></g>
+<g class="prop ball"><circle cx="126" cy="132" r="10" fill="#efba90" stroke="#4a3027" stroke-width="2.5"/><path class="yarn" d="M118 128 Q130 127 132 136 M118 134 Q128 131 131 124 M125 123 Q120 132 126 140" fill="none" stroke="#a77565" stroke-width="1.2"/></g>
+<g class="prop ball-grip" fill="#fff9ef" stroke="#4a3027" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M64 111 Q66 107 70 111 L73 118 Q70 124 65 120Z"/><path d="M96 111 Q94 107 90 111 L87 118 Q90 124 95 120Z"/></g>
+<g class="prop hearts" fill="#f48b95"><path d="M33 28 C19 14 12 32 33 43 C54 32 47 14 33 28Z"/><path d="M129 17 C118 5 112 22 129 30 C146 22 140 5 129 17Z"/></g>
+<g class="prop stars" fill="#efc86c"><path d="M29 31 L32 39 L40 40 L34 45 L36 53 L29 48 L22 53 L24 45 L18 40 L26 39Z"/><path d="M132 29 L135 37 L143 38 L137 43 L139 51 L132 46 L125 51 L127 43 L121 38 L129 37Z"/></g>
+<g class="prop notes" fill="#83a9bc"><path d="M26 32 V52 Q12 57 14 47 Q15 42 23 44 V28 L39 24 V45 Q27 51 27 42 Q29 36 36 38 V31Z"/><path d="M129 12 V27 Q116 31 118 23 Q120 19 126 21 V10Z"/></g>
+<g class="prop zzz" fill="#8a9ebe" font-family="sans-serif" font-weight="bold"><text x="26" y="45" font-size="15">z</text><text x="39" y="32" font-size="23">Z</text></g>
+<g class="prop plug" stroke="#777" stroke-width="3" fill="none"><path d="M139 123 V133 Q139 141 150 141 M134 117 V124 H144 V117 M137 112 V117 M141 112 V117"/></g>
+</svg>

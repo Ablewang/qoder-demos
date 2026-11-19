@@ -98,6 +98,8 @@ type ChatChunk =
   | { kind: 'proposal'; proposalId: ProposalId }
   | { kind: 'auth'; requestId: string }
   | { kind: 'error'; code: string; message: string }
+  | { kind: 'memory'; itemId: string; change: 'remembered' | 'updated' | 'forgotten' }   // v1.1
+  | { kind: 'card'; card: LocalCard }                                                     // v1.1，见 tuanzi-v1-protocol
   | { kind: 'done'; conversationId: string };
 ```
 
@@ -526,7 +528,7 @@ M1 的动作空实现明确返回 feature_unavailable；不接受决定、不假
 ```ts
 interface AuditRecord {
   id: string; at: Timestamp; actor: Actor;
-  kind: 'decision' | 'tool_write' | 'tool_read_content' | 'llm_call' | 'auth' | 'share' | 'config';
+  kind: 'decision' | 'tool_write' | 'tool_read_content' | 'llm_call' | 'auth' | 'share' | 'config' | 'memory';
   refs: { proposalId?: ProposalId; decisionId?: string; executionId?: string; stepId?: string; entityIds?: EntityId[]; tool?: string; provider?: string };
   summary: string;               // 不含凭证；正文只放摘要或哈希
   outcome: 'started' | 'ok' | 'error' | 'unknown';
@@ -546,6 +548,8 @@ interface Notice {
   title: string;                             // 事实性标题
   facts: Array<{ label: string; value: string | number; unit?: string; ref?: EntityId }>;   // 原样展示，不能被人格改写
   body?: string;                             // 事实性正文，不能包含 secret 级内容
+  why?: string;                              // v1.1：为什么现在提醒
+  nextStep?: string;                         // v1.1：建议的下一步
   tone: 'neutral' | 'good_news' | 'concern' | 'care';   // 给伙伴的语气提示
   links?: EntityId[];
   urgency: 'low' | 'normal' | 'high';
@@ -600,7 +604,7 @@ M2 的对话助理由 MOD-06 能力实现多轮规划循环，MOD-05 只返回 T
 
 ## 8. 记忆（MOD-09，M2 实现；M1 先提供空实现）
 
-存储格式见 ADR-0013：以 `data/companion/` 下的 Markdown 文件为准，SQLite 只做索引。
+存储格式见 ADR-0013、ADR-0019：以 `data/companion/` 下的 Markdown 文件作为正文权威；SQLite 的 mem_items/mem_fts/mem_files 是可重建索引，mem_provenance/mem_tombstones 是不可丢弃的来源、已认证规则与遗忘安全元数据。删除整个数据库不属于索引重建。
 
 ```ts
 type MemoryLayer = 'profile' | 'long_term' | 'journal';   // 分别对应 user.md、memory.md、journal/*.md
@@ -634,7 +638,7 @@ interface MemoryWriter {        // 只有伙伴层、对话助理、夜间整理
   remember(item: Omit<MemoryItem, 'id' | 'createdAt' | 'file' | 'line'>): MemoryItem;
   update(id: string, patch: { text?: string; sensitivity?: Sensitivity; validUntil?: Timestamp }, by: Actor, evidenceId: string): MemoryItem;
   appendJournal(date: string, item: { text: string; about?: Array<EntityId | PersonId>; origin: MemoryOrigin; sensitivity: Sensitivity }): void;
-  forget(id: string, by: Actor): void;
+  forget(id: string, by: Actor, evidenceId?: string): void;   // v1.1：用户来源时运行时必填
 }
 ```
 
@@ -690,6 +694,7 @@ interface PetState {
   expression?: { activityId: string; animationId: string; startedAt: Timestamp };
   audio: { enabled: boolean; playing: boolean; volume: number };
   growth: GrowthSnapshot;
+  progress?: { label: string; done: number; total: number };   // v1.1：真实进度，不是无限转圈
   updatedAt: Timestamp;
 }
 
@@ -703,7 +708,7 @@ interface PetUtterance {
   facts?: Notice['facts'];         // 原样展示的事实卡片
   animation?: string;              // 建议动作，客户端没有就用默认动作
   ref?: { noticeId?: string; proposalId?: ProposalId; reportId?: string };
-  quickActions?: Array<{ label: string; decision?: { proposalId: ProposalId; optionId: string }; open?: 'proposal' | 'report' | 'chat' }>;
+  quickActions?: Array<{ label: string; decision?: { proposalId: ProposalId; optionId: string }; open?: 'proposal' | 'report' | 'chat' | 'notice'; notice?: { noticeId: string; op: 'read' | 'snooze' | 'dismiss' } }>;
   expiresAt?: Timestamp;
 }
 
@@ -732,7 +737,7 @@ type PetInteraction =
   | { kind: 'drag_start' } | { kind: 'drop'; screenEdge?: 'left' | 'right' | 'top' | 'bottom' }
   | { kind: 'hover' } | { kind: 'poke'; times: number }
   | { kind: 'feed' } | { kind: 'play'; activityId: string }
-  | { kind: 'audio_pause' }
+  | { kind: 'audio_pause' } | { kind: 'audio_play' }                     // audio_play：v1.1
   | { kind: 'utterance_dismissed'; id: string };
 ```
 
@@ -793,6 +798,17 @@ interface WindowAnchor {
 
 ## 变更记录
 
+- 2026-11-19（ADR-0021/0022，总架构师技术自评）：桌宠自定义命令显式 ACL、按窗口最小权限、可信 Node24 和子进程环境收口；不扩大系统授权。先行 `MemoryBrowser` 增加 `retype(id, kind: 'rule' | 'fact', by: Actor, evidenceId: string): MemoryItem`，仅本人当前 local_edit 证据；修改类型原位保留 id/layer/file/about，不再先遗忘后创建。不批准完整第一批模块或桌面实测。
+
+- 2026-11-19（ADR-0019/0020，总架构师技术自评）：明确来源/墓碑账本不是可丢弃索引；提醒采用无正文持久投递回执；通知合并不降敏、保留依据；不改变 NoticeSink 签名。先行本地接口可加补充 `POST /memory/reindex` 和 `MemoryReindexResponse`，hello 后再刷新快照覆盖订阅空窗。
 - v1-草案（2026-11-18）：初稿。
 - v1-评审修正版（2026-11-19）：ADR-0016/0017；补公共接口、审批冻结、窗口快照、结果未知、数据来源出口检查、记忆证据、M2 对话与编辑、多源安静模式、皮肤与扩展注册。
+- v1.1（2026-11-19，ADR-0018，只做可加性变更，总架构师批准）：
+  - **新增可选字段**：`Notice.why?`、`Notice.nextStep?`；`MemoryWriter.forget` 增加可选参数 `evidenceId`（用户来源在运行时必须提供）；`PetUtterance.quickActions[].notice?`，并给 `open` 增加 `'notice'`。
+  - **新增可选字段（续）**：`PetState.progress?`。
+  - **新增联合成员**：`AuditRecord.kind` 增加 `'memory'`；`ChatChunk` 增加 `{kind:'memory'}` 和 `{kind:'card'}`；`PetInteraction` 增加 `{kind:'audio_play'}`。
+  - **新增类型**：`NoticeRecord`、`NoticeSink`、`UserEvidenceVerifier`、`MemoryBrowser`、`MemoryModuleDeps`、`MemoryChange`、`PersonaView`、`StreamEvent`、`DaemonInfo`、`LocalCard`、`CompanionSettings`、`Reminder`。
+  - **新增事件**：SSE 增加 `notice.created/updated`、`memory.changed`、`persona.updated`、`hello`、`resync_required`、`bye`。
+  - **§11 补充**：没有 OAuth 回调时，端口可以在 8787–8797 之间漂移，实际端口通过 `<data>/run/daemon.json` 发现。
+  - 完整说明见 `tuanzi-v1-protocol.md`。
 - v1-草案（2026-11-18）：根据 ADR-0012、ADR-0013 新增第 8 节（记忆完整接口）、第 10 节（伙伴）、第 11 节（本地接口）；`Notice` 改成事实和语气分开；`CapabilityContext.memory` 改为必有。

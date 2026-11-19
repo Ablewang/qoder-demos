@@ -1,0 +1,193 @@
+{
+  "id": "tuanzi-default",
+  "formatVersion": 1,
+  "version": "0.2.0",
+  "assets": [
+    {
+      "path": "mochi.svg",
+      "sha256": "8fccf72e250554a0bc4c9ed57cd7fe3d735a48e26a0484fe0cb1eaf0b73ccbf2",
+      "mediaType": "image/svg+xml"
+    }
+  ],
+  "anchor": {
+    "x": 80,
+    "y": 117
+  },
+  "hitAreas": [
+    {
+      "x": 43,
+      "y": 33,
+      "width": 84,
+      "height": 30
+    },
+    {
+      "x": 18,
+      "y": 64,
+      "width": 128,
+      "height": 44
+    },
+    {
+      "x": 29,
+      "y": 108,
+      "width": 106,
+      "height": 24
+    }
+  ],
+  "animations": {
+    "idle_breathe": [
+      "mochi.svg"
+    ],
+    "look_at_cursor": [
+      "mochi.svg"
+    ],
+    "pet_squint": [
+      "mochi.svg"
+    ],
+    "poke_wobble": [
+      "mochi.svg"
+    ],
+    "poke_pout": [
+      "mochi.svg"
+    ],
+    "drag_hold": [
+      "mochi.svg"
+    ],
+    "drop_land": [
+      "mochi.svg"
+    ],
+    "perch_edge": [
+      "mochi.svg"
+    ],
+    "doze": [
+      "mochi.svg"
+    ],
+    "sleep": [
+      "mochi.svg"
+    ],
+    "play_ball": [
+      "mochi.svg"
+    ],
+    "stretch": [
+      "mochi.svg"
+    ],
+    "music_nod": [
+      "mochi.svg"
+    ],
+    "eat_snack": [
+      "mochi.svg"
+    ],
+    "sign_hold": [
+      "mochi.svg"
+    ],
+    "happy_bounce": [
+      "mochi.svg"
+    ],
+    "worried": [
+      "mochi.svg"
+    ],
+    "caring": [
+      "mochi.svg"
+    ],
+    "working": [
+      "mochi.svg"
+    ],
+    "wait_auth": [
+      "mochi.svg"
+    ],
+    "quiet_curl": [
+      "mochi.svg"
+    ],
+    "offline_sleep": [
+      "mochi.svg"
+    ],
+    "read_notebook": [
+      "mochi.svg"
+    ],
+    "ear_twitch": [
+      "mochi.svg"
+    ],
+    "cheek_squish": [
+      "mochi.svg"
+    ],
+    "belly_giggle": [
+      "mochi.svg"
+    ],
+    "face_rub": [
+      "mochi.svg"
+    ],
+    "roll_over": [
+      "mochi.svg"
+    ],
+    "poke_guard": [
+      "mochi.svg"
+    ],
+    "drop_rub": [
+      "mochi.svg"
+    ],
+    "ball_ready": [
+      "mochi.svg"
+    ],
+    "ball_toss": [
+      "mochi.svg"
+    ],
+    "ball_catch": [
+      "mochi.svg"
+    ],
+    "ball_miss": [
+      "mochi.svg"
+    ],
+    "box_peek": [
+      "mochi.svg"
+    ],
+    "box_hide": [
+      "mochi.svg"
+    ],
+    "box_pop": [
+      "mochi.svg"
+    ]
+  },
+  "semanticMap": {
+    "idle": "idle_breathe",
+    "sleeping": "sleep",
+    "working": "working",
+    "alert": "sign_hold",
+    "waiting_auth": "wait_auth",
+    "happy": "happy_bounce",
+    "concerned": "worried",
+    "caring": "caring",
+    "quiet": "quiet_curl",
+    "offline": "offline_sleep"
+  },
+  "activities": [
+    {
+      "id": "play_ball",
+      "animationId": "play_ball",
+      "minIntervalMs": 180000
+    },
+    {
+      "id": "stretch",
+      "animationId": "stretch",
+      "minIntervalMs": 180000
+    },
+    {
+      "id": "music_nod",
+      "animationId": "music_nod",
+      "minIntervalMs": 180000
+    },
+    {
+      "id": "doze",
+      "animationId": "doze",
+      "minIntervalMs": 180000
+    },
+    {
+      "id": "read_notebook",
+      "animationId": "read_notebook",
+      "minIntervalMs": 180000
+    },
+    {
+      "id": "box_peek",
+      "animationId": "box_peek",
+      "minIntervalMs": 180000
+    }
+  ]
+}

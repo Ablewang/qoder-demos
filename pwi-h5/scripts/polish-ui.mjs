@@ -124,7 +124,7 @@ try {
     }
     if (id === 'activities') {
       await expect(page.locator('.treasure-controls')).toBeVisible();
-      assert.equal(await page.locator('.orbit-prize').count(), 12);
+      assert.equal(await page.locator('.orbit-prize').count(), 36);
     }
     await capture(id, id === 'activities' ? '.draw-actions [data-count="10"]' : undefined);
     assert.deepEqual(await record(), initial, `Browsing ${id} changed the persisted save`);

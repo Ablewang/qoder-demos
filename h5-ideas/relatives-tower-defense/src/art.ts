@@ -1,4 +1,4 @@
-import type { Card, Relative } from './content';
+import type { Relative, Strategy } from './content';
 
 export const ink = '#352b25';
 export const paper = '#fff5df';
@@ -32,6 +32,8 @@ const looks: Record<Seated, { coat: string; hair: Hair; hairColor: string; glass
   biaojie: { coat: '#c98f3d', hair: 'pony', hairColor: ink },
   wangayi: { coat: '#d9c7a5', hair: 'curly', hairColor: '#6b5a4e', scarf: true },
 };
+
+export const coatOf = (who: Seated): string => looks[who].coat;
 
 const hairBack: Record<Hair, string[]> = {
   bun: ['M68 24Q63 10 79 9Q97 8 95 23', 'M57 62Q45 48 54 30Q66 13 90 21Q110 18 119 37L117 62'],
@@ -161,14 +163,16 @@ export function openingSign(): Art {
   ] }] };
 }
 
-const iconPaths: Record<Card, string> = {
+const iconPaths: Record<Strategy, string> = {
+  ally: 'M4 22Q4 12 13 12Q21 12 21 20L17 25H8M20 18Q20 9 28 9Q36 10 36 18L32 24H25M30 24L33 30',
   taiji: 'M9 24Q3 13 15 9Q26 5 30 15Q33 24 23 28M22 10L16 16L24 18M23 28L25 34L32 29',
   counter: 'M7 14L31 10M8 24L32 20M12 5L19 32M27 28L32 32',
   crazy: 'M7 8L17 11L24 4L25 14L34 17L27 23L29 32L18 28L10 34L11 23L3 19L10 16Z',
   sincere: 'M5 20Q9 31 20 31Q31 30 34 20M4 19Q19 24 35 19M13 13Q8 7 13 3M25 13Q30 7 25 3',
+  leave: 'M8 5H24V35H8ZM19 20H20M24 12L33 20L24 28M33 20H15',
 };
-export function cardIcon(card: Card): Art {
-  return { width: 40, height: 40, layers: [{ parts: [{ d: iconPaths[card], w: 2.7 }] }] };
+export function strategyIcon(strategy: Strategy): Art {
+  return { width: 40, height: 40, layers: [{ parts: [{ d: iconPaths[strategy], w: 2.7 }] }] };
 }
 
 function partSvg(part: Part): string {

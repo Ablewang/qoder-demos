@@ -188,27 +188,46 @@ try {
   await click('page', '[data-id="mall"]');
   assert.equal(await page.locator('.mall-page [data-action="activityOpen"], .mall-page #box-vault, .mall-page #boxes-vault').count(), 0);
   assert.equal(await page.locator('.mall-page [data-action="activityClaim"]').count(), 1);
-  assert.equal(await page.locator('.shop-product').count(), 8);
-  assert.equal(await page.locator('.product-art .relic-art').count(), 8);
+  assert.equal(await page.locator('.shop-product').count(), 10);
+  assert.equal(await page.locator('.product-art .relic-art').count(), 10);
+  assert.equal(await page.locator('.mall-wallet-item').count(), 3, 'Mall masthead shows yuanbao, bound yuanbao and gold balances');
+  const mallBrowseStart = await state();
+  for (const tab of ['supplies', 'cultivation', 'gems', 'function', 'outfit', 'mount', 'activity', 'bundles']) {
+    await click('mallTab', `[data-id="${tab}"]`);
+    assert.ok(await page.locator('.shop-product').count() > 0, `${tab} category must list real products`);
+  }
+  await click('mallTab', '[data-id="featured"]');
+  await click('mallSelect', '[data-id="goldChest"]');
+  assert.equal(await page.locator('.mall-detail[data-product-detail="goldChest"]').count(), 1);
+  assert.match(await page.locator('.mall-detail').innerText(), /不需要秘宝钥匙/);
+  await click('mallQty', '[data-op="inc"]');
+  assert.equal(await page.locator('#mall-qty').inputValue(), '2');
+  await click('mallConfirm', '[data-id="goldChest"][data-qty="2"]');
+  assert.match(await page.locator('#dialog-title').innerText(), /确认购买/);
+  await click('closeModal');
+  assert.deepEqual(await state(), mallBrowseStart, 'Browsing tabs, selecting, changing quantity and cancelling must not write the save or charge');
   assert.match(await page.locator('.mall-shelf').innerText(), /幸运粽子/);
   assert.match(await page.locator('.mall-shelf').innerText(), /黄金护身符/);
   assert.equal(await page.locator('.shop-product[data-product="hp1"]').count(), 0);
   await screenshot('desktop-mall.png');
+  await click('mallSelect', '[data-id="zongzi"]');
   await click('mallDetail', '[data-id="zongzi"]');
   assert.match(await page.locator('.modal-body').innerText(), /持有后再开启/);
   await click('closeModal');
   await click('mallTab', '[data-id="all"]');
   assert.equal(SHOP_PRODUCTS.length, 66);
   assert.equal(await page.locator('.shop-product').count(), SHOP_PRODUCTS.length);
-  assert.ok(await page.locator('[data-action="mallBuy"][data-id="hp2"][data-qty="1"]').first().isDisabled());
-  assert.ok(await page.locator('[data-action="mallBuy"][data-id="hp1"][data-qty="1"]').first().isDisabled());
+  for (const id of ['hp2', 'hp1']) {
+    await click('mallSelect', `[data-id="${id}"]`);
+    assert.ok(await page.locator(`.mall-detail [data-action="mallConfirm"][data-id="${id}"]`).isDisabled());
+  }
   const originalItems = (await state()).player.items;
   await click('walletDetail'); await click('walletDaily');
   assert.ok(await page.locator('[data-action="walletDaily"]').isDisabled());
   assert.deepEqual((await state()).player.items, originalItems);
   await click('closeModal');
   await click('page', '[data-id="activities"]');
-  assert.equal(await page.locator('.orbit-prize').count(), 12);
+  assert.equal(await page.locator('.orbit-prize').count(), 36);
   assert.equal(await page.locator('.treasure-progress .treasure-milestone').count(), 3);
   assert.ok(await page.locator('.treasure-progress').isVisible());
   assert.equal(await page.locator('.treasure-progress [data-draw-total]').innerText(), '0');
@@ -235,7 +254,11 @@ try {
   await click('mallTab', '[data-id="all"]');
   const buy = async (id, quantity = 1, goToBag = false) => {
     const prior = await state();
-    await click('mallBuy', `[data-id="${id}"][data-qty="${quantity}"]`);
+    await click('mallSelect', `[data-id="${id}"]`);
+    await page.locator('#mall-qty').fill(String(quantity)); await page.locator('#mall-qty').dispatchEvent('change'); await settled();
+    await click('mallConfirm', `[data-id="${id}"][data-qty="${quantity}"]`);
+    assert.deepEqual(await state(), prior, 'Purchase confirmation preview must not charge');
+    await click('mallBuy', `[data-id="${id}"][data-qty="${quantity}"]`, '#modal');
     await page.locator('#dialog-title').filter({ hasText: '选购成功' }).waitFor();
     const purchased = await state();
     assert.equal(purchased.player.mall.orders.length, prior.player.mall.orders.length + 1);
@@ -257,6 +280,7 @@ try {
   for (const id of Object.keys(ACTIVITY_POOLS)) {
     const unowned = await state();
     assert.equal(unowned.player.items[id] || 0, 0);
+    await click('mallSelect', `[data-id="${id}"]`);
     await click('mallDetail', `[data-id="${id}"]`);
     await click('itemDetail', `[data-id="${id}"]`);
     assert.equal(await page.locator('#modal .probability-list li').count(), ACTIVITY_POOLS[id].pool.length);

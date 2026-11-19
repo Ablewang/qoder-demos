@@ -583,7 +583,15 @@ async function run(mobile) {
       const needed = Math.max(0, unknown - identifyCount(s.player));
       if (needed && affordable) await buyCode('isc', Math.min(needed, affordable, 12));
       if (identifyCount((await guard()).player)) {
-        await activate(page.locator('.panel-vendor').getByRole('button', { name: '鉴定全部', exact: true }));
+        await panel('inventory');
+        while (true) {
+          const current = await guard(), item = current.player.inventory.find(item => !item.identified);
+          if (!item || !identifyCount(current.player)) break;
+          await activate(page.locator(`.panel-inventory .grid-item[data-focus="item:${item.uid}"]`));
+          await activate(page.locator(mobile ? '.item-popup' : '.panel-inventory .item-detail').getByRole('button', { name: '鉴定', exact: true }));
+          await page.waitForFunction(uid => window.sanctuary.engine.state.player.inventory.find(item => item.uid === uid)?.identified, item.uid);
+          if (mobile) await activate(page.locator('.popup-close'));
+        }
         await closePanel(); await equipInventory(); await talk('akara'); await sellInventory();
       }
     }
