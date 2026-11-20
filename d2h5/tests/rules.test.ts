@@ -1,8 +1,10 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { CLASSES, EXPERIENCE, getClass, getSkill, num, rawRows, rawTables, SKILLS, text } from '../src/catalog';
-import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, resistDamage, skillEffect, skillLevel } from '../src/rules';
+import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, resistDamage, skillEffect, skillLevel, SHRINES, getShrine, setTemporaryShrine } from '../src/rules';
 import type { ClassId, Item, ItemMods } from '../src/types';
+import { createItem, effectiveItemModifiers, effectiveItemStats, getBase, insertSocket, namedItemRow } from '../src/items';
+import { activeEquipment, equipmentModifiers } from '../src/rules';
 
 function item(code: string, mods: ItemMods = {}, extra: Partial<Item> = {}): Item {
   return {
@@ -12,6 +14,45 @@ function item(code: string, mods: ItemMods = {}, extra: Partial<Item> = {}): Ite
     price: 0, quantity: 1, ...extra,
   };
 }
+test('supported shrine definitions retain exact pinned arguments, frame durations and reset minutes',()=>{
+  assert.deepEqual(SHRINES.map(s=>s.code),[1,6,7,8,9,10,11,12,13,14,15,17,18]);
+  for(const shrine of SHRINES){const raw=rawRows('shrines').find(r=>num(r,'Code')===shrine.code)!;
+    assert.equal(shrine.arg0,num(raw,'Arg0')); assert.equal(shrine.arg1,num(raw,'Arg1'));
+    assert.equal(shrine.duration,num(raw,'Duration in frames')); assert.equal(shrine.resetFrames,num(raw,'reset time in minutes')*1500);
+  }
+  assert.equal(getShrine(2),undefined); assert.equal(getShrine(19),undefined);
+});
+test('temporary shrine modifiers are additive to native buckets, replace rather than stack, and never serialize',()=>{
+  const p=createPlayer('sor','临时祝福'); p.strength=0; p.skills={36:1,37:1};
+  p.equipment={weapon:item('hax',{}, {minDamage:10,maxDamage:20}),body:item('qui',{}, {defense:100})};
+  const snapshot=structuredClone(p),base=deriveStats(p);
+  setTemporaryShrine(p,6); assert.equal(deriveStats(p).defense,base.defense*2);
+  setTemporaryShrine(p,7); const combat=deriveStats(p); assert.equal(combat.attackRating,base.attackRating*3); assert.equal(combat.minDamage,30); assert.equal(combat.maxDamage,60); assert.equal(combat.defense,base.defense);
+  for(const [code,key,element] of [[8,'resFire','fire'],[9,'resCold','cold'],[10,'resLightning','lightning'],[11,'resPoison','poison']] as const){
+    p.difficulty='hell'; setTemporaryShrine(p,code); const stats=deriveStats(p);
+    assert.equal(stats[key],-25); assert.equal(stats.resistances[element].stored,-25); assert.equal(stats.resistances[element].maximum,75);
+  }
+  p.difficulty='normal'; setTemporaryShrine(p,13); assert.equal(deriveStats(p).manaRegenPercent,base.manaRegenPercent+400);
+  setTemporaryShrine(p,12); assert.equal(skillLevel(p,36),3); assert.equal(skillLevel(p,37),3); assert.equal(skillLevel(p,47),0);
+  assert.equal(skillEffect(p,36).min,6); assert.equal(deriveStats(p).manaRegenPercent,54);
+  assert.deepEqual(p,snapshot); assert.deepEqual(deriveStats(structuredClone(p)),base);
+  setTemporaryShrine(p); assert.deepEqual(deriveStats(p),base); assert.equal(skillLevel(p,36),1);
+});
+test('skill shrine cannot unlock foreign/unsupported skills or create hard-point synergies',()=>{
+  const p=createPlayer('sor','技能边界'); p.skills={36:1,47:1,61:1,64:1};
+  const before=skillEffect(p,36); setTemporaryShrine(p,12);
+  assert.equal(skillLevel(p,64),1,'unsupported Frozen Orb does not get a pretend runtime level'); assert.equal(skillLevel(p,70),0);
+  const reference=structuredClone(p); reference.skills[36]+=2;
+  assert.deepEqual(skillEffect(p,36),skillEffect(reference,36),'other learned soft points must not increase hard-point synergies');
+  assert.ok(skillEffect(p,36).min>before.min); assert.equal(p.skills[47],1); setTemporaryShrine(p);
+});
+test('experience shrine applies after native penalties and disappears on replacement or death',()=>{
+  const p=createPlayer('sor','经验祝福'); p.level=90; p.experience=EXPERIENCE[90]; const reference=structuredClone(p),earned=grantExperience(reference,80,100000);
+  setTemporaryShrine(p,15); assert.equal(grantExperience(p,80,100000),Math.floor(earned*1.5));
+  setTemporaryShrine(p,6); const plain=structuredClone(p); assert.equal(grantExperience(p,80,100000),grantExperience(plain,80,100000));
+  setTemporaryShrine(p,15); p.dead=true; assert.equal(grantExperience(p,80,100000),0); assert.equal(deriveStats(p).allSkills,0);
+});
+
 const starts: [ClassId, number[], number[], number[]][] = [
   // Str/Dex/Vit/Ene, life/mana/stamina, life/lvl,mana/lvl,stamina/lvl,life/Vit,mana/Ene,stamina/Vit,block,AR
   ['ama', [20, 25, 20, 15], [50, 15, 84], [2, 1.5, 1, 3, 1.5, 1, 25, 5]],
@@ -142,6 +183,7 @@ test('20 hard point cap independent of equipment bonuses; tier30 reaches H20 at 
 });
 test('+all/class skills only augment learned or staff-granted skills in the active weapon set', () => {
   const player = createPlayer('sor', '法师');
+  player.strength = 12; // Quilted Armor's actual strength requirement is not bypassed by this skill fixture.
   player.equipment.body = item('qui', { allSkills: 2, classSkills: 1, 'classSkill:sor': 3 });
   assert.equal(skillLevel(player, 36), 0);
   player.equipment.weapon = item('sst', { 'skill:36': 1 });
@@ -276,7 +318,8 @@ test('resist difficulty penalties, caps, quest bonuses, utility mods and known p
   assert.equal(deriveStats(amazon).attackRating, 128); assert.equal(skillEffect(amazon, 23).supported, true);
 });
 test('belt rows come from actual Belts layout (Heavy Belt is three rows)', () => {
-  const player = createPlayer('pal', '圣骑士'); assert.equal(deriveStats(player).beltRows, 1);
+  const player = createPlayer('pal', '圣骑士'); player.strength = 200; player.level = 99;
+  assert.equal(deriveStats(player).beltRows, 1);
   for (const [code, rows] of [['lbl', 2], ['vbl', 2], ['mbl', 3], ['tbl', 3], ['hbl', 4], ['zlb', 4], ['ulc', 4]] as const) {
     player.equipment.belt = item(code); assert.equal(deriveStats(player).beltRows, rows, code);
   }
@@ -426,4 +469,116 @@ test('fire and tab soft points do not enter Fire Bolt hard-point synergies', () 
   assert.deepEqual([skillEffect(player, 36).min, skillEffect(player, 36).max], [3118 / 256, 4008 / 256]);
   player.skills[47] = 2;
   assert.deepEqual([skillEffect(player, 36).min, skillEffect(player, 36).max], [3548 / 256, 4561 / 256]);
+});
+
+function unique(name: string): Item {
+  const row = rawRows('UniqueItems').find(row => text(row, 'index') === name)!;
+  const result = createItem(text(row, 'code'), 99, () => .5, 'unique', name); result.identified = true;
+  return result;
+}
+for (const level of [1, 8, 50, 99]) test(`actual per-level sources at clvl ${level}: Headstriker/Ali Baba/AR/HP retain exact coefficients and targets`, () => {
+  const head = unique('Headstriker'), ali = unique('Blade of Ali Baba'), ar = unique('Pus Spiter'), shako = unique('Harlequin Crest');
+  const snapshot = JSON.stringify([head, ali, ar, shako]);
+  assert.equal(head.mods['perLevel:dmg/lvl'], 8); assert.equal(head.mods['perLevel:deadly/lvl'], 12);
+  const mods = effectiveItemModifiers(head, level), damage = effectiveItemStats(head, mods);
+  assert.equal(mods.localMaxDamage, level); assert.equal(mods.deadlyStrike, Math.floor(level * 1.5));
+  assert.equal(damage.minDamage, head.minDamage); assert.equal(damage.maxDamage, head.maxDamage + level);
+  assert.equal(effectiveItemModifiers(ali, level).goldFind, Math.floor(level * 2.5)); assert.equal(effectiveItemModifiers(ali, level).magicFind, level);
+  assert.equal(effectiveItemModifiers(ar, level).attackRating, level * 5, 'attack op param is 1, not the usual 3');
+  assert.equal(effectiveItemModifiers(shako, level).lifePerLevelBonus, level * 1.5); assert.equal(effectiveItemModifiers(shako, level).manaPerLevelBonus, level * 1.5);
+  const warlord = unique("Warlord's Trust"); assert.equal(effectiveItemModifiers(warlord, level).vitality, Math.floor(level / 2));
+  assert.equal(JSON.stringify([head, ali, ar, shako]), snapshot);
+  assert.deepEqual(effectiveItemModifiers(JSON.parse(JSON.stringify(shako)) as Item, level), effectiveItemModifiers(shako, level));
+});
+
+test('max-only /lvl ED and armor local target changes recompute rather than multiply saved display damage', () => {
+  const hell = unique('Hellslayer'), base = getBase(hell.code)!;
+  const original = JSON.stringify(hell);
+  for (const level of [1, 8, 50, 99, 8, 1]) {
+    const mods = effectiveItemModifiers(hell, level), scaled = effectiveItemStats(hell, mods);
+    assert.equal(mods.localMaxDamagePercent, level * 3);
+    assert.equal(scaled.minDamage, hell.minDamage);
+    assert.equal(scaled.maxDamage, Math.floor(hell.mods['internal:baseMax'] * (200 + level * 3) / 100));
+    assert.equal(hell.mods['internal:baseMax'], base.maxDamage);
+  }
+  assert.equal(JSON.stringify(hell), original);
+  const p = createPlayer('sor', '叶子本地防御'); p.level = 19;
+  const staff = createItem('sst', 99, () => .5); staff.sockets = 2; p.inventory.push(staff);
+  for (const code of ['r03', 'r08']) { const rune = createItem(code, 99, () => .5); p.inventory.push(rune); assert.equal(insertSocket(p, staff.uid, rune.uid).ok, true); }
+  p.equipment.weapon = staff; p.inventory = [];
+  assert.equal(staff.mods['perLevel:ac/lvl'], 16);
+  for (const level of [19, 50, 99, 19]) { p.level = level; assert.equal(deriveStats(p).defense, 6 + level * 2); }
+  assert.equal(staff.defense, 0);
+});
+
+test('level up/down changes local damage, deadly strike, MF/GF and per-level resource fractions without changing rolls', () => {
+  const p = createPlayer('bar', '动态等级'); p.strength = p.dexterity = 1000;
+  const head = unique('Headstriker'), ali = unique('Blade of Ali Baba');
+  p.equipment = { weapon: head, offhand: ali };
+  const original = JSON.stringify(p.equipment);
+  for (const level of [50, 99, 50, 8, 1]) {
+    p.level = level; const stats = deriveStats(p);
+    if (level >= 39) {
+      assert.equal(stats.deadlyStrike, Math.min(100, Math.floor(level * 1.5)));
+      assert.equal(stats.magicFind, level); assert.equal(stats.goldFind, Math.floor(level * 2.5));
+      assert.equal(stats.maxDamage, Math.floor((head.maxDamage + level) * (100 + p.strength + 15) / 100));
+    } else { assert.equal(stats.magicFind, 0); assert.equal(stats.deadlyStrike, 0); }
+    assert.equal(JSON.stringify(p.equipment), original);
+  }
+  const hp = createItem('rin', 99, () => .5); hp.mods = { 'perLevel:hp/lvl': 1, 'perLevel:mana/lvl': 1 }; p.equipment = { ring1: hp };
+  for (const level of [1, 8, 50, 99, 1]) {
+    p.level = level; const plain = deriveStats({ ...p, equipment: {} }), stats = deriveStats(p);
+    assert.equal(stats.maxLife - plain.maxLife, level / 8); assert.equal(stats.maxMana - plain.maxMana, level / 8);
+  }
+});
+
+test('maximum life percent multiplies base/hard vitality/flat life, not item vitality or per-level HP', () => {
+  for (const def of CLASSES) {
+    const p = createPlayer(def.id, '生命类别'); p.level = 8; p.vitality += 5; p.bonusLife = 20;
+    p.equipment.ring1 = item('rin', { maxLifePercent: 25, life: 30, vitality: 7, 'perLevel:hp/lvl': 1 });
+    const base = def.life + 7 * def.lifePerLevel + 5 * def.lifePerVitality + 20 + 30;
+    assert.equal(deriveStats(p).maxLife, Math.trunc((base * 1.25 + 7 * def.lifePerVitality + 1) * 256) / 256);
+    p.equipment.ring1!.identified = false;
+    assert.equal(deriveStats(p).maxLife, def.life + 7 * def.lifePerLevel + 5 * def.lifePerVitality + 20);
+  }
+});
+
+test('all four maximum resists use the playerResistance 95 cap, and magic reduction is exposed without pretending to consume it', () => {
+  const p = createPlayer('pal', '抗性上限');
+  p.equipment.ring1 = item('rin', { resAll: 200, maxResAll: 5, maxResFire: 10, maxResCold: 50, maxResLightning: 15, maxResPoison: 1, flatMagicReduction: 7 });
+  const stats = deriveStats(p);
+  assert.deepEqual(Object.values(stats.resistances).map(res => [res.stored, res.maximum, res.effective]), [[200,90,90],[200,95,95],[200,95,95],[200,81,81]]);
+  assert.equal(stats.flatMagicReduction, 7);
+  p.equipment.ring1!.identified = false; assert.equal(deriveStats(p).flatMagicReduction, 0); assert.equal(deriveStats(p).resFire, 0);
+});
+
+test('offhand weapon dynamic local damage, IAS, leech, elemental damage and AR never leak into the attacking weapon', () => {
+  const p = createPlayer('bar', '动态双持'); p.level = 99; p.strength = p.dexterity = 1000;
+  const main = createItem('hax', 99, () => .5), offhand = unique("Schaefer's Hammer");
+  offhand.mods.lifeLeech = 90; offhand.mods.manaLeech = 90;
+  p.equipment = { weapon: main, offhand };
+  const before = deriveStats({ ...p, equipment: { weapon: main } }), stats = deriveStats(p);
+  assert.equal(stats.minDamage, before.minDamage); assert.equal(stats.maxDamage, before.maxDamage);
+  assert.equal(stats.attackRating, before.attackRating); assert.equal(stats.ias, 0); assert.equal(stats.lifeLeech, 0); assert.equal(stats.manaLeech, 0);
+  assert.equal(stats.elementalDamage.lightning.max, 0); assert.equal(stats.maxLife, before.maxLife + 50, 'non-attack resource bonuses still apply');
+});
+
+test('set-wide endpoint ranges have a once-persisted owner and runtime refresh never calls random', () => {
+  const p = createPlayer('sor', '套装源'); p.level = 99; p.strength = p.dexterity = 1000;
+  const names = ["Cathan's Seal", "Cathan's Sigil", "Cathan's Mesh", "Cathan's Visage", "Cathan's Rule"];
+  const pieces = names.map(name => {
+    const row = rawRows('SetItems').find(row => text(row, 'index') === name)!;
+    const piece = createItem(text(row, 'item'), 99, () => .5, 'set', name); piece.identified = true; return piece;
+  });
+  p.equipment = { ring1: pieces[0], neck: pieces[1], body: pieces[2], head: pieces[3], weapon: pieces[4] };
+  assert.equal(pieces[0].mods['conditional:wide2:minFire'], 15); assert.equal(pieces[0].mods['conditional:wide2:maxFire'], 20);
+  const snapshot = JSON.stringify(p), stats = deriveStats(p), mods = equipmentModifiers(p);
+  assert.equal(mods.minFire, 15); assert.equal(mods.maxFire, 30, 'Cathan Rule adds its intrinsic 10 maximum fire damage'); assert.equal(stats.flatMagicReduction, 3);
+  const rng = Math.random;
+  try {
+    Math.random = () => { throw new Error('refresh cannot roll'); };
+    for (let i = 0; i < 10; i++) { assert.deepEqual(deriveStats(p), stats); assert.deepEqual(equipmentModifiers(p), mods); }
+    const loaded = JSON.parse(snapshot); assert.deepEqual(deriveStats(loaded), stats); assert.equal(JSON.stringify(loaded), snapshot);
+    delete p.equipment.ring1; assert.equal(equipmentModifiers(p).minFire, 15); assert.equal(equipmentModifiers(p).maxFire, 30);
+  } finally { Math.random = rng; }
 });

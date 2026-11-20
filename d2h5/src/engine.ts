@@ -1,7 +1,7 @@
-import type { Action, AreaState, Control, Difficulty, Element, GameEvent, GameState, Item, Monster, Player, Point, Projectile, Rng, Slot } from './types';
+import type { Action, AreaState, Control, Difficulty, Element, GameEvent, GameState, Item, Monster, Player, Point, Projectile, Rng, Slot, WorldObject } from './types';
 import { CLASSES, EXPERIENCE, getClass, getSkill, num, rawRows } from './catalog';
-import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, skillEffect, skillLevel } from './rules';
-import { consumeInventoryPotion, consumePotion, createItem, createStartingItems, describeItem, equipItem, getBase, insertSocket, INVENTORY_HEIGHT, INVENTORY_WIDTH, isUsableItem, itemLabel, moveInventoryItem, placeItem, repairItems, rollLoot, STASH_HEIGHT, STASH_WIDTH, transmute, unequipItem, vendorStock } from './items';
+import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, skillEffect, skillLevel, getShrine, setTemporaryShrine } from './rules';
+import { allowedSockets, consumeInventoryPotion, consumePotion, createItem, createStartingItems, describeItem, equipItem, fillTome, GEMS, getBase, insertSocket, itemSellPrice, INVENTORY_HEIGHT, INVENTORY_WIDTH, isUsableItem, itemLabel, moveInventoryItem, placeItem, repairItems, rollLoot, STASH_HEIGHT, STASH_WIDTH, transmute, unequipItem, vendorStock } from './items';
 import { SURFACE_IDS, canTravel, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, hasLineOfSight, isTownPoint, onEnterArea, onKill, questKey, surfaceRegionAt, talkNPC, townForAct } from './world';
 
 import { COMBAT_HZ, DIFFICULTY_RULES, lifeBits, rollDamageBits, settleDirectDamage } from './combat';
@@ -13,8 +13,34 @@ export const FPS = COMBAT_HZ;
 export const ENGINE_LIMITATIONS = [
   '当前战斗碰撞、怪物 AI 和攻击动画是自主实现，未达到原版服务器函数级一致。',
   '战役任务仅以 world 模块已实现的触发器为准，不能以区域数量认定完整五幕。',
-  '佣兵尚未接入实战；暂未提供联机、永久死亡、复杂持续伤害和全部历史 bug。',
+  '暂未提供联机、永久死亡、复杂持续伤害和全部历史 bug。',
 ];
+
+// 雇佣兵基础属性表：[名称, 生命/级, 伤害基础/级, 攻击速度帧]
+const MERC_STATS: Record<string, {baseName: string; lifeBase: number; lifePerLevel: number; dmgBase: number; dmgPerLevel: number; swingFrames: number; range: number}> = {
+  'rogue-fire':   {baseName: '火焰箭罗格',   lifeBase: 45, lifePerLevel: 7,  dmgBase: 5,  dmgPerLevel: 2, swingFrames: 20, range: 7},
+  'rogue-cold':   {baseName: '冰霜箭罗格',   lifeBase: 45, lifePerLevel: 7,  dmgBase: 5,  dmgPerLevel: 2, swingFrames: 20, range: 7},
+  'desert-guard': {baseName: '沙漠卫士',     lifeBase: 60, lifePerLevel: 10, dmgBase: 8,  dmgPerLevel: 3, swingFrames: 16, range: 1.3},
+  'iron-wolf':    {baseName: '铁狼',         lifeBase: 50, lifePerLevel: 8,  dmgBase: 6,  dmgPerLevel: 2, swingFrames: 18, range: 1.3},
+  'barbarian':    {baseName: '野蛮人佣兵',   lifeBase: 70, lifePerLevel: 12, dmgBase: 10, dmgPerLevel: 4, swingFrames: 14, range: 1.3},
+};
+
+function mercMaxLife(type: string, level: number): number {
+  const s = MERC_STATS[type] ?? MERC_STATS['desert-guard'];
+  return s.lifeBase + s.lifePerLevel * level;
+}
+
+function mercDamage(type: string, level: number): {min: number; max: number} {
+  const s = MERC_STATS[type] ?? MERC_STATS['desert-guard'];
+  const base = s.dmgBase + s.dmgPerLevel * level;
+  return {min: Math.max(1, base), max: Math.max(2, Math.floor(base * 1.5))};
+}
+
+function mercElement(type: string): import('./types').Element {
+  if (type === 'rogue-fire') return 'fire';
+  if (type === 'rogue-cold') return 'cold';
+  return 'physical';
+}
 
 export function seededRandom(seed: number): Rng {
   let value = seed >>> 0 || 1;
@@ -195,17 +221,26 @@ export class Engine {
     area.def=region.def;area.spawn=region.spawn;
     this.regionMessage(from);
   }
+  private validTravelPoint(area: AreaState, id: number, point: Point, from?: Point) {
+    return isWalkable(area,point.x,point.y)
+      && (area.regions ? surfaceRegionAt(area,point)?.def.id===id : area.def.id===id)
+      && (!from || (isWalkable(area,from.x,from.y) && findPath(area,from,point).length>0));
+  }
   private syncCorpse(area: AreaState) {
     const p=this.state.player!,corpse=p.corpse;
     if (!corpse) return;
     const region=getSurfaceRegion(area,corpse.areaId);
     if (!region && (area.regions || area.def.id!==corpse.areaId)) return;
-    if (region && !containsRegion(region,corpse)) {
+    if (region && !containsRegion(region,corpse) && !this.validTravelPoint(area,corpse.areaId,corpse)) {
       // Version-1 local points migrate once, never rerolling or replacing equipment.
       const local=createArea(corpse.areaId,p.difficulty,region.seed,p);
       if (isWalkable(local,corpse.x,corpse.y)) {corpse.x+=region.x;corpse.y+=region.y;}
     }
-    if (!area.objects.some(o=>o.kind==='corpse')) area.objects.push({uid:this.id('corpse'),kind:'corpse',name:`${p.name} 的尸体`,x:corpse.x,y:corpse.y,regionId:corpse.areaId});
+    const spawn=region?.spawn ?? area.spawn;
+    if (!this.validTravelPoint(area,corpse.areaId,corpse,spawn)) {corpse.x=spawn.x;corpse.y=spawn.y;}
+    const object=area.objects.find(o=>o.kind==='corpse');
+    if (object) {object.x=corpse.x;object.y=corpse.y;object.regionId=corpse.areaId;}
+    else area.objects.push({uid:this.id('corpse'),kind:'corpse',name:`${p.name} 的尸体`,x:corpse.x,y:corpse.y,regionId:corpse.areaId});
   }
   private enterArea(id: number, position?: Point, atSpawn = false, sourceId?: number) {
     const p = this.state.player;
@@ -216,18 +251,19 @@ export class Engine {
     if (region) {area.def=region.def;area.spawn=region.spawn;}
     this.state.area = area;
     this.syncCorpse(area);
-    const inTarget = (point: Point) => !region || containsRegion(region,point);
-    const back = !position && !atSpawn && from !== undefined ? area.objects.find(o => (o.kind === 'exit' || o.kind === 'portal') && o.targetArea === from && (!region || o.regionId===id)) : undefined;
+    const inTarget = (point: Point) => this.validTravelPoint(area,id,point,area.spawn);
+    const back = !position && !atSpawn && from !== undefined ? area.objects.find(o => (o.kind === 'exit' || o.kind === 'portal') && o.targetArea === from && (!region || o.regionId===id) && inTarget(o)) : undefined;
     if (back) {
       const dx = (region ? region.x+region.width/2 : area.width/2) - back.x, dy = (region ? region.y+region.height/2 : area.height/2) - back.y, len = Math.hypot(dx, dy) || 1;
       for (const r of [2.2, 1.6, 1.1, 3]) {
         const x = back.x + .5 + dx / len * r, y = back.y + .5 + dy / len * r;
-        if (isWalkable(area, x, y) && inTarget({x,y})) { position = {x, y}; break; }
+        if (inTarget({x,y})) { position = {x, y}; break; }
       }
     }
-    p.x = position?.x ?? area.spawn.x; p.y = position?.y ?? area.spawn.y;
-    if (!isWalkable(area, p.x, p.y)) { p.x = area.spawn.x; p.y = area.spawn.y; }
+    const landing = position && inTarget(position) ? position : area.spawn;
+    p.x = landing.x; p.y = landing.y;
     this.state.screen = 'game'; this.state.paused = false;
+    if (p.mercenary && p.mercenary.life > 0) { p.mercenary.x = landing.x + 1; p.mercenary.y = landing.y; }
     this.regionMessage(from);
   }
   private reveal() {
@@ -247,6 +283,7 @@ export class Engine {
       if (this.state.loadingSave || (this.store && this.state.storageStatus !== 'ready')) return;
       const name = action.name.trim().slice(0, 24);
       if (!name || !CLASSES.some(c => c.id === action.classId)) { this.message('请选择职业并输入角色名。', 'error'); return; }
+      this.clearShrineBuff();
       this.state.seed = Date.now() >>> 0; this.rng = seededRandom(this.state.seed); this.areas.clear(); this.vendorStocks.clear(); this.portal = null;
       this.state.messages = []; this.state.activeSaveId = this.id('character'); this.state.saved = false;
       this.state.player = createPlayer(action.classId, name); createStartingItems(this.state.player);
@@ -272,7 +309,7 @@ export class Engine {
     if (action.type === 'loot') { this.state.showLoot = !this.state.showLoot; return; }
     if (action.type === 'respawn') { this.respawn(); return; }
     if (p.dead) return;
-    if (this.state.paused && ['move', 'attack', 'interact', 'pickup', 'potion', 'use-item', 'move-item', 'portal', 'travel', 'swap'].includes(action.type)) return;
+    if (this.state.paused && ['move', 'attack', 'interact', 'pickup', 'potion', 'use-item', 'move-item', 'fill-tome', 'portal', 'travel', 'swap'].includes(action.type)) return;
     switch (action.type) {
       case 'move':
         if (!Number.isFinite(action.point.x) || !Number.isFinite(action.point.y)) break;
@@ -303,6 +340,14 @@ export class Engine {
       case 'potion': this.drink(action.column); break;
       case 'use-item': this.useItem(action.uid, action.targetUid); break;
       case 'move-item': { const r = moveInventoryItem(p, action.uid, action.x, action.y); if (!r.ok) this.message(r.message, 'error'); break; }
+      case 'fill-tome': {
+        const r = fillTome(p, action.uid, action.tomeUid);
+        this.message(r.message, r.ok ? 'info' : 'error');
+        if (!r.ok) return;
+        this.state.selectedItem = action.tomeUid;
+        if (this.state.identifySource === action.uid && !p.inventory.some(i => i.uid === action.uid)) this.state.identifySource = null;
+        break;
+      }
       case 'heal': if (area.def.town && this.npcServices.includes('heal')) { p.life = this.state.stats!.maxLife; p.mana = this.state.stats!.maxMana; p.stamina = this.state.stats!.maxStamina; this.regeneration = []; this.message('生命和法力已恢复。'); } break;
       case 'identify': this.identify(action.uid); break;
       case 'buy': this.buy(action.uid); break;
@@ -315,7 +360,9 @@ export class Engine {
       case 'socket': { const r = insertSocket(p, action.itemUid, action.runeUid); this.message(r.message, r.ok ? 'info' : 'error'); this.updateStats(); break; }
       case 'transmute': {
         if (!p.inventory.some(i => i.code === 'box')) { this.message('需要先在第二幕取得赫拉迪克方块。', 'error'); break; }
-        const r = transmute(p); this.message(r.message, r.ok ? 'info' : 'error'); this.updateStats(); break;
+        const r = transmute(p); this.message(r.message, r.ok ? 'info' : 'error'); this.updateStats();
+        if (r.ok && r.enterArea) this.enterArea(r.enterArea);
+        break;
       }
       case 'portal': this.openPortal(); break;
       case 'travel': {
@@ -329,6 +376,71 @@ export class Engine {
       case 'run': p.running = !p.running; break;
       case 'respec': this.respec(); break;
       case 'difficulty': this.changeDifficulty(action.difficulty); break;
+      case 'hire-merc': this.hireMerc(action.mercType); break;
+      case 'resurrect-merc': this.resurrectMerc(); break;
+      case 'merc-equip': this.mercEquip(action.uid); break;
+      case 'merc-unequip': this.mercUnequip(action.slot); break;
+      case 'imbue': {
+        const qk = questKey(p, 'a1q5');
+        if ((p.quests[qk] ?? 0) !== 3) { this.message('需要先从恰西处领取注入权限。', 'error'); break; }
+        if (p.quests[`${p.difficulty}:imbueDone`]) { this.message('本难度的注入权限已使用。', 'error'); break; }
+        const containers = [p.inventory, ...Object.values(p.equipment).filter((v): v is Item[] => Array.isArray(v))];
+        const item = [...p.inventory, ...Object.values(p.equipment).filter((v): v is Item => !!v && !Array.isArray(v) && typeof (v as Item).code === 'string')]
+          .find(i => i.uid === action.itemUid);
+        if (!item) { this.message('找不到该物品。', 'error'); break; }
+        const base = getBase(item.code);
+        if (!base?.slot) { this.message('只能注入可装备的物品。', 'error'); break; }
+        if (!['normal', 'magic', 'superior', 'low'].includes(item.quality)) { this.message('只能注入普通/魔法品质的物品。', 'error'); break; }
+        const rare = createItem(item.code, item.ilvl, this.rng, 'rare');
+        rare.uid = item.uid; rare.x = item.x; rare.y = item.y;
+        const inInventory = p.inventory.findIndex(i => i.uid === action.itemUid);
+        if (inInventory >= 0) { p.inventory[inInventory] = rare; }
+        else {
+          for (const [slot, equipped] of Object.entries(p.equipment)) {
+            if (equipped && !Array.isArray(equipped) && (equipped as Item).uid === action.itemUid) {
+              (p.equipment as Record<string, Item>)[slot] = rare; break;
+            }
+          }
+        }
+        p.quests[`${p.difficulty}:imbueDone`] = 1;
+        this.updateStats(); this.message(`注入成功！${itemLabel(rare)}`);
+        break;
+      }
+      case 'larzuk-socket': {
+        const qk = questKey(p, 'a5q1');
+        if ((p.quests[qk] ?? 0) !== 3) { this.message('需要先从拉苏克处领取镶孔权限。', 'error'); break; }
+        if (p.quests[`${p.difficulty}:larzukDone`]) { this.message('本难度的镶孔服务已使用。', 'error'); break; }
+        const item = p.inventory.find(i => i.uid === action.itemUid);
+        if (!item) { this.message('找不到该物品（仅支持背包中的物品）。', 'error'); break; }
+        const base = getBase(item.code);
+        if (!base?.maxSockets) { this.message('此物品不能开凹槽。', 'error'); break; }
+        if (item.sockets > 0) { this.message('此物品已有凹槽。', 'error'); break; }
+        item.sockets = allowedSockets(base, item.ilvl);
+        if (!item.sockets) { this.message('此物品等级过低，无法开凹槽。', 'error'); break; }
+        p.quests[`${p.difficulty}:larzukDone`] = 1;
+        this.updateStats(); this.message(`镶孔完成！物品现有 ${item.sockets} 个凹槽。`);
+        break;
+      }
+      case 'open-cow-portal': {
+        if ((p.quests[questKey(p, 'a5q6')] ?? 0) < 3) { this.message('须先通关当前难度（击杀巴尔）才能开启牛场传送门。', 'error'); break; }
+        if (p.quests[`${p.difficulty}:cowPortal`]) { this.message('秘密奶牛场传送门已开启。', 'error'); break; }
+        p.quests[`${p.difficulty}:cowPortal`] = 1;
+        this.message('维兰的腿已被使用！秘密奶牛场传送门在罗格营地开启。');
+        break;
+      }
+      case 'personalize': {
+        if (p.quests[questKey(p, 'a5q4')] < 2) { this.message('需要先完成哈洛加斯的背叛任务。', 'error'); break; }
+        if (p.quests[`${p.difficulty}:personalizeDone`]) { this.message('本难度的刻名服务已使用。', 'error'); break; }
+        const item = [...p.inventory, ...Object.values(p.equipment).filter((v): v is Item => !!v && !Array.isArray(v) && typeof (v as Item).code === 'string')]
+          .find(i => i.uid === action.itemUid);
+        if (!item) { this.message('找不到该物品。', 'error'); break; }
+        item.mods['internal:personalized'] = 1;
+        item.durability = item.maxDurability;
+        p.quests[`${p.difficulty}:personalizeDone`] = 1;
+        p.quests[questKey(p, 'a5q4')] = 3;
+        this.updateStats(); this.message(`刻名完成！${itemLabel(item)} 已刻上你的名字并修复。`);
+        break;
+      }
     }
     this.state.saved = false;
   };
@@ -390,12 +502,24 @@ export class Engine {
       case 'stash': this.state.identifySource = null; this.state.panel = 'stash'; break;
       case 'chest': if (!o.used) {
         o.used = true;
-        const choices = rawRows('weapons').filter(b => num(b, 'level') <= Math.max(1, p.level) && num(b, 'spawnable') === 1);
-        const base = choices[Math.floor(this.rng() * choices.length)];
-        const item = base ? createItem(String(base.code), Math.max(1, sourceDef.levels[0]), this.rng, this.rng() < .3 ? 'magic' : 'normal') : createItem('hp1', 1, this.rng);
-        area.drops.push({item, x: o.x, y: o.y}); this.message('箱子打开了。');
+        // 特殊任务宝箱：赫拉迪克马勒斯（a1q5）
+        if (o.name === '赫拉迪克马勒斯' && sourceDef.id === 28) {
+          const qk = questKey(p, 'a1q5');
+          if ((p.quests[qk] ?? 0) < 2) { p.quests[qk] = 2; this.message('你取回了赫拉迪克马勒斯！回到营地交给恰西领取奖励。'); }
+        }
+        // 特殊任务宝箱：蓝·依森的古书（a3q4）
+        else if (o.name === '蓝·依森的古书' && sourceDef.id === 95) {
+          const qk = questKey(p, 'a3q4');
+          if ((p.quests[qk] ?? 0) < 2) { p.quests[qk] = 2; this.message('你找到了蓝·依森的古书！回到库拉斯特海港交给奥玛斯领取奖励。'); }
+        } else {
+          const choices = rawRows('weapons').filter(b => num(b, 'level') <= Math.max(1, p.level) && num(b, 'spawnable') === 1);
+          const base = choices[Math.floor(this.rng() * choices.length)];
+          const item = base ? createItem(String(base.code), Math.max(1, sourceDef.levels[0]), this.rng, this.rng() < .3 ? 'magic' : 'normal') : createItem('hp1', 1, this.rng);
+          area.drops.push({item, x: o.x, y: o.y});
+        }
+        this.message('箱子打开了。');
       } break;
-      case 'shrine': if (!o.used) { o.used = true; p.life = this.state.stats!.maxLife; p.mana = this.state.stats!.maxMana; this.effect(p, 'heal', 1, '神殿祝福'); } break;
+      case 'shrine': this.activateShrine(o); break;
       case 'portal': {
         const portal=this.portal;
         if (portal && o.uid===portal.sourceUid) this.enterArea(portal.townId,undefined,true);
@@ -405,6 +529,85 @@ export class Engine {
       }
       case 'corpse': this.recoverCorpse(); break;
     }
+  }
+  private clearShrineBuff() {
+    if (this.state.player) setTemporaryShrine(this.state.player);
+    this.state.shrineBuff = undefined;
+    this.updateStats();
+  }
+  private advanceShrines() {
+    const buff = this.state.shrineBuff;
+    if (buff && --buff.frames <= 0) { this.clearShrineBuff(); this.message(`${buff.name}的祝福已消退。`); }
+    // Cached areas keep charging during active play, including while elsewhere.
+    for (const area of new Set([...this.areas.values(), this.state.area!])) for (const object of area.objects) {
+      if (object.kind === 'shrine' && object.used && object.shrineReadyTick !== undefined && this.state.tick >= object.shrineReadyTick) {
+        object.used = false; delete object.shrineReadyTick;
+      }
+    }
+  }
+  private activateShrine(object: WorldObject) {
+    const p = this.state.player!, area = this.state.area!, shrine = getShrine(object.shrineCode ?? 1);
+    if (!shrine || !hasLineOfSight(area, p, object)) return;
+    if (object.used && (object.shrineReadyTick === undefined || this.state.tick < object.shrineReadyTick)) {
+      this.message(object.shrineReadyTick === undefined ? '神龛的力量已经耗尽。' : `神龛正在充能，还需 ${Math.ceil((object.shrineReadyTick - this.state.tick) / FPS)} 秒。`);
+      return;
+    }
+    object.used = true;
+    if (shrine.resetFrames) object.shrineReadyTick = this.state.tick + shrine.resetFrames;
+    if (shrine.duration) {
+      setTemporaryShrine(p, shrine.code);
+      this.state.shrineBuff = {code: shrine.code, name: shrine.name, frames: shrine.duration};
+      this.updateStats();
+    }
+    let result: string;
+    switch (shrine.code) {
+      case 1:
+        p.life = Math.min(this.state.stats!.maxLife, p.life + this.state.stats!.maxLife * shrine.arg0 / 100);
+        p.mana = Math.min(this.state.stats!.maxMana, p.mana + this.state.stats!.maxMana * shrine.arg1 / 100);
+        result = '生命和法力已恢复'; break;
+      case 6: result = `防御 +${shrine.arg0}%`; break;
+      case 7: result = `攻击准确率 +${shrine.arg0}%，物理伤害 +${shrine.arg1}%`; break;
+      case 8: case 9: case 10: case 11: result = `对应抗性 +${shrine.arg0}%（仍受抗性上限限制）`; break;
+      case 12: result = `已获得且支持的技能 +${shrine.arg0} 级`; break;
+      case 13: result = `法力回复速度 +${shrine.arg0}%`; break;
+      case 14: p.stamina = this.state.stats!.maxStamina; result = '耐力充满且奔跑不消耗耐力'; break;
+      case 15: result = `击杀经验 +${shrine.arg0}%`; break;
+      case 17: this.createTownPortal(); result = '回城传送门开启（不消耗卷轴）'; break;
+      case 18: result = this.upgradeShrineGem(); break;
+      default: return;
+    }
+    this.effect(object, shrine.code === 17 ? 'portal' : 'heal', 1, shrine.name);
+    this.state.effects[this.state.effects.length - 1].color = shrine.color;
+    this.message(`${shrine.name}：${result}${shrine.duration ? `，持续 ${shrine.duration / FPS} 秒` : ''}。`);
+    this.state.saved = false;
+  }
+  private upgradeShrineGem(): string {
+    const p = this.state.player!, area = this.state.area!;
+    const candidates = p.inventory.flatMap(item => {
+      const gem = GEMS.find(gem => gem.code === item.code);
+      const next = gem && GEMS.find(next => next.type === gem.type && next.grade === gem.grade + 1);
+      return gem && next ? [{item, gem, next}] : [];
+    }).sort((a, b) => b.gem.grade - a.gem.grade);
+    if (candidates.length) {
+      const {item, next} = candidates[0], upgraded = createItem(next.code, item.ilvl, this.rng, 'normal');
+      // Preserve identity/coordinates; replace only this gem with its canonical next grade.
+      Object.assign(upgraded, {uid: item.uid, x: item.x, y: item.y, quantity: item.quantity});
+      p.inventory[p.inventory.indexOf(item)] = upgraded; this.updateStats();
+      return `宝石升级为 ${itemLabel(upgraded)}`;
+    }
+    const chipped = GEMS.filter(gem => gem.grade === 0), gem = chipped[Math.floor(this.rng() * chipped.length)];
+    const item = createItem(gem.code, 1, this.rng, 'normal');
+    if (placeItem(p.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) return `获得 ${itemLabel(item)}`;
+    area.drops.push({item, x: p.x, y: p.y}); return `${itemLabel(item)}已落在脚边（行囊已满）`;
+  }
+  private pickupNearbyGold() {
+    const p = this.state.player!, area = this.state.area!;
+    let gold = 0;
+    area.drops = area.drops.filter(drop => {
+      if (drop.item.code !== 'gld' || distance(p, drop) > 2 || !isWalkable(area, drop.x, drop.y) || !hasLineOfSight(area, p, drop)) return true;
+      gold += drop.item.quantity; return false;
+    });
+    if (gold > 0) { p.gold += gold; this.message(`拾取 ${gold} 金币`, 'loot'); this.state.saved = false; }
   }
   private pickup(uid: string) {
     if (!this.approach(uid, true)) return;
@@ -536,9 +739,9 @@ export class Engine {
     const idx = p.inventory.findIndex(i => i.uid === uid);
     if (idx < 0) return;
     const item = p.inventory[idx];
-    if (item.code === 'box' || getBase(item.code)?.type === 'ques') { this.message('不能出售任务物品。', 'error'); return; }
+    const price = itemSellPrice(item, p.difficulty, this.state.area!.def.act);
+    if (price === null) { this.message('不能出售任务物品。', 'error'); return; }
     p.inventory.splice(idx, 1);
-    const price = Math.min(Math.max(1, Math.floor(item.price / 4)), p.difficulty === 'normal' ? 5000 * this.state.area!.def.act : p.difficulty === 'nightmare' ? 30000 : 35000);
     p.gold += price; this.message(`出售 ${itemLabel(item)}，获得 ${price} 金币。`); this.updateStats();
   }
   private storage(uid: string, destination: 'inventory' | 'stash' | 'cube') {
@@ -564,10 +767,16 @@ export class Engine {
     const p = this.state.player!, area = this.state.area!;
     if (area.def.town) { this.message('不能在营地施放城镇传送。', 'error'); return; }
     if (!this.consumeScroll('tsc', 'tbk', sourceUid)) { this.message('需要城镇传送卷轴。', 'error'); return; }
+    this.createTownPortal();
+  }
+  // Shared portal lifecycle; shrine callers never consume inventory charges.
+  private createTownPortal() {
+    const p = this.state.player!, area = this.state.area!;
     this.removePortal();
-    const townId = townForAct(area.def.act), point = {x: p.x, y: p.y};
+    const townId = townForAct(area.def.act), point = {x: p.x, y: p.y}, preferred = {x:p.x+.7,y:p.y};
+    const source = this.validTravelPoint(area,area.def.id,preferred,p) ? preferred : point;
     this.portal = {areaId: area.def.id, point, townId,sourceUid:this.id('portal'),townUid:this.id('portal')};
-    area.objects.push({uid: this.portal.sourceUid, kind: 'portal', name: '返回营地', targetArea: townId, x: p.x + .7, y: p.y, regionId:area.def.id});
+    area.objects.push({uid: this.portal.sourceUid, kind: 'portal', name: '返回营地', targetArea: townId, x: source.x, y: source.y, regionId:area.def.id});
     const town = this.cachedArea(townId), townSpawn=getSurfaceRegion(town,townId)?.spawn ?? town.spawn;
     town.objects.push({uid: this.portal.townUid, kind: 'portal', name: `返回 ${area.def.name}`, targetArea: area.def.id, x: townSpawn.x + 2, y: townSpawn.y, regionId:townId});
     this.message('蓝色传送门已开启，点击进入。');
@@ -587,6 +796,59 @@ export class Engine {
     if (idx < 0 || idx >= p.unlockedDifficulties) { this.message('需要击败当前难度的巴尔才能解锁下一难度。', 'error'); return; }
     if (p.difficulty === difficulty) return;
     p.difficulty = difficulty; p.waypoints = [1]; this.areas.clear(); this.vendorStocks.clear(); this.portal = null; this.updateStats(); this.enterArea(1, undefined, true); this.save();
+  }
+  private hireMerc(mercType: string) {
+    const p = this.state.player!, area = this.state.area!;
+    if (!area.def.town || this.state.panel !== 'vendor') { this.message('需要在营地与雇佣兵 NPC 交谈。', 'error'); return; }
+    if (!MERC_STATS[mercType]) { this.message('无效的雇佣兵类型。', 'error'); return; }
+    const cost = p.level * 200;
+    if (p.gold < cost) { this.message(`雇佣需要 ${cost} 金币。`, 'error'); return; }
+    p.gold -= cost;
+    const level = Math.max(1, p.level - 2 + Math.floor(this.rng() * 5));
+    const maxLife = mercMaxLife(mercType, level);
+    const spawn = area.spawn;
+    p.mercenary = {name: MERC_STATS[mercType].baseName, type: mercType, life: maxLife, maxLife, level, equipment: {}, x: spawn.x + 1, y: spawn.y, cooldown: 0};
+    this.message(`雇佣了${MERC_STATS[mercType].baseName}（等级 ${level}）。`);
+  }
+  private resurrectMerc() {
+    const p = this.state.player!, area = this.state.area!;
+    if (!area.def.town || this.state.panel !== 'vendor') { this.message('需要在营地与雇佣兵 NPC 交谈。', 'error'); return; }
+    if (!p.mercenary) { this.message('没有雇佣兵需要复活。', 'error'); return; }
+    if (p.mercenary.life > 0) { this.message('雇佣兵尚未阵亡。', 'error'); return; }
+    const cost = Math.min(50000, p.mercenary.level * 500);
+    if (p.gold < cost) { this.message(`复活需要 ${cost} 金币。`, 'error'); return; }
+    p.gold -= cost;
+    p.mercenary.life = p.mercenary.maxLife;
+    const spawn = area.spawn;
+    p.mercenary.x = spawn.x + 1; p.mercenary.y = spawn.y;
+    this.message(`${p.mercenary.name} 已复活（花费 ${cost} 金币）。`);
+  }
+  private mercEquip(uid: string) {
+    const p = this.state.player!;
+    if (!p.mercenary) { this.message('没有雇佣兵。', 'error'); return; }
+    const idx = p.inventory.findIndex(i => i.uid === uid);
+    if (idx < 0) { this.message('物品不在背包中。', 'error'); return; }
+    const item = p.inventory[idx];
+    const baseSlot = getBase(item.code)?.slot;
+    const slot = baseSlot === 'head' ? 'head' : baseSlot === 'body' ? 'body' : baseSlot === 'weapon' ? 'weapon' : null;
+    if (!slot) { this.message('雇佣兵只能装备头盔、护甲和武器。', 'error'); return; }
+    const old = p.mercenary.equipment[slot];
+    if (old) { p.inventory.push(old); }
+    p.mercenary.equipment[slot] = item;
+    p.inventory.splice(idx, 1);
+    // 重新计算最大生命（护甲加成）
+    p.mercenary.maxLife = mercMaxLife(p.mercenary.type, p.mercenary.level);
+    p.mercenary.life = Math.min(p.mercenary.life, p.mercenary.maxLife);
+    this.message(`${p.mercenary.name} 装备了 ${item.name}。`);
+  }
+  private mercUnequip(slot: 'head' | 'body' | 'weapon') {
+    const p = this.state.player!;
+    if (!p.mercenary) { this.message('没有雇佣兵。', 'error'); return; }
+    const item = p.mercenary.equipment[slot];
+    if (!item) { this.message('该部位没有装备。', 'error'); return; }
+    if (!placeItem(p.inventory, item, INVENTORY_WIDTH, INVENTORY_HEIGHT)) { this.message('背包已满，无法卸下装备。', 'error'); return; }
+    delete p.mercenary.equipment[slot];
+    this.message(`卸下了 ${item.name}。`);
   }
   private castFrames(): number {
     const p = this.state.player!, fcr = this.state.stats!.fcr;
@@ -724,6 +986,16 @@ export class Engine {
         const clear = isWalkable(area, x, y) && isWalkable(area, m.x, y) && isWalkable(area, x, m.y);
         area.drops.push({item, x: clear ? x : m.x, y: clear ? y : m.y});
       }
+      // Uber boss guaranteed organ/torch drops (hell only)
+      const uberOrgans: Record<string,string> = {uberandariel:'dhn',uberduriel:'bey',ubermephisto:'mbr'};
+      if (p.difficulty === 'hell' && uberOrgans[m.code]) {
+        const organ = createItem(uberOrgans[m.code], m.level, this.rng);
+        area.drops.push({item: organ, x: m.x, y: m.y});
+      }
+      if (p.difficulty === 'hell' && m.code === 'uberdiablo') {
+        const torch = createItem('cm3', m.level, this.rng); // hellfire torch = unique large charm
+        area.drops.push({item: torch, x: m.x, y: m.y});
+      }
     }
     for (const text of onKill(p, area, m)) this.message(text);
     if (m.boss) this.message(`${m.name} 已被击败。`);
@@ -743,9 +1015,20 @@ export class Engine {
     if (damage > 0) { this.event('player', 'hurt', p, p, element); this.effect(p, 'hit', .3); this.effect(p, 'text', .8, `−${Math.max(1, Math.floor(damage))}`); }
     if (p.life <= 0) this.die();
   }
+  private damageMerc(m: Monster, amount: number) {
+    const p = this.state.player!;
+    if (!p.mercenary || p.mercenary.life <= 0) return;
+    const merc = p.mercenary;
+    const dmg = Math.max(1, Math.floor(amount * (1 - m.level / (m.level + merc.level + 10))));
+    merc.life = Math.max(0, merc.life - dmg);
+    if (merc.life <= 0) {
+      merc.life = 0;
+      this.message(`${merc.name} 阵亡了，前往营地找雇佣兵 NPC 复活。`, 'error');
+    }
+  }
   private die() {
     const p = this.state.player!, area = this.state.area!;
-    p.dead = true; this.path = []; this.attackTarget = null; this.pendingInteraction = null; this.event('player', 'death', p);
+    p.dead = true; this.clearShrineBuff(); this.path = []; this.attackTarget = null; this.pendingInteraction = null; this.event('player', 'death', p);
     const penalty = p.difficulty === 'normal' ? 0 : p.difficulty === 'nightmare' ? .05 : .1;
     const previous = EXPERIENCE[p.level] ?? 0, next = EXPERIENCE[p.level + 1] ?? previous;
     p.experience = Math.max(previous, p.experience - Math.floor((next - previous) * penalty));
@@ -794,9 +1077,11 @@ export class Engine {
   step() {
     const {player: p, area} = this.state;
     let s = this.state.stats;
+    if (p?.dead && this.state.shrineBuff) this.clearShrineBuff();
     if (this.state.screen !== 'game' || !p || !area || !s || this.state.paused || p.dead) return;
     const runtimeRevision=this.runtimeRevision;
     this.state.tick++;
+    this.advanceShrines(); s = this.state.stats!;
     this.updateSurfaceRegion();
     this.cooldown = Math.max(0, this.cooldown - 1);
     this.runningThisFrame = false;
@@ -818,7 +1103,7 @@ export class Engine {
     if (this.state.moving) {
       this.state.facing = Math.atan2(p.y - before.y, p.x - before.x);
       this.runningThisFrame = running;
-      if (running && !area.def.town) p.stamina = Math.max(0, p.stamina - .2);
+      if (running && !area.def.town && this.state.shrineBuff?.code !== 14) p.stamina = Math.max(0, p.stamina - .2);
       this.reveal();
     } else p.stamina = Math.min(s.maxStamina, p.stamina + .6);
     if (this.pendingInteraction) {
@@ -827,6 +1112,7 @@ export class Engine {
       else if (distance(p, point) <= 2) intent.pickup ? this.pickup(intent.uid) : this.interact(intent.uid);
     }
     if (this.state.area !== area || this.runtimeRevision!==runtimeRevision) return;
+    this.pickupNearbyGold();
     if ((c.left || c.right) && c.aim && !area.def.town && this.cooldown === 0) this.aimAttack(c.right, steering);
     if (this.attackTarget) this.tryAttack();
     if (steering) this.path = [];
@@ -857,14 +1143,21 @@ export class Engine {
         if (fallen) { fallen.dead = false; fallen.life = fallen.maxLife; m.cooldown = 75; this.event(fallen.uid, 'revive', fallen); this.event(m.uid, 'cast', m, fallen, 'fire'); this.effect(fallen, 'fire', .6, '复活'); continue; }
       }
       const range = m.ai === 'ranged' || m.ai === 'shaman' ? 6 : 1.2;
-      if (distance(p, m) > range || !hasLineOfSight(area, m, p)) this.moveToward(m, p, (m.chill ? 1 : 2.2));
+      // 50% 概率优先攻击雇佣兵（若雇佣兵存活且距怪物更近）
+      const merc = p.mercenary && p.mercenary.life > 0 ? p.mercenary : null;
+      const attackMerc = merc && distance(m, merc) < distance(m, p) * 1.2 && this.rng() < .5;
+      const combatTarget: Point = attackMerc ? merc! : p;
+      if (distance(combatTarget, m) > range || !hasLineOfSight(area, m, combatTarget)) this.moveToward(m, combatTarget, (m.chill ? 1 : 2.2));
       else if (m.cooldown === 0) {
         m.cooldown = Math.round((m.boss ? 25 : 35) * (m.chill ? 2 : 1));
-        this.event(m.uid, range > 2 ? 'cast' : 'attack', m, p, m.ai === 'shaman' ? 'fire' : 'physical');
+        this.event(m.uid, range > 2 ? 'cast' : 'attack', m, combatTarget, m.ai === 'shaman' ? 'fire' : 'physical');
         if (range > 2) {
-          const a = Math.atan2(p.y - m.y, p.x - m.x);
+          const a = Math.atan2(combatTarget.y - m.y, combatTarget.x - m.x);
           this.state.projectiles.push({uid: this.id('mp'), x: m.x, y: m.y, dx: Math.cos(a) * 7 / FPS, dy: Math.sin(a) * 7 / FPS, owner: 'monster', min: m.minDamage, max: m.maxDamage, element: m.ai === 'shaman' ? 'fire' : 'physical', life: FPS * 3, radius: .3, skillId: 0, ownerUid: m.uid});
-        } else this.meleeSwings.set(m, m.chill ? 12 : 6);
+        } else {
+          if (attackMerc && merc) this.damageMerc(m, Math.floor(m.minDamage + this.rng() * (m.maxDamage - m.minDamage + 1)));
+          else this.meleeSwings.set(m, m.chill ? 12 : 6);
+        }
       }
       if (p.dead) break;
     }
@@ -880,10 +1173,51 @@ export class Engine {
       } else if (distance(summon, p) > 2) this.moveToward(summon, p, 5);
     }
     this.state.summons = this.state.summons.filter(s => s.duration > 0 && s.life > 0);
+    // 雇佣兵战斗 AI
+    if (p.mercenary && p.mercenary.life > 0 && !area.def.town) {
+      const merc = p.mercenary;
+      merc.cooldown = Math.max(0, merc.cooldown - 1);
+      const st = MERC_STATS[merc.type] ?? MERC_STATS['desert-guard'];
+      const isRanged = st.range > 2;
+      const target = area.monsters.filter(m => !m.dead && distance(m, p) < 14).sort((a, b) => distance(a, merc) - distance(b, merc))[0];
+      if (target) {
+        if (distance(merc, target) > st.range || !hasLineOfSight(area, merc, target)) {
+          this.moveToward(merc, target, 4.5);
+        } else if (merc.cooldown === 0) {
+          merc.cooldown = st.swingFrames;
+          const dmg = mercDamage(merc.type, merc.level);
+          const elem = mercElement(merc.type);
+          this.event(merc.name, 'attack', merc, target, elem);
+          if (isRanged) {
+            const a = Math.atan2(target.y - merc.y, target.x - merc.x);
+            this.state.projectiles.push({uid: this.id('mp'), x: merc.x, y: merc.y, dx: Math.cos(a) * 12 / FPS, dy: Math.sin(a) * 12 / FPS, owner: 'summon', min: dmg.min, max: dmg.max, element: elem, life: FPS * 2, radius: .35, skillId: 0});
+          } else {
+            if (distance(merc, target) <= st.range && hasLineOfSight(area, merc, target)) {
+              this.damageMonster(target, dmg.min, dmg.max, elem, false);
+            }
+          }
+        }
+      } else if (distance(merc, p) > 3) {
+        this.moveToward(merc, p, 5);
+      }
+    } else if (p.mercenary && p.mercenary.life > 0 && area.def.town) {
+      // 在城镇跟随玩家
+      if (distance(p.mercenary, p) > 2) this.moveToward(p.mercenary, p, 4);
+    }
     if (this.aura && this.state.tick >= this.aura.next) {
       const e = skillEffect(p, this.aura.skillId); this.aura.next = this.state.tick + FPS * 2;
       this.effect(p, e.element === 'physical' || e.element === 'magic' ? 'nova' : e.element as 'fire', .7, undefined, e.radius);
       for (const m of area.monsters) if (!m.dead && distance(m, p) <= e.radius) this.damageMonster(m, e.min, e.max, e.element, false);
+    }
+    if (!this.aura && this.state.tick % (FPS * 2) === 0) {
+      const stats = deriveStats(p);
+      for (const id of stats.equipmentAuras) {
+        const e = skillEffect(p, id);
+        if (e.radius > 0 && e.min > 0) {
+          this.effect(p, e.element === 'physical' || e.element === 'magic' ? 'nova' : e.element as 'fire', .5, undefined, e.radius);
+          for (const m of area.monsters) if (!m.dead && distance(m, p) <= e.radius) this.damageMonster(m, e.min, e.max, e.element, false);
+        }
+      }
     }
     for (const e of this.state.effects) e.life--;
     this.state.effects = this.state.effects.filter(e => e.life > 0);
@@ -895,7 +1229,12 @@ export class Engine {
     proj.life--; proj.x += proj.dx; proj.y += proj.dy;
     if (!isWalkable(area, proj.x, proj.y)) { proj.life = 0; return; }
     if (proj.owner === 'monster') {
-      if (distance(proj, p) < .65) {
+      const merc = p.mercenary && p.mercenary.life > 0 ? p.mercenary : null;
+      if (merc && distance(proj, merc) < .65) {
+        const owner = area.monsters.find(m => m.uid === proj.ownerUid);
+        if (owner) this.damageMerc(owner, proj.min + this.rng() * (proj.max - proj.min));
+        proj.life = 0;
+      } else if (distance(proj, p) < .65) {
         const owner = area.monsters.find(m => m.uid === proj.ownerUid);
         if (owner) this.damagePlayer(owner, proj.min + this.rng() * (proj.max - proj.min), proj.element);
         proj.life = 0;
@@ -948,6 +1287,7 @@ export class Engine {
       try {
         await this.store!.delete(id);
         if (this.state.activeSaveId === id) {
+          this.clearShrineBuff();
           this.state.activeSaveId = null; this.state.player = null; this.state.area = null; this.state.stats = null; this.state.saved = false;
           this.resetRuntime(); this.areas.clear(); this.vendorStocks.clear(); this.portal = null;
         }
@@ -968,6 +1308,7 @@ export class Engine {
       const save = await this.store.get(id);
       if (!save) { this.state.storageError = '找不到该角色存档，请重新选择。'; return; }
       if (save.id !== id || !validSave(save)) { this.state.storageError = '存档损坏或版本不兼容；原存档未被覆盖。'; return; }
+      this.clearShrineBuff();
       this.state.messages = []; this.state.activeSaveId = id;
       this.state.player = save.player; this.state.seed = save.seed; this.rng = seededRandom(save.seed); this.areas.clear(); this.vendorStocks.clear(); this.portal = null;
       const p = this.state.player; p.dead = false; this.updateStats();

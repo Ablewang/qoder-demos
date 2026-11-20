@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { Engine, findPath, seededRandom } from '../src/engine';
-import { createPlayer, deriveStats } from '../src/rules';
+import { createPlayer, deriveStats, getShrine, skillLevel } from '../src/rules';
 import { createItem, createStartingItems, getBase, rollLoot } from '../src/items';
 import { SURFACE_IDS, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, isTownPoint, onKill, questKey, surfaceRegionAt } from '../src/world';
 import type { AreaState, Monster, Point, Rng, WorldObject } from '../src/types';
@@ -18,6 +18,18 @@ function fixture(id = 1, quiet = true) {
   if (quiet) area.monsters = []; // Geometry-only fixtures; combat/stats are tested with the original monsters below.
   return { engine, p, area };
 }
+test('surface and dungeon transitions preserve a timed shrine while cached used/charging objects cannot be reset by reentry',()=>{
+  const {engine,p,area}=fixture(2); p.skills[36]=1; const initialLevel=skillLevel(p,36);
+  const source=area.objects.find(o=>o.kind==='shrine'&&o.regionId===2)!; source.shrineCode=12; source.name=getShrine(12)!.name;
+  Object.assign(p,{x:source.x,y:source.y}); engine.dispatch({type:'interact',uid:source.uid});
+  assert.equal(skillLevel(p,36),initialLevel+2); assert.equal(source.used,true); const buff=engine.state.shrineBuff!,ready=source.shrineReadyTick;
+  access(engine).enterArea(8,undefined,true); engine.state.area!.monsters=[]; engine.step(); assert.equal(engine.state.shrineBuff,buff); assert.equal(buff.frames,2399);
+  access(engine).enterArea(2,{x:source.x,y:source.y}); assert.equal(engine.state.area,area); assert.equal(source.used,true); assert.equal(source.shrineReadyTick,ready);
+  engine.dispatch({type:'interact',uid:source.uid}); assert.equal(buff.frames,2399,'reentry cannot refresh duration'); assert.equal(source.shrineReadyTick,ready);
+  const cold=getSurfaceRegion(area,3)!; Object.assign(p,cold.spawn); engine.step(); assert.equal(area.def.id,3); assert.equal(engine.state.shrineBuff,buff); assert.equal(buff.frames,2398);
+  engine.state.tick=ready!-1; engine.step(); assert.equal(source.used,false,'charging finishes even in another active region');
+});
+
 function openShop(engine: Engine, npcId = 'akara') {
   const npc = engine.state.area!.objects.find(o => o.kind === 'npc' && o.npcId === npcId)!;
   assert.ok(npc);

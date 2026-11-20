@@ -1,6 +1,6 @@
 import type { BaseItem, ClassId, Difficulty, Item, ItemMods, Monster, Player, Quality, RawRow, Rng, Slot } from './types';
 import { getClass, getSkill, num, rawRows, text } from './catalog';
-import { deriveStats } from './rules';
+import { activeEquipment, deriveStats, equipmentModifiers } from './rules';
 import zhCN from './data/item-zhCN.json';
 
 const ITEM_NAMES: Readonly<Record<string, string>> = zhCN;
@@ -11,13 +11,13 @@ export const ITEM_LIMITATIONS: string[] = [
   '掉落仅支持单人 players1；不处理首杀任务 TC、女伯爵双 TC、超级暗金专用 TC、暗黑破坏神克隆或同局暗金唯一生成限制。',
   '自动 weap/armo/bow/mele TC 使用底材等级、类型继承和 rarity 权重；职业底材概率修正、自然孔概率、金币数量公式及负 Picks 嵌套截断仍需原版验证。',
   '稀有词缀数量暂用研究中的 3/4/4/5/5/6 分布（未验证）；随机 staffmod、AutoMagic、稀有名称及完整品质强制规则未实现。',
-  '套装仅实现单件基础属性；套装组合、触发技能、聚气、装备光环、oskill、每级属性及未识别 Properties 以“未实现”显示，不计作生效属性。',
+  '套装组合和每级属性动态计算；触发技能、聚气、装备光环、oskill仍未实现。标注“仅保存”的战斗属性尚无执行器；旧存档缺失的随机套装奖励不会补随机。',
   '毒素保留原始每帧定点速率和时长；多毒源聚合、持续时间、技能专属伤害及攻击模式由战斗引擎验证。',
   '方块仅支持宝石/符文升级、三小紫合大紫、普通装备打孔、Hel 清孔及 Ort/Ral 维修；无通用合成兜底。',
   '商店为第一幕基础库存加改编便利商品（大紫、33种符文、35种宝石与骷髅、乔丹之石、3种事件钥匙），并非原版商店；钥匙仅可购买保存，出售乔丹不会召唤黑毛。普通商品取原始底价，乔丹按戒指底价×暗金倍率＋附加价报价；维修为耐久比例估算，未实现原版完整价格/折扣/聚气费用。',
   '药水返回职业基础回复量和持续秒数（原始帧数/25），不包含属性双倍概率、混合药效叠加及解毒/解冻/耐力状态；引擎负责实际回复。',
   '镶嵌的可变符文之语属性及方块打孔使用 Math.random（接口未提供 RNG）；掉落和生成使用调用方 RNG。',
-  '55 个原版离线符文之语加重制版边缘覆盖可匹配；其余 22 个 server 限定定义禁用，未实现珠宝镶嵌。',
+  '55 个原版离线符文之语加重制版边缘覆盖可匹配；其余 22 个 server 限定定义禁用；符文与宝石镶嵌已实现。',
 ];
 
 const CLASS_IDS: ClassId[] = ['ama', 'sor', 'nec', 'pal', 'bar', 'dru', 'ass'];
@@ -150,13 +150,75 @@ export function allowedSockets(base: BaseItem, ilvl: number): number {
 }
 
 const SCALAR: Record<string, string> = {
-  str: 'strength', dex: 'dexterity', vit: 'vitality', enr: 'energy', hp: 'life', mana: 'mana', 'mana%': 'maxManaPercent', stam: 'stamina',
+  str: 'strength', dex: 'dexterity', vit: 'vitality', enr: 'energy', hp: 'life', 'hp%': 'maxLifePercent', mana: 'mana', 'mana%': 'maxManaPercent', stam: 'stamina',
   att: 'attackRating', 'att%': 'attackRatingPercent', 'dmg-min': 'minDamage', 'dmg-max': 'maxDamage',
   'ac%': 'defensePercent', ac: 'defense', 'res-fire': 'resFire', 'res-cold': 'resCold', 'res-ltng': 'resLightning', 'res-pois': 'resPoison', 'res-all': 'resAll',
   'mag%': 'magicFind', 'gold%': 'goldFind', cast1: 'fcr', cast2: 'fcr', cast3: 'fcr', balance1: 'fhr', balance2: 'fhr', balance3: 'fhr',
   swing1: 'ias', swing2: 'ias', swing3: 'ias', move1: 'frw', move2: 'frw', move3: 'frw', lifesteal: 'lifeLeech', manasteal: 'manaLeech',
-  'red-dmg%': 'damageReduction', 'red-dmg': 'flatReduction', allskills: 'allSkills', fireskill: 'fireSkills', deadly: 'deadlyStrike', 'regen-mana': 'manaRegenPercent', indestruct: 'indestructible', ethereal: 'forcedEthereal', cheap: 'vendorDiscount',
+  'red-dmg%': 'damageReduction', 'red-dmg': 'flatReduction', 'red-mag': 'flatMagicReduction', allskills: 'allSkills', fireskill: 'fireSkills', deadly: 'deadlyStrike', 'regen-mana': 'manaRegenPercent', indestruct: 'indestructible', ethereal: 'forcedEthereal', cheap: 'vendorDiscount',
+  block: 'block', block1: 'fbr', block2: 'fbr', block3: 'fbr', 'ac-hth': 'meleeDefense', 'ac-miss': 'missileDefense',
+  'ignore-ac': 'ignoreTargetDefense', 'reduce-ac': 'targetDefensePercent', 'dmg-ac': 'targetDefenseReduction',
+  'att-demon': 'demonAttackRating', 'att-undead': 'undeadAttackRating', 'dmg-demon': 'demonDamagePercent', 'dmg-undead': 'undeadDamagePercent',
+  'res-fire-max': 'maxResFire', 'res-cold-max': 'maxResCold', 'res-ltng-max': 'maxResLightning', 'res-pois-max': 'maxResPoison', 'res-all-max': 'maxResAll',
+  'extra-fire': 'fireDamagePercent', 'extra-cold': 'coldDamagePercent', 'extra-ltng': 'lightningDamagePercent', 'extra-pois': 'poisonDamagePercent',
+  'pierce-fire': 'pierceFire', 'pierce-cold': 'pierceCold', 'pierce-ltng': 'pierceLightning', 'pierce-pois': 'piercePoison', pierce: 'pierceChance',
+  'abs-fire': 'absorbFire', 'abs-fire%': 'absorbFirePercent', 'abs-cold': 'absorbCold', 'abs-cold%': 'absorbColdPercent',
+  'abs-ltng': 'absorbLightning', 'abs-ltng%': 'absorbLightningPercent', 'abs-mag': 'absorbMagic', 'abs-mag%': 'absorbMagicPercent',
+  regen: 'lifeRegen', 'regen-stam': 'staminaRegenPercent', stamdrain: 'staminaDrainPercent',
+  'heal-kill': 'lifeAfterKill', 'mana-kill': 'manaAfterKill', 'demon-heal': 'lifeAfterDemonKill', 'dmg-to-mana': 'damageToMana', addxp: 'experiencePercent',
+  crush: 'crushingBlow', openwounds: 'openWounds', knock: 'knockback', stupidity: 'blindTarget', howl: 'fleeChance', slow: 'slowTarget',
+  freeze: 'freezeTarget', nofreeze: 'cannotBeFrozen', 'half-freeze': 'halfFreezeDuration', 'res-pois-len': 'poisonLengthResist', noheal: 'preventMonsterHeal',
+  thorns: 'attackerDamage', 'light-thorns': 'attackerLightningDamage', rip: 'restInPeace', light: 'lightRadius', dmg: 'normalDamage',
+  bloody: 'extraBlood', explosivearrow: 'explosiveArrow', magicarrow: 'magicArrow', stack: 'extraStack',
 };
+const PROPERTY_ROWS = new Map(rawRows('Properties').map(row => [text(row, 'code'), row]));
+const STAT_ROWS = new Map(rawRows('ItemStatCost').map(row => [text(row, 'Stat'), row]));
+const LEVEL_TARGETS: Record<string, string> = {
+  armorclass: 'localDefense', maxdamage: 'localMaxDamage', tohit: 'attackRating', item_tohit_percent: 'attackRatingPercent',
+  maxhp: 'lifePerLevelBonus', maxmana: 'manaPerLevelBonus', maxstamina: 'stamina', strength: 'strength', dexterity: 'dexterity', vitality: 'vitality', energy: 'energy',
+  item_deadlystrike: 'deadlyStrike', item_goldbonus: 'goldFind', item_magicbonus: 'magicFind',
+  coldmaxdam: 'maxCold', firemaxdam: 'maxFire', lightmaxdam: 'maxLightning', poisonmaxdam: 'poisonMaxRate',
+  coldresist: 'resCold', fireresist: 'resFire', lightresist: 'resLightning', poisonresist: 'resPoison',
+  item_absorbcold: 'absorbCold', item_absorbfire: 'absorbFire', item_absorblight: 'absorbLightning', item_absorbmagic: 'absorbMagic',
+  staminarecoverybonus: 'staminaRegenPercent', item_attackertakesdamage: 'attackerDamage',
+  item_demondamage_percent: 'demonDamagePercent', item_undeaddamage_percent: 'undeadDamagePercent',
+  item_demon_tohit: 'demonAttackRating', item_undead_tohit: 'undeadAttackRating',
+  item_crushingblow: 'crushingBlow', item_openwounds: 'openWounds', item_kickdamage: 'kickDamage',
+};
+function levelDefinition(code: string): { stat: RawRow; target: string } | undefined {
+  const prop = PROPERTY_ROWS.get(code);
+  if (!code.endsWith('/lvl') || !prop || num(prop, 'func1') !== 17) return;
+  const stat = STAT_ROWS.get(text(prop, 'stat1'));
+  if (!stat || text(stat, 'op base') !== 'level' || ![2, 4, 5].includes(num(stat, 'op'))) return;
+  let target = LEVEL_TARGETS[text(stat, 'op stat1')];
+  if (num(stat, 'op') === 5) target = target === 'localDefense' ? 'localDefensePercent' : target === 'localMaxDamage' ? 'localMaxDamagePercent' : '';
+  return target ? { stat, target } : undefined;
+}
+/** Numeric keys available to consumers; descriptor and provenance keys are never stats. */
+export const EQUIPMENT_SCALAR_KEYS: readonly string[] = [...new Set([
+  ...Object.values(SCALAR).filter(key => key !== 'forcedEthereal'), ...Object.values(LEVEL_TARGETS),
+  'localDefensePercent', 'localMaxDamagePercent', 'localDamagePercent', 'damagePercent', 'requirementsPercent', 'classSkills',
+  ...['Fire', 'Cold', 'Lightning', 'Magic'].flatMap(element => ['min' + element, 'max' + element]),
+  'coldLength', 'poisonLength', 'poisonMinRate', 'poisonMaxRate',
+])].sort();
+const SCALAR_KEYS = new Set(EQUIPMENT_SCALAR_KEYS);
+const scalarKey = (key: string): boolean => SCALAR_KEYS.has(key) || /^(?:skill:\d+|classSkill:(?:ama|sor|nec|pal|bar|dru|ass)|skillTab:(?:ama|sor|nec|pal|bar|dru|ass):[0-2])$/.test(key);
+function evaluateMods(saved: ItemMods, level: number): ItemMods {
+  const result: ItemMods = {};
+  for (const [key, value] of Object.entries(saved)) {
+    if (!Number.isFinite(value)) continue;
+    if (scalarKey(key)) add(result, key, value);
+    else if (key.startsWith('perLevel:')) {
+      const definition = levelDefinition(key.slice(9));
+      if (!definition) continue;
+      const { stat, target } = definition;
+      const targetShift = num(STAT_ROWS.get(text(stat, 'op stat1')) ?? {}, 'ValShift');
+      const shift = num(stat, 'ValShift', targetShift);
+      add(result, target, Math.trunc(value * 2 ** shift * level / 2 ** num(stat, 'op param')) / 2 ** shift);
+    }
+  }
+  return result;
+}
 function add(mods: ItemMods, key: string, value: number): void { mods[key] = (mods[key] ?? 0) + value; }
 function skillId(parameter: string): number | undefined {
   if (/^\d+$/.test(parameter)) return Number(parameter);
@@ -166,8 +228,16 @@ function skillId(parameter: string): number | undefined {
 /** Property-specific tuple semantics; unsupported handlers retain their source tuple. */
 function property(item: Item, code: string, parameter: string, min: number, max: number, rng: Rng): void {
   if (!code || code.startsWith('*')) return;
+  code = code.toLowerCase(); // Raw sources include the valid case variant "Light".
   const base = getBase(item.code)!;
   const unsupported = () => add(item.mods, `unsupported:${code}:${parameter}:${min}:${max}`, 1);
+  const perLevel = levelDefinition(code);
+  if (perLevel) {
+    if (parameter !== '' && Number.isFinite(Number(parameter))) add(item.mods, `perLevel:${code}`, Number(parameter));
+    else if (parameter === '') add(item.mods, `perLevel:${code}`, integer(rng, min, max));
+    else unsupported();
+    return;
+  }
   if (code === 'dmg%') { add(item.mods, base.slot === 'weapon' ? 'localDamagePercent' : 'damagePercent', integer(rng, min, max)); return; }
   if (SCALAR[code]) { add(item.mods, SCALAR[code], integer(rng, min, max)); return; }
   if (code === 'all-stats') { const value = integer(rng, min, max); for (const key of ['strength', 'dexterity', 'vitality', 'energy']) add(item.mods, key, value); return; }
@@ -206,6 +276,11 @@ function property(item: Item, code: string, parameter: string, min: number, max:
   }
   const endpoint: Record<string, string> = { 'fire-min': 'minFire', 'fire-max': 'maxFire', 'cold-min': 'minCold', 'cold-max': 'maxCold', 'ltng-min': 'minLightning', 'ltng-max': 'maxLightning', 'pois-min': 'poisonMinRate', 'pois-max': 'poisonMaxRate', 'cold-len': 'coldLength', 'pois-len': 'poisonLength' };
   if (endpoint[code]) { add(item.mods, endpoint[code], integer(rng, min, max)); return; }
+  if (code === 'aura') {
+    const id = skillId(parameter);
+    if (id !== undefined) add(item.mods, `aura:${id}`, integer(rng, min, max)); else unsupported();
+    return;
+  }
   unsupported();
 }
 function properties(item: Item, row: RawRow, kind: 'affix' | 'named' | 'word' | 'weapon' | 'helm' | 'shield', rng: Rng): void {
@@ -214,6 +289,154 @@ function properties(item: Item, row: RawRow, kind: 'affix' | 'named' | 'word' | 
     const keys = kind === 'affix' ? [`mod${i}code`, `mod${i}param`, `mod${i}min`, `mod${i}max`] : kind === 'named' ? [`prop${i}`, `par${i}`, `min${i}`, `max${i}`] : kind === 'word' ? [`T1Code${i}`, `T1Param${i}`, `T1Min${i}`, `T1Max${i}`] : [`${kind}Mod${i}Code`, `${kind}Mod${i}Param`, `${kind}Mod${i}Min`, `${kind}Mod${i}Max`];
     property(item, text(row, keys[0]), text(row, keys[1]), num(row, keys[2]), num(row, keys[3]), rng);
   }
+}
+/** Exact pinned identity for new saves, or an unambiguous real legacy line number. Never guess by name. */
+export function namedItemRow(item: Item): RawRow | undefined {
+  if (!['set', 'unique'].includes(item.quality)) return;
+  const table = rawRows(item.quality === 'set' ? 'SetItems' : 'UniqueItems');
+  const matches = (row: RawRow): boolean => text(row, 'index') === item.name && text(row, item.quality === 'set' ? 'item' : 'code') === item.code &&
+    (item.quality === 'set' || num(row, 'enabled') === 1);
+  if (item.mods['internal:namedTable'] === (item.quality === 'set' ? 2 : 1)) {
+    const index = item.mods['internal:namedIndex'];
+    return Number.isInteger(index) && index >= 0 && table[index] && matches(table[index]) ? table[index] : undefined;
+  }
+  const line = item.mods['internal:namedRow'];
+  if (!Number.isInteger(line) || line < 0) return;
+  const found = table.filter(row => num(row, 'lineNumber', -1) === line && matches(row));
+  return found.length === 1 ? found[0] : undefined;
+}
+function setPieceId(row: RawRow): number { return rawRows('SetItems').indexOf(row); }
+function setPieces(row: RawRow): RawRow[] { return rawRows('SetItems').filter(piece => text(piece, 'set') === text(row, 'set')); }
+function companion(row: RawRow, index: number): RawRow | undefined {
+  // The only pinned addfunc=1 row uses companion bits, not piece-count thresholds.
+  const name = text(row, 'index') === "Civerb's Ward" ? index === 1 ? "Civerb's Icon" : index === 2 ? "Civerb's Cudgel" : '' : '';
+  return setPieces(row).find(piece => text(piece, 'index') === name);
+}
+function conditionalPrefix(row: RawRow, index: number): string | undefined {
+  if (num(row, 'add func') === 2) return `conditional:count${index + 1}:`;
+  const required = num(row, 'add func') === 1 ? companion(row, index) : undefined;
+  return required ? `conditional:piece${setPieceId(required)}:` : undefined;
+}
+function auxiliary(item: Item, row: RawRow, index: number, rng: Rng): void {
+  for (const suffix of ['a', 'b']) property(item, text(row, `aprop${index}${suffix}`), text(row, `apar${index}${suffix}`), num(row, `amin${index}${suffix}`), num(row, `amax${index}${suffix}`), rng);
+}
+function wideProperties(item: Item, row: RawRow, threshold: number | 'full', rng: Rng): void {
+  for (let i = threshold === 'full' ? 1 : threshold; i <= (threshold === 'full' ? 8 : threshold); i++) {
+    for (const suffix of threshold === 'full' ? [''] : ['a', 'b']) {
+      const stem = `${threshold === 'full' ? 'F' : 'P'}Code${i}${suffix}`;
+      property(item, text(row, stem), text(row, stem.replace('Code', 'Param')), num(row, stem.replace('Code', 'Min')), num(row, stem.replace('Code', 'Max')), rng);
+    }
+  }
+}
+function saveSetBonuses(item: Item, row: RawRow, rng: Rng): void {
+  const save = (prefix: string, roll: (copy: Item) => void, global = false) => {
+    const copy: Item = { ...item, code: global ? 'rin' : item.code, mods: {} };
+    roll(copy);
+    for (const [key, value] of Object.entries(copy.mods)) item.mods[prefix + key] = value;
+  };
+  for (let i = 1; i <= 5; i++) {
+    const prefix = conditionalPrefix(row, i);
+    if (prefix) save(prefix, copy => auxiliary(copy, row, i, rng));
+  }
+  item.mods['internal:conditionalSaved'] = 1;
+  const set = rawRows('Sets').find(set => text(set, 'index') === text(row, 'set'));
+  if (!set) return;
+  for (const threshold of [2, 3, 4, 5, 'full'] as const) save(`conditional:${threshold === 'full' ? 'full' : 'wide' + threshold}:`, copy => wideProperties(copy, set, threshold, rng), true);
+  item.mods['internal:setWideSaved'] = 1;
+}
+const PAIRED_PROPERTIES = new Set(['dmg-norm', 'min-maxdmg', 'dmg-fire', 'dmg-cold', 'dmg-ltng', 'dmg-mag', 'dmg-pois', 'dmg-elem']);
+function deterministicProperty(item: Item, code: string, parameter: string, min: number, max: number): ItemMods {
+  if (!code || code.startsWith('*') || !(levelDefinition(code) && parameter !== '' && Number.isFinite(Number(parameter)) || PAIRED_PROPERTIES.has(code) || min === max)) return {};
+  const copy = { ...item, mods: {} };
+  property(copy, code, parameter, min, max, () => 0);
+  return copy.mods;
+}
+// Staffmod codes whose per-skill expansion was already written as explicit skill:N keys
+// in older save formats; restoring them again via legacyMods would double-count.
+const STAFFMOD_CODES = new Set(['fireskill', 'coldskill', 'ltngskill', 'poisskill', 'magicskill']);
+
+function legacyMods(item: Item): ItemMods {
+  const mods = { ...item.mods };
+  for (const [key, count] of Object.entries(item.mods)) {
+    if (!key.startsWith('unsupported:') || !Number.isFinite(count)) continue;
+    const [, code, parameter, low, high] = key.split(':');
+    if (!low || !high || !Number.isFinite(Number(low)) || !Number.isFinite(Number(high))) continue;
+    // Staffmod skill-type codes were already expanded to skill:N keys at item creation;
+    // skip restoration to avoid double-counting fire/cold/etc skill bonuses.
+    if (STAFFMOD_CODES.has(code)) continue;
+    const restored = deterministicProperty(item, code, parameter, Number(low), Number(high));
+    for (const [stat, value] of Object.entries(restored)) if (!stat.startsWith('unsupported:')) add(mods, stat, value * count);
+  }
+  return mods;
+}
+function descriptors(mods: ItemMods, prefix: string): ItemMods {
+  return Object.fromEntries(Object.entries(mods).filter(([key]) => key.startsWith(prefix)).map(([key, value]) => [key.slice(prefix.length), value]));
+}
+function deterministicAuxiliary(item: Item, row: RawRow, index: number): ItemMods {
+  const result: ItemMods = {};
+  for (const suffix of ['a', 'b']) {
+    const restored = deterministicProperty(item, text(row, `aprop${index}${suffix}`), text(row, `apar${index}${suffix}`), num(row, `amin${index}${suffix}`), num(row, `amax${index}${suffix}`));
+    for (const [key, value] of Object.entries(restored)) add(result, key, value);
+  }
+  return result;
+}
+/** Intrinsic, per-level and per-piece set modifiers; saved rolls are never rewritten. */
+export function effectiveItemModifiers(item: Item, level: number, equipped: Item[] = []): ItemMods {
+  if (!item.identified || !getBase(item.code)) return {};
+  const result = evaluateMods(legacyMods(item), level), row = namedItemRow(item);
+  if (item.quality !== 'set' || !row) return result;
+  const identities = new Set(equipped.filter(piece => piece.identified).map(namedItemRow).filter((piece): piece is RawRow => !!piece && text(piece, 'set') === text(row, 'set')).map(setPieceId));
+  for (let i = 1; i <= 5; i++) {
+    const prefix = conditionalPrefix(row, i);
+    const required = companion(row, i);
+    const enabled = num(row, 'add func') === 2 ? identities.size >= i + 1 : num(row, 'add func') === 1 && !!required && identities.has(setPieceId(required));
+    if (!prefix || !enabled) continue;
+    const saved = item.mods['internal:conditionalSaved'] === 1 ? descriptors(item.mods, prefix) : deterministicAuxiliary(item, row, i);
+    for (const [key, value] of Object.entries(evaluateMods(saved, level))) add(result, key, value);
+  }
+  return result;
+}
+/** Set-wide modifiers have one deterministic persisted source owner, not one contribution per piece. */
+export function setModifiers(equipped: Item[], level: number): ItemMods {
+  const result: ItemMods = {}, groups = new Map<string, { item: Item; row: RawRow }[]>();
+  for (const item of equipped) {
+    const row = item.identified && item.quality === 'set' ? namedItemRow(item) : undefined;
+    if (!row) continue;
+    const name = text(row, 'set');
+    groups.set(name, [...(groups.get(name) ?? []), { item, row }]);
+  }
+  for (const [name, pieces] of groups) {
+    const set = rawRows('Sets').find(row => text(row, 'index') === name);
+    if (!set) continue;
+    const count = new Set(pieces.map(({ row }) => setPieceId(row))).size;
+    const complete = rawRows('SetItems').filter(row => text(row, 'set') === name).length;
+    const owner = pieces.filter(({ item }) => item.mods['internal:setWideSaved'] === 1).sort((a, b) => setPieceId(a.row) - setPieceId(b.row) || a.item.uid.localeCompare(b.item.uid))[0]?.item;
+    for (const threshold of [2, 3, 4, 5, 'full'] as const) {
+      if (threshold === 'full' ? count !== complete : count < threshold) continue;
+      let saved: ItemMods;
+      if (owner) saved = descriptors(owner.mods, `conditional:${threshold === 'full' ? 'full' : 'wide' + threshold}:`);
+      else {
+        saved = {};
+        for (let i = threshold === 'full' ? 1 : threshold; i <= (threshold === 'full' ? 8 : threshold); i++) for (const suffix of threshold === 'full' ? [''] : ['a', 'b']) {
+          const stem = `${threshold === 'full' ? 'F' : 'P'}Code${i}${suffix}`;
+          const restored = deterministicProperty({ ...pieces[0].item, code: 'rin' }, text(set, stem), text(set, stem.replace('Code', 'Param')), num(set, stem.replace('Code', 'Min')), num(set, stem.replace('Code', 'Max')));
+          for (const [key, value] of Object.entries(restored)) add(saved, key, value);
+        }
+      }
+      for (const [key, value] of Object.entries(evaluateMods(saved, level))) add(result, key, value);
+    }
+  }
+  return result;
+}
+/** Runtime local scaling. Static display fields remain unchanged, including legacy saves without base rolls. */
+export function effectiveItemStats(item: Item, mods: ItemMods): { minDamage: number; maxDamage: number; defense: number } {
+  const saved = item.mods, base = getBase(item.code);
+  const delta = (key: string) => (mods[key] ?? 0) - (saved[key] ?? 0);
+  const minDamage = Number.isFinite(saved['internal:baseMin']) ? Math.floor(saved['internal:baseMin'] * (100 + (mods.localDamagePercent ?? 0)) / 100) + (mods.minDamage ?? 0) : item.minDamage + delta('minDamage');
+  const maxDamage = Number.isFinite(saved['internal:baseMax']) ? Math.floor(saved['internal:baseMax'] * (100 + (mods.localDamagePercent ?? 0) + (mods.localMaxDamagePercent ?? 0)) / 100) + (mods.maxDamage ?? 0) + (mods.localMaxDamage ?? 0) : item.maxDamage + delta('maxDamage') + (mods.localMaxDamage ?? 0) + Math.floor(item.maxDamage * (mods.localMaxDamagePercent ?? 0) / 100);
+  const defensePercent = base?.defenseMax ? mods.defensePercent ?? 0 : 0;
+  const defense = Number.isFinite(saved['internal:baseDefense']) ? Math.floor(saved['internal:baseDefense'] * (100 + defensePercent + (mods.localDefensePercent ?? 0)) / 100) + (mods.defense ?? 0) + (mods.localDefense ?? 0) : item.defense + delta('defense') + (mods.localDefense ?? 0) + Math.floor(item.defense * (mods.localDefensePercent ?? 0) / 100);
+  return { minDamage: Math.max(0, minDamage), maxDamage: Math.max(minDamage, maxDamage), defense: Math.max(0, defense) };
 }
 function applyLocal(item: Item): void {
   const mods = item.mods;
@@ -280,7 +503,9 @@ export function createItem(code: string, ilvl: number, rng: Rng, quality: Qualit
   if (namedIndex && quality !== 'unique' && quality !== 'set') throw new Error('指定身份仅适用于暗金或套装物品。');
   if (quality === 'unique' || quality === 'set') {
     const candidates = namedDefinitions(base, ilvl, quality);
-    definition = namedIndex ? candidates.find(row => text(row, 'index') === namedIndex) : weighted(candidates, r => num(r, 'rarity'), rng);
+    const named = namedIndex ? candidates.filter(row => text(row, 'index') === namedIndex) : [];
+    if (named.length > 1) throw new Error(`物品名称身份不唯一：${namedIndex}`);
+    definition = namedIndex ? named[0] : weighted(candidates, r => num(r, 'rarity'), rng);
     if (namedIndex && !definition) throw new Error(`此底材或物品等级不能生成：${namedIndex}`);
     if (!definition) { failedMultiplier = quality === 'unique' ? 3 : 2; quality = quality === 'unique' ? 'rare' : 'magic'; }
   }
@@ -298,7 +523,10 @@ export function createItem(code: string, ilvl: number, rng: Rng, quality: Qualit
       for (let i = 1; i <= 5; i++) for (const suffix of ['a', 'b']) property(item, text(definition, `aprop${i}${suffix}`), text(definition, `apar${i}${suffix}`), num(definition, `amin${i}${suffix}`), num(definition, `amax${i}${suffix}`), rng);
     }
     item.requiredLevel = Math.max(item.requiredLevel, num(definition, 'lvl req'));
-    add(item.mods, 'internal:namedRow', num(definition, 'lineNumber', -1));
+    item.mods['internal:namedRow'] = num(definition, 'lineNumber', -1);
+    item.mods['internal:namedTable'] = quality === 'set' ? 2 : 1;
+    item.mods['internal:namedIndex'] = rawRows(quality === 'set' ? 'SetItems' : 'UniqueItems').indexOf(definition);
+    if (quality === 'set') saveSetBonuses(item, definition, rng);
   } else if (quality === 'magic' || quality === 'rare') rollAffixes(item, rng);
   else if (quality === 'superior') {
     const count = integer(rng, 1, 2);
@@ -404,6 +632,31 @@ export const INVENTORY_WIDTH = 10;
 export const INVENTORY_HEIGHT = 8;
 export const STASH_WIDTH = 10;
 export const STASH_HEIGHT = 10;
+export const TOME_CAPACITY = 20;
+
+/** Family matching only: full tomes still qualify so callers can report a full-book refusal. */
+export function canFillTome(scroll: Item, tome: Item): boolean {
+  return scroll.uid !== tome.uid && (scroll.code === 'tsc' && tome.code === 'tbk' || scroll.code === 'isc' && tome.code === 'ibk');
+}
+
+/** Consume exactly one scroll, preserving legacy scroll stacks and all unrelated inventory data. */
+export function fillTome(player: Player, uid: string, tomeUid: string): Result {
+  if (uid === tomeUid) return fail('卷轴和书不能是同一物品');
+  const scrolls = player.inventory.filter(item => item.uid === uid);
+  const tomes = player.inventory.filter(item => item.uid === tomeUid);
+  if (!scrolls.length || !tomes.length) return fail('背包中找不到卷轴或书');
+  if (scrolls.length !== 1 || tomes.length !== 1) return fail('物品标识重复，未填充卷轴');
+  const scroll = scrolls[0], tome = tomes[0];
+  if (!canFillTome(scroll, tome)) return fail('卷轴与书的类型不匹配');
+  if (!Number.isInteger(tome.quantity) || tome.quantity < 0 || tome.quantity > TOME_CAPACITY) return fail('书中卷轴数量无效');
+  if (tome.quantity === TOME_CAPACITY) return fail(`此书已满（${TOME_CAPACITY}/${TOME_CAPACITY}）`);
+  // Above the safe-integer range, subtracting one could leave the source quantity unchanged.
+  if (!Number.isSafeInteger(scroll.quantity) || scroll.quantity < 1) return fail('卷轴数量无效');
+  tome.quantity += 1;
+  if (scroll.quantity > 1) scroll.quantity -= 1;
+  else player.inventory.splice(player.inventory.indexOf(scroll), 1);
+  return success(`已填充 ${itemLabel(tome)}（${tome.quantity}/${TOME_CAPACITY}）`);
+}
 
 export function moveInventoryItem(player: Player, uid: string, x: number, y: number): Result {
   const item = player.inventory.find(item => item.uid === uid);
@@ -448,31 +701,26 @@ export function createStartingItems(player: Player): void {
   }
 }
 
-type Result = { ok: boolean; message: string };
+type Result = { ok: boolean; message: string; enterArea?: number };
 const fail = (message: string): Result => ({ ok: false, message });
-const success = (message: string): Result => ({ ok: true, message });
-function activeSlot(player: Player, slot: Slot): boolean {
-  return !['weapon', 'offhand', 'weapon2', 'offhand2'].includes(slot) || (player.weaponSwap ? ['weapon2', 'offhand2'] : ['weapon', 'offhand']).includes(slot);
-}
+const success = (message: string, enterArea?: number): Result => ({ ok: true, message, enterArea });
 function attributes(player: Player, equipment = player.equipment, excluded?: string): Record<string, number> {
-  const result: Record<string, number> = { strength: player.strength, dexterity: player.dexterity, vitality: player.vitality, energy: player.energy };
-  for (const [slot, item] of Object.entries(equipment)) {
-    if (!item || item.uid === excluded || !activeSlot(player, slot as Slot) || (item.maxDurability > 0 && item.durability <= 0 && !item.mods.indestructible)) continue;
-    for (const key of Object.keys(result)) result[key] += item.mods[key] ?? 0;
-  }
-  return result;
+  const proposed = { ...player, equipment: Object.fromEntries(Object.entries(equipment).filter(([, item]) => item?.uid !== excluded)), inventory: player.inventory.filter(item => item.uid !== excluded) };
+  const mods = equipmentModifiers(proposed);
+  return { strength: player.strength + (mods.strength ?? 0), dexterity: player.dexterity + (mods.dexterity ?? 0), vitality: player.vitality + (mods.vitality ?? 0), energy: player.energy + (mods.energy ?? 0) };
 }
-function requirements(base: BaseItem, item: Item): { strength: number; dexterity: number } {
-  const multiplier = Math.max(0, 100 + (item.mods.requirementsPercent ?? 0)) / 100;
+export function itemRequirements(base: BaseItem, item: Item): { strength: number; dexterity: number } {
+  const multiplier = Math.max(0, 100 + (evaluateMods(legacyMods(item), 1).requirementsPercent ?? 0)) / 100;
   return { strength: Math.max(0, Math.floor(base.strength * multiplier) - (item.ethereal ? 10 : 0)), dexterity: Math.max(0, Math.floor(base.dexterity * multiplier) - (item.ethereal && base.slot === 'weapon' ? 10 : 0)) };
 }
 function requirementChecks(player: Player, item: Item, equipment = player.equipment) {
   const base = getBase(item.code);
   if (!base) return [];
-  const attrs = attributes(player, equipment, item.uid), req = requirements(base, item);
+  const attrs = attributes(player, equipment, item.uid), req = itemRequirements(base, item);
   const checks = [{ line: '尚未辨识', message: '请先辨识物品', met: item.identified }];
-  if (item.maxDurability && !item.mods.indestructible) checks.push({ line: `耐久度：${item.durability}/${item.maxDurability}`, message: '装备已经损坏', met: item.durability > 0 });
-  if (item.requiredLevel) checks.push({ line: `需要等级：${item.requiredLevel}`, message: `需要等级 ${item.requiredLevel}`, met: player.level >= item.requiredLevel });
+  if (item.maxDurability && !effectiveItemModifiers(item, player.level).indestructible) checks.push({ line: `耐久度：${item.durability}/${item.maxDurability}`, message: '装备已经损坏', met: item.durability > 0 });
+  const requiredLevel = Math.max(base.requiredLevel, item.requiredLevel);
+  if (requiredLevel) checks.push({ line: `需要等级：${requiredLevel}`, message: `需要等级 ${requiredLevel}`, met: player.level >= requiredLevel });
   if (base.classId) checks.push({ line: `仅限${getClass(base.classId).name}`, message: '职业不符', met: base.classId === player.classId });
   if (req.strength) checks.push({ line: `需要力量：${req.strength}`, message: `需要力量 ${req.strength}`, met: attrs.strength >= req.strength });
   if (req.dexterity) checks.push({ line: `需要敏捷：${req.dexterity}`, message: `需要敏捷 ${req.dexterity}`, met: attrs.dexterity >= req.dexterity });
@@ -483,12 +731,9 @@ function requirementError(player: Player, item: Item, equipment = player.equipme
   return requirementChecks(player, item, equipment).find(check => !check.met)?.message;
 }
 export function unmetItemRequirements(player: Player, item: Item): string[] {
-  const checks = requirementChecks(player, item), base = getBase(item.code);
-  if (base?.slot && !Object.values(player.equipment).some(held => held?.uid === item.uid)) {
-    const change = equipmentChange(player, item, base);
-    checks.push(...requirementChecks(player, item, change.equipment));
-  }
-  return [...new Set(checks.filter(check => !check.met).map(check => check.line))];
+  const base = getBase(item.code);
+  const equipment = base?.slot && !Object.values(player.equipment).some(held => held?.uid === item.uid) ? equipmentChange(player, item, base).equipment : player.equipment;
+  return requirementChecks(player, item, equipment).filter(check => !check.met).map(check => check.line);
 }
 function oneHanded(player: Player, base: BaseItem): boolean { return !base.twoHanded || player.classId === 'bar' && num(base.raw, '1or2handed') === 1; }
 function dualWield(player: Player, base: BaseItem): boolean {
@@ -504,8 +749,8 @@ function packReturns(player: Player, incomingUid: string | undefined, returned: 
 function applyEquipmentDamage(player: Player): void {
   for (const [slot, item] of Object.entries(player.equipment)) {
     if (!item || !['weapon', 'offhand', 'weapon2', 'offhand2'].includes(slot)) continue;
-    const base = getBase(item.code)!;
-    if (!base.twoHanded || num(base.raw, '1or2handed') !== 1) continue;
+    const base = getBase(item.code);
+    if (!base || !base.twoHanded || num(base.raw, '1or2handed') !== 1) continue;
     const offSlot = slot.endsWith('2') ? 'offhand2' : 'offhand';
     const mainSlot = slot.endsWith('2') ? 'weapon2' : 'weapon';
     const single = player.classId === 'bar' && (slot.startsWith('offhand') || !!player.equipment[offSlot] && player.equipment[mainSlot]?.uid !== player.equipment[offSlot]?.uid);
@@ -521,13 +766,14 @@ function equipmentChange(player: Player, item: Item, base: BaseItem) {
   if (slot === 'ring1') slot = !player.equipment.ring1 ? 'ring1' : !player.equipment.ring2 ? 'ring2' : 'ring1';
   if (slot === 'weapon') {
     const current = player.equipment[weapon];
-    slot = current && !player.equipment[offhand] && dualWield(player, base) && dualWield(player, getBase(current.code)!) ? offhand : weapon;
+    const heldBase = current && getBase(current.code);
+    slot = heldBase && !player.equipment[offhand] && dualWield(player, base) && dualWield(player, heldBase) ? offhand : weapon;
   } else if (slot === 'offhand') slot = offhand;
   const equipment = { ...player.equipment }, returned: Item[] = [];
   const remove = (s: Slot) => { const old = equipment[s]; if (old) { returned.push(old); delete equipment[s]; } };
   remove(slot);
   if (slot === weapon) {
-    const held = equipment[offhand], heldBase = held && getBase(held.code)!;
+    const held = equipment[offhand], heldBase = held && getBase(held.code);
     const ammunition = heldBase && (itemHasType(heldBase, 'bowq') || itemHasType(heldBase, 'xboq'));
     const matches = heldBase && (itemHasType(heldBase, 'bowq') && itemHasType(base, 'bow') || itemHasType(heldBase, 'xboq') && itemHasType(base, 'xbow'));
     if (ammunition ? !matches : !oneHanded(player, base)) remove(offhand);
@@ -544,11 +790,11 @@ function equipmentChange(player: Player, item: Item, base: BaseItem) {
 export function equipItem(player: Player, uid: string): Result {
   const item = player.inventory.find(i => i.uid === uid), base = item && getBase(item.code);
   if (!item || !base?.slot) return fail('背包中没有可装备物品');
-  const error = requirementError(player, item); if (error) return fail(error);
   const { equipment, returned, error: changeError } = equipmentChange(player, item, base);
   if (changeError) return fail(changeError);
   const after = requirementError(player, item, equipment); if (after) return fail(after);
-  const rows = equipment.belt ? getBase(equipment.belt.code)!.beltRows : 1;
+  const belt = activeEquipment({ ...player, equipment }).find(([slot]) => slot === 'belt')?.[1];
+  const rows = belt ? getBase(belt.code)!.beltRows : 1;
   const packed = packReturns(player, uid, returned, rows); if (!packed) return fail('背包空间不足，未更换装备');
   item.x = -1; item.y = -1; player.equipment = equipment; player.inventory = packed.inventory; player.belt = packed.belt;
   applyEquipmentDamage(player);
@@ -557,7 +803,8 @@ export function equipItem(player: Player, uid: string): Result {
 export function unequipItem(player: Player, slot: Slot): Result {
   const item = player.equipment[slot]; if (!item) return fail('该部位没有装备');
   const equipment = { ...player.equipment }; delete equipment[slot];
-  const rows = equipment.belt ? getBase(equipment.belt.code)!.beltRows : 1;
+  const belt = activeEquipment({ ...player, equipment }).find(([slot]) => slot === 'belt')?.[1];
+  const rows = belt ? getBase(belt.code)!.beltRows : 1;
   const packed = packReturns(player, undefined, [item], rows); if (!packed) return fail('背包空间不足，未卸下装备');
   player.equipment = equipment; player.inventory = packed.inventory; player.belt = packed.belt;
   applyEquipmentDamage(player);
@@ -584,7 +831,8 @@ function potionResult(player: Player, item: Item): PotionResult {
 }
 export function consumePotion(player: Player, column: number): PotionResult {
   if (!Number.isInteger(column) || column < 0 || column > 3) return emptyPotion('药水列无效');
-  const rows = player.equipment.belt ? getBase(player.equipment.belt.code)!.beltRows : 1;
+  const belt = activeEquipment(player).find(([slot]) => slot === 'belt')?.[1];
+  const rows = belt ? getBase(belt.code)!.beltRows : 1;
   let index = column;
   while (index < rows * 4 && !player.belt[index]) index += 4;
   const item = player.belt[index]; if (!item || index >= rows * 4) return emptyPotion('此列没有药水');
@@ -640,6 +888,26 @@ function matchesCodes(items: Item[], codes: string[]): boolean {
 export function transmute(player: Player): Result {
   const items = player.cube;
   if (!items.length) return fail('方块是空的');
+  // Uber portal recipes — hell difficulty only
+  if (player.difficulty === 'hell') {
+    const codes = [...items.map(i => i.code)].sort().join(',');
+    if (codes === 'pk1,pk2,pk3') {
+      // Randomly open one of the three key portals not yet opened
+      const targets = [133, 134, 135].filter(id => !(player.quests[`hell:uberPortal:${id}`]));
+      if (!targets.length) return fail('三个钥匙传送门均已开启。');
+      const target = targets[Math.floor(Math.random() * targets.length)];
+      player.quests[`hell:uberPortal:${target}`] = 1;
+      player.cube = [];
+      const names: Record<number,string> = {133:'主母之巢',134:'遗忘沙漠',135:'苦痛熔炉'};
+      return success(`恐惧、憎恨、毁灭之钥消耗！${names[target]}传送门已开启。`, target);
+    }
+    if (codes === 'bey,dhn,mbr') {
+      if (player.quests['hell:uberPortal:136']) return fail('超级崔斯特瑞姆传送门已开启。');
+      player.quests['hell:uberPortal:136'] = 1;
+      player.cube = [];
+      return success('迪亚波罗之角、巴尔之眼、墨菲斯托之脑消耗！超级崔斯特瑞姆传送门已开启。', 136);
+    }
+  }
   let output: Item | undefined;
   // Same-grade, same-family gems use Misc.BetterGem, never a made-up progression.
   if (items.length === 3 && items.every(i => i.code === items[0].code)) {
@@ -727,35 +995,96 @@ const MOD_LABELS: Record<string, string> = {
   localDamagePercent: '武器增强伤害%', damagePercent: '增强伤害%', minDamage: '最小伤害', maxDamage: '最大伤害', defense: '防御', defensePercent: '增强防御%',
   resFire: '火焰抗性%', resCold: '冰冷抗性%', resLightning: '闪电抗性%', resPoison: '毒素抗性%', resAll: '所有抗性%', magicFind: '更佳获取魔法装备几率%', goldFind: '额外金币%',
   fcr: '快速施法速度%', fhr: '快速打击恢复%', ias: '提升攻击速度%', frw: '快速跑步/行走%', lifeLeech: '击中偷取生命%', manaLeech: '击中偷取法力%',
-  damageReduction: '伤害减少%', flatReduction: '伤害减少', allSkills: '所有技能', fireSkills: '火焰技能', deadlyStrike: '致命攻击%', manaRegenPercent: '法力回复速度%', maxManaPercent: '最大法力%', requirementsPercent: '装备需求%', indestructible: '无法破坏', vendorDiscount: '赌博价格降低%',
+  damageReduction: '伤害减少%', flatReduction: '伤害减少', flatMagicReduction: '魔法伤害减少', allSkills: '所有技能', fireSkills: '火焰技能', deadlyStrike: '致命攻击%', manaRegenPercent: '法力回复速度%', maxManaPercent: '最大法力%', maxLifePercent: '最大生命%', requirementsPercent: '装备需求%', indestructible: '无法破坏', vendorDiscount: '商店价格降低%',
+  block: '格挡几率%', fbr: '快速格挡速度%', meleeDefense: '近战防御', missileDefense: '远程防御',
+  ignoreTargetDefense: '无视目标防御', targetDefensePercent: '目标防御降低%', targetDefenseReduction: '每次击中降低目标防御',
+  demonAttackRating: '对恶魔攻击准确率', undeadAttackRating: '对不死生物攻击准确率', demonDamagePercent: '对恶魔伤害%', undeadDamagePercent: '对不死生物伤害%',
+  maxResFire: '最大火焰抗性%', maxResCold: '最大冰冷抗性%', maxResLightning: '最大闪电抗性%', maxResPoison: '最大毒素抗性%', maxResAll: '最大所有抗性%',
+  fireDamagePercent: '火焰技能伤害%', coldDamagePercent: '冰冷技能伤害%', lightningDamagePercent: '闪电技能伤害%', poisonDamagePercent: '毒素技能伤害%',
+  pierceFire: '降低敌人火焰抗性%', pierceCold: '降低敌人冰冷抗性%', pierceLightning: '降低敌人闪电抗性%', piercePoison: '降低敌人毒素抗性%', pierceChance: '穿刺攻击几率%',
+  absorbFire: '火焰吸收', absorbFirePercent: '火焰吸收%', absorbCold: '冰冷吸收', absorbColdPercent: '冰冷吸收%',
+  absorbLightning: '闪电吸收', absorbLightningPercent: '闪电吸收%', absorbMagic: '魔法吸收', absorbMagicPercent: '魔法吸收%',
+  lifeRegen: '生命回复', staminaRegenPercent: '耐力回复速度%', staminaDrainPercent: '耐力消耗降低%',
+  lifeAfterKill: '击杀回复生命', manaAfterKill: '击杀回复法力', lifeAfterDemonKill: '击杀恶魔回复生命', damageToMana: '受伤转化法力%', experiencePercent: '获得经验%',
+  crushingBlow: '压碎性打击%', openWounds: '撕开伤口%', knockback: '击退', blindTarget: '致盲目标', fleeChance: '使目标逃跑%', slowTarget: '减慢目标%',
+  freezeTarget: '冻结目标', cannotBeFrozen: '无法冰冻', halfFreezeDuration: '冰冻持续时间减半', poisonLengthResist: '毒素持续时间减少%', preventMonsterHeal: '防止怪物自疗',
+  attackerDamage: '攻击者受到伤害', attackerLightningDamage: '攻击者受到闪电伤害', restInPeace: '杀死怪物后安息', lightRadius: '照亮范围', normalDamage: '附加伤害',
+  localDefense: '防御', localDefensePercent: '增强防御%', localMaxDamage: '最大伤害', localMaxDamagePercent: '最大伤害增强%',
+  lifePerLevelBonus: '生命', manaPerLevelBonus: '法力', kickDamage: '踢击伤害', extraBlood: '额外血迹', explosiveArrow: '爆炸箭', magicArrow: '魔法箭', extraStack: '额外堆叠容量',
+  minFire: '最小火焰伤害', maxFire: '最大火焰伤害', minCold: '最小冰冷伤害', maxCold: '最大冰冷伤害', minLightning: '最小闪电伤害', maxLightning: '最大闪电伤害', minMagic: '最小魔法伤害', maxMagic: '最大魔法伤害',
+  coldLength: '冰冷持续帧数', poisonMinRate: '最小每帧毒素速率', poisonMaxRate: '最大每帧毒素速率', poisonLength: '毒素持续帧数',
 };
-export function describeItem(item: Item): string[] {
+const PARSED_ONLY = new Set([
+  'flatMagicReduction', 'fbr', 'meleeDefense', 'missileDefense', 'ignoreTargetDefense', 'targetDefensePercent', 'targetDefenseReduction',
+  'demonAttackRating', 'undeadAttackRating', 'demonDamagePercent', 'undeadDamagePercent', 'fireDamagePercent', 'coldDamagePercent', 'lightningDamagePercent', 'poisonDamagePercent',
+  'pierceFire', 'pierceCold', 'pierceLightning', 'piercePoison', 'pierceChance', 'absorbFire', 'absorbFirePercent', 'absorbCold', 'absorbColdPercent', 'absorbLightning', 'absorbLightningPercent', 'absorbMagic', 'absorbMagicPercent',
+  'lifeRegen', 'staminaRegenPercent', 'staminaDrainPercent', 'lifeAfterKill', 'manaAfterKill', 'lifeAfterDemonKill', 'damageToMana', 'experiencePercent', 'vendorDiscount',
+  'crushingBlow', 'openWounds', 'knockback', 'blindTarget', 'fleeChance', 'slowTarget', 'freezeTarget', 'cannotBeFrozen', 'halfFreezeDuration', 'poisonLengthResist', 'preventMonsterHeal',
+  'attackerDamage', 'attackerLightningDamage', 'restInPeace', 'lightRadius', 'normalDamage', 'kickDamage', 'extraBlood', 'explosiveArrow', 'magicArrow', 'extraStack',
+]);
+export function describeItem(item: Item, player?: Player): string[] {
   const base = getBase(item.code), lines = [itemLabel(item)];
   if (!base) return [...lines, '未知底材（不支持）'];
   if (item.runeword) lines.push(base.name, item.socketed.map(code => getBase(code)?.name ?? code).join(' → '));
   if (base.slot === 'weapon') lines.push(`伤害：${item.minDamage}–${item.maxDamage}${base.twoHanded ? '（双手）' : ''}`);
   if (base.defenseMax) lines.push(`防御：${item.defense}`);
   if (item.maxDurability) lines.push(`耐久度：${item.durability}/${item.maxDurability}`);
-  const req = requirements(base, item);
+  const req = itemRequirements(base, item);
   if (req.strength) lines.push(`需要力量：${req.strength}`);
   if (req.dexterity) lines.push(`需要敏捷：${req.dexterity}`);
   if (item.requiredLevel) lines.push(`需要等级：${item.requiredLevel}`);
   if (base.classId) lines.push(`仅限${getClass(base.classId).name}`);
   if (item.ethereal) lines.push('无形（无法修复）');
   if (item.sockets) lines.push(`凹槽：${item.socketed.length}/${item.sockets}`);
-  if (num(base.raw, 'stackable')) lines.push(`数量：${item.quantity}`);
+  if (item.code === 'tbk' || item.code === 'ibk') lines.push(`数量：${item.quantity}/${TOME_CAPACITY}`);
+  else if (num(base.raw, 'stackable')) lines.push(`数量：${item.quantity}`);
   if (item.identified) {
-    for (const [key, value] of Object.entries(item.mods)) {
-      if (!value || key.startsWith('internal:') || key.startsWith('socketBase:') || key === 'forcedEthereal') continue;
-      if (key.startsWith('unsupported:')) { const [, code, parameter, min, max] = key.split(':'); lines.push(`未实现属性：${code}（参数 ${parameter || '—'}，${min}–${max}）`); }
-      else if (key.startsWith('skill:')) { const id = Number(key.slice(6)); lines.push(`+${value} ${getSkill(id)?.name ?? `技能 ${id}`}（本职业技能）`); }
-      else if (key.startsWith('classSkill:')) lines.push(`+${value} ${getClass(key.slice(11) as ClassId).name}技能`);
-      else if (key.startsWith('skillTab:')) {
-        const [, classId, tree] = key.split(':'), def = getClass(classId as ClassId);
-        lines.push(`+${value} ${def.trees[Number(tree)]}（仅限${def.name}）`);
+    const row = namedItemRow(item), equipped = player ? activeEquipment(player).map(([, piece]) => piece) : [];
+    const identities = new Set(equipped.map(namedItemRow).filter((piece): piece is RawRow => !!piece && !!row && text(piece, 'set') === text(row, 'set')).map(setPieceId));
+    if (item.quality === 'set') lines.push(row ? `套装：${itemName(text(row, 'set'))}${player ? `（有效部件 ${identities.size}/${setPieces(row).length}）` : '（组合奖励按有效的不同部件计算）'}` : '套装身份未解析：不计算组合奖励');
+    const display = (key: string, value: number, context = ''): void => {
+      if (!value || !Number.isFinite(value) || /^(internal|socketBase|source):/.test(key) || key === 'forcedEthereal') return;
+      if (key.startsWith('conditional:')) {
+        const match = /^conditional:(count\d+|wide\d+|piece\d+|full):(.+)$/.exec(key);
+        if (!match || !row) return;
+        const [kind, effect] = [match[1], match[2]];
+        const required = kind.startsWith('piece') ? rawRows('SetItems')[Number(kind.slice(5))] : undefined;
+        const threshold = Number(kind.replace(/\D/g, ''));
+        const condition = required ? `搭配${itemName(text(required, 'index'))}` : kind === 'full' ? '全套' : `${threshold}种部件`;
+        const enabled = player && (required ? identities.has(setPieceId(required)) : kind === 'full' ? identities.size === setPieces(row).length : identities.size >= threshold);
+        display(effect, value, `${kind.startsWith('wide') || kind === 'full' ? '套装整体' : '套装单件'}（${condition}${player ? enabled ? '，条件已满足' : '，条件未满足' : ''}）：`);
+        return;
       }
-      else if (MOD_LABELS[key]) lines.push(`${value > 0 ? '+' : ''}${value} ${MOD_LABELS[key]}`);
-      else if (!/^(min|max)(Fire|Cold|Lightning|Magic)$/.test(key) && !['coldLength', 'poisonLength', 'poisonMinRate', 'poisonMaxRate'].includes(key)) lines.push(`未实现属性：${key} ${value}`);
+      if (key.startsWith('perLevel:')) {
+        const def = levelDefinition(key.slice(9));
+        if (def) lines.push(`${context}每角色等级 +${value / 2 ** num(def.stat, 'op param')} ${MOD_LABELS[def.target]}${PARSED_ONLY.has(def.target) ? '（仅保存，效果未接入）' : ''}${player ? `（当前 ${evaluateMods({ [key]: value }, player.level)[def.target]}）` : ''}`);
+        return;
+      }
+      if (key.startsWith('unsupported:')) {
+        const [, code, parameter, min, max] = key.split(':');
+        const restored = deterministicProperty(item, code, parameter, Number(min), Number(max));
+        const supported = Object.entries(restored).filter(([stat]) => !stat.startsWith('unsupported:') && !stat.startsWith('internal:'));
+        if (supported.length) for (const [stat, amount] of supported) display(stat, amount * value, context);
+        else lines.push(`${context}未实现属性：${code}（参数 ${parameter || '—'}，${min}–${max}）`);
+      } else if (/^skill:\d+$/.test(key)) { const id = Number(key.slice(6)); lines.push(`${context}+${value} ${getSkill(id)?.name ?? `技能 ${id}`}（本职业技能）`); }
+      else if (key.startsWith('classSkill:') && scalarKey(key)) lines.push(`${context}+${value} ${getClass(key.slice(11) as ClassId).name}技能`);
+      else if (key.startsWith('skillTab:') && scalarKey(key)) {
+        const [, classId, tree] = key.split(':'), def = getClass(classId as ClassId);
+        lines.push(`${context}+${value} ${def.trees[Number(tree)]}（仅限${def.name}）`);
+      } else if (MOD_LABELS[key]) {
+        if (!context && (/^(min|max)(Fire|Cold|Lightning|Magic)$/.test(key) || ['coldLength', 'poisonLength', 'poisonMinRate', 'poisonMaxRate'].includes(key))) return;
+        lines.push(`${context}${value > 0 ? '+' : ''}${value} ${MOD_LABELS[key]}${PARSED_ONLY.has(key) ? '（仅保存，效果未接入）' : ''}`);
+      } else if (!key.includes(':')) lines.push(`未实现属性：${key} ${value}`);
+    };
+    for (const [key, value] of Object.entries(item.mods)) display(key, value);
+    if (row && item.quality === 'set' && item.mods['internal:conditionalSaved'] !== 1) {
+      for (let i = 1; i <= 5; i++) {
+        const prefix = conditionalPrefix(row, i);
+        if (!prefix) continue;
+        const deterministic = deterministicAuxiliary(item, row, i);
+        for (const [key, value] of Object.entries(deterministic)) display(prefix + key, value);
+      }
+      lines.push('旧物品缺失的随机组合奖励保持未解析，不补随机');
     }
     for (const [key, label] of [['Fire', '火焰'], ['Cold', '冰冷'], ['Lightning', '闪电'], ['Magic', '魔法']]) if (item.mods['min' + key] || item.mods['max' + key]) lines.push(`增加 ${item.mods['min' + key] ?? 0}–${item.mods['max' + key] ?? 0} ${label}伤害`);
     if (item.mods.poisonLength) lines.push(`毒素：${item.mods.poisonMinRate ?? 0}–${item.mods.poisonMaxRate ?? 0}/256 每帧，持续 ${item.mods.poisonLength} 帧（聚合待实现）`);
@@ -763,9 +1092,15 @@ export function describeItem(item: Item): string[] {
   if (/^[hm]p[1-5]$/.test(item.code)) lines.push(`按职业回复，持续 ${num(base.raw, 'len')} 帧`);
   if (item.code === 'rvl') lines.push('大紫：立即恢复全部生命与法力，按当前实际资源上限计算。');
   if (item.quality === 'unique' && item.code === 'rin' && item.name === 'The Stone of Jordan') lines.push('黑毛事件尚未开放：出售乔丹之石不会召唤暗黑破坏神克隆。');
-  if (/^pk[1-3]$/.test(item.code)) lines.push('超级6 Boss事件尚未开放：仅可购买、保存，不能合成事件传送门。');
+  if (/^pk[1-3]$/.test(item.code)) lines.push('地狱难度收集三把钥匙后，在赫拉迪克方块中合成可开启潘多蒙邪传事件传送门。');
   return lines;
 }
+/** Shared by the engine and shop UI; this is the existing sell formula, not a stack valuation. */
+export function itemSellPrice(item: Item, difficulty: Difficulty, act: number): number | null {
+  if (item.code === 'box' || getBase(item.code)?.type === 'ques') return null;
+  return Math.min(Math.max(1, Math.floor(item.price / 4)), difficulty === 'normal' ? 5000 * act : difficulty === 'nightmare' ? 30000 : 35000);
+}
+
 export function vendorStock(player: Player, rng: Rng, npcId = 'akara'): Item[] {
   const ilvl = Math.min(12, player.level + 5);
   const stock: Item[] = [];

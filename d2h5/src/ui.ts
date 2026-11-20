@@ -1,7 +1,7 @@
 import type { Action, ClassId, Control, Dispatch, GameState, Item, Panel, Player, Point, SkillDef, Slot, StatKey, WorldObject } from './types';
 import { CLASSES, SKILLS, EXPERIENCE, getClass, getSkill } from './catalog';
 import { skillLevel, skillEffect } from './rules';
-import { getBase, isUsableItem, itemLabel, describeItem, unmetItemRequirements, runewordName, RUNES, GEMS, RUNEWORDS, INVENTORY_WIDTH, INVENTORY_HEIGHT, STASH_WIDTH, STASH_HEIGHT, fitsItem } from './items';
+import { getBase, isUsableItem, itemLabel, describeItem, unmetItemRequirements, runewordName, RUNES, GEMS, RUNEWORDS, INVENTORY_WIDTH, INVENTORY_HEIGHT, STASH_WIDTH, STASH_HEIGHT, fitsItem, TOME_CAPACITY, canFillTome, itemSellPrice } from './items';
 import { AREAS, QUESTS, NPCS, hasLineOfSight, questKey } from './world';
 import type { Renderer } from './renderer3d';
 import { monsterSpec } from './r3d/rigs';
@@ -59,6 +59,13 @@ export class GameUI {
   private readonly tooltip = el('div', 'item-tooltip');
   private readonly overlay = el('div', 'modal-layer');
   private readonly messages = el('div', 'message-log');
+  private readonly actionFeedback = el('div', 'action-feedback');
+  private feedbackMessage: GameState['messages'][number] | undefined;
+  private feedbackTime = 0;
+  private modalSession = false;
+  private modalReturnFocus: HTMLElement | null = null;
+  private modalReturnKey = '';
+  private modalFocusKey = '';
   private readonly areaNotice = el('div', 'area-notice');
   private areaSignature = '';
   private areaNoticeTime = 0;
@@ -78,16 +85,29 @@ export class GameUI {
   private selectedUid: string | null = null;
   private selectedSkill = 0;
   private skillTree = 0;
+  private skillFeedback = '';
+  private skillReturnFocus: HTMLElement | null = null;
+  private skillTreeScroll = 0;
+  private skillTreePageScroll = 0;
   private bindRight = true;
   private questAct = 1;
   private waypointAct = 1;
   private vendorFilter = 'all';
+  private merchantServicesOpen = false;
+  private restoringTradeFocus = false;
+  private merchantPurchase: { uid: string; label: string; location: 'inventory' | 'belt' } | null = null;
   private tradeInventoryOpen = false;
   private tradeView: 'vendor' | 'inventory' = 'vendor';
   private tradeNpc: string | null = null;
+  private readonly tradeScroll = new Map<string, { top: number; left: number }>();
+  private selectedGambleOfferUid = '';
+  private gamblingResultUid = '';
+  private inventoryArranging = false;
+  private skillDetailOpen = false;
   private previousPanel: Panel = 'none';
   private hotkeys: number[] = [];
   private socketRune = '';
+  private moreExpandedUid = '';
   private catalogKind: CatalogKind = 'base';
   private catalogQuery = '';
   private catalogPage = 0;
@@ -107,14 +127,17 @@ export class GameUI {
   private inputFocused = true;
   private lootHeld = false;
   private hoveringItem: Item | null = null;
+  private tooltipAnchor: HTMLElement | null = null;
   private readonly itemPopup = el('div', 'item-popup');
+  private itemPopupTimer: ReturnType<typeof setTimeout> | null = null;
   private popup: { uid: string; location: string; x: number; y: number; signature: string } | null = null;
   private lastItemPointer = '';
   private drag: {
     id: number; uid: string; node: HTMLElement; grid: HTMLElement; start: Point; anchor: Point;
-    active: boolean; ghost: HTMLElement | null; preview: HTMLElement | null;
-    target: { type: 'move'; x: number; y: number } | { type: 'sell' } | null;
-    saleZone: HTMLElement | null;
+    active: boolean; moved: boolean; awaitingHold: boolean; holdTimer: ReturnType<typeof setTimeout> | null;
+    touchId: number | null; ghost: HTMLElement | null; preview: HTMLElement | null;
+    target: { type: 'move'; x: number; y: number } | { type: 'sell' } | { type: 'tome'; tomeUid: string } | null;
+    saleZone: HTMLElement | null; tomeNode: HTMLElement | null;
   } | null = null;
   private suppressItemUntil = 0;
   private suppressDragClick = false;
@@ -127,21 +150,35 @@ export class GameUI {
     this.tooltip.hidden = true; this.tooltip.id = 'item-hover-tooltip'; this.tooltip.setAttribute('role', 'tooltip');
     this.itemPopup.hidden = true; this.itemPopup.setAttribute('role', 'dialog'); this.itemPopup.setAttribute('aria-label', '物品属性与操作');
     this.itemPopup.addEventListener('pointerdown', e => e.stopPropagation(), { signal: this.abort.signal });
+    this.itemPopup.addEventListener('keydown', e => {
+      if (e.key !== 'Tab') return;
+      const controls = [...this.itemPopup.querySelectorAll<HTMLElement>('button:not(:disabled), select:not(:disabled), summary, [tabindex="0"]')].filter(node => node.getClientRects().length);
+      const next = controls.indexOf(document.activeElement as HTMLElement) + (e.shiftKey ? -1 : 1);
+      if (next < 0 || next >= controls.length) { e.preventDefault(); controls[e.shiftKey ? controls.length - 1 : 0]?.focus(); }
+    }, { signal: this.abort.signal });
     const options = { signal: this.abort.signal };
     this.root.addEventListener('pointerdown', e => {
-      this.lastItemPointer = e.pointerType; this.suppressDragClick = false;
+      this.lastItemPointer = e.pointerType; if (e.isPrimary) this.suppressDragClick = false;
       if (!this.itemPopup.contains(e.target as Node)) this.closeItemPopup();
     }, { ...options, capture: true });
     for (const type of ['click', 'dblclick', 'contextmenu'] as const) this.root.addEventListener(type, e => {
       if (performance.now() < this.suppressItemUntil && (type === 'click' ? this.suppressDragClick && e.detail !== 0 : true)) { e.preventDefault(); e.stopImmediatePropagation(); if (type === 'click') this.suppressDragClick = false; }
     }, { ...options, capture: true });
+    window.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'touch' && !e.isPrimary) this.cancelItemDrag(true);
+    }, { ...options, capture: true });
+    window.addEventListener('touchstart', e => {
+      if (e.touches.length > 1) this.cancelItemDrag(true);
+    }, { ...options, capture: true, passive: true });
     window.addEventListener('pointermove', e => this.moveItemDrag(e), options);
     window.addEventListener('pointerup', e => this.finishItemDrag(e), options);
     window.addEventListener('pointercancel', e => { if (this.drag?.id === e.pointerId) this.cancelItemDrag(); }, options);
     this.messages.setAttribute('role', 'log'); this.messages.setAttribute('aria-live', 'polite');
+    this.feedbackMessage = state.messages.at(-1);
+    this.actionFeedback.hidden = true; this.actionFeedback.setAttribute('role', 'alert'); this.actionFeedback.setAttribute('aria-atomic', 'true');
     this.areaNotice.hidden = true; this.areaNotice.setAttribute('role', 'status'); this.areaNotice.setAttribute('aria-live', 'polite');
     this.areaNotice.addEventListener('animationend', () => { this.areaNotice.hidden = true; }, { signal: this.abort.signal });
-    this.root.replaceChildren(this.canvas, this.screenLayer, this.hud, this.messages, this.areaNotice, this.panelLayer, this.overlay, this.tooltip, this.itemPopup);
+    this.root.replaceChildren(this.canvas, this.screenLayer, this.hud, this.messages, this.areaNotice, this.panelLayer, this.overlay, this.tooltip, this.itemPopup, this.actionFeedback);
     this.buildHUD(); this.installInput();
     this.update(state);
   }
@@ -154,7 +191,9 @@ export class GameUI {
   private send(action: Action, endTrade = false) {
     if (!endTrade && action.type === 'panel' && action.panel === 'inventory' && this.isTrading()) { this.toggleTradeInventory(); return; }
     if (action.type === 'panel' || action.type === 'pause' || action.type === 'title' || action.type === 'save-and-title' || action.type === 'respawn' || action.type === 'travel' || action.type === 'difficulty') this.resetControls();
+    if (['panel', 'pause', 'title', 'save-and-title', 'respawn', 'travel', 'difficulty'].includes(action.type)) this.clearActionFeedback();
     this.dispatch(action);
+    this.updateActionFeedback();
     if (!this.activeGame()) this.resetControls();
   }
   private field(key: string, tag: 'div' | 'span' = 'span', className = '') {
@@ -166,7 +205,8 @@ export class GameUI {
   private buildHUD() {
     const header = el('header', 'area-header');
     const areaLine = el('div', 'area-line'); areaLine.append(this.field('area', 'div', 'area-title'), this.field('identity', 'span', 'hud-identity'));
-    header.append(areaLine, this.field('objective', 'div', 'objective'));
+    const blessing = this.field('shrine-buff', 'div', 'shrine-buff'); blessing.hidden = true;
+    header.append(areaLine, this.field('objective', 'div', 'objective'), blessing);
     const utilities = el('nav', 'utilities'); utilities.setAttribute('aria-label', '旅程工具');
     const save = btn('保存', () => this.send({ type: 'save' }), 'small-button save-button');
     const catalog = btn('图鉴', () => this.togglePanel('catalog'), 'small-button catalog-button'); catalog.dataset.panel = 'catalog'; catalog.setAttribute('aria-keyshortcuts', 'L'); catalog.title = '装备图鉴 · L';
@@ -234,12 +274,15 @@ export class GameUI {
   }
 
   update(state: GameState): void {
-    if (this.previousPanel !== state.panel || this.screen !== state.screen || this.tradeNpc && this.tradeNpc !== state.npc) { this.cancelItemDrag(); this.closeItemPopup(); }
+    if (this.previousPanel !== state.panel || this.screen !== state.screen || this.tradeNpc && this.tradeNpc !== state.npc) {
+      this.cancelItemDrag(); this.closeItemPopup(); this.clearActionFeedback(); this.setInventoryArranging(false); this.skillDetailOpen = false;
+    }
     this.state = state;
     if (this.isTrading()) {
-      if (!['vendor', 'gamble'].includes(this.previousPanel) || this.tradeNpc !== state.npc) { this.tradeInventoryOpen = true; this.tradeView = 'vendor'; this.vendorFilter = 'all'; this.selectedUid = null; }
+      if (!['vendor', 'gamble'].includes(this.previousPanel) || this.tradeNpc !== state.npc) { this.tradeInventoryOpen = true; this.tradeView = 'vendor'; this.vendorFilter = 'all'; this.selectedUid = null; this.tradeScroll.clear(); this.selectedGambleOfferUid = ''; this.gamblingResultUid = ''; this.merchantPurchase = null; this.merchantServicesOpen = false; }
+      if (state.panel !== 'vendor') { this.merchantPurchase = null; this.merchantServicesOpen = false; }
       this.tradeNpc = state.npc;
-    } else { this.tradeInventoryOpen = false; this.tradeView = 'vendor'; this.tradeNpc = null; }
+    } else { this.tradeInventoryOpen = false; this.tradeView = 'vendor'; this.tradeNpc = null; this.merchantPurchase = null; this.merchantServicesOpen = false; this.tradeScroll.clear(); }
     if (this.inputArea !== state.area || !this.activeGame()) this.resetControls();
     this.inputArea = state.area;
     if (state.panel === 'waypoint' && this.previousPanel !== 'waypoint') this.waypointAct = state.area?.def.act ?? 1;
@@ -264,7 +307,8 @@ export class GameUI {
     this.screenLayer.hidden = game;
     this.root.classList.toggle('has-panel', game && state.panel !== 'none'); this.root.classList.toggle('is-paused', game && state.paused);
     this.root.classList.toggle('is-identifying', game && state.identifySource !== null && !state.paused && !state.player?.dead);
-    if (!game || !state.player || !state.stats || !state.area) { this.overlay.hidden = true; return; }
+    this.updateActionFeedback();
+    if (!game || !state.player || !state.stats || !state.area) { this.updateOverlay(); return; }
     const p = state.player, stats = state.stats;
     const areaSignature = `${p.difficulty}:${state.area.def.id}`;
     if (this.areaSignature !== areaSignature) {
@@ -275,6 +319,9 @@ export class GameUI {
     if (this.reducedMotion.matches && performance.now() - this.areaNoticeTime >= 3200) this.areaNotice.hidden = true;
     this.root.classList.toggle('has-panel', state.panel !== 'none'); this.root.classList.toggle('is-paused', state.paused);
     this.text('area', state.area.def.name); this.text('objective', this.objective());
+    const blessing = this.fields.get('shrine-buff')!, buff = state.shrineBuff;
+    blessing.hidden = !buff || buff.frames <= 0;
+    if (buff && buff.frames > 0) this.text('shrine-buff', `${buff.name} · ${Math.ceil(buff.frames / 25)} 秒`);
     this.text('identity', `Lv.${p.level} · ${DIFFICULTY[p.difficulty]}`);
     this.fields.get('identity')!.title = `${p.name} · ${getClass(p.classId).name} · ${Math.floor(p.gold).toLocaleString()} 金币`;
     for (const [kind, current, max] of [['life', p.life, stats.maxLife], ['mana', p.mana, stats.maxMana]] as const) {
@@ -325,6 +372,25 @@ export class GameUI {
     this.updateOverlay(); this.refreshItemPopup();
   }
 
+  private clearActionFeedback() { this.actionFeedback.hidden = true; this.actionFeedback.textContent = ''; }
+
+  private updateActionFeedback() {
+    const latest = this.state.messages.at(-1);
+    if (latest !== this.feedbackMessage) {
+      this.feedbackMessage = latest; this.clearActionFeedback();
+      if (latest?.kind === 'error' && this.state.screen === 'game' && (this.state.panel !== 'none' || this.popup)) {
+        this.actionFeedback.textContent = latest.text; this.actionFeedback.hidden = false; this.feedbackTime = performance.now();
+      }
+    }
+    if (this.state.screen !== 'game' || this.state.panel === 'none' && !this.popup || performance.now() - this.feedbackTime > 6000) this.clearActionFeedback();
+    this.syncPopupFeedback();
+  }
+
+  private syncPopupFeedback() {
+    const feedback = this.itemPopup.querySelector<HTMLElement>('.item-popup-feedback'); if (!feedback) return;
+    feedback.hidden = this.actionFeedback.hidden; feedback.textContent = this.actionFeedback.textContent;
+  }
+
   private objective(): string {
     const p = this.state.player!, area = this.state.area!;
     const quest = QUESTS.find(q => q.act === 1 && q.number === 1);
@@ -360,11 +426,14 @@ export class GameUI {
   }
 
   private buildTitle() {
-    const restoreFocus = document.activeElement?.closest('.character-list');
-    const scrollTop = this.screenLayer.querySelector('.character-list')?.scrollTop ?? 0;
+    const focusedSaveId = (document.activeElement as HTMLElement | null)?.closest<HTMLElement>('.character-save')?.dataset.saveId;
+    const previousList = this.screenLayer.querySelector('.character-list');
+    const scrollTop = previousList?.scrollTop ?? 0, scrollLeft = previousList?.scrollLeft ?? 0;
     const content = el('section', 'character-screen');
-    const header = el('header', 'character-header');
-    header.append(el('div', 'title-kicker', 'THE LAST EMBER / YOUR TRAVELERS'), el('h1', '', '选择你的旅人'), el('p', 'muted', '每一段旅程，都有属于自己的存档。'));
+    const backdrop = el('img', 'character-backdrop'); backdrop.src = artUrl('gate'); backdrop.alt = ''; backdrop.draggable = false;
+    const header = el('header', 'character-header'), brand = el('div', 'character-brand');
+    brand.append(el('div', 'title-kicker', 'THE LAST EMBER'), el('h1', '', '庇护之地'));
+    header.append(brand, el('span', 'character-mode', '离线单人 · LoD 1.14d'));
     const list = el('div', 'character-list'); list.setAttribute('aria-label', '游戏人物列表');
     if (!this.state.characters.some(c => c.id === this.selectedSaveId)) this.selectedSaveId = this.state.characters.find(c => c.id === this.state.activeSaveId)?.id ?? this.state.characters[0]?.id ?? null;
     for (const save of this.state.characters) {
@@ -373,36 +442,55 @@ export class GameUI {
       card.dataset.saveId = save.id; card.setAttribute('aria-pressed', String(save.id === this.selectedSaveId)); card.classList.toggle('selected', save.id === this.selectedSaveId);
       const info = el('div', 'character-save-info');
       const details = el('div', 'saved-details');
-      details.append(el('span', 'saved-level', `等级 ${save.level}`), el('span', 'saved-class', def.name));
-      info.append(el('strong', 'saved-name', save.name), details, el('span', 'saved-time', DIFFICULTY[save.difficulty]));
-      card.append(info, el('span', 'character-arrow', save.id === this.selectedSaveId ? '已选' : '›')); list.append(card);
+      details.append(el('span', 'saved-level', `等级 ${save.level}`), el('span', 'saved-class', def.name), el('span', 'saved-time', DIFFICULTY[save.difficulty]));
+      const name = el('strong', 'saved-name', save.name); name.title = save.name;
+      info.append(name, details); card.title = save.name;
+      const thumbnail = el('div', 'character-thumbnail'); thumbnail.append(portrait(save.classId)); thumbnail.setAttribute('aria-hidden', 'true');
+      const arrow = el('span', 'character-arrow', '›'); arrow.setAttribute('aria-hidden', 'true');
+      card.append(thumbnail, info, arrow); list.append(card);
     }
-    if (!this.state.characters.length) list.append(el('div', 'character-empty', this.state.storageStatus === 'loading' ? '正在读取本地角色存档…' : this.state.storageStatus === 'error' ? '本地存储不可用' : '这里还没有旅人。创建第一个角色，开启你的旅程。'));
-    const sidebar = el('div', 'character-sidebar');
-    sidebar.append(list, btn('新建角色', () => this.send({type: 'creation'}), 'secondary-button character-create', this.state.storageStatus !== 'ready' || this.state.loadingSave));
+    if (!this.state.characters.length) list.append(el('div', 'character-empty', this.state.storageStatus === 'loading' ? '正在读取本地角色存档…' : this.state.storageStatus === 'error' ? '本地存储不可用' : '尚无本地角色'));
+    const sidebar = el('div', 'character-sidebar'), rosterHeading = el('div', 'character-list-heading');
+    rosterHeading.append(el('h2', '', '选择角色'), el('span', 'character-count', String(this.state.characters.length)), btn('新建角色', () => this.send({type: 'creation'}), 'secondary-button character-create', this.state.storageStatus !== 'ready' || this.state.loadingSave));
+    sidebar.append(rosterHeading, list);
     const selected = this.state.characters.find(c => c.id === this.selectedSaveId);
-    const preview = el('div', 'character-preview'), figure = el('div', 'character-figure');
+    const preview = el('div', 'character-preview'), figure = el('div', 'character-figure'), identity = el('div', 'character-identity');
     if (selected) {
       const def = getClass(selected.classId); preview.style.setProperty('--class-color', def.color);
-      figure.append(portrait(selected.classId), el('h2', '', selected.name), el('p', 'class-trees', `${def.name} · ${def.english}`), el('p', 'muted', `等级 ${selected.level} / ${DIFFICULTY[selected.difficulty]}`));
-    } else figure.append(el('div', 'empty-sigil', 'VII'), el('h2', '', '七种信念'), el('p', 'muted', '同一片黑暗，等待新的旅人。'));
+      figure.append(portrait(selected.classId));
+      const name = el('h2', '', selected.name); name.title = selected.name;
+      identity.append(name, el('p', 'character-meta', `${def.name} · 等级 ${selected.level} · ${DIFFICULTY[selected.difficulty]}`));
+    } else {
+      figure.append(el('div', 'empty-sigil', 'VII'));
+      identity.append(el('h2', '', '旅程尚未开始'), el('p', 'character-meta', '新建一个角色，踏入余烬之门。'));
+    }
     const actions = el('div', 'character-actions');
     const disabled = !selected || this.state.storageStatus !== 'ready' || this.state.loadingSave;
-    actions.append(btn('进入', () => { if (selected) this.send({type: 'continue', id: selected.id}); }, 'primary-button', disabled), btn('删除', () => {
+    const remove = btn('', () => {
       if (selected && window.confirm(`永久删除“${selected.name}”（等级 ${selected.level} · ${getClass(selected.classId).name}）？\n该角色的本地存档无法恢复，其他角色不会受影响。`)) this.send({type: 'delete-character', id: selected.id});
-    }, 'secondary-button character-delete', disabled));
-    preview.append(figure, actions);
+    }, 'secondary-button character-delete', disabled);
+    remove.setAttribute('aria-label', '删除'); remove.title = '删除角色';
+    const trash = svgNode('svg', { viewBox: '0 0 24 24', 'aria-hidden': 'true', focusable: 'false', 'stroke-linecap': 'round' });
+    svgPath(trash, 'M3 6H21M9 6V3H15V6M5 6L6 21H18L19 6M10 10V17M14 10V17', 'none', 'currentColor', '1.7');
+    remove.append(trash);
+    actions.append(btn('进入', () => { if (selected) this.send({type: 'continue', id: selected.id}); }, 'primary-button', disabled), remove);
+    preview.append(figure, identity, actions);
     const roster = el('div', 'character-roster'); roster.append(sidebar, preview);
-    const status = el('p', this.state.storageError ? 'warning storage-status' : 'muted storage-status', this.state.storageError || (this.state.loadingSave ? '正在处理角色存档…' : this.state.storageStatus === 'loading' ? '正在打开 IndexedDB…' : `${this.state.characters.length} 个旅人 · 本机独立存档`)); status.setAttribute('role', 'status');
-    content.append(header, roster, status, el('p', 'title-disclaimer', '非官方规则重构 · 原创美术 · 本地存档不跨浏览器同步'));
+    const status = el('p', this.state.storageError ? 'warning storage-status' : 'muted storage-status', this.state.storageError || (this.state.loadingSave ? '正在处理角色存档…' : this.state.storageStatus === 'loading' ? '正在读取本地存档…' : '存档仅保存在本浏览器，不跨设备同步')); status.setAttribute('role', 'status');
+    const footer = el('footer', 'character-footer'); footer.append(status, el('p', 'title-disclaimer', '非官方规则重构 · 原创美术'));
+    content.append(backdrop, header, roster, footer);
     this.screenLayer.replaceChildren(content);
-    list.scrollTop = scrollTop;
-    if (restoreFocus) [...list.querySelectorAll<HTMLButtonElement>('[data-save-id]')].find(b => b.dataset.saveId === this.selectedSaveId)?.focus({preventScroll: true});
+    list.scrollTop = scrollTop; list.scrollLeft = scrollLeft;
+    if (focusedSaveId) [...list.querySelectorAll<HTMLButtonElement>('[data-save-id]')].find(b => b.dataset.saveId === focusedSaveId)?.focus({preventScroll: true});
+  }
+
+  private referenceNote(...content: HTMLElement[]) {
+    const note = el('details', 'reference-note'); note.append(el('summary', '', '规则与实现说明'), ...content); return note;
   }
 
   private buildCreation() {
     const section = el('section', 'creation-screen');
-    const header = el('header', 'creation-header'); header.append(el('span', 'eyebrow', 'CHOOSE YOUR PATH'), el('h1', '', '选择你的旅人'), el('p', 'muted', '七种信念，同一片黑暗。角色采用原创写实贴图，不使用原版素材。'));
+    const header = el('header', 'creation-header'); header.append(el('span', 'eyebrow', 'CHOOSE YOUR PATH'), el('h1', '', '选择你的旅人'), el('p', 'muted', '七种信念，同一片黑暗。'));
     const cards = el('div', 'class-cards');
     const description = el('div', 'class-description');
     const form = el('form', 'creation-form'), label = el('label', '', '旅人之名'), input = el('input', 'name-input');
@@ -421,7 +509,7 @@ export class GameUI {
     const start = el('button', 'primary-button', '开启旅程'); start.type = 'submit';
     form.append(label, input, start, btn('返回', () => this.send({ type: 'title' }), 'secondary-button'));
     form.addEventListener('submit', e => { e.preventDefault(); this.selectedUid = null; this.hotkeys = []; this.skillTree = 0; this.selectedSkill = 0; this.questAct = 1; this.send({ type: 'new', classId: this.selectedClass, name: input.value.trim() || getClass(this.selectedClass).name }); });
-    detail(); section.append(header, cards, description, form, el('p', 'title-disclaimer', '特殊技能行为逐步实现；技能树会明确标记可执行范围。')); this.screenLayer.append(section);
+    detail(); section.append(header, cards, description, form, this.referenceNote(el('p', 'muted', '角色采用原创写实贴图，不使用原版素材。特殊技能行为逐步实现；技能树会明确标记可执行范围，未实现技能不可施放。'))); this.screenLayer.append(section);
   }
 
   private renderBelt(p: Player) {
@@ -450,10 +538,10 @@ export class GameUI {
     if (s.panel === 'none') return 'none';
     if (s.panel === 'catalog') return JSON.stringify([s.panel, this.catalogKind, this.catalogQuery, this.catalogPage, this.catalogSelected]);
     const base: unknown[] = [s.panel, this.selectedUid, this.selectedSkill, this.skillTree, this.bindRight, this.questAct, p.level, p.classId, p.difficulty, s.identifySource, s.paused, p.dead];
-    if (['inventory', 'stash', 'cube', 'vendor', 'gamble'].includes(s.panel)) base.push(p.inventory, p.equipment, p.stash, p.cube, p.gold, p.weaponSwap, s.vendorItems, s.gamblingOffers, s.npc, s.dialogue, this.socketRune, s.stats?.strength, s.stats?.dexterity, s.selectedItem);
-    if (s.panel === 'vendor' || s.panel === 'gamble') base.push(this.vendorFilter, this.tradeInventoryOpen, this.tradeView);
+    if (['inventory', 'stash', 'cube', 'vendor', 'gamble'].includes(s.panel)) base.push(p.inventory, p.equipment, p.stash, p.cube, p.gold, p.weaponSwap, s.vendorItems, s.gamblingOffers.map(offer => [offer.uid, offer.code]), s.npc, s.dialogue, this.socketRune, s.stats?.strength, s.stats?.dexterity, s.selectedItem);
+    if (s.panel === 'vendor' || s.panel === 'gamble') base.push(this.vendorFilter, this.tradeInventoryOpen, this.tradeView, this.selectedGambleOfferUid, this.gamblingResultUid, this.merchantPurchase, this.merchantServicesOpen);
     if (s.panel === 'character') base.push(s.stats, p.statPoints, p.skillPoints, p.experience);
-    if (s.panel === 'skills') base.push(p.skills, p.skillPoints, p.leftSkill, p.rightSkill, p.equipment, this.hotkeys, s.stats);
+    if (s.panel === 'skills') base.push(p.skills, p.skillPoints, p.leftSkill, p.rightSkill, p.equipment, p.weaponSwap, p.inventory, s.shrineBuff?.code, this.hotkeys, s.stats, this.skillDetailOpen);
     if (s.panel === 'quests') base.push(p.quests, p.unlockedActs);
     if (s.panel === 'waypoint') base.push(this.waypointAct, p.waypoints, p.unlockedActs, p.unlockedDifficulties, s.area?.def.id);
     return JSON.stringify(base);
@@ -468,38 +556,87 @@ export class GameUI {
     }
   }
 
+  private saveTradeScroll() {
+    const workspace = this.panelLayer.querySelector<HTMLElement>('.trade-workspace');
+    if (!workspace) return;
+    for (const node of [workspace, ...workspace.querySelectorAll<HTMLElement>('.panel-body[data-scroll]')]) {
+      if (node.dataset.scroll && node.getClientRects().length) this.tradeScroll.set(node.dataset.scroll, { top: node.scrollTop, left: node.scrollLeft });
+    }
+  }
+
+  private restoreTradeScroll() {
+    const workspace = this.panelLayer.querySelector<HTMLElement>('.trade-workspace');
+    if (!workspace) return;
+    workspace.dataset.scroll = `trade-workspace:${this.tradeView}`;
+    for (const node of [workspace, ...workspace.querySelectorAll<HTMLElement>('.panel-body[data-scroll]')]) {
+      if (!node.getClientRects().length) continue;
+      const scroll = this.tradeScroll.get(node.dataset.scroll!);
+      node.scrollTop = scroll?.top ?? 0; node.scrollLeft = scroll?.left ?? 0;
+    }
+  }
+
+  private maintainMerchantLayout(revealFocus = false) {
+    const body = this.panelLayer.querySelector<HTMLElement>('.panel-vendor .panel-body');
+    const toolbar = body?.querySelector<HTMLElement>('.merchant-toolbar');
+    const stock = body?.querySelector<HTMLElement>('.merchant-stock');
+    const service = toolbar?.querySelector<HTMLDetailsElement>('.merchant-services');
+    if (!body?.clientHeight || !toolbar || !stock || !service) return;
+    const focused = document.activeElement instanceof HTMLElement && stock.contains(document.activeElement) ? document.activeElement : null;
+    const row = focused?.closest<HTMLElement>('.vendor-row') ?? stock.querySelector<HTMLElement>('.vendor-row');
+    // Measure live services and shelf height; short viewports let the toolbar flow away.
+    toolbar.classList.toggle('merchant-toolbar-flow', service.open && toolbar.offsetHeight + (row?.offsetHeight ?? 0) + 8 > body.clientHeight);
+    if (!revealFocus || !focused) return;
+    const viewport = body.getBoundingClientRect(), target = focused.getBoundingClientRect();
+    const top = Math.max(0, viewport.top, toolbar.classList.contains('merchant-toolbar-flow') ? viewport.top : toolbar.getBoundingClientRect().bottom) + 4;
+    const bottom = Math.min(innerHeight, viewport.bottom) - 4;
+    if (target.top < top) body.scrollTop -= top - target.top;
+    else if (target.bottom > bottom) body.scrollTop += target.bottom - bottom;
+  }
+
   private toggleTradeInventory() {
-    this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.tradeInventoryOpen = !this.tradeInventoryOpen;
-    if (!this.tradeInventoryOpen) this.send({ type: 'cancel-identify' });
+    this.saveTradeScroll(); this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.clearActionFeedback(); this.tradeInventoryOpen = !this.tradeInventoryOpen;
+    if (!this.tradeInventoryOpen) { this.setInventoryArranging(false); this.send({ type: 'cancel-identify' }); }
     this.tradeView = this.tradeInventoryOpen ? 'inventory' : 'vendor'; this.invalidatePanel(); this.updatePanelButtons();
+    this.panelLayer.querySelector<HTMLElement>(`[data-focus="trade-view:${this.tradeView}"]`)?.focus({ preventScroll: true });
   }
 
   private showTradeView(view: 'vendor' | 'inventory') {
-    this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); this.tradeView = view;
+    this.saveTradeScroll(); this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.clearActionFeedback(); this.hideTooltip(); this.tradeView = view;
+    if (view === 'vendor') this.setInventoryArranging(false);
     if (view === 'inventory' && !this.tradeInventoryOpen) { this.tradeInventoryOpen = true; this.invalidatePanel(); }
     else {
       this.panelLayer.dataset.tradeView = view;
       for (const button of this.panelLayer.querySelectorAll<HTMLButtonElement>('[data-trade-view]')) {
         const active = button.dataset.tradeView === view; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active));
       }
-      this.panelSignature = this.getPanelSignature();
+      this.restoreTradeScroll(); this.panelSignature = this.getPanelSignature();
     }
+    this.panelLayer.querySelector<HTMLElement>(`[data-focus="trade-view:${view}"]`)?.focus({ preventScroll: true });
     this.updatePanelButtons();
   }
 
   private buyItem(item: Item) {
-    const before = new Map(this.state.player!.inventory.map(i => [i.uid, i.quantity]));
+    const p = this.state.player!, gold = p.gold;
+    const before = new Map(p.inventory.map(i => [i.uid, i.quantity]));
+    const beltBefore = new Map(p.belt.filter((i): i is Item => !!i).map(i => [i.uid, i.quantity]));
+    this.saveTradeScroll(); this.closeItemPopup(); this.merchantPurchase = null;
     this.send({ type: 'buy', uid: item.uid });
-    const purchased = this.state.player?.inventory.find(i => !before.has(i.uid) || i.code === item.code && i.quantity > (before.get(i.uid) ?? 0));
-    if (!purchased || !this.isTrading()) return;
-    this.tradeInventoryOpen = true; this.tradeView = 'inventory'; this.selectedUid = purchased.uid;
+    if (!this.isTrading()) return;
+    const changed = (i: Item, snapshot: Map<string, number>) => i.code === item.code && (!snapshot.has(i.uid) || i.quantity > snapshot.get(i.uid)!);
+    const purchased = p.inventory.find(i => changed(i, before));
+    const beltItem = p.belt.find(i => i && changed(i, beltBefore));
+    // Potions may go to the belt first. Report the actual destination, never infer success from the offer.
+    if (p.gold < gold && (purchased || beltItem)) {
+      const actual = purchased ?? beltItem!;
+      this.merchantPurchase = { uid: actual.uid, label: itemLabel(actual), location: purchased ? 'inventory' : 'belt' };
+      if (purchased && !window.matchMedia('(max-width: 1000px)').matches) this.selectedUid = purchased.uid;
+    }
     this.invalidatePanel(); this.updatePanelButtons();
-    if (window.matchMedia('(max-width: 1000px)').matches) this.panelLayer.querySelector('.trade-inventory .item-detail')?.scrollIntoView({ block: 'nearest' });
   }
 
   private renderTradePanels() {
     const gambling = this.state.panel === 'gamble', merchantLabel = gambling ? '赌博' : '商店';
-    const workspace = el('div', `trade-workspace${this.tradeInventoryOpen ? '' : ' trade-bag-closed'}`); this.panelLayer.append(workspace);
+    const workspace = el('div', `trade-workspace${this.tradeInventoryOpen ? '' : ' trade-bag-closed'}`); workspace.dataset.scroll = `trade-workspace:${this.tradeView}`; this.panelLayer.append(workspace);
     const nav = el('nav', 'trade-switcher'); nav.setAttribute('aria-label', '交易窗口切换');
     for (const [view, label] of [['vendor', merchantLabel], ['inventory', this.tradeInventoryOpen ? '背包 · I' : '打开背包 · I']] as const) {
       const button = btn(label, () => this.showTradeView(view), `tab-button${this.tradeView === view ? ' active' : ''}`);
@@ -514,7 +651,7 @@ export class GameUI {
       const close = btn('关闭 ×', () => kind === 'inventory' ? this.toggleTradeInventory() : this.send({ type: 'panel', panel: 'none' }), 'close-button');
       close.dataset.focus = `trade-close:${kind}`; close.setAttribute('aria-label', kind === 'vendor' ? `关闭${merchantLabel}，结束交易并返回场景` : `关闭背包，保留${merchantLabel}`);
       const header = el('header', 'panel-header'); header.append(heading, close);
-      const body = el('div', 'panel-body'); body.dataset.scroll = `panel:${kind}`;
+      const body = el('div', 'panel-body'); body.dataset.scroll = kind === 'vendor' && !gambling ? `panel:vendor:${this.vendorFilter}` : `panel:${kind}`;
       if (kind === 'vendor') { if (gambling) this.gamblingPanel(body); else this.vendorPanel(body); } else this.inventoryPanel(body);
       frame.append(header, body); workspace.append(frame);
     }
@@ -524,6 +661,7 @@ export class GameUI {
 
   private renderPanel() {
     const panel = this.state.panel;
+    this.saveTradeScroll();
     const oldScroll = new Map<string, { top: number; left: number }>();
     for (const node of this.panelLayer.querySelectorAll<HTMLElement>('[data-scroll]')) oldScroll.set(node.dataset.scroll!, { top: node.scrollTop, left: node.scrollLeft });
     const focus = this.panelLayer.contains(document.activeElement) ? (document.activeElement as HTMLElement)?.dataset.focus : undefined;
@@ -532,8 +670,17 @@ export class GameUI {
     if (panel === 'none' || !this.state.player) return;
     if (this.isTrading()) this.renderTradePanels();
     else this.renderSinglePanel(panel);
+    // Establish toolbar layout before restoring scroll; rebuilding is not focus navigation.
+    this.maintainMerchantLayout();
     for (const node of this.panelLayer.querySelectorAll<HTMLElement>('[data-scroll]')) { const scroll = oldScroll.get(node.dataset.scroll!); node.scrollTop = scroll?.top ?? 0; node.scrollLeft = scroll?.left ?? 0; }
-    if (focus) for (const node of this.panelLayer.querySelectorAll<HTMLElement>('[data-focus]')) if (node.dataset.focus === focus && node.getClientRects().length) { node.focus({ preventScroll: true }); break; }
+    if (this.isTrading()) this.restoreTradeScroll();
+    if (focus) {
+      const nodes = [...this.panelLayer.querySelectorAll<HTMLElement>('[data-focus]')];
+      const restored = nodes.find(node => node.dataset.focus === focus && !node.matches(':disabled') && node.getClientRects().length);
+      this.restoringTradeFocus = true;
+      try { (restored ?? (this.isTrading() ? nodes.find(node => node.dataset.focus === `trade-view:${this.tradeView}`) : undefined))?.focus({ preventScroll: true }); }
+      finally { this.restoringTradeFocus = false; }
+    }
   }
 
   private renderSinglePanel(panel: Panel) {
@@ -556,7 +703,37 @@ export class GameUI {
     switch (panel) {
       case 'inventory': this.inventoryPanel(body); break;
       case 'character': this.characterPanel(body); break;
-      case 'skills': this.skillsPanel(body); break;
+      case 'skills': {
+        const entering = !this.skillReturnFocus || this.hud.contains(document.activeElement) || document.activeElement === this.canvas;
+        if (entering) {
+          this.skillReturnFocus = document.activeElement instanceof HTMLElement && this.hud.contains(document.activeElement) ? document.activeElement : this.hud.querySelector<HTMLElement>('[data-panel="skills"]');
+          this.skillFeedback = '';
+        }
+        frame.setAttribute('role', 'dialog'); frame.setAttribute('aria-modal', 'true');
+        const returnFocus = () => {
+          const target = this.skillReturnFocus;
+          this.skillReturnFocus = null;
+          if (!this.state.paused && !this.state.player?.dead && target?.isConnected) target.focus({ preventScroll: true });
+        };
+        close.addEventListener('click', returnFocus);
+        frame.addEventListener('keydown', event => {
+          if (this.state.paused || this.state.player?.dead || event.metaKey || event.ctrlKey || event.altKey) return;
+          if (event.key === 'Escape' || event.key.toLowerCase() === 't') {
+            event.preventDefault(); event.stopPropagation();
+            if (!event.repeat) { this.send({ type: 'panel', panel: 'none' }); returnFocus(); }
+          } else if (event.key === 'Tab') {
+            event.stopPropagation();
+            const controls = [...frame.querySelectorAll<HTMLElement>('button:not(:disabled), [tabindex="0"]')].filter(node => node.getClientRects().length > 0);
+            const index = controls.indexOf(document.activeElement as HTMLElement);
+            if (index < 0 || event.shiftKey && index === 0 || !event.shiftKey && index === controls.length - 1) {
+              event.preventDefault(); controls[event.shiftKey ? controls.length - 1 : 0]?.focus({ preventScroll: true });
+            }
+          }
+        });
+        this.skillsPanel(body);
+        queueMicrotask(() => { if (frame.isConnected && !this.state.paused && !this.state.player?.dead && !frame.contains(document.activeElement)) close.focus({ preventScroll: true }); });
+        break;
+      }
       case 'quests': this.questsPanel(body); break;
       case 'stash': case 'cube': this.storagePanel(body, panel); break;
       case 'vendor': this.vendorPanel(body); break;
@@ -588,12 +765,17 @@ export class GameUI {
     }
     if (location === 'inventory') grid.addEventListener('contextmenu', event => {
       event.preventDefault(); event.stopPropagation();
-      if (this.lastItemPointer === 'touch' || this.drag?.active) return;
+      if (this.lastItemPointer === 'touch' || this.drag?.active || this.state.paused || this.state.player?.dead) return;
+      this.closeItemPopup(); this.hideTooltip();
       if (this.state.identifySource !== null) { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); return; }
       const button = (event.target as HTMLElement).closest<HTMLElement>('.item-button');
-      const uid = button?.dataset.focus?.slice('item:'.length);
-      if (!uid || !this.state.player?.inventory.some(item => item.uid === uid)) return;
-      this.selectItem(uid); this.useInventoryItem(uid);
+      const uid = button?.dataset.uid, item = this.state.player?.inventory.find(item => item.uid === uid);
+      if (!item) return;
+      this.selectItem(item.uid);
+      if (getBase(item.code)?.slot) {
+        this.send({ type: 'equip', uid: item.uid });
+        if (this.panelSignature !== this.getPanelSignature()) this.invalidatePanel();
+      } else if (isUsableItem(item)) this.useInventoryItem(item.uid);
     });
     const scroll = el('div', 'grid-scroll'); scroll.dataset.scroll = `grid:${location}`;
     scroll.append(grid); return scroll;
@@ -616,7 +798,6 @@ export class GameUI {
     // Selection never rebuilds either trade window or moves its scroll position.
     const focus = (document.activeElement as HTMLElement | null)?.dataset.focus;
     const scroll = [...this.panelLayer.querySelectorAll<HTMLElement>('[data-scroll]')].map(node => ({ node, top: node.scrollTop, left: node.scrollLeft }));
-    for (const detail of this.panelLayer.querySelectorAll<HTMLElement>('.item-detail')) detail.replaceWith(this.itemDetail(detail.dataset.owner as 'vendor' | 'inventory' | undefined));
     if (focus) [...this.panelLayer.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === focus)?.focus({ preventScroll: true });
     for (const entry of scroll) { entry.node.scrollTop = entry.top; entry.node.scrollLeft = entry.left; }
     this.panelSignature = this.getPanelSignature();
@@ -624,16 +805,45 @@ export class GameUI {
 
   private itemButton(item: Item, select: (event: MouseEvent) => void = () => this.selectItem(item.uid)) {
     const b = btn('', event => {
+      const identifying = this.state.identifySource !== null;
       select(event);
-      if (this.lastItemPointer === 'touch' && event.detail <= 1) this.openItemPopup(item.uid, event.clientX, event.clientY);
+      if (!identifying && event.detail <= 1 && !this.drag?.active && !(this.suppressDragClick && performance.now() < this.suppressItemUntil)) {
+        const rect = b.getBoundingClientRect(), x = event.detail === 0 ? rect.right : event.clientX, y = event.detail === 0 ? rect.top : event.clientY;
+        // Keep the second desktop click available for existing equip/unequip double-click actions.
+        if (this.lastItemPointer !== 'touch' && event.detail > 0) {
+          this.itemPopupTimer = setTimeout(() => { this.itemPopupTimer = null; this.openItemPopup(item.uid, x, y); }, 240);
+        } else this.openItemPopup(item.uid, x, y);
+      }
     }, `item-button quality-${item.quality}${this.selectedUid === item.uid ? ' selected' : ''}`);
-    b.dataset.uid = item.uid; b.dataset.focus = `item:${item.uid}`; b.setAttribute('aria-label', itemLabel(item)); b.setAttribute('aria-pressed', String(this.selectedUid === item.uid)); b.append(itemSprite(item));
+    const tome = item.code === 'tbk' || item.code === 'ibk';
+    b.dataset.uid = item.uid; b.dataset.focus = `item:${item.uid}`; b.setAttribute('aria-label', `${itemLabel(item)}${tome ? ` · 卷轴 ${item.quantity}/${TOME_CAPACITY}` : ''}`); b.setAttribute('aria-pressed', String(this.selectedUid === item.uid)); b.append(itemSprite(item));
     const rune = RUNES.find(r => r.code === item.code), gem = GEMS.find(g => g.code === item.code);
     if (rune) b.append(el('span', 'item-rank rune-number', String(rune.number)));
     else if (gem) b.append(el('span', 'item-rank gem-grade', `${gem.grade + 1}/5`));
-    if (item.quantity > 1) b.append(el('span', 'item-quantity', String(item.quantity)));
+    if (tome || item.quantity > 1) b.append(el('span', `item-quantity${tome ? ' tome-quantity' : ''}`, tome ? `${item.quantity}/${TOME_CAPACITY}` : String(item.quantity)));
     if (item.sockets > 0) b.append(el('span', 'socket-count', `${item.socketed.length}/${item.sockets}`));
     this.itemTooltip(b, item); return b;
+  }
+
+  private setInventoryArranging(arranging: boolean) {
+    this.cancelItemDrag(); this.inventoryArranging = arranging;
+    this.root.classList.toggle('is-inventory-arranging', arranging);
+    for (const button of this.panelLayer.querySelectorAll<HTMLButtonElement>('.inventory-arrange')) {
+      button.setAttribute('aria-pressed', String(arranging)); button.textContent = arranging ? '完成整理' : '整理物品';
+    }
+  }
+
+  private inventoryTools() {
+    const tools = el('div', 'inventory-tools');
+    const arrange = btn(this.inventoryArranging ? '完成整理' : '整理物品', () => { this.closeItemPopup(); this.setInventoryArranging(!this.inventoryArranging); }, 'secondary-button inventory-arrange', this.state.paused || !!this.state.player?.dead);
+    arrange.dataset.focus = 'inventory-arrange'; arrange.setAttribute('aria-pressed', String(this.inventoryArranging));
+    const identifying = this.state.identifySource !== null;
+    if (!identifying) tools.append(arrange);
+    tools.append(el('span', 'muted', identifying ? '点选未鉴定物品，或取消鉴定。' : '滑动浏览，轻点看属性；按住物品拖动或拖卷入书。'));
+    if (identifying) {
+      const cancel = btn('取消鉴定', () => { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); }, 'secondary-button'); cancel.dataset.focus = 'cancel-identify'; tools.append(cancel);
+    }
+    return tools;
   }
 
   private inventoryPanel(body: HTMLElement) {
@@ -657,10 +867,10 @@ export class GameUI {
     }
     equipment.append(paperdoll);
     const bag = el('div', 'bag-column');
-    if (this.isTrading()) { const sale = el('div', 'sell-dropzone', '拖到此处出售 · 松手确认'); sale.dataset.sellDropzone = 'inventory'; sale.setAttribute('aria-label', '背包物品出售区域'); bag.append(sale); }
-    bag.append(el('div', 'section-caption', `行囊 · ${INVENTORY_WIDTH} × ${INVENTORY_HEIGHT}`), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory'), el('div', 'gold-line', `${p.gold.toLocaleString()} 金币`));
+    if (this.isTrading() && !window.matchMedia('(max-width: 1000px)').matches) { const sale = el('div', 'sell-dropzone', '拖到此处出售 · 松手确认'); sale.dataset.sellDropzone = 'inventory'; sale.setAttribute('aria-label', '背包物品出售区域'); bag.append(sale); }
+    bag.append(el('div', 'section-caption', `行囊 · ${INVENTORY_WIDTH} × ${INVENTORY_HEIGHT}`), this.inventoryTools(), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory'), el('div', 'gold-line', `${p.gold.toLocaleString()} 金币`));
     const buttons = el('div', 'button-row'); buttons.append(btn('赫拉迪克方块', () => this.send({ type: 'panel', panel: 'cube' }), 'secondary-button', !this.ownsCube()), btn('回城卷轴', () => this.send({ type: 'portal' }), 'secondary-button'));
-    bag.append(buttons, el('p', 'muted', '点击查看 · 双击装备 · 右键使用药水 / 卷轴，或点击详情「使用」。' + (this.isTrading() ? '交易中可出售行囊物品，商品不能直接使用。' : '储物与交易需靠近营地设施。'))); layout.append(equipment, bag); body.append(layout, this.itemDetail(this.isTrading() ? 'inventory' : undefined));
+    bag.append(buttons, el('p', 'muted', '点击查看属性与操作 · 鼠标右键装备 / 使用，双击装备 / 卸下。')); layout.append(equipment, bag); body.append(layout);
   }
 
   private selectedItem(): { item: Item; location: 'inventory' | 'stash' | 'cube' | 'equipment' | 'vendor'; slot?: Slot } | null {
@@ -670,59 +880,85 @@ export class GameUI {
     const item = this.state.vendorItems.find(i => i.uid === this.selectedUid); return item ? { item, location: 'vendor' } : null;
   }
 
-  private itemDetail(owner?: 'vendor' | 'inventory', full = false) {
-    const detail = el('section', `item-detail${full ? '' : ' compact-item-detail'}`); let selected = this.selectedItem();
-    if (owner) {
-      detail.dataset.owner = owner;
-      if (selected && (owner === 'vendor' ? selected.location !== 'vendor' : !['inventory', 'equipment'].includes(selected.location))) selected = null;
-    }
-    detail.setAttribute('aria-label', `${owner === 'vendor' ? '商店' : owner === 'inventory' ? '背包' : '所选'}物品详情与操作`);
-    if (!selected) { detail.classList.add('empty-detail'); detail.append(el('h3', '', owner === 'vendor' ? '商品详情' : '物品详情'), el('p', 'muted', owner === 'vendor' ? '点击商品查看属性与价格，下方可直接购买。' : owner === 'inventory' ? '点击行囊物品查看属性与出售；双击装备 / 卸下。' : '点击物品查看属性与操作；双击装备 / 卸下。')); return detail; }
-    const { item, location, slot } = selected, p = this.state.player!, base = getBase(item.code);
-    const heading = el('header', 'item-detail-heading'); heading.append(el('h3', `quality-${item.quality}`, itemLabel(item)), el('span', 'muted', { inventory: '行囊', stash: '储物箱', cube: '方块', equipment: '已装备', vendor: '商店' }[location])); detail.append(heading);
-    const properties = el('div', 'item-properties'); if (owner) properties.dataset.scroll = `detail:${owner}`;
-    properties.append(...this.itemProperties(item));
-    properties.append(el('p', 'muted', `占用 ${item.width} × ${item.height} · 物品等级 ${item.ilvl}${item.ethereal ? ' · 无形' : ''}${item.runeword ? ` · ${runewordName(item.runeword)}` : ''}`));
-    properties.hidden = !full; detail.append(properties);
-    const actions = el('div', 'item-actions'); actions.setAttribute('role', 'group'); actions.setAttribute('aria-label', `${itemLabel(item)}操作`);
-    if (location === 'vendor') { actions.append(btn(`购买 · ${item.price.toLocaleString()} 金币`, () => this.buyItem(item), 'primary-button', p.gold < item.price)); }
-    else if (location === 'equipment' && slot) { actions.append(btn('卸下至背包', () => this.send({ type: 'unequip', slot }), 'secondary-button')); }
-    else {
-      if (location === 'inventory') {
-        actions.append(btn('装备', () => this.send({ type: 'equip', uid: item.uid }), 'secondary-button', !base?.slot), btn('丢弃', () => this.send({ type: 'drop', uid: item.uid }), 'secondary-button'));
-        if (isUsableItem(item)) {
-          const use = btn('使用', () => this.useInventoryItem(item.uid), 'primary-button', this.state.paused || p.dead); use.dataset.focus = `use:${item.uid}`; actions.prepend(use);
-        }
-        if (!item.identified) {
-          const identify = btn('鉴定', () => {
-            const source = this.state.identifySource;
-            if (source !== null) this.useInventoryItem(source, item.uid); else this.send({ type: 'identify', uid: item.uid });
-          }, 'secondary-button', !!this.state.identifySource && (this.state.paused || p.dead)); identify.dataset.focus = `identify:${item.uid}`; actions.append(identify);
-        }
-        const canStash = this.nearFacility('stash');
-        actions.append(btn('存入仓库', () => { if (this.state.panel !== 'stash') this.send({ type: 'panel', panel: 'stash' }); this.send({ type: 'storage', uid: item.uid, destination: 'stash' }); }, 'secondary-button', !canStash));
-        if (!canStash) actions.lastElementChild!.setAttribute('title', '靠近营地储物箱后可存入');
-        actions.append(btn('放入方块', () => this.send({ type: 'storage', uid: item.uid, destination: 'cube' }), 'secondary-button', !this.ownsCube() || item.code === 'box'));
-        actions.append(btn('出售', () => this.send({ type: 'sell', uid: item.uid }), 'secondary-button', !this.isTrading()));
-        if (!this.isTrading()) actions.lastElementChild!.setAttribute('title', '与商人交谈后，在交易面板出售');
-      } else actions.append(btn('取回背包', () => this.send({ type: 'storage', uid: item.uid, destination: 'inventory' }), 'secondary-button'));
-    }
-    detail.append(actions);
-    if (location === 'inventory' && item.sockets > item.socketed.length) {
-      const candidates = p.inventory.filter(i => i.uid !== item.uid && (RUNES.some(r => r.code === i.code) || GEMS.some(g => g.code === i.code) || /gem|jewel|宝石|珠宝/.test(`${getBase(i.code)?.type} ${getBase(i.code)?.name}`)));
-      const socketRow = el('div', 'socket-row'), select = el('select'); select.setAttribute('aria-label', '选择镶嵌符文或宝石'); select.dataset.focus = 'socket-select';
-      select.append(new Option('选择符文 / 宝石', '')); for (const rune of candidates) select.append(new Option(itemLabel(rune), rune.uid));
-      if (candidates.some(i => i.uid === this.socketRune)) select.value = this.socketRune;
-      const socketButton = btn('永久镶嵌', () => { if (select.value) this.send({ type: 'socket', itemUid: item.uid, runeUid: select.value }); }, 'secondary-button', !select.value);
-      select.addEventListener('change', () => { this.socketRune = select.value; socketButton.disabled = !select.value; });
-      socketRow.append(select, socketButton); detail.append(socketRow, el('p', 'warning', '镶嵌顺序不可逆。符文之语只适用于正确底材、孔数与符文顺序。'));
-    }
-    [...actions.querySelectorAll<HTMLButtonElement>('button')].forEach((button, index) => { button.dataset.focus ||= `action:${item.uid}:${index}`; });
+  private itemDetail() {
+    const detail = el('section', 'item-detail'), selected = this.selectedItem();
+    if (!selected) return detail;
+    const { item, location, slot } = selected, p = this.state.player!, base = getBase(item.code), label = itemLabel(item), blocked = this.state.paused || p.dead;
+    const heading = el('header', 'item-detail-heading'), icon = el('div', `item-detail-icon quality-${item.quality}`), title = el('div', 'item-detail-title');
+    icon.append(itemSprite(item)); icon.setAttribute('aria-hidden', 'true');
+    const name = el('h3', `quality-${item.quality}`, label); name.id = 'item-popup-name';
+    const tome = item.code === 'tbk' || item.code === 'ibk';
+    title.append(name, el('span', 'muted', `${{ inventory: '行囊', stash: '储物箱', cube: '方块', equipment: '已装备', vendor: '商店 · 未购买' }[location]}${tome ? ` · 卷轴 ${item.quantity}/${TOME_CAPACITY}` : ''}`));
+    heading.append(icon, title); detail.append(heading);
+    const properties = el('div', 'item-properties'), rows = this.itemProperties(item);
+    // Only the leading, identical label is redundant; base names and all attributes stay.
+    if (rows[0]?.textContent === label) rows.shift();
+    properties.append(...rows, el('p', 'item-detail-meta muted', `占用 ${item.width} × ${item.height} · 物品等级 ${item.ilvl}${item.ethereal ? ' · 无形' : ''}${item.runeword ? ` · ${runewordName(item.runeword)}` : ''}`));
+    detail.append(properties);
+    const actions = el('footer', 'item-actions item-popup-actions'); actions.setAttribute('role', 'group'); actions.setAttribute('aria-label', `${label}主要操作`);
+    const more = el('details', 'item-more'); more.open = this.moreExpandedUid === item.uid;
+    const summary = el('summary', '', '更多操作'); summary.dataset.focus = `more-toggle:${item.uid}`; more.append(summary);
+    more.addEventListener('toggle', () => {
+      if (!more.isConnected) return;
+      if (more.open) this.moreExpandedUid = item.uid; else if (this.moreExpandedUid === item.uid) this.moreExpandedUid = '';
+    });
+    const secondary = el('div', 'item-secondary-actions');
+    const addAction = (group: HTMLElement, text: string, key: string, fn: () => void, primary = false, disabled = false) => {
+      const button = btn(text, () => { if (!this.state.paused && !this.state.player?.dead) fn(); }, primary ? 'primary-button' : 'secondary-button', blocked || disabled);
+      button.dataset.focus = `${key}:${item.uid}`; group.append(button); return button;
+    };
+    const pricedAction = (text: string, price: number | null, key: string, fn: () => void, primary = false) => {
+      const button = addAction(actions, '', key, fn, primary, price === null);
+      button.append(el('span', 'item-action-label', price === null ? '不可出售' : text));
+      if (price !== null) button.append(el('span', 'item-action-price', `${price.toLocaleString()} 金币`));
+      button.setAttribute('aria-label', price === null ? '不可出售' : `${text} · ${price.toLocaleString()} 金币`); return button;
+    };
+    if (location === 'vendor') {
+      pricedAction('购买', item.price, 'buy', () => this.buyItem(item), true);
+      if (p.gold < item.price) detail.append(el('p', 'item-context-note', '金币不足，购买不会扣款。'));
+    } else if (location === 'equipment' && slot) {
+      addAction(actions, '卸下', 'unequip', () => this.send({ type: 'unequip', slot }), true);
+    } else if (location === 'inventory') {
+      if (base?.slot) addAction(actions, '装备', 'equip', () => this.send({ type: 'equip', uid: item.uid }), true);
+      else if (isUsableItem(item)) addAction(actions, '使用', 'use', () => this.useInventoryItem(item.uid), true);
+      if (this.isTrading()) pricedAction('出售', this.sellPrice(item), 'sell', () => this.send({ type: 'sell', uid: item.uid }));
+      else addAction(actions, '丢弃', 'drop', () => this.send({ type: 'drop', uid: item.uid })).classList.add('item-discard');
+      if (!item.identified) addAction(secondary, '鉴定', 'identify', () => {
+        const source = this.state.identifySource;
+        if (source !== null) this.useInventoryItem(source, item.uid); else this.send({ type: 'identify', uid: item.uid });
+      });
+      if (this.nearFacility('stash')) addAction(secondary, '存入仓库', 'stash', () => { if (this.state.panel !== 'stash') this.send({ type: 'panel', panel: 'stash' }); this.send({ type: 'storage', uid: item.uid, destination: 'stash' }); });
+      if (this.ownsCube() && item.code !== 'box') addAction(secondary, '放入方块', 'cube', () => this.send({ type: 'storage', uid: item.uid, destination: 'cube' }));
+      if (secondary.childElementCount) more.append(secondary);
+      if (item.sockets > item.socketed.length) {
+        const candidates = p.inventory.filter(i => i.uid !== item.uid && (RUNES.some(r => r.code === i.code) || GEMS.some(g => g.code === i.code) || /gem|jewel|宝石|珠宝/.test(`${getBase(i.code)?.type} ${getBase(i.code)?.name}`)));
+        const sockets = el('section', 'item-sockets'); sockets.setAttribute('aria-label', '永久镶嵌');
+        const caption = el('h4', '', `镶嵌 · ${item.sockets - item.socketed.length} 个空余凹槽`);
+        const socketRow = el('div', 'socket-row'), select = el('select'); select.setAttribute('aria-label', '选择镶嵌符文或宝石'); select.dataset.focus = 'socket-select'; select.disabled = blocked;
+        select.append(new Option('选择符文 / 宝石', '')); for (const rune of candidates) select.append(new Option(itemLabel(rune), rune.uid));
+        if (candidates.some(i => i.uid === this.socketRune)) select.value = this.socketRune;
+        const socketButton = addAction(socketRow, '永久镶嵌', 'socket', () => { if (select.value) this.send({ type: 'socket', itemUid: item.uid, runeUid: select.value }); }, false, !select.value);
+        select.addEventListener('change', () => {
+          this.socketRune = select.value; socketButton.disabled = blocked || !select.value;
+          // Keep the native select and its focus alive; the current DOM already reflects the choice.
+          if (this.popup?.uid === item.uid) this.popup.signature = JSON.stringify([item, this.getPanelSignature()]);
+        });
+        socketRow.prepend(select); sockets.append(caption, socketRow, el('p', 'warning', '永久消耗，顺序不可逆。符文之语需匹配底材、孔数与符文顺序。'));
+        if (!candidates.length) sockets.append(el('p', 'item-context-note muted', '行囊中没有可选择的符文或宝石。')); more.append(sockets);
+      }
+      const notes: string[] = [];
+      if (!this.nearFacility('stash')) notes.push('存仓需靠近储物箱');
+      if (!this.ownsCube()) notes.push('方块操作需先获得方块');
+      if (notes.length) more.append(el('p', 'item-context-note muted', notes.join(' · ')));
+      if (more.children.length > 1) detail.append(more);
+    } else addAction(actions, '取回', 'retrieve', () => this.send({ type: 'storage', uid: item.uid, destination: 'inventory' }), true);
     if (this.state.identifySource !== null) {
-      const cancel = btn('取消鉴定', () => { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); }, 'secondary-button'); cancel.dataset.focus = 'cancel-identify'; actions.append(cancel);
+      const cancel = addAction(actions, '取消鉴定', 'cancel-identify', () => { this.send({ type: 'cancel-identify' }); this.invalidatePanel(); }); cancel.dataset.focus = 'cancel-identify';
     }
-    return detail;
+    detail.append(actions); return detail;
   }
+
+  private sellPrice(item: Item) { return itemSellPrice(item, this.state.player!.difficulty, this.state.area?.def.act ?? 1); }
 
   private ownsCube() { return !!this.state.player?.inventory.some(i => i.code === 'box'); }
   private nearFacility(kind: 'stash' | 'npc') { const p = this.state.player; return !!p && !!this.state.area?.objects.some(o => o.kind === kind && Math.hypot(o.x - p.x, o.y - p.y) <= 3); }
@@ -733,7 +969,7 @@ export class GameUI {
     if (destination === 'stash' && !this.nearFacility('stash')) { body.append(el('p', 'warning', '储物箱在营地中。靠近并点击箱子后才能访问。')); return; }
     store.append(el('div', 'section-caption', destination === 'stash' ? `私人仓库 · ${STASH_WIDTH} × ${STASH_HEIGHT}` : '方块容器 · 3 × 4'), this.grid(p[destination], destination === 'stash' ? STASH_WIDTH : 3, destination === 'stash' ? STASH_HEIGHT : 4, destination));
     if (destination === 'cube') store.append(btn('转化', () => this.send({ type: 'transmute' }), 'primary-button'), el('p', 'muted', '仅已实现且材料匹配的配方可转化；失败不会凭空产出物品。'));
-    bag.append(el('div', 'section-caption', '行囊 · 点击查看 / 双击装备'), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory')); layout.append(store, bag); body.append(layout, this.itemDetail());
+    bag.append(el('div', 'section-caption', '行囊 · 点击查看 / 双击装备'), this.inventoryTools(), this.grid(p.inventory, INVENTORY_WIDTH, INVENTORY_HEIGHT, 'inventory')); layout.append(store, bag); body.append(layout);
     if (destination === 'cube') {
       const recipes = el('details', 'reference-details'); recipes.append(el('summary', '', '符文与符文之语 · 数据参考'));
       recipes.append(el('p', 'muted', `收录符文 ${Array.isArray(RUNES) ? RUNES.length : Object.keys(RUNES).length} 种，符文之语 ${Array.isArray(RUNEWORDS) ? RUNEWORDS.length : Object.keys(RUNEWORDS).length} 种。数据收录不代表所有附加属性已实现。`)); body.append(recipes);
@@ -743,7 +979,7 @@ export class GameUI {
   private characterPanel(body: HTMLElement) {
     const p = this.state.player!, stats = this.state.stats!;
     const heading = el('div', 'character-heading'); heading.append(portrait(p.classId), el('div', '', `${p.name} · ${getClass(p.classId).name} · 等级 ${p.level}`)); body.append(heading);
-    body.append(el('div', 'point-budget', `未分配属性点 ${p.statPoints} · 未分配技能点 ${p.skillPoints}`), el('p', 'muted', '每级获得 5 属性点与 1 技能点；任务奖励以引擎实际状态为准。'));
+    body.append(el('div', 'point-budget', `未分配属性点 ${p.statPoints} · 未分配技能点 ${p.skillPoints}`), el('p', 'muted', '每级获得 5 属性点与 1 技能点。'));
     const attributes = el('div', 'attributes');
     for (const stat of ['strength', 'dexterity', 'vitality', 'energy'] as const) {
       const row = el('div', 'attribute-row'); const add = btn('+', () => this.send({ type: 'stat', stat }), 'stat-add', p.statPoints <= 0); add.setAttribute('aria-label', `分配一点${STAT_NAMES[stat]}`); add.dataset.focus = `stat:${stat}`;
@@ -757,31 +993,57 @@ export class GameUI {
     for (const [label, value, element] of [['火焰', stats.resFire, 'fire'], ['冰冷', stats.resCold, 'cold'], ['闪电', stats.resLightning, 'lightning'], ['毒素', stats.resPoison, 'poison']] as const) {
       const row = el('div', `resist ${element}${value < 0 ? ' negative' : ''}`); row.append(el('span', '', label), el('strong', '', `${value}%`)); resists.append(row);
     }
-    body.append(resists, el('p', 'muted', '噩梦抗性惩罚 −40，地狱 −100；一般抗性上限 75%。奔跑影响防御与格挡。'));
+    body.append(resists, el('p', 'muted', '噩梦抗性惩罚 −40，地狱 −100；一般抗性上限 75%。奔跑影响防御与格挡。'), this.referenceNote(el('p', 'muted', '任务奖励以引擎实际状态为准；数据收录不代表所有词缀与特殊技能行为已实现。')));
   }
 
   private skillName(id: number) { return id === 0 ? '普通攻击' : getSkill(id)?.name || '普通攻击'; }
 
-  private bindSkill(skillId: number) {
-    this.send({ type: 'bind', skillId, right: this.bindRight });
-    if (this.state.player![this.bindRight ? 'rightSkill' : 'leftSkill'] === skillId) this.send({ type: 'panel', panel: 'none' });
+  private bindSkill(skillId: number, right = this.bindRight) {
+    const p = this.state.player;
+    if (!p || this.state.paused || p.dead) return;
+    if (skillId !== 0) {
+      const effect = skillEffect(p, skillId);
+      if (!getSkill(skillId)?.supported || !effect.supported || skillLevel(p, skillId) <= 0 || effect.kind === 'passive') return;
+    }
+    this.send({ type: 'bind', skillId, right });
+    if (p[right ? 'rightSkill' : 'leftSkill'] === skillId) {
+      this.skillFeedback = `已绑定${right ? '右键' : '左键'}：${this.skillName(skillId)}`;
+      if (this.state.panel === 'skills') this.invalidatePanel();
+    }
   }
 
   private skillsPanel(body: HTMLElement) {
+    body.dataset.scroll = this.skillDetailOpen ? 'skill-detail-page' : `skill-tree-page:${this.skillTree}`;
     const p = this.state.player!, def = getClass(p.classId), classSkills = SKILLS.filter(s => s.classId === p.classId);
+    const summary = el('div', 'skill-summary');
+    summary.append(el('div', 'point-budget', `剩余技能点 ${p.skillPoints} · 角色等级 ${p.level}`), el('p', 'skill-current-bindings', `左键：${this.skillName(p.leftSkill)} · 右键：${this.skillName(p.rightSkill)}`));
     const slotbar = el('div', 'skill-bind-bar');
-    slotbar.append(btn(`左键：${this.skillName(p.leftSkill)}`, () => { this.bindRight = false; this.invalidatePanel(); }, `secondary-button${!this.bindRight ? ' active' : ''}`), btn(`右键：${this.skillName(p.rightSkill)}`, () => { this.bindRight = true; this.invalidatePanel(); }, `secondary-button${this.bindRight ? ' active' : ''}`), btn('绑定普通攻击', () => this.bindSkill(0), 'secondary-button'));
-    slotbar.setAttribute('role', 'group'); slotbar.setAttribute('aria-label', '选择技能绑定位置');
-    [...slotbar.querySelectorAll('button')].slice(0, 2).forEach((button, i) => { button.setAttribute('aria-pressed', String(i === (this.bindRight ? 1 : 0))); button.dataset.focus = `skill-bind:${i}`; });
-    body.append(el('div', 'point-budget', `剩余技能点 ${p.skillPoints} · 当前等级 ${p.level}`), slotbar);
-    const tabs = el('div', 'panel-tabs');
-    tabs.setAttribute('aria-label', '技能系别');
+    slotbar.setAttribute('role', 'group'); slotbar.setAttribute('aria-label', '普通攻击绑定');
+    for (const right of [false, true]) {
+      const button = btn(`普通攻击 → ${right ? '右键' : '左键'}`, () => this.bindSkill(0, right), 'secondary-button', this.state.paused || p.dead);
+      button.dataset.focus = `skill-basic:${right ? 'right' : 'left'}`;
+      button.setAttribute('aria-pressed', String(p[right ? 'rightSkill' : 'leftSkill'] === 0)); slotbar.append(button);
+    }
+    summary.append(slotbar);
+    const feedback = el('p', 'skill-feedback', this.skillFeedback); feedback.setAttribute('role', 'status'); feedback.setAttribute('aria-live', 'polite'); summary.append(feedback);
+    body.append(summary);
+    const tabs = el('div', 'panel-tabs skill-tabs');
+    tabs.setAttribute('role', 'tablist'); tabs.setAttribute('aria-label', '技能系别');
     def.trees.forEach((name, i) => {
-      const tab = btn(name, () => { this.skillTree = i; this.invalidatePanel(); }, `tab-button${this.skillTree === i ? ' active' : ''}`);
-      tab.dataset.focus = `skill-tree:${i}`; tab.setAttribute('aria-pressed', String(this.skillTree === i)); tabs.append(tab);
+      const tab = btn(name, () => { this.skillTree = i; this.skillDetailOpen = false; this.skillTreeScroll = 0; this.invalidatePanel(); }, `tab-button${this.skillTree === i ? ' active' : ''}`);
+      tab.dataset.focus = `skill-tree:${i}`; tab.id = `skill-tree-tab-${i}`; tab.setAttribute('role', 'tab'); tab.setAttribute('aria-selected', String(this.skillTree === i)); tab.setAttribute('aria-controls', 'skill-tree-content'); tab.tabIndex = this.skillTree === i ? 0 : -1; tabs.append(tab);
+    });
+    tabs.addEventListener('keydown', event => {
+      if (this.state.paused || p.dead || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault(); event.stopPropagation();
+      const count = def.trees.length;
+      this.skillTree = event.key === 'Home' ? 0 : event.key === 'End' ? count - 1 : (this.skillTree + (event.key === 'ArrowRight' ? 1 : count - 1)) % count;
+      this.skillDetailOpen = false; this.skillTreeScroll = 0; this.invalidatePanel();
+      this.panelLayer.querySelector<HTMLElement>(`[data-focus="skill-tree:${this.skillTree}"]`)?.focus({ preventScroll: true });
     });
     body.append(tabs);
     const skills = classSkills.filter(s => s.tree === this.skillTree), tree = el('div', 'skill-tree');
+    tree.id = 'skill-tree-content'; tree.dataset.scroll = `skill-tree:${this.skillTree}`; tree.setAttribute('role', 'tabpanel'); tree.setAttribute('aria-labelledby', `skill-tree-tab-${this.skillTree}`);
     const minRow = 0, minCol = 0;
     const maxRow = Math.max(5, ...skills.map(s => s.row - minRow)); const rowCount = maxRow + 1;
     tree.style.setProperty('--skill-rows', String(rowCount));
@@ -794,7 +1056,10 @@ export class GameUI {
     tree.append(paths);
     for (const skill of skills) {
       const level = skillLevel(p, skill.id), hard = p.skills[skill.id] || 0;
-      const card = btn('', () => { this.selectedSkill = skill.id; this.invalidatePanel(); }, `skill-node${this.selectedSkill === skill.id ? ' selected' : ''}${!skill.supported ? ' unsupported' : ''}${level > 0 ? ' learned' : ''}`);
+      const card = btn('', () => {
+        this.skillTreeScroll = tree.scrollTop; this.skillTreePageScroll = body.scrollTop; this.selectedSkill = skill.id; this.skillDetailOpen = true; this.skillFeedback = ''; this.invalidatePanel();
+        if (matchMedia('(max-width: 760px), (pointer: coarse) and (max-height: 600px)').matches) this.panelLayer.querySelector<HTMLElement>('.skill-detail-close')?.focus({ preventScroll: true });
+      }, `skill-node${this.selectedSkill === skill.id ? ' selected' : ''}${!skill.supported ? ' unsupported' : ''}${level > 0 ? ' learned' : ''}`);
       card.style.gridColumn = String(clamp(skill.column - minCol + 1, 1, 3)); card.style.gridRow = String(skill.row - minRow + 1); card.dataset.focus = `skill:${skill.id}`;
       card.setAttribute('aria-pressed', String((skills.find(s => s.id === this.selectedSkill) || skills[0])?.id === skill.id));
       card.classList.toggle('selected', card.getAttribute('aria-pressed') === 'true');
@@ -802,33 +1067,87 @@ export class GameUI {
       svgPath(rune, 'M20 3L35 12L32 29L20 37L7 28L5 12Z', '#29322a', '#9a8857');
       const n = skill.id % 4;
       svgPath(rune, ['M12 27L20 10L28 27M15 21L25 21', 'M13 11L27 29M27 11L13 29M20 8L20 32', 'M11 24L20 10L29 24L20 30ZM20 10L20 30', 'M13 10L27 10L13 29L27 29M20 10L20 29'][n]!, 'none', skill.supported ? '#d0bc80' : '#777f71', '2');
-      card.append(rune, el('span', 'skill-node-name', skill.name), el('span', 'skill-node-level', `${skill.level}级 · ${level}/20${level !== hard ? `（硬点${hard}）` : ''}`));
+      card.append(rune, el('span', 'skill-node-name', skill.name), el('span', 'skill-node-level', `需求 ${skill.level}级 · 硬点 ${hard}/20${level !== hard ? ` · 有效 ${level}` : ''}`));
       card.title = `${skill.description}\n${skill.supported ? '已支持执行' : '特殊行为尚未实现'}\n前置：${skill.prerequisites.map(id => this.skillName(id)).join('、') || '无'}`;
-      card.addEventListener('click', event => {
-        if (event.detail > 0 && matchMedia('(max-width: 760px)').matches) this.panelLayer.querySelector('.skill-detail')?.scrollIntoView({ block: 'nearest' });
-      });
       tree.append(card);
     }
     const layout = el('div', 'skill-layout'); layout.append(tree);
     const skill = skills.find(s => s.id === this.selectedSkill) || skills[0];
     if (skill) layout.append(this.skillDetail(skill));
-    body.append(layout, el('p', 'muted', '点击技能查看详情；学习后绑定左／右键，绑定成功会关闭面板。战场中单击释放一次，按住连续释放；1–8 只切换右键技能。连线为前置硬点，灰色技能不可施放。'));
+    body.append(layout, el('p', 'muted skill-tree-hint', '选择技能后可直接升级或绑定左／右键，不会关闭面板。1–8 在战场切换右键技能；连线表示前置硬点。'));
   }
 
   private skillDetail(skill: SkillDef) {
     const p = this.state.player!, hard = p.skills[skill.id] || 0, level = skillLevel(p, skill.id);
-    const effect = skillEffect(p, skill.id), detail = el('div', 'skill-detail');
-    detail.append(el('h3', '', skill.name), el('p', '', skill.description), el('div', skill.supported ? 'supported-label' : 'warning', skill.supported ? '可执行技能' : '特殊行为尚未实现'), el('p', 'muted', `需求等级 ${skill.level} · 前置：${skill.prerequisites.map(id => this.skillName(id)).join('、') || '无'} · 当前有效等级 ${level}`));
-    if (effect) detail.append(el('p', 'skill-numbers', `${effect.description} · 法力 ${effect.mana} · 伤害 ${Math.floor(effect.min)}–${Math.floor(effect.max)}`));
-    const canLearn = p.skillPoints > 0 && hard < 20 && p.level >= skill.level + hard && skill.prerequisites.every(id => (p.skills[id] || 0) > 0);
-    const actions = el('div', 'button-row');
-    actions.append(btn(skill.supported ? '投入 1 技能点' : '学习规则数据（不可施放）', () => this.send({ type: 'learn', skillId: skill.id }), 'secondary-button', !canLearn), btn(`绑定${this.bindRight ? '右键' : '左键'}`, () => this.bindSkill(skill.id), 'primary-button', !skill.supported || !effect?.supported || level <= 0 || effect?.kind === 'passive'));
-    detail.append(actions);
-    const hotkeyRow = el('div', 'hotkey-row'); hotkeyRow.append(el('span', 'muted', '右键快捷绑定：'));
-    for (let i = 0; i < 8; i++) {
-      const b = btn(String(i + 1), () => { this.hotkeys[i] = skill.id; this.invalidatePanel(); }, `hotkey-button${this.hotkeys[i] === skill.id ? ' active' : ''}`, !skill.supported || !effect.supported || level <= 0 || effect.kind === 'passive'); b.title = this.hotkeys[i] ? this.skillName(this.hotkeys[i]!) : '尚未分配'; b.setAttribute('aria-label', `将${skill.name}分配到右键技能快捷键 ${i + 1}`); hotkeyRow.append(b);
+    const effect = skillEffect(p, skill.id), supported = skill.supported && effect.supported, passive = effect.kind === 'passive';
+    const blocked = this.state.paused || p.dead, detail = el('section', `skill-detail${this.skillDetailOpen ? ' is-open' : ''}`);
+    const header = el('header', 'skill-detail-header');
+    const close = btn('返回技能树', () => {
+      this.skillDetailOpen = false; this.invalidatePanel();
+      const tree = this.panelLayer.querySelector<HTMLElement>('.skill-tree'); if (tree) tree.scrollTop = this.skillTreeScroll;
+      const body = this.panelLayer.querySelector<HTMLElement>('.panel-skills .panel-body'); if (body) body.scrollTop = this.skillTreePageScroll;
+      this.panelLayer.querySelector<HTMLElement>(`[data-focus="skill:${skill.id}"]`)?.focus({ preventScroll: true });
+    }, 'secondary-button skill-detail-close'); close.dataset.focus = 'skill-detail-close';
+    const title = el('h3', '', skill.name); title.id = `skill-detail-title-${skill.id}`; title.tabIndex = -1; detail.setAttribute('aria-labelledby', title.id);
+    header.append(close, title);
+    const content = el('div', 'skill-detail-body'); content.dataset.scroll = `skill-detail:${skill.id}`;
+    const levels = el('div', 'skill-levels');
+    for (const [label, value] of [['角色等级', p.level], ['需求等级', skill.level], ['当前硬点', `${hard} / 20`], ['有效等级', level], ['剩余技能点', p.skillPoints]] as const) {
+      const row = el('div', 'skill-level-row'); row.append(el('span', 'muted', label), el('strong', '', String(value))); levels.append(row);
     }
-    detail.append(hotkeyRow); return detail;
+    content.append(levels, el('p', 'muted', `本次升级需求：角色 ${skill.level + hard} 级 · 前置硬点 ≥ 1：${skill.prerequisites.map(id => `${this.skillName(id)}（${p.skills[id] || 0}）`).join('、') || '无'}`));
+    const learnReasons: string[] = [];
+    if (p.dead) learnReasons.push('角色已死亡'); else if (this.state.paused) learnReasons.push('游戏已暂停');
+    if (hard >= 20) learnReasons.push('硬点已达 20 上限');
+    else {
+      if (p.skillPoints <= 0) learnReasons.push('没有剩余技能点');
+      if (p.level < skill.level + hard) learnReasons.push(`角色需达到 ${skill.level + hard} 级`);
+      const missing = skill.prerequisites.filter(id => (p.skills[id] || 0) < 1);
+      if (missing.length) learnReasons.push(`需先学习${missing.map(id => this.skillName(id)).join('、')}（硬点 ≥ 1）`);
+    }
+    const learnReason = el('p', learnReasons.length ? 'skill-action-reason warning' : 'skill-action-reason muted', learnReasons.length ? `无法升级：${learnReasons.join('；')}` : '升级消耗 1 点，仅增加当前技能 1 硬点。'); learnReason.id = `skill-learn-reason-${skill.id}`; content.append(learnReason);
+    const bindReasons: string[] = [];
+    if (blocked) bindReasons.push(p.dead ? '角色已死亡' : '游戏已暂停');
+    if (!supported) bindReasons.push('仅规则数据，特殊行为尚未实现，不可施放');
+    else if (passive) bindReasons.push('被动，学习后自动生效，无需绑定');
+    else if (level <= 0) bindReasons.push('尚未学习，需先获得有效等级');
+    const bindReason = el('p', supported ? 'supported-label skill-action-reason' : 'warning skill-action-reason', bindReasons.join('；') || '主动技能 · 已学习，可绑定左／右键及快捷槽。'); bindReason.id = `skill-bind-reason-${skill.id}`;
+    content.append(bindReason, el('p', 'skill-description', skill.description));
+    const extra = effect.description.trim().startsWith(skill.description.trim()) ? effect.description.trim().slice(skill.description.trim().length).trim() : effect.description.trim();
+    if (extra) content.append(el('p', 'skill-effect-note muted', extra));
+    content.append(el('p', 'skill-preview-label', level <= 0 ? '等级 1 预览 · 尚未学习，不可施放' : `当前有效等级 ${level} 的数值`));
+    if (!passive) content.append(el('p', 'skill-numbers', `耗蓝 ${effect.mana} · 伤害 ${Math.floor(effect.min)}–${Math.floor(effect.max)}${supported ? '' : '（规则数据预览）'}`));
+    const canBind = !blocked && supported && !passive && level > 0;
+    const hotkeyRow = el('div', 'hotkey-row'); hotkeyRow.setAttribute('role', 'group'); hotkeyRow.setAttribute('aria-label', '右键快捷槽'); hotkeyRow.append(el('span', 'muted', '快捷槽 1–8 · 点击分配，战场按数字切换右键'));
+    for (let i = 0; i < 8; i++) {
+      const assigned = this.hotkeys[i], selected = assigned === skill.id;
+      const b = btn('', () => {
+        if (this.state.paused || p.dead || !canBind) return;
+        this.hotkeys[i] = skill.id; this.skillFeedback = `快捷槽 ${i + 1} 已分配：${skill.name}`; this.invalidatePanel();
+      }, `hotkey-button${selected ? ' active' : ''}`, !canBind);
+      b.append(el('strong', '', String(i + 1)), el('span', '', assigned ? this.skillName(assigned) : '未分配'));
+      b.dataset.focus = `skill-hotkey:${i}`; b.setAttribute('aria-pressed', String(selected)); b.setAttribute('aria-label', `快捷槽 ${i + 1}：${assigned ? this.skillName(assigned) : '未分配'}${selected ? '，已分配当前技能' : `，分配${skill.name}`}`);
+      b.setAttribute('aria-describedby', bindReason.id); b.title = canBind ? `分配${skill.name}到快捷槽 ${i + 1}` : bindReasons.join('；'); hotkeyRow.append(b);
+    }
+    content.append(hotkeyRow);
+    const footer = el('footer', 'skill-detail-footer');
+    footer.append(el('p', 'skill-current-bindings', `左键：${this.skillName(p.leftSkill)} · 右键：${this.skillName(p.rightSkill)}`));
+    const feedback = el('p', 'skill-feedback', this.skillFeedback || '绑定与快捷槽分配不会关闭面板'); feedback.setAttribute('role', 'status'); feedback.setAttribute('aria-live', 'polite'); footer.append(feedback);
+    const actions = el('div', 'skill-primary-actions');
+    const learn = btn('升级 (+1)', () => {
+      if (this.state.paused || p.dead) return;
+      const before = p.skills[skill.id] || 0;
+      this.send({ type: 'learn', skillId: skill.id });
+      if ((p.skills[skill.id] || 0) === before + 1) this.skillFeedback = `${skill.name}已升级 · 剩余技能点 ${p.skillPoints}`;
+      this.invalidatePanel();
+      if (this.panelLayer.querySelector<HTMLButtonElement>(`[data-focus="skill-learn:${skill.id}"]`)?.disabled) this.panelLayer.querySelector<HTMLElement>(`#${title.id}`)?.focus({ preventScroll: true });
+    }, 'secondary-button', learnReasons.length > 0); learn.dataset.focus = `skill-learn:${skill.id}`; learn.setAttribute('aria-describedby', learnReason.id); learn.title = learnReasons.join('；') || '消耗 1 技能点'; actions.append(learn);
+    for (const right of [false, true]) {
+      const bound = p[right ? 'rightSkill' : 'leftSkill'] === skill.id;
+      const button = btn(`${bound ? '已绑' : '绑定'}${right ? '右键' : '左键'}`, () => this.bindSkill(skill.id, right), `primary-button${bound ? ' active' : ''}`, !canBind);
+      button.dataset.focus = `skill-assign:${skill.id}:${right ? 'right' : 'left'}`; button.setAttribute('aria-pressed', String(bound)); button.setAttribute('aria-describedby', bindReason.id); button.title = canBind ? `绑定${right ? '右键' : '左键'}：${skill.name}` : bindReasons.join('；'); actions.append(button);
+    }
+    footer.append(actions); detail.append(header, content, footer); return detail;
   }
 
   private questsPanel(body: HTMLElement) {
@@ -838,13 +1157,13 @@ export class GameUI {
       const tab = btn(`第${act}幕`, () => { this.questAct = act; this.invalidatePanel(); }, `tab-button${this.questAct === act ? ' active' : ''}`, act > p.unlockedActs);
       tab.setAttribute('aria-pressed', String(this.questAct === act)); tab.dataset.focus = `quest-act:${act}`; if (tab.disabled) tab.title = '尚未解锁'; tabs.append(tab);
     }
-    body.append(tabs, el('div', 'section-caption', `${DIFFICULTY[p.difficulty]}难度 · 27 项任务数据 · 各难度独立进度`));
+    body.append(tabs, el('div', 'section-caption', `${DIFFICULTY[p.difficulty]}难度 · 第${this.questAct}幕 · 各难度独立进度`));
     const list = el('div', 'quest-list');
     for (const q of QUESTS.filter(q => q.act === this.questAct)) {
       const step = p.quests[questKey(p.difficulty, q.id)] ?? 0, card = el('article', `quest-card${step >= 3 ? ' complete' : ''}`);
       card.append(el('div', 'quest-number', String(q.number).padStart(2, '0')), el('h3', '', q.name), el('span', 'quest-state', step >= 3 ? '已完成' : step === 2 ? '待交付' : step > 0 ? '进行中' : '未开始'), el('p', '', q.description), el('p', 'muted', `奖励：${q.reward}`)); list.append(card);
     }
-    body.append(list, el('p', 'warning', '任务数据不等于完整五幕脚本验收。没有免费跳幕或首领跳过入口。'));
+    body.append(list, this.referenceNote(el('p', 'warning', '收录 27 项任务数据，不等于完整五幕脚本验收。没有免费跳幕或首领跳过入口。')));
   }
 
   private waypointPanel(body: HTMLElement) {
@@ -894,79 +1213,157 @@ export class GameUI {
   private vendorPanel(body: HTMLElement) {
     const p = this.state.player!, npc = this.state.area?.objects.find(o => o.npcId === this.state.npc);
     const services = NPCS[this.state.npc ?? '']?.services ?? [], canTrade = services.includes('trade');
-    body.append(el('h3', 'npc-name', npc?.name || '营地旅人'), el('p', 'npc-dialogue', this.state.dialogue || '与旅人交谈，了解这片土地。'));
+    const dialogue = el('p', 'npc-dialogue', this.state.dialogue || '与旅人交谈，了解这片土地。');
     const controls = el('div', 'button-row npc-services');
-    if (this.state.npc === 'gheed' && services.includes('gamble')) controls.append(btn('赌博', () => { this.closeItemPopup(); this.tradeView = 'vendor'; this.send({ type: 'gamble-open' }); this.invalidatePanel(); }, 'primary-button', this.state.paused || p.dead));
+    if (this.state.npc === 'gheed' && services.includes('gamble')) controls.append(btn('赌博', () => { this.closeItemPopup(); this.merchantPurchase = null; this.tradeView = 'vendor'; this.send({ type: 'gamble-open' }); this.invalidatePanel(); }, 'primary-button', this.state.paused || p.dead));
     if (services.includes('heal')) controls.append(btn('治疗', () => this.send({ type: 'heal' }), 'secondary-button'));
     if (this.state.npc === 'cain' && p.quests[questKey(p, 'a1q3')] === 3) controls.append(btn('鉴定全部', () => this.send({ type: 'identify' }), 'secondary-button', this.state.paused || p.dead));
     if (services.includes('repair')) controls.append(btn('修理装备', () => this.send({ type: 'repair' }), 'secondary-button'));
     if (this.state.npc === 'akara') controls.append(btn('任务奖励洗点', () => this.send({ type: 'respec' }), 'secondary-button', p.quests[questKey(p.difficulty, 'respec')] !== 1));
     if (this.state.npc === 'warriv' && p.unlockedActs >= 2) controls.append(btn('向东旅行 · 鲁高因', () => this.send({ type: 'travel', areaId: 40 }), 'primary-button'));
-    if (controls.childElementCount) body.append(controls);
-    if (!canTrade) return;
-    const charsi = this.state.npc === 'charsi';
-    const notice = charsi ? '恰西的货架只陈列武器；她也可以修理已装备且并非无形的物品。' : '改编便利商店，不等于原版掉落与交易：大紫、全等级符文与宝石可购买，镶嵌需求不变。三种钥匙仅可购买、保存，不能开启尚未实现的 Uber 门。黑毛事件尚未开放，出售乔丹不会召唤。';
-    body.append(el('div', 'gold-line', `持有 ${p.gold.toLocaleString()} 金币`), el('p', 'warning vendor-warning', notice));
-    const filters = el('div', 'panel-tabs vendor-filters'); filters.setAttribute('role', 'group'); filters.setAttribute('aria-label', '商店商品分类');
-    if (!charsi) {
-      for (const [key, label] of [['all', '全部商品'], ['gems', '符文与宝石 · 33 + 35'], ['keys', '事件 / 珍品']]) {
-        const button = btn(label!, () => { this.vendorFilter = key!; this.invalidatePanel(); }, `tab-button${this.vendorFilter === key ? ' active' : ''}`);
-        button.dataset.focus = `vendor-filter:${key}`; button.setAttribute('aria-pressed', String(this.vendorFilter === key)); filters.append(button);
-      }
+    if (!canTrade) {
+      body.append(el('h3', 'npc-name', npc?.name || '营地旅人'), dialogue);
+      if (controls.childElementCount) body.append(controls);
+      return;
     }
+    const charsi = this.state.npc === 'charsi';
+    const notice = charsi ? '恰西的货架只陈列武器；她也可以修理已装备且并非无形的物品。' : '改编便利商店，不等于原版掉落与交易：大紫、全等级符文与宝石可购买，镶嵌需求不变。三种钥匙仅可购买、保存，地狱难度可在赫拉迪克方块中合成开启超级区域传送门。黑毛事件尚未开放，出售乔丹不会召唤。';
     const ranks = new Map([...RUNES, ...GEMS].map((item, index) => [item.code, index]));
-    const items = this.state.vendorItems.filter(item => {
-      if (this.vendorFilter === 'gems') return ranks.has(item.code) || /^(gem|skul)$/.test(String(getBase(item.code)?.raw.type2 ?? ''));
-      if (this.vendorFilter === 'keys') return /^pk[1-3]$/.test(item.code) || item.code === 'rin' && item.quality === 'unique' && item.name === 'The Stone of Jordan';
-      return true;
-    });
+    const category = (item: Item) => {
+      const base = getBase(item.code);
+      if (/^pk[1-3]$/.test(item.code) || item.code === 'rin' && item.quality === 'unique' && item.name === 'The Stone of Jordan') return 'keys';
+      if (ranks.has(item.code) || /^(gem|skul)$/.test(String(base?.raw.type2 ?? ''))) return 'gems';
+      if (base?.slot) return 'equipment';
+      if (base && (isUsableItem(item) || ['key', 'bowq', 'xboq'].includes(base.type))) return 'supplies';
+      return 'all';
+    };
+    const items = this.state.vendorItems.filter(item => this.vendorFilter === 'all' || category(item) === this.vendorFilter);
     if (this.vendorFilter === 'gems') items.sort((a, b) => (ranks.get(a.code) ?? 99) - (ranks.get(b.code) ?? 99));
-    const stock = el('div', 'vendor-stock'); stock.dataset.scroll = `stock:${this.vendorFilter}`; stock.setAttribute('aria-label', '商店商品陈列');
+    const toolbar = el('div', 'merchant-toolbar');
+    const service = el('details', 'merchant-services'); service.open = this.merchantServicesOpen;
+    const summary = el('summary', 'merchant-wallet'); summary.dataset.focus = 'merchant-services';
+    summary.append(el('strong', 'merchant-gold', `${p.gold.toLocaleString()} 金币`), el('span', 'merchant-service-label', '商人服务 / 交谈'));
+    service.append(summary, dialogue, controls);
+    service.addEventListener('toggle', () => {
+      if (!service.isConnected) return;
+      const changed = this.merchantServicesOpen !== service.open;
+      this.merchantServicesOpen = service.open;
+      // Recreated open details also emit toggle; only an actual service change reveals focus.
+      this.maintainMerchantLayout(changed);
+    });
+    const filters = el('div', 'vendor-filters'); filters.setAttribute('role', 'group'); filters.setAttribute('aria-label', '商店商品分类');
+    for (const [key, label] of [['all', '全部'], ['supplies', '补给'], ['equipment', '装备'], ['gems', '符文宝石'], ['keys', '珍品']] as const) {
+      if (charsi && !['all', 'equipment'].includes(key)) continue;
+      const button = btn(label, () => { this.closeItemPopup(); this.vendorFilter = key; this.invalidatePanel(); }, `tab-button${this.vendorFilter === key ? ' active' : ''}`);
+      button.dataset.focus = `vendor-filter:${key}`; button.setAttribute('aria-pressed', String(this.vendorFilter === key)); filters.append(button);
+    }
+    const status = el('div', 'merchant-purchase-status'); status.setAttribute('role', 'status'); status.setAttribute('aria-live', 'polite'); status.setAttribute('aria-atomic', 'true');
+    const message = el('div', 'merchant-status-text'), purchase = this.merchantPurchase;
+    if (purchase) {
+      status.classList.add('has-purchase');
+      message.append(el('span', '', `已放入${purchase.location === 'inventory' ? '行囊' : '腰带'}`), el('strong', '', purchase.label)); message.title = `已放入${purchase.location === 'inventory' ? '行囊' : '腰带'} · ${purchase.label}`;
+      status.append(message);
+      if (purchase.location === 'inventory') {
+        const owned = p.inventory.some(item => item.uid === purchase.uid);
+        const inspect = btn('查看', () => { this.selectItem(purchase.uid); this.openItemPopup(purchase.uid, innerWidth / 2, 80); }, 'merchant-status-action', !owned);
+        inspect.dataset.focus = `merchant-inspect:${purchase.uid}`; inspect.setAttribute('aria-label', `查看已购买的${purchase.label}`); status.append(inspect);
+      }
+      const bag = btn('背包', () => this.showTradeView('inventory'), 'merchant-status-action'); bag.dataset.focus = 'merchant-bag'; status.append(bag);
+    } else {
+      message.append(el('strong', '', `${charsi ? '武器货架' : '货架'} · ${items.length} 件`), el('span', '', '点击商品看属性 · 仅「购买」扣款')); status.append(message);
+    }
+    toolbar.append(service, filters, status); body.append(toolbar);
+    if (this.vendorFilter === 'keys' && !charsi) body.append(el('p', 'warning vendor-event-warning', '钥匙仅可购买、保存，不能开启 Uber 门；黑毛事件未开放，出售乔丹不会召唤。'));
+    const stock = el('div', 'vendor-stock merchant-stock'); stock.setAttribute('aria-label', '商店商品陈列');
     for (const item of items) {
+      const base = getBase(item.code), rune = RUNES.find(r => r.code === item.code), gem = GEMS.find(g => g.code === item.code);
+      const type = category(item) === 'keys' ? '事件珍品 · 功能未开放' : rune ? `符文 · ${rune.number} 号` : gem ? `宝石 · ${gem.grade + 1}/5 级` : base?.slot ? SLOT_NAMES[base.slot] : base?.type === 'book' ? '补给 · 卷轴之书' : base?.type === 'scro' ? '补给 · 卷轴' : base?.type === 'key' ? '补给 · 开锁钥匙' : isUsableItem(item) ? '补给 · 药水' : '物品';
       const row = el('div', 'vendor-row'), button = this.itemButton(item); row.dataset.code = item.code;
-      button.append(el('span', 'vendor-item-name', itemLabel(item)));
-      const buy = btn(`${item.price.toLocaleString()} 金币 · 购买`, () => this.buyItem(item), 'small-button', p.gold < item.price);
+      const icon = el('span', 'merchant-item-icon'); icon.append(...button.childNodes); button.append(icon);
+      const label = el('span', 'merchant-item-label');
+      label.append(el('strong', 'vendor-item-name', itemLabel(item)), el('span', 'merchant-item-type', type)); button.append(label); button.title = `${itemLabel(item)} · ${type} · 点击查看完整属性`;
+      const purchase = el('div', 'merchant-purchase');
+      purchase.append(el('span', 'merchant-price', `${item.price.toLocaleString()} 金币`));
+      const buy = btn('购买', () => this.buyItem(item), `small-button merchant-buy${p.gold < item.price ? ' unaffordable' : ''}`, this.state.paused || p.dead);
       buy.dataset.focus = `buy:${item.uid}`; buy.setAttribute('aria-label', `${itemLabel(item)} · ${item.price.toLocaleString()} 金币 · 购买`);
-      row.append(button, buy); stock.append(row);
+      if (p.gold < item.price) buy.title = '金币不足；购买时会显示失败原因，不扣款。';
+      purchase.append(buy); row.append(button, purchase); stock.append(row);
     }
     if (!items.length) stock.append(el('p', 'muted', '此分类暂无商品。'));
-    if (filters.childElementCount) body.append(filters);
-    body.append(el('div', 'section-caption vendor-stock-caption', `${charsi ? '武器 ' : ''}陈列 ${items.length} 件 · 点击图标查看属性`), stock, this.itemDetail('vendor'));
+    body.append(stock, this.referenceNote(el('p', 'warning vendor-warning', notice)));
+    // Pointer purchases and preventScroll restoration keep the user's exact shelf position.
+    // Native Tab/Shift+Tab still reveal focus beneath the sticky toolbar.
+    stock.addEventListener('focusin', () => this.maintainMerchantLayout(!this.restoringTradeFocus && document.activeElement?.matches(':focus-visible') === true));
+  }
+
+  private buyGamblingOffer(uid: string) {
+    const index = this.state.gamblingOffers.findIndex(offer => offer.uid === uid);
+    if (index < 0) return;
+    const before = new Set(this.state.player!.inventory.map(item => item.uid));
+    this.closeItemPopup(); this.send({ type: 'gamble-buy', uid });
+    const result = this.state.player?.inventory.find(item => item.uid === this.state.selectedItem && !before.has(item.uid));
+    if (result) {
+      this.gamblingResultUid = result.uid; this.selectedUid = result.uid;
+      this.selectedGambleOfferUid = this.state.gamblingOffers[index]?.uid ?? '';
+    }
+    this.invalidatePanel();
+    if (!result) return;
+    // The result and same-slot purchase button live above stock; expose them after restoration.
+    const workspace = this.panelLayer.querySelector<HTMLElement>('.trade-workspace');
+    if (workspace) { workspace.scrollTop = 0; this.saveTradeScroll(); }
+    const body = this.panelLayer.querySelector<HTMLElement>('.panel-vendor .panel-body'); if (body) body.scrollTop = 0;
+    const nextPurchase = this.panelLayer.querySelector<HTMLButtonElement>(`[data-focus="gamble:${this.selectedGambleOfferUid}"]`);
+    (nextPurchase && !nextPurchase.disabled ? nextPurchase : this.panelLayer.querySelector<HTMLElement>(`[data-focus="gamble-result:${result.uid}"]`))?.focus({ preventScroll: true });
   }
 
   private gamblingPanel(body: HTMLElement) {
     const p = this.state.player!, blocked = this.state.paused || p.dead;
     const controls = el('div', 'button-row gambling-controls');
-    controls.append(btn('刷新货物', () => { this.closeItemPopup(); this.send({ type: 'gamble-refresh' }); this.invalidatePanel(); }, 'primary-button', blocked), btn('返回基德商店', () => { this.closeItemPopup(); this.send({ type: 'panel', panel: 'vendor' }, true); this.invalidatePanel(); }, 'secondary-button'));
-    body.append(el('p', 'npc-dialogue', '“来试试运气吧。”'), controls, el('div', 'gold-line', `持有 ${p.gold.toLocaleString()} 金币 · 折扣 ${gamblingDiscount(p)}%`), el('p', 'muted', '品质与属性购买后揭晓，立即鉴定。同一货位可以连续购买；右键图标或点击「赌博购买」。'));
-    const stock = el('div', 'gambling-stock'); stock.setAttribute('aria-label', '赌博货物陈列');
+    const refresh = btn('刷新货物', () => { this.closeItemPopup(); this.selectedGambleOfferUid = ''; this.send({ type: 'gamble-refresh' }); this.invalidatePanel(); }, 'primary-button', blocked); refresh.dataset.focus = 'gamble-refresh';
+    const back = btn('返回基德商店', () => { this.closeItemPopup(); this.send({ type: 'panel', panel: 'vendor' }, true); this.invalidatePanel(); }, 'secondary-button'); back.dataset.focus = 'gamble-back';
+    controls.append(refresh, back);
+    const selectedOffer = this.state.gamblingOffers.find(offer => offer.uid === this.selectedGambleOfferUid);
+    const result = p.inventory.find(item => item.uid === this.gamblingResultUid);
+    if (result) {
+      const last = el('section', 'gambling-result'); last.setAttribute('aria-label', '最近赌博结果');
+      const feedback = el('div', 'section-caption', '赌博购买成功 · 已鉴定'); feedback.setAttribute('role', 'status'); feedback.setAttribute('aria-live', 'polite');
+      const obtained = el('div', 'gambling-result-item'); obtained.append(this.itemButton(result), el('strong', `item-name quality-${result.quality}`, itemLabel(result)));
+      const inspect = btn('查看属性与操作', () => { this.selectItem(result.uid); this.openItemPopup(result.uid, innerWidth / 2, 80); }, 'secondary-button'); inspect.dataset.focus = `gamble-result:${result.uid}`;
+      last.append(feedback, obtained, inspect);
+      if (selectedOffer) {
+        const price = gamblingCost(selectedOffer.code, p);
+        const again = btn('', () => this.buyGamblingOffer(selectedOffer.uid), 'primary-button', blocked || p.gold < price); again.dataset.focus = `gamble:${selectedOffer.uid}`;
+        again.append(el('span', '', '赌博购买 · 同货位'), el('span', '', `${price.toLocaleString()} 金币`));
+        again.setAttribute('aria-label', `同货位赌博购买 · ${price.toLocaleString()} 金币${p.gold < price ? ' · 金币不足' : ''}`);
+        last.append(again);
+      }
+      body.append(last);
+    }
+    body.append(el('p', 'npc-dialogue', '“来试试运气吧。”'), controls, el('div', 'gold-line', `持有 ${p.gold.toLocaleString()} 金币 · 折扣 ${gamblingDiscount(p)}%`), el('p', 'muted', '轻点图标只查看报价与底材，品质未知。只有「赌博购买」会扣款，购买后立即鉴定；同一货位可连续购买。'));
+    if (selectedOffer) {
+      // Read only public offer/base data. Never inspect or construct the hidden rolled item.
+      const base = getBase(selectedOffer.code)!, quote = el('section', 'gambling-quote'); quote.setAttribute('aria-label', '所选底材报价');
+      quote.append(el('h3', '', base.name), el('p', '', `${gamblingCost(selectedOffer.code, p).toLocaleString()} 金币 · 品质未知 · 底材占用 ${base.width} × ${base.height}`), el('p', 'muted', '最终底材、品质与属性购买后揭晓。'));
+      body.append(quote);
+    }
+    const stock = el('div', 'gambling-stock'); stock.dataset.scroll = 'gambling-stock'; stock.setAttribute('aria-label', '赌博货物陈列');
     for (const offer of this.state.gamblingOffers) {
       const base = getBase(offer.code)!, price = gamblingCost(offer.code, p);
-      const buy = () => {
-        this.closeItemPopup(); const previous = this.state.selectedItem;
-        this.send({ type: 'gamble-buy', uid: offer.uid });
-        if (this.state.selectedItem !== previous) this.selectedUid = this.state.selectedItem;
-        this.invalidatePanel();
-      };
       const row = el('div', 'gambling-slot'); row.dataset.offerUid = offer.uid; row.dataset.code = offer.code;
-      const icon = btn('', buy, 'gambling-icon', blocked || p.gold < price);
+      const icon = btn('', () => { this.closeItemPopup(); this.selectedGambleOfferUid = offer.uid; this.invalidatePanel(); }, 'gambling-icon'); icon.dataset.focus = `gamble-offer:${offer.uid}`; icon.setAttribute('aria-pressed', String(offer.uid === this.selectedGambleOfferUid));
       const image = el('img', 'item-sprite'); image.src = artUrl(itemArtKey(offer.code)); image.alt = ''; image.draggable = false;
-      icon.append(image); icon.setAttribute('aria-label', `${base.name} · 赌博购买`); icon.title = `${base.name} · ${price.toLocaleString()} 金币 · 品质未知`;
-      icon.addEventListener('contextmenu', event => { event.preventDefault(); if (!icon.disabled) buy(); });
-      const purchase = btn(`${price.toLocaleString()} 金币`, buy, 'small-button', blocked || p.gold < price); purchase.setAttribute('aria-label', `${base.name} · ${price.toLocaleString()} 金币 · 赌博购买`); purchase.dataset.focus = `gamble:${offer.uid}`;
-      row.append(icon, el('span', 'gambling-base-name', base.name), purchase); stock.append(row);
+      icon.append(image); icon.setAttribute('aria-label', `${base.name} · 查看报价与底材 · 品质未知`); icon.title = `${base.name} · ${price.toLocaleString()} 金币 · 品质未知`;
+      icon.addEventListener('contextmenu', event => event.preventDefault());
+      const purchase = btn(`赌博购买 · ${price.toLocaleString()} 金币`, () => this.buyGamblingOffer(offer.uid), 'small-button', blocked || p.gold < price); purchase.setAttribute('aria-label', `${base.name} · ${price.toLocaleString()} 金币 · 赌博购买`); purchase.dataset.focus = `gamble:${offer.uid}`;
+      row.append(icon, el('span', 'gambling-base-name', base.name), purchase);
+      if (offer.uid === this.selectedGambleOfferUid) row.append(el('p', 'muted gambling-offer-info', `所选报价 ${price.toLocaleString()} 金币 · 底材 ${base.width} × ${base.height} · 品质未知`));
+      stock.append(row);
     }
-    body.append(stock);
-    const result = p.inventory.find(i => i.uid === this.state.selectedItem);
-    if (result) {
-      const last = el('section', 'gambling-result'); last.setAttribute('aria-label', '最近赌博结果'); last.append(el('div', 'section-caption', '最近获得 · 已鉴定'), this.itemButton(result), el('strong', `item-name quality-${result.quality}`, itemLabel(result)));
-      body.append(last, this.itemDetail('inventory'));
-    }
-    body.append(el('p', 'warning gambling-baseline', '采用经典赌博算法与重制版刷新交互；精确报价、底材升级冲突及词缀实现边界见旅人手册，不宣称重制版逐项实测一致。'));
+    body.append(stock, this.referenceNote(el('p', 'warning gambling-baseline', '采用经典赌博算法与重制版刷新交互；精确报价、底材升级冲突及词缀实现边界见旅人手册，不宣称重制版逐项实测一致。')));
   }
 
   private catalogPanel(body: HTMLElement) {
-    body.append(el('p', 'catalog-baseline', `LoD 1.14d · ${EQUIPMENT_CATALOG.length.toLocaleString()} 项只读定义 · 含历史、禁用及未完成条目`), el('p', 'warning', '完整收录不等于全部属性生效：套装组合、触发技能、装备光环、聚气和完整合成仍未实现。图鉴不生成装备，也不改变存档。'));
+    body.append(el('p', 'catalog-baseline', `LoD 1.14d · ${EQUIPMENT_CATALOG.length.toLocaleString()} 项只读定义 · 含历史、禁用及未完成条目`), el('p', 'warning', '完整收录不等于全部属性生效：套装组合、触发技能、聚气和完整合成仍未实现。图鉴不生成装备，也不改变存档。'));
     const tabs = el('nav', 'catalog-tabs'); tabs.setAttribute('aria-label', '装备图鉴分类');
     for (const category of CATALOG_CATEGORIES) {
       const count = EQUIPMENT_CATALOG.filter(entry => entry.kind === category.kind).length;
@@ -1027,31 +1424,70 @@ export class GameUI {
   }
 
   private helpPanel(body: HTMLElement) {
-    const rows: [string, string][] = [['WASD / 方向键', '固定 3D 视角，按屏幕方向连续移动；松开立即停止。可边移动边用鼠标瞄准。'], ['鼠标 / 左键', '鼠标指向地面或敌人瞄准，单击左键攻击一次，按住连续攻击。点击设施交互、点击掉落拾取；仅营地内点击地面寻路移动。'], ['右键', '单击施放右键绑定的已获得、已支持的主动技能，按住连续施放，松开停止。技能树中绑定成功会关闭面板；营地内禁用攻击技能。'], ['1–8', '切换已分配的右键技能；在技能详情中点击数字分配快捷键，本次旅人会话有效。未获得或不可执行的技能不能绑定。'], ['Shift+1–4', '使用腰带对应列的药水；也可点击腰带。'], ['Q / F', '使用腰带中当前可取用的生命 / 法力药水；没有对应药水时尝试回复活力药水，不跨过列首药水。'], ['E', '与三格内最近的设施交互或拾取掉落；超过范围须先靠近。'], ['I / C / T / J', '背包 / 角色属性 / 技能树 / 任务日志。'], ['L / 图鉴', '查阅全部装备定义、原始参数及实现状态；只读，不生成装备。'], ['X / R', 'X 按物理按键切换武器组，面板打开时也有效，中文输入法下无需切换英文；输入框、暂停、死亡或拖动物品时不触发。R 切换行走与奔跑。'], ['Tab / Alt', '切换探索地图 / 按住显示掉落名称。面板内 Tab 保留键盘导航。'], ['Esc / H', '关闭面板；无面板时暂停或继续 / 打开旅人指南。打开面板、暂停、切走窗口或取消触控都会释放移动与攻击，关闭后需重新按下。'], ['触屏', '左下摇杆按屏幕方向连续移动；轻点攻击或施法一次，按住连续释放，自动瞄准九格内最近的敌人。交互 / 拾取按钮选择三格内最近的设施 / 掉落。'], ['行囊物品', '单击查看详情，双击装备/卸下。药水、卷轴与书右键使用，触屏或键盘可选择物品后点击「使用」（Enter 激活按钮）。回城卷轴为蓝色、鉴定卷轴为红色。右键鉴定卷轴后鼠标变为鉴定样式，点击未鉴定行囊物品即可鉴定；再次右键或 Esc 取消。触屏点击「使用」后点选目标。符文宝石通过详情按钮镶嵌。'], ['存档', '点击保存后存储在当前浏览器；标题页继续旅程。离线单人，无云端账户。']];
-    for (const [key, description] of rows) { const row = el('div', 'help-row'); row.append(el('kbd', '', key), el('p', '', description)); body.append(row); }
-    body.append(el('h3', 'section-caption', '诚实的实现边界'), el('p', 'muted', 'LoD 1.14d 扩展模式规则重构研究项目，非官方。原创写实角色、物品与材质贴图；不含原版美术、音乐或代码。人物使用程序化骨骼动作，非原版完整方向动画与行动帧。五幕地图与技能数据收录不代表完整服务器行为、首领脚本、词缀和配方已经验收。'));
+    const rows: [string, string][] = [['WASD / 方向键', '固定 3D 视角，按屏幕方向连续移动；松开立即停止。可边移动边用鼠标瞄准。'], ['鼠标 / 左键', '鼠标指向地面或敌人瞄准，单击左键攻击一次，按住连续攻击。点击设施交互、点击掉落拾取；仅营地内点击地面寻路移动。'], ['右键', '单击施放右键绑定的已获得、已支持的主动技能，按住连续施放，松开停止。技能树中绑定成功会关闭面板；营地内禁用攻击技能。'], ['1–8', '切换已分配的右键技能；在技能详情中点击数字分配快捷键，本次旅人会话有效。未获得或不可执行的技能不能绑定。'], ['Shift+1–4', '使用腰带对应列的药水；也可点击腰带。'], ['Q / F', '使用腰带中当前可取用的生命 / 法力药水；没有对应药水时尝试回复活力药水，不跨过列首药水。'], ['E', '与三格内最近的设施交互或拾取掉落；超过范围须先靠近。'], ['I / C / T / J', '背包 / 角色属性 / 技能树 / 任务日志。'], ['L / 图鉴', '查阅全部装备定义、原始参数及实现状态；只读，不生成装备。'], ['X / R', 'X 按物理按键切换武器组，面板打开时也有效，中文输入法下无需切换英文；输入框、暂停、死亡或拖动物品时不触发。R 切换行走与奔跑。'], ['Tab / Alt', '切换探索地图 / 按住显示掉落名称。面板内 Tab 保留键盘导航。'], ['Esc / H', '关闭面板；无面板时暂停或继续 / 打开旅人指南。打开面板、暂停、切走窗口或取消触控都会释放移动与攻击，关闭后需重新按下。'], ['触屏', '左下摇杆按屏幕方向连续移动；轻点攻击或施法一次，按住连续释放，自动瞄准九格内最近的敌人。交互 / 拾取按钮选择三格内最近的设施 / 掉落。'], ['行囊物品', '轻点 / 单击固定完整详情，选择装备、卸下或使用；垂直滑动浏览，只有开启「整理物品」才启用触屏拖动，交易出售使用详情按钮。鼠标右键快速装备 / 替换，双击装备 / 卸下。药水、卷轴与书右键使用，键盘可选择物品后点击「使用」（Enter 激活按钮）。回城卷轴为蓝色、鉴定卷轴为红色。右键鉴定卷轴后鼠标变为鉴定样式，点击未鉴定行囊物品即可鉴定；再次右键或 Esc 取消。触屏点击「使用」后点选目标。符文宝石通过详情按钮镶嵌。'], ['存档', '点击保存后存储在当前浏览器；标题页继续旅程。离线单人，无云端账户。']];
+    const addRow = (target: HTMLElement, [key, description]: [string, string]) => { const row = el('div', 'help-row'); row.append(el('kbd', '', key), el('p', '', description)); target.append(row); };
+    body.append(el('h3', 'section-caption', '上手指南'));
+    addRow(body, ['触屏', '摇杆移动；轻点攻击 / 施法一次，按住连续释放。靠近目标后用「交互」「拾取」。']);
+    addRow(body, ['行囊物品', '轻点固定详情，选择装备、使用、出售或永久镶嵌；滑动浏览。「整理物品」开启触屏拖动，再点「完成整理」退出。鉴定卷轴先「使用」再点目标。']);
+    const saveGuide = rows.find(row => row[0] === '存档'); if (saveGuide) addRow(body, saveGuide);
+    const keyboard = el('details', 'reference-details help-keyboard'); keyboard.open = !matchMedia('(max-width: 760px)').matches; keyboard.append(el('summary', '', '完整操作与桌面键位'));
+    for (const row of rows.filter(row => row[0] !== '存档')) addRow(keyboard, row);
+    body.append(keyboard, this.referenceNote(el('p', 'muted', 'LoD 1.14d 扩展模式规则重构研究项目，非官方。原创写实角色、物品与材质贴图；不含原版美术、音乐或代码。人物使用程序化骨骼动作，非原版完整方向动画与行动帧。五幕地图与技能数据收录不代表完整服务器行为、首领脚本、词缀和配方已经验收。')));
+  }
+
+  private modalControls(scope: HTMLElement) {
+    return [...scope.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), summary, [tabindex="0"]')].filter(node => node.getClientRects().length && !node.closest('[inert]'));
   }
 
   private updateOverlay() {
-    const s = this.state, p = s.player!;
-    const signature = `${p.dead}:${s.paused}:${s.panel}:${s.savingAndExiting}:${s.storageError}`;
-    this.overlay.hidden = !p.dead && (!s.paused || s.panel !== 'none');
+    const s = this.state, p = s.player, blocking = s.screen === 'game' && !!p && (p.dead || s.paused);
+    const wasVisible = !this.overlay.hidden, starting = blocking && !this.modalSession;
+    const active = document.activeElement as HTMLElement | null;
+    if (starting) {
+      this.modalReturnFocus = active && this.root.contains(active) ? active : null;
+      this.modalReturnKey = this.modalReturnFocus?.dataset.focus ?? ''; this.modalFocusKey = '';
+    }
+    if (active && this.overlay.contains(active)) this.modalFocusKey = active.dataset.focus ?? '';
+    this.hud.inert = blocking; this.canvas.inert = blocking;
+    this.overlay.hidden = !blocking || !p?.dead && s.panel !== 'none'; this.panelLayer.inert = !this.overlay.hidden;
+    if (!blocking) {
+      this.overlaySignature = ''; this.overlay.replaceChildren();
+      if (this.modalSession && s.screen === 'game') {
+        const candidate = this.modalReturnFocus?.isConnected ? this.modalReturnFocus : [...this.root.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === this.modalReturnKey);
+        const valid = candidate && candidate.getClientRects().length && !candidate.matches(':disabled') && !candidate.closest('[inert], [hidden]');
+        (valid ? candidate : this.canvas).focus({ preventScroll: true });
+      }
+      this.modalSession = false; this.modalReturnFocus = null; this.modalReturnKey = ''; this.modalFocusKey = ''; return;
+    }
+    this.modalSession = true;
+    const signature = `${p!.dead}:${s.paused}:${s.panel}:${s.savingAndExiting}:${s.storageError}`;
     if (this.overlaySignature === signature) return; this.overlaySignature = signature; this.overlay.replaceChildren();
-    if (this.overlay.hidden) return;
-    const card = el('section', `modal-card${p.dead ? ' death-card' : ''}`); card.setAttribute('role', 'dialog'); card.setAttribute('aria-modal', 'true');
-    card.append(el('div', 'eyebrow', p.dead ? 'THE EMBER REMAINS' : 'A MOMENT OF SILENCE'), el('h2', '', p.dead ? '你已倒下' : '旅途暂歇'), el('p', 'muted', p.dead ? '回到营地重新出发，取回遗体与失落的装备。' : '黑暗仍在等待。准备好后继续你的旅途。'));
-    if (p.dead) card.append(btn('在营地复活', () => this.send({ type: 'respawn' }), 'primary-button'));
+    if (this.overlay.hidden) {
+      if (wasVisible || starting) this.panelLayer.querySelector<HTMLElement>('.close-button')?.focus({ preventScroll: true });
+      return;
+    }
+    this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip();
+    const card = el('section', `modal-card${p!.dead ? ' death-card' : ''}`); card.tabIndex = -1; card.dataset.focus = 'modal-card'; card.setAttribute('role', 'dialog'); card.setAttribute('aria-modal', 'true'); card.setAttribute('aria-labelledby', 'game-modal-title');
+    const title = el('h2', '', p!.dead ? '你已倒下' : '旅途暂歇'); title.id = 'game-modal-title';
+    card.append(el('div', 'eyebrow', p!.dead ? 'THE EMBER REMAINS' : 'A MOMENT OF SILENCE'), title, el('p', 'muted', p!.dead ? '回到营地重新出发，取回遗体与失落的装备。' : '黑暗仍在等待。准备好后继续你的旅途。'));
+    if (p!.dead) { const revive = btn('在营地复活', () => this.send({ type: 'respawn' }), 'primary-button'); revive.dataset.focus = 'modal-respawn'; card.append(revive); }
     else {
       card.setAttribute('aria-busy', String(s.savingAndExiting));
       const saveExitNote = el('p', 'muted', '保存当前角色进度到本机，成功后返回角色菜单；再次进入会从营地出发，怪物会刷新。'); saveExitNote.id = 'save-exit-note';
-      const saveExit = btn(s.savingAndExiting ? '正在保存，请稍候…' : '保存并返回角色菜单', () => this.send({ type: 'save-and-title' }), 'secondary-button', s.savingAndExiting); saveExit.setAttribute('aria-describedby', saveExitNote.id);
-      card.append(btn('继续 · Esc', () => this.send({ type: 'pause' }), 'primary-button', s.savingAndExiting), btn('保存旅程', () => this.send({ type: 'save' }), 'secondary-button', s.savingAndExiting), btn('旅人指南', () => this.send({ type: 'panel', panel: 'help' }), 'secondary-button', s.savingAndExiting), saveExit, saveExitNote);
+      const saveExit = btn(s.savingAndExiting ? '正在保存，请稍候…' : '保存并返回角色菜单', () => this.send({ type: 'save-and-title' }), 'secondary-button', s.savingAndExiting); saveExit.setAttribute('aria-describedby', saveExitNote.id); saveExit.dataset.focus = 'modal-save-exit';
+      const resume = btn('继续 · Esc', () => this.send({ type: 'pause' }), 'primary-button', s.savingAndExiting); resume.dataset.focus = 'modal-resume';
+      const save = btn('保存旅程', () => this.send({ type: 'save' }), 'secondary-button', s.savingAndExiting); save.dataset.focus = 'modal-save';
+      const help = btn('旅人指南', () => this.send({ type: 'panel', panel: 'help' }), 'secondary-button', s.savingAndExiting); help.dataset.focus = 'modal-help';
+      card.append(resume, save, help, saveExit, saveExitNote);
       if (s.storageError && !s.savingAndExiting) { const error = el('p', 'warning', `${s.storageError} 未返回角色菜单，请重试保存。`); error.setAttribute('role', 'alert'); card.append(error); }
     }
     this.overlay.append(card);
+    const preserved = [...this.overlay.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === this.modalFocusKey && !node.matches(':disabled') && node.getClientRects().length);
+    (preserved ?? this.modalControls(card)[0] ?? card).focus({ preventScroll: true });
   }
 
   private openItemPopup(uid: string, x: number, y: number) {
+    if (this.itemPopupTimer) { clearTimeout(this.itemPopupTimer); this.itemPopupTimer = null; }
     if (this.selectedUid !== uid || !this.state.player || this.drag?.active) return;
     const source = this.selectedItem(); if (!source || source.item.uid !== uid) return;
     this.hideTooltip(); this.popup = { uid, location: source.location, x, y, signature: '' };
@@ -1060,7 +1496,11 @@ export class GameUI {
   }
 
   private closeItemPopup() {
+    if (this.itemPopupTimer) { clearTimeout(this.itemPopupTimer); this.itemPopupTimer = null; }
+    const uid = this.popup?.uid, restoreFocus = this.itemPopup.contains(document.activeElement);
+    if (this.popup) this.clearActionFeedback();
     this.popup = null; this.itemPopup.hidden = true; this.itemPopup.replaceChildren(); this.root.classList.remove('has-item-popup');
+    if (restoreFocus && uid) [...this.panelLayer.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === `item:${uid}`)?.focus({ preventScroll: true });
   }
 
   private refreshItemPopup() {
@@ -1070,15 +1510,27 @@ export class GameUI {
     const signature = JSON.stringify([selected.item, this.getPanelSignature()]);
     if (signature !== popup.signature) {
       popup.signature = signature;
-      const scroll = this.itemPopup.scrollTop, focused = this.itemPopup.contains(document.activeElement) ? (document.activeElement as HTMLElement).dataset.focus : null;
-      const close = btn('关闭 ×', () => this.closeItemPopup(), 'close-button popup-close'); close.dataset.focus = 'popup-close'; close.setAttribute('aria-label', '关闭物品浮层');
-      this.itemPopup.replaceChildren(close, this.itemDetail(undefined, true));
-      if (focused) [...this.itemPopup.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === focused)?.focus({ preventScroll: true });
-      this.itemPopup.scrollTop = scroll;
+      const scroll = this.itemPopup.querySelector<HTMLElement>('.item-popup-body')?.scrollTop ?? 0, focused = this.itemPopup.contains(document.activeElement) ? (document.activeElement as HTMLElement).dataset.focus : null;
+      const close = btn('×', () => this.closeItemPopup(), 'close-button popup-close'); close.dataset.focus = 'popup-close'; close.setAttribute('aria-label', '关闭物品浮层'); close.setAttribute('aria-keyshortcuts', 'Escape');
+      const detail = this.itemDetail(), heading = detail.querySelector('.item-detail-heading'), actions = detail.querySelector<HTMLElement>('.item-popup-actions'); heading?.append(close);
+      const body = el('div', 'item-popup-body'); body.tabIndex = 0; body.dataset.focus = 'popup-body'; body.setAttribute('aria-label', '完整属性与更多操作，可滚动');
+      for (const child of [...detail.children]) if (child !== heading && child !== actions) body.append(child);
+      const feedback = el('p', 'item-popup-feedback'); feedback.hidden = true; feedback.setAttribute('aria-hidden', 'true'); actions?.prepend(feedback);
+      detail.append(body); if (actions) detail.append(actions);
+      this.itemPopup.setAttribute('aria-labelledby', 'item-popup-name'); this.itemPopup.replaceChildren(detail);
+      if (focused) ([...this.itemPopup.querySelectorAll<HTMLElement>('[data-focus]')].find(node => node.dataset.focus === focused && !node.matches(':disabled') && node.getClientRects().length) ?? close).focus({ preventScroll: true });
+      body.scrollTop = scroll;
     }
-    const rect = this.itemPopup.getBoundingClientRect();
-    this.itemPopup.style.left = `${clamp(popup.x + 12, 8, innerWidth - rect.width - 8)}px`;
-    this.itemPopup.style.top = `${clamp(popup.y + 12, 8, innerHeight - rect.height - 8)}px`;
+    this.syncPopupFeedback();
+    const viewport = window.visualViewport, left = (viewport?.offsetLeft ?? 0) + 8, top = (viewport?.offsetTop ?? 0) + 8;
+    const right = left + (viewport?.width ?? innerWidth) - 16;
+    const hud = this.hud.querySelector<HTMLElement>('.bottom-hud')?.getBoundingClientRect();
+    const bottom = Math.min(top + (viewport?.height ?? innerHeight) - 16, hud && hud.height > 0 && hud.top > top ? hud.top - 8 : innerHeight - 8);
+    this.itemPopup.style.setProperty('--item-popup-height', `${Math.max(120, Math.min(480, bottom - top))}px`);
+    this.itemPopup.style.setProperty('--item-popup-width', `${Math.max(160, right - left)}px`);
+    const rect = this.itemPopup.getBoundingClientRect(), touch = matchMedia('(pointer: coarse)').matches || this.lastItemPointer === 'touch';
+    this.itemPopup.style.left = `${touch ? left + (right - left - rect.width) / 2 : clamp(popup.x + 12, left, Math.max(left, right - rect.width))}px`;
+    this.itemPopup.style.top = `${touch ? Math.max(top, bottom - rect.height) : clamp(popup.y + 12, top, Math.max(top, bottom - rect.height))}px`;
   }
 
   private installItemDrag(node: HTMLElement, grid: HTMLElement, item: Item) {
@@ -1086,32 +1538,72 @@ export class GameUI {
       if (e.button !== 0 || !e.isPrimary || this.drag || this.state.identifySource !== null || this.state.paused || this.state.player?.dead || !this.state.player?.inventory.some(i => i.uid === item.uid)) return;
       this.resetControls();
       const rect = grid.getBoundingClientRect(), cell = (rect.width - 2) / INVENTORY_WIDTH;
-      this.drag = { id: e.pointerId, uid: item.uid, node, grid, start: { x: e.clientX, y: e.clientY }, anchor: { x: clamp(Math.floor((e.clientX - rect.left - 1) / cell) - item.x, 0, item.width - 1), y: clamp(Math.floor((e.clientY - rect.top - 1) / cell) - item.y, 0, item.height - 1) }, active: false, ghost: null, preview: null, target: null, saleZone: null };
-      node.setPointerCapture(e.pointerId);
+      const awaitingHold = e.pointerType === 'touch' && !this.inventoryArranging;
+      const drag = this.drag = { id: e.pointerId, uid: item.uid, node, grid, start: { x: e.clientX, y: e.clientY }, anchor: { x: clamp(Math.floor((e.clientX - rect.left - 1) / cell) - item.x, 0, item.width - 1), y: clamp(Math.floor((e.clientY - rect.top - 1) / cell) - item.y, 0, item.height - 1) }, active: false, moved: false, awaitingHold, holdTimer: null as ReturnType<typeof setTimeout> | null, touchId: null as number | null, ghost: null, preview: null, target: null, saleZone: null, tomeNode: null };
+      if (awaitingHold) drag.holdTimer = setTimeout(() => {
+        drag.holdTimer = null;
+        if (this.drag !== drag || !this.activateItemDrag()) return;
+        this.positionItemDrag(drag.start.x, drag.start.y);
+      }, 400);
+      else node.setPointerCapture(e.pointerId);
     });
+    // Register before the gesture starts: changing touch-action after a hold cannot stop pan-y.
+    // Only an activated hold blocks native scrolling; the first ordinary swipe stays cancelable.
+    node.addEventListener('touchstart', e => {
+      if (this.drag?.node === node && e.touches.length === 1) this.drag.touchId = e.changedTouches[0]?.identifier ?? null;
+    }, { passive: false });
+    node.addEventListener('touchmove', e => {
+      const drag = this.drag; if (!drag || drag.node !== node) return;
+      if (e.touches.length !== 1) { this.cancelItemDrag(true); return; }
+      const touch = [...e.touches].find(t => t.identifier === drag.touchId); if (!touch) return;
+      if (drag.awaitingHold && Math.hypot(touch.clientX - drag.start.x, touch.clientY - drag.start.y) >= 10) { this.cancelItemDrag(); return; }
+      if (drag.active) {
+        if (!e.cancelable) { this.cancelItemDrag(true); return; }
+        e.preventDefault();
+      }
+    }, { passive: false });
     node.addEventListener('lostpointercapture', e => { if (this.drag?.id === e.pointerId) this.cancelItemDrag(); });
     node.addEventListener('dragstart', e => e.preventDefault());
   }
 
-  private moveItemDrag(e: PointerEvent) {
-    const drag = this.drag; if (!drag || drag.id !== e.pointerId) return;
+  private activateItemDrag(): boolean {
+    const drag = this.drag; if (!drag) return false;
     const item = this.state.player?.inventory.find(i => i.uid === drag.uid);
-    if (!item || !drag.node.isConnected || this.state.paused || this.state.player?.dead) { this.cancelItemDrag(); return; }
+    if (!item || !drag.node.isConnected || !drag.grid.isConnected || this.state.identifySource !== null || this.state.screen !== 'game' || this.state.panel === 'none' || this.state.paused || this.state.player?.dead || !this.inputFocused || document.hidden) { this.cancelItemDrag(); return false; }
     if (!drag.active) {
-      if (Math.hypot(e.clientX - drag.start.x, e.clientY - drag.start.y) < (e.pointerType === 'touch' ? 10 : 6)) return;
-      drag.active = true; this.hideTooltip(); this.closeItemPopup();
+      if (drag.holdTimer) clearTimeout(drag.holdTimer);
+      drag.holdTimer = null; drag.awaitingHold = false;
+      drag.active = true; this.hideTooltip(); this.closeItemPopup(); this.selectItem(drag.uid);
+      drag.node.setPointerCapture(drag.id);
       drag.node.classList.add('drag-source'); this.root.classList.add('is-item-dragging');
       drag.ghost = el('div', `item-drag-ghost quality-${item.quality}`); drag.ghost.append(itemSprite(item)); drag.ghost.setAttribute('aria-hidden', 'true'); this.root.append(drag.ghost);
       drag.preview = el('div', 'item-drop-preview'); drag.preview.setAttribute('aria-hidden', 'true');
     }
+    return true;
+  }
+
+  private moveItemDrag(e: PointerEvent) {
+    const drag = this.drag; if (!drag || drag.id !== e.pointerId) return;
+    const distance = Math.hypot(e.clientX - drag.start.x, e.clientY - drag.start.y), threshold = e.pointerType === 'touch' ? 10 : 6;
+    if (drag.awaitingHold) { if (distance >= threshold) this.cancelItemDrag(); return; }
+    if (!drag.active && distance < threshold || !this.activateItemDrag()) return;
+    if (distance >= threshold) drag.moved = true;
     e.preventDefault(); e.stopPropagation();
+    this.positionItemDrag(e.clientX, e.clientY);
+  }
+
+  private positionItemDrag(clientX: number, clientY: number) {
+    const drag = this.drag, item = this.state.player?.inventory.find(i => i.uid === drag?.uid);
+    if (!drag || !item) return;
     drag.target = null; drag.saleZone?.classList.remove('sell-drag-over'); drag.saleZone = null; drag.preview?.remove();
+    drag.tomeNode?.classList.remove('tome-drag-over', 'tome-drag-full'); drag.tomeNode = null;
+    drag.ghost?.querySelector('.tome-drop-hint')?.remove();
     const rect = drag.grid.getBoundingClientRect(), cell = (rect.width - 2) / INVENTORY_WIDTH;
     if (drag.ghost) {
       drag.ghost.style.width = `${item.width * cell}px`; drag.ghost.style.height = `${item.height * cell}px`;
-      drag.ghost.style.left = `${e.clientX - (drag.anchor.x + .5) * cell}px`; drag.ghost.style.top = `${e.clientY - (drag.anchor.y + .5) * cell}px`;
+      drag.ghost.style.left = `${clientX - (drag.anchor.x + .5) * cell}px`; drag.ghost.style.top = `${clientY - (drag.anchor.y + .5) * cell}px`;
     }
-    const hit = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement | null;
+    const hit = document.elementFromPoint(clientX, clientY) as HTMLElement | null;
     const sale = hit?.closest<HTMLElement>('[data-sell-dropzone], .trade-mode .panel-vendor');
     if (sale && this.isTrading()) {
       if (item.code !== 'box' && getBase(item.code)?.type !== 'ques') { drag.target = { type: 'sell' }; drag.saleZone = sale; sale.classList.add('sell-drag-over'); }
@@ -1120,11 +1612,22 @@ export class GameUI {
       const targetGrid = hit?.closest<HTMLElement>('.item-grid[data-location="inventory"]');
       if (targetGrid && drag.preview) {
         const r = targetGrid.getBoundingClientRect(), unit = (r.width - 2) / INVENTORY_WIDTH;
-        const x = Math.floor((e.clientX - r.left - 1) / unit) - drag.anchor.x, y = Math.floor((e.clientY - r.top - 1) / unit) - drag.anchor.y;
-        const valid = fitsItem(this.state.player!.inventory.filter(i => i.uid !== item.uid), item, x, y, INVENTORY_WIDTH, INVENTORY_HEIGHT);
-        drag.preview.classList.toggle('invalid', !valid); drag.preview.style.left = `${1 + x * unit}px`; drag.preview.style.top = `${1 + y * unit}px`;
-        drag.preview.style.width = `${item.width * unit}px`; drag.preview.style.height = `${item.height * unit}px`; targetGrid.append(drag.preview);
-        if (valid) drag.target = { type: 'move', x, y };
+        const hitX = Math.floor((clientX - r.left - 1) / unit), hitY = Math.floor((clientY - r.top - 1) / unit);
+        // Hit the pointer's exact occupied cell, not the dragged item's anchor or nearest book.
+        const tome = this.state.player!.inventory.find(i => canFillTome(item, i) && hitX >= i.x && hitX < i.x + i.width && hitY >= i.y && hitY < i.y + i.height);
+        if (tome) {
+          const full = tome.quantity >= TOME_CAPACITY;
+          drag.tomeNode = [...targetGrid.querySelectorAll<HTMLElement>('[data-uid]')].find(node => node.dataset.uid === tome.uid) ?? null;
+          drag.tomeNode?.classList.add(full ? 'tome-drag-full' : 'tome-drag-over');
+          drag.ghost?.append(el('span', 'tome-drop-hint', full ? `${TOME_CAPACITY}/${TOME_CAPACITY} · 已满，不可装入` : `装入 · ${tome.quantity}/${TOME_CAPACITY}`));
+          if (!full) drag.target = { type: 'tome', tomeUid: tome.uid };
+        } else {
+          const x = hitX - drag.anchor.x, y = hitY - drag.anchor.y;
+          const valid = fitsItem(this.state.player!.inventory.filter(i => i.uid !== item.uid), item, x, y, INVENTORY_WIDTH, INVENTORY_HEIGHT);
+          drag.preview.classList.toggle('invalid', !valid); drag.preview.style.left = `${1 + x * unit}px`; drag.preview.style.top = `${1 + y * unit}px`;
+          drag.preview.style.width = `${item.width * unit}px`; drag.preview.style.height = `${item.height * unit}px`; targetGrid.append(drag.preview);
+          if (valid) drag.target = { type: 'move', x, y };
+        }
       }
     }
     drag.ghost?.classList.toggle('invalid', !drag.target);
@@ -1133,42 +1636,62 @@ export class GameUI {
   private finishItemDrag(e: PointerEvent) {
     const drag = this.drag; if (!drag || drag.id !== e.pointerId) return;
     if (drag.active) this.moveItemDrag(e);
-    const target = drag.target, uid = drag.uid, active = drag.active;
+    if (this.drag !== drag) return;
+    const target = drag.moved ? drag.target : null, uid = drag.uid, active = drag.active;
     if (active) { e.preventDefault(); e.stopPropagation(); }
     this.cancelItemDrag();
     if (!active || !target || !this.state.player?.inventory.some(i => i.uid === uid)) return;
     if (target.type === 'sell') { if (this.isTrading()) this.send({ type: 'sell', uid }); }
+    else if (target.type === 'tome') this.send({ type: 'fill-tome', uid, tomeUid: target.tomeUid });
     else this.send({ type: 'move-item', uid, x: target.x, y: target.y });
     if (this.panelSignature !== this.getPanelSignature()) this.invalidatePanel();
   }
 
-  private cancelItemDrag() {
+  private cancelItemDrag(suppressClick = false) {
     const drag = this.drag; if (!drag) return;
     this.drag = null;
-    if (drag.active) { this.suppressItemUntil = performance.now() + 650; this.suppressDragClick = true; }
-    drag.node.classList.remove('drag-source'); drag.ghost?.remove(); drag.preview?.remove(); drag.saleZone?.classList.remove('sell-drag-over'); this.root.classList.remove('is-item-dragging');
+    if (drag.holdTimer) clearTimeout(drag.holdTimer);
+    drag.holdTimer = null;
+    if (drag.active || suppressClick) { this.suppressItemUntil = performance.now() + 650; this.suppressDragClick = true; }
+    drag.node.classList.remove('drag-source'); drag.ghost?.remove(); drag.preview?.remove(); drag.saleZone?.classList.remove('sell-drag-over'); drag.tomeNode?.classList.remove('tome-drag-over', 'tome-drag-full'); this.root.classList.remove('is-item-dragging');
     if (drag.node.hasPointerCapture(drag.id)) drag.node.releasePointerCapture(drag.id);
   }
 
   private itemTooltip(node: HTMLElement, item: Item) {
-    node.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch' && !this.drag?.active && !this.popup) { node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, e.clientX, e.clientY); } });
+    node.addEventListener('pointerenter', e => { if (e.pointerType !== 'touch' && !this.drag?.active && !this.popup) { node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, e.clientX, e.clientY, node); } });
     node.addEventListener('pointermove', e => { if (this.hoveringItem === item && !this.drag?.active) this.positionTooltip(e.clientX, e.clientY); });
     node.addEventListener('pointerleave', () => { node.removeAttribute('aria-describedby'); if (this.hoveringItem === item) this.hideTooltip(); });
-    node.addEventListener('focus', () => { if (this.lastItemPointer !== 'touch' && !this.drag?.active && !this.popup) { const r = node.getBoundingClientRect(); node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, r.right, r.top); } });
+    node.addEventListener('focus', () => { if (this.lastItemPointer !== 'touch' && !this.drag?.active && !this.popup) { const r = node.getBoundingClientRect(); node.setAttribute('aria-describedby', this.tooltip.id); this.showTooltip(item, r.right, r.top, node); } });
     node.addEventListener('blur', () => { node.removeAttribute('aria-describedby'); if (this.hoveringItem === item) this.hideTooltip(); });
   }
   private itemProperties(item: Item): HTMLElement[] {
     const unmet = new Set(unmetItemRequirements(this.state.player!, item));
     return lines(describeItem(item)).filter(Boolean).map(line => el('div', `item-property${unmet.has(line) ? ' unmet-requirement' : ''}`, line));
   }
-  private showTooltip(item: Item, x: number, y: number) {
-    this.hoveringItem = item; this.tooltip.hidden = false; this.tooltip.replaceChildren(el('h3', `quality-${item.quality}`, itemLabel(item)), ...this.itemProperties(item));
+  private showTooltip(item: Item, x: number, y: number, node?: HTMLElement) {
+    this.tooltipAnchor = node?.closest<HTMLElement>('.vendor-row') ?? node ?? null;
+    const label = itemLabel(item), properties = this.itemProperties(item);
+    if (properties[0]?.textContent === label) properties.shift();
+    this.hoveringItem = item; this.tooltip.hidden = false; this.tooltip.replaceChildren();
+    if (this.isTrading()) {
+      const price = this.sellPrice(item); this.tooltip.append(el('div', 'item-sell-quote', price === null ? '不可出售' : `可售 ${price.toLocaleString()} 金币`));
+      if (this.state.vendorItems.some(stock => stock.uid === item.uid)) this.tooltip.append(el('div', 'item-buy-quote', `购买 ${item.price.toLocaleString()} 金币`));
+    }
+    this.tooltip.append(el('h3', `quality-${item.quality}`, label), ...properties);
     this.positionTooltip(x, y);
   }
   private positionTooltip(x: number, y: number) {
-    const rect = this.tooltip.getBoundingClientRect(); this.tooltip.style.left = `${clamp(x + 18, 8, window.innerWidth - rect.width - 8)}px`; this.tooltip.style.top = `${clamp(y + 12, 8, window.innerHeight - rect.height - 8)}px`;
+    const rect = this.tooltip.getBoundingClientRect(), anchor = this.tooltipAnchor?.getBoundingClientRect();
+    let left = x + 18, top = y + 12;
+    if (anchor) {
+      if (anchor.right + rect.width + 12 <= innerWidth - 8) left = anchor.right + 12;
+      else if (anchor.left - rect.width - 12 >= 8) left = anchor.left - rect.width - 12;
+      else if (anchor.top - rect.height - 8 >= 8) top = anchor.top - rect.height - 8;
+      else if (anchor.bottom + rect.height + 8 <= innerHeight - 8) top = anchor.bottom + 8;
+    }
+    this.tooltip.style.left = `${clamp(left, 8, innerWidth - rect.width - 8)}px`; this.tooltip.style.top = `${clamp(top, 8, innerHeight - rect.height - 8)}px`;
   }
-  private hideTooltip() { this.tooltip.hidden = true; this.hoveringItem = null; }
+  private hideTooltip() { this.tooltip.hidden = true; this.hoveringItem = null; this.tooltipAnchor = null; }
 
   private activeGame(): boolean {
     const s = this.state;
@@ -1255,13 +1778,31 @@ export class GameUI {
     window.addEventListener('pagehide', () => { this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); }, options);
     document.addEventListener('visibilitychange', () => { if (document.hidden) { this.resetControls(); this.cancelItemDrag(); this.closeItemPopup(); this.hideTooltip(); } else this.updateControl(); }, options);
     this.root.addEventListener('focusin', e => { const target = e.target as HTMLElement; if (target.matches('input,textarea,select') || target.isContentEditable) this.resetControls(); }, options);
-    window.addEventListener('resize', () => { this.renderer?.resize(); this.cancelItemDrag(); this.hideTooltip(); this.refreshItemPopup(); this.updateControl(); }, options);
+    window.addEventListener('resize', () => { this.renderer?.resize(); this.cancelItemDrag(); this.hideTooltip(); this.refreshItemPopup(); this.maintainMerchantLayout(true); this.updateControl(); }, options);
+    window.visualViewport?.addEventListener('resize', () => this.refreshItemPopup(), options);
+    window.visualViewport?.addEventListener('scroll', () => this.refreshItemPopup(), options);
   }
 
   private keydown(e: KeyboardEvent) {
     const target = e.target as HTMLElement;
     this.lastItemPointer = '';
     if (this.state.screen !== 'game' || !this.state.player || !this.inputFocused || document.hidden) return;
+    if (this.state.paused || this.state.player.dead) {
+      const scope = this.overlay.hidden ? this.panelLayer : this.overlay;
+      if (e.key === 'Tab') {
+        const controls = this.modalControls(scope), index = controls.indexOf(document.activeElement as HTMLElement);
+        if (!controls.length) { e.preventDefault(); scope.querySelector<HTMLElement>('.modal-card')?.focus({ preventScroll: true }); }
+        else if (index < 0 || e.shiftKey && index === 0 || !e.shiftKey && index === controls.length - 1) {
+          e.preventDefault(); controls[e.shiftKey ? controls.length - 1 : 0]?.focus({ preventScroll: true });
+        }
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        if (!e.repeat && !this.state.player.dead && !this.state.savingAndExiting) {
+          if (this.state.panel !== 'none') this.send({ type: 'panel', panel: 'none' }); else this.send({ type: 'pause' });
+        }
+      }
+      return; // Native modal buttons still work; background game shortcuts never do.
+    }
     if (e.key === 'Escape') {
       e.preventDefault(); if (e.repeat) return;
       if (this.drag) { this.cancelItemDrag(); return; }

@@ -1,6 +1,7 @@
 import { getClass, getSkill, num, rawRows, SKILLS, text, EXPERIENCE } from './catalog';
 import { attributeDamagePercent, DIFFICULTY_RULES, lifeBits, playerResistance, resistedDamageBits } from './combat';
 import type { ClassId, DerivedStats, Difficulty, Element, Item, ItemMods, Player, RawRow, SkillEffect, Slot, StatKey } from './types';
+import { effectiveItemModifiers, effectiveItemStats, getBase, itemHasType, itemRequirements, setModifiers } from './items';
 
 const clamp = (value: number, min: number, max: number): number => Math.min(max, Math.max(min, value));
 const fixed = (value: number): number => Math.trunc(value * 256) / 256;
@@ -11,6 +12,46 @@ const rawSkills = new Map(rawRows('skills').map(row => [num(row, 'Id'), row]));
 const rawMissiles = new Map(rawRows('Missiles').map(row => [text(row, 'Missile'), row]));
 const bySkillName = new Map(SKILLS.map(skill => [skill.key.toLowerCase(), skill]));
 const xpRatios = new Map(rawRows('experience').map(row => [num(row, 'Level', -1), num(row, 'ExpRatio', 1024)]));
+
+// Only executable, non-OUT shrine rows are eligible for world generation.
+const shrinePresentation: Record<number, [string, string]> = {
+  1: ['生命法力神龛', '#76e4b0'], 6: ['防御神龛', '#d1dbe3'],
+  7: ['战斗神龛', '#f2b368'], 8: ['抗火神龛', '#ff7750'],
+  9: ['抗寒神龛', '#83ddff'], 10: ['抗闪电神龛', '#fff17c'],
+  11: ['抗毒神龛', '#9ee474'], 12: ['技能神龛', '#cb9aff'],
+  13: ['法力回复神龛', '#74aaff'], 14: ['耐力神龛', '#c1e1b2'],
+  15: ['经验神龛', '#eac978'], 17: ['回城神龛', '#68c8ff'],
+  18: ['宝石神龛', '#ef94d2'],
+};
+export const SHRINES = rawRows('shrines').filter(row => shrinePresentation[num(row, 'Code')]).map(row => ({
+  code: num(row, 'Code'), name: shrinePresentation[num(row, 'Code')][0], color: shrinePresentation[num(row, 'Code')][1],
+  arg0: num(row, 'Arg0'), arg1: num(row, 'Arg1'), duration: num(row, 'Duration in frames'),
+  resetFrames: num(row, 'reset time in minutes') * 60 * 25,
+  levelMin: num(row, 'LevelMin', 1), rarity: num(row, 'rarity', 1),
+}));
+export function getShrine(code = 1) { return SHRINES.find(shrine => shrine.code === code); }
+// Weak runtime state is neither a Player field nor equipment, and never serializes.
+const temporaryShrines = new WeakMap<Player, number>();
+export function setTemporaryShrine(player: Player, code?: number): void {
+  if (code !== undefined && getShrine(code)?.duration) temporaryShrines.set(player, code);
+  else temporaryShrines.delete(player);
+}
+function temporaryShrine(player: Player) { return player.dead ? undefined : getShrine(temporaryShrines.get(player) ?? 0); }
+function temporaryMods(player: Player): ItemMods {
+  const shrine = temporaryShrine(player);
+  if (!shrine) return {};
+  switch (shrine.code) {
+    case 6: return {defensePercent: shrine.arg0};
+    case 7: return {attackRatingPercent: shrine.arg0, damagePercent: shrine.arg1};
+    case 8: return {resFire: shrine.arg0};
+    case 9: return {resCold: shrine.arg0};
+    case 10: return {resLightning: shrine.arg0};
+    case 11: return {resPoison: shrine.arg0};
+    case 12: return {allSkills: shrine.arg0};
+    case 13: return {manaRegenPercent: shrine.arg0};
+    default: return {};
+  }
+}
 
 export function createPlayer(classId: ClassId, name: string): Player {
   const def = getClass(classId);
@@ -26,44 +67,72 @@ export function createPlayer(classId: ClassId, name: string): Player {
   };
 }
 
-function usable(item: Item): boolean {
-  return item.maxDurability <= 0 || item.durability > 0;
+export function usableEquipment(item: Item): boolean {
+  return item.maxDurability <= 0 || item.durability > 0 || !!effectiveItemModifiers(item, 1).indestructible;
 }
-function effectiveMods(item: Item): ItemMods {
-  return item.identified || ['low', 'normal', 'superior'].includes(item.quality) ? item.mods : {};
+function activeCharms(player: Player): Item[] {
+  return player.inventory.filter(item => {
+    const base = getBase(item.code);
+    return !!base && itemHasType(base, 'char') && item.identified && Number.isFinite(item.requiredLevel) && player.level >= item.requiredLevel;
+  });
 }
-function activeEquipment(player: Player): [Slot, Item][] {
-  const excluded = player.weaponSwap ? ['weapon', 'offhand'] : ['weapon2', 'offhand2'];
-  return (Object.entries(player.equipment) as [Slot, Item][])
-    .filter(([slot, item]) => !excluded.includes(slot) && !!item && player.level >= item.requiredLevel && usable(item));
-}
-function activeItems(player: Player): Item[] {
-  return [...activeEquipment(player).map(([, item]) => item), ...player.inventory.filter(item => {
-    const type = text(miscRows.get(item.code) ?? {}, 'type');
-    return item.identified && player.level >= item.requiredLevel && (['cm1', 'cm2', 'cm3'].includes(item.code) || ['char', 'scha', 'mcha', 'lcha'].includes(type));
-  })];
-}
-function sumMods(items: Item[]): ItemMods {
-  const result: ItemMods = {};
-  for (const item of items) {
-    for (const [key, value] of Object.entries(effectiveMods(item))) {
-      if (Number.isFinite(value)) result[key] = (result[key] ?? 0) + value;
-    }
-  }
+function sumMods(items: Item[], level: number, equipped: Item[]): ItemMods {
+  const result = setModifiers(equipped, level);
+  for (const item of items) for (const [key, value] of Object.entries(effectiveItemModifiers(item, level, equipped))) result[key] = (result[key] ?? 0) + value;
   return result;
+}
+/** Rooted requirement resolution: base attributes + valid charms, then independently supportable gear.
+ * Starting empty on every evaluation prevents self-support and mutual strength cycles after a swap/removal.
+ */
+export function activeEquipment(player: Player): [Slot, Item][] {
+  const excluded = player.weaponSwap ? ['weapon', 'offhand'] : ['weapon2', 'offhand2'];
+  const candidates = (Object.entries(player.equipment) as [Slot, Item][]).filter(([slot, item]) => {
+    const base = item && getBase(item.code);
+    if (!base?.slot || !item.identified || excluded.includes(slot) || !Number.isFinite(item.requiredLevel) || player.level < Math.max(item.requiredLevel, base.requiredLevel) || base.classId && base.classId !== player.classId || !usableEquipment(item)) return false;
+    if (['weapon', 'offhand', 'weapon2', 'offhand2'].includes(slot)) return base.slot === 'weapon' || base.slot === 'offhand';
+    return base.slot === slot || base.slot === 'ring1' && slot === 'ring2';
+  });
+  const charms = activeCharms(player), active: [Slot, Item][] = [];
+  const supported = (item: Item, sources: [Slot, Item][]): boolean => {
+    const equipped = sources.filter(([, source]) => source.uid !== item.uid).map(([, source]) => source);
+    const mods = sumMods([...equipped, ...charms.filter(charm => charm.uid !== item.uid)], player.level, equipped);
+    const req = itemRequirements(getBase(item.code)!, item);
+    return player.strength + (mods.strength ?? 0) >= req.strength && player.dexterity + (mods.dexterity ?? 0) >= req.dexterity;
+  };
+  let pending = candidates;
+  while (pending.length) {
+    const next = pending.filter(([, item]) => supported(item, active));
+    if (!next.length) break;
+    active.push(...next); pending = pending.filter(entry => !next.includes(entry));
+  }
+  // Negative attribute rolls can invalidate earlier support; removal is conservative and terminates.
+  for (;;) {
+    const unsupported = active.filter(([, item]) => !supported(item, active));
+    if (!unsupported.length) return active;
+    for (const entry of unsupported) active.splice(active.indexOf(entry), 1);
+  }
+}
+export function activeItems(player: Player): Item[] {
+  return [...activeEquipment(player).map(([, item]) => item), ...activeCharms(player)];
+}
+/** Dynamic numeric aggregate for engine consumers. No descriptors, socket snapshots or provenance. */
+export function equipmentModifiers(player: Player): ItemMods {
+  const equipped = activeEquipment(player).map(([, item]) => item);
+  return sumMods([...equipped, ...activeCharms(player)], player.level, equipped);
 }
 export function skillLevel(player: Player, skillId: number): number {
   if (skillId === 0) return 1;
   const skill = getSkill(skillId);
   if (!skill || player.classId !== skill.classId) return 0;
-  const mods = sumMods(activeItems(player));
+  const mods = equipmentModifiers(player);
   const hard = Math.max(0, player.skills[skillId] ?? 0);
   const granted = Math.max(0, mods[`skill:${skillId}`] ?? 0);
   if (hard + granted <= 0) return 0;
   const classBonus = (mods.classSkills ?? 0) + (mods[`classSkill:${player.classId}`] ?? 0);
   const treeBonus = mods[`skillTab:${player.classId}:${skill.tree}`] ?? 0;
   const fireBonus = text(skill.raw, 'EType') === 'fire' ? (mods.fireSkills ?? 0) : 0;
-  return Math.max(0, hard + granted + (mods.allSkills ?? 0) + classBonus + treeBonus + fireBonus);
+  const temporaryBonus = skill.supported ? (temporaryMods(player).allSkills ?? 0) : 0;
+  return Math.max(0, hard + granted + (mods.allSkills ?? 0) + classBonus + treeBonus + fireBonus + temporaryBonus);
 }
 
 function linear(row: RawRow, level: number, first: number): number {
@@ -198,28 +267,32 @@ function passiveValue(player: Player, id: number): number {
 
 export function deriveStats(player: Player): DerivedStats {
   const def = getClass(player.classId), equipment = activeEquipment(player), items = activeItems(player);
-  const mods = sumMods(items), mod = (key: string): number => mods[key] ?? 0;
+  const equipped = equipment.map(([, item]) => item);
+  const mods = sumMods(items, player.level, equipped), set = setModifiers(equipped, player.level), temporary = temporaryMods(player);
+  const itemMods = (item: Item): ItemMods => effectiveItemModifiers(item, player.level, equipped);
+  const mod = (key: string): number => (mods[key] ?? 0) + (temporary[key] ?? 0);
   const strength = Math.max(0, player.strength + mod('strength'));
   const dexterity = Math.max(0, player.dexterity + mod('dexterity'));
   const vitality = Math.max(0, player.vitality + mod('vitality'));
   const energy = Math.max(0, player.energy + mod('energy'));
   const levels = player.level - 1;
-  const maxLife = fixed(Math.max(1, def.life + levels * def.lifePerLevel + (vitality - def.vitality) * def.lifePerVitality + mod('life') + player.bonusLife));
+  const lifeBase = def.life + levels * def.lifePerLevel + (player.vitality - def.vitality) * def.lifePerVitality + mod('life') + player.bonusLife;
+  const maxLife = fixed(Math.max(1, lifeBase * (100 + mod('maxLifePercent')) / 100 + (vitality - player.vitality) * def.lifePerVitality + mod('lifePerLevelBonus')));
   const manaBase = def.mana + levels * def.manaPerLevel + (player.energy - def.energy) * def.manaPerEnergy + mod('mana');
-  const maxMana = fixed(Math.max(0, manaBase * (100 + mod('maxManaPercent')) / 100 + (energy - player.energy) * def.manaPerEnergy));
+  const maxMana = fixed(Math.max(0, manaBase * (100 + mod('maxManaPercent')) / 100 + (energy - player.energy) * def.manaPerEnergy + mod('manaPerLevelBonus')));
   const baseStamina = def.stamina + levels * def.staminaPerLevel + (vitality - def.vitality) * def.staminaPerVitality + mod('stamina');
   const maxStamina = fixed(Math.max(0, baseStamina * (100 + passiveValue(player, 141)) / 100));
-  // Defense/min/max already contain each item's local ED. Never apply it again.
-  const armorDefense = equipment.reduce((total, [, item]) => total + item.defense, 0);
-  const globalDefensePercent = items.reduce((total, item) => total + (armorRows.has(item.code) ? 0 : effectiveMods(item).defensePercent ?? 0), 0);
-  const defense = Math.max(0, Math.floor((Math.floor(dexterity / 4) + armorDefense) * (100 + globalDefensePercent + passiveValue(player, 145)) / 100));
+  // Rebuild local targets from persisted base rolls, without baking level/set bonuses into saves.
+  const armorDefense = equipment.reduce((total, [, item]) => total + effectiveItemStats(item, itemMods(item)).defense, 0) + (set.defense ?? 0) + activeCharms(player).reduce((total, item) => total + (itemMods(item).defense ?? 0) + (itemMods(item).localDefense ?? 0), 0);
+  const globalDefensePercent = (set.defensePercent ?? 0) + items.reduce((total, item) => total + (armorRows.has(item.code) ? 0 : itemMods(item).defensePercent ?? 0), 0);
+  const defense = Math.max(0, Math.floor((Math.floor(dexterity / 4) + armorDefense) * (100 + globalDefensePercent + (temporary.defensePercent ?? 0) + passiveValue(player, 145)) / 100));
   const weaponSlot: Slot = player.weaponSwap ? 'weapon2' : 'weapon';
   const offhandSlot: Slot = player.weaponSwap ? 'offhand2' : 'offhand';
   const weapon = equipment.find(([slot]) => slot === weaponSlot)?.[1];
   const offhand = equipment.find(([slot]) => slot === offhandSlot)?.[1];
   const weaponRow = weapon ? weaponRows.get(weapon.code) : undefined;
   const offhandWeapon = offhand && weaponRows.has(offhand.code) ? offhand : undefined;
-  const localOffhand = offhandWeapon ? effectiveMods(offhandWeapon) : {};
+  const localOffhand = offhandWeapon ? itemMods(offhandWeapon) : {};
   const attackMod = (key: string): number => mod(key) - (localOffhand[key] ?? 0);
   const elementalDamage = Object.fromEntries((['fire', 'cold', 'lightning', 'magic'] as const).map(element => {
     const suffix = element[0].toUpperCase() + element.slice(1);
@@ -231,12 +304,13 @@ export function deriveStats(player: Player): DerivedStats {
     : strength;
   // localDamagePercent on the attacking weapon is baked in; on other items it
   // is off-weapon enhanced damage (for example an ED jewel in body armor).
-  const globalDamagePercent = mod('damagePercent') + items.reduce((total, item) => total + (weaponRows.has(item.code) ? 0 : effectiveMods(item).localDamagePercent ?? 0), 0);
+  const globalDamagePercent = mod('damagePercent') + items.reduce((total, item) => total + (weaponRows.has(item.code) ? 0 : itemMods(item).localDamagePercent ?? 0), 0);
   const damageMultiplier = Math.max(0, (100 + statDamagePercent + globalDamagePercent) / 100);
-  const flatMin = items.reduce((total, item) => total + (weaponRows.has(item.code) ? 0 : effectiveMods(item).minDamage ?? 0), 0);
-  const flatMax = items.reduce((total, item) => total + (weaponRows.has(item.code) ? 0 : effectiveMods(item).maxDamage ?? 0), 0);
-  const minDamage = Math.max(0, Math.floor(((weapon?.minDamage ?? 1) + flatMin) * damageMultiplier));
-  const maxDamage = Math.max(minDamage, Math.floor(((weapon?.maxDamage ?? 2) + flatMax) * damageMultiplier));
+  const flatMin = (set.minDamage ?? 0) + items.reduce((total, item) => total + (weaponRows.has(item.code) ? 0 : itemMods(item).minDamage ?? 0), 0);
+  const flatMax = (set.maxDamage ?? 0) + (set.localMaxDamage ?? 0) + items.reduce((total, item) => total + (weaponRows.has(item.code) ? 0 : (itemMods(item).maxDamage ?? 0) + (itemMods(item).localMaxDamage ?? 0)), 0);
+  const localWeapon = weapon ? effectiveItemStats(weapon, itemMods(weapon)) : { minDamage: 1, maxDamage: 2 };
+  const minDamage = Math.max(0, Math.floor((localWeapon.minDamage + flatMin) * damageMultiplier));
+  const maxDamage = Math.max(minDamage, Math.floor((localWeapon.maxDamage + flatMax) * damageMultiplier));
   const shieldRow = offhand ? armorRows.get(offhand.code) : undefined;
   const shield = shieldRow && ['shie', 'ashd', 'head'].includes(text(shieldRow, 'type'));
   // The filtered mirror omits Buckler's block column. Its legacy item block=5
@@ -246,10 +320,10 @@ export function deriveStats(player: Player): DerivedStats {
   const penalty = DIFFICULTY_RULES[player.difficulty].resistancePenalty;
   const commonResist = penalty + player.bonusResist + mod('resAll') + passiveValue(player, 153);
   const resistances = {
-    fire: playerResistance(commonResist + mod('resFire')),
-    cold: playerResistance(commonResist + mod('resCold')),
-    lightning: playerResistance(commonResist + mod('resLightning')),
-    poison: playerResistance(commonResist + mod('resPoison')),
+    fire: playerResistance(commonResist + mod('resFire'), mod('maxResFire') + mod('maxResAll')),
+    cold: playerResistance(commonResist + mod('resCold'), mod('maxResCold') + mod('maxResAll')),
+    lightning: playerResistance(commonResist + mod('resLightning'), mod('maxResLightning') + mod('maxResAll')),
+    poison: playerResistance(commonResist + mod('resPoison'), mod('maxResPoison') + mod('maxResAll')),
   };
   const belt = equipment.find(([slot]) => slot === 'belt')?.[1];
   const beltRow = belt ? armorRows.get(belt.code) : undefined;
@@ -258,6 +332,11 @@ export function deriveStats(player: Player): DerivedStats {
   const layout = beltRow ? rawRows('belts')[num(beltRow, 'belt')] : undefined;
   const upgradedBelt = beltRow && text(beltRow, 'normcode') && text(beltRow, 'normcode') !== text(beltRow, 'code');
   const beltRows = upgradedBelt ? 4 : layout ? num(layout, 'numboxes', 4) / 4 : 1;
+  const equipmentAuras = Object.entries(mods).flatMap(([key, level]) => {
+    if (!key.startsWith('aura:') || !Number.isFinite(level) || level <= 0) return [];
+    const id = Number(key.slice(5));
+    return Number.isInteger(id) && id > 0 ? [id] : [];
+  });
   return {
     strength, dexterity, vitality, energy, maxLife, maxMana, maxStamina, defense, attackRating,
     minDamage, maxDamage, block, resistances, resFire: resistances.fire.effective, resCold: resistances.cold.effective,
@@ -265,10 +344,10 @@ export function deriveStats(player: Player): DerivedStats {
     magicFind: mod('magicFind'), goldFind: mod('goldFind'), fcr: mod('fcr'), fhr: mod('fhr'),
     ias: mod('ias') - (localOffhand.ias ?? 0), frw: mod('frw'),
     lifeLeech: mod('lifeLeech') - (localOffhand.lifeLeech ?? 0), manaLeech: mod('manaLeech') - (localOffhand.manaLeech ?? 0),
-    damageReduction: clamp(mod('damageReduction'), 0, 50), flatReduction: Math.max(0, mod('flatReduction')),
+    damageReduction: clamp(mod('damageReduction'), 0, 50), flatReduction: Math.max(0, mod('flatReduction')), flatMagicReduction: Math.max(0, mod('flatMagicReduction')),
     criticalStrike: clamp(passiveValue(player, 9), 0, 100), deadlyStrike: clamp(attackMod('deadlyStrike'), 0, 100),
     manaRegenPercent: mod('manaRegenPercent') + passiveValue(player, 37), elementalDamage, coldLength: Math.max(0, attackMod('coldLength')),
-    allSkills: mod('allSkills'), beltRows,
+    allSkills: mod('allSkills'), beltRows, equipmentAuras,
   };
 }
 export function allocateStat(player: Player, stat: StatKey): boolean {
@@ -355,9 +434,11 @@ export function skillEffect(player: Player, skillId: number): SkillEffect {
       // Add skill ED to the same strength/off-weapon ED bucket, not multiply
       // the already-enhanced displayed attack damage by another ED factor.
       const slot: Slot = player.weaponSwap ? 'weapon2' : 'weapon';
-      const weapon = player.equipment[slot];
-      const baseMin = weapon && usable(weapon) ? weapon.minDamage : 1;
-      const baseMax = weapon && usable(weapon) ? weapon.maxDamage : 2;
+      const equipped = activeEquipment(player).map(([, item]) => item);
+      const weapon = activeEquipment(player).find(([held]) => held === slot)?.[1];
+      const local = weapon ? effectiveItemStats(weapon, effectiveItemModifiers(weapon, player.level, equipped)) : { minDamage: 1, maxDamage: 2 };
+      const baseMin = local.minDamage;
+      const baseMax = local.maxDamage;
       min = Math.max(0, stats.minDamage + Math.floor(baseMin * bonus / 100) + flat);
       max = Math.max(min, stats.maxDamage + Math.floor(baseMax * bonus / 100) + flat);
     }
@@ -438,6 +519,8 @@ export function grantExperience(player: Player, monsterLevel: number, baseXp: nu
   }
   const ratio = xpRatios.get(level) ?? 1024;
   earned = earned >= 2_097_152 ? Math.floor(earned / 1024) * ratio : Math.floor(earned * ratio / 1024);
+  const shrine = temporaryShrine(player);
+  if (shrine?.code === 15) earned = Math.floor(earned * (100 + shrine.arg0) / 100);
   const before = player.experience;
   player.experience = Math.min(EXPERIENCE[99], before + earned);
   let leveled = false;

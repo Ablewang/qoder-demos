@@ -3,13 +3,14 @@ import test from 'node:test';
 import { readFileSync } from 'node:fs';
 import { getClass, num, rawRows, text } from '../src/catalog';
 import type { ClassId, Item, Monster, Player, Rng } from '../src/types';
-import { deriveStats, skillLevel } from '../src/rules';
+import { activeEquipment, activeItems, createPlayer, deriveStats, equipmentModifiers, skillLevel } from '../src/rules';
 import {
   BASE_ITEMS, ITEM_LIMITATIONS, RUNES, GEMS, RUNEWORDS, affixLevel, allowedSockets, itemLabel,
   consumePotion, consumeInventoryPotion, isUsableItem, itemName, runewordName,
   createItem, createStartingItems, describeItem, unmetItemRequirements, equipItem, fitsItem,
   getBase, insertSocket, itemHasType, placeItem, qualityDenominator, effectiveMagicFind,
   repairCost, repairItems, rollLoot, transmute, unequipItem, vendorStock,
+  TOME_CAPACITY, canFillTome, fillTome, itemSellPrice, effectiveItemModifiers, effectiveItemStats, namedItemRow, EQUIPMENT_SCALAR_KEYS, setModifiers,
 } from '../src/items';
 import { ART_KEYS, artUrl, itemArtKey } from '../src/art';
 
@@ -273,7 +274,9 @@ test('Leaf fire bonuses enhance learned Assassin fire skills but native staff gr
   assert.equal(skillLevel(p, 251), 4); assert.equal(skillLevel(p, 36), 0); assert.equal(skillLevel(p, 37), 0);
   assert.equal(deriveStats(p).manaRegenPercent, 0);
   assert.ok(describeItem(staff).includes('+3 火焰技能'));
-  assert.ok(describeItem(staff).some(line => line.includes('未实现属性：ac/lvl')));
+  assert.ok(describeItem(staff).some(line => line.includes('每角色等级 +2 防御')));
+  assert.equal(staff.mods['perLevel:ac/lvl'], 16);
+  assert.equal(deriveStats(p).defense, Math.floor(deriveStats(p).dexterity / 4) + p.level * 2);
 });
 
 for (const [index, name] of [
@@ -430,7 +433,8 @@ test('magic/rare affixes honor alvl, types, groups and maximum 3+3; unique/set f
   assert.equal(createItem('crs', 99, fixed, 'unique').quality, 'rare', 'disabled legacy Crystal Sword Azurewrath must not generate');
   const set = createItem('lgl', 12, fixed, 'set'); assert.equal(set.quality, 'set'); assert.equal(set.ethereal, false);
   unique.identified = true;
-  assert.ok(describeItem(unique).some(line => line.includes('未实现属性')));
+  assert.equal(unique.mods.openWounds, 50);
+  assert.ok(describeItem(unique).some(line => line.includes('撕开伤口') && line.includes('仅保存')));
 });
 
 test('recursive real monster TC drops preserve ilvl, NoDrop and seed, exclude quest/unknown items', () => {
@@ -553,7 +557,7 @@ for (const difficulty of ['normal', 'nightmare', 'hell'] as const) test(`conveni
     assert.equal(offer.requiredLevel, base.requiredLevel); assert.equal(offer.identified, true);
     assert.equal(offer.ethereal, false); assert.equal(offer.quantity, 1);
     assert.equal(offer.width, base.width); assert.equal(offer.height, base.height);
-    if (code.startsWith('pk')) assert.match(describeItem(offer).join(' '), /事件尚未开放.*不能合成事件传送门/);
+    if (code.startsWith('pk')) assert.match(describeItem(offer).join(' '), /赫拉迪克方块中合成.*传送门/);
   }
   const jordans = stock.filter(item => item.name === 'The Stone of Jordan'); assert.equal(jordans.length, 1);
   const jordan = jordans[0]; assert.equal(jordan.price, 14000); assert.equal(jordan.requiredLevel, 29);
@@ -728,6 +732,212 @@ test('usable-item boundaries do not consume scrolls, books, unimplemented potion
   }
 });
 
+test('tome family matching ignores capacity and never accepts books, scroll pairs or the same UID', () => {
+  assert.equal(TOME_CAPACITY, 20);
+  const items = ['tsc', 'isc', 'tbk', 'ibk', 'hp1'].map(code => createItem(code, 1, fixed));
+  for (const source of items) for (const target of items) {
+    const before = structuredClone([source, target]);
+    const expected = source.uid !== target.uid && (source.code === 'tsc' && target.code === 'tbk' || source.code === 'isc' && target.code === 'ibk');
+    assert.equal(canFillTome(source, target), expected, `${source.code} → ${target.code}`);
+    assert.deepEqual([source, target], before);
+  }
+  for (const [scrollCode, tomeCode] of [['tsc', 'tbk'], ['isc', 'ibk']]) {
+    const scroll = createItem(scrollCode, 1, fixed), tome = createItem(tomeCode, 1, fixed);
+    for (const quantity of [0, 19, 20, 21, NaN]) {
+      tome.quantity = quantity;
+      assert.equal(canFillTome(scroll, tome), true, 'family matching must not validate capacity or quantity');
+    }
+    assert.equal(canFillTome(scroll, { ...tome, uid: scroll.uid }), false);
+  }
+});
+
+for (const [scrollCode, tomeCode] of [['tsc', 'tbk'], ['isc', 'ibk']]) {
+  for (const quantity of [0, 19]) test(`${scrollCode} fills ${tomeCode} from ${quantity} by exactly one without repacking`, () => {
+    const p = player(), first = put(p, 'r01'), scroll = put(p, scrollCode), tome = put(p, tomeCode), otherTome = put(p, tomeCode), last = put(p, 'hp1');
+    assert.equal(scroll.quantity, 1, 'new scrolls are unstacked');
+    tome.quantity = quantity; otherTome.quantity = 0;
+    tome.name = 'Historical Tome'; tome.mods['internal:legacy'] = 7;
+    p.stash.push(createItem(scrollCode, 1, fixed)); p.cube.push(createItem(tomeCode, 1, fixed));
+    const inventory = p.inventory, before = structuredClone(p), sourceBefore = structuredClone(scroll);
+    const result = fillTome(p, scroll.uid, tome.uid);
+    assert.equal(result.ok, true); assert.match(result.message, new RegExp(`${quantity + 1}/20`));
+    const expected = { ...before, inventory: before.inventory.filter(item => item.uid !== scroll.uid) };
+    expected.inventory.find(item => item.uid === tome.uid)!.quantity = quantity + 1;
+    assert.deepEqual(p, expected);
+    assert.equal(p.inventory, inventory, 'preserve the inventory array');
+    assert.deepEqual(p.inventory, [first, tome, otherTome, last]);
+    assert.equal(p.inventory[1], tome, 'preserve item references');
+    assert.deepEqual(scroll, sourceBefore, 'removal must not rewrite the consumed object');
+    assert.equal(new Set(p.inventory.map(item => item.uid)).size, p.inventory.length);
+    const after = structuredClone(p);
+    assert.equal(fillTome(p, scroll.uid, tome.uid).ok, false, 'removed UID cannot be consumed twice');
+    assert.deepEqual(p, after);
+  });
+
+  test(`${tomeCode} at 20 refuses ${scrollCode} atomically with a full-book message`, () => {
+    for (const scrollQuantity of [1, 3]) {
+      const p = player(), scroll = put(p, scrollCode), tome = put(p, tomeCode), spare = put(p, tomeCode);
+      scroll.quantity = scrollQuantity; tome.quantity = TOME_CAPACITY; spare.quantity = 0;
+      const before = structuredClone(p), persisted = JSON.stringify(p), inventory = p.inventory;
+      assert.equal(canFillTome(scroll, tome), true);
+      const result = fillTome(p, scroll.uid, tome.uid);
+      assert.equal(result.ok, false); assert.match(result.message, /已满.*20\/20/);
+      assert.deepEqual(p, before); assert.equal(JSON.stringify(p), persisted); assert.equal(p.inventory, inventory);
+    }
+  });
+
+  test(`${scrollCode} legacy stacks lose only one per fill and retain their UID and coordinates`, () => {
+    const p = player(), scroll = put(p, scrollCode), tome = put(p, tomeCode), neighbor = put(p, 'r01');
+    scroll.quantity = 3; tome.quantity = 0;
+    const inventory = p.inventory, before = structuredClone(p);
+    for (let n = 1; n <= 3; n++) {
+      assert.equal(fillTome(p, scroll.uid, tome.uid).ok, true);
+      const expected = structuredClone(before);
+      expected.inventory[0].quantity = 3 - n; expected.inventory[1].quantity = n;
+      if (n === 3) expected.inventory.splice(0, 1);
+      assert.deepEqual(p, expected); assert.equal(p.inventory, inventory);
+      assert.equal(p.inventory.find(item => item.uid === tome.uid), tome);
+      assert.equal(p.inventory.find(item => item.uid === neighbor.uid), neighbor);
+      if (n < 3) assert.equal(p.inventory[0], scroll);
+    }
+    const after = structuredClone(p);
+    assert.equal(fillTome(p, scroll.uid, tome.uid).ok, false); assert.deepEqual(p, after);
+  });
+
+  test(`${tomeCode} rejects illegal book and scroll quantities without changing any player data`, () => {
+    const invalidTomes: unknown[] = [-1, .5, 19.5, 21, NaN, Infinity, -Infinity, undefined, null, '1'];
+    const invalidScrolls: unknown[] = [0, -1, .5, 1.5, NaN, Infinity, -Infinity, undefined, null, '1', Number.MAX_SAFE_INTEGER + 1];
+    for (const [side, values] of [['tome', invalidTomes], ['scroll', invalidScrolls]] as const) {
+      for (const value of values) {
+        const p = player(), scroll = put(p, scrollCode), tome = put(p, tomeCode);
+        tome.quantity = 0;
+        (side === 'tome' ? tome : scroll).quantity = value as number;
+        const before = structuredClone(p), persisted = JSON.stringify(p), inventory = p.inventory;
+        assert.equal(fillTome(p, scroll.uid, tome.uid).ok, false, `${side}: ${String(value)}`);
+        assert.deepEqual(p, before); assert.equal(JSON.stringify(p), persisted); assert.equal(p.inventory, inventory);
+      }
+    }
+  });
+}
+
+test('fillTome rejects wrong families, reverse direction, book merging, scroll merging and the same UID', () => {
+  for (const [sourceCode, targetCode] of [['tsc', 'ibk'], ['isc', 'tbk'], ['tbk', 'tsc'], ['ibk', 'isc'], ['tbk', 'tbk'], ['ibk', 'ibk'], ['tsc', 'tsc'], ['isc', 'isc'], ['hp1', 'tbk'], ['tsc', 'hp1']]) {
+    const p = player(), source = put(p, sourceCode), target = put(p, targetCode);
+    const before = structuredClone(p);
+    assert.equal(fillTome(p, source.uid, target.uid).ok, false, `${sourceCode} → ${targetCode}`);
+    assert.deepEqual(p, before);
+    assert.equal(fillTome(p, source.uid, source.uid).ok, false);
+    assert.deepEqual(p, before);
+  }
+});
+
+test('both fillTome participants must exist in inventory, never stash, cube, equipment, belt or nowhere', () => {
+  for (const [scrollCode, tomeCode] of [['tsc', 'tbk'], ['isc', 'ibk']]) {
+    for (const side of ['scroll', 'tome', 'both'] as const) for (const location of ['stash', 'cube', 'equipment', 'belt', 'missing'] as const) {
+      const p = player(), scroll = createItem(scrollCode, 1, fixed), tome = createItem(tomeCode, 1, fixed);
+      tome.quantity = 0;
+      for (const [role, item] of [['scroll', scroll], ['tome', tome]] as const) {
+        if (side !== 'both' && side !== role) p.inventory.push(item);
+        else if (location === 'stash' || location === 'cube') p[location].push(item);
+        else if (location === 'equipment') p.equipment[role === 'scroll' ? 'ring1' : 'ring2'] = item;
+        else if (location === 'belt') p.belt[role === 'scroll' ? 0 : 1] = item;
+      }
+      const before = structuredClone(p), itemsBefore = structuredClone([scroll, tome]);
+      assert.equal(fillTome(p, scroll.uid, tome.uid).ok, false, `${side} in ${location}`);
+      assert.deepEqual(p, before); assert.deepEqual([scroll, tome], itemsBefore);
+    }
+  }
+});
+
+test('duplicate source or target UIDs are rejected atomically instead of selecting an ambiguous item', () => {
+  for (const side of ['scroll', 'tome'] as const) for (const duplicateKind of ['copy', 'same-reference', 'different-code'] as const) {
+    const p = player(), scroll = put(p, 'tsc'), tome = put(p, 'tbk'); tome.quantity = 0;
+    const selected = side === 'scroll' ? scroll : tome;
+    const duplicate = duplicateKind === 'same-reference' ? selected : { ...structuredClone(selected), ...(duplicateKind === 'different-code' ? { code: 'hp1' } : {}) };
+    p.inventory.push(duplicate);
+    const before = structuredClone(p), inventory = p.inventory;
+    assert.equal(fillTome(p, scroll.uid, tome.uid).ok, false);
+    assert.deepEqual(p, before); assert.equal(p.inventory, inventory);
+    assert.equal(p.inventory[2], duplicate);
+  }
+});
+
+test('tome descriptions always show n/20 without mutating saved data; other stackables keep n', () => {
+  for (const code of ['tbk', 'ibk']) for (const quantity of [0, 1, 19, 20]) for (const identified of [true, false]) {
+    const item = createItem(code, 1, fixed); item.quantity = quantity; item.identified = identified;
+    const before = structuredClone(item), persisted = JSON.stringify(item);
+    assert.deepEqual(describeItem(item).filter(line => line.startsWith('数量：')), [`数量：${quantity}/20`]);
+    assert.deepEqual(item, before); assert.equal(JSON.stringify(item), persisted);
+    assert.deepEqual(describeItem(JSON.parse(persisted) as Item), describeItem(item));
+  }
+  for (const base of BASE_ITEMS.filter(base => num(base.raw, 'stackable') && !['tbk', 'ibk'].includes(base.code))) {
+    for (const quantity of [0, 1, 20]) {
+      const item = createItem(base.code, 1, fixed); item.quantity = quantity;
+      assert.deepEqual(describeItem(item).filter(line => line.startsWith('数量：')), [`数量：${quantity}`]);
+    }
+  }
+});
+
+test('tome support preserves raw drop spawn quantities and default vendor quantities', () => {
+  const stock = vendorStock(player(), seeded(1));
+  for (const code of ['tbk', 'ibk']) {
+    const base = getBase(code)!;
+    assert.equal(num(base.raw, 'maxstack'), TOME_CAPACITY); assert.equal(num(base.raw, 'spawnstack'), 5);
+    assert.deepEqual([0, .5, 1].map(value => createItem(code, 1, () => value).quantity), [1, 3, 5]);
+    assert.equal(stock.find(item => item.code === code)!.quantity, 3);
+  }
+  for (const code of ['tsc', 'isc']) assert.equal(createItem(code, 1, fixed).quantity, 1);
+});
+
+test('itemSellPrice floors the original quarter-price and retains the minimum one gold', () => {
+  const item = createItem('hax', 1, fixed);
+  for (const [price, expected] of [[-4, 1], [0, 1], [1, 1], [3, 1], [4, 1], [7, 1], [8, 2], [39, 9], [43, 10]]) {
+    item.price = price;
+    const before = structuredClone(item);
+    for (const difficulty of ['normal', 'nightmare', 'hell'] as const) assert.equal(itemSellPrice(item, difficulty, 1), expected);
+    assert.deepEqual(item, before);
+  }
+});
+
+test('itemSellPrice applies normal act caps and fixed nightmare/hell caps at their boundaries', () => {
+  const item = createItem('rin', 1, fixed);
+  for (const difficulty of ['normal', 'nightmare', 'hell'] as const) for (let act = 1; act <= 5; act++) {
+    const cap = difficulty === 'normal' ? 5000 * act : difficulty === 'nightmare' ? 30000 : 35000;
+    for (const [price, expected] of [[(cap - 1) * 4 + 3, cap - 1], [cap * 4, cap], [(cap + 1) * 4, cap], [1000000, cap]]) {
+      item.price = price;
+      const before = structuredClone(item);
+      assert.equal(itemSellPrice(item, difficulty, act), expected, `${difficulty} act ${act}, price ${price}`);
+      assert.deepEqual(item, before);
+    }
+  }
+});
+
+test('itemSellPrice returns null for cube and every ques base on every difficulty and act', () => {
+  const questBases = BASE_ITEMS.filter(base => base.type === 'ques' || base.code === 'box');
+  assert.ok(questBases.some(base => base.code === 'box')); assert.ok(questBases.some(base => base.code !== 'box'));
+  for (const base of questBases) {
+    const item = createItem(base.code, 99, fixed); item.price = 1000000;
+    const before = structuredClone(item);
+    for (const difficulty of ['normal', 'nightmare', 'hell'] as const) for (let act = 1; act <= 5; act++) {
+      assert.equal(itemSellPrice(item, difficulty, act), null, base.code);
+    }
+    assert.deepEqual(item, before);
+  }
+});
+
+test('sell valuation never multiplies quantities or changes prices, identity, equipment stats or event-key rules', () => {
+  for (const code of ['tbk', 'ibk', 'key', 'aqv', 'hax', 'pk1', 'pk2', 'pk3']) {
+    const item = createItem(code, 1, fixed); item.price = 43;
+    item.identified = false; item.ethereal = true; item.durability = 0; item.mods.vendorDiscount = 99; item.mods.strength = 7;
+    for (const quantity of [0, 1, 3, 20]) {
+      item.quantity = quantity;
+      const before = structuredClone(item), persisted = JSON.stringify(item);
+      assert.equal(itemSellPrice(item, 'normal', 1), code.startsWith('pk') ? null : 10, code);
+      assert.deepEqual(item, before); assert.equal(JSON.stringify(item), persisted);
+    }
+  }
+});
+
 test('vendor excludes quest cube and repair is transactional, excludes ethereal', () => {
   const p = player(); const stock = vendorStock(p, seeded(1));
   for (const code of ['hp1', 'mp1', 'tsc', 'isc', 'tbk', 'ibk']) assert.ok(stock.some(i => i.code === code));
@@ -738,4 +948,207 @@ test('vendor excludes quest cube and repair is transactional, excludes ethereal'
   const cost = repairCost(p); assert.ok(cost > 0); const before = JSON.stringify(p);
   assert.equal(repairItems(p).ok, false); assert.equal(JSON.stringify(p), before);
   p.gold = cost; assert.ok(repairItems(p).ok); assert.equal(p.gold, 0); assert.equal(p.equipment.weapon.durability, p.equipment.weapon.maxDurability); assert.equal(p.equipment.body.durability, 0);
+});
+
+function named(name: string, quality: 'unique' | 'set' = 'set', rng: Rng = fixed): Item {
+  const row = rawRows(quality === 'set' ? 'SetItems' : 'UniqueItems').find(row => text(row, 'index') === name)!;
+  const result = createItem(text(row, quality === 'set' ? 'item' : 'code'), 99, rng, quality, name);
+  result.identified = true;
+  return result;
+}
+
+test('inventory strength charms enable equipping and removal/raised level deactivates every stat and skill consumer', () => {
+  const p = player('sor'), charm = put(p, 'cm1'); charm.mods = { strength: 2 }; charm.identified = true;
+  const armor = put(p, 'qui'); armor.mods = { allSkills: 2, life: 20 }; p.skills[36] = 1;
+  assert.equal(equipItem(p, armor.uid).ok, true); assert.equal(skillLevel(p, 36), 3);
+  assert.equal(deriveStats(p).maxLife, 60); assert.equal(equipmentModifiers(p).life, 20);
+  const before = JSON.stringify(p); for (let i = 0; i < 4; i++) { deriveStats(p); equipmentModifiers(p); unmetItemRequirements(p, armor); }
+  assert.equal(JSON.stringify(p), before);
+  p.inventory.find(item => item.uid === charm.uid)!.requiredLevel = 2;
+  assert.equal(activeEquipment(p).length, 0); assert.equal(skillLevel(p, 36), 1); assert.equal(deriveStats(p).maxLife, 40);
+  assert.ok(unmetItemRequirements(p, armor).includes('需要力量：12'));
+  p.level = 2; assert.equal(skillLevel(p, 36), 3);
+  p.inventory = p.inventory.filter(item => item.uid !== charm.uid);
+  assert.equal(activeEquipment(p).length, 0); assert.equal(equipmentModifiers(p).allSkills, undefined);
+  p.stash.push(charm); p.cube.push(structuredClone(charm)); p.belt[0] = structuredClone(charm);
+  assert.equal(activeItems(p).length, 0); assert.equal(skillLevel(p, 36), 1);
+});
+
+test('unidentified, unknown, broken, foreign-class and level-invalid gear/charms never support requirements', () => {
+  for (const invalid of ['unknown', 'unidentified', 'broken', 'foreign', 'level', 'backup', 'ordinary', 'unknownCharm', 'unidentifiedCharm', 'levelCharm']) {
+    const p = player('sor'); p.strength = 10;
+    const support = createItem(invalid === 'foreign' ? 'ba1' : invalid.includes('Charm') ? 'cm1' : 'cap', 99, fixed);
+    support.mods = { strength: 1000 }; support.requiredLevel = 0;
+    if (invalid === 'unknown' || invalid === 'unknownCharm') support.code = 'not-a-base';
+    if (invalid === 'unidentified' || invalid === 'unidentifiedCharm') support.identified = false;
+    if (invalid === 'broken') support.durability = 0;
+    if (invalid === 'level' || invalid === 'levelCharm') support.requiredLevel = 2;
+    if (invalid === 'ordinary' || invalid.includes('Charm')) p.inventory.push(support);
+    else p.equipment[invalid === 'backup' ? 'weapon2' : 'head'] = support;
+    const armor = put(p, 'qui'), before = JSON.stringify(p);
+    assert.equal(equipItem(p, armor.uid).ok, false, invalid); assert.equal(JSON.stringify(p), before);
+    assert.equal(equipmentModifiers(p).strength ?? 0, 0, invalid);
+  }
+});
+
+test('rooted activation rejects self-support and mutual cycles but permits independent multi-item chains', () => {
+  const p = player('sor'); p.strength = 0;
+  const shield = put(p, 'buc'); shield.mods = { strength: 30 };
+  const belt = put(p, 'tbl'); belt.mods = { strength: 30 };
+  assert.equal(equipItem(p, shield.uid).ok, false); assert.equal(equipItem(p, belt.uid).ok, false);
+  p.equipment = { offhand: shield, belt }; p.inventory = [];
+  assert.deepEqual(activeEquipment(p), []); assert.equal(deriveStats(p).strength, 0);
+  const ring = createItem('rin', 1, fixed); ring.mods = { strength: 15 }; p.equipment.ring1 = ring;
+  assert.equal(activeEquipment(p).length, 3); assert.equal(deriveStats(p).strength, 75);
+  p.equipment.ring1!.identified = false;
+  assert.equal(activeEquipment(p).length, 0); assert.equal(deriveStats(p).strength, 0);
+});
+
+test('weapon swapping removes support chains and indestructible durability zero stays consistently usable', () => {
+  const p = player('sor'); p.strength = 0;
+  const axe = createItem('hax', 1, fixed); axe.mods = { strength: 20, indestructible: 1 }; axe.durability = 0;
+  const armor = put(p, 'qui'); armor.mods = { 'skill:36': 1 };
+  p.equipment.weapon = axe;
+  assert.equal(equipItem(p, armor.uid).ok, true); assert.equal(skillLevel(p, 36), 1); assert.equal(deriveStats(p).strength, 20);
+  p.weaponSwap = true;
+  assert.deepEqual(activeEquipment(p), []); assert.equal(skillLevel(p, 36), 0); assert.equal(deriveStats(p).strength, 0);
+  p.weaponSwap = false; assert.equal(skillLevel(p, 36), 1);
+  delete axe.mods.indestructible; assert.equal(activeEquipment(p).length, 0); assert.equal(deriveStats(p).strength, 0);
+});
+
+test('Angelic identity counts distinct pieces, while each duplicate Halo gets its own conditional AR', () => {
+  const p = player(); p.level = 20; p.strength = p.dexterity = 100;
+  const first = named('Angelic Halo'), second = named('Angelic Halo'), wings = named('Angelic Wings');
+  assert.equal(text(namedItemRow(first)!, 'set'), 'Angelical Raiment');
+  assert.equal(first.mods['conditional:count2:perLevel:att/lvl'], 24);
+  p.equipment = { ring1: first, ring2: second };
+  assert.equal(equipmentModifiers(p).attackRating ?? 0, 0); assert.equal(equipmentModifiers(p).dexterity ?? 0, 0);
+  p.equipment.neck = wings;
+  assert.equal(equipmentModifiers(p).attackRating, 480); assert.equal(equipmentModifiers(p).dexterity, 10);
+  assert.equal(equipmentModifiers(p).magicFind ?? 0, 0);
+  p.equipment.body = named('Angelic Mantle');
+  assert.equal(equipmentModifiers(p).magicFind, 100); assert.equal(equipmentModifiers(p).mana, 50);
+  assert.equal(equipmentModifiers(p).resAll ?? 0, 0, 'two rings cannot falsely complete the four-piece set');
+  const snapshot = JSON.stringify(p), stats = deriveStats(p);
+  for (let i = 0; i < 5; i++) { assert.deepEqual(deriveStats(p), stats); equipmentModifiers(p); describeItem(first, p); }
+  assert.equal(JSON.stringify(p), snapshot);
+  const loaded = JSON.parse(snapshot) as Player; assert.deepEqual(deriveStats(loaded), stats); assert.equal(JSON.stringify(loaded), snapshot);
+  wings.identified = false; assert.equal(equipmentModifiers(p).attackRating, 480, 'Mantle is still the second distinct piece');
+  p.equipment.body!.identified = false; assert.equal(equipmentModifiers(p).attackRating ?? 0, 0);
+});
+
+test('Sigon block/allskill, partial leech/IAS and full bonuses use only active identified equipment', () => {
+  const p = player(); p.level = 20; p.strength = p.dexterity = 100; p.skills[96] = 1;
+  const guard = named("Sigon's Guard"), gloves = named("Sigon's Gage");
+  assert.equal(guard.mods.block, 20); assert.equal(guard.mods.allSkills, 1);
+  p.equipment = { offhand: guard, gloves };
+  assert.equal(equipmentModifiers(p).lifeLeech, 10); assert.equal(deriveStats(p).ias, 30); assert.equal(skillLevel(p, 96), 2);
+  assert.equal(deriveStats(p).block, 75);
+  p.weaponSwap = true; assert.equal(equipmentModifiers(p).lifeLeech ?? 0, 0); assert.equal(deriveStats(p).ias, 0); assert.equal(skillLevel(p, 96), 1);
+  p.weaponSwap = false;
+  p.equipment.head = named("Sigon's Visor"); p.equipment.body = named("Sigon's Shelter"); p.equipment.belt = named("Sigon's Wrap"); p.equipment.boots = named("Sigon's Sabot");
+  assert.equal(setModifiers(Object.values(p.equipment) as Item[], p.level).flatReduction, 7);
+  assert.equal(equipmentModifiers(p).flatReduction, 7); assert.equal(setModifiers(Object.values(p.equipment) as Item[], p.level).mana, 20);
+  const snapshot = JSON.stringify(p); for (let i = 0; i < 5; i++) deriveStats(p); assert.equal(JSON.stringify(p), snapshot);
+  guard.durability = 0; assert.equal(skillLevel(p, 96), 1); assert.equal(equipmentModifiers(p).flatReduction ?? 0, 0);
+});
+
+test('addfunc zero is unconditional, addfunc one uses Civerb companion identities and rolls once', () => {
+  const p = player(); p.level = 50; p.strength = p.dexterity = 100;
+  const ward = named("Civerb's Ward", 'set', () => .99), icon = named("Civerb's Icon"), cudgel = named("Civerb's Cudgel");
+  const iconId = ward.mods[`conditional:piece${rawRows('SetItems').indexOf(namedItemRow(icon)!)}:mana`];
+  assert.equal(iconId, 22);
+  p.equipment.offhand = ward;
+  assert.equal(equipmentModifiers(p).mana ?? 0, 0); assert.equal(equipmentModifiers(p).resPoison ?? 0, 0);
+  p.equipment.neck = icon; assert.equal(equipmentModifiers(p).mana, 22); assert.equal(equipmentModifiers(p).resPoison ?? 0, 0);
+  delete p.equipment.neck; p.equipment.weapon = cudgel;
+  assert.equal(equipmentModifiers(p).resPoison, 26); assert.equal(equipmentModifiers(p).localMaxDamage, 50);
+  assert.equal(equipmentModifiers(p).mana ?? 0, 0);
+  const snapshot = JSON.stringify(p); for (let i = 0; i < 5; i++) equipmentModifiers(p); assert.equal(JSON.stringify(p), snapshot);
+  const loaded = JSON.parse(snapshot) as Player; assert.deepEqual(equipmentModifiers(loaded), equipmentModifiers(p));
+  delete ward.mods['internal:conditionalSaved'];
+  for (const key of Object.keys(ward.mods)) if (key.startsWith('conditional:piece')) delete ward.mods[key];
+  assert.equal(equipmentModifiers(p).resPoison ?? 0, 0, 'missing old random roll must not be filled even at the minimum');
+  assert.match(describeItem(ward, p).join(' '), /不补随机/);
+});
+
+test('old pure tuples reinterpret deterministically; variable rolls and missing/ambiguous identity remain unresolved', () => {
+  const p = player(); p.level = 50; p.strength = p.dexterity = 100;
+  const old = createItem('rin', 1, fixed);
+  old.mods = { 'unsupported:hp%::5:5': 1, 'unsupported:abs-fire::3:3': 1, 'unsupported:hp/lvl:12:0:0': 1, 'unsupported:att/lvl:10:0:0': 1, 'unsupported:regen::1:9': 1, 'unsupported:dmg-fire::5:30': 1, 'unsupported:*mana::-25:-25': 1 };
+  p.equipment.ring1 = old;
+  const before = JSON.stringify(p), mods = equipmentModifiers(p);
+  assert.equal(mods.maxLifePercent, 5); assert.equal(mods.absorbFire, 3); assert.equal(mods.lifePerLevelBonus, 75); assert.equal(mods.attackRating, 250);
+  assert.equal(mods.lifeRegen, undefined); assert.equal(mods.minFire, 5); assert.equal(mods.maxFire, 30); assert.equal(mods.mana, undefined);
+  assert.ok(Object.keys(mods).every(key => !/^(unsupported|source|internal|socketBase|conditional|perLevel):/.test(key)));
+  assert.equal(JSON.stringify(p), before);
+  const ring = named('Angelic Halo');
+  delete ring.mods['internal:namedIndex']; delete ring.mods['internal:namedTable'];
+  assert.equal(namedItemRow(ring), rawRows('SetItems').find(row => text(row, 'index') === 'Angelic Halo'));
+  ring.mods['internal:namedRow'] = -1; assert.equal(namedItemRow(ring), undefined);
+  p.equipment = { ring1: ring, neck: named('Angelic Wings') };
+  assert.equal(equipmentModifiers(p).attackRating ?? 0, 0); assert.match(describeItem(ring).join(' '), /身份未解析/);
+  assert.throws(() => createItem('jew', 99, fixed, 'unique', 'Rainbow Facet'), /不唯一/);
+});
+
+test('all eligible named scalar and per-level tuples persist without unsupported descriptors or comment effects', () => {
+  const requested = new Set(['hp%', 'block', 'block1', 'block2', 'block3', 'ac-hth', 'ac-miss', 'ignore-ac', 'reduce-ac', 'dmg-ac', 'att-demon', 'att-undead', 'dmg-demon', 'dmg-undead', 'red-mag', 'res-fire-max', 'res-cold-max', 'res-ltng-max', 'res-pois-max', 'res-all-max', 'extra-fire', 'extra-cold', 'extra-ltng', 'extra-pois', 'pierce-fire', 'pierce-cold', 'pierce-ltng', 'pierce-pois', 'abs-fire', 'abs-fire%', 'abs-cold', 'abs-cold%', 'abs-ltng', 'abs-ltng%', 'abs-mag', 'regen', 'regen-stam', 'stamdrain', 'heal-kill', 'mana-kill', 'demon-heal', 'dmg-to-mana', 'gold%', 'addxp', 'cheap', 'crush', 'openwounds', 'knock', 'stupidity', 'howl', 'slow', 'freeze', 'nofreeze', 'half-freeze', 'res-pois-len', 'noheal', 'thorns', 'light-thorns', 'rip']);
+  let scaling = 0;
+  for (const quality of ['unique', 'set'] as const) {
+    const table = rawRows(quality === 'unique' ? 'UniqueItems' : 'SetItems');
+    for (const row of table.filter(row => (quality === 'set' || num(row, 'enabled') === 1) && num(row, 'lvl') <= 99 && num(row, 'rarity') > 0 && !!getBase(text(row, quality === 'set' ? 'item' : 'code')) && text(row, 'index'))) {
+      const item = createItem(text(row, quality === 'set' ? 'item' : 'code'), 99, fixed, quality); // choose the row below through its actual raw weighting, including duplicate names
+      const candidates = table.filter(candidate => text(candidate, quality === 'set' ? 'item' : 'code') === item.code && (quality === 'set' || num(candidate, 'enabled') === 1) && num(candidate, 'rarity') > 0 && num(candidate, 'lvl') <= 99 && text(candidate, 'index'));
+      const at = candidates.indexOf(row), total = candidates.reduce((sum, candidate) => sum + num(candidate, 'rarity'), 0);
+      const roll = (candidates.slice(0, at).reduce((sum, candidate) => sum + num(candidate, 'rarity'), 0) + num(row, 'rarity') / 2) / total;
+      const actual = createItem(item.code, 99, () => roll, quality); actual.identified = true;
+      assert.equal(namedItemRow(actual), row);
+      for (const [key, code] of Object.entries(row)) {
+        if (!/^(?:prop\d+|aprop\d+[ab])$/.test(key) || typeof code !== 'string' || code.startsWith('*')) continue;
+        if (requested.has(code) || code.endsWith('/lvl')) {
+          assert.ok(!Object.keys(actual.mods).some(stat => stat.includes(`unsupported:${code}:`)), `${text(row, 'index')}: ${code}`);
+          if (code.endsWith('/lvl')) scaling++;
+        }
+      }
+      assert.ok(Object.values(actual.mods).every(Number.isFinite));
+      assert.doesNotMatch(describeItem(actual).join(' '), /(?:conditional|perLevel|internal|socketBase):/);
+    }
+  }
+  assert.ok(scaling > 35); assert.ok(EQUIPMENT_SCALAR_KEYS.includes('flatMagicReduction'));
+  const hellslayer = named('Hellslayer', 'unique'); assert.equal(hellslayer.mods.mana, undefined, 'commented *mana is not a penalty');
+  assert.equal(num(rawRows('UniqueItems').find(row => text(row, 'index') === 'Constricting Ring')!, 'enabled'), 0);
+  assert.throws(() => createItem('rin', 99, fixed, 'unique', 'Constricting Ring'), /不能生成/);
+});
+
+test('every raw rune/gem scalar socket context persists numeric effects and snapshots survive refresh/Hel clearing', () => {
+  const properties = new Map(rawRows('Properties').map(row => [text(row, 'code'), row]));
+  for (const source of [...RUNES, ...GEMS]) for (const [code, context] of [['crs', 'weapon'], ['qui', 'helm'], ['buc', 'shield']] as const) {
+    const p = player(); p.level = 99; p.strength = p.dexterity = 1000;
+    const target = put(p, code, 99); target.sockets = 1;
+    const intrinsic = structuredClone(target.mods), reagent = put(p, source.code, 99);
+    assert.equal(insertSocket(p, target.uid, reagent.uid).ok, true);
+    const row = rawRows('gems').find(row => text(row, 'code') === source.code)!;
+    for (let i = 1; i <= 3; i++) {
+      const property = text(row, `${context}Mod${i}Code`), definition = properties.get(property);
+      if (definition && [1, 8].includes(num(definition, 'func1'))) assert.ok(!Object.keys(target.mods).some(key => key.startsWith(`unsupported:${property}:`)), `${source.code}/${context}/${property}`);
+    }
+    p.equipment[getBase(code)!.slot!] = target; p.inventory = [];
+    const saved = JSON.stringify(p), stats = deriveStats(p);
+    for (let i = 0; i < 2; i++) { equipmentModifiers(p); assert.deepEqual(deriveStats(p), stats); }
+    assert.equal(JSON.stringify(p), saved); assert.deepEqual(deriveStats(JSON.parse(saved)), stats);
+    p.equipment = {}; p.cube = [target, createItem('r15', 99, fixed), createItem('tsc', 99, fixed)];
+    assert.equal(transmute(p).ok, true); assert.deepEqual(p.cube[0].mods, intrinsic);
+  }
+});
+
+test('old missing variable /lvl coefficients stay unresolved and old indestructible tuples share the usability contract', () => {
+  const p = player('sor'); p.level = 99;
+  const weapon = put(p, 'hax'); weapon.durability = 0;
+  weapon.mods = { 'unsupported:indestruct::1:1': 1, 'unsupported:hp/lvl::8:12': 1, 'unsupported:Light::3:3': 1 };
+  const before = JSON.stringify(weapon);
+  assert.equal(equipItem(p, weapon.uid).ok, true); assert.equal(activeEquipment(p).length, 1);
+  assert.equal(equipmentModifiers(p).indestructible, 1); assert.equal(equipmentModifiers(p).lifePerLevelBonus, undefined);
+  assert.equal(equipmentModifiers(p).lightRadius, 3);
+  const equipped = JSON.stringify(weapon); for (let i = 0; i < 3; i++) deriveStats(p); assert.equal(JSON.stringify(weapon), equipped);
+  assert.equal(JSON.parse(before).mods['unsupported:hp/lvl::8:12'], 1);
 });

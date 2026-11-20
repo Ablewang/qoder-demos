@@ -47,10 +47,11 @@ export interface DerivedStats {
   resFire: number; resCold: number; resLightning: number; resPoison: number;
   resistances: Record<'fire' | 'cold' | 'lightning' | 'poison', { stored: number; maximum: number; effective: number }>;
   magicFind: number; goldFind: number; fcr: number; fhr: number; ias: number; frw: number;
-  lifeLeech: number; manaLeech: number; damageReduction: number; flatReduction: number;
+  lifeLeech: number; manaLeech: number; damageReduction: number; flatReduction: number; flatMagicReduction: number;
   criticalStrike: number; deadlyStrike: number; manaRegenPercent: number;
   elementalDamage: Record<'fire' | 'cold' | 'lightning' | 'magic', { min: number; max: number }>;
   coldLength: number; allSkills: number; beltRows: number;
+  equipmentAuras: number[];
 }
 export interface Player extends Point {
   classId: ClassId; name: string; level: number; experience: number; difficulty: Difficulty;
@@ -62,7 +63,14 @@ export interface Player extends Point {
   quests: Record<string, number>; waypoints: number[]; unlockedActs: number; unlockedDifficulties: number;
   bonusLife: number; bonusResist: number; leftSkill: number; rightSkill: number;
   running: boolean; dead: boolean; corpse?: {areaId: number; x: number; y: number; equipment: Partial<Record<Slot, Item>>};
-  mercenary?: {name: string; type: string; life: number; maxLife: number; level: number};
+  mercenary?: {
+    name: string;
+    /** 'rogue-fire'|'rogue-cold'|'desert-guard'|'iron-wolf'|'barbarian' */
+    type: string;
+    life: number; maxLife: number; level: number;
+    equipment: Partial<Record<'head' | 'body' | 'weapon', Item>>;
+    x: number; y: number; cooldown: number;
+  };
 }
 export interface AreaDef {
   id: number; name: string; english: string; act: number; town: boolean; waypoint: boolean;
@@ -70,8 +78,16 @@ export interface AreaDef {
   style: 'town' | 'grass' | 'cave' | 'dungeon' | 'desert' | 'jungle' | 'hell' | 'snow';
   monsters: string[];
 }
+/** Runtime only. Tile coordinates belong to the containing AreaState (global on surface regions).
+ * Ports are N/E/S/W = 1/2/4/8; adjacent linked blocks have reciprocal three-tile openings.
+ */
+export interface AreaLayout {
+  blockSize: number;
+  blocks: { x: number; y: number; width: number; height: number; ports: number; template: string; center: Point }[];
+}
 export interface SurfaceRegion {
   def: AreaDef; x: number; y: number; width: number; height: number; spawn: Point; seed: number;
+  layout?: AreaLayout;
 }
 export interface Monster extends Point {
   regionId?: number;
@@ -86,11 +102,12 @@ export interface GroundItem extends Point { item: Item }
 export interface WorldObject extends Point {
   uid: string; kind: 'exit' | 'npc' | 'waypoint' | 'stash' | 'chest' | 'shrine' | 'portal' | 'corpse';
   name: string; targetArea?: number; npcId?: string; used?: boolean; regionId?: number; seam?: boolean;
+  shrineCode?: number; shrineReadyTick?: number;
 }
 export interface AreaState {
   def: AreaDef; width: number; height: number; tiles: number[][]; revealed: boolean[][];
   monsters: Monster[]; objects: WorldObject[]; drops: GroundItem[];
-  spawn: Point; seed: number; regions?: SurfaceRegion[];
+  spawn: Point; seed: number; regions?: SurfaceRegion[]; layout?: AreaLayout;
 }
 export interface QuestDef { id: string; act: number; number: number; name: string; description: string; reward: string }
 export interface Projectile extends Point {
@@ -116,6 +133,7 @@ export interface GameState {
   screen: 'intro' | 'title' | 'creation' | 'game'; player: Player | null; area: AreaState | null;
   characters: CharacterSave[]; activeSaveId: string | null; storageStatus: 'loading' | 'ready' | 'error'; storageError: string; loadingSave: boolean; savingAndExiting: boolean;
   stats: DerivedStats | null; panel: Panel; projectiles: Projectile[]; effects: Effect[]; summons: Summon[];
+  shrineBuff?: {code: number; name: string; frames: number};
   events: GameEvent[]; eventSeq: number; facing: number; moving: boolean;
   messages: {text: string; time: number; kind: 'info' | 'loot' | 'error'}[];
   tick: number; seed: number; paused: boolean; automap: boolean; showLoot: boolean;
@@ -132,6 +150,7 @@ export type Action =
   | {type: 'equip'; uid: string} | {type: 'unequip'; slot: Slot}
   | {type: 'drop'; uid: string} | {type: 'potion'; column: number}
   | {type: 'move-item'; uid: string; x: number; y: number}
+  | {type: 'fill-tome'; uid: string; tomeUid: string}
   | {type: 'use-item'; uid: string; targetUid?: string} | {type: 'cancel-identify'}
   | {type: 'identify'; uid?: string} | {type: 'buy'; uid: string} | {type: 'sell'; uid: string}
   | {type: 'gamble-open'} | {type: 'gamble-refresh'} | {type: 'gamble-buy'; uid: string}
@@ -140,6 +159,14 @@ export type Action =
   | {type: 'socket'; itemUid: string; runeUid: string} | {type: 'transmute'}
   | {type: 'save'} | {type: 'save-and-title'} | {type: 'run'} | {type: 'map'} | {type: 'loot'} | {type: 'pause'}
   | {type: 'swap'} | {type: 'respawn'} | {type: 'respec'}
-  | {type: 'difficulty'; difficulty: Difficulty};
+  | {type: 'difficulty'; difficulty: Difficulty}
+  | {type: 'hire-merc'; mercType: string}
+  | {type: 'resurrect-merc'}
+  | {type: 'merc-equip'; uid: string}
+  | {type: 'merc-unequip'; slot: 'head' | 'body' | 'weapon'}
+  | {type: 'imbue'; itemUid: string}
+  | {type: 'larzuk-socket'; itemUid: string}
+  | {type: 'personalize'; itemUid: string}
+  | {type: 'open-cow-portal'};
 export type Dispatch = (action: Action) => void;
 export type Rng = () => number;

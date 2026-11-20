@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import { Engine, findPath, seededRandom, validSave } from '../src/engine';
 import { LEGACY_CHARACTER_ID } from '../src/storage';
 import type { SaveRecord } from '../src/storage';
-import { createPlayer, deriveStats, manaRegeneration, skillLevel } from '../src/rules';
-import type { Rng } from '../src/types';
-import { consumePotion, createItem, createStartingItems, insertSocket, rollLoot, STASH_HEIGHT, STASH_WIDTH } from '../src/items';
-import { createArea, getSurfaceRegion, hasLineOfSight, questKey } from '../src/world';
+import { createPlayer, deriveStats, manaRegeneration, skillLevel, skillEffect, SHRINES, getShrine } from '../src/rules';
+import type { Rng, WorldObject } from '../src/types';
+import { consumePotion, createItem, createStartingItems, insertSocket, rollLoot, STASH_HEIGHT, STASH_WIDTH, GEMS, itemSellPrice } from '../src/items';
+import { containsRegion, createArea, getArea, getSurfaceRegion, hasLineOfSight, questKey, surfaceRegionAt } from '../src/world';
 
 const memoryStore = () => {
   const values = new Map<string, SaveRecord>();
@@ -31,6 +31,167 @@ function inventoryUseFixture(town = true) {
   const target = () => { const item = add('cm1'); item.quality = 'magic'; item.identified = false; item.mods = { life: 20, mana: 25 }; return item; };
   return { engine, p, add, target };
 }
+
+for (const [scrollCode, tomeCode] of [['tsc', 'tbk'], ['isc', 'ibk']]) test(`fill-tome dispatch fills ${tomeCode} atomically and uses the resulting charge`, () => {
+  const {engine, p, add, target} = inventoryUseFixture(false), scroll = add(scrollCode), tome = add(tomeCode, 0);
+  const before = structuredClone(p.equipment); engine.state.saved = true;
+  engine.state.identifySource = scroll.uid; engine.state.selectedItem = scroll.uid;
+  engine.dispatch({type: 'fill-tome', uid: scroll.uid, tomeUid: tome.uid});
+  assert.equal(tome.quantity, 1); assert.ok(!p.inventory.includes(scroll)); assert.equal(engine.state.saved, false);
+  assert.equal(engine.state.selectedItem, tome.uid); assert.equal(engine.state.identifySource, null);
+  assert.match(engine.state.messages.at(-1)!.text, /已填充/); assert.deepEqual(p.equipment, before);
+  engine.dispatch({type: 'fill-tome', uid: scroll.uid, tomeUid: tome.uid}); assert.equal(tome.quantity, 1);
+  if (tomeCode === 'tbk') engine.dispatch({type: 'use-item', uid: tome.uid});
+  else { const unidentified = target(); engine.dispatch({type: 'use-item', uid: tome.uid, targetUid: unidentified.uid}); assert.equal(unidentified.identified, true); }
+  assert.equal(tome.quantity, 0); assert.ok(p.inventory.includes(tome));
+});
+for (const gate of ['paused', 'dead', 'title', 'full', 'mismatch', 'stash', 'missing'] as const) test(`fill-tome dispatch rejects ${gate} without dirtying or changing selection`, () => {
+  const {engine, p, add} = inventoryUseFixture(), scroll = add('isc'), tome = add(gate === 'mismatch' ? 'tbk' : 'ibk', gate === 'full' ? 20 : 0);
+  if (gate === 'paused') engine.state.paused = true;
+  if (gate === 'dead') p.dead = true;
+  if (gate === 'title') engine.state.screen = 'title';
+  if (gate === 'stash') { p.inventory.splice(p.inventory.indexOf(tome), 1); p.stash.push(tome); }
+  engine.state.saved = true; engine.state.selectedItem = scroll.uid; engine.state.identifySource = scroll.uid;
+  const before = structuredClone(p);
+  engine.dispatch({type: 'fill-tome', uid: gate === 'missing' ? 'missing-scroll' : scroll.uid, tomeUid: tome.uid});
+  assert.deepEqual(p, before); assert.equal(engine.state.saved, true); assert.equal(engine.state.selectedItem, scroll.uid); assert.equal(engine.state.identifySource, scroll.uid);
+});
+test('fill-tome preserves a remaining legacy scroll stack and version-1 quantities through reload', async () => {
+  const store = memoryStore(), engine = new Engine(store); await engine.initialize(); engine.dispatch({type:'new', classId:'sor', name:'装书存档'});
+  const p = engine.state.player!, scroll = createItem('isc', 1, () => .5), tome = createItem('ibk', 1, () => .5);
+  Object.assign(scroll, {quantity: 2, x:0, y:0}); Object.assign(tome, {quantity:18, x:1, y:0}); p.inventory = [scroll, tome];
+  engine.state.identifySource = scroll.uid;
+  engine.dispatch({type:'fill-tome', uid:scroll.uid, tomeUid:tome.uid});
+  assert.equal(scroll.quantity, 1); assert.equal(tome.quantity, 19); assert.equal(engine.state.identifySource, scroll.uid);
+  await engine.save(false); const id = engine.state.activeSaveId!, record = await store.get(id);
+  assert.ok(validSave(record)); assert.equal(record!.version, 1);
+  await engine.load(id); assert.deepEqual(engine.state.player!.inventory, record!.player.inventory); assert.equal(engine.state.identifySource, null);
+});
+test('engine selling pays exactly the shared itemSellPrice quote and never sells quest items', () => {
+  const {engine,p,add} = inventoryUseFixture(), npc = engine.state.area!.objects.find(o => o.npcId === 'akara')!;
+  Object.assign(p, npc); engine.dispatch({type:'interact', uid:npc.uid});
+  for (const difficulty of ['normal', 'nightmare', 'hell'] as const) {
+    p.difficulty = difficulty; const item = add('rin'); item.price = 999999; const gold = p.gold, price = itemSellPrice(item, difficulty, 1)!;
+    engine.dispatch({type:'sell', uid:item.uid}); assert.equal(p.gold, gold + price); assert.ok(!p.inventory.includes(item));
+  }
+  const cube = add('box'), gold = p.gold; assert.equal(itemSellPrice(cube, p.difficulty, 1), null);
+  engine.dispatch({type:'sell', uid:cube.uid}); assert.ok(p.inventory.includes(cube)); assert.equal(p.gold, gold);
+});
+
+function shrineFixture() {
+  const engine = new Engine(), p = createPlayer('sor', '神龛与金币');
+  const area = createArea(2, 'normal', 421, p); area.width = area.height = 20;
+  area.tiles = Array.from({length:20}, () => Array(20).fill(0)); area.revealed = Array.from({length:20}, () => Array(20).fill(false));
+  area.monsters = []; area.objects = []; area.drops = []; Object.assign(p, {x:5.5, y:5.5, running:false, skills:{36:1}, rightSkill:36});
+  Object.assign(engine.state, {player:p, area, stats:deriveStats(p), screen:'game', saved:true});
+  const activate = (code?:number) => {
+    const object: WorldObject = {uid:`shrine-${area.objects.length}`,kind:'shrine',name:getShrine(code ?? 1)?.name ?? '旧神龛',x:p.x,y:p.y,shrineCode:code};
+    area.objects.push(object); engine.dispatch({type:'interact',uid:object.uid}); return object;
+  };
+  const pile = (quantity:number, x=p.x, y=p.y, code='gld') => { const item = createItem(code,1,()=>.5); item.quantity=quantity; const drop={item,x,y}; area.drops.push(drop); return drop; };
+  return {engine,p,area,activate,pile};
+}
+test('nearby gold picks two piles once at the exact radius while ignoring gear, distant gold and walls even with a full inventory', () => {
+  const {engine,p,area,pile} = shrineFixture();
+  p.inventory = Array.from({length:80}, (_,i) => { const item = createItem('cm1',1,()=>.5); Object.assign(item,{x:i%10,y:Math.floor(i/10)}); return item; });
+  const a=pile(11), b=pile(23,p.x-2), distant=pile(99,p.x-2.001), wall=pile(77,p.x+1.5), gear=pile(1,p.x,p.y,'rin'); area.tiles[5][6]=1;
+  engine.step(); assert.equal(p.gold,34); assert.deepEqual(area.drops,[distant,wall,gear]); assert.equal(engine.state.saved,false);
+  assert.equal(engine.state.messages.filter(m=>m.kind==='loot').length,1); assert.match(engine.state.messages.at(-1)!.text,/34 金币/);
+  engine.dispatch({type:'pickup',uid:a.item.uid}); engine.dispatch({type:'pickup',uid:b.item.uid}); engine.step(); assert.equal(p.gold,34);
+});
+for (const gate of ['paused','dead','title'] as const) test(`automatic gold does not run while ${gate}`, () => {
+  const {engine,p,area,pile} = shrineFixture(); pile(50);
+  if (gate==='paused') engine.state.paused=true; if (gate==='dead') p.dead=true; if (gate==='title') engine.state.screen='title';
+  const tick=engine.state.tick; engine.step(); assert.equal(p.gold,0); assert.equal(area.drops.length,1); assert.equal(engine.state.tick,tick); assert.equal(engine.state.saved,true);
+});
+test('automatic gold preserves click routes, attack intent and pending equipment pickup', () => {
+  const {engine,p,area,pile} = shrineFixture(); pile(50); engine.dispatch({type:'move',point:{x:14.5,y:5.5}});
+  const access=engine as unknown as {path:unknown[];attackTarget:unknown;pendingInteraction:unknown};
+  const path=access.path, attack={point:{x:15,y:5},right:false}; access.attackTarget=attack;
+  // Existing recovery prevents a new attack from consuming its route.
+  (engine as unknown as {cooldown:number}).cooldown=10;
+  const gear=pile(1,14.5,5.5,'rin'), pending={uid:gear.item.uid,pickup:true}; access.pendingInteraction=pending;
+  engine.step(); assert.equal(p.gold,50); assert.ok(p.x>5.5); assert.equal(access.path,path); assert.equal(access.attackTarget,attack); assert.equal(access.pendingInteraction,pending);
+  for(let frame=0;frame<5;frame++) engine.step(); assert.ok(p.x>6.5); assert.ok(area.drops.includes(gear));
+});
+
+for (const shrine of SHRINES.filter(s=>s.duration)) test(`shrine code ${shrine.code} applies one real blessing, expires in raw frames and recharges on raw reset`, () => {
+  const {engine,p,activate} = shrineFixture(); const original=structuredClone(p), base=deriveStats(p), object=activate(shrine.code);
+  assert.equal(object.used,true); assert.deepEqual(engine.state.shrineBuff,{code:shrine.code,name:shrine.name,frames:shrine.duration});
+  const stats=engine.state.stats!;
+  if(shrine.code===6) assert.equal(stats.defense,Math.floor(base.defense*(100+shrine.arg0)/100));
+  if(shrine.code===7) { assert.equal(stats.attackRating,Math.floor(base.attackRating*(100+shrine.arg0)/100)); assert.ok(stats.maxDamage>base.maxDamage); }
+  for(const [code,key] of [[8,'resFire'],[9,'resCold'],[10,'resLightning'],[11,'resPoison']] as const) if(shrine.code===code) assert.equal(stats[key],75);
+  if(shrine.code===12) { assert.equal(skillLevel(p,36),3); assert.equal(stats.allSkills,2); }
+  if(shrine.code===13) { p.mana=1; engine.step(); assert.equal(p.mana,1+manaRegeneration(stats.maxMana,400)); }
+  if(shrine.code===14) { p.stamina=1; p.running=true; engine.setControl({move:{x:1,y:0}}); engine.step(); assert.equal(p.stamina,1); engine.setControl({move:{x:0,y:0}}); }
+  assert.deepEqual(p.equipment,original.equipment); assert.deepEqual(p.skills,original.skills); assert.equal(p.strength,original.strength);
+  const frames=engine.state.shrineBuff!.frames; engine.state.paused=true; for(let i=0;i<25;i++) engine.step(); assert.equal(engine.state.shrineBuff!.frames,frames);
+  engine.state.paused=false; for(let i=1;i<frames;i++) engine.step(); assert.equal(engine.state.shrineBuff!.frames,1);
+  engine.step(); assert.equal(engine.state.shrineBuff,undefined); assert.deepEqual(engine.state.stats,deriveStats(structuredClone(p))); assert.equal(object.used,true);
+  if(shrine.resetFrames) { engine.state.tick=object.shrineReadyTick!-1; engine.step(); assert.equal(object.used,false); }
+  else { engine.state.tick+=100000; engine.step(); assert.equal(object.used,true); }
+});
+test('legacy code-less shrine restores life/mana, has a two-minute recharge and cannot be spammed', () => {
+  const {engine,p,activate}=shrineFixture(); p.life=p.mana=1; const shrine=activate();
+  assert.equal(p.life,engine.state.stats!.maxLife); assert.equal(p.mana,engine.state.stats!.maxMana); assert.equal(shrine.shrineReadyTick,3000);
+  p.life=p.mana=1; engine.dispatch({type:'interact',uid:shrine.uid}); assert.equal(p.life,1); assert.equal(p.mana,1);
+  engine.state.tick=2999; engine.step(); engine.dispatch({type:'interact',uid:shrine.uid}); assert.equal(p.life,engine.state.stats!.maxLife);
+  assert.equal(engine.state.shrineBuff,undefined);
+});
+test('skill shrine changes actual Fire Bolt casting and impact damage, then replacement restores its prior level', () => {
+  const {engine,p,area,activate}=shrineFixture(), ordinary=skillEffect(p,36); activate(12); const boosted=skillEffect(p,36);
+  assert.ok(boosted.min>ordinary.min); assert.equal(boosted.min,6); assert.equal(boosted.max,9);
+  const monster=createArea(2,'normal',1,p).monsters[0]; Object.assign(monster,{x:p.x+.7,y:p.y,life:100,maxLife:100,cooldown:1000,resists:{physical:0,fire:0,cold:0,lightning:0,poison:0,magic:0}}); area.monsters.push(monster);
+  (engine as unknown as {rng:Rng}).rng=()=>0;
+  engine.dispatch({type:'attack',point:monster,right:true}); assert.equal(engine.state.projectiles[0].min,boosted.min); assert.equal(p.mana,35-boosted.mana);
+  engine.step(); assert.equal(monster.life,94); activate(6);
+  assert.equal(engine.state.shrineBuff!.code,6); assert.equal(skillLevel(p,36),1); assert.equal(engine.state.stats!.allSkills,0); assert.equal(skillEffect(p,36).min,ordinary.min);
+});
+test('experience shrine increases actual kill reward exactly once and replacing it removes the bonus', () => {
+  const {engine,p,area,activate}=shrineFixture(); activate(15);
+  const m=createArea(2,'normal',1,p).monsters[0]; Object.assign(m,{x:15,y:15,experience:100,level:1}); area.monsters.push(m);
+  const access=engine as unknown as {kill(monster:typeof m):void}; access.kill(m); assert.equal(p.experience,150); access.kill(m); assert.equal(p.experience,150);
+  activate(13); const next=structuredClone(m); next.uid='next-xp'; next.dead=false; area.monsters.push(next); access.kill(next); assert.equal(p.experience,250);
+});
+for(const gate of ['paused','dead','title','wall'] as const) test(`shrine interaction respects ${gate}`,()=>{
+  const {engine,p,area}=shrineFixture(); const shrine={uid:'blocked-shrine',kind:'shrine' as const,name:'技能神龛',shrineCode:12,x:7,y:p.y,used:false}; area.objects.push(shrine);
+  if(gate==='paused') engine.state.paused=true; if(gate==='dead') p.dead=true; if(gate==='title') engine.state.screen='title'; if(gate==='wall') area.tiles[5][6]=1;
+  engine.dispatch({type:'interact',uid:shrine.uid}); assert.equal(shrine.used,false); assert.equal(engine.state.shrineBuff,undefined); assert.equal(skillLevel(p,36),1);
+});
+test('death and new character clear the blessing without collecting death gold; save/load never serializes buffs',async()=>{
+  const {engine,p,area,activate}=shrineFixture(); activate(12); p.gold=100;
+  (engine as unknown as {die():void}).die(); assert.equal(engine.state.shrineBuff,undefined); assert.equal(skillLevel(p,36),1);
+  const drops=structuredClone(area.drops); engine.step(); assert.equal(p.gold,0); assert.deepEqual(area.drops,drops);
+  p.dead=false; activate(13); engine.dispatch({type:'new',classId:'sor',name:'新角色'}); assert.equal(engine.state.shrineBuff,undefined); assert.equal(engine.state.stats!.manaRegenPercent,0);
+  const store=memoryStore(), saved=new Engine(store); await saved.initialize(); saved.dispatch({type:'new',classId:'sor',name:'神龛存档'});
+  const player=saved.state.player!, field=createArea(2,'normal',3,player); field.monsters=[]; Object.assign(player,field.spawn); saved.state.area=field;
+  const shrine={uid:'save-shrine',kind:'shrine' as const,name:'技能神龛',shrineCode:12,x:player.x,y:player.y}; field.objects.push(shrine);
+  saved.dispatch({type:'interact',uid:shrine.uid}); assert.equal(saved.state.stats!.allSkills,2); await saved.save(false);
+  const id=saved.state.activeSaveId!, record=await store.get(id); assert.ok(validSave(record)); assert.ok(!JSON.stringify(record).includes('shrineBuff'));
+  await saved.load(id); assert.equal(saved.state.shrineBuff,undefined); assert.equal(saved.state.stats!.allSkills,0); assert.deepEqual(saved.state.player!.equipment,record!.player.equipment);
+});
+test('portal shrine consumes neither books nor scrolls, uses the shared return lifecycle and cannot reopen when used',()=>{
+  const {engine,p,area,activate}=shrineFixture(); p.inventory=[createItem('tbk',1,()=>.5),createItem('tsc',1,()=>.5)]; const inventory=structuredClone(p.inventory), shrine=activate(17);
+  assert.deepEqual(p.inventory,inventory); const portal=area.objects.find(o=>o.kind==='portal')!; assert.ok(portal);
+  engine.dispatch({type:'interact',uid:shrine.uid}); assert.equal(area.objects.filter(o=>o.kind==='portal').length,1);
+  engine.dispatch({type:'interact',uid:portal.uid}); assert.equal(engine.state.area!.def.town,true);
+  const back=engine.state.area!.objects.find(o=>o.kind==='portal'&&o.targetArea===2)!; Object.assign(p,{x:back.x,y:back.y}); engine.dispatch({type:'interact',uid:back.uid});
+  assert.equal(engine.state.area!.def.id,2); assert.deepEqual(p.inventory,inventory); assert.equal((engine as unknown as {portal:unknown}).portal,null);
+});
+test('gem shrine upgrades the highest non-perfect inventory gem canonically and is single-use',()=>{
+  const {engine,p,activate}=shrineFixture(), lower=GEMS.find(g=>g.grade===1)!, higher=GEMS.find(g=>g.grade===3)!, perfect=GEMS.find(g=>g.type===higher.type&&g.grade===4)!;
+  const a=createItem(lower.code,1,()=>.5), b=createItem(higher.code,1,()=>.5), c=createItem(perfect.code,1,()=>.5); Object.assign(b,{x:3,y:2}); p.inventory=[a,b,c];
+  const shrine=activate(18), upgraded=p.inventory.find(i=>i.uid===b.uid)!;
+  assert.equal(upgraded.code,perfect.code); assert.equal(upgraded.name,createItem(perfect.code,1,()=>.5).name); assert.deepEqual(upgraded.mods,createItem(perfect.code,1,()=>.5).mods); assert.equal(upgraded.x,3); assert.equal(upgraded.y,2);
+  assert.equal(p.inventory[0],a); assert.equal(p.inventory[2],c); const after=structuredClone(p.inventory); engine.dispatch({type:'interact',uid:shrine.uid}); assert.deepEqual(p.inventory,after);
+});
+for(const packed of [false,true]) test(`gem shrine with no upgrade candidate produces a chipped gem without loss (packed=${packed})`,()=>{
+  const {engine,p,area,activate}=shrineFixture();
+  if(packed) p.inventory=Array.from({length:80},(_,i)=>{const item=createItem('cm1',1,()=>.5); Object.assign(item,{x:i%10,y:Math.floor(i/10)}); return item;});
+  else p.inventory=[createItem(GEMS.find(g=>g.grade===4)!.code,1,()=>.5)];
+  activate(18); const item=packed?area.drops[0].item:p.inventory.at(-1)!; assert.equal(GEMS.find(g=>g.code===item.code)!.grade,0); assert.equal(area.drops.length,packed?1:0);
+});
 
 for (const code of ['hp1', 'hp2', 'hp3', 'hp4', 'hp5', 'mp1', 'mp2', 'mp3', 'mp4', 'mp5', 'rvs', 'rvl']) test(`inventory use ${code} applies real potion results and never shifts the belt`, () => {
   const { engine, p, add } = inventoryUseFixture(), item = add(code), belt = structuredClone(p.belt);
@@ -1484,7 +1645,7 @@ test('each ordinary Fallen variant can revive without receiving new kill rewards
     (engine as unknown as { rng: Rng }).rng = () => { calls++; return rng(); };
     const kill = () => { m.life = 0; (engine as unknown as { kill: (monster: typeof m) => void }).kill(m); };
     kill();
-    const first = { experience: p.experience, level: p.level, statPoints: p.statPoints, skillPoints: p.skillPoints, drops: structuredClone(area.drops), calls };
+    const first = { experience: p.experience, level: p.level, statPoints: p.statPoints, skillPoints: p.skillPoints, drops: structuredClone(area.drops), gold: p.gold, calls };
     assert.equal(first.experience, 40); assert.ok(first.calls > 0); dropCount += first.drops.length;
     for (let repeat = 0; repeat < 3; repeat++) {
       shaman.cooldown = 0; engine.step();
@@ -1492,7 +1653,9 @@ test('each ordinary Fallen variant can revive without receiving new kill rewards
       kill();
       assert.equal(m.dead, true); assert.equal(p.experience, first.experience); assert.equal(p.level, first.level);
       assert.equal(p.statPoints, first.statPoints); assert.equal(p.skillPoints, first.skillPoints);
-      assert.deepEqual(area.drops, first.drops); assert.equal(calls, first.calls, 'repeat deaths cannot roll loot or consume its RNG');
+      assert.deepEqual(area.drops.filter(d => d.item.code !== 'gld'), first.drops.filter(d => d.item.code !== 'gld'));
+      assert.equal(p.gold + area.drops.filter(d => d.item.code === 'gld').reduce((sum, d) => sum + d.item.quantity, 0), first.gold + first.drops.filter(d => d.item.code === 'gld').reduce((sum, d) => sum + d.item.quantity, 0), 'automatic pickup conserves the first reward, never awards another');
+      assert.equal(calls, first.calls, 'repeat deaths cannot roll loot or consume its RNG');
     }
     assert.equal(engine.state.events.filter(e => e.actor === m.uid && e.kind === 'death').length, 4);
     assert.equal(engine.state.events.filter(e => e.actor === m.uid && e.kind === 'revive').length, 3);
@@ -1564,4 +1727,154 @@ test('area transitions clear transient combat state without resetting event sequ
   engine.setControl({ left: true, aim: { x: p.x+1, y: p.y }, aimMonster: null }); engine.step();
   assert.equal(engine.state.events.length, 1); assert.equal(engine.state.events[0].seq, seq + 1);
   assert.equal(engine.state.events[0].kind, 'attack'); assert.equal(engine.state.eventSeq, seq + 1);
+});
+
+function mapTravelFixture(surface = false) {
+  const engine = new Engine(), p = createPlayer('sor', '隔离地图旅行');
+  const town = createArea(1, 'normal', 123, p);
+  const floor = (width: number, height: number) => ({width, height, tiles:Array.from({length:height},()=>Array(width).fill(0)), revealed:Array.from({length:height},()=>Array(width).fill(false))});
+  Object.assign(town, floor(80, 34), {spawn:{x:50,y:16}, objects:[], monsters:[], drops:[]});
+  const field = {...town, ...floor(20,20), def:getArea(8), spawn:{x:3.5,y:5.5}, objects:[], monsters:[], drops:[]} as typeof town;
+  const world = {...town, ...floor(80,34), objects:[], monsters:[], drops:[], regions:[
+    {def:getArea(1),x:40,y:2,width:34,height:28,spawn:{x:50,y:16},seed:123},
+    {def:getArea(2),x:2,y:2,width:24,height:28,spawn:{x:4.5,y:8.5},seed:123},
+  ]} as typeof town;
+  const access = engine as unknown as {
+    areas:Map<number,typeof town>; enterArea(id:number,position?:{x:number;y:number},atSpawn?:boolean,sourceId?:number):void;
+    syncCorpse(area:typeof town):void; die():void; updateSurfaceRegion():void; runtimeRevision:number;
+    path:{x:number;y:number}[]; attackTarget:unknown; pendingInteraction:unknown; vendorStocks:Map<string,unknown[]>;
+    portal:{point:{x:number;y:number}}|null;
+  };
+  access.areas.set(1,surface?world:town); access.areas.set(2,world); access.areas.set(8,field);
+  Object.assign(engine.state,{player:p,area:surface?world:field,stats:deriveStats(p),screen:'game',seed:123});
+  const id=surface?2:8, area=surface?world:field;
+  access.enterArea(id,undefined,true);
+  const owned = (point:{x:number;y:number}, target=id) => !area.regions ? area.def.id===target : surfaceRegionAt(area,point)?.def.id===target;
+  const assertReachable = (point:{x:number;y:number}, target=id) => {
+    assert.ok(owned(point,target)); assert.equal(area.tiles[Math.floor(point.y)]?.[Math.floor(point.x)],0);
+    assert.ok(findPath(area,getSurfaceRegion(area,target)?.spawn ?? area.spawn,point).length);
+  };
+  const corpse = (areaId:number, point:{x:number;y:number}) => {
+    const item=createItem('jav',1,()=>.5); Object.assign(item,{uid:'fixture-corpse-weapon',quantity:17,durability:3,mods:{life:11,attackRating:19}});
+    p.corpse={areaId,...point,equipment:{weapon:item}}; return {equipment:p.corpse.equipment,item,snapshot:structuredClone(p.corpse.equipment)};
+  };
+  return {engine,p,town,world,field,area,id,access,owned,assertReachable,corpse};
+}
+
+for (const surface of [false,true]) test(`map travel cache retains area and entity identity on town round trip (surface=${surface})`,()=>{
+  const {engine,area,id,access}=mapTravelFixture(surface);
+  const chest:WorldObject={uid:'used-travel-chest',kind:'chest',name:'箱子',x:6,y:6,used:true,regionId:id};
+  const drop={item:createItem('cm1',1,()=>.5),x:7,y:7};
+  const dead={uid:'travel-dead-monster',dead:true,x:8,y:8,life:0} as typeof area.monsters[number];
+  area.objects.push(chest); area.drops.push(drop); area.monsters.push(dead);
+  const objects=area.objects,drops=area.drops,monsters=area.monsters,snapshot=structuredClone({chest,drop,dead});
+  access.enterArea(1,undefined,true); access.enterArea(id,undefined,true);
+  assert.equal(engine.state.area,area); assert.equal(area.objects,objects); assert.equal(area.drops,drops); assert.equal(area.monsters,monsters);
+  assert.equal(area.objects[0],chest); assert.equal(area.drops[0],drop); assert.equal(area.monsters[0],dead); assert.deepEqual({chest,drop,dead},snapshot);
+});
+
+for (const fault of ['valid','wall','bounds','unreachable'] as const) test(`map travel underground corpse validates ${fault} without changing equipment`,()=>{
+  const {p,area,access,corpse,assertReachable}=mapTravelFixture();
+  const point=fault==='bounds'?{x:200,y:-1}:{x:10.25,y:10.75};
+  if(fault==='wall') area.tiles[10][10]=1;
+  if(fault==='unreachable') for(let y=0;y<area.height;y++) area.tiles[y][8]=1;
+  const before=corpse(8,point); access.syncCorpse(area);
+  assertReachable(p.corpse!); assert.deepEqual(p.corpse!.equipment,before.snapshot); assert.equal(p.corpse!.equipment,before.equipment); assert.equal(p.corpse!.equipment.weapon,before.item);
+  if(fault==='valid') assert.deepEqual({x:p.corpse!.x,y:p.corpse!.y},point);
+  else assert.deepEqual({x:p.corpse!.x,y:p.corpse!.y},area.spawn);
+  const object=area.objects.find(o=>o.kind==='corpse')!; access.syncCorpse(area); assert.equal(area.objects.length,1); assert.equal(area.objects[0],object);
+});
+
+for (const fault of ['valid','wall','bounds','wrong-region','unreachable'] as const) test(`map travel legacy local corpse converts once and repairs ${fault} without reroll`,()=>{
+  const {p,area,access,corpse,assertReachable}=mapTravelFixture(true), region=getSurfaceRegion(area,1)!;
+  const localMap=createArea(1,'normal',region.seed,p), local={x:localMap.spawn.x+1,y:localMap.spawn.y}, converted={x:local.x+region.x,y:local.y+region.y};
+  assert.equal(localMap.tiles[Math.floor(local.y)][Math.floor(local.x)],0);
+  if(fault==='wall') area.tiles[Math.floor(converted.y)][Math.floor(converted.x)]=1;
+  if(fault==='bounds') region.x=75;
+  if(fault==='wrong-region') { region.width=5; area.regions!.push({...getSurfaceRegion(area,2)!,def:getArea(3),x:48,y:14,width:8,height:8}); }
+  if(fault==='unreachable') { for(let y=14;y<=18;y++) for(let x=48;x<=52;x++) if(x===48||x===52||y===14||y===18) area.tiles[y][x]=1; region.spawn={x:44.5,y:8.5}; }
+  if(fault==='bounds'||fault==='wrong-region') region.spawn={x:region.x+.5,y:8.5};
+  const before=corpse(1,local); access.syncCorpse(area); assertReachable(p.corpse!,1);
+  assert.deepEqual(p.corpse!.equipment,before.snapshot); assert.equal(p.corpse!.equipment,before.equipment); assert.equal(p.corpse!.equipment.weapon,before.item);
+  assert.deepEqual({x:p.corpse!.x,y:p.corpse!.y},fault==='valid'?converted:region.spawn);
+  const point={x:p.corpse!.x,y:p.corpse!.y}; access.syncCorpse(area); assert.deepEqual({x:p.corpse!.x,y:p.corpse!.y},point);
+});
+
+test('map travel never inserts a corpse into an unrelated underground map or missing surface region',()=>{
+  const {p,area,world,access,corpse}=mapTravelFixture(); corpse(9,{x:5,y:5}); const before=structuredClone(p.corpse);
+  access.syncCorpse(area); access.syncCorpse(world); assert.deepEqual(p.corpse,before); assert.equal(area.objects.length,0); assert.equal(world.objects.length,0);
+});
+
+test('map travel accepts exact global road-gap corpse and explicit return positions',()=>{
+  const {p,area,access,corpse,assertReachable}=mapTravelFixture(true), region=getSurfaceRegion(area,2)!;
+  const point={x:26.25,y:8.75}; assert.equal(containsRegion(region,point),false); assertReachable(point);
+  const before=corpse(2,point); access.syncCorpse(area); access.enterArea(2,point);
+  assert.deepEqual({x:p.x,y:p.y},point); assert.deepEqual({x:p.corpse!.x,y:p.corpse!.y},point);
+  assert.equal(p.corpse!.equipment,before.equipment); assert.equal(p.corpse!.equipment.weapon,before.item); assert.deepEqual(p.corpse!.equipment,before.snapshot);
+});
+
+for(const fault of ['wrong-region','wall','bounds','unreachable'] as const) test(`map travel explicit ${fault} position falls back to target spawn`,()=>{
+  const {p,area,access,assertReachable}=mapTravelFixture(true), spawn=getSurfaceRegion(area,2)!.spawn;
+  const point=fault==='wrong-region'?getSurfaceRegion(area,1)!.spawn:fault==='bounds'?{x:90,y:40}:{x:10.25,y:8.75};
+  if(fault==='wall') area.tiles[8][10]=1;
+  if(fault==='unreachable') for(let y=0;y<area.height;y++) area.tiles[y][8]=1;
+  access.enterArea(2,point); assert.deepEqual({x:p.x,y:p.y},spawn); assertReachable(p);
+});
+
+for(const fault of ['valid','wrong-region','wall','unreachable','isolated-candidates'] as const) test(`map travel back gate uses only owned reachable landing ground (${fault})`,()=>{
+  const {p,area,access,assertReachable}=mapTravelFixture(true), region=getSurfaceRegion(area,2)!;
+  const point=fault==='wrong-region'?getSurfaceRegion(area,1)!.spawn:{x:10,y:10};
+  const gate:WorldObject={uid:'travel-back-gate',kind:'exit',name:'返回',targetArea:8,regionId:2,...point}; area.objects.push(gate);
+  if(fault==='wall') area.tiles[10][10]=1;
+  if(fault==='unreachable') for(let y=0;y<area.height;y++) area.tiles[y][8]=1;
+  if(fault==='isolated-candidates') {
+    for(let y=0;y<area.height;y++) for(let x=0;x<area.width;x++) area.tiles[y][x]=1;
+    for(let x=4;x<=10;x++) area.tiles[8][x]=0; area.tiles[9][10]=area.tiles[10][10]=0;
+    const dx=region.x+region.width/2-gate.x,dy=region.y+region.height/2-gate.y,len=Math.hypot(dx,dy);
+    for(const r of [2.2,1.6,1.1,3]) area.tiles[Math.floor(gate.y+.5+dy/len*r)][Math.floor(gate.x+.5+dx/len*r)]=0;
+  }
+  access.enterArea(2,undefined,false,8); assertReachable(p);
+  if(fault==='valid') assert.notDeepEqual({x:p.x,y:p.y},region.spawn); else assert.deepEqual({x:p.x,y:p.y},region.spawn);
+});
+
+for(const scenario of ['preferred','narrow-wall','region-edge','road-gap','shrine'] as const) test(`map travel blue portal stays clickable and returns exact origin (${scenario})`,()=>{
+  const surface=scenario==='region-edge'||scenario==='road-gap';
+  const {engine,p,area,id,access,owned,assertReachable}=mapTravelFixture(surface);
+  if(scenario==='narrow-wall') { Object.assign(p,{x:5.8,y:10.5}); for(let y=0;y<area.height;y++) for(let x=0;x<area.width;x++) area.tiles[y][x]=x===5?0:1; area.spawn={x:5.5,y:5.5}; }
+  if(scenario==='road-gap') Object.assign(p,{x:26.25,y:8.75});
+  if(scenario==='region-edge') {
+    const point=Array.from({length:320},(_,i)=>({x:i/4,y:8.5})).find(point=>owned(point)&&!owned({x:point.x+.7,y:point.y})); assert.ok(point); Object.assign(p,point);
+  }
+  const origin={x:p.x,y:p.y}, tome=createItem('tbk',1,()=>.5); tome.quantity=3; p.inventory=[tome];
+  if(scenario==='shrine') { const shrine:WorldObject={uid:'travel-free-shrine',kind:'shrine',name:'传送神龛',shrineCode:17,...origin}; area.objects.push(shrine); engine.dispatch({type:'interact',uid:shrine.uid}); }
+  else engine.dispatch({type:'portal'});
+  assert.equal(tome.quantity,scenario==='shrine'?3:2); assert.deepEqual(access.portal!.point,origin);
+  const source=area.objects.find(o=>o.kind==='portal')!; assertReachable(source);
+  assert.deepEqual({x:source.x,y:source.y},scenario==='narrow-wall'||scenario==='region-edge'?origin:{x:origin.x+.7,y:origin.y});
+  Object.assign(p,area.spawn); const revision=access.runtimeRevision; engine.dispatch({type:'interact',uid:source.uid});
+  for(let frame=0;frame<300&&access.runtimeRevision===revision;frame++) engine.step();
+  assert.equal(engine.state.area!.def.id,1); const town=engine.state.area!, back=town.objects.find(o=>o.kind==='portal'&&o.targetArea===id)!;
+  assert.equal(town.tiles[Math.floor(back.y)][Math.floor(back.x)],0); assert.equal(surfaceRegionAt(town,back)?.def.id ?? town.def.id,1); assert.ok(findPath(town,town.spawn,back).length);
+  Object.assign(p,{x:back.x,y:back.y}); engine.dispatch({type:'interact',uid:back.uid});
+  assert.equal(engine.state.area,area); assert.equal(area.def.id,id); assert.deepEqual({x:p.x,y:p.y},origin); assert.equal(access.portal,null);
+  assert.equal(area.objects.filter(o=>o.kind==='portal').length,0); assert.equal(town.objects.filter(o=>o.kind==='portal').length,0);
+});
+
+for(const surface of [false,true]) test(`map travel death town return allows exact corpse recovery (surface=${surface})`,()=>{
+  const {engine,p,area,id,access,corpse}=mapTravelFixture(surface), origin={x:p.x,y:p.y};
+  const before=corpse(id,origin); p.equipment=before.equipment; p.corpse=undefined; access.die();
+  const object=area.objects.find(o=>o.kind==='corpse')!; engine.dispatch({type:'respawn'}); assert.equal(engine.state.area!.def.id,1);
+  access.enterArea(id,origin); assert.equal(engine.state.area,area); assert.equal(area.objects.find(o=>o.kind==='corpse'),object);
+  engine.dispatch({type:'interact',uid:object.uid}); assert.equal(p.corpse,undefined); assert.equal(p.equipment.weapon,before.item); assert.deepEqual(p.equipment,before.snapshot);
+  assert.equal(area.objects.filter(o=>o.kind==='corpse').length,0);
+});
+
+test('map travel continuous seam preserves route attack pending state and revision while town entry refreshes shops',()=>{
+  const {engine,p,area,access}=mapTravelFixture(true), path=[{x:5,y:9}], attack={point:{x:7,y:9},right:false}, pending={uid:'route-item',pickup:true};
+  access.path=path; access.attackTarget=attack; access.pendingInteraction=pending; access.vendorStocks.set('akara',[{}]);
+  const revision=access.runtimeRevision; Object.assign(p,getSurfaceRegion(area,1)!.spawn); access.updateSurfaceRegion();
+  assert.equal(area.def.id,1); assert.equal(engine.state.area,area); assert.equal(access.runtimeRevision,revision);
+  assert.equal(access.path,path); assert.equal(access.attackTarget,attack); assert.equal(access.pendingInteraction,pending); assert.equal(access.vendorStocks.size,0);
+  access.enterArea(2,undefined,true); access.vendorStocks.set('akara',[{}]); access.enterArea(1,undefined,true);
+  assert.equal(access.runtimeRevision,revision+2); assert.deepEqual(access.path,[]); assert.equal(access.attackTarget,null); assert.equal(access.pendingInteraction,null); assert.equal(access.vendorStocks.size,0);
 });
