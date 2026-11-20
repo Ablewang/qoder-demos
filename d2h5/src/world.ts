@@ -623,9 +623,43 @@ export function createArea(id: number, difficulty: Difficulty, seed: number, pla
   if (generated) {
     // The connected skeleton and rotated block interiors have already been stamped.
   } else if (def.town) {
-    // Buildings, central street and service plaza; all collision stays tile-based.
-    for (const [x,y,w,h] of [[3,3,6,6],[23,3,7,6],[3,20,6,5],[23,20,7,5]]) wall(x,y,w,h);
-    room(8,10,17,9);
+    if (id === 1) {
+      // 罗格营地: 草地营地，四角散布帐篷/小屋，中央开阔空地
+      wall(2,2,5,5); wall(27,2,5,5); wall(2,21,5,5); wall(27,21,5,5);
+      wall(10,2,3,2); wall(21,2,3,2); wall(10,24,3,2); wall(21,24,3,2);
+      room(7,7,20,14);
+    } else if (id === 40) {
+      // 鲁高因: 沙漠城镇，两排密集大型建筑，中间宽街道
+      wall(2,2,8,7); wall(13,2,8,7); wall(24,2,8,7);
+      wall(2,19,8,6); wall(13,19,8,6); wall(24,19,8,6);
+      room(10,9,14,10);
+    } else if (id === 75) {
+      // 库拉斯特码头: 丛林港口，左侧沿岸建筑，右侧开放港湾
+      wall(2,2,7,6); wall(2,10,7,5); wall(2,18,7,8);
+      wall(12,2,5,4); wall(20,2,5,4);
+      room(9,8,22,16);
+    } else if (id === 103) {
+      // 潘多蒙邪传: 地狱熔岩营地，外围岩石/熔岩，中央开阔仪式广场
+      wall(2,2,4,4); wall(28,2,4,4); wall(2,22,4,4); wall(28,22,4,4);
+      wall(8,2,3,3); wall(16,2,3,2); wall(23,2,3,3);
+      wall(8,23,3,3); wall(16,24,3,2); wall(23,23,3,3);
+      wall(2,8,3,4); wall(2,16,3,4); wall(29,8,3,4); wall(29,16,3,4);
+      room(5,5,24,18);
+    } else if (id === 109) {
+      // 哈洛加斯: 雪地要塞，不完整的围墙环，留有缺口
+      wall(3,3,28,3); wall(3,22,28,3);
+      wall(3,3,3,22); wall(29,3,3,22);
+      room(4,4,26,20);
+      // 要塞缺口
+      room(13,3,8,3); room(13,22,8,3);
+      room(3,10,3,8); room(29,10,3,8);
+      // 内部建筑群
+      wall(7,7,5,4); wall(22,7,5,4); wall(7,17,5,4); wall(22,17,4,4);
+    } else {
+      // 默认布局
+      for (const [x,y,w,h] of [[3,3,6,6],[23,3,7,6],[3,20,6,5],[23,20,7,5]]) wall(x,y,w,h);
+      room(8,10,17,9);
+    }
   } else if (cave) {
     // Cellular-automata cavern; isolated pockets are joined or sealed below.
     for (let y=1;y<height-1;y++) for (let x=1;x<width-1;x++) tiles[y][x]=rng()<.45 ? 1 : 0;
@@ -771,13 +805,23 @@ export function createArea(id: number, difficulty: Difficulty, seed: number, pla
     }
     addObject(gate?.kind === 'portal' ? 'portal' : 'exit',getArea(target).name,position,{targetArea:target});
   });
-  if (def.waypoint) addObject('waypoint','传送点',def.town ? {x:12,y:11} : generated ? scenePosition('waypoint') : {x:9,y:spawn.y-4});
+  // Per-town waypoint, stash and NPC layout positions.
+  const TOWN_FIXED: Record<number,{waypoint:Point;stash:Point;npcStart:Point;npcDx:number;npcDy:number}> = {
+    1:   {waypoint:{x:12,y:11}, stash:{x:9,y:11},  npcStart:{x:11,y:18}, npcDx:3, npcDy:3},
+    40:  {waypoint:{x:16,y:14}, stash:{x:6,y:14},  npcStart:{x:12,y:12}, npcDx:3, npcDy:3},
+    75:  {waypoint:{x:18,y:13}, stash:{x:11,y:9},  npcStart:{x:13,y:10}, npcDx:3, npcDy:3},
+    103: {waypoint:{x:17,y:14}, stash:{x:8,y:14},  npcStart:{x:12,y:11}, npcDx:3, npcDy:3},
+    109: {waypoint:{x:16,y:13}, stash:{x:7,y:13},  npcStart:{x:12,y:10}, npcDx:3, npcDy:3},
+  };
+  const townFixed = TOWN_FIXED[id] ?? TOWN_FIXED[1];
+  if (def.waypoint) addObject('waypoint','传送点',def.town ? townFixed.waypoint : generated ? scenePosition('waypoint') : {x:9,y:spawn.y-4});
   if (def.town) {
-    addObject('stash','私人储物箱',{x:9,y:11});
+    addObject('stash','私人储物箱',townFixed.stash);
     const npcs=[...TOWN_NPCS[id]];
     if (id === 1 && status(travelPlayer,'a1q3') >= 3) npcs.push('cain');
     npcs.forEach((npcId,index) => addObject('npc',NPCS[npcId].name,
-      {x:11+(index%6)*3,y:18+Math.floor(index/6)*3},{npcId}));
+      {x:townFixed.npcStart.x+(index%6)*townFixed.npcDx,
+       y:townFixed.npcStart.y+Math.floor(index/6)*townFixed.npcDy},{npcId}));
   } else {
     addObject('chest','宝箱',generated ? scenePosition('chest') : {x:width-9,y:height-8});
     if (id !== 8 && id !== 120) {
