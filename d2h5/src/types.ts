@@ -127,10 +127,10 @@ export interface Summon extends Point { uid: string; name: string; life: number;
 export interface GamblingOffer { uid: string; code: string; item: Item }
 export type Panel = 'inventory' | 'character' | 'skills' | 'quests' | 'waypoint' | 'stash' | 'cube' | 'vendor' | 'gamble' | 'help' | 'catalog' | 'none';
 export interface CharacterSave {
-  id: string; name: string; classId: ClassId; level: number; difficulty: Difficulty; timestamp: number;
+  id: string; name: string; classId: ClassId; level: number; difficulty: Difficulty; unlockedDifficulties: number; timestamp: number;
 }
 export interface GameState {
-  screen: 'intro' | 'title' | 'creation' | 'difficulty-select' | 'game'; player: Player | null; area: AreaState | null;
+  screen: 'intro' | 'title' | 'creation' | 'game'; player: Player | null; area: AreaState | null;
   characters: CharacterSave[]; activeSaveId: string | null; storageStatus: 'loading' | 'ready' | 'error'; storageError: string; loadingSave: boolean; savingAndExiting: boolean;
   stats: DerivedStats | null; panel: Panel; projectiles: Projectile[]; effects: Effect[]; summons: Summon[];
   shrineBuff?: {code: number; name: string; frames: number};
@@ -142,7 +142,7 @@ export interface GameState {
 }
 export type Action =
   | {type: 'new'; classId: ClassId; name: string}
-  | {type: 'continue'; id: string} | {type: 'delete-character'; id: string} | {type: 'creation'} | {type: 'title'} | {type: 'select-difficulty'; difficulty: Difficulty}
+  | {type: 'continue'; id: string; difficulty?: Difficulty} | {type: 'delete-character'; id: string} | {type: 'creation'} | {type: 'title'} | {type: 'select-difficulty'; difficulty: Difficulty}
   | {type: 'move'; point: Point} | {type: 'attack'; point: Point; right?: boolean}
   | {type: 'interact'; uid: string} | {type: 'pickup'; uid: string}
   | {type: 'panel'; panel: Panel} | {type: 'stat'; stat: StatKey}

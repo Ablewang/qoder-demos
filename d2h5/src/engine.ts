@@ -143,7 +143,7 @@ export class Engine {
     const saves = await this.store!.list();
     this.state.characters = saves.filter(s => validSave(s) && typeof s.id === 'string' && Number.isFinite(s.timestamp))
       .sort((a, b) => b.timestamp - a.timestamp || a.id.localeCompare(b.id))
-      .map(s => ({id: s.id, name: s.player.name, classId: s.player.classId, level: s.player.level, difficulty: s.player.difficulty, timestamp: s.timestamp}));
+      .map(s => ({id: s.id, name: s.player.name, classId: s.player.classId, level: s.player.level, difficulty: s.player.difficulty, unlockedDifficulties: s.player.unlockedDifficulties ?? 1, timestamp: s.timestamp}));
   }
   setControl(next: Partial<Control>, press?: boolean) {
     const c = this.control, wasHeld = c.left || c.right, s = this.state;
@@ -289,18 +289,14 @@ export class Engine {
       this.state.player = createPlayer(action.classId, name); createStartingItems(this.state.player);
       this.updateStats(); this.enterArea(1, undefined, true); this.message('前往鲜血荒地的邪恶洞窟，消灭所有怪物后向阿卡拉领取奖励。'); this.save(); return;
     }
-    if (action.type === 'continue') { void this.load(action.id); return; }
+    if (action.type === 'continue') { void this.load(action.id, action.difficulty); return; }
     if (action.type === 'select-difficulty') {
       const p = this.state.player;
-      if (!p || this.state.screen !== 'difficulty-select') return;
+      if (!p || this.state.screen !== 'game') return;
       const idx = (['normal','nightmare','hell'] as const).indexOf(action.difficulty) + 1;
       if (idx < 1 || idx > p.unlockedDifficulties) return;
       p.difficulty = action.difficulty;
       this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
-      if (p.corpse) {
-        if (SURFACE_IDS.some(id => id === p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
-        else { p.corpse.areaId = this.state.area!.def.id; p.corpse.x = p.x+1; p.corpse.y = p.y; this.syncCorpse(this.state.area!); }
-      }
       this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');
       return;
     }
@@ -1314,7 +1310,7 @@ export class Engine {
     await this.saving;
     this.deletingSaveId = null; this.state.loadingSave = false;
   }
-  async load(id: string) {
+  async load(id: string, difficulty?: import('./types').Difficulty) {
     if (!this.store || this.state.storageStatus !== 'ready' || this.state.loadingSave) return;
     this.state.identifySource = null; this.state.loadingSave = true;
     try {
@@ -1327,16 +1323,13 @@ export class Engine {
       this.state.player = save.player; this.state.seed = save.seed; this.rng = seededRandom(save.seed); this.areas.clear(); this.vendorStocks.clear(); this.portal = null;
       const p = this.state.player; p.dead = false; this.updateStats();
       if (p.life <= 0) p.life = this.state.stats!.maxLife;
-      if (p.unlockedDifficulties > 1) {
-        this.state.screen = 'difficulty-select';
-      } else {
-        this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
-        if (p.corpse) {
-          if (SURFACE_IDS.some(surfaceId=>surfaceId===p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
-          else {p.corpse.areaId=this.state.area!.def.id;p.corpse.x=p.x+1;p.corpse.y=p.y;this.syncCorpse(this.state.area!);}
-        }
-        this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');
+      if (difficulty) { const idx = (['normal','nightmare','hell'] as const).indexOf(difficulty)+1; if (idx >= 1 && idx <= p.unlockedDifficulties) p.difficulty = difficulty; }
+      this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
+      if (p.corpse) {
+        if (SURFACE_IDS.some(surfaceId=>surfaceId===p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
+        else {p.corpse.areaId=this.state.area!.def.id;p.corpse.x=p.x+1;p.corpse.y=p.y;this.syncCorpse(this.state.area!);}
       }
+      this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');
       this.state.saved = true; this.state.storageError = '';
     } catch { this.state.storageError = '无法读取角色存档；原存档未被覆盖。'; }
     finally { this.state.loadingSave = false; }
