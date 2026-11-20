@@ -290,6 +290,20 @@ export class Engine {
       this.updateStats(); this.enterArea(1, undefined, true); this.message('前往鲜血荒地的邪恶洞窟，消灭所有怪物后向阿卡拉领取奖励。'); this.save(); return;
     }
     if (action.type === 'continue') { void this.load(action.id); return; }
+    if (action.type === 'select-difficulty') {
+      const p = this.state.player;
+      if (!p || this.state.screen !== 'difficulty-select') return;
+      const idx = (['normal','nightmare','hell'] as const).indexOf(action.difficulty) + 1;
+      if (idx < 1 || idx > p.unlockedDifficulties) return;
+      p.difficulty = action.difficulty;
+      this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
+      if (p.corpse) {
+        if (SURFACE_IDS.some(id => id === p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
+        else { p.corpse.areaId = this.state.area!.def.id; p.corpse.x = p.x+1; p.corpse.y = p.y; this.syncCorpse(this.state.area!); }
+      }
+      this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');
+      return;
+    }
     if (action.type === 'delete-character') { void this.deleteCharacter(action.id); return; }
     if (action.type === 'title') {
       if (this.state.loadingSave) return;
@@ -1313,13 +1327,17 @@ export class Engine {
       this.state.player = save.player; this.state.seed = save.seed; this.rng = seededRandom(save.seed); this.areas.clear(); this.vendorStocks.clear(); this.portal = null;
       const p = this.state.player; p.dead = false; this.updateStats();
       if (p.life <= 0) p.life = this.state.stats!.maxLife;
-      this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
-      if (p.corpse) {
-        if (SURFACE_IDS.some(surfaceId=>surfaceId===p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
-        else {p.corpse.areaId=this.state.area!.def.id;p.corpse.x=p.x+1;p.corpse.y=p.y;this.syncCorpse(this.state.area!);}
+      if (p.unlockedDifficulties > 1) {
+        this.state.screen = 'difficulty-select';
+      } else {
+        this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
+        if (p.corpse) {
+          if (SURFACE_IDS.some(surfaceId=>surfaceId===p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
+          else {p.corpse.areaId=this.state.area!.def.id;p.corpse.x=p.x+1;p.corpse.y=p.y;this.syncCorpse(this.state.area!);}
+        }
+        this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');
       }
       this.state.saved = true; this.state.storageError = '';
-      this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');
     } catch { this.state.storageError = '无法读取角色存档；原存档未被覆盖。'; }
     finally { this.state.loadingSave = false; }
   }

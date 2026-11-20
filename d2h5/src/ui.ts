@@ -294,6 +294,7 @@ export class GameUI {
       this.resetControls();
       if (state.screen === 'intro') this.buildIntro();
       if (state.screen === 'creation') this.buildCreation();
+      if (state.screen === 'difficulty-select') this.buildDifficultySelect();
       if (state.screen === 'game') { this.selectedUid = null; this.hotkeys = []; this.skillTree = 0; this.selectedSkill = 0; this.questAct = 1; this.vendorFilter = 'all'; this.areaSignature = ''; }
     }
     this.updateControl();
@@ -486,6 +487,36 @@ export class GameUI {
 
   private referenceNote(...content: HTMLElement[]) {
     const note = el('details', 'reference-note'); note.append(el('summary', '', '规则与实现说明'), ...content); return note;
+  }
+
+  private buildDifficultySelect() {
+    const p = this.state.player!;
+    const DIFFICULTY: Record<string, string> = { normal: '普通', nightmare: '噩梦', hell: '地狱' };
+    const section = el('section', 'creation-screen');
+    const header = el('header', 'creation-header');
+    header.append(el('span', 'eyebrow', 'CHOOSE DIFFICULTY'), el('h1', '', '选择难度'), el('p', 'muted', `欢迎回来，${p.name}。选择本次旅程的难度。`));
+    const cards = el('div', 'difficulty-cards');
+    for (const [d, label, desc] of [
+      ['normal',    '普通',  '适合初次冒险，怪物攻击适中。'],
+      ['nightmare', '噩梦',  '怪物更强，掉落更好。'],
+      ['hell',      '地狱',  '最高难度，最佳掉落。'],
+    ] as [import('./types').Difficulty, string, string][]) {
+      const idx = (['normal','nightmare','hell'] as const).indexOf(d) + 1;
+      const locked = idx > p.unlockedDifficulties;
+      const card = el('article', `difficulty-card${locked ? ' locked' : ''}`);
+      const title = el('h2', '', label);
+      const sub = el('p', 'muted', locked ? '尚未解锁' : desc);
+      card.append(title, sub);
+      if (!locked) {
+        card.setAttribute('role', 'button'); card.tabIndex = 0;
+        const go = () => this.send({ type: 'select-difficulty', difficulty: d });
+        card.addEventListener('click', go);
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+      }
+      cards.append(card);
+    }
+    section.append(header, cards);
+    this.screenLayer.append(section);
   }
 
   private buildCreation() {
