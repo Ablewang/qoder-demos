@@ -357,11 +357,13 @@ test('waypoint activation uses object region and travel lands at the destination
   engine.dispatch({ type: 'interact', uid: waypoint.uid }); assert.ok(p.waypoints.includes(3)); assert.equal(p.waypoints.includes(2), false);
   engine.state.projectiles.push({ uid: 'wp-projectile', x: p.x, y: p.y, dx: 0, dy: 0, owner: 'player', min: 1, max: 1, element: 'fire', life: 50, radius: .3, skillId: 36 });
   engine.dispatch({ type: 'travel', areaId: 1 }); assert.equal(area.def.id, 1); assert.equal(engine.state.area, area);
-  assert.deepEqual({ x: p.x, y: p.y }, getSurfaceRegion(area, 1)!.spawn); assert.deepEqual(engine.state.projectiles, []);
+  const wp1=area.objects.find(o=>o.kind==='waypoint' && o.regionId===1)!;
+  assert.ok(Math.hypot(p.x-wp1.x,p.y-wp1.y)<3,'should land near waypoint'); assert.deepEqual(engine.state.projectiles, []);
   const townWaypoint=area.objects.find(o=>o.kind==='waypoint' && o.regionId===1)!;
   engine.dispatch({type:'move',point:{x:townWaypoint.x,y:townWaypoint.y}});walk(engine,townWaypoint,1);
   engine.dispatch({ type: 'travel', areaId: 3 }); assert.equal(area.def.id, 3);
-  assert.deepEqual({ x: p.x, y: p.y }, getSurfaceRegion(area, 3)!.spawn);
+  const wp3=area.objects.find(o=>o.kind==='waypoint' && o.regionId===3)!;
+  assert.ok(Math.hypot(p.x-wp3.x,p.y-wp3.y)<3,'should land near waypoint');
   engine.dispatch({ type: 'travel', areaId: 32 }); assert.equal(area.def.id, 3, 'undiscovered waypoint remains locked');
 });
 

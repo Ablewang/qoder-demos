@@ -564,7 +564,13 @@ export function createArea(id: number, difficulty: Difficulty, seed: number, pla
   const def = getArea(id);
   const baseSeed=(seed ^ Math.imul(id,0x9e3779b1) ^ Math.imul(diffIndex(difficulty)+1,0x85ebca6b)) >>> 0;
   const rng = worldRng(baseSeed);
-  const modular = !def.town && id>=2 && id<=37;
+  const modular = !def.town && (
+    (id>=2 && id<=37) || // act1 all outdoor/dungeon
+    (id>=41 && id<=46) || // act2 desert surface
+    (id>=76 && id<=83) || // act3 jungle surface
+    (id>=104 && id<=108) || // act4 hell surface
+    (id>=110 && id<=113) || id===115 || id===117 || id===118 || id===120 // act5 snow surface
+  );
   // Geometry and scene placement are independent local streams, never the engine's item RNG.
   const generated = modular ? blockLayout(def,worldRng(baseSeed^0x243f6a88),worldRng(baseSeed^0xb7e15162)) : undefined;
   const placementRng = modular ? worldRng(baseSeed^0xa4093822) : rng;
@@ -790,8 +796,15 @@ export function createArea(id: number, difficulty: Difficulty, seed: number, pla
   // Generate only the exits the player can actually use, not arbitrary cross-act shortcuts.
   const travelPlayer = player.difficulty === difficulty ? player : {...player,difficulty};
   const targets = getConnections(travelPlayer,id);
+  const TOWN_EXITS: Record<number, Point[]> = {
+    1:   [{x:31,y:14},{x:31,y:20},{x:31,y:8}],
+    40:  [{x:31,y:14},{x:31,y:20},{x:31,y:8}],
+    75:  [{x:31,y:14},{x:31,y:20},{x:31,y:8}],
+    103: [{x:31,y:14},{x:31,y:20},{x:31,y:8}],
+    109: [{x:31,y:14},{x:31,y:20},{x:31,y:8},{x:31,y:6}],
+  };
   const positions: Point[] = def.town
-    ? [{x:15,y:spawn.y},{x:19,y:spawn.y+6},{x:28,y:spawn.y}]
+    ? (TOWN_EXITS[id] ?? TOWN_EXITS[1])
     : [{x:3,y:spawn.y},{x:width-4,y:Math.floor(height/2)},{x:Math.floor(width/2),y:height-4},{x:Math.floor(width/2),y:3},{x:width-7,y:height-5},{x:width-7,y:4},{x:9,y:height-4},{x:9,y:3}];
   targets.forEach((target,index) => {
     const gate = WORLD_GATES.find(g => g.implemented && ((g.from===id && g.to===target)||(g.to===id && g.from===target)));
@@ -934,9 +947,22 @@ export function createArea(id: number, difficulty: Difficulty, seed: number, pla
 
 /** Act I outdoor maps share coordinates; closed edges still retain their original walls. */
 export const SURFACE_IDS = [1,2,3,4,5,6,7,17,26,27,32] as const;
+export const SURFACE_IDS_ACT2 = [40,41,42,43,44,45,46] as const;
+export const SURFACE_IDS_ACT3 = [75,76,77,78,79,80,81,82,83] as const;
+export const SURFACE_IDS_ACT4 = [103,104,105,106,107,108] as const;
+export const SURFACE_IDS_ACT5 = [109,110,111,112,113,115,117,118,120] as const;
 const SURFACE_CELLS: Record<number, Point> = {
+  // act1
   1:{x:0,y:0},2:{x:1,y:0},3:{x:2,y:0},4:{x:3,y:0},17:{x:2,y:1},
   5:{x:0,y:2},6:{x:1,y:2},7:{x:2,y:2},26:{x:3,y:2},27:{x:4,y:2},32:{x:4,y:0},
+  // act2: town(0,0) - desert chain east, then tomb area south
+  40:{x:0,y:0},41:{x:1,y:0},42:{x:2,y:0},43:{x:3,y:0},44:{x:4,y:0},45:{x:5,y:0},46:{x:5,y:1},
+  // act3: town(0,0) - jungle chain east; great marsh branches south from spider forest
+  75:{x:0,y:0},76:{x:1,y:0},77:{x:1,y:1},78:{x:2,y:0},79:{x:3,y:0},80:{x:4,y:0},81:{x:5,y:0},82:{x:6,y:0},83:{x:7,y:0},
+  // act4: fortress(0,0) - hell chain east
+  103:{x:0,y:0},104:{x:1,y:0},105:{x:2,y:0},106:{x:3,y:0},107:{x:4,y:0},108:{x:5,y:0},
+  // act5: town(0,0) - linear chain east
+  109:{x:0,y:0},110:{x:1,y:0},111:{x:2,y:0},112:{x:3,y:0},113:{x:4,y:0},115:{x:4,y:1},117:{x:4,y:2},118:{x:5,y:2},120:{x:6,y:2},
 };
 export function containsRegion(region: SurfaceRegion, point: Point): boolean {
   return point.x >= region.x && point.y >= region.y && point.x < region.x + region.width && point.y < region.y + region.height;
@@ -961,9 +987,9 @@ export function isTownPoint(area: AreaState, point: Point): boolean {
   return area.regions ? area.regions.some(region => region.def.town && containsRegion(region,point)) : area.def.town;
 }
 
-export function createSurfaceWorld(difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
+function buildSurfaceWorld(ids: readonly number[], difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
   const regions: SurfaceRegion[] = [];
-  const locals=SURFACE_IDS.map(id=>createArea(id,difficulty,(engineSeed ^ id * 2654435761) >>> 0,player));
+  const locals=ids.map(id=>createArea(id,difficulty,(engineSeed ^ id * 2654435761) >>> 0,player));
   const slotWidth=Math.max(...locals.map(local=>local.width))+6,slotHeight=Math.max(...locals.map(local=>local.height))+6;
   locals.forEach(local=>{
     const cell = SURFACE_CELLS[local.def.id], x = cell.x * slotWidth, y = cell.y * slotHeight;
@@ -1041,6 +1067,22 @@ export function createSurfaceWorld(difficulty: Difficulty, engineSeed: number, p
     Object.assign(source,{x:ap.x+.5,y:ap.y+.5,seam:true});Object.assign(back,{x:bp.x+.5,y:bp.y+.5,seam:true});
   }
   return world;
+}
+
+export function createSurfaceWorld(difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
+  return buildSurfaceWorld(SURFACE_IDS, difficulty, engineSeed, player);
+}
+export function createSurfaceWorldAct2(difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
+  return buildSurfaceWorld(SURFACE_IDS_ACT2, difficulty, engineSeed, player);
+}
+export function createSurfaceWorldAct3(difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
+  return buildSurfaceWorld(SURFACE_IDS_ACT3, difficulty, engineSeed, player);
+}
+export function createSurfaceWorldAct4(difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
+  return buildSurfaceWorld(SURFACE_IDS_ACT4, difficulty, engineSeed, player);
+}
+export function createSurfaceWorldAct5(difficulty: Difficulty, engineSeed: number, player: Player): AreaState {
+  return buildSurfaceWorld(SURFACE_IDS_ACT5, difficulty, engineSeed, player);
 }
 
 // A live reference prevents an already-pending Den reward being claimed after a revival.

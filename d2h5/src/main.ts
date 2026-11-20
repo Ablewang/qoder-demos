@@ -20,9 +20,14 @@ let previous = performance.now(), accumulated = 0;
 const start = previous;
 let frameId = 0;
 function frame(now: number) {
-  accumulated += Math.min(200, now - previous);
+  const canAdvance = () => engine.state.screen !== 'game' || renderer.isGroundReady(engine.state.area, engine.state.player);
+  if (canAdvance()) accumulated += Math.min(200, now - previous);
+  else accumulated = 0;
   previous = now;
-  while (accumulated >= 40) { engine.step(); accumulated -= 40; }
+  while (accumulated >= 40) {
+    if (!canAdvance()) { accumulated = 0; break; }
+    engine.step(); accumulated -= 40;
+  }
   ui.update(engine.state);
   renderer.render(engine.state, (now - start) / 1000);
   frameId = requestAnimationFrame(frame);
@@ -31,5 +36,5 @@ frameId = requestAnimationFrame(frame);
 window.addEventListener('resize', () => renderer.resize());
 window.addEventListener('pagehide', () => engine.save(false));
 document.addEventListener('visibilitychange', () => { if (document.hidden) engine.save(false); previous = performance.now(); accumulated = 0; });
-if (import.meta.hot) import.meta.hot.dispose(() => { cancelAnimationFrame(frameId); ui.destroy(); });
+if (import.meta.hot) import.meta.hot.dispose(() => { cancelAnimationFrame(frameId); renderer.destroy(); ui.destroy(); });
 if (import.meta.env.DEV) Object.assign(window, { sanctuary: { engine, renderer, ui } });

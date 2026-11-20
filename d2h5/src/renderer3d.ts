@@ -3,7 +3,7 @@ import type { AreaState, GameState, Point, Quality } from './types';
 import { artUrl, itemArtKey } from './art';
 import { Actor } from './r3d/actor';
 import { playerSpec, monsterSpec, npcSpec, summonSpec, specKey, type Spec } from './r3d/rigs';
-import { Terrain } from './r3d/terrain';
+import { Terrain, type ViewBounds } from './r3d/terrain';
 import { Effects } from './r3d/effects';
 import { Overlay, QUALITY } from './r3d/overlay';
 
@@ -35,6 +35,27 @@ export class Renderer {
   private sun = new THREE.DirectionalLight();
   private torch = new THREE.PointLight('#ffbf7a', 20, 12, 1.4);
   private terrain: Terrain | null = null;
+  private terrainView: ViewBounds | null = null;
+  private terrainAnchor: Point = { x: 0, y: 0 };
+  get visibleGroundReady(): boolean { return !this.destroyed && !!this.terrainView && !!this.terrain?.visibleGroundReady; }
+  isGroundReady(area: AreaState | null, player: Point | null): boolean {
+    if (!area || !player || this.groundArea !== area || !this.visibleGroundReady) return false;
+    const view = this.terrainView!, dx = player.x - this.terrainAnchor.x, dy = player.y - this.terrainAnchor.y;
+    return this.terrain!.isReadyFor(player, { minX: view.minX + dx, minY: view.minY + dy, maxX: view.maxX + dx, maxY: view.maxY + dy });
+  }
+
+  private cameraGroundBounds(): ViewBounds {
+    const bounds: ViewBounds = { minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity };
+    // Projection already includes the HUD view offset and the actual (possibly ultrawide) aspect ratio.
+    for (const x of [-1, 1]) for (const y of [-1, 1]) {
+      this.ray.setFromCamera(new THREE.Vector2(x, y), this.camera);
+      const point = this.ray.ray.intersectPlane(this.plane, this.vector);
+      if (!point) continue;
+      bounds.minX = Math.min(bounds.minX, point.x); bounds.maxX = Math.max(bounds.maxX, point.x);
+      bounds.minY = Math.min(bounds.minY, point.z); bounds.maxY = Math.max(bounds.maxY, point.z);
+    }
+    return bounds;
+  }
   private effects = new Effects();
   private overlayCanvas: HTMLCanvasElement;
   private overlay: Overlay;
@@ -85,7 +106,7 @@ export class Renderer {
     const aspect = this.width / this.height; this.distance = (this.coarse ? 28 : 32) * Math.max(1, Math.pow(1.3 / aspect, .6));
     const shift = Math.max(0, 112 / 2 - 35);
     this.camera.aspect = aspect; this.camera.setViewOffset(this.width, this.height + shift * 2, 0, shift * 2, this.width, this.height); this.camera.updateProjectionMatrix();
-    this.lookId = -1;
+    this.lookId = -1; this.terrainView = null;
   }
 
   worldToScreen(point: Point, lift = 0): Point {
@@ -107,7 +128,8 @@ export class Renderer {
 
   private changeArea(area: AreaState, point: Point): void {
     this.terrain?.dispose(); this.clearActors(); this.clearDrops(); this.effects.clear(); this.actorAim.clear(); this.hover = null;
-    this.terrain = new Terrain(area, key => this.texture(key)); this.scene.add(this.terrain.group); this.groundArea = area;
+    this.terrain = new Terrain(area, key => this.texture(key)); this.scene.add(this.terrain.group); this.groundArea = area; this.terrainView = null;
+    this.canvas.setAttribute('aria-busy', 'true');
     this.look(area.def.style); this.target.set(point.x, .5, point.y); this.lastTick = -1; this.shake = 0;
   }
 
@@ -128,7 +150,7 @@ export class Renderer {
     const dt = Math.min(.06, Math.max(0, time - this.lastTime)); this.lastTime = time;
     if (state.screen === 'intro') return;
     if (!state.area || !state.player || state.screen !== 'game') {
-      this.gl.setClearColor('#141917'); this.gl.clear(); this.overlay.render(state, time, p => p, null); return;
+      this.canvas.setAttribute('aria-busy', 'false'); this.gl.setClearColor('#141917'); this.gl.clear(); this.overlay.render(state, time, p => p, null); return;
     }
     const area = state.area, player = state.player;
     if (this.groundArea !== area) this.changeArea(area, player);
@@ -169,7 +191,10 @@ export class Renderer {
     this.camera.position.set(this.target.x + horizontal + Math.sin(time * 81) * this.shake, this.target.y + this.distance * Math.sin(elevation), this.target.z + horizontal + Math.cos(time * 63) * this.shake);
     this.camera.lookAt(this.target); this.camera.updateMatrixWorld(true);
     this.sun.position.set(this.target.x + 6, 12, this.target.z + 2); this.sun.target.position.copy(this.target);
-    this.torch.position.set(hero.x - .4, 2.2, hero.y - .4); this.terrain!.update(player, dt, time);
+    this.torch.position.set(hero.x - .4, 2.2, hero.y - .4);
+    this.terrainView = this.cameraGroundBounds(); this.terrainAnchor = { x: player.x, y: player.y };
+    this.terrain!.update(player, dt, time, this.terrainView);
+    this.canvas.setAttribute('aria-busy', String(!this.visibleGroundReady));
     this.flameTime += step;
     if (this.flameTime > .06) { this.flameTime %= .06; for (const p of this.terrain!.flames) if (Math.hypot(p.x - player.x, p.z - player.y) < 14) this.effects.emit({ x: p.x, y: p.y, z: p.z, color: '#ffaf54', count: 2, speed: .15, up: 1.5, gravity: 0, life: .6, size: .22 }); }
     for (const effect of state.effects) this.effects.effect(effect);
@@ -210,6 +235,7 @@ export class Renderer {
   destroy(): void {
     if (this.destroyed) return; this.destroyed = true; this.observer.disconnect(); this.terrain?.dispose(); this.clearActors(); this.clearDrops(); this.effects.dispose(); this.overlay.destroy(); this.overlayCanvas.remove();
     for (const ring of [this.selectedRing, this.hoverRing, this.targetRing]) { ring.geometry.dispose(); (ring.material as THREE.Material).dispose(); }
-    for (const texture of this.textures.values()) texture.dispose(); this.textures.clear(); this.gl.dispose(); this.groundArea = null;
+    for (const texture of this.textures.values()) texture.dispose(); this.textures.clear(); this.gl.dispose(); this.groundArea = null; this.terrainView = null; this.terrain = null;
+    this.canvas.removeAttribute('aria-busy');
   }
 }

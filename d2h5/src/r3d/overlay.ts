@@ -219,8 +219,9 @@ export class Overlay {
   }
 
   private minimap(area: AreaState, player: Point): void {
-    const c = this.ctx, size = this.width < 700 ? 96 : 140;
-    const x = this.width - size - 12, y = 76;
+    const c = this.ctx, shortLandscape = this.height <= 600 && this.width >= 651;
+    const size = shortLandscape ? Math.min(this.width < 700 ? 96 : 140, Math.max(64, Math.floor(this.height * 0.22))) : this.width < 700 ? 96 : 140;
+    const x = this.width - size - 12, y = shortLandscape ? 60 : 76;
     c.save(); c.fillStyle = '#09100ddd'; c.fillRect(x, y, size, size);
     c.strokeStyle = '#8f7b4c88'; c.strokeRect(x, y, size, size);
     c.beginPath(); c.rect(x + 4, y + 4, size - 8, size - 8); c.clip();

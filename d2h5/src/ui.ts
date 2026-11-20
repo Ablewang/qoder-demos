@@ -1215,23 +1215,23 @@ export class GameUI {
     const locked = this.waypointAct > p.unlockedActs;
     destinations.append(el('h3', 'section-caption', `${labels[this.waypointAct - 1]}${locked ? ' · 未解锁，仅可查看' : ''}`));
     const list = el('div', 'waypoint-list');
+    const openedAt = performance.now();
     for (const area of AREAS.filter(a => a.act === this.waypointAct && a.waypoint)) {
       const discovered = p.waypoints.includes(area.id), current = this.state.area?.def.id === area.id;
       const status = current ? '当前位置' : locked ? '未解锁' : discovered ? '已发现' : '未发现';
-      const destination = btn('', () => this.send({ type: 'travel', areaId: area.id }), `waypoint-button${current ? ' active' : ''}`, !discovered || locked || current);
+      const canUse = discovered && !locked && !current;
+      const destination = btn('', () => {}, `waypoint-button${current ? ' active' : ''}`, !canUse);
+      // only fire when pointerdown also started on this button, preventing canvas-hold → panel-release false clicks
+      let pressedHere = false;
+      destination.addEventListener('pointerdown', () => { pressedHere = true; });
+      destination.addEventListener('click', () => { if (!pressedHere) return; pressedHere = false; this.send({ type: 'travel', areaId: area.id }); });
+      destination.addEventListener('pointerleave', () => { pressedHere = false; });
       destination.append(el('span', 'waypoint-name', area.name), el('span', 'waypoint-status', ` · ${status}`));
       destination.setAttribute('aria-label', `${area.name} · ${status}`); if (current) destination.setAttribute('aria-current', 'location');
       destination.dataset.area = String(area.id); destination.dataset.focus = `waypoint:${area.id}`; list.append(destination);
     }
     destinations.append(list); body.append(destinations);
     body.append(el('p', 'muted', '只有亲自发现的传送点可用。抵达区域不会自动发现传送点，需点击石台。'));
-    const difficulty = el('div', 'button-row');
-    difficulty.setAttribute('role', 'group'); difficulty.setAttribute('aria-label', '旅程难度');
-    (['normal', 'nightmare', 'hell'] as const).forEach((d, index) => {
-      const button = btn(`${DIFFICULTY[d]}${index + 1 > p.unlockedDifficulties ? ' · 未解锁' : ''}`, () => this.send({ type: 'difficulty', difficulty: d }), `secondary-button${d === p.difficulty ? ' active' : ''}`, index + 1 > p.unlockedDifficulties || d === p.difficulty);
-      button.setAttribute('aria-pressed', String(d === p.difficulty)); difficulty.append(button);
-    });
-    body.append(difficulty);
   }
 
   private vendorPanel(body: HTMLElement) {

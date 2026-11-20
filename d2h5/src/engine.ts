@@ -2,7 +2,7 @@ import type { Action, AreaState, Control, Difficulty, Element, GameEvent, GameSt
 import { CLASSES, EXPERIENCE, getClass, getSkill, num, rawRows } from './catalog';
 import { allocateSkill, allocateStat, blockChance, createPlayer, deriveStats, grantExperience, hitChance, leechAmount, manaRegeneration, skillEffect, skillLevel, getShrine, setTemporaryShrine } from './rules';
 import { allowedSockets, consumeInventoryPotion, consumePotion, createItem, createStartingItems, describeItem, equipItem, fillTome, GEMS, getBase, insertSocket, itemSellPrice, INVENTORY_HEIGHT, INVENTORY_WIDTH, isUsableItem, itemLabel, moveInventoryItem, placeItem, repairItems, rollLoot, STASH_HEIGHT, STASH_WIDTH, transmute, unequipItem, vendorStock } from './items';
-import { SURFACE_IDS, canTravel, containsRegion, createArea, createSurfaceWorld, getArea, getConnections, getSurfaceRegion, hasLineOfSight, isTownPoint, onEnterArea, onKill, questKey, surfaceRegionAt, talkNPC, townForAct } from './world';
+import { SURFACE_IDS, SURFACE_IDS_ACT2, SURFACE_IDS_ACT3, SURFACE_IDS_ACT4, SURFACE_IDS_ACT5, canTravel, containsRegion, createArea, createSurfaceWorld, createSurfaceWorldAct2, createSurfaceWorldAct3, createSurfaceWorldAct4, createSurfaceWorldAct5, getArea, getConnections, getSurfaceRegion, hasLineOfSight, isTownPoint, onEnterArea, onKill, questKey, surfaceRegionAt, talkNPC, townForAct } from './world';
 
 import { COMBAT_HZ, DIFFICULTY_RULES, lifeBits, rollDamageBits, settleDirectDamage } from './combat';
 import type { DamageComponent } from './combat';
@@ -197,6 +197,26 @@ export class Engine {
       for (const surfaceId of SURFACE_IDS) this.areas.set(surfaceId,world);
       return world;
     }
+    if (SURFACE_IDS_ACT2.some(surfaceId => surfaceId === id)) {
+      const world = createSurfaceWorldAct2(p.difficulty,this.state.seed,p);
+      for (const surfaceId of SURFACE_IDS_ACT2) this.areas.set(surfaceId,world);
+      return world;
+    }
+    if (SURFACE_IDS_ACT3.some(surfaceId => surfaceId === id)) {
+      const world = createSurfaceWorldAct3(p.difficulty,this.state.seed,p);
+      for (const surfaceId of SURFACE_IDS_ACT3) this.areas.set(surfaceId,world);
+      return world;
+    }
+    if (SURFACE_IDS_ACT4.some(surfaceId => surfaceId === id)) {
+      const world = createSurfaceWorldAct4(p.difficulty,this.state.seed,p);
+      for (const surfaceId of SURFACE_IDS_ACT4) this.areas.set(surfaceId,world);
+      return world;
+    }
+    if (SURFACE_IDS_ACT5.some(surfaceId => surfaceId === id)) {
+      const world = createSurfaceWorldAct5(p.difficulty,this.state.seed,p);
+      for (const surfaceId of SURFACE_IDS_ACT5) this.areas.set(surfaceId,world);
+      return world;
+    }
     const area = createArea(id,p.difficulty,(this.state.seed ^ id * 2654435761) >>> 0,p);
     this.areas.set(id,area);
     return area;
@@ -381,7 +401,12 @@ export class Engine {
         if (area.def.town && this.state.npc === 'warriv' && action.areaId === 40 && p.unlockedActs >= 2) { this.enterArea(40); break; }
         const waypoint = area.objects.find(o => o.kind === 'waypoint' && distance(o, p) < 3);
         if (!waypoint || !canTravel(p, action.areaId)) { this.message('必须站在传送点旁，且目的地已经激活。', 'error'); break; }
-        this.enterArea(action.areaId, undefined, true); break;
+        // land near the waypoint in target area, not at spawn
+        const targetArea = this.cachedArea(action.areaId);
+        const targetRegion = getSurfaceRegion(targetArea, action.areaId);
+        const targetWaypoint = targetArea.objects.find(o => o.kind === 'waypoint' && (targetRegion ? o.regionId === action.areaId : true));
+        const landPos = targetWaypoint ? { x: targetWaypoint.x + 1.5, y: targetWaypoint.y + 1.5 } : undefined;
+        this.enterArea(action.areaId, landPos, !landPos); break;
       }
       case 'run': p.running = !p.running; break;
       case 'respec': this.respec(); break;
@@ -1326,7 +1351,7 @@ export class Engine {
       if (difficulty) { const idx = (['normal','nightmare','hell'] as const).indexOf(difficulty)+1; if (idx >= 1 && idx <= p.unlockedDifficulties) p.difficulty = difficulty; }
       this.enterArea(townForAct(Math.min(5, Math.max(1, p.unlockedActs))), undefined, true);
       if (p.corpse) {
-        if (SURFACE_IDS.some(surfaceId=>surfaceId===p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
+        if ([...SURFACE_IDS,...SURFACE_IDS_ACT2,...SURFACE_IDS_ACT3,...SURFACE_IDS_ACT4,...SURFACE_IDS_ACT5].includes(p.corpse!.areaId)) this.syncCorpse(this.cachedArea(p.corpse.areaId));
         else {p.corpse.areaId=this.state.area!.def.id;p.corpse.x=p.x+1;p.corpse.y=p.y;this.syncCorpse(this.state.area!);}
       }
       this.message('存档已载入。重新进入游戏后怪物刷新，角色从营地出发。');

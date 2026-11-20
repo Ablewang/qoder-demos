@@ -145,11 +145,11 @@ test('only IDs 2–37 change layout; camp dimensions, NPC services, coordinates 
   const p=player(),town=createArea(1,'normal',0,p);
   assert.equal(town.layout,undefined);assert.equal(town.width,34);assert.equal(town.height,28);assert.deepEqual(town.spawn,{x:10,y:14});
   assert.deepEqual(town.objects.map(o=>[o.kind,o.npcId??o.targetArea??null,o.x,o.y]),[
-    ['exit',2,15,14],['waypoint',null,12,11],['stash',null,9,11],['npc','akara',11,18],['npc','charsi',14,18],['npc','gheed',17,18],['npc','kashya',20,18],['npc','warriv',23,18],
+    ['exit',2,31,14],['waypoint',null,12,11],['stash',null,9,11],['npc','akara',11,18],['npc','charsi',14,18],['npc','gheed',17,18],['npc','kashya',20,18],['npc','warriv',23,18],
   ]);
   assert.deepEqual(NPCS.akara.services,['trade','heal']);assert.deepEqual(NPCS.charsi.services,['trade','repair']);assert.deepEqual(NPCS.gheed.services,['trade','gamble']);
   assert.deepEqual(town.tiles,createArea(1,'hell',92831,p).tiles);
-  for (const id of [38,39,41,62,74,113]) {
+  for (const id of [38,39,62,74]) {
     p.unlockedActs=5;const area=createArea(id,'normal',0,p);assert.equal(area.layout,undefined);
     assert.equal(area.width,area.def.style==='cave' ? 36 : area.def.style==='dungeon' ? 38 : 44);
     assert.equal(area.height,area.def.style==='cave' || area.def.style==='dungeon' ? 30 : 34);
@@ -282,7 +282,7 @@ test('all 136 areas in all difficulties have reachable exits, objects, monsters 
 test('first golden path has a nearby town exit and Blood Moor enemies six to twelve tiles away', () => {
   const p=player(),town=createArea(1,'normal',12,p),moor=createArea(2,'normal',12,p),den=createArea(8,'normal',12,p);
   const exit=town.objects.find(o=>o.targetArea===2)!;
-  assert.equal(Math.hypot(exit.x-town.spawn.x,exit.y-town.spawn.y),5);
+  assert.equal(Math.hypot(exit.x-town.spawn.x,exit.y-town.spawn.y),21);
   assert.ok(moor.objects.some(o=>o.targetArea===8));
   for (const m of moor.monsters.slice(0,3)) {
     const distance=Math.hypot(m.x-moor.spawn.x,m.y-moor.spawn.y);assert.ok(distance>=6&&distance<=12);
