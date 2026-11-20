@@ -666,31 +666,39 @@ export function createArea(id: number, difficulty: Difficulty, seed: number, pla
     corridor(centers[integer(rng,0,2)],centers[integer(rng,6,8)],0);
     corridor(spawn,centers[3]);
   } else {
-    // Open field: ragged tree/rock border, a winding road and obstacle clusters off the road.
-    const phase=rng()*Math.PI*2,amp=integer(rng,2,5),road=new Set<string>();
+    // Open field: thin ragged border, then sparse isolated trees/rocks scattered inside.
+    // No road corridors — the interior is mostly open, like D2's outdoor zones.
+    const phase=rng()*Math.PI*2;
+    // Border: 1-3 tile thick, irregular silhouette via sin waves.
     for (let x=1;x<width-1;x++) {
-      const top=1+Math.floor(1.6*(1+Math.sin(x*.41+phase))+rng()*1.2),bottom=1+Math.floor(1.6*(1+Math.cos(x*.37+phase))+rng()*1.2);
+      const top=1+Math.floor(.8*(1+Math.sin(x*.41+phase))+rng()*.8),bottom=1+Math.floor(.8*(1+Math.cos(x*.37+phase))+rng()*.8);
       wall(x,1,1,top);wall(x,height-1-bottom,1,bottom);
     }
     for (let y=1;y<height-1;y++) {
-      const left=1+Math.floor(1.4*(1+Math.sin(y*.5+phase))+rng()),right=1+Math.floor(1.4*(1+Math.cos(y*.43+phase))+rng());
+      const left=1+Math.floor(.7*(1+Math.sin(y*.5+phase))+rng()*.6),right=1+Math.floor(.7*(1+Math.cos(y*.43+phase))+rng()*.6);
       wall(1,y,left,1);wall(width-1-right,y,right,1);
     }
-    let previous=spawn;
-    for (let x=spawn.x;x<width-3;x++) {
-      const y=Math.max(4,Math.min(height-5,spawn.y+Math.round(Math.sin((x-spawn.x)*.16+phase)*amp)));
-      corridor(previous,{x,y},1);previous={x,y};
-      for (let dy=-2;dy<=2;dy++) for (let dx=-1;dx<=1;dx++) road.add(`${x+dx},${y+dy}`);
-    }
-    const branch={x:Math.floor(width/2),y:spawn.y};
-    corridor(branch,{x:branch.x,y:height-4},1);corridor(branch,{x:branch.x,y:3},1);
-    for (let y=1;y<height-1;y++) for (let dx=-2;dx<=2;dx++) road.add(`${branch.x+dx},${y}`);
-    const clusters=Math.floor(width*height/(def.style === 'jungle' || id === 5 ? 26 : 42));
-    for (let i=0;i<clusters;i++) {
-      const cx=integer(rng,3,width-4),cy=integer(rng,3,height-4),r=.8+rng()*1.6;
-      if (Math.hypot(cx-spawn.x,cy-spawn.y)<4) continue;
-      for (let y=Math.floor(cy-r);y<=cy+r;y++) for (let x=Math.floor(cx-r);x<=cx+r;x++)
-        if (inner(x,y) && Math.hypot(x-cx,y-cy)<=r && !road.has(`${x},${y}`)) tiles[y][x]=1;
+    // Sparse interior obstacles: single tiles or pairs, never adjacent to each other.
+    const isJungle = def.style === 'jungle' || id === 5;
+    const count = Math.floor(width * height / (isJungle ? 55 : 90));
+    const placed = new Set<number>();
+    for (let i=0,attempts=0; i<count && attempts<count*8; attempts++) {
+      const cx=integer(rng,4,width-5),cy=integer(rng,4,height-5);
+      if (Math.hypot(cx-spawn.x,cy-spawn.y)<5) continue;
+      // Reject if any neighbour within radius 3 is already a placed obstacle.
+      let tooClose=false;
+      for (let dy=-3;dy<=3&&!tooClose;dy++) for (let dx=-3;dx<=3&&!tooClose;dx++)
+        if (placed.has((cy+dy)*width+(cx+dx))) tooClose=true;
+      if (tooClose) continue;
+      // Place a 1-tile obstacle, occasionally a 2-tile L-shape.
+      if (inner(cx,cy) && tiles[cy][cx]===0) {
+        tiles[cy][cx]=1; placed.add(cy*width+cx);
+        if (rng()<.35) {
+          const nx=cx+(rng()<.5?1:-1),ny=cy;
+          if (inner(nx,ny) && tiles[ny][nx]===0) { tiles[ny][nx]=1; placed.add(ny*width+nx); }
+        }
+        i++;
+      }
     }
   }
   room(spawn.x-2,spawn.y-2,5,5);
